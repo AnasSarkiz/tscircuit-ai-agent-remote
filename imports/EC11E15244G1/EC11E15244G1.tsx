@@ -16,24 +16,6 @@ export const EC11E15244G1 = (props: ChipProps<typeof pinLabels>) => {
   return (
     <chip
       pinLabels={pinLabels}
-      symbol={
-        <symbol>
-          <schematicpath points={[{"x":-0.34,"y":-0.34},{"x":-0.28,"y":-0.34},{"x":-0.26,"y":-0.34},{"x":-0.26,"y":-0.26},{"x":0.26,"y":-0.26},{"x":0.26,"y":-0.34},{"x":0.34,"y":-0.34},{"x":0.34,"y":0.38},{"x":0.26,"y":0.38},{"x":0.26,"y":0.3},{"x":-0.26,"y":0.3},{"x":-0.26,"y":0.38},{"x":-0.34,"y":0.38},{"x":-0.34,"y":-0.34}]} strokeColor="#880000" />
-          <schematiccircle center={{ x: 0, y: 0.02 }} radius={0.23} strokeWidth={0.02} color="#880000" />
-          <schematicpath points={[{"x":-0.2,"y":-0.26},{"x":-0.2,"y":-0.4},{"x":-0.2,"y":-0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0,"y":-0.26},{"x":0,"y":-0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.2,"y":-0.26},{"x":0.2,"y":-0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":-0.2,"y":0.3},{"x":-0.2,"y":0.4}]} strokeColor="#880000" />
-          <schematicpath points={[{"x":0.2,"y":0.3},{"x":0.2,"y":0.4}]} strokeColor="#880000" />
-          <port name="pin8" pinNumber={8} aliases={["A"]} direction="down" schX={-0.2} schY={-0.6} schStemLength={0.2} />
-          <port name="pin10" pinNumber={10} aliases={["B"]} direction="down" schX={0.2} schY={-0.6} schStemLength={0.2} />
-          <port name="pin9" pinNumber={9} aliases={["C"]} direction="down" schX={0} schY={-0.6} schStemLength={0.2} />
-          <port name="pin11" pinNumber={11} aliases={["D"]} direction="up" schX={-0.2} schY={0.6} schStemLength={0.2} />
-          <port name="pin12" pinNumber={12} aliases={["E"]} direction="up" schX={0.2} schY={0.6} schStemLength={0.2} />
-          <port name="pin6" pinNumber={6} aliases={["6"]} direction="right" schX={0.6} schY={0} schStemLength={0.26} />
-          <port name="pin7" pinNumber={7} aliases={["7"]} direction="left" schX={-0.6} schY={0} schStemLength={0.26} />
-        </symbol>
-      }
       supplierPartNumbers={{
   "jlcpcb": [
     "C370970"

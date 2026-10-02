@@ -12,7 +12,7 @@
 - [JLCPCB rigid PCB capabilities](https://jlcpcb.com/capabilities/Capabilities)
 - LCSC candidate identities: https://www.lcsc.com/product-detail/C2913201.html, https://www.lcsc.com/product-detail/C54313.html, https://www.lcsc.com/product-detail/C109322.html, https://www.lcsc.com/product-detail/C910544.html, https://www.lcsc.com/product-detail/C5656610.html.
 
-Import provenance: JLCEDA/EasyEDA Official Library, accessed by the supported `tsci import --jlcpcb` workflow. [JLCEDA](https://lceda.cn/) / [EasyEDA](https://easyeda.com/). Component sources/assets are preserved verbatim. The raw regulator supplier record was captured through the same public endpoints used by the pinned CLI for diagnosis only; it does not replace the supported import workflow.
+Import provenance: JLCEDA/EasyEDA Official Library, accessed by the supported `tsci import --jlcpcb` workflow. [JLCEDA](https://lceda.cn/) / [EasyEDA](https://easyeda.com/). Component footprints/assets remain verbatim. The user explicitly authorized removing C370970's custom schematic symbol to use a native chip box; original source is preserved in revision 341dcaa and the change audit is under `../evidence/imports/`. The raw regulator supplier record was captured through the same public endpoints used by the pinned CLI for diagnosis only; it does not replace the supported import workflow.
 
 Supplier catalogue/search responses may carry different stock counts or prices and do not establish live JLCPCB assembly allocation. No final cost or assembly stock claim is made.
 

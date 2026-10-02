@@ -12,7 +12,7 @@ The user approved a PCB envelope of up to **50 x 65 mm** on 2026-10-02. Final di
 
 **ALPS EC11E15244G1 / LCSC C370970:** supported JLCPCB import produced five 1.3000228 mm terminal holes and two 3.200019 mm mounting slots. The exact ALPS drawing specifies terminal holes of 1.00-1.10 mm and slot lengths of 2.60-2.70 mm. Per the workspace instructions, imported component definitions cannot be patched and dependent work must stop.
 
-Original imports and models remain intact. Measurements, supplier records, manufacturer drawings and failing qualification checks are preserved in `evidence/` and `references/`. `main.tsx` is an explicit blocking scaffold, re-exported by `index.circuit.tsx`; it does not return a dummy or incomplete board. There are no placement renders, routes or fabrication outputs.
+Imported footprints and models remain intact. At the user's explicit request, C370970's custom schematic symbol was removed so its existing native `<chip>` renders as a box. Its pin labels and PCB geometry are unchanged. An isolated A4 schematic-only review is saved as `evidence/encoder-chip-box-schematic.svg`; it is not the board schematic or placement. Measurements, supplier records, manufacturer drawings and failing qualification checks remain in `evidence/` and `references/`. `main.tsx` remains an explicit blocking scaffold, re-exported by `index.circuit.tsx`. There are no board placement renders, routes or fabrication outputs.
 
 ## Commands
 

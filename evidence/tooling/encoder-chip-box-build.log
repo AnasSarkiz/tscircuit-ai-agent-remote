@@ -1,0 +1,20 @@
+Building 1 file(s)...
+Building evidence/encoder-chip-box.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/encoder-chip-box/circuit.json
+All pins on ENC1 are underspecified (no pinAttributes set)
+ENC1 has no pin with requires_power=true
+ENC1 has no pin with requires_ground=true
+Generating preview images...
+[evidence/encoder-chip-box] Generating schematic SVG...
+[evidence/encoder-chip-box] Written schematic.svg
+[evidence/encoder-chip-box] Generating schematic PNG...
+[evidence/encoder-chip-box] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   schematic-png, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

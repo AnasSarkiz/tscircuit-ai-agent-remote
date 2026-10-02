@@ -19,7 +19,7 @@ Project: `boards/tscircuit-ai-agent-remote--01a0fe57`. No earlier board was reus
 
 Pinned dependencies: tscircuit **0.0.2729**, @tscircuit/cli **0.1.2228**, TypeScript **5.9.3**, Biome **2.5.14**, @types/bun **1.4.2**. Runtime Bun **1.3.9**. `bun.lock` records transitive dependencies. Installation emitted peer-version warnings involving circuit-json 0.0.509, React/ReactDOM 19.3.0 and @tscircuit/alphabet 0.0.25; unresolved, not accepted board warnings.
 
-Initializer succeeded; optional skill download failed under sandbox networking. Installed tscircuit skill and current official handbook were read. CLI help verified required netlist, pin_specification, source, schematic-placement, placement and shorts commands, PNG/SVG builds and snapshots. Native A4 API verified in installed @tscircuit/props: `<schematicsheet name displayName sheetIndex sheetSize="A4">`. No sheet has been rendered/reviewed.
+Initializer succeeded; optional skill download failed under sandbox networking. Installed tscircuit skill and current official handbook were read. CLI help verified required netlist, pin_specification, source, schematic-placement, placement and shorts commands, PNG/SVG builds and snapshots. Native A4 API verified in installed @tscircuit/props: `<schematicsheet name displayName sheetIndex sheetSize="A4">`. No complete board sheet has been rendered/reviewed; the isolated encoder review is recorded below.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ ESP32-S3-WROOM-1-N8R8 octal PSRAM reserves GPIO35/36/37. Manufacturer antenna gu
 
 ## BLOCKING B-001 — C370970
 
-**ALPS EC11E15244G1, C370970.** Supported import: `tsci import --jlcpcb C370970 --use-exact-footprint --download`. Component source/models remain unmodified. Import log, original supplier record and `evidence/imports/C370970-audit.json` preserve provenance/measurements.
+**ALPS EC11E15244G1, C370970.** Supported import: `tsci import --jlcpcb C370970 --use-exact-footprint --download`. Imported footprint/models remain unmodified. The user's subsequent explicit request authorized removing only the custom schematic symbol (see symbol review below). Import log, original supplier record and `evidence/imports/C370970-audit.json` preserve original provenance/measurements; original source remains in Git revision 341dcaa.
 
 | Feature | Imported | Official ALPS range | Result |
 |---|---|---|---|
@@ -72,3 +72,13 @@ Required placement checks (`netlist`, `pin_specification`, `source`, `schematic-
 Supported native route-cache type `{pcbTraces, cacheKey}` exists; cache-key generation/reuse still needs verification. `routes/README.md` records route preservation/repair intent. **No saved routes exist.** There is no copper to move or repair and no fabrication package.
 
 Complete A4 sheets, bodies/courtyards, connector/test access, holes, each copper layer, critical power paths, mask/paste, outline, drills, assembler feedback and fabrication exports remain unreviewed. No accepted board warnings, physical measurements, hardware photos or test results are invented.
+
+## User-authorized chip-box symbol review — 2026-10-02
+
+The user requested updating C370970's imported file to remove its custom symbol and use a native chip box. This explicitly overrides the imported-symbol no-edit rule for this schematic change only. The component already used `<chip>`; only its `symbol={...}` property was removed. Exact comparison against revision 341dcaa proves every byte outside that property is unchanged, including physical geometry, pin labels, supplier identity and CAD models. Before/after source and footprint checksums are recorded in `evidence/imports/C370970-symbol-change.json`.
+
+Isolated fixture: `evidence/encoder-chip-box.circuit.tsx`, native A4 sheet, PCB generation and routing disabled. Command: `bunx --no-install tsci build evidence/encoder-chip-box.circuit.tsx --disable-pcb --routing-disabled --schematic-svgs --schematic-png`, exit 0. Log: `evidence/tooling/encoder-chip-box-build.log`. Preserved JSON/SVG/PNG: `evidence/encoder-chip-box-circuit.json`, `encoder-chip-box-schematic.svg`, `encoder-chip-box-schematic.png`. PNG visually inspected: rectangular chip box; source JSON retains exactly pins 6–12 with existing labels.
+
+CLI reports three warnings for this isolated passive encoder: all pins underspecified, no requires_power pin, no requires_ground pin. Warnings remain visible; no pin attributes or checks were altered to hide them. This component-only preview does not approve board schematic/BOM, placement, routing or fabrication. **B-001 remains blocked.** All earlier physical-geometry measurements remain applicable because the footprint is byte-identical. No copper/fabrication output exists.
+
+Formatting and TypeScript checks pass after the symbol change. Import tests still report 2 pass / 2 fail (unchanged hole/slot violations). Supplemental Git whitespace review reports trailing whitespace on line 11 of the CLI-generated SVG. The native artifact is preserved exactly as generated; this whitespace has no geometry or schematic meaning. Authored-source whitespace review passes separately. This does not waive any board validation check.

@@ -1,0 +1,30 @@
+{
+  "part": "C370970",
+  "manufacturerPartNumber": "EC11E15244G1",
+  "date": "2026-10-02",
+  "sourceRevisionBefore": "341dcaa03c6d62ad478a8201b9f05050e798538f",
+  "authorization": "Direct user request to remove custom symbol and use native chip box overrides imported-symbol no-edit rule for this change only.",
+  "change": "Removed symbol JSX property; component already uses native chip.",
+  "sourceSha256Before": "42423abc3578dee3ce0dac9acf4a3ec6d4a9c4fc4f26ed9d7aedeeb850ec78e4",
+  "sourceSha256After": "daa66b82224a447ddc53fc155b91eb5b3a7e630d66cd90c7f8ce96b21d543c80",
+  "footprintSha256Before": "8c4252a8b3d2c03a7509b6e401ee49466147dae6da2efcb182c6878a3f366d2f",
+  "footprintSha256After": "8c4252a8b3d2c03a7509b6e401ee49466147dae6da2efcb182c6878a3f366d2f",
+  "onlySymbolPropertyRemoved": true,
+  "b001Resolved": false,
+  "schematicOnlyBuild": "exit 0; isolated review, not complete board",
+  "sourcePinNumbers": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "warnings": [
+    "All pins underspecified (no pinAttributes)",
+    "No requires_power pin",
+    "No requires_ground pin"
+  ],
+  "warningDisposition": "Preserved as reported for isolated passive encoder review; does not approve complete schematic/BOM stage."
+}

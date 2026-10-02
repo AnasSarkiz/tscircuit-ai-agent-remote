@@ -17,6 +17,8 @@ Required resolution: qualify a corrected official import for this exact part, or
 
 Alternative investigation: **C209762 / EC11J1525402** imported successfully through the supported workflow. ALPS marks this exact part Not Recommended for New Designs, so it is not selected. This investigation does not resolve B-001; its footprint has not been fully qualified.
 
+User-authorized symbol change (2026-10-02): removed C370970's custom `symbol` JSX prop. The existing native `chip` now renders a rectangular box. Exact source comparison confirms only that property was removed; pin labels, footprint and models are unchanged. Schematic-only A4 review builds successfully and preserves all seven source pins (6–12). This does **not** repair the hole/slot dimensions or resolve B-001. Audit: `evidence/imports/C370970-symbol-change.json`; preview: `evidence/encoder-chip-box-schematic.svg`.
+
 ## Candidate rejection R-001: TPS63070RNMR C109322
 
 The original import omits physical pin identities 8 and 13 and loses pin 1's PS/SYNC functional alias. TI assigns 7/8 to VOUT and 12/13 to VIN; grouped pads are electrically equivalent but do not satisfy exact pin identity qualification. This is not evidence of a short.

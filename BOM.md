@@ -22,7 +22,7 @@
 | EC11J1525402 | C209762 | Alternative investigation only; ALPS Not Recommended for New Designs; unselected/unqualified |
 | DSK110 | C908227 | Unrelated diode returned by display search; not active BOM |
 
-All definitions/models came through the supported JLCPCB importer and remain unmodified. Rejected imports are retained as evidence. No custom electronic component is permitted.
+All definitions/models came through the supported JLCPCB importer. The user explicitly authorized removing C370970's custom schematic symbol to use the native chip box; its footprint, pin labels, supplier identity and models remain unchanged. Other imports remain unmodified. Rejected imports are retained as evidence.
 
 ## Required parts still unselected
 
