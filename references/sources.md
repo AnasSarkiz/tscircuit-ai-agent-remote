@@ -28,3 +28,19 @@ Supplier catalogue/search responses may carry different stock counts or prices a
 - [Waveshare mechanical download](https://files.waveshare.com/wiki/1.54inch_LCD_Module/1_54inch_lcd_module_2d.zip): saved zip and extracted DXF; not visually reviewed.
 
 Manufacturer references are preliminary qualification evidence, not completed schematic/BOM validation. Encoder LCSC PDF request returned an HTML challenge; preserved under `../evidence/downloads/` and not treated as a datasheet.
+
+## Continued microphone/display review
+
+- [TDK ICS-43434 DS-000069 v1.2](https://product.tdk.com/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/ds-000069-ics-43434-v1.2.pdf): official PDF text accessed, page 10 pin identities and page 17 acoustic-hole recommendation. Local download returned HTML rather than PDF; no local visual package review claimed.
+- [TDK Product Center ICS-43434](https://product.tdk.com/en/search/sw_piezo/mic/mems-mic/info?part_no=ICS-43434): Production/NRND status.
+- [InvenSense ICS-43434](https://www.invensense.tdk.com/en-us/products/microphone/ics-43434): EOL status. Lifecycle discrepancy remains unresolved; no active-production claim.
+- [Wisevision N177-1216TCWPG01-H14 / C5123575 catalogue](https://www.lcsc.com/product-detail/C5123575.html): investigated 1.77 inch display candidate, not imported, selected or qualified. Does not establish required display procurement.
+
+## 2026-10-03 update and accepted product direction
+
+- Direct user instructions accept `../assets/product-concepts/ai-remote-v1-infographic-v3.png`: square, dominant screen, one top hold-to-talk button, top assembly only, speaker, rechargeable battery. Authoritative changes: `../REQUIREMENTS.md`.
+- Published npm registry metadata queried directly: tscircuit 0.0.2736 / CLI 0.1.2232; exact metadata saved in `../evidence/update-check-2026-10-03/published-versions.json`. Installed and tested locally, not a version inferred from search snippets.
+- TDK DS-000069 v1.2 page 17 acoustic-hole recommendation rechecked against a fresh supported C5656610 import: hole still 0.3999992 mm; B-002 persists.
+- [JST battery connector C295747 catalogue identity](https://www.lcsc.com/product-detail/C295747.html): SMT right-angle S2B-PH-SM4-TB(LF)(SN), 2 mm pitch, 2 A catalogue rating. Catalogue reported 19,795 stock at lookup; this does not verify JLCPCB PCBA allocation.
+- [Official JST PH connector family](https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/ph-connector/) and [PH drawing PDF](https://www.jst.com/wp-content/uploads/2025/06/ePH.pdf). PDF fetch returned 403 both through web and local request. No completed manufacturer drawing/footprint review is claimed.
+- [TI BQ24074 datasheet](https://www.ti.com/lit/ds/symlink/bq24074.pdf) supports the one-cell charger/power-path architecture; exact cell, current, protection, thermistor and layout remain unqualified.

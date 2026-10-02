@@ -1,0 +1,29 @@
+{
+  "part": "C5656610",
+  "manufacturerPartNumber": "ICS-43434",
+  "date": "2026-10-02",
+  "sourceSha256": "f52d2f2b4c9d0c60e7b97c3dc69d89f6ea60df09788f2f76042a3c7ae22feb33",
+  "manufacturerDatasheet": "https://product.tdk.com/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/ds-000069-ics-43434-v1.2.pdf",
+  "datasheetRevision": "DS-000069 v1.2, page 17",
+  "currentAcousticHoleDiameterMm": 0.3999992,
+  "manufacturerRecommendedMinimumMm": 0.5,
+  "proposedAcousticHoleDiameterMm": 0.6,
+  "proposalApplied": false,
+  "status": "blocked: below manufacturer recommended minimum; C370970 edit authorization does not cover this microphone",
+  "dependentStages": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "qualifiedPins": {
+    "1": "WS",
+    "2": "LR",
+    "3": "GND",
+    "4": "SCK",
+    "5": "VDD",
+    "6": "SD"
+  },
+  "notes": "Recommended minimum, not an absolute electrical rating or diagnosed short. Datasheet text accessed through official manufacturer PDF. Local direct download returned HTML rather than PDF."
+}

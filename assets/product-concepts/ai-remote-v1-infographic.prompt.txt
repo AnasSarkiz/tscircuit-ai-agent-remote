@@ -1,0 +1,40 @@
+Use case: infographic-diagram / product-mockup.
+Create one polished landscape product concept infographic for our project, tscircuit-ai-agent-remote, adapting the attached reference's visual composition and art direction to our handheld AI controller. The attached MuseAir poster is a STYLE AND LAYOUT REFERENCE, not our product. Replace every air-sensor feature with our AI remote features. Do not reproduce MuseAir branding, particle sensor, air-quality readings, air inlet/outlet diagrams, or ESP32-C3. Produce a premium, readable, high-resolution marketing/engineering concept poster, approximately 3:2 landscape.
+
+ART DIRECTION: Match the reference's bright white canvas, huge black product name with teal V1 accent, dark navy headings, cyan/teal iconography, blue numbered callouts with fine leader lines, delicate vertical rules, realistic green PCB concept renders, rich dark graphite enclosure, warm wooden-desk lifestyle photo, and meticulous editorial three-column composition. Crisp typography and ample spacing. Photorealistic CGI for product and exploded assembly; tidy vector-style icons and labels. Everything fits inside the frame; no cropped headings.
+
+PRODUCT IDENTITY AND HARDWARE: A compact portrait handheld AI remote, dark graphite rounded rectangular enclosure with a small square color screen on its front, a large tactile TALK button, separate small green APPROVE and red REJECT buttons, a knurled rotary encoder with push, a tiny cyan RGB status indicator, two small microphone apertures, a discreet speaker grille, a physical side MIC OFF privacy slider, and a bottom USB-C port. Use exactly the same enclosure and control arrangement across the lifestyle hero and exploded assembly. It is a Wi-Fi client for a cloud AI backend, not a device running an LLM locally. Intended hardware: ESP32-S3 module, dual digital MEMS microphones, SPI TFT approximately 1.54–1.9 inches, I2S amplifier and small separate 8-ohm speaker, haptic motor, protected rechargeable LiPo, charging/power path and regulated 3.3V. PCB envelope target up to 50 x 65 mm, four layers planned. All PCB depictions are illustrative proposed placement, never actual validated CAD. Show the Wi-Fi antenna clearance as an empty hatched region with no copper or components, with display/battery metal away from it.
+
+COMPOSITION AND EXACT COPY:
+Top left large title: "AI Remote V1" (AI Remote black, V1 teal).
+Subtitle beneath: "Speak. Review. Approve."
+Top center/right headline: "Your AI, with a physical say."
+Small supporting line: "Voice input • Wi-Fi • On-device review"
+Top far right short statement: "A small remote. A clear decision."
+
+LEFT COLUMN: Large warm lifestyle scene of the assembled remote resting on a wooden desk, angled toward the viewer. Soft-focus home-office background with daylight and plant, as in the reference. Make the actual remote and its display the hero, no smartphone required. The display UI is a legible dark navy card with cyan accents: "PENDING ACTION", "Send this reply?", "Review before sending". Keep physical button labels "TALK", "APPROVE", "REJECT" readable. Under hero photo headline "Talk to your AI. Keep control." and smaller line "A handheld interface for cloud AI agents."
+
+CENTER COLUMN: Large elegant vertically exploded assembly with convincing mechanical alignment and shadowing: top/front enclosure with screen window and real controls; square TFT/display module and button interface; green main PCB; thin protected LiPo pouch and small enclosure-mounted speaker/haptic motor; lower/back enclosure. Blue numbered callouts around it, clean leader lines, exact concise labels:
+1 "Voice input" / "Two digital MEMS microphones"
+2 "Wireless link" / "ESP32-S3 • Wi-Fi + BLE"
+3 "Rechargeable power" / "USB-C + protected LiPo"
+4 "Read and decide" / "Color TFT • APPROVE / REJECT"
+5 "Tactile control" / "TALK • encoder • haptics"
+6 "Hardware privacy" / "Physical MIC OFF switch"
+Keep the callouts uncluttered and do not overlap the exploded parts. No particle sensor or fan.
+
+RIGHT COLUMN: Two beautiful portrait PCB concept views, one above the other, each readable and clearly illustrative. Heading "PCB TOP — proposed placement" with leader labels "Dual microphones", "ESP32-S3", "Antenna clearance", "TFT connector", "RGB status LED", "Controls". Heading "PCB BOTTOM — proposed placement" with leader labels "USB-C", "Charger + power path", "3.3 V supply", "Battery connector", "Speaker + haptics". The two views must appear as opposite faces of the same rounded rectangular 50 x 65 mm concept PCB, not unrelated designs. Show realistic component categories without claiming exact trace/pad correctness. Caption "PCB target: up to 50 × 65 mm".
+
+Below the center/right content, one simple cyan arrow workflow strip: "TALK" → "Cloud AI" → "Review" → "APPROVE / REJECT". Use small microphone, Wi-Fi/cloud, display and decision icons. Clear text, no invented integrations or branded AI services.
+
+BOTTOM FULL-WIDTH FEATURE STRIP, matching reference: four or five parallel icon tiles separated by fine grey rules:
+"SPEAK" / "Dual microphones"
+"CONNECT" / "Wi-Fi + BLE"
+"REVIEW" / "Color display"
+"DECIDE" / "Physical approval"
+"CHARGE" / "USB-C + battery"
+A rounded pale blue goal tile at the far right may read "V1 goal" / "One request. One clear decision."
+
+Small but readable footer: "CONCEPT ONLY • Illustrative PCB placement • Untested prototype • Cloud AI backend required • Not fabrication ready"
+
+QUALITY CONSTRAINTS: Excellent text spelling, no duplicate callout numbers, no labels touching leader lines, enough margin around all content. No claims of hardware testing, fabrication readiness, certification or actual circuit renders. No fabricated photographs of physical prototypes: photoreal product depictions are conceptual CGI. No air-quality sensor, no CO2/VOC or PM measurements. Prioritize elegant information hierarchy and faithful adaptation of the reference's layout.

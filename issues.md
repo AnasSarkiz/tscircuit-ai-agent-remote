@@ -29,11 +29,22 @@ The supported import of genuine TI **TPS63802DLAR C2845237** retains all ten man
 
 ## Other pending items
 
+### BLOCKING B-002 — C5656610 / ICS-43434 acoustic opening
+
+Unmodified import has a 0.3999992 mm acoustic hole. TDK DS-000069 v1.2 page 17 recommends a minimum 0.50 mm PCB opening. Original six pin identities/functions match page 10. This is a manufacturer-recommendation discrepancy, not a diagnosed short or absolute electrical-rating violation. The independent opening test fails; stage 2 and dependent stages 3–6 remain blocked.
+
+Audit: `evidence/imports/C5656610-audit.json`. Prepared but **not applied**: `evidence/proposals/C5656610-acoustic-hole.diff`, diameter-only correction to 0.60 mm. Existing C370970 authorization does not cover this microphone, so approval for other documented import corrections was requested. Original microphone source/pads/models remain unchanged. The user requested waiting for an upstream correction. Fresh import with tscircuit 0.0.2736 / CLI 0.1.2232 on 2026-10-03 still measures 0.3999992 mm. Evidence: `evidence/update-check-2026-10-03/microphone-check.json`; the published fix is not verified. The user reaffirmed waiting for the upstream correction after this recheck; no local microphone edits or substitutions are authorized. No board routing is authorized before the remaining prerequisite gates pass.
+
+TDK's manufacturer pages differ on lifecycle (Production/NRND versus EOL). Final selection/availability must be checked; this does not itself establish a bad import. Local datasheet download returned HTML, preserved as download evidence. Official PDF text was accessible through web tools; no local PDF render is claimed.
+
+### Remaining design work
+
 - Display: manufacturer documentation obtained for Waveshare 1.54inch LCD Module, ST7789, 240 x 240, 3.3 V operation, 50 x 35 mm module with PH2.0 eight-pin connection. Exact JLCPCB-sourced display/connector and permitted external assembly need final qualification; no display component or footprint has been authored.
 - A free-text supported-import search for `1.54 LCD` selected the unrelated **DSK110 diode C908227**. That file is preserved as evidence of the search behavior and is not a display or active BOM selection. Future imports must use verified exact part numbers.
 - Supplier catalogue stock/prices are inconsistent between catalogue/search endpoints. Exact JLCPCB assembly availability/classification and costs remain unverified.
-- Privacy: disconnect microphone supply mechanically and prevent phantom power through audio clock/data. Buffered interfaces with Ioff support are candidate architecture; electrical validation is pending.
-- Battery: exact 500-1000 mAh cell, protection, thermistor, polarity and peak current rating remain pending.
+- Accepted 2026-10-03: square, dominant screen, one top hold-to-talk button, top-side assembly only, speaker and rechargeable battery. See `REQUIREMENTS.md`. Prior encoder/extra-button/front-LED requirements are superseded; their imports remain historical evidence.
+- Privacy: retain hardware microphone disable and prevent audio clock/data phantom power, using the single-control design. Exact architecture and Ioff buffer qualification remain pending; no software-only mute substitution.
+- Battery: protected 1S nominal 3.7 V / 4.2 V-charge, 500–1000 mAh pack; exact MPN, sourcing/import, protection, thermistor, polarity and peak current rating remain pending. New SMT connector candidate C295747 is imported verbatim. Official JST drawing fetch returned 403; full footprint qualification is still pending. Charger/connector imports do not establish an integrated rechargeable system.
 - Power budget, USB enumeration/current policy, passive component selection and regulator loop layout remain pending.
 - A4 schematic, complete pin allocation, board outline/mounting, component placement, RF keepout and enclosure/ergonomics remain pending.
 - Saved native routes and DRC/short repair remain pending because pre-routing gates have not passed.

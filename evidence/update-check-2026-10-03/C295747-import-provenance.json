@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-03",
+  "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+  "lcsc": "C295747",
+  "cli_version": "0.1.2232",
+  "supported_import_command": "tsci import --jlcpcb C295747 --use-exact-footprint --download",
+  "copied_verbatim_from": "evidence/update-check-2026-10-03/fresh-import/imports/S2B_PH_SM4_TB_LF__SN_",
+  "destination": "imports/S2B_PH_SM4_TB_LF__SN_",
+  "files": [
+    {
+      "name": "S2B_PH_SM4_TB_LF__SN_.obj",
+      "sha256": "be74b563605ebfd5cbc143baddea9d6740472b66dc5997f147204ad62accf0d9"
+    },
+    {
+      "name": "S2B_PH_SM4_TB_LF__SN_.step",
+      "sha256": "9328bcc17c6bf613b5a39adeeda066164fd0e60080a4f0d739cbbdf32bdbfd96"
+    },
+    {
+      "name": "S2B_PH_SM4_TB_LF__SN_.tsx",
+      "sha256": "863a5d0d892a7202dea6f36f154cf5a64d7c9d6541120c178931d287a92a3030"
+    }
+  ],
+  "status": "imported battery connector candidate; manufacturer drawing, harness polarity, placement and current budget pending",
+  "supplier_identity": "https://www.lcsc.com/product-detail/C295747.html",
+  "manufacturer_drawing_attempt": "https://www.jst.com/wp-content/uploads/2025/06/ePH.pdf (403); no complete footprint qualification claimed"
+}

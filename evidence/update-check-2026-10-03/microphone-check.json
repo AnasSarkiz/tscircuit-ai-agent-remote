@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-03",
+  "installed": {
+    "tscircuit": "0.0.2736",
+    "@tscircuit/cli": "0.1.2232",
+    "@tscircuit/core": "0.0.2052",
+    "@tscircuit/props": "0.0.676"
+  },
+  "import_command": "tsci import --jlcpcb C5656610 --use-exact-footprint --download",
+  "manufacturer_datasheet": "https://product.tdk.com/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/ds-000069-ics-43434-v1.2.pdf",
+  "manufacturer_page": 17,
+  "recommended_minimum_mm": 0.5,
+  "checks": [
+    {
+      "kind": "existing",
+      "source": "imports/ICS_43434/ICS_43434.tsx",
+      "sha256": "f52d2f2b4c9d0c60e7b97c3dc69d89f6ea60df09788f2f76042a3c7ae22feb33",
+      "acoustic_hole_diameters_mm": [
+        0.3999992
+      ],
+      "meets_manufacturer_recommended_minimum": false
+    },
+    {
+      "kind": "published_fresh",
+      "source": "evidence/update-check-2026-10-03/fresh-import/imports/ICS_43434/ICS_43434.tsx",
+      "sha256": "6aea3917373de273e354663a1b3288baf9f5b811b5717217fa64d9711e3c0a92",
+      "acoustic_hole_diameters_mm": [
+        0.3999992
+      ],
+      "meets_manufacturer_recommended_minimum": false
+    }
+  ],
+  "status": "B-002 remains blocked; published fresh import still below recommendation",
+  "existing_import_modified": false,
+  "proposal_applied": false,
+  "diagnostic_build": {
+    "command": "tsci build evidence/update-check-2026-10-03/microphone-import.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs",
+    "exit_code": 1,
+    "geometry_generated": true,
+    "pcb_holes": [
+      {
+        "type": "pcb_hole",
+        "pcb_hole_id": "pcb_hole_0",
+        "pcb_component_id": "pcb_component_0",
+        "hole_shape": "circle",
+        "hole_diameter": 0.3999992,
+        "x": 0.7650734,
+        "y": 0,
+        "is_covered_with_solder_mask": false,
+        "subcircuit_id": "subcircuit_source_group_0"
+      }
+    ],
+    "pcb_trace_count": 0,
+    "errors": [
+      "Isolated fixture leaves required GND and VDD ports unconnected",
+      "MIC1.GND alias ambiguous across multiple non-overlapping pads; CLI suggests pin3 or 3"
+    ],
+    "status": "diagnostic geometry only; not a passing schematic/build or whole-board validation"
+  },
+  "user_resolution": "Wait for the upstream correction",
+  "dependent_engineering": "paused pending upstream correction",
+  "visual_review": "Diagnostic PCB PNG inspected; hole measured from generated Circuit JSON. No complete-board or schematic pass claimed."
+}

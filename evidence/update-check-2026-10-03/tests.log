@@ -1,10 +1,10 @@
 bun test v1.3.9 (cf6cdbbb)
 
 tests/import-qualification.test.ts:
-(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers
-(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin
-(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range
-(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.97ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.16ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.11ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.02ms]
 76 |     const acousticHoleDiametersMm = Array.from(
 77 |       microphoneImport.matchAll(/<hole\b[^>]*\bdiameter="([0-9.]+)mm"/g),
 78 |       (match) => Number(match[1]),
@@ -18,9 +18,9 @@ Expected: >= 0.5
 Received: 0.3999992
 
       at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/tests/import-qualification.test.ts:81:40)
-(fail) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.61ms]
+(fail) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.93ms]
 
  4 pass
  1 fail
  29 expect() calls
-Ran 5 tests across 1 file. [14.00ms]
+Ran 5 tests across 1 file. [18.00ms]

@@ -5,6 +5,10 @@ const encoderImport = readFileSync(
   new URL("../imports/EC11E15244G1/EC11E15244G1.tsx", import.meta.url),
   "utf8",
 )
+const microphoneImport = readFileSync(
+  new URL("../imports/ICS_43434/ICS_43434.tsx", import.meta.url),
+  "utf8",
+)
 const regulatorImport = readFileSync(
   new URL("../imports/TPS63802DLAR/TPS63802DLAR.tsx", import.meta.url),
   "utf8",
@@ -63,5 +67,17 @@ describe("C370970 EC11E15244G1 mechanical import qualification", () => {
       expect(lengthMm).toBeGreaterThanOrEqual(2.6)
       expect(lengthMm).toBeLessThanOrEqual(2.7)
     }
+  })
+})
+
+// TDK DS-000069 v1.2 page 17 recommends an acoustic PCB hole of at least 0.5 mm.
+describe("C5656610 ICS-43434 acoustic opening qualification", () => {
+  test("acoustic opening meets the manufacturer recommended minimum", () => {
+    const acousticHoleDiametersMm = Array.from(
+      microphoneImport.matchAll(/<hole\b[^>]*\bdiameter="([0-9.]+)mm"/g),
+      (match) => Number(match[1]),
+    )
+    expect(acousticHoleDiametersMm).toHaveLength(1)
+    expect(acousticHoleDiametersMm[0]).toBeGreaterThanOrEqual(0.5)
   })
 })

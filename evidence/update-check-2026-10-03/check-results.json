@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-03",
+  "format_check": {
+    "exit_code": 0
+  },
+  "typecheck": {
+    "exit_code": 0
+  },
+  "tests": {
+    "exit_code": 1,
+    "pass": 4,
+    "fail": 1,
+    "failure": "C5656610 hole 0.3999992 mm below manufacturer recommended 0.5 mm"
+  },
+  "diagnostic_microphone_build": {
+    "exit_code": 1,
+    "status": "generated geometry preserved; fixture power/ground unconnected and GND alias ambiguity reported"
+  },
+  "complete_board_validation": "not performed; incomplete schematic and blocking part qualification",
+  "user_choice": "Wait for the upstream correction",
+  "battery_status": "requirements recorded; genuine SMT connector imported; pack and power circuit not integrated"
+}
