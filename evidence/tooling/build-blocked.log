@@ -3,12 +3,12 @@ Building 1 file(s)...
 Building index.circuit.tsx...
 Generating circuit JSON...
 Error in createContainer
-1 | // The PCB build is blocked until the required imported encoder is qualified.
+1 | // The complete board schematic and PCB have not been authored yet.
 2 | // No fabricated schematic, placement, copper or export is returned by this scaffold.
 3 | export default function AiAgentRemote() {
 4 |   throw new Error(
                 ^
-error: A0 BLOCKED: C370970 EC11E15244G1 imported terminal holes are 1.30 mm and mounting slots are 3.20 mm long; ALPS specifies 1.00-1.10 mm holes and 2.60-2.70 mm slots. See VALIDATION.md. No complete board or routes exist.
+error: A0 INCOMPLETE: C370970 hole/slot dimensions are corrected locally with user authorization. Complete requirements, schematic, BOM, placement and routing remain pending. See VALIDATION.md. No complete board or routes exist.
       at AiAgentRemote (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/main.tsx:4:13)
       at react-stack-bottom-frame (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:15859:20)
       at renderWithHooks (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:3221:22)
@@ -28,12 +28,12 @@ error: A0 BLOCKED: C370970 EC11E15244G1 imported terminal holes are 1.30 mm and 
       at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182439:38)
       at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182561:15)
 
-1 | // The PCB build is blocked until the required imported encoder is qualified.
+1 | // The complete board schematic and PCB have not been authored yet.
 2 | // No fabricated schematic, placement, copper or export is returned by this scaffold.
 3 | export default function AiAgentRemote() {
 4 |   throw new Error(
                 ^
-error: A0 BLOCKED: C370970 EC11E15244G1 imported terminal holes are 1.30 mm and mounting slots are 3.20 mm long; ALPS specifies 1.00-1.10 mm holes and 2.60-2.70 mm slots. See VALIDATION.md. No complete board or routes exist.
+error: A0 INCOMPLETE: C370970 hole/slot dimensions are corrected locally with user authorization. Complete requirements, schematic, BOM, placement and routing remain pending. See VALIDATION.md. No complete board or routes exist.
       at AiAgentRemote (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/main.tsx:4:13)
       at react-stack-bottom-frame (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:15859:20)
       at renderWithHooks (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:3221:22)
@@ -53,7 +53,7 @@ error: A0 BLOCKED: C370970 EC11E15244G1 imported terminal holes are 1.30 mm and 
       at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182439:38)
       at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182561:15)
 
-Fatal error [circuit_generation_failed]: A0 BLOCKED: C370970 EC11E15244G1 imported terminal holes are 1.30 mm and mounting slots are 3.20 mm long; ALPS specifies 1.00-1.10 mm holes and 2.60-2.70 mm slots. See VALIDATION.md. No complete board or routes exist.
+Fatal error [circuit_generation_failed]: A0 INCOMPLETE: C370970 hole/slot dimensions are corrected locally with user authorization. Complete requirements, schematic, BOM, placement and routing remain pending. See VALIDATION.md. No complete board or routes exist.
 Generating preview images...
 No successful build output available for preview image generation.
 

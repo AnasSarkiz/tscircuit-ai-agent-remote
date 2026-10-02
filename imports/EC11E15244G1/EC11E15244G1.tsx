@@ -23,13 +23,13 @@ export const EC11E15244G1 = (props: ChipProps<typeof pinLabels>) => {
 }}
       manufacturerPartNumber="EC11E15244G1"
       footprint={<footprint>
-        <platedhole  portHints={["pin8"]} pcbX="-2.540127mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
-<platedhole  portHints={["pin9"]} pcbX="-0.000127mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
-<platedhole  portHints={["pin10"]} pcbX="2.539873mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
-<platedhole  portHints={["pin11"]} pcbX="-2.540127mm" pcbY="7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
-<platedhole  portHints={["pin12"]} pcbX="2.539873mm" pcbY="7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
-<platedhole  portHints={["pin6"]} pcbX="5.499989mm" pcbY="0.250063mm" holeWidth="3.200019mm" holeHeight="1.5000224mm" outerWidth="3.999992mm" outerHeight="2.2999954mm" pcbRotation="90deg" shape="pill" />
-<platedhole  portHints={["pin7"]} pcbX="-5.499989mm" pcbY="0.250063mm" holeWidth="3.200019mm" holeHeight="1.5000224mm" outerWidth="3.999992mm" outerHeight="2.2999954mm" pcbRotation="90deg" shape="pill" />
+        <platedhole  portHints={["pin8"]} pcbX="-2.540127mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.05mm" shape="circle" />
+<platedhole  portHints={["pin9"]} pcbX="-0.000127mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.05mm" shape="circle" />
+<platedhole  portHints={["pin10"]} pcbX="2.539873mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.05mm" shape="circle" />
+<platedhole  portHints={["pin11"]} pcbX="-2.540127mm" pcbY="7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.05mm" shape="circle" />
+<platedhole  portHints={["pin12"]} pcbX="2.539873mm" pcbY="7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.05mm" shape="circle" />
+<platedhole  portHints={["pin6"]} pcbX="5.499989mm" pcbY="0.250063mm" holeWidth="2.65mm" holeHeight="1.5000224mm" outerWidth="3.999992mm" outerHeight="2.2999954mm" pcbRotation="90deg" shape="pill" />
+<platedhole  portHints={["pin7"]} pcbX="-5.499989mm" pcbY="0.250063mm" holeWidth="2.65mm" holeHeight="1.5000224mm" outerWidth="3.999992mm" outerHeight="2.2999954mm" pcbRotation="90deg" shape="pill" />
 <silkscreenpath route={[{"x":5.899861200000032,"y":-5.749950399999989},{"x":-5.900115200000073,"y":-5.749924999999962}]} />
 <silkscreenpath route={[{"x":-2.794127000000003,"y":1.266063000000031},{"x":2.793873000000076,"y":1.266063000000031}]} />
 <silkscreenpath route={[{"x":-5.900115200000073,"y":-5.749924999999962},{"x":-5.900115200000073,"y":-1.921738600000026}]} />

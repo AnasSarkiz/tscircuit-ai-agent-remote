@@ -1,0 +1,46 @@
+{
+  "part": "C370970",
+  "manufacturerPartNumber": "EC11E15244G1",
+  "date": "2026-10-02",
+  "sourceRevisionBefore": "1f63764a93d7cb99edb7b73a8d102f5e8728c71c",
+  "authorization": "Direct user request: even thefootprint update it. Applies to C370970 footprint correction; other imported components are not authorized for patching.",
+  "manufacturerDrawing": "references/alps-ec11e15244g1-mounting.gif",
+  "sourceSha256Before": "daa66b82224a447ddc53fc155b91eb5b3a7e630d66cd90c7f8ce96b21d543c80",
+  "sourceSha256After": "6446627ecb86904d44c431fe1f16d777f08c0b2e439ecb2e67102ef93cce0408",
+  "onlyChanges": [
+    "Five holeDiameter values 1.3000228 mm to 1.05 mm",
+    "Two holeWidth values 3.200019 mm to 2.65 mm"
+  ],
+  "preserved": [
+    "pin labels and numbering",
+    "all pad/hole centers",
+    "slot width and 90 degree rotation",
+    "outer pad geometry",
+    "silkscreen and courtyard",
+    "supplier identity",
+    "STEP/OBJ models",
+    "native chip-box symbol"
+  ],
+  "generatedTerminalHoleDiametersMm": [
+    1.05,
+    1.05,
+    1.05,
+    1.05,
+    1.05
+  ],
+  "generatedMountingSlotLengthsMm": [
+    2.65,
+    2.65
+  ],
+  "generatedMountingSlotWidthsMm": [
+    1.5000224,
+    1.5000224
+  ],
+  "minTerminalAnnularRingMm": 0.37499819999999995,
+  "minSlotAnnularRingMm": 0.3999864999999999,
+  "b001Status": "resolved locally for the reported nominal hole/slot dimensions",
+  "supplierLibraryCorrected": false,
+  "entireBoardFabricationReady": false,
+  "reviewScope": "Isolated unrouted component only; final finished-hole fabrication tolerances and physical fit remain pending.",
+  "pcbTraceCount": 0
+}

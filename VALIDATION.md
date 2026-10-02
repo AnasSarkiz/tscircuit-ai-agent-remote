@@ -1,11 +1,11 @@
 # Validation — A0
 
-Date: 2026-10-02 (Europe/Tirane). **Blocked before a complete schematic/PCB exists. Not fabrication ready.** A0 identifies engineering intake and import qualification, not a fabricated board revision. No physical hardware is available.
+Date: 2026-10-02 (Europe/Tirane). **Engineering work in progress; no complete schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
 | Stage | Status | Evidence and remaining work |
 |---|---|---|
 | 1. Confirm requirements | in progress | Brief and approved maximum 50 × 65 mm; display/battery mechanics, current budget, mounting and stackup unresolved |
-| 2. Schematic and BOM | blocked | C370970 holes and mounting slots exceed manufacturer ranges; complete schematic/BOM not authored |
+| 2. Schematic and BOM | in progress | C370970 reported drill dimensions corrected/checked; full schematic/BOM and remaining component qualification pending |
 | 3. Placement before routing | not started | Depends on stages 1–2; no placement/render exists |
 | 4. Copper routing | not started | User authorized routing after prerequisite gates pass; no routes exist |
 | 5. Automated and visual checks | not started | Preliminary import checks below do not complete board validation |
@@ -15,7 +15,7 @@ Date: 2026-10-02 (Europe/Tirane). **Blocked before a complete schematic/PCB exis
 
 ## Source and dependencies
 
-Project: `boards/tscircuit-ai-agent-remote--01a0fe57`. No earlier board was reused. The Git milestone containing this file identifies the source revision (`git rev-parse HEAD`). `evidence/source-manifest.sha256` records sources, unchanged imported definitions/assets, references, package manifest and lockfile before that commit; excludes itself, Git metadata, dependencies, build output and logs.
+Project: `boards/tscircuit-ai-agent-remote--01a0fe57`. No earlier board was reused. The Git milestone containing this file identifies the source revision (`git rev-parse HEAD`). `evidence/source-manifest.sha256` records current sources/imports/assets, references, package manifest and lockfile before that commit; excludes itself, Git metadata, dependencies, build output and logs. User-authorized C370970 edits are explicitly audited below; original import is preserved in revision 341dcaa.
 
 Pinned dependencies: tscircuit **0.0.2729**, @tscircuit/cli **0.1.2228**, TypeScript **5.9.3**, Biome **2.5.14**, @types/bun **1.4.2**. Runtime Bun **1.3.9**. `bun.lock` records transitive dependencies. Installation emitted peer-version warnings involving circuit-json 0.0.509, React/ReactDOM 19.3.0 and @tscircuit/alphabet 0.0.25; unresolved, not accepted board warnings.
 
@@ -29,20 +29,20 @@ JLCPCB is the intended board/assembly manufacturer. Final stackup, copper weight
 
 ESP32-S3-WROOM-1-N8R8 octal PSRAM reserves GPIO35/36/37. Manufacturer antenna guidelines were consulted; no RF keepout is laid out. Hardware microphone privacy requires supply isolation and prevention of clock/data phantom power; Ioff buffer candidates are not electrically qualified.
 
-## BLOCKING B-001 — C370970
+## B-001 — C370970: resolved locally for reported drill dimensions
 
-**ALPS EC11E15244G1, C370970.** Supported import: `tsci import --jlcpcb C370970 --use-exact-footprint --download`. Imported footprint/models remain unmodified. The user's subsequent explicit request authorized removing only the custom schematic symbol (see symbol review below). Import log, original supplier record and `evidence/imports/C370970-audit.json` preserve original provenance/measurements; original source remains in Git revision 341dcaa.
+**ALPS EC11E15244G1, C370970.** Original supported import: `tsci import --jlcpcb C370970 --use-exact-footprint --download`. The user subsequently authorized removing the custom symbol and correcting this footprint. Import log, supplier record and `evidence/imports/C370970-audit.json` preserve original measurements; original source remains in revision 341dcaa. The external supplier library remains unchanged.
 
-| Feature | Imported | Official ALPS range | Result |
-|---|---|---|---|
-| Five terminal holes | 1.3000228 mm diameter | 1.00–1.10 mm | fail |
-| Two mounting slots | 3.200019 mm long | 2.60–2.70 mm | fail |
+| Feature | Original import | Corrected local source/generated geometry | Official ALPS range | Result |
+|---|---|---|---|---|
+| Five terminal holes | 1.3000228 mm diameter | 1.05 mm | 1.00–1.10 mm | pass |
+| Two mounting slots | 3.200019 mm long | 2.65 mm | 2.60–2.70 mm | pass |
 
 Exact-part mounting GIF and EC11E catalogue page 2 drawing 2 were inspected: `references/alps-ec11e15244g1-mounting.gif`, `references/alps-ec11e.pdf`, `evidence/datasheets/alps-ec11e-2.png`. The 14.5 mm row spacing is correct. Manufacturer 12.5 mm measures outside slot edges, not center spacing; neither is falsely flagged.
 
-Affected stages: 2–6. Workspace instructions prohibit patching imports and require stopping dependent work. Resolve through a corrected supported import or a genuine alternative qualified against its own drawing. No generic footprint or altered hole geometry was used.
+Originally affected stages: 2–6. The user's explicit instruction “even thefootprint update it” overrides the workspace no-patch restriction for this C370970 correction. Only five holeDiameter and two holeWidth values were changed. Pin labels, all centers, slot widths/90° orientation, outer pads, silkscreen, courtyard and models remain unchanged. This resolves the reported nominal dimensions; full board stages remain pending.
 
-C209762 / EC11J1525402 was researched and imported as an alternative, but ALPS marks it **Not Recommended for New Designs**. It is not selected or fully qualified. A viable qualified encoder remains unresolved.
+C209762 / EC11J1525402 was researched/imported as an alternative but ALPS marks it **Not Recommended for New Designs**; unselected and not fully qualified. C370970 now continues as the locally corrected candidate.
 
 ## Other preliminary evidence
 
@@ -60,12 +60,12 @@ Commands run from this project directory. Logs under `evidence/tooling/`.
 |---|---|---|
 | `bun run format:check` | exit 0 | format-check.log |
 | `bun run typecheck` | exit 0 | typecheck.log |
-| `bun test` | exit 1; 2 pass, 2 fail | import-qualification-current.log; both failures C370970 geometry |
-| `bun run build` | exit 1; explicit blocker; no board generated | build-blocked.log |
+| `bun test` | exit 0; 4 pass, 0 fail; unchanged test requirements | import-qualification-current.log |
+| `bun run build` | exit 1; complete board not yet authored | build-blocked.log |
 
 Build guard in `main.tsx` prevents claiming an incomplete board built successfully. Tooling success does not establish electrical correctness. Earlier `import-qualification.log` records rejected TPS63070 checks, not current board results.
 
-Required placement checks (`netlist`, `pin_specification`, `source`, `schematic-placement`, `placement`) have **not** run against a complete circuit: none exists and stage 2 is blocked. Routed build, `check shorts dist/index/circuit.json`, snapshot and copper-layer visual review have **not** occurred. No board DRC/shorts pass or snapshot acceptance is claimed.
+Required placement checks (`netlist`, `pin_specification`, `source`, `schematic-placement`, `placement`) have **not** run against the complete handheld circuit: none exists and stage 2 is incomplete. Isolated encoder placement review below does not pass the complete-board stage. Routed board build, `check shorts dist/index/circuit.json`, snapshot and copper-layer visual review have **not** occurred. No board DRC/shorts pass or snapshot acceptance is claimed.
 
 ## Routes and fabrication
 
@@ -73,12 +73,24 @@ Supported native route-cache type `{pcbTraces, cacheKey}` exists; cache-key gene
 
 Complete A4 sheets, bodies/courtyards, connector/test access, holes, each copper layer, critical power paths, mask/paste, outline, drills, assembler feedback and fabrication exports remain unreviewed. No accepted board warnings, physical measurements, hardware photos or test results are invented.
 
-## User-authorized chip-box symbol review — 2026-10-02
+## Historical user-authorized chip-box symbol review — 1f63764, 2026-10-02
 
 The user requested updating C370970's imported file to remove its custom symbol and use a native chip box. This explicitly overrides the imported-symbol no-edit rule for this schematic change only. The component already used `<chip>`; only its `symbol={...}` property was removed. Exact comparison against revision 341dcaa proves every byte outside that property is unchanged, including physical geometry, pin labels, supplier identity and CAD models. Before/after source and footprint checksums are recorded in `evidence/imports/C370970-symbol-change.json`.
 
 Isolated fixture: `evidence/encoder-chip-box.circuit.tsx`, native A4 sheet, PCB generation and routing disabled. Command: `bunx --no-install tsci build evidence/encoder-chip-box.circuit.tsx --disable-pcb --routing-disabled --schematic-svgs --schematic-png`, exit 0. Log: `evidence/tooling/encoder-chip-box-build.log`. Preserved JSON/SVG/PNG: `evidence/encoder-chip-box-circuit.json`, `encoder-chip-box-schematic.svg`, `encoder-chip-box-schematic.png`. PNG visually inspected: rectangular chip box; source JSON retains exactly pins 6–12 with existing labels.
 
-CLI reports three warnings for this isolated passive encoder: all pins underspecified, no requires_power pin, no requires_ground pin. Warnings remain visible; no pin attributes or checks were altered to hide them. This component-only preview does not approve board schematic/BOM, placement, routing or fabrication. **B-001 remains blocked.** All earlier physical-geometry measurements remain applicable because the footprint is byte-identical. No copper/fabrication output exists.
+CLI reported three warnings for this isolated passive encoder: all pins underspecified, no requires_power pin, no requires_ground pin. Warnings remained visible; no pin attributes or checks were altered to hide them. At that symbol-only revision B-001 remained blocked and the footprint was byte-identical. This historical component-only preview did not approve complete-board stages.
 
-Formatting and TypeScript checks pass after the symbol change. Import tests still report 2 pass / 2 fail (unchanged hole/slot violations). Supplemental Git whitespace review reports trailing whitespace on line 11 of the CLI-generated SVG. The native artifact is preserved exactly as generated; this whitespace has no geometry or schematic meaning. Authored-source whitespace review passes separately. This does not waive any board validation check.
+At the symbol-only revision formatting/TypeScript passed and import tests reported 2 pass / 2 fail. Supplemental Git whitespace review found trailing whitespace on line 11 of the CLI-generated SVG; the native artifact was preserved exactly. Authored-source whitespace review passed separately. Current corrected-footprint results follow below.
+
+## User-authorized footprint correction and component review — 2026-10-02
+
+Audit: `evidence/imports/C370970-footprint-change.json`, including before/after checksums, exact changed attributes and generated measurements. Five terminal holes now measure 1.05 mm; two slots measure 2.65 × 1.5000224 mm at 90°. Existing outer pads give a minimum terminal annular ring of 0.3749982 mm and minimum slot annular ring of 0.3999865 mm. All original pin/pad locations are preserved; pitch/row spacing were not the reported failures.
+
+Isolated native A4 component fixture: `evidence/encoder-footprint.circuit.tsx`. Built with `bunx --no-install tsci build evidence/encoder-footprint.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs`, exit 0. Initial sandbox supplier fetch failed; a repeat with network access succeeded without suppressing checks. Build log: `evidence/tooling/encoder-footprint-build.log`. Preserved output: `evidence/encoder-footprint-circuit.json`, `encoder-footprint-pcb.svg`, `encoder-footprint-pcb.png`, `encoder-footprint-schematic.svg`. PNG inspected; generated holes/slots measured from JSON; zero PCB traces confirms routing remains disabled.
+
+`bunx --no-install tsci check placement evidence/encoder-footprint.circuit.tsx` passed with **0 errors / 0 warnings**; `evidence/tooling/encoder-footprint-placement.log`. Native build retains the same three pin-specification warnings for the isolated passive encoder; no attributes or check limits were changed. All four original import tests now pass. Complete-board schematic/BOM qualification remains pending.
+
+The selected values target the middle of ALPS's hole/slot-length ranges. Stage 6 must confirm actual **finished plated** hole/slot tolerances with the fabricator, not assume tool diameters prove finished fit. Physical insertion/retention remains untested. This local correction does not repair the official supplier library, complete the handheld circuit or create fabrication files/routes.
+
+The network-enabled build created `.tscircuit/cache/` supplier metadata. This generated runtime cache is excluded from source control, the source checksum manifest and authored-source formatting; its canonical content is not manually reformatted. PCB source/geometry tests and all validation limits remain unchanged.

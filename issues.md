@@ -1,6 +1,6 @@
 # Issues — A0
 
-## BLOCKING B-001: Encoder import does not match the exact ALPS mounting specification
+## RESOLVED LOCALLY B-001: C370970 terminal holes and mounting-slot lengths
 
 Part: **C370970, ALPS EC11E15244G1**. Imported using pinned CLI 0.1.2228 with `--jlcpcb --use-exact-footprint --download`.
 
@@ -13,11 +13,13 @@ Affected gates: schematic/BOM import qualification (stage 2), placement/mechanic
 
 Evidence: `evidence/imports/C370970-audit.json`, original supplier JSON, `references/alps-ec11e15244g1-mounting.gif`, `references/alps-ec11e.pdf` and `evidence/datasheets/alps-ec11e-2.png`. Independent manufacturer-range tests reproduce both failures.
 
-Required resolution: qualify a corrected official import for this exact part, or a different genuine JLCPCB encoder whose unmodified import matches its own datasheet. No local edits to the symbol, footprint, hole geometry, port mappings or model are permitted. The current encoder cannot enter a released BOM or layout.
+Original resolution rule prohibited local component edits. The user's subsequent explicit instructions authorized updating both C370970's symbol and footprint. The local import now has five **1.05 mm** terminal holes and two **2.65 mm** mounting-slot lengths, within the original unchanged manufacturer-range tests. Other geometry, centers, pin mappings, identity and models are preserved. This exception applies to C370970 only; no supplier library update is claimed.
 
-Alternative investigation: **C209762 / EC11J1525402** imported successfully through the supported workflow. ALPS marks this exact part Not Recommended for New Designs, so it is not selected. This investigation does not resolve B-001; its footprint has not been fully qualified.
+Current evidence: `evidence/imports/C370970-footprint-change.json`, `evidence/encoder-footprint-circuit.json`, `evidence/encoder-footprint-pcb.svg` and PNG. Generated geometry was measured, the PCB preview inspected, and the isolated component placement check passed with zero errors/warnings. All four existing qualification tests pass without changing their limits. Final finished-hole tolerances, complete board integration, mechanical assembly and physical fit remain pending; this does not approve fabrication.
 
-User-authorized symbol change (2026-10-02): removed C370970's custom `symbol` JSX prop. The existing native `chip` now renders a rectangular box. Exact source comparison confirms only that property was removed; pin labels, footprint and models are unchanged. Schematic-only A4 review builds successfully and preserves all seven source pins (6–12). This does **not** repair the hole/slot dimensions or resolve B-001. Audit: `evidence/imports/C370970-symbol-change.json`; preview: `evidence/encoder-chip-box-schematic.svg`.
+Historical alternative investigation: **C209762 / EC11J1525402** imported successfully through the supported workflow. ALPS marks this exact part Not Recommended for New Designs, so it was not selected or fully qualified. The user-authorized C370970 correction resolves the reported dimension issue instead.
+
+Historical symbol-only change (revision 1f63764, 2026-10-02): removed C370970's custom `symbol` JSX prop. Native `chip` renders a box and preserves seven source pins (6–12). At that revision the footprint was unchanged and B-001 remained open. Audit: `evidence/imports/C370970-symbol-change.json`; preview: `evidence/encoder-chip-box-schematic.svg`. The subsequent authorized footprint correction is recorded above.
 
 ## Candidate rejection R-001: TPS63070RNMR C109322
 

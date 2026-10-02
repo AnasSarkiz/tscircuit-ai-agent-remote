@@ -10,7 +10,7 @@
 | Digital microphones | ICS-43434 | C5656610 | LGA-6 bottom port | 2 | Imported; privacy/acoustic review pending |
 | I2S speaker amplifier | MAX98357AETE+T | C910544 | TQFN-16 + EP | 1 | Imported; full application review pending |
 | USB-C receptacle | TYPE-C-31-M-12 | C165948 | USB2.0 hybrid mount | 1 | Imported; orientation/protection/mechanics pending |
-| Encoder/push | EC11E15244G1 | C370970 | Through-hole | 1 | **BLOCKED: holes and slots exceed ALPS drawing ranges** |
+| Encoder/push | EC11E15244G1 | C370970 | Through-hole | 1 | User-authorized local drill correction; reported hole/slot dimensions pass; full board/physical fit pending |
 | Microphone clock buffer candidate | SN74LVC2G125DCUR | C21404 | VSSOP-8 | 1 | Imported; architecture/ratings pending |
 | Microphone data buffer candidate | SN74LVC1G125DBVR | C23654 | SOT-23-5 | 1 | Imported; architecture/ratings pending |
 
@@ -22,7 +22,7 @@
 | EC11J1525402 | C209762 | Alternative investigation only; ALPS Not Recommended for New Designs; unselected/unqualified |
 | DSK110 | C908227 | Unrelated diode returned by display search; not active BOM |
 
-All definitions/models came through the supported JLCPCB importer. The user explicitly authorized removing C370970's custom schematic symbol to use the native chip box; its footprint, pin labels, supplier identity and models remain unchanged. Other imports remain unmodified. Rejected imports are retained as evidence.
+All definitions/models originated through the supported JLCPCB importer. The user explicitly authorized C370970's native chip-box symbol and footprint correction: five holes to 1.05 mm and two slot lengths to 2.65 mm. Pin labels, supplier identity, all centers, other geometry and models remain unchanged. This is a local correction, not a corrected official supplier library. Other imports remain unmodified. Rejected imports are retained as evidence.
 
 ## Required parts still unselected
 

@@ -1,6 +1,6 @@
 # tscircuit AI agent remote
 
-Revision A0: initialized engineering project, **blocked before a complete schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0: engineering project **in progress; no complete schematic or PCB exists**. Not ready for board routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
@@ -8,15 +8,15 @@ The requested device is a cloud AI client: press TALK, speak, send a Wi-Fi reque
 
 The user approved a PCB envelope of up to **50 x 65 mm** on 2026-10-02. Final dimensions, mounting arrangement and enclosure geometry are not yet validated. Four copper layers are intended.
 
-## Blocking component import
+## Corrected encoder import
 
-**ALPS EC11E15244G1 / LCSC C370970:** supported JLCPCB import produced five 1.3000228 mm terminal holes and two 3.200019 mm mounting slots. The exact ALPS drawing specifies terminal holes of 1.00-1.10 mm and slot lengths of 2.60-2.70 mm. Per the workspace instructions, imported component definitions cannot be patched and dependent work must stop.
+**ALPS EC11E15244G1 / LCSC C370970:** the user explicitly authorized correcting this imported component's symbol and footprint. Its five terminal holes are now **1.05 mm**, and its two mounting slots are **2.65 mm long**, within ALPS's 1.00–1.10 mm and 2.60–2.70 mm ranges. **B-001 is resolved locally for the reported dimensions.** The external supplier library has not been changed.
 
-Imported footprints and models remain intact. At the user's explicit request, C370970's custom schematic symbol was removed so its existing native `<chip>` renders as a box. Its pin labels and PCB geometry are unchanged. An isolated A4 schematic-only review is saved as `evidence/encoder-chip-box-schematic.svg`; it is not the board schematic or placement. Measurements, supplier records, manufacturer drawings and failing qualification checks remain in `evidence/` and `references/`. `main.tsx` remains an explicit blocking scaffold, re-exported by `index.circuit.tsx`. There are no board placement renders, routes or fabrication outputs.
+C370970 uses its existing native `<chip>` as a schematic box. Pin labels, centers, slot widths/orientation, outer pads, silkscreen, courtyard and models are unchanged. Other imports remain unmodified. Isolated component schematic/PCB review artifacts and before/after audits are saved under `evidence/`; these are not the handheld board or fabrication package. Historical failed-import evidence remains in Git and `evidence/imports/`. The board entry point reports the remaining incomplete design. No handheld board placement, routes or fabrication outputs exist.
 
 ## Commands
 
-Run inside this directory. `bun install` installs the pinned dependencies. `bun run format:check` and `bun run typecheck` check the project tooling. `bun test` runs manufacturer import qualification and currently fails two encoder geometry checks. `bun run build` currently reports the explicit encoder blocker. No successful toolchain check implies PCB validation.
+Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` passes all four existing import-qualification tests. `bun run build` still reports that the complete board has not been authored. Component-only success does not establish board validation or fabrication readiness.
 
 ## Evidence and remaining work
 

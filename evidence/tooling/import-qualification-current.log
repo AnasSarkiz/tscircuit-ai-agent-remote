@@ -1,38 +1,12 @@
 bun test v1.3.9 (cf6cdbbb)
 
 tests/import-qualification.test.ts:
-(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [1.13ms]
-(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.90ms]
-52 | describe("C370970 EC11E15244G1 mechanical import qualification", () => {
-53 |   test("five terminal holes meet the 1.00-1.10 mm manufacturer range", () => {
-54 |     expect(terminalHoleDiametersMm).toHaveLength(5)
-55 |     for (const diameterMm of terminalHoleDiametersMm) {
-56 |       expect(diameterMm).toBeGreaterThanOrEqual(1)
-57 |       expect(diameterMm).toBeLessThanOrEqual(1.1)
-                              ^
-error: expect(received).toBeLessThanOrEqual(expected)
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [3.26ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [1.53ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [4.24ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.06ms]
 
-Expected: <= 1.1
-Received: 1.3000228
-
-      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/tests/import-qualification.test.ts:57:26)
-(fail) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [2.58ms]
-59 |   })
-60 |   test("both mounting slots meet the 2.60-2.70 mm manufacturer length range", () => {
-61 |     expect(mountingSlotLengthsMm).toHaveLength(2)
-62 |     for (const lengthMm of mountingSlotLengthsMm) {
-63 |       expect(lengthMm).toBeGreaterThanOrEqual(2.6)
-64 |       expect(lengthMm).toBeLessThanOrEqual(2.7)
-                            ^
-error: expect(received).toBeLessThanOrEqual(expected)
-
-Expected: <= 2.7
-Received: 3.200019
-
-      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/tests/import-qualification.test.ts:64:24)
-(fail) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.03ms]
-
- 2 pass
- 2 fail
- 17 expect() calls
-Ran 4 tests across 1 file. [138.00ms]
+ 4 pass
+ 0 fail
+ 27 expect() calls
+Ran 4 tests across 1 file. [45.00ms]
