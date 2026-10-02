@@ -4,6 +4,11 @@ Revision A0-C5656610-local-hole, updated 2026-10-03: **B-002 acoustic diameter c
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
+Private tscircuit package: https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote
+— corrected source published as **0.0.2-wip-c5656610-hole-060**, with all 173
+files uploaded. This is a work-in-progress prototype source release. The build
+remains blocked as described below; publication does not approve fabrication.
+
 The accepted device is the square, screen-dominant concept with one top-edge hold-to-talk button, a speaker and rechargeable battery. Hold, speak and release to send a Wi-Fi request; show and speak the response. All PCB electronics must assemble on the top side. The encoder and separate APPROVE/REJECT controls are removed from the active design. See `REQUIREMENTS.md` for the complete requirement changes and remaining interface decisions. Firmware implementation is outside this task.
 
 The user approved a maximum PCB envelope of **50 x 65 mm**. A **50 x 50 mm square target** starts the mechanical study within that envelope; it is not yet validated. Four copper layers are intended. Accepted visual reference: [square product concept](assets/product-concepts/ai-remote-v1-infographic-v3.png); rendered placement is illustrative.

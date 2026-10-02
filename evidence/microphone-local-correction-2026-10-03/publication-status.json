@@ -1,17 +1,42 @@
 {
   "revision": "A0-C5656610-local-hole",
+  "implementation_commit": "54bb3c0f899923eca45ecbc85d08a385df6aa550",
+  "authorization": "User explicitly authorized publishing to both GitHub and tscircuit.",
   "github": {
-    "status": "blocked: automatic approval review rejected push; explicit approval requested",
+    "status": "pushed and verified",
     "repository": "AnasSarkiz/tscircuit-ai-agent-remote",
     "branch": "main",
-    "reason": "Reviewer treated the main-branch push as an external mutation without explicit human authorization for publishing this revision.",
-    "attempted_command": "git push --set-upstream origin main",
-    "remote_update_succeeded": false
+    "verified_head_before_receipt_commit": "c3e8570f2bc4a462c2856cab26bab7fc96afaeb8",
+    "remote_update_succeeded": true
   },
   "tscircuit": {
-    "status": "blocked; upload not attempted",
+    "status": "private work-in-progress source published",
     "package": "AnasSarkiz/tscircuit-ai-agent-remote",
-    "reason": "Component build fails B-003; complete board build explicitly fails because circuit is incomplete. No validation bypass or invalid package publication."
+    "version": "0.0.2-wip-c5656610-hole-060",
+    "upload_exit_code": 0,
+    "uploaded_files": 173,
+    "failed_files": 0,
+    "corrected_microphone_readback_matches_local": true,
+    "ready_to_build": true,
+    "cloud_build_status_at_check": "pending",
+    "remote_update_succeeded": true,
+    "initial_attempt": {
+      "version": "0.0.1-wip-c5656610-hole-060",
+      "status": "partial upload; not finalized",
+      "uploaded_files": 172,
+      "failed_file": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "failure": "Request timeout; combined archive also rejected HTTP 413"
+    }
   },
-  "implementation_commit": "54bb3c0f899923eca45ecbc85d08a385df6aa550"
+  "validation": {
+    "status": "blocked",
+    "blocker": "B-003 ground-pad PCB port generation",
+    "whole_board": "incomplete; guarded netlist and build fail",
+    "fabrication_ready": false,
+    "saved_routes_exist": false
+  },
+  "publication_receipt_revision": {
+    "target_version": "0.0.2-wip-c5656610-hole-060-publication-record",
+    "purpose": "Synchronize publication receipts and CLI package version increment; circuit sources unchanged"
+  }
 }

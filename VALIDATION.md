@@ -212,9 +212,31 @@ creation. No pin mapping, pad geometry, DRC or snapshots were changed to conceal
 this error. Stage 2 remains blocked; complete-board checks and stages 3–6 have
 not passed. This does not diagnose a short or validate physical acoustics/assembly.
 
-Standing root instructions now require commit/push/publication of implementation
-steps. GitHub source push was rejected by automatic approval review because explicit authorization for this revision on the default branch was not recognized. Approval for commit 54bb3c0 to main was requested; no remote push succeeded. Tscircuit publication is
-blocked by B-003's failing component build and the incomplete main circuit's
-build failure; no package upload is performed while validation fails. Registry
-handle was verified as @AnasSarkiz without persisting credential/session details.
-Remote results follow in `publication-status.json` in the evidence folder.
+The user explicitly authorized publication to both GitHub and tscircuit after
+the initial automatic approval rejection. GitHub `main` was successfully pushed
+and read back at c3e8570f2bc4a462c2856cab26bab7fc96afaeb8, containing correction
+commit 54bb3c0f899923eca45ecbc85d08a385df6aa550.
+
+Private tscircuit source version **0.0.2-wip-c5656610-hole-060** was published
+with all 173 files uploaded and exit 0. The initial 0.0.1 prerelease remains a
+partial upload: its compressed archive exceeded the server limit and one USB-C
+STEP model timed out during individual upload. The complete retry preserves
+that model and all other files. The CLI advanced package.json to 0.0.2.
+Authenticated source readback confirms the corrected microphone matches the
+local import. Registry credentials and account/session identifiers are omitted
+from evidence. The release was marked ready_to_build; cloud build status was
+pending when checked. Source publication does not establish a passing build.
+
+Whole-board netlist checking was also attempted and stops at the explicit
+incomplete-circuit guard. B-003 and stages 2–6 remain blocked or unfinished;
+no routes or fabrication outputs exist. The standing publication instruction
+allows clearly disclosed intermediate prototypes. No build, DRC, geometry or
+pin-mapping check was bypassed for upload. Publication receipts and the CLI's
+version increment are being synchronized as a separate documentation revision
+under the non-latest tag `wip-c5656610-hole-060-publication-record`.
+Remote results are recorded in `publication-status.json` in the evidence folder.
+The receipt revision changes only documentation, evidence and the package
+version advanced by the CLI. Imported components, dependencies and circuit
+sources are unchanged, so the five passing import tests, typecheck, measured
+geometry, placement result and recorded build blockers remain applicable.
+Project formatting was rerun and passed after the receipt edits.
