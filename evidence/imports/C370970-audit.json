@@ -1,0 +1,48 @@
+{
+  "part": "C370970",
+  "manufacturer_part": "EC11E15244G1",
+  "date": "2026-10-02",
+  "supplier_component_uuid": "07310eedce5a43c98c4161eafcc9aef0",
+  "supplier_package_uuid": "a5e1c98a3bb64075832f1f5ba4fc3881",
+  "manufacturer_product": "https://tech.alpsalpine.com/e/products/detail/EC11E15244G1/",
+  "manufacturer_mounting_drawing": "https://tech.alpsalpine.com/cms.media/product_detail_fig_ec11_d_83_en_1f3da99620.gif",
+  "manufacturer_catalogue": "https://tech.alpsalpine.com/cms.media/product_catalog_ec_01_ec11e_en_611f078659.pdf",
+  "catalogue_revision": "Update 2510, page 2, drawing 2",
+  "import_sha256": "42423abc3578dee3ce0dac9acf4a3ec6d4a9c4fc4f26ed9d7aedeeb850ec78e4",
+  "manufacturer_terminal_hole_diameter_mm": [
+    1.0,
+    1.1
+  ],
+  "imported_terminal_hole_diameters_mm": [
+    1.3000228,
+    1.3000228,
+    1.3000228,
+    1.3000228,
+    1.3000228
+  ],
+  "manufacturer_mounting_slot_length_mm": [
+    2.6,
+    2.7
+  ],
+  "imported_mounting_slot_lengths_mm": [
+    3.200019,
+    3.200019
+  ],
+  "manufacturer_mounting_slot_width_mm": [
+    1.5,
+    1.6
+  ],
+  "imported_mounting_slot_widths_mm": [
+    1.5000224,
+    1.5000224
+  ],
+  "interpretation": "Row separation 14.5 mm is consistent with 7.0 + 7.5 mm. The 12.5 mm horizontal dimension includes the slot widths and is not slot-center spacing. Those are not reported as discrepancies. Only hole diameter and slot length fail qualification.",
+  "status": "blocked",
+  "dependent_stages": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

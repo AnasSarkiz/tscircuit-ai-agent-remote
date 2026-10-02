@@ -1,0 +1,76 @@
+import objPath from "./EC11E15244G1.obj"
+import stepPath from "./EC11E15244G1.step"
+import type { ChipProps } from "@tscircuit/props"
+
+const pinLabels = {
+  pin6: ["pin6"],
+  pin7: ["pin7"],
+  pin8: ["A"],
+  pin9: ["C"],
+  pin10: ["B"],
+  pin11: ["D"],
+  pin12: ["E"]
+} as const
+
+export const EC11E15244G1 = (props: ChipProps<typeof pinLabels>) => {
+  return (
+    <chip
+      pinLabels={pinLabels}
+      symbol={
+        <symbol>
+          <schematicpath points={[{"x":-0.34,"y":-0.34},{"x":-0.28,"y":-0.34},{"x":-0.26,"y":-0.34},{"x":-0.26,"y":-0.26},{"x":0.26,"y":-0.26},{"x":0.26,"y":-0.34},{"x":0.34,"y":-0.34},{"x":0.34,"y":0.38},{"x":0.26,"y":0.38},{"x":0.26,"y":0.3},{"x":-0.26,"y":0.3},{"x":-0.26,"y":0.38},{"x":-0.34,"y":0.38},{"x":-0.34,"y":-0.34}]} strokeColor="#880000" />
+          <schematiccircle center={{ x: 0, y: 0.02 }} radius={0.23} strokeWidth={0.02} color="#880000" />
+          <schematicpath points={[{"x":-0.2,"y":-0.26},{"x":-0.2,"y":-0.4},{"x":-0.2,"y":-0.4}]} strokeColor="#880000" />
+          <schematicpath points={[{"x":0,"y":-0.26},{"x":0,"y":-0.4}]} strokeColor="#880000" />
+          <schematicpath points={[{"x":0.2,"y":-0.26},{"x":0.2,"y":-0.4}]} strokeColor="#880000" />
+          <schematicpath points={[{"x":-0.2,"y":0.3},{"x":-0.2,"y":0.4}]} strokeColor="#880000" />
+          <schematicpath points={[{"x":0.2,"y":0.3},{"x":0.2,"y":0.4}]} strokeColor="#880000" />
+          <port name="pin8" pinNumber={8} aliases={["A"]} direction="down" schX={-0.2} schY={-0.6} schStemLength={0.2} />
+          <port name="pin10" pinNumber={10} aliases={["B"]} direction="down" schX={0.2} schY={-0.6} schStemLength={0.2} />
+          <port name="pin9" pinNumber={9} aliases={["C"]} direction="down" schX={0} schY={-0.6} schStemLength={0.2} />
+          <port name="pin11" pinNumber={11} aliases={["D"]} direction="up" schX={-0.2} schY={0.6} schStemLength={0.2} />
+          <port name="pin12" pinNumber={12} aliases={["E"]} direction="up" schX={0.2} schY={0.6} schStemLength={0.2} />
+          <port name="pin6" pinNumber={6} aliases={["6"]} direction="right" schX={0.6} schY={0} schStemLength={0.26} />
+          <port name="pin7" pinNumber={7} aliases={["7"]} direction="left" schX={-0.6} schY={0} schStemLength={0.26} />
+        </symbol>
+      }
+      supplierPartNumbers={{
+  "jlcpcb": [
+    "C370970"
+  ]
+}}
+      manufacturerPartNumber="EC11E15244G1"
+      footprint={<footprint>
+        <platedhole  portHints={["pin8"]} pcbX="-2.540127mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
+<platedhole  portHints={["pin9"]} pcbX="-0.000127mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
+<platedhole  portHints={["pin10"]} pcbX="2.539873mm" pcbY="-7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
+<platedhole  portHints={["pin11"]} pcbX="-2.540127mm" pcbY="7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
+<platedhole  portHints={["pin12"]} pcbX="2.539873mm" pcbY="7.250049mm" outerDiameter="1.7999964mm" holeDiameter="1.3000228mm" shape="circle" />
+<platedhole  portHints={["pin6"]} pcbX="5.499989mm" pcbY="0.250063mm" holeWidth="3.200019mm" holeHeight="1.5000224mm" outerWidth="3.999992mm" outerHeight="2.2999954mm" pcbRotation="90deg" shape="pill" />
+<platedhole  portHints={["pin7"]} pcbX="-5.499989mm" pcbY="0.250063mm" holeWidth="3.200019mm" holeHeight="1.5000224mm" outerWidth="3.999992mm" outerHeight="2.2999954mm" pcbRotation="90deg" shape="pill" />
+<silkscreenpath route={[{"x":5.899861200000032,"y":-5.749950399999989},{"x":-5.900115200000073,"y":-5.749924999999962}]} />
+<silkscreenpath route={[{"x":-2.794127000000003,"y":1.266063000000031},{"x":2.793873000000076,"y":1.266063000000031}]} />
+<silkscreenpath route={[{"x":-5.900115200000073,"y":-5.749924999999962},{"x":-5.900115200000073,"y":-1.921738600000026}]} />
+<silkscreenpath route={[{"x":-5.900115200000073,"y":2.4218645999999353},{"x":-5.900115200000073,"y":6.250076400000012}]} />
+<silkscreenpath route={[{"x":-5.689726999999948,"y":6.250076400000012},{"x":-3.0659070000000384,"y":6.250076400000012}]} />
+<silkscreenpath route={[{"x":-2.0143470000000434,"y":6.250076400000012},{"x":2.0140930000000026,"y":6.250076400000012}]} />
+<silkscreenpath route={[{"x":3.065653000000111,"y":6.250076400000012},{"x":5.899861200000032,"y":6.250076400000012}]} />
+<silkscreenpath route={[{"x":5.899861200000032,"y":6.250076400000012},{"x":5.899861200000032,"y":2.4219408000000158}]} />
+<silkscreenpath route={[{"x":5.899861200000032,"y":-1.9218148000001065},{"x":5.899861200000032,"y":-5.749924999999962}]} />
+<silkscreenpath route={[{"x":1.7778729999999996,"y":1.266063000000031},{"x":1.8859268226799486,"y":1.0415664378789415},{"x":1.9657654878229778,"y":0.8055577038286401},{"x":2.016194617789438,"y":0.5615674625263409},{"x":2.0364597983468684,"y":0.313245781119349},{"x":2.0262578646251086,"y":0.06430752462142664},{"x":1.985741436429521,"y":-0.18152321805769134},{"x":1.9155166350652735,"y":-0.4205688460729107},{"x":1.8166340158288676,"y":-0.6492532631476706},{"x":1.690572851817592,"y":-0.864155375580367},{"x":1.5392190041659433,"y":-1.062060271429118},{"x":1.364836709770998,"y":-1.2400073152410869},{"x":1.1700347085575231,"y":-1.3953344388322648},{"x":0.9577272170165543,"y":-1.5257179655350228},{"x":0.7310903318469855,"y":-1.6292073721451743},{"x":0.4935145158984824,"y":-1.7042544685333496},{"x":0.2485538772214113,"y":-1.7497365584005138},{"x":-0.00012700000002041634,"y":-1.764973234689478},{"x":-0.24880787722133846,"y":-1.7497365584005138},{"x":-0.49376851589840953,"y":-1.7042544685333496},{"x":-0.7313443318469126,"y":-1.6292073721451743},{"x":-0.9579812170165951,"y":-1.5257179655350228},{"x":-1.170288708557564,"y":-1.3953344388322648},{"x":-1.365090709770925,"y":-1.2400073152410869},{"x":-1.539473004165984,"y":-1.062060271429118},{"x":-1.6908268518177465,"y":-0.864155375580367},{"x":-1.8168880158289085,"y":-0.6492532631476706},{"x":-1.9157706350652006,"y":-0.4205688460729107},{"x":-1.985995436429448,"y":-0.18152321805769134},{"x":-2.0265118646250357,"y":0.06430752462142664},{"x":-2.0367137983467956,"y":0.313245781119349},{"x":-2.016448617789365,"y":0.5615674625263409},{"x":-1.966019487822905,"y":0.8055577038286401},{"x":-1.8861808226798757,"y":1.0415664378789415},{"x":-1.7781269999999267,"y":1.266063000000031}]} />
+<silkscreencircle pcbX="-0.000127mm" pcbY="0.250063mm" radius="3.937mm" />
+<silkscreencircle pcbX="-0.000127mm" pcbY="0.250063mm" radius="3.3528mm" />
+<silkscreencircle pcbX="-0.000127mm" pcbY="0.250063mm" radius="3.048mm" />
+<silkscreentext text="{NAME}" pcbX="-0.012827mm" pcbY="9.193151mm" anchorAlignment="center" fontSize="1mm" />
+<courtyardoutline outline={[{"x":-6.549327000000062,"y":8.443151000000057},{"x":6.523672999999917,"y":8.443151000000057},{"x":6.523672999999917,"y":-8.465248999999858},{"x":-6.549327000000062,"y":-8.465248999999858},{"x":-6.549327000000062,"y":8.443151000000057}]} />
+      </footprint>}
+      cadModel={{
+        objUrl: objPath,
+        stepUrl: stepPath,
+        pcbRotationOffset: 0,
+        modelOriginPosition: { x: 0, y: -0.25001270000007025, z: -0.000006999999999646178 },
+      }}
+      {...props}
+    />
+  )
+}

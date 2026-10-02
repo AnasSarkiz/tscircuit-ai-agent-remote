@@ -1,0 +1,54 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/import-qualification.test.ts:
+13 | 
+14 | // TI SLVSC58B, section 6, page 3: VIN pins 12 and 13; VOUT pins 7 and 8.
+15 | // This validates supplier import integrity, independently of eventual board wiring.
+16 | describe("C109322 TPS63070RNMR manufacturer pin qualification", () => {
+17 |   test("retains all 15 physical pin identities", () => {
+18 |     expect(importedPinNumbers).toEqual(Array.from({ length: 15 }, (_, index) => index + 1))
+                                    ^
+error: expect(received).toEqual(expected)
+
+  [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+-   8,
+    9,
+    10,
+    11,
+    12,
+-   13,
+    14,
+    15,
+  ]
+
+- Expected  - 2
++ Received  + 0
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/tests/import-qualification.test.ts:18:32)
+(fail) C109322 TPS63070RNMR manufacturer pin qualification > retains all 15 physical pin identities [1.83ms]
+16 | describe("C109322 TPS63070RNMR manufacturer pin qualification", () => {
+17 |   test("retains all 15 physical pin identities", () => {
+18 |     expect(importedPinNumbers).toEqual(Array.from({ length: 15 }, (_, index) => index + 1))
+19 |   })
+20 |   test("retains the supplier and manufacturer PS/SYNC function on pin 1", () => {
+21 |     expect(pinLabelsBlock).toMatch(/pin1:\s*\[[^\]]*"PS(?:_S|_SYNC|\/SYNC)"/)
+                                ^
+error: expect(received).toMatch(expected)
+
+Expected substring or pattern: /pin1:\s*\[[^\]]*"PS(?:_S|_SYNC|\/SYNC)"/
+Received: "\n  pin1: [\"pin1\"],\n  pin2: [\"PG\"],\n  pin3: [\"Vaux\"],\n  pin4: [\"GND\"],\n  pin5: [\"FB\"],\n  pin6: [\"FB2\"],\n  pin7: [\"Vout\"],\n  pin9: [\"L2\"],\n  pin10: [\"PGND\"],\n  pin11: [\"L1\"],\n  pin12: [\"Vin\"],\n  pin14: [\"EN\"],\n  pin15: [\"Vsel\"],\n"
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/tests/import-qualification.test.ts:21:28)
+(fail) C109322 TPS63070RNMR manufacturer pin qualification > retains the supplier and manufacturer PS/SYNC function on pin 1 [0.37ms]
+
+ 0 pass
+ 2 fail
+ 2 expect() calls
+Ran 2 tests across 1 file. [14.00ms]

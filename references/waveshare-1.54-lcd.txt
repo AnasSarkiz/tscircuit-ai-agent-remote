@@ -1,0 +1,1483 @@
+1.54inch LCD Module - Waveshare Wiki
+document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"f1a7bfbc175ed3d9cb647e3d","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"1.54inch_LCD_Module","wgTitle":"1.54inch LCD Module","wgCurRevisionId":105201,"wgRevisionId":105201,"wgArticleId":6839,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"1.54inch_LCD_Module","wgRelevantArticleId":6839,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"ext.gadget.tabber":"ready","site.styles":"ready"
+,"noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.tweeki.styles":"ready","skins.tweeki.bootstraptheme.styles":"ready","skins.tweeki.externallinks.styles":"ready","skins.tweeki.awesome.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.FancyBoxThumbs","ext.HighlightjsIntegration","skins.tweeki.messages","skins.tweeki.scripts"];
+(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});
+Navigation menu
+Toggle navigation
+Raspberry Pi
+Boards/Kits
+Displays
+Cameras
+Expansions
+All-in-one
+Robots
+Portable Gaming
+Accessories
+Other Android/Linux Boards
+AI
+Boards/Kits
+Displays
+Cameras
+Expansions
+Robots
+Displays
+LCD/OLED
+e-Paper
+IoT
+Long Range Wireless
+Short Range Wireless
+Wired Comm / Converter
+Cameras / Audio / Video
+Sensors
+Motors / Servos
+others
+Robotics
+Mobile Robots
+Dog-like Robots
+Drivers / Sensors
+Robot Arm / Control
+MCU/FPGA
+Arduino
+micro:bit
+STM32
+FPGA
+Support
+1.54inch LCD Module
+From Waveshare Wiki
+Jump to:
+navigation
+,
+search
+1.54inch LCD Module
+240×240, SPI interface
+{{{name2}}}
+{{{name3}}}
+{{{name4}}}
+{{{name5}}}
+{{{name6}}}
+Primary Attribute
+Category:
+OLEDs / LCDs
+,
+OLED
+{{{userDefinedInfo}}}:
+{{{userdefinedvalue}}}
+Brand:
+Waveshare
+Website
+International:
+Website
+Chinese:
+官方中文站点
+Onboard Interfaces
+Related Products
+2.23inch OLED HAT
+1.54inch LCD Module
+1.5inch RGB OLED Module
+1.5inch OLED Module
+1.3inch OLED (B)
+1.3inch OLED (A)
+1.3inch OLED Module (C)
+1.28inch LCD Module
+1.14inch LCD Module
+0.96inch OLED (B)
+0.96inch OLED (A)
+0.96inch LCD Module
+0.95inch RGB OLED (B)
+0.95inch RGB OLED (A)
+0.91inch OLED Module
+Contents
+1
+Overview
+2
+Introduction
+2.1
+Specifications
+2.2
+Pinout Definition
+3
+Raspberry Pi Hardware Connection
+4
+STM32 Hardware Connection
+5
+Arduino Hardware Connection
+5.1
+LCD & Controller
+5.2
+Communication Protocol
+6
+Working with Raspberry Pi
+6.1
+Enable SPI Interface
+6.2
+Install Libraries
+6.2.1
+BCM2835
+6.2.2
+wiringPi
+6.2.3
+lgpio
+6.2.4
+Python
+7
+Download Test Demo
+8
+Run Test Demo
+8.1
+C
+8.2
+python
+9
+FBCP Porting
+9.1
+Download Driver
+9.2
+Method 1: Use a Script (recommended)
+9.3
+Method 2: Configure Manually
+9.3.1
+Configure the Environment
+9.3.2
+Compile and Run
+9.3.3
+Set Auto-start at Power-on
+9.3.4
+Set User Interface Display Size
+10
+API Details (Please read C or Python section)
+10.1
+C
+10.1.1
+Underlying Hardware Interfaces
+10.1.2
+Upper Layer Applications
+10.1.3
+User Test Code
+10.2
+Python (for Raspberry Pi)
+10.2.1
+lcdconfig.py
+10.2.2
+About Rotation Settings
+10.2.3
+Drawing GUI
+11
+STM32 Software Description
+11.1
+Demo Description
+11.1.1
+Underlying Hardware Interfaces
+11.1.2
+Upper Layer Applications
+12
+Arduino Software Description
+12.1
+Arduino IDE Installation Tutorial
+12.2
+Run Demo
+12.3
+Demo Description
+12.3.1
+Document Introduction
+12.4
+Underlying Hardware Interfaces
+12.4.1
+Write Pin Level
+12.4.2
+Read Pin Level
+12.4.3
+Delay
+12.4.4
+SPI Output Data
+12.4.5
+Upper Layer Applications
+13
+VisionFive2
+13.1
+Compatible Models
+13.2
+Hardware Connection
+13.3
+Install Corresponding Library Files
+13.4
+Download Demo
+13.5
+Run the Corresponding Demo According to the Screen You Purchased
+14
+Resources
+14.1
+Documents
+14.2
+Demos
+14.3
+Software
+14.4
+Datasheets
+15
+Support
+Overview
+Introduction
+This product provides Raspberry Pi, STM32, Arduino demos
+Specifications
+Operating voltage: 	3.3V/5V
+(Please ensure that the supply voltage and logic voltage are consistent, otherwise, it may fail to function properly)
+Communication interface: 	SPI
+LCD type: 	IPS
+Controller chip: 	ST7789
+Resolution: 	240(H)RGB x 240(V)
+Display size: 	27.72(H) x 27.72(V) (mm)
+Pixel size: 	0.1155(H) x 0.1155(V) (mm)
+Dimensions: 	50 x 35 (mm)
+Pinout Definition
+Raspberry Pi Hardware Connection
+When connecting the Raspberry Pi, choose to use an 8PIN cable. Please refer to the pin correspondence table below
+If you are using a pin header or PH2.0 8PIN interface, please refer to the following table for wiring
+Raspberry Pi connection pin correspondence
+LCD
+Raspberry Pi
+BCM2835 encoding
+Board physical pin number
+VCC
+5V
+5V
+GND
+GND
+GND
+DIN
+MOSI
+19
+CLK
+SCLK
+23
+CS
+CE0
+24
+DC
+25
+22
+RST
+27
+13
+BL
+18
+12
+The 1.54inch LCD uses the PH2.0 8PIN interface, which can be connected to the Raspberry Pi according to the above table:
+(Please connect according to the pin definition table. The color of the wiring in the diagram is for reference only, and the actual color shall prevail.)
+STM32 Hardware Connection
+The demo we provide is based on STM32F103RBT6, and the connection method provided is also the corresponding pin of STM32F103RBT6. If you need to transplant the demo, please connect according to the actual pins.
+ESP32 connection pin correspondence
+LCD
+STM32
+VCC
+3.3V
+GND
+GND
+DIN
+PA7
+CLK
+PA5
+CS
+PB6
+DC
+PA8
+RST
+PA9
+BL
+PC7
+Arduino Hardware Connection
+Arduino UNO connection pin correspondence
+LCD
+UNO
+VCC
+5V
+GND
+GND
+DIN
+D11
+CLK
+D13
+CS
+D10
+DC
+D7
+RST
+D8
+BL
+D9
+The connection diagram is as follows (click to enlarge):
+LCD & Controller
+The built-in controller used in this LCD is ST7789VW, which is an LCD controller with 240 × RGB × 320 pixels. However, the pixels of this LCD are 240(H) × RGB × 240(V). Additionally, initialization control allows for configuration in both landscape and portrait modes, not all of the LCD's internal RAM is utilized.
+This LCD supports 12-bit, 16-bit, and 18-bit per pixel input color formats, namely RGB444, RGB565, and RGB666 color formats, this demo uses RGB565 color format, which is also a commonly used RGB Format.
+This LCD uses a 4-wire SPI communication interface, which can greatly save the GPIO port, and the communication speed will be faster.
+Communication Protocol
+Note: The difference from the traditional SPI protocol is that the data line sent from the slave to the host is hidden because it only needs to be displayed. Please refer to Datasheet Page 105 for the table.
+RESX is the reset pin, it is pulled low when the module is powered on, usually set to 1;
+CSX is the slave chip select pin, and the chip is enabled only when CS is low.
+D/CX is the data/command control pin of the chip, when DC = 0 a command is written; when DC = 1, data is written
+SDA is the data transmitted data, that is, RGB data;
+SCL is the SPI communication clock pin.
+For SPI communication, the data transmission has timing sequences involving clock phase (CPHA) and clock polarity (CPOL):
+CPHA determines whether data is captured on the first or second clock edge. When CPHA = 0, data is captured on the first clock edge;
+CPOL determines the idle level of the clock, CPOL = 0 means low.
+From the diagram, it can be seen that when SCLK falls on the first edge, data transmission starts. One clock cycle transmits 8 bits, using SPI0, bitwise transmission, high bit first, and low bit last.
+Working with Raspberry Pi
+Enable SPI Interface
+PS: If you are using the system of the Bullseye branch, you need to change "apt-get" to "apt". The system of the Bullseye branch only supports Python3.
+Open the Raspberry Pi terminal and input the following command to enter the configuration interface:
+sudo raspi-config
+Select Interfacing Options -> SPI -> Yes to enable the SPI interface
+Then restart Raspberry Pi:
+sudo reboot
+Make sure that the SPI is not occupied by other devices, you can check in the middle of /boot/config.txt
+Install Libraries
+If you use bookworm system, only the lgpio library is available, bcm2835 and wiringPi libarary cannot be installed or used. Please note that the python library does not need to be installed, you can directly run the demo.
+BCM2835
+#Open the Raspberry Pi terminal and run the following commands:
+sudo wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz
+sudo tar zxvf bcm2835-1.71.tar.gz 
+cd bcm2835-1.71/
+sudo ./configure && sudo make && sudo make check && sudo make install
+# For more information, please refer to the official website: http://www.airspayce.com/mikem/bcm2835/
+wiringPi
+#Open the Raspberry Pi terminal and run the following commands:
+cd
+sudo apt-get install wiringpi
+#For Raspberry Pi systems after May 2019 (those earlier may not require execution), an upgrade may be necessary:
+wget https://files.waveshare.com/wiki/common/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.deb
+gpio -v
+# Run gpio -v and version 2.52 will appear. If it does not appear, there is an installation error
+
+#Bullseye branch system uses the following command:
+sudo git clone https://github.com/WiringPi/WiringPi
+cd WiringPi
+sudo ./build
+gpio -v
+# Run gpio -v and version 2.70 will appear. If it does not appear, there is an installation error
+lgpio
+sudo su
+wget https://github.com/joan2937/lg/archive/master.zip
+unzip master.zip
+cd lg-master
+sudo make install 
+# For more information, please refer to the official website: https://github.com/gpiozero/lg
+Python
+sudo apt-get update
+sudo apt-get install python3-pip
+sudo apt-get install python3-pil
+sudo apt-get install python3-numpy
+sudo pip3 install spidev
+Download Test Demo
+Open the Raspberry Pi terminal and execute:
+sudo apt-get install unzip -y
+sudo wget https://files.waveshare.com/upload/8/8d/LCD_Module_RPI_code.zip
+sudo unzip ./LCD_Module_RPI_code.zip
+cd LCD_Module_RPI_code/RaspberryPi/
+Run Test Demo
+Please execute the following command in Raspberry Pi, otherwise it will not be indexed and cannot be found in the directory;
+C
+Recompile, the compilation process may take a few seconds
+cd c
+sudo make clean
+sudo make -j 8
+The test demos for all screens can be called directly by entering the corresponding screen sizes:
+sudo ./main Screen size
+Depending on the LCD, one of the following commands should be entered:
+#0.96inch LCD Module
+sudo ./main 0.96
+#1.14inch LCD Module
+sudo ./main 1.14
+#1.28inch LCD Module
+sudo ./main 1.28
+#1.3inch LCD Module
+sudo ./main 1.3
+#1.47inch LCD Module
+sudo ./main 1.47
+#1.54inch LCD Module
+sudo ./main 1.54
+#1.8inch LCD Module
+sudo ./main 1.8
+#2inch LCD Module
+sudo ./main 2
+#2.4inch LCD Module
+sudo ./main 2.4
+python
+Enter the python program directory and run the command ls -l
+cd python/example
+ls -l
+You can view test demos for all screens, sorted by size:
+0inch96_LCD_test.py
+0.96inch LCD test demo
+1inch14_LCD_test.py
+1.14inch LCD test demo
+1inch28_LCD_test.py
+1.28inch LCD test demo
+1inch3_LCD_test.py
+1.3inch LCD test demo
+1inch47_LCD_test.py
+1.47inch LCD test demo
+1inch54_LCD_test.py
+1.54inch LCD test demo
+1inch8_LCD_test.py
+1.8inch LCD test demo
+2inch_LCD_test.py
+2inch LCD test demo
+2inch4_LCD_test.py
+2.4inch LCD test demo
+Run the demo corresponding to the screen, which supports python2/3
+# python2
+sudo python 0inch96_LCD_test.py
+sudo python 1inch14_LCD_test.py
+sudo python 1inch28_LCD_test.py
+sudo python 1inch3_LCD_test.py
+sudo python 1inch47_LCD_test.py
+sudo python 1inch54_LCD_test.py
+sudo python 1inch8_LCD_test.py
+sudo python 2inch_LCD_test.py
+sudo python 2inch4_LCD_test.py
+# python3
+sudo python3 0inch96_LCD_test.py
+sudo python3 1inch14_LCD_test.py
+sudo python3 1inch28_LCD_test.py
+sudo python3 1inch3_LCD_test.py
+sudo python3 1inch47_LCD_test.py
+sudo python3 1inch54_LCD_test.py
+sudo python3 1inch8_LCD_test.py
+sudo python3 2inch_LCD_test.py
+sudo python3 2inch4_LCD_test.py
+FBCP Porting
+PS: FBCP is currently not compatible with the Raspberry Pi bookworm system, and the bullseye system is recommended.
+Framebuffer uses a video output device to drive a video display device from a memory buffer containing complete frame data. Simply put, a memory area is used to store the display content, and the display content can be changed by changing the data in the memory.
+There is an open source project on github: fbcp-ili9341. Compared with other fbcp projects, this project uses partial refresh and DMA to achieve a speed of up to 60fps.
+Download Driver
+sudo apt-get install cmake -y
+cd ~
+wget https://files.waveshare.com/upload/1/18/Waveshare_fbcp.zip
+unzip Waveshare_fbcp.zip
+cd Waveshare_fbcp/
+sudo chmod +x ./shell/*
+Method 1: Use a Script (recommended)
+Here we have written several scripts that allow users to quickly use fbcp and run corresponding command according to their own screen.
+If you use a script and do not need to modify it, you can ignore the second method below.
+Note: The script will replace the corresponding /boot/config.txt and /etc/rc.local and restart. If necessary, please back up the relevant files in advance.
+#0.96inch LCD Module
+sudo ./shell/waveshare-0inch96
+#1.14inch LCD Module
+sudo ./shell/waveshare-1inch14
+#1.3inch LCD Module
+sudo ./shell/waveshare-1inch3
+#1.44inch LCD Module
+sudo ./shell/waveshare-1inch44
+#1.54inch LCD Module
+sudo ./shell/waveshare-1inch54
+#1.8inch LCD Module
+sudo ./shell/waveshare-1inch8
+#2inch LCD Module
+sudo ./shell/waveshare-2inch
+#2.4inch LCD Module
+sudo ./shell/waveshare-2inch4
+Method 2: Configure Manually
+Configure the Environment
+The vc4-kms-v3d on Raspberry Pi can cause fbcp to fail, so we need to disable vc4-kms-v3d before installing fbcp
+sudo nano /boot/config.txt
+Block the corresponding statement in the figure below
+Then restart
+sudo reboot
+Compile and Run
+mkdir build
+cd build
+cmake [options] ..
+sudo make -j
+sudo ./fbcp
+Replace it by yourself according to the LCD Module you use, as shown in the above text: cmake [options] ..
+#0.96inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_0INCH96_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+#1.14inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_1INCH14_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+#1.3inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_1INCH3_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+#1.54inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_1INCH54_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+#1.8inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_1INCH8_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+#2inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_2INCH_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+#2.4inch LCD Module
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_2INCH4_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+Set Auto-start at Power-on
+sudo cp ~/Waveshare_fbcp/build/fbcp /usr/local/bin/fbcp
+sudo nano /etc/rc.local
+Add fbcp& before exit 0. Note that you must add "&" to run in the background. Otherwise, the system may not be able to start.
+Set User Interface Display Size
+Set the user interface display size in the /boot/config.txt file.
+sudo nano /boot/config.txt
+Add the resolution configuration statement in the config.txt file.
+hdmi_force_hotplug=1
+hdmi_cvt=[options] 
+hdmi_group=2
+hdmi_mode=1
+hdmi_mode=87
+display_rotate=0
+Replace the above hdmi_cvt=[options] according to the LCD Module you are using.
+#2.4inchinch LCD Module & 2inchinch LCD Module
+hdmi_cvt=640 480 60 1 0 0 0
+#1.8inch LCD Module
+hdmi_cvt=400 300 60 1 0 0 0
+#1.3inch LCD Module & 1.54inch LCD Module
+hdmi_cvt=300 300 60 1 0 0 0
+#1.14inch LCD Module
+hdmi_cvt=300 170 60 1 0 0 0
+#0.96inch LCD Module
+hdmi_cvt=300 150 60 1 0 0 0
+And then reboot the device:
+sudo reboot
+After rebooting the system, the Raspberry Pi OS user interface will be displayed.
+API Details (Please read C or Python section)
+The Raspberry Pi series can all share a set of demos because they are all embedded systems with strong compatibility.
+The demo is divided into underlying hardware interfaces, middle-layer LCD screen driver, and upper-layer applications;
+C
+Underlying Hardware Interfaces
+We have encapsulated the underlying layer, and due to different hardware platforms, the internal implementation is different. If you need to understand the internal implementation, you can check the corresponding directory
+You can see a lot of definitions in DEV_Config.c(.h), located in the directory: RaspberryPi\c\lib\Config
+1. There are three ways for C to drive: BCM2835 library, WiringPi library, and Dev library
+2. We use Dev libraries by default. If you need to change to BCM2835 or WiringPi libraries, please open RaspberryPi\c\Makefile and modify lines 13-15 as follows:
+Data type:
+#define UBYTE   uint8_t
+#define UWORD   uint16_t
+#define UDOUBLE uint32_t
+Module initialization and exit processing:
+void DEV_Module_Init(void);
+void DEV_Module_Exit(void);
+Note:
+1. Here is the processing of some GPIOs before and after using the LCD screen.
+GPIO read/write:
+void 	DEV_Digital_Write(UWORD Pin, UBYTE Value);
+UBYTE 	DEV_Digital_Read(UWORD Pin);
+SPI write data:
+void DEV_SPI_WriteByte(UBYTE Value);
+Upper Layer Applications
+For the screen, what if you need to paint, display Chinese and English characters, display pictures, etc., these are all done by the upper layer applications. Many of you have asked about some graphics processing, and we have provided some basic functions in the directory
+The GUI can be found in the directory: RaspberryPi\c\lib\GUI\GUI_Paint.c(.h)
+The character fonts that GUI depends on are in the following directory: RaspberryPi\c\lib\Fonts
+New Image Property: Create a new image property that includes the name, width, height, angle of rotation, and color of the image cache
+void Paint_NewImage(UBYTE *image, UWORD Width, UWORD Height, UWORD Rotate, UWORD Color)
+Parameter:
+ 	image: The name of the image cache, which is actually a pointer to the first address of the image cache;
+ 	Width: The width of the image cache;
+ 	Height: The height of image cache;
+ 	Rotate: The angle of image flipping;
+ 	Color: The initial color of the image;
+Select Image Cache: The purpose of selecting the image cache is that you can create multiple image properties, and there can be multiple image caches. You can select each image you create
+void Paint_SelectImage(UBYTE *image)
+Parameter:
+ 	image: The name of the image cache, which is actually a pointer to the first address of the image cache;
+Image Rotation: Set the rotation angle of the selected image, preferably after Paint_SelectImage (), you can choose to rotate 0, 90, 180, 270
+void Paint_SetRotate(UWORD Rotate)
+Parameter:
+ 	Rotate: Image rotation angles can be chosen as ROTATE_0, ROTATE_90, ROTATE_180, ROTATE_270 corresponding to 0, 90, 180, 270 degrees
+[Note] Under different selection angles, the coordinates correspond to different starting pixels. Here taking 1.14 as an example, there are four images in sequence: 0°, 90°, 180°, 270°. For reference only
+Image Mirror Flip: Set the mirror flip of the selected image, you can choose no mirroring, horizontal mirroring, vertical mirroring, and mirroring around the image center
+void Paint_SetMirroring(UBYTE mirror)
+Parameter:
+ 	mirror: The mirroring method of the image can be selected as MIRROR_NONE, MIRROR_HORIZONTAL, MIRROR_VERTICAL, and MIRROR_ORIGIN, which correspond to no mirroring, horizontal mirroring, vertical mirroring, and mirroring around the image center, respectively
+Set the position and color of the point to be displayed in the cache: This is the core function of the GUI, handling point position and color displayed in the cache
+void Paint_SetPixel(UWORD Xpoint, UWORD Ypoint, UWORD Color)
+Parameter:
+ 	Xpoint: The X position of the point in the image cache
+ 	Ypoint: The Y position of the point in the image cache
+ 	Color: The color of the point
+Image cache fill color: Fill the image cache with a certain color, which is generally used as a screen whitening
+void Paint_Clear(UWORD Color)
+Parameter:
+ 	Color: The filled color
+Fill color of image cache window: Fill a certain part of the image cache window with a certain color, usually used as a window whitening function, commonly used for displaying time, whitening for one second
+void Paint_ClearWindows(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color)
+Parameter:
+ 	Xstart: The starting point X coordinate of the window
+ 	Ystart: The starting point Y coordinate of the window
+ 	Xend: The endpoint X coordinate of the window
+ 	Yend: The endpoint Y coordinate of the window
+ 	Color: The filled color
+Draw a dot: In the image cache, draw a dot at (Xpoint, Ypoint), you can choose the color, the size, and the style of the dot
+void Paint_DrawPoint(UWORD Xpoint, UWORD Ypoint, UWORD Color, DOT_PIXEL Dot_Pixel, DOT_STYLE Dot_Style)
+Parameter:
+ 	Xpoint: The X coordinate of the dot
+ 	Ypoint: The Y coordinate of the dot
+ 	Color: The filled color
+ 	Dot_Pixel: The size of the dots, which provides the default 8 sizes of dots
+ 	 	 typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  , 	 	// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  , 	 	// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Dot_Style: The style of the dot, the method to expand the size of the dot is that, whether to expand from the dot as the center or from the dot as the lower left corner to the upper right
+ 	 	typedef enum {
+ 	 	   DOT_FILL_AROUND  = 1,		
+ 	 	   DOT_FILL_RIGHTUP,
+ 	 	} DOT_STYLE;
+Draw a line: In the image cache, you can draw a line from (Xstart, Ystart) to (Xend, Yend) and choose the color, the width and the style of the line
+void Paint_DrawLine(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color, LINE_STYLE Line_Style , LINE_STYLE Line_Style)
+Parameter:
+ 	Xstart: The starting point X coordinate of the line
+ 	Ystart: The starting point Y coordinate of the line
+ 	Xend: The endpoint X coordinate of the line
+ 	Yend: The endpoint Y coordinate of the line
+ 	Color: The filled color
+ 	Line_width: The width of the lines, which provides the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	 Line_Style: The style of the line, which selects whether the line is connected in a straight line or as a dashed line
+ 	 	typedef enum {
+ 	 	 	 LINE_STYLE_SOLID = 0,
+ 	 	 	 LINE_STYLE_DOTTED,
+ 	 	} LINE_STYLE;
+Draw a rectangle: In the image cache, you can draw a rectangle from (Xstart, Ystart) to (Xend, Yend) and choose the color, the width of the line, and whether to fill the inside of the rectangle
+void Paint_DrawRectangle(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color, DOT_PIXEL Line_width, DRAW_FILL Draw_Fill)
+Parameter:
+ 	Xstart: The starting point X coordinate of the rectangle
+ 	Ystart: The starting point Y coordinate of the rectangle
+ 	Xend: The endpoint X coordinate of the rectangle
+ 	Yend: The endpoint Y coordinate of the rectangle
+ 	Color: The filled color
+ 	Line_width: The width of the four sides of the rectangle, providing the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Draw_Fill: Filling, whether to fill the inside of the rectangle
+ 	 	typedef enum {
+ 	 	 	 DRAW_FILL_EMPTY = 0,
+ 	 	 	 DRAW_FILL_FULL,
+ 	 	} DRAW_FILL;
+Draw a circle: In the image cache, draw a circle with a radius of Radius with (X_Center Y_Center) as the center of the circle, and you can choose the color, the width of the line, and whether to fill the inside of the circle
+void Paint_DrawCircle(UWORD X_Center, UWORD Y_Center, UWORD Radius, UWORD Color, DOT_PIXEL Line_width, DRAW_FILL Draw_Fill)
+Parameter:
+ 	X_Center: The X coordinate of the center of the circle
+ 	Y_Center: The Y coordinate of the center of the circle
+ 	Radius: The radius of the circle
+ 	Color: The filled color
+ 	Line_width: The width of the arc, which provides the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Draw_Fill: Filling, whether to fill the inside of the circle
+ 	 	typedef enum {
+ 	 	 	 DRAW_FILL_EMPTY = 0,
+ 	 	 	 DRAW_FILL_FULL,
+ 	 	} DRAW_FILL;
+Write Ascii characters: In the image cache, with (Xstart Ystart) as the left vertex, write an Ascii character, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawChar(UWORD Xstart, UWORD Ystart, const char Ascii_Char, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Ascii_Char: Ascii character
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write English strings: In the image cache, write a string of English characters with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawString_EN(UWORD Xstart, UWORD Ystart, const char * pString, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pString: is a string, and a string is a pointer
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write Chinese strings: In the image cache, write a string of Chinese characters with (Xstart Ystart) as the left vertex, and you can select the GB2312 encoding character font library, font foreground color, and font background color
+void Paint_DrawString_CN(UWORD Xstart, UWORD Ystart, const char * pString, cFONT* font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pString: is a string, and a string is a pointer
+ 	Font: The GB2312 encoding character library, the following fonts are provided in the Fonts folder:
+ 	 	font12CN: Ascii character font 11*21, Chinese font 16*21
+ 	 	font24CN: Ascii character font 24*41, Chinese font 32*41
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write numbers: In the image cache, write a string of numbers with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawNum(UWORD Xpoint, UWORD Ypoint, int32_t Nummber, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Number: The displayed number, here is stored in a 32-bit long int type, which can be displayed up to 2147483647.
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write numbers with decimals: In the image cache, write a string of numbers with decimal at (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawFloatNum(UWORD Xpoint, UWORD Ypoint, double Number,  UBYTE Decimal_Point,	sFONT* Font,    UWORD Color_Foreground, UWORD  Color_Background);
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Number: The displayed number, which is saved in the double type, sufficient for ordinary needs
+        Decimal_Point: Display the digits after the decimal point
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Display time: In the image cache, display time with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawTime(UWORD Xstart, UWORD Ystart, PAINT_TIME *pTime, sFONT* Font, UWORD Color_Background, UWORD Color_Foreground)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pTime: The displayed time, where a time structure is defined, and only the hours, minutes, and seconds are passed to the parameters;
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Read local BMP images and write them to the cache
+For Linux operating systems such as Raspberry Pi, you can read and write images
+For Raspberry Pi, in the directory: RaspberryPi\c\lib\GUI\GUI_BMPfile.c(.h)
+UBYTE GUI_ReadBmp(const char *path, UWORD Xstart, UWORD Ystart)
+Parameter:
+	path: the relative path of the BMP image
+ 	Xstart: The X coordinate of the left vertex of the image, generally 0 is passed by default
+ 	Ystart: The Y coordinate of the left vertex of the picture, generally 0 by default
+User Test Code
+The first three chapters introduced the classic Linux three-layer code structure, and here I will briefly explain the user test code.
+For Raspberry Pi, in the directory: RaspberryPi\c\examples, all the test codes are available;
+If you need to run the 0.96inch LCD test program, you need to add 0.96 as a parameter when running the main program
+Re-execute in Linux command mode as follows:
+make clean
+make
+sudo ./main 0.96
+Python (for Raspberry Pi)
+Suitable for Python and Python3
+For Python, its call is not as complex as C
+For Raspberry Pi, in the directory: RaspberryPi\python\lib\
+lcdconfig.py
+Module initialization and exit processing:
+def module_init()
+def module_exit()
+ Note:
+ 1. Here is the processing of some GPIOs before and after using the LCD screen.
+2. The module_init() function will be automatically called in the init() initializer of the LCD screen, but module_exit() needs to be called manually
+GPIO read/write:
+def  digital_write(pin, value)
+def  digital_read(pin)
+SPI write data:
+def spi_writebyte(data)
+xxx_LCD_test.py (xxx represents the size, if it is a 0.96inch LCD, it is 0inch96_LCD_test.py, and so on)
+Python is located in the following directory:< br />
+For Raspberry Pi, in the directory: RaspberryPi\python\examples\
+If your Python version is Python2 and you need to run the 0.96inch LCD test program, execute the following in Linux command mode:
+sudo python 0inch96_LCD_test.py
+If your Python version is Python3 and you need to run the 0.96inch LCD test program, execute the following in Linux command mode:
+sudo python3 0inch96_LCD_test.py
+About Rotation Settings
+If you need to set the screen rotation in a Python program, you can do so with the statement im_r= image1.rotate(270).
+im_r= image1.rotate(270)
+The rotation effect, taking 1.14 as an example, is 0°, 90°, 180°, and 270° respectively
+Drawing GUI
+Since python has an image library
+pil official library link
+, it is very powerful and does not require coding from the logical layer like C, it can directly reference the image library for image processing. The following will briefly explain the use of the library in the program, taking a 1.54inch LCD as an example
+You need to use the image library and install the library
+sudo apt-get install python3-pil   Install the library
+Then import a library
+from PIL import Image,ImageDraw,ImageFont
+Image is the basic library, ImageDraw is the drawing function, and ImageFont is the text
+Define an image cache to facilitate drawing, writing, and other functions on the image
+image1 = Image.new("RGB", (disp.width, disp.height), "WHITE")
+The first parameter defines the color depth of the image, with "RGB" indicating an RGB888 color image. The second parameter is a tuple defining the image's width and height. The third parameter defines the default color for caching, set to "WHITE".
+Create a drawing object based on Image1, and all drawing operations are performed on this object
+draw = ImageDraw.Draw(image1)
+Draw a line
+draw.line([(20, 10),(70, 60)], fill = "RED",width = 1)
+The first parameter is a tuple of 4 elements, starting from (20, 10) and ending at (70, 60), draw a straight line, fill="RED" indicates the line is red, and width=1 indicates the line width is 1 pixel.
+Draw a rectangle
+draw.rectangle([(20,10),(70,60)],fill = "WHITE",outline="BLUE")
+The first parameter is a tuple of 4 elements, where (20, 10) is the coordinate value of the top left corner of the rectangle, (70, 60) is the coordinate value of the bottom right corner of the rectangle, fill="WHITE" means the interior is filled with black, and outline="BLUE" means the outer border is blue.
+Draw a circle
+draw.arc((150,15,190,55),0, 360, fill =(0,255,0))
+Draw an inscribed circle within a square, with the first parameter being a tuple of 4 elements, (150, 15) as the top left vertex of the square, (190, 55) as the bottom right vertex, and the horizontal median line of the rectangle as a 0 degree angle. The angle increases clockwise, the second parameter represents the starting angle, the third parameter identifies the ending angle, and fill=(0,255,0) indicates that the line is green
+If it is not a square, what is drawn is an ellipse. This is actually the drawing of an arc.
+In addition to arc, ellipse can also draw solid circles
+draw.ellipse((150,65,190,105), fill = (0,255,0))
+Essentially, it is the drawing of an ellipse. The first parameter specifies the tangent rectangle of the chord, and fill=(0,255,0) indicates that the internal filling color is green. If the tangent matrix of the ellipse is a square, the ellipse is a circle.
+Write characters
+Writing characters often requires writing characters of different sizes, which need to be imported into the ImageFont module and instantiated:
+Font1 = ImageFont.truetype("../Font/Font01.ttf",25)
+    Font2 = ImageFont.truetype("../Font/Font01.ttf",35)
+    Font3 = ImageFont.truetype("../Font/Font02.ttf",32)
+For a better visual experience, free fonts from the internet are used here. Other TTF ending font library files are also supported
+Note: Each character library contains different characters; If certain characters cannot be displayed, it is recommended to use the encoding set used in the font library
+You can use English characters directly. If you want to write Chinese characters, because the encoding is GB2312, you need to add a u before it:< br />
+draw.text((40, 50), 'WaveShare', fill = (128,255,128),font=Font2)
+text= u"微雪电子"
+draw.text((74, 150),text, fill = "WHITE",font=Font3)
+The first parameter is a tuple of two elements, with (40, 50) as the left vertex, Font2 as the font, and fill as the font color. You can directly set fill="WHITE" because the values of regular colors have already been defined. Of course, you can also use fill=(128,255,128), where the values in the parentheses correspond to the values of the RGB colors, allowing you to precisely control the colors you want. The second sentence shows Waveshare Electronics, using Font3, with the font color as white.
+Read local image
+image = Image.open('../pic/LCD_1inch28.jpg')
+The parameter is the image path.
+Other functions
+The Python image library is very powerful. If you need to implement additional features, you can learn more on the official website at
+http://effbot.org/imagingbook
+pil. The official documentation is in English. If you find it inconvenient, you can also look for excellent blogs in your native language.
+STM32 Software Description
+The demo is developed based on the HAL library.
+Download the demo, find the STM32 demo file directory, and open the LCD_demo.uvprojx in the STM32\STM32F103RBT6\MDK-ARM directory to check the demo.
+Open main.c, you can see all the test demos, remove the comments in front of the test demos on the corresponding screen, and recompile and download.
+LCD_0in85_test()
+0.85inch LCD test demo
+LCD_0in96_test()
+0.96inch LCD test demo
+LCD_1in14_test()
+1.14inch LCD test demo
+LCD_1in28_test()
+1.28inch LCD test demo
+LCD_1in3_test()
+1.3  inch LCD test demo
+LCD_1in47_test()
+1.47  inch LCD test demo
+LCD_1in5_test()
+1.5  inch LCD test demo
+LCD_1in54_test()
+1.54inch LCD test demo
+LCD_1in8_test()
+1.8  inch LCD test demo
+LCD_2in_test()
+2inch      LCD test demo
+Demo Description
+Underlying Hardware Interfaces
+Data type:
+#define UBYTE   uint8_t
+#define UWORD   uint16_t
+#define UDOUBLE uint32_t
+Module initialization and exit processing:
+void DEV_Module_Init(void);
+void DEV_Module_Exit(void);
+Note:
+1. Here is the processing of some GPIOs before and after using the LCD screen;
+2. After the DEV_Module_Exit function is used, the LCD display will be turned off;
+GPIO read/write:
+void 	DEV_Digital_Write(UWORD Pin, UBYTE Value);
+UBYTE 	DEV_Digital_Read(UWORD Pin);
+SPI write data:
+void    DEV_SPI_WRITE(UBYTE _dat);
+Upper Layer Applications
+For the screen, what if you need to paint, display Chinese and English characters, display pictures, etc., these are all done by the upper layer applications. Many of you have asked about some graphics processing, and we have provided some basic functions in the directory
+The GUI can be found in the directory: STM32\STM32F103RB\User\GUI_DEV\GUI_Paint.c(.h)
+Note: Due to the internal RAM size of STM32 and Arduino, the GUI is written directly into the LCD RAM.
+In the following directory are the character fonts that the GUI depends on: STM32\STM32F103RB\User\Fonts
+New Image Property: Create a new image property that includes the name, width, height, angle of rotation, and color of the image cache
+void Paint_NewImage(UWORD Width, UWORD Height, UWORD Rotate, UWORD Color);
+Parameter:
+ 	Width: The width of the image cache;
+ 	Height: The height of image cache;
+ 	Rotate: The angle of image flipping;
+ 	Color: The initial color of the image;
+Set the clear screen function, usually call the clear function of LCD directly;
+void Paint_SetClearFuntion(void (*Clear)(UWORD));
+Parameter:
+ 	Clear: Pointer to the clear screen function, used to quickly clear the screen to a certain color;
+Set the pixel drawing function, usually call the DrawPaint function of LCD directly;
+void Paint_SetDisplayFuntion(void (*Display)(UWORD,UWORD,UWORD));
+Parameter:
+ 	Display: Pointer to the pixel drawing function, which is used to write data to the specified location in the internal RAM of the LCD;
+Select Image Cache: The purpose of selecting the image cache is that you can create multiple image properties, and there can be multiple image caches. You can select each image you create
+void Paint_SelectImage(UBYTE *image)
+Parameter:
+ 	image: The name of the image cache, which is actually a pointer to the first address of the image cache;
+Image Rotation: Set the rotation angle of the selected image, preferably after Paint_SelectImage (), you can choose to rotate 0, 90, 180, 270
+void Paint_SetRotate(UWORD Rotate)
+Parameter:
+ 	Rotate: Image rotation angles can be chosen as ROTATE_0, ROTATE_90, ROTATE_180, ROTATE_270 corresponding to 0, 90, 180, 270 degrees
+[Note] Under different selection angles, the coordinates correspond to different starting pixels. Here taking 1.14 as an example, there are four images in sequence: 0°, 90°, 180°, 270°. For reference only
+Image Mirror Flip: Set the mirror flip of the selected image, you can choose no mirroring, horizontal mirroring, vertical mirroring, and mirroring around the image center
+void Paint_SetMirroring(UBYTE mirror)
+Parameter:
+ 	mirror: The mirroring method of the image can be selected as MIRROR_NONE, MIRROR_HORIZONTAL, MIRROR_VERTICAL, and MIRROR_ORIGIN, which correspond to no mirroring, horizontal mirroring, vertical mirroring, and mirroring around the image center, respectively
+Set the position and color of the point to be displayed in the cache: This is the core function of the GUI, handling point position and color displayed in the cache;
+void Paint_SetPixel(UWORD Xpoint, UWORD Ypoint, UWORD Color)
+Parameter:
+ 	Xpoint: The X position of the point in the image cache
+ 	Ypoint: The Y position of the point in the image cache
+ 	Color: The color of the point
+Image cache fill color: Fill the image cache with a certain color, which is generally used as a screen whitening
+void Paint_Clear(UWORD Color)
+Parameter:
+ 	Color: The filled color
+Image cache partial window fill color: Fill a certain part of the image cache window with a certain color, usually used as a window whitening function, commonly used for displaying time, whitening for one second
+void Paint_ClearWindows(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color)
+Parameter:
+ 	Xstart: The starting point X coordinate of the window
+ 	Ystart: The starting point Y coordinate of the window
+ 	Xend: The endpoint X coordinate of the window
+ 	Yend: The endpoint Y coordinate of the window
+ 	Color: The filled color
+Draw a dot: In the image cache, draw a dot at (Xpoint, Ypoint), you can choose the color, the size, and the style of the dot
+void Paint_DrawPoint(UWORD Xpoint, UWORD Ypoint, UWORD Color, DOT_PIXEL Dot_Pixel, DOT_STYLE Dot_Style)
+Parameter:
+ 	Xpoint: The X coordinate of the dot
+ 	Ypoint: The Y coordinate of the dot
+ 	Color: The filled color
+ 	Dot_Pixel: The size of the dots, which provides the default 8 sizes of dots
+ 	 	 typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  , 	 	// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  , 	 	// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Dot_Style: The style of the dot, the method to expand the size of the dot is that, whether to expand from the dot as the center or from the dot as the lower left corner to the upper right
+ 	 	typedef enum {
+ 	 	   DOT_FILL_AROUND  = 1,		
+ 	 	   DOT_FILL_RIGHTUP,
+ 	 	} DOT_STYLE;
+Draw a line: In the image cache, you can draw a line from (Xstart, Ystart) to (Xend, Yend) and choose the color, the width and the style of the line
+void Paint_DrawLine(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color, LINE_STYLE Line_Style , LINE_STYLE Line_Style)
+Parameter:
+ 	Xstart: The starting point X coordinate of the line
+ 	Ystart: The starting point Y coordinate of the line
+ 	Xend: The endpoint X coordinate of the line
+ 	Yend: The endpoint Y coordinate of the line
+ 	Color: The filled color
+ 	Line_width: The width of the lines, which provides the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	 Line_Style: The style of the line, which selects whether the line is connected in a straight line or as a dashed line
+ 	 	typedef enum {
+ 	 	 	 LINE_STYLE_SOLID = 0,
+ 	 	 	 LINE_STYLE_DOTTED,
+ 	 	} LINE_STYLE;
+Draw a rectangle: In the image cache, you can draw a rectangle from (Xstart, Ystart) to (Xend, Yend) and choose the color, the width of the line, and whether to fill the inside of the rectangle
+void Paint_DrawRectangle(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color, DOT_PIXEL Line_width, DRAW_FILL Draw_Fill)
+Parameter:
+ 	Xstart: The starting point X coordinate of the rectangle
+ 	Ystart: The starting point Y coordinate of the rectangle
+ 	Xend: The endpoint X coordinate of the rectangle
+ 	Yend: The endpoint Y coordinate of the rectangle
+ 	Color: The filled color
+ 	Line_width: The width of the four sides of the rectangle, providing the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Draw_Fill: Filling, whether to fill the inside of the rectangle
+ 	 	typedef enum {
+ 	 	 	 DRAW_FILL_EMPTY = 0,
+ 	 	 	 DRAW_FILL_FULL,
+ 	 	} DRAW_FILL;
+Draw a circle: In the image cache, draw a circle with a radius of Radius with (X_Center Y_Center) as the center of the circle, and you can choose the color, the width of the line, and whether to fill the inside of the circle
+void Paint_DrawCircle(UWORD X_Center, UWORD Y_Center, UWORD Radius, UWORD Color, DOT_PIXEL Line_width, DRAW_FILL Draw_Fill)
+Parameter:
+ 	X_Center: The X coordinate of the center of the circle
+ 	Y_Center: The Y coordinate of the center of the circle
+ 	Radius: The radius of the circle
+ 	Color: The filled color
+ 	Line_width: The width of the arc, which provides the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Draw_Fill: Filling, whether to fill the inside of the circle
+ 	 	typedef enum {
+ 	 	 	 DRAW_FILL_EMPTY = 0,
+ 	 	 	 DRAW_FILL_FULL,
+ 	 	} DRAW_FILL;
+Write Ascii characters: In the image cache, with (Xstart Ystart) as the left vertex, write an Ascii character, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawChar(UWORD Xstart, UWORD Ystart, const char Ascii_Char, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Ascii_Char: Ascii character
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write English strings: In the image cache, write a string of English characters with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawString_EN(UWORD Xstart, UWORD Ystart, const char * pString, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pString: is a string, and a string is a pointer
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write Chinese strings: In the image cache, write a string of Chinese characters with (Xstart Ystart) as the left vertex, and you can select the GB2312 encoding character font library, font foreground color, and font background color
+void Paint_DrawString_CN(UWORD Xstart, UWORD Ystart, const char * pString, cFONT* font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pString: is a string, and a string is a pointer
+ 	Font: The GB2312 encoding character library, the following fonts are provided in the Fonts folder:
+ 	 	font12CN: Ascii character font 11*21, Chinese font 16*21
+ 	 	font24CN: Ascii character font 24*41, Chinese font 32*41
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write numbers: In the image cache, write a string of numbers with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawNum(UWORD Xpoint, UWORD Ypoint, int32_t Nummber, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Number: The displayed number, here is stored in a 32-bit long int type, which can be displayed up to 2147483647.
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write numbers with decimals: In the image cache, write a string of numbers with decimal at (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawFloatNum(UWORD Xpoint, UWORD Ypoint, double Number,  UBYTE Decimal_Point,	sFONT* Font,    UWORD Color_Foreground, UWORD  Color_Background);
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Number: The displayed number, which is saved in the double type, sufficient for ordinary needs
+        Decimal_Point: Display the digits after the decimal point
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Display time: In the image cache, display time with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawTime(UWORD Xstart, UWORD Ystart, PAINT_TIME *pTime, sFONT* Font, UWORD Color_Background, UWORD Color_Foreground)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pTime: The displayed time, where a time structure is defined, and only the hours, minutes, and seconds are passed to the parameters;
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Arduino Software Description
+Note: The demos are all tested on Arduino uno. If you need other types of Arduino, you need to determine whether the connected pins are correct.
+Arduino IDE Installation Tutorial
+Arduino IDE Installation Tutorial
+Run Demo
+In the product encyclopedia interface download
+the demo
+, and then unzip it. The Arduino demo is located at ~/Arduino/…
+Please select the corresponding program to open according to the LCD screen model
+You can view test demos for all screen sizes, sorted by size:
+For example, a 1.54inch LCD Module. Open the LCD_1inch54 folder and run the LCD_1inch54.ino file.
+Open the demo, and select the development board model Arduino UNO
+Select the corresponding COM port
+Then click to compile and download
+Demo Description
+Document Introduction
+Take Arduino UNO controlling a 1.54inch LCD as an example, open the Arduino\LCD_1inch54 directory:
+Among them:
+LCD_1inch5.ino: open with Arduino IDE;
+LCD_Driver.cpp(.h): is the driver for the LCD screen;
+DEV_Config.cpp(.h): is the hardware interface definition, which encapsulates the read and write pin levels, SPI transmission data, and pin initialization;
+font8.cpp, font12.cpp, font16.cpp, font20.cpp, font24.cpp, font24CN.cpp, fonts.h: fonts for characters of different sizes;
+image.cpp(.h): is the image data, which can convert any BMP image into a 16-bit true color image array through Img2Lcd (downloadable in the Resources);
+The demo is divided into underlying hardware interfaces, middle-layer LCD screen driver, and upper-layer applications;
+Underlying Hardware Interfaces
+The hardware interfaces are defined in the two files DEV_Config.cpp(.h), and functions such as read and write pin levels, delay, and SPI transmission are encapsulated.
+Write Pin Level
+void DEV_Digital_Write(int pin, int value)
+The first parameter is the pin, and the second is the high or low level.
+Read Pin Level
+int DEV_Digital_Read(int pin)
+The parameter is the pin, and the return value is the level of the read pin.
+Delay
+DEV_Delay_ms(unsigned int delaytime)
+Millisecond-level delay.
+SPI Output Data
+DEV_SPI_WRITE(unsigned char data)
+The parameter is char type, occupying 8 bits.
+Upper Layer Applications
+For the screen, what if you need to paint, display Chinese and English characters, display pictures, etc., these are all done by the upper layer applications. Many of you have asked about some graphics processing, and we have provided some basic functions in the directory 
+GUI_Paint.c(.h)
+Note: Due to the internal RAM size of STM32 and Arduino, the GUI is written directly into the LCD RAM.
+The fonts used by the GUI all depend on the font*.cpp(h) files under the same directory
+New Image Property: Create a new image property that includes the name, width, height, angle of rotation, and color of the image cache
+void Paint_NewImage(UWORD Width, UWORD Height, UWORD Rotate, UWORD Color);
+Parameters:
+ 	Width: The width of the image cache;
+ 	Height: The height of image cache;
+ 	Rotate: The angle of image flipping;
+ 	Color: The initial color of the image;
+Set the clear screen function, usually call the clear function of LCD directly;
+void Paint_SetClearFuntion(void (*Clear)(UWORD));
+Parameter:
+ 	Clear: Pointer to the clear screen function, used to quickly clear the screen to a certain color;
+Set the pixel drawing function, usually call the DrawPaint function of LCD directly;
+void Paint_SetDisplayFuntion(void (*Display)(UWORD,UWORD,UWORD));
+Parameter:
+ 	Display: Pointer to the pixel drawing function, which is used to write data to the specified location in the internal RAM of the LCD;
+Select Image Cache: The purpose of selecting the image cache is that you can create multiple image properties, and there can be multiple image caches. You can select each image you create
+void Paint_SelectImage(UBYTE *image)
+Parameter:
+ 	image: The name of the image cache, which is actually a pointer to the first address of the image cache;
+Image Rotation: Set the rotation angle of the selected image, preferably after Paint_SelectImage (), you can choose to rotate 0, 90, 180, 270
+void Paint_SetRotate(UWORD Rotate)
+Parameter:
+ 	Rotate: Image rotation angles can be chosen as ROTATE_0, ROTATE_90, ROTATE_180, ROTATE_270 corresponding to 0, 90, 180, 270 degrees
+[Note] Under different selection angles, the coordinates correspond to different starting pixels. Here taking 1.14 as an example, there are four images in sequence: 0°, 90°, 180°, 270°. For reference only
+Image Mirror Flip: Set the mirror flip of the selected image, you can choose no mirroring, horizontal mirroring, vertical mirroring, and mirroring around the image center
+void Paint_SetMirroring(UBYTE mirror)
+Parameter:
+ 	mirror: The mirroring method of the image can be selected as MIRROR_NONE, MIRROR_HORIZONTAL, MIRROR_VERTICAL, and MIRROR_ORIGIN, which correspond to no mirroring, horizontal mirroring, vertical mirroring, and mirroring around the image center, respectively
+Set the position and color of the point to be displayed in the cache: This is the core function of the GUI, handling point position and color displayed in the cache;
+void Paint_SetPixel(UWORD Xpoint, UWORD Ypoint, UWORD Color)
+Parameter:
+ 	Xpoint: The X position of the point in the image cache
+ 	Ypoint: The Y position of the point in the image cache
+ 	Color: The color of the point
+Image cache fill color: Fill the image cache with a certain color, which is generally used as a screen whitening
+void Paint_Clear(UWORD Color)
+Parameter:
+ 	Color: The filled color
+Fill color of image cache window: Fill a certain part of the image cache window with a certain color, usually used as a window whitening function, commonly used for displaying time, whitening for one second
+void Paint_ClearWindows(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color)
+Parameter:
+ 	Xstart: The starting point X coordinate of the window
+ 	Ystart: The starting point Y coordinate of the window
+ 	Xend: The endpoint X coordinate of the window
+ 	Yend: The endpoint Y coordinate of the window
+ 	Color: The filled color
+Draw a dot: Draw a dot at (Xpoint, Ypoint), and you can choose the color, the size, and the style of the dot
+void Paint_DrawPoint(UWORD Xpoint, UWORD Ypoint, UWORD Color, DOT_PIXEL Dot_Pixel, DOT_STYLE Dot_Style)
+Parameter:
+ 	Xpoint: The X coordinate of the dot
+ 	Ypoint: The Y coordinate of the dot
+ 	Color: The filled color
+ 	Dot_Pixel: The size of the dots, which provides the default 8 sizes of dots
+ 	 	 typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  , 	 	// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  , 	 	// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Dot_Style: The style of the dot, the method to expand the size of the dot is that, whether to expand from the dot as the center or from the dot as the lower left corner to the upper right
+ 	 	typedef enum {
+ 	 	   DOT_FILL_AROUND  = 1,		
+ 	 	   DOT_FILL_RIGHTUP,
+ 	 	} DOT_STYLE;
+Draw a line: Draw a line from (Xstart, Ystart) to (Xend, Yend), and you can choose the color, the width and the style of the line
+void Paint_DrawLine(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color, LINE_STYLE Line_Style , LINE_STYLE Line_Style)
+Parameter:
+ 	Xstart: The starting point X coordinate of the line
+ 	Ystart: The starting point Y coordinate of the line
+ 	Xend: The endpoint X coordinate of the line
+ 	Yend: The endpoint Y coordinate of the line
+ 	Color: The filled color
+ 	Line_width: The width of the lines, which provides the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	 Line_Style: The style of the line, which selects whether the line is connected in a straight line or as a dashed line
+ 	 	typedef enum {
+ 	 	 	 LINE_STYLE_SOLID = 0,
+ 	 	 	 LINE_STYLE_DOTTED,
+ 	 	} LINE_STYLE;
+Draw a rectangle: Draw a rectangle from (Xstart, Ystart) to (Xend, Yend), and you can choose the color, the width of the line, and whether to fill the inside of the rectangle
+void Paint_DrawRectangle(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UWORD Color, DOT_PIXEL Line_width, DRAW_FILL Draw_Fill)
+Parameter:
+ 	Xstart: The starting point X coordinate of the rectangle
+ 	Ystart: The starting point Y coordinate of the rectangle
+ 	Xend: The endpoint X coordinate of the rectangle
+ 	Yend: The endpoint Y coordinate of the rectangle
+ 	Color: The filled color
+ 	Line_width: The width of the four sides of the rectangle, providing the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Draw_Fill: Filling, whether to fill the inside of the rectangle
+ 	 	typedef enum {
+ 	 	 	 DRAW_FILL_EMPTY = 0,
+ 	 	 	 DRAW_FILL_FULL,
+ 	 	} DRAW_FILL;
+Draw a circle: Draw a circle with a radius of Radius with (X_Center Y_Center) as the center, and you can choose the color, the width of the line, and whether to fill the inside of the circle
+void Paint_DrawCircle(UWORD X_Center, UWORD Y_Center, UWORD Radius, UWORD Color, DOT_PIXEL Line_width, DRAW_FILL Draw_Fill)
+Parameter:
+ 	X_Center: The X coordinate of the center of the circle
+ 	Y_Center: The Y coordinate of the center of the circle
+ 	Radius: The radius of the circle
+ 	Color: The filled color
+ 	Line_width: The width of the arc, which provides the default 8 widths
+ 	 	typedef enum {
+ 	 	 	 DOT_PIXEL_1X1  = 1, 	 	// 1 x 1
+ 	 	 	 DOT_PIXEL_2X2  , 		// 2 X 2
+ 	 	 	 DOT_PIXEL_3X3  ,		// 3 X 3
+ 	 	 	 DOT_PIXEL_4X4  ,		// 4 X 4
+ 	 	 	 DOT_PIXEL_5X5  , 		// 5 X 5
+ 	 	 	 DOT_PIXEL_6X6  , 		// 6 X 6
+ 	 	 	 DOT_PIXEL_7X7  , 		// 7 X 7
+ 	 	 	 DOT_PIXEL_8X8  , 		// 8 X 8
+ 	 	} DOT_PIXEL;
+ 	Draw_Fill: Filling, whether to fill the inside of the circle
+ 	 	typedef enum {
+ 	 	 	 DRAW_FILL_EMPTY = 0,
+ 	 	 	 DRAW_FILL_FULL,
+ 	 	} DRAW_FILL;
+Write Ascii character: Write an Ascii character with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawChar(UWORD Xstart, UWORD Ystart, const char Ascii_Char, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Ascii_Char: Ascii character
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write English string: Write a string of English characters with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawString_EN(UWORD Xstart, UWORD Ystart, const char * pString, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pString: A string is a pointer
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write Chinese strings: Write a string of Chinese characters with (Xstart Ystart) as the left vertex, and you can select the GB2312 encoding character font library, font foreground color, and font background color
+void Paint_DrawString_CN(UWORD Xstart, UWORD Ystart, const char * pString, cFONT* font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pString: is a string, and a string is a pointer
+ 	Font: The GB2312 encoding character library, the following fonts are provided in the Fonts folder:
+ 	 	font12CN: Ascii character font 11*21, Chinese font 16*21
+ 	 	font24CN: Ascii character font 24*41, Chinese font 32*41
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write numbers: Write a string of numbers with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawNum(UWORD Xpoint, UWORD Ypoint, int32_t Nummber, sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Number: The displayed number, here is stored in a 32-bit long int type, which can be displayed up to 2147483647.
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Write numbers with decimals: Write a string of numbers with decimal at (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawFloatNum(UWORD Xpoint, UWORD Ypoint, double Number,  UBYTE Decimal_Point,	sFONT* Font,    UWORD Color_Foreground, UWORD  Color_Background);
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	Number: The displayed number, which is saved in the double type
+        Decimal_Point: Display the digits after the decimal point
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Display time: Display time with (Xstart Ystart) as the left vertex, and you can select the Ascii code visual character font library, font foreground color, and font background color
+void Paint_DrawTime(UWORD Xstart, UWORD Ystart, PAINT_TIME *pTime, sFONT* Font, UWORD Color_Background, UWORD Color_Foreground)
+Parameter:
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	pTime: The displayed time, where a time structure is defined, and only the hours, minutes, and seconds are passed to the parameters;
+ 	Font: The Ascii code visual character font library, provides the following fonts in the Fonts folder:
+ 	 	font8: 5*8 font
+ 	 	font12: 7*12 font
+ 	 	font16: 11*16 font
+ 	 	font20: 14*20 font
+ 	 	font24: 17*24 font
+ 	Color_Foreground: Font color
+ 	Color_Background: Background color
+Display image: At (Xstart Ystart) as the left vertex, display an image with a width of W_Image and a height of H_Image
+void Paint_DrawImage(const unsigned char *image, UWORD xStart, UWORD yStart, UWORD W_Image, UWORD H_Image)
+Parameter:
+ 	Image: Image address, pointing to the image information you want to display
+ 	Xstart: The left vertex X coordinate of the character
+ 	Ystart: The left vertex Y coordinate of the character
+ 	W_Image: Image width
+ 	H_Image: Image height
+VisionFive2
+Compatible Models
+0.96inch LCD Module
+1.14inch LCD Module
+1.28inch LCD Module
+1.3inch LCD Module
+1.54inch LCD Module
+1.8inch LCD Module
+2inch LCD Module
+2.4inch LCD Module
+Hardware Connection
+VisionFive2 connection pin correspondence
+LCD
+VisionFive2 Board physical pin number
+VCC
+3.3V
+GND
+GND
+DIN
+19
+CLK
+23
+CS
+24
+DC
+22
+RST
+13
+BL
+12
+Install Corresponding Library Files
+apt-get install pip
+pip install VisionFive.gpio
+apt-get install python3-numpy
+apt-get install python3-pil
+Download Demo
+sudo apt-get install unzip -y
+sudo wget
+https://files.waveshare.com/wiki/1.54inch_LCD_Module/LCD_Module_code.zip
+sudo unzip ./LCD_Module_code.zip
+cd LCD_Module_code/VisionFive/python/example/
+Run the Corresponding Demo According to the Screen You Purchased
+python3 0inch96_LCD_test.py
+python3 1inch14_LCD_test.py
+python3 1inch28_LCD_test.py
+python3 1inch3_LCD_test.py
+python3 1inch54_LCD_test.py
+python3 1inch8_LCD_test.py
+python3 2inch_LCD_test.py
+python3 2inch4_LCD_test.py
+Resources
+Documents
+Schematic
+2D Diagram
+3D Diagram
+Demos
+Demo
+Software
+Zimo221 Chinese character conversion software
+Image2Lcd image bitmap conversion software
+Image bitmap conversion tutorial
+Font library conversion tutorial
+Flash_download_tool
+Datasheets
+ST7789VW Datasheet
+Support
+Technical Support
+If you need technical support or have any feedback/review, please click the
+Submit Now
+button to submit a ticket, Our support team will check and reply to you within 1 to 2 working days. Please be patient as we make every effort to help you to resolve the issue.
+Working Time: 9 AM - 6 PM GMT+8 (Monday to Friday)
+Submit Now
+Retrieved from "
+https://www.waveshare.com/w/index.php?title=1.54inch_LCD_Module&oldid=105201
+"
+Login / Create Account
+var fbtFancyBoxOptions = {};
+(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.292","walltime":"0.504","ppvisitednodes":{"value":1013,"limit":1000000},"postexpandincludesize":{"value":60055,"limit":2097152},"templateargumentsize":{"value":1230,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":35711,"limit":5000000},"timingprofile":["100.00%  207.860      1 -total"," 29.27%   60.839      1 Template:Infobox_item"," 29.13%   60.558      1 Template:LCD_for_rpiuse"," 10.11%   21.022      1 Template:Product_List","  8.02%   16.679      1 Template:LCD_for_rpi_code_description","  7.85%   16.325      1 Template:Amazon_nolink","  7.80%   16.210      1 Template:1.54inch_Module_connection","  7.24%   15.050      1 Template:LCD_for_stm32_use","  7.22%   15.006      1 Template:LCD_for_VisionFive2_use","  6.74%   14.015      1 Template:Servicebox1"]},"cachereport":{"timestamp":"20261002205441","ttl":0,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":997});});
+(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4469a872d635f50',t:'MTc5MDk3NDQ4MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();

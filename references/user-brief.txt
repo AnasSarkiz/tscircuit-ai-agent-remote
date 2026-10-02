@@ -1,0 +1,733 @@
+Create a new **tscircuit PCB project** for a small handheld AI hardware controller.
+
+## Project name
+
+**tscircuit-ai-agent-remote**
+
+The device is a compact physical interface for an AI agent.
+
+The main interaction should be:
+
+**Press TALK → speak → send request to AI backend over Wi-Fi → show response/action on display → user physically approves or rejects the action.**
+
+This is NOT intended to run a large AI model locally. The board is an input/output client that communicates with a cloud/backend AI service over Wi-Fi.
+
+The design should be generic enough to work with different AI backends.
+
+---
+
+# Main features
+
+The device must include:
+
+- ESP32-S3 MCU/module
+- Wi-Fi
+- Bluetooth LE
+- USB-C
+- Rechargeable LiPo battery
+- Battery charging
+- Battery protection
+- 3.3 V regulated supply
+- Small color display
+- Two digital MEMS microphones
+- Small speaker
+- Audio amplifier
+- Haptic vibration motor
+- RGB status LED
+- Rotary encoder with push button
+- Large TALK button
+- APPROVE button
+- REJECT button
+- Physical microphone-disable/privacy switch
+- Power button or power switch
+- Battery level measurement
+- Programming/debug interface
+- Useful debug/test points
+
+Keep the device reasonably simple. Do not add unnecessary sensors, cameras, GPS, cellular, SD card, HDMI, or other features unless they are required.
+
+---
+
+# Intended UI
+
+The display should be approximately **1.54–1.9 inches**.
+
+Example interaction:
+
+```text
+┌────────────────────────┐
+│ ● LISTENING            │
+│                        │
+│ Buy the MacBook for    │
+│ €2,199?                │
+│                        │
+│   ✓ APPROVE   ✕ REJECT │
+└────────────────────────┘
+
+        ◉ TALK
+```
+
+The rotary encoder should allow scrolling through:
+
+- AI responses
+- Pending actions
+- Notifications
+- Simple menus
+
+Pressing the encoder selects an item.
+
+---
+
+# Status indication
+
+Use RGB LED states approximately like:
+
+- Blue = ready
+- Cyan = listening
+- Purple = processing
+- Green = completed/approved
+- Red = error/rejected
+- Orange = disconnected
+
+The exact firmware behavior does not need to be implemented yet, but the hardware must support it cleanly.
+
+---
+
+# MCU
+
+Prefer an **ESP32-S3 module with integrated flash and antenna** rather than designing the RF section from the bare chip.
+
+Prefer something widely available from JLCPCB/LCSC.
+
+Examples can include an ESP32-S3-WROOM family device, but choose the exact module based on:
+
+- JLCPCB availability
+- sufficient GPIO
+- I2S support
+- SPI support
+- USB support
+- Wi-Fi
+- BLE
+- PSRAM if useful for display/audio buffering
+
+Make sure antenna placement follows the manufacturer's keepout recommendations.
+
+Do not place copper, components, battery, display metal, or ground beneath the antenna keepout region.
+
+---
+
+# Audio input
+
+Use **two digital MEMS microphones**.
+
+Prefer I2S/PDM microphones supported by ESP32-S3.
+
+Place the microphones toward the upper/front edge of the PCB with acoustic openings that can align with enclosure holes.
+
+Provide appropriate decoupling.
+
+The physical **MIC PRIVACY switch must electrically disable the microphones**.
+
+Do not make privacy disable purely firmware-controlled.
+
+Preferred implementation:
+
+- disconnect microphone power rail, or
+- use a load switch controlling microphone power
+
+The MCU should optionally be able to detect the privacy-switch state.
+
+---
+
+# Audio output
+
+Include:
+
+- small 8-ohm speaker connection
+- efficient mono audio amplifier
+- ESP32 digital audio output where practical
+
+Prefer an I2S Class-D amplifier such as a MAX98357-type solution or another suitable JLCPCB-supported component.
+
+Provide a speaker connector/pads that can connect to a small enclosure-mounted speaker.
+
+Do not place the speaker directly on the PCB unless there is a strong mechanical reason.
+
+---
+
+# Display
+
+Use a readily available small SPI TFT display.
+
+Target:
+
+- 1.54" to 1.9"
+- approximately 240×240 or similar
+- SPI
+- backlight control from MCU
+
+Prefer an ST7789-compatible display/module if practical.
+
+The display should use a connector if this makes enclosure assembly easier.
+
+If using FPC:
+
+- use the correct FPC connector
+- verify pin order
+- verify contact orientation
+- document the exact compatible display
+
+---
+
+# Controls
+
+Include:
+
+### TALK
+
+Large tactile push button.
+
+This should be the most visually and mechanically prominent control.
+
+### APPROVE
+
+Dedicated green/user-facing approval button.
+
+### REJECT
+
+Dedicated reject/cancel button.
+
+### Rotary encoder
+
+Use:
+
+- A
+- B
+- push switch
+
+Add hardware debouncing/filtering if appropriate.
+
+### Power
+
+Provide a user-accessible power switch or suitable soft-power architecture.
+
+Keep the implementation simple and reliable.
+
+---
+
+# Haptic feedback
+
+Include a small vibration motor output.
+
+Prefer a coin vibration motor connected through:
+
+- suitable transistor/MOSFET driver
+- flyback protection if required
+
+Expose a connector or solder pads for the motor.
+
+Do not drive the motor directly from an ESP32 GPIO.
+
+---
+
+# USB-C
+
+Use ONE USB-C connector.
+
+Functions:
+
+- battery charging
+- power input
+- ESP32 USB programming/debugging if practical
+
+USB-C should operate as a USB device/sink only.
+
+Use correct:
+
+- CC1/CC2 resistors
+- ESD protection
+- USB data routing
+- power protection
+
+Do not add USB-PD unless there is a real need.
+
+Normal 5 V USB-C input is sufficient.
+
+---
+
+# Battery system
+
+Use a single-cell LiPo battery.
+
+Target battery size:
+
+approximately **500–1000 mAh**
+
+Include:
+
+- LiPo connector
+- charger
+- battery protection where needed
+- load sharing / power path if practical
+- regulated 3.3 V rail
+
+The device should be able to operate while connected to USB-C.
+
+Choose a charger/power-management IC that is:
+
+- common
+- well documented
+- JLCPCB/LCSC available
+- appropriate for USB-C 5 V input
+- safe for a small consumer handheld device
+
+Add battery voltage measurement to an ESP32 ADC through an appropriate divider.
+
+Consider a load-switch or power-latch solution only if it does not unnecessarily complicate the design.
+
+---
+
+# Power architecture
+
+Expected structure:
+
+```text
+USB-C 5V
+   │
+   ├── ESD / input protection
+   │
+   ▼
+LiPo charger / power path
+   │
+   ├── Battery
+   │
+   ▼
+3.3V regulator
+   │
+   ├── ESP32-S3
+   ├── display
+   ├── microphones
+   ├── encoder/buttons
+   ├── LEDs
+   └── supporting logic
+```
+
+Speaker amplifier may use battery/5 V directly if appropriate.
+
+Calculate current requirements before selecting the regulator.
+
+Provide reasonable headroom for:
+
+- ESP32 Wi-Fi peaks
+- display backlight
+- audio amplifier
+- haptic motor
+- RGB LEDs
+
+---
+
+# Debugging
+
+Add useful test points for at least:
+
+- USB 5 V
+- VBAT
+- 3V3
+- GND
+- ESP32 reset
+- ESP32 boot
+- USB D+
+- USB D-
+- I2C if used
+- display SPI
+- microphone clock/data where practical
+
+Add labels that make hardware bring-up easy.
+
+Include power/status LEDs where useful, but avoid excessive LEDs.
+
+---
+
+# Programming
+
+Use ESP32 native USB programming if supported by the selected module.
+
+Also provide accessible:
+
+- BOOT
+- RESET
+
+Do not rely on tiny inaccessible pads for initial bring-up.
+
+---
+
+# PCB target
+
+Target board size approximately:
+
+**50 mm × 45 mm**
+
+The exact dimensions can change slightly to support good ergonomics and RF/mechanical layout.
+
+Aim for a rounded-rectangle handheld/keychain-style PCB.
+
+Add:
+
+- four mounting holes if useful for enclosure assembly
+- mounting dimensions documented
+- no components interfering with screw heads
+- optional lanyard/keychain mounting hole
+
+Prefer a **4-layer PCB**:
+
+```text
+L1 – Components + signals
+L2 – Solid GND
+L3 – Power + slower signals
+L4 – Signals
+```
+
+Maintain a strong continuous ground plane.
+
+---
+
+# Placement priorities
+
+Placement must be completed before routing.
+
+Important placement rules:
+
+1. ESP32 antenna at board edge.
+2. Respect full antenna keepout.
+3. USB-C at bottom edge.
+4. Display centered in upper/front area.
+5. TALK button easy to reach.
+6. APPROVE and REJECT separated enough to avoid accidental presses.
+7. Encoder accessible with thumb.
+8. MEMS microphones near exposed enclosure openings.
+9. Charger and regulator kept away from microphone analog/acoustic area.
+10. Speaker amplifier kept away from sensitive microphone signals.
+11. Battery connector positioned for sensible enclosure wiring.
+12. Debug controls accessible.
+13. All connectors accessible from enclosure edges where appropriate.
+
+---
+
+# tscircuit workflow
+
+Initialize this as a proper **tscircuit repository**.
+
+Follow the current tscircuit project conventions and repository organization.
+
+Create:
+
+- `main.tsx`
+- reusable subcircuits where useful
+- `README.md`
+- `BOM.md`
+- `VALIDATION.md`
+- `issues.md`
+
+Keep the source organized.
+
+Do not make one enormous `main.tsx` if the circuit naturally separates into blocks.
+
+Suggested structure:
+
+```text
+src/
+  power/
+  usb/
+  esp32/
+  audio/
+  display/
+  controls/
+  haptics/
+```
+
+Use this structure only if it matches current tscircuit conventions.
+
+---
+
+# JLCPCB requirement
+
+The design is intended to be manufactured with **JLCPCB PCBA**.
+
+For every important component, determine:
+
+- manufacturer
+- exact manufacturer part number
+- LCSC/JLCPCB part number
+- package
+- basic/extended classification if known
+
+Create a BOM table similar to:
+
+| Ref | Function | Part | Manufacturer | MPN | LCSC/JLCPCB | Package | Qty |
+|---|---|---|---|---|---|---|---|
+
+Do not guess LCSC numbers.
+
+Verify every supplier part before using it.
+
+Avoid obscure components when an easier JLCPCB-supported alternative exists.
+
+---
+
+# Imported components
+
+When importing components from EasyEDA/JLCPCB:
+
+- verify pin names
+- verify pin numbers
+- verify footprint
+- verify orientation
+- verify exposed pads
+- verify connector contact direction
+- verify mechanical dimensions
+
+Never trust an imported symbol or footprint only because it compiles.
+
+Cross-check important parts against manufacturer datasheets.
+
+Record discrepancies in `issues.md`.
+
+---
+
+# Schematic sheets / blocks
+
+Organize the circuit logically into approximately:
+
+1. USB-C input and protection
+2. Battery charging / power management
+3. ESP32-S3
+4. Display
+5. Microphones
+6. Speaker amplifier
+7. User controls
+8. RGB/status LEDs
+9. Haptic driver
+10. Debug/programming
+
+---
+
+# Important rule: NO ROUTING YET
+
+**Do not route the PCB yet.**
+
+Routing must remain disabled until all of the following are complete:
+
+- architecture reviewed
+- BOM finalized
+- all JLCPCB parts verified
+- datasheets checked
+- symbol pin mappings verified
+- footprints verified
+- power requirements calculated
+- schematic complete
+- placement complete
+- antenna keepout validated
+- display mechanics validated
+- buttons/encoder ergonomics checked
+- connectors checked
+- mounting holes finalized
+
+At this stage the goal is:
+
+**perfect BOM + schematic + mechanical definition + placement.**
+
+Only start routing after explicit approval.
+
+---
+
+# Validation
+
+Create `VALIDATION.md`.
+
+For each subsystem record:
+
+- selected component
+- datasheet
+- supply voltage
+- important pin mappings
+- JLCPCB/LCSC number
+- footprint verification
+- important current calculations
+- mechanical constraints
+- PASS / REVIEW / BLOCKED status
+
+Especially validate:
+
+- USB-C
+- ESP32 module
+- LiPo charger
+- regulator
+- display connector
+- microphones
+- audio amplifier
+- privacy switch
+- RGB LED
+- encoder
+- vibration motor driver
+
+Do not call the design fabrication-ready if any important item is still uncertain.
+
+---
+
+# issues.md
+
+Maintain an active `issues.md`.
+
+Include items such as:
+
+- missing STEP models
+- unknown connector orientation
+- unverified JLCPCB parts
+- mechanical conflicts
+- power-budget questions
+- unavailable components
+- antenna clearance issues
+- datasheet inconsistencies
+
+Resolve items rather than silently working around them.
+
+---
+
+# 3D models
+
+Try to obtain accurate STEP/3D models for important mechanical parts:
+
+- USB-C
+- display connector
+- buttons
+- rotary encoder
+- ESP32 module
+- battery connector
+- speaker connector
+- privacy switch
+
+Do not create obviously fake models merely to make the 3D viewer look complete.
+
+Missing models should be documented.
+
+---
+
+# GitHub
+
+Initialize git and create a GitHub repository named:
+
+**tscircuit-ai-agent-remote**
+
+Commit logical milestones.
+
+Do not commit generated junk, caches, credentials, or build artifacts that should be ignored.
+
+---
+
+# Firmware interfaces
+
+Firmware does NOT need to be implemented in this task.
+
+However, document the expected MCU interfaces.
+
+Create a table such as:
+
+| Feature | Interface |
+|---|---|
+| Display | SPI |
+| Mic 1/2 | I2S/PDM |
+| Speaker amp | I2S |
+| Encoder | GPIO |
+| TALK | GPIO |
+| APPROVE | GPIO |
+| REJECT | GPIO |
+| RGB LED | GPIO / addressable |
+| Haptic | GPIO → MOSFET |
+| Battery monitor | ADC |
+| Privacy switch sense | GPIO |
+| USB | native USB |
+
+Pin allocation must avoid ESP32 boot-strapping conflicts.
+
+---
+
+# Privacy requirement
+
+This is important.
+
+The microphone privacy switch must provide a **hardware-level microphone disable**.
+
+When privacy is OFF:
+
+```text
+MIC POWER = physically disconnected
+```
+
+Firmware must not be able to secretly re-enable the microphones while the physical switch is in the disabled position.
+
+A visible privacy indication should also be considered.
+
+---
+
+# Design philosophy
+
+The final product should feel like:
+
+> A small physical remote control for an AI agent.
+
+Not:
+
+> A smartphone replacement.
+
+Keep it:
+
+- compact
+- understandable
+- manufacturable
+- repairable
+- low power
+- visually clean
+- easy to assemble
+- easy to debug
+
+Prioritize reliability over unnecessary complexity.
+
+---
+
+# First milestone
+
+For the first milestone:
+
+1. Initialize the tscircuit project.
+2. Initialize Git/GitHub.
+3. Research and select the exact components.
+4. Build the verified BOM.
+5. Create the schematic.
+6. Check all important pin mappings against datasheets.
+7. Define PCB outline and mounting.
+8. Place all components.
+9. Validate ESP32 antenna clearance.
+10. Produce `VALIDATION.md`.
+11. Produce `issues.md`.
+12. Run available schematic/compile checks.
+13. Show the PCB placement and schematic.
+14. Report all remaining blockers.
+
+**DO NOT ROUTE.**
+
+At the end, report:
+
+- repo URL
+- selected ESP32 module
+- charger IC
+- regulator
+- microphone
+- speaker amplifier
+- display/display connector
+- board dimensions
+- estimated current consumption
+- estimated BOM cost
+- unresolved issues
+- whether the board is ready to proceed to routing
+
+Do not state that it is ready for routing unless the BOM, schematic, footprints, mechanics and placement have actually been verified.
