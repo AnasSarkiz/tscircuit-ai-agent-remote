@@ -1,13 +1,17 @@
 {
   "revision": "A0-C5656610-local-hole",
   "github": {
-    "status": "pending",
+    "status": "blocked: automatic approval review rejected push; explicit approval requested",
     "repository": "AnasSarkiz/tscircuit-ai-agent-remote",
-    "branch": "main"
+    "branch": "main",
+    "reason": "Reviewer treated the main-branch push as an external mutation without explicit human authorization for publishing this revision.",
+    "attempted_command": "git push --set-upstream origin main",
+    "remote_update_succeeded": false
   },
   "tscircuit": {
     "status": "blocked; upload not attempted",
     "package": "AnasSarkiz/tscircuit-ai-agent-remote",
     "reason": "Component build fails B-003; complete board build explicitly fails because circuit is incomplete. No validation bypass or invalid package publication."
-  }
+  },
+  "implementation_commit": "54bb3c0f899923eca45ecbc85d08a385df6aa550"
 }

@@ -95,7 +95,6 @@ prerequisite checks are resolved.
 ## Publication status
 
 Root AGENTS.md now authorizes and requires pushing each completed implementation
-step and publishing the same prototype revision. GitHub source push is being
-performed for this correction. Tscircuit publication is **blocked** by the failed
+step and publishing the same prototype revision. GitHub source push was rejected by automatic approval review; explicit human approval for commit 54bb3c0 to main is pending. Tscircuit publication is **blocked** by the failed
 component build (B-003) and the main entry's explicit incomplete-design build
 failure. No invalid package, placeholder success or bypassed build is published.

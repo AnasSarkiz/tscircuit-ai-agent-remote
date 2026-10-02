@@ -213,7 +213,7 @@ this error. Stage 2 remains blocked; complete-board checks and stages 3–6 have
 not passed. This does not diagnose a short or validate physical acoustics/assembly.
 
 Standing root instructions now require commit/push/publication of implementation
-steps. GitHub source is being pushed for this milestone. Tscircuit publication is
+steps. GitHub source push was rejected by automatic approval review because explicit authorization for this revision on the default branch was not recognized. Approval for commit 54bb3c0 to main was requested; no remote push succeeded. Tscircuit publication is
 blocked by B-003's failing component build and the incomplete main circuit's
 build failure; no package upload is performed while validation fails. Registry
 handle was verified as @AnasSarkiz without persisting credential/session details.
