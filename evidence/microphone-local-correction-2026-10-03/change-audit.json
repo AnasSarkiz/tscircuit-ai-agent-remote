@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-03",
+  "lcsc": "C5656610",
+  "manufacturer_part_number": "ICS-43434",
+  "authorization": "Latest direct user instruction authorizes manual footprint correction after supplier discrepancy confirmation. Supersedes previous wait for upstream correction for this local edit.",
+  "before_source_commit": "32a05e545f1f4a03a40e6c4e0ad3f05c5bc88bde",
+  "before_sha256": "f52d2f2b4c9d0c60e7b97c3dc69d89f6ea60df09788f2f76042a3c7ae22feb33",
+  "after_sha256": "f97f0744f06ffc0cc0db874d41e61e9f0c5136368afa084d97331e351c6d7abf",
+  "change": {
+    "old_acoustic_hole_diameter_mm": 0.3999992,
+    "new_acoustic_hole_diameter_mm": 0.6,
+    "hole_center_mm": {
+      "x": 0.7650734,
+      "y": 0
+    }
+  },
+  "manufacturer_recommended_minimum_mm": 0.5,
+  "manufacturer_source": "https://product.tdk.com/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/ds-000069-ics-43434-v1.2.pdf",
+  "manufacturer_page": 17,
+  "source_cause": {
+    "raw_record": "HOLE~4007.0485~2992.0275~0.7874~gge363~0",
+    "raw_diameter_mm": 0.3999992,
+    "supplier_owner": "lcsc",
+    "supplier_writable": false,
+    "converter_preserves_source": true
+  },
+  "non_diameter_source_byte_identical": true,
+  "external_supplier_library_changed": false,
+  "converter_changed": false,
+  "generated_verification": {
+    "hole_diameter_mm": 0.6,
+    "hole_center_mm": {
+      "x": 0.7650734,
+      "y": 0
+    },
+    "non_hole_pad_geometry_unchanged": true,
+    "pad_shape_count": 9,
+    "pcb_trace_count": 0,
+    "minimum_hole_edge_to_copper_clearance_mm": 0.2580203036336521,
+    "pad_clearances": [
+      {
+        "pcb_smtpad_id": "pcb_smtpad_0",
+        "port_hints": [
+          "pin1"
+        ],
+        "edge_clearance_mm": 1.6090213468878023
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_1",
+        "port_hints": [
+          "pin2"
+        ],
+        "edge_clearance_mm": 0.8579267736970762
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_2",
+        "port_hints": [
+          "pin4"
+        ],
+        "edge_clearance_mm": 0.8579267736970762
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_3",
+        "port_hints": [
+          "pin5"
+        ],
+        "edge_clearance_mm": 1.6090213468878023
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_4",
+        "port_hints": [
+          "pin6"
+        ],
+        "edge_clearance_mm": 1.5122645999999997
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_5",
+        "port_hints": [
+          "pin3"
+        ],
+        "edge_clearance_mm": 0.26369627933427847
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_6",
+        "port_hints": [
+          "pin3"
+        ],
+        "edge_clearance_mm": 0.26368782601597357
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_7",
+        "port_hints": [
+          "pin3"
+        ],
+        "edge_clearance_mm": 0.2580203036336521
+      },
+      {
+        "pcb_smtpad_id": "pcb_smtpad_8",
+        "port_hints": [
+          "pin3"
+        ],
+        "edge_clearance_mm": 0.25802961879742964
+      }
+    ],
+    "placement_check": {
+      "exit_code": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "build_exit_code": 1,
+    "remaining_errors": [
+      {
+        "type": "source_ambiguous_port_reference",
+        "source_ambiguous_port_reference_id": "source_ambiguous_port_reference_0",
+        "error_type": "source_ambiguous_port_reference",
+        "message": "MIC1.GND is ambiguous: MIC1.GND references multiple non-overlapping pads: <smtpad#19(.pin3) />, <smtpad#20(.pin3) />, <smtpad#21(.pin3) />, <smtpad#22(.pin3) /> (consider using alternate aliases: pin3, 3)",
+        "source_port_id": "source_port_2",
+        "source_component_id": "source_component_0"
+      }
+    ],
+    "status": "B-002 diameter corrected locally; B-003 ground-pad port generation remains blocked; no whole-board approval",
+    "visual_review": "PCB PNG inspected; enlarged hole remains centered inside unchanged ground-pad quadrants."
+  },
+  "generated_circuit_json_sha256": "1dbcefe793f34afabbcd50ac8b1c38d67e3e9c6c88caa9ca6cc35023055bd901"
+}

@@ -1,11 +1,11 @@
-# Validation — A0
+# Validation — A0-C5656610-local-hole
 
-Updated: 2026-10-03 (Europe/Tirane). **B-002 microphone import review blocked; no complete schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
+Updated: 2026-10-03 (Europe/Tirane). **B-002 diameter corrected locally; B-003 native ground-pad port generation blocked; no complete schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
 | Stage | Status | Evidence and remaining work |
 |---|---|---|
 | 1. Confirm requirements | in progress | Accepted square, screen-dominant, one-button, top-side-only concept; 50 × 50 mm study target within approved 50 × 65 mm maximum; rechargeable pack/display mechanics/current budget/stackup unresolved |
-| 2. Schematic and BOM | blocked | Historical B-001 corrected, encoder now unselected; B-002 reproduced with updated published CLI; battery connector imported, exact pack and circuit still pending |
+| 2. Schematic and BOM | blocked | Historical B-001 corrected, encoder unselected; B-002 local 0.60 mm correction verified; B-003 native GND port rendering blocked; exact pack and circuit pending |
 | 3. Placement before routing | not started | Depends on stages 1–2; no placement/render exists |
 | 4. Copper routing | not started | User authorized routing after prerequisite gates pass; no routes exist |
 | 5. Automated and visual checks | not started | Preliminary import checks below do not complete board validation |
@@ -95,7 +95,7 @@ The selected values target the middle of ALPS's hole/slot-length ranges. Stage 6
 
 The network-enabled build created `.tscircuit/cache/` supplier metadata. This generated runtime cache is excluded from source control, the source checksum manifest and authored-source formatting; its canonical content is not manually reformatted. PCB source/geometry tests and all validation limits remain unchanged.
 
-## BLOCKING B-002 — C5656610 / ICS-43434 acoustic opening
+## Historical B-002 diagnosis — locally corrected in the later milestone
 
 Continued stage-2 component review after resolving B-001. Official TDK DS-000069 v1.2 page 10 confirms all six imported pin identities/functions. Page 17 recommends a PCB acoustic hole of at least **0.50 mm**; the unchanged imported footprint contains **0.3999992 mm**. This is below the manufacturer recommendation, not an absolute electrical-rating violation or diagnosed short. The physical microphone sound port is 0.375 mm; reliable alignment/acoustic integration requires the PCB opening review.
 
@@ -159,3 +159,62 @@ The user's final choice is to wait for the upstream correction. No local
 microphone edit, alternative microphone substitution, scheduled monitoring or
 dependent layout/routing work was initiated. The accepted concept and battery
 requirements/import preparation are saved for resumption.
+
+## A0-C5656610-local-hole — user-authorized implementation step
+
+Date: 2026-10-03. The latest direct user instruction authorizes manually updating
+C5656610's footprint after verifying the supplied investigation. This overrides
+the no-patch rule for this acoustic-hole correction and supersedes the earlier
+wait instruction. No broader imported pin-map or geometry modification is
+assumed authorized.
+
+Reviewed the linked investigation and copied its findings/raw response into
+this task's evidence directory. Independently calculated the raw EasyEDA hole:
+`0.7874 × 0.254 × 2 = 0.3999992 mm`. Supplier owner is `lcsc`, writable is false.
+This corroborates the supplier-footprint origin; converter output preserves it.
+TDK DS-000069 v1.2 page 17 recommends at least 0.50 mm. The chosen 0.60 mm target
+is a local correction, not a manufacturer-required exact diameter.
+
+Only `diameter="0.3999992mm"` changed to `diameter="0.6mm"` in the main import.
+The original source is preserved in commit 32a05e5 and the new evidence folder.
+An exact byte comparison, recorded before/after SHA-256 and generated geometry
+prove the hole center and all non-hole content are unchanged. No supplier record
+or converter code was modified. The old proposal and update-check evidence
+remain historical; they do not describe the current corrected import.
+
+Current evidence: `evidence/microphone-local-correction-2026-10-03/`.
+
+| Check | Actual result |
+|---|---|
+| Formatting | exit 0 |
+| TypeScript | exit 0 |
+| Existing import qualification tests | exit 0; 5 pass / 0 fail; unchanged manufacturer limits |
+| Corrected native A4 component build, routing disabled | exit 1; B-003 source_ambiguous_port_reference |
+| Generated acoustic hole | 0.60 mm at (0.7650734, 0) mm |
+| Generated copper pads | all 9 shapes unchanged from the baseline geometry |
+| Minimum hole-edge-to-copper distance | 0.2580203036 mm, measured against polygon segments and rectangles |
+| Isolated placement check | exit 0; 0 errors / 0 warnings |
+| PCB traces | 0; routing remains disabled |
+| Whole-board build | exit 1; main circuit remains incomplete |
+
+The PCB PNG was inspected. The diagnostic schematic exists but is not a complete
+microphone application or full-board schematic review. Ground and supply nets
+were added in the fixture to exercise mandatory pin connectivity without fake
+purchased components. The initial incorrect leading-dot shorthand selector was
+corrected to the documented `MIC1.pin3` / `MIC1.pin5`; the unsuccessful initial
+log is preserved and is not accepted evidence of a successful build.
+
+**B-002 is resolved locally for the acoustic diameter. B-003 remains blocking:**
+core rejects pin 3's four non-overlapping polygon pad segments, creates no PCB
+port for GND, and leaves all four ground pads with null PCB-port IDs. The logical
+GND source trace exists, so using a numeric alias does not fix native PCB-port
+creation. No pin mapping, pad geometry, DRC or snapshots were changed to conceal
+this error. Stage 2 remains blocked; complete-board checks and stages 3–6 have
+not passed. This does not diagnose a short or validate physical acoustics/assembly.
+
+Standing root instructions now require commit/push/publication of implementation
+steps. GitHub source is being pushed for this milestone. Tscircuit publication is
+blocked by B-003's failing component build and the incomplete main circuit's
+build failure; no package upload is performed while validation fails. Registry
+handle was verified as @AnasSarkiz without persisting credential/session details.
+Remote results follow in `publication-status.json` in the evidence folder.

@@ -29,7 +29,7 @@ The supported import of genuine TI **TPS63802DLAR C2845237** retains all ten man
 
 ## Other pending items
 
-### BLOCKING B-002 — C5656610 / ICS-43434 acoustic opening
+### RESOLVED LOCALLY B-002 — C5656610 / ICS-43434 acoustic opening
 
 Unmodified import has a 0.3999992 mm acoustic hole. TDK DS-000069 v1.2 page 17 recommends a minimum 0.50 mm PCB opening. Original six pin identities/functions match page 10. This is a manufacturer-recommendation discrepancy, not a diagnosed short or absolute electrical-rating violation. The independent opening test fails; stage 2 and dependent stages 3–6 remain blocked.
 
@@ -57,3 +57,45 @@ TDK's manufacturer pages differ on lifecycle (Production/NRND versus EOL). Final
 - Initial diagnostic-script TypeScript errors were corrected by making the script a module; no component source was patched.
 - LCSC encoder datasheet download returned an HTML challenge despite HTTP 200. Preserved as `evidence/downloads/C370970-datasheet-challenge.html`; actual official ALPS PDF and mounting diagram were obtained and inspected.
 - Initial GitHub creation was rejected by automatic approval review. A narrower empty-private-repository creation succeeded after proving the attached brief explicitly requested it. Repository identity: AnasSarkiz/tscircuit-ai-agent-remote.
+
+## User-authorized local C5656610 correction — 2026-10-03
+
+The user's latest direct instruction authorizes manual correction after confirming
+that the supplier footprint is undersized. This supersedes the prior wait for
+upstream for this local correction. Only the acoustic diameter changed from
+0.3999992 to **0.60 mm**. A byte comparison proves all other imported source is
+unchanged. Source center, pads, pin mappings and models are preserved.
+
+Audit: `evidence/microphone-local-correction-2026-10-03/change-audit.json`.
+Generated diameter is 0.60 mm, minimum hole-to-copper gap is 0.2580203 mm,
+and the isolated placement check passes with 0 errors / 0 warnings. All five
+existing import tests pass. Supplier raw data and the converter remain unchanged.
+Previous B-002 failure and wait entries above are historical evidence.
+
+## BLOCKING B-003 — C5656610 native ground-pad port generation
+
+The current native renderer reports `source_ambiguous_port_reference` for MIC1.GND.
+Pin 3 consists of four separated polygon pad shapes, matching the imported
+supplier layout. The renderer requires matched shapes to overlap before it
+creates a PCB port for that logical pin. It produces six logical ports but only
+five PCB ports, with all four ground shapes carrying `pcb_port_id: null`.
+
+Using the documented `MIC1.pin3` selector correctly creates a source trace to
+GND; the PCB-port generation still fails. Changing selector aliases therefore
+does not resolve this error. The corrected component build exits 1. No DRC
+suppression or geometry/pin-map workaround was applied. This is not a diagnosed
+short or proof that the four-segment supplier pad geometry is itself incorrect.
+
+Evidence: `evidence/microphone-local-correction-2026-10-03/build.log`, `circuit.json`
+and `change-audit.json`. Affected stage: 2 and dependent stages 3–6. Full-board
+schematic, component selection, battery/display mechanics and placement are
+also unfinished. Stop dependent routing until native port handling and all
+prerequisite checks are resolved.
+
+## Publication status
+
+Root AGENTS.md now authorizes and requires pushing each completed implementation
+step and publishing the same prototype revision. GitHub source push is being
+performed for this correction. Tscircuit publication is **blocked** by the failed
+component build (B-003) and the main entry's explicit incomplete-design build
+failure. No invalid package, placeholder success or bypassed build is published.

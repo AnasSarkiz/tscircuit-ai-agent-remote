@@ -70,7 +70,7 @@ enclosure, not additional exterior controls; physical access is still to be plan
 
 ## Validation state
 
-Stage 1 remains in progress. Stage 2 remains blocked by B-002: C5656610's fresh
-import still contains a 0.3999992 mm acoustic hole, below TDK's recommended 0.50 mm
-minimum. No complete schematic, PCB placement, copper routes or fabrication files
+Stage 1 remains in progress. B-002 is corrected locally with user authorization:
+C5656610 now has a 0.60 mm hole. Stage 2 remains blocked by B-003: native rendering
+cannot assign a PCB port to its four separated ground-pad shapes. No complete schematic, PCB placement, copper routes or fabrication files
 exist. See `VALIDATION.md` for evidence and gates.

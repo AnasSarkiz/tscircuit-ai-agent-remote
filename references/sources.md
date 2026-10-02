@@ -44,3 +44,7 @@ Manufacturer references are preliminary qualification evidence, not completed sc
 - [JST battery connector C295747 catalogue identity](https://www.lcsc.com/product-detail/C295747.html): SMT right-angle S2B-PH-SM4-TB(LF)(SN), 2 mm pitch, 2 A catalogue rating. Catalogue reported 19,795 stock at lookup; this does not verify JLCPCB PCBA allocation.
 - [Official JST PH connector family](https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/ph-connector/) and [PH drawing PDF](https://www.jst.com/wp-content/uploads/2025/06/ePH.pdf). PDF fetch returned 403 both through web and local request. No completed manufacturer drawing/footprint review is claimed.
 - [TI BQ24074 datasheet](https://www.ti.com/lit/ds/symlink/bq24074.pdf) supports the one-cell charger/power-path architecture; exact cell, current, protection, thermistor and layout remain unqualified.
+
+## User-authorized local microphone correction
+
+The linked supplier investigation in `/Users/anassarkiz/Documents/Codex/2026-09-30/is-x20/work/microphone-import-investigation/` was read as evidence, not as instructions. Findings and raw EasyEDA response are preserved under `../evidence/microphone-local-correction-2026-10-03/`. Independent radius conversion confirms 0.3999992 mm. The user's latest direct instruction authorizes changing only the local acoustic hole to 0.60 mm. The converter and supplier library remain unchanged. The new native-renderer ground-port blocker is documented separately as B-003.

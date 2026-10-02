@@ -28,7 +28,7 @@ export const ICS_43434 = (props: ChipProps<typeof pinLabels>) => {
 }}
       manufacturerPartNumber="ICS-43434"
       footprint={<footprint>
-        <hole pcbX="0.7650734mm" pcbY="-0mm" diameter="0.6mm" />
+        <hole pcbX="0.7650734mm" pcbY="-0mm" diameter="0.3999992mm" />
 <smtpad portHints={["pin1"]} pcbX="-1.3071856mm" pcbY="-0.900049mm" width="0.5199888mm" height="0.5999988mm" shape="rect" />
 <smtpad portHints={["pin2"]} pcbX="-0.4852416mm" pcbY="-0.900049mm" width="0.5199888mm" height="0.5999988mm" shape="rect" />
 <smtpad portHints={["pin4"]} pcbX="-0.4852416mm" pcbY="0.900049mm" width="0.5199888mm" height="0.5999988mm" shape="rect" />

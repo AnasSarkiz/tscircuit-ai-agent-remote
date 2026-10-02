@@ -1,0 +1,24 @@
+C5656610 / ICS-43434: PCB acoustic opening below TDK's recommended minimum
+
+The official LCSC-owned EasyEDA footprint for C5656610 / TDK InvenSense
+ICS-43434 specifies a 0.3999992 mm acoustic PCB hole. TDK DS-000069 v1.2,
+page 17, recommends a minimum PCB sound-hole diameter of 0.50 mm.
+
+Footprint: MIC-SMD_6P-L3.5-W2.7-P0.90-BL
+Footprint UUID: 9a1bd085c9154f9fa0392ad1d3d15d6d
+Symbol UUID: bb5ae0d2bf12487ea3dcd0a34e5b28ca
+Current source record: HOLE~4007.0485~2992.0275~0.7874~gge363~0
+Radius conversion: 0.7874 * 0.254 mm = 0.1999996 mm.
+
+Please correct only the acoustic opening diameter to 0.60 mm. Preserve
+the source center (4007.0485, 2992.0275), all electrical pads and pin
+mappings, and every other geometry record. The target source radius in
+10 mil units is 1.1811023622047244.
+
+The tscircuit converter faithfully preserves the existing undersized hole
+in both imported TSX and generated Circuit JSON. The correction is needed
+in the official supplier library before a fresh exact-footprint import can
+meet the manufacturer's recommendation.
+
+Manufacturer source:
+https://product.tdk.com/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/ds-000069-ics-43434-v1.2.pdf
