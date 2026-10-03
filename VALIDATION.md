@@ -1,3 +1,82 @@
+# Validation — A1 integrated placement preview (work in progress)
+
+Updated 2026-10-03, Europe/Tirane. **A complete native unrouted board now exists.**
+This milestone implements the user's new priority to visualize the integrated
+prototype before full component/mechanical qualification. It overrides the prior
+preview gate only; it does not approve routing, fabrication or hardware operation.
+
+| Stage | Status | Current evidence / remaining work |
+|---|---|---|
+| 1. Requirements | in progress | 50 × 65 mm preview after 50 × 55 trial; display/pack/NTC/mounting/current/stackup/RF tolerances provisional |
+| 2. Schematic/BOM | blocked for fabrication | Complete integrated 13-sheet A4 schematic and genuine 122-part inventory authored; B-005 paste and electrical/load/privacy/temperature/component qualification unresolved |
+| 3. Unrouted placement | in progress | Actual top PCB, ratsnest and native 3D generated/inspected; native overlap/pad/courtyard errors zero; connector access warnings disclosed; final physical fit not qualified |
+| 4. Routing | not started | Explicitly disabled; zero PCB traces/vias; no genuine saved routes yet |
+| 5. Board checks | in progress | Native preview build passes; current command receipts below; one pre-existing B-010 schema regression remains; no routed copper validation |
+| 6. Prototype fabrication | blocked | B-005 polygon paste, qualification, final placement, routing, DRC and fabrication outputs incomplete |
+| 7. Physical tests | not started | No prototype or measurements |
+| 8. Store release | in progress | Private WIP publication required; no fabrication/hardware-tested claim |
+
+## A1 implementation and evidence
+
+Source parent: `98a3f7ece77d3b15d92cd21fcf333ff5c951a2e4`. The commit containing
+this milestone is the A1 source revision. Dependency pins remain official core
+0.0.2070/easyeda0.0.370/CLI0.1.2235/tscircuit0.0.2742; no runtime or imports patched.
+New side switch C431540 was imported using the supported exact-footprint workflow.
+
+Entry `main.tsx`; application-only modules in `src/board/`; immutable reviewed
+fixtures retained. Root nets are shared across sheets. New native-output tests
+verify rail/GPIO/external-port boundaries, unique shared nets, top-only population,
+130 physical components (122 imported parts +8 copper pads), and zero traces/vias.
+They do not establish dynamic privacy, full-schema acceptance or hardware safety.
+
+Actual views, command logs, JSON, native GLB and 13-page A4 PDF are in
+`evidence/integrated-preview-2026-10-03/`. The original overlapping 50 ×55 trial
+is retained under `initial-50x55/`. Schematic display/clock coordinates were
+moved inward after visual review found labels near/beyond the A4 border. Passive
+orientations were improved based on the native pre-route placement diagnostic.
+
+The ESP32 physical antenna area overhangs the upper edge; the four-layer keepout
+excludes only U1 because the antenna/module itself intentionally occupies it.
+No other component/copper exemption exists. Display body/active area are native
+PCB notes and require a raised Z arrangement; they are not a populated display
+footprint or verified CAD enclosure. The top actuation mechanism is provisional.
+The 3D bottom is unpopulated, showing only board holes/connector overhang.
+
+J3 C265101 uses assumed pack pin1 BAT/pin2 GND/pin3 NTC; exact mating harness is
+unqualified. Charger USB100 defaults, ~297 mA nominal ISET candidate, default
+open TMR/ITERM and real external TS are wired. USB suspend/entitlement, battery
+readiness, pack PCM/current/NTC and thermal limits remain fabrication/operation
+qualification blockers. No powered test is claimed. Backlight uses a provisional
+100 Ω series resistor from VSYS with PWM MOSFET; brightness, low-VSYS headroom
+and exact panel limits remain open. The side SPDT switches MIC_INPUT feeding the
+hardware-HOLD-enabled 2.8 V mic LDO; switch throw mapping, inrush, bounce, partial
+rail injection and privacy turn-off timing still require qualification. The
+comparator and VMIC-powered open-drain clocks retain previous conditional bounds.
+
+Native imported connector/transistor category and ground-role warnings remain
+B-007 metadata limitations; actual named net connectivity is tested separately.
+J6 internal service harness and J7 internal FPC generate connector-facing warnings
+without explicit imported insertion-direction metadata. These are disclosed
+preview limitations; no definition is patched to silence them. Actual mechanical
+connector/FPC access must be qualified before fabrication. Exact-current stock,
+land/mask/paste acceptance, silk readability and raised-display clearance remain
+open; zero native placement errors alone do not complete stage3.
+
+The final native full-board build and all five pre-route diagnostics exited 0.
+Formatting, TypeScript checks and native snapshots also exited 0. Canonical tests
+have 30 passes and one pre-existing B-010 failure. Strict full-board schema
+validation separately rejects 156 native elements: 130 PCB components, 13 PCB
+groups and 13 schematic groups. Raw outputs remain unchanged. The native
+13-page A4 PDF and top/bottom GLB renders completed and were inspected.
+
+Current build/tests/export results and source hashes are recorded in
+`command-results.json`, `preview-summary.json`, `source-manifest.json` and logs
+in the A1 evidence directory. Publication status is tracked separately from
+board build success; earlier releases are version-specific historical records.
+The user keeps the background watcher paused.
+
+## Historical A0 validation (preserved; current A1 status above supersedes it)
+
 # Validation — A0-reference-import-review (work in progress)
 
 Updated: 2026-10-03 (Europe/Tirane). **B-008 is resolved on the four affected genuine imports using official easyeda0.0.370 and core0.0.2070; B-003 ground ports rechecked successfully. B-005 polygon paste remains a real assembly blocker. Native schema, complete hardware/component/mechanical qualification and fabrication outputs remain unfinished. No complete handheld schematic/PCB exists.** A0 is an untested engineering prototype, not a fabricated board revision.

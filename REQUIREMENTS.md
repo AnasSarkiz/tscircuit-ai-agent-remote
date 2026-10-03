@@ -7,9 +7,9 @@ The original brief is preserved as historical input.
 ## Form and interaction
 
 - Compact square enclosure with rounded corners and a display dominating the front.
-- Exactly one exterior physical control: a top-edge hold-to-talk button.
+- Primary top-edge hold-to-talk button plus a side-edge physical microphone privacy switch (latest user instruction).
 - Hold → speak → release → send over Wi-Fi → show and speak the AI response.
-- No exterior encoder, APPROVE/REJECT buttons, privacy slider or separate power button.
+- No exterior encoder, APPROVE/REJECT buttons or separate power button. BOOT/RESET stay inside the enclosure.
 - Status indication belongs on the screen; no separate front status LED is required.
 - Top-side PCB assembly only: all populated electronic parts and connector solder
   joints must be assembled from the top. Four copper layers remain intended.
@@ -21,9 +21,7 @@ The original brief is preserved as historical input.
 Accepted visual reference: `assets/product-concepts/ai-remote-v1-infographic-v3.png`.
 This is a concept illustration, not dimensioned CAD or a validated placement.
 
-Start the mechanical study with a **50 × 50 mm square PCB target**, within the
-previously approved maximum 50 × 65 mm envelope. The 50 × 50 mm target is an
-engineering assumption, not a completed fit review. Final enclosure dimensions,
+Latest preview milestone starts at **50 × 55 mm**, within the approved **50 × 65 mm** maximum. The actual A1 preview expanded to 50 × 65 mm to resolve first-trial overlaps. Enclosure square styling and final fit remain provisional. Final enclosure dimensions,
 display active area/glass, mounting, speaker depth, battery thickness and antenna
 clearances remain unresolved. A 1.54–1.9 inch display from the original brief must
 be checked against the desired front coverage; the concept does not prove that fit.
@@ -75,3 +73,23 @@ C5656610 now has a 0.60 mm hole. B-003 now passes native component generation on
 remains incomplete because the complete circuit/BOM and component qualification
 are still being authored. No complete schematic, PCB placement, copper routes or fabrication files
 exist. See `VALIDATION.md` for evidence and gates.
+
+## A1 preview scope — latest user priority, 2026-10-03
+
+The user explicitly permits a complete provisional schematic/placement before
+full qualification, while still prohibiting routing. External protected battery,
+speaker and motor use genuine imported PCB connectors; their exact enclosure
+models can remain provisional. This supersedes earlier unresolved permission
+for an externally sourced protected battery and the old absent-speaker/motor
+import gates for this preview. All PCB electronic components remain genuine JLC
+imports; imported definitions are not manually patched. The historical C370970
+and C5656610 exceptions retain their narrow scope.
+
+Four layers/1.6 mm/3 mm board corners are preview assumptions, not a released
+manufacturing stackup. The LCD envelope is 33.7 × 42.94 mm, active 28.03 × 35.04 mm,
+center (0, -3); it sits above top assembly with unqualified vertical separation.
+The module antenna overhang and all-layer exclusion are explicit; RF clearance
+from the final LCD, harnesses, pack, metal and enclosure still needs review.
+Charging starts in hardware USB100; TMR/ITERM remain intentionally open for TI's
+default safety timer/termination. TS goes to actual external pack NTC, with no
+fake thermistor resistor. Pack capacity alone does not qualify current or safety.

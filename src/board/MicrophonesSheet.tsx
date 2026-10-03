@@ -1,0 +1,64 @@
+import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
+import { ICS_43434 } from "../../imports/ICS_43434/ICS_43434"
+import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
+import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
+import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
+import { TLV3201AIDBVR } from "../../imports/TLV3201AIDBVR/TLV3201AIDBVR"
+import { place } from "./placement"
+export function MicrophonesSheet() {
+  return (
+    <schematicsheet
+      name="MicrophonesSheet"
+      displayName="AI Remote A1 - Dual microphones - B-005 FABRICATION BLOCKER"
+      sheetSize="A4"
+      sheetIndex={10}
+    >
+      <group name="MicrophonesSheet-group" schLayout={{ layoutMode: "relative" }}>
+        <ICS_43434 name="U4" {...place("U4")} schX={-7} schY={4} />
+        <ICS_43434 name="U5" {...place("U5")} schX={7} schY={4} />
+        <GRM188R71C104KA01D name="C80" {...place("C80")} schX={-11} schY={9} />
+        <GRM188R71C104KA01D name="C81" {...place("C81")} schX={11} schY={9} />
+        <TLV3201AIDBVR name="U7" {...place("U7")} schX={0} schY={-5} />
+        <RC0603FR_07100KL name="R26" {...place("R26")} schX={-10} schY={-4} />
+        <RC0603FR_071KL name="R27" {...place("R27")} schX={7} schY={-5} />
+        <RC0603FR_0710KL name="R29" {...place("R29")} schX={-5} schY={-5} />
+        <RC0603FR_0710KL name="R30" {...place("R30")} schX={-5} schY={-9} />
+        <GRM188R71C104KA01D name="C25" {...place("C25")} schX={5} schY={-10} />
+        <GRM188R71C104KA01D name="C26" {...place("C26")} schX={-10} schY={-9} />
+        <trace from="U4.pin1" to="net.MIC_WS" />
+        <trace from="U4.pin3" to="net.GND" />
+        <trace from="U4.pin4" to="net.MIC_BCLK" />
+        <trace from="U4.pin5" to="net.VMIC" />
+        <trace from="U4.pin6" to="net.MIC_SD" />
+        <trace from="U5.pin1" to="net.MIC_WS" />
+        <trace from="U5.pin3" to="net.GND" />
+        <trace from="U5.pin4" to="net.MIC_BCLK" />
+        <trace from="U5.pin5" to="net.VMIC" />
+        <trace from="U5.pin6" to="net.MIC_SD" />
+        <trace from="U4.pin2" to="net.GND" />
+        <trace from="U5.pin2" to="net.VMIC" />
+        <trace from="C80.pin1" to="net.VMIC" />
+        <trace from="C80.pin2" to="net.GND" />
+        <trace from="C81.pin1" to="net.VMIC" />
+        <trace from="C81.pin2" to="net.GND" />
+        <trace from="U7.pin1" to="net.MIC_SD_BUFFERED" />
+        <trace from="U7.pin2" to="net.GND" />
+        <trace from="U7.pin3" to="net.MIC_SD" />
+        <trace from="U7.pin4" to="net.MIC_SD_REF" />
+        <trace from="U7.pin5" to="net.V3V3" />
+        <trace from="R26.pin1" to="net.MIC_SD" />
+        <trace from="R26.pin2" to="net.GND" />
+        <trace from="R27.pin1" to="net.MIC_SD_BUFFERED" />
+        <trace from="R27.pin2" to="net.MCU_MIC_SD" />
+        <trace from="R29.pin1" to="net.VMIC" />
+        <trace from="R29.pin2" to="net.MIC_SD_REF" />
+        <trace from="R30.pin1" to="net.MIC_SD_REF" />
+        <trace from="R30.pin2" to="net.GND" />
+        <trace from="C25.pin1" to="net.V3V3" />
+        <trace from="C25.pin2" to="net.GND" />
+        <trace from="C26.pin1" to="net.MIC_SD_REF" />
+        <trace from="C26.pin2" to="net.GND" />
+      </group>
+    </schematicsheet>
+  )
+}

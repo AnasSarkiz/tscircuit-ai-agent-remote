@@ -1,0 +1,58 @@
+[
+  {
+    "check": "format-check",
+    "command": "bun run format:check",
+    "exit_code": 0
+  },
+  {
+    "check": "typecheck",
+    "command": "bun run typecheck",
+    "exit_code": 0
+  },
+  {
+    "check": "tests",
+    "command": "bun run test",
+    "exit_code": 1
+  },
+  {
+    "check": "netlist",
+    "command": "bunx tsci check netlist index.circuit.tsx",
+    "exit_code": 0,
+    "source": "actual completed native tool sessions; log in this directory"
+  },
+  {
+    "check": "pin_specification",
+    "command": "bunx tsci check pin_specification index.circuit.tsx",
+    "exit_code": 0,
+    "source": "actual completed native tool sessions; log in this directory"
+  },
+  {
+    "check": "source",
+    "command": "bunx tsci check source index.circuit.tsx",
+    "exit_code": 0,
+    "source": "actual completed native tool sessions; log in this directory"
+  },
+  {
+    "check": "schematic-placement",
+    "command": "bunx tsci check schematic-placement index.circuit.tsx",
+    "exit_code": 0,
+    "source": "actual completed native tool sessions; log in this directory"
+  },
+  {
+    "check": "placement",
+    "command": "bunx tsci check placement index.circuit.tsx",
+    "exit_code": 0,
+    "source": "actual completed native tool sessions; log in this directory"
+  },
+  {
+    "check": "build",
+    "command": "bunx tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs --3d-png --glbs",
+    "exit_code": 0
+  },
+  {
+    "check": "snapshot",
+    "command": "bunx tsci snapshot index.circuit.tsx --update",
+    "exit_code": 0,
+    "note": "new unrouted preview baselines; actual visual review, not fabrication approval"
+  }
+]

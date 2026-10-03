@@ -1,7 +1,44 @@
-// The complete board schematic and PCB have not been authored yet.
-// No fabricated schematic, placement, copper or export is returned by this scaffold.
+import { BoardNets } from "./src/board/nets"
+import { McuUsbSheet } from "./src/board/McuUsbSheet"
+import { ChargerSheet } from "./src/board/ChargerSheet"
+import { RegulatorSheet } from "./src/board/RegulatorSheet"
+import { DisplaySheet } from "./src/board/DisplaySheet"
+import { SpeakerSheet } from "./src/board/SpeakerSheet"
+import { HapticSheet } from "./src/board/HapticSheet"
+import { MicrophoneClockSheet } from "./src/board/MicrophoneClockSheet"
+import { HoldSheet } from "./src/board/HoldSheet"
+import { BatteryReadySheet } from "./src/board/BatteryReadySheet"
+import { MicrophonesSheet } from "./src/board/MicrophonesSheet"
+import { ControlsSheet } from "./src/board/ControlsSheet"
+import { BacklightSheet } from "./src/board/BacklightSheet"
+import { BoardFeatures } from "./src/board/BoardFeatures"
+
+// A1: complete, deliberately unrouted placement preview. PROTOTYPE, NOT FOR FABRICATION.
 export default function AiAgentRemote() {
-  throw new Error(
-    "A0 INCOMPLETE: accepted square one-button design with top-side assembly and rechargeable battery. B-002 acoustic hole corrected locally to 0.60 mm; B-003 ground ports and B-008 imported reference labels pass on official core 0.0.2070/easyeda 0.0.370. B-005 missing polygon solder paste is an assembly blocker. Exact protected battery, speaker, hold mechanism, power/privacy qualification and complete schematic/placement remain unfinished. Catalogue discovery and native schema/publication/BOM checks remain open. See VALIDATION.md. No complete board or routes exist.",
+  return (
+    <board
+      width={50}
+      height={65}
+      borderRadius={3}
+      thickness={1.6}
+      layers={4}
+      routingDisabled
+      pcbStyle={{ silkscreenFontSize: 0.7 }}
+    >
+      <BoardNets />
+      <McuUsbSheet />
+      <ChargerSheet />
+      <RegulatorSheet />
+      <DisplaySheet />
+      <SpeakerSheet />
+      <HapticSheet />
+      <MicrophoneClockSheet />
+      <HoldSheet />
+      <BatteryReadySheet />
+      <MicrophonesSheet />
+      <ControlsSheet />
+      <BacklightSheet />
+      <BoardFeatures />
+    </board>
   )
 }

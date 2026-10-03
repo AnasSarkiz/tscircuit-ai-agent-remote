@@ -1,0 +1,373 @@
+{
+  "checked_at": "2026-10-03T20:19:25.428009+00:00",
+  "source_revision": "98a3f7ece77d3b15d92cd21fcf333ff5c951a2e4",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-reference-import-review",
+  "publisher_exit_code": null,
+  "publisher_log_result": "completed with failed uploads; old process session is no longer available",
+  "reported_successes": 1208,
+  "reported_failures": 36,
+  "ready_to_build": false,
+  "is_private": true,
+  "files": [
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 7839968,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3739103,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/blocker-recheck-2026-10-03-1357/strict-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 27556322,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 4999480,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 7839968,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/MAX98357AETE_T/MAX98357AETE_T.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 712603,
+      "remote_sha256": "62cfdd632b41292a8af07050bd6c2316920a26cfb6f17fa5c667a105e619cf6f",
+      "matches": true
+    },
+    {
+      "path": "imports/RC0603FR_07560KL/RC0603FR_07560KL.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1046696,
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "matches": true
+    },
+    {
+      "path": "imports/RC0603FR_07560KL/RC0603FR_07560KL.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1800,
+      "remote_sha256": "d0900b04eeb5418f48ca043e03d01cc7519cd8453dd18fe6b4df995cb15ef808",
+      "matches": true
+    },
+    {
+      "path": "imports/RC0603FR_0791KL/RC0603FR_0791KL.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1046696,
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "matches": true
+    },
+    {
+      "path": "imports/RC0603FR_079K1L/RC0603FR_079K1L.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1046696,
+      "remote_sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc",
+      "matches": true
+    },
+    {
+      "path": "imports/S2B_PH_SM4_TB_LF__SN_/S2B_PH_SM4_TB_LF__SN_.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1951894,
+      "remote_sha256": "9328bcc17c6bf613b5a39adeeda066164fd0e60080a4f0d739cbbdf32bdbfd96",
+      "matches": true
+    },
+    {
+      "path": "imports/S3B_PH_SM4_TB_LF__SN_/S3B_PH_SM4_TB_LF__SN_.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2579994,
+      "remote_sha256": "a8f65d4590cbb7e77667f18c092715d4a0898c2efd5b902a72c62ff4d402437d",
+      "matches": true
+    },
+    {
+      "path": "imports/S3B_PH_SM4_TB_LF__SN_/S3B_PH_SM4_TB_LF__SN_.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2752,
+      "remote_sha256": "091eff22c5bb6e86740e98d652bd8268693e276a4a614deac496750721b2c60c",
+      "matches": true
+    },
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2068813,
+      "remote_sha256": "5320d7a2a54b3be031d3299b84bb107c8397b204852fb2c77e9aa5a217f8ca94",
+      "matches": true
+    },
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 4341,
+      "remote_sha256": "2976991997339eaac5b6bddc569e7fbb5431d7c17a3cbc227a0bdc6fd3009715",
+      "matches": true
+    },
+    {
+      "path": "imports/SKSWCFE010/SKSWCFE010.obj",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 383944,
+      "remote_sha256": "c5fa837a3ef500141685c1ecba5ba067a6e3382a4ea3fe6e58cf1a10db45af9b",
+      "matches": true
+    },
+    {
+      "path": "imports/SM06B_SRSS_TB_LF__SN_/SM06B_SRSS_TB_LF__SN_.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1952770,
+      "remote_sha256": "edcb07426f73bedf48f3993852f32cb164b4cbdfb16b80a1699adf853cfcd229",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G08DBVR/SN74LVC1G08DBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2944743,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G08DBVR/SN74LVC1G08DBVR.tsx",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3027,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/SN74LVC1G125DBVR/SN74LVC1G125DBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2944743,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G125DBVR/SN74LVC1G125DBVR.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2371,
+      "remote_sha256": "767f4491891e820b07f2f8688a391d4f82ca483a31ec83b744986fc87a90f349",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2944743,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 5543534,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/SN74LVC2G125DCUR/SN74LVC2G125DCUR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3163932,
+      "remote_sha256": "316574b486732c4c7451be271e6f5ac3e54c28662a33c91dc3203bdc22e11a0a",
+      "matches": true
+    },
+    {
+      "path": "imports/TLV3201AIDBVR/TLV3201AIDBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2944743,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.obj",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 54315,
+      "remote_sha256": "64afcb69c763513e646acc334b022c87a47c31c49bc12629bcc854f0ebf307aa",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS3808G33DBVR/TPS3808G33DBVR.obj",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 565628,
+      "remote_sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS63070RNMR/TPS63070RNMR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2275869,
+      "remote_sha256": "4da890d84df15d9ff499c73ca943e9347ded28edf5fe914a3cd3a87c5894ba79",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS63802DLAR/TPS63802DLAR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1760834,
+      "remote_sha256": "c97c37d950cd0a6ba11e51b1e5803038b90cc50ba68a89ca5317362bc7b0ce3c",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS7A2033PDBVR/TPS7A2033PDBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1599668,
+      "remote_sha256": "6543cfeef6ed208af29fa5653bd78911f1d618906de4412cb2042e989c5e1a37",
+      "matches": true
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3046769,
+      "remote_sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "matches": true
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 6529,
+      "remote_sha256": "369a0da56e474295976a0a32c678ee6ce1edc81b8da1eedf93e7c0fa68351232",
+      "matches": true
+    },
+    {
+      "path": "index.circuit.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 33,
+      "remote_sha256": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58",
+      "matches": true
+    },
+    {
+      "path": "references/tps3839.pdf",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 948524,
+      "remote_sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "matches": true
+    },
+    {
+      "path": "references/tps7a20.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 8989493,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "tests/imported-reference-ownership.test.ts",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2205,
+      "remote_sha256": "7ba65bb9ce10042068619b9637b28c4c9b37aca1f1593edf900e782b5f16a0b9",
+      "matches": true
+    }
+  ]
+}

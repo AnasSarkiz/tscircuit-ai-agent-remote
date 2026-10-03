@@ -1,3 +1,37 @@
+# AI Remote A1 — complete unrouted placement preview
+
+**Prototype; not for fabrication.** The complete `main.tsx` now integrates all
+major subsystems on a **50 × 65 mm**, four-layer, 1.6 mm board with 3 mm rounded
+corners. The requested 50 × 55 mm first trial was rendered and retained; it had
+connector/passive overlaps, so the preview uses the approved maximum height.
+
+**122 genuine JLC-imported electronic components + 8 native copper test pads**,
+all on top. Hardware includes ESP32-S3, USB-C, BQ24074 charging/power path,
+TPS63802, two ICS-43434 microphones, MAX98357A, display connector, three-contact
+battery/NTC connector, speaker connector, external motor connector/driver,
+physical top HOLD button, side privacy switch and internal BOOT/RESET/service.
+
+Views and the complete **13-page A4 schematic** are saved in
+`evidence/integrated-preview-2026-10-03/`: `pcb-top.png`, `pcb-ratsnest.png`,
+`3d-top.png`, `3d-bottom.png`, `schematic.pdf` and interactive `board.glb`.
+These are generated from the actual circuit/models. The blue PCB rectangles
+show the provisional raised LCD body/active area. The 3D images show PCB assembly;
+they do not establish LCD/enclosure/battery fit.
+
+Run `bun run build:placement` to rebuild. **Routing stays disabled**: there are
+zero copper traces/vias and no saved route cache. No fabrication outputs or
+physical qualification are claimed.
+
+Provisional: HS17QS178RX display/FPC and backlight application; protected 1S
+500–1000 mAh pack/NTC/polarity; enclosure-mounted 8 Ω speaker and 3 V motor;
+TALK actuator, mounting/raised display/RF mechanics and privacy transitions.
+Microphone polygon solder paste B-005, final electrical/thermal/mechanical
+qualification, routing/DRC/fabrication exports, strict native schema B-010,
+BOM-description B-015 and incomplete registry publication B-009 remain open.
+See `VALIDATION.md` and `BOM-preview.md`. The background watcher remains paused.
+
+## Historical A0 records (superseded by A1 where they conflict)
+
 # tscircuit AI agent remote
 
 Revision A0-reference-import-review (work in progress), updated 2026-10-03: **B-008 reference labels are corrected through official JLC imports; B-003 ground ports remain verified. Independent circuit reviews exist; no complete handheld schematic or PCB exists.** Missing polygon solder paste remains a real assembly blocker. Requirements, component choices, electrical qualification and full placement remain unfinished; no routing or fabrication approval.
