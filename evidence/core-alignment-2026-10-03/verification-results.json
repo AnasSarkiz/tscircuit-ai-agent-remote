@@ -1,0 +1,143 @@
+{
+  "checked_at": "2026-10-03T00:21:41.185785+00:00",
+  "package_sha256": "3d8a1f075b6c7264c3533a5d0178ee47a9d7fca82181e20d27a1c25a144971fc",
+  "results": [
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "build",
+        "evidence/microphone-local-correction.circuit.tsx",
+        "--pcb-png",
+        "--pcb-svgs",
+        "--schematic-svgs",
+        "--schematic-png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "evidence/microphone-local-correction.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "evidence/microphone-local-correction.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "source",
+        "evidence/microphone-local-correction.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "evidence/microphone-local-correction.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "evidence/microphone-local-correction.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "build",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx",
+        "--pcb-png",
+        "--pcb-svgs",
+        "--schematic-svgs",
+        "--schematic-png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "source",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "test"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

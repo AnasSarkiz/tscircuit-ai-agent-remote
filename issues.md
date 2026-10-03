@@ -72,9 +72,9 @@ and the isolated placement check passes with 0 errors / 0 warnings. All five
 existing import tests pass. Supplier raw data and the converter remain unchanged.
 Previous B-002 failure and wait entries above are historical evidence.
 
-## BLOCKING B-003 — C5656610 native ground-pad port generation
+## RESOLVED B-003 — C5656610 native ground-pad port generation
 
-The current native renderer reports `source_ambiguous_port_reference` for MIC1.GND.
+Historical reproduction before core alignment: the native renderer reported `source_ambiguous_port_reference` for MIC1.GND.
 Pin 3 consists of four separated polygon pad shapes, matching the imported
 supplier layout. The renderer requires matched shapes to overlap before it
 creates a PCB port for that logical pin. It produces six logical ports but only
@@ -100,9 +100,9 @@ C5656610 revision after the initial automatic-review rejection. GitHub main was
 verified at 671eb00579db27cc4dc232fe701a4ba98e7a19ac; the complete private
 tscircuit source publication is 0.0.2-wip-c5656610-hole-060-publication-record,
 176 files. Cloud build was pending when checked; this does not approve fabrication.
-The new power-review milestone's remote publication is pending verification.
+The power-review milestone was subsequently verified at fa5375fdbe457343e31852dbb706146ee6fe5841 and private release 0.0.2-wip-a0-power-review (238 files); its receipt is retained in the next milestone.
 
-## B-003 release verification — 2026-10-03
+## Historical B-003 release attempt — 2026-10-03
 
 Core PR 4323 merged at 51b6b9789aa6e8c1d58d2ac98783f243aa4f1ebf. Published
 core 0.0.2058 (gitHead e6d010593f4739747de9c3fc8ff9f6651b862c5d) contains
@@ -111,7 +111,7 @@ that change. Project pins are tscircuit 0.0.2742 / CLI 0.1.2235 / direct core
 source ports, five PCB ports, four ground pads with null PCB-port IDs and
 source_ambiguous_port_reference. The CLI bundle lacks the new polygon-bounds
 method even though the direct core bundle contains it. A fixed CLI release is
-needed before claiming B-003 resolved in the supported workflow. No local runtime
+initially inferred to be needed. This inference was superseded by the active-runtime diagnosis and supported dependency alignment below. No local runtime
 patch was applied. Evidence: `evidence/core-fix-2026-10-03/`. This release gap
 was sent to the authorized issue chat. Independent regulator work continued.
 
@@ -128,3 +128,47 @@ Evidence: `evidence/component-search-2026-10-03/`, including release rechecks.
 Reported to `codex://threads/01a0f218-ce92-7671-b666-efccdef3aed2`. Search-based
 display/capacitor discovery in stage 2 is blocked; verified exact-part imports
 remain usable and continue. This is not a claim that all imports fail.
+
+## B-003 closed after supported dependency alignment
+
+The earlier missing-method CLI-bundle inference did not identify the active
+renderer. CLI's native build uses importFromUserLand("tscircuit") and its
+RootCircuit. The tscircuit installation retained nested core 0.0.2056. A supported
+package.json override to official core 0.0.2058 and clean `bun install --force`
+resolved this. Plain install changed the lock but left the stale nested files.
+The final native microphone build and five checks exit 0, with four linked
+ground contacts, nine source/PCB ports and their native internal connection.
+No runtime or component-source workaround was used. Current logs and reviewed
+artifacts are in `evidence/core-alignment-2026-10-03/`; the issue chat received
+the measured resolution. Historical failed-release evidence above is preserved.
+B-004 search discovery and full component/application qualification remain open.
+
+## BLOCKING B-005 — C5656610 polygon ground pads have no solder paste
+
+Reproduced on tscircuit 0.0.2742 / CLI 0.1.2235 / aligned core 0.0.2058.
+The microphone fixture now passes native generation, but Circuit JSON contains
+nine pcb_smtpad shapes and only five pcb_solder_paste records. Each of the four
+polygon ground pad shapes lacks paste. Installed core's polygon SmtPad branch
+inserts a copper pad without a corresponding paste record. No importer geometry
+edit was made in this milestone.
+
+Supported native diagnostic export:
+`tsci export evidence/microphone-local-correction.circuit.tsx --format gerbers --output <absolute-path>/microphone-diagnostic-gerbers.zip`.
+Export exits 0; circuit-json-to-gerber 0.0.109 emits only five rectangular flashes
+and zero G36 regions in F_Paste.gbr. The four ground apertures are missing.
+The ZIP is an unrouted component diagnostic, not the handheld fabrication package.
+
+Evidence: `evidence/core-alignment-2026-10-03/microphone-stencil-defect.json`,
+`microphone-circuit.json`, `F_Paste.gbr`, `microphone-diagnostic-gerbers.zip` and
+`microphone-gerber-export-native.log`. Earlier failed export attempts were an
+unsupported JSON-input invocation and an incorrectly relative output path;
+the final native TSX export with absolute output path succeeded.
+
+Affected stages: 2, 5 and 6; assembly/stencil qualification remains blocked.
+Exact manufacturer aperture geometry still needs visual datasheet review. Official
+TDK PDF fetch returned 403; alternate TDK/Mouser downloads returned HTML rather
+than PDF. This availability limitation does not weaken the generated-file evidence.
+Reported to `codex://threads/01a0f218-ce92-7671-b666-efccdef3aed2` with reproduction,
+versions and evidence. Do not locally patch imported paste geometry or emit a
+hand-authored fabrication substitute. Continue independent power, controls,
+battery, interfaces and mechanical work while the upstream defect is investigated.

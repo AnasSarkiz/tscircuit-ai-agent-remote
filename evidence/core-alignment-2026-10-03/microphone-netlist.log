@@ -1,0 +1,29 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - MIC1: ICS-43434
+
+NET: GND
+  - MIC1 GND
+  - MIC1 pin3_internal_1
+  - MIC1 pin3_internal_2
+  - MIC1 pin3_internal_3
+
+
+EMPTY NET PINS:
+  - MIC1 VDD
+
+COMPONENT_PINS:
+MIC1 (ICS-43434)
+- pin3_internal_1(pin3, 3): NETS(GND)
+- pin3_internal_2(pin3, 3): NETS(GND)
+- pin3_internal_3(pin3, 3): NETS(GND)
+- pin1(WS): NOT_CONNECTED
+- pin2(LR): NOT_CONNECTED
+- pin3(GND): NETS(GND)
+- pin4(SCK): NOT_CONNECTED
+- pin5(VDD): NETS(MIC_VDD)
+- pin6(SD): NOT_CONNECTED
+

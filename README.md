@@ -1,12 +1,12 @@
 # tscircuit AI agent remote
 
-Revision A0-power-review, updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 remains blocked in the CLI renderer; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-core-alignment, updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
 Private tscircuit package: https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote
 — corrected source published as **0.0.2-wip-c5656610-hole-060-publication-record**, with all 176
-files uploaded. The next milestone is `wip-a0-power-review`, pending verification of both remote updates. This is a work-in-progress prototype source release. The build
+files uploaded. The regulator milestone is published as **0.0.2-wip-a0-power-review**, with 238 files uploaded and matching source readback. This is a work-in-progress prototype source release. The build
 remains blocked as described below; publication does not approve fabrication.
 
 The accepted device is the square, screen-dominant concept with one top-edge hold-to-talk button, a speaker and rechargeable battery. Hold, speak and release to send a Wi-Fi request; show and speak the response. All PCB electronics must assemble on the top side. The encoder and separate APPROVE/REJECT controls are removed from the active design. See `REQUIREMENTS.md` for the complete requirement changes and remaining interface decisions. Firmware implementation is outside this task.
@@ -34,11 +34,12 @@ minimum hole-edge-to-copper clearance **0.2580203 mm**. The isolated placement
 check passed with zero errors/warnings. Evidence and the original source are
 saved in `evidence/microphone-local-correction-2026-10-03/`.
 
-**BLOCKING B-003:** the native renderer rejects pin 3's four separated ground-pad
-shapes as an ambiguous port, leaving those shapes with null PCB-port links.
-The component build still exits 1, even with the documented `MIC1.pin3` selector.
-No geometry, pin mapping or check was changed to hide this failure. This does
-not indicate a diagnosed short, and B-002's hole correction remains verified.
+**B-003 is resolved:** official core 0.0.2058 now generates linked ground-pad
+ports and passes the native component build/checks after supported dependency
+alignment. **BLOCKING B-005:** native generation omits solder paste for the four
+polygon ground pads. Diagnostic Gerber export confirms those openings are absent
+from F_Paste. This assembly defect was reported to the authorized issue chat;
+imported pad/paste geometry has not been patched. See the evidence below.
 
 ## Historical corrected encoder import
 
@@ -48,7 +49,7 @@ C370970 uses its existing native `<chip>` as a schematic box. Pin labels, center
 
 ## Commands
 
-Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` passes all five import checks, including the C5656610 acoustic-opening check; historical encoder checks remain as evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. B-003 still prevents a clean microphone build and dependent board work.
+Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` passes all five import checks, including the C5656610 acoustic-opening check; historical encoder checks remain as evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
 
 ## Evidence and remaining work
 
@@ -58,12 +59,12 @@ Import provenance: **JLCEDA/EasyEDA Official Library**, accessed through the sup
 
 ## A0 regulator review and current fix status
 
-Current pins: tscircuit **0.0.2742**, CLI **0.1.2235**, direct core **0.0.2058**.
+Current pins: tscircuit **0.0.2742**, CLI **0.1.2235**, core **0.0.2058**.
 Core PR [4323](https://github.com/tscircuit/core/pull/4323) merged and is present
-in the published core release. The CLI still bundles the earlier renderer:
-the real microphone fixture still exits 1, produces five PCB ports instead of
-six, and leaves four GND pad shapes unlinked. Adding the fixed core dependency
-does not resolve the native CLI failure. See `evidence/core-fix-2026-10-03/`.
+in the published release. Native CLI uses the locally imported tscircuit renderer;
+a supported Bun override and clean installation aligned its nested dependency.
+The earlier failed-release attempt is preserved in `evidence/core-fix-2026-10-03/`;
+the verified resolution is in `evidence/core-alignment-2026-10-03/`.
 
 Seven exact JLCPCB power parts were imported without edits. The draft A4
 regulator application source is `src/power/regulated-3v3.tsx`; its isolated
@@ -78,3 +79,33 @@ Catalogue searches also returned unrelated components for an exact capacitor
 MPN and a display query. This was reported to the authorized issue chat; verified
 exact-part imports continued. Search evidence is saved under
 `evidence/component-search-2026-10-03/`.
+
+## Verified B-003 resolution — A0-core-alignment
+
+The earlier CLI-bundle diagnosis was incomplete. Native build imports the local
+tscircuit RootCircuit, which loaded its nested core 0.0.2056. The supported
+Bun `overrides` entry now pins all core dependencies to official **0.0.2058**.
+A clean `bun install --force` removed the stale nested copy; plain `bun install`
+alone had left it installed. No package source or imported component was patched.
+
+The actual microphone build and all five native checks now exit 0. Generated
+geometry has nine source ports and nine PCB ports, all four ground pad shapes
+linked, and an internal connection joining those four contacts. No ambiguous
+port errors remain. Evidence is in `evidence/core-alignment-2026-10-03/`.
+The regulator and project checks were repeated successfully after alignment.
+B-003 is resolved for native component generation; final microphone application,
+paste/mask, placement, routing and full-board qualification remain pending.
+The complete-board entry continues to report unfinished design explicitly.
+
+## B-005 microphone stencil blocker
+
+C5656610 produces nine copper pad shapes but only five rectangular solder-paste
+records. Its four polygon GND shapes have no paste record. Native diagnostic
+Gerber export succeeds but F_Paste contains only those five rectangular flashes
+and no ground-pad regions. This is an unrouted component diagnostic, not a
+handheld fabrication package. Evidence: `evidence/core-alignment-2026-10-03/`
+(`microphone-stencil-defect.json`, diagnostic ZIP and `F_Paste.gbr`).
+Manufacturer stencil geometry review and the upstream generator/export fix remain
+required. The issue was sent to the authorized issue chat; independent design
+work continues. No full-board stage, fabrication readiness or physical test is
+claimed by the isolated checks.

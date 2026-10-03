@@ -1,0 +1,87 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U2: TPS63802DLAR
+ - L1: L1, source_component
+ - C4: 10uF capacitor
+ - C5: 22uF capacitor
+ - R5: 560kΩ resistor
+ - R6: 100kΩ resistor
+ - R7: 100kΩ resistor
+
+NET: L1_pos
+  - U2 L1
+  - L1 pin1 (+)
+
+NET: L1_neg
+  - U2 L2
+  - L1 pin2 (-)
+
+NET: VSYS
+  - C4 pin1
+  - U2 EN
+  - U2 VIN
+
+NET: GND
+  - R6 pin2
+  - C5 pin2
+  - C4 pin2
+  - U2 GND
+  - U2 AGND
+  - U2 MODE
+
+NET: REG_FB
+  - U2 FB
+  - R6 pin1
+  - R5 pin2
+
+NET: V3V3
+  - R7 pin1
+  - R5 pin1
+  - C5 pin1
+  - U2 VOUT
+
+NET: REG_PG
+  - U2 PG
+  - R7 pin2
+
+
+COMPONENT_PINS:
+U2 (TPS63802DLAR)
+- pin1(EN): NETS(VSYS)
+- pin2(MODE): NETS(GND)
+- pin3(AGND): NETS(GND)
+- pin4(FB): NETS(REG_FB)
+- pin5(PG): NETS(REG_PG)
+- pin6(VOUT): NETS(V3V3)
+- pin7(L2): NETS(L1_neg)
+- pin8(GND): NETS(GND)
+- pin9(L1): NETS(L1_pos)
+- pin10(VIN): NETS(VSYS)
+
+L1 (DFE201612E-R47M=P2)
+- pin1(anode, pos, left): NETS(L1_pos)
+- pin2(cathode, neg, right): NETS(L1_neg)
+
+C4 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C5 (22uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+R5 (560kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(REG_FB)
+
+R6 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(REG_FB)
+- pin2(cathode, neg, right): NETS(GND)
+
+R7 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(REG_PG)
+

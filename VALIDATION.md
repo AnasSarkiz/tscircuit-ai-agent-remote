@@ -1,15 +1,15 @@
-# Validation — A0-power-review
+# Validation — A0-core-alignment
 
-Updated: 2026-10-03 (Europe/Tirane). **Unrouted regulator review added; B-002 diameter corrected locally; B-003 still fails in the CLI renderer; B-004 catalogue search reported; no complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
+Updated: 2026-10-03 (Europe/Tirane). **Unrouted regulator review added; B-002 diameter corrected locally; B-003 verified resolved on aligned official core 0.0.2058; B-004 catalogue search and B-005 missing polygon ground paste reported; no complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
 | Stage | Status | Evidence and remaining work |
 |---|---|---|
 | 1. Confirm requirements | in progress | Accepted square, screen-dominant, one-button, top-side-only concept; 50 × 50 mm study target within approved 50 × 65 mm maximum; rechargeable pack/display mechanics/current budget/stackup unresolved |
-| 2. Schematic and BOM | blocked | Historical B-001 corrected, encoder unselected; B-002 local 0.60 mm correction verified; B-003 native GND port rendering blocked; exact pack and circuit pending |
+| 2. Schematic and BOM | blocked | Historical B-001 corrected, encoder unselected; B-002 local 0.60 mm correction verified; B-003 generator issue resolved; B-004 search discovery, B-005 ground paste, and full component qualification, exact pack and circuit pending |
 | 3. Placement before routing | not started | Depends on stages 1–2; no placement/render exists |
 | 4. Copper routing | not started | User authorized routing after prerequisite gates pass; no routes exist |
 | 5. Automated and visual checks | not started | Preliminary import checks below do not complete board validation |
-| 6. Prototype fabrication | not started | No Gerbers, drills, assembly BOM or placement files |
+| 6. Prototype fabrication | not started | No full-board fabrication files; microphone-only unrouted diagnostic Gerber ZIP exists and fails stencil qualification |
 | 7. Physical prototype | not started | No hardware or physical test evidence |
 | 8. Store release | in progress | Standing publication authorization; private WIP source released with disclosed build blockers; no qualified release package |
 
@@ -289,3 +289,59 @@ schematic and mechanics remain unfinished; dependent routing stays disabled.
 Standing authorization requires GitHub main push and private tscircuit WIP
 publication of this step. Intended tag: `wip-a0-power-review`. Both remote
 updates must be read back before calling this milestone fully published.
+
+## A0-core-alignment milestone — 2026-10-03
+
+Starts from fa5375fdbe457343e31852dbb706146ee6fe5841. The preceding regulator
+milestone was verified on GitHub main and private tscircuit release
+0.0.2-wip-a0-power-review: 238 uploaded files, exit 0, private and ready_to_build.
+Source readback for package.json, regulator source, POWER.md and VALIDATION.md
+matched exactly. Receipt: `evidence/core-alignment-2026-10-03/previous-milestone-publication.json`.
+Cloud build status was unavailable in this readback; source upload is not a passing
+whole-board build or fabrication approval.
+
+Native CLI build constructs the locally imported tscircuit RootCircuit. Its
+nested core 0.0.2056 caused the continuing B-003 failure; inspecting a bundled
+method alone did not identify that active path. Official core 0.0.2058 is now
+selected throughout the tree by Bun's supported package.json overrides. Plain
+install updated the lock while leaving the old nested files; `bun install --force`
+cleanly installed 292 packages and removed that nested copy. No package implementation
+or imported component changed. Pinned versions otherwise remain unchanged.
+[Bun documentation](https://bun.sh/docs/pm/overrides).
+
+The real microphone build now exits 0. Native netlist, pin_specification, source,
+schematic-placement and placement all exit 0; count-reporting commands have zero
+errors/warnings. Ground polygon shapes all link to ports. Core emits nine
+source ports and nine PCB ports, and a source_component_internal_connection
+joining source_port_2/6/7/8 for the four physical ground shapes. No ambiguous
+port or generated error remains. PCB/SCH PNGs inspected; hole/pad geometry is
+preserved. Zero PCB traces/vias confirms routing remains disabled. This closes
+B-003 for native component generation, not the complete microphone circuit or PCB.
+
+Regulator build and all five native checks were repeated successfully on the
+aligned renderer. Project formatting, TypeScript and all five import tests pass.
+Final results, native artifacts and geometry checks are preserved in
+`evidence/core-alignment-2026-10-03/`. The script's first artifact copy used an
+incorrect output-directory suffix; the native build/checks had passed, and the
+copy path was corrected. No native failure was hidden.
+
+Complete-board schematic/BOM/requirements and mechanics remain unfinished.
+No whole-board routes, DRC/shorts pass, fabrication package or physical tests exist. Stages 1–6
+remain unfinished; B-004 search discovery continues in the authorized issue chat.
+Intended private WIP publication tag: `wip-a0-core-alignment`; verify both remote
+updates before reporting the milestone fully published.
+
+### B-005 assembly defect discovered after native port resolution
+
+The aligned microphone fixture has nine copper pads but only five solder-paste
+records. All four ground polygons are absent from paste generation. Native TSX
+Gerber diagnostic export exited 0; F_Paste.gbr contains five rectangle flashes
+and no polygon regions. Geometry, defect counts and the diagnostic ZIP are saved
+with this milestone. This is a real assembly/stencil blocker, sent to the authorized
+issue chat. Stage 2 and dependent assembly/fabrication approval remain blocked.
+No hand-authored paste or imported-definition correction was applied.
+
+The export is only an unrouted isolated microphone fixture. It does not advance
+whole-board stage 6. Supplier stencil drawing still requires visual PDF review;
+TDK official download was unavailable and alternate downloads returned HTML.
+Independent power, control, battery and mechanical development continues.

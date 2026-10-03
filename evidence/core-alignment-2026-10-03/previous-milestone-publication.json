@@ -1,0 +1,31 @@
+{
+  "github_commit": "fa5375fdbe457343e31852dbb706146ee6fe5841",
+  "package_name_with_version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-power-review",
+  "is_private": true,
+  "ready_to_build": true,
+  "cloud_build_display_status": null,
+  "readback": [
+    {
+      "file_path": "src/power/regulated-3v3.tsx",
+      "matches_local": true,
+      "sha256": "8b0a2b45384513b52143f84a1912fe5e4f8ae9f4ca26b40e009baa9b54a10b24"
+    },
+    {
+      "file_path": "package.json",
+      "matches_local": true,
+      "sha256": "89a12a6ddc237ce070d4ba846b4a95683ab4a8e69ec1b7cddb1cf0349d1c3fa1"
+    },
+    {
+      "file_path": "POWER.md",
+      "matches_local": true,
+      "sha256": "ddba09061e2894a137c196035f45a2cf6bb97dcdba2cfc6d6367ae62d8331920"
+    },
+    {
+      "file_path": "VALIDATION.md",
+      "matches_local": true,
+      "sha256": "400caeded5b48c1cb60f303096d66988168bf3f8902989e2525131d8632ab6d8"
+    }
+  ],
+  "upload_exit_code": 0,
+  "uploaded_files": 238
+}

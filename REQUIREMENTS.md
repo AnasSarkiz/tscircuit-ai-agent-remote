@@ -71,6 +71,7 @@ enclosure, not additional exterior controls; physical access is still to be plan
 ## Validation state
 
 Stage 1 remains in progress. B-002 is corrected locally with user authorization:
-C5656610 now has a 0.60 mm hole. Stage 2 remains blocked by B-003: native rendering
-cannot assign a PCB port to its four separated ground-pad shapes. No complete schematic, PCB placement, copper routes or fabrication files
+C5656610 now has a 0.60 mm hole. B-003 now passes native component generation on aligned core 0.0.2058. B-005 now blocks microphone ground-paste qualification. Stage 2
+remains incomplete because the complete circuit/BOM and component qualification
+are still being authored. No complete schematic, PCB placement, copper routes or fabrication files
 exist. See `VALIDATION.md` for evidence and gates.

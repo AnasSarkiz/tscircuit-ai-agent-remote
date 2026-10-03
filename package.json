@@ -30,5 +30,8 @@
     "typescript": "5.9.3"
   },
   "author": "AnasSarkiz",
-  "private": true
+  "private": true,
+  "overrides": {
+    "@tscircuit/core": "0.0.2058"
+  }
 }
