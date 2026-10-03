@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-03",
+  "source_base_commit": "671eb00579db27cc4dc232fe701a4ba98e7a19ac",
+  "import_cli_version": "0.1.2232",
+  "import_command": "tsci import --jlcpcb --use-exact-footprint --download <part_number>",
+  "imports": [
+    {
+      "lcsc_part_number": "C668312",
+      "import_source_path": "imports/DFE201612E_R47M_P2/DFE201612E_R47M_P2.tsx",
+      "sha256": "8ae1dfaee08f31d808cd650b72ecbb6171a140dbb3a27234e191101fdc0dc33f",
+      "models": [
+        {
+          "path": "imports/DFE201612E_R47M_P2/DFE201612E_R47M_P2.obj",
+          "bytes": 75485,
+          "sha256": "27ab32929d3c2fe5109a86c364420d75e9b8ae3921d5a8f24284e35e8f2c559e"
+        },
+        {
+          "path": "imports/DFE201612E_R47M_P2/DFE201612E_R47M_P2.step",
+          "bytes": 1379783,
+          "sha256": "a45aa102da5d163c2295875ba4ebc8c8d55b965b8f295b7b891d485415ba2469"
+        }
+      ]
+    },
+    {
+      "lcsc_part_number": "C90053",
+      "import_source_path": "imports/GRM188R61A106ME69D/GRM188R61A106ME69D.tsx",
+      "sha256": "3bce992bce896e82cb2a52344a7366f34e0d1006f660cc8d856e677216bdd173",
+      "models": [
+        {
+          "path": "imports/GRM188R61A106ME69D/GRM188R61A106ME69D.obj",
+          "bytes": 57506,
+          "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+        },
+        {
+          "path": "imports/GRM188R61A106ME69D/GRM188R61A106ME69D.step",
+          "bytes": 1468156,
+          "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110"
+        }
+      ]
+    },
+    {
+      "lcsc_part_number": "C84419",
+      "import_source_path": "imports/GRM188R61A226ME15D/GRM188R61A226ME15D.tsx",
+      "sha256": "356d366e26b498e1b310c116f72df648cba274259b62f5acdaf0dda490eecf2a",
+      "models": [
+        {
+          "path": "imports/GRM188R61A226ME15D/GRM188R61A226ME15D.obj",
+          "bytes": 57506,
+          "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+        },
+        {
+          "path": "imports/GRM188R61A226ME15D/GRM188R61A226ME15D.step",
+          "bytes": 1468156,
+          "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110"
+        }
+      ]
+    },
+    {
+      "lcsc_part_number": "C14675",
+      "import_source_path": "imports/RC0603FR_07100KL/RC0603FR_07100KL.tsx",
+      "sha256": "94094c4180c93061702322b6a14ae8cb3f9d69907a5d2a36953a000d365ea430",
+      "models": [
+        {
+          "path": "imports/RC0603FR_07100KL/RC0603FR_07100KL.obj",
+          "bytes": 78929,
+          "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+        },
+        {
+          "path": "imports/RC0603FR_07100KL/RC0603FR_07100KL.step",
+          "bytes": 1046696,
+          "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc"
+        }
+      ]
+    },
+    {
+      "lcsc_part_number": "C137699",
+      "import_source_path": "imports/RC0603FR_07560KL/RC0603FR_07560KL.tsx",
+      "sha256": "d0900b04eeb5418f48ca043e03d01cc7519cd8453dd18fe6b4df995cb15ef808",
+      "models": [
+        {
+          "path": "imports/RC0603FR_07560KL/RC0603FR_07560KL.obj",
+          "bytes": 78929,
+          "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+        },
+        {
+          "path": "imports/RC0603FR_07560KL/RC0603FR_07560KL.step",
+          "bytes": 1046696,
+          "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc"
+        }
+      ]
+    },
+    {
+      "lcsc_part_number": "C126358",
+      "import_source_path": "imports/RC0603FR_073KL/RC0603FR_073KL.tsx",
+      "sha256": "6158ad9676d8996e6405b6ad322a9f9481c9eb798d9f5d3cecf9132108f6d656",
+      "models": [
+        {
+          "path": "imports/RC0603FR_073KL/RC0603FR_073KL.obj",
+          "bytes": 78929,
+          "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+        },
+        {
+          "path": "imports/RC0603FR_073KL/RC0603FR_073KL.step",
+          "bytes": 1046696,
+          "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc"
+        }
+      ]
+    },
+    {
+      "lcsc_part_number": "C45000",
+      "import_source_path": "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.tsx",
+      "sha256": "3566bad7b1e790006cd1286961488e54c7d2bb6d4863509e69e3d98f19ce614f",
+      "models": [
+        {
+          "path": "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.obj",
+          "bytes": 57506,
+          "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+        },
+        {
+          "path": "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.step",
+          "bytes": 1468156,
+          "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110"
+        }
+      ]
+    }
+  ],
+  "imported_definitions_modified": false,
+  "qualification": "candidate imports; manufacturer land-pattern, bias and assembly availability review pending"
+}

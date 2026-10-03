@@ -94,7 +94,37 @@ prerequisite checks are resolved.
 
 ## Publication status
 
-Root AGENTS.md now authorizes and requires pushing each completed implementation
-step and publishing the same prototype revision. GitHub source push was rejected by automatic approval review; explicit human approval for commit 54bb3c0 to main is pending. Tscircuit publication is **blocked** by the failed
-component build (B-003) and the main entry's explicit incomplete-design build
-failure. No invalid package, placeholder success or bypassed build is published.
+Standing authorization covers milestone pushes to GitHub main and private
+tscircuit WIP source publication. The human explicitly authorized the corrected
+C5656610 revision after the initial automatic-review rejection. GitHub main was
+verified at 671eb00579db27cc4dc232fe701a4ba98e7a19ac; the complete private
+tscircuit source publication is 0.0.2-wip-c5656610-hole-060-publication-record,
+176 files. Cloud build was pending when checked; this does not approve fabrication.
+The new power-review milestone's remote publication is pending verification.
+
+## B-003 release verification — 2026-10-03
+
+Core PR 4323 merged at 51b6b9789aa6e8c1d58d2ac98783f243aa4f1ebf. Published
+core 0.0.2058 (gitHead e6d010593f4739747de9c3fc8ff9f6651b862c5d) contains
+that change. Project pins are tscircuit 0.0.2742 / CLI 0.1.2235 / direct core
+0.0.2058. Native CLI rendering still reproduces the microphone failure: six
+source ports, five PCB ports, four ground pads with null PCB-port IDs and
+source_ambiguous_port_reference. The CLI bundle lacks the new polygon-bounds
+method even though the direct core bundle contains it. A fixed CLI release is
+needed before claiming B-003 resolved in the supported workflow. No local runtime
+patch was applied. Evidence: `evidence/core-fix-2026-10-03/`. This release gap
+was sent to the authorized issue chat. Independent regulator work continued.
+
+## BLOCKING B-004 — catalogue search returns unrelated components
+
+CLI 0.1.2232 and 0.1.2235 both return unrelated parts for:
+
+- `tsci search --jlcpcb --json 'Waveshare 1.54'`: C275301 inductor / C2068886 fuse holder.
+- `tsci search --jlcpcb --json 'GRM188R60J226MEA0'`: C7431187 oscillator / C269729 200 Ω resistor.
+
+Expected: matching components or an explicit no-result response. None of those
+returned parts was selected or substituted. Root cause is not established.
+Evidence: `evidence/component-search-2026-10-03/`, including release rechecks.
+Reported to `codex://threads/01a0f218-ce92-7671-b666-efccdef3aed2`. Search-based
+display/capacitor discovery in stage 2 is blocked; verified exact-part imports
+remain usable and continue. This is not a claim that all imports fail.

@@ -1,6 +1,6 @@
-# Validation — A0-C5656610-local-hole
+# Validation — A0-power-review
 
-Updated: 2026-10-03 (Europe/Tirane). **B-002 diameter corrected locally; B-003 native ground-pad port generation blocked; no complete schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
+Updated: 2026-10-03 (Europe/Tirane). **Unrouted regulator review added; B-002 diameter corrected locally; B-003 still fails in the CLI renderer; B-004 catalogue search reported; no complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
 | Stage | Status | Evidence and remaining work |
 |---|---|---|
@@ -11,13 +11,13 @@ Updated: 2026-10-03 (Europe/Tirane). **B-002 diameter corrected locally; B-003 n
 | 5. Automated and visual checks | not started | Preliminary import checks below do not complete board validation |
 | 6. Prototype fabrication | not started | No Gerbers, drills, assembly BOM or placement files |
 | 7. Physical prototype | not started | No hardware or physical test evidence |
-| 8. Store release | not started | Publication not authorized; no release package |
+| 8. Store release | in progress | Standing publication authorization; private WIP source released with disclosed build blockers; no qualified release package |
 
 ## Source and dependencies
 
 Project: `boards/tscircuit-ai-agent-remote--01a0fe57`. No earlier board was reused. The Git milestone containing this file identifies the source revision (`git rev-parse HEAD`). `evidence/source-manifest.sha256` is the historical 2026-10-02 milestone manifest, not a checksum of later changes. The update-check directory contains a separate current manifest. Manifests exclude themselves, Git metadata, dependencies, build output and logs. User-authorized C370970 edits are explicitly audited below; original import is preserved in revision 341dcaa.
 
-Current pinned dependencies: tscircuit **0.0.2736**, @tscircuit/cli **0.1.2232**, TypeScript **5.9.3**, Biome **2.5.14**, @types/bun **1.4.2**. Runtime Bun **1.3.9**. `bun.lock` records transitive dependencies. Installation emitted peer-version warnings involving circuit-json 0.0.509, React/ReactDOM 19.3.0 and @tscircuit/alphabet 0.0.25; unresolved, not accepted board warnings.
+Current pinned dependencies: tscircuit **0.0.2742**, @tscircuit/cli **0.1.2235**, direct @tscircuit/core **0.0.2058**, TypeScript **5.9.3**, Biome **2.5.14**, @types/bun **1.4.2**. Runtime Bun **1.3.9**. `bun.lock` records transitive dependencies. Installation emitted peer-version warnings involving circuit-json 0.0.509, React/ReactDOM 19.3.0 and @tscircuit/alphabet 0.0.25; unresolved, not accepted board warnings.
 
 Initializer succeeded; optional skill download failed under sandbox networking. Installed tscircuit skill and current official handbook were read. CLI help verified required netlist, pin_specification, source, schematic-placement, placement and shorts commands, PNG/SVG builds and snapshots. Native A4 API verified in installed @tscircuit/props: `<schematicsheet name displayName sheetIndex sheetSize="A4">`. No complete board sheet has been rendered/reviewed; the isolated encoder review is recorded below.
 
@@ -240,3 +240,52 @@ version advanced by the CLI. Imported components, dependencies and circuit
 sources are unchanged, so the five passing import tests, typecheck, measured
 geometry, placement result and recorded build blockers remain applicable.
 Project formatting was rerun and passed after the receipt edits.
+
+## A0-power-review milestone — 2026-10-03
+
+The commit containing this section identifies this milestone; it starts from
+671eb00579db27cc4dc232fe701a4ba98e7a19ac. Seven genuine power parts were imported
+with supported CLI 0.1.2232 exact-footprint downloads, retaining unmodified
+source/models. Exact MPN/LCSC, import commands and SHA256 are recorded in
+`evidence/power-review-2026-10-03/import-manifest.json` and BOM.md.
+
+Native application source: `src/power/regulated-3v3.tsx`. Isolated review entry:
+`evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx`. Native build exits 0
+with PCB/SCH SVGs and PNGs. The first sandbox fetch warning was resolved by a
+network-enabled rebuild without suppressions. Native netlist, pin_specification,
+source, schematic-placement and placement commands all exit 0. Checks reporting
+counts show zero errors/warnings; schematic-placement exits 0 without text.
+`verification-results.json` records exact command exits and source hashes.
+Formatting and TypeScript pass; all five existing import tests pass. Whole-board
+build still exits 1 at its explicit incomplete-design guard. This is disclosed.
+
+Reviewed current native regulator schematic/PCB PNGs and preserved SVG/JSON in
+the same evidence folder. A4 sheet measures 297 × 210 mm. All seven PCB components
+are top-side. JSON contains zero PCB traces and zero vias. Divider orientation
+and short designators were corrected for readability before the final review.
+This is a component application study, not the whole-board placement, RF review
+or a routed power-loop layout. It does not pass stages 1–6 for the handheld.
+
+POWER.md records manufacturer-backed pin wiring, preliminary 3.3 V divider and
+charge-current calculations, USB default-power constraints, protected-pack/NTC
+requirements and tentative load allocations. Pack, temperature window, exact
+loads, effective capacitance/inductance, footprint qualification and thermal
+limits remain unresolved. No nominal estimate is claimed as a verified rating.
+
+Core PR 4323 merged; published core 0.0.2058 contains it. Nevertheless the native
+CLI 0.1.2235 microphone fixture still exits 1 with ambiguous GND, five PCB ports
+for six source ports and null links on all four ground pads. CLI bundles the
+earlier renderer. Evidence: `evidence/core-fix-2026-10-03/`; B-003 remains open
+and was reported with release evidence. Pinning direct core does not prove the
+CLI uses it. Installation still reports a circuit-json 0.0.510 peer warning;
+it is unresolved and not an accepted board warning.
+
+B-004 is the reproduced unrelated catalogue-search result on old and current
+CLI, saved in `evidence/component-search-2026-10-03/` and reported to the
+authorized issue chat. No mismatched result was used. Exact power-part imports
+and regulator review continued independently. Requirements, BOM/complete
+schematic and mechanics remain unfinished; dependent routing stays disabled.
+
+Standing authorization requires GitHub main push and private tscircuit WIP
+publication of this step. Intended tag: `wip-a0-power-review`. Both remote
+updates must be read back before calling this milestone fully published.

@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-03T00:13:41.393336+00:00",
+  "fixture_source_sha256": "91d18a1f08dc9955f37a75512ab00ef7edb7bedadf662574445914685149a82f",
+  "application_source_sha256": "8b0a2b45384513b52143f84a1912fe5e4f8ae9f4ca26b40e009baa9b54a10b24",
+  "results": [
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "source",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "test"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "exit_code": 1
+    }
+  ]
+}

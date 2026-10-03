@@ -1,0 +1,13 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/import-qualification.test.ts:
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.80ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.11ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.10ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range
+(pass) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.03ms]
+
+ 5 pass
+ 0 fail
+ 29 expect() calls
+Ran 5 tests across 1 file. [17.00ms]

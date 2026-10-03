@@ -1,0 +1,52 @@
+{
+  "tscircuit": "0.0.2742",
+  "cli": "0.1.2235",
+  "direct_core": "0.0.2058",
+  "core_pr": "https://github.com/tscircuit/core/pull/4323",
+  "actual_merge_commit": "51b6b9789aa6e8c1d58d2ac98783f243aa4f1ebf",
+  "core_release_git_head": "e6d010593f4739747de9c3fc8ff9f6651b862c5d",
+  "source_port_count": 6,
+  "pcb_port_count": 5,
+  "ground_pads": [
+    {
+      "id": "pcb_smtpad_5",
+      "pcb_port_id": null,
+      "port_hints": [
+        "pin3"
+      ]
+    },
+    {
+      "id": "pcb_smtpad_6",
+      "pcb_port_id": null,
+      "port_hints": [
+        "pin3"
+      ]
+    },
+    {
+      "id": "pcb_smtpad_7",
+      "pcb_port_id": null,
+      "port_hints": [
+        "pin3"
+      ]
+    },
+    {
+      "id": "pcb_smtpad_8",
+      "pcb_port_id": null,
+      "port_hints": [
+        "pin3"
+      ]
+    }
+  ],
+  "native_build_exit_code": 1,
+  "status": "B-003 remains blocked in CLI bundled renderer",
+  "errors": [
+    {
+      "type": "source_ambiguous_port_reference",
+      "source_ambiguous_port_reference_id": "source_ambiguous_port_reference_0",
+      "error_type": "source_ambiguous_port_reference",
+      "message": "MIC1.GND is ambiguous: MIC1.GND references multiple non-overlapping pads: <smtpad#19(.pin3) />, <smtpad#20(.pin3) />, <smtpad#21(.pin3) />, <smtpad#22(.pin3) /> (consider using alternate aliases: pin3, 3)",
+      "source_port_id": "source_port_2",
+      "source_component_id": "source_component_0"
+    }
+  ]
+}

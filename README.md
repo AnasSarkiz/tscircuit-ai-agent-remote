@@ -1,12 +1,12 @@
 # tscircuit AI agent remote
 
-Revision A0-C5656610-local-hole, updated 2026-10-03: **B-002 acoustic diameter corrected locally; B-003 ground-pad port generation remains blocked; no complete schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-power-review, updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 remains blocked in the CLI renderer; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
 Private tscircuit package: https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote
-— corrected source published as **0.0.2-wip-c5656610-hole-060**, with all 173
-files uploaded. This is a work-in-progress prototype source release. The build
+— corrected source published as **0.0.2-wip-c5656610-hole-060-publication-record**, with all 176
+files uploaded. The next milestone is `wip-a0-power-review`, pending verification of both remote updates. This is a work-in-progress prototype source release. The build
 remains blocked as described below; publication does not approve fabrication.
 
 The accepted device is the square, screen-dominant concept with one top-edge hold-to-talk button, a speaker and rechargeable battery. Hold, speak and release to send a Wi-Fi request; show and speak the response. All PCB electronics must assemble on the top side. The encoder and separate APPROVE/REJECT controls are removed from the active design. See `REQUIREMENTS.md` for the complete requirement changes and remaining interface decisions. Firmware implementation is outside this task.
@@ -55,3 +55,26 @@ Run inside this directory. `bun install` installs pinned dependencies. `bun run 
 See `VALIDATION.md`, `BOM.md`, `issues.md`, `references/sources.md` and `routes/README.md`. Continue in this task directory. No earlier board source or validation evidence was reused.
 
 Import provenance: **JLCEDA/EasyEDA Official Library**, accessed through the supported JLCPCB importer. [JLCEDA](https://lceda.cn/) / [EasyEDA](https://easyeda.com/).
+
+## A0 regulator review and current fix status
+
+Current pins: tscircuit **0.0.2742**, CLI **0.1.2235**, direct core **0.0.2058**.
+Core PR [4323](https://github.com/tscircuit/core/pull/4323) merged and is present
+in the published core release. The CLI still bundles the earlier renderer:
+the real microphone fixture still exits 1, produces five PCB ports instead of
+six, and leaves four GND pad shapes unlinked. Adding the fixed core dependency
+does not resolve the native CLI failure. See `evidence/core-fix-2026-10-03/`.
+
+Seven exact JLCPCB power parts were imported without edits. The draft A4
+regulator application source is `src/power/regulated-3v3.tsx`; its isolated
+review fixture and reviewed PNG/SVG/JSON are in `evidence/power-review-2026-10-03/`.
+The fixture passes the five native placement-stage commands with no reported
+errors or warnings and contains seven top-side components, zero PCB traces and
+zero vias. This does not qualify the full board or the final power-loop layout.
+`POWER.md` records battery, USB, thermal and effective-capacitance decisions
+that remain open. Routing stays disabled until whole-board prerequisite gates pass.
+
+Catalogue searches also returned unrelated components for an exact capacitor
+MPN and a display query. This was reported to the authorized issue chat; verified
+exact-part imports continued. Search evidence is saved under
+`evidence/component-search-2026-10-03/`.
