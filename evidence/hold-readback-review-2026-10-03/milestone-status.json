@@ -1,0 +1,69 @@
+{
+  "base_source_revision": "fa90b5420f8e567270697c68132f311444a42424",
+  "step": "Independent hardware hold readback and nominal top-control clearance review",
+  "prototype": "unrouted and hardware untested",
+  "canonical_checks": {
+    "format": 0,
+    "typecheck": 0,
+    "tests": {
+      "pass": 23,
+      "fail": 1,
+      "assertions": 228,
+      "existing_failure": "B-010 strict native Circuit JSON"
+    }
+  },
+  "native_candidate_checks": {
+    "build": 0,
+    "checks": [
+      {
+        "check": "netlist",
+        "exit_code": 0
+      },
+      {
+        "check": "pin_specification",
+        "exit_code": 0
+      },
+      {
+        "check": "source",
+        "exit_code": 0
+      },
+      {
+        "check": "schematic-placement",
+        "exit_code": 0
+      },
+      {
+        "check": "placement",
+        "exit_code": 0
+      }
+    ],
+    "schematic_pdf": 0,
+    "snapshot_reviewed": 0,
+    "strict_native_json": {
+      "invalid_elements": 6,
+      "blocker": "B-010"
+    }
+  },
+  "whole_board_stages": {
+    "1": "in progress",
+    "2": "blocked",
+    "3": "not started",
+    "4": "not started",
+    "5": "not started",
+    "6": "not started",
+    "7": "not started \u2014 physical prototype unavailable",
+    "8": "not started"
+  },
+  "routes": "No actual copper, saved-path cache or fabricated route placeholder",
+  "parent_publication": {
+    "checked_at": "2026-10-03T05:04:39.921883+00:00",
+    "source_revision": "fa90b5420f8e567270697c68132f311444a42424",
+    "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-fabrication-review",
+    "publisher_exit_code": 1,
+    "reported_successes": 957,
+    "reported_failures": 28,
+    "ready_to_build": false,
+    "is_private": true
+  },
+  "next_publication_suffix": "wip-a0-hold-readback-review",
+  "new_step_remote_publication": "pending, verify exact GitHub source and native private registry release"
+}

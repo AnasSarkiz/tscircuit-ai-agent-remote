@@ -1,0 +1,118 @@
+{
+  "status": "read-only mechanical study, not component definitions or native placement approval",
+  "boardWidthMillimeters": 50,
+  "boardHeightMillimeters": 65,
+  "requiredNominalRfGapMillimeters": 15,
+  "trials": [
+    {
+      "modulePhysicalCenter": {
+        "x": 0,
+        "y": 22
+      },
+      "moduleNativeOrigin": {
+        "x": 0,
+        "y": 18.224544
+      },
+      "switchCenter": {
+        "x": 21,
+        "y": 30.5
+      },
+      "antenna": {
+        "left": -9,
+        "right": 9,
+        "bottom": 27.26,
+        "top": 34.75
+      },
+      "display": {
+        "left": -16.85,
+        "right": 16.85,
+        "bottom": -31.5,
+        "top": 11.44
+      },
+      "switchBody": {
+        "left": 19.5,
+        "right": 22.5,
+        "bottom": 29.5,
+        "top": 31.5
+      },
+      "switchPads": {
+        "count": 2,
+        "bounds": {
+          "left": 18.9495088,
+          "right": 23.0504912,
+          "bottom": 29.738,
+          "top": 31.262
+        }
+      },
+      "modulePads": {
+        "count": 49,
+        "bounds": {
+          "left": -9.5000445,
+          "right": 9.500044499999998,
+          "bottom": 8.7295922,
+          "top": 27.7194958
+        }
+      },
+      "nominalAntennaToControlGapMillimeters": 9.9495088,
+      "nominalAntennaToDisplayGapMillimeters": 15.820000000000002,
+      "modulePadEdgeMarginMillimeters": 4.780504199999999,
+      "switchPadEdgeMarginMillimeters": 1.2379999999999995,
+      "nominalControlClearanceAtLeast15Millimeters": false
+    },
+    {
+      "modulePhysicalCenter": {
+        "x": -8,
+        "y": 22
+      },
+      "moduleNativeOrigin": {
+        "x": -8,
+        "y": 18.224544
+      },
+      "switchCenter": {
+        "x": 21,
+        "y": 30.5
+      },
+      "antenna": {
+        "left": -17,
+        "right": 1,
+        "bottom": 27.26,
+        "top": 34.75
+      },
+      "display": {
+        "left": -16.85,
+        "right": 16.85,
+        "bottom": -31.5,
+        "top": 11.44
+      },
+      "switchBody": {
+        "left": 19.5,
+        "right": 22.5,
+        "bottom": 29.5,
+        "top": 31.5
+      },
+      "switchPads": {
+        "count": 2,
+        "bounds": {
+          "left": 18.9495088,
+          "right": 23.0504912,
+          "bottom": 29.738,
+          "top": 31.262
+        }
+      },
+      "modulePads": {
+        "count": 49,
+        "bounds": {
+          "left": -17.500044499999998,
+          "right": 1.5000444999999978,
+          "bottom": 8.7295922,
+          "top": 27.7194958
+        }
+      },
+      "nominalAntennaToControlGapMillimeters": 17.9495088,
+      "nominalAntennaToDisplayGapMillimeters": 15.820000000000002,
+      "modulePadEdgeMarginMillimeters": 4.780504199999999,
+      "switchPadEdgeMarginMillimeters": 1.2379999999999995,
+      "nominalControlClearanceAtLeast15Millimeters": true
+    }
+  ]
+}

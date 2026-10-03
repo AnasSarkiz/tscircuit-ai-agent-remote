@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-03T05:01:44.167055+00:00",
+  "source_base_revision": "fa90b5420f8e567270697c68132f311444a42424",
+  "status": "unqualified read-only nominal study; native validation gates unchanged",
+  "files": {
+    "references/esp32-s3-module.pdf": {
+      "bytes": 1280501,
+      "sha256": "27d71971da07c280c6068d08c74720d1a25b8f20cf8494dc1765bdd28d40d435"
+    },
+    "references/HS17QS178RX.pdf": {
+      "bytes": 495814,
+      "sha256": "74d3c1adbca12fbebe52917f9b315d628ae789b2993d4ceeaf48b70edabe8352"
+    },
+    "evidence/hold-control-alternate-review-2026-10-03/alps-sksw.pdf": {
+      "bytes": 268285,
+      "sha256": "898a6a479d83d9b9496dd7e3e5208cdc45863e68a1d4ebdec4b47d6335666bed"
+    },
+    "evidence/hold-control-alternate-review-2026-10-03/circuit.json": {
+      "bytes": 25648,
+      "sha256": "a17a3528a39cf2f86e3be84f8a05400f8cac413e861e131db904023c91d4db4f"
+    },
+    "evidence/mcu-usb-review-2026-10-03/circuit.json": {
+      "bytes": 412390,
+      "sha256": "7c387674867a5c8e996903124364a0c89dc0bdd77aa528f74e5a5a1c42a45487"
+    },
+    "evidence/top-control-mechanical-review-2026-10-03/top-control-study.svg": {
+      "bytes": 3443,
+      "sha256": "078373dbfb12be9db31c3fb4a9ded5b376c2d63cdea3a6b8af0cb5c4b95e3985"
+    },
+    "evidence/top-control-mechanical-review-2026-10-03/nominal-dimensions.json": {
+      "bytes": 2824,
+      "sha256": "3add51eb7b49972e1817a72b8c3c8bd29d1cbcf754acc9c38a4d62cb3ed58f69"
+    },
+    "evidence/top-control-mechanical-review-2026-10-03/top-control-study.png": {
+      "bytes": 79923,
+      "sha256": "598d66e8a20102cf89c5c06beab5ae373cdd0398043f35a7ed1695f4f6061231"
+    },
+    "evidence/top-control-mechanical-review-2026-10-03/typecheck.log": {
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    "evidence/top-control-mechanical-review-2026-10-03/render-study.ts": {
+      "bytes": 7636,
+      "sha256": "d578421243fc73a92bc4bbb7f5bf8a244aa5cd90d2b8af58087745ec2fad5fb7"
+    },
+    "evidence/top-control-mechanical-review-2026-10-03/findings.md": {
+      "bytes": 4023,
+      "sha256": "1fd411b32be0b84d62437ea1bf3d9a1c45bb88f9bcd9d417710717dd2c2b8f62"
+    }
+  }
+}

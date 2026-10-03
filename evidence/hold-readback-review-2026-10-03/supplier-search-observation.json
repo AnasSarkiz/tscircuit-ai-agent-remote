@@ -1,0 +1,16 @@
+{
+  "reported_at": "2026-10-03T04:55:44.857877+00:00",
+  "recipient_thread_id": "01a0f218-ce92-7671-b666-efccdef3aed2",
+  "fix_chat_cursor": "8785ec91-1b29-4589-b570-3162b7731ee4:31",
+  "part": "C25804",
+  "observation": "CLI search by exact LCSC and MPN empty; supported exact import succeeds unchanged",
+  "qualification": "jlcsearch positive-stock filter and EasyEDA independent libraries; not proof of a bug or JLC assembly-stock availability",
+  "continuing_work": "C21190 imported and native readback fixture revalidated; C25804 remains unselected",
+  "evidence": {
+    "alternate-10k-search.json": "14489d6c737f50973031d05d3ec9c73e57a64a75be82d855ed7d4060a04a7734",
+    "alternate-10k-mpn-search.json": "977e899a74be79e977181de4e1133c6ae51a82756b8c709b918c7936ad084e08",
+    "alternate-10k-import.log": "c037adb3a8f0e863c066683905251a2eb49dbe431b9b4266d1a278f6113bfe85",
+    "alternate-1k-search.json": "7e5a25fe1a99bd9003f8584cc53a52aabfb6450cda5d0eda3ad55847a96895ca",
+    "alternate-1k-import.log": "da00c47d7f94e418f1f2213abc39a40ca8d1e03ac2274b74b142828f65c18457"
+  }
+}

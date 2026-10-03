@@ -188,3 +188,14 @@ U25 is genuine TPS3808G33DBVR / C43698 (SOT-23-6), imported unchanged. Supplier 
 ALPS SKSWCFE010/C255576 is a genuine unchanged two-contact/no-hole SMT candidate. Supplier dimensions are preserved, but lands differ from ALPS's current recommended pattern and final paste/mechanical/electrical acceptance is pending. Exact alternate SKSWCEE010/C202371 has identical supplier pads and was not imported or selected. See evidence/hold-control-alternate-review-2026-10-03/qualification.md; no fabricated replacement component is used.
 
 B-015 blocks approval of native fabrication BOM metadata: official converter0.0.19 drops MPN/explicit resolver Comment for imported chips/connectors/switch. Exact JLCPCB codes remain correct. The characterized CSV is a tooling reproduction, not an ordering BOM; no manually repaired fabrication output is substituted.
+
+## Independent hold readback candidate — 2026-10-03
+
+| Instance | Exact manufacturer part | JLCPCB/LCSC | Candidate function |
+| --- | --- | --- | --- |
+| U26 | TI SN74LVC1G17DBVR | C7836 | Schmitt input on hardware HOLD; separate MCU readback output |
+| R99 | YAGEO RC0603FR-0710KL | C98220 | 10kohm hardware signal ground bias |
+| R100 | UNI-ROYAL 0603WAF1001T5E | C21190 | 1kohm buffer-to-MCU series resistor; genuine higher-stock alternative |
+| C78 | Murata GRM188R71C104KA01D | C45000 | 100nF supply decoupling |
+
+These are independent fixture allocations, not a complete production BOM. Current native stock: C7836=34179,C98220=22,C21190=8,013,731,C45000=3848. Prior C22548 stock5 prompted a supported genuine C21190 import/substitution in this candidate; other prior sheets retain their original parts. C25804/0603WAF1002T5E is imported but unselected: stock-filtered catalogue results are empty while its independent EasyEDA import succeeds. Final assembly stock, total quantities, exact resistor temperature/aging, supplier lands and complete hardware privacy remain open. No imported definition or fabricated substitute is authored. See evidence/hold-readback-review-2026-10-03/qualification.md.

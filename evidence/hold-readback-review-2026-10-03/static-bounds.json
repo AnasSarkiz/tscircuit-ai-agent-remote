@@ -1,0 +1,39 @@
+{
+  "status": "conditional calculations, not qualification",
+  "assumptions": [
+    "2.1% resistor allocation exceeds compounded 1% initial plus 100ppm/C over 100C (2.01%); final YAGEO and aging review pending",
+    "Main rail bounds are the prior static buck review, not measured transient limits",
+    "SN74LVC1G17 5uA input leakage is tested at VI=5.5V or GND, not every release voltage",
+    "TPS7A20 250nA EN leakage is tested at VEN=VIN=6V, not a low-EN guarantee",
+    "ESP32 50nA input current and threshold rows apply at 3.3V, 25C; internal pulls disabled",
+    "No bound is asserted for slow power ramps, floating ground, bounce or off deadline"
+  ],
+  "released_hold": {
+    "pulldown_max_ohms": 10209.999999999998,
+    "total_source_leakage_budget_microamps_for_en_low": 29.382957884427036,
+    "illustrative_release_volts_at_5_25_microamps": 0.05360249999999999,
+    "old_100k_candidate_budget_microamps_with_added_readback_load": 2.941176470588235,
+    "qualification": "Do not extend endpoint leakage tests to arbitrary EN voltage; review full input loading"
+  },
+  "pressed_hold": {
+    "minimum_nominal_pulldown_current_microamps": 311.6591576885407,
+    "maximum_nominal_pulldown_current_microamps": 351.19305413687437,
+    "qualification": "Switch contact/trace drops and exact ALPS application acceptance pending"
+  },
+  "readback_at_3_3_volts_25_c": {
+    "minimum_high_volts": 3.1999489499999996,
+    "maximum_low_volts": 0.10005105,
+    "mcu_high_threshold_volts": 2.4749999999999996,
+    "mcu_low_threshold_volts": 0.825,
+    "qualification": "Full supply/temperature, GPIO selection, startup pulls and timing pending"
+  },
+  "opposing_gpio": {
+    "conditional_static_current_max_milliamps": 3.5119305413687436,
+    "qualification": "No protection against independent overvoltage, transient clamps or powered-off injection is asserted"
+  },
+  "schmitt_thresholds": {
+    "at_vcc_3_volts_positive_threshold_max_volts": 1.92,
+    "at_vcc_3_volts_negative_threshold_min_volts": 0.89,
+    "qualification": "Discrete datasheet rows are not interpolated into a guaranteed full main-rail range"
+  }
+}

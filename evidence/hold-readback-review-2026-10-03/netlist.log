@@ -1,0 +1,51 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U26: SN74LVC1G17DBVR
+ - R99: 10kΩ resistor
+ - R100: 1kΩ resistor
+ - C78: 100nF capacitor
+
+NET: HOLD_HARDWARE
+  - R99 pin1
+  - U26 A
+
+NET: HOLD_BUFFER_OUT
+  - R100 pin1
+  - U26 Y
+
+NET: V3V3
+  - C78 pin1
+  - U26 VCC
+
+NET: GND
+  - C78 pin2
+  - R99 pin2
+  - U26 GND
+
+
+EMPTY NET PINS:
+  - R100 pin2
+
+COMPONENT_PINS:
+U26 (SN74LVC1G17DBVR)
+- pin1(N_C): NOT_CONNECTED
+- pin2(A): NETS(HOLD_HARDWARE)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(HOLD_BUFFER_OUT)
+- pin5(VCC): NETS(V3V3)
+
+R99 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_HARDWARE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R100 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_BUFFER_OUT)
+- pin2(cathode, neg, right): NETS(MCU_HOLD_READ)
+
+C78 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+

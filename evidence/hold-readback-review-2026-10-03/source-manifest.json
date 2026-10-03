@@ -1,0 +1,488 @@
+{
+  "recorded_at": "2026-10-03T05:07:34.885674+00:00",
+  "base_revision": "fa90b5420f8e567270697c68132f311444a42424",
+  "scope": "independent unrouted hold readback review, not complete board",
+  "dependencies": {
+    "tscircuit": "0.0.2742",
+    "@tscircuit/core": "0.0.2058",
+    "@tscircuit/cli": "0.1.2235",
+    "@tscircuit/props": "0.0.677",
+    "circuit-json": "0.0.510",
+    "typescript": "5.9.3",
+    "@biomejs/biome": "2.5.14"
+  },
+  "files": {
+    "src/audio/hold-readback-review.tsx": {
+      "bytes": 2311,
+      "sha256": "83de248c4ddbca54b462d4820113a10cfd2d0b2e9d715f0afb2d1834d1521938"
+    },
+    "tests/hold-readback-hardware-boundaries.test.ts": {
+      "bytes": 3183,
+      "sha256": "bb20df60d3542247dc4662feeaeb97a9636275ec9fab2d99a9d9be27ec2f7244"
+    },
+    "package.json": {
+      "bytes": 1084,
+      "sha256": "501c3c3dfdd6f9615c6cc6940d410a014ce152d1d696d9d62ec81ab2ec4cd9ad"
+    },
+    "bun.lock": {
+      "bytes": 84030,
+      "sha256": "2824c1a8af00760bf730461b2822a5858f86ee477a0738a9ccc8eefd69aaa4b2"
+    },
+    "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.tsx": {
+      "bytes": 3029,
+      "sha256": "46bc69c977ddec8819c30999f39c36446e690593091748520f00ea9ecf25760d"
+    },
+    "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.step": {
+      "bytes": 2944743,
+      "sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27"
+    },
+    "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.obj": {
+      "bytes": 475801,
+      "sha256": "d6cac869b152ff708dc4b3dfc70c9710cb1d3c1e492c59d8ce65d3e3a8340e78"
+    },
+    "imports/RC0603FR_0710KL/RC0603FR_0710KL.step": {
+      "bytes": 1046696,
+      "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc"
+    },
+    "imports/RC0603FR_0710KL/RC0603FR_0710KL.obj": {
+      "bytes": 78929,
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+    },
+    "imports/RC0603FR_0710KL/RC0603FR_0710KL.tsx": {
+      "bytes": 1794,
+      "sha256": "c52e15d9eb8ecf4fa69f24c6bd20abaac03a7daa5384d19ed0e26cd7bd5b9227"
+    },
+    "imports/A_0603WAF1001T5E/A_0603WAF1001T5E.obj": {
+      "bytes": 78929,
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+    },
+    "imports/A_0603WAF1001T5E/A_0603WAF1001T5E.tsx": {
+      "bytes": 750,
+      "sha256": "ec3926b6877c5adfa4886e0f9251498834318b8af73d5fc5b308c4b5108df9e4"
+    },
+    "imports/A_0603WAF1001T5E/A_0603WAF1001T5E.step": {
+      "bytes": 1046696,
+      "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc"
+    },
+    "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.obj": {
+      "bytes": 78929,
+      "sha256": "6fc2f81a61e2fefd1edbcd85a273d04530b3c25f0a35ea9abb254bf5b47f6f94"
+    },
+    "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.step": {
+      "bytes": 1046696,
+      "sha256": "a3e5d4a02bc66be2c69fddff5e8b86374b250660f3f7001a0bb9debcd5b9adbc"
+    },
+    "imports/A_0603WAF1002T5E/A_0603WAF1002T5E.tsx": {
+      "bytes": 751,
+      "sha256": "366019827db7d638216f355e82a6c225ea7d9fa53033d8ee6d223d71874df9eb"
+    },
+    "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.step": {
+      "bytes": 1468156,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110"
+    },
+    "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.tsx": {
+      "bytes": 2798,
+      "sha256": "3566bad7b1e790006cd1286961488e54c7d2bb6d4863509e69e3d98f19ce614f"
+    },
+    "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.obj": {
+      "bytes": 57506,
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    "evidence/hold-readback-review-2026-10-03/resistor-datasheet-fetch.log": {
+      "bytes": 317,
+      "sha256": "54590827eb1c724624e163e791c275e6bf87811a3afdf2e26a163797087c466a"
+    },
+    "evidence/hold-readback-review-2026-10-03/source.log": {
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    "evidence/hold-readback-review-2026-10-03/qualification.md": {
+      "bytes": 7594,
+      "sha256": "a66b5d8171d9dfaba7969d5ff49729b9ed64ba6e56f1006b5145980b2020e952"
+    },
+    "evidence/hold-readback-review-2026-10-03/native-schema-audit.log": {
+      "bytes": 528,
+      "sha256": "da84d8e5211e213ced8c71fabab74fbaeac504c2bef62c326b1efae5ba4e6abb"
+    },
+    "evidence/hold-readback-review-2026-10-03/pulldown-search.json": {
+      "bytes": 388,
+      "sha256": "b15d6262f00897cfdd47849abdb8c89f7f2489668b2352a963f53945984b67f9"
+    },
+    "evidence/hold-readback-review-2026-10-03/snapshot-reviewed.log": {
+      "bytes": 196,
+      "sha256": "69a4a87e45de29180bd9eaeb67bf45b6e3a0257bb5f89c7bb80dd10121f58590"
+    },
+    "evidence/hold-readback-review-2026-10-03/pulldown-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/test-format.log": {
+      "bytes": 40,
+      "sha256": "1966255d0c460558f623ef6648d58ac81476909a6eebb25552ad7628ad8d7865"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-1k-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/core-2066-code-diff.json": {
+      "bytes": 32453,
+      "sha256": "6f5ce82cb10bff88e9f0b568b3bf4a8e41e83b283a11d88b0997c15a00dad7a7"
+    },
+    "evidence/hold-readback-review-2026-10-03/snapshot-before-review.log": {
+      "bytes": 300,
+      "sha256": "f7f1f54cc4ca8cb0b94d100faea7dfe6f95fa8fa47f23fddc2eeea362ba39399"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-10k-search.json": {
+      "bytes": 41,
+      "sha256": "14489d6c737f50973031d05d3ec9c73e57a64a75be82d855ed7d4060a04a7734"
+    },
+    "evidence/hold-readback-review-2026-10-03/snapshot-update-reviewed.log": {
+      "bytes": 194,
+      "sha256": "a9240fd01bf3a664f268ebc3cfdec6356d95902fb83da5feb4b867adae68c325"
+    },
+    "evidence/hold-readback-review-2026-10-03/format.log": {
+      "bytes": 44,
+      "sha256": "88d85a5741b6e52e75a832d19d96fc4b5d33cbccd5c901c68ec3bf81dd452952"
+    },
+    "evidence/hold-readback-review-2026-10-03/pdf-render.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/0603WAF1001T5E.pdf": {
+      "bytes": 467557,
+      "sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef"
+    },
+    "evidence/hold-readback-review-2026-10-03/supplier-search-observation.json": {
+      "bytes": 1082,
+      "sha256": "c297f4ec84c1c63e04e111728e2f0028fa8b687c9dbba68e937853c2f1f74137"
+    },
+    "evidence/hold-readback-review-2026-10-03/format-check.log": {
+      "bytes": 61,
+      "sha256": "e7f76eb14df1ac3d275652e1fd8bac536433f418ccd60357443d0e78a6f78095"
+    },
+    "evidence/hold-readback-review-2026-10-03/sn74lvc1g17.txt": {
+      "bytes": 159296,
+      "sha256": "d9c5e355edb801d6d7193f0289587c9f20824c9611e96d6542727f416b0bfedd"
+    },
+    "evidence/hold-readback-review-2026-10-03/core-pr4283-watch.json": {
+      "bytes": 1874,
+      "sha256": "250b50b365e49c49d1c92af4438aa9155324d94d5a67049c46918c17e76c9c6a"
+    },
+    "evidence/hold-readback-review-2026-10-03/snapshot-pcb.png": {
+      "bytes": 19896,
+      "sha256": "ae6e18b62caa6eebb31bcfaf21b72e78742d65c565d6a8b749bce2a99c9d4553"
+    },
+    "evidence/hold-readback-review-2026-10-03/datasheet-fetch.log": {
+      "bytes": 396,
+      "sha256": "5972b3239c551c66b9ef4c39668bfc569f1175d8c929ebb2cbf5d7772e5540e0"
+    },
+    "evidence/hold-readback-review-2026-10-03/static-bounds.json": {
+      "bytes": 2119,
+      "sha256": "4fc1472af759a6df8d7cc3a421e2051de757099dce1e56e8c7ce9d2154ef2715"
+    },
+    "evidence/hold-readback-review-2026-10-03/pin-page-render.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/typecheck.log": {
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    "evidence/hold-readback-review-2026-10-03/decoupling-search.json": {
+      "bytes": 358,
+      "sha256": "a776f7b54cd6c03340a65b5e3214735c8b9168fb4e276c0869b4afc672a38309"
+    },
+    "evidence/hold-readback-review-2026-10-03/placement.log": {
+      "bytes": 492,
+      "sha256": "c0ff3c91e17c003ce42eecfdc2c53d050372ddf944ef3939758563f0bd7381c4"
+    },
+    "evidence/hold-readback-review-2026-10-03/netlist.log": {
+      "bytes": 818,
+      "sha256": "4263b3efa96c900addc1af10a7c7b1b29c41f0a7bee6c4a0103aeca9c4c19299"
+    },
+    "evidence/hold-readback-review-2026-10-03/0603WAF1001T5E.txt": {
+      "bytes": 36618,
+      "sha256": "c9c272b1676c1e91833deee4bc1aa29c2b9ce254a47250ee3125a9ff62cd171b"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-10k-mpn-search.json": {
+      "bytes": 49,
+      "sha256": "977e899a74be79e977181de4e1133c6ae51a82756b8c709b918c7936ad084e08"
+    },
+    "evidence/hold-readback-review-2026-10-03/sn74lvc1g17.pdf": {
+      "bytes": 3015318,
+      "sha256": "c76fa723fac4502423967a1aa087dd669106b52b8de620c024b26e56f5d59309"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-1k-import.log": {
+      "bytes": 297,
+      "sha256": "da00c47d7f94e418f1f2213abc39a40ca8d1e03ac2274b74b142828f65c18457"
+    },
+    "evidence/hold-readback-review-2026-10-03/series-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/buffer-search.json": {
+      "bytes": 447,
+      "sha256": "141e926df93983c67d34d1e387a931473a0128560708df59dc1ce2cc14911dd7"
+    },
+    "evidence/hold-readback-review-2026-10-03/buffer-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-1k-search.json": {
+      "bytes": 390,
+      "sha256": "7e5a25fe1a99bd9003f8584cc53a52aabfb6450cda5d0eda3ad55847a96895ca"
+    },
+    "evidence/hold-readback-review-2026-10-03/schematic-pdf-relative-path-error.log": {
+      "bytes": 165,
+      "sha256": "e065ab40f475cec01d1cafeeb6a7630a2f96d9345e81c30c1d451ff98bb737d2"
+    },
+    "evidence/hold-readback-review-2026-10-03/pcb.png": {
+      "bytes": 16919,
+      "sha256": "6f1ec5936247e3e4e3d16eb22fad82df911f2b2f87a02ee804b29db3be14b905"
+    },
+    "evidence/hold-readback-review-2026-10-03/snapshot-schematic.png": {
+      "bytes": 28879,
+      "sha256": "5163083350b4127557166026abfc6a1825b110b9d4400581d352300120a9a088"
+    },
+    "evidence/hold-readback-review-2026-10-03/calculate-static-bounds.py": {
+      "bytes": 3132,
+      "sha256": "472503049ca46d57657ff0b935e743bc3d3d6f4e27ea5ee807d1b928216d3bea"
+    },
+    "evidence/hold-readback-review-2026-10-03/decoupling-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/upstream-release-watch.json": {
+      "bytes": 793,
+      "sha256": "ed17d354ff200c871cc680b5ead7ea4659bc5fdad4b80436428a8dc10bf78fd3"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-10k-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/check-results.json": {
+      "bytes": 286,
+      "sha256": "aed271b8bd479693f170acd0606bd6940d2be74a18b670b958622f0e43e19108"
+    },
+    "evidence/hold-readback-review-2026-10-03/schematic.svg": {
+      "bytes": 64898,
+      "sha256": "3d35681a299db6ab67011fdf0d9025494fa3a71a6ee62126be412127a9d77b92"
+    },
+    "evidence/hold-readback-review-2026-10-03/tests.log": {
+      "bytes": 5753,
+      "sha256": "4d01aa7ab8fd322f121d5ca6b64de6acedaa32b8b1ddd7494cb1515545b855e9"
+    },
+    "evidence/hold-readback-review-2026-10-03/schematic-placement.log": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "evidence/hold-readback-review-2026-10-03/schematic.png": {
+      "bytes": 37983,
+      "sha256": "7b96c8eeb57a684cdf9d82e6c065b45bfe2118c549e517d93672f51463134d5e"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-10k-mpn-search.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/hold-readback-review-2026-10-03/circuit.json": {
+      "bytes": 61928,
+      "sha256": "23b3d4ac1683a77318f0a34274931dc1b561f66393c152edf34b1218bc3a3f4a"
+    },
+    "evidence/hold-readback-review-2026-10-03/manufacturer-pin-page.png": {
+      "bytes": 110357,
+      "sha256": "d401f1f009e0060ca7906ca8e03975622aa3837b75abb807de2dc1e253d2d008"
+    },
+    "evidence/hold-readback-review-2026-10-03/schematic.pdf": {
+      "bytes": 24538,
+      "sha256": "7326cb632577ce7b42c236ea339751b8e41ca6a40d4baeb9d649df2589f160ef"
+    },
+    "evidence/hold-readback-review-2026-10-03/series-search.json": {
+      "bytes": 385,
+      "sha256": "87c3d0484af3c10cb14a00417197e7578576f35c4448b0af774cdcd0d2722c2b"
+    },
+    "evidence/hold-readback-review-2026-10-03/pcb.svg": {
+      "bytes": 41588,
+      "sha256": "2c8a73e14a12d924a1ec11951febcbf22942d8a493024d7e2eeb9fd76a10d68f"
+    },
+    "evidence/hold-readback-review-2026-10-03/snapshot-initial.log": {
+      "bytes": 196,
+      "sha256": "69a4a87e45de29180bd9eaeb67bf45b6e3a0257bb5f89c7bb80dd10121f58590"
+    },
+    "evidence/hold-readback-review-2026-10-03/schematic-pdf.log": {
+      "bytes": 150,
+      "sha256": "f0e0a5b05f660728378112b9176cd5f66a7dd0d5086aecca9eaddc507b6d6e0c"
+    },
+    "evidence/hold-readback-review-2026-10-03/pin_specification.log": {
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    "evidence/hold-readback-review-2026-10-03/hardware-boundary-test.log": {
+      "bytes": 254,
+      "sha256": "c212694229b9e8cf66d23dbfc9a9ea6baefc421530818e4b2ae523ae0c1a7ffd"
+    },
+    "evidence/hold-readback-review-2026-10-03/audit-native-json.ts": {
+      "bytes": 1576,
+      "sha256": "4ae3f4fc61209e5e4754345bc8fcaee60b707876e916665b815cdc340dbd8e44"
+    },
+    "evidence/hold-readback-review-2026-10-03/alternate-10k-import.log": {
+      "bytes": 297,
+      "sha256": "c037adb3a8f0e863c066683905251a2eb49dbe431b9b4266d1a278f6113bfe85"
+    },
+    "evidence/hold-readback-review-2026-10-03/native-schema-summary.json": {
+      "bytes": 4195,
+      "sha256": "bfd87615fd3d917d581c2cf847c531a135f5963c36d41c93ba4b821d2167b90a"
+    },
+    "evidence/hold-readback-review-2026-10-03/hold.circuit.tsx": {
+      "bytes": 197,
+      "sha256": "069ccca9b9ca2b2f96c378fdea13f5a8372f4b82570eb9ee5a9038befd69d192"
+    },
+    "evidence/hold-readback-review-2026-10-03/build.log": {
+      "bytes": 815,
+      "sha256": "c468d7f96767ef6930043dd133816be0b8504018613bfc5ec232a8d64518dedb"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/source.log": {
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/native-schema-audit.log": {
+      "bytes": 505,
+      "sha256": "092a68dcc27a21f134fe7b34d9a4e3d72bbfc7bd2bd433f71b676d10d691133d"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/snapshot-reviewed.log": {
+      "bytes": 196,
+      "sha256": "69a4a87e45de29180bd9eaeb67bf45b6e3a0257bb5f89c7bb80dd10121f58590"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/format-check.log": {
+      "bytes": 61,
+      "sha256": "7b1b6458121c59e9e7e18ddcec10aabd51dc24d522190bc3cde64bc82c76ec4d"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/typecheck.log": {
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/placement.log": {
+      "bytes": 492,
+      "sha256": "c0ff3c91e17c003ce42eecfdc2c53d050372ddf944ef3939758563f0bd7381c4"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/netlist.log": {
+      "bytes": 818,
+      "sha256": "4263b3efa96c900addc1af10a7c7b1b29c41f0a7bee6c4a0103aeca9c4c19299"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/hardware-boundary-test.ts.txt": {
+      "bytes": 3183,
+      "sha256": "02e7902e9f066ec7c811052439b3b34da45f487a9ed19cd5e531d992ea621941"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/pcb.png": {
+      "bytes": 17217,
+      "sha256": "504b4e4fec60a0ee013711e29e26fbfb0d0a4dcc0d90656a285c853a2ca15a0f"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/hold-readback-source.tsx.txt": {
+      "bytes": 2235,
+      "sha256": "cd1d700e73dc0f809ee9a77cb917f1e5757eb7f9b25d8835b0c95c47b57de3a8"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/check-results.json": {
+      "bytes": 286,
+      "sha256": "aed271b8bd479693f170acd0606bd6940d2be74a18b670b958622f0e43e19108"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/schematic.svg": {
+      "bytes": 64898,
+      "sha256": "3d35681a299db6ab67011fdf0d9025494fa3a71a6ee62126be412127a9d77b92"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/tests.log": {
+      "bytes": 5754,
+      "sha256": "b42fde4f8e43193b0c3c6da50375625f2f358e35e0bc6e0a77a23c5c7e71f702"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/schematic-placement.log": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/schematic.png": {
+      "bytes": 37983,
+      "sha256": "7b96c8eeb57a684cdf9d82e6c065b45bfe2118c549e517d93672f51463134d5e"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/circuit.json": {
+      "bytes": 63549,
+      "sha256": "1d9b89fccde8143ef59e2f40acfa317d79631f33694db403674840fe94748890"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/schematic.pdf": {
+      "bytes": 24538,
+      "sha256": "427b2e150cd03b0609e2c30e2bb8cfd3e02bd42fde872dd206f7646221a1f491"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/pcb.svg": {
+      "bytes": 42519,
+      "sha256": "9d1776d9c99c70eedd1b768a6b09abf3f1f7ca4b094239f8a8deafe67b993841"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/snapshot-initial.log": {
+      "bytes": 196,
+      "sha256": "69a4a87e45de29180bd9eaeb67bf45b6e3a0257bb5f89c7bb80dd10121f58590"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/pin_specification.log": {
+      "bytes": 22,
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/hardware-boundary-test.log": {
+      "bytes": 254,
+      "sha256": "c212694229b9e8cf66d23dbfc9a9ea6baefc421530818e4b2ae523ae0c1a7ffd"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/native-schema-summary.json": {
+      "bytes": 4166,
+      "sha256": "6e3ccd4d9061e5b9b37ef4c76ec21b17677c5c9202046369d7c8305e5bf77dd1"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/build.log": {
+      "bytes": 815,
+      "sha256": "c468d7f96767ef6930043dd133816be0b8504018613bfc5ec232a8d64518dedb"
+    },
+    "evidence/hold-readback-review-2026-10-03/__snapshots__/hold.circuit-schematic.snap.svg": {
+      "bytes": 64898,
+      "sha256": "3d35681a299db6ab67011fdf0d9025494fa3a71a6ee62126be412127a9d77b92"
+    },
+    "evidence/hold-readback-review-2026-10-03/__snapshots__/hold.circuit-pcb.snap.svg": {
+      "bytes": 41588,
+      "sha256": "2c8a73e14a12d924a1ec11951febcbf22942d8a493024d7e2eeb9fd76a10d68f"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/__snapshots__/hold.circuit-schematic.snap.svg": {
+      "bytes": 64898,
+      "sha256": "3d35681a299db6ab67011fdf0d9025494fa3a71a6ee62126be412127a9d77b92"
+    },
+    "evidence/hold-readback-review-2026-10-03/initial-low-stock-candidate/__snapshots__/hold.circuit-pcb.snap.svg": {
+      "bytes": 42519,
+      "sha256": "9d1776d9c99c70eedd1b768a6b09abf3f1f7ca4b094239f8a8deafe67b993841"
+    },
+    "evidence/hold-readback-review-2026-10-03/milestone-status.json": {
+      "bytes": 1883,
+      "sha256": "c8eb4ea206614188ab27d17e1844974f0f2216714a38765b0f0482e140284677"
+    },
+    "evidence/hold-readback-review-2026-10-03/publication-issue-report.json": {
+      "bytes": 374,
+      "sha256": "5e393e60b12ebf0a2f95a4a816ff5ccf1e3ef00cabfec3837be5f339160f57a2"
+    },
+    "evidence/hold-readback-review-2026-10-03/fabrication-review-publication-readback.py": {
+      "bytes": 4205,
+      "sha256": "0383f0cc4536cfe5046242ab2ff1b15c7b3cdbe24bf8ab505e13b7b728c47190"
+    },
+    "evidence/hold-readback-review-2026-10-03/fabrication-review-publication-readback.log": {
+      "bytes": 772,
+      "sha256": "f9f34433d39f10ea6f14bba911f6892929cbe1e6affc19f58df984a889772a46"
+    },
+    "evidence/hold-readback-review-2026-10-03/resistor-land-page.png": {
+      "bytes": 200758,
+      "sha256": "b903a3d2e17721ab13258c3ba20e07c9438e9723082de420deb4e74ffefc17a5"
+    },
+    "evidence/hold-readback-review-2026-10-03/resistor-body-page.png": {
+      "bytes": 152876,
+      "sha256": "3d6fdca0dcd641f7183f7117060d54cd42db891fb603b016aa06f64c35ca5fd7"
+    },
+    "evidence/hold-readback-review-2026-10-03/fabrication-review-publication-failure-receipt.json": {
+      "bytes": 9251,
+      "sha256": "1bb05619ad72e6ac63573bb7caf8b211a63ce9edfd82b82119bd80d97ce34f2a"
+    },
+    "evidence/hold-readback-review-2026-10-03/fabrication-review-native-push.log": {
+      "bytes": 64363,
+      "sha256": "218a6bdbd86c006694c81ba91862b42a45562dd44a629bb7f2d3b0b958f9267a"
+    },
+    "evidence/hold-readback-review-2026-10-03/whitespace-review.json": {
+      "bytes": 993,
+      "sha256": "8b531d0fc10c9f846dc0c5f4637f2ac7bfcb01eb47fb4d6c10f23a927580d979"
+    }
+  }
+}

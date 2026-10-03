@@ -1,0 +1,182 @@
+{
+  "schema": "circuit-json@0.0.510 any_circuit_element, unchanged",
+  "elements": 142,
+  "counts": {
+    "source_group": 2,
+    "schematic_sheet": 1,
+    "source_net": 5,
+    "source_port": 11,
+    "source_component": 4,
+    "source_board": 1,
+    "source_trace": 10,
+    "schematic_component": 4,
+    "schematic_text": 7,
+    "schematic_group": 2,
+    "schematic_port": 11,
+    "schematic_trace": 7,
+    "schematic_net_label": 4,
+    "pcb_component": 4,
+    "pcb_group": 1,
+    "pcb_board": 1,
+    "pcb_smtpad": 11,
+    "pcb_solder_paste": 11,
+    "pcb_silkscreen_path": 21,
+    "pcb_silkscreen_text": 4,
+    "pcb_courtyard_outline": 3,
+    "pcb_courtyard_rect": 1,
+    "pcb_port": 11,
+    "cad_component": 4,
+    "source_project_metadata": 1
+  },
+  "failing_elements": 6,
+  "failures": [
+    {
+      "index": 40,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ],
+      "specific_unchanged_schema_issues": [
+        {
+          "code": "invalid_type",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ],
+      "specific_unchanged_schema_issues": [
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ],
+      "specific_unchanged_schema_issues": [
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ],
+      "specific_unchanged_schema_issues": [
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ],
+      "specific_unchanged_schema_issues": [
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ],
+      "specific_unchanged_schema_issues": [
+        {
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    }
+  ]
+}
