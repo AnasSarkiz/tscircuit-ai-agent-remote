@@ -1,0 +1,22 @@
+{
+  "scope": "native source and evidence for independent candidate; does not freeze entire board",
+  "sha256": {
+    "src/audio/microphone-regulated-clock-review.tsx": "ad66a4e3ea4ff0646ba142c00346fc760f3676ce2ca69a65f33585143560af3a",
+    "evidence/microphone-open-drain-review-2026-10-03/clock.circuit.tsx": "8017f80a7bb86d34ebdb290fb1d8dbe79f42547236f3349990a4f3f22b91c242",
+    "evidence/microphone-open-drain-review-2026-10-03/circuit.json": "5df1f3126dca0fc105bfb03bf5aa83e44a780d7e3742cf3af98b098c55aa1041",
+    "evidence/microphone-open-drain-review-2026-10-03/74LVC2G07-nexperia.pdf": "ab1143004c56f8094bbac36229b967f78a2f4f80be33d27a863840aa39b52698",
+    "evidence/microphone-open-drain-review-2026-10-03/ICS-43434.pdf": "6f87312bec5078aef44866f4e765137aad0a085b144f3a4f27d697f28f68b0c8",
+    "references/tps7a20.pdf": "663a9ff5bca608643e711652cba00e7b8bf955c0993a9b86fa108d24d58b8ddc",
+    "imports/A_74LVC2G07GW_125.tsx": "f16a4bcec83ae956affefc498532e1c821996bf47ca70799a4737d90ea600de8",
+    "imports/RC0603FR_07330RL.tsx": "8adb7b05a401f1dc1f442a2983f3ce0de685407239253f024150de832f83b295",
+    "tests/microphone-clock-hardware-boundaries.test.ts": "ef5a74f3ea6f24641c8557b69c3c966f2d99b2fdbb8e1799135c7e52cf699b7e",
+    "evidence/microphone-open-drain-review-2026-10-03/RC0603FR-07330RL.pdf": "a473dbb60f9437489ac9f7e2878eb0d64000c519e4dd111b463e06b2b39ef4ec",
+    "evidence/microphone-open-drain-review-2026-10-03/voltage-and-clock-calculations.json": "d0619a3adeb3574665506ff2640a311a6e2e4713c4959b8c82aa4b2b6361e5d1",
+    "evidence/microphone-open-drain-review-2026-10-03/qualification.md": "8bb13916d950c28d0a4af2532ede44e64136760a23eee15534494ec0c8f9ae70",
+    "evidence/imports/C24478-raw.json": "45f89f21a0bc21db919a5cb4aa851d85a86e1a79116189ee864a41240155d8c9",
+    "evidence/imports/C105881-raw.json": "72b1847f262100f360898e2fa5b7dc795d6e39508db943e003de62cb4b626314",
+    "evidence/mechanical-envelope-review-2026-10-03/render-mechanical-study.ts": "15dd2d86317681c7e0c40a3ae88bc51b3d289f71244b4491706521ac526ebeae",
+    "evidence/mechanical-envelope-review-2026-10-03/nominal-dimensions.json": "48f8047c44b824648f9685fda43d95610749192ded30f07be7116c677f1367d1",
+    "evidence/mechanical-envelope-review-2026-10-03/findings.md": "331507a1f65938ac245b1cadce1c59ed5ab734d8400ff3ee82a5cfde7b6f30eb"
+  }
+}

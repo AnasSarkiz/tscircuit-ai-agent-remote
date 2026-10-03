@@ -1,0 +1,22 @@
+{
+  "version_tag": "0.0.2-wip-a0-mic-clock-review",
+  "git_commit": "determined by milestone commit",
+  "github_status": "pending",
+  "tscircuit_status": "pending",
+  "native_publish_mode": "default file-by-file; unchanged project enumeration; previous supported archive attempt413 recorded",
+  "fabrication_ready": false,
+  "physical_tests": "pending",
+  "canonical_checks": {
+    "format": 0,
+    "types": 0,
+    "tests": {
+      "exit": 1,
+      "pass": 21,
+      "fail": 1,
+      "assertions": 204,
+      "known_blocker": "B-010"
+    },
+    "native_candidate_checks": "allfiveexit0",
+    "native_schema_invalid_elements": 17
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1100" viewBox="0 0 150 110"><rect width="150" height="110" fill="white"/><g font-family="Arial, sans-serif"><g transform="matrix(1,0,0,-1,39,61)">
+    <rect x="-25" y="-25" width="50" height="50" rx="2" fill="#ecf6ef" stroke="#23683a" stroke-width="0.35" />
+    <rect x="-24" y="12.259999999999998" width="48" height="37.49" fill="#fff0c4" fill-opacity="0.45" stroke="#b87912" stroke-dasharray="1 1" stroke-width="0.3" />
+    <rect x="-16.85" y="-24" width="33.7" height="42.94" fill="#c8e6f4" fill-opacity="0.85" stroke="#257492" stroke-width="0.3" />
+    <rect x="-9" y="9.25" width="18" height="25.5" fill="#bfc2ca" fill-opacity="0.7" stroke="#4d5262" stroke-width="0.3" />
+    <rect x="-9" y="27.259999999999998" width="18" height="7.49" fill="#e3b752" stroke="#805510" stroke-width="0.3" />
+    <line x1="-23" y1="27.7194958" x2="23" y2="27.7194958" stroke="#b73131" stroke-dasharray="1 1" stroke-width="0.3" />
+  </g><text x="39" y="25" text-anchor="middle" fill="#22304b" font-size="1.7">ESP32 body / antenna</text><text x="39" y="30" text-anchor="middle" fill="#22304b" font-size="1.7">Antenna</text><text x="39" y="43" text-anchor="middle" fill="#22304b" font-size="1.7">Module shield</text><text x="39" y="65" text-anchor="middle" fill="#22304b" font-size="1.7">LCD body</text><text x="39" y="69" text-anchor="middle" fill="#22304b" font-size="1.7">33.7 × 42.94 mm</text><text x="39" y="17" text-anchor="middle" fill="#22304b" font-size="1.7">15 mm RF clearance study</text><text x="39" y="6" text-anchor="middle" font-size="2.7" font-weight="bold">50 × 50 mm PCB trial</text>
+      <text x="39" y="97" text-anchor="middle" font-size="2" fill="#b73131">LCD–antenna gap: 8.32 mm</text>
+      <text x="39" y="101" text-anchor="middle" font-size="1.8">Top-pad support margin: -2.72 mm</text><g transform="matrix(1,0,0,-1,111,61)">
+    <rect x="-25" y="-32.5" width="50" height="65" rx="2" fill="#ecf6ef" stroke="#23683a" stroke-width="0.35" />
+    <rect x="-24" y="12.259999999999998" width="48" height="37.49" fill="#fff0c4" fill-opacity="0.45" stroke="#b87912" stroke-dasharray="1 1" stroke-width="0.3" />
+    <rect x="-16.85" y="-31.5" width="33.7" height="42.94" fill="#c8e6f4" fill-opacity="0.85" stroke="#257492" stroke-width="0.3" />
+    <rect x="-9" y="9.25" width="18" height="25.5" fill="#bfc2ca" fill-opacity="0.7" stroke="#4d5262" stroke-width="0.3" />
+    <rect x="-9" y="27.259999999999998" width="18" height="7.49" fill="#e3b752" stroke="#805510" stroke-width="0.3" />
+    <line x1="-23" y1="27.7194958" x2="23" y2="27.7194958" stroke="#b73131" stroke-dasharray="1 1" stroke-width="0.3" />
+  </g><text x="111" y="25" text-anchor="middle" fill="#22304b" font-size="1.7">ESP32 body / antenna</text><text x="111" y="30" text-anchor="middle" fill="#22304b" font-size="1.7">Antenna</text><text x="111" y="43" text-anchor="middle" fill="#22304b" font-size="1.7">Module shield</text><text x="111" y="72.5" text-anchor="middle" fill="#22304b" font-size="1.7">LCD body</text><text x="111" y="76.5" text-anchor="middle" fill="#22304b" font-size="1.7">33.7 × 42.94 mm</text><text x="111" y="17" text-anchor="middle" fill="#22304b" font-size="1.7">15 mm RF clearance study</text><text x="111" y="6" text-anchor="middle" font-size="2.7" font-weight="bold">50 × 65 mm PCB trial</text>
+      <text x="111" y="97" text-anchor="middle" font-size="2" fill="#23683a">LCD–antenna gap: 15.82 mm</text>
+      <text x="111" y="101" text-anchor="middle" font-size="1.8">Top-pad support margin: 4.78 mm</text><text x="75" y="104" text-anchor="middle" font-size="1.6">Red dashed line: upper edge of the first native solder land. PCB is green; LCD is blue.</text><text x="75" y="108" text-anchor="middle" font-size="1.7">Nominal study only — raised LCD, antenna substrate clearance and top-button location remain unqualified.</text></g></svg>

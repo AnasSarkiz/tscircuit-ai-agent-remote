@@ -1,0 +1,144 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U23: TPS7A2028PDBVR
+ - U24: 74LVC2G07GW,125
+ - C73: 10uF capacitor
+ - C74: 10uF capacitor
+ - C75: 100nF capacitor
+ - R86: 1kΩ resistor
+ - R87: 100kΩ resistor
+ - R88: 100Ω resistor
+ - R89: 100Ω resistor
+ - R90: 10kΩ resistor
+ - R91: 10kΩ resistor
+ - R92: 330Ω resistor
+ - R93: 330Ω resistor
+ - R94: 10kΩ resistor
+ - R95: 10kΩ resistor
+
+NET: V3V3
+  - C73 pin1
+  - U23 IN
+
+NET: HOLD_HARDWARE
+  - R87 pin1
+  - U23 EN
+
+NET: MIC_BCLK_INPUT
+  - R90 pin1
+  - R88 pin2
+  - U24 1A
+
+NET: MIC_WS_INPUT
+  - R91 pin1
+  - R89 pin2
+  - U24 2A
+
+NET: VMIC
+  - R93 pin1
+  - R92 pin1
+  - R86 pin1
+  - C75 pin1
+  - C74 pin1
+  - U24 VCC
+  - U23 OUT
+
+NET: MIC_BCLK
+  - R94 pin1
+  - R92 pin2
+  - U24 1Y
+
+NET: MIC_WS
+  - R95 pin1
+  - R93 pin2
+  - U24 2Y
+
+NET: GND
+  - R95 pin2
+  - R94 pin2
+  - R91 pin2
+  - R90 pin2
+  - R87 pin2
+  - R86 pin2
+  - C75 pin2
+  - C74 pin2
+  - C73 pin2
+  - U24 GND
+  - U23 GND
+
+
+EMPTY NET PINS:
+  - R88 pin1
+  - R89 pin1
+
+COMPONENT_PINS:
+U23 (TPS7A2028PDBVR)
+- pin1(IN): NETS(V3V3)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(HOLD_HARDWARE)
+- pin4(N, C): NOT_CONNECTED
+- pin5(OUT): NETS(VMIC)
+
+U24 (74LVC2G07GW,125)
+- pin1(1A): NETS(MIC_BCLK_INPUT)
+- pin2(GND): NETS(GND)
+- pin3(2A): NETS(MIC_WS_INPUT)
+- pin4(2Y): NETS(MIC_WS)
+- pin5(VCC): NETS(VMIC)
+- pin6(1Y): NETS(MIC_BCLK)
+
+C73 (10uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C74 (10uF undefined)
+- pin1: NETS(VMIC)
+- pin2: NETS(GND)
+
+C75 (100nF undefined)
+- pin1: NETS(VMIC)
+- pin2: NETS(GND)
+
+R86 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R87 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_HARDWARE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R88 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_MIC_BCLK)
+- pin2(cathode, neg, right): NETS(MIC_BCLK_INPUT)
+
+R89 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_MIC_WS)
+- pin2(cathode, neg, right): NETS(MIC_WS_INPUT)
+
+R90 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_BCLK_INPUT)
+- pin2(cathode, neg, right): NETS(GND)
+
+R91 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_WS_INPUT)
+- pin2(cathode, neg, right): NETS(GND)
+
+R92 (330Ω undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(MIC_BCLK)
+
+R93 (330Ω undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(MIC_WS)
+
+R94 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_BCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R95 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_WS)
+- pin2(cathode, neg, right): NETS(GND)
+

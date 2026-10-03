@@ -1,0 +1,35 @@
+Building 1 file(s)...
+Building evidence/microphone-open-drain-review-2026-10-03/clock.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/microphone-open-drain-review-2026-10-03/clock/circuit.json
+U23 has no pin with requires_power=true
+Failed to fetch supplier footprint for <chip#10(.mic-regulated-clock-review-group>.U23) /> (jlcpcb:C2869847): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#95(.mic-regulated-clock-review-group>.R92) /> (jlcpcb:C105881): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#92(.mic-regulated-clock-review-group>.R91) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#89(.mic-regulated-clock-review-group>.R90) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#86(.mic-regulated-clock-review-group>.R89) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#83(.mic-regulated-clock-review-group>.R88) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#80(.mic-regulated-clock-review-group>.R87) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#77(.mic-regulated-clock-review-group>.R86) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#74(.mic-regulated-clock-review-group>.C75) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#71(.mic-regulated-clock-review-group>.C74) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#68(.mic-regulated-clock-review-group>.C73) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#36(.mic-regulated-clock-review-group>.U24) /> (jlcpcb:C24478): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#106(.mic-regulated-clock-review-group>.R93) /> (jlcpcb:C105881): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#120(.mic-regulated-clock-review-group>.R95) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#117(.mic-regulated-clock-review-group>.R94) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[evidence/microphone-open-drain-review-2026-10-03/clock] Generating PCB SVG...
+[evidence/microphone-open-drain-review-2026-10-03/clock] Written pcb.svg
+[evidence/microphone-open-drain-review-2026-10-03/clock] Generating PCB PNG...
+[evidence/microphone-open-drain-review-2026-10-03/clock] Written pcb.png
+[evidence/microphone-open-drain-review-2026-10-03/clock] Generating schematic SVG...
+[evidence/microphone-open-drain-review-2026-10-03/clock] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

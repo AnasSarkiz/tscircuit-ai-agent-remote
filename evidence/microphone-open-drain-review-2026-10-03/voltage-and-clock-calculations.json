@@ -1,0 +1,32 @@
+{
+  "status": "conditional engineering calculations; clock loading, partial-power and turn-off remain unqualified",
+  "captured_at": "2026-10-03T03:29:58.230051+00:00",
+  "manufacturer_references": {
+    "mic": "TDK DS-000069 Rev1.2 p6 Table5:1.8<VDD<3.3V; VIL0.3VDD,VIH0.7VDD; SCK10-90rise25ns max",
+    "regulator": "TI SBVS338H RevH pp6-7: TPS7A2028PDBVR output2.8V +/-1.5%, VIN>=3.1V, load1-300mA",
+    "buffer": "Nexperia74LVC2G07 Rev13: VOL0.4V at12mA,VCC2.7V,-40..85C;0.6V at125C; IOZ2uA testVCC5.5V; II1uA VCC0..5.5V;Ioff2uA testVCC0",
+    "resistors": "YAGEO RC0603FR series +/-1%, +/-100ppm/C; assume -40..85C =>75C maximum deviation from25C"
+  },
+  "main_rail_static_min_volts": 3.18204,
+  "regulator_accuracy_input_min_volts": 3.1,
+  "vin_static_headroom_volts": 0.08204000000000011,
+  "vmic_min_volts": 2.758,
+  "vmic_max_volts": 2.8419999999999996,
+  "min_ldo_bleed_milliamps": 2.7105651105651103,
+  "pullup_min_ohms": 324.225,
+  "pullup_max_ohms": 335.77500000000003,
+  "clock_pulldown_min_ohms": 9825.0,
+  "clock_pulldown_max_ohms": 10175.0,
+  "max_pullup_sink_milliamps": 8.765517773151359,
+  "clock_high_resistor_ratio_min": 0.9669538002760617,
+  "clock_high_margin_volts_conditional_ioz_2uA": 0.7356084843559573,
+  "clock_low_margin_volts_conditional_vol_0_6": 0.22740000000000005,
+  "clock_high_ioz_caveat": "IOZ2uA tested atVCC5.5V; this is a conditional estimate for2.8V, not an additional manufacturer guarantee",
+  "pullup_worst_static_power_watts": 0.02491160151129616,
+  "parallel_resistance_max_ohms": 325.04840271055184,
+  "max_clock_load_for_25ns_10_90_rise_picofarads": 29.99395221939688,
+  "capacitance_caveat": "TDK microphone SCK/WS input capacitance maximum absent. Buffer output capacitance plus both microphone inputs plus routed trace/connector load must fit measured bound. No full timing qualification yet. The85pF microphone SD output load rating is NOT a clock input capacitance.",
+  "clock_high_asymptote_ratio_conditional_ioz_2uA": 0.9667180871486429,
+  "rise_time_log_factor_conservative_10_90_vmic": 2.5642376771017723,
+  "rise_time_basis": "Conservative 10% to90% of VMIC, accounting for final high below VMIC due to10k pulldown and conditional2uA leakage. Usingln9 assumes a full VMIC final high and would overestimate allowable load."
+}

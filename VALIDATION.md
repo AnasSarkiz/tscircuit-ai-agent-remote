@@ -1,4 +1,4 @@
-# Validation — A0-display-logic-review (work in progress)
+# Validation — A0-regulated-microphone-clock-review (work in progress)
 
 Updated: 2026-10-03 (Europe/Tirane). **Independent MCU/USB and improved regulator reviews added; B-003 remains resolved. B-005 includes USB polygon paste; B-008 includes ESD reference text; B-009 private source publication and B-010 native JSON schema remain blocked. No complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
@@ -632,3 +632,57 @@ pending. No copper, saved routes or fabrication-ready package exists. Future
 native routes must be saved before moving/rerouting and revalidated afterward.
 
 Publication read-back: preceding amplifier Git revision `50bebdb6c283cf72ab4ab1e28321782e28065cf8` is pushed. Native private `0.0.2-wip-a0-amplifier-review` exits 1 (665 successes, 13 failures), ready_to_build=false. Amplifier TSX, bun.lock and three timeout STEP files have exact remote hashes; nine reported failures are actually absent. Four HTTP413 failures and remaining network failures remain B-009. Logs and receipt saved in this step's evidence folder; no ready flag or upload omission workaround.
+
+## Regulated microphone clocks and nominal mechanical study — 2026-10-03
+
+Parent source: a1e76d5f2879d74b68d882c3ea5576359b0ccc42. The new milestone
+commit and evidence/microphone-open-drain-review-2026-10-03/source-manifest.json
+identify the candidate. Its native A4 fixture uses 15 imported top parts,
+37 pads and 37 paste entries, zero PCB traces/vias/error elements. Native build
+and all five diagnostic checks exit 0 after rotating C74 by 180 degrees cleared
+an initial placement orientation failure. Both logs are preserved; no imported
+footprint was edited. Network-enabled build resolved sandbox supplier fetch
+failures. PCB PNG and landscape A4 schematic PDF were inspected; snapshots match.
+Formatting and TypeScript exit 0. Two new hardware-boundary tests pass. Canonical tests report 21 pass, 1 fail,
+204 assertions (B-010). Strict candidate JSON has 17 invalid elements; original
+JSON and every failing index/type are preserved. No schema/checker weakening.
+
+ICS-43434 C5656610 I2S Table 5 specifies 1.8 < VDD < 3.3 V; the provisional
+main rail reaches 3.43818 V. A dedicated TPS7A2028PDBVR C2869847 regulator
+controlled by HOLD_HARDWARE gives a conditional 2.758–2.842 V with VIN >= 3.1 V
+and load >= 1 mA. Nexperia 74LVC2G07GW,125 C24478 open-drain clocks are powered
+from VMIC and pulled high only to VMIC by YAGEO 330-ohm C105881 resistors.
+All imports are genuine and unchanged. The conservative total clock-load bound
+is about 30 pF for TDK's 25 ns rise limit, accounting for the pulldown-limited
+high level. Actual input capacitance, timing, partial-power AC feedthrough,
+off-state injection and release-to-off deadline remain unqualified. IOZ's
+5.5 V test condition is not expanded to an invented 2.8 V guarantee.
+Privacy, complete microphone circuitry, switch and stencil remain pending or
+blocked; detailed sources/conditions are recorded in qualification.md.
+
+The dimension study in evidence/mechanical-envelope-review-2026-10-03 uses
+actual C5329581 LCD dimensions, module pad coordinates/body-origin offset and
+Espressif's 15 mm RF recommendation. The 50 x 50 mm trial fails; the approved
+50 x 65 mm trial gives a nominal 15.82 mm LCD-to-antenna gap and 4.78 mm upper
+land support margin. Raised LCD, tolerances, substrate removal, top button,
+case, pack and speaker fit are unqualified. This does not prove all square
+layouts impossible or establish a new exterior design. The sketch creates no
+electronic component definitions or native placement/keepouts/cutouts.
+
+Haptic parent publication: GitHub verified; private native version
+0.0.2-wip-a0-haptic-driver-review exited 1 after archive HTTP413 and native
+file-by-file fallback (771 reported successes, 13 failures). All seven timeout
+files match exact readback hashes; six HTTP413 files remain 404. Package remains
+private=true, ready_to_build=false; B-009 persists. Receipt/script are in the
+clock evidence. Original private archive error payload remains in the tmp log;
+the diagnostic copy replaces only that 97 MB payload line with original path,
+length and hash, retaining errors and statuses. The CLI logging defect was
+separately confirmed by the fix chat. No uploaded evidence was omitted and
+no ready flag was forced. Current official core 0.0.2063 is unchanged; CLI
+0.1.2237's current gitHead differs only by a package version bump. Required fixes
+are not verified published. Pinned board dependencies remain unchanged.
+
+Whole-board stage 1 remains in progress, stage 2 blocked, stages 3–6 not started
+and physical stage 7 pending. No full copper routes or fabrication package
+exists. Battery sourcing exception remains unanswered. Confirmed findings were
+sent to the authorized fix chat; independent work continues.

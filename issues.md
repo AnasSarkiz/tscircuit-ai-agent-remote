@@ -359,3 +359,23 @@ All three concerns sent to the authorized fix chat.
   demonstrated library bug. Do not integrate the high-current detector until
   guaranteed low EN2 behavior across partial supply is established. Fixed
   USB100 direction remains unqualified; pack sourcing permission is pending.
+
+
+### Regulated microphone clock milestone — remaining qualification
+
+- Hardware: C5656610 I2S Table 5 specifies 1.8 < VDD < 3.3 V; the provisional
+  main rail reaches 3.43818 V. The dedicated 2.8 V supply/open-drain clock
+  candidate has better static margins; total clock capacitance must fit about
+  30 pF. Timing, partial-power behavior and off deadline remain unqualified.
+- B-010: 17 strict native candidate JSON failures; canonical tests 21 pass, 1 fail.
+- B-009: haptic a1e76d5 private publication exits 1: archive HTTP413/native
+  fallback 771 successes, 13 failures. Seven timeout files match exact hashes;
+  six actual HTTP413 files are missing. Package is private=true, ready=false.
+  Native error logging duplicates private archive content; fix chat reproduced
+  this separately. Raw log retained privately in tmp; diagnostic copy substitutes
+  only the payload line with its path, byte count and hash. No upload omissions.
+- Mechanical: this 50 x 50 mm trial fails land support and RF separation. The
+  approved 50 x 65 mm trial gives a nominal 15.82 mm LCD-to-antenna gap, but raised
+  LCD, tolerances, substrate, top button and case fit remain pending. This does
+  not prove all square layouts impossible or validate a replacement for the
+  accepted square exterior. No imported definition was modified.

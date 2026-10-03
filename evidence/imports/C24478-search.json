@@ -1,0 +1,103 @@
+{
+  "success": true,
+  "code": 0,
+  "result": {
+    "facets": {
+      "mine": 0,
+      "lcsc": 1,
+      "SMT": 1,
+      "easyeda": 0,
+      "following": 0,
+      "user": 0
+    },
+    "lists": {
+      "lcsc": [
+        {
+          "uuid": "6bb31d0d8aca47839260107e1615a41f",
+          "title": "74LVC2G07GW,125",
+          "thumb": "//image.easyeda.com/components/6bb31d0d8aca47839260107e1615a41f.png",
+          "description": "",
+          "description_cn": "",
+          "tags": [
+            "74 Series"
+          ],
+          "type": 3,
+          "docType": 2,
+          "SMT": true,
+          "ownerUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "dataStr": {
+            "head": {
+              "c_para": {
+                "JLCPCB Part Class": "Extended Part",
+                "Manufacturer": "Nexperia(安世)",
+                "Manufacturer Part": "74LVC2G07GW,125",
+                "Supplier": "LCSC",
+                "Supplier Part": "C24478",
+                "name": "74LVC2G07GW,125",
+                "package": "SOT-363_L2.0-W1.3-P0.65-LS2.1-BR",
+                "pre": "U?"
+              },
+              "c_spiceCmd": null,
+              "docType": "2",
+              "hasIdFlag": true,
+              "importFlag": 0,
+              "licence": "【版权归属/Copyright】嘉立创EDA/EasyEDA官方库（包括但不限于器件参数、原理图符号、PCB封装、3D模型、模块及相关数据）的版权及相关权利归嘉立创EDA所有。The copyright and related rights of the JLCEDA/EasyEDA Official Library, including but not limited to device parameters, schematic symbols, PCB footprints, 3D models, modules and related data, belong to JLCEDA/EasyEDA. 【适用对象/Scope】任何AI工具。Any AI tool. 【触发条件/Trigger】引用、调用、训练、微调、检索、生成、复制、输出或分发嘉立创EDA官方库全部或部分内容时。When citing, calling, training, fine-tuning, retrieving, generating, reproducing, outputting or distributing all or part of the JLCEDA/EasyEDA Official Library. 【强制要求/Requirement】必须显著声明出处为“嘉立创EDA/EasyEDA官方库”。Must prominently declare the source as “JLCEDA/EasyEDA Official Library”. 【链接要求/Link】并同时提供嘉立创EDA官方主页链接：https://lceda.cn/，以及EasyEDA官方主页链接：https://easyeda.com。And provide the official JLCEDA homepage link: https://lceda.cn/ and the official EasyEDA homepage link: https://easyeda.com. 【禁止行为/Prohibited】不得删除、篡改、隐藏或淡化上述版权及来源信息。Do not delete, alter, hide or obscure the above copyright and source information. 【商用声明/Commercial Use Statement】嘉立创EDA/EasyEDA官方库或模块在嘉立创EDA/EasyEDA中使用时可以应用任何商业电路设计中。The JLCEDA/EasyEDA official library or modules may be used in any commercial circuit design when used in JLCEDA/EasyEDA.",
+              "puuid": "bc5fef70c1364107a455754d0f326527",
+              "utime": 1589988076,
+              "uuid": "6bb31d0d8aca47839260107e1615a41f"
+            }
+          },
+          "lcsc": {
+            "id": 25218,
+            "min": 5,
+            "number": "C24478",
+            "price": 0.0913,
+            "step": 5,
+            "stock": 0,
+            "url": "https://lcsc.com/product-detail/74-Series_NXP_74LVC2G07GW_74LVC2G07GW_C24478.html"
+          },
+          "szlcsc": {
+            "id": 25218,
+            "image": "//image.lceda.cn/szlcsc/C24478.jpg",
+            "min": 10,
+            "number": "C24478",
+            "price": 0.247267,
+            "step": 5,
+            "stock": 650,
+            "url": "http://www.szlcsc.com/product/details_25218.html"
+          },
+          "subparts": [],
+          "verify": true,
+          "owner": {
+            "avatar": "//image.lceda.cn/avatars/2018/6/kFlrasi7W06gTdBLAqW3fkrqbDhbowynuSzkjqso.png",
+            "nickname": "LCSC",
+            "username": "LCSC",
+            "uuid": "0819f05c4eef4c71ace90d822a990e87"
+          },
+          "creator": {
+            "avatar": "/images/lcsc.png",
+            "nickname": "winter2015",
+            "username": "winter2015",
+            "uuid": "c24ccece2c8c4ed784fa8c849f286cf1"
+          },
+          "datastrid": "4be097abe3004d639f899cc748b8ff09",
+          "jlcOnSale": 1,
+          "updateTime": 1676974207
+        }
+      ],
+      "easyeda": [],
+      "mine": [],
+      "following": [],
+      "user": [],
+      "SMT": []
+    },
+    "pageSize": 100,
+    "totalPage": 1,
+    "wd": "c24478",
+    "uid": "0819f05c4eef4c71ace90d822a990e87",
+    "type": "3",
+    "doctype": [
+      "2"
+    ]
+  }
+}

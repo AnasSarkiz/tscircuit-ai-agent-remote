@@ -1,0 +1,142 @@
+{
+  "checked_at": "2026-10-03T03:36:57.859888+00:00",
+  "source_revision": "a1e76d5f2879d74b68d882c3ea5576359b0ccc42",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-haptic-driver-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 771,
+  "reported_failures": 13,
+  "ready_to_build": false,
+  "is_private": true,
+  "files": [
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 7839968,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3739103,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 4999480,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 7839968,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 5543534,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/TPS63070RNMR/TPS63070RNMR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2275869,
+      "remote_sha256": "4da890d84df15d9ff499c73ca943e9347ded28edf5fe914a3cd3a87c5894ba79",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS7A2028PDBVR/TPS7A2028PDBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1599668,
+      "remote_sha256": "6543cfeef6ed208af29fa5653bd78911f1d618906de4412cb2042e989c5e1a37",
+      "matches": true
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3046769,
+      "remote_sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "matches": true
+    },
+    {
+      "path": "references/tlv3201.pdf",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 1756192,
+      "remote_sha256": "1777bba814c74772bb54c6f1f56702985039043ce2fb2affaf996a83eaf1076e",
+      "matches": true
+    },
+    {
+      "path": "references/tps3839.pdf",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 948524,
+      "remote_sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "matches": true
+    },
+    {
+      "path": "references/tps7a20.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 8989493,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "references/user-brief.txt",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 14709,
+      "remote_sha256": "7134ee0b4891589b22ee0f3a501fcd5aca2450e0c371fd38c688cf57ed31119f",
+      "matches": true
+    },
+    {
+      "path": "references/waveshare-1.54-schematic.pdf",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 187236,
+      "remote_sha256": "dc7c6c569e05ea48a8beefd272a6c1ae6442ce8f5c7177e314246d6caf4f6732",
+      "matches": true
+    }
+  ]
+}

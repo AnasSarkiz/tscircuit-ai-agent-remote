@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-03T03:36:57.859888+00:00",
+  "source_revision": "a1e76d5f2879d74b68d882c3ea5576359b0ccc42",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-haptic-driver-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 771,
+  "reported_failures": 13,
+  "ready_to_build": false,
+  "is_private": true
+}
+{
+  "matching_files": 7,
+  "missing_files": [
+    "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+    "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+    "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+    "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+    "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+    "references/tps7a20.pdf"
+  ],
+  "unverified_files": []
+}

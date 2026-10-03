@@ -1,6 +1,6 @@
 # tscircuit AI agent remote
 
-Revision A0-haptic-driver-review (work in progress), updated 2026-10-03: **independent power, display, MCU/USB, audio and haptic application reviews exist; no complete handheld schematic or PCB exists**. B-003 is resolved with an official core release; imported geometry, paste, schema, sourcing and publication blockers remain. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-regulated-microphone-clock-review (work in progress), updated 2026-10-03: **independent power, display, MCU/USB, audio and haptic application reviews exist; no complete handheld schematic or PCB exists**. B-003 is resolved with an official core release; imported geometry, paste, schema, sourcing and publication blockers remain. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
@@ -51,7 +51,7 @@ C370970 uses its existing native `<chip>` as a schematic box. Pin labels, center
 
 ## Commands
 
-Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **19 pass / 1 fail**: the native Circuit JSON schema regression reproduces B-010. Manufacturer connection and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
+Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **21 pass / 1 fail**: the native Circuit JSON schema regression reproduces B-010. Manufacturer connection and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
 
 ## Evidence and remaining work
 
@@ -174,3 +174,15 @@ native A4/PCB output and required checks are preserved in
 default USB100 until higher current is advertised and controller power is stable.
 The charger, protected pack, temperature circuit and system-load gating are still
 unfinished. This does not enable routing or qualify a complete board.
+
+
+The regulated microphone clock candidate and nominal mechanical study are in
+`evidence/microphone-open-drain-review-2026-10-03/qualification.md` and
+`evidence/mechanical-envelope-review-2026-10-03/findings.md`. The independent
+15-part A4 fixture is unrouted; required diagnostic checks pass, while strict
+native JSON still fails 17 elements (B-010). Clock loading, privacy timing and
+complete mechanical fit remain unqualified. Parent Git a1e76d5 reached GitHub;
+private version 0.0.2-wip-a0-haptic-driver-review remains incomplete: 771 reported
+successes, 13 failures; seven timeout files byte-verified and six actual missing
+HTTP413 files. Package remains private=true, ready_to_build=false. The new
+milestone's publication is pending.

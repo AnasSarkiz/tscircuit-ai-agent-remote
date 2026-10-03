@@ -164,3 +164,17 @@ R85=C14675100k. C70=C9005310µF, C71=C8441922µF, C72=C45000100nF.
 These quantities belong to the independent fixture and are not a complete-board
 BOM. Voltage, startup/stall, EMI, biased-capacitance, reflow/fixture and mechanics
 remain open in `HAPTICS.md`; no motor import was patched or substituted.
+
+## Regulated microphone clock review — 2026-10-03
+
+| Candidate | Manufacturer MPN | JLCPCB/LCSC | Status |
+| --- | --- | --- | --- |
+| Hardware-enabled 2.8 V supply | TI TPS7A2028PDBVR | C2869847 | Existing genuine import reused as separate supply instance; independent review only |
+| Open-drain dual clocks | Nexperia 74LVC2G07GW,125 | C24478 | Genuine unchanged import; conditional DC margins, timing/privacy still unqualified |
+| Clock pullups | YAGEO RC0603FR-07330RL | C105881 | Genuine unchanged 330-ohm import; exact manufacturer sheet preserved |
+| Unselected comparison buffer | TI SN74LVC2G07DCKR | C7849 | Genuine import; not populated in the candidate |
+
+The 15-part fixture reuses C90053 (10 uF), C45000 (100 nF), C22548 (1 kohm),
+C14675 (100 kohm), C105588 (100 ohm) and C98220 (10 kohm). These are fixture
+quantities, not a completed board BOM. Native C5329581 LCD import remains
+present; the envelope study uses its manufacturer drawing without editing it.

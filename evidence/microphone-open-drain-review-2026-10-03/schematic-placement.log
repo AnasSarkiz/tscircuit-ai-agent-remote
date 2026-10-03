@@ -1,0 +1,7 @@
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="C74" positionAnchor="center" schX="-10" schY="4" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C75" positionAnchor="center" schX="10" schY="9" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DecouplingCapacitorsNotCloseTogether rail="VMIC" ground="GND" capacitorNames="C74, C75" maxBodyGap="19.6" maxRecommendedBodyGap="4" message="Group the decoupling capacitors between VMIC and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>

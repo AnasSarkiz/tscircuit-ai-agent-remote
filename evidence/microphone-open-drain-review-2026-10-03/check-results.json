@@ -1,0 +1,20 @@
+[
+  {
+    "check": "pin_specification",
+    "exit_code": 0
+  },
+  {
+    "check": "source",
+    "exit_code": 0
+  },
+  {
+    "check": "schematic-placement",
+    "exit_code": 0
+  },
+  {
+    "check": "placement",
+    "exit_code": 0,
+    "initial_exit_code": 1,
+    "correction": "C74 PCB rotation180degrees; native application placement adjustment only"
+  }
+]
