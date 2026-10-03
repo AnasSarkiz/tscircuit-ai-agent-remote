@@ -1,0 +1,32 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - SW1: SW1, source_component
+ - R77: 10kΩ resistor
+
+NET: HOLD_RAW
+  - R77 pin1
+  - SW1 pin2
+
+NET: GND
+  - R77 pin2
+  - SW1 pin4
+  - SW1 pin3
+
+
+EMPTY NET PINS:
+  - SW1 pin1
+
+COMPONENT_PINS:
+SW1 (EVQ-P4HB3B)
+- pin1: NETS(V3V3)
+- pin2: NETS(HOLD_RAW)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+R77 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_RAW)
+- pin2(cathode, neg, right): NETS(GND)
+

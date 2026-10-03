@@ -157,3 +157,11 @@ to the authorized fix chat. No installed board runtime was patched or upstream
 release published. B-010 remains open until an official fix is verified natively.
 C11050 land comparison is a tolerance/revision qualification question, not a
 proven supplier defect (B-011). No footprint patch was applied.
+
+
+The independent Type-C hardware current detector is reviewed in `TYPE-C.md`;
+native A4/PCB output and required checks are preserved in
+`evidence/type-c-current-review-2026-10-03/`. It keeps the proposed charger in
+default USB100 until higher current is advertised and controller power is stable.
+The charger, protected pack, temperature circuit and system-load gating are still
+unfinished. This does not enable routing or qualify a complete board.

@@ -1,0 +1,184 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U15: TPS7A2033PDBVR
+ - U18: TUSB320LAIRWBR
+ - U19: TPS3839K33DBZR
+ - U20: SN74LVC1G14DBVR
+ - U21: SN74LVC1G08DBVR
+ - C60: 10uF capacitor
+ - C61: 22uF capacitor
+ - C62: 100nF capacitor
+ - C63: 100nF capacitor
+ - C64: 100nF capacitor
+ - C65: 100nF capacitor
+ - R73: 1kΩ resistor
+ - R71: 470kΩ resistor
+ - R72: 430kΩ resistor
+ - R74: 10kΩ resistor
+ - R75: 10kΩ resistor
+ - R76: 1kΩ resistor
+
+NET: USB_CTRL_READY
+  - U21 A
+  - U19 N_RESET
+
+NET: USB_HIGH_CURRENT_DETECTED
+  - U21 B
+  - U20 Y
+
+NET: VBUS_DETECT_MID
+  - R72 pin1
+  - R71 pin2
+
+NET: VBUS_DETECT
+  - R72 pin2
+  - U18 VBUS_DET
+
+NET: USB_HIGH_CURRENT_N
+  - R74 pin2
+  - U20 A
+  - U18 SDA
+
+NET: USB_CURRENT_OUT2
+  - R75 pin2
+  - U18 SCL
+
+NET: USB_CHARGER_EN2
+  - R76 pin1
+  - U21 Y
+
+NET: VSYS
+  - C60 pin1
+  - U15 EN
+  - U15 IN
+
+NET: USB_CTRL_V3V3
+  - C65 pin1
+  - C64 pin1
+  - C63 pin1
+  - C62 pin1
+  - C61 pin1
+  - R75 pin1
+  - R74 pin1
+  - R73 pin1
+  - U21 VCC
+  - U20 VCC
+  - U19 VDD
+  - U18 VDD
+  - U15 OUT
+
+NET: GND
+  - C65 pin2
+  - C64 pin2
+  - C63 pin2
+  - C62 pin2
+  - C61 pin2
+  - C60 pin2
+  - R76 pin2
+  - R73 pin2
+  - U21 GND
+  - U20 GND
+  - U19 GND
+  - U18 EN_N
+  - U18 GND
+  - U18 PORT
+  - U15 GND
+
+
+EMPTY NET PINS:
+  - U18 CC1
+  - U18 CC2
+  - R71 pin1
+
+COMPONENT_PINS:
+U15 (TPS7A2033PDBVR)
+- pin1(IN): NETS(VSYS)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(VSYS)
+- pin4(NC): NOT_CONNECTED
+- pin5(OUT): NETS(USB_CTRL_V3V3)
+
+U18 (TUSB320LAIRWBR)
+- pin1(CC1): NETS(USB_CC1)
+- pin2(CC2): NETS(USB_CC2)
+- pin3(PORT): NETS(GND)
+- pin4(VBUS_DET): NETS(VBUS_DETECT)
+- pin5(ADDR): NOT_CONNECTED
+- pin6(INT_N, OUT3): NOT_CONNECTED
+- pin7(SDA, OUT1): NETS(USB_HIGH_CURRENT_N)
+- pin8(SCL, OUT2): NETS(USB_CURRENT_OUT2)
+- pin9(ID): NOT_CONNECTED
+- pin10(GND): NETS(GND)
+- pin11(EN_N): NETS(GND)
+- pin12(VDD): NETS(USB_CTRL_V3V3)
+
+U19 (TPS3839K33DBZR)
+- pin1(GND): NETS(GND)
+- pin2(N_RESET): NETS(USB_CTRL_READY)
+- pin3(VDD): NETS(USB_CTRL_V3V3)
+
+U20 (SN74LVC1G14DBVR)
+- pin1(N_C): NOT_CONNECTED
+- pin2(A): NETS(USB_HIGH_CURRENT_N)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(USB_HIGH_CURRENT_DETECTED)
+- pin5(VCC): NETS(USB_CTRL_V3V3)
+
+U21 (SN74LVC1G08DBVR)
+- pin1(A): NETS(USB_CTRL_READY)
+- pin2(B): NETS(USB_HIGH_CURRENT_DETECTED)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(USB_CHARGER_EN2)
+- pin5(VCC): NETS(USB_CTRL_V3V3)
+
+C60 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C61 (22uF undefined)
+- pin1: NETS(USB_CTRL_V3V3)
+- pin2: NETS(GND)
+
+C62 (100nF undefined)
+- pin1: NETS(USB_CTRL_V3V3)
+- pin2: NETS(GND)
+
+C63 (100nF undefined)
+- pin1: NETS(USB_CTRL_V3V3)
+- pin2: NETS(GND)
+
+C64 (100nF undefined)
+- pin1: NETS(USB_CTRL_V3V3)
+- pin2: NETS(GND)
+
+C65 (100nF undefined)
+- pin1: NETS(USB_CTRL_V3V3)
+- pin2: NETS(GND)
+
+R73 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CTRL_V3V3)
+- pin2(cathode, neg, right): NETS(GND)
+
+R71 (470kΩ undefined)
+- pin1(anode, pos, left): NETS(VBUS)
+- pin2(cathode, neg, right): NETS(VBUS_DETECT_MID)
+
+R72 (430kΩ undefined)
+- pin1(anode, pos, left): NETS(VBUS_DETECT_MID)
+- pin2(cathode, neg, right): NETS(VBUS_DETECT)
+
+R74 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CTRL_V3V3)
+- pin2(cathode, neg, right): NETS(USB_HIGH_CURRENT_N)
+
+R75 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CTRL_V3V3)
+- pin2(cathode, neg, right): NETS(USB_CURRENT_OUT2)
+
+R76 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CHARGER_EN2)
+- pin2(cathode, neg, right): NETS(GND)
+

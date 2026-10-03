@@ -1,0 +1,22 @@
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U21" positionAnchor="center" schX="10" schY="0" width="1.2" height="0.8" />
+<SchematicBoxPlacement componentName="C61" positionAnchor="center" schX="-4" schY="8" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C62" positionAnchor="center" schX="-1" schY="8" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C63" positionAnchor="center" schX="6" schY="6" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C64" positionAnchor="center" schX="3" schY="-6" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="C65" positionAnchor="center" schX="11" schY="-6" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="R71" positionAnchor="center" schX="-13" schY="-8" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R72" positionAnchor="center" schX="-8" schY="-8" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="R76" positionAnchor="center" schX="13" schY="0" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="R71" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R71 by -90° so its power-connected pin faces up and the component is vertical" />
+<TwoPinComponentShouldBeVertical componentName="R72" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate R72 by -90° so its power-connected pin faces up and the component is vertical" />
+<ComponentNetLabelCollision pair1="R76/U21">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="U21" newSchX="9.84" newSchY="0" />
+    <Move componentName="R76" newSchX="13.17" newSchY="0" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+<DecouplingCapacitorsNotCloseTogether rail="USB_CTRL_V3V3" ground="GND" capacitorNames="C61, C62, C63, C64, C65" maxBodyGap="19.452" maxRecommendedBodyGap="4" message="Group the decoupling capacitors between USB_CTRL_V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>

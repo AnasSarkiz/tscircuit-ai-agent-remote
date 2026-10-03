@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-10-03T02:41:09.647052+00:00",
+  "source_revision": "50bebdb6c283cf72ab4ab1e28321782e28065cf8",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-amplifier-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 665,
+  "reported_failures": 13,
+  "ready_to_build": false,
+  "files": [
+    {
+      "path": "src/audio/speaker-amplifier-review.tsx",
+      "http_status": null,
+      "network_error": null,
+      "remote_sha256": "8bf21502d74b41302e3f4a8d678dc3f2e6742dc794e6a5dbba0f4853528c041b",
+      "matches": true
+    },
+    {
+      "path": "bun.lock",
+      "http_status": null,
+      "network_error": null,
+      "remote_sha256": "2824c1a8af00760bf730461b2822a5858f86ee477a0738a9ccc8eefd69aaa4b2",
+      "matches": true
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/AO3400A.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/AO3401A.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/AS04008PS-4W-R.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/README.md",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/WORK-IN-PROGRESS.md",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/TLV3201AIDBVR/TLV3201AIDBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS3839G33DBZR/TPS3839G33DBZR.step",
+      "http_status": null,
+      "network_error": null,
+      "remote_sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "matches": true
+    },
+    {
+      "path": "imports/TPS7A2033PDBVR/TPS7A2033PDBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "remote_sha256": "6543cfeef6ed208af29fa5653bd78911f1d618906de4412cb2042e989c5e1a37",
+      "matches": true
+    },
+    {
+      "path": "references/tps7a20.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "remote_sha256": null,
+      "matches": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "part": "C6617702",
+  "mpn": "EVQ-P4HB3B",
+  "status": "unqualified \u2014 discrepancy requires current manufacturer drawing and upstream/supplier review",
+  "datasheet": "EVQ-P4_EVQ-P8.pdf",
+  "document_date": "2012-02-01",
+  "download_url": "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Switches%20PDFs/EVQ-P4_EVQ-P8.pdf",
+  "current_product_url": "https://industry.panasonic.com/global/en/products/control/switch/light-touch/number/evqp4hb3b",
+  "current_download_page_date": "2025-07-22",
+  "current_download_outcome": "Dialog requires acceptance of indemnity/contract terms; not accepted. Used openly downloadable manufacturer-authored historical drawing for preliminary review.",
+  "cutout_native_width_mm": 5.33400000000006,
+  "historical_drawing_cutout_width_mm": {
+    "nominal": 5.1,
+    "maximum": 5.2
+  },
+  "native_import_sha256": "52733ece942df12451e06b2669220cb7fbd252a541f40d0a124ba394981c4505",
+  "pdf_sha256": "2d9880ee1d4e5f05db2c790f38d8e441e4f95609d9f2a8d352048e51a73b2285",
+  "edits_to_import": false,
+  "notes": [
+    "Manufacturer switch circuit is SPST contact 1 to 2; case terminals are ground contacts, not internally connected switch contacts.",
+    "No routing or complete-board integration authorized by this preliminary check.",
+    "Native cutout also lacks manufacturer radius; edge shape must be qualified against current drawing and routing capability."
+  ]
+}

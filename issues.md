@@ -327,3 +327,11 @@ SN74LVC1G17/TPS3839STEP reached server with matching hashes; HTTP413
 SN74LVC245STEP/TPS7A20PDF return404. ready_to_build=false. Exact receipt
 and log in audio/charge evidence; material update sent. No dropped models,
 forced readiness, publisher bypass or success claim.
+
+
+### 2026-10-03 Type-C review update
+
+- B-006: C6617702 / EVQ-P4HB3B imported cutout is 5.334 mm wide; historical Panasonic drawing max 5.2 mm. Current drawing confirmation is needed; candidate stays unqualified and import untouched. Exact drawing/provenance/reproduction under `evidence/type-c-current-review-2026-10-03/`. Sent to fix chat.
+- B-009: native amplifier publication has 665 successes / 13 failures, with nine failed files actually absent and ready_to_build=false. Exact hashes distinguish late-arriving uploads. Saved log/read-back receipt in the same evidence folder and forwarded to fix chat.
+- B-010: hardware Type-C diagnostic has 19 strict schema failures; existing full-board test remains failing. Native build/five checks do not clear this blocker.
+- Battery procurement question remains unanswered. Charger/pack/TS/system enable are not integrated by the new current-detector fixture.

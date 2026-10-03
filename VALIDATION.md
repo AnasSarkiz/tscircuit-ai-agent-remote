@@ -570,3 +570,16 @@ Exact queries were resolved with supplier-verified C114622 / RC0603FR-07470KL
 and C482869 / RC0603FR-07430KL; both imported successfully, remain unwired
 charging candidates. C7666 / TI SN74LVC1G08DBVR also imported for startup
 qualification logic. No wrong search result was used in the circuit.
+
+
+## A0 WIP — hardware Type-C current review, 2026-10-03
+
+Source: `src/power/type-c-current-review.tsx`; full notes in `TYPE-C.md`; exact dependency/source hashes and command outputs in `evidence/type-c-current-review-2026-10-03/`. This independent 17-component native A4/top-side diagnostic has no routing. Native build and required netlist, pin_specification, source, schematic-placement and placement checks all exit 0. Current A4 and PCB images were actually inspected: inside boundary, no component overlap; R74/R75 labels remain legible at 180 degrees. Native output has 54 pads and 54 paste shapes, zero PCB traces/vias/emitted errors. C2862740's missing requires_power metadata warning is preserved (B-007); physical IN/EN/OUT pins were verified with TI's drawing.
+
+Three manufacturer connection/corner tests pass. Canonical format/typecheck pass. Canonical board suite has 17 pass / 1 fail / 155 assertions: existing B-010 full-native-schema failure persists. The Type-C diagnostic independently has 19 invalid native schema elements; `schema-failures.json` preserves the failures. No schema/runtime edit, check suppression or full-board stage pass.
+
+C22765 / 0603WAF1201T5E is a native-imported 1.2k candidate for future BQ24074 ILIM; not wired or temperature-qualified. The controller itself has no charger/pack/system-load-enable connection yet. Actual protection, TS limits, battery qualification, ramp timing, default-current dead-battery behavior, effective capacitance, current/thermal/mechanical fit still need completion. The pending battery-sourcing question is not assumed approved. Earlier complete-board stage statuses remain unchanged.
+
+The C6617702 hold candidate is unmodified and remains unqualified: native cutout width 5.334 mm differs from the historical Panasonic 2012 drawing's 5.1 +0.1/-0 mm. Current manufacturer drawing confirmation remains pending. Its independent 2-component reproduction builds and all five native checks exit 0; PCB/A4 were inspected, but that does not qualify the imported cutout or actual edge mounting. It is forwarded to the authorized fix chat as a discrepancy, not declared a proven current supplier bug.
+
+Publication read-back: preceding amplifier Git revision `50bebdb6c283cf72ab4ab1e28321782e28065cf8` is pushed. Native private `0.0.2-wip-a0-amplifier-review` exits 1 (665 successes, 13 failures), ready_to_build=false. Amplifier TSX, bun.lock and three timeout STEP files have exact remote hashes; nine reported failures are actually absent. Four HTTP413 failures and remaining network failures remain B-009. Logs and receipt saved in this step's evidence folder; no ready flag or upload omission workaround.

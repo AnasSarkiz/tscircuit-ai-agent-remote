@@ -1,0 +1,65 @@
+[
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "build",
+      "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx",
+      "--pcb-png",
+      "--pcb-svgs",
+      "--schematic-svgs",
+      "--schematic-png"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx"
+    ],
+    "exit_code": 0
+  }
+]

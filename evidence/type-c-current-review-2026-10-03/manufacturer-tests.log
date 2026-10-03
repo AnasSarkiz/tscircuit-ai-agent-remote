@@ -1,0 +1,11 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/type-c-manufacturer-connections.test.ts:
+(pass) Type-C controller manufacturer requirements > UFP strap, GPIO mode and local supply prevent conflicting Rd and rail backpower [1.58ms]
+(pass) Type-C controller manufacturer requirements > higher current requires stable controller power and advertised 1.5A or 3A [0.80ms]
+(pass) Type-C controller manufacturer requirements > VBUS detection resistors meet TI's 855k–920k allowed range [0.21ms]
+
+ 3 pass
+ 0 fail
+ 48 expect() calls
+Ran 3 tests across 1 file. [38.00ms]

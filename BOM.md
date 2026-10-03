@@ -144,3 +144,8 @@ Exact queries were resolved with supplier-verified C114622 / RC0603FR-07470KL
 and C482869 / RC0603FR-07430KL; both imported successfully, remain unwired
 charging candidates. C7666 / TI SN74LVC1G08DBVR also imported for startup
 qualification logic. No wrong search result was used in the circuit.
+
+
+### Type-C diagnostic — 2026-10-03
+
+TUSB320LAIRWBR C132554, TPS7A2033PDBVR C2862740, TPS3839K33DBZR C96333, SN74LVC1G14DBVR C7835 and SN74LVC1G08DBVR C7666 use only their unmodified native imports in the independent current detector. VBUS detector resistors are exact C114622 470k and C482869 430k. C22765 / 0603WAF1201T5E is a newly imported 1.2k ILIM candidate; not yet wired or qualified. C6617702 remains unqualified for its imported edge cutout. No substitute battery or speaker has been authored.

@@ -1,0 +1,61 @@
+{
+  "captured_at": "2026-10-03T02:42:49.274650+00:00",
+  "board_revision": "A0 WIP \u2014 Type-C hardware current diagnostic",
+  "dependencies": {
+    "tscircuit": "0.0.2742",
+    "cli": "0.1.2235",
+    "core": "0.0.2058",
+    "circuit_json": "0.0.510",
+    "typescript": "5.9.3",
+    "bun": "1.3.9"
+  },
+  "results": {
+    "native_build": 0,
+    "five_native_checks": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "typecheck": 0,
+    "format_check": 0,
+    "board_tests": {
+      "passed": 17,
+      "failed": 1,
+      "assertions": 155,
+      "unresolved_failure": "B-010 strict full native Circuit JSON schema"
+    },
+    "type_c_native_schema_invalid_elements": 19,
+    "routing_enabled": false,
+    "visuals_reviewed": [
+      "pcb.png",
+      "schematic.png",
+      "hold-candidate-pcb.png",
+      "hold-candidate-schematic.png"
+    ],
+    "hold_candidate_qualified": false
+  },
+  "sha256": {
+    "TYPE-C.md": "102ffc8ac6844fea11f532fb3c58246c03fce77b7b82870c92e00d38814bfa7f",
+    "bun.lock": "2824c1a8af00760bf730461b2822a5858f86ee477a0738a9ccc8eefd69aaa4b2",
+    "evidence/type-c-current-review-2026-10-03/type-c-current.circuit.tsx": "23deb38d17c94fafe0c88c60061891a6383edb8fd220eb182a97c9955dc2c133",
+    "imports/A_0603WAF1201T5E.tsx": "ec982d894fe6a08d0212b05b24e5612d2dd9e9952afce45d28c13f0f738f4143",
+    "imports/EVQ_P4HB3B/EVQ_P4HB3B.tsx": "52733ece942df12451e06b2669220cb7fbd252a541f40d0a124ba394981c4505",
+    "imports/GRM188R61A106ME69D/GRM188R61A106ME69D.tsx": "3bce992bce896e82cb2a52344a7366f34e0d1006f660cc8d856e677216bdd173",
+    "imports/GRM188R61A226ME15D/GRM188R61A226ME15D.tsx": "356d366e26b498e1b310c116f72df648cba274259b62f5acdaf0dda490eecf2a",
+    "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.tsx": "3566bad7b1e790006cd1286961488e54c7d2bb6d4863509e69e3d98f19ce614f",
+    "imports/RC0603FR_0710KL/RC0603FR_0710KL.tsx": "c52e15d9eb8ecf4fa69f24c6bd20abaac03a7daa5384d19ed0e26cd7bd5b9227",
+    "imports/RC0603FR_071KL/RC0603FR_071KL.tsx": "cd917e895939b011f7de98f4a76cc5754ee9197ee459532fea81c60dbca716ec",
+    "imports/RC0603FR_07430KL/RC0603FR_07430KL.tsx": "32d2110e4437270330f9f5769f4c7178c81775edf168c3852244f20e34e8b399",
+    "imports/RC0603FR_07470KL/RC0603FR_07470KL.tsx": "76dfe93246f7baa1e8f8f57bf02cd6b6fc736311f7fcb84f3614ff65cd603c6b",
+    "imports/SN74LVC1G08DBVR/SN74LVC1G08DBVR.tsx": "1b538e42c4d9e52f91cd4e60519590049b8045ffe1a5d567ea165917c294adba",
+    "imports/SN74LVC1G14DBVR/SN74LVC1G14DBVR.tsx": "af1fad6b192832bdba3e4631a5b79465adc0c58f6cef74e75f767a369de7ee0d",
+    "imports/TPS3839K33DBZR/TPS3839K33DBZR.tsx": "82cd0aa5973a446389fcbc61e42a226bac294b597342f8b6782caaea76315e0f",
+    "imports/TPS7A2033PDBVR/TPS7A2033PDBVR.tsx": "767af5792f170e0273698f93019dc34dae498f60443459135f4265f591c31585",
+    "imports/TUSB320LAIRWBR/TUSB320LAIRWBR.tsx": "7ca1beabb131daf8e93078c7f08b0f52ba791a66ed49610e174c0537ecc12a92",
+    "package.json": "501c3c3dfdd6f9615c6cc6940d410a014ce152d1d696d9d62ec81ab2ec4cd9ad",
+    "src/power/type-c-current-review.tsx": "24d632425486a158ea36608b2e2c6c3d7449ca74c40ca1a113eea893ae12c7ca",
+    "tests/type-c-manufacturer-connections.test.ts": "777da7b99104c9b86081807a020b1f32cbda2852d6e56b15f64fbff94cfa8a36"
+  }
+}
