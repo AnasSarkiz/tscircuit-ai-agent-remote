@@ -10,6 +10,7 @@
     "electronics"
   ],
   "scripts": {
+    "publish:prepare": "bun scripts/prepare-board-package.ts",
     "dev": "tsci dev",
     "build": "tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
     "snapshot": "tsci snapshot",

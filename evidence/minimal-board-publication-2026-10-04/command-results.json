@@ -1,0 +1,123 @@
+[
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "pin_specification.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "source.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "schematic-placement.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "placement.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "build"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "build.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "cwd": ".",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "cwd": ".",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "netlist.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "build"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "network_access": true,
+    "log": "network-build.log"
+  },
+  {
+    "command": [
+      "bun",
+      "test",
+      "./tests"
+    ],
+    "cwd": ".",
+    "exit_code": 1,
+    "passes": 30,
+    "failures": 1,
+    "known_failure": "B-010 native schema regression",
+    "log": "tests.log"
+  }
+]

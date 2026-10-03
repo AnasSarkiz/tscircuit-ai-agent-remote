@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-03T22:39:14.544589+00:00",
+  "checks": [
+    {
+      "endpoint": "packages/get",
+      "http_status": 200,
+      "is_private": true,
+      "file_exists": false
+    },
+    {
+      "endpoint": "package_files/get",
+      "http_status": 200,
+      "is_private": null,
+      "file_exists": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@tsci/AnasSarkiz.tscircuit-ai-agent-remote",
+  "version": "0.0.2",
+  "description": "A1 complete unrouted handheld AI remote prototype; not fabrication ready",
+  "main": "index.circuit.tsx",
+  "author": "AnasSarkiz",
+  "private": true,
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build index.circuit.tsx --routing-disabled",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tscircuit/cli": "0.1.2235",
+    "@tscircuit/core": "0.0.2070",
+    "@tscircuit/props": "0.0.682",
+    "@types/bun": "1.4.2",
+    "tscircuit": "0.0.2742",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@tscircuit/core": "0.0.2070",
+    "easyeda": "0.0.370",
+    "@tscircuit/props": "0.0.682",
+    "circuit-json": "0.0.513"
+  }
+}

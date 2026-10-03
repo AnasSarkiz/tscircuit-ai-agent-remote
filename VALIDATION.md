@@ -1,5 +1,44 @@
 # Validation — A1 integrated placement preview (work in progress)
 
+## Runtime-only package step — 2026-10-04
+
+The user requested a registry package containing only files needed to run the board,
+including a built Circuit JSON. A source dependency walker now prepares `.publish/board`
+without altering board source or imported definitions. It rejects missing/escaping
+modules, unreviewed external modules and dynamic imports. The publish folder is excluded
+from root tooling/Git; the preparer, reviews and evidence remain only in GitHub.
+
+The package contains 124 transitive TS/TSX and referenced OBJ/STEP files, four build
+manifest/config/lock files and the native `dist/index/circuit.json`: **129 files**.
+No documents, investigation fixtures, scripts, tests, snapshots or installed dependencies
+are included. Direct build dependencies retain exact official pins; the minimal Bun lock
+is derived from the existing project lock by removing unused direct dependencies.
+
+Independent installation, TypeScript check, native build and all five pre-route checks
+passed. Root formatting and TypeScript checks passed. Root tests have 30 passes and the
+one existing B-010 native schema failure (272 assertions). A network-enabled final build
+restored actual supplier orientation metadata; the earlier sandbox-only build's supplier
+lookup warnings are recorded, not used as the final upload artifact.
+
+The final emitted JSON differs from the reviewed A1 artifact only in its native source
+filesystem checksum. All physical geometry, connectivity and element counts match:
+130 physical components, 73 source nets, 13 schematic sheets, zero PCB traces/vias.
+The previously inspected A1 board/schematic views remain applicable. No checks or native
+outputs were patched, and this packaging step does not change fabrication readiness.
+
+Full previous publication `0.0.2-wip-a1-integrated-placement-preview` ended exit1:
+1232 successes/118 reported failures. Exact readback found 108 of those failures present
+byte-identically and ten missing; package private=true/ready_to_build=false. That release
+remains incomplete. Its receipt is retained in `evidence/integrated-preview-publication-2026-10-04/`.
+
+This new runtime package targets `0.0.2-wip-a1-board-runtime`, using the official native
+`--compress --include-dist --private` workflow. Current reduced file count/size/hash
+manifest and check results are in `evidence/minimal-board-publication-2026-10-04/`.
+Publication outcome and exact-version readback will be recorded after native upload;
+no successful upload or cloud build is claimed before verification. The user's newer
+minimal-file publishing scope replaces the earlier full-evidence upload scope. Background
+automation remains paused; board routing remains disabled.
+
 Updated 2026-10-03, Europe/Tirane. **A complete native unrouted board now exists.**
 This milestone implements the user's new priority to visualize the integrated
 prototype before full component/mechanical qualification. It overrides the prior

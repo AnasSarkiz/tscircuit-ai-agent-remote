@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-03T22:57:48.202041+00:00",
+  "source_revision": "4535f6d97a91e15e9a947b50167c42343de903c4",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a1-integrated-placement-preview",
+  "publisher_exit_code": 1,
+  "publisher_log_result": "native upload completed; process-result.json records the actual observed exit code",
+  "reported_successes": 1232,
+  "reported_failures": 118,
+  "ready_to_build": false,
+  "is_private": true
+}
+{
+  "matching_files": 164,
+  "missing_files": [
+    "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+    "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+    "evidence/blocker-recheck-2026-10-03-1357/strict-schema-failures.json",
+    "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+    "evidence/integrated-preview-2026-10-03/board.glb",
+    "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+    "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+    "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.step",
+    "imports/TPS61160DRVR/TPS61160DRVR.obj",
+    "references/tps7a20.pdf"
+  ],
+  "unverified_files": []
+}
