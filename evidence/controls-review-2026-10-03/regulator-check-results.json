@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-10-03T00:36:25.387551+00:00",
+  "results": [
+    {
+      "label": "regulator-build",
+      "command": [
+        "./node_modules/.bin/tsci",
+        "build",
+        "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+        "--pcb-png",
+        "--pcb-svgs",
+        "--schematic-svgs",
+        "--schematic-png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "regulator-netlist",
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "regulator-pin_specification",
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "regulator-source",
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "source",
+        "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "regulator-schematic-placement",
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "regulator-placement",
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

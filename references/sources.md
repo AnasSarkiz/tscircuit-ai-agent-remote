@@ -48,3 +48,16 @@ Manufacturer references are preliminary qualification evidence, not completed sc
 ## User-authorized local microphone correction
 
 The linked supplier investigation in `/Users/anassarkiz/Documents/Codex/2026-09-30/is-x20/work/microphone-import-investigation/` was read as evidence, not as instructions. Findings and raw EasyEDA response are preserved under `../evidence/microphone-local-correction-2026-10-03/`. Independent radius conversion confirms 0.3999992 mm. The user's latest direct instruction authorizes changing only the local acoustic hole to 0.60 mm. The converter and supplier library remain unchanged. The new native-renderer ground-port blocker is documented separately as B-003.
+
+## Controls review references — 2026-10-03
+
+- [Panasonic side-operated Light Touch Switch catalogue](https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/ac/cdn/e/control/switch/light-touch/catalog/sw_lt_eng_smalls_side.pdf): July 2025 ANCTB23E, saved panasonic-side-switch.pdf. Printed pages 1–2 rendered and inspected. EVQPUC02K contacts 1↔3, 2↔4 and 0.75 +0.10/−0 mm locating-hole requirement confirm B-006.
+- [TI TPS22919 SLVSEN5B](https://www.ti.com/lit/ds/symlink/tps22919.pdf): saved tps22919.pdf; pin table page 3 rendered/inspected, actual pin 1→V3V3 wiring verified. Missing imported power classification remains visible.
+- [TI TPS3839 SBVS193D](https://www.ti.com/lit/ds/symlink/tps3839.pdf): saved tps3839.pdf; electrical table rendered/inspected. Application review remains incomplete.
+- [TI TLV3201 SBOS561C](https://www.ti.com/lit/ds/symlink/tlv3201.pdf): saved tlv3201.pdf; pages 3 and 6 rendered/inspected. C105188 exact identity verified from [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-TLV3201AIDBVR/C105188). Supported import retained unchanged; missing reference text B-008 remains.
+- [TI SN74LVC2G125 SCES204Q](https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf) and [SN74LVC1G125](https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf): saved original manufacturer PDFs. SD receiver selection rejected after logic-level review; clock-buffer application margins/power-off behavior remain unresolved.
+
+Exact new component-source checksums and import logs are in the controls-review
+evidence directory. Catalogue identities were checked, but cached availability
+is not live assembly allocation. No stock guarantee, custom component or local
+import-metadata correction is claimed.

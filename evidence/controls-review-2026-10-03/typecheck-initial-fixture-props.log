@@ -1,0 +1,7 @@
+$ tsc --noEmit
+evidence/controls-review-2026-10-03/button.circuit.tsx(4,49): error TS2322: Type '{ children: Element; width: number; height: number; routingDisabled: true; schMaxWidth: number; schMaxHeight: number; }' is not assignable to type 'BoardProps'.
+  Property 'schMaxWidth' does not exist on type 'BoardProps'. Did you mean 'schWidth'?
+evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx(4,49): error TS2322: Type '{ children: Element; width: number; height: number; routingDisabled: true; schMaxWidth: number; schMaxHeight: number; }' is not assignable to type 'BoardProps'.
+  Property 'schMaxWidth' does not exist on type 'BoardProps'. Did you mean 'schWidth'?
+evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx(4,49): error TS2322: Type '{ children: Element; width: number; height: number; routingDisabled: true; schMaxWidth: number; schMaxHeight: number; }' is not assignable to type 'BoardProps'.
+  Property 'schMaxWidth' does not exist on type 'BoardProps'. Did you mean 'schWidth'?

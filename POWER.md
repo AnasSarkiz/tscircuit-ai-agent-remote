@@ -49,7 +49,7 @@ is available. [USB-IF overview, p. 17](https://www.usb.org/sites/default/files/D
 ## Regulator application circuit
 
 Source: `src/power/regulated-3v3.tsx`; isolated A4 review entry:
-`evidence/power-review-2026-10-03/regulated-3v3.circuit.tsx`.
+`evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx`.
 
 | Ref | Exact imported component | LCSC | Nominal function |
 |---|---|---|---|
@@ -57,8 +57,8 @@ Source: `src/power/regulated-3v3.tsx`; isolated A4 review entry:
 | L1 | DFE201612E-R47M=P2 | C668312 | 470 nH |
 | C4 | GRM188R61A106ME69D | C90053 | 10 µF, 10 V input |
 | C5 | GRM188R61A226ME15D | C84419 | 22 µF, 10 V output |
-| R5 | RC0603FR-07560KL | C137699 | 560 kΩ, 1% feedback high |
-| R6 | RC0603FR-07100KL | C14675 | 100 kΩ, 1% feedback low |
+| R5 | RC0603FR-07511KL | C188257 | 511 kΩ, 1% feedback high |
+| R6 | RC0603FR-0791KL | C137671 | 91 kΩ, 1% feedback low |
 | R7 | RC0603FR-07100KL | C14675 | 100 kΩ PG pullup |
 
 U2 pins: 1 EN→VSYS; 2 MODE→GND; 3 AGND→GND; 4 FB→divider;
@@ -69,11 +69,19 @@ follow TI's application recommendations. Effective capacitance must remain
 Manufacturer bias/current curves and actual power-loop placement remain pending.
 [TI SLVSEU9D, pp. 4–7, 17–20](https://www.ti.com/lit/ds/symlink/tps63802.pdf).
 
-The divider gives **3.300 V nominal** and draws 5 µA. Combining 1% resistors
-with the specified PWM reference tolerance gives **3.212–3.390 V**, before bias,
-line/load, ripple, transients and power-saving behavior. This is a calculation,
-not a measured rail range. R6 is at the nominal 100 kΩ recommendation limit;
-its resistance tolerance and FB bias must be included in final qualification.
+The current divider follows TI's 3.3 V application choice: **511 kΩ / 91 kΩ**,
+nominal **3.3077 V**. Including initial 1% resistance tolerance, provisional
+100 ppm/K drift over −20…85 °C, 0.495…0.505 V PWM reference and ±100 nA FB bias
+gives calculated static corners **3.1352…3.4849 V**. The lower resistor's maximum
+is 92.456 kΩ, below TI's 100 kΩ recommendation. Effective capacitor/inductor
+behavior, actual resistor temperature coefficients, PFM behavior, line/load,
+ripple, transients and self-heating still require qualification. These corners
+are not a qualified rail range. The previous 560 kΩ / 100 kΩ calculation is
+historical in the power-review evidence. Current native build and five isolated
+checks exit 0 with zero count-reported warnings; current PCB and A4 previews
+were inspected. No PCB traces or vias exist.
+
+Calculation: `evidence/controls-review-2026-10-03/feedback-corner-review.json`.
 
 ## Preliminary load envelope
 

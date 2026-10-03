@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-03T00:40:45.071278+00:00",
+  "results": [
+    {
+      "check": "build",
+      "exit_code": 0
+    },
+    {
+      "check": "netlist",
+      "exit_code": 0
+    },
+    {
+      "check": "pin_specification",
+      "exit_code": 0
+    },
+    {
+      "check": "source",
+      "exit_code": 0
+    },
+    {
+      "check": "schematic-placement",
+      "exit_code": 0
+    },
+    {
+      "check": "placement",
+      "exit_code": 0
+    }
+  ],
+  "unresolved_warning": "B-007 U8 no power-pin attribute"
+}

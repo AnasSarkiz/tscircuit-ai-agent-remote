@@ -172,3 +172,48 @@ Reported to `codex://threads/01a0f218-ce92-7671-b666-efccdef3aed2` with reproduc
 versions and evidence. Do not locally patch imported paste geometry or emit a
 hand-authored fabrication substitute. Continue independent power, controls,
 battery, interfaces and mechanical work while the upstream defect is investigated.
+
+## BLOCKING B-006 — C79174 / Panasonic EVQPUC02K contacts and holes
+
+The untouched exact import has four separate contacts and no declared internal
+pairs. Panasonic ANCTB23E July 2025 printed page 2 specifies permanent pairs
+1↔3 and 2↔4. Native generation confirms four source/PCB ports with no internal
+connection. Its two 0.9000236 mm NPTH locating holes exceed the manufacturer
+Ø0.75 +0.10/−0 recommendation (0.85 mm maximum). The issue chat confirmed the
+raw supplier retains contact grouping that conversion loses; the oversized holes
+originate in the supplier footprint. Stage 2 and dependent hold-control work stop.
+No symbol, mapping or holes were patched. Evidence: button-discrepancies.json,
+button-circuit.json and the reviewed Panasonic printed pages 1–2 under
+`evidence/controls-review-2026-10-03/`; original manufacturer PDF in references.
+
+## B-007 — C2149796 / TPS22919DCKR supply metadata limitation
+
+Native pin_specification exits 0 with zero errors and one warning:
+`source_no_power_pin_defined_warning: U8 has no pin with requires_power=true`.
+The import declares ground and NC but not pin 1's power role. Manufacturer
+SLVSEN5B page 3 and generated JSON verify the actual pin 1→V3V3 connection,
+pin 2 ground, pin 3 hardware-only ON, pin 4 open, pins 5/6 VMIC. The issue chat
+confirmed raw source electrical types are Undefined; converter data loss is not
+established. Do not infer every IN label is a power pin or patch the definition.
+Manual connection review passes, but the metadata warning stays visible and
+complete application qualification is pending. No warning was suppressed.
+
+## BLOCKING B-008 — C105188 / TLV3201AIDBVR missing schematic reference
+
+The exact supported import's custom symbol has no reference-designator text.
+Native build warns `U7 is missing schematic reference designator text` and the
+current A4 render visibly lacks the comparator identifier. Pins and footprint
+remain unmodified. Stage 2 schematic readability/import qualification is blocked;
+no full-board integration or schematic completion is claimed. Reproduction:
+`evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx`, current build log,
+JSON and PNG/SVG. Reported with B-006/B-007 to the authorized issue chat.
+
+## Application correction — microphone SD levels
+
+ICS-43434's 0.35/0.65 VDD guaranteed output levels do not meet both input limits
+of direct ESP32-S3 or the proposed LVC/LV1T SD receivers. This is our application
+selection issue, not a newly diagnosed supplier microphone defect. The review
+now uses exact imported C105188 with a VMIC/2 reference and a provisional 16 kHz
+voice target. Full switching/rail/load and power-off analysis remain pending.
+The blocked microphone, switch and comparator are not integrated into a complete
+board. Independent power, USB, MCU, charger and mechanical work continues.

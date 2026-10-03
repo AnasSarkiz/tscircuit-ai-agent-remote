@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-03T00:39:19.186230+00:00",
+  "results": [
+    {
+      "fixture": "regulator",
+      "check": "build",
+      "exit_code": 0
+    },
+    {
+      "fixture": "regulator",
+      "check": "netlist",
+      "exit_code": 0
+    },
+    {
+      "fixture": "regulator",
+      "check": "pin_specification",
+      "exit_code": 0
+    },
+    {
+      "fixture": "regulator",
+      "check": "source",
+      "exit_code": 0
+    },
+    {
+      "fixture": "regulator",
+      "check": "schematic-placement",
+      "exit_code": 0
+    },
+    {
+      "fixture": "regulator",
+      "check": "placement",
+      "exit_code": 0
+    },
+    {
+      "fixture": "isolation",
+      "check": "build",
+      "exit_code": 0
+    },
+    {
+      "fixture": "isolation",
+      "check": "netlist",
+      "exit_code": 0
+    },
+    {
+      "fixture": "isolation",
+      "check": "pin_specification",
+      "exit_code": 0
+    },
+    {
+      "fixture": "isolation",
+      "check": "source",
+      "exit_code": 0
+    },
+    {
+      "fixture": "isolation",
+      "check": "schematic-placement",
+      "exit_code": 0
+    },
+    {
+      "fixture": "isolation",
+      "check": "placement",
+      "exit_code": 1
+    }
+  ]
+}

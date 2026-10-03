@@ -1,0 +1,26 @@
+Building 1 file(s)...
+Building evidence/controls-review-2026-10-03/button.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/controls-review-2026-10-03/button/circuit.json
+Port pin1 on SW1 is missing a trace
+Port pin2 on SW1 is missing a trace
+Port pin3 on SW1 is missing a trace
+Port pin4 on SW1 is missing a trace
+Failed to fetch supplier footprint for <pushbutton#0(.hold-button-import-review>.SW1) /> (jlcpcb:C79174): Was there a typo in the url or port?
+Generating preview images...
+[evidence/controls-review-2026-10-03/button] Generating PCB SVG...
+[evidence/controls-review-2026-10-03/button] Written pcb.svg
+[evidence/controls-review-2026-10-03/button] Generating PCB PNG...
+[evidence/controls-review-2026-10-03/button] Written pcb.png
+[evidence/controls-review-2026-10-03/button] Generating schematic SVG...
+[evidence/controls-review-2026-10-03/button] Written schematic.svg
+[evidence/controls-review-2026-10-03/button] Generating schematic PNG...
+[evidence/controls-review-2026-10-03/button] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

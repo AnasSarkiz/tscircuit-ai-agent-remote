@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-03T00:51:11.086680+00:00",
+  "revision": "A0-controls-review",
+  "source_sha256": {
+    "package.json": "3d8a1f075b6c7264c3533a5d0178ee47a9d7fca82181e20d27a1c25a144971fc",
+    "bun.lock": "2824c1a8af00760bf730461b2822a5858f86ee477a0738a9ccc8eefd69aaa4b2",
+    "index.circuit.tsx": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58",
+    "main.tsx": "b08c5684b7bf54ac5dfbff311434bbce219be55490aa981afb08a4a2bb231b64",
+    "src/power/regulated-3v3.tsx": "809d9c98dd13c65e8e4726269df6975b7cd37e83d4b83d09a07ae4f4cba4006e",
+    "src/audio/microphone-isolation-review.tsx": "1374229e3daba5753f8272ef62893f87b8856aec158b0d80d6ccdeccf9e0b37a",
+    "POWER.md": "8fcb54252d6578ff58f671bc25a0f1d640eacd8cfb5f630cf450bcf5829e0fb6",
+    "AUDIO.md": "0b9725dd6ac12e6745c051abd5c35940f86c6ff85716c559a209d511c32998e4",
+    "BOM.md": "a8ada47aa41a5c958aed4e0acd90b0c3cb794336307631d093c3fc14721aba4f",
+    "issues.md": "d64a99fcd8352619f18526722adfa6d8f7d9d8ec32051f8d2e026f96f79a5bd9",
+    "VALIDATION.md": "448ec742a5783007c29fff88183a1f690311179b9250140dab3653d8ce7b4dff"
+  },
+  "scope": "WIP isolated application review; no whole-board or fabrication pass"
+}

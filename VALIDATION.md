@@ -1,4 +1,4 @@
-# Validation — A0-core-alignment
+# Validation — A0-controls-review
 
 Updated: 2026-10-03 (Europe/Tirane). **Unrouted regulator review added; B-002 diameter corrected locally; B-003 verified resolved on aligned official core 0.0.2058; B-004 catalogue search and B-005 missing polygon ground paste reported; no complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
@@ -345,3 +345,66 @@ The export is only an unrouted isolated microphone fixture. It does not advance
 whole-board stage 6. Supplier stencil drawing still requires visual PDF review;
 TDK official download was unavailable and alternate downloads returned HTML.
 Independent power, control, battery and mechanical development continues.
+
+## A0-controls-review milestone — 2026-10-03
+
+Starts from verified 8bbde6e95d7570ecef199278bd2d2521898d42e1. Prior GitHub main
+and private tscircuit 0.0.2-wip-a0-core-alignment match; 274 uploaded files,
+private and ready_to_build, with package.json/main.tsx/issues.md/VALIDATION.md
+exact readback. Receipt: `evidence/controls-review-2026-10-03/previous-milestone-publication.json`.
+This is source publication, not a successful whole-board build.
+
+Current regulator divider is 511 kΩ / 91 kΩ (C188257 / C137671), nominal
+3.3077 V. Provisional PWM static corners including resistor tolerance/drift and
+FB bias are 3.1352–3.4849 V; exclusions and the 92.456 kΩ low-resistor maximum
+are recorded in feedback-corner-review.json and POWER.md. No measured rail claim.
+
+The native A4 isolated microphone-IC application contains 24 top-side components,
+zero PCB traces/vias and no hardware button or microphones. It reviews VMIC
+switch, supervisor, clock isolation, buffered hold sensing and comparator SD
+reception. Comparator pin identities were checked against the visually reviewed
+TI pin table. C100024 and C23654 remain unselected data-receiver candidates due
+to low-level incompatibility. Circuit architecture, timing and privacy are not
+qualified by this diagnostic fixture; see AUDIO.md.
+
+The current regulator and isolation builds plus native netlist, pin_specification,
+source, schematic-placement and placement checks all exit 0. Isolation's native
+pin check retains one warning for U8's absent requires_power metadata (B-007).
+Its build also warns that U7's imported custom symbol lacks reference text
+(B-008), visibly confirmed in the newly generated current schematic PNG.
+No checker or component was altered to hide these warnings. The regulator's
+count-reporting checks have zero errors/warnings. Current results, source hashes,
+Circuit JSON/SVG/PNG and geometry summaries are in
+`evidence/controls-review-2026-10-03/`. Current PCB and schematic previews for
+both fixtures were visually inspected; bodies fit their diagnostic outlines and
+sheets fit native A4. Diagnostic spread-out placement is not final decoupling or
+handheld mechanics. No whole-board placement gate is passed.
+
+Earlier draft logs remain: unsupported schMaxWidth/schMaxHeight properties caused
+TypeScript errors and were removed; supported native A4 sheets remain. Initial
+isolation PCB resistor orientation failed placement, and draft schematic offsets
+exceeded A4; actual placement/offsets were corrected before the current checks.
+Initial previews without --schematic-png left a stale PNG; the comparator review
+explicitly rebuilt the current PNG. No stale image is accepted as final evidence.
+
+BLOCKING B-006: C79174 EVQPUC02K missing permanent contact pairs and oversized
+locating holes, confirmed against visually inspected Panasonic July 2025 pages.
+BLOCKING B-008: C105188 TLV3201AIDBVR missing schematic reference label.
+B-007: C2149796 TPS22919 supply-classification warning; actual supply connection
+manually verified, warning remains and final application qualification pending.
+All were reported to authorized chat 01a0f218-ce92-7671-b666-efccdef3aed2.
+B-005 microphone polygon paste and B-004 catalogue discovery remain unresolved.
+B-003 remains resolved on official core 0.0.2058; microphone import is unchanged
+since the previously authorized diameter-only correction. Stop dependent work
+on blocked components and continue independent circuits.
+
+Full-board stages 1/2 remain incomplete/blocked; 3–6 not started; physical stage
+7 pending. No routes, shorts/DRC pass, snapshots, fabrication package or physical
+measurements exist. Intentional full-board build guard remains. Intended WIP
+publication tag: wip-a0-controls-review; both remotes require exact readback.
+
+Current configured formatting and TypeScript checks exit 0; all five existing
+manufacturer-based import tests pass (29 assertions). Authored-source whitespace
+review passes. Native full-board build exits 1 at the intentional incomplete
+design guard; full-board-guard-build.log preserves that result. No fabricated
+output or weaker substitute bypasses the guard.

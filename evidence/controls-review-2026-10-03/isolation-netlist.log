@@ -1,0 +1,216 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U8: TPS22919DCKR
+ - U9: TPS3839K33DBZR
+ - U10: SN74LVC1G14DBVR
+ - U11: SN74LVC1G17DBVR
+ - U6: SN74LVC2G125DCUR
+ - U7: SN74LVC1G125DBVR
+ - C20: 10uF capacitor
+ - C21: 100nF capacitor
+ - C22: 100nF capacitor
+ - C23: 100nF capacitor
+ - C24: 100nF capacitor
+ - C25: 100nF capacitor
+ - R20: 10kΩ resistor
+ - R21: 100kΩ resistor
+ - R22: 10kΩ resistor
+ - R23: 1kΩ resistor
+ - R24: 10kΩ resistor
+ - R25: 10kΩ resistor
+ - R26: 10kΩ resistor
+ - R27: 1kΩ resistor
+ - R28: 1kΩ resistor
+
+NET: HOLD_HARDWARE
+  - R20 pin1
+  - U11 A
+  - U8 ON
+
+NET: MIC_READY_N
+  - R21 pin1
+  - U10 A
+  - U9 N_RESET
+
+NET: VMIC
+  - R23 pin1
+  - C24 pin1
+  - C21 pin1
+  - U6 VCC
+  - U9 VDD
+  - U8 VOUT
+  - U8 QOD
+
+NET: MIC_BCLK
+  - R24 pin1
+  - U6 1Y
+
+NET: MIC_WS
+  - R25 pin1
+  - U6 2Y
+
+NET: MIC_SD
+  - R26 pin1
+  - U7 A
+
+NET: GND
+  - R26 pin2
+  - R25 pin2
+  - R24 pin2
+  - R23 pin2
+  - R21 pin2
+  - R20 pin2
+  - C25 pin2
+  - C24 pin2
+  - C23 pin2
+  - C22 pin2
+  - C21 pin2
+  - C20 pin2
+  - U7 GND
+  - U6 GND
+  - U11 GND
+  - U10 GND
+  - U9 GND
+  - U8 GND
+
+NET: V3V3
+  - R22 pin1
+  - C25 pin1
+  - C23 pin1
+  - C22 pin1
+  - C20 pin1
+  - U7 VCC
+  - U11 VCC
+  - U10 VCC
+  - U8 IN
+
+NET: MIC_OE_N
+  - R22 pin2
+  - U7 OE
+  - U6 N_2OE
+  - U6 N_1OE
+  - U10 Y
+
+NET: MIC_SD_BUFFERED
+  - R27 pin1
+  - U7 Y
+
+NET: HOLD_SENSE_RAW
+  - R28 pin1
+  - U11 Y
+
+
+EMPTY NET PINS:
+  - U6 1A
+  - U6 2A
+  - R27 pin2
+  - R28 pin2
+
+COMPONENT_PINS:
+U8 (TPS22919DCKR)
+- pin1(IN): NETS(V3V3)
+- pin2(GND): NETS(GND)
+- pin3(ON): NETS(HOLD_HARDWARE)
+- pin4(NC): NOT_CONNECTED
+- pin5(QOD): NETS(VMIC)
+- pin6(VOUT): NETS(VMIC)
+
+U9 (TPS3839K33DBZR)
+- pin1(GND): NETS(GND)
+- pin2(N_RESET): NETS(MIC_READY_N)
+- pin3(VDD): NETS(VMIC)
+
+U10 (SN74LVC1G14DBVR)
+- pin1(N_C): NOT_CONNECTED
+- pin2(A): NETS(MIC_READY_N)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(MIC_OE_N)
+- pin5(VCC): NETS(V3V3)
+
+U11 (SN74LVC1G17DBVR)
+- pin1(N_C): NOT_CONNECTED
+- pin2(A): NETS(HOLD_HARDWARE)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(HOLD_SENSE_RAW)
+- pin5(VCC): NETS(V3V3)
+
+U6 (SN74LVC2G125DCUR)
+- pin1(N_1OE): NETS(MIC_OE_N)
+- pin2(1A): NETS(MCU_MIC_BCLK)
+- pin3(2Y): NETS(MIC_WS)
+- pin4(GND): NETS(GND)
+- pin5(2A): NETS(MCU_MIC_WS)
+- pin6(1Y): NETS(MIC_BCLK)
+- pin7(N_2OE): NETS(MIC_OE_N)
+- pin8(VCC): NETS(VMIC)
+
+U7 (SN74LVC1G125DBVR)
+- pin1(OE): NETS(MIC_OE_N)
+- pin2(A): NETS(MIC_SD)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(MIC_SD_BUFFERED)
+- pin5(VCC): NETS(V3V3)
+
+C20 (10uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C21 (100nF undefined)
+- pin1: NETS(VMIC)
+- pin2: NETS(GND)
+
+C22 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C23 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C24 (100nF undefined)
+- pin1: NETS(VMIC)
+- pin2: NETS(GND)
+
+C25 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+R20 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_HARDWARE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R21 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_READY_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R22 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(MIC_OE_N)
+
+R23 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R24 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_BCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R25 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_WS)
+- pin2(cathode, neg, right): NETS(GND)
+
+R26 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_SD)
+- pin2(cathode, neg, right): NETS(GND)
+
+R27 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_SD_BUFFERED)
+- pin2(cathode, neg, right): NETS(MCU_MIC_SD)
+
+R28 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_SENSE_RAW)
+- pin2(cathode, neg, right): NETS(MCU_HOLD_SENSE)
+

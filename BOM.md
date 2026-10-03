@@ -12,13 +12,14 @@
 | USB-C receptacle | TYPE-C-31-M-12 | C165948 | USB2.0 hybrid mount | 1 | Imported; orientation/protection/mechanics pending |
 | Battery connector candidate | S2B-PH-SM4-TB(LF)(SN) | C295747 | SMT right-angle, 2 mm pitch | 1 | Imported verbatim with CLI 0.1.2232; top-side assembly candidate; drawing/polarity/full qualification pending |
 | Microphone clock buffer candidate | SN74LVC2G125DCUR | C21404 | VSSOP-8 | 1 | Imported; architecture/ratings pending |
-| Microphone data buffer candidate | SN74LVC1G125DBVR | C23654 | SOT-23-5 | 1 | Imported; architecture/ratings pending |
+| Microphone SD receiver candidate | TLV3201AIDBVR | C105188 | SOT-23-5 | 1 | Imported; comparator application review; B-008 missing reference label; final timing/rail review pending |
 
 | Regulator inductor | DFE201612E-R47M=P2 | C668312 | 0806, 470 nH | 1 | Imported verbatim; TI recommended series; footprint/current qualification pending |
 | Regulator input capacitor | GRM188R61A106ME69D | C90053 | 0603, 10 µF, 10 V, X5R | 1 | C4 review; effective capacitance and footprint qualification pending |
 | Regulator output capacitor | GRM188R61A226ME15D | C84419 | 0603, 22 µF, 10 V, X5R | 1 | C5 review; effective capacitance and footprint qualification pending |
-| Regulator high feedback | RC0603FR-07560KL | C137699 | 0603, 560 kΩ, 1% | 1 | R5 review; final tolerance/bias qualification pending |
-| Regulator low feedback / PG pullup | RC0603FR-07100KL | C14675 | 0603, 100 kΩ, 1% | 2 | R6/R7 review; low resistor at nominal TI recommendation boundary |
+| Regulator high feedback | RC0603FR-07511KL | C188257 | 0603, 511 kΩ, 1% | 1 | R5 current review; static corners recorded; effective rail still pending |
+| Regulator low feedback | RC0603FR-0791KL | C137671 | 0603, 91 kΩ, 1% | 1 | R6 current review; maximum 92.456 kΩ in provisional corners |
+| PG pullup / control candidate | RC0603FR-07100KL | C14675 | 0603, 100 kΩ, 1% | TBD | R7 and isolation-review applications; final allocation pending |
 | Charger current candidate | RC0603FR-073KL | C126358 | 0603, 3 kΩ, 1% | TBD | Imported only; 296.7 mA nominal candidate, pack selection pending |
 | Bypass capacitor candidate | GRM188R71C104KA01D | C45000 | 0603, 100 nF, 16 V, X7R | TBD | Imported only; application allocation pending |
 
@@ -42,3 +43,35 @@ The rechargeable pack and battery circuit are not yet integrated. C295747 is a r
 Waveshare 1.54 inch LCD Module was researched, not selected as an imported component. PH2.0 J2 order is **BL/RST/DC/CS/SCK/DIN/GND/VCC**, opposite schematic J1 ordering. Contact orientation requires independent verification.
 
 Catalogue identities/manufacturer sources checked on 2026-10-02 and 2026-10-03; see `references/sources.md`. Final JLCPCB assembly allocation, basic/extended classification, external procurement, costs and exact availability remain unverified. Do not order from this document.
+
+## A0-controls-review milestone — 2026-10-03
+
+All new imports use the supported exact-footprint/download workflow and remain
+unmodified. `evidence/controls-review-2026-10-03/import-source-manifest.json`
+records their source checksums. The single hold switch EVQPUC02K / **C79174**
+is blocked by B-006 (lost 1↔3 / 2↔4 internal contact pairs, locating holes
+0.9000236 mm instead of Panasonic's maximum 0.85 mm). Do not integrate it.
+
+Independent microphone isolation application candidates:
+
+| Function | Exact MPN | LCSC | Application status |
+|---|---|---|---|
+| VMIC switch | TPS22919DCKR | C2149796 | B-007 supply metadata warning visible; actual pin 1 wiring verified against TI |
+| VMIC startup supervisor | TPS3839K33DBZR | C96333 | VMIC threshold and delay review; final rail/leakage/timing pending |
+| Supervisor inversion | SN74LVC1G14DBVR | C7835 | Review fixture only |
+| Hold-state isolation | SN74LVC1G17DBVR | C7836 | Review fixture; no MCU-to-button control path |
+| SD comparator | TLV3201AIDBVR | C105188 | VMIC/2 reference; B-008 label defect; not qualified for integration |
+| Control/reference resistor | RC0603FR-0710KL | C98220 | 10 kΩ, 1%; candidate allocations |
+| GPIO isolation / VMIC bleed | RC0603FR-071KL | C22548 | 1 kΩ, 1%; candidate allocations |
+| Contact current limit candidate | RC0603FR-07100RL | C105588 | 100 Ω, 1%; unused until switch qualifies |
+
+The isolated review excludes the blocked button and microphone. Every populated
+PCB component is top-side; fixture dimensions are not the handheld envelope.
+Native generation/connectivity/placement pass with the documented metadata and
+symbol warnings. It is not a tested privacy circuit or a complete schematic.
+See `AUDIO.md`. C23654 / SN74LVC1G125DBVR and newly imported C100024 /
+SN74LV1T34DBVR are rejected as microphone SD receivers: their input low thresholds
+do not cover the microphone's guaranteed VOL. No imported definitions were changed.
+
+Previous 8bbde6e core-alignment publication was verified on GitHub and private
+release 0.0.2-wip-a0-core-alignment (274 files); receipt is saved with this milestone.

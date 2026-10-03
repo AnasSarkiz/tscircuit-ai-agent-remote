@@ -1,0 +1,78 @@
+{
+  "checked_at_utc": "2026-10-03T00:47:03.106935+00:00",
+  "routing": "disabled",
+  "results": [
+    {
+      "fixture": "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "check": "build",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/isolation-comparator-build.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "check": "netlist",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/isolation-comparator-netlist.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "check": "pin_specification",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/isolation-comparator-pin_specification.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "check": "source",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/isolation-comparator-source.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "check": "schematic-placement",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/isolation-comparator-schematic-placement.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "check": "placement",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/isolation-comparator-placement.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+      "check": "build",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/regulator-current-build.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+      "check": "netlist",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/regulator-current-netlist.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+      "check": "pin_specification",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/regulator-current-pin_specification.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+      "check": "source",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/regulator-current-source.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+      "check": "schematic-placement",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/regulator-current-schematic-placement.log"
+    },
+    {
+      "fixture": "evidence/controls-review-2026-10-03/regulated-3v3.circuit.tsx",
+      "check": "placement",
+      "exit_code": 0,
+      "log": "evidence/controls-review-2026-10-03/regulator-current-placement.log"
+    }
+  ]
+}

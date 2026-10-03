@@ -1,0 +1,33 @@
+{
+  "reference_datasheet": "TI TPS63802 SLVSEU9D; electrical characteristics and section 10.2",
+  "resistors": [
+    "Yageo RC0603FR-07511KL/C188257",
+    "Yageo RC0603FR-0791KL/C137671"
+  ],
+  "nominal_V": 3.3076923076923075,
+  "resistor_initial_tolerance": 0.01,
+  "provisional_TCR_ppm_per_K": 100,
+  "provisional_temperature_range_C": [
+    -20,
+    85
+  ],
+  "reference_V_range": [
+    0.495,
+    0.505
+  ],
+  "absolute_FB_bias_A": 1e-07,
+  "calculated_PWM_static_bounds_V": [
+    3.135150843367656,
+    3.484906968355222
+  ],
+  "Rlow_upper_ohm": 92456.0,
+  "exclusions": [
+    "PFM behavior",
+    "line/load regulation",
+    "ripple",
+    "transients",
+    "component self-heating",
+    "actual PCB or physical validation"
+  ],
+  "status": "calculation only; not qualified operating range"
+}

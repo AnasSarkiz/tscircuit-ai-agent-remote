@@ -1,6 +1,6 @@
 # tscircuit AI agent remote
 
-Revision A0-core-alignment, updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-controls-review, updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
@@ -109,3 +109,16 @@ Manufacturer stencil geometry review and the upstream generator/export fix remai
 required. The issue was sent to the authorized issue chat; independent design
 work continues. No full-board stage, fabrication readiness or physical test is
 claimed by the isolated checks.
+
+## Current controls review — 2026-10-03
+
+The regulator now uses TI's 511 kΩ / 91 kΩ divider. A separate unrouted A4
+microphone power/clock/comparator application was built and checked, with
+preserved warnings. It excludes the blocked microphone and hold switch.
+B-006 blocks C79174 contact/locating-hole qualification; B-008 blocks C105188's
+missing schematic reference label; B-007 records C2149796's missing supply
+metadata. All were sent to the authorized issue chat. Read `AUDIO.md`, `POWER.md`
+and the current VALIDATION.md milestone. Requirements, full schematic, component
+qualification and mechanics remain incomplete. No handheld routing/fabrication
+or hardware-test pass is claimed. Standing authorization covers publication of
+this WIP milestone to both configured remotes.
