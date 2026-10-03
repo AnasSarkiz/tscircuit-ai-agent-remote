@@ -1,0 +1,1350 @@
+{
+  "scope": "Nominal per-component different-net axis-aligned rectangular SMT-pad measurement only; does not qualify other shapes, inter-component placement, mask, paste, plated holes, routed copper or complete board",
+  "manufacturer_smt_different_net_pad_clearance_minimum_mm": 0.15,
+  "fixtures": [
+    {
+      "fixture": "evidence/mcu-usb-review-2026-10-03/circuit.json",
+      "sha256": "7c387674867a5c8e996903124364a0c89dc0bdd77aa528f74e5a5a1c42a45487",
+      "components": [
+        {
+          "reference": "U1",
+          "mpn": "ESP32-S3-WROOM-1-N8R8",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C2913201"
+            ]
+          },
+          "pad_count": 49,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 42,
+          "same_net_pairs_excluded": 3,
+          "unknown_connectivity_pairs_excluded": 1131,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_0",
+            "second_pad": "pcb_smtpad_1",
+            "first_hints": [
+              "pin1"
+            ],
+            "second_hints": [
+              "pin2"
+            ],
+            "nominal_clearance_mm": 0.3700017999999996
+          }
+        },
+        {
+          "reference": "J1",
+          "mpn": "TYPE-C-31-M-12",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C165948"
+            ]
+          },
+          "pad_count": 12,
+          "unmeasured_non_rectangular_pad_count": 4,
+          "different_net_rect_pairs_measured": 13,
+          "same_net_pairs_excluded": 2,
+          "unknown_connectivity_pairs_excluded": 13,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_50",
+            "second_pad": "pcb_smtpad_51",
+            "first_hints": [
+              "pin6"
+            ],
+            "second_hints": [
+              "pin7"
+            ],
+            "nominal_clearance_mm": 0.19987259999999984
+          }
+        },
+        {
+          "reference": "D2",
+          "mpn": "TPD2EUSB30ADRTR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C94934"
+            ]
+          },
+          "pad_count": 3,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 3,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_61",
+            "second_pad": "pcb_smtpad_62",
+            "first_hints": [
+              "pin1"
+            ],
+            "second_hints": [
+              "pin2"
+            ],
+            "nominal_clearance_mm": 0.5000243999999991
+          }
+        },
+        {
+          "reference": "U12",
+          "mpn": "TPS3839G33DBZR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C485802"
+            ]
+          },
+          "pad_count": 3,
+          "unmeasured_non_rectangular_pad_count": 3,
+          "different_net_rect_pairs_measured": 0,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": null
+        },
+        {
+          "reference": "J6",
+          "mpn": "SM06B-SRSS-TB(LF)(SN)",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C160405"
+            ]
+          },
+          "pad_count": 8,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 25,
+          "same_net_pairs_excluded": 3,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_67",
+            "second_pad": "pcb_smtpad_68",
+            "first_hints": [
+              "1"
+            ],
+            "second_hints": [
+              "2"
+            ],
+            "nominal_clearance_mm": 0.4
+          }
+        },
+        {
+          "reference": "R31",
+          "mpn": "RC0603FR-0722RL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C107701"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_75",
+            "second_pad": "pcb_smtpad_76",
+            "first_hints": [
+              "1"
+            ],
+            "second_hints": [
+              "2"
+            ],
+            "nominal_clearance_mm": 0.7002000000000004
+          }
+        },
+        {
+          "reference": "R32",
+          "mpn": "RC0603FR-0722RL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C107701"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_77",
+            "second_pad": "pcb_smtpad_78",
+            "first_hints": [
+              "1"
+            ],
+            "second_hints": [
+              "2"
+            ],
+            "nominal_clearance_mm": 0.7002000000000004
+          }
+        },
+        {
+          "reference": "R33",
+          "mpn": "RC0603FR-075K1L",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C105580"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_79",
+            "second_pad": "pcb_smtpad_80",
+            "first_hints": [
+              "1"
+            ],
+            "second_hints": [
+              "2"
+            ],
+            "nominal_clearance_mm": 0.7002000000000022
+          }
+        },
+        {
+          "reference": "R34",
+          "mpn": "RC0603FR-075K1L",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C105580"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_81",
+            "second_pad": "pcb_smtpad_82",
+            "first_hints": [
+              "1"
+            ],
+            "second_hints": [
+              "2"
+            ],
+            "nominal_clearance_mm": 0.7002000000000022
+          }
+        },
+        {
+          "reference": "R35",
+          "mpn": "RC0603FR-074K7L",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C99782"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_83",
+            "second_pad": "pcb_smtpad_84",
+            "first_hints": [
+              "1"
+            ],
+            "second_hints": [
+              "2"
+            ],
+            "nominal_clearance_mm": 0.7001999999999986
+          }
+        },
+        {
+          "reference": "R36",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_85",
+            "second_pad": "pcb_smtpad_86",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        },
+        {
+          "reference": "R37",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_87",
+            "second_pad": "pcb_smtpad_88",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000003
+          }
+        },
+        {
+          "reference": "R38",
+          "mpn": "RC0603FR-071KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C22548"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_89",
+            "second_pad": "pcb_smtpad_90",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        },
+        {
+          "reference": "C30",
+          "mpn": "GRM188R61A106ME69D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C90053"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_91",
+            "second_pad": "pcb_smtpad_92",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000496
+          }
+        },
+        {
+          "reference": "C31",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_93",
+            "second_pad": "pcb_smtpad_94",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000496
+          }
+        },
+        {
+          "reference": "C32",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_95",
+            "second_pad": "pcb_smtpad_96",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "evidence/type-c-current-review-2026-10-03/circuit.json",
+      "sha256": "d3d7120cd4893bf0d54bb1a55a4be0d6ae247ec6abbb715eb65d913a07c9f049",
+      "components": [
+        {
+          "reference": "U15",
+          "mpn": "TPS7A2033PDBVR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C2862740"
+            ]
+          },
+          "pad_count": 5,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 5,
+          "same_net_pairs_excluded": 1,
+          "unknown_connectivity_pairs_excluded": 4,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_0",
+            "second_pad": "pcb_smtpad_2",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.3497071999999999
+          }
+        },
+        {
+          "reference": "U18",
+          "mpn": "TUSB320LAIRWBR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C132554"
+            ]
+          },
+          "pad_count": 12,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 33,
+          "same_net_pairs_excluded": 3,
+          "unknown_connectivity_pairs_excluded": 30,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_5",
+            "second_pad": "pcb_smtpad_16",
+            "first_hints": [
+              "pin12"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.19766280000000014
+          }
+        },
+        {
+          "reference": "U19",
+          "mpn": "TPS3839K33DBZR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C96333"
+            ]
+          },
+          "pad_count": 3,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 3,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_17",
+            "second_pad": "pcb_smtpad_19",
+            "first_hints": [
+              "pin1"
+            ],
+            "second_hints": [
+              "pin3"
+            ],
+            "nominal_clearance_mm": 1.0440139666910393
+          }
+        },
+        {
+          "reference": "U20",
+          "mpn": "SN74LVC1G14DBVR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C7835"
+            ]
+          },
+          "pad_count": 5,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 6,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 4,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_22",
+            "second_pad": "pcb_smtpad_23",
+            "first_hints": [
+              "pin3"
+            ],
+            "second_hints": [
+              "pin2"
+            ],
+            "nominal_clearance_mm": 0.3499612
+          }
+        },
+        {
+          "reference": "U21",
+          "mpn": "SN74LVC1G08DBVR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C7666"
+            ]
+          },
+          "pad_count": 5,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 10,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_27",
+            "second_pad": "pcb_smtpad_28",
+            "first_hints": [
+              "pin3"
+            ],
+            "second_hints": [
+              "pin2"
+            ],
+            "nominal_clearance_mm": 0.3499612
+          }
+        },
+        {
+          "reference": "C60",
+          "mpn": "GRM188R61A106ME69D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C90053"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_30",
+            "second_pad": "pcb_smtpad_31",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "C61",
+          "mpn": "GRM188R61A226ME15D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C84419"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_32",
+            "second_pad": "pcb_smtpad_33",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "C62",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_34",
+            "second_pad": "pcb_smtpad_35",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000496
+          }
+        },
+        {
+          "reference": "C63",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_36",
+            "second_pad": "pcb_smtpad_37",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "C64",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_38",
+            "second_pad": "pcb_smtpad_39",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000496
+          }
+        },
+        {
+          "reference": "C65",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_40",
+            "second_pad": "pcb_smtpad_41",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "R73",
+          "mpn": "RC0603FR-071KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C22548"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_42",
+            "second_pad": "pcb_smtpad_43",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        },
+        {
+          "reference": "R71",
+          "mpn": "RC0603FR-07470KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C114622"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_44",
+            "second_pad": "pcb_smtpad_45",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        },
+        {
+          "reference": "R72",
+          "mpn": "RC0603FR-07430KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C482869"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_46",
+            "second_pad": "pcb_smtpad_47",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        },
+        {
+          "reference": "R74",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_48",
+            "second_pad": "pcb_smtpad_49",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000001
+          }
+        },
+        {
+          "reference": "R75",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_50",
+            "second_pad": "pcb_smtpad_51",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000001
+          }
+        },
+        {
+          "reference": "R76",
+          "mpn": "RC0603FR-071KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C22548"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_52",
+            "second_pad": "pcb_smtpad_53",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "evidence/display-review-2026-10-03/circuit.json",
+      "sha256": "64322b95d3162b4e0c2bfcc1ab69eaaa87f1808db271ab8d144385e3ecb2f153",
+      "components": [
+        {
+          "reference": "U13",
+          "mpn": "TPS7A2028PDBVR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C2869847"
+            ]
+          },
+          "pad_count": 5,
+          "unmeasured_non_rectangular_pad_count": 5,
+          "different_net_rect_pairs_measured": 0,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": null
+        },
+        {
+          "reference": "U14",
+          "mpn": "SN74LVC245APWR",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C7848"
+            ]
+          },
+          "pad_count": 20,
+          "unmeasured_non_rectangular_pad_count": 20,
+          "different_net_rect_pairs_measured": 0,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": null
+        },
+        {
+          "reference": "J7",
+          "mpn": "AFC07-S10FCC-00",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C11050"
+            ]
+          },
+          "pad_count": 12,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 52,
+          "same_net_pairs_excluded": 3,
+          "unknown_connectivity_pairs_excluded": 11,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_29",
+            "second_pad": "pcb_smtpad_30",
+            "first_hints": [
+              "pin5"
+            ],
+            "second_hints": [
+              "pin6"
+            ],
+            "nominal_clearance_mm": 0.1999996
+          }
+        },
+        {
+          "reference": "C40",
+          "mpn": "GRM188R61A106ME69D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C90053"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_37",
+            "second_pad": "pcb_smtpad_38",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "C41",
+          "mpn": "GRM188R61A226ME15D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C84419"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_39",
+            "second_pad": "pcb_smtpad_40",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "C42",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_41",
+            "second_pad": "pcb_smtpad_42",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000496
+          }
+        },
+        {
+          "reference": "C43",
+          "mpn": "GRM188R71C104KA01D",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C45000"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_43",
+            "second_pad": "pcb_smtpad_44",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.6000495999999982
+          }
+        },
+        {
+          "reference": "R40",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_45",
+            "second_pad": "pcb_smtpad_46",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000026
+          }
+        },
+        {
+          "reference": "R41",
+          "mpn": "RC0603FR-071KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C22548"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_47",
+            "second_pad": "pcb_smtpad_48",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.700252599999999
+          }
+        },
+        {
+          "reference": "R47",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_49",
+            "second_pad": "pcb_smtpad_50",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R42",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_51",
+            "second_pad": "pcb_smtpad_52",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R48",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_53",
+            "second_pad": "pcb_smtpad_54",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R43",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_55",
+            "second_pad": "pcb_smtpad_56",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R49",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_57",
+            "second_pad": "pcb_smtpad_58",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R44",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_59",
+            "second_pad": "pcb_smtpad_60",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R50",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_61",
+            "second_pad": "pcb_smtpad_62",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R45",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_63",
+            "second_pad": "pcb_smtpad_64",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R51",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_65",
+            "second_pad": "pcb_smtpad_66",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        },
+        {
+          "reference": "R46",
+          "mpn": "RC0603FR-0710KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C98220"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_67",
+            "second_pad": "pcb_smtpad_68",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002525999999999
+          }
+        }
+      ]
+    },
+    {
+      "fixture": "evidence/hold-control-alternate-review-2026-10-03/circuit.json",
+      "sha256": "a17a3528a39cf2f86e3be84f8a05400f8cac413e861e131db904023c91d4db4f",
+      "components": [
+        {
+          "reference": "SW4",
+          "mpn": "SKSWCFE010",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C255576"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_0",
+            "second_pad": "pcb_smtpad_1",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 2.5009856
+          }
+        },
+        {
+          "reference": "R98",
+          "mpn": "RC0603FR-07100KL",
+          "supplier_part_numbers": {
+            "jlcpcb": [
+              "C14675"
+            ]
+          },
+          "pad_count": 2,
+          "unmeasured_non_rectangular_pad_count": 0,
+          "different_net_rect_pairs_measured": 1,
+          "same_net_pairs_excluded": 0,
+          "unknown_connectivity_pairs_excluded": 0,
+          "minimum_pair": {
+            "first_pad": "pcb_smtpad_2",
+            "second_pad": "pcb_smtpad_3",
+            "first_hints": [
+              "pin2"
+            ],
+            "second_hints": [
+              "pin1"
+            ],
+            "nominal_clearance_mm": 0.7002526000000003
+          }
+        }
+      ]
+    }
+  ]
+}

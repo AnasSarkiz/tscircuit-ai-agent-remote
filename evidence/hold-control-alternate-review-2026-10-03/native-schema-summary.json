@@ -1,0 +1,78 @@
+{
+  "schema": "circuit-json@0.0.510 any_circuit_element, unchanged",
+  "elements": 60,
+  "counts": {
+    "source_group": 2,
+    "schematic_sheet": 1,
+    "source_net": 3,
+    "source_port": 4,
+    "source_component": 2,
+    "source_board": 1,
+    "source_trace": 4,
+    "schematic_component": 2,
+    "schematic_group": 2,
+    "schematic_port": 4,
+    "schematic_trace": 3,
+    "schematic_net_label": 2,
+    "schematic_text": 2,
+    "pcb_component": 2,
+    "pcb_group": 1,
+    "pcb_board": 1,
+    "pcb_smtpad": 4,
+    "pcb_solder_paste": 4,
+    "pcb_silkscreen_path": 4,
+    "pcb_silkscreen_circle": 1,
+    "pcb_silkscreen_text": 2,
+    "pcb_courtyard_outline": 2,
+    "pcb_port": 4,
+    "cad_component": 2,
+    "source_project_metadata": 1
+  },
+  "failing_elements": 4,
+  "failures": [
+    {
+      "index": 19,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    }
+  ]
+}

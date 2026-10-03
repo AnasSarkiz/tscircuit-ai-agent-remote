@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-03T04:11:16.463898+00:00",
+  "jlcpcb": "C255576",
+  "manufacturer": "ALPS SKSWCFE010",
+  "manufacturer_drawing": "currentSKSWUpdate2606drawing1page2,landviewfrommountingface",
+  "native_component_identity": {
+    "type": "source_component",
+    "source_component_id": "source_component_0",
+    "name": "SW4",
+    "ftype": "simple_push_button",
+    "supplier_part_numbers": {
+      "jlcpcb": [
+        "C255576"
+      ]
+    },
+    "manufacturer_part_number": "SKSWCFE010",
+    "are_pins_interchangeable": true,
+    "source_group_id": "source_group_0"
+  },
+  "native_pad_dimensions_mm": [
+    {
+      "port_hints": [
+        "pin2"
+      ],
+      "local_x": 1.6504919999999998,
+      "local_y": 0,
+      "width": 0.7999984,
+      "height": 1.524
+    },
+    {
+      "port_hints": [
+        "pin1"
+      ],
+      "local_x": -1.6504919999999998,
+      "local_y": 0,
+      "width": 0.7999984,
+      "height": 1.524
+    }
+  ],
+  "native_two_pad_outer_span_mm": 4.1009823999999995,
+  "native_two_pad_inner_gap_mm": 2.5009856,
+  "recommended_land": {
+    "outer_span_mm": 3.8,
+    "inner_gap_mm": 2.7,
+    "height_mm": 1.5,
+    "derived_width_mm": 0.55,
+    "derived_centers_mm": [
+      -1.625,
+      1.625
+    ]
+  },
+  "source_ports": [
+    1,
+    2
+  ],
+  "native_holes": 0,
+  "native_copper_traces": 0,
+  "native_vias": 0,
+  "model_xyz_span_mm": [
+    3.5,
+    2.001,
+    0.6699999999999999
+  ],
+  "manufacturer_nominal_height_mm": 0.6,
+  "manufacturer_height_tolerance_mm": 0.05,
+  "separate_drawing_bottom_projection_mm": 0.04,
+  "qualification": "Twoelectrical contacts match; larger supplierlandvariesfromrecommendation, paste/assembly/mechanical/mountedmodelheight notqualified. No importeddefinitionpatched.",
+  "raw_supplier_pad_dimensions_mm": [
+    {
+      "pin": "2",
+      "width": 0.7999984,
+      "height": 1.524
+    },
+    {
+      "pin": "1",
+      "width": 0.7999984,
+      "height": 1.524
+    }
+  ],
+  "raw_package_uuid": "da786db12b364b40bfbb873247c77946",
+  "supplier_preservation": "Raw supplierwidth0.7999984mm height1.524mm identical toimport/native. Not converter dimension loss."
+}

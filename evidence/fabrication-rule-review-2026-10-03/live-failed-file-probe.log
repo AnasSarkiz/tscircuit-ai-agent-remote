@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-03T04:23:59.837232+00:00",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-battery-ready-review",
+  "source_revision": "d6826fa23d7160007f83bbc99a0c1204ae20e7e7",
+  "scope": "Read-only live probe; native publisher is still active, no final upload outcome claimed",
+  "files": [
+    {
+      "path": "imports/SKRTLAE010/SKRTLAE010.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 4341,
+      "remote_sha256": "2976991997339eaac5b6bddc569e7fbb5431d7c17a3cbc227a0bdc6fd3009715",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LV1T34DBVR/SN74LV1T34DBVR.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2394,
+      "remote_sha256": "18ccf0c63244d17b4a39cbaaabb365c9248680d7578f4d79b29c38adc43da858",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G14DBVR/SN74LVC1G14DBVR.tsx",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3029,
+      "remote_sha256": "af1fad6b192832bdba3e4631a5b79465adc0c58f6cef74e75f767a369de7ee0d",
+      "matches": true
+    }
+  ]
+}

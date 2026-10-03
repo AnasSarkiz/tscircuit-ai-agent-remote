@@ -1,0 +1,15 @@
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 3.874% (15.34mm^2 of 396mm^2)
+- empty spaces over 5% of board area:
+  - 43.056% (170.5mm^2); bounds=(minX=-11mm, maxX=11mm, minY=-9mm, maxY=-1.25mm)
+  - 43.056% (170.5mm^2); bounds=(minX=-11mm, maxX=11mm, minY=1.25mm, maxY=9mm)
+
+board-edge status:
+- SW4: 4.95mm inside left edge
+- R98: 5.843mm inside right edge
+
+placement drc:
+Errors: 0
+Warnings: 0

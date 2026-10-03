@@ -1,0 +1,99 @@
+{
+  "scope": "Read-only nominal native geometry measurement, not full-board DRC or fabrication approval",
+  "component": "ICS-43434 / C5656610",
+  "native_circuit_path": "evidence/core-alignment-2026-10-03/microphone-circuit.json",
+  "native_circuit_sha256": "deb0f69232f8cc2d5c0225cab6e79032784ee1d2c26dd31bddb5bf6d1d3eb9d6",
+  "native_hole_diameter_mm": 0.6,
+  "native_hole_center_mm": {
+    "x": 0.7650734,
+    "y": 0
+  },
+  "pad_measurements": [
+    {
+      "pcb_smtpad_id": "pcb_smtpad_0",
+      "port_hints": [
+        "pin1"
+      ],
+      "shape": "rect",
+      "nominal_drill_edge_to_pad_mm": 1.6090213468878023
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_1",
+      "port_hints": [
+        "pin2"
+      ],
+      "shape": "rect",
+      "nominal_drill_edge_to_pad_mm": 0.8579267736970762
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_2",
+      "port_hints": [
+        "pin4"
+      ],
+      "shape": "rect",
+      "nominal_drill_edge_to_pad_mm": 0.8579267736970762
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_3",
+      "port_hints": [
+        "pin5"
+      ],
+      "shape": "rect",
+      "nominal_drill_edge_to_pad_mm": 1.6090213468878023
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_4",
+      "port_hints": [
+        "pin6"
+      ],
+      "shape": "rect",
+      "nominal_drill_edge_to_pad_mm": 1.5122645999999997
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_5",
+      "port_hints": [
+        "pin3"
+      ],
+      "shape": "polygon",
+      "nominal_drill_edge_to_pad_mm": 0.26369627933427847
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_6",
+      "port_hints": [
+        "pin3"
+      ],
+      "shape": "polygon",
+      "nominal_drill_edge_to_pad_mm": 0.26368782601597357
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_7",
+      "port_hints": [
+        "pin3"
+      ],
+      "shape": "polygon",
+      "nominal_drill_edge_to_pad_mm": 0.2580203036336521
+    },
+    {
+      "pcb_smtpad_id": "pcb_smtpad_8",
+      "port_hints": [
+        "pin3"
+      ],
+      "shape": "polygon",
+      "nominal_drill_edge_to_pad_mm": 0.25802961879742964
+    }
+  ],
+  "minimum_nominal_drill_edge_to_pad_mm": 0.2580203036336521,
+  "jlcpcb_nominal_npth_to_track_minimum_mm": 0.2,
+  "conditional_generic_finished_hole_range_mm": [
+    0.52,
+    0.73
+  ],
+  "tdk_recommended_minimum_acoustic_hole_diameter_mm": 0.5,
+  "conditional_maximum_drill_and_position_sweep_clearance_mm": 0.11802030363365208,
+  "tolerance_caution": "The conditional sweep is not a manufacturing violation: supplier nominal design rules may already budget tolerances, and the acoustic NPTH process must be confirmed. Do not double-count tolerances or apply PTH rules blindly.",
+  "unresolved": [
+    "Ground polygon solder paste generation (B-005)",
+    "Acoustic seal, solder mask and NPTH fabrication process acceptance",
+    "Full-board drill-to-copper measurement after actual routing"
+  ]
+}

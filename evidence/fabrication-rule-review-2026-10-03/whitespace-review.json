@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-03T04:37:15.034941+00:00",
+  "git_diff_cached_check_exit_code": 2,
+  "warning_count": 22063,
+  "by_file": {
+    "evidence/bom-export-review-2026-10-03/NOT-FOR-FABRICATION-bom-characterization.csv": 2,
+    "evidence/fabrication-rule-review-2026-10-03/calculator-accessibility.txt": 4,
+    "evidence/hold-control-alternate-review-2026-10-03/__snapshots__/switch.circuit-schematic.snap.svg": 1,
+    "evidence/hold-control-alternate-review-2026-10-03/netlist.log": 1,
+    "evidence/hold-control-alternate-review-2026-10-03/schematic.svg": 1,
+    "imports/SKSWCFE010/SKSWCFE010.step": 22054
+  },
+  "original_diagnostic_path": "/private/tmp/ai-remote-fabrication-review-whitespace.log",
+  "original_diagnostic_sha256": "1b205e5c9ba177dd760e1fc0760c3031de0ac6fe6297bb690632a1045873c2d0",
+  "disposition": "Preserve original imported STEP/native SVG/CSV/AX/log bytes. Non-geometric whitespace disclosure only; no DRC exception or source-output normalization."
+}

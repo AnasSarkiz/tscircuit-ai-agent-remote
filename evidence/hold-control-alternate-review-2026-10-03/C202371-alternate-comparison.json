@@ -1,0 +1,47 @@
+{
+  "scope": "Read-only alternate candidate supplier check; no import or qualification accepted",
+  "parts": {
+    "C255576": {
+      "mpn": "SKSWCFE010",
+      "supplier_package_uuid": "da786db12b364b40bfbb873247c77946",
+      "pads": [
+        {
+          "number": "2",
+          "width_mm": 0.7999984,
+          "height_mm": 1.524,
+          "x_supplier_units": 4007.315,
+          "y_supplier_units": 3000.004
+        },
+        {
+          "number": "1",
+          "width_mm": 0.7999984,
+          "height_mm": 1.524,
+          "x_supplier_units": 3994.319,
+          "y_supplier_units": 3000.004
+        }
+      ]
+    },
+    "C202371": {
+      "mpn": "SKSWCEE010",
+      "supplier_package_uuid": "da786db12b364b40bfbb873247c77946",
+      "pads": [
+        {
+          "number": "2",
+          "width_mm": 0.7999984,
+          "height_mm": 1.524,
+          "x_supplier_units": 4007.315,
+          "y_supplier_units": 3000.004
+        },
+        {
+          "number": "1",
+          "width_mm": 0.7999984,
+          "height_mm": 1.524,
+          "x_supplier_units": 3994.319,
+          "y_supplier_units": 3000.004
+        }
+      ]
+    }
+  },
+  "identical_supplier_pad_geometry": true,
+  "decision": "C202371 does not resolve the land-pattern qualification difference; no additional import or board selection is made."
+}

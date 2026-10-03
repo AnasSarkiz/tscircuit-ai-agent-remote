@@ -1,0 +1,11 @@
+{
+  "scope": "Preserved explicit imported MCU/USB unrouted fixture only; no asynchronous parts-engine or full routing conclusion",
+  "native_path": "evidence/mcu-usb-review-2026-10-03/circuit.json",
+  "source_port_count": 101,
+  "pcb_port_count": 101,
+  "source_ports_without_pcb_ports": [],
+  "pcb_ports_without_numeric_coordinates": [],
+  "upstream_pr": "https://github.com/tscircuit/core/pull/4283",
+  "upstream_context": "PR body describes repro only, but current files contain registerMatch late PCB primitive dirty-phase fix; do not rely on the older body alone.",
+  "native_sha256": "7c387674867a5c8e996903124364a0c89dc0bdd77aa528f74e5a5a1c42a45487"
+}

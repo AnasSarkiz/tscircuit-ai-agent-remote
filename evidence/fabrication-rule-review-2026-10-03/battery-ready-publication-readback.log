@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-03T04:34:42.706792+00:00",
+  "source_revision": "d6826fa23d7160007f83bbc99a0c1204ae20e7e7",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-battery-ready-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 834,
+  "reported_failures": 62,
+  "ready_to_build": false,
+  "is_private": true
+}
+{
+  "matching_files": 55,
+  "missing_files": [
+    "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+    "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+    "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+    "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+    "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.tsx",
+    "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+    "references/tps7a20.pdf"
+  ],
+  "unverified_files": []
+}

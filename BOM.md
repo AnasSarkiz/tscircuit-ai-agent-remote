@@ -182,3 +182,9 @@ present; the envelope study uses its manufacturer drawing without editing it.
 ## Battery-readiness application candidate — 2026-10-03
 
 U25 is genuine TPS3808G33DBVR / C43698 (SOT-23-6), imported unchanged. Supplier search reports 6,139 pieces on 2026-10-03; recheck final availability. The independent five-part candidate allocates R96/R97=C114622 470 kohm and C76/C77=C45000 100 nF. This is a hardware buck-enable review, not an integrated charger or qualified pack. Threshold/low-supply/dynamic policy and actual protected battery, NTC, harness and discharge capacity remain unresolved. No unrelated speaker/battery/resistor search result was selected. See battery-readiness qualification evidence.
+
+## Additional hold candidate — unselected
+
+ALPS SKSWCFE010/C255576 is a genuine unchanged two-contact/no-hole SMT candidate. Supplier dimensions are preserved, but lands differ from ALPS's current recommended pattern and final paste/mechanical/electrical acceptance is pending. Exact alternate SKSWCEE010/C202371 has identical supplier pads and was not imported or selected. See evidence/hold-control-alternate-review-2026-10-03/qualification.md; no fabricated replacement component is used.
+
+B-015 blocks approval of native fabrication BOM metadata: official converter0.0.19 drops MPN/explicit resolver Comment for imported chips/connectors/switch. Exact JLCPCB codes remain correct. The characterized CSV is a tooling reproduction, not an ordering BOM; no manually repaired fabrication output is substituted.

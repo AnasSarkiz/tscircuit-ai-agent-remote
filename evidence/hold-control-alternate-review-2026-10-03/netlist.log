@@ -1,0 +1,26 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - SW4: SW4, source_component
+ - R98: 100kΩ resistor
+
+NET: HOLD_HARDWARE
+  - R98 pin1
+  - SW4 pin2
+
+
+EMPTY NET PINS:
+  - SW4 pin1
+  - R98 pin2
+
+COMPONENT_PINS:
+SW4 (SKSWCFE010)
+- pin1: NETS(V3V3)
+- pin2: NETS(HOLD_HARDWARE)
+
+R98 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_HARDWARE)
+- pin2(cathode, neg, right): NETS(GND)
+

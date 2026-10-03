@@ -1,0 +1,26 @@
+# Two-contact hold-switch alternative — qualification pending
+
+Exact genuine supported import: ALPS SKSWCFE010 / JLCPCB C255576. This is an unselected candidate for the single hold control. It is a top-push switch, not an approved top-edge mechanical mechanism. The PCB remains top assembly only; no second exterior control or second PCB is proposed. The accepted exterior and antenna requirements remain unchanged.
+
+The current ALPS SKSW catalogue, Update2606, page2 drawing1, was rendered and inspected. It specifies exactly two contacts, no locating holes, nominal3.0x2.0 body, total terminal width3.5+/-0.1, and height0.6+/-0.05. The separate bottom projection is0.04. Circuit diagram has two terminals and one normally open contact; no four-contact internal-pair metadata is required. The untouched supported import and native JSON preserve physical contacts1 and2, with two SMT pads, no holes or cutout, correct momentary symbol and two source/PCB ports. Native courtyard covers the body and both lands. This avoids the specific four-contact ambiguity seen in prior B-006 candidates, without correcting those imports or qualifying the complete control.
+
+Imported lands are0.7999984x1.524mm with centers +/-1.650492mm. Measured outer span4.1009824mm and inner gap2.5009856mm differ from ALPS recommended drawing3.8outer/2.7inner/1.5height (derived width0.55,centers+/-1.625). Raw EasyEDA package pads are0.7999984x1.524 too, so conversion preserves the supplier dimensions. Larger lands are a confirmed supplier-versus-recommended-pattern discrepancy; a manufacturing defect is not established simply by that difference. Paste volume, wetting, assembler feedback, mechanical centering/height/travel/force, and final footprint acceptance remain unqualified. The imported source and models are unchanged. Do not patch the lands or treat the discrepancy as resolved to integrate the control prematurely.
+
+The OBJ span is3.5x2.001x0.67mm. That total span is not directly comparable to the catalogue's0.6+/-0.05 mounted height because the drawing separately shows0.04bottom projection and model mounting-plane interpretation remains unverified. No confirmed model-height defect is alleged. Save that open mechanical check rather than claiming the model is dimensionally qualified.
+
+Manufacturer public product page lists Standard supply status, top push,2.4N nominal operating force,0.13mmtravel,500,000cycles,500mohmmax initial resistance,-30..85C,maximum50mA12V and minimum10uA1V. With a future hardware100kohm pulldown at3.3V, nominal steady contact current is33uA; final resistance corners, enable input current/capacitive loads, bounce, release deadline and logic-isolation behavior still require integration review. ALPS cautions its switches are intended for DC resistive loads and asks for individual consultation for inductive/capacitive loads; do not assume that enabling a regulator proves that interface acceptable under all transients. Its public protection designation applies to the switch alone, not enclosure waterproofing. No waterproof product claim is made.
+
+The independent22x18mm A4 fixture contains SW4 plus genuine YAGEO100kohm R98/C14675. SW4.pin1 goes toV3V3, pin2 toHOLD_HARDWARE; R98 grounds the released hold signal. Native build and allfive diagnostics exit0, errors0warnings0. The initial sandbox supplier-fetch warnings are preserved; the network-enabled rebuild resolves them. FourSMT pads/fourpaste elements and no traces/vias/errors are emitted. PCB, native landscapeA4PDF (841.89x595.28pt), snapshots and manufacturer drawings were visually inspected. Native snapshot command exits0 with matching snapshots. TypeScript exits0. Canonical tests remain22pass/one existing B-010fail/213assertions; no runtime/test/source JSON change. Strict candidate audit independently has4invalid native elements (schematic_group,2pcb_component,pcb_group), preserved as B-010 evidence, not waived.
+
+The side-push SKSC family was also researched from current ALPS catalogue Update2510. Its drawing1 has four permanently paired contacts (1-2 and3-4); that candidate is not imported or selected. The SKSW two-contact candidate therefore has a materially different physical contact arrangement, not a placeholder representation of a failed four-contact switch.
+
+Sources inspected2026-10-03:
+- https://tech.alpsalpine.com/e/products/detail/SKSWCFE010/
+- https://tech.alpsalpine.com/cms.media/product_catalog_ta_02_sksw_en_ee3e98d509.pdf (saved unchanged)
+- https://tech.alpsalpine.com/cms.media/product_catalog_ta_02_sksc_en_f9e52a07d5.pdf (saved unchanged; comparison)
+- https://www.lcsc.com/product-detail/C255576.html (supplier identity only; recheck final stock)
+- Raw supplier records evidence/imports/C255576-search.json and C255576-raw.json.
+
+Stage2/full-control integration remains pending land/paste/mechanics/electrical qualification and existing tool blockers. No full-board placement/routing/fabrication or hardware-testing pass is claimed.
+
+Additional exact supplier check: SKSWCEE010 / C202371 search reports17,246pieces, but raw EasyEDA has the same two pad coordinates and dimensions as C255576. It therefore does not resolve the land-pattern acceptance gap. No additional import or selection was made; raw/search evidence and comparison are saved unchanged.

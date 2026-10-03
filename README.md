@@ -188,3 +188,5 @@ HTTP413 files. Package remains private=true, ready_to_build=false. The new
 milestone's publication is pending.
 
 Battery readiness is under review in `src/power/battery-ready-review.tsx`; its isolated A4/PCB fixture passes native diagnostic checks but remains electrically unqualified for arbitrary startup/reconnect, absent pack and final battery protection/temperature policy. Canonical tests currently have 22 passes and one known strict-schema failure. This is an unrouted engineering prototype; no full-board fabrication package exists.
+
+Latest independent studies: genuine two-contact hold candidate, current JLCPCB fabrication/USB impedance rules, measured nominal native pad clearances, saved-route APIs and native BOM export metadata. They do not complete the board. New B-015 is independently confirmed: native BOM Comment loses MPN/resolver data. The exact rechargeable pack and full circuit/placement/routing remain unfinished; no fabrication package or actual saved copper routes exists. See VALIDATION.md and the dated evidence folders.

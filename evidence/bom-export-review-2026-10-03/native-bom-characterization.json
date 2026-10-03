@@ -1,0 +1,295 @@
+{
+  "scope": "Isolated official BOM converter characterization, not a fabrication package or full-board gate pass",
+  "converter_version": "circuit-json-to-bom-csv@0.0.19",
+  "native_cli_invocation": "convertCircuitJsonToBomRows({ circuitJson }) without resolvePart, CLI@0.1.2235 Gerber export source",
+  "schema_status": "Known B-010 errors in untouched native fixtures remain unresolved and independently recorded",
+  "fixtures": [
+    {
+      "fixture": "evidence/mcu-usb-review-2026-10-03/circuit.json",
+      "native_sha256": "7c387674867a5c8e996903124364a0c89dc0bdd77aa528f74e5a5a1c42a45487",
+      "rows": [
+        {
+          "designator": "U1",
+          "comment": "",
+          "value": "C2913201",
+          "footprint": "C2913201",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C2913201"
+          },
+          "native_manufacturer_part_number": "ESP32-S3-WROOM-1-N8R8"
+        },
+        {
+          "designator": "J1",
+          "comment": "",
+          "value": "C165948",
+          "footprint": "C165948",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C165948"
+          },
+          "native_manufacturer_part_number": "TYPE-C-31-M-12"
+        },
+        {
+          "designator": "D2",
+          "comment": "",
+          "value": "C94934",
+          "footprint": "C94934",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C94934"
+          },
+          "native_manufacturer_part_number": "TPD2EUSB30ADRTR"
+        },
+        {
+          "designator": "U12",
+          "comment": "",
+          "value": "C485802",
+          "footprint": "C485802",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C485802"
+          },
+          "native_manufacturer_part_number": "TPS3839G33DBZR"
+        },
+        {
+          "designator": "J6",
+          "comment": "",
+          "value": "C160405",
+          "footprint": "C160405",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C160405"
+          },
+          "native_manufacturer_part_number": "SM06B-SRSS-TB(LF)(SN)"
+        },
+        {
+          "designator": "R31",
+          "comment": "22",
+          "value": "22",
+          "footprint": "C107701",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C107701"
+          },
+          "native_manufacturer_part_number": "RC0603FR-0722RL"
+        },
+        {
+          "designator": "R32",
+          "comment": "22",
+          "value": "22",
+          "footprint": "C107701",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C107701"
+          },
+          "native_manufacturer_part_number": "RC0603FR-0722RL"
+        },
+        {
+          "designator": "R33",
+          "comment": "5.1k",
+          "value": "5.1k",
+          "footprint": "C105580",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C105580"
+          },
+          "native_manufacturer_part_number": "RC0603FR-075K1L"
+        },
+        {
+          "designator": "R34",
+          "comment": "5.1k",
+          "value": "5.1k",
+          "footprint": "C105580",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C105580"
+          },
+          "native_manufacturer_part_number": "RC0603FR-075K1L"
+        },
+        {
+          "designator": "R35",
+          "comment": "4.7k",
+          "value": "4.7k",
+          "footprint": "C99782",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C99782"
+          },
+          "native_manufacturer_part_number": "RC0603FR-074K7L"
+        },
+        {
+          "designator": "R36",
+          "comment": "10k",
+          "value": "10k",
+          "footprint": "C98220",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C98220"
+          },
+          "native_manufacturer_part_number": "RC0603FR-0710KL"
+        },
+        {
+          "designator": "R37",
+          "comment": "100k",
+          "value": "100k",
+          "footprint": "C14675",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C14675"
+          },
+          "native_manufacturer_part_number": "RC0603FR-07100KL"
+        },
+        {
+          "designator": "R38",
+          "comment": "1k",
+          "value": "1k",
+          "footprint": "C22548",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C22548"
+          },
+          "native_manufacturer_part_number": "RC0603FR-071KL"
+        },
+        {
+          "designator": "C30",
+          "comment": "10µ",
+          "value": "10µ",
+          "footprint": "C90053",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C90053"
+          },
+          "native_manufacturer_part_number": "GRM188R61A106ME69D"
+        },
+        {
+          "designator": "C31",
+          "comment": "100n",
+          "value": "100n",
+          "footprint": "C45000",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C45000"
+          },
+          "native_manufacturer_part_number": "GRM188R71C104KA01D"
+        },
+        {
+          "designator": "C32",
+          "comment": "100n",
+          "value": "100n",
+          "footprint": "C45000",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C45000"
+          },
+          "native_manufacturer_part_number": "GRM188R71C104KA01D"
+        }
+      ],
+      "resolver_comment_examples": [
+        {
+          "designator": "U1",
+          "comment": "",
+          "value": "C2913201",
+          "footprint": "C2913201",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C2913201"
+          }
+        }
+      ],
+      "blank_comment_count": 5,
+      "supplier_code_as_footprint_count": 16
+    },
+    {
+      "fixture": "evidence/charger-battery-ready-review-2026-10-03/circuit.json",
+      "native_sha256": "479dc10a55965751df2922574af0b2ffe301a14d9b9577e99f891e27eed0a989",
+      "rows": [
+        {
+          "designator": "U25",
+          "comment": "",
+          "value": "C43698",
+          "footprint": "C43698",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C43698"
+          },
+          "native_manufacturer_part_number": "TPS3808G33DBVR"
+        },
+        {
+          "designator": "R96",
+          "comment": "470k",
+          "value": "470k",
+          "footprint": "C114622",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C114622"
+          },
+          "native_manufacturer_part_number": "RC0603FR-07470KL"
+        },
+        {
+          "designator": "R97",
+          "comment": "470k",
+          "value": "470k",
+          "footprint": "C114622",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C114622"
+          },
+          "native_manufacturer_part_number": "RC0603FR-07470KL"
+        },
+        {
+          "designator": "C76",
+          "comment": "100n",
+          "value": "100n",
+          "footprint": "C45000",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C45000"
+          },
+          "native_manufacturer_part_number": "GRM188R71C104KA01D"
+        },
+        {
+          "designator": "C77",
+          "comment": "100n",
+          "value": "100n",
+          "footprint": "C45000",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C45000"
+          },
+          "native_manufacturer_part_number": "GRM188R71C104KA01D"
+        }
+      ],
+      "resolver_comment_examples": [
+        {
+          "designator": "U25",
+          "comment": "",
+          "value": "C43698",
+          "footprint": "C43698",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C43698"
+          }
+        }
+      ],
+      "blank_comment_count": 1,
+      "supplier_code_as_footprint_count": 5
+    },
+    {
+      "fixture": "evidence/hold-control-alternate-review-2026-10-03/circuit.json",
+      "native_sha256": "a17a3528a39cf2f86e3be84f8a05400f8cac413e861e131db904023c91d4db4f",
+      "rows": [
+        {
+          "designator": "SW4",
+          "comment": "",
+          "value": "C255576",
+          "footprint": "C255576",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C255576"
+          },
+          "native_manufacturer_part_number": "SKSWCFE010"
+        },
+        {
+          "designator": "R98",
+          "comment": "100k",
+          "value": "100k",
+          "footprint": "C14675",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C14675"
+          },
+          "native_manufacturer_part_number": "RC0603FR-07100KL"
+        }
+      ],
+      "resolver_comment_examples": [
+        {
+          "designator": "SW4",
+          "comment": "",
+          "value": "C255576",
+          "footprint": "C255576",
+          "supplier_part_number_columns": {
+            "JLCPCB Part #": "C255576"
+          }
+        }
+      ],
+      "blank_comment_count": 1,
+      "supplier_code_as_footprint_count": 2
+    }
+  ]
+}

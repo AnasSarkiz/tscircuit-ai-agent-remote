@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-10-03T04:15:54.706178+00:00",
+  "official_calculator_url": "https://jlcpcb.com/pcb-impedance-calculator",
+  "inputs": {
+    "board_type": "Rigid",
+    "layer_count": 4,
+    "board_thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "units": "mm",
+    "pair_target_ohms": 90,
+    "pair_type": "Differential Pair (Non coplanar)",
+    "signal_layer": "L1",
+    "reference_layer": "L2",
+    "pair_spacing_mm": 0.2,
+    "secondary_unused_calculator_row": "50ohm single-ended L1/L2"
+  },
+  "selected_result": {
+    "stackup": "JLC04161H-7628",
+    "status": "recommendedStandard",
+    "displayed_finished_thickness_mm": 1.59,
+    "displayed_thickness_tolerance_fraction": 0.1,
+    "pair_trace_width_mm": 0.2906,
+    "pair_trace_spacing_mm": 0.1999,
+    "unused_50ohm_trace_width_mm": 0.3586,
+    "outer_copper_mm": 0.035,
+    "prepreg_type": "7628RC49percent",
+    "prepreg_each_mm": 0.2104,
+    "inner_copper_each_mm": 0.0152,
+    "core_dielectric_mm": 1.065
+  },
+  "calculator_fit_tolerance_percent": 0.5,
+  "physical_manufacturing_impedance_tolerance_percent": 10,
+  "scope": "Candidate design rules; no native routing/copper/physical impedance verified. Final calculator/order stack and exported copper must match."
+}
