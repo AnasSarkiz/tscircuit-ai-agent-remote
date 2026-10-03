@@ -1,0 +1,35 @@
+Building 1 file(s)...
+Building evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/audio-charge-review-2026-10-03/speaker-amplifier/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on J4 are underspecified (no pinAttributes set)
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+J4 has no pin with requires_power=true
+Q1 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+J4 has no pin with requires_ground=true
+Q1 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q2 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Generating PCB SVG...
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Written pcb.svg
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Generating PCB PNG...
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Written pcb.png
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Generating schematic SVG...
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Written schematic.svg
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Generating schematic PNG...
+[evidence/audio-charge-review-2026-10-03/speaker-amplifier] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

@@ -295,3 +295,35 @@ and import match. Drawing2004.6.16 has X.X ±0.20 mm; both0.20mm nominal pad
 differences lie at this boundary. No supplier/converter defect demonstrated,
 and no local footprint patch is justified. Revision applicability and cable
 mating fit remain pending. Follow-up clarification sent to fix chat.
+
+
+## B-008 additional exact parts — amplifier diagnostic
+
+C20917 / AO3400A and C15127 / AO3401A imported custom symbols omit reference
+text, reproduced in native amplifier output. Reported to authorized fix chat.
+Symbols untouched; qualification/snapshot acceptance withheld. Prefix/type
+advisories and absence of MOSFET power pins are not treated as electrical defects.
+
+## B-012 — speaker supplier libraries unavailable
+
+Native exact imports C3311258 / PUI AS04008PS-4W-R, C6230316 / Taoglas
+SPKM.20.8.A and C50387211 / XHXDZ23MM-8Ω2W-JFHM report no EasyEDA
+library data. Stage2 speaker qualification/integration stops; no authored
+speaker or generic substitution. First two independently confirmed by fix chat.
+Evidence: audio-charge-review-2026-10-03 speaker import logs. Continue actual
+supplier search and independent amplifier/charging work.
+
+## B-004 additional exact manufacturer queries
+
+RC0603FR-07470KL discovers C16195750 unrelated inductor;
+RC0603FR-07430KL discovers C326810 unrelated510kΩ2010 resistor. Native
+import logs preserved; both unselected. Reported as query matching, not data loss.
+
+## B-009 — display publication exact receipt
+
+Gitc82e7deb is verified on private main. Native version
+0.0.2-wip-a0-display-logic-review exits1,582successes/4failures. Timeouts
+SN74LVC1G17/TPS3839STEP reached server with matching hashes; HTTP413
+SN74LVC245STEP/TPS7A20PDF return404. ready_to_build=false. Exact receipt
+and log in audio/charge evidence; material update sent. No dropped models,
+forced readiness, publisher bypass or success claim.

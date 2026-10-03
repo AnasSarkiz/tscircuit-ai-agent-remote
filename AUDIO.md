@@ -47,3 +47,52 @@ the actual supply connection was manually checked. B-008 blocks C105188's missin
 schematic reference label. No import or checker was modified to conceal them.
 The current native build and five connectivity/placement checks exit 0 with those
 documented warnings; this does not pass any complete-board validation gate.
+
+
+## Independent speaker amplifier review — 2026-10-03
+
+`src/audio/speaker-amplifier-review.tsx` implements an unrouted native A4
+application using MAX98357AETE+T / C910544, AO3400A / C20917,
+AO3401A / C15127 and JST C295747. Evidence, actual command results and
+manufacturer connection checks are in `evidence/audio-charge-review-2026-10-03/`.
+It is not the final microphone circuit or a qualified whole-board placement.
+
+ADI's Rev16 datasheet: VDD2.5–5.5V; digital inputs VIH1.3/VIL0.6V and
+absolute input limit6V independently of VDD. Supply bypass10µF plus100nF;
+gain pin2 tied to VDD selects6dB; ground pins3/11/15 and exposed pad17 grounded.
+Speaker connects between pins9/10, neither output grounded. Speaker inductance
+must exceed10µH and actual power/thermal/EMI qualification remains pending.
+[ADI MAX98357A/B](https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf).
+
+The shutdown pin has VDD+0.3V absolute limit and B0 minimum0.08V / B2 maximum1.5V.
+The NMOS gate has100Ω series/10kΩ ground pull-down; it pulls down a PMOS gate
+with1kΩ VSYS pull-up. PMOS sourceVSYS/drain through100Ω drives shutdown,
+with1kΩ pull-down. At assumed VSYSmin2.8V the enabled pin exceeds2.52V.
+16kHz/64Fs is the provisional I2S target; disable before stopping clocks.
+Never stop LRCLK while BCLK runs. 8kHz/32Fs has additional startup sequencing
+and is not this fixture's operating target. Firmware and measured timing remain pending.
+
+AOS G/S/D pins1/2/3 were checked against primary drawings. Both tolerate±12V
+VGS and specify on-resistance at2.5V gate magnitude. The 100Ω gate resistor
+preserves >=2.519V from the provisional MCU VOH floor; the earlier1kΩ candidate
+would not preserve the guaranteed2.5V drive condition. At TJ55°C the specified
+5µA PMOS leakage gives <=5.08mV on1kΩ, below the80mV shutdown boundary.
+This is a limited static calculation, not a guarantee across85°C or intermediate
+rail ramps. Temperature, parasitic capacitance, hot on-resistance and shutdown
+transients must still be qualified. Gate pull-up1kΩ consumes up to4.5mA when on;
+external shutdown pull-down adds up to4.5mA. Approximate combined bias40mW
+belongs in the system budget, not the speaker efficiency claim.
+[AOS AO3400A](https://www.aosmd.com/pdfs/datasheet/AO3400A.pdf),
+[AOS AO3401A](https://www.aosmd.com/pdfs/datasheet/AO3401A.pdf).
+
+B-008 now includes both MOSFET symbols' missing references; no symbol edit
+was made. B-012 blocks speaker imports C3311258/C6230316/C50387211. The
+PUI C3311258 drawing is40×28.3×12mm,2W rated/4W maximum,8Ω±15%; actual
+minimum impedance and inductance across frequency, enclosure/harness and
+procurement remain pending. At VSYS4.5V a rail-limited ideal sine into6.8Ω is
+1.49W; this is not a bound on clipped signals, PWM heating or clock-fault DC.
+[PUI manufacturer drawing](https://api.puiaudio.com/filename/AS04008PS-4W-R.pdf).
+
+Native build/required checks pass for this diagnostic. Actionable symbol warnings
+and19 strict JSON schema failures remain visible; snapshots are not accepted
+while reference labels are missing. No routing, copper or full-board stage pass.

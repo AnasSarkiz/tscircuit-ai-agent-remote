@@ -1,0 +1,185 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U3: MAX98357AETE+T
+ - Q1: AO3400A
+ - Q2: AO3401A
+ - J4: S2B-PH-SM4-TB(LF)(SN)
+ - C50: 10uF capacitor
+ - C51: 100nF capacitor
+ - R60: 100Ω resistor
+ - R61: 10kΩ resistor
+ - R62: 1kΩ resistor
+ - R63: 100Ω resistor
+ - R64: 1kΩ resistor
+ - R65: 22Ω resistor
+ - R68: 10kΩ resistor
+ - R66: 22Ω resistor
+ - R69: 10kΩ resistor
+ - R67: 22Ω resistor
+ - R70: 10kΩ resistor
+
+NET: SPEAKER_P
+  - J4 pin1
+  - U3 OUTP
+
+NET: SPEAKER_N
+  - J4 pin2
+  - U3 OUTN
+
+NET: AUDIO_NMOS_GATE
+  - R61 pin1
+  - R60 pin2
+  - Q1 pin1
+
+NET: AUDIO_PMOS_GATE
+  - R62 pin2
+  - Q2 pin1
+  - Q1 pin3
+
+NET: AUDIO_ENABLE_SUPPLY
+  - R63 pin1
+  - Q2 pin3
+
+NET: AMP_SD_MODE
+  - R64 pin1
+  - R63 pin2
+  - U3 N_SD_MODE
+
+NET: VSYS
+  - C51 pin1
+  - C50 pin1
+  - R62 pin1
+  - Q2 pin2
+  - U3 VDD2
+  - U3 VDD1
+  - U3 GAIN_SLOT
+
+NET: AMP_DIN
+  - U3 DIN
+  - R68 pin1
+  - R65 pin2
+
+NET: AMP_BCLK
+  - U3 BCLK
+  - R69 pin1
+  - R66 pin2
+
+NET: GND
+  - R70 pin2
+  - R69 pin2
+  - R68 pin2
+  - C51 pin2
+  - C50 pin2
+  - R64 pin2
+  - R61 pin2
+  - Q1 pin2
+  - J4 pin4
+  - J4 pin3
+  - U3 EP
+  - U3 GND3
+  - U3 GND2
+  - U3 GND1
+
+NET: AMP_LRCLK
+  - U3 LRCLK
+  - R70 pin1
+  - R67 pin2
+
+
+EMPTY NET PINS:
+  - R60 pin1
+  - R65 pin1
+  - R66 pin1
+  - R67 pin1
+
+COMPONENT_PINS:
+U3 (MAX98357AETE+T)
+- pin1(DIN): NETS(AMP_DIN)
+- pin2(GAIN_SLOT): NETS(VSYS)
+- pin3(GND1): NETS(GND)
+- pin4(N_SD_MODE): NETS(AMP_SD_MODE)
+- pin5: NOT_CONNECTED
+- pin6: NOT_CONNECTED
+- pin7(VDD1): NETS(VSYS)
+- pin8(VDD2): NETS(VSYS)
+- pin9(OUTP): NETS(SPEAKER_P)
+- pin10(OUTN): NETS(SPEAKER_N)
+- pin11(GND2): NETS(GND)
+- pin12: NOT_CONNECTED
+- pin13: NOT_CONNECTED
+- pin14(LRCLK): NETS(AMP_LRCLK)
+- pin15(GND3): NETS(GND)
+- pin16(BCLK): NETS(AMP_BCLK)
+- pin17(EP): NETS(GND)
+
+Q1 (AO3400A)
+- pin1(G): NETS(AUDIO_NMOS_GATE)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(AUDIO_PMOS_GATE)
+
+Q2 (AO3401A)
+- pin1(G): NETS(AUDIO_PMOS_GATE)
+- pin2(S): NETS(VSYS)
+- pin3(D): NETS(AUDIO_ENABLE_SUPPLY)
+
+J4 (S2B-PH-SM4-TB(LF)(SN))
+- pin1: NETS(SPEAKER_P)
+- pin2: NETS(SPEAKER_N)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+C50 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C51 (100nF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+R60 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_ENABLE)
+- pin2(cathode, neg, right): NETS(AUDIO_NMOS_GATE)
+
+R61 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AUDIO_NMOS_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R62 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(AUDIO_PMOS_GATE)
+
+R63 (100Ω undefined)
+- pin1(anode, pos, left): NETS(AUDIO_ENABLE_SUPPLY)
+- pin2(cathode, neg, right): NETS(AMP_SD_MODE)
+
+R64 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_SD_MODE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R65 (22Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_DIN)
+- pin2(cathode, neg, right): NETS(AMP_DIN)
+
+R68 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_DIN)
+- pin2(cathode, neg, right): NETS(GND)
+
+R66 (22Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_BCLK)
+- pin2(cathode, neg, right): NETS(AMP_BCLK)
+
+R69 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_BCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R67 (22Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_LRCLK)
+- pin2(cathode, neg, right): NETS(AMP_LRCLK)
+
+R70 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_LRCLK)
+- pin2(cathode, neg, right): NETS(GND)
+

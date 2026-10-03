@@ -116,3 +116,31 @@ C22548 1 kΩ; R42–46 use C98220 10 kΩ. C40=C90053 10 µF, C41=C84419 22 µF,
 C42/C43=C45000 100 nF. The bleed/pulldown choices and manufacturer pin review are
 in DISPLAY.md. C165143 TPS61160 is imported but unselected/unwired pending
 backlight topology and low-Vf/off-state review. No complete-board BOM is claimed.
+
+
+## A0 amplifier and charge-intake milestone — 2026-10-03
+
+| Candidate | MPN | Exact JLCPCB/LCSC | Status |
+|---|---|---|---|
+| Amplifier enable NMOS | AO3400A | C20917 | Native imported; manufacturer pins1G/2S/3D; B-008 reference text missing |
+| Amplifier enable PMOS | AO3401A | C15127 | Native imported; manufacturer pins1G/2S/3D; B-008 reference text missing |
+| Three-wire battery/NTC connector | S3B-PH-SM4-TB(LF)(SN) | C265101 | Native imported; candidate, pack/contact polarity/ratings still pending |
+| Type-C UFP hardware current detector | TUSB320LAIRWBR | C132554 | Native imported; startup/supply/current policy review pending |
+| Dedicated controller3.3V LDO | TPS7A2033PDBVR | C2862740 | Native imported; not yet wired/qualified |
+| Alternate top-edge hold switch | EVQ-P4HB3B | C6617702 | Native imported; manufacturer cutout/ground-contact geometry pending |
+
+C295747 remains the amplifier's real two-wire differential speaker connector
+candidate. C105588 / RC0603FR-07100RL supplies the100Ω amplifier gate/enable
+series resistors; C22548 1kΩ, C98220 10kΩ and C107701 22Ω are exact prior
+imports. Quantity/allocation remains provisional until the complete board exists.
+
+No importable speaker was found for C3311258 (PUI), C6230316 (Taoglas),
+C50387211 (XHXDZ); B-012 blocks them. Exact-MPN queries incorrectly selected
+C16195750 / CIGT201610EHR47MNE and C326810 / RC2010JK-07510KL; both
+are rejected/unwired evidence of B-004, not BOM substitutions. All definitions
+remain untouched. Source checksums in the audio/charge milestone manifest.
+
+Exact queries were resolved with supplier-verified C114622 / RC0603FR-07470KL
+and C482869 / RC0603FR-07430KL; both imported successfully, remain unwired
+charging candidates. C7666 / TI SN74LVC1G08DBVR also imported for startup
+qualification logic. No wrong search result was used in the circuit.

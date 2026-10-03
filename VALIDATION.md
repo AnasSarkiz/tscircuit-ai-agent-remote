@@ -532,3 +532,41 @@ publication has not yet been attempted.
 Whole-board requirements/schematic/mechanics remain unfinished; routing,
 shorts/copper validation, fabrication exports and physical tests remain pending.
 Protected battery sourcing exception still awaits the human reply.
+
+
+## A0 amplifier application review and charge intake — 2026-10-03
+
+Independent17part top-side46×32mm amplifier application added as an unrouted
+native A4 diagnostic; complete-board source guard remains. Native build and all
+five required checks exit0. C51 rotated180° to remove actionable placement
+advisory; native PCB/A4 outputs reviewed.53rectangular pads/53native paste
+shapes,zeroPCB traces/vias/errors.14tests pass/1strict B-010 test fails,
+107assertions; TypeScript/format pass.19native schema-invalid elements are
+saved separately. Missing Q1/Q2 imported reference text is B-008; snapshot
+acceptance withheld. No schema/runtime/import edit or checker suppression.
+Manufacturer physical amplifier/MOSFET/differential-output pin tests pass;
+static gate/shutdown corner estimates are conditional, not measured behavior.
+
+Exact new importsC265101/C132554/C2862740/C6617702 support independent battery
+connector/USB controller/LDO/hold-switch intake. Full manufacturer/mechanical
+qualification and actual charger/NTC/dead-pack policy remain pending. Protected
+pack procurement exception awaits a human answer. B-012 speaker libraries
+C3311258/C6230316/C50387211 unavailable. B-004 exact-MPN resistor search
+returned unrelated components, unselected and reported. Native parts are not
+modified to hide warnings or substituted by authored component definitions.
+
+Gitc82e7deb display milestone verified remotely. Its nativeprivate package
+0.0.2-wip-a0-display-logic-review exited1:582success/4fail. Both timeout files
+arrived with exact hashes; both413 files missing404; ready_to_build=false.
+Receipt and log preserved in audio/charge evidence. This amplifier milestone's
+Git/package publication is still pending. All material issues were sent to the
+authorized fix chat; useful independent work continues.
+
+Whole-board stages1/2remain unfinished/blocked,3–6not started,7physicalpending.
+No saved routes exist and no fabrication-ready, copper/shorts or hardware-test
+claim is made. Save native routes before changes once prerequisite gates pass.
+
+Exact queries were resolved with supplier-verified C114622 / RC0603FR-07470KL
+and C482869 / RC0603FR-07430KL; both imported successfully, remain unwired
+charging candidates. C7666 / TI SN74LVC1G08DBVR also imported for startup
+qualification logic. No wrong search result was used in the circuit.

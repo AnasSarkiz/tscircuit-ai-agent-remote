@@ -1,0 +1,65 @@
+[
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "build",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx",
+      "--pcb-png",
+      "--pcb-svgs",
+      "--schematic-svgs",
+      "--schematic-png"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  }
+]

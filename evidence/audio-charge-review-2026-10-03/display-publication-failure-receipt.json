@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-03T02:14:01.235246+00:00",
+  "source_revision": "c82e7deb2c0722ab6b213f11c1133e82bb767900",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-display-logic-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 582,
+  "reported_failures": 4,
+  "ready_to_build": false,
+  "files": [
+    {
+      "path": "src/display/display-logic-review.tsx",
+      "http_status": null,
+      "remote_sha256": "e71c2455265bf7f5d27ef4b212ffd40a67eab540f81d7e858a5b53ded7c3f5a2",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.step",
+      "http_status": null,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "http_status": 404,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/TPS3839K33DBZR/TPS3839K33DBZR.step",
+      "http_status": null,
+      "remote_sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "matches": true
+    },
+    {
+      "path": "references/tps7a20.pdf",
+      "http_status": 404,
+      "remote_sha256": null,
+      "matches": null
+    }
+  ]
+}
