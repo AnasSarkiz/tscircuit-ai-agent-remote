@@ -1,0 +1,198 @@
+{
+  "repository_full_name": "tscircuit/core",
+  "base": "690320b3a80b7364c0ffc10331456d89f2df78df",
+  "head": "03edaf8f864a807a43448c7c9142c80e7d71e25d",
+  "status": "ahead",
+  "ahead_by": 5,
+  "behind_by": 0,
+  "total_commits": 5,
+  "too_large": null,
+  "base_commit": {
+    "sha": "690320b3a80b7364c0ffc10331456d89f2df78df",
+    "url": "https://api.github.com/repos/tscircuit/core/commits/690320b3a80b7364c0ffc10331456d89f2df78df",
+    "html_url": "https://github.com/tscircuit/core/commit/690320b3a80b7364c0ffc10331456d89f2df78df"
+  },
+  "merge_base_commit": {
+    "sha": "690320b3a80b7364c0ffc10331456d89f2df78df",
+    "url": "https://api.github.com/repos/tscircuit/core/commits/690320b3a80b7364c0ffc10331456d89f2df78df",
+    "html_url": "https://github.com/tscircuit/core/commit/690320b3a80b7364c0ffc10331456d89f2df78df"
+  },
+  "files": [
+    {
+      "filename": "lib/components/primitive-components/Port/apply-pin-attributes-to-source-port.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "lib/components/primitive-components/SchematicText.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0,
+      "changes": 3,
+      "previous_filename": null
+    },
+    {
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/components/normal-components/chip-bga-column-major-attributes.test.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/components/normal-components/chip-source-port-pin-attributes.test.tsx",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/components/primitive-components/__snapshots__/custom-symbol-port-scaled-connected-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/components/primitive-components/__snapshots__/schematic-text-refdes-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/drc/__snapshots__/source-pin-voltage-compatible-f1c-schematic.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/drc/__snapshots__/source-pin-voltage-mismatch-f1c-schematic.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/drc/source-pin-voltage-check-disabled.test.tsx",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/drc/source-pin-voltage-compatible-f1c.test.tsx",
+      "status": "added",
+      "additions": 15,
+      "deletions": 0,
+      "changes": 15,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/drc/source-pin-voltage-mismatch-f1c.test.tsx",
+      "status": "added",
+      "additions": 36,
+      "deletions": 0,
+      "changes": 36,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/features/schematic-net-superscripts/__snapshots__/disconnected-subcircuits-schematic.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/fixtures/f1c-voltage-compatibility.tsx",
+      "status": "added",
+      "additions": 47,
+      "deletions": 0,
+      "changes": 47,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/__snapshots__/custom-symbol-reference-text-ownership-schematic.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/__snapshots__/repro-ics43434-polygon-solder-paste-pcb.snap.svg",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/__snapshots__/repro-ics43434-polygon-solder-paste-schematic.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/__snapshots__/repro-polygon-solder-paste-pcb.snap.svg",
+      "status": "added",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/__snapshots__/repro90-custom-symbol-port-scaling-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/custom-symbol-reference-text-ownership.test.tsx",
+      "status": "added",
+      "additions": 66,
+      "deletions": 0,
+      "changes": 66,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/repro-ics43434-polygon-solder-paste.test.tsx",
+      "status": "added",
+      "additions": 34,
+      "deletions": 0,
+      "changes": 34,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/repros/repro-polygon-solder-paste.test.tsx",
+      "status": "added",
+      "additions": 31,
+      "deletions": 0,
+      "changes": 31,
+      "previous_filename": null
+    }
+  ]
+}

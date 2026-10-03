@@ -199,3 +199,7 @@ B-015 blocks approval of native fabrication BOM metadata: official converter0.0.
 | C78 | Murata GRM188R71C104KA01D | C45000 | 100nF supply decoupling |
 
 These are independent fixture allocations, not a complete production BOM. Current native stock: C7836=34179,C98220=22,C21190=8,013,731,C45000=3848. Prior C22548 stock5 prompted a supported genuine C21190 import/substitution in this candidate; other prior sheets retain their original parts. C25804/0603WAF1002T5E is imported but unselected: stock-filtered catalogue results are empty while its independent EasyEDA import succeeds. Final assembly stock, total quantities, exact resistor temperature/aging, supplier lands and complete hardware privacy remain open. No imported definition or fabricated substitute is authored. See evidence/hold-readback-review-2026-10-03/qualification.md.
+
+## A0-reference-import-review — 2026-10-03
+
+C105188/C94934/C20917/C15127 were regenerated intact through the published official easyeda0.0.370 JLC converter CLI; footprint/pin labels unchanged, native reference ownership verified. They remain application-review components, not a finalized complete-board BOM. C41348533/LEADER LD-SM-430 is an imported alternate SMT motor candidate only: polygon paste absent, third mounting-land electrical role/model/body/mechanics/current/reflow qualification pending. Additional speakers C20613566/C49246973/C7430168 failed exact library import and remain excluded. See current dated evidence; no unqualified substitute was selected.

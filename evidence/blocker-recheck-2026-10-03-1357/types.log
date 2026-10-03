@@ -1,0 +1,10 @@
+$ tsc --noEmit
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(1,60): error TS2307: Cannot find module 'easyeda/browser' or its corresponding type declarations.
+  There are types at '/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/easyeda/dist/browser/index.d.ts', but this result could not be resolved under your current 'moduleResolution' setting. Consider updating to 'node16', 'nodenext', or 'bundler'.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(9,47): error TS2307: Cannot find module 'circuit-json-to-tscircuit' or its corresponding type declarations.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(10,45): error TS2307: Cannot find module './fetch-datasheet-pin-attributes' or its corresponding type declarations.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(11,53): error TS2307: Cannot find module './add-datasheet-attributes-to-circuit-json' or its corresponding type declarations.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(15,8): error TS2307: Cannot find module './add-cad-model-to-tsx' or its corresponding type declarations.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(16,40): error TS2307: Cannot find module './download-cad-model-assets' or its corresponding type declarations.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(20,8): error TS2307: Cannot find module './footprinter/convert-imported-footprint-to-footprinter' or its corresponding type declarations.
+evidence/upstream-watch-2026-10-03-0511/cli-2237-import-component-from-jlcpcb.ts(21,50): error TS2307: Cannot find module './footprinter/get-easyeda-footprinter-source-hints' or its corresponding type declarations.

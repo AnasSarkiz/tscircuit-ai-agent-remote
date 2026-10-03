@@ -1,0 +1,37 @@
+{
+  "status": "read_only_candidate_not_integrated",
+  "source_revision": "0573bf4492817ea0263827b6f0431fb7905d4959",
+  "module": "ESP32-S3-WROOM-1-N8R8",
+  "jlcpcb_part_number": "C2913201",
+  "assignments": [
+    { "net": "MCU_HOLD_READ", "gpio": 21, "module_pin": 23, "direction": "input", "interface": "buffered_hold" },
+    { "net": "MCU_MIC_BCLK", "gpio": 15, "module_pin": 8, "direction": "output", "interface": "i2s0_rx_master" },
+    { "net": "MCU_MIC_WS", "gpio": 16, "module_pin": 9, "direction": "output", "interface": "i2s0_rx_master" },
+    { "net": "MCU_MIC_SD", "gpio": 17, "module_pin": 10, "direction": "input", "interface": "i2s0_rx_master" },
+    { "net": "MCU_AUDIO_BCLK", "gpio": 9, "module_pin": 17, "direction": "output", "interface": "i2s1_tx_master" },
+    { "net": "MCU_AUDIO_LRCLK", "gpio": 8, "module_pin": 12, "direction": "output", "interface": "i2s1_tx_master" },
+    { "net": "MCU_AUDIO_DIN", "gpio": 7, "module_pin": 7, "direction": "output", "interface": "i2s1_tx_master" },
+    { "net": "MCU_AUDIO_ENABLE", "gpio": 4, "module_pin": 4, "direction": "output", "interface": "active_high_enable" },
+    { "net": "MCU_HAPTIC_ENABLE", "gpio": 5, "module_pin": 5, "direction": "output", "interface": "active_high_enable" },
+    { "net": "LCD_ENABLE", "gpio": 6, "module_pin": 6, "direction": "output", "interface": "active_high_enable" },
+    { "net": "MCU_LCD_CS_N", "gpio": 10, "module_pin": 18, "direction": "output", "interface": "spi2" },
+    { "net": "MCU_LCD_SCLK", "gpio": 12, "module_pin": 20, "direction": "output", "interface": "spi2" },
+    { "net": "MCU_LCD_SDA", "gpio": 11, "module_pin": 19, "direction": "output", "interface": "spi2_mosi" },
+    { "net": "MCU_LCD_DC", "gpio": 13, "module_pin": 21, "direction": "output", "interface": "display_control" },
+    { "net": "MCU_LCD_RESET_N", "gpio": 14, "module_pin": 22, "direction": "output", "interface": "display_control" }
+  ],
+  "excluded_gpios": [0, 3, 19, 20, 35, 36, 37, 39, 40, 41, 42, 43, 44, 45, 46],
+  "excluded_reasons": {
+    "0_3_45_46": "boot_straps_and_existing_service_boot",
+    "19_20": "existing_native_usb",
+    "35_36_37": "N8R8_octal_psram",
+    "39_40_41_42": "reserve_pad_jtag_and_rom_external_phy_behavior",
+    "43_44": "existing_service_uart"
+  },
+  "unassigned_available_gpios": [1, 2, 18, 38, 47, 48],
+  "pending_functions": ["backlight_control", "battery_voltage_sensing", "charger_status", "usb_present_or_current_status_if_required"],
+  "firmware_implemented": false,
+  "native_source_modified": false,
+  "routing_enabled": false,
+  "fabrication_qualified": false
+}

@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-03T05:36:41.114969+00:00",
+  "source_revision": "0573bf4492817ea0263827b6f0431fb7905d4959",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-hold-readback-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 1081,
+  "reported_failures": 20,
+  "ready_to_build": false,
+  "is_private": true
+}
+{
+  "matching_files": 13,
+  "missing_files": [
+    "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+    "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+    "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+    "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+    "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+    "imports/TLV3201AIDBVR/TLV3201AIDBVR.tsx",
+    "references/tps7a20.pdf"
+  ],
+  "unverified_files": []
+}

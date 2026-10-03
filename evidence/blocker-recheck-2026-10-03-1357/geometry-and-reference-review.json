@@ -1,0 +1,43 @@
+{
+  "comparator": {
+    "required_labels": {
+      "U7": "schematic_text_10"
+    },
+    "pcb_traces": 0,
+    "pcb_vias": 0,
+    "missing_reference_warnings": [],
+    "polygon_pads": 0,
+    "paste_records": 68
+  },
+  "usb": {
+    "required_labels": {
+      "D2": "schematic_text_9"
+    },
+    "pcb_traces": 0,
+    "pcb_vias": 0,
+    "missing_reference_warnings": [],
+    "polygon_pads": 4,
+    "paste_records": 101
+  },
+  "amplifier": {
+    "required_labels": {
+      "Q1": "schematic_text_4",
+      "Q2": "schematic_text_5"
+    },
+    "pcb_traces": 0,
+    "pcb_vias": 0,
+    "missing_reference_warnings": [],
+    "polygon_pads": 0,
+    "paste_records": 53
+  },
+  "microphone": {
+    "required_labels": {},
+    "pcb_traces": 0,
+    "pcb_vias": 0,
+    "missing_reference_warnings": [],
+    "polygon_pads": 4,
+    "paste_records": 5,
+    "b003_ground_ports": 4,
+    "b003_linked_ground_pads": 4
+  }
+}

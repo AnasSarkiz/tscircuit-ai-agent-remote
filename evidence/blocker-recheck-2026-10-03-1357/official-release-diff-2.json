@@ -1,0 +1,86 @@
+{
+  "repository_full_name": "tscircuit/circuit-json",
+  "base": "7e26eedd9aa7e53cffc50b99410e46dbe3fc2e7b",
+  "head": "bf0a010baf3a3469d49a141137c74c33ac56dacb",
+  "status": "diverged",
+  "ahead_by": 5,
+  "behind_by": 1,
+  "total_commits": 5,
+  "too_large": null,
+  "base_commit": {
+    "sha": "7e26eedd9aa7e53cffc50b99410e46dbe3fc2e7b",
+    "url": "https://api.github.com/repos/tscircuit/circuit-json/commits/7e26eedd9aa7e53cffc50b99410e46dbe3fc2e7b",
+    "html_url": "https://github.com/tscircuit/circuit-json/commit/7e26eedd9aa7e53cffc50b99410e46dbe3fc2e7b"
+  },
+  "merge_base_commit": {
+    "sha": "84c1ef401aa7496f0d7ec6df235f1dca7c61f1b9",
+    "url": "https://api.github.com/repos/tscircuit/circuit-json/commits/84c1ef401aa7496f0d7ec6df235f1dca7c61f1b9",
+    "html_url": "https://github.com/tscircuit/circuit-json/commit/84c1ef401aa7496f0d7ec6df235f1dca7c61f1b9"
+  },
+  "files": [
+    {
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "previous_filename": null
+    },
+    {
+      "filename": "src/pcb/pcb_solder_paste.ts",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 1,
+      "changes": 40,
+      "previous_filename": null
+    },
+    {
+      "filename": "src/source/properties/source_pin_attributes.ts",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 4,
+      "changes": 26,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/pcb-solder-paste-polygon.test.ts",
+      "status": "added",
+      "additions": 59,
+      "deletions": 0,
+      "changes": 59,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/source-pin-voltage-invalid.test.ts",
+      "status": "added",
+      "additions": 30,
+      "deletions": 0,
+      "changes": 30,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/source-pin-voltage-normalization.test.ts",
+      "status": "added",
+      "additions": 49,
+      "deletions": 0,
+      "changes": 49,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/source_port.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "previous_filename": null
+    }
+  ]
+}

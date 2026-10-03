@@ -1,0 +1,11 @@
+Errors: 0
+Warnings: 9
+- source_component_pins_underspecified_warning: All pins on Q1 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on Q2 are underspecified (no pinAttributes set)
+- source_component_pins_underspecified_warning: All pins on J4 are underspecified (no pinAttributes set)
+- source_no_power_pin_defined_warning: Q1 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q2 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: J4 has no pin with requires_power=true
+- source_no_ground_pin_defined_warning: Q1 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: Q2 has no pin with requires_ground=true
+- source_no_ground_pin_defined_warning: J4 has no pin with requires_ground=true

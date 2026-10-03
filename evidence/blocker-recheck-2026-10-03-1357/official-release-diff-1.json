@@ -1,0 +1,470 @@
+{
+  "repository_full_name": "tscircuit/easyeda-converter",
+  "base": "dc3fee46760b0abb146607da47b3fa868662edf3",
+  "head": "4c1ac4b60198d5dc55dcb4e587e3bb2f45ae7716",
+  "status": "ahead",
+  "ahead_by": 2,
+  "behind_by": 0,
+  "total_commits": 2,
+  "too_large": null,
+  "base_commit": {
+    "sha": "dc3fee46760b0abb146607da47b3fa868662edf3",
+    "url": "https://api.github.com/repos/tscircuit/easyeda-converter/commits/dc3fee46760b0abb146607da47b3fa868662edf3",
+    "html_url": "https://github.com/tscircuit/easyeda-converter/commit/dc3fee46760b0abb146607da47b3fa868662edf3"
+  },
+  "merge_base_commit": {
+    "sha": "dc3fee46760b0abb146607da47b3fa868662edf3",
+    "url": "https://api.github.com/repos/tscircuit/easyeda-converter/commits/dc3fee46760b0abb146607da47b3fa868662edf3",
+    "html_url": "https://github.com/tscircuit/easyeda-converter/commit/dc3fee46760b0abb146607da47b3fa868662edf3"
+  },
+  "files": [
+    {
+      "filename": "lib/schemas/single-letter-shape-schema.ts",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 3,
+      "changes": 11,
+      "previous_filename": null
+    },
+    {
+      "filename": "lib/websafe/convert-to-typescript-component/generate-symbol-reference-text.ts",
+      "status": "added",
+      "additions": 35,
+      "deletions": 0,
+      "changes": 35,
+      "previous_filename": null
+    },
+    {
+      "filename": "lib/websafe/convert-to-typescript-component/generate-symbol-tsx.ts",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 1,
+      "changes": 11,
+      "previous_filename": null
+    },
+    {
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/assets/C105188.raweasy.json",
+      "status": "added",
+      "additions": 240,
+      "deletions": 0,
+      "changes": 240,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/assets/C15127.raweasy.json",
+      "status": "added",
+      "additions": 233,
+      "deletions": 0,
+      "changes": 233,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/assets/C20917.raweasy.json",
+      "status": "added",
+      "additions": 229,
+      "deletions": 0,
+      "changes": 229,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/assets/C94934.raweasy.json",
+      "status": "added",
+      "additions": 246,
+      "deletions": 0,
+      "changes": 246,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C1046-to-ts-with-stepModel.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C1046-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C113367-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C18185602-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C20526-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C281113-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C2961147-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C2998002-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C309274-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C5830143-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C60708-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C75749-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/C8545-to-ts.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C1046-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C1046-to-ts-with-stepModel-schematic.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C113367-duplicate-schematic-pin-repro.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C113367-overlapping-pin-labels.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C113367-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C18185602-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C1985372-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C20526-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C281113-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C2961147-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C2998002-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C309274-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C5830143-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C62857-capacitor-array-symbol.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C7519-schematic-view.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C75749-to-ts-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/C8545-oversized-symbol-repro.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/additional-payload-variants-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/c1046-l0805-inductor-as-chip-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/c105188-reference-label-repro.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/c15127-reference-label-repro.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/c20917-reference-label-repro.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/c281113-l0805-inductor-as-chip-schematic.snap.svg",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/c94934-reference-label-repro.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/__snapshots__/source-reference-label.snap.svg",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/c105188-reference-label-repro.test.ts",
+      "status": "added",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/c15127-reference-label-repro.test.ts",
+      "status": "added",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/c20917-reference-label-repro.test.ts",
+      "status": "added",
+      "additions": 22,
+      "deletions": 0,
+      "changes": 22,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/c94934-reference-label-repro.test.ts",
+      "status": "added",
+      "additions": 28,
+      "deletions": 0,
+      "changes": 28,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/existing-dynamic-reference-label.test.ts",
+      "status": "added",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/hidden-reference-label.test.ts",
+      "status": "added",
+      "additions": 21,
+      "deletions": 0,
+      "changes": 21,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/l0805-inductors-detected-as-chips.test.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/convert-to-ts/source-reference-label.test.ts",
+      "status": "added",
+      "additions": 44,
+      "deletions": 0,
+      "changes": 44,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/fixtures/render-imported-symbol-reference-labels.ts",
+      "status": "added",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "previous_filename": null
+    },
+    {
+      "filename": "tests/parse-tests/malformed-schema-variants.test.ts",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "previous_filename": null
+    }
+  ]
+}

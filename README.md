@@ -1,14 +1,13 @@
 # tscircuit AI agent remote
 
-Revision A0-regulated-microphone-clock-review (work in progress), updated 2026-10-03: **independent power, display, MCU/USB, audio and haptic application reviews exist; no complete handheld schematic or PCB exists**. B-003 is resolved with an official core release; imported geometry, paste, schema, sourcing and publication blockers remain. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-reference-import-review (work in progress), updated 2026-10-03: **B-008 reference labels are corrected through official JLC imports; B-003 ground ports remain verified. Independent circuit reviews exist; no complete handheld schematic or PCB exists.** Missing polygon solder paste remains a real assembly blocker. Requirements, component choices, electrical qualification and full placement remain unfinished; no routing or fabrication approval.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
 Private tscircuit package: https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote
 — last fully verified private source release is **0.0.2-wip-a0-core-alignment**
-(274 files; Git 8bbde6e). MCU/USB source commit **02950fb** reached GitHub; native private release
-**0.0.2-wip-a0-mcu-usb-review** failed with two timeouts and two HTTP413
-file rejections, and remains ready_to_build=false (B-009). This is disclosed work-in-progress prototype source;
+(274 files; Git 8bbde6e). Latest source commit **0573bf4492817ea0263827b6f0431fb7905d4959** reached GitHub; native private release
+**0.0.2-wip-a0-hold-readback-review** exited1 with1081reported successes/20failures. Exact readback proves13reported failed files arrived byte-identically, while seven are404: six persistentHTTP413 files plus timeout C105188/TLV3201AIDBVR.tsx. No failed-file cases remain mismatched or unverified. Package private=true/ready_to_build=false (B-009). Exact receipt in `evidence/hold-readback-publication-2026-10-03/`; local outcome/watch notes were created after enumeration and are excluded from that release. This is disclosed work-in-progress prototype source;
 no complete-board build or fabrication approval is claimed.
 
 The accepted device is the square, screen-dominant concept with one top-edge hold-to-talk button, a speaker and rechargeable battery. Hold, speak and release to send a Wi-Fi request; show and speak the response. All PCB electronics must assemble on the top side. The encoder and separate APPROVE/REJECT controls are removed from the active design. See `REQUIREMENTS.md` for the complete requirement changes and remaining interface decisions. Firmware implementation is outside this task.
@@ -51,7 +50,7 @@ C370970 uses its existing native `<chip>` as a schematic box. Pin labels, center
 
 ## Commands
 
-Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **21 pass / 1 fail**: the native Circuit JSON schema regression reproduces B-010. Manufacturer connection and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
+Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **26 pass / 1 fail**: the native Circuit JSON schema regression reproduces B-010. Manufacturer connection and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
 
 ## Evidence and remaining work
 
@@ -70,7 +69,7 @@ Import provenance: **JLCEDA/EasyEDA Official Library**, accessed through the sup
 
 ## A0 regulator review and current fix status
 
-Current pins: tscircuit **0.0.2742**, CLI **0.1.2235**, core **0.0.2058**.
+Current pins: tscircuit **0.0.2742**, CLI **0.1.2235**, core **0.0.2070**, props **0.0.682**, circuit-json **0.0.513**, easyeda **0.0.370**. Earlier version checks below are historical.
 Core PR [4323](https://github.com/tscircuit/core/pull/4323) merged and is present
 in the published release. Native CLI uses the locally imported tscircuit renderer;
 a supported Bun override and clean installation aligned its nested dependency.
@@ -192,3 +191,5 @@ Battery readiness is under review in `src/power/battery-ready-review.tsx`; its i
 Latest independent studies: genuine two-contact hold candidate, current JLCPCB fabrication/USB impedance rules, measured nominal native pad clearances, saved-route APIs and native BOM export metadata. They do not complete the board. New B-015 is independently confirmed: native BOM Comment loses MPN/resolver data. The exact rechargeable pack and full circuit/placement/routing remain unfinished; no fabrication package or actual saved copper routes exists. See VALIDATION.md and the dated evidence folders.
 
 The latest independent hardware-hold readback uses a genuine Schmitt buffer to separate the MCU read pin from the microphone-enable signal. A verified genuine higher-stock resistor replaces the low-stock part only in that candidate. Native A4/build/diagnostics/snapshots pass; full JSON still fails B-010, and the canonical suite has23passes/one known failure. The top-control mechanical study also finds a17.95mm nominal switch/antenna gap by moving the module left on the50x65trial; actual enclosure, actuation, raised LCD, battery and speaker remain unfinished. This is an unrouted, untested engineering prototype. Parent Git fa90b54 is on GitHub; its private0.0.2-wip-a0-fabrication-review upload remains incomplete with six HTTP413 files verified absent,22timeout files verified present and ready_to_build=false. See the hold-readback and top-control dated evidence.
+
+Latest review: `evidence/blocker-recheck-2026-10-03-1357/`. Four genuine imports now carry correct native reference labels through official released tooling. All four native builds and20 diagnostics pass; current suite26pass/one existing B-010fail, formatting/types pass. Missing microphone polygon paste remains an assembly blocker. Three additional speakers have no importable libraries; genuine alternate haptic C41348533 imports but still lacks polygon paste and remains mechanically/electrically unqualified. Publication/BOM-description failures do not stop independent circuit work. Complete-board routing remains gated by actual requirements, component, connectivity and placement qualification.

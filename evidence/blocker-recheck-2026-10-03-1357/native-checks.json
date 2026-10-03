@@ -1,0 +1,292 @@
+[
+  {
+    "fixture": "comparator",
+    "command": "prior native build, preserved build.log",
+    "exit_code": 0
+  },
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "netlist",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "pin_specification",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "source",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "build",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx",
+      "--routing-disabled",
+      "--pcb-png",
+      "--pcb-svgs",
+      "--schematic-svgs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "netlist",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "pin_specification",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "source",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "build",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx",
+      "--routing-disabled",
+      "--pcb-png",
+      "--pcb-svgs",
+      "--schematic-svgs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "netlist",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "pin_specification",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "source",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "microphone",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "build",
+      "evidence/microphone-local-correction.circuit.tsx",
+      "--routing-disabled",
+      "--pcb-png",
+      "--pcb-svgs",
+      "--schematic-svgs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "microphone",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "netlist",
+      "evidence/microphone-local-correction.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "microphone",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "pin_specification",
+      "evidence/microphone-local-correction.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "microphone",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "source",
+      "evidence/microphone-local-correction.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "microphone",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "evidence/microphone-local-correction.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "microphone",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "check",
+      "placement",
+      "evidence/microphone-local-correction.circuit.tsx"
+    ],
+    "exit_code": 0
+  }
+]

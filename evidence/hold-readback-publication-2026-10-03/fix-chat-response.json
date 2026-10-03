@@ -1,0 +1,8 @@
+{
+  "thread_id": "01a0f218-ce92-7671-b666-efccdef3aed2",
+  "host_id": "local",
+  "title": "Clarify issue status",
+  "cursor": "8785ec91-1b29-4589-b570-3162b7731ee4:34",
+  "response": "For this exact release, the reported result is 13 verified uploads and seven missing files: six HTTP 413 rejections plus TLV3201AIDBVR.tsx. Keep that missing source file tied to this version; prior releases had different timeout outcomes. Publication remains incomplete.",
+  "scope": "13 verified files refers to the20reported failures;1081CLI-reported successful uploads were not all independently hashed in this readback. No new upstream landing or implementation authorization was supplied."
+}

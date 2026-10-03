@@ -1,0 +1,37 @@
+{
+  "name": "@tsci/AnasSarkiz.tscircuit-ai-agent-remote",
+  "version": "0.0.2",
+  "description": "Handheld Wi-Fi AI agent remote; engineering prototype under validation",
+  "main": "index.circuit.tsx",
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
+    "snapshot": "tsci snapshot",
+    "snapshot:update": "tsci snapshot --update",
+    "start": "tsci dev",
+    "typecheck": "tsc --noEmit",
+    "build:placement": "tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "test": "bun test ./tests"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@tscircuit/cli": "0.1.2235",
+    "@tscircuit/core": "0.0.2058",
+    "@types/bun": "1.4.2",
+    "tscircuit": "0.0.2742",
+    "typescript": "5.9.3"
+  },
+  "author": "AnasSarkiz",
+  "private": true,
+  "overrides": {
+    "@tscircuit/core": "0.0.2058"
+  }
+}

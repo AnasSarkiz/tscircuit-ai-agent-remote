@@ -24,14 +24,18 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
     "@tscircuit/cli": "0.1.2235",
-    "@tscircuit/core": "0.0.2058",
+    "@tscircuit/core": "0.0.2070",
     "@types/bun": "1.4.2",
+    "easyeda": "0.0.370",
     "tscircuit": "0.0.2742",
     "typescript": "5.9.3"
   },
   "author": "AnasSarkiz",
   "private": true,
   "overrides": {
-    "@tscircuit/core": "0.0.2058"
+    "@tscircuit/core": "0.0.2070",
+    "easyeda": "0.0.370",
+    "@tscircuit/props": "0.0.682",
+    "circuit-json": "0.0.513"
   }
 }

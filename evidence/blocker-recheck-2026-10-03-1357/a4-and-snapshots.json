@@ -1,0 +1,83 @@
+[
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "export",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "--format",
+      "schematic-pdf",
+      "--output",
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/evidence/blocker-recheck-2026-10-03-1357/comparator/schematic-a4.pdf"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "comparator",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "snapshot",
+      "evidence/controls-review-2026-10-03/isolation-ics.circuit.tsx",
+      "--update"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "export",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx",
+      "--format",
+      "schematic-pdf",
+      "--output",
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/evidence/blocker-recheck-2026-10-03-1357/usb/schematic-a4.pdf"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "usb",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "snapshot",
+      "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx",
+      "--update"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "export",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx",
+      "--format",
+      "schematic-pdf",
+      "--output",
+      "/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/evidence/blocker-recheck-2026-10-03-1357/amplifier/schematic-a4.pdf"
+    ],
+    "exit_code": 0
+  },
+  {
+    "fixture": "amplifier",
+    "command": [
+      "bunx",
+      "--no-install",
+      "tsci",
+      "snapshot",
+      "evidence/audio-charge-review-2026-10-03/speaker-amplifier.circuit.tsx",
+      "--update"
+    ],
+    "exit_code": 0
+  }
+]
