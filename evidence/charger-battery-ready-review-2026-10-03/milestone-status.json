@@ -1,0 +1,25 @@
+{
+  "version_tag_suffix": "wip-a0-battery-ready-review",
+  "expected_registry_version": "0.0.2-wip-a0-battery-ready-review",
+  "git_commit": "determined by milestone commit",
+  "github_status": "pending",
+  "tscircuit_status": "pending",
+  "fabrication_ready": false,
+  "physical_tests": "pending",
+  "checks": {
+    "format": 0,
+    "types": 0,
+    "tests": {
+      "exit": 1,
+      "pass": 22,
+      "fail": 1,
+      "assertions": 213,
+      "known_blocker": "B-010"
+    },
+    "native_candidate_checks": "allfiveexit0",
+    "native_schema_invalid_elements": 7
+  },
+  "preceding_git_revision": "435493d1574c19dfb2e732ed359cda79e4d1205d",
+  "preceding_tscircuit_release": "0.0.2-0.0.2-wip-a0-mic-clock-review",
+  "preceding_publication": "incomplete:6HTTP413404,3timeout exacthash;private=true ready=false"
+}

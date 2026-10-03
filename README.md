@@ -186,3 +186,5 @@ private version 0.0.2-wip-a0-haptic-driver-review remains incomplete: 771 report
 successes, 13 failures; seven timeout files byte-verified and six actual missing
 HTTP413 files. Package remains private=true, ready_to_build=false. The new
 milestone's publication is pending.
+
+Battery readiness is under review in `src/power/battery-ready-review.tsx`; its isolated A4/PCB fixture passes native diagnostic checks but remains electrically unqualified for arbitrary startup/reconnect, absent pack and final battery protection/temperature policy. Canonical tests currently have 22 passes and one known strict-schema failure. This is an unrouted engineering prototype; no full-board fabrication package exists.

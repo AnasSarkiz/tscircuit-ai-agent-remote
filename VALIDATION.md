@@ -686,3 +686,17 @@ Whole-board stage 1 remains in progress, stage 2 blocked, stages 3–6 not start
 and physical stage 7 pending. No full copper routes or fabrication package
 exists. Battery sourcing exception remains unanswered. Confirmed findings were
 sent to the authorized fix chat; independent work continues.
+
+## Battery-readiness candidate and latest publication review — 2026-10-03
+
+Independent `src/power/battery-ready-review.tsx` uses genuine unmodified TPS3808G33DBVR / C43698 to sense charger BAT while powered from charger OUT. Five top parts, 14 SMT/paste pads, zero copper/vias/errors. Native build, all five diagnostics, A4 PDF export and snapshots exit 0; PCB, A4 schematic, snapshots and TI pin page visually inspected. Formatting and TypeScript pass; canonical suite 22 pass / one existing B-010 fail / 213 assertions. Seven strict native JSON failures persist. No full-board gate passes. Exact evidence and conditional static limits: `evidence/charger-battery-ready-review-2026-10-03/qualification.md`.
+
+TI documents asserted RESET between POR and minimum operating supply, but arbitrary supply ramps, the 100 nF reset load, absence/open pack, capacitor history, cutoff relative to actual PCM, full VSYS load isolation and charging/NTC policy remain unqualified. G33 minimum trip 3.02395 V cannot ensure shutdown before the unselected example pack's maximum 3.10 V protection threshold. Protected rechargeable pack/harness/NTC choice still requires resolution. No battery or thermistor substitute was authored. New wrong-part searches are saved as supporting B-004 evidence and excluded from selection.
+
+Latest official core remains 0.0.2063; importer easyeda remains 0.0.368; CLI remains 0.1.2237. Exact Circuit JSON 0.0.510-to-0.0.511 published source comparison changes missing-MPN warning fields only and does not fix B-010. No board dependency update applied.
+
+GitHub revision 435493d1574c19dfb2e732ed359cda79e4d1205d was pushed and exact remote head verified. Supported native private `0.0.2-wip-a0-mic-clock-review` exited 1: 834 reported successes, nine failures (six HTTP413, three timeouts). Readback evidence is in this new review directory. Publication remains B-009; no omission, forced-ready flag or weakened checks. Source and artifacts at the previous milestone were held unchanged throughout its publisher run.
+
+Publication identity correction: native --version-tag prefixes package version. Actual previous release is `0.0.2-0.0.2-wip-a0-mic-clock-review`. The initial single-prefix lookup was invalid and its404 results are excluded from absence conclusions; corrected readback is retained separately.
+
+Corrected mic-clock readback: all three timeout files match exact hashes; six HTTP413 files are absent; package private=true and ready_to_build=false. This confirms B-009 without relying on the invalid initial lookup.

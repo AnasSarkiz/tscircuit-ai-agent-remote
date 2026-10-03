@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-03T04:03:51.281735+00:00",
+  "source_revision": "435493d1574c19dfb2e732ed359cda79e4d1205d",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-mic-clock-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 834,
+  "reported_failures": 9,
+  "ready_to_build": null,
+  "is_private": true
+}
+{
+  "matching_files": 0,
+  "missing_files": [
+    "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+    "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+    "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+    "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+    "imports/SN74LVC1G14DBVR/SN74LVC1G14DBVR.step",
+    "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+    "imports/TS5A23157DGSR/TS5A23157DGSR.step",
+    "references/sn74lvc1g125.pdf",
+    "references/tps7a20.pdf"
+  ],
+  "unverified_files": []
+}

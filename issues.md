@@ -379,3 +379,11 @@ All three concerns sent to the authorized fix chat.
   LCD, tolerances, substrate, top button and case fit remain pending. This does
   not prove all square layouts impossible or validate a replacement for the
   accepted square exterior. No imported definition was modified.
+
+### 2026-10-03 battery-readiness and publication evidence
+
+C43698 TPS3808G33DBVR imports successfully and supplies an independent documented low-voltage-reset candidate. Seven native Circuit JSON errors reproduce B-010; battery readiness/presence, dynamic reset current/timing, actual pack cutoff/NTC and charger policy remain open hardware qualification, not an importer defect. Unrelated exact resistor, speaker and battery results reproduce B-004 and were excluded.
+
+B-009 persists at Git 435493d: supported private mic-clock publication reports 834 uploaded and nine failures, including six HTTP413 files and three timeout files. Readback receipts are retained in `evidence/charger-battery-ready-review-2026-10-03`. Circuit JSON 0.0.511 changes only missing-MPN warning metadata and does not resolve B-010; no dependency update applied.
+
+Publication identity correction: native --version-tag prefixes package version. Actual previous release is `0.0.2-0.0.2-wip-a0-mic-clock-review`. The initial single-prefix lookup was invalid and its404 results are excluded from absence conclusions; corrected readback is retained separately.

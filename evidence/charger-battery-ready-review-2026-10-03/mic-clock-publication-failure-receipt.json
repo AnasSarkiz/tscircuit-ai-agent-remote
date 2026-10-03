@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-03T04:05:19.822721+00:00",
+  "source_revision": "435493d1574c19dfb2e732ed359cda79e4d1205d",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-0.0.2-wip-a0-mic-clock-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 834,
+  "reported_failures": 9,
+  "ready_to_build": false,
+  "is_private": true,
+  "files": [
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/amplifier-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 7839968,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/audio-charge-review-2026-10-03/bq24074.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3739103,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/haptic-review-2026-10-03/driver-schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 4999480,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "evidence/type-c-current-review-2026-10-03/schema-failures.json",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 7839968,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/SN74LVC1G14DBVR/SN74LVC1G14DBVR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2944743,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 5543534,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/TS5A23157DGSR/TS5A23157DGSR.step",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 2015773,
+      "remote_sha256": "503ced2bc583feeb2688e6ef85796f8323ef4077f3c5cbabd2ba88fb17575fa2",
+      "matches": true
+    },
+    {
+      "path": "references/sn74lvc1g125.pdf",
+      "http_status": null,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 3056649,
+      "remote_sha256": "1098d46e4565695e9823a08309bc581e2c9ead26b19e99a43a011a38642b27ca",
+      "matches": true
+    },
+    {
+      "path": "references/tps7a20.pdf",
+      "http_status": 404,
+      "network_error": null,
+      "download_http_status": null,
+      "download_error": null,
+      "local_bytes": 8989493,
+      "remote_sha256": null,
+      "matches": null
+    }
+  ]
+}

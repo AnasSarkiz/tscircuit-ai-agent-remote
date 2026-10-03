@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-03T04:01:48.023341+00:00",
+  "scope": "Independent static candidate only; not battery presence or dynamic startup proof",
+  "temperature_range_c": [
+    -40,
+    125
+  ],
+  "resistor_worst_tolerance_fraction": 0.02,
+  "corners": [
+    {
+      "pullup_ohms": 460600.0,
+      "pulldown_ohms": 460600.0,
+      "divider_ratio": 0.5,
+      "parallel_ohms": 230300.0,
+      "minimum_vsys_for_1p2v_en_with_0p5uA_sink": 2.6303,
+      "en_at_2p8v_with_0p5uA_sink": 1.2848499999999998
+    },
+    {
+      "pullup_ohms": 460600.0,
+      "pulldown_ohms": 479400.0,
+      "divider_ratio": 0.51,
+      "parallel_ohms": 234906.0,
+      "minimum_vsys_for_1p2v_en_with_0p5uA_sink": 2.583241176470588,
+      "en_at_2p8v_with_0p5uA_sink": 1.310547
+    },
+    {
+      "pullup_ohms": 479400.0,
+      "pulldown_ohms": 460600.0,
+      "divider_ratio": 0.49,
+      "parallel_ohms": 234906.0,
+      "minimum_vsys_for_1p2v_en_with_0p5uA_sink": 2.6886795918367348,
+      "en_at_2p8v_with_0p5uA_sink": 1.2545469999999999
+    },
+    {
+      "pullup_ohms": 479400.0,
+      "pulldown_ohms": 479400.0,
+      "divider_ratio": 0.5,
+      "parallel_ohms": 239700.0,
+      "minimum_vsys_for_1p2v_en_with_0p5uA_sink": 2.6397,
+      "en_at_2p8v_with_0p5uA_sink": 1.28015
+    }
+  ],
+  "required_vsys_static_v": 2.6886795918367348,
+  "lowest_en_at_2p8v_static_v": 1.2545469999999999,
+  "maximum_pullup_current_at_vsys_4p5v_and_reset_zero_a": 9.769865392965696e-06,
+  "g33_falling_trip_range_v": [
+    3.0239499999999997,
+    3.1160499999999995
+  ],
+  "g33_rising_upper_bound_using_max_hysteresis_v": 3.1927999999999996,
+  "nominal_rc_rise_time_constant_s": 0.0235,
+  "conditions_and_open_limits": [
+    "YAGEO 1% +100 ppm/C temperature contribution from25C; aging/soldering effects not included",
+    "TPS63802 EN0.2uA and TPS3808 RESET300nA are manufacturer bounds at their listed conditions; RESET leakage test is6.5V",
+    "BQ24074 BAT-to-OUT100mVmax is specified1A,VIN0,VBAT>3V; no extrapolation to provisional1.488A load",
+    "TPS3808 low-supply POR bound requiresVDD rise>=15us/V and15uA RESET load; capacitor discharge/reconnect may exceed this load",
+    "100nF at RESET differs from timing table50pF load; 20us delay istypical, notmaximum",
+    "No cap-effective-minimum, arbitrary ramp/history, missing-pack detection, full power path cutoff, orselected pack protection/NTC qualification",
+    "G33 minimumtrip3.02395V can follow EEMB example PCM maximumtrip3.10V; examplepack notselected"
+  ]
+}

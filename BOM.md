@@ -178,3 +178,7 @@ The 15-part fixture reuses C90053 (10 uF), C45000 (100 nF), C22548 (1 kohm),
 C14675 (100 kohm), C105588 (100 ohm) and C98220 (10 kohm). These are fixture
 quantities, not a completed board BOM. Native C5329581 LCD import remains
 present; the envelope study uses its manufacturer drawing without editing it.
+
+## Battery-readiness application candidate — 2026-10-03
+
+U25 is genuine TPS3808G33DBVR / C43698 (SOT-23-6), imported unchanged. Supplier search reports 6,139 pieces on 2026-10-03; recheck final availability. The independent five-part candidate allocates R96/R97=C114622 470 kohm and C76/C77=C45000 100 nF. This is a hardware buck-enable review, not an integrated charger or qualified pack. Threshold/low-supply/dynamic policy and actual protected battery, NTC, harness and discharge capacity remain unresolved. No unrelated speaker/battery/resistor search result was selected. See battery-readiness qualification evidence.

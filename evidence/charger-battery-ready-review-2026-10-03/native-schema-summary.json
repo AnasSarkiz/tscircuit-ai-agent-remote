@@ -1,0 +1,111 @@
+{
+  "schema": "circuit-json@0.0.510 any_circuit_element, unchanged",
+  "elements": 173,
+  "counts": {
+    "source_group": 2,
+    "schematic_sheet": 1,
+    "source_net": 4,
+    "source_port": 14,
+    "source_component": 5,
+    "source_board": 1,
+    "source_trace": 13,
+    "schematic_component": 5,
+    "schematic_text": 5,
+    "schematic_group": 2,
+    "schematic_port": 14,
+    "schematic_trace": 7,
+    "schematic_net_label": 8,
+    "pcb_component": 5,
+    "pcb_group": 1,
+    "pcb_board": 1,
+    "pcb_smtpad": 14,
+    "pcb_solder_paste": 14,
+    "pcb_silkscreen_path": 26,
+    "pcb_silkscreen_circle": 1,
+    "pcb_silkscreen_text": 5,
+    "pcb_courtyard_outline": 5,
+    "pcb_port": 14,
+    "cad_component": 5,
+    "source_project_metadata": 1
+  },
+  "failing_elements": 7,
+  "failures": [
+    {
+      "index": 47,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    }
+  ]
+}

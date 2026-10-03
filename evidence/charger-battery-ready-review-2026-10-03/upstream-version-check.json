@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-03T04:01:52.697022+00:00",
+  "packages": {
+    "@tscircuit/core": {
+      "version": "0.0.2063",
+      "gitHead": "a4734c4fc422655bb6a69a42f4e44c5eb00c7af2"
+    },
+    "@tscircuit/cli": {
+      "version": "0.1.2237",
+      "gitHead": "7b9cdd526be249e48c5e24afae8aa3bfde4b2175"
+    },
+    "circuit-json": {
+      "version": "0.0.511",
+      "gitHead": "7e26eedd9aa7e53cffc50b99410e46dbe3fc2e7b"
+    },
+    "tscircuit": {
+      "version": "0.0.2742",
+      "gitHead": "93f85f0fbea8d6395bacd12c7ac249b4889f8c4c"
+    },
+    "easyeda": {
+      "version": "0.0.368",
+      "gitHead": "68afc4918d9145a1e537d32d819b81aaab0a24b2"
+    }
+  },
+  "installed_schema_release": {
+    "version": "0.0.510",
+    "gitHead": "4eb485adf569620fbb8f18b3f6f00a1b1bcef4d7"
+  },
+  "circuit_json_release_review": "Exact published gitHead comparison changes missing-MPN warning standard field only; does not change failing PCB/schematic fields. No dependency update applied."
+}

@@ -1,0 +1,58 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U25: TPS3808G33DBVR
+ - R96: 470kΩ resistor
+ - R97: 470kΩ resistor
+ - C76: 100nF capacitor
+ - C77: 100nF capacitor
+
+NET: VSYS
+  - C76 pin1
+  - R96 pin1
+  - U25 VDD
+  - U25 N_MR
+
+NET: BUCK_ENABLE
+  - C77 pin1
+  - R97 pin1
+  - R96 pin2
+  - U25 N_RESET
+
+NET: GND
+  - C77 pin2
+  - C76 pin2
+  - R97 pin2
+  - U25 GND
+
+
+EMPTY NET PINS:
+  - U25 SENSE
+
+COMPONENT_PINS:
+U25 (TPS3808G33DBVR)
+- pin1(N_RESET): NETS(BUCK_ENABLE)
+- pin2(GND): NETS(GND)
+- pin3(N_MR): NETS(VSYS)
+- pin4(CT): NOT_CONNECTED
+- pin5(SENSE): NETS(PACK_BAT)
+- pin6(VDD): NETS(VSYS)
+
+R96 (470kΩ undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(BUCK_ENABLE)
+
+R97 (470kΩ undefined)
+- pin1(anode, pos, left): NETS(BUCK_ENABLE)
+- pin2(cathode, neg, right): NETS(GND)
+
+C76 (100nF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C77 (100nF undefined)
+- pin1: NETS(BUCK_ENABLE)
+- pin2: NETS(GND)
+
