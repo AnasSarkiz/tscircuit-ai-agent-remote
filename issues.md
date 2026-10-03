@@ -217,3 +217,56 @@ now uses exact imported C105188 with a VMIC/2 reference and a provisional 16 kHz
 voice target. Full switching/rail/load and power-off analysis remain pending.
 The blocked microphone, switch and comparator are not integrated into a complete
 board. Independent power, USB, MCU, charger and mechanical work continues.
+
+## B-005 additional scope — C165948 TYPE-C-31-M-12
+
+Current native MCU/USB fixture has four polygon VBUS/GND copper pads (13–16)
+with no linked paste records. Diagnostic F_Paste Gerber has zero polygon regions;
+97 flashes cover 93 rectangular SMD pads and four connector anchor paste records.
+This extends the confirmed core/export assembly defect beyond microphone GND.
+Evidence: `evidence/mcu-usb-review-2026-10-03/circuit.json`, `F_Paste.gbr`,
+`diagnostic-only-gerbers.zip`. Reported once as a material update.
+
+## B-008 additional scope — C94934 TPD2EUSB30ADRTR
+
+Untouched exact import lacks custom-symbol reference text. Native current A4
+render visibly lacks D2 and build emits the corresponding warning. Pins 1 D+,
+2 D− and 3 GND were checked against TI. New application does not resolve this
+import readability defect. Reported once; no symbol edit authorized/applied.
+
+## BLOCKING B-009 — supported private publication timeouts
+
+GitHub main contains controls commit de5c6e45d7cf2e8077ad77be5abff97892fbb6f0.
+Native private release 0.0.2-wip-a0-controls-review exits 1: 406/410 successful,
+four large STEP TimeoutErrors. Canonical fresh-tag retry controls-retry1 exits 1:
+409/410 successful, one TimeoutError. Authenticated remote readback confirms
+all timed-out model bytes match local files, but both releases remain
+ready_to_build=false. Completion still requires official acknowledgement of
+all files; no force-finalization or upload-success claim was made. Native gzip
+bundle would exceed service size limit (41.3 MB base64 before missing file),
+so compression is not a valid remedy. No runtime patch, model omission or token
+persistence. Reported to authorized fix chat; evidence under MCU/USB review.
+Last fully verified private source release remains 0.0.2-wip-a0-core-alignment.
+
+## BLOCKING B-010 — native Circuit JSON/schema contract
+
+Installed core 0.0.2058 / CLI 0.1.2235 / circuit-json 0.0.510 output is rejected
+by its published schema: schematic_group.subcircuit_id=null, 16 pcb_component
+numeric display_offset_x/y where string required, pcb_group.anchor_alignment=null.
+Eighteen element failures are saved in circuit-json-schema-failures.json.
+The explicit regression remains failing. Nine other meaningful tests pass,
+including module supply/reset/USB/BOOT physical pins, PSRAM exclusion and all
+nine native exposed-ground shape ports/internal group. Extra shape ports carry
+pin41 hints rather than duplicate pin_number; the regression uses the documented
+native identities. No JSON conversion, schema suppression or runtime patch.
+Reported to authorized fix chat. Native five checks exiting 0 do not waive this
+stage-5 blocker. Continue independent manufacturer circuit and mechanical review.
+
+C110293 / ALPS SKRTLAE010 alternative is also blocked: manufacturer circuit
+diagram permanently joins pins 1↔3; untouched import/native generation has no
+internal group. Native schematic exposes only 1/2 while footprint has 1–5.
+The two Ø0.9000236 mm locating holes DO match ALPS's Ø0.9 recommendation; no
+ALPS hole defect is alleged. Current official dimension/land/circuit GIFs were
+visually inspected. This extends B-006 contact-import scope, not a permitted
+component patch. Evidence: MCU/USB review switch-discrepancy.json and native
+switch JSON/PNG/SVG. Do not integrate this unqualified alternate.

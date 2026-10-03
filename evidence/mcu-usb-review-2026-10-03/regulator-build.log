@@ -1,0 +1,26 @@
+Building 1 file(s)...
+Building evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/mcu-usb-review-2026-10-03/regulated-3v3/circuit.json
+Failed to fetch supplier footprint for <chip#5(.regulator-review>.U2) /> (jlcpcb:C2845237): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#47(.regulator-review>.R7) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#36(.regulator-review>.R6) /> (jlcpcb:C114639): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#25(.regulator-review>.R5) /> (jlcpcb:C364359): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#22(.regulator-review>.C5) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#19(.regulator-review>.C4) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#16(.regulator-review>.L1) /> (jlcpcb:C668312): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[evidence/mcu-usb-review-2026-10-03/regulated-3v3] Generating PCB SVG...
+[evidence/mcu-usb-review-2026-10-03/regulated-3v3] Written pcb.svg
+[evidence/mcu-usb-review-2026-10-03/regulated-3v3] Generating PCB PNG...
+[evidence/mcu-usb-review-2026-10-03/regulated-3v3] Written pcb.png
+[evidence/mcu-usb-review-2026-10-03/regulated-3v3] Generating schematic SVG...
+[evidence/mcu-usb-review-2026-10-03/regulated-3v3] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

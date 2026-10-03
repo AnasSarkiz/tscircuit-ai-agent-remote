@@ -17,8 +17,8 @@
 | Regulator inductor | DFE201612E-R47M=P2 | C668312 | 0806, 470 nH | 1 | Imported verbatim; TI recommended series; footprint/current qualification pending |
 | Regulator input capacitor | GRM188R61A106ME69D | C90053 | 0603, 10 µF, 10 V, X5R | 1 | C4 review; effective capacitance and footprint qualification pending |
 | Regulator output capacitor | GRM188R61A226ME15D | C84419 | 0603, 22 µF, 10 V, X5R | 1 | C5 review; effective capacitance and footprint qualification pending |
-| Regulator high feedback | RC0603FR-07511KL | C188257 | 0603, 511 kΩ, 1% | 1 | R5 current review; static corners recorded; effective rail still pending |
-| Regulator low feedback | RC0603FR-0791KL | C137671 | 0603, 91 kΩ, 1% | 1 | R6 current review; maximum 92.456 kΩ in provisional corners |
+| Regulator high feedback | RC0603FR-0751K1L | C364359 | 0603, 51.1 kΩ, 1% | 1 | R5 lower-bias-error divider; provisional static corners recorded |
+| Regulator low feedback | RC0603FR-079K1L | C114639 | 0603, 9.1 kΩ, 1% | 1 | R6 lower-bias-error divider; provisional maximum 9.2456 kΩ |
 | PG pullup / control candidate | RC0603FR-07100KL | C14675 | 0603, 100 kΩ, 1% | TBD | R7 and isolation-review applications; final allocation pending |
 | Charger current candidate | RC0603FR-073KL | C126358 | 0603, 3 kΩ, 1% | TBD | Imported only; 296.7 mA nominal candidate, pack selection pending |
 | Bypass capacitor candidate | GRM188R71C104KA01D | C45000 | 0603, 100 nF, 16 V, X7R | TBD | Imported only; application allocation pending |
@@ -75,3 +75,35 @@ do not cover the microphone's guaranteed VOL. No imported definitions were chang
 
 Previous 8bbde6e core-alignment publication was verified on GitHub and private
 release 0.0.2-wip-a0-core-alignment (274 files); receipt is saved with this milestone.
+
+## MCU/USB and display foundation — 2026-10-03 (uncommitted review)
+
+| Function | Exact MPN | LCSC | Status |
+|---|---|---|---|
+| USB ESD | TPD2EUSB30ADRTR | C94934 | Native pin/placement study passes; B-008 missing reference label |
+| USB series resistors | RC0603FR-0722RL | C107701 | Two 22 Ω; manufacturer application connection reviewed |
+| USB CC pulldowns | RC0603FR-075K1L | C105580 | Two 5.1 kΩ; sink only; do not imply current entitlement |
+| Reset service current limiter | RC0603FR-074K7L | C99782 | 4.7 kΩ with push-pull supervisor; application limits pending |
+| MCU reset supervisor | TPS3839G33DBZR | C485802 | 3.08 V nominal threshold; current rail corners/delay review |
+| Service connector | SM06B-SRSS-TB(LF)(SN) | C160405 | 6 contacts, two anchors; VREF is sense only; harness/mechanics pending |
+| Enclosure LCD | HS17QS178RX | C5329581 | Bare 1.77 inch; 2.8 V logic/40 mA backlight; external mounting/FPC pending |
+| LCD supply candidate | TPS7A2028PDBVR | C2869847 | 2.8 V ±1.5% at VIN≥3.1 V; actual application not yet authored |
+| LCD logic buffer candidate | SN74LVC245APWR | C7848 | 2.8 V, tolerant MCU inputs; application not yet authored |
+| Hardware clock switch candidate | TS5A23157DGSR | C11133 | Dual SPDT, off-state clocks grounded; privacy application not yet authored |
+
+All supported imports remain unchanged. Historical 511 kΩ/91 kΩ feedback parts
+remain evidence, unselected in the current regulator application. C2863639
+TLV75728PDBVR is unselected: its accuracy conditions require 3.3 V input for a
+2.8 V output, above the provisional main-rail minimum. Current MCU fixture
+contains 16 top-side parts and is diagnostic, not the final handheld size/BOM.
+USB-C C165948 also has B-005 polygon paste omissions. Exact complete display,
+battery, switch, speaker and haptic qualification remains unfinished.
+
+C110293 / ALPS SKRTLAE010 alternative is also blocked: manufacturer circuit
+diagram permanently joins pins 1↔3; untouched import/native generation has no
+internal group. Native schematic exposes only 1/2 while footprint has 1–5.
+The two Ø0.9000236 mm locating holes DO match ALPS's Ø0.9 recommendation; no
+ALPS hole defect is alleged. Current official dimension/land/circuit GIFs were
+visually inspected. This extends B-006 contact-import scope, not a permitted
+component patch. Evidence: MCU/USB review switch-discrepancy.json and native
+switch JSON/PNG/SVG. Do not integrate this unqualified alternate.

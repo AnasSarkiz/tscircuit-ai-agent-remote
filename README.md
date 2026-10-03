@@ -1,13 +1,15 @@
 # tscircuit AI agent remote
 
-Revision A0-controls-review, updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-mcu-usb-review (work in progress), updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
 Private tscircuit package: https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote
-— corrected source published as **0.0.2-wip-c5656610-hole-060-publication-record**, with all 176
-files uploaded. The regulator milestone is published as **0.0.2-wip-a0-power-review**, with 238 files uploaded and matching source readback. This is a work-in-progress prototype source release. The build
-remains blocked as described below; publication does not approve fabrication.
+— last fully verified private source release is **0.0.2-wip-a0-core-alignment**
+(274 files; Git 8bbde6e). Controls-review source commit **de5c6e4** reached GitHub,
+but both native private publication attempts failed with upload timeouts and
+remain unfinished (B-009). This is disclosed work-in-progress prototype source;
+no complete-board build or fabrication approval is claimed.
 
 The accepted device is the square, screen-dominant concept with one top-edge hold-to-talk button, a speaker and rechargeable battery. Hold, speak and release to send a Wi-Fi request; show and speak the response. All PCB electronics must assemble on the top side. The encoder and separate APPROVE/REJECT controls are removed from the active design. See `REQUIREMENTS.md` for the complete requirement changes and remaining interface decisions. Firmware implementation is outside this task.
 
@@ -49,7 +51,7 @@ C370970 uses its existing native `<chip>` as a schematic box. Pin labels, center
 
 ## Commands
 
-Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` passes all five import checks, including the C5656610 acoustic-opening check; historical encoder checks remain as evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
+Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **9 pass / 1 fail**: the newly added native Circuit JSON schema regression reproduces B-010. Manufacturer pin/PSRAM/exposed-ground and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
 
 ## Evidence and remaining work
 
@@ -122,3 +124,18 @@ and the current VALIDATION.md milestone. Requirements, full schematic, component
 qualification and mechanics remain incomplete. No handheld routing/fabrication
 or hardware-test pass is claimed. Standing authorization covers publication of
 this WIP milestone to both configured remotes.
+
+## Current independent engineering
+
+Native MCU/USB A4 review and lower-bias regulator build/five checks pass as
+unrouted diagnostics. Current schemas still reject generated group fields and
+PCB display offsets (B-010); USB polygon paste (B-005) and ESD/comparator
+reference text (B-008) remain blocked. Both switch candidates lose permanent
+contact groups (B-006). Cases are reported to the authorized fix chat; no
+imported definitions or native runtime were patched. Routing is disabled.
+
+Display supply/level translation/backlight/FPC and protected-pack qualification
+continue. A battery-sourcing exception question is pending, because the studied
+NTC protected pack's PCM only supports 1 A continuously. No elapsed-time
+approval is inferred. Publication remains incomplete until supported native
+upload acknowledgement succeeds; the heartbeat stays active.

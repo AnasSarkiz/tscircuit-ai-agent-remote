@@ -2,8 +2,8 @@ import { DFE201612E_R47M_P2 } from "../../imports/DFE201612E_R47M_P2/DFE201612E_
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { GRM188R61A226ME15D } from "../../imports/GRM188R61A226ME15D/GRM188R61A226ME15D"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
-import { RC0603FR_07511KL } from "../../imports/RC0603FR_07511KL/RC0603FR_07511KL"
-import { RC0603FR_0791KL } from "../../imports/RC0603FR_0791KL/RC0603FR_0791KL"
+import { RC0603FR_0751K1L } from "../../imports/RC0603FR_0751K1L/RC0603FR_0751K1L"
+import { RC0603FR_079K1L } from "../../imports/RC0603FR_079K1L/RC0603FR_079K1L"
 import { TPS63802DLAR } from "../../imports/TPS63802DLAR/TPS63802DLAR"
 
 // Draft application circuit: TI SLVSEU9D sections 7 and 10.2.
@@ -42,7 +42,7 @@ export function Regulated3v3ReviewSheet() {
           schY={0}
           schRotation={-90}
         />
-        <RC0603FR_07511KL
+        <RC0603FR_0751K1L
           name="R5"
           layer="top"
           pcbX={-4}
@@ -51,7 +51,7 @@ export function Regulated3v3ReviewSheet() {
           schY={-4}
           schRotation={-90}
         />
-        <RC0603FR_0791KL
+        <RC0603FR_079K1L
           name="R6"
           layer="top"
           pcbX={0}

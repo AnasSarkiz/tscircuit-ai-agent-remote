@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-03T01:10:41.702564+00:00",
+  "checks": [
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "source",
+        "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "./node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "evidence/mcu-usb-review-2026-10-03/mcu-usb.circuit.tsx"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

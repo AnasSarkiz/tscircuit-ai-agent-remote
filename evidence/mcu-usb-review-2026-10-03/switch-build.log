@@ -1,0 +1,26 @@
+Building 1 file(s)...
+Building evidence/mcu-usb-review-2026-10-03/switch.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/mcu-usb-review-2026-10-03/switch/circuit.json
+Port pin1 on SW1 is missing a trace
+Port pin2 on SW1 is missing a trace
+Port pin3 on SW1 is missing a trace
+Port pin4 on SW1 is missing a trace
+Port pin5 on SW1 is missing a trace
+Generating preview images...
+[evidence/mcu-usb-review-2026-10-03/switch] Generating PCB SVG...
+[evidence/mcu-usb-review-2026-10-03/switch] Written pcb.svg
+[evidence/mcu-usb-review-2026-10-03/switch] Generating PCB PNG...
+[evidence/mcu-usb-review-2026-10-03/switch] Written pcb.png
+[evidence/mcu-usb-review-2026-10-03/switch] Generating schematic SVG...
+[evidence/mcu-usb-review-2026-10-03/switch] Written schematic.svg
+[evidence/mcu-usb-review-2026-10-03/switch] Generating schematic PNG...
+[evidence/mcu-usb-review-2026-10-03/switch] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

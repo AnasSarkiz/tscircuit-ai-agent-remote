@@ -1,0 +1,46 @@
+{
+  "reported_at": "2026-10-03T01:15:51.853032+00:00",
+  "destination_thread": "01a0f218-ce92-7671-b666-efccdef3aed2",
+  "base_commit": "de5c6e45d7cf2e8077ad77be5abff97892fbb6f0",
+  "issues": [
+    {
+      "id": "B-005",
+      "new_scope": "C165948 four polygon VBUS/GND pads lack paste in native JSON and Gerber",
+      "evidence": [
+        "circuit.json",
+        "F_Paste.gbr",
+        "diagnostic-only-gerbers.zip"
+      ]
+    },
+    {
+      "id": "B-008",
+      "new_scope": "C94934 missing reference text in native custom schematic symbol",
+      "evidence": [
+        "build.log",
+        "schematic.png"
+      ]
+    },
+    {
+      "id": "B-009",
+      "new_issue": "Native uploads timeout after file persistence and leave ready_to_build=false; fresh native retry also failed",
+      "evidence": [
+        "previous-native-push-failure.log",
+        "publication-retry-failure.json"
+      ]
+    },
+    {
+      "id": "B-006",
+      "new_scope": "C110293 ALPS permanent contact group 1\u21943 absent; hole size matches",
+      "evidence": [
+        "switch-discrepancy.json",
+        "switch-circuit.json"
+      ],
+      "sent_at": "2026-10-03T01:30:04.351383+00:00"
+    }
+  ],
+  "B-010": {
+    "thread": "01a0f218-ce92-7671-b666-efccdef3aed2",
+    "sent_at": "2026-10-03T01:26:11.221711+00:00",
+    "evidence": "circuit-json-schema-failures.json"
+  }
+}

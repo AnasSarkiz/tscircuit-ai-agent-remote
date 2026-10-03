@@ -61,3 +61,20 @@ Exact new component-source checksums and import logs are in the controls-review
 evidence directory. Catalogue identities were checked, but cached availability
 is not live assembly allocation. No stock guarantee, custom component or local
 import-metadata correction is claimed.
+
+## MCU/USB, display and clock-switch research — 2026-10-03
+
+- [Espressif module datasheet v1.8](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf), saved esp32-s3-module.pdf. N8R8 reserves GPIO35/36/37; ordinary octal PSRAM limits −40…65 °C without ECC.
+- [Espressif hardware checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html): supply/EN, USB 22 Ω, boot and programming requirements.
+- [TI TPD2EUSB30A](https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf), saved tpd2eusb30a.pdf; exact C94934 imported unchanged, reference-text defect remains.
+- [JST SH official family drawing](https://www.jst.com/wp-content/uploads/2025/06/eSH.pdf), saved jst-sh.pdf; C160405 exact import retained unchanged.
+- [HS17QS178RX manufacturer specification via supplier](https://atta.szlcsc.com/upload/public/pdf/source/20221215/3E47753EF985E64F0BD11377D6B95218.pdf), saved HS17QS178RX.pdf. Mechanical drawing inspected; manufacturer VDD 2.7–3.3 V overrides broader catalogue range. C5329581 imported unchanged.
+- [TI TPS7A20](https://www.ti.com/lit/ds/symlink/tps7a20.pdf), saved tps7a20.pdf. C2869847 2.8 V regulator accuracy guaranteed at VIN≥3.1 V; not yet an implemented display circuit.
+- [TI SN74LVC245A](https://www.ti.com/lit/ds/symlink/sn74lvc245a.pdf), saved sn74lvc245a.pdf; C7848 imported unchanged, display buffer candidate.
+- [TI TS5A23157](https://www.ti.com/lit/ds/symlink/ts5a23157.pdf), saved ts5a23157.pdf; C11133 dual SPDT hardware microphone candidate.
+- [EEMB protected-pack specification on supplier mirror](https://macrogroup.ru/upload/iblock/80a/i2bksi77p3ephpa70n95kv0izxtrs2jg/LP503450.pdf), saved eemb-LP503450-PCM-NTC-LD.pdf. 2017-11-13 specification, pack continuous limit only 1 A; unselected. Current sourcing/thermistor/visual review unresolved.
+- [ALPS SKRTLAE010 exact product](https://tech.alpsalpine.com/e/products/detail/SKRTLAE010/) and [October 2025 catalogue](https://tech.alpsalpine.com/cms.media/product_catalog_ta_02_skrt_en_01ec237785.pdf). C110293 supported import and drawing comparison in progress.
+
+Cached catalogue availability is not assembly allocation. All new candidates
+remain unqualified until drawing, ratings, import geometry and application checks
+are complete. No physical measurements or supplier-library repairs are claimed.

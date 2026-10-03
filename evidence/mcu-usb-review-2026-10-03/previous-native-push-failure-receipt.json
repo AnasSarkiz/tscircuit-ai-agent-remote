@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-10-03T01:03:35.046975+00:00",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-controls-review",
+  "revision": "de5c6e45d7cf2e8077ad77be5abff97892fbb6f0",
+  "publisher_exit_code": 1,
+  "files": [
+    {
+      "path": "imports/SN74LVC1G125DBVR/SN74LVC1G125DBVR.step",
+      "local_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "remote_bytes": 2944743,
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC2G125DCUR/SN74LVC2G125DCUR.step",
+      "local_sha256": "316574b486732c4c7451be271e6f5ac3e54c28662a33c91dc3203bdc22e11a0a",
+      "remote_sha256": "316574b486732c4c7451be271e6f5ac3e54c28662a33c91dc3203bdc22e11a0a",
+      "remote_bytes": 3163932,
+      "matches": true
+    },
+    {
+      "path": "imports/TPS3839K33DBZR/TPS3839K33DBZR.step",
+      "local_sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "remote_sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "remote_bytes": 2774137,
+      "matches": true
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "local_sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "remote_sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "remote_bytes": 3046769,
+      "matches": true
+    },
+    {
+      "path": "src/power/regulated-3v3.tsx",
+      "local_sha256": "809d9c98dd13c65e8e4726269df6975b7cd37e83d4b83d09a07ae4f4cba4006e",
+      "remote_sha256": "809d9c98dd13c65e8e4726269df6975b7cd37e83d4b83d09a07ae4f4cba4006e",
+      "remote_bytes": 3345,
+      "matches": true
+    },
+    {
+      "path": "src/audio/microphone-isolation-review.tsx",
+      "local_sha256": "1374229e3daba5753f8272ef62893f87b8856aec158b0d80d6ccdeccf9e0b37a",
+      "remote_sha256": "1374229e3daba5753f8272ef62893f87b8856aec158b0d80d6ccdeccf9e0b37a",
+      "remote_bytes": 10149,
+      "matches": true
+    }
+  ],
+  "package_release": {
+    "version": "0.0.2-wip-a0-controls-review",
+    "ready_to_build": false
+  },
+  "package": {
+    "is_private": true,
+    "latest_version": "0.0.2-wip-a0-controls-review"
+  }
+}

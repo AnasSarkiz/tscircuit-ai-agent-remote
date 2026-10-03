@@ -1,0 +1,255 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U1: ESP32-S3-WROOM-1-N8R8
+ - J1: TYPE-C-31-M-12
+ - D2: TPD2EUSB30ADRTR
+ - U12: TPS3839G33DBZR
+ - J6: SM06B-SRSS-TB(LF)(SN)
+ - R31: 22Ω resistor
+ - R32: 22Ω resistor
+ - R33: 5.1kΩ resistor
+ - R34: 5.1kΩ resistor
+ - R35: 4.7kΩ resistor
+ - R36: 10kΩ resistor
+ - R37: 100kΩ resistor
+ - R38: 1kΩ resistor
+ - C30: 10uF capacitor
+ - C31: 100nF capacitor
+ - C32: 100nF capacitor
+
+NET: MCU_RESET_N
+  - R35 pin1
+  - U12 N_RESET
+
+NET: MCU_UART_TX
+  - R38 pin1
+  - U1 TXD0
+
+NET: MCU_EN
+  - J6 pin3
+  - R37 pin1
+  - R35 pin2
+  - U1 EN
+
+NET: MCU_BOOT_N
+  - J6 pin4
+  - R36 pin2
+  - U1 IO0
+
+NET: SERVICE_UART_TX
+  - J6 pin5
+  - R38 pin2
+
+NET: MCU_UART_RX
+  - J6 pin6
+  - U1 RXD0
+
+NET: USB_VBUS
+  - J1 A4B9
+  - J1 B4A9
+
+NET: USB_DP
+  - R31 pin1
+  - D2 pin1
+  - J1 B6
+  - J1 A6
+
+NET: MCU_USB_DP
+  - R31 pin2
+  - U1 IO20
+
+NET: USB_DN
+  - R32 pin1
+  - D2 pin2
+  - J1 A7
+  - J1 B7
+
+NET: MCU_USB_DN
+  - R32 pin2
+  - U1 IO19
+
+NET: USB_CC1
+  - R33 pin1
+  - J1 A5
+
+NET: USB_CC2
+  - R34 pin1
+  - J1 B5
+
+NET: V3V3
+  - C32 pin1
+  - C31 pin1
+  - C30 pin1
+  - J6 pin2
+  - R36 pin1
+  - U12 VDD
+  - U1 3V3
+
+NET: GND
+  - C32 pin2
+  - C31 pin2
+  - C30 pin2
+  - R34 pin2
+  - R33 pin2
+  - D2 pin3 (GND)
+  - J1 B1A12
+  - J1 A1B12
+  - J1 EH3
+  - J1 EH4
+  - J1 EH1
+  - J1 EH2
+  - J6 pin8
+  - J6 pin7
+  - J6 pin1
+  - R37 pin2
+  - U12 GND
+  - U1 GND3
+  - U1 pin41_internal_1
+  - U1 pin41_internal_2
+  - U1 pin41_internal_3
+  - U1 pin41_internal_4
+  - U1 pin41_internal_5
+  - U1 pin41_internal_6
+  - U1 pin41_internal_7
+  - U1 pin41_internal_8
+  - U1 GND2
+  - U1 GND1
+
+
+COMPONENT_PINS:
+U1 (ESP32-S3-WROOM-1-N8R8)
+- pin41_internal_1(pin41, 41): NETS(GND)
+- pin41_internal_2(pin41, 41): NETS(GND)
+- pin41_internal_3(pin41, 41): NETS(GND)
+- pin41_internal_4(pin41, 41): NETS(GND)
+- pin41_internal_5(pin41, 41): NETS(GND)
+- pin41_internal_6(pin41, 41): NETS(GND)
+- pin41_internal_7(pin41, 41): NETS(GND)
+- pin41_internal_8(pin41, 41): NETS(GND)
+- pin1(GND1): NETS(GND)
+- pin2(3V3): NETS(V3V3)
+- pin3(EN): NETS(MCU_EN)
+- pin4(IO4): NOT_CONNECTED
+- pin5(IO5): NOT_CONNECTED
+- pin6(IO6): NOT_CONNECTED
+- pin7(IO7): NOT_CONNECTED
+- pin8(IO15): NOT_CONNECTED
+- pin9(IO16): NOT_CONNECTED
+- pin10(IO17): NOT_CONNECTED
+- pin11(IO18): NOT_CONNECTED
+- pin12(IO8): NOT_CONNECTED
+- pin13(IO19): NETS(MCU_USB_DN)
+- pin14(IO20): NETS(MCU_USB_DP)
+- pin15(IO3): NOT_CONNECTED
+- pin16(IO46): NOT_CONNECTED
+- pin17(IO9): NOT_CONNECTED
+- pin18(IO10): NOT_CONNECTED
+- pin19(IO11): NOT_CONNECTED
+- pin20(IO12): NOT_CONNECTED
+- pin21(IO13): NOT_CONNECTED
+- pin22(IO14): NOT_CONNECTED
+- pin23(IO21): NOT_CONNECTED
+- pin24(IO47): NOT_CONNECTED
+- pin25(IO48): NOT_CONNECTED
+- pin26(IO45): NOT_CONNECTED
+- pin27(IO0): NETS(MCU_BOOT_N)
+- pin28(IO35): NOT_CONNECTED
+- pin29(IO36): NOT_CONNECTED
+- pin30(IO37): NOT_CONNECTED
+- pin31(IO38): NOT_CONNECTED
+- pin32(IO39): NOT_CONNECTED
+- pin33(IO40): NOT_CONNECTED
+- pin34(IO41): NOT_CONNECTED
+- pin35(IO42): NOT_CONNECTED
+- pin36(RXD0): NETS(MCU_UART_RX)
+- pin37(TXD0): NETS(MCU_UART_TX)
+- pin38(IO2): NOT_CONNECTED
+- pin39(IO1): NOT_CONNECTED
+- pin40(GND2): NETS(GND)
+- pin41(GND3): NETS(GND)
+
+J1 (TYPE-C-31-M-12)
+- pin1(EH2): NETS(GND)
+- pin2(EH1): NETS(GND)
+- pin3(EH4): NETS(GND)
+- pin4(EH3): NETS(GND)
+- pin5(B8, SBU2): NOT_CONNECTED
+- pin6(A5, CC1): NETS(USB_CC1)
+- pin7(B7, DN2): NETS(USB_DN)
+- pin8(A6, DP1): NETS(USB_DP)
+- pin9(A7, DN1): NETS(USB_DN)
+- pin10(B6, DP2): NETS(USB_DP)
+- pin11(A8, SBU1): NOT_CONNECTED
+- pin12(B5, CC2): NETS(USB_CC2)
+- pin13(A1B12, GND1): NETS(GND)
+- pin14(B1A12, GND2): NETS(GND)
+- pin15(B4A9, VBUS1): NETS(USB_VBUS)
+- pin16(A4B9, VBUS2): NETS(USB_VBUS)
+
+D2 (TPD2EUSB30ADRTR)
+- pin1(D_POS): NETS(USB_DP)
+- pin2(D_NEG): NETS(USB_DN)
+- pin3(GND): NETS(GND)
+
+U12 (TPS3839G33DBZR)
+- pin1(GND): NETS(GND)
+- pin2(N_RESET): NETS(MCU_RESET_N)
+- pin3(VDD): NETS(V3V3)
+
+J6 (SM06B-SRSS-TB(LF)(SN))
+- pin1: NETS(GND)
+- pin2: NETS(V3V3)
+- pin3: NETS(MCU_EN)
+- pin4: NETS(MCU_BOOT_N)
+- pin5: NETS(SERVICE_UART_TX)
+- pin6: NETS(MCU_UART_RX)
+- pin7: NETS(GND)
+- pin8: NETS(GND)
+
+R31 (22Ω undefined)
+- pin1(anode, pos, left): NETS(USB_DP)
+- pin2(cathode, neg, right): NETS(MCU_USB_DP)
+
+R32 (22Ω undefined)
+- pin1(anode, pos, left): NETS(USB_DN)
+- pin2(cathode, neg, right): NETS(MCU_USB_DN)
+
+R33 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CC1)
+- pin2(cathode, neg, right): NETS(GND)
+
+R34 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CC2)
+- pin2(cathode, neg, right): NETS(GND)
+
+R35 (4.7kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_RESET_N)
+- pin2(cathode, neg, right): NETS(MCU_EN)
+
+R36 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(MCU_BOOT_N)
+
+R37 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_EN)
+- pin2(cathode, neg, right): NETS(GND)
+
+R38 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_UART_TX)
+- pin2(cathode, neg, right): NETS(SERVICE_UART_TX)
+
+C30 (10uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C31 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C32 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+

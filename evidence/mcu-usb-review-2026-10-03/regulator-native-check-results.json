@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-03T01:28:28.198267+00:00",
+  "entry": "evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx",
+  "checks": [
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "netlist",
+        "evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "regulator-check-netlist.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "pin_specification",
+        "evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "regulator-check-pin_specification.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "source",
+        "evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "regulator-check-source.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "schematic-placement",
+        "evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "regulator-check-schematic-placement.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "placement",
+        "evidence/mcu-usb-review-2026-10-03/regulated-3v3.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "regulator-check-placement.log"
+    }
+  ]
+}

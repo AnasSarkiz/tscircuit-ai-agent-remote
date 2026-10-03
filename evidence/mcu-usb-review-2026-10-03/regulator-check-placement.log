@@ -1,0 +1,22 @@
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 10.614% (38.21mm^2 of 360mm^2)
+- empty spaces over 5% of board area:
+  - 24.887% (89.592mm^2); bounds=(minX=-2.593mm, maxX=10mm, minY=1.886mm, maxY=9mm)
+  - 23.889% (86mm^2); bounds=(minX=-10mm, maxX=10mm, minY=-9mm, maxY=-4.7mm)
+  - 6.003% (21.609mm^2); bounds=(minX=-10mm, maxX=-1.746mm, minY=-3.318mm, maxY=-0.7mm)
+  - 5.346% (19.245mm^2); bounds=(minX=1.446mm, maxX=10mm, minY=-3.3mm, maxY=-1.05mm)
+
+board-edge status:
+- U2: 7.85mm inside top edge
+- L1: 4.467mm inside right edge
+- C4: 4.9mm inside left edge
+- C5: 4.55mm inside top edge
+- R5: 4.568mm inside top edge
+- R6: 4.568mm inside top edge
+- R7: 4.568mm inside bottom edge
+
+placement drc:
+Errors: 0
+Warnings: 0

@@ -1,0 +1,67 @@
+$ tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Error in createContainer
+1 | // The complete board schematic and PCB have not been authored yet.
+2 | // No fabricated schematic, placement, copper or export is returned by this scaffold.
+3 | export default function AiAgentRemote() {
+4 |   throw new Error(
+                ^
+error: A0 INCOMPLETE: accepted square one-button design with top-side assembly and rechargeable battery. B-002 acoustic hole corrected locally to 0.60 mm; B-003 native ground-pad generation resolved on official core 0.0.2058; B-004 catalogue search, B-005 microphone ground paste, B-006 hold-switch contacts/holes and B-008 comparator reference label remain blockers; B-007 power-switch metadata warning remains visible. Complete requirements, schematic, BOM, placement and routing remain pending. See VALIDATION.md. No complete board or routes exist.
+      at AiAgentRemote (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/main.tsx:4:13)
+      at react-stack-bottom-frame (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:15859:20)
+      at renderWithHooks (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:3221:22)
+      at updateFunctionComponent (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:6475:19)
+      at runWithFiberInDEV (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at performUnitOfWork (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12834:22)
+      at workLoopSync (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at performWorkOnRoot (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12135:44)
+      at performSyncWorkOnRoot (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:2446:7)
+      at flushSyncWorkAcrossRoots_impl (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:2294:21)
+      at flushSyncWork (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12394:12)
+      at createInstanceFromReactElement (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/core/dist/index.js:8873:14)
+      at add (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/core/dist/index.js:116845:19)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:167861:10)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+1 | // The complete board schematic and PCB have not been authored yet.
+2 | // No fabricated schematic, placement, copper or export is returned by this scaffold.
+3 | export default function AiAgentRemote() {
+4 |   throw new Error(
+                ^
+error: A0 INCOMPLETE: accepted square one-button design with top-side assembly and rechargeable battery. B-002 acoustic hole corrected locally to 0.60 mm; B-003 native ground-pad generation resolved on official core 0.0.2058; B-004 catalogue search, B-005 microphone ground paste, B-006 hold-switch contacts/holes and B-008 comparator reference label remain blockers; B-007 power-switch metadata warning remains visible. Complete requirements, schematic, BOM, placement and routing remain pending. See VALIDATION.md. No complete board or routes exist.
+      at AiAgentRemote (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/main.tsx:4:13)
+      at react-stack-bottom-frame (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:15859:20)
+      at renderWithHooks (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:3221:22)
+      at updateFunctionComponent (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:6475:19)
+      at runWithFiberInDEV (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at performUnitOfWork (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12834:22)
+      at workLoopSync (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at performWorkOnRoot (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12135:44)
+      at performSyncWorkOnRoot (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:2446:7)
+      at flushSyncWorkAcrossRoots_impl (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:2294:21)
+      at flushSyncWork (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/react-reconciler/cjs/react-reconciler.development.js:12394:12)
+      at createInstanceFromReactElement (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/core/dist/index.js:8873:14)
+      at add (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/core/dist/index.js:116845:19)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:167861:10)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+Fatal error [circuit_generation_failed]: A0 INCOMPLETE: accepted square one-button design with top-side assembly and rechargeable battery. B-002 acoustic hole corrected locally to 0.60 mm; B-003 native ground-pad generation resolved on official core 0.0.2058; B-004 catalogue search, B-005 microphone ground paste, B-006 hold-switch contacts/holes and B-008 comparator reference label remain blockers; B-007 power-switch metadata warning remains visible. Complete requirements, schematic, BOM, placement and routing remain pending. See VALIDATION.md. No complete board or routes exist.
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred
+error: script "build" exited with code 1

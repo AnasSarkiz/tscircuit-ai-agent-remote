@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-03T01:26:11.221518+00:00",
+  "high_ohms": 51100,
+  "low_ohms": 9100,
+  "parts": [
+    "C364359",
+    "C114639"
+  ],
+  "nominal_v": 3.3076923076923075,
+  "minimum_static_v": 3.182040203367656,
+  "maximum_static_v": 3.438181128355222,
+  "provisional_resistance_tolerance": 0.016,
+  "reference_min_v": 0.495,
+  "reference_max_v": 0.505,
+  "bias_max_a": 1e-07,
+  "low_resistor_max_ohms": 9245.6,
+  "divider_nominal_ua": 54.94505494505494,
+  "limitations": [
+    "PWM static model only; resistor TCR not yet verified",
+    "Excludes ripple, transients, PFM, effective capacitance/inductance and physical measurements"
+  ]
+}

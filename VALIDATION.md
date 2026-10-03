@@ -1,12 +1,12 @@
-# Validation — A0-controls-review
+# Validation — A0-mcu-usb-review (work in progress)
 
-Updated: 2026-10-03 (Europe/Tirane). **Unrouted regulator review added; B-002 diameter corrected locally; B-003 verified resolved on aligned official core 0.0.2058; B-004 catalogue search and B-005 missing polygon ground paste reported; no complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
+Updated: 2026-10-03 (Europe/Tirane). **Independent MCU/USB and improved regulator reviews added; B-003 remains resolved. B-005 includes USB polygon paste; B-008 includes ESD reference text; B-009 private source publication and B-010 native JSON schema remain blocked. No complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
 | Stage | Status | Evidence and remaining work |
 |---|---|---|
 | 1. Confirm requirements | in progress | Accepted square, screen-dominant, one-button, top-side-only concept; 50 × 50 mm study target within approved 50 × 65 mm maximum; rechargeable pack/display mechanics/current budget/stackup unresolved |
 | 2. Schematic and BOM | blocked | Historical B-001 corrected, encoder unselected; B-002 local 0.60 mm correction verified; B-003 generator issue resolved; B-004 search discovery, B-005 ground paste, and full component qualification, exact pack and circuit pending |
-| 3. Placement before routing | not started | Depends on stages 1–2; no placement/render exists |
+| 3. Placement before routing | not started | Depends on stages 1–2; isolated diagnostic fixtures exist, no complete-board placement |
 | 4. Copper routing | not started | User authorized routing after prerequisite gates pass; no routes exist |
 | 5. Automated and visual checks | not started | Preliminary import checks below do not complete board validation |
 | 6. Prototype fabrication | not started | No full-board fabrication files; microphone-only unrouted diagnostic Gerber ZIP exists and fails stencil qualification |
@@ -408,3 +408,82 @@ manufacturer-based import tests pass (29 assertions). Authored-source whitespace
 review passes. Native full-board build exits 1 at the intentional incomplete
 design guard; full-board-guard-build.log preserves that result. No fabricated
 output or weaker substitute bypasses the guard.
+
+## A0-MCU/USB review in progress — 2026-10-03
+
+Starts from controls-review GitHub main commit de5c6e45d7cf2e8077ad77be5abff97892fbb6f0.
+Its private native publication failed: controls-review 406/410 uploads and four
+TimeoutErrors; fresh-tag controls-retry1 409/410 and one TimeoutError. Both exit 1,
+ready_to_build=false. All timed-out STEP files match authenticated remote bytes.
+B-009 was reported; no successful source-publication claim or forced finalization.
+Last fully completed private milestone is 0.0.2-wip-a0-core-alignment / 8bbde6e.
+Failure receipts/logs are preserved under evidence/mcu-usb-review-2026-10-03.
+
+New native A4 MCU/USB fixture has 16 top-side parts, zero PCB traces/vias/errors.
+Build and all five native checks exit 0. Current PCB/SCH PNGs visually inspected;
+60 × 50 mm is a spread-out diagnostic envelope, not final board dimensions.
+Power/reset/USB polarity/BOOT physical module pin checks pass, reserved PSRAM
+pins are unused, and all nine exposed-ground shape ports/internal group retained.
+Service connector faces the left edge after an actual rotation correction;
+capacitor schematic spacing was corrected and current renders rebuilt.
+No handheld connectivity, placement or mechanical-fit gate is passed.
+
+Native pin check retains eight metadata warnings; two chip-based imported
+connectors also carry J-prefix convention warnings. They remain visible.
+Manufacturer pin-role review is independent of incomplete imported metadata.
+C94934 ESD has B-008 missing reference text, visibly confirmed. USB-C C165948
+has B-005 missing paste on all four polygon VBUS/GND pads; native diagnostic
+Gerber export exits 0 with 97 flashes and zero regions. This is an unrouted
+fixture ZIP, not fabrication output. Both material issue updates were sent.
+
+The new full native-output schema regression fails on 18 elements (B-010):
+null schematic group subcircuit id, numeric PCB display offsets on 16 components,
+null PCB group anchor alignment. Circuit-json 0.0.510 schema remains strict;
+no output was patched. The fix chat independently confirmed the core source
+still emits these invalid fields. Current tests: **9 pass, 1 fail**, 40 assertions.
+TypeScript and formatting pass. All schema failures remain explicit. Full board
+build still intentionally fails until the real circuit is authored.
+
+Regulator feedback now uses untouched C364359 51.1 kΩ / C114639 9.1 kΩ,
+nominal 3.3077 V, provisional PWM static corners 3.1820–3.4382 V. New native
+network-enabled build and all five checks exit 0; pin/source report zero
+errors/warnings. PCB and A4 previews inspected, zero traces/vias. Initial
+sandbox build could not fetch supplier footprints; network-enabled native rerun
+resolves that access failure. Retain both logs; no unavailable supplier review
+was called passed. Seven component bodies fit the isolated fixture; final
+power-loop layout/effective capacitance/inductance/thermal/transients pending.
+POWER.md records assumptions and divider idle-current tradeoff.
+
+Exact display/logic candidates were imported unchanged. LCD HS17QS178RX C5329581
+requires 2.7–3.3 V logic and 40 mA backlight (Vf 3.0–3.4 V); interface/connector,
+backlight/off-state behavior and mechanics unfinished. TPS7A2028 C2869847
+accuracy requires VIN≥3.1 V; C7848 logic buffer and C11133 clock switch are
+research candidates, not yet qualified. TLV757 C2863639 is rejected for headroom.
+ALPS C110293 switch comparison is in progress, without imported-definition edits.
+
+Battery decision is pending: candidate protected NTC pack's PCM limits continuous
+current to 1 A versus provisional 1.488 A budget. A human question asks whether
+separately sourced enclosure batteries may be allowed; no reply or exception
+is assumed. All other electronics still require supported exact JLC imports.
+
+Core 0.0.2059 and CLI 0.1.2236 were checked at official release sources: motor
+assembly/frame changes, no verified relevant blocker fix. Pinned tested versions
+remain unchanged. Continue independent engineering, report confirmed defects
+to authorized chat, verify fixes through native workflows when available.
+No full-board routes, DRC/shorts pass, snapshots, fabrication package or hardware
+measurements exist. Heartbeat remains ACTIVE. GitHub/private publication of
+this review is unfinished; never treat failed native releases as fully published.
+
+C110293 / ALPS SKRTLAE010 alternative is also blocked: manufacturer circuit
+diagram permanently joins pins 1↔3; untouched import/native generation has no
+internal group. Native schematic exposes only 1/2 while footprint has 1–5.
+The two Ø0.9000236 mm locating holes DO match ALPS's Ø0.9 recommendation; no
+ALPS hole defect is alleged. Current official dimension/land/circuit GIFs were
+visually inspected. This extends B-006 contact-import scope, not a permitted
+component patch. Evidence: MCU/USB review switch-discrepancy.json and native
+switch JSON/PNG/SVG. Do not integrate this unqualified alternate.
+
+Authored-source whitespace check passes. Full Git whitespace scan reports native
+SVG/log trailing whitespace and raw imported STEP CRLF endings; these generated
+artifacts/imports are preserved byte-for-byte rather than reformatted. This
+source-text finding is not a DRC result or imported-geometry waiver.
