@@ -1,0 +1,97 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U22: TPS7A2030PDBVR
+ - Q9: AO3400A
+ - D3: D3, source_component
+ - C70: 10uF capacitor
+ - C71: 22uF capacitor
+ - C72: 100nF capacitor
+ - R82: 1kΩ resistor
+ - R83: 100Ω resistor
+ - R84: 10kΩ resistor
+ - R85: 100kΩ resistor
+
+NET: VSYS
+  - C70 pin1
+  - U22 IN
+
+NET: HAPTIC_N
+  - C72 pin2
+  - D3 anode (+)
+  - Q9 pin3
+
+NET: VMOTOR
+  - R82 pin1
+  - C72 pin1
+  - C71 pin1
+  - D3 cathode (-)
+  - U22 OUT
+
+NET: HAPTIC_NMOS_GATE
+  - R84 pin1
+  - R83 pin2
+  - Q9 pin1
+
+NET: MCU_HAPTIC_ENABLE
+  - R85 pin1
+  - R83 pin1
+  - U22 EN
+
+NET: GND
+  - R85 pin2
+  - R84 pin2
+  - R82 pin2
+  - C71 pin2
+  - C70 pin2
+  - Q9 pin2
+  - U22 GND
+
+
+COMPONENT_PINS:
+U22 (TPS7A2030PDBVR)
+- pin1(IN): NETS(VSYS)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(MCU_HAPTIC_ENABLE)
+- pin4(N, C): NOT_CONNECTED
+- pin5(OUT): NETS(VMOTOR)
+
+Q9 (AO3400A)
+- pin1(G): NETS(HAPTIC_NMOS_GATE)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(HAPTIC_N)
+
+D3 (SS14)
+- pin1(cathode, neg): NETS(VMOTOR)
+- pin2(anode, pos): NETS(HAPTIC_N)
+
+C70 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C71 (22uF undefined)
+- pin1: NETS(VMOTOR)
+- pin2: NETS(GND)
+
+C72 (100nF undefined)
+- pin1: NETS(VMOTOR)
+- pin2: NETS(HAPTIC_N)
+
+R82 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VMOTOR)
+- pin2(cathode, neg, right): NETS(GND)
+
+R83 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_HAPTIC_ENABLE)
+- pin2(cathode, neg, right): NETS(HAPTIC_NMOS_GATE)
+
+R84 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(HAPTIC_NMOS_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R85 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_HAPTIC_ENABLE)
+- pin2(cathode, neg, right): NETS(GND)
+

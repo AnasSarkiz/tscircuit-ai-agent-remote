@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-03T03:07:36.526579+00:00",
+  "netlist_exit_code": 0,
+  "checks": [
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "pin_specification",
+        "evidence/haptic-review-2026-10-03/driver.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/haptic-review-2026-10-03/driver-pin_specification.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "source",
+        "evidence/haptic-review-2026-10-03/driver.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/haptic-review-2026-10-03/driver-source.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "schematic-placement",
+        "evidence/haptic-review-2026-10-03/driver.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/haptic-review-2026-10-03/driver-schematic-placement.log"
+    },
+    {
+      "command": [
+        "bunx",
+        "tsci",
+        "check",
+        "placement",
+        "evidence/haptic-review-2026-10-03/driver.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/haptic-review-2026-10-03/driver-placement.log"
+    }
+  ]
+}

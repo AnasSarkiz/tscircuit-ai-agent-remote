@@ -1,0 +1,26 @@
+Building 1 file(s)...
+Building evidence/haptic-review-2026-10-03/body-overlap.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/haptic-review-2026-10-03/body-overlap/circuit.json
+Port pin1 on R91 is missing a trace
+Port pin2 on R91 is missing a trace
+All pins on M1 are underspecified (no pinAttributes set)
+M1 has no pin with requires_power=true
+M1 has no pin with requires_ground=true
+Generating preview images...
+[evidence/haptic-review-2026-10-03/body-overlap] Generating PCB SVG...
+[evidence/haptic-review-2026-10-03/body-overlap] Written pcb.svg
+[evidence/haptic-review-2026-10-03/body-overlap] Generating PCB PNG...
+[evidence/haptic-review-2026-10-03/body-overlap] Written pcb.png
+[evidence/haptic-review-2026-10-03/body-overlap] Generating schematic SVG...
+[evidence/haptic-review-2026-10-03/body-overlap] Written schematic.svg
+[evidence/haptic-review-2026-10-03/body-overlap] Generating schematic PNG...
+[evidence/haptic-review-2026-10-03/body-overlap] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

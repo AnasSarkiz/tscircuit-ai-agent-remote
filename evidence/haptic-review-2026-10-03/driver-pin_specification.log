@@ -1,0 +1,6 @@
+Errors: 0
+Warnings: 4
+- source_component_pins_underspecified_warning: All pins on Q9 are underspecified (no pinAttributes set)
+- source_no_power_pin_defined_warning: U22 has no pin with requires_power=true
+- source_no_power_pin_defined_warning: Q9 has no pin with requires_power=true
+- source_no_ground_pin_defined_warning: Q9 has no pin with requires_ground=true

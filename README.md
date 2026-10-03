@@ -1,6 +1,6 @@
 # tscircuit AI agent remote
 
-Revision A0-display-logic-review (work in progress), updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-haptic-driver-review (work in progress), updated 2026-10-03: **independent power, display, MCU/USB, audio and haptic application reviews exist; no complete handheld schematic or PCB exists**. B-003 is resolved with an official core release; imported geometry, paste, schema, sourcing and publication blockers remain. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
@@ -51,11 +51,20 @@ C370970 uses its existing native `<chip>` as a schematic box. Pin labels, center
 
 ## Commands
 
-Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **9 pass / 1 fail**: the newly added native Circuit JSON schema regression reproduces B-010. Manufacturer pin/PSRAM/exposed-ground and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
+Run inside this directory. `bun install` installs pinned dependencies. `bun run format:check` and `bun run typecheck` check project tooling. `bun test` currently reports **19 pass / 1 fail**: the native Circuit JSON schema regression reproduces B-010. Manufacturer connection and existing import tests pass; historical encoder checks remain evidence, not active BOM approval. `bun run build` reports that the complete board has not been authored. The original proposal is preserved in `evidence/proposals/C5656610-acoustic-hole.diff`. The latest user instruction authorized applying it locally. The microphone component build now passes; B-005 paste generation blocks assembly qualification. Whole-board design remains incomplete.
 
 ## Evidence and remaining work
 
 See `VALIDATION.md`, `BOM.md`, `issues.md`, `references/sources.md` and `routes/README.md`. Continue in this task directory. No earlier board source or validation evidence was reused.
+
+Latest haptic review: `HAPTICS.md` and `evidence/haptic-review-2026-10-03/`.
+C2942347 motor courtyard defect and model qualification block its integration.
+The independent10-part regulator/flyback fixture passes five native checks,
+with reference/metadata warnings and12 strict schema failures disclosed.
+Type-C publication for Git6700842 is still unready:689successful/33failed upload
+reports,28reported timeout files byte-verified and five actual missing404.
+The high-current detector's partial-supply startup behavior remains unqualified;
+fixed USB100 is under review. Battery sourcing permission is still pending.
 
 Import provenance: **JLCEDA/EasyEDA Official Library**, accessed through the supported JLCPCB importer. [JLCEDA](https://lceda.cn/) / [EasyEDA](https://easyeda.com/).
 

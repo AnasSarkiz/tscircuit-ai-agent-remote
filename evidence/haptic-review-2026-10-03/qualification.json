@@ -1,0 +1,63 @@
+{
+  "part": "C2942347",
+  "mpn": "LCM0720A3176F",
+  "status": "blocked \u2014 imported body/courtyard/model qualification",
+  "manufacturer_document": "LCM0720A3176F.pdf",
+  "document_date": "2021-10-22 Rev0",
+  "datasheet_url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590221675024584704",
+  "supplier_url": "https://jlcpcb.com/partdetail/LEADER-0720_FPCB/C2942347",
+  "rated_voltage_v": 3.0,
+  "operating_voltage_v": [
+    2.7,
+    3.3
+  ],
+  "rated_current_max_ma": 85,
+  "starting_current_max_ma": 120,
+  "starting_voltage_max_v": 2.5,
+  "temperature_c": [
+    -20,
+    60
+  ],
+  "manufacturer_case_diameter_mm": {
+    "nominal": 7,
+    "tolerance": 0.1
+  },
+  "manufacturer_foam_diameter_mm": 8,
+  "manufacturer_case_height_mm": {
+    "nominal": 2.1,
+    "tolerance": 0.1
+  },
+  "manufacturer_foam_thickness_mm": 0.3,
+  "manufacturer_bottom_tape_thickness_mm": 0.15,
+  "provisional_max_stack_mm": 2.65,
+  "native_model_height_mm": 3.85,
+  "native_body_circle_center_x_mm": -9.017,
+  "native_body_circle_radius_mm": 3.999992,
+  "native_courtyard_x_mm": [
+    -6.0539762,
+    1.4999975
+  ],
+  "native_overlap_reproduction": {
+    "placement_exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "resistor_center_x_mm": -9.017,
+    "body_and_resistor_same_layer": "top",
+    "actual_3d_render_reviewed": true
+  },
+  "import_modified": false,
+  "remaining": [
+    "Exact model mechanical mismatch classification",
+    "Current full-body courtyard and placement envelope",
+    "Supplier/assembler FPC soldering support fixture and reflow process",
+    "Actual regulated 3.0V supply and motor driver/freewheel/startup margin",
+    "Full assembly, current, thermal and vibration prototype testing"
+  ],
+  "checked_at_utc": "2026-10-03T02:56:06.775256+00:00",
+  "sha256": {
+    "imports/LCM0720A3176F.tsx": "fffac61ded7a19f26467225b105449016b141055e8d390762444241a2252c639",
+    "evidence/haptic-review-2026-10-03/LCM0720A3176F.pdf": "8ce5a0b5cd750cbbc8f9277f1c84fdbc6c8f72636a74d867550c518132ceb726",
+    "evidence/haptic-review-2026-10-03/C2942347-native-model.obj": "bb3d6ecb009438dc0e7a1e6f7493d9dbc9b8781a94570939a651560f97fc0113",
+    "evidence/haptic-review-2026-10-03/circuit.json": "b05959ac77f66bc058bf257fc0fcae320240f039048ce6ff5e8f459bd52405b7"
+  }
+}

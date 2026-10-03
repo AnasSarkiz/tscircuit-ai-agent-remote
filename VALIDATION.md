@@ -582,4 +582,53 @@ C22765 / 0603WAF1201T5E is a native-imported 1.2k candidate for future BQ24074 I
 
 The C6617702 hold candidate is unmodified and remains unqualified: native cutout width 5.334 mm differs from the historical Panasonic 2012 drawing's 5.1 +0.1/-0 mm. Current manufacturer drawing confirmation remains pending. Its independent 2-component reproduction builds and all five native checks exit 0; PCB/A4 were inspected, but that does not qualify the imported cutout or actual edge mounting. It is forwarded to the authorized fix chat as a discrepancy, not declared a proven current supplier bug.
 
+## A0 WIP — haptic driver review, 2026-10-03
+
+Independent native A4/top-side regulator and flyback review added with10 actual
+JLC imports. `HAPTICS.md` records manufacturer pin, voltage, default-off and
+remaining qualification requirements. Native build and all five required checks
+exit0. Network-enabled build resolves sandbox supplier lookup failures; retained
+import metadata/reference advisories remain B-007/B-008.24 native pads/24 paste
+shapes;zero PCB traces/vias/errors. PCB/A4 images actually inspected. Two new
+manufacturer connection/physical-pad/polarity tests pass; canonical suite19pass,
+1existing B-010 failure,177assertions. TypeScript passes;12 strict schema-invalid
+elements preserved. No full-board gate or snapshot acceptance claimed.
+
+**BLOCKING B-014 — C2942347 / LCM0720A3176F:** imported courtyard misses the
+top-side motor body. Actual overlap reproduction passes placement0/0 yet puts
+a resistor under that body. Fix chat confirmed converter body-bounds generation
+defect. Native OBJ height3.85mm versus drawing-derived provisional2.65mm maximum
+stack is a separate model qualification concern. C2895081 alternate import lacks
+EasyEDA data. All supplier/library/model/reproduction evidence saved in
+`evidence/haptic-review-2026-10-03/` and forwarded. Motor placement/integration
+stays blocked; driver review does not substitute a generic motor.
+
+The earlier high-current Type-C detector has a newly identified electrical
+startup qualification gap: AND gate operation is undefined below1.65V supply,
+where BQ EN2's guaranteed-high level starts at1.4V. A supervisor on one input
+does not guarantee output low throughout that ramp. No fault transient has been
+measured and no tscircuit defect is alleged. It remains unintegrated. Proposed
+fixed USB100 with EN1/EN2 grounded needs actual pack, TS, charge-time, thermal,
+dead-pack and system-load readiness review. `evidence/charger-safe-default-review-2026-10-03/startup-review.md`
+preserves the scope and proposal; battery sourcing question remains unanswered.
+
+Preceding source6700842b16f651adbc93bc899e9839412bfc3191 is verified on GitHub.
+Supported private native version0.0.2-wip-a0-type-c-current-review exited1:
+689reported successful uploads/33reported failed. Exact readback verifies28
+reported timeout files byte-for-byte and five actual missing404 files;
+private=true,ready_to_build=false. Readback includes native binary download,
+not metadata alone. Logs/receipt/script saved with this review. B-009 persists;
+no evidence omitted, forced ready flag, successful-publication or full-build
+claim. This haptic milestone's remote publication remains pending.
+
+Native generated SVG whitespace and a netlist-log trailing blank line remain
+unchanged; git whitespace inspection reports those three non-geometric lines.
+Installed CLI0.1.2235 supports `push --compress`: official source packs the same
+enumerated files with lossless gzip and uses native upload_archive. This supported
+publication mode will be tried without omitting models/evidence or forcing ready.
+
+Whole-board stages1/2 remain unfinished/blocked;3–6not started;physical stage7
+pending. No copper, saved routes or fabrication-ready package exists. Future
+native routes must be saved before moving/rerouting and revalidated afterward.
+
 Publication read-back: preceding amplifier Git revision `50bebdb6c283cf72ab4ab1e28321782e28065cf8` is pushed. Native private `0.0.2-wip-a0-amplifier-review` exits 1 (665 successes, 13 failures), ready_to_build=false. Amplifier TSX, bun.lock and three timeout STEP files have exact remote hashes; nine reported failures are actually absent. Four HTTP413 failures and remaining network failures remain B-009. Logs and receipt saved in this step's evidence folder; no ready flag or upload omission workaround.

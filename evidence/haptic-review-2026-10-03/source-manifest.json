@@ -1,0 +1,60 @@
+{
+  "captured_at": "2026-10-03T03:14:51.591847+00:00",
+  "board_revision": "A0 WIP \u2014 haptic driver review",
+  "prior_source_commit": "6700842b16f651adbc93bc899e9839412bfc3191",
+  "dependencies": {
+    "tscircuit": "0.0.2742",
+    "cli": "0.1.2235",
+    "core": "0.0.2058",
+    "circuit_json": "0.0.510",
+    "typescript": "5.9.3",
+    "bun": "1.3.9"
+  },
+  "results": {
+    "native_network_build": 0,
+    "five_native_checks": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "typecheck": 0,
+    "format_check": 0,
+    "tests": {
+      "pass": 19,
+      "fail": 1,
+      "assertions": 177,
+      "remaining_failure": "B-010 full native Circuit JSON schema"
+    },
+    "haptic_native_schema_failures": 12,
+    "routing_enabled": false,
+    "visuals_reviewed": [
+      "driver-pcb.png",
+      "driver-schematic.png",
+      "pcb.png",
+      "3d.png",
+      "schematic.png"
+    ],
+    "whole_board_gates_passed": false
+  },
+  "sha256": {
+    "src/haptics/haptic-driver-review.tsx": "08a9a918f80585cb55b39929f71979f39e62087d79bf73945825930b3fea4d0e",
+    "tests/haptic-manufacturer-connections.test.ts": "49d76dfcc7e384058505b6a3ebd43bb5f5486a81f4b6f1168f510bf46ecb4d33",
+    "imports/LCM0720A3176F.tsx": "fffac61ded7a19f26467225b105449016b141055e8d390762444241a2252c639",
+    "imports/TPS7A2030PDBVR.tsx": "4bfe0d730d5f699b3a4785dfdd6fedc32d3e59492de9ef62d3fd5a42fdd61a19",
+    "imports/SS14.tsx": "e0f8c49d1f8cf15fb1f3deda7b98359f39823a4410df153d3703ea6835c33bd0",
+    "evidence/haptic-review-2026-10-03/driver.circuit.tsx": "d7ad294ce8fece5318c3d2bc52dad642a7702014863199f5448cf3921a0f0ad4",
+    "evidence/haptic-review-2026-10-03/driver-circuit.json": "739b8fbba22aca5bb3a46fe107cf6cdc1a6c2041d797d90bc6e4a3d40b408cee",
+    "evidence/haptic-review-2026-10-03/driver-schema-failures.json": "34bd0e1e25bff7ca72e142be9293d6047201332aedb167a57e22a5476ddd8ed1",
+    "evidence/haptic-review-2026-10-03/LCM0720A3176F.pdf": "8ce5a0b5cd750cbbc8f9277f1c84fdbc6c8f72636a74d867550c518132ceb726",
+    "evidence/haptic-review-2026-10-03/SS14-MDD.pdf": "1c2e8ca38c0a1afef95e4e329afc215094264244d161999f40765f5ef79d5720",
+    "package.json": "501c3c3dfdd6f9615c6cc6940d410a014ce152d1d696d9d62ec81ab2ec4cd9ad",
+    "bun.lock": "2824c1a8af00760bf730461b2822a5858f86ee477a0738a9ccc8eefd69aaa4b2",
+    "HAPTICS.md": "a550aa67674ca7ec1b22e5be0982585702fe59e35803bb547d2516b72f8635d3",
+    "VALIDATION.md": "1cf086f7270c35dbaef3de38fe52003c69db744b62f7a0ad169f53b0ec2313ff",
+    "BOM.md": "4a9b2e858d74b98ea92fd944b8492e97e5c3dc9204dd15991214b526f83ede4d",
+    "README.md": "4b57c1c80337b09d7db18beef5e3b13ae969ccba796848036ec61d75ffa80651",
+    "issues.md": "a5645e16ccb2ac9353b052d9a453e802eeba9acd19d7370855dd45af4f8e8cc4"
+  }
+}

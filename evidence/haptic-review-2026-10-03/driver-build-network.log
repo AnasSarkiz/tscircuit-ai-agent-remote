@@ -1,0 +1,27 @@
+Building 1 file(s)...
+Building evidence/haptic-review-2026-10-03/driver.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/haptic-review-2026-10-03/driver/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on Q9 are underspecified (no pinAttributes set)
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+Q9 has no pin with requires_ground=true
+Q9 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[evidence/haptic-review-2026-10-03/driver] Generating PCB SVG...
+[evidence/haptic-review-2026-10-03/driver] Written pcb.svg
+[evidence/haptic-review-2026-10-03/driver] Generating PCB PNG...
+[evidence/haptic-review-2026-10-03/driver] Written pcb.png
+[evidence/haptic-review-2026-10-03/driver] Generating schematic SVG...
+[evidence/haptic-review-2026-10-03/driver] Written schematic.svg
+[evidence/haptic-review-2026-10-03/driver] Generating schematic PNG...
+[evidence/haptic-review-2026-10-03/driver] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

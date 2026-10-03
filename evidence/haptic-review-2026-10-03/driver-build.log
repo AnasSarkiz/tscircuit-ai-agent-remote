@@ -1,0 +1,37 @@
+Building 1 file(s)...
+Building evidence/haptic-review-2026-10-03/driver.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/haptic-review-2026-10-03/driver/circuit.json
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on Q9 are underspecified (no pinAttributes set)
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+Q9 has no pin with requires_ground=true
+Q9 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <chip#6(.haptic-driver-review-group>.U22) /> (jlcpcb:C963429): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#62(.haptic-driver-review-group>.R85) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#59(.haptic-driver-review-group>.R84) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#56(.haptic-driver-review-group>.R83) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#53(.haptic-driver-review-group>.R82) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#50(.haptic-driver-review-group>.C72) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#47(.haptic-driver-review-group>.C71) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#44(.haptic-driver-review-group>.C70) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <diode#35(.haptic-driver-review-group>.D3) /> (jlcpcb:C2480): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#34(.haptic-driver-review-group>.Q9) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[evidence/haptic-review-2026-10-03/driver] Generating PCB SVG...
+[evidence/haptic-review-2026-10-03/driver] Written pcb.svg
+[evidence/haptic-review-2026-10-03/driver] Generating PCB PNG...
+[evidence/haptic-review-2026-10-03/driver] Written pcb.png
+[evidence/haptic-review-2026-10-03/driver] Generating schematic SVG...
+[evidence/haptic-review-2026-10-03/driver] Written schematic.svg
+[evidence/haptic-review-2026-10-03/driver] Generating schematic PNG...
+[evidence/haptic-review-2026-10-03/driver] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

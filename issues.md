@@ -335,3 +335,27 @@ forced readiness, publisher bypass or success claim.
 - B-009: native amplifier publication has 665 successes / 13 failures, with nine failed files actually absent and ready_to_build=false. Exact hashes distinguish late-arriving uploads. Saved log/read-back receipt in the same evidence folder and forwarded to fix chat.
 - B-010: hardware Type-C diagnostic has 19 strict schema failures; existing full-board test remains failing. Native build/five checks do not clear this blocker.
 - Battery procurement question remains unanswered. Charger/pack/TS/system enable are not integrated by the new current-detector fixture.
+
+## B-014 — C2942347 haptic motor body and model qualification
+
+Supported imported LCM0720A3176F courtyard excludes most of the top-side motor
+body. Deliberate real-resistor overlap at its center returns placement0errors/
+0warnings; native PCB and3D were inspected. Fix chat confirms converter
+body-bounds/courtyard generation defect from raw EasyEDA body data. Exact model
+height3.85mm differs from manufacturer drawing-derived provisional2.65mm maximum
+stack; that model concern remains separately unclassified. Alternate C2895081
+has no importable EasyEDA library. Stage2/3 motor qualification blocked; no
+import edit or authored substitute. Evidence: `evidence/haptic-review-2026-10-03/`.
+All three concerns sent to the authorized fix chat.
+
+### Haptic milestone — other open issues
+
+- B-007/B-008: C963429 supply metadata, C20917 underspecified pins and missing
+  reference text remain visible; manufacturer physical pins reviewed.
+- B-010:12 strict native haptic schema failures; canonical suite19pass/1fail.
+- B-009: Type-C package exited1,689successful/33failed upload reports;28timeout
+  files byte-verified, five actual404,private=true,ready_to_build=false.
+- Hardware Type-C startup gap is an electrical qualification issue, not a
+  demonstrated library bug. Do not integrate the high-current detector until
+  guaranteed low EN2 behavior across partial supply is established. Fixed
+  USB100 direction remains unqualified; pack sourcing permission is pending.

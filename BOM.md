@@ -149,3 +149,18 @@ qualification logic. No wrong search result was used in the circuit.
 ### Type-C diagnostic — 2026-10-03
 
 TUSB320LAIRWBR C132554, TPS7A2033PDBVR C2862740, TPS3839K33DBZR C96333, SN74LVC1G14DBVR C7835 and SN74LVC1G08DBVR C7666 use only their unmodified native imports in the independent current detector. VBUS detector resistors are exact C114622 470k and C482869 430k. C22765 / 0603WAF1201T5E is a newly imported 1.2k ILIM candidate; not yet wired or qualified. C6617702 remains unqualified for its imported edge cutout. No substitute battery or speaker has been authored.
+
+## Haptic intake and driver review — 2026-10-03
+
+| Candidate | Manufacturer MPN | Exact JLCPCB/LCSC | Status |
+|---|---|---|---|
+| Haptic motor | LEADER LCM0720A3176F | C2942347 | Native import; B-014 courtyard defect and separate model-height qualification; not integrated |
+| Alternate motor | LEADER LCM0720A3134F | C2895081 | No importable EasyEDA library; not a verified substitute |
+| Enabled3V motor regulator | TI TPS7A2030PDBVR | C963429 | Native import;1IN/2GND/3EN/4NC/5OUT verified; independent driver review only |
+| Flyback diode | MDD SS14 | C2480 | Native import;1cathode/2anode verified against manufacturer SMA drawing |
+
+Q9 reuses exact C20917; R82=C22548 1k, R83=C105588100Ω, R84=C9822010k,
+R85=C14675100k. C70=C9005310µF, C71=C8441922µF, C72=C45000100nF.
+These quantities belong to the independent fixture and are not a complete-board
+BOM. Voltage, startup/stall, EMI, biased-capacitance, reflow/fixture and mechanics
+remain open in `HAPTICS.md`; no motor import was patched or substituted.
