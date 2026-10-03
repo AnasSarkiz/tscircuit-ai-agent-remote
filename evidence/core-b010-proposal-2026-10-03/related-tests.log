@@ -1,0 +1,94 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/groups/group-simple-route-padding.test.tsx:
+(pass) simple route json uses subcircuit padding [31.50ms]
+
+tests/groups/group-pcb-anchor-center.test.tsx:
+(pass) group with center anchor [502.27ms]
+
+tests/groups/group-schematic-box-connections-prop.test.tsx:
+(pass) group schematic box creates ports from connections prop without duplicating explicit ports [5.88ms]
+
+tests/groups/group-subcircuit-not-defined.test.tsx:
+(pass) subcircuit_id not defined when group is not a subcircuit [4.20ms]
+
+tests/groups/group-pcb-padding.test.tsx:
+(pass) group pcb padding [184.55ms]
+
+tests/groups/group-pass-dimension.test.tsx:
+(pass) group dimension matches with the passed dimension [10.09ms]
+
+tests/groups/group-pcb-anchor-nested.test.tsx:
+(pass) nested group with anchor positioning [680.94ms]
+
+tests/groups/group-pcb-anchor-bottom-right.test.tsx:
+(pass) group with bottom_right anchor [580.09ms]
+
+tests/groups/group-pcb-anchor.test.tsx:
+(pass) group with top_left anchor should output anchor_position and anchor_alignment [542.87ms]
+
+tests/groups/group-schematic-matchpack-nested-off-origin.test.tsx:
+(pass) matchpack centers an off-origin nested group by its occupied bounds [664.38ms]
+
+tests/groups/group-default-matchadapt.test.tsx:
+(pass) group defaults to matchAdapt schematic layout [479.77ms]
+
+tests/groups/group-schematic-box-sch-port-arrangement.test.tsx:
+(pass) group schematic box ports respect schPinArrangement [648.23ms]
+
+tests/groups/group-schematic-box-connected.test.tsx:
+(pass) group schematic box connected to external component [697.09ms]
+
+tests/groups/group-schematic-box.test.tsx:
+(pass) group schematic box [334.56ms]
+
+tests/groups/group-schematic-box-ports.test.tsx:
+(pass) group schematic box ports [508.29ms]
+
+tests/groups/group-schematic-border-padding.test.tsx:
+(pass) group schematic border with padding [1277.55ms]
+
+tests/groups/group-outline.test.tsx:
+(pass) group with outline specified [12.26ms]
+
+tests/groups/group-schematic-matchpack-respects-margin.test.tsx:
+(pass) group schematic matchpack respects schMarginX [787.50ms]
+
+tests/groups/group-schematic-border.test.tsx:
+(pass) group schematic border [840.95ms]
+
+tests/groups/group-schematic-matchpack-test.test.tsx:
+(pass) group schematic matchpack layout [927.56ms]
+
+tests/groups/group-schematic-box-nested-layout.test.tsx:
+(pass) group schematic box participates in parent group schematic layout [662.08ms]
+
+tests/groups/group-schematic-box-port-direction-arrangement.test.tsx:
+(pass) group schematic box ports use direction as arrangement [712.05ms]
+
+tests/groups/group-subcircuit-no-duplicate-trace.test.tsx:
+(skip) subcircuit should not have multiple traces between the same pins
+
+tests/repros/repro157-group-position-schema.test.tsx:
+(pass) ordinary groups and resolved component offsets conform to Circuit JSON without moving pads [139.98ms]
+
+tests/components/primitive-components/group-anchor-position.test.tsx:
+(pass) group anchor position [9.25ms]
+
+tests/components/pcb/pcb-edge-positioning-with-calc-and-notes.test.tsx:
+(pass) pcb edge positioning props support calc expressions and are visible in pcb notes [359.82ms]
+
+tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:
+(pass) pcb_group with positioned_relative_to_pcb_group_id [3.03ms]
+(pass) pcb_group with positioned_relative_to_pcb_board_id [1.33ms]
+(pass) pcb_component with positioned_relative_to_pcb_group_id shows anchor offsets [5.53ms]
+(pass) pcb_component positioned relative to pcb_board shows anchor offsets [3.54ms]
+
+1 tests skipped:
+(skip) subcircuit should not have multiple traces between the same pins
+
+ 29 pass
+ 1 skip
+ 0 fail
+ 3 snapshots, 332 expect() calls
+Ran 30 tests across 27 files. [12.07s]

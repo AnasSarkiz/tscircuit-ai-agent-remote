@@ -1,0 +1,22 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/repros/repro157-group-position-schema.test.tsx:
+22 |     </board>,
+23 |   )
+24 |   await circuit.renderUntilSettled()
+25 | 
+26 |   for (const pcbComponent of circuit.db.pcb_component.list()) {
+27 |     expect(pcb_component.safeParse(pcbComponent).success).toBe(true)
+                                                               ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/.upstream-work/core-b010/tests/repros/repro157-group-position-schema.test.tsx:27:59)
+(fail) ordinary groups and resolved component offsets conform to Circuit JSON without moving pads [96.77ms]
+
+ 0 pass
+ 1 fail
+ 1 expect() calls
+Ran 1 test across 1 file. [931.00ms]

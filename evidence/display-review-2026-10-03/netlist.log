@@ -1,0 +1,228 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U13: TPS7A2028PDBVR
+ - U14: SN74LVC245APWR
+ - J7: AFC07-S10FCC-00
+ - C40: 10uF capacitor
+ - C41: 22uF capacitor
+ - C42: 100nF capacitor
+ - C43: 100nF capacitor
+ - R40: 100kΩ resistor
+ - R41: 1kΩ resistor
+ - R47: 100kΩ resistor
+ - R42: 10kΩ resistor
+ - R48: 100kΩ resistor
+ - R43: 10kΩ resistor
+ - R49: 100kΩ resistor
+ - R44: 10kΩ resistor
+ - R50: 100kΩ resistor
+ - R45: 10kΩ resistor
+ - R51: 100kΩ resistor
+ - R46: 10kΩ resistor
+
+NET: LCD_ENABLE
+  - R40 pin1
+  - U13 EN
+
+NET: V3V3
+  - C40 pin1
+  - U13 IN
+
+NET: MCU_LCD_CS_N
+  - R47 pin1
+  - U14 A1
+
+NET: LCD_CS_N
+  - R42 pin1
+  - J7 pin5
+  - U14 B1
+
+NET: VLCD
+  - R42 pin2
+  - J7 pin3
+  - U14 VCC
+  - U14 DIR
+  - C43 pin1
+  - C42 pin1
+  - C41 pin1
+  - R41 pin1
+  - U13 OUT
+
+NET: MCU_LCD_RESET_N
+  - R48 pin1
+  - U14 A2
+
+NET: LCD_RESET_N
+  - R43 pin1
+  - J7 pin6
+  - U14 B2
+
+NET: MCU_LCD_DC
+  - R49 pin1
+  - U14 A3
+
+NET: LCD_DC
+  - R44 pin1
+  - J7 pin7
+  - U14 B3
+
+NET: MCU_LCD_SCLK
+  - R50 pin1
+  - U14 A4
+
+NET: LCD_SCLK
+  - R45 pin1
+  - J7 pin8
+  - U14 B4
+
+NET: MCU_LCD_SDA
+  - R51 pin1
+  - U14 A5
+
+NET: LCD_SDA
+  - R46 pin1
+  - J7 pin9
+  - U14 B5
+
+NET: GND
+  - R46 pin2
+  - R51 pin2
+  - R45 pin2
+  - R50 pin2
+  - R44 pin2
+  - R49 pin2
+  - R43 pin2
+  - R48 pin2
+  - R47 pin2
+  - J7 pin12
+  - J7 pin11
+  - J7 pin10
+  - U14 A8
+  - U14 A7
+  - U14 A6
+  - U14 N_OE
+  - U14 GND
+  - C43 pin2
+  - C42 pin2
+  - C41 pin2
+  - C40 pin2
+  - R41 pin2
+  - R40 pin2
+  - U13 GND
+
+
+EMPTY NET PINS:
+  - J7 pin1
+  - J7 pin2
+
+COMPONENT_PINS:
+U13 (TPS7A2028PDBVR)
+- pin1(IN): NETS(V3V3)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(LCD_ENABLE)
+- pin4(N, C): NOT_CONNECTED
+- pin5(OUT): NETS(VLCD)
+
+U14 (SN74LVC245APWR)
+- pin1(DIR): NETS(VLCD)
+- pin2(A1): NETS(MCU_LCD_CS_N)
+- pin3(A2): NETS(MCU_LCD_RESET_N)
+- pin4(A3): NETS(MCU_LCD_DC)
+- pin5(A4): NETS(MCU_LCD_SCLK)
+- pin6(A5): NETS(MCU_LCD_SDA)
+- pin7(A6): NETS(GND)
+- pin8(A7): NETS(GND)
+- pin9(A8): NETS(GND)
+- pin10(GND): NETS(GND)
+- pin11(B8): NOT_CONNECTED
+- pin12(B7): NOT_CONNECTED
+- pin13(B6): NOT_CONNECTED
+- pin14(B5): NETS(LCD_SDA)
+- pin15(B4): NETS(LCD_SCLK)
+- pin16(B3): NETS(LCD_DC)
+- pin17(B2): NETS(LCD_RESET_N)
+- pin18(B1): NETS(LCD_CS_N)
+- pin19(N_OE): NETS(GND)
+- pin20(VCC): NETS(VLCD)
+
+J7 (AFC07-S10FCC-00)
+- pin1: NETS(LCD_BACKLIGHT_RETURN)
+- pin2: NETS(LCD_BACKLIGHT_OUTPUT)
+- pin3: NETS(VLCD)
+- pin4: NOT_CONNECTED
+- pin5: NETS(LCD_CS_N)
+- pin6: NETS(LCD_RESET_N)
+- pin7: NETS(LCD_DC)
+- pin8: NETS(LCD_SCLK)
+- pin9: NETS(LCD_SDA)
+- pin10: NETS(GND)
+- pin11: NETS(GND)
+- pin12: NETS(GND)
+
+C40 (10uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C41 (22uF undefined)
+- pin1: NETS(VLCD)
+- pin2: NETS(GND)
+
+C42 (100nF undefined)
+- pin1: NETS(VLCD)
+- pin2: NETS(GND)
+
+C43 (100nF undefined)
+- pin1: NETS(VLCD)
+- pin2: NETS(GND)
+
+R40 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_ENABLE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R41 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VLCD)
+- pin2(cathode, neg, right): NETS(GND)
+
+R47 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_CS_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R42 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_CS_N)
+- pin2(cathode, neg, right): NETS(VLCD)
+
+R48 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_RESET_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R43 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_RESET_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R49 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_DC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R44 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_DC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R50 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_SCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R45 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_SCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R51 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_SDA)
+- pin2(cathode, neg, right): NETS(GND)
+
+R46 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_SDA)
+- pin2(cathode, neg, right): NETS(GND)
+

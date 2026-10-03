@@ -1,0 +1,11 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/repros/repro157-group-position-schema.test.tsx:
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/.upstream-work/core-b010/tests/repros/__snapshots__/repro157-group-position-schema-pcb.snap.svg
+Creating snapshot at /Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/.upstream-work/core-b010/tests/repros/__snapshots__/repro157-group-position-schema-schematic.snap.svg
+(pass) ordinary groups and resolved component offsets conform to Circuit JSON without moving pads [175.09ms]
+
+ 1 pass
+ 0 fail
+ 205 expect() calls
+Ran 1 test across 1 file. [565.00ms]

@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-03T01:48:04.251614+00:00",
+  "source_revision": "02950fb70e20bc3add927c36aa2fde9b21dd1db7",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-a0-mcu-usb-review",
+  "publisher_exit_code": 1,
+  "reported_successes": 535,
+  "reported_failures": 4,
+  "ready_to_build": false,
+  "files": [
+    {
+      "path": "src/mcu/esp32-s3-usb-review.tsx",
+      "http_status": null,
+      "remote_sha256": "9fff0314c23a39280d9a8a2b8de4ab2fb07e80092288b304b2c7869f7c921beb",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC1G125DBVR/SN74LVC1G125DBVR.step",
+      "http_status": null,
+      "remote_sha256": "5263f24084932d48ac4416f324caff266330f102523013b5918518233e7a7d27",
+      "matches": true
+    },
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "http_status": 404,
+      "remote_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "imports/TPS63802DLAR/TPS63802DLAR.step",
+      "http_status": null,
+      "remote_sha256": "c97c37d950cd0a6ba11e51b1e5803038b90cc50ba68a89ca5317362bc7b0ce3c",
+      "matches": true
+    },
+    {
+      "path": "references/tps7a20.pdf",
+      "http_status": 404,
+      "remote_sha256": null,
+      "matches": null
+    }
+  ]
+}

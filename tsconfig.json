@@ -18,5 +18,5 @@
     "types": ["tscircuit", "bun"]
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "dist", ".claude"]
+  "exclude": ["node_modules", "dist", ".claude", ".upstream-work"]
 }

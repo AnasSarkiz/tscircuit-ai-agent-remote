@@ -10,7 +10,8 @@
       "!.tscircuit/cache/**",
       "!routes/**",
       "!bun.lock",
-      "!imports/**"
+      "!imports/**",
+      "!.upstream-work/**"
     ]
   },
   "formatter": {

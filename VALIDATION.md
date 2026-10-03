@@ -1,4 +1,4 @@
-# Validation — A0-mcu-usb-review (work in progress)
+# Validation — A0-display-logic-review (work in progress)
 
 Updated: 2026-10-03 (Europe/Tirane). **Independent MCU/USB and improved regulator reviews added; B-003 remains resolved. B-005 includes USB polygon paste; B-008 includes ESD reference text; B-009 private source publication and B-010 native JSON schema remain blocked. No complete handheld schematic/PCB exists. Not fabrication ready.** B-001's reported dimensions are corrected locally with explicit user authorization. A0 identifies engineering intake and component review, not a fabricated board revision. No physical hardware is available.
 
@@ -487,3 +487,48 @@ Authored-source whitespace check passes. Full Git whitespace scan reports native
 SVG/log trailing whitespace and raw imported STEP CRLF endings; these generated
 artifacts/imports are preserved byte-for-byte rather than reformatted. This
 source-text finding is not a DRC result or imported-geometry waiver.
+
+## A0-display-logic-review milestone — 2026-10-03
+
+Independent partial LCD logic application implemented with19 exact imported
+top-side PCB components, native A4,45×32 diagnostic canvas, routing disabled.
+Current build and five required checks exit0. Rotated actual J7 to face the
+right edge; moved C43 out of its courtyard and grouped schematic VLCD bypasses
+to resolve the actionable warnings. Final schematic-placement output empty;
+placement0errors/0warnings. Current PCB and schematic PNG/SVG inspected.
+Native snapshot exits0 and matches; generated snapshots reviewed. Five imported
+metadata/convention warnings remain visible, no component edits/suppressions.
+Pin-map tests checked actual TI LDO/buffer physical pins and LCD/FPC contact
+order, LED polarity, unused inputs and open outputs.12tests pass,1failsB-010,
+75 assertions; TypeScript and formatting exit0. Current JSON has19top parts,
+zero traces/vias/errors but21schema-invalid elements. This is diagnostic
+evidence, not a full-board stage3–6 pass. DISPLAY.md records voltage/leakage
+estimates, required sequencing and unfinished backlight/IDD/cable/mechanics.
+
+Core source proposal, isolated from board dependencies, base18e1d11…(0.0.2061),
+was reproduced/tested with upstream CI Bun1.4.0 and declared dependencies.
+Unchanged baseline fails; correction passes strict schema/physical-pad
+regression205assertions; related suite29pass/0fail/1existing skip,332assertions.
+Core TypeScript and ESM/declaration build exit0. Five existing changed PCB
+snapshots and new PCB/A4 snapshots visually reviewed. Proposal saved and sent
+to fix chat; full core suite unrun and no upstream release/push performed.
+Board remains pinned official0.0.2058, strict B-010 failure intact.
+Task tooling excludes the separate upstream checkout and limits board test
+discovery to ./tests; this does not remove any board tests or schema checks.
+
+C11050 land comparison (B-011) is not a demonstrated imported footprint defect:
+raw/import geometry matches; nominal0.20mm differences are at drawing's
+±0.20mm boundary. Source drawing date2004.6.16; revision applicability and
+physical FPC mating qualification remain pending. No imported edits.
+
+Git02950fb exact readback verified on private main. Native private version
+0.0.2-wip-a0-mcu-usb-review exited1 (535success/4fail). Both timed-out STEP
+files arrived byte-for-byte;413-rejected SN74LVC245APWR.step and TPS7A20 PDF
+are missing on exact release readback; ready_to_build=false. Receipt/log saved
+in display evidence, material B-009 update sent. No forced ready flag, model
+omission, publication success or full-build pass. This current milestone's
+publication has not yet been attempted.
+
+Whole-board requirements/schematic/mechanics remain unfinished; routing,
+shorts/copper validation, fabrication exports and physical tests remain pending.
+Protected battery sourcing exception still awaits the human reply.

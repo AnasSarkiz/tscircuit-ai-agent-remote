@@ -76,7 +76,7 @@ do not cover the microphone's guaranteed VOL. No imported definitions were chang
 Previous 8bbde6e core-alignment publication was verified on GitHub and private
 release 0.0.2-wip-a0-core-alignment (274 files); receipt is saved with this milestone.
 
-## MCU/USB and display foundation — 2026-10-03 (uncommitted review)
+## MCU/USB and display foundation — 2026-10-03
 
 | Function | Exact MPN | LCSC | Status |
 |---|---|---|---|
@@ -87,8 +87,8 @@ release 0.0.2-wip-a0-core-alignment (274 files); receipt is saved with this mile
 | MCU reset supervisor | TPS3839G33DBZR | C485802 | 3.08 V nominal threshold; current rail corners/delay review |
 | Service connector | SM06B-SRSS-TB(LF)(SN) | C160405 | 6 contacts, two anchors; VREF is sense only; harness/mechanics pending |
 | Enclosure LCD | HS17QS178RX | C5329581 | Bare 1.77 inch; 2.8 V logic/40 mA backlight; external mounting/FPC pending |
-| LCD supply candidate | TPS7A2028PDBVR | C2869847 | 2.8 V ±1.5% at VIN≥3.1 V; actual application not yet authored |
-| LCD logic buffer candidate | SN74LVC245APWR | C7848 | 2.8 V, tolerant MCU inputs; application not yet authored |
+| LCD supply candidate | TPS7A2028PDBVR | C2869847 | 2.8 V ±1.5% at VIN≥3.1 V; partial logic application reviewed |
+| LCD logic buffer candidate | SN74LVC245APWR | C7848 | 2.8 V, tolerant MCU inputs; partial logic application reviewed |
 | Hardware clock switch candidate | TS5A23157DGSR | C11133 | Dual SPDT, off-state clocks grounded; privacy application not yet authored |
 
 All supported imports remain unchanged. Historical 511 kΩ/91 kΩ feedback parts
@@ -107,3 +107,12 @@ ALPS hole defect is alleged. Current official dimension/land/circuit GIFs were
 visually inspected. This extends B-006 contact-import scope, not a permitted
 component patch. Evidence: MCU/USB review switch-discrepancy.json and native
 switch JSON/PNG/SVG. Do not integrate this unqualified alternate.
+
+Display logic application now contains 19 actual top-side PCB parts. J7 is
+AFC07-S10FCC-00 / C11050 (10-contact 0.5 mm FPC), not an invented connector.
+Its nominal land differences lie at the drawing tolerance boundary; revision
+and actual mating fit remain pending. R40/R47–51 use C14675 100 kΩ; R41 uses
+C22548 1 kΩ; R42–46 use C98220 10 kΩ. C40=C90053 10 µF, C41=C84419 22 µF,
+C42/C43=C45000 100 nF. The bleed/pulldown choices and manufacturer pin review are
+in DISPLAY.md. C165143 TPS61160 is imported but unselected/unwired pending
+backlight topology and low-Vf/off-state review. No complete-board BOM is claimed.

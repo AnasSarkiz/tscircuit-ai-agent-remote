@@ -270,3 +270,28 @@ ALPS hole defect is alleged. Current official dimension/land/circuit GIFs were
 visually inspected. This extends B-006 contact-import scope, not a permitted
 component patch. Evidence: MCU/USB review switch-discrepancy.json and native
 switch JSON/PNG/SVG. Do not integrate this unqualified alternate.
+
+## B-009 additional scope — MCU/USB native upload
+
+Git02950fb published natively as0.0.2-wip-a0-mcu-usb-review:535reported success,
+4failures,exit1. Timeout models SN74LVC1G125/TPS63802 have matching remote hashes.
+HTTP413-rejected SN74LVC245STEP and TPS7A20PDF return404; ready_to_build=false.
+This is not only an acknowledgement issue. Receipt and log in display evidence;
+reported as material update. No file dropping/forced finalization.
+
+## B-010 tested upstream source proposal — still blocked on board
+
+Base18e1d11…core2061, strict native regression baseline fails; minimal corrected
+source passes205assertions. Group offsets also require mm strings in both initial
+and anchor update paths. Related suite29pass/0fail/1existing skip, TypeScript/
+ESM/declaration build pass. Proposal/versions/snapshots saved in
+evidence/core-b010-proposal-2026-10-03 and sent to fix chat. Board runtime2058
+unchanged:12pass/1fail75assertions. Official fix publication/verification pending.
+
+## B-011 correction — C11050 land qualification question
+
+Initial nominal comparison was reported for review, then corrected. Raw supplier
+and import match. Drawing2004.6.16 has X.X ±0.20 mm; both0.20mm nominal pad
+differences lie at this boundary. No supplier/converter defect demonstrated,
+and no local footprint patch is justified. Revision applicability and cable
+mating fit remain pending. Follow-up clarification sent to fix chat.

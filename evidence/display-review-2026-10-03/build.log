@@ -1,0 +1,32 @@
+Building 1 file(s)...
+Building evidence/display-review-2026-10-03/display-logic.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/display-review-2026-10-03/display-logic/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+schematic_component schematic_component_6 extends outside the drawing area of schematic sheet "AI Remote A0 — LCD logic review (unrouted)"
+schematic_component schematic_component_17 extends outside the drawing area of schematic sheet "AI Remote A0 — LCD logic review (unrouted)"
+schematic_component schematic_component_18 extends outside the drawing area of schematic sheet "AI Remote A0 — LCD logic review (unrouted)"
+schematic_net_label schematic_net_label_17 extends outside the drawing area of schematic sheet "AI Remote A0 — LCD logic review (unrouted)"
+schematic_net_label schematic_net_label_18 extends outside the drawing area of schematic sheet "AI Remote A0 — LCD logic review (unrouted)"
+schematic_net_label schematic_net_label_22 extends outside the drawing area of schematic sheet "AI Remote A0 — LCD logic review (unrouted)"
+All pins on J7 are underspecified (no pinAttributes set)
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+J7 has no pin with requires_ground=true
+Generating preview images...
+[evidence/display-review-2026-10-03/display-logic] Generating PCB SVG...
+[evidence/display-review-2026-10-03/display-logic] Written pcb.svg
+[evidence/display-review-2026-10-03/display-logic] Generating PCB PNG...
+[evidence/display-review-2026-10-03/display-logic] Written pcb.png
+[evidence/display-review-2026-10-03/display-logic] Generating schematic SVG...
+[evidence/display-review-2026-10-03/display-logic] Written schematic.svg
+[evidence/display-review-2026-10-03/display-logic] Generating schematic PNG...
+[evidence/display-review-2026-10-03/display-logic] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

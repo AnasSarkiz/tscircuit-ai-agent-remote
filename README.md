@@ -1,14 +1,14 @@
 # tscircuit AI agent remote
 
-Revision A0-mcu-usb-review (work in progress), updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
+Revision A0-display-logic-review (work in progress), updated 2026-10-03: **unrouted regulator application review added; B-002 acoustic diameter corrected locally; B-003 resolved using the official core release; B-005 missing microphone ground paste confirmed; no complete handheld schematic or PCB exists**. Not ready for routing or fabrication; untested prototype intent.
 
 Private repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote
 
 Private tscircuit package: https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote
 — last fully verified private source release is **0.0.2-wip-a0-core-alignment**
-(274 files; Git 8bbde6e). Controls-review source commit **de5c6e4** reached GitHub,
-but both native private publication attempts failed with upload timeouts and
-remain unfinished (B-009). This is disclosed work-in-progress prototype source;
+(274 files; Git 8bbde6e). MCU/USB source commit **02950fb** reached GitHub; native private release
+**0.0.2-wip-a0-mcu-usb-review** failed with two timeouts and two HTTP413
+file rejections, and remains ready_to_build=false (B-009). This is disclosed work-in-progress prototype source;
 no complete-board build or fabrication approval is claimed.
 
 The accepted device is the square, screen-dominant concept with one top-edge hold-to-talk button, a speaker and rechargeable battery. Hold, speak and release to send a Wi-Fi request; show and speak the response. All PCB electronics must assemble on the top side. The encoder and separate APPROVE/REJECT controls are removed from the active design. See `REQUIREMENTS.md` for the complete requirement changes and remaining interface decisions. Firmware implementation is outside this task.
@@ -139,3 +139,21 @@ continue. A battery-sourcing exception question is pending, because the studied
 NTC protected pack's PCM only supports 1 A continuously. No elapsed-time
 approval is inferred. Publication remains incomplete until supported native
 upload acknowledgement succeeds; the heartbeat stays active.
+
+## Display logic review and tested core proposal — 2026-10-03
+
+`DISPLAY.md` records the partial 2.8 V LCD interface: 19 exact imported top-side
+parts, native A4, 45×32 mm diagnostic placement, routing disabled. Build and
+all five checks exit 0; current PCB/A4 renders inspected; native snapshots match.
+Manufacturer physical pin tests pass; board tests total 12 pass, 1 fail (B-010),
+75 assertions. TypeScript/formatting pass. Backlight, full power sequencing,
+unknown LCD supply current, cable, enclosure and actual handheld fit are pending.
+
+A genuine B-010 source correction was tested in a separate upstream checkout:
+new strict-schema regression passes205 assertions; related tests29 pass/0 fail/
+1 existing skip, core TypeScript and ESM/declaration build pass. Proposal and
+reviewed native snapshots are in `evidence/core-b010-proposal-2026-10-03/`, sent
+to the authorized fix chat. No installed board runtime was patched or upstream
+release published. B-010 remains open until an official fix is verified natively.
+C11050 land comparison is a tolerance/revision qualification question, not a
+proven supplier defect (B-011). No footprint patch was applied.

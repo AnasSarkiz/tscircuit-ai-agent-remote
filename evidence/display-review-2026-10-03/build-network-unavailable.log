@@ -1,0 +1,46 @@
+Building 1 file(s)...
+Building evidence/display-review-2026-10-03/display-logic.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/display-review-2026-10-03/display-logic/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+All pins on J7 are underspecified (no pinAttributes set)
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+J7 has no pin with requires_ground=true
+Failed to fetch supplier footprint for <resistor#241(.display-logic-review-group>.R46) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#238(.display-logic-review-group>.R51) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#226(.display-logic-review-group>.R45) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#223(.display-logic-review-group>.R50) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#211(.display-logic-review-group>.R44) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#208(.display-logic-review-group>.R49) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#196(.display-logic-review-group>.R43) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#193(.display-logic-review-group>.R48) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#181(.display-logic-review-group>.R42) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#178(.display-logic-review-group>.R47) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#144(.display-logic-review-group>.R41) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#141(.display-logic-review-group>.R40) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#138(.display-logic-review-group>.C43) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#135(.display-logic-review-group>.C42) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#132(.display-logic-review-group>.C41) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#129(.display-logic-review-group>.C40) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#116(.display-logic-review-group>.J7) /> (jlcpcb:C11050): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#32(.display-logic-review-group>.U14) /> (jlcpcb:C7848): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#6(.display-logic-review-group>.U13) /> (jlcpcb:C2869847): Unable to connect. Is the computer able to access the url?
+Courtyard of J7 overlaps with courtyard of C43
+Generating preview images...
+[evidence/display-review-2026-10-03/display-logic] Generating PCB SVG...
+[evidence/display-review-2026-10-03/display-logic] Written pcb.svg
+[evidence/display-review-2026-10-03/display-logic] Generating PCB PNG...
+[evidence/display-review-2026-10-03/display-logic] Written pcb.png
+[evidence/display-review-2026-10-03/display-logic] Generating schematic SVG...
+[evidence/display-review-2026-10-03/display-logic] Written schematic.svg
+[evidence/display-review-2026-10-03/display-logic] Generating schematic PNG...
+[evidence/display-review-2026-10-03/display-logic] Written schematic.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, schematic-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
