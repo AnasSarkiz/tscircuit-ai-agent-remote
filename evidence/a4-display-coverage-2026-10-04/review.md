@@ -42,3 +42,7 @@ The case remains at most **60 × 75 × 15 mm**. The conditional height allocatio
 Stage 1 in progress; stage 2 blocked; stage 3 in progress; stage 4 in progress (four preserved partial traces only); stage 5 blocked; stage 6 not started; stage 7 pending physical prototype; stage 8 WIP prototype only. Routing is limited to the preserved partial copper and `routeRemaining=false`.
 
 The next public runtime package includes only transitive board sources, imported models, native saved routes, required configuration/dependencies and current `dist/index/circuit.json`; it excludes this report, scripts and other evidence. Intended version `0.0.2-wip-a4-display-coverage`. GitHub and anonymous registry hash receipts must be recorded before calling publication complete. Previous A3 publication had HTTP 413 on the required C262650 STEP model and remains historical incomplete evidence. The watcher stays paused; no issues are sent to another chat.
+
+## Verified remote outcome
+
+Public implementation commit `1a0b0d0b77294438c431a3e4246079e4363f2f50`; GitHub anonymous Circuit JSON matches. Registry version `0.0.2-wip-a4-display-coverage` has 91/92 matching files including identical Circuit JSON, but C262650 STEP is 404 after HTTP 413. Public visibility is verified; publication is incomplete and ready_to_build=false. [Publication receipt](publication/review.md).

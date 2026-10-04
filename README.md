@@ -1,3 +1,7 @@
+## A4 publication verified — partial registry outcome
+
+Public [GitHub A4 implementation 1a0b0d0b](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/1a0b0d0b77294438c431a3e4246079e4363f2f50) and anonymous committed Circuit JSON are verified. Public [tscircuit 0.0.2-wip-a4-display-coverage](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a4-display-coverage#files) contains 91 of 92 matching runtime files, including the same fresh built Circuit JSON. The required C262650 connector STEP remains missing after HTTP413 in the official compressed upload and native fallback; publisher exit1, ready_to_build=false. **B-009 publication remains incomplete; NOT FABRICATION READY.** [Exact receipts](evidence/a4-display-coverage-2026-10-04/publication/review.md). These outcome notes change no board input and do not trigger another registry retry.
+
 # Latest A4 — 82.7% physical display coverage trial
 
 **WIP prototype; NOT FABRICATION READY.** This supersedes conflicting A3/A2 selections below. Provisional external BuyDisplay **ER-TFT026-1**, 46 × 64 mm portrait body, overlaps the unchanged 50 × 65 mm PCB by **82.712%** (81.737% with stated dimensional/position allocation). Overhang, flex and bezel are excluded. Bare-panel availability and the current drawing/FPC are still unconfirmed; this is not a qualified purchasable display selection.
