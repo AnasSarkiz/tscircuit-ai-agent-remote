@@ -1,0 +1,369 @@
+{
+  "ok": true,
+  "package_files": [
+    {
+      "package_file_id": "553bfa11-0d02-41a7-b4c6-78efff726712",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "bun.lock",
+      "content_mimetype": "application/octet-stream",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "b83f34a9-934c-4a84-8eaf-5a9b0ab24d31",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dependencies/circuit-json-qualified-source.tgz",
+      "content_mimetype": "application/octet-stream",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "6c4a711c-f6d6-4bee-93fe-9dbb89992f0b",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dependencies/circuit-json-util-qualified-source.tgz",
+      "content_mimetype": "application/octet-stream",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "67eface2-b643-4c21-83e3-581ad30309df",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dependencies/circuit-to-svg-qualified-source.tgz",
+      "content_mimetype": "application/octet-stream",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "9e4532ef-af98-4773-ad6d-c3a12e901e4e",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dependencies/core-qualified-source.tgz",
+      "content_mimetype": "application/octet-stream",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "24f899c0-30c6-4ace-a6a1-b17e74b280e7",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dependencies/props-qualified-source.tgz",
+      "content_mimetype": "application/octet-stream",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "e90ffb47-074c-4a90-9db1-fc034c0b9559",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index.cjs",
+      "content_mimetype": "application/javascript",
+      "created_at": "2026-10-03T22:50:30.972Z"
+    },
+    {
+      "package_file_id": "ace5cf41-6177-4cf9-bd0b-1ba8f9311a60",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index.d.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:50:31.369Z"
+    },
+    {
+      "package_file_id": "f6759862-7ff8-4559-8257-02c107fe6cf3",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index.html",
+      "content_mimetype": "text/html",
+      "created_at": "2026-10-03T22:50:31.549Z"
+    },
+    {
+      "package_file_id": "ea8a76de-0a66-4c45-a250-3d365e254537",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index.js",
+      "content_mimetype": "application/javascript",
+      "created_at": "2026-10-03T22:50:28.084Z"
+    },
+    {
+      "package_file_id": "c192b545-bc82-4287-84aa-b263e98fbcee",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index/3d.png",
+      "content_mimetype": "image/png",
+      "created_at": "2026-10-03T22:50:28.277Z"
+    },
+    {
+      "package_file_id": "fa68abd5-053e-423d-a162-34e116779473",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index/circuit.json",
+      "content_mimetype": "application/json",
+      "created_at": "2026-10-03T22:50:29.758Z"
+    },
+    {
+      "package_file_id": "a7705ee3-37ee-4da2-8073-3c5d4ae559e9",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index/pcb.svg",
+      "content_mimetype": "image/svg+xml",
+      "created_at": "2026-10-03T22:50:28.874Z"
+    },
+    {
+      "package_file_id": "bc23d3c2-57c6-4a53-8fca-8c3427b96f90",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "dist/index/schematic.svg",
+      "content_mimetype": "image/svg+xml",
+      "created_at": "2026-10-03T22:50:28.558Z"
+    },
+    {
+      "package_file_id": "e33551fa-1a33-4ca7-b3ec-3625a09e844b",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1001T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "4a6d8214-ac5e-4418-9029-16dc4ea07e22",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1002T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "5ca58dc9-ce5c-4666-852b-ae0dde9a09b2",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1003T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "feee6738-c8c2-48e0-9529-9a365bc2a996",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1303T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "66c09c28-71db-4833-b6c3-6e86d5f8dcfa",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1502T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "c45ff939-8633-48c9-91c3-fa6e5dc670c1",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1621T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "7a381d91-39e1-40e0-ac7d-c2b95e5d7078",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF1872T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "a1cc68bb-24f7-48a4-80b9-8d5b929ce20d",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_0603WAF5101T5E.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "542f95b7-7b53-4b6d-9902-09042b7f782a",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/A_2N7002.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "0e8abea0-3d97-40a2-9cf6-872bff791523",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/BM06B_SRSS_TB_LF__SN_.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "919143fc-422e-4982-8a0c-cbe27b0df3a8",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/BQ25185DLHR.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "a7f3f059-7eb7-4752-b6dd-eb695507ce9e",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/CC0603KRX7R9BB104.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "a16a464a-b23c-4e9a-b05c-0cab070b3548",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/CL10A475KO8NNNC.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "5d3c9558-e6c7-459f-82ab-e2ace275e485",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/CL21A106KAYNNNE.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "75e9e2cb-928d-4632-bd14-00d5abe5a169",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/E73_2G4M08S1C.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "47fd45a0-6678-42ac-9ed7-0ab279585d79",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/KT_0603R.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "86815ba0-d440-44fb-855f-d7360059c3f8",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/MSK12C02.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "5b8bf803-f189-4295-a31d-016c77d87298",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/S2B_PH_SM4_TB_LF__SN_.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "c53da7ad-458d-4315-a372-ab224186add3",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/TCC0603COG470J500CT.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "c272b849-8127-4ce9-ae56-5b601c091bda",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/TMP390A2DRLR.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "9cd5095b-bc32-4157-8ee9-b9a530c02578",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/TPS3839G33DBZR.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "19a3da38-5a94-4ed9-aac0-6923b0be7df9",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/TPS7A0230PDBVR.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "3fc5986b-8587-4f40-be15-528f9f81895f",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/TS_1088_AR02016.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "031e3f64-5ae4-41f8-81e0-d5a999ff8bfc",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "imports/USB4215_03_A.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "90bd5920-1692-4b9d-83a9-4b6dbb2df068",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "index.circuit.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "0cb97f41-0cc6-422e-8196-2f47b289b6a0",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "package.json",
+      "content_mimetype": "application/json",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "7f3f100b-93f4-4fab-abe1-535d0a816e7b",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/c2-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "05ef51c5-0dfb-453a-8982-4d637d250c65",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/c7-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "f10a6968-4f78-4944-a1ed-f8cc2e96b998",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/charger-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "8b5b2f85-d8ba-45c8-bf72-905898f5ce91",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/functional-markings.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "1e720ef5-434f-484c-bf21-4b330129c976",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/radio-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "aadc6bb6-066a-4cd0-a399-9eb81797d7bb",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/regulator-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "40a1d8f7-7638-4715-b774-26f1a78bc558",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/remote-circuit.tsx",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "bd3994a4-92e9-4f70-9afc-b9da02845e33",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/sensor-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "b555c684-c79d-4cf0-a51f-7c871c0af290",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/temperature-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "8ffadf26-0f68-4c48-9fbf-c2bbf9b1fcfe",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "src/usb-escape-paths.ts",
+      "content_mimetype": "text/typescript",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "37c64e7a-45e7-4007-bb68-444207748b61",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "tscircuit.config.json",
+      "content_mimetype": "application/json",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    },
+    {
+      "package_file_id": "2efd3984-24e2-45ed-8718-d2dd59f3205e",
+      "package_release_id": "59b310ce-8316-4253-b7dc-afe40e3ba7e4",
+      "file_path": "tsconfig.json",
+      "content_mimetype": "application/json",
+      "created_at": "2026-10-03T22:47:42.040Z"
+    }
+  ]
+}

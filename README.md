@@ -6,9 +6,16 @@ and build with `bun run build`. Remove that folder's generated `node_modules` be
 publishing through the native CLI with `--include-dist`. The generated package contains
 only the transitive board source, referenced imported OBJ/STEP models, build manifests
 and `dist/index/circuit.json`; research documents, tests and scripts remain in GitHub.
-Native compressed upload is used for this reduced package. It remains a private,
+Standard native file-by-file upload is used for this reduced package. It remains a private,
 unrouted prototype. Exact file hashes and remote verification are recorded under
 `evidence/minimal-board-publication-2026-10-04/`.
+
+Following the user's magnetic-shutter package example, 27 genuine components were
+re-imported with the native model-CDN option. Their footprint/pin definitions are
+unchanged, and all 54 remote model assets match the original local assets byte-for-byte.
+Six imports retain their reviewed local models, including the authorized microphone
+hole correction; candidates with other changes were not installed. The final runtime
+package has **75 files**, including the generated Circuit JSON.
 
 **Prototype; not for fabrication.** The complete `main.tsx` now integrates all
 major subsystems on a **50 × 65 mm**, four-layer, 1.6 mm board with 3 mm rounded

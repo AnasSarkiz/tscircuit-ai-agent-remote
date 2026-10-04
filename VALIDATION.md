@@ -2,6 +2,49 @@
 
 ## Runtime-only package step — 2026-10-04
 
+### Current method: standard native upload with genuine CDN imports
+
+The user supplied `AnasSarkiz/magnetic-shutter-remote--01a0f81f` as the publishing
+reference. Its genuine imported TSX files link to modelcdn.tscircuit.com. We verified
+the installed CLI's supported default non-download import workflow and re-imported
+32 exact JLC part numbers, preserving each existing native footprint-selection mode.
+Only 27 complete native importer outputs whose changes were limited to model import
+statements and model URLs were installed. No generated definition was hand-edited.
+The five candidates with changed courtyards/pin labels remain review evidence only;
+C5656610 was not re-imported, preserving the explicitly authorized 0.60 mm hole.
+All 54 accepted CDN assets were fetched read-only and matched the original local
+OBJ/STEP assets byte-for-byte. Source comparisons and hashes are preserved here.
+
+The final runtime folder contains **75 files**: 70 transitive board source/model
+files, four build manifests/config/lock files, and native `dist/index/circuit.json`.
+The earlier 129-file local-model plan is preserved as
+`initial-local-model-package-manifest.json`. Documents, tests, diagnostics, scripts,
+unreferenced imports/models and installed dependencies remain outside the upload.
+
+The original compressed-upload attempt was rejected by automatic approval review
+before a publisher process started because older background instructions prohibited
+that method. No compressed upload was performed. The user's reference led to this
+supported source/import change, and publication now uses ordinary native file-by-file
+upload with `--include-dist --private`, respecting the original method restriction.
+This removes the previously oversized model from the upload without deleting required
+module dependencies, patching component definitions, or bypassing build checks.
+
+Independent revalidation and fresh native JSON are recorded in the `cdn-*` receipts.
+All five native pre-route diagnostics, independent TypeScript/build, root formatting/
+TypeScript and native snapshot passed. Tests remain 30 passes/one existing B-010 failure.
+One tool session interrupted the final build before producing its artifact; the build
+was restarted after confirming no competing process and its actual exit0 was preserved.
+The final JSON element counts, PCB geometry, courtyards, pads, schematic data and
+connectivity match the reviewed A1 artifact. Its only differences are 104 instances'
+OBJ/STEP URL fields and the native filesystem checksum. The 54 remote models have
+identical byte hashes; previous inspected PCB/schematic/3D views remain applicable.
+The final package is 13,463,789 bytes across 75 files; largest file is 3,046,769 bytes.
+The target remains private WIP `0.0.2-wip-a1-board-runtime`. Native process completion
+and exact-version remote readback must both be verified before declaring publication
+complete. Routing and fabrication remain unapproved; automation stays paused.
+
+### Initial preparation (superseded file count and upload method)
+
 The user requested a registry package containing only files needed to run the board,
 including a built Circuit JSON. A source dependency walker now prepares `.publish/board`
 without altering board source or imported definitions. It rejects missing/escaping

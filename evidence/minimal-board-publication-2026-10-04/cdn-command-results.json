@@ -1,0 +1,90 @@
+[
+  {
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "basis": "actual subprocess exit observed in native check runner before the later tool interruption",
+    "log": "cdn-typecheck.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "basis": "actual subprocess exit observed in native check runner before the later tool interruption",
+    "log": "cdn-netlist.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "basis": "actual subprocess exit observed in native check runner before the later tool interruption",
+    "log": "cdn-pin_specification.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "basis": "actual subprocess exit observed in native check runner before the later tool interruption",
+    "log": "cdn-source.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "basis": "actual subprocess exit observed in native check runner before the later tool interruption",
+    "log": "cdn-schematic-placement.log"
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "basis": "actual subprocess exit observed in native check runner before the later tool interruption",
+    "log": "cdn-placement.log"
+  },
+  {
+    "command": [
+      "bun",
+      "native-cli",
+      "build",
+      "index.circuit.tsx",
+      "--routing-disabled"
+    ],
+    "cwd": ".publish/board",
+    "exit_code": 0,
+    "log": "cdn-build.log"
+  }
+]
