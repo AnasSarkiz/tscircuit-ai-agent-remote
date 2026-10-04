@@ -29001,7 +29001,7 @@ for (const [x, y] of [[2, 13], [-21.5, -29.5]]) {
 }
 box({ name: "FPC fold planning space — not a proved cable path", x: 20.55, y: -5.225, z: 3.65, width: 17.3, height: 40.3, depth: 3.1, color: "#f27b00", opacity: 0.09 });
 var activeArea = box({ name: "ER-TFT022-1 active area", x: -2.31, y: -5.225, z: 6.415, width: 44.64, height: 33.48, depth: 0.025, color: "#064e68", opacity: 0.9 });
-box({ name: "TALK plastic actuator corridor", x: 19, y: 35.7, z: 2.6, width: 4, height: 10.6, depth: 2, color: "#3870c0", opacity: 0.4 });
+box({ name: "TALK plastic actuator corridor / mechanism unqualified", x: 21.9, y: 35.7, z: 2.6, width: 4, height: 10.6, depth: 2, color: "#3870c0", opacity: 0.4 });
 for (const x of [-16.4, 21])
   box({ name: "microphone rear acoustic corridor", x, y: -30.7, z: -2, width: 1.5, height: 6.6, depth: 2.4, color: "#1b9d60", opacity: 0.5 });
 box({ name: "speaker / motor harness corridor", x: 27, y: 19, z: -2, width: 2, height: 30, depth: 2, color: "#408030", opacity: 0.4 });

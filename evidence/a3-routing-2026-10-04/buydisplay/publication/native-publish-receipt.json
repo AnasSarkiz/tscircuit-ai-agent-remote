@@ -1,0 +1,18 @@
+{
+  "native_exit_code": 1,
+  "reported_successes": 86,
+  "reported_failures": 2,
+  "version": "0.0.2-wip-a3-buydisplay-first-copper",
+  "method": "official native file-by-file push --include-dist",
+  "log_sha256": "5c1b14f676df451ba35b6cbe237cfc1cd3131c69bc83e858f345b9c9cc2f0f90",
+  "failures": [
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "error": "HTTP413 POST /package_files/create"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "error": "TimeoutError POST /package_files/create"
+    }
+  ]
+}
