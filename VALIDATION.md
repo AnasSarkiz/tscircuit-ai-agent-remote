@@ -1,3 +1,9 @@
+## A6 public outcome — verified 2026-10-04
+
+Public [GitHub A6 implementation](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/a699a2d4337d5eafa26a777fee58c037de491f8f) and committed circuit JSON are anonymously byte-verified. Public [tscircuit0.0.2-wip-a6-bom-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a6-bom-routing#files) has102/103matching board-only files, including this JSON and all saved routes. The required11.4MB C262650 connector STEP is404 after native compressed/fallbackHTTP413; publisher exit1, ready_to_build=false, no mismatched/unverified or extra files. **B-009 publication remains incomplete.** GitHub push succeeded. [Exact receipts](evidence/a6-bom-routing-2026-10-04/publication/review.md). Receipt-only update changes no runtime inputs and does not trigger another upload. **NOT FABRICATION READY.**
+
+---
+
 ## A6 current checkpoint — 2026-10-04
 
 **Engineering prototype — NOT FABRICATION READY.** This supersedes historical A5 counts below. Genuine in-stock replacements are implemented: seven C22548→C21190 (eight C21190 total), six C105588→C22775. Active125 purchased PCB parts /43identities plus10native pads. Published core0.0.2083 polygon paste fixes13 formerly missing pads;32 pill pads still lack paste. Current native copper20traces/2vias; five missing backlight traces resolved, unconnected-port errors413→402. Genuine saved phase replay and actual added-copper geometry verified; all prior11traces/2vias unchanged.
