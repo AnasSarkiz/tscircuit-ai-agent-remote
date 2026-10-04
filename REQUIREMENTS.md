@@ -1,3 +1,15 @@
+# Latest A3 BuyDisplay and first-copper checkpoint — 2026-10-04
+
+**Engineering prototype — NOT FABRICATION READY.** This supersedes conflicting A2/A1 selections below. The external screen is now **BuyDisplay/EastRising ER-TFT022-1, bare 2.2-inch 240×320 TFT, no touch**, purchased separately from the PCB. JLCPCB supplies the board electronics and the genuine **AFC07-S50ECA-00/C262650 top-contact50-pin connector**, not the screen. Its54.36×40.3 mm landscape glass spans the full50 mm PCB width. The raised-glass/flex/height tolerance study remains open inside the unchanged50×65 mm PCB and60×75×15 mm maximum enclosure.
+
+Electrical source wiring uses panel n→J7(51−n) for the planned right-edge single fold, SPI II mode1110,2.8 V logic/level translation and three separate TPS60231 current sinks. The old HS20HS072RX,12-pin connector and resistor-fed backlight are superseded. Battery centre2 staysPACK_NTC and the outer contacts stay open.
+
+Actual partial copper now exists: two short MCU USB traces and two compact regulator switch traces,0vias. Original native routes/events and supported replay are preserved before moves; the regulator island/cache were moved together−8 mm X. The other nets are not routed. Current whole board:134physical components(126purchased+8testpoints),502PCB ports,75named nets. Required remaining-connection errors are retained; no fabrication outputs are approved. Full technical review: [BuyDisplay integration and fit limits](evidence/a3-routing-2026-10-04/buydisplay/review.md). [Live mechanical study](http://127.0.0.1:4949/evidence/a3-routing-2026-10-04/mechanical.html).
+
+Native placement overlap/keepout errors are zero. Source, netlist and pin-specification checks have no errors; supplier metadata warnings and connector-access warnings remain disclosed. Four orientation suggestions were applied. The source-level schematic pin-map and imported connector orientation tests are distinct from physical panel operation. Full routing/schema/fabrication tests retain their failures; publication never means fabrication approval.
+
+Source parent0300c2eed5d591b24dba9d2bdd59e17de0f94bf7. Intended public release0.0.2-wip-a3-buydisplay-first-copper; verify receipts before claiming it published. Background watcher remains paused. The user revoked cross-thread issue messages; no issues are sent to another chat.
+
 # Latest A2 checkpoint — 2026-10-04
 
 **NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).

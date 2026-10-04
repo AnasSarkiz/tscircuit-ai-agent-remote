@@ -1,3 +1,4 @@
+import { BoardRouting } from "./src/board/Routing"
 import { BoardNets } from "./src/board/nets"
 import { McuUsbSheet } from "./src/board/McuUsbSheet"
 import { ChargerSheet } from "./src/board/ChargerSheet"
@@ -13,19 +14,21 @@ import { ControlsSheet } from "./src/board/ControlsSheet"
 import { BacklightSheet } from "./src/board/BacklightSheet"
 import { BoardFeatures } from "./src/board/BoardFeatures"
 
-// A2: display interface and mounting trial; deliberately unrouted. PROTOTYPE, NOT FOR FABRICATION.
+// A3: BuyDisplay trial and partial native copper; remaining routing is incomplete. NOT FOR FABRICATION.
 export default function AiAgentRemote() {
   return (
     <board
+      routeRemaining={false}
       width={50}
       height={65}
       borderRadius={3}
       thickness={1.6}
       layers={4}
-      routingDisabled
+      autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
       pcbStyle={{ silkscreenFontSize: 0.7 }}
     >
       <BoardNets />
+      <BoardRouting />
       <McuUsbSheet />
       <ChargerSheet />
       <RegulatorSheet />

@@ -10,7 +10,7 @@ const sourceElements = any_circuit_element
   .array()
   .parse(rawElements.filter((element) => element.type.startsWith("source_")))
 
-// Manufacturer pin maps: TI TPS7A20 / SN74LVC245A; HS20HS072RX C5329582 drawing/page 11.
+// Manufacturer pin maps: TI TPS7A20 / SN74LVC245A; BuyDisplay ER-TFT022-1 Rev2.0 pages 9-11 / ILI9341 unused pins.
 // This checks the native full-board source connections; mechanical flex fit remains open.
 const expectPinNet = ({
   name,
@@ -70,33 +70,78 @@ describe("display manufacturer physical pin requirements", () => {
   })
   test("buffer channel B pins match the manufacturer's LCD contact order and polarity", () => {
     for (const [bufferPin, lcdPin, netName] of [
-      [18, 2, "LCD_CS_N"],
-      [17, 6, "LCD_RESET_N"],
-      [16, 3, "LCD_DC"],
-      [15, 4, "LCD_SCLK"],
-      [14, 5, "LCD_SDA"],
+      [18, 38, "LCD_CS_N"],
+      [17, 10, "LCD_RESET_N"],
+      [16, 36, "LCD_DC"],
+      [15, 37, "LCD_SCLK"],
+      [14, 34, "LCD_SDA"],
     ] as const) {
       expectPinNet({ name: "U14", pinNumber: bufferPin, netName })
-      expectPinNet({ name: "J7", pinNumber: lcdPin, netName })
+      expectPinNet({ name: "J7", pinNumber: 51 - lcdPin, netName })
     }
     for (const [pinNumber, netName] of [
-      [1, "GND"],
+      [1, "LCD_BACKLIGHT_OUTPUT"],
+      [2, "LCD_BACKLIGHT_RETURN_1"],
+      [3, "LCD_BACKLIGHT_RETURN_2"],
+      [4, "LCD_BACKLIGHT_RETURN_3"],
+      [7, "VLCD"],
       [8, "VLCD"],
       [9, "VLCD"],
-      [10, "LCD_BACKLIGHT_OUTPUT"],
-      [11, "LCD_BACKLIGHT_RETURN"],
-      [12, "GND"],
-      [13, "GND"],
-      [14, "GND"],
+      [35, "VLCD"],
+      [40, "VLCD"],
+      [41, "VLCD"],
+      [42, "VLCD"],
     ] as const)
-      expectPinNet({ name: "J7", pinNumber, netName })
+      expectPinNet({ name: "J7", pinNumber: 51 - pinNumber, netName })
+    for (const pinNumber of [
+      6,
+      ...Array.from({ length: 22 }, (_, index) => index + 11),
+      43,
+      48,
+      49,
+      50,
+      51,
+      52,
+    ])
+      expectPinNet({
+        name: "J7",
+        pinNumber: pinNumber <= 50 ? 51 - pinNumber : pinNumber,
+        netName: "GND",
+      })
+  })
+  test("genuine top-contact connector pin 50 is north for the single right-edge fold", () => {
+    const connector = sourceElements.find(
+      (element) => element.type === "source_component" && element.name === "J7",
+    )
+    if (!connector || connector.type !== "source_component") throw new Error("Missing J7")
+    expect(connector.manufacturer_part_number).toBe("AFC07-S50ECA-00")
+    expect(connector.supplier_part_numbers?.jlcpcb).toEqual(["C262650"])
+    const terminalPositions = [1, 50].map((pinNumber) => {
+      const sourcePort = sourceElements.find(
+        (element) =>
+          element.type === "source_port" &&
+          element.source_component_id === connector.source_component_id &&
+          element.pin_number === pinNumber,
+      )
+      if (!sourcePort || sourcePort.type !== "source_port") throw new Error("Missing terminal")
+      const terminal = rawElements.find(
+        (element) =>
+          element.type === "pcb_port" && element.source_port_id === sourcePort.source_port_id,
+      )
+      const parsedTerminal = any_circuit_element.parse(terminal)
+      if (parsedTerminal.type !== "pcb_port") throw new Error("Missing native pad")
+      return parsedTerminal
+    })
+    expect(terminalPositions[1].y).toBeGreaterThan(terminalPositions[0].y)
+    expect(Math.abs(terminalPositions[1].x - terminalPositions[0].x)).toBeLessThan(0.01)
+    expect(terminalPositions[1].y - terminalPositions[0].y).toBeCloseTo(24.5, 2)
   })
   test("unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open", () => {
     for (const pinNumber of [7, 8, 9]) expectPinNet({ name: "U14", pinNumber, netName: "GND" })
     for (const [name, pinNumbers] of [
       ["U14", [11, 12, 13]],
       ["U13", [4]],
-      ["J7", [7]],
+      ["J7", [46, 18, 12, 7, 6, 5, 4]],
     ] as const) {
       const sourceComponent = sourceElements.find(
         (element) => element.type === "source_component" && element.name === name,

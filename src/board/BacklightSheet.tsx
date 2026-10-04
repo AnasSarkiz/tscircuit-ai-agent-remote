@@ -1,29 +1,52 @@
-import { AO3400A } from "../../imports/AO3400A/AO3400A"
+import { TPS60231RGTR } from "../../imports/TPS60231RGTR/TPS60231RGTR"
+import { RC0603FR_079K1L } from "../../imports/RC0603FR_079K1L/RC0603FR_079K1L"
 import { RC0603FR_07100RL } from "../../imports/RC0603FR_07100RL/RC0603FR_07100RL"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
+import { CL10A105KB8NNNC } from "../../imports/CL10A105KB8NNNC/CL10A105KB8NNNC"
+import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { place } from "./placement"
+
 export function BacklightSheet() {
   return (
     <schematicsheet
       name="BacklightSheet"
-      displayName="AI Remote A1 - Resistive backlight - PROVISIONAL"
+      displayName="AI Remote A3 - Current controlled backlight"
       sheetSize="A4"
       sheetIndex={12}
     >
       <group name="BacklightSheet-group" schLayout={{ layoutMode: "relative" }}>
-        <AO3400A name="Q10" {...place("Q10")} schX={3} schY={0} />
-        <RC0603FR_07100RL name="R102" {...place("R102")} schX={-6} schY={4} />
-        <RC0603FR_07100RL name="R103" {...place("R103")} schX={-3} schY={-4} />
-        <RC0603FR_0710KL name="R104" {...place("R104")} schX={3} schY={-4} />
-        <trace from="R102.pin1" to="net.VSYS" />
-        <trace from="R102.pin2" to="net.LCD_BACKLIGHT_OUTPUT" />
-        <trace from="Q10.pin3" to="net.LCD_BACKLIGHT_RETURN" />
-        <trace from="Q10.pin2" to="net.GND" />
-        <trace from="Q10.pin1" to="net.BACKLIGHT_GATE" />
+        <TPS60231RGTR name="U27" {...place("U27")} schX={0} schY={0} />
+        <RC0603FR_079K1L name="R102" {...place("R102")} schX={-6} schY={-6} />
+        <RC0603FR_07100RL name="R103" {...place("R103")} schX={-9} schY={4} />
+        <RC0603FR_0710KL name="R104" {...place("R104")} schX={-6} schY={1} />
+        <CL10A105KB8NNNC name="C82" {...place("C82")} schX={8} schY={4} />
+        <CL10A105KB8NNNC name="C83" {...place("C83")} schX={8} schY={1} />
+        <GRM188R61A106ME69D name="C84" {...place("C84")} schX={-9} schY={-3} schRotation={-90} />
+        <GRM188R61A106ME69D name="C85" {...place("C85")} schX={8} schY={-5} schRotation={-90} />
+        <trace from="U27.pin1" to="R102.pin1" />
+        <trace from="R102.pin2" to="net.GND" />
+        <trace from="U27.pin4" to="net.LCD_BACKLIGHT_RETURN_3" />
+        <trace from="U27.pin5" to="net.LCD_BACKLIGHT_RETURN_2" />
+        <trace from="U27.pin6" to="net.LCD_BACKLIGHT_RETURN_1" />
+        <trace from="U27.pin7" to="net.GND" />
+        <trace from="U27.pin8" to="net.LCD_BACKLIGHT_OUTPUT" />
+        <trace from="U27.pin9" to="C83.pin1" />
+        <trace from="U27.pin12" to="C83.pin2" />
+        <trace from="U27.pin10" to="C82.pin1" />
+        <trace from="U27.pin11" to="C82.pin2" />
+        <trace from="U27.pin13" to="net.V3V3" />
+        <trace from="U27.pin14" to="net.GND" />
+        <trace from="U27.pin15" to="net.BACKLIGHT_GATE" />
+        <trace from="U27.pin16" to="net.BACKLIGHT_GATE" />
+        <trace from="U27.pin17" to="net.GND" />
         <trace from="R103.pin1" to="net.MCU_BACKLIGHT_PWM" />
         <trace from="R103.pin2" to="net.BACKLIGHT_GATE" />
         <trace from="R104.pin1" to="net.BACKLIGHT_GATE" />
         <trace from="R104.pin2" to="net.GND" />
+        <trace from="C84.pin1" to="net.V3V3" />
+        <trace from="C84.pin2" to="net.GND" />
+        <trace from="C85.pin1" to="net.LCD_BACKLIGHT_OUTPUT" />
+        <trace from="C85.pin2" to="net.GND" />
       </group>
     </schematicsheet>
   )

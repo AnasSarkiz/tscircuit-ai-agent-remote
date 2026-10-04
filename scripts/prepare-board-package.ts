@@ -77,13 +77,13 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "A2 unrouted display and mounting trial; battery outer polarity pending; not fabrication ready",
+    "A3 BuyDisplay ER-TFT022-1 trial and partial native copper; FPC fit and battery polarity pending; not fabrication ready",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,
   scripts: {
     dev: "tsci dev",
-    build: "tsci build index.circuit.tsx --routing-disabled",
+    build: "tsci build index.circuit.tsx",
     typecheck: "tsc --noEmit",
   },
   devDependencies: {

@@ -1,0 +1,393 @@
+placement summary: 8 pad overlaps, 7 courtyard collisions, 10 connector-body intrusions, 2 footprint intrusions, 4 suboptimal orientations
+
+worst issues:
+1. SW2 intrudes 1.524mm into J6 connector body. Suggested move: move SW2 1.524mm up.
+2. U13 intrudes 1.475mm into J8 connector body. Suggested move: move U13 1.475mm up.
+3. J8 intrudes 1.325mm into J4 connector body. Suggested move: move J8 1.325mm left.
+4. C40 and J8 pad overlap by 0.7mm. Suggested move: move C40 0.7mm left.
+5. SW4 intrudes 0.937mm into J3 connector body. Suggested move: move SW4 0.937mm down.
+
+likely bad clusters:
+- J8 cluster: J8, J6, J4, SW2, U13, C40, R99, R38, J3, SW1, SW4, R36, C32, U26, U1
+- SW cluster: SW5, U3, Q1
+- C85 cluster: C85, C4, C83
+
+board top-layer utilization:
+- occupied: 48.413% (1573.434mm^2 of 3250mm^2)
+- empty spaces over 5% of board area: none
+
+board-edge status:
+- U1: 0.881mm inside bottom edge
+- J1: 0.826mm inside top edge
+- D2: 9.05mm inside top edge
+- U12: 19.225mm inside bottom edge
+- J6: 3.95mm inside bottom edge
+- R31: 10.343mm inside top edge
+- R32: 11.343mm inside top edge
+- R33: 8.343mm inside top edge
+- R34: 3.343mm inside top edge
+- R35: 23.068mm inside bottom edge
+- R36: 8.068mm inside bottom edge
+- R37: 23.843mm inside left edge
+- R38: 3.843mm inside right edge
+- C30: 8.05mm inside bottom edge
+- C31: 10.05mm inside bottom edge
+- C32: 13.05mm inside bottom edge
+- U16: 4.575mm inside top edge
+- J3: 0.5mm inside right edge
+- C1: 5.4mm inside top edge
+- C2: 2.05mm inside top edge
+- C3: 8.4mm inside top edge
+- R1: 3.068mm inside top edge
+- R2: 10.068mm inside top edge
+- R3: 2.068mm inside top edge
+- R4: 4.068mm inside top edge
+- U2: 15.35mm inside top edge
+- L1: 14.467mm inside right edge
+- C4: 18.9mm inside right edge
+- C5: 13.05mm inside top edge
+- R5: 13.068mm inside top edge
+- R6: 11.068mm inside top edge
+- R7: 14.843mm inside right edge
+- U13: 12.4mm inside right edge
+- U14: 15.893mm inside right edge
+- J7: 11.64mm inside left edge
+- C40: 12.9mm inside right edge
+- C41: 12.9mm inside right edge
+- C42: 19.9mm inside right edge
+- C43: 16.9mm inside right edge
+- R40: 11.843mm inside right edge
+- R41: 11.843mm inside right edge
+- R47: 22.068mm inside left edge
+- R42: 11.843mm inside right edge
+- R48: 22.068mm inside left edge
+- R43: 11.843mm inside right edge
+- R49: 22.068mm inside left edge
+- R44: 11.843mm inside right edge
+- R50: 22.068mm inside left edge
+- R45: 11.843mm inside right edge
+- R51: 22.068mm inside left edge
+- R46: 11.843mm inside right edge
+- U3: 4.2mm inside left edge
+- Q1: 5.5mm inside left edge
+- Q2: 9.35mm inside left edge
+- J4: 0.275mm inside right edge
+- C50: 4.9mm inside left edge
+- C51: 8.55mm inside left edge
+- R60: 13.843mm inside left edge
+- R61: 13.843mm inside left edge
+- R62: 17.843mm inside left edge
+- R63: 16.068mm inside top edge
+- R64: 14.068mm inside top edge
+- R65: 14.843mm inside left edge
+- R68: 14.843mm inside left edge
+- R66: 14.843mm inside left edge
+- R69: 10.843mm inside left edge
+- R67: 14.843mm inside left edge
+- R70: 3.843mm inside left edge
+- U22: 5.155mm inside right edge
+- Q9: 8.5mm inside right edge
+- D3: 2.275mm inside right edge
+- C70: 3.55mm inside right edge
+- C71: 5.9mm inside right edge
+- C72: 1.9mm inside right edge
+- R82: 4.843mm inside right edge
+- R83: 10.843mm inside right edge
+- R84: 12.568mm inside right edge
+- R85: 2.843mm inside right edge
+- U23: 8.4mm inside right edge
+- U24: 5.65mm inside top edge
+- C73: 9.4mm inside top edge
+- C74: 6.9mm inside right edge
+- C75: 4.4mm inside top edge
+- R86: 2.068mm inside top edge
+- R87: 1.343mm inside top edge
+- R88: 7.068mm inside top edge
+- R89: 5.068mm inside top edge
+- R90: 7.068mm inside top edge
+- R91: 9.068mm inside top edge
+- R92: 3.068mm inside top edge
+- R93: 2.068mm inside top edge
+- R94: 1.343mm inside top edge
+- R95: 2.568mm inside right edge
+- U26: 3.25mm inside bottom edge
+- R99: 4.068mm inside bottom edge
+- R100: 1.068mm inside bottom edge
+- C78: 7.05mm inside bottom edge
+- U25: 18.25mm inside top edge
+- R96: 16.068mm inside top edge
+- R97: 14.068mm inside top edge
+- C76: 22.05mm inside top edge
+- C77: 11.55mm inside top edge
+- U4: 2.433mm inside left edge
+- U5: 2.935mm inside right edge
+- C80: 2.9mm inside left edge
+- C81: 2.9mm inside right edge
+- U7: 6.15mm inside left edge
+- R26: 10.843mm inside left edge
+- R27: 10.843mm inside left edge
+- R29: 6.843mm inside left edge
+- R30: 6.843mm inside left edge
+- C25: 6.9mm inside left edge
+- C26: 2.9mm inside left edge
+- SW4: 1.738mm inside bottom edge
+- SW1: 12.738mm inside bottom edge
+- SW2: 10.738mm inside bottom edge
+- SW5: 0.744mm inside left edge
+- J8: 8.4mm inside right edge
+- U27: 17.1mm inside right edge
+- R102: 22.568mm inside right edge
+- R103: 20.843mm inside right edge
+- R104: 20.843mm inside right edge
+- C82: 15.55mm inside right edge
+- C83: 15.55mm inside right edge
+- C84: 17.9mm inside right edge
+- C85: 16.9mm inside right edge
+- TP1: 7.5mm inside left edge
+- TP2: 8.7mm inside left edge
+- TP3: 10.9mm inside left edge
+- TP4: 13.1mm inside left edge
+- TP5: 15.3mm inside left edge
+- TP6: 17.5mm inside left edge
+- TP7: 19.7mm inside left edge
+- TP8: 21.2mm inside bottom edge
+
+flagged components:
+- U1
+  source placement: placement_mode=none
+  resolved placement: center=(-12mm, 22.125mm) on top; bounds=(minX=-21.5mm, maxX=-2.5mm, minY=12.63mm, maxY=31.619mm); size=(width=19mm, height=18.99mm); anchor_alignment="center"
+  board edge status: 0.881mm inside bottom edge
+  issues:
+  - U1 and SW1 courtyard collision by 0.05mm. Suggested move: move SW1 0.05mm right.
+- U12
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 12mm) on top; bounds=(minX=-1.5mm, maxX=1.5mm, minY=10.725mm, maxY=13.275mm); size=(width=3mm, height=2.55mm); anchor_alignment="center"
+  board edge status: 19.225mm inside bottom edge
+  issues:
+  - U12 and TP8 footprint intrusion by 0.575mm. Suggested move: move TP8 0.575mm up.
+- J6
+  source placement: placement_mode=none
+  resolved placement: center=(5.053mm, 24mm) on top; bounds=(minX=2.225mm, maxX=7.88mm, minY=19.45mm, maxY=28.55mm); size=(width=5.655mm, height=9.1mm); anchor_alignment="center"
+  board edge status: 3.95mm inside bottom edge
+  issues:
+  - SW2 intrudes 1.524mm into J6 connector body. Suggested move: move SW2 1.524mm up.
+  - J6 and SW2 pad overlap by 0.63mm. Suggested move: move SW2 0.63mm right.
+  - R36 intrudes 0.864mm into J6 connector body. Suggested move: move R36 0.864mm down.
+  - R99 intrudes 0.864mm into J6 connector body. Suggested move: move R99 0.864mm down.
+  - J6 and R99 pad overlap by 0.277mm. Suggested move: move R99 0.277mm left.
+  - J6 and SW1 courtyard collision by 0.325mm. Suggested move: move SW1 0.325mm left.
+  - J6 and U26 courtyard collision by 0.23mm. Suggested move: move U26 0.23mm right.
+- R36
+  source placement: placement_mode=none
+  resolved placement: center=(5mm, 24mm) on top; bounds=(minX=3.843mm, maxX=6.157mm, minY=23.568mm, maxY=24.432mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 8.068mm inside bottom edge
+  issues:
+  - R36 intrudes 0.864mm into J6 connector body. Suggested move: move R36 0.864mm down.
+- R38
+  source placement: placement_mode=none
+  resolved placement: center=(20mm, 16mm) on top; bounds=(minX=18.843mm, maxX=21.157mm, minY=15.568mm, maxY=16.432mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 3.843mm inside right edge
+  issues:
+  - R38 intrudes 0.864mm into J4 connector body. Suggested move: move R38 0.864mm down.
+  - R38 and J4 pad overlap by 0.232mm. Suggested move: move R38 0.232mm right.
+- C32
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 19mm) on top; bounds=(minX=-1.1mm, maxX=1.1mm, minY=18.55mm, maxY=19.45mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 13.05mm inside bottom edge
+  issues:
+  - C32 and SW1 footprint intrusion by 0.9mm. Suggested move: move C32 0.9mm down.
+- J3
+  source placement: placement_mode=none
+  resolved placement: center=(20mm, 25mm) on top; bounds=(minX=15.5mm, maxX=24.5mm, minY=19.825mm, maxY=30.175mm); size=(width=9mm, height=10.35mm); anchor_alignment="center"
+  board edge status: 0.5mm inside right edge
+  issues:
+  - SW4 intrudes 0.937mm into J3 connector body. Suggested move: move SW4 0.937mm down.
+  - J8 intrudes 0.4mm into J3 connector body. Suggested move: move J8 0.4mm up.
+- C4
+  source placement: placement_mode=none
+  resolved placement: center=(5mm, -12.5mm) on top; bounds=(minX=3.9mm, maxX=6.1mm, minY=-12.95mm, maxY=-12.05mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 18.9mm inside right edge
+  issues:
+  - C4 and C85 pad overlap by 0.2mm. Suggested move: move C4 0.2mm left.
+- U13
+  source placement: placement_mode=none
+  resolved placement: center=(11mm, 11mm) on top; bounds=(minX=9.4mm, maxX=12.6mm, minY=9.75mm, maxY=12.25mm); size=(width=3.2mm, height=2.5mm); anchor_alignment="center"
+  board edge status: 12.4mm inside right edge
+  issues:
+  - U13 intrudes 1.475mm into J8 connector body. Suggested move: move U13 1.475mm up.
+  - U13 and J8 pad overlap by 0.4mm. Suggested move: move U13 0.4mm left.
+- J7
+  source placement: placement_mode=none
+  resolved placement: center=(-11.105mm, -6.63mm) on top; bounds=(minX=-13.36mm, maxX=-8.85mm, minY=-12.06mm, maxY=-1.2mm); size=(width=4.51mm, height=10.86mm); anchor_alignment="center"
+  board edge status: 11.64mm inside left edge
+  issues:
+  - J7 and Q2 pad overlap by 0.65mm. Suggested move: move Q2 0.65mm down.
+  - Q2 intrudes 1.01mm into J7 connector body. Suggested move: move Q2 1.01mm left.
+- C40
+  source placement: placement_mode=none
+  resolved placement: center=(11mm, 14mm) on top; bounds=(minX=9.9mm, maxX=12.1mm, minY=13.55mm, maxY=14.45mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 12.9mm inside right edge
+  issues:
+  - C40 and J8 pad overlap by 0.7mm. Suggested move: move C40 0.7mm left.
+  - C40 intrudes 0.9mm into J8 connector body. Suggested move: move C40 0.9mm up.
+- U3
+  source placement: placement_mode=none
+  resolved placement: center=(-19mm, 2mm) on top; bounds=(minX=-20.8mm, maxX=-17.2mm, minY=0.2mm, maxY=3.8mm); size=(width=3.6mm, height=3.6mm); anchor_alignment="center"
+  board edge status: 4.2mm inside left edge
+  issues:
+  - U3 and SW5 pad overlap by 0.25mm. Suggested move: move U3 0.25mm down.
+- Q1
+  source placement: placement_mode=none
+  resolved placement: center=(-18mm, -2mm) on top; bounds=(minX=-19.5mm, maxX=-16.5mm, minY=-3.275mm, maxY=-0.725mm); size=(width=3mm, height=2.55mm); anchor_alignment="center"
+  board edge status: 5.5mm inside left edge
+  issues:
+  - Q1 and SW5 courtyard collision by 0.256mm. Suggested move: move Q1 0.256mm right.
+- Q2
+  source placement: placement_mode=none
+  resolved placement: center=(-14mm, -2mm) on top; bounds=(minX=-15.65mm, maxX=-12.35mm, minY=-3.35mm, maxY=-0.65mm); size=(width=3.3mm, height=2.7mm); anchor_alignment="center"
+  board edge status: 9.35mm inside left edge
+  issues:
+  - J7 and Q2 pad overlap by 0.65mm. Suggested move: move Q2 0.65mm down.
+  - Q2 intrudes 1.01mm into J7 connector body. Suggested move: move Q2 1.01mm left.
+- J4
+  source placement: placement_mode=none
+  resolved placement: center=(20mm, 15mm) on top; bounds=(minX=15.275mm, maxX=24.725mm, minY=10.9mm, maxY=19.1mm); size=(width=9.45mm, height=8.2mm); anchor_alignment="center"
+  board edge status: 0.275mm inside right edge
+  issues:
+  - J8 intrudes 1.325mm into J4 connector body. Suggested move: move J8 1.325mm left.
+  - R38 intrudes 0.864mm into J4 connector body. Suggested move: move R38 0.864mm down.
+  - R38 and J4 pad overlap by 0.232mm. Suggested move: move R38 0.232mm right.
+- R62
+  source placement: placement_mode=none
+  resolved placement: center=(-6mm, -14mm) on top; bounds=(minX=-7.157mm, maxX=-4.843mm, minY=-14.432mm, maxY=-13.568mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 17.843mm inside left edge
+  issues:
+  - R62 connections cross the routing path between its pads. Suggested move: rotate R62 180 degrees.
+- R68
+  source placement: placement_mode=none
+  resolved placement: center=(-9mm, 6mm) on top; bounds=(minX=-10.157mm, maxX=-7.843mm, minY=5.568mm, maxY=6.432mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 14.843mm inside left edge
+  issues:
+  - R68 connections cross the routing path between its pads. Suggested move: rotate R68 180 degrees.
+- R70
+  source placement: placement_mode=none
+  resolved placement: center=(-20mm, 9mm) on top; bounds=(minX=-21.157mm, maxX=-18.843mm, minY=8.568mm, maxY=9.432mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 3.843mm inside left edge
+  issues:
+  - R70 connections cross the routing path between its pads. Suggested move: rotate R70 180 degrees.
+- U26
+  source placement: placement_mode=none
+  resolved placement: center=(10mm, 28mm) on top; bounds=(minX=8.15mm, maxX=11.85mm, minY=26.75mm, maxY=29.25mm); size=(width=3.7mm, height=2.5mm); anchor_alignment="center"
+  board edge status: 3.25mm inside bottom edge
+  issues:
+  - J6 and U26 courtyard collision by 0.23mm. Suggested move: move U26 0.23mm right.
+- R99
+  source placement: placement_mode=none
+  resolved placement: center=(5mm, 28mm) on top; bounds=(minX=3.843mm, maxX=6.157mm, minY=27.568mm, maxY=28.432mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 4.068mm inside bottom edge
+  issues:
+  - R99 intrudes 0.864mm into J6 connector body. Suggested move: move R99 0.864mm down.
+  - J6 and R99 pad overlap by 0.277mm. Suggested move: move R99 0.277mm left.
+- SW4
+  source placement: placement_mode=none
+  resolved placement: center=(19mm, 30mm) on top; bounds=(minX=16.95mm, maxX=21.05mm, minY=29.238mm, maxY=30.762mm); size=(width=4.101mm, height=1.524mm); anchor_alignment="center"
+  board edge status: 1.738mm inside bottom edge
+  issues:
+  - SW4 intrudes 0.937mm into J3 connector body. Suggested move: move SW4 0.937mm down.
+- SW1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 19mm) on top; bounds=(minX=-2.05mm, maxX=2.05mm, minY=18.238mm, maxY=19.762mm); size=(width=4.101mm, height=1.524mm); anchor_alignment="center"
+  board edge status: 12.738mm inside bottom edge
+  issues:
+  - C32 and SW1 footprint intrusion by 0.9mm. Suggested move: move C32 0.9mm down.
+  - J6 and SW1 courtyard collision by 0.325mm. Suggested move: move SW1 0.325mm left.
+  - U1 and SW1 courtyard collision by 0.05mm. Suggested move: move SW1 0.05mm right.
+- SW2
+  source placement: placement_mode=none
+  resolved placement: center=(6mm, 21mm) on top; bounds=(minX=3.95mm, maxX=8.05mm, minY=20.238mm, maxY=21.762mm); size=(width=4.101mm, height=1.524mm); anchor_alignment="center"
+  board edge status: 10.738mm inside bottom edge
+  issues:
+  - SW2 intrudes 1.524mm into J6 connector body. Suggested move: move SW2 1.524mm up.
+  - J6 and SW2 pad overlap by 0.63mm. Suggested move: move SW2 0.63mm right.
+  - SW2 and J8 courtyard collision by 0.15mm. Suggested move: move SW2 0.15mm left.
+- SW5
+  source placement: placement_mode=none
+  resolved placement: center=(-22mm, -1mm) on top; bounds=(minX=-24.256mm, maxX=-19.744mm, minY=-5.2mm, maxY=3.2mm); size=(width=4.512mm, height=8.4mm); anchor_alignment="center"
+  board edge status: 0.744mm inside left edge
+  issues:
+  - U3 and SW5 pad overlap by 0.25mm. Suggested move: move U3 0.25mm down.
+  - Q1 and SW5 courtyard collision by 0.256mm. Suggested move: move Q1 0.256mm right.
+- J8
+  source placement: placement_mode=none
+  resolved placement: center=(12.5mm, 15.5mm) on top; bounds=(minX=8.4mm, maxX=16.6mm, minY=10.775mm, maxY=20.225mm); size=(width=8.2mm, height=9.45mm); anchor_alignment="center"
+  board edge status: 8.4mm inside right edge
+  issues:
+  - U13 intrudes 1.475mm into J8 connector body. Suggested move: move U13 1.475mm up.
+  - J8 intrudes 1.325mm into J4 connector body. Suggested move: move J8 1.325mm left.
+  - C40 and J8 pad overlap by 0.7mm. Suggested move: move C40 0.7mm left.
+  - C40 intrudes 0.9mm into J8 connector body. Suggested move: move C40 0.9mm up.
+  - U13 and J8 pad overlap by 0.4mm. Suggested move: move U13 0.4mm left.
+  - J8 intrudes 0.4mm into J3 connector body. Suggested move: move J8 0.4mm up.
+  - SW2 and J8 courtyard collision by 0.15mm. Suggested move: move SW2 0.15mm left.
+- R102
+  source placement: placement_mode=none
+  resolved placement: center=(2mm, -7mm) on top; bounds=(minX=1.568mm, maxX=2.432mm, minY=-8.157mm, maxY=-5.843mm); size=(width=0.864mm, height=2.313mm); anchor_alignment="center"
+  board edge status: 22.568mm inside right edge
+  issues:
+  - R102 and R104 courtyard collision by 0.089mm. Suggested move: move R102 0.089mm up.
+- R104
+  source placement: placement_mode=none
+  resolved placement: center=(3mm, -5mm) on top; bounds=(minX=1.843mm, maxX=4.157mm, minY=-5.432mm, maxY=-4.568mm); size=(width=2.313mm, height=0.864mm); anchor_alignment="center"
+  board edge status: 20.843mm inside right edge
+  issues:
+  - R102 and R104 courtyard collision by 0.089mm. Suggested move: move R102 0.089mm up.
+  - R104 connections cross the routing path between its pads. Suggested move: rotate R104 180 degrees.
+- C83
+  source placement: placement_mode=none
+  resolved placement: center=(9mm, -10.4mm) on top; bounds=(minX=8.55mm, maxX=9.45mm, minY=-11.5mm, maxY=-9.3mm); size=(width=0.9mm, height=2.2mm); anchor_alignment="center"
+  board edge status: 15.55mm inside right edge
+  issues:
+  - C83 and C85 courtyard collision by 0.05mm. Suggested move: move C85 0.05mm left.
+- C85
+  source placement: placement_mode=none
+  resolved placement: center=(7mm, -12mm) on top; bounds=(minX=5.9mm, maxX=8.1mm, minY=-12.45mm, maxY=-11.55mm); size=(width=2.2mm, height=0.9mm); anchor_alignment="center"
+  board edge status: 16.9mm inside right edge
+  issues:
+  - C4 and C85 pad overlap by 0.2mm. Suggested move: move C4 0.2mm left.
+  - C83 and C85 courtyard collision by 0.05mm. Suggested move: move C85 0.05mm left.
+- TP8
+  source placement: placement_mode=none
+  resolved placement: center=(-1mm, 10.8mm) on top; bounds=(minX=-1.5mm, maxX=-0.5mm, minY=10.3mm, maxY=11.3mm); size=(width=1mm, height=1mm); anchor_alignment="center"
+  board edge status: 21.2mm inside bottom edge
+  issues:
+  - U12 and TP8 footprint intrusion by 0.575mm. Suggested move: move TP8 0.575mm up.
+
+placement drc:
+Errors: 23
+Warnings: 3
+- pcb_placement_error: Copper for component SW1 overlaps a PCB keepout
+- pcb_placement_error: Courtyard of SW1 overlaps PCB keepout "pcb_keepout_0"
+- pcb_footprint_overlap_error: R38 overlaps J4: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: C85 overlaps C4: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: J8 overlaps U13: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: J7 overlaps Q2: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: J8 overlaps C40: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+- pcb_footprint_overlap_error: SW5 overlaps U3: 2 footprint overlaps, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+- pcb_courtyard_overlap_error: Courtyard of U1 overlaps with courtyard of SW1
+- pcb_courtyard_overlap_error: Courtyard of J6 overlaps with courtyard of R36
+- pcb_courtyard_overlap_error: Courtyard of J6 overlaps with courtyard of U26
+- pcb_courtyard_overlap_error: Courtyard of J6 overlaps with courtyard of R99
+- pcb_courtyard_overlap_error: Courtyard of J6 overlaps with courtyard of SW1
+- pcb_courtyard_overlap_error: Courtyard of J6 overlaps with courtyard of SW2
+- pcb_courtyard_overlap_error: Courtyard of C32 overlaps with courtyard of SW1
+- pcb_courtyard_overlap_error: Courtyard of J3 overlaps with courtyard of SW4
+- pcb_courtyard_overlap_error: Courtyard of J3 overlaps with courtyard of J8
+- pcb_courtyard_overlap_error: Courtyard of Q1 overlaps with courtyard of SW5
+- pcb_courtyard_overlap_error: Courtyard of J4 overlaps with courtyard of J8
+- pcb_courtyard_overlap_error: Courtyard of SW2 overlaps with courtyard of J8
+- pcb_courtyard_overlap_error: Courtyard of R102 overlaps with courtyard of R104
+- pcb_courtyard_overlap_error: Courtyard of C83 overlaps with courtyard of C85
+- pcb_placement_error: Test point TP8 is not accessible because it is inside the courtyard of U12
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face x+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).

@@ -14,7 +14,7 @@ export function BoardFeatures() {
     <>
       {/* M2 mounting trial: final enclosure, flex and hardware Z fit remain open. */}
       {[
-        { x: -21.5, y: 6.7 },
+        { x: 2, y: 13 },
         { x: -21.5, y: -29.5 },
       ].map((mount, index) => (
         <group key={index} name={`mount-${index + 1}`} pcbX={0} pcbY={0}>
@@ -37,9 +37,9 @@ export function BoardFeatures() {
       <keepout
         shape="rect"
         pcbX={-12}
-        pcbY={32.505}
+        pcbY={35.675}
         width={20}
-        height={9.49}
+        height={8}
         layers={["top", "inner1", "inner2", "bottom"]}
         excludeRefs={[".U1"]}
       />
@@ -51,19 +51,19 @@ export function BoardFeatures() {
         color="#ffb34d"
       />
       <pcbnoterect
-        pcbX={0}
-        pcbY={-1}
-        width={36.2}
-        height={51.8}
+        pcbX={-0.5}
+        pcbY={-5.225}
+        width={54.36}
+        height={40.3}
         strokeWidth={0.15}
         isStrokeDashed
         color="#33b5e5"
       />
       <pcbnoterect
-        pcbX={0}
-        pcbY={-1}
-        width={30.6}
-        height={40.8}
+        pcbX={-2.31}
+        pcbY={-5.225}
+        width={44.64}
+        height={33.48}
         strokeWidth={0.1}
         isStrokeDashed
         color="#33b5e5"
@@ -71,14 +71,14 @@ export function BoardFeatures() {
       <pcbnotetext
         pcbX={0}
         pcbY={6.5}
-        text="HS20HS072RX - FIT PENDING"
+        text="BUYDISPLAY ER-TFT022-1 / NO TOUCH"
         fontSize={1}
         color="#33b5e5"
       />
       <pcbnotetext
         pcbX={0}
         pcbY={-2}
-        text="Raised above top assembly; Z fit unqualified"
+        text="A3 BuyDisplay trial; FPC / physical fit pending"
         fontSize={0.7}
         color="#33b5e5"
       />
@@ -89,10 +89,10 @@ export function BoardFeatures() {
         fontSize={0.4}
         color="#ffb34d"
       />
-      <pcbnotetext pcbX={19} pcbY={32} text="TALK" fontSize={1} />
+      <pcbnotetext pcbX={22.7} pcbY={32} text="TALK" fontSize={1} />
       <pcbnotetext pcbX={-24} pcbY={5.5} text="PRIVACY" fontSize={0.8} />
       <pcbnotetext pcbX={0} pcbY={-32} text="USB-C 5V / PROGRAM" fontSize={0.8} />
-      <pcbnotetext pcbX={0} pcbY={-31} text="A2 UNROUTED - NOT FOR FABRICATION" fontSize={0.7} />
+      <pcbnotetext pcbX={0} pcbY={-31} text="A3 PROTOTYPE - NOT FOR FABRICATION" fontSize={0.7} />
       <schematicsheet
         name="test-access"
         displayName="AI Remote A1 - Test access"
@@ -109,7 +109,7 @@ export function BoardFeatures() {
               padDiameter={1}
               layer="top"
               pcbX={index === 0 ? -17 : index === 7 ? -1 : -18 + index * 2.2}
-              pcbY={6.5}
+              pcbY={index === 7 ? -5 : 10.8}
               schX={-10 + index * 3}
               schY={0}
               connections={{ pin1: `net.${net}` }}

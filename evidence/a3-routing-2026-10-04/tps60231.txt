@@ -1,0 +1,1227 @@
+                                                                                                                                       TPS60231
+www.ti.com                                                                                     SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+
+                                        WHITE LED CHARGE PUMP CURRENT SOURCE
+                                            WITH PWM BRIGHTNESS CONTROL
+                                                                 Check for Samples: TPS60231
+
+
+1FEATURES
+•    Regulated Output Current With 0.4%                                          DESCRIPTION
+     Matching                                                                    The TPS60231 charge pump is optimized for white
+•    Drives up to 3 LEDs at 25 mA Each                                           LED supplies in color display backlight applications.
+•    LED Brightness Control Through PWM                                          The device provides a constant current for each LED,
+                                                                                 which the initial value can be set by an external
+     Control Signal
+                                                                                 resistor. The supply voltage ranges from 2.7 V to
+•    High Efficiency by Fractional Conversion                                    6.5 V and is ideally suited for all applications powered
+     With 1x and 1.5x Modes                                                      by a single LI-Ion battery cell or three to four NiCd,
+•    1 MHz Switching Frequency                                                   NiMH, or alkaline battery cells. Over an input voltage
+                                                                                 range from 3.1 V to 6.5 V, the device provides a high
+•    2.7 V to 6.5 V Operating Input Voltage Range
+                                                                                 output current of up to 25 mA per LED with a total of
+•    Internal Softstart Limits Inrush Current                                    75 mA. High efficiency is achieved by utilizing a
+•    Low Input Ripple and Low EMI                                                1x/1.5x     fractional    conversion      technique    in
+•    Overcurrent and Overtemperature Protected                                   combination with very low dropout current sources. In
+                                                                                 addition, the current controlled charge pump ensures
+•    Undervoltage Lockout With Hysteresis                                        low input current ripple and EMI. Only two external
+•    Ultra-Small 3mm x 3mm QFN Package                                           1 µF and two 0.47 µF capacitors are required to build
+                                                                                 a complete small and low cost power supply solution.
+APPLICATIONS                                                                     To reduce board space to a minimum, the device
+•    White LED Backlight for Color Displays in                                   switches at 1 MHz operating frequency and is
+     Cellular Phones, Smart Phones, PDAs,                                        available in a small 16-pin QFN (RGT) package.
+     Handheld PCs, Digital Cameras, and                                          SPACER
+     Camcorders
+•    Keypad Backlight                                                                                       VIN        VOUT
+                                                                                                                                                 1 mF
+                                                                                 VIN = 2.7 V                C1+
+                                                                                    to 6.5 V                              D1
+                                                                                                  0.47 mF
+                                                                                                            C1−           D2
+                                                                                                                          D3
+                                                                                                            C2+
+                                                                                                  0.47 mF
+                                                                                                            C2−
+                                                                                       1 mF                 EN1
+                                                                                                            EN2         ISET
+
+                                                                                                            GND
+                                                                                                                     PGND
+
+
+
+
+1
+
+
+
+
+            Please be aware that an important notice concerning availability, standard warranty, and use in critical applications of Texas
+            Instruments semiconductor products and disclaimers thereto appears at the end of this data sheet.
+
+PRODUCTION DATA information is current as of publication date.                                   Copyright © 2004–2010, Texas Instruments Incorporated
+Products conform to specifications per the terms of the Texas
+Instruments standard warranty. Production processing does not
+necessarily include testing of all parameters.
+TPS60231
+SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010                                                                                            www.ti.com
+
+           This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled with
+           appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+           ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may be more
+           susceptible to damage because very small parametric changes could cause the device not to meet its published specifications.
+
+                                                         ORDERING INFORMATION
+                              PACKAGED DEVICE (1) (2)                         PACKAGE                        MARKING
+                                   TPS60231RGTR                                  QFN                             BKH
+
+                  (1)     T indicates shipment in tape and reel on a mini reel with 250 units per reel.
+                  (2)     R indicates shipment in tape and reel with 3000 units per reel.
+
+
+
+ABSOLUTE MAXIMUM RATINGS
+over operating free-air temperature range (unless otherwise noted) (1)
+                                                                                                                               UNIT
+VI       Supply voltage                                                                                                    –0.3 V to 7 V
+         Voltage at EN1, EN2, VOUT, ISET                                                                                    –0.3 V to VI
+         Output current at VOUT                                                                                               150 mA
+TJ       Maximum junction temperature                                                                                          150°C
+TA       Operating free-air temperature                                                                                   –40°C to 85°C
+Tst      Storage temperature                                                                                              –65°C to 150°C
+
+(1)    Stresses beyond those listed under "absolute maximum ratings" may cause permanent damage to the device. These are stress ratings
+       only, and functional operation of the device at these or any other conditions beyond those indicated under "recommended operating
+       conditions" is not implied. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+
+DISSIPATION RATINGS (1)
+                                        TA ≤ 25°C                   DERATING FACTOR                  TA = 70°C                  TA = 85°C
+         PACKAGE
+                                      POWER RATING                   ABOVE TA = 25°C               POWER RATING               POWER RATING
+      16-Pin QFN (RGT)                      1.9 W                         20 mW/°C                        1W                       760 mW
+
+(1)    The thermal resistance junction to ambient of the QFN package is 52°C/W.
+
+RECOMMENDED OPERATING CONDITIONS
+                                                                                                                MIN        TYP       MAX      UNIT
+        Supply voltage at VIN                                                                                    2.7                   6.5      V
+        Maximum output current at VOUT                                                                            75                           mA
+CI      Input capacitor                                                                                            1                           µF
+Co      Output capacitor                                                                                        0.47          1                µF
+        Flying capacitor, C1, C2                                                                                0.22       0.47                µF
+        Operating junction temperature                                                                           -40                   125     °C
+
+
+
+
+2         Submit Documentation Feedback                                                          Copyright © 2004–2010, Texas Instruments Incorporated
+
+                                                          Product Folder Link(s): TPS60231
+                                                                                                                                TPS60231
+www.ti.com                                                                                 SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+
+ELECTRICAL CHARACTERISTICS
+VI = 3.6 V, EN1 = EN2 = VI, TA = -40°C to 85°C (unless otherwise noted)
+                        PARAMETER                                          TEST CONDITIONS                        MIN   TYP MAX        UNIT
+SUPPLY VOLTAGE AND CURRENT
+                                                          IO = 0 mA to 75 mA                                      2.7           6.5     V
+VI         Input voltage range
+                                                          IO = 0 mA to 45 mA, VLED ≤ 2.1 V, T = 0°C to 85°C       2.5           6.5     V
+                                                          VI = 4.2 V, x1-mode, EN1 = EN2 = 1, ISET = 20 µA              200            µA
+IQ         Operating quiescent current
+                                                          IO = 0 mA, x1.5-mode                                           2.1           mA
+ISD        Shutdown current                               EN2 = EN1 = GND                                                0.1     1     µA
+CHARGE PUMP STAGE
+VOUT       Overvoltage limit                              LED1 unconnected, VI = 4.2 V                                   5.5            V
+           Startup time                                   CO = 1 µF, IDX ≥ 0.9 IDX, set                                 375             µs
+           Softstart duration                                                                                           160             µs
+f          Switching frequency                                                                                   0.75     1    1.25    MHz
+h          Efficiency                                     VI = 3.7 V, ILED = 15 mA each, VDX = 3.1 V                    83%
+           Shutdown temperature                           Temperature rising                                            160             °C
+           Shutdown temperature hysteresis                                                                               20             °C
+           Input current limit                            EN2 = EN1 = 1, ISET = 100 µA                                  350            mA
+CURRENT SINKS
+           Recommended maximum current per                3.2 V ≤ VI ≤ 6.5 V
+IDx                                                                                                                      25            mA
+           current sink
+           Current into each current sink when ISET
+IDx                                                       3.0 V ≤ VI ≤ 6.5 V, ISET shorted to GND                        50            mA
+           is shorted to GND
+           Current matching between any two outputs       VDx = 3.1 V, TA = 25°C                                 –2% 0.4%       2%
+                                                          3.2 V ≤ VI ≤ 6.5 V, VDx = 3.1 V, EN1 = EN2 = 1,
+           Line regulation                                                                                                     ±3%
+                                                          ISET = 80 µA
+                                                          EN2 = 0, EN1 = 1                                              200
+VISET      Reference voltage for current set              EN2 = 1, EN1 = 0                                              400            mV
+                                                          EN2 = 1, EN1 = 1                                        580   600    620
+Iset       Recommended ISET pin current range                                                                       4          130     µA
+K          IDx to ISET current ratio                      EN2 = EN1 = 1, ISET = 80 µA                             230   260    280
+                                                          EN2 = 0, EN1 = 1                                              200
+Vsource    Voltage at Dx to GND                           EN2 = 1, EN1 = 0                                              300            mV
+                                                          EN2 = 1, EN1 = 1                                              400
+ENABLE 1, ENABLE 2
+VIH        EN1, EN2 high level input voltage                                                                      1.3                   V
+VIL        EN1, EN2 low level input voltage                                                                                     0.3     V
+           EN1, EN2 trip point hysteresis                                                                                50            mV
+IIKG       EN2 input leakage current                      EN1, EN2 = GND or EN2 = VI, VI = 6.5 V                        0.01     1     µA
+IIKG       EN1 input leakage current                      EN1 = VI, VI = 4.2 V                                           11     15     µA
+UVLO       Undervoltage lockout threshold                 Input voltage falling                                          2.1            V
+           Undervoltage lockout hysteresis                                                                               50            mV
+           Frequency range at PWM                                                                                   0           50     kHz
+           Recommended ON-time for PWM signal                                                                            2.5            µs
+                                                          Delay time when EN1 = EN2 go to GND after which
+           Shutdown delay time                                                                                    0.5   0.85    1.5    ms
+                                                          the TPS60231 shuts down completely
+
+
+
+
+Copyright © 2004–2010, Texas Instruments Incorporated                                                  Submit Documentation Feedback          3
+                                                        Product Folder Link(s): TPS60231
+TPS60231
+SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010                                                                                                       www.ti.com
+
+
+                                                         PIN ASSIGNMENT
+                                                                   QFN PACKAGE
+                                                                    (TOP VIEW)
+
+                                                             C2−         C1−        C1+        C2+
+
+                                                                    12         11         10         9
+                                                    13
+                                             VIN                                                         VOUT
+                                                                                                     8
+                                                    14
+                                             GND                                                         PGND
+                                                                                                     7
+                                                    15
+                                             EN1                                                         D1
+                                                                                                     6
+                                                    16
+                                             EN2                                                         D2
+                                                         1           2          3          4         5
+
+
+                                                             ISET        NC         NC         D3
+
+
+                                                                    Pin Functions
+         PIN
+                       I/O                                                                     DESCRIPTION
+      NAME      NO.
+C1+              10     –    Connect to the flying capacitor C1
+C1–              11     –    Connect to the flying capacitor C1
+C2+              9      –    Connect to the flying capacitor C2
+C2–              12     –    Connect to the flying capacitor C2
+D1-D3            6-4    I    Current sink input. Connect the cathode of the white LEDs to these inputs.
+                             Enable input. A logic high enables the converter, logic low forces the device into shutdown mode reducing
+EN1              15     I
+                             the supply current to less than 1 µA if EN2 is tied to GND.
+                             An applied PWM signal reduces the LED current as a function of the duty cycle of the PWM signal. EN1 and
+                             EN2 can be tied together for PWM dimming between 0 mA and the maximum set with ISET. EN1 and EN2
+EN2              16     I
+                             can also be used for digital dimming with 4 steps from 0 mA to the maximum current set with ISET. See the
+                             application section for more details.
+GND              14     –    Analog ground
+ISET             1      I    Connect a resistor between this pin and GND to set the maximum current through the LEDs.
+NC              2, 3    –    No internal connection
+PGND             7      –    Power ground
+VIN              13     I    Supply voltage input
+VOUT             8      0    Connect the output capacitor and the anode of the LEDs to this pin.
+Power PAD        –      –    Connect with PGND and GND
+
+
+
+
+4       Submit Documentation Feedback                                                                         Copyright © 2004–2010, Texas Instruments Incorporated
+
+                                                    Product Folder Link(s): TPS60231
+                                                                                                                                   TPS60231
+www.ti.com                                                                                   SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+
+                                                        FUNCTIONAL BLOCK DIAGRAM
+                                                 1 mF
+
+
+                                                           VOUT
+
+                                                 C1+
+                                     0.47 mF
+
+                                                 C1−                                   Current          D3
+                                                              Charge                    Sinks
+                                                 C2+                                                    D2
+                                                              Pump                                      D1
+                                     0.47 mF
+
+                                                 C2−
+                               VIN
+
+                                               1 mF
+
+
+                                                             Reference
+                                                                                       Control
+                                                                                                        ISET
+                                                EN1
+                                                EN2                                                            RSET
+
+                                                            PGND           GND
+
+
+
+SPACER
+                                                       TYPICAL CHARACTERISTICS
+
+Table of Graphs
+                                                                                                                                     FIGURE
+                                                            vs Input voltage (ILED = 25 mA, 15 mA, 10 mA, 5 mA per LED),
+                                                                                                                                        1
+                                                            EN2 = 0, EN1 = 1
+                                                            vs Input voltage (ILED = 25 mA, 15 mA, 10 mA, 5 mA per LED),
+h    Efficiency                                                                                                                         2
+                                                            EN2 = 1, EN1 = 0
+                                                            vs Input voltage (ILED = 25 mA, 15 mA, 10 mA, 5 mA per LED),
+                                                                                                                                        3
+                                                            EN2 = EN1 = 1
+IQ Quiescent current                                        vs Input voltage (TA = –40°C, 25°C, 85°C) (measured with ID1 = 5 mA)        4
+     Maximum output current from charge pump
+                                                            vs Input voltage (TA = –40°C, 25°C, 85°C)                                   5
+     stage
+fs   Switching frequency                                    vs Free-Air Temperature (TA = -40°C to 85°C, VI = 3.6 V)                    6
+                                                            vs Duty cycle on PWM (ILED max set to 20 mA)
+     LED current, ILED                                                                                                                  7
+                                                            For f = 32 kHz and f = 1 kHz, DC = 1% to 100%, VI = 3.6 V
+                                                            VI and ID1 vs time on scope, LED current at D1 with
+     Line transient response                                                                                                            8
+                                                            VI = 4.2 V to 3.6 V to 4.2 V with EN2 = EN1 = 11, 3 x 20 mA
+                                                            PWM signal and current at D1 vs time on scope
+     Dimming response                                       f = 32 kHz and f = 1 kHz, VI = 3.6 V, duty cycle = 50%,                   9, 10
+                                                            EN1 = EN2 = PWM
+                                                            VI = 3.6 V, 3 x 20 mA, EN1 = EN2 = 00 changed to                            11
+     Startup timing
+                                                            EN2 = EN1 = 11
+
+
+
+
+Copyright © 2004–2010, Texas Instruments Incorporated                                                   Submit Documentation Feedback         5
+                                                          Product Folder Link(s): TPS60231
+TPS60231
+SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010                                                                                                                               www.ti.com
+
+
+
+                                        EFFICIENCY                                                                                           EFFICIENCY
+                                            vs                                                                                                   vs
+                                      INPUT VOLTAGE                                                                                        INPUT VOLTAGE
+                     100                                                                                               100
+
+                      90                           ILED = 25 mA                                                        90
+                                                                                                                                                        ILED = 25 mA
+                      80                                                                                               80
+                                                              ILED = 15 mA
+                                                                                                                                                              ILED = 15 mA
+                      70                                                                                               70
+
+
+
+
+    Efficiency − %
+                      60                                                                                               60
+
+
+
+                                                                                         Efficiency − %
+                      50                        ILED = 10 mA                                                                                      ILED = 10 mA
+                                                                                                                       50
+
+                      40        ILED = 5 mA
+                                                                                                                       40              ILED = 5 mA
+
+                      30                                                                                               30
+
+                      20                                                                                               20
+
+                      10                                                                                               10
+
+                       0                                                                                                0
+                        2.7   3.1   3.5   3.9     4.3   4.7    5.1   5.5 5.9   6.3                                       2.7    3.1     3.5   3.9 4.3 4.7 5.1 5.5           5.9   6.3
+                                          VI − Input Voltage − V                                                                              VI − Input Voltage − V
+                                           Figure 1.                                                                                            Figure 2.
+
+                                        EFFICIENCY                                                                                      QUIESCENT CURRENT
+                                            vs                                                                                                  vs
+                                      INPUT VOLTAGE                                                                                       INPUT VOLTAGE
+                      90                                                                                                 3
+                                                                                                                       2.8
+                      80                                 ILED = 25 mA                                                  2.6                 TA = −405C
+
+
+
+
+                                                                                         IQ − Quiescent Current − mA
+                                                                ILED = 15 mA                                           2.4
+                      70
+                                                                                                                       2.2
+                      60                                                                                                 2                    TA = 255C
+                                                                                                                       1.8
+
+
+
+    Efficiency − %
+                      50                         ILED = 10 mA                                                          1.6
+                                                                                                                                                  TA = 855C
+                      40        ILED = 5 mA                                                                            1.4
+                                                                                                                       1.2
+                      30                                                                                                 1
+                                                                                                                       0.8
+                      20
+                                                                                                                       0.6
+
+                      10                                                                                               0.4
+                                                                                                                       0.2
+                       0                                                                                                 0
+                        2.7   3.1 3.5     3.9 4.3 4.7 5.1 5.5            5.9   6.3                                        2.7   3.1 3.5       3.9 4.3 4.7 5.1 5.5           5.9   6.3
+                                          VI − Input Voltage − V                                                                              VI − Input Voltage − V
+
+                                           Figure 3.                                                                                            Figure 4.
+
+
+
+
+6                    Submit Documentation Feedback                                                                                    Copyright © 2004–2010, Texas Instruments Incorporated
+
+                                                                      Product Folder Link(s): TPS60231
+                                                                                                                                                                                                        TPS60231
+www.ti.com                                                                                                                                                        SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+                                                             MAXIMUM OUTPUT CURRENT                                                                                      SWITCHING FREQUENCY
+                                                                        vs                                                                                                         vs
+                                                                  INPUT VOLTAGE                                                                                          FREE-AIR TEMPERATURE
+                                                 0.15                                                                                                  1040
+                                                                                              TA = 255C
+                                                                        VLED = 3 V                                                                              VI = 3.6 V
+
+                                                                        VLED = 3.2 V                                                                   1030
+
+
+
+
+              I O − Maximum Output Current − A
+                                                                                                                           Switching Frequency − kHz
+                                                                       VLED = 3.4 V
+
+                                                 0.10                 VLED = 3.6 V                                                                     1020
+                                                                      VLED = 3.8 V
+
+                                                                                                                                                       1010
+
+
+                                                 0.05                                                                                                  1000
+
+
+                                                                                                                                                       990
+
+
+                                                   0                                                                                                   980
+                                                    2.7    3.1    3.5    3.9 4.3 4.7 5.1 5.5         5.9    6.3                                          −40 −30 −20 −10 0 10 20 30 40 50 60 70 80
+                                                                         VI − Input Voltage − V                                                                      TA − Free-Air Temperature − 5C
+                                                                          Figure 5.                                                                                             Figure 6.
+
+                                                                      D1 LED CURRENT
+                                                                             vs
+                                                                        DUTY CYCLE                                                                                           LINE TRANSIENT
+                                                 25                                                                                                            EN1 = 1, EN2 = 1, VI = 3.6 V to 4.2 V,
+                                                          VI = 3.6 V,                                                                                          ILED = 20 mA, 3 LEDs Connected,
+                                                          ILED max set to 20 mA                                                                                ILED(D1) Measured With 1 W Resistor,
+
+
+                                                                                                                   500 mV/div
+                                                                                                                                                               TA = 255C
+                                                 20
+
+
+
+
+  I LED(D1) − D1 LED Current − mA
+                                                                                                                                                                   VI
+                                                                                                                                                                                                               3.6 V
+                                                 15
+
+
+
+                                                 10
+                                                          f = 32 kHz                                                                                          ILED(D1)
+
+
+                                                                                                                   1 mA/div
+                                                                                                                                                                                                               AC
+                                                  5
+
+                                                                             f = 1 kHz
+
+                                                  0
+                                                      0    10    20     30    40 50 60 70       80     90    100                                                               100 ms/div
+                                                                             Duty Cycle − %
+                                                                          Figure 7.                                                                                             Figure 8.
+
+
+
+
+Copyright © 2004–2010, Texas Instruments Incorporated                                                                                                                          Submit Documentation Feedback           7
+                                                                                                Product Folder Link(s): TPS60231
+TPS60231
+SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010                                                                                       www.ti.com
+
+                             DIMMING RESPONSE                                                     DIMMING RESPONSE
+
+
+                         PWM                                                                PWM
+
+
+
+                                                                            2 V/div
+    2 V/div                                                       0V
+
+                                                                                                                                             0V
+                     PWM Into EN1 and EN2, VI = 3.6 V,                                  PWM Into EN1 and EN2, VI = 3.6 V,
+                     ILED = 20 mA, 3 LEDs Connected,                                    ILED = 20 mA, 3 LEDs Connected,
+                     f = 32 kHz, TA = 255C                                              f = 1 kHz, TA = 255C
+
+
+
+
+    10 mA/div                                                               10 mA/div
+                                                                                         ILED(D1)
+                          ILED(D1)
+
+                                                                  0A
+
+                                                                                                                                            0A
+
+
+
+                                      5 ms/div                                                          200 ms/div
+
+                                     Figure 9.                                                         Figure 10.
+
+                                                                STARTUP TIMING
+
+
+
+                                             5 V/div
+                                                                  EN1 + EN2
+                                                                                                      0V
+
+
+
+
+                                                                       VO
+
+
+
+
+                                             1 V/div
+                                                                                                      0V
+                                                                         ILED
+
+
+
+                                             20 mA/div
+                                                                     VI = 3.6 V , ILED = 20 mA,
+                                                                     3 LED’s Connected,               0A
+                                                                     TA = 255C
+
+
+                                                                    20 ms/div
+                                                                   Figure 11.
+
+
+                                                         DETAILED DESCRIPTION
+
+OPERATION
+The TPS60231 uses a fractional conversion charge pump to generate a supply voltage for the integrated current
+sinks. These current sinks are used to ensure a constant current for each LED. Depending on the input voltage
+and programmed LED current, the charge pump either operates in the 1x mode or in the 1.5x mode. By
+switching automatically between these two modes, the circuit optimizes power conversion efficiency as well as
+extends operating time by allowing the discharge of the battery completely.
+The charge pump can generate 75 mA of output current, so each of the 3 LED outputs can be powered with up
+to 25 mA of current. The maximum LED current is set by a resistor connected to the ISET pin. This resistor
+programs a reference current, which is current mirrored to set the LED current.
+
+
+
+8               Submit Documentation Feedback                                                 Copyright © 2004–2010, Texas Instruments Incorporated
+
+                                                         Product Folder Link(s): TPS60231
+                                                                                                                               TPS60231
+www.ti.com                                                                                 SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+
+Applying a PWM signal to the EN1 pin and/or the EN2 pin controls the LED brightness. See a detailed
+description in the section Analog Dimming Using ISET Pin.
+
+LED CURRENT ADJUSTMENT (ISET)
+A resistor programs a reference current, which is current mirrored to set the LED current. The voltage at the
+ISET pin depends on the status of EN1 and EN2. The current in each LED is typically 260 times the current
+through the resistor at ISET.
+                V
+     R       + ISET        K
+       ISET      I
+                   LED
+       VISET — Voltage from ISET pin (0.2 V, 0.4 V or 0.6 V) to GND, see Table 1
+       ILED — Current per LED from Dx pin to GND
+       K — Dx to ISET current ratio (typically 260)
+The LED current varies linearly from 0 mA to ILED(max) mA by applying a PMW signal with 0% to 100% duty cycle.
+The LED brightness can however also be controlled by an analog control signal that is fed into the ISET pin.
+
+SOFT START
+The TPS60231 has an internal soft start circuit to limit the inrush current during startup. This prevents possible
+voltage drops of the input voltage if a high impedance power source is connected to the input of the TPS60231.
+When the device starts up with an output voltage that is below the input voltage, the output capacitor is charged
+directly from the input with a current source. The output current increases linearly until the output reaches within
+300 mV of the input voltage. When the programmed output current can be reached with the 1x mode, the
+TPS60231 terminates the soft start and begins normal operation. When the desired output current cannot be
+reached, the charge pump begins operation in 1.5x mode and pumps the output voltage up to the needed level
+to reach the programmed output current.
+
+ENABLE (EN1, EN2)
+The enable pins EN1 and EN2 are used to enable the device or set it into shutdown. The TPS60231 is enabled if
+one of the enable pins is pulled higher than the enable trip point of 1.3 V. The device starts up by going through
+the soft start routine as described in the section Soft Start. Pulling both pins to GND, after a delay, programs the
+device to shutdown. In shutdown, the charge pump, current sources, voltage reference, oscillator, and all other
+functions are turned off and the supply current is reduced to 0.1 µA.
+EN1 and EN2 can also be used for dimming. The logic levels at EN1 and EN2 set the minimum voltage at the
+current mirrors and the voltage at the ISET pin to GND. This sets the current at the LEDs to be either the full
+current or a fraction of the full current. See Table 1 for further details. The maximum current through the LEDs is
+set by a resistor connected between ISET and GND.
+EN1 and EN2 can also be used for PWM dimming. The PWM signal can either be applied to EN1 or EN2, or
+both inputs can be tied together and the PWM signal can be applied to both pins. Depending on the
+configuration, the current during PWM dimming is switched between 0 mA and its maximum (EN1 and EN2
+connected to the PWM signal) or between 0 mA and 1/3 of the full LED current if EN2 = 0 and EN1 is toggled.
+When EN1 = 0 and EN2 is toggled, the output current can be changed between 0 mA and 2/3 of the full range.
+
+                                                         Table 1. Enable Levels
+                                          ENABLE LEVEL
+                                                                        MODE               LED CURRENT
+                                         EN2            EN1
+                                           0             0           SHUTDOWN                    0
+                                           0             1         VISET = 200 mV               1/3
+                                           1             0         VISET = 400 mV               2/3
+                                           1             1         VISET = 600 mV               Full
+
+
+
+
+Copyright © 2004–2010, Texas Instruments Incorporated                                                  Submit Documentation Feedback    9
+                                                        Product Folder Link(s): TPS60231
+TPS60231
+SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010                                                                                www.ti.com
+
+
+UNDERVOLTAGE LOCKOUT
+The undervoltage lockout circuit shuts down the device when the voltage at VIN drops below a typical threshold
+of 2.15 V. This prevents damage to the device. The UVLO circuit allows the device to start up again after the
+voltage on the VIN pin has increased by about 50 mV above the UVLO lockout threshold.
+
+SHORT CIRCUIT AND OVERTEMPERTURE PROTECTION
+The current at the VOUT pin is limited typically to 250 mA. When the junction temperature exceeds 160°C, the
+device shuts down to protect the device from damage. After the temperature decreases to about 140°C, the
+device starts up again if it is enabled.
+
+OVERVOLTAGE PROTECTION AT VOUT
+The device uses the voltage at D1 to regulate voltage at VOUT. In case D1 is not connected, an overvoltage
+protection circuit ensures that the output voltage at VOUT does not exceed its limits. The connection of the LEDs
+must be started using D1 first. For all other LEDs there is no restriction in the sequence. For example, if there
+are only 2 LEDs used, the first LED is connected to D1 and the other LED can be connected to any other of the
+D2 to D3 pins.
+
+THEORY OF OPERATION/DESIGN PROCEDURE
+
+Capacitor Selection
+Ceramic capacitors such as X5R or X7R are recommended to be used with the TPS60231. For the two flying
+capacitors C1 and C2, it is important to use low ESR capacitors to avoid unnecessary efficiency losses. Low
+ESR capacitors on VOUT reduce the ripple voltage on the supply of the current sources. Table 2 lists capacitor
+types that have been tested with the TPS60231.
+
+                                                     Table 2. Capacitors
+         PART             VALUE         VOLTAGE         MANUFACTURER                 SIZE                       WEBSITE
+     C1608X5R1A105M        1 mF          10 V                                        0603
+     C1608X5R1A474M       0.47 mF        10 V                  TDK                   0603              www.componnent.tdk.com
+     C2012X7R1C105M        1m F          16 V                                        0805
+     LMK107BJ105MA         1 mF          10 V                                        0603
+     LMK107BJ474MA        0.47 mF        10 V              Taiyo Yuden               0603                   www.t-yuden.com
+     LMK212BJ105MG         1m F          10 V                                        0805
+
+Power Efficiency
+The power conversion efficiency of the TPS60231 can be calculated by adding up the products of each LED
+current and voltage and dividing it by the product of the input voltage and current. With a fully charged battery
+where the input voltage is typically above the LED forward voltage, the charge pump operates in the 1x mode
+and efficiency is very high. As the battery discharges, there is a point where the current sources no longer have
+enough voltage overhead to maintain a constant current regulation. At that point, the charge pump switches into
+the 1.5x mode. The conversion efficiency is lowest at the crossover. As the battery discharges further, the
+efficiency again increases until at about 3.1 V where it reaches a second maximum. Below 3.1 V input voltage,
+the maximum current per LED is less than 25 mA.
+
+Power Dissipation
+The maximum power dissipation inside the TPS60231 can be calculated based on the following equation:
+    PD max = [(1.5 × VI) – VO + 0.4 V] × IO
+The maximum power dissipation occurs when the input voltage is just low enough to operate in 1.5x mode, with
+a forward voltage of the white LED at maximum. This is typically for VI = 4.2 V and a forward voltage of 3.6 V.
+This needs to be lower than the maximum allowed power dissipation of the package, which can be calculated
+using the following equation:
+
+
+
+
+10      Submit Documentation Feedback                                                  Copyright © 2004–2010, Texas Instruments Incorporated
+
+                                                  Product Folder Link(s): TPS60231
+                                                                                                                              TPS60231
+www.ti.com                                                                                  SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+
+                                     T        * T
+       P                        +        Jmax     A
+           D max, package                  R
+                                             qja
+
+For example, the worst case power dissipation occurs at the input voltage level where the charge pump switches
+from the 1x mode to the 1.5x mode. At this operating point, the supply voltage to the current sources is at its
+maximum and the current sources must drop the most voltage in order to maintain a regulated output current.
+The worst case power dissipation occurs when all 3 LED outputs are fully loaded with 25 mA of LED current.
+• With: VI = 4.2 V, Vf = 3.6 V, IO = 75 mA (1.5x mode)
+• PD max = 0.23 W
+
+
+
+                                                    APPLICATION INFORMATION
+
+TYPICAL APPLICATION OF A SMART PHONE DISPLAY WITH RESISTORS CONNECTED IN
+PARALLEL
+If more than 25 mA of output current is needed, then the input pins to the current sinks can be connected in
+parallel as shown in the following application figure. This method can also be used to connect a LC display with
+only two connections for the white LEDs.
+
+                                                          VIN       VOUT
+                          VIN = 2.7 V                     C1+
+                             to 6.5 V                                  D1                      1 mF
+                                               0.47 mF
+                                                          C1−          D2
+                                                                       D3
+                                                          C2+
+                                               0.47 mF
+                                                          C2−
+                                 1 mF                     EN1
+                                                          EN2        ISET
+
+                                                          GND                          Typical Smartphone Display
+                                                                PGND
+
+
+
+                                   Figure 12. Typical Application With Resistors in Parallel
+
+
+ANALOG DIMMING USING ISET PIN
+The ISET pin can be used to connect an analog dc signal in the range of 0 mV to 600 mV (EN1 = EN2 = 1) for
+analog dimming of the white LEDs. For an input voltage of 0 V at ISET, the current is at its maximum, whereas at
+600 mV, the LED current is zero. The maximum current is:
+• For EN2 = EN1 = 1: ILED = Vset/Rset × K = 0.6V/6kR × 260 = 26 mA per LED
+• For EN2 = 1, EN0 = 1: ILED = Vset/Rset × K = 0.4V/6kR × 260 = 17 mA per LED
+• For EN2 = 0, EN1 = 1: ILED = Vset/Rset × K = 0.2V/6kR × 260 = 8.6 mA per LED
+• With EN2, EN1 set to 10 or 01, a voltage of 400 mV or 200 mV is required to set the LED current to zero.
+
+
+
+
+Copyright © 2004–2010, Texas Instruments Incorporated                                                 Submit Documentation Feedback     11
+                                                         Product Folder Link(s): TPS60231
+TPS60231
+SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010                                                                                www.ti.com
+
+
+
+
+                                                          VIN       VOUT
+                                                                                              1 mF
+                            VIN = 2.7 V                   C1+
+                               to 6.5 V                                D1
+                                              0.47 mF
+                                                          C1−          D2
+                                                                       D3
+                                                          C2+
+                                              0.47 mF
+                                                          C2−
+                                  1 mF                    EN1
+                                                          EN2        ISET
+                                                                                6 kW         V = 0 mV to
+                                                          GND                                600 mV
+                                                                PGND
+
+
+
+                             Figure 13. Analog Dimming Connections Using ISET Pin
+
+
+TYPICAL APPLICATION USING 2 WHITE LEDs AND 6 GREEN LEDs FOR LCD BACKLIGHT AND
+KEYBOARD LIGHTING
+The TPS60231 can be used to power any kind of LED. It is also possible to mix white LEDs with color LEDs
+which have a lower forward voltage. The LED with the highest forward voltage (typically the white LED) has to be
+connected to D1, because the output voltage of the charge pump is regulated in such a way to keep the voltage
+drop from D1 to GND at 400mV (with EN1 = EN2 = 1). Therefore the output voltage of the charge pump is
+regulated to:
+      VOUT = VD1 + VFLEDD1
+      VOUT — Output voltage at VOUT
+      VD1 — Voltage from D1 to GND (Vsource at D1 pin, see electrical characteristics)
+      VFLEDD1 — Forward voltage of the LED connected to D1
+Resistor Rg is used to provide current sharing between the 6 green LEDs. The upper value is calculated using:
+             V           * V
+               FLEDD1         Fg
+     Rg +
+                      Ig
+
+      VFg — Forward voltage of a green LED
+      Ig — Current per green LED
+
+
+
+
+12     Submit Documentation Feedback                                                   Copyright © 2004–2010, Texas Instruments Incorporated
+
+                                                  Product Folder Link(s): TPS60231
+                                                                                                                                                               TPS60231
+www.ti.com                                                                                                     SLVS544A – OCTOBER 2004 – REVISED FEBRUARY 2010
+
+
+
+
+                                                                    VIN           VOUT
+                                                                                                                            1 mF
+                              VIN = 2.7 V                           C1+
+                                 to 6.5 V                                             D1
+                                                       0.47 mF                                                                  2 White
+                                                                    C1−               D2                                        LEDs With
+                                                                                                                                25 mA Each
+                                                                                      D3
+                                                                    C2+
+                                                       0.47 mF
+                                                                    C2−                                                6 Green
+                                      1 mF
+                                                                                                                       LEDs With
+                                                                                                                       4 mA Each
+                                                                    EN1
+
+                                                                    EN2
+                                                                                                          Rg = 220 W
+                                                                    GND            ISET
+                                                                                                                   Sets Current to 25 mA
+                                                                                                      6.2 kW       Per Current Sink
+                                                                                                                   (With EN2 = EN1 = 1)
+
+
+                            Figure 14. LED Connections for LCD Backlight and Keyboard Lighting
+
+
+PROPOSED LAND PATTERN FOR PCB PRODUCTION
+See the application note SLUA271 for the proposed land pattern of the QFN package.
+                                                                     REVISION HISTORY
+
+Changes from Original (October 2004) to Revision A                                                                                                                       Page
+
+•   Added a Test Condition to the Input voltage range of the ELECTRICAL CHARACTERISTICS - IO = 0 mA to 45 mA,
+    VLED ≤ 2.1 V, T = °C to 85°C .............................................................................................................................................. 3
+
+
+
+
+Copyright © 2004–2010, Texas Instruments Incorporated                                                                       Submit Documentation Feedback                    13
+                                                                  Product Folder Link(s): TPS60231
+                                                                                                                                                                     PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   18-Aug-2026
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier       RoHS             Lead finish/               MSL rating/          Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)            Ball material              Peak reflow                                           (6)
+                                                                                                                                          (4)                       (5)
+
+          TPS60231RGTR                Active      Production       VQFN (RGT) | 16       3000 | LARGE T&R            Yes            FULL NIPDAU         Level-2-260C-1 YEAR             -40 to 85                    BKH
+                                                                                                                                      | NIPDAU
+         TPS60231RGTR.B               Active      Production       VQFN (RGT) | 16       3000 | LARGE T&R            Yes            FULL NIPDAU         Level-2-260C-1 YEAR             -40 to 85                    BKH
+         TPS60231RGTRG4               Active      Production       VQFN (RGT) | 16       3000 | LARGE T&R            Yes            FULL NIPDAU         Level-2-260C-1 YEAR             -40 to 85                    BKH
+        TPS60231RGTRG4.B              Active      Production       VQFN (RGT) | 16       3000 | LARGE T&R            Yes            FULL NIPDAU         Level-2-260C-1 YEAR             -40 to 85                    BKH
+           TPS60231RGTT               Active      Production       VQFN (RGT) | 16        250 | SMALL T&R            Yes            FULL NIPDAU         Level-2-260C-1 YEAR             -40 to 85                    BKH
+                                                                                                                                      | NIPDAU
+         TPS60231RGTT.B               Active      Production       VQFN (RGT) | 16        250 | SMALL T&R            Yes            FULL NIPDAU         Level-2-260C-1 YEAR             -40 to 85                    BKH
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+
+
+
+                                                                                                          Addendum-Page 1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+    www.ti.com                                                                                                                                                                            18-Aug-2026
+
+
+
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+                                                                                                          Addendum-Page 2
+                                                                               PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                       23-Jul-2025
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                      TAPE DIMENSIONS
+                                                                                       K0       P1
+
+
+
+                                                                                                                      B0 W
+                                        Reel
+                                      Diameter
+                                                                                    Cavity           A0
+                                                                A0   Dimension designed to accommodate the component width
+                                                                B0   Dimension designed to accommodate the component length
+                                                                K0   Dimension designed to accommodate the component thickness
+                                                                W    Overall width of the carrier tape
+                                                                P1   Pitch between successive cavity centers
+
+
+                                       Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                     Sprocket Holes
+
+
+                                                 Q1        Q2          Q1    Q2
+
+                                                 Q3        Q4          Q3    Q4                  User Direction of Feed
+
+
+
+                                                            Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins              SPQ        Reel   Reel   A0                 B0         K0     P1     W     Pin1
+                               Type Drawing                              Diameter Width (mm)               (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                           (mm) W1 (mm)
+     TPS60231RGTR              VQFN     RGT           16        3000        330.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+     TPS60231RGTR              VQFN     RGT           16        3000        330.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+   TPS60231RGTRG4              VQFN     RGT           16        3000        330.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+     TPS60231RGTT              VQFN     RGT           16         250        180.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+
+
+
+
+                                                                       Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              23-Jul-2025
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+
+
+
+
+                      W                                   L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+     TPS60231RGTR                VQFN             RGT           16          3000      346.0        346.0         33.0
+     TPS60231RGTR                VQFN             RGT           16          3000      353.0        353.0         32.0
+    TPS60231RGTRG4               VQFN             RGT           16          3000      346.0        346.0         33.0
+     TPS60231RGTT                VQFN             RGT           16          250       210.0        185.0         35.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                                                                   PACKAGE OUTLINE
+RGT0016A                                                            SCALE 3.600
+                                                                                                                  VQFN - 1 mm max height
+                                                                                                                   PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+                                                       3.1                                     B
+                                 A
+                                                       2.9
+
+
+
+
+               PIN 1 INDEX AREA
+                                                                                               3.1
+                                                                                               2.9
+
+
+
+
+                         1 MAX                                                                       C
+
+                                                                                                           SEATING PLANE
+
+                          0.05                                                                             0.08
+                          0.00
+
+
+                                                     1.45 0.1
+                                                                                                                                      (0.2) TYP
+                                            5                                     8
+                                                                                             EXPOSED
+                                                                                             THERMAL PAD
+                     12X 0.5          4
+                                                                                        9
+
+                         4X                                                                 SYMM
+                                                         17
+                         1.5
+
+
+
+                                      1
+                                                                                        12
+                                                                                                         0.30
+                                                                                                   16X
+                                                                                                         0.18
+                                                16              13                                       0.1      C A B
+                           PIN 1 ID                  SYMM
+                        (OPTIONAL)                                                                       0.05
+
+                                                              0.5
+                                                        16X
+                                                              0.3
+
+                                                                                                                                  4219032/A 02/2017
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.
+4. Reference JEDEC registration MO-220
+
+
+
+
+                                                                                  www.ti.com
+                                                                                        EXAMPLE BOARD LAYOUT
+RGT0016A                                                                                                 VQFN - 1 mm max height
+                                                                                                          PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+                                                                  ( 1.45)
+                                                                     SYMM
+                                                       16                          13
+
+
+                             16X (0.6)
+
+                                         1
+                                                                                                     12
+
+                        16X (0.24)
+
+                                                                        17                                         SYMM
+
+                                                                                                         (0.475)          (2.8)
+                                                                                                           TYP
+                            12X (0.5)
+                                                                                                     9
+                                         4
+
+
+                              ( 0.2) TYP
+                                      VIA
+                                                         5                        8
+                              (R0.05)                  (0.475) TYP
+                    ALL PAD CORNERS
+                                                                     (2.8)
+
+
+                                                     LAND PATTERN EXAMPLE
+                                                        EXPOSED METAL SHOWN
+                                                             SCALE:20X
+
+
+
+
+                            0.07 MAX                                                      0.07 MIN
+                        ALL AROUND                                                    ALL AROUND
+
+                                                                                                                    SOLDER MASK
+                                                     METAL                                                          OPENING
+                                                                       EXPOSED METAL
+           EXPOSED METAL
+                                                      SOLDER MASK                                                     METAL UNDER
+                                                      OPENING                                                         SOLDER MASK
+
+                               NON SOLDER MASK
+                                                                                              SOLDER MASK
+                                   DEFINED
+                                                                                                DEFINED
+                                 (PREFERRED)
+
+                                                             SOLDER MASK DETAILS
+                                                                                                                                  4219032/A 02/2017
+
+NOTES: (continued)
+
+5. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+   number SLUA271 (www.ti.com/lit/slua271).
+6. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+   on this view. It is recommended that vias under paste be filled, plugged or tented.
+
+
+
+
+                                                                       www.ti.com
+                                                                              EXAMPLE STENCIL DESIGN
+RGT0016A                                                                                     VQFN - 1 mm max height
+                                                                                              PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+                                                            ( 1.34)
+                                                16                            13
+
+
+
+
+                   16X (0.6)
+
+                               1
+                                                                                                 12
+
+              16X (0.24)
+
+                                                                  17                                  SYMM
+
+                                                                                                             (2.8)
+
+                   12X (0.5)
+
+                                                                                                 9
+                               4
+
+
+                       METAL
+                  ALL AROUND
+
+
+                                                 5                            8
+                                                             SYMM
+                     (R0.05) TYP
+
+                                                              (2.8)
+
+
+                                                SOLDER PASTE EXAMPLE
+                                              BASED ON 0.125 mm THICK STENCIL
+
+                                                     EXPOSED PAD 17:
+                                   86% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE
+                                                        SCALE:25X
+
+
+
+
+                                                                                                                     4219032/A 02/2017
+
+NOTES: (continued)
+
+7. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+  design recommendations.
+
+
+
+
+                                                                 www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2026, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

@@ -1,7 +1,7 @@
 import { place } from "./placement"
 import { TPS7A2028PDBVR } from "../../imports/TPS7A2028PDBVR/TPS7A2028PDBVR"
 import { SN74LVC245APWR } from "../../imports/SN74LVC245APWR/SN74LVC245APWR"
-import { AFC07_S12FCC_00 } from "../../imports/AFC07_S12FCC_00/AFC07_S12FCC_00"
+import { AFC07_S50ECA_00 } from "../../imports/AFC07_S50ECA_00/AFC07_S50ECA_00"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
 import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
@@ -13,14 +13,14 @@ export function DisplaySheet() {
   return (
     <schematicsheet
       name="display-logic-review"
-      displayName="AI Remote A2 - HS20HS072RX interface - MECHANICS PENDING"
+      displayName="AI Remote A3 - BuyDisplay ER-TFT022-1 four-wire SPI II"
       sheetIndex={4}
       sheetSize="A4"
     >
       <group name="display-logic-review-group" schLayout={{ layoutMode: "relative" }}>
         <TPS7A2028PDBVR name="U13" {...place("U13")} schX={-6.75} schY={6.0} />
         <SN74LVC245APWR name="U14" {...place("U14")} schX={0.0} schY={0.0} />
-        <AFC07_S12FCC_00 name="J7" {...place("J7")} schX={6.75} schY={0.0} />
+        <AFC07_S50ECA_00 name="J7" {...place("J7")} schX={6.75} schY={0.0} />
         <GRM188R61A106ME69D
           name="C40"
           {...place("C40")}
@@ -68,19 +68,53 @@ export function DisplaySheet() {
         <trace from="U14.pin7" to="net.GND" />
         <trace from="U14.pin8" to="net.GND" />
         <trace from="U14.pin9" to="net.GND" />
-        <trace from="J7.pin1" to="net.GND" />
-        <trace from="J7.pin2" to="net.LCD_CS_N" />
-        <trace from="J7.pin3" to="net.LCD_DC" />
-        <trace from="J7.pin4" to="net.LCD_SCLK" />
-        <trace from="J7.pin5" to="net.LCD_SDA" />
-        <trace from="J7.pin6" to="net.LCD_RESET_N" />
-        <trace from="J7.pin8" to="net.VLCD" />
+        {/* BuyDisplay no-touch panel: SPI II IM[3:0]=1110; right fold mates panel n to connector 51-n (top contact). */}
+        <trace from="J7.pin50" to="net.LCD_BACKLIGHT_OUTPUT" />
+        <trace from="J7.pin49" to="net.LCD_BACKLIGHT_RETURN_1" />
+        <trace from="J7.pin48" to="net.LCD_BACKLIGHT_RETURN_2" />
+        <trace from="J7.pin47" to="net.LCD_BACKLIGHT_RETURN_3" />
+        <trace from="J7.pin45" to="net.GND" />
+        <trace from="J7.pin44" to="net.VLCD" />
+        <trace from="J7.pin43" to="net.VLCD" />
+        <trace from="J7.pin42" to="net.VLCD" />
+        <trace from="J7.pin41" to="net.LCD_RESET_N" />
+        <trace from="J7.pin40" to="net.GND" />
+        <trace from="J7.pin39" to="net.GND" />
+        <trace from="J7.pin38" to="net.GND" />
+        <trace from="J7.pin37" to="net.GND" />
+        <trace from="J7.pin36" to="net.GND" />
+        <trace from="J7.pin35" to="net.GND" />
+        <trace from="J7.pin34" to="net.GND" />
+        <trace from="J7.pin33" to="net.GND" />
+        <trace from="J7.pin32" to="net.GND" />
+        <trace from="J7.pin31" to="net.GND" />
+        <trace from="J7.pin30" to="net.GND" />
+        <trace from="J7.pin29" to="net.GND" />
+        <trace from="J7.pin28" to="net.GND" />
+        <trace from="J7.pin27" to="net.GND" />
+        <trace from="J7.pin26" to="net.GND" />
+        <trace from="J7.pin25" to="net.GND" />
+        <trace from="J7.pin24" to="net.GND" />
+        <trace from="J7.pin23" to="net.GND" />
+        <trace from="J7.pin22" to="net.GND" />
+        <trace from="J7.pin21" to="net.GND" />
+        <trace from="J7.pin20" to="net.GND" />
+        <trace from="J7.pin19" to="net.GND" />
+        <trace from="J7.pin17" to="net.LCD_SDA" />
+        <trace from="J7.pin16" to="net.VLCD" />
+        <trace from="J7.pin15" to="net.LCD_DC" />
+        <trace from="J7.pin14" to="net.LCD_SCLK" />
+        <trace from="J7.pin13" to="net.LCD_CS_N" />
+        <trace from="J7.pin11" to="net.VLCD" />
+        <trace from="J7.pin10" to="net.VLCD" />
         <trace from="J7.pin9" to="net.VLCD" />
-        <trace from="J7.pin10" to="net.LCD_BACKLIGHT_OUTPUT" />
-        <trace from="J7.pin11" to="net.LCD_BACKLIGHT_RETURN" />
-        <trace from="J7.pin12" to="net.GND" />
-        <trace from="J7.pin13" to="net.GND" />
-        <trace from="J7.pin14" to="net.GND" />
+        <trace from="J7.pin8" to="net.GND" />
+        <trace from="J7.pin3" to="net.GND" />
+        <trace from="J7.pin2" to="net.GND" />
+        <trace from="J7.pin1" to="net.GND" />
+        <trace from="J7.pin51" to="net.GND" />
+        <trace from="J7.pin52" to="net.GND" />
+        {/* Panel NC5, SDO33, TE39, absent touch44-47 remain open. */}
         <RC0603FR_07100KL name="R47" {...place("R47")} schX={-6.0} schY={0.75} schRotation={-90} />
         <RC0603FR_0710KL name="R42" {...place("R42")} schX={11.25} schY={0.75} schRotation={-90} />
         <trace from="U14.pin2" to="net.MCU_LCD_CS_N" />

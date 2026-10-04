@@ -5,14 +5,7 @@ import { z } from "zod"
 
 const rawElements = z
   .array(z.object({ type: z.string() }).passthrough())
-  .parse(
-    JSON.parse(
-      readFileSync(
-        new URL("../evidence/integrated-preview-2026-10-03/circuit.json", import.meta.url),
-        "utf8",
-      ),
-    ),
-  )
+  .parse(JSON.parse(readFileSync(new URL("../dist/index/circuit.json", import.meta.url), "utf8")))
 const sourceElements = any_circuit_element
   .array()
   .parse(rawElements.filter((element) => element.type.startsWith("source_")))
@@ -42,13 +35,9 @@ function portNet(connection: { reference: string; pinNumber: number; netName: st
     ),
   ).toBe(true)
 }
-describe("Complete native unrouted board boundaries", () => {
-  test("board has top-only physical components, no routing and no native errors", () => {
-    expect(rawElements.filter((element) => element.type.includes("error"))).toEqual([])
-    expect(
-      rawElements.filter((element) => element.type === "pcb_trace" || element.type === "pcb_via"),
-    ).toEqual([])
-    expect(rawElements.filter((element) => element.type === "pcb_component")).toHaveLength(130)
+describe("Native A3 board boundaries and fabrication gate", () => {
+  test("board has top-only physical components within the accepted PCB dimensions", () => {
+    expect(rawElements.filter((element) => element.type === "pcb_component")).toHaveLength(134)
     expect(
       rawElements.filter((element) => element.type === "pcb_component" && element.layer !== "top"),
     ).toEqual([])
@@ -57,6 +46,10 @@ describe("Complete native unrouted board boundaries", () => {
       height: 65,
       thickness: 1.6,
     })
+  })
+  test("fabrication requires nonempty actual copper and zero unresolved native errors", () => {
+    expect(rawElements.filter((element) => element.type === "pcb_trace").length).toBeGreaterThan(0)
+    expect(rawElements.filter((element) => element.type.includes("error"))).toEqual([])
   })
   test("there is one shared instance of each inter-sheet rail", () => {
     for (const netName of ["GND", "V3V3", "VSYS", "VBUS", "VMIC", "PACK_BAT", "HOLD_HARDWARE"])
@@ -71,7 +64,7 @@ describe("Complete native unrouted board boundaries", () => {
       { reference: "U2", pinNumber: 10, netName: "VSYS" },
       { reference: "U2", pinNumber: 6, netName: "V3V3" },
       { reference: "U1", pinNumber: 2, netName: "V3V3" },
-      { reference: "J3", pinNumber: 3, netName: "PACK_NTC" },
+      { reference: "J3", pinNumber: 2, netName: "PACK_NTC" },
     ])
       portNet(connection)
   })

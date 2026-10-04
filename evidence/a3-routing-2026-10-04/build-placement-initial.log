@@ -1,0 +1,243 @@
+$ tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+<trace#1322(from:U27.pin1 to:R102.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1329(from:U27.pin9 to:C83.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1330(from:U27.pin12 to:C83.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1331(from:U27.pin10 to:C82.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1332(from:U27.pin11 to:C82.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+component is inferred to face x+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+TP7 has no courtyard
+TP8 has no courtyard
+<testpoint#1367(.test-access-group>.TP1) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1373(.test-access-group>.TP2) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1379(.test-access-group>.TP3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1385(.test-access-group>.TP4) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1391(.test-access-group>.TP5) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1397(.test-access-group>.TP6) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1403(.test-access-group>.TP7) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1409(.test-access-group>.TP8) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+All pins on J1 are underspecified (no pinAttributes set)
+All pins on J6 are underspecified (no pinAttributes set)
+All pins on J3 are underspecified (no pinAttributes set)
+All pins on J7 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on J4 are underspecified (no pinAttributes set)
+All pins on Q9 are underspecified (no pinAttributes set)
+All pins on SW5 are underspecified (no pinAttributes set)
+All pins on J8 are underspecified (no pinAttributes set)
+U1 has no pin with requires_power=true
+J1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+J6 has no pin with requires_power=true
+U16 has no pin with requires_power=true
+J3 has no pin with requires_power=true
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+J4 has no pin with requires_power=true
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+U23 has no pin with requires_power=true
+SW5 has no pin with requires_power=true
+J8 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+J6 has no pin with requires_ground=true
+J3 has no pin with requires_ground=true
+J7 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+J4 has no pin with requires_ground=true
+Q9 has no pin with requires_ground=true
+SW5 has no pin with requires_ground=true
+J8 has no pin with requires_ground=true
+Failed to fetch supplier footprint for <chip#72(.mcu-usb-review-group>.U1) /> (jlcpcb:C2913201): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#187(.mcu-usb-review-group>.R31) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#149(.mcu-usb-review-group>.J6) /> (jlcpcb:C160405): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#132(.mcu-usb-review-group>.U12) /> (jlcpcb:C485802): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#131(.mcu-usb-review-group>.D2) /> (jlcpcb:C94934): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#114(.mcu-usb-review-group>.J1) /> (jlcpcb:C165948): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#198(.mcu-usb-review-group>.R32) /> (jlcpcb:C107701): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#251(.mcu-usb-review-group>.C30) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#248(.mcu-usb-review-group>.R38) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#245(.mcu-usb-review-group>.R37) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#242(.mcu-usb-review-group>.R36) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#231(.mcu-usb-review-group>.R35) /> (jlcpcb:C99782): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#220(.mcu-usb-review-group>.R34) /> (jlcpcb:C105580): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#209(.mcu-usb-review-group>.R33) /> (jlcpcb:C105580): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#254(.mcu-usb-review-group>.C31) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#257(.mcu-usb-review-group>.C32) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#338(.ChargerSheet-group>.U16) /> (jlcpcb:C54313): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#367(.ChargerSheet-group>.C3) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#364(.ChargerSheet-group>.C2) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#361(.ChargerSheet-group>.C1) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#356(.ChargerSheet-group>.J3) /> (jlcpcb:C265101): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#370(.ChargerSheet-group>.R1) /> (jlcpcb:C126358): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#415(.regulator-review>.U2) /> (jlcpcb:C2845237): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#379(.ChargerSheet-group>.R4) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#376(.ChargerSheet-group>.R3) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#373(.ChargerSheet-group>.R2) /> (jlcpcb:C126358): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#426(.regulator-review>.L1) /> (jlcpcb:C668312): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#446(.regulator-review>.R6) /> (jlcpcb:C114639): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#435(.regulator-review>.R5) /> (jlcpcb:C364359): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#432(.regulator-review>.C5) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#429(.regulator-review>.C4) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#457(.regulator-review>.R7) /> (jlcpcb:C14675): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#508(.display-logic-review-group>.U14) /> (jlcpcb:C7848): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#482(.display-logic-review-group>.U13) /> (jlcpcb:C2869847): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#592(.display-logic-review-group>.J7) /> (jlcpcb:C11051): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#613(.display-logic-review-group>.C42) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#610(.display-logic-review-group>.C41) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#607(.display-logic-review-group>.C40) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#616(.display-logic-review-group>.C43) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#661(.display-logic-review-group>.R47) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#622(.display-logic-review-group>.R41) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#619(.display-logic-review-group>.R40) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#664(.display-logic-review-group>.R42) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#700(.display-logic-review-group>.R45) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#697(.display-logic-review-group>.R50) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#688(.display-logic-review-group>.R44) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#685(.display-logic-review-group>.R49) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#676(.display-logic-review-group>.R43) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#673(.display-logic-review-group>.R48) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#709(.display-logic-review-group>.R51) /> (jlcpcb:C14675): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#741(.speaker-amplifier-review-group>.Q1) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#723(.speaker-amplifier-review-group>.U3) /> (jlcpcb:C910544): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#712(.display-logic-review-group>.R46) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#742(.speaker-amplifier-review-group>.Q2) /> (jlcpcb:C15127): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#754(.speaker-amplifier-review-group>.R60) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#751(.speaker-amplifier-review-group>.C51) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#748(.speaker-amplifier-review-group>.C50) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#743(.speaker-amplifier-review-group>.J4) /> (jlcpcb:C295747): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#757(.speaker-amplifier-review-group>.R61) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#803(.speaker-amplifier-review-group>.R65) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#766(.speaker-amplifier-review-group>.R64) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#763(.speaker-amplifier-review-group>.R63) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#760(.speaker-amplifier-review-group>.R62) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#814(.speaker-amplifier-review-group>.R68) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#852(.speaker-amplifier-review-group>.R70) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#841(.speaker-amplifier-review-group>.R67) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#833(.speaker-amplifier-review-group>.R69) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#822(.speaker-amplifier-review-group>.R66) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#862(.haptic-driver-review-group>.U22) /> (jlcpcb:C963429): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <diode#891(.haptic-driver-review-group>.D3) /> (jlcpcb:C2480): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#890(.haptic-driver-review-group>.Q9) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#900(.haptic-driver-review-group>.C70) /> (jlcpcb:C90053): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#912(.haptic-driver-review-group>.R83) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#909(.haptic-driver-review-group>.R82) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#906(.haptic-driver-review-group>.C72) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#903(.haptic-driver-review-group>.C71) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#915(.haptic-driver-review-group>.R84) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1007(.mic-regulated-clock-review-group>.C74) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1004(.mic-regulated-clock-review-group>.C73) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#972(.mic-regulated-clock-review-group>.U24) /> (jlcpcb:C24478): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#946(.mic-regulated-clock-review-group>.U23) /> (jlcpcb:C2869847): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#918(.haptic-driver-review-group>.R85) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1010(.mic-regulated-clock-review-group>.C75) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1031(.mic-regulated-clock-review-group>.R92) /> (jlcpcb:C105881): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1028(.mic-regulated-clock-review-group>.R91) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1025(.mic-regulated-clock-review-group>.R90) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1022(.mic-regulated-clock-review-group>.R89) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1019(.mic-regulated-clock-review-group>.R88) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1016(.mic-regulated-clock-review-group>.R87) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1013(.mic-regulated-clock-review-group>.R86) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1042(.mic-regulated-clock-review-group>.R93) /> (jlcpcb:C105881): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1103(.hold-readback-review-group>.R99) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1097(.hold-readback-review-group>.U26) /> (jlcpcb:C7836): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1056(.mic-regulated-clock-review-group>.R95) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1053(.mic-regulated-clock-review-group>.R94) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1106(.hold-readback-review-group>.R100) /> (jlcpcb:C21190): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1142(.battery-ready-review-group>.R97) /> (jlcpcb:C114622): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1139(.battery-ready-review-group>.R96) /> (jlcpcb:C114622): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1132(.battery-ready-review-group>.U25) /> (jlcpcb:C43698): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1117(.hold-readback-review-group>.C78) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1145(.battery-ready-review-group>.C76) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#1173(.MicrophonesSheet-group>.U5) /> (jlcpcb:C5656610): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1166(.MicrophonesSheet-group>.U4) /> (jlcpcb:C5656610): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1148(.battery-ready-review-group>.C77) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1180(.MicrophonesSheet-group>.C80) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1190(.MicrophonesSheet-group>.R27) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1187(.MicrophonesSheet-group>.R26) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1186(.MicrophonesSheet-group>.U7) /> (jlcpcb:C105188): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1183(.MicrophonesSheet-group>.C81) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1193(.MicrophonesSheet-group>.R29) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <pushbutton#1240(.ControlsSheet-group>.SW4) /> (jlcpcb:C255576): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1202(.MicrophonesSheet-group>.C26) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1199(.MicrophonesSheet-group>.C25) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1196(.MicrophonesSheet-group>.R30) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <pushbutton#1243(.ControlsSheet-group>.SW1) /> (jlcpcb:C255576): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#1254(.ControlsSheet-group>.J8) /> (jlcpcb:C295747): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1249(.ControlsSheet-group>.SW5) /> (jlcpcb:C431540): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <pushbutton#1246(.ControlsSheet-group>.SW2) /> (jlcpcb:C255576): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1293(.BacklightSheet-group>.R102) /> (jlcpcb:C114639): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1319(.BacklightSheet-group>.C85) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1316(.BacklightSheet-group>.C84) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1307(.BacklightSheet-group>.R104) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1304(.BacklightSheet-group>.R103) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1275(.BacklightSheet-group>.U27) /> (jlcpcb:C544659): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1313(.BacklightSheet-group>.C83) /> (jlcpcb:C15849): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1310(.BacklightSheet-group>.C82) /> (jlcpcb:C15849): Unable to connect. Is the computer able to access the url?
+Copper for component SW1 overlaps a PCB keepout
+Courtyard of SW1 overlaps PCB keepout "pcb_keepout_0"
+R38 overlaps J4: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C85 overlaps C4: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+J8 overlaps U13: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J7 overlaps Q2: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J8 overlaps C40: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+SW5 overlaps U3: 2 footprint overlaps, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+Pads pcb_port[.J6 > .pin3] and pcb_port[.R36 > .pin1] are too close (clearance: 0.068mm, minimum: 0.1mm)
+Pads pcb_port[.J6 > .pin4] and pcb_port[.R36 > .pin1] are too close (clearance: 0.068mm, minimum: 0.1mm)
+Pads pcb_port[.J3 > .pin4_internal_1] and pcb_port[.SW4 > .pin2] are too close (clearance: 0.049mm, minimum: 0.1mm)
+Courtyard of U1 overlaps with courtyard of SW1
+Courtyard of J6 overlaps with courtyard of R36
+Courtyard of J6 overlaps with courtyard of U26
+Courtyard of J6 overlaps with courtyard of R99
+Courtyard of J6 overlaps with courtyard of SW1
+Courtyard of J6 overlaps with courtyard of SW2
+Courtyard of C32 overlaps with courtyard of SW1
+Courtyard of J3 overlaps with courtyard of SW4
+Courtyard of J3 overlaps with courtyard of J8
+Courtyard of Q1 overlaps with courtyard of SW5
+Courtyard of J4 overlaps with courtyard of J8
+Courtyard of SW2 overlaps with courtyard of J8
+Courtyard of R102 overlaps with courtyard of R104
+Courtyard of C83 overlaps with courtyard of C85
+Test point TP8 is not accessible because it is inside the courtyard of U12
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+error: script "build:placement" exited with code 1

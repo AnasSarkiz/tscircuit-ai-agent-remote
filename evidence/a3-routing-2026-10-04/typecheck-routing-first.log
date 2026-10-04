@@ -1,0 +1,8 @@
+$ tsc --noEmit
+evidence/a3-routing-2026-10-04/mechanical-view.ts(1,24): error TS7016: Could not find a declaration file for module 'three'. '/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/three/build/three.cjs' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/three` if it exists or add a new declaration (.d.ts) file containing `declare module 'three';`
+evidence/a3-routing-2026-10-04/mechanical-view.ts(2,28): error TS7016: Could not find a declaration file for module 'three/examples/jsm/loaders/GLTFLoader.js'. '/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/three/examples/jsm/loaders/GLTFLoader.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/three` if it exists or add a new declaration (.d.ts) file containing `declare module 'three/examples/jsm/loaders/GLTFLoader.js';`
+evidence/a3-routing-2026-10-04/mechanical-view.ts(3,31): error TS7016: Could not find a declaration file for module 'three/examples/jsm/controls/OrbitControls.js'. '/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/three/examples/jsm/controls/OrbitControls.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/three` if it exists or add a new declaration (.d.ts) file containing `declare module 'three/examples/jsm/controls/OrbitControls.js';`
+evidence/a3-routing-2026-10-04/mechanical-view.ts(25,51): error TS7006: Parameter 'gltf' implicitly has an 'any' type.

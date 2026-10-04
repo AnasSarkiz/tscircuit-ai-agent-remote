@@ -1,0 +1,14 @@
+{
+  "method": "Remove adjacent identical route points only. No coordinates, widths, layers or vias changed. Native original and re-export geometry equal.",
+  "native_original": "routing-reg-usb/event-1.json",
+  "native_replayed": "regulator-original-replay-2/event-1.json",
+  "equal_after_zero_length_duplicates_removed": true,
+  "native_original_sizes": [
+    7,
+    17
+  ],
+  "native_replayed_sizes": [
+    7,
+    21
+  ]
+}

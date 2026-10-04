@@ -44,8 +44,16 @@ export function McuUsbSheet() {
         <trace from="U1.pin41" to="net.GND" />
         <trace from="U1.pin3" to="net.MCU_EN" />
         <trace from="U1.pin27" to="net.MCU_BOOT_N" />
-        <trace from="U1.pin13" to="net.MCU_USB_DN" />
-        <trace from="U1.pin14" to="net.MCU_USB_DP" />
+        <trace
+          path={["U1.pin13", "R32.pin2", "net.MCU_USB_DN"]}
+          width={0.2906}
+          pcbPath={["R32.pin2"]}
+        />
+        <trace
+          path={["U1.pin14", "R31.pin2", "net.MCU_USB_DP"]}
+          width={0.2906}
+          pcbPath={["R31.pin2"]}
+        />
         <trace from="U1.pin37" to="net.MCU_UART_TX" />
         <trace from="U1.pin36" to="net.MCU_UART_RX" />
         <trace from="U12.pin1" to="net.GND" />
@@ -85,9 +93,7 @@ export function McuUsbSheet() {
         <trace from="D2.pin2" to="net.USB_DN" />
         <trace from="D2.pin3" to="net.GND" />
         <trace from="R31.pin1" to="net.USB_DP" />
-        <trace from="R31.pin2" to="net.MCU_USB_DP" />
         <trace from="R32.pin1" to="net.USB_DN" />
-        <trace from="R32.pin2" to="net.MCU_USB_DN" />
         <trace from="R33.pin1" to="net.USB_CC1" />
         <trace from="R33.pin2" to="net.GND" />
         <trace from="R34.pin1" to="net.USB_CC2" />

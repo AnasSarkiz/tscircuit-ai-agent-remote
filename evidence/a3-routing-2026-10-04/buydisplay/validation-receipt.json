@@ -1,0 +1,52 @@
+{
+  "revision": "A3 BuyDisplay + first actual copper",
+  "source_parent": "0300c2eed5d591b24dba9d2bdd59e17de0f94bf7",
+  "circuit_json_sha256": "2358de2d80b148ab89f617d8d75e55feb3a63768a91ad18388784af2b30ae16a",
+  "circuit_json_bytes": 2787024,
+  "pcb_trace_count": 4,
+  "pcb_via_count": 0,
+  "unconnected_port_errors": 429,
+  "missing_trace_errors": 5,
+  "strict_native_schema_failures": 166,
+  "format_exit": 0,
+  "typecheck_exit": 0,
+  "netlist_exit": 0,
+  "pin_specification_exit": 0,
+  "source_exit": 0,
+  "schematic_placement_exit": 0,
+  "placement_initial_exit": 1,
+  "placement_after_four_orientation_corrections_exit": 0,
+  "native_full_partial_build_exit": 1,
+  "native_placement_only_glb_build_exit": 0,
+  "shorts_exit": 0,
+  "tests": {
+    "pass": 37,
+    "fail": 2,
+    "assertions": 374,
+    "failures": [
+      "existing native strict schema fixture B-010",
+      "complete actual copper fabrication gate"
+    ]
+  },
+  "snapshot_initial_exit": 1,
+  "snapshot_after_inspected_prototype_baseline_update_exit": 0,
+  "visual_review": [
+    "current native PCB PNG",
+    "A4 display/backlight/charger sheets",
+    "manufacturer display and exact top-contact connector drawing",
+    "native 3D assembly viewer"
+  ],
+  "mechanical_stage_passed": false,
+  "fabrication_ready": false,
+  "cad_model_sha256": "04c2089e6ef5670c940771e409cff92ec5c8f6e02251480e6e268b0a580b6073",
+  "excluded_cad_outputs": [
+    "stale-a2-board.glb",
+    "incomplete-export-board.glb"
+  ],
+  "imports_sha256": {
+    "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.tsx": "a2085dafd4f8b39d3b70d3aea1d5a787141079075229dbdf15d2c1d84c0bb104",
+    "imports/TPS60231RGTR/TPS60231RGTR.tsx": "07a926a2651ddcef955866d49aa164174e1df7322db26d2dc73c0f78d7a4a759",
+    "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx": "81e8794a9a23a59f33c7d73f28b014fcb09e0370c08e41a92c22691a2e6eb380",
+    "imports/CL10A475KO8NNNC/CL10A475KO8NNNC.tsx": "e4d55571050173b3bc0e2ff93a5f776139a7ca76970f7f83797a8088123cf23a"
+  }
+}

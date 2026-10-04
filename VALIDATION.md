@@ -1,3 +1,32 @@
+# Latest A3 BuyDisplay and first-copper checkpoint — 2026-10-04
+
+**Engineering prototype — NOT FABRICATION READY.** This supersedes conflicting A2/A1 selections below. The external screen is now **BuyDisplay/EastRising ER-TFT022-1, bare 2.2-inch 240×320 TFT, no touch**, purchased separately from the PCB. JLCPCB supplies the board electronics and the genuine **AFC07-S50ECA-00/C262650 top-contact50-pin connector**, not the screen. Its54.36×40.3 mm landscape glass spans the full50 mm PCB width. The raised-glass/flex/height tolerance study remains open inside the unchanged50×65 mm PCB and60×75×15 mm maximum enclosure.
+
+Electrical source wiring uses panel n→J7(51−n) for the planned right-edge single fold, SPI II mode1110,2.8 V logic/level translation and three separate TPS60231 current sinks. The old HS20HS072RX,12-pin connector and resistor-fed backlight are superseded. Battery centre2 staysPACK_NTC and the outer contacts stay open.
+
+Actual partial copper now exists: two short MCU USB traces and two compact regulator switch traces,0vias. Original native routes/events and supported replay are preserved before moves; the regulator island/cache were moved together−8 mm X. The other nets are not routed. Current whole board:134physical components(126purchased+8testpoints),502PCB ports,75named nets. Required remaining-connection errors are retained; no fabrication outputs are approved. Full technical review: [BuyDisplay integration and fit limits](evidence/a3-routing-2026-10-04/buydisplay/review.md). [Live mechanical study](http://127.0.0.1:4949/evidence/a3-routing-2026-10-04/mechanical.html).
+
+Native placement overlap/keepout errors are zero. Source, netlist and pin-specification checks have no errors; supplier metadata warnings and connector-access warnings remain disclosed. Four orientation suggestions were applied. The source-level schematic pin-map and imported connector orientation tests are distinct from physical panel operation. Full routing/schema/fabrication tests retain their failures; publication never means fabrication approval.
+
+Source parent0300c2eed5d591b24dba9d2bdd59e17de0f94bf7. Intended public release0.0.2-wip-a3-buydisplay-first-copper; verify receipts before claiming it published. Background watcher remains paused. The user revoked cross-thread issue messages; no issues are sent to another chat.
+
+## A3 commands and evidence
+
+Current native built JSON:2,787,024bytes SHA-256`2358de2d80b148ab89f617d8d75e55feb3a63768a91ad18388784af2b30ae16a`. Format/types0; netlist/pin/source/schematic-placement0; placement0 after four documented rotations; native partial-copper build1 with429unconnected-port+5missing-trace errors retained. Shorts0 applies only to existing4traces. Tests37pass/2fail/374assertions preserve B-010 fixture failure and full copper fabrication gate; current strict native schema166 failing elements. A4 display/backlight/charger pages and current PCB PNG were inspected. Snapshot mismatch was expected for50-pin connector/new driver/new placement/copper; inspected prototype baselines updated and verified0. This accepts intended preview changes, not unresolved errors or stage5. Native placement-only CAD build0 withfreshGLB; separate direct export omitted models and is excluded, as is a copied staleA2model. FinalCAD is tied to the same component placement; full partial build regenerated current circuit.json afterwards. Details: `evidence/a3-routing-2026-10-04/buydisplay/validation-receipt.json`.
+
+## Current A3 gates
+
+| Stage | Status | Actual limitation |
+|---|---|---|
+|1 Requirements|in progress|Flex fold, tolerance stack, complete load/pack/speaker qualification open|
+|2 Schematic/BOM|blocked|Battery outer numbering, component/paste/BOM qualification; source pin-map tests alone are not hardware qualification|
+|3 Placement|in progress|Native geometry clears, but actual cable/COF, mating housings, TALK actuator and tolerance stack unqualified|
+|4 Copper|in progress|4physical traces/0vias;429unconnected-port and5missing-trace errors; saved native REG replay verified|
+|5 Automated/visual|blocked|Native build exits1 for incomplete copper; strict schema baseline and full-copper gate fail|
+|6 Prototype fabrication|not started|No complete routed/same-revision fabrication package approval|
+|7 Physical prototype|not started|No physical pack/panel assembly or electrical test|
+|8 Store release|in progress|Public WIP package is permitted, with exact upload/build result disclosed; not a qualified product|
+
 ## Public A2 remote outcome — verified 2026-10-04
 
 Board implementation commit **8332577b7eff34815843084d4fbe5549d5066e78** reached public GitHub main; anonymous committed Circuit JSON is identical to local: 2,300,592 bytes, SHA-256 `fbf9e2b576a9e37f695e894d9458500c33d5508b052b10692dcf99bc474dcd3f`.

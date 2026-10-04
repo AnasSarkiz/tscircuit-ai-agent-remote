@@ -1,0 +1,52 @@
+{
+  "status": "A3 PLACEMENT FROZEN FOR ROUTING",
+  "scope": "prototype PCB placement; enclosure manufacturing/physical fold not qualified",
+  "source_parent": "0300c2eed5d591b24dba9d2bdd59e17de0f94bf7",
+  "files": [
+    {
+      "path": "src/board/placement.ts",
+      "bytes": 8089,
+      "sha256": "fb2d337175ca42910754cb44a072b5bbb9d93c1121fc8a6d4bb85c889912a011"
+    },
+    {
+      "path": "src/board/DisplaySheet.tsx",
+      "bytes": 6550,
+      "sha256": "68f95c1e1000df1fda7799fd80b93e703297c92e599c7a02b036d7cd60e5787a"
+    },
+    {
+      "path": "src/board/BoardFeatures.tsx",
+      "bytes": 3248,
+      "sha256": "8619216c311942adf67379c7a55777f619170d823373c0705387cf8f86516bd0"
+    },
+    {
+      "path": "src/board/BacklightSheet.tsx",
+      "bytes": 2796,
+      "sha256": "59dc3e7c20bf9da6fc31a959061ec829211e273a2e135719fc67b62722ae47d8"
+    },
+    {
+      "path": "src/board/ChargerSheet.tsx",
+      "bytes": 3198,
+      "sha256": "77863872bbed03986cdada6f73f63d17d86bde9c17610e5e165ca3d576a26326"
+    },
+    {
+      "path": "main.tsx",
+      "bytes": 1500,
+      "sha256": "86e5ff617f17272bdc06030183fbf29cafbe13676b2c06bc8d2e1d7e81e2f752"
+    },
+    {
+      "path": "bun.lock",
+      "bytes": 83792,
+      "sha256": "f036531679649def818b439d2f17eae082eee604c536045502fd95a83d7c3952"
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 2387806,
+      "sha256": "202749d77b3f91d6c6c7f8a4c5f652327e6a62369c2ed9776d056a392c82efdf"
+    },
+    {
+      "path": "dist/index/3d.glb",
+      "bytes": 22650748,
+      "sha256": "3ad1a1e57e0f3ca81e00a173938cfd7cb1c88cda1c2f5f9ef63a9e697810d7c8"
+    }
+  ]
+}

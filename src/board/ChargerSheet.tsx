@@ -3,6 +3,7 @@ import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A1
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
 import { RC0603FR_073KL } from "../../imports/RC0603FR_073KL/RC0603FR_073KL"
 import { S3B_PH_SM4_TB_LF__SN_ } from "../../imports/S3B_PH_SM4_TB_LF__SN_/S3B_PH_SM4_TB_LF__SN_"
+import { CL10A475KO8NNNC } from "../../imports/CL10A475KO8NNNC/CL10A475KO8NNNC"
 import { place } from "./placement"
 export function ChargerSheet() {
   return (
@@ -15,7 +16,7 @@ export function ChargerSheet() {
       <group name="ChargerSheet-group" schLayout={{ layoutMode: "relative" }}>
         <BQ24074RGTR name="U16" {...place("U16")} schX={0} schY={0} />
         <S3B_PH_SM4_TB_LF__SN_ name="J3" {...place("J3")} schX={10} schY={3} />
-        <GRM188R61A106ME69D name="C1" {...place("C1")} schX={-9} schY={5} />
+        <CL10A475KO8NNNC name="C1" {...place("C1")} schX={-9} schY={5} />
         <GRM188R61A106ME69D name="C2" {...place("C2")} schX={5} schY={5} />
         <GRM188R61A106ME69D name="C3" {...place("C3")} schX={5} schY={-5} />
         <RC0603FR_073KL name="R1" {...place("R1")} schX={-6} schY={-6} />

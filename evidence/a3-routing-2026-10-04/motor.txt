@@ -1,0 +1,555 @@
+                       产品规格说明书
+                   PRODUCT SPECIFICATION
+
+
+                         客户名称
+                        Buyer Name
+
+
+
+
+ FILLED BY BUYER
+                         客户料号
+                       Buyer Part No.
+
+
+                      客户承认签章
+                      Buyer Approved
+                        Signatures
+
+
+                         文件编号
+                                                                         leader-3176
+                         Spec No.
+                          品名                                         扁平振动马达
+                        Part Name                              Coin Type Vibration Motor
+
+
+
+
+FILLED BY LEADER
+                          型号
+                                                                     LCM0720A3176F
+                        Model No.
+                      样品提交日期
+                      Date Samples
+                       Submitted
+                   作成 Designed by                   检讨 Checked by                    承认 Approved by
+
+                        张停停                             张冠军                               王远东
+                       2021.10.22                      2021.10.22                        2021.10.22
+
+                             立得微电子（惠州）有限公司
+                             Leader Micro Electronics (Huizhou) Co., Ltd.
+                   Tiger Industrial Park, Baigang, Xiaojinkou, Huizhui, Guangdong 516000, China
+                    Tel: +86-752-5853255, Fax: +86-752-5839222, Website: www. leader-cn.cn
+                    生产地址：中国广东省惠州市小金口老虎岭工业园，邮政编码：516000
+                        规格书内容
+                    Contents of Specifications
+
+
+1. 适用范围/ Applicable Scope                            1/10
+2. 使用条件/ Operating Conditions                        1/10
+3. 测试条件/ Test Conditions                             1/10
+4. 初期电气性能/ Initial Electrical Characteristics        1/10
+5. 机械性能/ Mechanical Characteristics                  2/10
+6. 耐久性能/ Reliability Characteristics             2/10-4/10
+7. 标准测量方法/ Standard Measuring Method                 5/10
+8. 测量方法及回路图/ Measuring Method & Circuit Map          5/10
+9. 使用注意事项/ Cautions in Use                           6/10
+10. 特性曲线图/ Characteristics Graph                     6/10
+11. 环境管理物质/ Environmental Management Materials       7/10
+12. 包装/ Packaging                                    8/10
+13. 外形图/ Mechanical Drawing                          9/10
+14. 更改记录/ Revision Records                          10/10
+    2021.10.22(REV,0)                  说明书/Specification               编号/No.: leader-3176              1/10
+
+ 1. 适用范围/ Applicable Scope
+
+ 本说明书适用于扁平式永磁直流电机LCM0720A系列.
+ This specification applies to Coin Motor DC model LCM0720A series.
+
+2. 使用条件/ Operating Conditions
+              项目/Item                                              规格/Specification
+              额定电压
+    2-1                                    3.0V DC
+              Rated voltage
+              使用电压范围
+    2-2                                    2.7~3.3V DC
+              Operating voltage
+              旋转方向
+    2-3                                    CW(clockwise) or CCW(counter clockwise)
+              Rotation
+              使用环境
+    2-4                                    -20~+60℃, 65±20%RH
+              Operating environment
+              保存环境
+    2-5                                    -30~+70℃, 65±20%RH
+              Storage environment
+
+3. 测定条件/ Testing Conditions
+              项目/Item                     规格/Specification
+
+             温度
+    3-1                                   25±3℃
+             Temperature
+
+             湿度
+    3-2                                   65±2% RH
+             Humidity
+
+             气压
+    3-3                                   1013±40 hPa
+             Air Pressure
+
+             电源                           稳压直流电流
+    3-4
+             Power                        Constant DC Current
+
+4. 初期电气性能/ Initial Electrical Characteristics
+
+              项目/Item                     规格/Specification                       条件/Condition
+
+                      额定转速
+    4-1                                   9000 Min rpm
+                     Rated Speed                                额定电压下和额定负载下。
+                    额定电流                                        At rated voltage and rated load.
+    4-2                                   ≤85mA
+                   Rated Current
+
+                     起动电流
+    4-3                                   ≤120mA
+                  Starting Current                              在最小起动电压下起动
+                     起动电压                                       Motor is rotating at min starting voltage.
+    4-4                                   ≤2.5V DC
+                  Starting Voltage
+                     绝缘电阻                                       在100V直流下，导线和机壳间测量
+    4-5                                   ≥10MΩ
+               Insulation Resistance                            At DC 100V between lead wire and case.
+
+                    端子阻抗                   35Ω±15% (单相)         在25℃下
+    4-6
+                Terminal Resistance        70Ω±15%(串联)          At25℃
+   2021.10.22(REV,0)                     说明书/Specification                        编号/No.: leader-3176                2/10
+
+
+5. 机械性能/ Mechanical Characteristics
+
+             项目/Item                                                   规格/Specification
+
+         底盖偏转强度                          9.8N以上
+ 5-1
+         Bracket deflection strength     ≥9.8N
+
+         机械噪音                            小于50分贝. A计权
+         Mechanical noise                ≤50dB (A)
+         在额定电压下。
+         背景噪音：不大于28dB.A计权
+         电机轴向水平固定在约100g测试夹具上,
+         拾音器沿轴向正对电机平面.
+
+                                                                         100mm
+         测试距离100mm                                                                         Motor
+ 5-2
+         At rated voltage and scene noise as
+                                                                                             Test block (80g)
+         28dB (A)Max,
+         the shaft is horizontally fastened to
+          the test jig (100g).
+         The Microphone faces the plane of                                          Foam
+         motor along The shaft .
+         The distance is 100mm.
+
+
+                                                  Testing Jig(10g)               Motor
+
+         Vibration Test
+         振动测定
+ 5-3                           0.8G (AVG)
+
+
+
+                                                          Acceleration Sensor                      Vibration Meter
+
+
+
+
+6. 耐久性能/ Reliability Characteristics
+
+       项目/Item                              规格/Specification                               判定标准/Judgment
+                                                                                 在常温常湿下放置4h后，电机性能应
+                                                                                 符合以下要求。
+                                                                                 1)额定转速:指标不低于初始值-30%；不高于初
+                          3V                                                     始值+50%
+                                                                                 2)额定电流:指标在初始值±30%以内。
+                                                                                 3)起动电压:2.5V DC Max直流电压.
+           寿命                          ON 1S            OFF 1S                   After 4h exposure in the ordinary
+  6-1
+           Life                                                                  temperature and humidity,the motor's
+                                               1CYCLE                            performance shoud accord with below
+                                                                                 requirements:
+                                                                                 1)Rated speed:Data-30% Initial Min,
+                          试验循环 /Test cycle：35,000 cycles                         Data+50% Initial Max.
+                                                                                 2)Rated current:Data±30% Max.
+                                                                                 3)Starting voltage: 2.5V DC Max
+  2021.10.22(REV,0)                 说明书/Specification                  编号/No.: leader-3176               3/10
+
+
+
+项目/Item                 规格/Specification                             判定标准/Judgment
+
+
+          低温放置
+          Low           温度 /Temperature: –20±2℃
+ 6-2
+          Temperature   时间 /Time: 96h
+          Exposure
+                                                                     在常温常湿下放置4h后，电机性能应符合
+                                                                     以下要求。
+          高温放置                                                       1)额定转速:指标在初始值±30%以内。
+          High          温度 /Temperature: + 70±2℃                     2)额定电流:指标在初始值±30%以内。
+ 6-3                                                                 3)起动电压:2.5V DC Max.
+          Temperature   时间 /Time: 96h
+          Exposure                                                   After 4h exposure in the ordinary
+                                                                     temperature and humidity, change rates of the
+                                                                     motor's performance should accord with
+                                                                     below requirements:
+                                                                     1)Rated speed: within ±30% of initial value.
+                                                                     2)Rated current: within ±30% of initial
+                        温度 /Temperature : + 40±2℃
+          湿度放置                                                       value.
+                        湿度 /Humidity: 90 ~ 95%RH
+ 6-4      Humidity                                                   3)Starting voltage: 2.5V DC Max
+                        放置时间 / Exposure time : 96h
+          Exposure
+                        无水气凝结 /No condensation of moisture
+
+
+
+
+                                                                     在常温常湿下放置4h后，电机性能应符合
+                                                                     以下要求。
+                        频率 /Frequency: 10~55Hz                       1)额定转速:指标在初始值±30%以内。
+                        加速度 /Acceleration: 22m/s2                    2)额定电流:指标在初始值±30%以内。
+                        周期 /Period: 10 Minutes log sweep (1.0G),     3)起动电压:2.5V DC Max.
+          振动                                                         After 4h exposure in the ordinary
+                        (10~55~10Hz)
+ 6-5      Vibration                                                  temperature and humidity, change rates of the
+                        条件 /Condition: This motion shall be          motor's performance should accord with
+                        applied for a period of 10 minutes in        below requirements:
+                        direction of X, Y, Z.                        1)Rated speed: within ±30% of initial value.
+                                                                     2)Rated current: within ±30% of initial
+                                                                     value.
+                                                                     3)Starting voltage: 2.5V DC Max
+
+
+
+
+                                                                     在常温常湿下放置4h后，电机性能应符合
+                                                                     以下要求。
+                        试验状态: 将马达固定在约50克(包括马                         1)额定转速:指标在初始值±30%以内。
+                        达本身)的物体上，落向水泥地面。                             2)额定电流:指标在初始值±30%以内。
+                        Test state: Set the motor to a block of an   3)起动电压:2.5V DC Max.
+                        approx. 100g weight (including the motor)    After 4h exposure in the ordinary
+          自然跌落
+ 6-6                    and drop it onto the concrete floor.         temperature and humidity, change rates of the
+          Free fall
+                        Height: 1.2m                                 motor's performance should accord with
+                        Direction :±x, ±y, ±z                        below requirements:
+                        Number of times: 3 times each direction      1)Rated speed: within ±30% of initial value.
+                        Shock: 29420m/s2 equivalent to 3000G.        2)Rated current: within ±30% of initial
+                                                                     value.
+                                                                     3)Starting voltage: 2.5V DC Max
+  2021.10.22(REV,0)             说明书/Specification           编号/No.: leader-3176                4/10
+
+
+
+
+      项目/Item                    规格/Specification                 判定基准／Requirements
+
+
+
+
+                                                         在常温常湿下放置4h后，电机性能应符合以
+                                                         下要求。
+                         滚筒高度: 1.0M                      1)额定转速:指标在初始值±30%以内。
+                         滚筒次数: 300次.                     2)额定电流:指标在初始值±30%以内。
+                         滚筒速率: 13±1次/分钟                  3)起动电压:2.5V DC Max.
+      滚筒试验                                               After 4h exposure in the ordinary
+6-7
+      Barrel roll test                                   temperature and humidity, change rates of the
+                         Height: 1.0M                    motor's performance should accord with below
+                         Times: 300 times.               requirements:
+                         Speed: 13±1 times/Minute        1)Rated speed: within ±30% of initial value.
+                                                         2)Rated current: within ±30% of initial value.
+                                                         3)Starting voltage: 2.5V DC Max
+
+
+
+
+                                                         在常温常湿下放置4h后，电机性能应符合以
+                                                         下要求。
+                                                         1)额定转速:指标在初始值±30%以内。
+                                                         2)额定电流:指标在初始值±30%以内。
+                                                         3)起动电压:2.5V DC Max.
+6-8   热冲击                                                After 4h exposure in the ordinary
+      Heat stock test                                    temperature and humidity, change rates of the
+                                                         motor's performance should accord with below
+                                                         requirements:
+                                                         1)Rated speed: within ±30% of initial value.
+                                                         2)Rated current: within ±30% of initial value.
+                           试验循环 /Test cycle: 15 cycles   3)Starting voltage: 2.5V DC Max
+    2021.10.22(REV,0)              说明书/Specification          编号/No.: leader-3176             5/10
+
+
+7. 标准测量方法/ Standard Measuring Method
+
+
+
+
+                     马达安放装置
+振动量测试仪                Test Jig (for       马达综合测试仪
+                                                              波形脉冲显示                  噪音测试仪
+Vibration meter        Clamping           Multi-functional                          Noise Test Meter
+                                                              Oscilloscope
+                   he Motor in Place)       Test Mete
+
+
+8. 测量方法及回路图/ Measuring Method & Circuit Map
+
+
+
+
+                                                                             oscilloscope
+
+
+
+
+                                                             power
+
+                                                             Pupply
+    2021.10.22(REV,0)                     说明书/Specification                    编号/No.: leader-3176              6/10
+
+
+9. 使用时注意事项/ Caution in Use
+
+ 9-1 必须按照规格书标准使用,否则性能和寿命都将受到相当地减少，必须注意电压的使用范围. / The
+ performance and lifetime would be considerably reduced if the operation is not done as per the specification
+ defines. Do pay attention to the range of operating voltage in use.
+
+ 9-2 建议马达在六个月内使用,不要在以下环境中使用及保存：
+     - 高温和高湿的场所；
+     - 腐蚀性气体,如：H2S、SO2、NO2、Cl2；
+     - 生锈场所。
+     It is suggested to use the motors within 6 months as possible as you can.
+     It is not suggested to use or store the motors under the following conditions:
+     - High temperature and high humidity area.
+     - Corrosive gas environment, such as H2S, SO2, NO2, Cl2 etc.
+     - Dusty areas.
+
+ 9-3 注意处理马达的工作环境，避免含铁质物体被马达吸住，否则马达将会产生噪声，性能会降低，
+ 从而减少产品可靠性。/ Keep clean the working environments to avoid the objects such as iron powder etc
+ are attracted by the magnet. Otherwise, it would cause noise, function deterioration and lower reliability.
+
+ 9-4 应确信本产品不会与相关标准、法律、政令相背。/ Be sure not to disobey the local laws and rules.
+
+ 9-5 拿马达时，要轻拿轻放。/ The motors should be taken up and placed gently in operation.
+
+ 9-6 钢板面或边缘有少许锈斑是允许的。/ Slight rust on the edge of the steel housing is permitted.
+
+
+
+10.特性曲线图/Characteristics Graph
+
+        Speed                                                                                  Current[mA]
+    [rpm]
+
+
+
+
+                                                                                                     V-N
+
+      15000                                                                                          80
+                                                                                                     V-I
+
+
+
+
+      10000                                                                                          70
+
+
+
+
+      5000                                                                                           60
+                  2.6            2.8              3.0              3.2                3.4      3.6 [DC V]
+ 2021.10.22(REV,0)              说明书/Specification                 编号/No.: leader-3176        7/10
+
+
+
+11. 环境管理物质/ Environmental Management Materials:
+11.1 本产品应符合RoHS 指令要求和无卤素要求。
+The product should be in compliance with RoHS/ REACH requirements:
+
+＊镉及其化合物最大允许含量为100PPM
+Cadmium and Compound: ≤100PPM
+＊ 铅及其化合物最大允许含量为1000PPM
+Lead and Compound: ≤ 1000PPM
+＊汞及其化合物最大允许含量为1000PPM
+Hydrargyrum and Compound: ≤ 1000PPM
+＊ 六价铬及其化合物最大允许含量为1000PPM
++6 Chromium and Compound: ≤ 1000PPM
+＊ 多溴联苯及其化合物最大允许含量为1000PPM
+PBB and Compound: ≤ 1000PPM
+＊ 多溴二苯醚及其化合物最大允许含量为1000PPM
+PBDE and Compound: ≤ 1000PPM
+＊ 氯溴两种卤素之和最大允许含量为1500PPM
+The allowed content of Cl and Br is 1500PPM Max for total.
+＊ 氯卤素最大允许含量为900PPM
+The allowed content of Cl is 900PPM Max.
+＊溴卤素最大允许含量为900PPM
+The allowed content of Br is 900PPM Max.
+
+
+
+11.2 本品所含有以下物质是RoHS指令豁免项
+The below substance contained in the motor is exempted from RoHS directives:
+
+                                               含有材质                              部品重量
+ 序号           品名                材质                               允许容量
+                                              Harzadaous                         Weight of
+ NO.        Part Name          Material                       Limited Content
+                                              Substance                            Part
+
+
+
+           含油轴承                铜合金                铅
+  #1                                                                ≤4%            ≈0.03g
+          Oiled Bearing      Copper Alloy         Pb
+   2021.10.22(REV,0)         说明书/Specification          编号/No.: leader-3176         8/10
+
+
+12. 包装/ Packaging：
+
+
+                                振动马达包装
+                       Pack drawing of Vibrator Motor
+
+                                                                     封口
+
+
+
+
+                       ×10                                                             250
+
+
+
+
+    100PCS(1 tray)
+
+                                                                48            205
+
+                                                 bundle
+                                                 bundle      Vacuum Packaging
+
+
+                                                                          ×10 bundle
+
+ 包装尺寸/Packaging Size:
+
+ 10000PCS/CARTON:
+ CARTON SIZE:430mm*270mm*220mm
+
+
+
+
+ 包装试验要求:
+                                                        10000PCS/ CARTON
+ Packaging test requirements:
+ 沿外包装箱±x,±y和±z方向,距水泥地面
+ 1.5m高度,各自由跌落2次,马达应无机械损
+ 伤,电气性能仍符合标准要求。
+                                                  OPP TAPE
+ Along the outer packing box + X, + y
+ and + Z direction, from the cement
+ ground 1.5m height, the free fall 2
+ times, the motor should have no
+ mechanical damage, electrical
+ performance is still in line with the
+ standard requirements.
+    1          2                           3                                4               5           6                                              7                  8
+
+
+
+A                                                                                                                                                                              A
+                                                                                                                                                                                                                  2021.10.22(REV,0)
+
+
+
+
+B                                                                                                                                                                              B
+                                                                                                                                                                                   13. 外形图/ Mechanical Drawing：
+
+
+
+                                                               离型纸撕手位
+                                                                                                离型纸撕手位
+C                                                                                                                                                                              C
+                                                                                                                                                                                                                    说明书/Specification
+
+
+
+
+D                                                                                               双面胶)                                                                           D
+
+
+
+                                                                                                         技术要求
+                   立得标志         印字   A    B    C   D   E   F   G   H    I       J   K   L
+                                                                                                       额定电压
+                               马达
+                               型号                                                                      额定电流
+                   马达型号
+E                  生 产 线:["A" 表 示 "生 产 A线",以 此 类 推]
+                                                                                                       额定转速                                                   ）                E
+                                                                                                       起动电压
+                               生 产 时 间:["1"表 示 "上 午 ","2"表 示 "下 午 ","3"表 示 〝 晚 上"]
+                                                                                                       端子阻抗                                                       Ω       串联
+                                                                                                       绝缘电阻                                                       ≥   Ω
+                                                                                                                                                                                                                  编号/No.: leader-3176
+        LLA1
+        0C26         日 :[1-9日 用 该 日 数 字、10日 用 "10"表 示 、 11日 用"11"表 示 、 以 此 类推 ]
+
+                     月 ：[1-9 月 份 用 该 月 数 字、10月 用"A" 表 示 、11月 用 "B" 表 示 、
+                         12月 用"C" 表 示 ]
+F                    年 ： [表 示 生 产 年 份 、如0为 2020年 ]
+                                                                                                                                                                               F
+
+                                                                                                       立得微电子（惠州）有限公司                                                                                              9/10
+                                                                                                        L E A D E R M I C R O E L E C T R O N I CS CO.,LTD.
+
+    1          2                           3                                    4           5           6                                              7                  8
+  2021.10.22(REV,0)              说明书/Specification             编号/No.: leader-3176        10/10
+
+
+14. 更改记录/ Revision Records：
+
+
+  CUSTOMER                                           SPEC NO
+                                                                         编号/No.: leader-3176
+     顾客                                              规格书号
+
+   PRODUCT
+                                                      DATE
+    MODEL                    LCM0720A3176F                                       2021.10.22
+                                                      日期
+    产品型号
+
+                                    REVISION RECORDS
+                                        修改记录表
+
+   REV NO             DATE         PAGE                 REVISION ITEM                   REASON
+    修改号               日期            页码                     修改项目                         更改原因
+
+
+   REV,0        2021.10.22           /                   产品发布
+

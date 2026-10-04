@@ -1,0 +1,16 @@
+$ tsc --noEmit
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(1,30): error TS2307: Cannot find module './src/board/Routing' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(2,27): error TS2307: Cannot find module './src/board/nets' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(3,29): error TS2307: Cannot find module './src/board/McuUsbSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(4,30): error TS2307: Cannot find module './src/board/ChargerSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(5,32): error TS2307: Cannot find module './src/board/RegulatorSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(6,30): error TS2307: Cannot find module './src/board/DisplaySheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(7,30): error TS2307: Cannot find module './src/board/SpeakerSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(8,29): error TS2307: Cannot find module './src/board/HapticSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(9,38): error TS2307: Cannot find module './src/board/MicrophoneClockSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(10,27): error TS2307: Cannot find module './src/board/HoldSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(11,35): error TS2307: Cannot find module './src/board/BatteryReadySheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(12,34): error TS2307: Cannot find module './src/board/MicrophonesSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(13,31): error TS2307: Cannot find module './src/board/ControlsSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(14,32): error TS2307: Cannot find module './src/board/BacklightSheet' or its corresponding type declarations.
+evidence/a3-routing-2026-10-04/routing-power-first/main.tsx(15,31): error TS2307: Cannot find module './src/board/BoardFeatures' or its corresponding type declarations.
