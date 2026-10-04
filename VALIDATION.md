@@ -22,9 +22,17 @@ PCB snapshot updated only after inspection; schematic snapshot unchanged.
 This is a placement-preview step, not completed placement or fabrication approval.
 All existing stage gates, B-005/B-010/B-015 and real mechanical/electrical
 qualification remain open. Routing disabled; background watcher paused. The
-same implementation is being published as a minimal board-only private release
-`0.0.2-wip-a1-connectors-outward`, including a fresh native `dist/index/circuit.json`.
-Remote success must be verified before this publication is called complete.
+same implementation/source commit **0191b8e5db4c8c29dc7d75bcd43455cb1747200e**
+reached GitHub main, with exact `ls-remote` verification. Normal native file-by-file
+publication exited0 with 75 successes/zero failures, creating private minimal
+release **0.0.2-wip-a1-connectors-outward**, including the fresh native
+`dist/index/circuit.json`. Exact-version listing and readback verify all 75
+byte hashes, zero missing/extra/mismatched/unverified files. One initial network
+readback error for ControlsSheet.tsx was resolved by a targeted read-only retry;
+both attempts are preserved. All stage inputs stayed byte-identical to the
+manifest through publication/readback. Privacy true, ready_to_build true and
+reported build/transpilation errors null; completed cloud build is not verified.
+This outcome record changes no runtime input and needs no additional publication.
 
 ## Runtime-only package step — 2026-10-04
 

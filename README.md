@@ -9,6 +9,12 @@ Current full-board and connector close-up views are in
 zero errors and three preserved orientation warnings, detailed in that review.
 No routing was enabled.
 
+Published connector revision: **0.0.2-wip-a1-connectors-outward**, board-source
+commit **0191b8e5db4c8c29dc7d75bcd43455cb1747200e**. Normal native file-by-file
+upload succeeded for all 75 board-only files; exact-version readback verified
+all hashes, including the fresh `dist/index/circuit.json`. No documents/scripts
+were uploaded. Still a private, unrouted prototype with fabrication gates open.
+
 The runtime-only registry package is prepared with `bun run publish:prepare`.
 From `.publish/board`, install the pinned dependencies with `bun install --ignore-scripts`
 and build with `bun run build`. Remove that folder's generated `node_modules` before

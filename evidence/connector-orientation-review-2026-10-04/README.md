@@ -68,3 +68,15 @@ sources, genuine model assets, manifests and generated `dist/index/circuit.json`
 Still an unrouted prototype. B-005 paste, B-010 schema, B-015 fabrication BOM,
 electrical qualification, exact screen/pack/load selection, mechanical fit,
 routing, copper DRC and fabrication review remain open. The watcher stays paused.
+
+## Verified publication
+
+Implementation `0191b8e5db4c8c29dc7d75bcd43455cb1747200e` reached GitHub main.
+The normal native file-by-file publisher exited0, 75 successes/zero failures,
+creating private `0.0.2-wip-a1-connectors-outward`. Final exact readback verifies
+all 75 hashes, no missing/extra/mismatched/unverified files. One initial URLError
+on ControlsSheet.tsx was resolved by a targeted read-only retry; the original
+receipt and retry are retained. All stage inputs stayed frozen and matched the
+manifest after completion. The package includes native `dist/index/circuit.json`
+and excludes documents, evidence/scripts/tests and unused assets. Registry
+ready_to_build is true, errors null; completed cloud build is not established.

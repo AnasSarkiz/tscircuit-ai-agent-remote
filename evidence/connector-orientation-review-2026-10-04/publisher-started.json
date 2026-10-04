@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-04T01:25:29.195477+00:00",
+  "source_revision": "0191b8e5db4c8c29dc7d75bcd43455cb1747200e",
+  "command": [
+    "bun",
+    "/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/node_modules/@tscircuit/cli/dist/cli/main.js",
+    "push",
+    "--private",
+    "--version-tag",
+    "wip-a1-connectors-outward",
+    "--include-dist"
+  ],
+  "method": "normal native file-by-file; no compression",
+  "expected_files": 75
+}
