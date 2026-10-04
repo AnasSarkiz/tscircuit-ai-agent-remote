@@ -24,10 +24,14 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "@tscircuit/checks": "0.0.237",
     "@tscircuit/cli": "0.1.2235",
-    "@tscircuit/core": "0.0.2070",
+    "@tscircuit/core": "0.0.2083",
+    "@tscircuit/modelprinter": "0.0.6",
     "@types/bun": "1.4.2",
     "@types/three": "0.179.0",
+    "circuit-to-svg": "0.0.440",
     "easyeda": "0.0.370",
     "tscircuit": "0.0.2742",
     "typescript": "5.9.3"
@@ -35,9 +39,10 @@
   "author": "AnasSarkiz",
   "private": true,
   "overrides": {
-    "@tscircuit/core": "0.0.2070",
+    "@tscircuit/core": "0.0.2083",
     "easyeda": "0.0.370",
-    "@tscircuit/props": "0.0.682",
-    "circuit-json": "0.0.513"
+    "@tscircuit/props": "0.0.685",
+    "circuit-json": "0.0.515",
+    "@tscircuit/capacity-autorouter": "0.0.958"
   }
 }

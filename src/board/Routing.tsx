@@ -4,6 +4,19 @@ import regulatorControlPaths from "../../routes/a5/regulator-feedback-status.jso
 import chargerCurrentLimitPaths from "../../routes/a5/charger-current-limit.json"
 import independentControlPaths from "../../routes/a5/independent-control-signals.json"
 
+import amplifierBclkPaths from "../../routes/a6/amplifier-bclk.json"
+import amplifierDinPaths from "../../routes/a6/amplifier-din.json"
+
+import backlightCurrentSettingPaths from "../../routes/a6/backlight-current-setting.json"
+
+import backlightC1PositivePaths from "../../routes/a6/backlight-c1-positive.json"
+
+import backlightC1NegativePaths from "../../routes/a6/backlight-c1-negative.json"
+
+import backlightC2PositivePaths from "../../routes/a6/backlight-c2-positive.json"
+
+import backlightC2NegativePaths from "../../routes/a6/backlight-c2-negative.json"
+
 const routingTolerances = {
   minTraceWidth: 0.2,
   minTraceToPadEdgeClearance: 0.2,
@@ -59,6 +72,59 @@ export function BoardRouting({ placementOnly = false }: { placementOnly?: boolea
             pcbTracePaths={fanoutTracePath.array().parse(chargerCurrentLimitPaths)}
             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
             {...routingTolerances}
+          />
+          <autoroutingphase
+            name="amplifier-bclk"
+            phaseIndex={4}
+            pcbTracePaths={fanoutTracePath.array().parse(amplifierBclkPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="amplifier-din"
+            phaseIndex={5}
+            pcbTracePaths={fanoutTracePath.array().parse(amplifierDinPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="backlight-current-setting"
+            phaseIndex={7}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightCurrentSettingPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="backlight-c1-positive"
+            phaseIndex={8}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC1PositivePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.27}
+          />
+          <autoroutingphase
+            name="backlight-c1-negative"
+            phaseIndex={9}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC1NegativePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.27}
+          />
+          <autoroutingphase
+            name="backlight-c2-positive"
+            phaseIndex={10}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC2PositivePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.3}
+          />
+          <autoroutingphase
+            name="backlight-c2-negative"
+            phaseIndex={11}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC2NegativePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.3}
           />
         </>
       )}

@@ -1,5 +1,5 @@
 import { TPS60230RGTR } from "../../imports/TPS60230RGTR/TPS60230RGTR"
-import { RC0603FR_07100RL } from "../../imports/RC0603FR_07100RL/RC0603FR_07100RL"
+import { A_0603WAF1000T5E } from "../../imports/A_0603WAF1000T5E/A_0603WAF1000T5E"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
 import { CL10A105KB8NNNC } from "../../imports/CL10A105KB8NNNC/CL10A105KB8NNNC"
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
@@ -16,13 +16,13 @@ export function BacklightSheet() {
       <group name="BacklightSheet-group" schLayout={{ layoutMode: "relative" }}>
         <TPS60230RGTR name="U27" {...place("U27")} schX={0} schY={0} />
         <RC0603FR_0710KL name="R102" {...place("R102")} schX={-6} schY={-6} />
-        <RC0603FR_07100RL name="R103" {...place("R103")} schX={-9} schY={4} />
+        <A_0603WAF1000T5E name="R103" {...place("R103")} schX={-9} schY={4} />
         <RC0603FR_0710KL name="R104" {...place("R104")} schX={-6} schY={1} />
         <CL10A105KB8NNNC name="C82" {...place("C82")} schX={8} schY={4} />
         <CL10A105KB8NNNC name="C83" {...place("C83")} schX={8} schY={1} />
         <GRM188R61A106ME69D name="C84" {...place("C84")} schX={-9} schY={-3} schRotation={-90} />
         <GRM188R61A106ME69D name="C85" {...place("C85")} schX={8} schY={-5} schRotation={-90} />
-        <trace from="U27.pin1" to="R102.pin1" />
+        <trace name="BL_CURRENT_SETTING" from="U27.pin1" to="R102.pin1" routingPhaseIndex={7} />
         <trace from="R102.pin2" to="net.GND" />
         {/* D5/pin2 is unused; D1 remains connected as TI requires for output regulation. */}
         <trace from="U27.pin3" to="net.LCD_BACKLIGHT_RETURN_4" />
@@ -31,10 +31,35 @@ export function BacklightSheet() {
         <trace from="U27.pin6" to="net.LCD_BACKLIGHT_RETURN_1" />
         <trace from="U27.pin7" to="net.GND" />
         <trace from="U27.pin8" to="net.LCD_BACKLIGHT_OUTPUT" />
-        <trace from="U27.pin9" to="C83.pin1" />
-        <trace from="U27.pin12" to="C83.pin2" />
-        <trace from="U27.pin10" to="C82.pin1" />
-        <trace from="U27.pin11" to="C82.pin2" />
+        <trace
+          name="BL_C2_P"
+          from="U27.pin9"
+          to="C83.pin1"
+          routingPhaseIndex={10}
+          thickness={0.3}
+        />
+        <trace
+          name="BL_C2_N"
+          from="U27.pin12"
+          to="C83.pin2"
+          routingPhaseIndex={11}
+          thickness={0.3}
+        />
+        {/* 0.27 mm fits the native 0.270002 mm lands; adjacent centres are 0.499872 mm apart. */}
+        <trace
+          name="BL_C1_P"
+          from="U27.pin10"
+          to="C82.pin1"
+          routingPhaseIndex={8}
+          thickness={0.27}
+        />
+        <trace
+          name="BL_C1_N"
+          from="U27.pin11"
+          to="C82.pin2"
+          routingPhaseIndex={9}
+          thickness={0.27}
+        />
         <trace from="U27.pin13" to="net.V3V3" />
         <trace from="U27.pin14" to="net.GND" />
         <trace from="U27.pin15" to="net.BACKLIGHT_GATE" />

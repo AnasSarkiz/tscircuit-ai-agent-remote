@@ -123,8 +123,8 @@ export const placement = {
   R103: { pcbX: -2.0, pcbY: -9.5, pcbRotation: 0, layer: "top" },
   R104: { pcbX: 3, pcbY: 17.5, pcbRotation: 0, layer: "top" },
   U27: { pcbX: 6, pcbY: 21, pcbRotation: 0, layer: "top" },
-  C82: { pcbX: 9.75, pcbY: 22.5, pcbRotation: 0, layer: "top" },
-  C83: { pcbX: 9.75, pcbY: 20.5, pcbRotation: 0, layer: "top" },
+  C82: { pcbX: 9.75, pcbY: 21, pcbRotation: 90, layer: "top" },
+  C83: { pcbX: 11.7, pcbY: 21, pcbRotation: 90, layer: "top" },
   C84: { pcbX: 6, pcbY: 24.5, pcbRotation: 0, layer: "top" },
   C85: { pcbX: 6, pcbY: 17.5, pcbRotation: 0, layer: "top" },
 } as const

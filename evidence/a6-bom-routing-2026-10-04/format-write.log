@@ -1,0 +1,98 @@
+$ biome format --write .
+src/board/Routing.tsx:91:24 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Expected a JSX attribute value but instead found '8'.
+  
+    89 │           <autoroutingphase
+    90 │             name="backlight-c1-positive"
+  > 91 │             phaseIndex=8
+       │                        ^
+    92 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    93 │             {...routingTolerances}
+  
+  i Expected a JSX attribute value here.
+  
+    89 │           <autoroutingphase
+    90 │             name="backlight-c1-positive"
+  > 91 │             phaseIndex=8
+       │                        ^
+    92 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    93 │             {...routingTolerances}
+  
+
+src/board/Routing.tsx:98:24 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Expected a JSX attribute value but instead found '9'.
+  
+     96 │           <autoroutingphase
+     97 │             name="backlight-c1-negative"
+   > 98 │             phaseIndex=9
+        │                        ^
+     99 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    100 │             {...routingTolerances}
+  
+  i Expected a JSX attribute value here.
+  
+     96 │           <autoroutingphase
+     97 │             name="backlight-c1-negative"
+   > 98 │             phaseIndex=9
+        │                        ^
+     99 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    100 │             {...routingTolerances}
+  
+
+src/board/Routing.tsx:105:24 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Expected a JSX attribute value but instead found '10'.
+  
+    103 │           <autoroutingphase
+    104 │             name="backlight-c2-positive"
+  > 105 │             phaseIndex=10
+        │                        ^^
+    106 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    107 │             {...routingTolerances}
+  
+  i Expected a JSX attribute value here.
+  
+    103 │           <autoroutingphase
+    104 │             name="backlight-c2-positive"
+  > 105 │             phaseIndex=10
+        │                        ^^
+    106 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    107 │             {...routingTolerances}
+  
+
+src/board/Routing.tsx:112:24 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Expected a JSX attribute value but instead found '11'.
+  
+    110 │           <autoroutingphase
+    111 │             name="backlight-c2-negative"
+  > 112 │             phaseIndex=11
+        │                        ^^
+    113 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    114 │             {...routingTolerances}
+  
+  i Expected a JSX attribute value here.
+  
+    110 │           <autoroutingphase
+    111 │             name="backlight-c2-negative"
+  > 112 │             phaseIndex=11
+        │                        ^^
+    113 │             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+    114 │             {...routingTolerances}
+  
+
+src/board/Routing.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Code formatting aborted due to parsing errors. To format code with errors, enable the 'formatter.formatWithErrors' option.
+  
+
+Formatted 58 files in 18ms. Fixed 2 files.
+Found 4 errors.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format" exited with code 1

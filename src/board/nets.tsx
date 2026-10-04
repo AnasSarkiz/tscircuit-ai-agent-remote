@@ -1,8 +1,8 @@
 export function BoardNets() {
   return (
     <>
-      <net name="AMP_BCLK" />
-      <net name="AMP_DIN" />
+      <net name="AMP_BCLK" routingPhaseIndex={4} />
+      <net name="AMP_DIN" routingPhaseIndex={5} />
       <net name="AMP_LRCLK" />
       <net name="AMP_SD_MODE" />
       <net name="AUDIO_ENABLE_SUPPLY" isPowerNet nominalTraceWidth={0.6} />

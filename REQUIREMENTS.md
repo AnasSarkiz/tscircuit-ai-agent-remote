@@ -1,3 +1,15 @@
+## A6 current checkpoint — 2026-10-04
+
+**Engineering prototype — NOT FABRICATION READY.** This supersedes historical A5 counts below. Genuine in-stock replacements are implemented: seven C22548→C21190 (eight C21190 total), six C105588→C22775. Active125 purchased PCB parts /43identities plus10native pads. Published core0.0.2083 polygon paste fixes13 formerly missing pads;32 pill pads still lack paste. Current native copper20traces/2vias; five missing backlight traces resolved, unconnected-port errors413→402. Genuine saved phase replay and actual added-copper geometry verified; all prior11traces/2vias unchanged.
+
+Required five native checks and copper-free placement CAD build pass. Format/types pass; tests42pass/2retained failures and full native strict schema169failures. Diagnostic PCB-image shorts passes, but **required Gerber-based shorts check fails “Unsupported shape polygon”**. Canonical routed build exits1 with402 retained unconnected-port errors. Final layout/assembly/fabrication gates remain blocked. Fresh4layer/paste/detail/13A4/3D prototype previews inspected.
+
+Battery centreNTC confirmed; outer numbered polarity is still absent from the exact supplier drawing and stays unrouted. BuyDisplay panel has integrated ILI9341 and82.712% nominal physical coverage; actual FPC/contactface/pin1 mating and current bare-panel availability remain unqualified. JST board-thickness tolerance requires a mechanical/stackup revision; current conservative height becomes15.07 mm at a qualifying1mm PCB, above15mm. PCB stays50×65 mm; case max60×75×15 mm. No fabricated confirmation, generic imports or orders.
+
+[Detailed A6 review](evidence/a6-bom-routing-2026-10-04/review.md) · [Active inventory](evidence/a6-bom-routing-2026-10-04/inventory.md) · [Mechanical primary sources](evidence/a6-bom-routing-2026-10-04/mechanical-search.md). Parentfaa491d22d1a55210833a8ea3086ae56dc450245. Intended public version0.0.2-wip-a6-bom-routing; verify publication receipts before claiming upload complete. Watcher stays paused; no cross-chat issue messages.
+
+---
+
 ## A5 — motor solder pads and independent routing, 2026-10-04
 
 J8 is removed at the user's request. The external vibration motor remains connected through native top-side 2 mm solder pads TP_MOTOR_P (VMOTOR/M+) at (22,−8) mm and TP_MOTOR_N (HAPTIC_N/M−) at (22,−11) mm. Pad copper edge gap is 1 mm; board edge gap is 2 mm. M− is the switched motor return, not a general GND pad. The motor harness requires soldering and enclosure strain relief. J6 remains: USB-C supports ESP32-S3 flashing/debugging, while J6 is optional backup UART/BOOT/EN access. Normal USB operation is intended, not physically tested. Five plug connectors remain: J1, J3, J4, J6 and J7. No imported component definitions were changed.

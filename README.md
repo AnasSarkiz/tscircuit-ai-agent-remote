@@ -1,3 +1,15 @@
+## A6 current checkpoint — 2026-10-04
+
+**Engineering prototype — NOT FABRICATION READY.** This supersedes historical A5 counts below. Genuine in-stock replacements are implemented: seven C22548→C21190 (eight C21190 total), six C105588→C22775. Active125 purchased PCB parts /43identities plus10native pads. Published core0.0.2083 polygon paste fixes13 formerly missing pads;32 pill pads still lack paste. Current native copper20traces/2vias; five missing backlight traces resolved, unconnected-port errors413→402. Genuine saved phase replay and actual added-copper geometry verified; all prior11traces/2vias unchanged.
+
+Required five native checks and copper-free placement CAD build pass. Format/types pass; tests42pass/2retained failures and full native strict schema169failures. Diagnostic PCB-image shorts passes, but **required Gerber-based shorts check fails “Unsupported shape polygon”**. Canonical routed build exits1 with402 retained unconnected-port errors. Final layout/assembly/fabrication gates remain blocked. Fresh4layer/paste/detail/13A4/3D prototype previews inspected.
+
+Battery centreNTC confirmed; outer numbered polarity is still absent from the exact supplier drawing and stays unrouted. BuyDisplay panel has integrated ILI9341 and82.712% nominal physical coverage; actual FPC/contactface/pin1 mating and current bare-panel availability remain unqualified. JST board-thickness tolerance requires a mechanical/stackup revision; current conservative height becomes15.07 mm at a qualifying1mm PCB, above15mm. PCB stays50×65 mm; case max60×75×15 mm. No fabricated confirmation, generic imports or orders.
+
+[Detailed A6 review](evidence/a6-bom-routing-2026-10-04/review.md) · [Active inventory](evidence/a6-bom-routing-2026-10-04/inventory.md) · [Mechanical primary sources](evidence/a6-bom-routing-2026-10-04/mechanical-search.md). Parentfaa491d22d1a55210833a8ea3086ae56dc450245. Intended public version0.0.2-wip-a6-bom-routing; verify publication receipts before claiming upload complete. Watcher stays paused; no cross-chat issue messages.
+
+---
+
 ## A5 public publication outcome — verified 2026-10-04
 
 Implementation [314cb1b](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/314cb1b36d0a9b6d641c018ce27288eb47815c95) is on public GitHub main. Anonymous raw Circuit JSON is byte-identical to the validated local output:2,728,724bytes, SHA256 f4319f271856f07477340c3342ce9a576236be438913be4aca5bd9786487d1c5. Public [tscircuit0.0.2-wip-a5-motor-pads](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a5-motor-pads#files) verifies94of95board-only files, including current Circuit JSON and all saved phases, with no extra or unverified/mismatched files. private=false/unlisted=false. Native compressed archive and fallback both reject the required11.4MB C262650 STEP with HTTP413; publisher exit1 and ready_to_build=false. **B-009 registry publication remains incomplete**, separately from the completed J8 source removal. No same-state retry, omitted model or forced cloud readiness was used.

@@ -3,9 +3,9 @@ import { MAX98357AETE_T } from "../../imports/MAX98357AETE_T/MAX98357AETE_T"
 import { AO3400A } from "../../imports/AO3400A/AO3400A"
 import { AO3401A } from "../../imports/AO3401A/AO3401A"
 import { S2B_PH_K_S_LF__SN_ } from "../../imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_"
-import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
+import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E/A_0603WAF1001T5E"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
-import { RC0603FR_07100RL } from "../../imports/RC0603FR_07100RL/RC0603FR_07100RL"
+import { A_0603WAF1000T5E } from "../../imports/A_0603WAF1000T5E/A_0603WAF1000T5E"
 import { RC0603FR_0722RL } from "../../imports/RC0603FR_0722RL/RC0603FR_0722RL"
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
@@ -25,11 +25,11 @@ export function SpeakerSheet() {
         <S2B_PH_K_S_LF__SN_ name="J4" {...place("J4")} schX={9} schY={0} />
         <GRM188R61A106ME69D name="C50" {...place("C50")} schX={1} schY={7} schRotation={-90} />
         <GRM188R71C104KA01D name="C51" {...place("C51")} schX={4} schY={7} schRotation={-90} />
-        <RC0603FR_07100RL name="R60" {...place("R60")} schX={-15} schY={-8} />
+        <A_0603WAF1000T5E name="R60" {...place("R60")} schX={-15} schY={-8} />
         <RC0603FR_0710KL name="R61" {...place("R61")} schX={-10} schY={-11} schRotation={-90} />
-        <RC0603FR_071KL name="R62" {...place("R62")} schX={-5} schY={-4} schRotation={-90} />
-        <RC0603FR_07100RL name="R63" {...place("R63")} schX={0} schY={-8} />
-        <RC0603FR_071KL name="R64" {...place("R64")} schX={4} schY={-8} schRotation={-90} />
+        <A_0603WAF1001T5E name="R62" {...place("R62")} schX={-5} schY={-4} schRotation={-90} />
+        <A_0603WAF1000T5E name="R63" {...place("R63")} schX={0} schY={-8} />
+        <A_0603WAF1001T5E name="R64" {...place("R64")} schX={4} schY={-8} schRotation={-90} />
         <trace from="U3.pin2" to="net.VSYS" />
         <trace from="U3.pin7" to="net.VSYS" />
         <trace from="U3.pin8" to="net.VSYS" />

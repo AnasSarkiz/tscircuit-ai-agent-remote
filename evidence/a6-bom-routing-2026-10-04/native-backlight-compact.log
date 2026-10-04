@@ -1,0 +1,82 @@
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-switching","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-feedback-status","paths":3}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"independent-control-signals","paths":3}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"charger-current-limit","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"amplifier-bclk","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"amplifier-din","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-current-setting","paths":1}
+autorouting:start
+{"event":"autorouting:progress","phase":"backlight-c1-positive","progress":0.16103448275862067,"iterationsPerSecond":304}
+{"event":"autorouting:progress","phase":"backlight-c1-positive","progress":1,"iterationsPerSecond":202.38095238095238}
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c1-positive","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c1-negative","paths":1}
+autorouting:start
+{"event":"autorouting:progress","phase":"backlight-c2-positive","progress":0.17,"iterationsPerSecond":48532}
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c2-positive","paths":1}
+autorouting:start
+{"event":"autorouting:progress","phase":"backlight-c2-negative","progress":0.2258402555910543,"iterationsPerSecond":1444}
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c2-negative","paths":1}
+{
+  "counts": {
+    "source_project_metadata": 1,
+    "source_group": 16,
+    "schematic_sheet": 13,
+    "source_net": 76,
+    "source_port": 496,
+    "source_component": 135,
+    "source_board": 1,
+    "source_refdes_convention_warning": 9,
+    "source_component_internal_connection": 4,
+    "source_trace": 430,
+    "source_bus": 2,
+    "schematic_component": 135,
+    "schematic_text": 220,
+    "schematic_group": 16,
+    "schematic_port": 479,
+    "schematic_line": 17,
+    "schematic_symbol": 5,
+    "schematic_path": 65,
+    "schematic_circle": 4,
+    "schematic_rect": 1,
+    "schematic_trace": 333,
+    "schematic_net_label": 143,
+    "pcb_component": 135,
+    "pcb_group": 15,
+    "pcb_board": 1,
+    "pcb_smtpad": 487,
+    "pcb_solder_paste": 469,
+    "pcb_silkscreen_path": 540,
+    "pcb_silkscreen_text": 137,
+    "pcb_fabrication_note_path": 5,
+    "pcb_courtyard_outline": 100,
+    "pcb_hole": 8,
+    "pcb_plated_hole": 9,
+    "pcb_courtyard_rect": 25,
+    "pcb_silkscreen_circle": 9,
+    "pcb_keepout": 3,
+    "pcb_note_text": 10,
+    "pcb_note_rect": 2,
+    "pcb_port": 496,
+    "pcb_trace": 20,
+    "pcb_connector_not_in_accessible_orientation_warning": 2,
+    "cad_component": 135,
+    "source_missing_manufacturer_part_number_warning": 10,
+    "pcb_component_missing_courtyard_warning": 10,
+    "pcb_debug_object": 11,
+    "pcb_via": 2,
+    "pcb_copper_pour": 1,
+    "pcb_port_not_connected_error": 402,
+    "pcb_trace_warning": 2,
+    "source_component_pins_underspecified_warning": 9,
+    "source_no_power_pin_defined_warning": 15,
+    "source_no_ground_pin_defined_warning": 9
+  }
+}

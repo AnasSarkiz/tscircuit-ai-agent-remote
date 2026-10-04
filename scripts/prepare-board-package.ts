@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "A5 motor solder pads replacing J8 and saved partial native routing; 11 traces/2 vias; display FPC, full routing, thin stackup and battery polarity pending; not fabrication ready",
+    "A6 qualified resistor substitutions, official polygon paste fix and saved partial native routing; incomplete copper, pill paste, display FPC, stackup and battery polarity; not fabrication ready",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,
@@ -89,6 +89,11 @@ const runtimePackage = {
   devDependencies: {
     "@tscircuit/cli": originalPackage.devDependencies["@tscircuit/cli"],
     "@tscircuit/core": originalPackage.devDependencies["@tscircuit/core"],
+    "@tscircuit/checks": originalPackage.devDependencies["@tscircuit/checks"],
+    "circuit-to-svg": originalPackage.devDependencies["circuit-to-svg"],
+    "@tscircuit/modelprinter": originalPackage.devDependencies["@tscircuit/modelprinter"],
+    "@tscircuit/capacity-autorouter":
+      originalPackage.devDependencies["@tscircuit/capacity-autorouter"],
     "@tscircuit/props": originalPackage.overrides["@tscircuit/props"],
     "@types/bun": originalPackage.devDependencies["@types/bun"],
     tscircuit: originalPackage.devDependencies.tscircuit,

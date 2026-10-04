@@ -1,3 +1,28 @@
+## A6 current checkpoint — 2026-10-04
+
+**Engineering prototype — NOT FABRICATION READY.** This supersedes historical A5 counts below. Genuine in-stock replacements are implemented: seven C22548→C21190 (eight C21190 total), six C105588→C22775. Active125 purchased PCB parts /43identities plus10native pads. Published core0.0.2083 polygon paste fixes13 formerly missing pads;32 pill pads still lack paste. Current native copper20traces/2vias; five missing backlight traces resolved, unconnected-port errors413→402. Genuine saved phase replay and actual added-copper geometry verified; all prior11traces/2vias unchanged.
+
+Required five native checks and copper-free placement CAD build pass. Format/types pass; tests42pass/2retained failures and full native strict schema169failures. Diagnostic PCB-image shorts passes, but **required Gerber-based shorts check fails “Unsupported shape polygon”**. Canonical routed build exits1 with402 retained unconnected-port errors. Final layout/assembly/fabrication gates remain blocked. Fresh4layer/paste/detail/13A4/3D prototype previews inspected.
+
+Battery centreNTC confirmed; outer numbered polarity is still absent from the exact supplier drawing and stays unrouted. BuyDisplay panel has integrated ILI9341 and82.712% nominal physical coverage; actual FPC/contactface/pin1 mating and current bare-panel availability remain unqualified. JST board-thickness tolerance requires a mechanical/stackup revision; current conservative height becomes15.07 mm at a qualifying1mm PCB, above15mm. PCB stays50×65 mm; case max60×75×15 mm. No fabricated confirmation, generic imports or orders.
+
+[Detailed A6 review](evidence/a6-bom-routing-2026-10-04/review.md) · [Active inventory](evidence/a6-bom-routing-2026-10-04/inventory.md) · [Mechanical primary sources](evidence/a6-bom-routing-2026-10-04/mechanical-search.md). Parentfaa491d22d1a55210833a8ea3086ae56dc450245. Intended public version0.0.2-wip-a6-bom-routing; verify publication receipts before claiming upload complete. Watcher stays paused; no cross-chat issue messages.
+
+### Current validation gates
+
+| Stage | Status | Evidence / remaining work |
+|---|---|---|
+| 1 requirements | in progress | Stackup/current/enclosure/FPC/pack qualification open |
+| 2 schematic/BOM | blocked | Resistor shortages resolved;32 pill paste, pack polarity, display mating, assembly metadata and electrical qualification open |
+| 3 placement | blocked | Native PCB checks pass; external fit/RF/flex/harness/thickness not approved |
+| 4 copper | in progress | Qualified independent phases only;20traces/2vias,402 native unconnected-port errors |
+| 5 automated/visual | blocked | Default Gerber shorts tool fails,169 strict schema failures,2 retained test failures |
+| 6 prototype fabrication | blocked | No validated complete copper, approved Gerbers/drills/BOM/CPL or assembler review |
+| 7 physical prototype | not started | No hardware measurements |
+| 8 store prototype release | in progress | Public WIP checkpoint; exact publication receipt pending |
+
+---
+
 ## Current layout/BOM audit — 2026-10-04
 
 Preliminary native placement/connectivity/shorts checks pass; final layout and assembly BOM remain **blocked**. Current 135 components = 125 purchased parts + 10 native pads. Fresh supplier audit:43/44 exact identities match; C22548 stock 5 versus 7 required, C105588 (six 100 Ω parts) has no in-stock result. Current native paste is missing on45 SMT pads: U16 (17), U27 (16), U4/U5 (8), J1 (4). Official BOM probe125 rows / 31 blank Comment fields / 125 supplier-code footprints. Fresh current 3D and 13 A4 sheets reviewed; display physical mating, pack outer polarity,0.8 mm stackup/case fit and full routing remain open. Tests42 pass / 2 retained failures. In-stock resistor alternatives were found but not substituted. [Full audit](evidence/layout-bom-audit-2026-10-04/review.md) · [Current inventory](evidence/layout-bom-audit-2026-10-04/inventory.md). Source/copper/imports unchanged; no new package retry, watcher resume or cross-chat message. **NOT FABRICATION READY.**

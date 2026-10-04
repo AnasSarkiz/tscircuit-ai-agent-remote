@@ -46,7 +46,7 @@ export function BoardFeatures() {
       <pcbnotetext
         pcbX={-15}
         pcbY={-27}
-        text="B-005 MIC PASTE: BLOCKED"
+        text="PILL PASTE / DRC: PENDING"
         fontSize={0.6}
         color="#ffb34d"
       />
@@ -92,7 +92,7 @@ export function BoardFeatures() {
       <pcbnotetext pcbX={22.7} pcbY={32} text="TALK" fontSize={1} />
       <pcbnotetext pcbX={-24} pcbY={5.5} text="PRIVACY" fontSize={0.8} />
       <pcbnotetext pcbX={0} pcbY={-32} text="USB-C 5V / PROGRAM" fontSize={0.8} />
-      <pcbnotetext pcbX={0} pcbY={-31} text="A4 PROTOTYPE - NOT FOR FABRICATION" fontSize={0.7} />
+      <pcbnotetext pcbX={0} pcbY={-31} text="A6 PROTOTYPE - NOT FOR FABRICATION" fontSize={0.7} />
       <schematicsheet
         name="test-access"
         displayName="AI Remote A1 - Test access"

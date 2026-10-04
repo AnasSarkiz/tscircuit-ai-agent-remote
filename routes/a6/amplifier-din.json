@@ -1,0 +1,75 @@
+[
+  {
+    "connection": ".R65 > port.pin2",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -6.24665,
+        "y": 0,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -6.953567824127888,
+        "y": 0.7069178241278887,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -6.953567824127888,
+        "y": 5.200203824127888,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.753364,
+        "y": 6,
+        "width": 0.2,
+        "layer": "top"
+      }
+    ]
+  },
+  {
+    "connection": ".R68 > port.pin1",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -7.753364,
+        "y": 6,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -12.218749790429527,
+        "y": 1.5346142095704742,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -16.907022005871397,
+        "y": 1.5346142095704742,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -17.498411,
+        "y": 2.126003203699078,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -17.498411,
+        "y": 2.500003,
+        "width": 0.2,
+        "layer": "top"
+      }
+    ]
+  }
+]

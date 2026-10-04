@@ -2,14 +2,14 @@ import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C1
 import { ICS_43434 } from "../../imports/ICS_43434/ICS_43434"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
-import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
+import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E/A_0603WAF1001T5E"
 import { TLV3201AIDBVR } from "../../imports/TLV3201AIDBVR/TLV3201AIDBVR"
 import { place } from "./placement"
 export function MicrophonesSheet() {
   return (
     <schematicsheet
       name="MicrophonesSheet"
-      displayName="AI Remote A1 - Dual microphones - B-005 FABRICATION BLOCKER"
+      displayName="AI Remote A6 - Dual microphones - prototype"
       sheetSize="A4"
       sheetIndex={10}
     >
@@ -20,7 +20,7 @@ export function MicrophonesSheet() {
         <GRM188R71C104KA01D name="C81" {...place("C81")} schX={11} schY={9} />
         <TLV3201AIDBVR name="U7" {...place("U7")} schX={0} schY={-5} />
         <RC0603FR_07100KL name="R26" {...place("R26")} schX={-10} schY={-4} />
-        <RC0603FR_071KL name="R27" {...place("R27")} schX={7} schY={-5} />
+        <A_0603WAF1001T5E name="R27" {...place("R27")} schX={7} schY={-5} />
         <RC0603FR_0710KL name="R29" {...place("R29")} schX={-5} schY={-5} />
         <RC0603FR_0710KL name="R30" {...place("R30")} schX={-5} schY={-9} />
         <GRM188R71C104KA01D name="C25" {...place("C25")} schX={5} schY={-10} />

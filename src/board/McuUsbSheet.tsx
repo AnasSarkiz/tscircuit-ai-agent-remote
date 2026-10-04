@@ -9,7 +9,7 @@ import { RC0603FR_074K7L } from "../../imports/RC0603FR_074K7L/RC0603FR_074K7L"
 import { RC0603FR_075K1L } from "../../imports/RC0603FR_075K1L/RC0603FR_075K1L"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
-import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
+import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E/A_0603WAF1001T5E"
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
 
@@ -34,7 +34,7 @@ export function McuUsbSheet({ placementOnly = false }: { placementOnly?: boolean
         <RC0603FR_074K7L name="R35" {...place("R35")} schX={-5} schY={7} />
         <RC0603FR_0710KL name="R36" {...place("R36")} schX={6} schY={-6} schRotation={-90} />
         <RC0603FR_07100KL name="R37" {...place("R37")} schX={-5} schY={4} schRotation={-90} />
-        <RC0603FR_071KL name="R38" {...place("R38")} schX={6} schY={0} />
+        <A_0603WAF1001T5E name="R38" {...place("R38")} schX={6} schY={0} />
         <GRM188R61A106ME69D name="C30" {...place("C30")} schX={6} schY={7} schRotation={-90} />
         <GRM188R71C104KA01D name="C31" {...place("C31")} schX={7.2} schY={7} schRotation={-90} />
         <GRM188R71C104KA01D name="C32" {...place("C32")} schX={8.4} schY={7} schRotation={-90} />

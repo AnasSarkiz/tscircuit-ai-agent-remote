@@ -2,10 +2,10 @@ import { place } from "./placement"
 import { TPS7A2030PDBVR } from "../../imports/TPS7A2030PDBVR"
 import { AO3400A } from "../../imports/AO3400A/AO3400A"
 import { SS14 } from "../../imports/SS14"
-import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
+import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E/A_0603WAF1001T5E"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
-import { RC0603FR_07100RL } from "../../imports/RC0603FR_07100RL/RC0603FR_07100RL"
+import { A_0603WAF1000T5E } from "../../imports/A_0603WAF1000T5E/A_0603WAF1000T5E"
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { GRM188R61A226ME15D } from "../../imports/GRM188R61A226ME15D/GRM188R61A226ME15D"
 import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
@@ -25,8 +25,8 @@ export function HapticSheet() {
         <GRM188R61A106ME69D name="C70" {...place("C70")} schX={-11} schY={2} schRotation={-90} />
         <GRM188R61A226ME15D name="C71" {...place("C71")} schX={0} schY={2} schRotation={-90} />
         <GRM188R71C104KA01D name="C72" {...place("C72")} schX={15} schY={2} schRotation={-90} />
-        <RC0603FR_071KL name="R82" {...place("R82")} schX={3} schY={2} schRotation={-90} />
-        <RC0603FR_07100RL name="R83" {...place("R83")} schX={1} schY={-6} />
+        <A_0603WAF1001T5E name="R82" {...place("R82")} schX={3} schY={2} schRotation={-90} />
+        <A_0603WAF1000T5E name="R83" {...place("R83")} schX={1} schY={-6} />
         <RC0603FR_0710KL name="R84" {...place("R84")} schX={6} schY={-6} schRotation={-90} />
         <RC0603FR_07100KL name="R85" {...place("R85")} schX={-6} schY={-6} schRotation={-90} />
         <trace from="U22.pin1" to="net.VSYS" />

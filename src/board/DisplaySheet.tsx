@@ -4,7 +4,7 @@ import { SN74LVC245APWR } from "../../imports/SN74LVC245APWR/SN74LVC245APWR"
 import { AFC07_S50ECA_00 } from "../../imports/AFC07_S50ECA_00/AFC07_S50ECA_00"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
-import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
+import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E/A_0603WAF1001T5E"
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { GRM188R61A226ME15D } from "../../imports/GRM188R61A226ME15D/GRM188R61A226ME15D"
 import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
@@ -44,7 +44,7 @@ export function DisplaySheet() {
           schRotation={-90}
         />
         <RC0603FR_07100KL name="R40" {...place("R40")} schX={-6.75} schY={3.0} schRotation={-90} />
-        <RC0603FR_071KL name="R41" {...place("R41")} schX={-3.0} schY={-6.75} schRotation={-90} />
+        <A_0603WAF1001T5E name="R41" {...place("R41")} schX={-3.0} schY={-6.75} schRotation={-90} />
         <trace from="U13.pin1" to="net.V3V3" />
         <trace from="U13.pin2" to="net.GND" />
         <trace from="U13.pin3" to="net.LCD_ENABLE" />

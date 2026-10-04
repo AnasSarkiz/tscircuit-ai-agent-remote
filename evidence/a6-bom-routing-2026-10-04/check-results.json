@@ -1,0 +1,28 @@
+{
+  "five_native_checks": {
+    "netlist": 0,
+    "pin_specification": 0,
+    "source": 0,
+    "schematic-placement": 0,
+    "placement": 0
+  },
+  "canonical_build": 1,
+  "canonical_errors": {
+    "pcb_port_not_connected_error": 402
+  },
+  "placement_build": 0,
+  "required_shorts_gerber": 1,
+  "required_shorts_failure": "Unsupported shape polygon",
+  "secondary_shorts_pcb": 0,
+  "format": 0,
+  "typescript": 0,
+  "tests": {
+    "exit": 1,
+    "pass": 42,
+    "fail": 2,
+    "assertions": 418
+  },
+  "strict_schema_failed_elements": 169,
+  "snapshot_update": 0,
+  "snapshot_confirm": 0
+}
