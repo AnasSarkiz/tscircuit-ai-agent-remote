@@ -1,3 +1,7 @@
+## A4 placement-review public outcome - verified
+
+Implementation [9364e2c8](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/9364e2c817dd659daa954bf2c50e6e0bb03fdbdf) and its freshly rebuilt Circuit JSON are public on GitHub and anonymously byte-verified. Public [tscircuit 0.0.2-wip-a4-placement-review](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a4-placement-review#files) has91/92 exact-matching runtime files, including that JSON and saved routes. The required C262650 STEP remains missing after native archive/fallback HTTP413; exit1/ready_to_build=false. B-009 publication completion remains blocked separately from local placement. [Exact publication receipt](evidence/a4-placement-gate-2026-10-04/publication/review.md). This outcome changes no board inputs and does not trigger an unchanged registry retry.
+
 ## Latest placement gate review — A4
 
 **Native PCB placement checks pass, but the full placement gate is BLOCKED before additional routing.** Added a true copper-free inspection mode: `bun run build:placement`. Its native output has zero traces/vias/pours and exactly matches canonical components, connections, pads, holes and keepouts. All five required checks pass;126 native CAD body bounds have zero overlaps. Original four traces and saved routes remain unchanged. Current tests:41 pass/2 retained fabrication-schema failures. Fresh current Circuit JSON is rebuilt from the same source.

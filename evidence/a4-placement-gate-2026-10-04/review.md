@@ -50,3 +50,7 @@ Requirements: in progress; schematic/BOM: blocked; **placement:blocked** with na
 Intended public runtime version 0.0.2-wip-a4-placement-review includes the same current Circuit JSON and transitive board runtime/model/route dependencies only. This report, scripts and tests are excluded from that package. Exact remote results are recorded separately. A public registry update is not fabrication approval; previous required C262650 STEP HTTP413 remains an independent publication issue.
 
 The background watcher remains paused and no issue messages are sent to another chat.
+
+## Verified remote outcome
+
+Source implementation9364e2c8 is public on GitHub; the fresh Circuit JSON matches anonymous remote bytes. Public tscircuit0.0.2-wip-a4-placement-review has91/92 matching runtime files including Circuit JSON; required C262650 STEP is404 after HTTP413, so B-009 remains open and ready_to_build=false. See [publication receipt](publication/review.md). Fresh current display PDF download returned403; no current visual FPC review was claimed. Outcome notes alter no runtime inputs.

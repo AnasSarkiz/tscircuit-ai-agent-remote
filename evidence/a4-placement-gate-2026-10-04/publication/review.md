@@ -1,0 +1,11 @@
+# A4 placement-review publication result - 2026-10-04
+
+Public GitHub implementation [9364e2c8](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/9364e2c817dd659daa954bf2c50e6e0bb03fdbdf) is anonymously accessible, private=false. Committed `dist/index/circuit.json` is byte-identical to the current checked build: 2,790,981 bytes, SHA-256 `effa0fab8a267a5f3a64d7d0388178d1c72a9d4b4e5042d9c820c1eab576a882`. Exact receipt: `github-receipt.json`.
+
+Public [tscircuit 0.0.2-wip-a4-placement-review](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a4-placement-review#files) contains **91 of 92 exact-matching runtime files**, including the same built Circuit JSON and saved routes. private=false/unlisted=false. No extra, mismatched or unverified files. Source/model/JSON staged bytes stayed frozen and still match all manifest hashes. Only transitive canonical board runtime files, imported models, saved routes and build/configuration files were staged; documentation, scripts, tests and review evidence were excluded.
+
+**B-009 remains blocking for publication completion:** the official compressed archive and native fallback returned HTTP413; publisher exit1, ready_to_build=false. The sole missing file is the genuine C262650 connector model `imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step`, 11,395,444 bytes, SHA-256 `ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0`. Native summary:91 successes/one failure. Null cloud build errors do not confirm a cloud build. No custom upload, omission, imported-model edit, forced readiness or unchanged retry was performed.
+
+The raw request-body dump stays outside the repository. Only its path, size, checksum, safe HTTP/count/path results are preserved. No token or raw request body was copied into evidence.
+
+This outcome receipt changes no runtime or board inputs and triggers no metadata-only registry release. Local placement review remains separately blocked on display/FPC, assembly/stackup and remaining schematic/BOM qualification. The fresh current BuyDisplay PDF download returned HTTP403; `../display-drawing-review/download.json` records that attempt without claiming a current drawing visual review. Existing four traces stay preserved; additional routing remains disabled. Watcher paused, cross-chat messages disabled. **NOT FABRICATION READY.**
