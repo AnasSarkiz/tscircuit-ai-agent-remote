@@ -1,0 +1,10 @@
+{
+  "method": "official native --compress --include-dist",
+  "explicit_human_override": "Allow official compressed upload",
+  "archive_result": "HTTP413 POST /package_files/upload_archive",
+  "cli_automatic_behavior": "file-by-file fallback",
+  "raw_log_path": "/private/tmp/ai-remote-buydisplay-compressed-publication.log",
+  "raw_log_bytes_at_check": 6915438,
+  "raw_log_sha256_at_check": "c86b1f1dccef9709b663217607a97e80ef2cea3d578fa8906a077ab2e0d45695",
+  "raw_request_body_excluded_from_repository": true
+}
