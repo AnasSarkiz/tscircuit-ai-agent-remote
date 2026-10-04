@@ -17,6 +17,14 @@ Six imports retain their reviewed local models, including the authorized microph
 hole correction; candidates with other changes were not installed. The final runtime
 package has **75 files**, including the generated Circuit JSON.
 
+Published private runtime release **0.0.2-wip-a1-board-runtime** from board-source
+commit **81e745660507007623d7c0ccc5076fce237aa4b9**. Native publisher exited0 with
+75 uploads/zero failures; exact-version readback verified all 75 byte hashes,
+including `dist/index/circuit.json`, and no missing/extra files. Registry publication
+is complete for this reduced runtime release; earlier full-evidence releases remain
+historically incomplete. `ready_to_build=true` is upload/build-queue status, not proof
+of a completed cloud build or fabrication approval.
+
 **Prototype; not for fabrication.** The complete `main.tsx` now integrates all
 major subsystems on a **50 × 65 mm**, four-layer, 1.6 mm board with 3 mm rounded
 corners. The requested 50 × 55 mm first trial was rendered and retained; it had
@@ -44,7 +52,7 @@ Provisional: HS17QS178RX display/FPC and backlight application; protected 1S
 TALK actuator, mounting/raised display/RF mechanics and privacy transitions.
 Microphone polygon solder paste B-005, final electrical/thermal/mechanical
 qualification, routing/DRC/fabrication exports, strict native schema B-010,
-BOM-description B-015 and incomplete registry publication B-009 remain open.
+BOM-description B-015 remain open. B-009 is resolved for the runtime release above.
 See `VALIDATION.md` and `BOM-preview.md`. The background watcher remains paused.
 
 ## Historical A0 records (superseded by A1 where they conflict)

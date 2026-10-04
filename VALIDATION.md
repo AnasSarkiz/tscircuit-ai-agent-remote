@@ -2,6 +2,29 @@
 
 ## Runtime-only package step — 2026-10-04
 
+### Verified publication outcome
+
+Board implementation/source commit **81e745660507007623d7c0ccc5076fce237aa4b9**
+was pushed to `origin/main` and its exact remote SHA verified. The normal native
+publisher completed with actual exit0, **75 successes/zero failures**, creating private
+release **0.0.2-wip-a1-board-runtime**. Exact-version API listing contains precisely
+the reviewed 75 files. All 75 remote contents match the local manifest byte-for-byte,
+including `dist/index/circuit.json`; zero missing, extra, mismatched or unverified files.
+No document, investigation script, test fixture or unused component/model was uploaded.
+
+Readback reports `is_private=true`, `ready_to_build=true`, with null reported cloud
+build/transpilation errors at that observation. This confirms publication, not a completed
+cloud build or manufacturing approval. Native process receipt, safe upload log and full
+hash/readback receipt are preserved in this directory. The earlier compressed method
+was rejected by automatic approval review and was not used; standard native upload
+succeeded after the genuine, verified CDN re-imports described below.
+
+B-009 no longer blocks this runtime-only board publication. The oversized full-evidence
+release history remains incomplete, and the registry upload-size limit was not fixed.
+All fabrication/electrical/schema/BOM and physical-test gates retain their prior status.
+This outcome-only record changes no runtime package input and requires no new registry
+version or repeat upload. Background automation remains paused and routing disabled.
+
 ### Current method: standard native upload with genuine CDN imports
 
 The user supplied `AnasSarkiz/magnetic-shutter-remote--01a0f81f` as the publishing
