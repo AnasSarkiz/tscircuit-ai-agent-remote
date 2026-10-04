@@ -1,0 +1,27 @@
+{
+  "C11051_import_unchanged": true,
+  "sha256": "7121bf5d324f23259837fb2486ed2688ac9446f7b508068ff535753a9a907c52",
+  "runtime_file_count": 75,
+  "no_runtime_documents_or_scripts": true,
+  "types_exit": 0,
+  "format_exit": 0,
+  "staged_types_exit": 0,
+  "native_build_exit": 0,
+  "pre_routing_checks": {
+    "netlist": 0,
+    "pin_specification": 0,
+    "source": 0,
+    "schematic-placement": 0,
+    "placement": 0
+  },
+  "snapshot_compare_exit": 0,
+  "tests": {
+    "pass": 35,
+    "fail": 1,
+    "assertions": 319,
+    "known_failure": "B-010 strict schema"
+  },
+  "full_current_schema_failure_count": 162,
+  "unrouted_shorts_exit": 0,
+  "whitespace_warnings": "Supplier import/raw logs/generated SVG whitespace preserved; not modified to silence git diff --check"
+}

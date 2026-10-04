@@ -1,3 +1,13 @@
+## Public A2 remote outcome — verified 2026-10-04
+
+Board implementation commit **8332577b7eff34815843084d4fbe5549d5066e78** reached public GitHub main; anonymous committed Circuit JSON is identical to local: 2,300,592 bytes, SHA-256 `fbf9e2b576a9e37f695e894d9458500c33d5508b052b10692dcf99bc474dcd3f`.
+
+Public tscircuit releases **0.0.2-wip-a2-display-mounting** and the one bounded native retry **0.0.2-wip-a2-display-mounting-retry1** both contain all75 expected board-only files with exact anonymous byte-hash matches, zero missing/extra/unverified files, private=false/unlisted=false. Native publication exits1 each time:74reported successes/one timeout on `imports/TPS63802DLAR/TPS63802DLAR.step`; the timed-out model persisted correctly in both releases. The native CLI exits before its final `ready_to_build=true` update. Both releases remain **ready_to_build=false**, so **B-009 build queuing/publication completion remains blocked despite complete public file content**. Null build errors do not prove a cloud build. No forced readiness, custom upload, compression, evidence omission, repeated retry loop or imported-model edit was used.
+
+Receipts and safe logs are in `evidence/routing-intake-2026-10-04/`; first attempt kept separately. Runtime/source bytes were frozen and unchanged throughout. Receipt-only follow-up does not change any board input or require another registry publication. Both paste/schema and this upload completion behavior were reported to the authorized correction chat. Background watcher remains paused.
+
+[GitHub board revision](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/8332577b7eff34815843084d4fbe5549d5066e78) · [Public tscircuit A2 files](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a2-display-mounting-retry1#files).
+
 # Latest A2 checkpoint — 2026-10-04
 
 **NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).

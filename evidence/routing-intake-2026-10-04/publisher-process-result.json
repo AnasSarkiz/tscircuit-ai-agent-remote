@@ -1,0 +1,12 @@
+{
+  "exit_code": 1,
+  "reported_success_count": 74,
+  "reported_failure_count": 1,
+  "reported_failure": "imports/TPS63802DLAR/TPS63802DLAR.step",
+  "failure_kind": "Repeated TimeoutError on package_files/create",
+  "source_commit": "8332577b7eff34815843084d4fbe5549d5066e78",
+  "actual_release": "0.0.2-wip-a2-display-mounting-retry1",
+  "retry_scope": "One bounded native retry of unchanged inputs; no further retry loop",
+  "native_cli_failure_behavior": "CLI returns exit1 before package_releases/update ready_to_build=true when uploadResults.failed.length>0",
+  "native_cli_source_lines": "@tscircuit/cli0.1.2235 dist/cli/main.js348509..348526"
+}
