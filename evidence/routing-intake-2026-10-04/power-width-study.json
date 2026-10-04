@@ -1,0 +1,78 @@
+{
+  "method": "IPC-2221 empirical static screening from TI TIDA-01232 Eq7/8",
+  "temperature_rise_c": 20,
+  "external_copper_mm": 0.035,
+  "inner_copper_mm": 0.0152,
+  "provisional_stack": "JLC04161H-7628",
+  "rows": [
+    {
+      "current_a": 0.08,
+      "external_35um_min_nominal_mm": 0.006053506961218556,
+      "inner_15p2um_min_nominal_mm": 0.036261460294273094,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.007566883701523195,
+      "inner_width_before_minus20percent_width_tolerance_mm": 0.04532682536784136
+    },
+    {
+      "current_a": 0.1,
+      "external_35um_min_nominal_mm": 0.008235235624788655,
+      "inner_15p2um_min_nominal_mm": 0.049330358672313356,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.010294044530985818,
+      "inner_width_before_minus20percent_width_tolerance_mm": 0.06166294834039169
+    },
+    {
+      "current_a": 0.3,
+      "external_35um_min_nominal_mm": 0.03747781922098513,
+      "inner_15p2um_min_nominal_mm": 0.22449804093793158,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.04684727402623141,
+      "inner_width_before_minus20percent_width_tolerance_mm": 0.28062255117241447
+    },
+    {
+      "current_a": 0.5,
+      "external_35um_min_nominal_mm": 0.07581804597041834,
+      "inner_15p2um_min_nominal_mm": 0.4541620388245617,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.09477255746302292,
+      "inner_width_before_minus20percent_width_tolerance_mm": 0.5677025485307021
+    },
+    {
+      "current_a": 1,
+      "external_35um_min_nominal_mm": 0.19723608543238105,
+      "inner_15p2um_min_nominal_mm": 1.18147522193721,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.2465451067904763,
+      "inner_width_before_minus20percent_width_tolerance_mm": 1.4768440274215124
+    },
+    {
+      "current_a": 1.5,
+      "external_35um_min_nominal_mm": 0.3450411317940404,
+      "inner_15p2um_min_nominal_mm": 2.0668507330702846,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.43130141474255046,
+      "inner_width_before_minus20percent_width_tolerance_mm": 2.5835634163378556
+    },
+    {
+      "current_a": 2,
+      "external_35um_min_nominal_mm": 0.513097810669874,
+      "inner_15p2um_min_nominal_mm": 3.073536713161524,
+      "external_width_before_minus20percent_width_tolerance_mm": 0.6413722633373425,
+      "inner_width_before_minus20percent_width_tolerance_mm": 3.8419208914519047
+    },
+    {
+      "current_a": 3,
+      "external_35um_min_nominal_mm": 0.8976037469333805,
+      "inner_15p2um_min_nominal_mm": 5.376787841813864,
+      "external_width_before_minus20percent_width_tolerance_mm": 1.1220046836667257,
+      "inner_width_before_minus20percent_width_tolerance_mm": 6.7209848022673295
+    }
+  ],
+  "via_example": {
+    "finished_hole_mm": 0.3,
+    "assumed_barrel_copper_mm": 0.025,
+    "barrel_cross_section_mm2": 0.02552544031041706,
+    "equivalent_external_35um_trace_width_mm": 0.7292982945833445,
+    "thermal_capacity_result": "UNQUALIFIED: cross-section equivalence is not a via current rating; manufacturer guaranteed barrel thickness, length, temperature rise and current sharing required"
+  },
+  "limitations": [
+    "No measured copper exists yet",
+    "Copper thickness tolerance and neck-downs not included in nominal formula",
+    "Actual rail currents, peak duration, enclosure temperature and adjacent copper remain unqualified",
+    "Use IPC-2152/validated thermal model and prototype measurements for final thermal qualification; formula alone does not establish safety"
+  ]
+}

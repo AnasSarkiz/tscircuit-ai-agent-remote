@@ -1,3 +1,9 @@
+# Latest A2 checkpoint — 2026-10-04
+
+**NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).
+
+A2 active J7 is AFC07-S12FCC-00/C11051; old C11050 is inactive. J3 active C265101 is PH3: pin2PACK_NTC;1/3unassigned pending outer polarity. HS20HS072RX/C5329582 and AKY2945 are external modules, not PCB population. Native export122purchasedrows plus8coppertestpoints excluded from BOM/CPL;32blankCommentfields and U14rotation unresolved.
+
 # Candidate BOM — A0
 
 **Not an assembly/fabrication BOM.** Import success alone does not qualify a part. Regulator review references are provisional; final designators require the complete schematic.

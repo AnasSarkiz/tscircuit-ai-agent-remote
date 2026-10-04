@@ -1,3 +1,9 @@
+# Latest A2 checkpoint — 2026-10-04
+
+**NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).
+
+Active A2 pinout is 1GND,2CS,3DC,4SCLK,5SDA,6RESET,7NC,8/9VLCD,10LED anode,11LED cathode,12GND; C11051 anchors13/14GND. Old ten-contact wiring below is historical. Genuine screen supplier definition is a non-PCB placeholder and is not placed. ActualFPC/path/Z/controller/backlight qualification remains open.
+
 # A0 display interface review — 2026-10-03
 
 This is a partial, unrouted application study, not a qualified handheld display.

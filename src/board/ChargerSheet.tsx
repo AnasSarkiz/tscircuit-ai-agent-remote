@@ -37,9 +37,8 @@ export function ChargerSheet() {
         <trace from="U16.pin13" to="net.VBUS" />
         <trace from="U16.pin16" to="net.CHARGER_ISET" />
         <trace from="U16.pin17" to="net.GND" />
-        <trace from="J3.pin1" to="net.PACK_BAT" />
-        <trace from="J3.pin2" to="net.GND" />
-        <trace from="J3.pin3" to="net.PACK_NTC" />
+        {/* AKY2945: outer BAT/GND contact numbers require supplier or physical confirmation. */}
+        <trace from="J3.pin2" to="net.PACK_NTC" />
         <trace from="J3.pin4" to="net.GND" />
         <trace from="C1.pin1" to="net.VBUS" />
         <trace from="C1.pin2" to="net.GND" />

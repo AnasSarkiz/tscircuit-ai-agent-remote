@@ -1,3 +1,9 @@
+# Latest A2 checkpoint — 2026-10-04
+
+**NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).
+
+A2 real blockers: battery outer numbering; screen tail/contact/raised assembly/RF clearance; backlight/current qualification; B-005paste (U4/U5 C5656610 9pads/5paste each, USB C16594812/8, charger C5431317/0); B-010162strict failures; B-01532blankBOMCommentfields; U14C7848CPLrotation unverified. Core4344paste PR was reverted4349, not resolved in checked2080. B-003 remains resolved. No routed copper exists; no actual route short/clearance diagnosis is asserted.
+
 # Issues — A0
 
 ## RESOLVED LOCALLY B-001: C370970 terminal holes and mounting-slot lengths

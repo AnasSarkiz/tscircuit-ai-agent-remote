@@ -1,7 +1,7 @@
 import { place } from "./placement"
 import { TPS7A2028PDBVR } from "../../imports/TPS7A2028PDBVR/TPS7A2028PDBVR"
 import { SN74LVC245APWR } from "../../imports/SN74LVC245APWR/SN74LVC245APWR"
-import { AFC07_S10FCC_00 } from "../../imports/AFC07_S10FCC_00/AFC07_S10FCC_00"
+import { AFC07_S12FCC_00 } from "../../imports/AFC07_S12FCC_00/AFC07_S12FCC_00"
 import { RC0603FR_07100KL } from "../../imports/RC0603FR_07100KL/RC0603FR_07100KL"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
 import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
@@ -13,14 +13,14 @@ export function DisplaySheet() {
   return (
     <schematicsheet
       name="display-logic-review"
-      displayName="AI Remote A1 - Display logic - PROVISIONAL"
+      displayName="AI Remote A2 - HS20HS072RX interface - MECHANICS PENDING"
       sheetIndex={4}
       sheetSize="A4"
     >
       <group name="display-logic-review-group" schLayout={{ layoutMode: "relative" }}>
         <TPS7A2028PDBVR name="U13" {...place("U13")} schX={-6.75} schY={6.0} />
         <SN74LVC245APWR name="U14" {...place("U14")} schX={0.0} schY={0.0} />
-        <AFC07_S10FCC_00 name="J7" {...place("J7")} schX={6.75} schY={0.0} />
+        <AFC07_S12FCC_00 name="J7" {...place("J7")} schX={6.75} schY={0.0} />
         <GRM188R61A106ME69D
           name="C40"
           {...place("C40")}
@@ -68,19 +68,25 @@ export function DisplaySheet() {
         <trace from="U14.pin7" to="net.GND" />
         <trace from="U14.pin8" to="net.GND" />
         <trace from="U14.pin9" to="net.GND" />
-        <trace from="J7.pin1" to="net.LCD_BACKLIGHT_RETURN" />
-        <trace from="J7.pin2" to="net.LCD_BACKLIGHT_OUTPUT" />
-        <trace from="J7.pin3" to="net.VLCD" />
-        <trace from="J7.pin10" to="net.GND" />
-        <trace from="J7.pin11" to="net.GND" />
+        <trace from="J7.pin1" to="net.GND" />
+        <trace from="J7.pin2" to="net.LCD_CS_N" />
+        <trace from="J7.pin3" to="net.LCD_DC" />
+        <trace from="J7.pin4" to="net.LCD_SCLK" />
+        <trace from="J7.pin5" to="net.LCD_SDA" />
+        <trace from="J7.pin6" to="net.LCD_RESET_N" />
+        <trace from="J7.pin8" to="net.VLCD" />
+        <trace from="J7.pin9" to="net.VLCD" />
+        <trace from="J7.pin10" to="net.LCD_BACKLIGHT_OUTPUT" />
+        <trace from="J7.pin11" to="net.LCD_BACKLIGHT_RETURN" />
         <trace from="J7.pin12" to="net.GND" />
+        <trace from="J7.pin13" to="net.GND" />
+        <trace from="J7.pin14" to="net.GND" />
         <RC0603FR_07100KL name="R47" {...place("R47")} schX={-6.0} schY={0.75} schRotation={-90} />
         <RC0603FR_0710KL name="R42" {...place("R42")} schX={11.25} schY={0.75} schRotation={-90} />
         <trace from="U14.pin2" to="net.MCU_LCD_CS_N" />
         <trace from="R47.pin1" to="net.MCU_LCD_CS_N" />
         <trace from="R47.pin2" to="net.GND" />
         <trace from="U14.pin18" to="net.LCD_CS_N" />
-        <trace from="J7.pin5" to="net.LCD_CS_N" />
         <trace from="R42.pin1" to="net.LCD_CS_N" />
         <trace from="R42.pin2" to="net.VLCD" />
         <RC0603FR_07100KL name="R48" {...place("R48")} schX={-6.0} schY={-1.5} schRotation={-90} />
@@ -89,7 +95,6 @@ export function DisplaySheet() {
         <trace from="R48.pin1" to="net.MCU_LCD_RESET_N" />
         <trace from="R48.pin2" to="net.GND" />
         <trace from="U14.pin17" to="net.LCD_RESET_N" />
-        <trace from="J7.pin6" to="net.LCD_RESET_N" />
         <trace from="R43.pin1" to="net.LCD_RESET_N" />
         <trace from="R43.pin2" to="net.GND" />
         <RC0603FR_07100KL name="R49" {...place("R49")} schX={-6.0} schY={-3.75} schRotation={-90} />
@@ -98,7 +103,6 @@ export function DisplaySheet() {
         <trace from="R49.pin1" to="net.MCU_LCD_DC" />
         <trace from="R49.pin2" to="net.GND" />
         <trace from="U14.pin16" to="net.LCD_DC" />
-        <trace from="J7.pin7" to="net.LCD_DC" />
         <trace from="R44.pin1" to="net.LCD_DC" />
         <trace from="R44.pin2" to="net.GND" />
         <RC0603FR_07100KL name="R50" {...place("R50")} schX={-6.0} schY={-6.0} schRotation={-90} />
@@ -107,7 +111,6 @@ export function DisplaySheet() {
         <trace from="R50.pin1" to="net.MCU_LCD_SCLK" />
         <trace from="R50.pin2" to="net.GND" />
         <trace from="U14.pin15" to="net.LCD_SCLK" />
-        <trace from="J7.pin8" to="net.LCD_SCLK" />
         <trace from="R45.pin1" to="net.LCD_SCLK" />
         <trace from="R45.pin2" to="net.GND" />
         <RC0603FR_07100KL name="R51" {...place("R51")} schX={-6.0} schY={-8.25} schRotation={-90} />
@@ -116,7 +119,6 @@ export function DisplaySheet() {
         <trace from="R51.pin1" to="net.MCU_LCD_SDA" />
         <trace from="R51.pin2" to="net.GND" />
         <trace from="U14.pin14" to="net.LCD_SDA" />
-        <trace from="J7.pin9" to="net.LCD_SDA" />
         <trace from="R46.pin1" to="net.LCD_SDA" />
         <trace from="R46.pin2" to="net.GND" />
       </group>

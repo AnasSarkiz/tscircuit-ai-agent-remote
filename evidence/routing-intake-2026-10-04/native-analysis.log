@@ -1,0 +1,223 @@
+{
+  "counts": {
+    "source_group": 16,
+    "schematic_sheet": 13,
+    "source_net": 73,
+    "source_port": 442,
+    "source_component": 130,
+    "source_board": 1,
+    "source_refdes_convention_warning": 11,
+    "source_component_internal_connection": 5,
+    "source_trace": 388,
+    "schematic_component": 130,
+    "schematic_text": 208,
+    "schematic_group": 16,
+    "schematic_port": 424,
+    "schematic_line": 20,
+    "schematic_symbol": 6,
+    "schematic_path": 76,
+    "schematic_circle": 4,
+    "schematic_rect": 1,
+    "schematic_trace": 285,
+    "schematic_net_label": 135,
+    "pcb_component": 130,
+    "pcb_group": 15,
+    "pcb_board": 1,
+    "pcb_smtpad": 438,
+    "pcb_solder_paste": 417,
+    "pcb_silkscreen_path": 508,
+    "pcb_silkscreen_text": 130,
+    "pcb_fabrication_note_path": 4,
+    "pcb_courtyard_outline": 104,
+    "pcb_hole": 8,
+    "pcb_plated_hole": 4,
+    "pcb_courtyard_rect": 18,
+    "pcb_silkscreen_circle": 9,
+    "pcb_keepout": 3,
+    "pcb_note_text": 10,
+    "pcb_note_rect": 2,
+    "pcb_port": 442,
+    "pcb_fabrication_note_text": 1,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "cad_component": 130,
+    "pcb_component_missing_courtyard_warning": 8,
+    "source_missing_manufacturer_part_number_warning": 8,
+    "source_component_pins_underspecified_warning": 11,
+    "source_no_power_pin_defined_warning": 17,
+    "source_no_ground_pin_defined_warning": 11,
+    "source_project_metadata": 1
+  },
+  "schemaFailureCount": 162,
+  "mounts": [
+    {
+      "x": -21.5,
+      "y": 6.7,
+      "holeDiameterMillimeters": 2.2,
+      "keepoutDiameterMillimeters": 6,
+      "straightEdgeCentreDistanceMillimeters": 3.5,
+      "npthEdgeDistanceMillimeters": 2.4,
+      "nearestNativeBounds": [
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "SW5",
+          "left": -25.806082549999815,
+          "right": -19.49397835000002,
+          "bottom": -5.449940799999922,
+          "top": 3.449940799999922,
+          "keepoutGapMillimeters": 0.2500592000000781
+        },
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "U1",
+          "left": -21.7496000000001,
+          "right": -2.2504000000000133,
+          "bottom": 9.977496700000152,
+          "top": 36.5378967,
+          "keepoutGapMillimeters": 0.27749670000015225
+        },
+        {
+          "type": "pcb_component",
+          "name": "SW5",
+          "left": -24.25602165,
+          "right": -19.74397835,
+          "bottom": -5.1999408,
+          "top": 3.1999408000000003,
+          "keepoutGapMillimeters": 0.5000591999999999
+        },
+        {
+          "type": "pcb_component",
+          "name": "U1",
+          "left": -21.500044499999998,
+          "right": -2.499955500000002,
+          "bottom": 10.229592200000003,
+          "top": 29.2194958,
+          "keepoutGapMillimeters": 0.5295922000000024
+        },
+        {
+          "type": "pcb_component",
+          "name": "TP1",
+          "left": -17.5,
+          "right": -16.5,
+          "bottom": 6,
+          "top": 7,
+          "keepoutGapMillimeters": 1
+        },
+        {
+          "type": "pcb_component",
+          "name": "TP2",
+          "left": -16.3,
+          "right": -15.3,
+          "bottom": 6,
+          "top": 7,
+          "keepoutGapMillimeters": 2.1999999999999993
+        },
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "R70",
+          "left": -17.406601699999783,
+          "right": -14.593398300000104,
+          "bottom": 1.317996799999946,
+          "top": 2.6820032000000538,
+          "keepoutGapMillimeters": 2.7358702850791943
+        },
+        {
+          "type": "pcb_component",
+          "name": "R70",
+          "left": -17.156601700000003,
+          "right": -14.843398299999999,
+          "bottom": 1.5679968,
+          "top": 2.4320032,
+          "keepoutGapMillimeters": 3.0894092880387927
+        }
+      ],
+      "displayKeepoutGapMillimeters": 0.3999999999999986,
+      "batteryKeepoutGapMillimeters": 1,
+      "antennaKeepoutGapMillimeters": 19.065665636912023
+    },
+    {
+      "x": -21.5,
+      "y": -29.5,
+      "holeDiameterMillimeters": 2.2,
+      "keepoutDiameterMillimeters": 6,
+      "straightEdgeCentreDistanceMillimeters": 3,
+      "npthEdgeDistanceMillimeters": 1.9,
+      "nearestNativeBounds": [
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "U4",
+          "left": -23.03724560000012,
+          "right": -18.879645600000003,
+          "bottom": -26.173414999999977,
+          "top": -22.34601500000008,
+          "keepoutGapMillimeters": 0.3265850000000228
+        },
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "R3",
+          "left": -17.406601699999896,
+          "right": -14.593398300000217,
+          "bottom": -30.682003200000054,
+          "top": -29.317996799999946,
+          "keepoutGapMillimeters": 1.0933983000001035
+        },
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "R4",
+          "left": -17.406601699999896,
+          "right": -14.593398300000217,
+          "bottom": -28.682003200000054,
+          "top": -27.317996799999946,
+          "keepoutGapMillimeters": 1.1743296955623768
+        },
+        {
+          "type": "pcb_component",
+          "name": "U4",
+          "left": -22.56718,
+          "right": -19.934926600000004,
+          "bottom": -25.2000484,
+          "top": -22.7999516,
+          "keepoutGapMillimeters": 1.2999516
+        },
+        {
+          "type": "pcb_component",
+          "name": "R3",
+          "left": -17.1566017,
+          "right": -14.8433983,
+          "bottom": -30.4320032,
+          "top": -29.5679968,
+          "keepoutGapMillimeters": 1.3439305193860012
+        },
+        {
+          "type": "pcb_component",
+          "name": "R4",
+          "left": -17.1566017,
+          "right": -14.8433983,
+          "bottom": -28.4320032,
+          "top": -27.5679968,
+          "keepoutGapMillimeters": 1.4727760906682024
+        },
+        {
+          "type": "pcb_courtyard_outline",
+          "name": "R30",
+          "left": -18.406601699999896,
+          "right": -15.593398300000217,
+          "bottom": -24.682003200000054,
+          "top": -23.317996799999946,
+          "keepoutGapMillimeters": 2.725574749075699
+        },
+        {
+          "type": "pcb_component",
+          "name": "R30",
+          "left": -18.1566017,
+          "right": -15.8433983,
+          "bottom": -24.4320032,
+          "top": -23.5679968,
+          "keepoutGapMillimeters": 3.0714828301868016
+        }
+      ],
+      "displayKeepoutGapMillimeters": 1.2801869118065392,
+      "batteryKeepoutGapMillimeters": 1.5893899376714549,
+      "antennaKeepoutGapMillimeters": 55.262145514905306
+    }
+  ]
+}

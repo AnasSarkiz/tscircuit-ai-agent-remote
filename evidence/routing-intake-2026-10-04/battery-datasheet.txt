@@ -1,0 +1,519 @@
+                                      Specification Approval sheet
+
+
+
+
+                 Specification Approval Sheet
+Name：Polymer Lithium-Ion Battery
+Model： AKYGA LP523450
+SPEC：3.7V / 1000mAh
+Number: LP523450
+
+
+
+                             Specification Modification Records
+
+
+
+
+ Modification
+    Time                       Descriptions                  Issued Date      Approved By
+
+
+                                Release 1                    2026-08-20
+
+
+
+
+                                          Content
+ 1.Scope:
+   This specification describes the Product Specification of chargeable Polymer Lithium-Ion
+   Battery produced by AKYGA.
+
+
+
+
+                 Any copies are invalid without our company’s approval
+
+
+
+
+                                      Page 1 of 9
+                                       Specification Approval sheet
+
+
+2.Model : AKYGA LP523450
+
+3.Cell parameters Index:
+3.1 Single cell parameters
+No.         Item                    Spec                              Note
+ 1    Model Number           LP523450 / 1000mAh
+
+      Charge Limited
+ 2                                  4.2V
+         Voltage
+                                                        Cell Voltage between 3.6V ~3.9V
+ 3   Nominal Voltage                3.7V
+                                                                 before shipping
+                                                     Nominal Capacity refer to the capacity
+         Nominal              1000mAh @ 0.2C           of 0.2C discharge with 3.0V cut-off
+ 4
+         Capacity                Discharge            voltage, after charging with standard
+                                                                     method.
+                                                     One cycle refer to one
+                                 300 Times           charge period and then 90%
+                                                      one discharge period.
+                                                          Test condition:
+                                                                                  of the
+                                                      Charge: 0.2C to 4.2V
+ 5      Cycle Life               400 Times                                   85%   rated
+                                                     Discharge: 0.2C to 3.0V
+                                                                                 capacity.
+                                                       The cycle life is the
+                                                      cycle times when the
+                                 500 Times            discharge capacity is  75%
+                                                              about:
+
+                                                       After standard charging, storied at
+ 6    Self-discharge       Residual Capacity>90%     25°C±0.5°C for 30 days, then measure
+                                                              the capacity as item 4.
+       Max. Charge
+ 7                                   1C
+         Current
+           Max.
+ 8      Discharge                    3C
+         Current
+      Discharge Cut-
+ 9                                  3.0V
+        off Voltage
+                                                      Cells must be storied at 3.6V-3.9V.
+                                                     During long period storage, cells should
+        Operating          Discharge: -20°C ~ 60°C    be maintained every 90 days. The
+10
+       Temperature          Charge: 0 °C ~ +45°C      method is to do a charge-discharge
+                                                       cycle with standard method, then
+                                                              charge to 3.7—3.9V.
+         Storage
+11                             -20 °C ~+45°C
+       Temperature
+12      Cell Weight               Approx:
+                            Length：50.5mm Max
+                             Width：34mm Max              Measured with weighting 300gf
+13    Cell Dimension                                    at 25°C±0.5°C Not including Tabs
+                           Thickness：5.2mm Max
+14   Connector type              JST PHR-3                       2.00mm*2pins
+15        Wires        AWG24 UL1571 (standard)                 AWG22 to AWG26
+16      Protection               PCM+NTC                              10kR
+
+
+
+                                       Page 2 of 9
+                                        Specification Approval sheet
+
+
+ 3.2 Parameters of battery
+
+No.         Items                   Spec.                                Notes
+1       Rated Capacity            1000mAh                       @ 0.2C mA discharging
+                                                        The average value of voltage during the
+2       Nominal Voltage             3.7V               discharge period (with standard charge and
+                                                                       discharge).
+
+         Assemblage         Length：52.5mm Max              Measured with weighting 300gf
+3                            Width：35mm Max                          at 25°C±0.5°C
+          Dimension        Thickness：5.7mm Max             Not including battery drawing line.
+
+Note: if the battery is in series, the internal resistance of PTC will change according to
+the temperature.
+
+4.Electronic Characteristics test and inspection:
+   4.1 Standard testing environment
+       Unless special stated, tests should be done within one month of delivery and the
+       charging-recharging times is less than 5 times. The following is test conditions: Ambient
+       Temperature： 25℃±0.5℃
+       Ambient Humidity： 65 ±20%
+   4.2 The requirement of measure instrument
+  (1) The measure instrument is passed tested by qualified institute.
+  (2) The accuracy of the size instrument is not more than 0.01mm.
+  (3) The accuracy of multimeter is not less than 0.5%. while measure the voltage, the
+      internal resistance mustn’t less than 10KΩ.
+  (4) The principal of the internal resistance is 1KHz LCR, the accuracy is 0.2%.
+  (5) The internal resistance is changeable, it varies according to the temperature and the
+      charging mode. And it is relevant to the PTC and the length and the Capacity of the
+      drawing line.
+  (6) The current accuracy of the battery test system is more than ±0.1%, isobarically
+      accuracy is ±0.5%, timer accuracy is less than ±0.1%.
+  (7) The accuracy of the temperature meter is less than ±0.5℃.
+   4.3 Visual inspection
+       Any visual inspection defects will affect the electronic characteristics, such as cracks,
+       leakage, and flaw, are not inexistence.
+   4.4 Charge/Discharge Methods and Test Conditions
+No.          Item                             Testing Condition and Method                          Note
+          Charging       Standard CC：0.2C
+ 1                       Quick CC：0.5C
+           Current
+          Standard       Constant Current Charging at 0.2C to 4.2V.
+ 2
+          Charging       Constant Voltage Charging at 4.2V to cut-off current≤0.05C
+            Quick        Constant Current Charging at 0.5C to 4.2V. Constant Voltage Charging at
+ 3
+          Charging       4.2V to cut-off current≤0.05C
+          Standard
+ 4                       Constant discharge at 0.2C to cut-off voltage of 3.0V.
+         Discharge
+          Charging       Standard charging time ：8 hours
+ 5                       Quick charging time：2 hours
+            Time
+                         Standard charging：0°C ~ 45 °C 45~85% RH Quick
+        Temperature      charging：10 °C ~ 45 °C 45~85%RH Standard
+ 6
+         & Humidity      discharging：-20°C ~ 60°C 45~85% RH
+
+    7    Open Voltage     3.6~3.9V (Before shipping)
+
+
+                                        Page 3 of 9
+                                         Specification Approval sheet
+
+
+     Notes： The Max. voltage while charging is not more than 4.25V.The Max.
+               protective voltage designed on PCB board should not more than
+               4.3V.
+    4.5 Mechanical Characteristics
+No.       Item                Testing Conditions and Method                Standard
+                      After standard charging, fixed the cell to vibration
+                      table and subjected to vibration cycling that the
+                      frequency is to be varied at the rate of 1Hz per          No leakage. Left
+ 1    Vibration Test minutes between 10Hz and 55Hz, the excursion of          Capacity ≥ 90%, after 3
+                        the vibration is 0.38mm. The cell shall be                    hours.
+                      vibrated for 30 minutes for three axis of XYZ
+                                            axes.
+                     Drop the cell from 1 meter height onto the concrete      No explore, no fire and
+ 2      Drop Test
+                                        ground twice.                              no leakage
+    4.6 Safety Test
+No.        Item               Testing Conditions and Method                          Standard
+
+                        Charge is conducted for 8 hours while the               No deformation and
+ 1     Over-charge
+                                 invariable voltage is 4.30V.                        leakage
+
+                       The charged battery is short-circuited for 1 hour at
+                                                                                 No explode or fire
+ 2     Short-circuit                        100 mΩ.
+
+                            Put the battery into the heat box, the
+                        temperature is rising to 120±2°C at the rate of
+ 3     Heat shock        (5±2°C /min and maintain for 10 minutes. Then           No explode or fire
+                        cool down to room temperature at the rate of
+                                          5±2°C /min.
+
+       Humid and        Put the charged battery into box for 48 hours,
+ 4                       the temperature is 40°C ±2°C and the relative         No smoke or explode
+        heat test                  humidity is 90%～95% .
+   4.7 High and low temperature test
+No        Item                 Testing Conditions and Method                         Standard
+                       Put the charged battery into the high
+          High        temperature box for 2 hours at 55°C ±2°C. And           Discharge 90 percent of
+ 1
+      Temperature      discharge the battery at 0.5C current until the         the original capacity.
+                                       voltage is 3.0V.
+                       Put the charged battery into the low temperature
+          Low         box for 16 hours～24 hours at -20°C ±2°C. And            Discharge more than 45
+ 2                     then discharge the battery at 0.1C until the            percent of the original
+      Temperature
+                                        voltage is 3.0V                              capacity.
+
+4.8 Electricity maintenance
+No         Item                  Testing Conditions and Method                       Standard
+
+       Electricity          Rest the charge battery for 28 days at the         Discharge more than
+ 1                       ambient temperature of 25°C ±0.5°C. And then         85 percent of the original
+      maintenance
+                          discharge the battery until the voltage is ended.           capacity
+5. Storage and others
+      5.1     Long Period Storage
+               If the cell has been stored for 3 month, it should be transfer to a dry
+     and cool environment. Storage Voltage is between 3.6V and 3.9V and the storage
+     conditions as Item 4.1.
+
+     5.2Any matters that this specification does not cover should be conferred between the
+       customer and AKYGA
+
+
+                                         Page 4 of 9
+                                                            Specification Approval sheet
+
+
+
+              6.Drawing
+
+                  6.1 Assembly diagram(not in scale)
+                      Model：LP523450
+
+
+
+
+  double-sided
+  adhesive tape                                           adhesive tape Kapton
+                                                                PCM                                        LP523450
+      wire red (+)
+wire yellow (NTC)
+     wire black(-)
+
+
+
+
+ connector type:
+ see at page 2, point 14
+
+
+                                                      adhesive tape Kapton (2x)
+
+
+                                   5.7mm*
+                                                MAX
+
+                                                                            35mm MAX                            Circuit diagram
+                                                                                                                                  PCM
+
+
+
+                                                                              AKYGA Battery 3.7V
+                                                                                                          LP523450
+
+
+
+                                   52.5mm MAX
+
+                                                                              LP523450 1000mAh
+
+
+
+                                   80mm
+
+
+
+
+                                                                                                   *Battery thickness expansion is 7%±3%
+
+                                                            Page 5 of 9
+                                               Specification Approval sheet
+
+
+! Danger
+   ⚫       Strictly prohibits heat or throw cell into fire.
+   ⚫       Strictly prohibits throw and wet cell in liquid such as water, gasoline or drink etc.
+   ⚫       Strictly prohibits use leave cell close to fire or inside of a car where temperature may be above
+           60°C. Also do not charge / discharge in such conditions.
+   ⚫       Strictly prohibits put batteries in your pockets or a bag together with metal objects such as
+           necklaces. Hairpins, coins, or screws. Do not store or transportation batteries with such objects.
+   ⚫       Strictly prohibits short circuit the (+) and (-) terminals with other metals.
+   ⚫       Do not place Cell in a device with the (+) and (-) in the wrong way around.
+   ⚫       Strictly prohibits pierce Cell with a sharp object such as a needle.
+   ⚫       Strictly prohibits disassemble or modify the cell.
+   ⚫       Strictly prohibits welding a cell directly.
+   ⚫       Do not use a Cell with serious scar or deformation.
+   ⚫       Thoroughly read the user’s manual before use, inaccurate handling of lithium ion rechargeable
+           cell may cause leakage, heat, smoke, an explosion, or fire, capacity decreasing.
+! Warning
+   ⚫       Strictly prohibits put cell into a microwave oven, dryer, or high-pressure container.
+   ⚫       Strictly prohibits use cell with dry cells and other primary batteries, or new and old battery or
+           batteries of a different package, type, or brand.
+   ⚫       Stop charging the Cell if charging is not completed within the specified time.
+   ⚫       Stop using the Cell if abnormal heat, odor, discoloration, deformation or abnormal condition is
+           detected during use, charge, or storage.
+   ⚫       Keep away from fire immediately when leakage or foul odor is detected.
+   ⚫       If liquid leaks onto your skin or clothes, wash well with fresh water immediately.
+   ⚫       If liquid leaking from the Cell gets into your eyes, do not rub your eyes. Wash them well with clean
+           edible oil and go to see a doctor immediately.
+! Caution
+       ⚫ Before using the Cell, be sure to read the user’s manual and cautions on handling thoroughly.
+       ⚫ Charging with specific charger according to product specification. Charge with CC/CV method.
+         Strictly prohibits revered charging. Connect cell reverse will not charge the cel. At the same
+         time, it will reduce the charge-discharge characteristics and safety characteristics, this will lead
+         to product heat and leakage.
+     ⚫ Store batteries out of reach of children so that they are not accidentally swallowed.
+     ⚫ If younger children use the Cell, their guardians should explain the proper handling.
+     ⚫ Before using the Cell, be sure to read the user’s manual and cautions on handling thoroughly.
+     ⚫ Batteries have life cycles. If the time that the Cell powers equipment becomes much shorter than
+         usual, the Cell life is at an end. Replace the Cell with a new same one.
+     ⚫ When not using Cell for an extended period, remove it from the equipment and store in a
+         place with low humidity and low temperature.
+     ⚫ While the Cell pack is charged, used and stored, keep it away from objects or materials with static
+         electric charges.
+     ⚫ If the terminals of the Cell become dirty, wipe with a dry clothe before using the Cell.
+     ⚫ Storage the cells in storage temperature range as the specifications, After full discharged, we
+         suggest that charging to 3.9~4.0V with no using for a long time.
+     ⚫ Do not exceed these ranges of the following temperature ranges.
+    Charge temperature range: 0 °C to 45 °C; Discharge temperature range: -20°C to 60°C. (When
+    using equipment)
+
+
+
+                                               Page 6 of 9
+                                        Specification Approval sheet
+
+
+                               Handling Precaution and Guideline
+
+                   For LIP (Lithium-Ion Polymer) Rechargeable Batteries
+
+                                            Preface
+This document of ‘Handling Precautions and Guideline LIP Rechargeable Batteries’ shall be
+applied to the battery cells manufactured by AKYGA.
+
+Note (1): The customer is requested to contact AKYGA in advance, if and when the customer
+needs other applications of operating conditions than those described in this document.
+Additional experimentation may be required to verify performance and safety under such
+condition.
+
+Note (2): AKYGA will take no responsibility for any accident when the cell is used under other
+condition.
+
+Note (3): AKYGA will inform, in a written form, the customer of improvement(s) regarding
+proper use and handling of the cell, if it is deemed necessary.
+
+1. Charging 1.1Charging
+   Current:
+        Charging current should be less than maximum charge current specified in the
+        Specification Approval Sheet.
+   1.2 Charging Voltage:
+          Charging voltage should be less than the maximum nominal voltage 4.2V, and
+         the charging voltage upper limited is 4.30V(single pack).
+    1.3 Charging Temperature:
+         The cell should be charged within the range specified in this Specification Approval
+         Sheet.
+    1.4 Notes:
+         Since charging with constant current or constant voltage, reverse charging is
+         prohibited. In case of the cell is connected improperly, the cell cannot be charged.
+         Simultaneously, the reverse charging may cause damaging to the cell which
+         may lead to degradation of cell performance and damage the cell safety, and
+         could cause heat generation or leakage.
+
+2. Discharging Current:
+    The cell shall be discharged at less than the maximum discharge current specified in the
+    Specification Approval Sheet. High discharging current may reduce the discharging capacity
+    significantly or cause over-heat.
+3. Discharging Temperature
+    Discharging Temperature should be within the range specified in this Specification Approval
+    Sheet.
+
+4.Over-Discharge
+    Over-discharging will cause cell low-performance and function loss. The cell would be
+    in a over-discharged state by its self-discharge characteristic. In order to prevent over-
+    discharging, the cell shall be charged periodically to maintain between 3.6V and 3.9V.
+
+5. Protective Circuit Module
+    5.1 The cell / battery pack shall be with a PCM that can protect cell / battery pack
+       properly. PCM shall have functions of
+
+
+
+                                        Page 7 of 9
+                                         Specification Approval sheet
+
+
+       (1) Overcharging prevention
+       (2) Over-discharging prevention
+       (3) Over current prevention to maintain safety and prevent significant deterioration
+            of cell performance. The over current can occur by external short circuit.
+    5.2 Overcharging Protection
+         Overcharging prevention function shall stop charging if any cell of the battery pack
+         reaches 4.30V.
+
+    5.3 Over-discharging protection
+        Over-discharging protection function shall monitor the voltage of every cell in the pack,
+        and work to avoid further drop in the cell voltage of 2.5V or less.
+
+6. Storage
+   Cells should be stored in proper temperature specified in Specification Approval
+   Sheet.
+
+7. Appearance
+   It shall be free from any defects such as remarkable scratches, breaks, cracks,
+   discoloration, leakage or deformation .
+
+8. Notice△!
+   8.1 Handling of cells:
+       ⃘ Avoid any short-circuit, it will caused the pole hot and lost electronic functions.
+       ⃘ Soft packing is very damaged by sharp edge parts such as needles and knives.
+            Avoid cells touch with sharp edge part, when handling and storage.
+       ⃘ Beside the poles is the sealed edge. Don’t bend or fold dealing edge, for it is a
+            sensitive part.
+        ⃘ Don’t open the folding edge on both sides of the cells.
+       ⃘ Don’t bend the tabs, for the tabs are not so stubborn.
+       ⃘ Avoid mechanical shock to the cells.
+        ⃘ Don’t put the cells into the heater, washing machine or high-voltage container.
+       ⃘ Don’t use the charger without any safety guarantee, and recommend you use
+            specified charger.
+       ⃘ You should immediately stop charging, as cell is overheating, delivery any smell,
+            changed color, distortion etc.
+       ⃘ Before Children use batteries, adults should explain the usage first.
+        ⃘ Before use batteries, please read the handling guideline carefully and fully understand.
+       ⃘ Away from the static-electronic field, while using, charging and storing cells.
+       ⃘ Don’t put the cells together with metal conductors such as chains, barrette, bolt
+            into the pocket or stored them together.
+       ⃘ Don’t use metal conductor to shortcut the positive and negative poles.
+       ⃘ Don’t mis-assemble the positive pole with the negative one.
+
+
+   8.2 Notice for Designing Battery Pack
+       8.2.1 Package Design
+          ⃘ Battery pack should have sufficient strength and battery should be protected from
+              mechanical shock.
+           ⃘ No sharp edge components should be inside the pack containing the battery.
+
+
+
+
+                                         Page 8 of 9
+                                            Specification Approval sheet
+
+
+            8.2.2 PCM Design
+           ⃘ The overcharge threshold voltage should not be exceed 4.30V (single pack)
+           ⃘ The over-discharge threshold voltage should not be lower than 2.5V (single
+                pack)
+          The PCM should have short protection built inside.
+ 8.3 Notice for Assembling Battery Pack
+            8.3.2 Tab connection
+          ⃘ Ultrasonic welding or spot welding is recommended to connect battery with
+               PCM or other parts.
+           ⃘ If apply manual solder method to connect tab with PCM, below notice is very
+                important to ensure battery performance.
+                       8.3.2.1 The solder iron should be temperature controlled and ESD
+                                safe.
+                       8.3.2.2 Soldering temperature should not exceed 350℃.
+                       8.3.2.3 Soldering time should not be longer than 3 seconds .
+                       8.3.2.4 Keep battery tab cold down before next time soldering.
+                        8.3.2.5 Directly heat cell body is strictly prohibited. Battery should
+                                  be damaged by heat above approx. 60℃.
+             8.3.3 Cell fixing
+           ⃘ The battery should be fixed to the battery pack by its large surface area.
+           ⃘ No sharp edge at the assembling position.
+           ⃘ No cell movement in the battery pack should be allowed.
+ 9.Others
+     9.1 The disassembling may generate internal shout circuit in the cell, which may cause
+         gassing, firing, or other problem.
+     9.2 Prohibition of dumping of cells into fire
+        Never incinerate or dispose the cells in fire, for these may cause firing of the cells.
+    9.3 The cells should never be soaked with liquids such as water, drinks or oil.
+    9.4 Prohibit using the cells mixed with different manufactories. Prohibit using new cells
+        mixed with old ones.
+
+ ▲Special Notice: If the cell isn’t used for a long time, Please Keep the cells in half-charged
+  state, which is keeping them unfully charged or incompletely discharged. Recharge
+  the cells and use half of the power after 2-3months. Store the cells in cool and dry
+  place. It will protect the cell from damage effectively and long-term.
+
+
+10. Statement
+    If our specifications material, product process or product control system has changed, the
+    information will be transmitted to consumer by way of written with quality and reliability data.
+
+
+
+
+                                            Page 9 of 9
+

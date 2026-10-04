@@ -1,3 +1,26 @@
+# Latest A2 checkpoint — 2026-10-04
+
+**NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).
+
+## A2 evidence and gates
+
+Source parent `420d8239ab03d360c0a837a89562ea4a1ffd86ef`; descriptive implementation commit and exact public receipts are recorded after publication. Intended release suffix `wip-a2-display-mounting`; publication is not complete until both remote hashes/visibility are verified. Native build SHA-256 `fbf9e2b576a9e37f695e894d9458500c33d5508b052b10692dcf99bc474dcd3f`.
+
+| Stage | Current status | Reason |
+|---|---|---|
+| 1 requirements | in progress | Peak loads, exact enclosure/FPC/hardware and pack/NTC qualification open |
+| 2 schematic/BOM | blocked | Outer battery numbering; backlight and component/paste/metadata qualification |
+| 3 placement | blocked | Native checks pass, but actual external mechanical/RF/flex fit is not passed |
+| 4 routing/copper | not started | Routing explicitly disabled, zero traces/vias |
+| 5 routed automated/visual checks | not started | Unrouted checks are preliminary; B-010 fails |
+| 6 prototype fabrication | not started | No approved order package; B-005/B-015/CPL/mechanics remain open |
+| 7 physical prototype | not started | No physical hardware/test evidence |
+| 8 store release | not started | Public WIP preview only |
+
+Applicable commands: `bun run typecheck`, `bun run format:check`, `bun run test`; native `build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs`; `check netlist`, `check pin_specification`, `check source`, `check schematic-placement`, `check placement`; snapshot compare/update/compare after visual inspection. Five native checks/build exit0; final types and formatting exit0; tests 35 pass/1 existing B-010 failure/319 assertions. Current full schema audit162 failures, not hidden by source-only tests. Snapshot changes were inspected in current PCB and all thirteen sheet images; final compare exits0. Strict schematic/manufacturer qualification remains incomplete despite preview readability review.
+
+Diagnostic exports from this exact JSON: `export dist/index/circuit.json --gerbers --output <absolute diagnostic ZIP>`, `--glb --output <absolute GLB>`; both exit0. Embedded Gerber converter0.0.109. The shorts check on the unrouted JSON exits0 with zero reported shorts and is diagnostic only and cannot complete stage5. Logs and hash receipt are under `evidence/routing-intake-2026-10-04/`. Imported definitions stay untouched. Current standalone mounting holes add two null-component schema failures; reported to the authorized correction chat. Current charger paste absence was also reported there.
+
 ## Public visibility and committed native build — 2026-10-04
 
 Both destinations are now **public** and anonymously accessible. Published source

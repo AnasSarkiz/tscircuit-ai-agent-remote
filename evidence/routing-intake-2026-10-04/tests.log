@@ -1,0 +1,162 @@
+$ bun test ./tests
+bun test v1.3.9 (cf6cdbbb)
+
+tests/amplifier-manufacturer-connections.test.ts:
+(pass) amplifier manufacturer requirements > power, exposed ground, differential output and left-channel gain use manufacturer pins [4.71ms]
+(pass) amplifier manufacturer requirements > shutdown uses amplifier supply and MOSFET physical gate/source/drain polarity [0.79ms]
+
+tests/final-display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [0.87ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [1.63ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open [2.02ms]
+
+tests/mcu-usb-manufacturer-connections.test.ts:
+31 | describe("Espressif module datasheet v1.8 connection requirements", () => {
+32 |   test("every emitted native element conforms to the installed Circuit JSON schema", () => {
+33 |     const failingElements = rawElements.flatMap((element, index) =>
+34 |       any_circuit_element.safeParse(element).success ? [] : [{ index, type: element.type }],
+35 |     )
+36 |     expect(failingElements).toEqual([])
+                                 ^
+error: expect(received).toEqual(expected)
+
+- []
++ [
++   {
++     "index": 223,
++     "type": "schematic_group",
++   },
++   {
++     "index": 438,
++     "type": "pcb_component",
++   },
++   {
++     "index": 439,
++     "type": "pcb_component",
++   },
++   {
++     "index": 440,
++     "type": "pcb_component",
++   },
++   {
++     "index": 441,
++     "type": "pcb_component",
++   },
++   {
++     "index": 442,
++     "type": "pcb_component",
++   },
++   {
++     "index": 443,
++     "type": "pcb_component",
++   },
++   {
++     "index": 444,
++     "type": "pcb_component",
++   },
++   {
++     "index": 445,
++     "type": "pcb_component",
++   },
++   {
++     "index": 446,
++     "type": "pcb_component",
++   },
++   {
++     "index": 447,
++     "type": "pcb_component",
++   },
++   {
++     "index": 448,
++     "type": "pcb_component",
++   },
++   {
++     "index": 449,
++     "type": "pcb_component",
++   },
++   {
++     "index": 450,
++     "type": "pcb_component",
++   },
++   {
++     "index": 451,
++     "type": "pcb_component",
++   },
++   {
++     "index": 452,
++     "type": "pcb_component",
++   },
++   {
++     "index": 453,
++     "type": "pcb_component",
++   },
++   {
++     "index": 454,
++     "type": "pcb_group",
++   },
++ ]
+
+- Expected  - 1
++ Received  + 74
+
+      at <anonymous> (/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/tests/mcu-usb-manufacturer-connections.test.ts:36:29)
+(fail) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [909.28ms]
+(pass) Espressif module datasheet v1.8 connection requirements > module supply, reset, USB polarity and boot reach the correct physical pins [0.80ms]
+(pass) Espressif module datasheet v1.8 connection requirements > octal PSRAM pins 28–30 stay disconnected from external applications
+(pass) Espressif module datasheet v1.8 connection requirements > all nine exposed ground shapes retain their physical identity and internal connection
+(pass) Espressif module datasheet v1.8 connection requirements > the diagnostic remains unrouted and contains no emitted errors [0.13ms]
+
+tests/mounting-and-battery-prerequisites.test.ts:
+(pass) AKY2945 centre NTC is connected and unresolved outer polarity is left open [2.56ms]
+(pass) two M2 trials are nonconductive holes with all-layer circular clearance [2.02ms]
+
+tests/display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [0.91ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [0.26ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, TE and LDO NC remain open [0.31ms]
+
+tests/microphone-clock-hardware-boundaries.test.ts:
+(pass) microphone clock hardware boundaries > TI regulator enable belongs only to the hardware hold net [0.49ms]
+(pass) microphone clock hardware boundaries > Nexperia open-drain clocks obtain both high levels only from VMIC [0.05ms]
+
+tests/import-qualification.test.ts:
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.05ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.25ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.05ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.02ms]
+(pass) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum
+
+tests/imported-reference-ownership.test.ts:
+(pass) native imported reference labels belong to the correct component > comparator [91.85ms]
+(pass) native imported reference labels belong to the correct component > usb [77.73ms]
+(pass) native imported reference labels belong to the correct component > amplifier [69.97ms]
+
+tests/integrated-board-boundaries.test.ts:
+(pass) Complete native unrouted board boundaries > board has top-only physical components, no routing and no native errors [3.45ms]
+(pass) Complete native unrouted board boundaries > there is one shared instance of each inter-sheet rail [0.95ms]
+(pass) Complete native unrouted board boundaries > hardware hold and privacy remain distinct from buffered MCU readback [0.60ms]
+(pass) Complete native unrouted board boundaries > dual microphones, external loads and GPIO interfaces have actual source connections [0.66ms]
+
+tests/battery-ready-hardware-boundaries.test.ts:
+(pass) battery supervisor senses charger BAT and cannot be overridden by the MCU [0.74ms]
+
+tests/type-c-manufacturer-connections.test.ts:
+(pass) Type-C controller manufacturer requirements > UFP strap, GPIO mode and local supply prevent conflicting Rd and rail backpower [0.97ms]
+(pass) Type-C controller manufacturer requirements > higher current requires stable controller power and advertised 1.5A or 3A [0.20ms]
+(pass) Type-C controller manufacturer requirements > VBUS detection resistors meet TI's 855k–920k allowed range [0.29ms]
+
+tests/haptic-manufacturer-connections.test.ts:
+(pass) haptic application manufacturer requirements > TI SOT-23 supply, ground, enable and output retain their physical pin numbers [16.82ms]
+(pass) haptic application manufacturer requirements > AOS G/S/D and MDD cathode/anode close the intended flyback loop and retain default-off paths [0.37ms]
+
+tests/hold-readback-hardware-boundaries.test.ts:
+(pass) MCU hold readback reaches the buffer output, without a direct hardware-enable connection [0.80ms]
+
+1 tests failed:
+(fail) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [909.28ms]
+
+ 35 pass
+ 1 fail
+ 319 expect() calls
+Ran 36 tests across 13 files. [1.59s]
+error: script "test" exited with code 1

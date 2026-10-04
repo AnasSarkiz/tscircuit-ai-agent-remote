@@ -1,3 +1,7 @@
+# Latest A2 checkpoint — 2026-10-04
+
+**NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).
+
 # Public board publication — 2026-10-04
 
 Both destinations are now **public** and anonymously accessible. Published source

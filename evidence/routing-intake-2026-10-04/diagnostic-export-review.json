@@ -1,0 +1,123 @@
+{
+  "circuit_json_sha256": "fbf9e2b576a9e37f695e894d9458500c33d5508b052b10692dcf99bc474dcd3f",
+  "diagnostic_zip_sha256": "a519960065dd1278566c2c7563209c471e66cbac22af6c788ee8c03e3d50fcfe",
+  "export_files": [
+    "F_Cu.gbr",
+    "F_SilkScreen.gbr",
+    "F_Mask.gbr",
+    "F_Paste.gbr",
+    "B_Cu.gbr",
+    "B_SilkScreen.gbr",
+    "B_Mask.gbr",
+    "B_Paste.gbr",
+    "Edge_Cuts.gbr",
+    "In1_Cu.gbr",
+    "In2_Cu.gbr",
+    "F_Fab.gbr",
+    "drill-L1-L4.drl",
+    "drill_npth.drl",
+    "bom.csv",
+    "pick_and_place.csv"
+  ],
+  "npth_explicitly_nonplated": true,
+  "mounting_drill_tool": "T13C2.200000",
+  "mounting_coordinates": [
+    "X-21.5000Y6.7000",
+    "X-21.5000Y-29.5000"
+  ],
+  "mounting_drill_present": true,
+  "no_2p2_pth": true,
+  "outline_extents_if_format_matches": [
+    -25.0,
+    25.0,
+    -32.5,
+    32.5
+  ],
+  "bom_rows": 122,
+  "blank_bom_comments": 32,
+  "cpl_rows": 122,
+  "all_cpl_top": true,
+  "native_paste_record_coverage": {
+    "U4": {
+      "smt_pads": 9,
+      "paste_records": 5,
+      "polygon_pads": 4,
+      "pads_without_paste": [
+        "pcb_smtpad_370",
+        "pcb_smtpad_371",
+        "pcb_smtpad_372",
+        "pcb_smtpad_373"
+      ]
+    },
+    "U5": {
+      "smt_pads": 9,
+      "paste_records": 5,
+      "polygon_pads": 4,
+      "pads_without_paste": [
+        "pcb_smtpad_379",
+        "pcb_smtpad_380",
+        "pcb_smtpad_381",
+        "pcb_smtpad_382"
+      ]
+    },
+    "J1": {
+      "smt_pads": 12,
+      "paste_records": 8,
+      "polygon_pads": 4,
+      "pads_without_paste": [
+        "pcb_smtpad_57",
+        "pcb_smtpad_58",
+        "pcb_smtpad_59",
+        "pcb_smtpad_60"
+      ]
+    },
+    "U16": {
+      "smt_pads": 17,
+      "paste_records": 0,
+      "polygon_pads": 1,
+      "pads_without_paste": [
+        "pcb_smtpad_97",
+        "pcb_smtpad_98",
+        "pcb_smtpad_99",
+        "pcb_smtpad_100",
+        "pcb_smtpad_101",
+        "pcb_smtpad_102",
+        "pcb_smtpad_103",
+        "pcb_smtpad_104",
+        "pcb_smtpad_105",
+        "pcb_smtpad_106",
+        "pcb_smtpad_107",
+        "pcb_smtpad_108",
+        "pcb_smtpad_109",
+        "pcb_smtpad_110",
+        "pcb_smtpad_111",
+        "pcb_smtpad_112",
+        "pcb_smtpad_113"
+      ]
+    },
+    "U2": {
+      "smt_pads": 10,
+      "paste_records": 10,
+      "polygon_pads": 0,
+      "pads_without_paste": []
+    },
+    "U14": {
+      "smt_pads": 20,
+      "paste_records": 20,
+      "polygon_pads": 0,
+      "pads_without_paste": []
+    },
+    "J7": {
+      "smt_pads": 14,
+      "paste_records": 14,
+      "polygon_pads": 0,
+      "pads_without_paste": []
+    }
+  },
+  "limitations": [
+    "Unrouted diagnostic export, not an order package",
+    "Pad record coverage does not prove actual Gerber shape/tolerance compliance",
+    "U14 incompatible_pin1_locations warning leaves its rotation unverified",
+    "No external pack/display/speaker/motor enclosure CAD fit approval"
+  ]
+}

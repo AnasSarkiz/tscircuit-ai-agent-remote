@@ -1,0 +1,1398 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U1: ESP32-S3-WROOM-1-N8R8
+ - J1: TYPE-C-31-M-12
+ - D2: TPD2EUSB30ADRTR
+ - U12: TPS3839G33DBZR
+ - J6: SM06B-SRSS-TB(LF)(SN)
+ - R31: 22Ω resistor
+ - R32: 22Ω resistor
+ - R33: 5.1kΩ resistor
+ - R34: 5.1kΩ resistor
+ - R35: 4.7kΩ resistor
+ - R36: 10kΩ resistor
+ - R37: 100kΩ resistor
+ - R38: 1kΩ resistor
+ - C30: 10uF capacitor
+ - C31: 100nF capacitor
+ - C32: 100nF capacitor
+ - U16: BQ24074RGTR
+ - J3: S3B-PH-SM4-TB(LF)(SN)
+ - C1: 10uF capacitor
+ - C2: 10uF capacitor
+ - C3: 10uF capacitor
+ - R1: 3kΩ resistor
+ - R2: 3kΩ resistor
+ - R3: 100kΩ resistor
+ - R4: 100kΩ resistor
+ - U2: TPS63802DLAR
+ - L1: L1, source_component
+ - C4: 10uF capacitor
+ - C5: 22uF capacitor
+ - R5: 51.1kΩ resistor
+ - R6: 9.1kΩ resistor
+ - R7: 100kΩ resistor
+ - U13: TPS7A2028PDBVR
+ - U14: SN74LVC245APWR
+ - J7: AFC07-S12FCC-00
+ - C40: 10uF capacitor
+ - C41: 22uF capacitor
+ - C42: 100nF capacitor
+ - C43: 100nF capacitor
+ - R40: 100kΩ resistor
+ - R41: 1kΩ resistor
+ - R47: 100kΩ resistor
+ - R42: 10kΩ resistor
+ - R48: 100kΩ resistor
+ - R43: 10kΩ resistor
+ - R49: 100kΩ resistor
+ - R44: 10kΩ resistor
+ - R50: 100kΩ resistor
+ - R45: 10kΩ resistor
+ - R51: 100kΩ resistor
+ - R46: 10kΩ resistor
+ - U3: MAX98357AETE+T
+ - Q1: AO3400A
+ - Q2: AO3401A
+ - J4: S2B-PH-SM4-TB(LF)(SN)
+ - C50: 10uF capacitor
+ - C51: 100nF capacitor
+ - R60: 100Ω resistor
+ - R61: 10kΩ resistor
+ - R62: 1kΩ resistor
+ - R63: 100Ω resistor
+ - R64: 1kΩ resistor
+ - R65: 22Ω resistor
+ - R68: 10kΩ resistor
+ - R66: 22Ω resistor
+ - R69: 10kΩ resistor
+ - R67: 22Ω resistor
+ - R70: 10kΩ resistor
+ - U22: TPS7A2030PDBVR
+ - Q9: AO3400A
+ - D3: D3, source_component
+ - C70: 10uF capacitor
+ - C71: 22uF capacitor
+ - C72: 100nF capacitor
+ - R82: 1kΩ resistor
+ - R83: 100Ω resistor
+ - R84: 10kΩ resistor
+ - R85: 100kΩ resistor
+ - U23: TPS7A2028PDBVR
+ - U24: 74LVC2G07GW,125
+ - C73: 10uF capacitor
+ - C74: 10uF capacitor
+ - C75: 100nF capacitor
+ - R86: 1kΩ resistor
+ - R87: 100kΩ resistor
+ - R88: 100Ω resistor
+ - R89: 100Ω resistor
+ - R90: 10kΩ resistor
+ - R91: 10kΩ resistor
+ - R92: 330Ω resistor
+ - R93: 330Ω resistor
+ - R94: 10kΩ resistor
+ - R95: 10kΩ resistor
+ - U26: SN74LVC1G17DBVR
+ - R99: 10kΩ resistor
+ - R100: 1kΩ resistor
+ - C78: 100nF capacitor
+ - U25: TPS3808G33DBVR
+ - R96: 470kΩ resistor
+ - R97: 470kΩ resistor
+ - C76: 100nF capacitor
+ - C77: 100nF capacitor
+ - U4: ICS-43434
+ - U5: ICS-43434
+ - C80: 100nF capacitor
+ - C81: 100nF capacitor
+ - U7: TLV3201AIDBVR
+ - R26: 100kΩ resistor
+ - R27: 1kΩ resistor
+ - R29: 10kΩ resistor
+ - R30: 10kΩ resistor
+ - C25: 100nF capacitor
+ - C26: 100nF capacitor
+ - SW4: SW4, source_component
+ - SW1: SW1, source_component
+ - SW2: SW2, source_component
+ - SW5: MSK12C02
+ - J8: S2B-PH-SM4-TB(LF)(SN)
+ - Q10: AO3400A
+ - R102: 100Ω resistor
+ - R103: 100Ω resistor
+ - R104: 10kΩ resistor
+ - TP1: TP1, source_component
+ - TP2: TP2, source_component
+ - TP3: TP3, source_component
+ - TP4: TP4, source_component
+ - TP5: TP5, source_component
+ - TP6: TP6, source_component
+ - TP7: TP7, source_component
+ - TP8: TP8, source_component
+
+NET: MCU_RESET_N
+  - R35 pin1
+  - U12 N_RESET
+
+NET: MCU_UART_TX
+  - R38 pin1
+  - U1 TXD0
+
+NET: SERVICE_UART_TX
+  - J6 pin5
+  - R38 pin2
+
+NET: MCU_UART_RX
+  - J6 pin6
+  - U1 RXD0
+
+NET: USB_DP
+  - R31 pin1
+  - D2 pin1
+  - J1 B6
+  - J1 A6
+
+NET: MCU_USB_DP
+  - R31 pin2
+  - U1 IO20
+
+NET: USB_DN
+  - R32 pin1
+  - D2 pin2
+  - J1 A7
+  - J1 B7
+
+NET: MCU_USB_DN
+  - R32 pin2
+  - U1 IO19
+
+NET: USB_CC1
+  - R33 pin1
+  - J1 A5
+
+NET: USB_CC2
+  - R34 pin1
+  - J1 B5
+
+NET: PACK_NTC
+  - J3 pin2
+  - U16 TS
+
+NET: CHARGER_ISET
+  - R1 pin1
+  - U16 ISET
+
+NET: CHARGER_ILIM
+  - R2 pin1
+  - U16 ILIM
+
+NET: CHARGE_PGOOD_N
+  - R3 pin2
+  - U16 N_PGOOD
+
+NET: L1_pos
+  - U2 L1
+  - L1 pin1 (+)
+
+NET: L1_neg
+  - U2 L2
+  - L1 pin2 (-)
+
+NET: REG_FB
+  - U2 FB
+  - R6 pin1
+  - R5 pin2
+
+NET: REG_PG
+  - U2 PG
+  - R7 pin2
+
+NET: LCD_ENABLE
+  - R40 pin1
+  - U13 EN
+  - U1 IO6
+
+NET: MCU_LCD_CS_N
+  - R47 pin1
+  - U14 A1
+  - U1 IO10
+
+NET: LCD_CS_N
+  - R42 pin1
+  - U14 B1
+  - J7 pin2
+
+NET: VLCD
+  - R42 pin2
+  - J7 pin9
+  - J7 pin8
+  - U14 VCC
+  - U14 DIR
+  - C43 pin1
+  - C42 pin1
+  - C41 pin1
+  - R41 pin1
+  - U13 OUT
+
+NET: MCU_LCD_RESET_N
+  - R48 pin1
+  - U14 A2
+  - U1 IO14
+
+NET: LCD_RESET_N
+  - R43 pin1
+  - U14 B2
+  - J7 pin6
+
+NET: MCU_LCD_DC
+  - R49 pin1
+  - U14 A3
+  - U1 IO13
+
+NET: LCD_DC
+  - R44 pin1
+  - U14 B3
+  - J7 pin3
+
+NET: MCU_LCD_SCLK
+  - R50 pin1
+  - U14 A4
+  - U1 IO12
+
+NET: LCD_SCLK
+  - R45 pin1
+  - U14 B4
+  - J7 pin4
+
+NET: MCU_LCD_SDA
+  - R51 pin1
+  - U14 A5
+  - U1 IO11
+
+NET: LCD_SDA
+  - R46 pin1
+  - U14 B5
+  - J7 pin5
+
+NET: SPEAKER_P
+  - J4 pin1
+  - U3 OUTP
+
+NET: SPEAKER_N
+  - J4 pin2
+  - U3 OUTN
+
+NET: MCU_AUDIO_ENABLE
+  - R60 pin1
+  - U1 IO4
+
+NET: AUDIO_NMOS_GATE
+  - R61 pin1
+  - R60 pin2
+  - Q1 pin1
+
+NET: AUDIO_PMOS_GATE
+  - R62 pin2
+  - Q2 pin1
+  - Q1 pin3
+
+NET: AUDIO_ENABLE_SUPPLY
+  - R63 pin1
+  - Q2 pin3
+
+NET: AMP_SD_MODE
+  - R64 pin1
+  - R63 pin2
+  - U3 N_SD_MODE
+
+NET: MCU_AUDIO_DIN
+  - R65 pin1
+  - U1 IO7
+
+NET: AMP_DIN
+  - U3 DIN
+  - R68 pin1
+  - R65 pin2
+
+NET: MCU_AUDIO_BCLK
+  - R66 pin1
+  - U1 IO9
+
+NET: AMP_BCLK
+  - U3 BCLK
+  - R69 pin1
+  - R66 pin2
+
+NET: MCU_AUDIO_LRCLK
+  - R67 pin1
+  - U1 IO8
+
+NET: AMP_LRCLK
+  - U3 LRCLK
+  - R70 pin1
+  - R67 pin2
+
+NET: HAPTIC_NMOS_GATE
+  - R84 pin1
+  - R83 pin2
+  - Q9 pin1
+
+NET: MCU_HAPTIC_ENABLE
+  - R85 pin1
+  - R83 pin1
+  - U22 EN
+  - U1 IO5
+
+NET: MCU_MIC_BCLK
+  - R88 pin1
+  - U1 IO15
+
+NET: MCU_MIC_WS
+  - R89 pin1
+  - U1 IO16
+
+NET: MIC_BCLK_INPUT
+  - R90 pin1
+  - R88 pin2
+  - U24 1A
+
+NET: MIC_WS_INPUT
+  - R91 pin1
+  - R89 pin2
+  - U24 2A
+
+NET: HOLD_BUFFER_OUT
+  - R100 pin1
+  - U26 Y
+
+NET: MCU_HOLD_READ
+  - R100 pin2
+  - U1 IO21
+
+NET: BUCK_ENABLE
+  - C77 pin1
+  - R97 pin1
+  - R96 pin2
+  - U25 N_RESET
+  - U2 EN
+
+NET: MIC_WS
+  - U5 WS
+  - U4 WS
+  - R95 pin1
+  - R93 pin2
+  - U24 2Y
+
+NET: MIC_BCLK
+  - U5 SCK
+  - U4 SCK
+  - R94 pin1
+  - R92 pin2
+  - U24 1Y
+
+NET: MIC_SD
+  - R26 pin1
+  - U7 pin3
+  - U5 SD
+  - U4 SD
+
+NET: MIC_SD_BUFFERED
+  - R27 pin1
+  - U7 pin1
+
+NET: MCU_MIC_SD
+  - R27 pin2
+  - U1 IO17
+
+NET: MIC_SD_REF
+  - C26 pin1 (+)
+  - R30 pin1
+  - R29 pin2
+  - U7 pin4
+
+NET: MCU_BOOT_N
+  - SW1 pin1
+  - J6 pin4
+  - R36 pin2
+  - U1 IO0
+
+NET: MCU_EN
+  - SW2 pin1
+  - J6 pin3
+  - R37 pin1
+  - R35 pin2
+  - U1 EN
+
+NET: MIC_INPUT
+  - SW5 pin2
+  - C73 pin1
+  - U23 IN
+
+NET: VMOTOR
+  - J8 pin1
+  - R82 pin1
+  - C72 pin1
+  - C71 pin1
+  - D3 cathode (-)
+  - U22 OUT
+
+NET: HAPTIC_N
+  - J8 pin2
+  - C72 pin2
+  - D3 anode (+)
+  - Q9 pin3
+
+NET: LCD_BACKLIGHT_OUTPUT
+  - R102 pin2
+  - J7 pin10
+
+NET: LCD_BACKLIGHT_RETURN
+  - Q10 pin3
+  - J7 pin11
+
+NET: MCU_BACKLIGHT_PWM
+  - R103 pin1
+  - U1 IO47
+
+NET: BACKLIGHT_GATE
+  - R104 pin1
+  - R103 pin2
+  - Q10 pin1
+
+NET: GND
+  - TP1 pin1
+  - R104 pin2
+  - Q10 pin2
+  - J8 pin4
+  - J8 pin3
+  - SW5 pin4
+  - SW5 pin4_internal_1
+  - SW5 pin4_internal_2
+  - SW5 pin4_internal_3
+  - SW5 pin3
+  - SW2 pin2
+  - SW1 pin2
+  - C26 pin2 (-)
+  - C25 pin2 (-)
+  - R30 pin2
+  - R26 pin2
+  - U7 pin2 (GND)
+  - C81 pin2 (-)
+  - C80 pin2 (-)
+  - U4 LR
+  - U5 GND
+  - U5 pin3_internal_1
+  - U5 pin3_internal_2
+  - U5 pin3_internal_3
+  - U4 GND
+  - U4 pin3_internal_1
+  - U4 pin3_internal_2
+  - U4 pin3_internal_3
+  - C77 pin2
+  - C76 pin2
+  - R97 pin2
+  - U25 GND
+  - C78 pin2
+  - R99 pin2
+  - U26 GND
+  - R95 pin2
+  - R94 pin2
+  - R91 pin2
+  - R90 pin2
+  - R87 pin2
+  - R86 pin2
+  - C75 pin2
+  - C74 pin2
+  - C73 pin2
+  - U24 GND
+  - U23 GND
+  - R85 pin2
+  - R84 pin2
+  - R82 pin2
+  - C71 pin2
+  - C70 pin2
+  - Q9 pin2
+  - U22 GND
+  - R70 pin2
+  - R69 pin2
+  - R68 pin2
+  - C51 pin2
+  - C50 pin2
+  - R64 pin2
+  - R61 pin2
+  - Q1 pin2
+  - J4 pin4
+  - J4 pin3
+  - U3 EP
+  - U3 GND3
+  - U3 GND2
+  - U3 GND1
+  - R46 pin2
+  - R51 pin2
+  - R45 pin2
+  - R50 pin2
+  - R44 pin2
+  - R49 pin2
+  - R43 pin2
+  - R48 pin2
+  - R47 pin2
+  - J7 pin14
+  - J7 pin13
+  - J7 pin12
+  - J7 pin1
+  - U14 A8
+  - U14 A7
+  - U14 A6
+  - U14 N_OE
+  - U14 GND
+  - C43 pin2
+  - C42 pin2
+  - C41 pin2
+  - C40 pin2
+  - R41 pin2
+  - R40 pin2
+  - U13 GND
+  - R6 pin2
+  - C5 pin2
+  - C4 pin2
+  - U2 GND
+  - U2 AGND
+  - U2 MODE
+  - R2 pin2
+  - R1 pin2
+  - C3 pin2 (-)
+  - C2 pin2 (-)
+  - C1 pin2 (-)
+  - J3 pin4
+  - J3 pin4_internal_1
+  - U16 EP
+  - U16 VSS
+  - U16 EN1
+  - U16 EN2
+  - U16 N_CE
+  - C32 pin2
+  - C31 pin2
+  - C30 pin2
+  - R34 pin2
+  - R33 pin2
+  - D2 pin3 (GND)
+  - J1 B1A12
+  - J1 A1B12
+  - J1 EH3
+  - J1 EH4
+  - J1 EH1
+  - J1 EH2
+  - J6 pin8
+  - J6 pin7
+  - J6 pin1
+  - R37 pin2
+  - U12 GND
+  - U1 GND3
+  - U1 pin41_internal_1
+  - U1 pin41_internal_2
+  - U1 pin41_internal_3
+  - U1 pin41_internal_4
+  - U1 pin41_internal_5
+  - U1 pin41_internal_6
+  - U1 pin41_internal_7
+  - U1 pin41_internal_8
+  - U1 GND2
+  - U1 GND1
+
+NET: VBUS
+  - TP2 pin1
+  - C1 pin1 (+)
+  - U16 IN
+  - J1 A4B9
+  - J1 B4A9
+
+NET: PACK_BAT
+  - TP3 pin1
+  - U25 SENSE
+  - C2 pin1 (+)
+  - U16 BAT2
+  - U16 BAT1
+
+NET: VSYS
+  - TP4 pin1
+  - R102 pin1
+  - C76 pin1
+  - R96 pin1
+  - U25 VDD
+  - U25 N_MR
+  - C70 pin1
+  - U22 IN
+  - C51 pin1
+  - C50 pin1
+  - R62 pin1
+  - Q2 pin2
+  - U3 VDD2
+  - U3 VDD1
+  - U3 GAIN_SLOT
+  - C4 pin1
+  - U2 VIN
+  - C3 pin1 (+)
+  - U16 OUT2
+  - U16 OUT1
+
+NET: V3V3
+  - TP5 pin1
+  - SW5 pin1
+  - SW4 pin1
+  - C25 pin1 (+)
+  - U7 pin5
+  - C78 pin1
+  - U26 VCC
+  - C40 pin1
+  - U13 IN
+  - R7 pin1
+  - R5 pin1
+  - C5 pin1
+  - U2 VOUT
+  - R4 pin1
+  - R3 pin1
+  - C32 pin1
+  - C31 pin1
+  - C30 pin1
+  - J6 pin2
+  - R36 pin1
+  - U12 VDD
+  - U1 3V3
+
+NET: VMIC
+  - TP6 pin1
+  - R29 pin1
+  - C81 pin1 (+)
+  - C80 pin1 (+)
+  - U5 LR
+  - U5 VDD
+  - U4 VDD
+  - R93 pin1
+  - R92 pin1
+  - R86 pin1
+  - C75 pin1
+  - C74 pin1
+  - U24 VCC
+  - U23 OUT
+
+NET: HOLD_HARDWARE
+  - TP7 pin1
+  - SW4 pin2
+  - R99 pin1
+  - U26 A
+  - R87 pin1
+  - U23 EN
+
+NET: CHARGE_STATUS_N
+  - TP8 pin1
+  - R4 pin2
+  - U16 N_CHG
+
+
+COMPONENT_PINS:
+U1 (ESP32-S3-WROOM-1-N8R8)
+- pin41_internal_1(pin41, 41): NETS(GND)
+- pin41_internal_2(pin41, 41): NETS(GND)
+- pin41_internal_3(pin41, 41): NETS(GND)
+- pin41_internal_4(pin41, 41): NETS(GND)
+- pin41_internal_5(pin41, 41): NETS(GND)
+- pin41_internal_6(pin41, 41): NETS(GND)
+- pin41_internal_7(pin41, 41): NETS(GND)
+- pin41_internal_8(pin41, 41): NETS(GND)
+- pin1(GND1): NETS(GND)
+- pin2(3V3): NETS(V3V3)
+- pin3(EN): NETS(MCU_EN)
+- pin4(IO4): NETS(MCU_AUDIO_ENABLE)
+- pin5(IO5): NETS(MCU_HAPTIC_ENABLE)
+- pin6(IO6): NETS(LCD_ENABLE)
+- pin7(IO7): NETS(MCU_AUDIO_DIN)
+- pin8(IO15): NETS(MCU_MIC_BCLK)
+- pin9(IO16): NETS(MCU_MIC_WS)
+- pin10(IO17): NETS(MCU_MIC_SD)
+- pin11(IO18): NOT_CONNECTED
+- pin12(IO8): NETS(MCU_AUDIO_LRCLK)
+- pin13(IO19): NETS(MCU_USB_DN)
+- pin14(IO20): NETS(MCU_USB_DP)
+- pin15(IO3): NOT_CONNECTED
+- pin16(IO46): NOT_CONNECTED
+- pin17(IO9): NETS(MCU_AUDIO_BCLK)
+- pin18(IO10): NETS(MCU_LCD_CS_N)
+- pin19(IO11): NETS(MCU_LCD_SDA)
+- pin20(IO12): NETS(MCU_LCD_SCLK)
+- pin21(IO13): NETS(MCU_LCD_DC)
+- pin22(IO14): NETS(MCU_LCD_RESET_N)
+- pin23(IO21): NETS(MCU_HOLD_READ)
+- pin24(IO47): NETS(MCU_BACKLIGHT_PWM)
+- pin25(IO48): NOT_CONNECTED
+- pin26(IO45): NOT_CONNECTED
+- pin27(IO0): NETS(MCU_BOOT_N)
+- pin28(IO35): NOT_CONNECTED
+- pin29(IO36): NOT_CONNECTED
+- pin30(IO37): NOT_CONNECTED
+- pin31(IO38): NOT_CONNECTED
+- pin32(IO39): NOT_CONNECTED
+- pin33(IO40): NOT_CONNECTED
+- pin34(IO41): NOT_CONNECTED
+- pin35(IO42): NOT_CONNECTED
+- pin36(RXD0): NETS(MCU_UART_RX)
+- pin37(TXD0): NETS(MCU_UART_TX)
+- pin38(IO2): NOT_CONNECTED
+- pin39(IO1): NOT_CONNECTED
+- pin40(GND2): NETS(GND)
+- pin41(GND3): NETS(GND)
+
+J1 (TYPE-C-31-M-12)
+- pin1(EH2): NETS(GND)
+- pin2(EH1): NETS(GND)
+- pin3(EH4): NETS(GND)
+- pin4(EH3): NETS(GND)
+- pin5(B8, SBU2): NOT_CONNECTED
+- pin6(A5, CC1): NETS(USB_CC1)
+- pin7(B7, DN2): NETS(USB_DN)
+- pin8(A6, DP1): NETS(USB_DP)
+- pin9(A7, DN1): NETS(USB_DN)
+- pin10(B6, DP2): NETS(USB_DP)
+- pin11(A8, SBU1): NOT_CONNECTED
+- pin12(B5, CC2): NETS(USB_CC2)
+- pin13(A1B12, GND1): NETS(GND)
+- pin14(B1A12, GND2): NETS(GND)
+- pin15(B4A9, VBUS1): NETS(VBUS)
+- pin16(A4B9, VBUS2): NETS(VBUS)
+
+D2 (TPD2EUSB30ADRTR)
+- pin1(D_POS): NETS(USB_DP)
+- pin2(D_NEG): NETS(USB_DN)
+- pin3(GND): NETS(GND)
+
+U12 (TPS3839G33DBZR)
+- pin1(GND): NETS(GND)
+- pin2(N_RESET): NETS(MCU_RESET_N)
+- pin3(VDD): NETS(V3V3)
+
+J6 (SM06B-SRSS-TB(LF)(SN))
+- pin1: NETS(GND)
+- pin2: NETS(V3V3)
+- pin3: NETS(MCU_EN)
+- pin4: NETS(MCU_BOOT_N)
+- pin5: NETS(SERVICE_UART_TX)
+- pin6: NETS(MCU_UART_RX)
+- pin7: NETS(GND)
+- pin8: NETS(GND)
+
+R31 (22Ω undefined)
+- pin1(anode, pos, left): NETS(USB_DP)
+- pin2(cathode, neg, right): NETS(MCU_USB_DP)
+
+R32 (22Ω undefined)
+- pin1(anode, pos, left): NETS(USB_DN)
+- pin2(cathode, neg, right): NETS(MCU_USB_DN)
+
+R33 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CC1)
+- pin2(cathode, neg, right): NETS(GND)
+
+R34 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_CC2)
+- pin2(cathode, neg, right): NETS(GND)
+
+R35 (4.7kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_RESET_N)
+- pin2(cathode, neg, right): NETS(MCU_EN)
+
+R36 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(MCU_BOOT_N)
+
+R37 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_EN)
+- pin2(cathode, neg, right): NETS(GND)
+
+R38 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_UART_TX)
+- pin2(cathode, neg, right): NETS(SERVICE_UART_TX)
+
+C30 (10uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C31 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C32 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+U16 (BQ24074RGTR)
+- pin1(TS): NETS(PACK_NTC)
+- pin2(BAT1): NETS(PACK_BAT)
+- pin3(BAT2): NETS(PACK_BAT)
+- pin4(N_CE): NETS(GND)
+- pin5(EN2): NETS(GND)
+- pin6(EN1): NETS(GND)
+- pin7(N_PGOOD): NETS(CHARGE_PGOOD_N)
+- pin8(VSS): NETS(GND)
+- pin9(N_CHG): NETS(CHARGE_STATUS_N)
+- pin10(OUT1): NETS(VSYS)
+- pin11(OUT2): NETS(VSYS)
+- pin12(ILIM): NETS(CHARGER_ILIM)
+- pin13(IN): NETS(VBUS)
+- pin14(TMR): NOT_CONNECTED
+- pin15(ITERM): NOT_CONNECTED
+- pin16(ISET): NETS(CHARGER_ISET)
+- pin17(EP): NETS(GND)
+
+J3 (S3B-PH-SM4-TB(LF)(SN))
+- pin4_internal_1(pin4, 4): NETS(GND)
+- pin1: NOT_CONNECTED
+- pin2: NETS(PACK_NTC)
+- pin3: NOT_CONNECTED
+- pin4: NETS(GND)
+
+C1 (10uF undefined)
+- pin1(pos): NETS(VBUS)
+- pin2(neg): NETS(GND)
+
+C2 (10uF undefined)
+- pin1(pos): NETS(PACK_BAT)
+- pin2(neg): NETS(GND)
+
+C3 (10uF undefined)
+- pin1(pos): NETS(VSYS)
+- pin2(neg): NETS(GND)
+
+R1 (3kΩ undefined)
+- pin1(anode, pos, left): NETS(CHARGER_ISET)
+- pin2(cathode, neg, right): NETS(GND)
+
+R2 (3kΩ undefined)
+- pin1(anode, pos, left): NETS(CHARGER_ILIM)
+- pin2(cathode, neg, right): NETS(GND)
+
+R3 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(CHARGE_PGOOD_N)
+
+R4 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(CHARGE_STATUS_N)
+
+U2 (TPS63802DLAR)
+- pin1(EN): NETS(BUCK_ENABLE)
+- pin2(MODE): NETS(GND)
+- pin3(AGND): NETS(GND)
+- pin4(FB): NETS(REG_FB)
+- pin5(PG): NETS(REG_PG)
+- pin6(VOUT): NETS(V3V3)
+- pin7(L2): NETS(L1_neg)
+- pin8(GND): NETS(GND)
+- pin9(L1): NETS(L1_pos)
+- pin10(VIN): NETS(VSYS)
+
+L1 (DFE201612E-R47M=P2)
+- pin1(anode, pos, left): NETS(L1_pos)
+- pin2(cathode, neg, right): NETS(L1_neg)
+
+C4 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C5 (22uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+R5 (51.1kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(REG_FB)
+
+R6 (9.1kΩ undefined)
+- pin1(anode, pos, left): NETS(REG_FB)
+- pin2(cathode, neg, right): NETS(GND)
+
+R7 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(REG_PG)
+
+U13 (TPS7A2028PDBVR)
+- pin1(IN): NETS(V3V3)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(LCD_ENABLE)
+- pin4(N, C): NOT_CONNECTED
+- pin5(OUT): NETS(VLCD)
+
+U14 (SN74LVC245APWR)
+- pin1(DIR): NETS(VLCD)
+- pin2(A1): NETS(MCU_LCD_CS_N)
+- pin3(A2): NETS(MCU_LCD_RESET_N)
+- pin4(A3): NETS(MCU_LCD_DC)
+- pin5(A4): NETS(MCU_LCD_SCLK)
+- pin6(A5): NETS(MCU_LCD_SDA)
+- pin7(A6): NETS(GND)
+- pin8(A7): NETS(GND)
+- pin9(A8): NETS(GND)
+- pin10(GND): NETS(GND)
+- pin11(B8): NOT_CONNECTED
+- pin12(B7): NOT_CONNECTED
+- pin13(B6): NOT_CONNECTED
+- pin14(B5): NETS(LCD_SDA)
+- pin15(B4): NETS(LCD_SCLK)
+- pin16(B3): NETS(LCD_DC)
+- pin17(B2): NETS(LCD_RESET_N)
+- pin18(B1): NETS(LCD_CS_N)
+- pin19(N_OE): NETS(GND)
+- pin20(VCC): NETS(VLCD)
+
+J7 (AFC07-S12FCC-00)
+- pin1: NETS(GND)
+- pin2: NETS(LCD_CS_N)
+- pin3: NETS(LCD_DC)
+- pin4: NETS(LCD_SCLK)
+- pin5: NETS(LCD_SDA)
+- pin6: NETS(LCD_RESET_N)
+- pin7: NOT_CONNECTED
+- pin8: NETS(VLCD)
+- pin9: NETS(VLCD)
+- pin10: NETS(LCD_BACKLIGHT_OUTPUT)
+- pin11: NETS(LCD_BACKLIGHT_RETURN)
+- pin12: NETS(GND)
+- pin13: NETS(GND)
+- pin14: NETS(GND)
+
+C40 (10uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C41 (22uF undefined)
+- pin1: NETS(VLCD)
+- pin2: NETS(GND)
+
+C42 (100nF undefined)
+- pin1: NETS(VLCD)
+- pin2: NETS(GND)
+
+C43 (100nF undefined)
+- pin1: NETS(VLCD)
+- pin2: NETS(GND)
+
+R40 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_ENABLE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R41 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VLCD)
+- pin2(cathode, neg, right): NETS(GND)
+
+R47 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_CS_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R42 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_CS_N)
+- pin2(cathode, neg, right): NETS(VLCD)
+
+R48 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_RESET_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R43 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_RESET_N)
+- pin2(cathode, neg, right): NETS(GND)
+
+R49 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_DC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R44 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_DC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R50 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_SCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R45 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_SCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R51 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_LCD_SDA)
+- pin2(cathode, neg, right): NETS(GND)
+
+R46 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(LCD_SDA)
+- pin2(cathode, neg, right): NETS(GND)
+
+U3 (MAX98357AETE+T)
+- pin1(DIN): NETS(AMP_DIN)
+- pin2(GAIN_SLOT): NETS(VSYS)
+- pin3(GND1): NETS(GND)
+- pin4(N_SD_MODE): NETS(AMP_SD_MODE)
+- pin5: NOT_CONNECTED
+- pin6: NOT_CONNECTED
+- pin7(VDD1): NETS(VSYS)
+- pin8(VDD2): NETS(VSYS)
+- pin9(OUTP): NETS(SPEAKER_P)
+- pin10(OUTN): NETS(SPEAKER_N)
+- pin11(GND2): NETS(GND)
+- pin12: NOT_CONNECTED
+- pin13: NOT_CONNECTED
+- pin14(LRCLK): NETS(AMP_LRCLK)
+- pin15(GND3): NETS(GND)
+- pin16(BCLK): NETS(AMP_BCLK)
+- pin17(EP): NETS(GND)
+
+Q1 (AO3400A)
+- pin1(G): NETS(AUDIO_NMOS_GATE)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(AUDIO_PMOS_GATE)
+
+Q2 (AO3401A)
+- pin1(G): NETS(AUDIO_PMOS_GATE)
+- pin2(S): NETS(VSYS)
+- pin3(D): NETS(AUDIO_ENABLE_SUPPLY)
+
+J4 (S2B-PH-SM4-TB(LF)(SN))
+- pin1: NETS(SPEAKER_P)
+- pin2: NETS(SPEAKER_N)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+C50 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C51 (100nF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+R60 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_ENABLE)
+- pin2(cathode, neg, right): NETS(AUDIO_NMOS_GATE)
+
+R61 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AUDIO_NMOS_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R62 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(AUDIO_PMOS_GATE)
+
+R63 (100Ω undefined)
+- pin1(anode, pos, left): NETS(AUDIO_ENABLE_SUPPLY)
+- pin2(cathode, neg, right): NETS(AMP_SD_MODE)
+
+R64 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_SD_MODE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R65 (22Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_DIN)
+- pin2(cathode, neg, right): NETS(AMP_DIN)
+
+R68 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_DIN)
+- pin2(cathode, neg, right): NETS(GND)
+
+R66 (22Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_BCLK)
+- pin2(cathode, neg, right): NETS(AMP_BCLK)
+
+R69 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_BCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R67 (22Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_AUDIO_LRCLK)
+- pin2(cathode, neg, right): NETS(AMP_LRCLK)
+
+R70 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_LRCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+U22 (TPS7A2030PDBVR)
+- pin1(IN): NETS(VSYS)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(MCU_HAPTIC_ENABLE)
+- pin4(N, C): NOT_CONNECTED
+- pin5(OUT): NETS(VMOTOR)
+
+Q9 (AO3400A)
+- pin1(G): NETS(HAPTIC_NMOS_GATE)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(HAPTIC_N)
+
+D3 (SS14)
+- pin1(cathode, neg): NETS(VMOTOR)
+- pin2(anode, pos): NETS(HAPTIC_N)
+
+C70 (10uF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C71 (22uF undefined)
+- pin1: NETS(VMOTOR)
+- pin2: NETS(GND)
+
+C72 (100nF undefined)
+- pin1: NETS(VMOTOR)
+- pin2: NETS(HAPTIC_N)
+
+R82 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VMOTOR)
+- pin2(cathode, neg, right): NETS(GND)
+
+R83 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_HAPTIC_ENABLE)
+- pin2(cathode, neg, right): NETS(HAPTIC_NMOS_GATE)
+
+R84 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(HAPTIC_NMOS_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R85 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MCU_HAPTIC_ENABLE)
+- pin2(cathode, neg, right): NETS(GND)
+
+U23 (TPS7A2028PDBVR)
+- pin1(IN): NETS(MIC_INPUT)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(HOLD_HARDWARE)
+- pin4(N, C): NOT_CONNECTED
+- pin5(OUT): NETS(VMIC)
+
+U24 (74LVC2G07GW,125)
+- pin1(1A): NETS(MIC_BCLK_INPUT)
+- pin2(GND): NETS(GND)
+- pin3(2A): NETS(MIC_WS_INPUT)
+- pin4(2Y): NETS(MIC_WS)
+- pin5(VCC): NETS(VMIC)
+- pin6(1Y): NETS(MIC_BCLK)
+
+C73 (10uF undefined)
+- pin1: NETS(MIC_INPUT)
+- pin2: NETS(GND)
+
+C74 (10uF undefined)
+- pin1: NETS(VMIC)
+- pin2: NETS(GND)
+
+C75 (100nF undefined)
+- pin1: NETS(VMIC)
+- pin2: NETS(GND)
+
+R86 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(GND)
+
+R87 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_HARDWARE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R88 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_MIC_BCLK)
+- pin2(cathode, neg, right): NETS(MIC_BCLK_INPUT)
+
+R89 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_MIC_WS)
+- pin2(cathode, neg, right): NETS(MIC_WS_INPUT)
+
+R90 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_BCLK_INPUT)
+- pin2(cathode, neg, right): NETS(GND)
+
+R91 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_WS_INPUT)
+- pin2(cathode, neg, right): NETS(GND)
+
+R92 (330Ω undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(MIC_BCLK)
+
+R93 (330Ω undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(MIC_WS)
+
+R94 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_BCLK)
+- pin2(cathode, neg, right): NETS(GND)
+
+R95 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_WS)
+- pin2(cathode, neg, right): NETS(GND)
+
+U26 (SN74LVC1G17DBVR)
+- pin1(N_C): NOT_CONNECTED
+- pin2(A): NETS(HOLD_HARDWARE)
+- pin3(GND): NETS(GND)
+- pin4(Y): NETS(HOLD_BUFFER_OUT)
+- pin5(VCC): NETS(V3V3)
+
+R99 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_HARDWARE)
+- pin2(cathode, neg, right): NETS(GND)
+
+R100 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(HOLD_BUFFER_OUT)
+- pin2(cathode, neg, right): NETS(MCU_HOLD_READ)
+
+C78 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+U25 (TPS3808G33DBVR)
+- pin1(N_RESET): NETS(BUCK_ENABLE)
+- pin2(GND): NETS(GND)
+- pin3(N_MR): NETS(VSYS)
+- pin4(CT): NOT_CONNECTED
+- pin5(SENSE): NETS(PACK_BAT)
+- pin6(VDD): NETS(VSYS)
+
+R96 (470kΩ undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(BUCK_ENABLE)
+
+R97 (470kΩ undefined)
+- pin1(anode, pos, left): NETS(BUCK_ENABLE)
+- pin2(cathode, neg, right): NETS(GND)
+
+C76 (100nF undefined)
+- pin1: NETS(VSYS)
+- pin2: NETS(GND)
+
+C77 (100nF undefined)
+- pin1: NETS(BUCK_ENABLE)
+- pin2: NETS(GND)
+
+U4 (ICS-43434)
+- pin3_internal_1(pin3, 3): NETS(GND)
+- pin3_internal_2(pin3, 3): NETS(GND)
+- pin3_internal_3(pin3, 3): NETS(GND)
+- pin1(WS): NETS(MIC_WS)
+- pin2(LR): NETS(GND)
+- pin3(GND): NETS(GND)
+- pin4(SCK): NETS(MIC_BCLK)
+- pin5(VDD): NETS(VMIC)
+- pin6(SD): NETS(MIC_SD)
+
+U5 (ICS-43434)
+- pin3_internal_1(pin3, 3): NETS(GND)
+- pin3_internal_2(pin3, 3): NETS(GND)
+- pin3_internal_3(pin3, 3): NETS(GND)
+- pin1(WS): NETS(MIC_WS)
+- pin2(LR): NETS(VMIC)
+- pin3(GND): NETS(GND)
+- pin4(SCK): NETS(MIC_BCLK)
+- pin5(VDD): NETS(VMIC)
+- pin6(SD): NETS(MIC_SD)
+
+C80 (100nF undefined)
+- pin1(pos): NETS(VMIC)
+- pin2(neg): NETS(GND)
+
+C81 (100nF undefined)
+- pin1(pos): NETS(VMIC)
+- pin2(neg): NETS(GND)
+
+U7 (TLV3201AIDBVR)
+- pin1(OUT): NETS(MIC_SD_BUFFERED)
+- pin2(GND): NETS(GND)
+- pin3(IN_POS): NETS(MIC_SD)
+- pin4(IN_NEG): NETS(MIC_SD_REF)
+- pin5(VCC): NETS(V3V3)
+
+R26 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_SD)
+- pin2(cathode, neg, right): NETS(GND)
+
+R27 (1kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_SD_BUFFERED)
+- pin2(cathode, neg, right): NETS(MCU_MIC_SD)
+
+R29 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(VMIC)
+- pin2(cathode, neg, right): NETS(MIC_SD_REF)
+
+R30 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(MIC_SD_REF)
+- pin2(cathode, neg, right): NETS(GND)
+
+C25 (100nF undefined)
+- pin1(pos): NETS(V3V3)
+- pin2(neg): NETS(GND)
+
+C26 (100nF undefined)
+- pin1(pos): NETS(MIC_SD_REF)
+- pin2(neg): NETS(GND)
+
+SW4 (SKSWCFE010)
+- pin1: NETS(V3V3)
+- pin2: NETS(HOLD_HARDWARE)
+
+SW1 (SKSWCFE010)
+- pin1: NETS(MCU_BOOT_N)
+- pin2: NETS(GND)
+
+SW2 (SKSWCFE010)
+- pin1: NETS(MCU_EN)
+- pin2: NETS(GND)
+
+SW5 (MSK12C02)
+- pin4_internal_1(pin4, 4): NETS(GND)
+- pin4_internal_2(pin4, 4): NETS(GND)
+- pin4_internal_3(pin4, 4): NETS(GND)
+- pin1: NETS(V3V3)
+- pin2: NETS(MIC_INPUT)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+J8 (S2B-PH-SM4-TB(LF)(SN))
+- pin1: NETS(VMOTOR)
+- pin2: NETS(HAPTIC_N)
+- pin3: NETS(GND)
+- pin4: NETS(GND)
+
+Q10 (AO3400A)
+- pin1(G): NETS(BACKLIGHT_GATE)
+- pin2(S): NETS(GND)
+- pin3(D): NETS(LCD_BACKLIGHT_RETURN)
+
+R102 (100Ω undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(LCD_BACKLIGHT_OUTPUT)
+
+R103 (100Ω undefined)
+- pin1(anode, pos, left): NETS(MCU_BACKLIGHT_PWM)
+- pin2(cathode, neg, right): NETS(BACKLIGHT_GATE)
+
+R104 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(BACKLIGHT_GATE)
+- pin2(cathode, neg, right): NETS(GND)
+
+TP1
+- pin1: NETS(GND)
+
+TP2
+- pin1: NETS(VBUS)
+
+TP3
+- pin1: NETS(PACK_BAT)
+
+TP4
+- pin1: NETS(VSYS)
+
+TP5
+- pin1: NETS(V3V3)
+
+TP6
+- pin1: NETS(VMIC)
+
+TP7
+- pin1: NETS(HOLD_HARDWARE)
+
+TP8
+- pin1: NETS(CHARGE_STATUS_N)
+

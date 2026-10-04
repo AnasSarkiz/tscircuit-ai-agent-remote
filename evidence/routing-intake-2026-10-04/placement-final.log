@@ -1,0 +1,144 @@
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 51.675% (1679.439mm^2 of 3250mm^2)
+- empty spaces over 5% of board area: none
+
+board-edge status:
+- U1: 3.281mm inside bottom edge
+- J1: 0.826mm inside top edge
+- D2: 9.05mm inside top edge
+- U12: 18.225mm inside bottom edge
+- J6: 4.225mm inside right edge
+- R31: 10.343mm inside top edge
+- R32: 11.343mm inside top edge
+- R33: 8.343mm inside top edge
+- R34: 3.343mm inside top edge
+- R35: 22.068mm inside bottom edge
+- R36: 8.068mm inside bottom edge
+- R37: 23.843mm inside left edge
+- R38: 3.843mm inside right edge
+- C30: 8.05mm inside bottom edge
+- C31: 10.05mm inside bottom edge
+- C32: 13.05mm inside bottom edge
+- U16: 4.575mm inside top edge
+- J3: 0.5mm inside right edge
+- C1: 5.4mm inside top edge
+- C2: 2.05mm inside top edge
+- C3: 8.4mm inside top edge
+- R1: 3.068mm inside top edge
+- R2: 10.068mm inside top edge
+- R3: 2.068mm inside top edge
+- R4: 4.068mm inside top edge
+- U2: 15.35mm inside top edge
+- L1: 14.467mm inside right edge
+- C4: 18.9mm inside right edge
+- C5: 13.05mm inside top edge
+- R5: 13.068mm inside top edge
+- R6: 11.068mm inside top edge
+- R7: 14.843mm inside right edge
+- U13: 12.4mm inside right edge
+- U14: 15.893mm inside right edge
+- J7: 14.87mm inside right edge
+- C40: 12.9mm inside right edge
+- C41: 12.9mm inside right edge
+- C42: 19.9mm inside right edge
+- C43: 16.9mm inside right edge
+- R40: 11.843mm inside right edge
+- R41: 11.843mm inside right edge
+- R47: 22.068mm inside left edge
+- R42: 11.843mm inside right edge
+- R48: 22.068mm inside left edge
+- R43: 11.843mm inside right edge
+- R49: 22.068mm inside left edge
+- R44: 11.843mm inside right edge
+- R50: 22.068mm inside left edge
+- R45: 11.843mm inside right edge
+- R51: 22.068mm inside left edge
+- R46: 11.843mm inside right edge
+- U3: 13.2mm inside left edge
+- Q1: 13.5mm inside left edge
+- Q2: 17.35mm inside left edge
+- J4: 1.275mm inside left edge
+- C50: 13.9mm inside left edge
+- C51: 17.55mm inside left edge
+- R60: 13.843mm inside left edge
+- R61: 13.843mm inside left edge
+- R62: 17.843mm inside left edge
+- R63: 16.068mm inside top edge
+- R64: 14.068mm inside top edge
+- R65: 18.843mm inside left edge
+- R68: 18.843mm inside left edge
+- R66: 18.843mm inside left edge
+- R69: 13.843mm inside left edge
+- R67: 18.843mm inside left edge
+- R70: 7.843mm inside left edge
+- U22: 5.155mm inside right edge
+- Q9: 8.5mm inside right edge
+- D3: 2.275mm inside right edge
+- C70: 3.55mm inside right edge
+- C71: 5.9mm inside right edge
+- C72: 1.9mm inside right edge
+- R82: 4.843mm inside right edge
+- R83: 10.843mm inside right edge
+- R84: 12.568mm inside right edge
+- R85: 2.843mm inside right edge
+- U23: 8.4mm inside right edge
+- U24: 5.65mm inside top edge
+- C73: 9.4mm inside top edge
+- C74: 6.9mm inside right edge
+- C75: 4.4mm inside top edge
+- R86: 2.068mm inside top edge
+- R87: 1.343mm inside top edge
+- R88: 7.068mm inside top edge
+- R89: 5.068mm inside top edge
+- R90: 7.068mm inside top edge
+- R91: 9.068mm inside top edge
+- R92: 3.068mm inside top edge
+- R93: 2.068mm inside top edge
+- R94: 1.343mm inside top edge
+- R95: 2.568mm inside right edge
+- U26: 3.25mm inside bottom edge
+- R99: 4.068mm inside bottom edge
+- R100: 1.068mm inside bottom edge
+- C78: 7.05mm inside bottom edge
+- U25: 18.25mm inside top edge
+- R96: 16.068mm inside top edge
+- R97: 14.068mm inside top edge
+- C76: 22.05mm inside top edge
+- C77: 11.55mm inside top edge
+- U4: 2.433mm inside left edge
+- U5: 2.935mm inside right edge
+- C80: 2.9mm inside left edge
+- C81: 2.9mm inside right edge
+- U7: 6.15mm inside left edge
+- R26: 10.843mm inside left edge
+- R27: 10.843mm inside left edge
+- R29: 6.843mm inside left edge
+- R30: 6.843mm inside left edge
+- C25: 6.9mm inside left edge
+- C26: 2.9mm inside left edge
+- SW4: 1.738mm inside bottom edge
+- SW1: 14.738mm inside bottom edge
+- SW2: 12.95mm inside right edge
+- SW5: 0.744mm inside left edge
+- J8: 0.275mm inside right edge
+- Q10: 17.5mm inside right edge
+- R102: 13.843mm inside right edge
+- R103: 10.843mm inside right edge
+- R104: 21.843mm inside right edge
+- TP1: 7.5mm inside left edge
+- TP2: 8.7mm inside left edge
+- TP3: 10.9mm inside left edge
+- TP4: 13.1mm inside left edge
+- TP5: 15.3mm inside left edge
+- TP6: 17.5mm inside left edge
+- TP7: 19.7mm inside left edge
+- TP8: 23.5mm inside left edge
+
+placement drc:
+Errors: 0
+Warnings: 3
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+- pcb_connector_not_in_accessible_orientation_warning: component is inferred to face x+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).

@@ -1,0 +1,158 @@
+$ tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+MultiOffsetIrlsSolver ran out of iterations
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face x+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+TP7 has no courtyard
+TP8 has no courtyard
+<testpoint#1316(.test-access-group>.TP1) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1322(.test-access-group>.TP2) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1328(.test-access-group>.TP3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1334(.test-access-group>.TP4) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1340(.test-access-group>.TP5) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1346(.test-access-group>.TP6) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1352(.test-access-group>.TP7) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1358(.test-access-group>.TP8) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+All pins on J1 are underspecified (no pinAttributes set)
+All pins on J6 are underspecified (no pinAttributes set)
+All pins on J3 are underspecified (no pinAttributes set)
+All pins on J7 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on J4 are underspecified (no pinAttributes set)
+All pins on Q9 are underspecified (no pinAttributes set)
+All pins on SW5 are underspecified (no pinAttributes set)
+All pins on J8 are underspecified (no pinAttributes set)
+All pins on Q10 are underspecified (no pinAttributes set)
+U1 has no pin with requires_power=true
+J1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+J6 has no pin with requires_power=true
+U16 has no pin with requires_power=true
+J3 has no pin with requires_power=true
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+J4 has no pin with requires_power=true
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+U23 has no pin with requires_power=true
+SW5 has no pin with requires_power=true
+J8 has no pin with requires_power=true
+Q10 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+J6 has no pin with requires_ground=true
+J3 has no pin with requires_ground=true
+J7 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+J4 has no pin with requires_ground=true
+Q9 has no pin with requires_ground=true
+SW5 has no pin with requires_ground=true
+J8 has no pin with requires_ground=true
+Q10 has no pin with requires_ground=true
+Unable to pack all PCB components within the layout bounds: No valid candidates found
+Courtyard of U4 overlaps PCB keepout "pcb_keepout_1"
+TP5 overlaps U13: 2 footprint overlaps, 2 pad clearance violations. Move the components apart.
+U14 overlaps R65: 3 footprint overlaps, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+U14 overlaps R68: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+U14 overlaps R66: 4 footprint overlaps, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+U14 overlaps R67: 4 footprint overlaps, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+TP4 overlaps C40: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+TP6 overlaps C41: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+TP7 overlaps R40: 1 footprint overlap, 2 pad clearance violations. Move the components apart.
+Pads pcb_port[.U13 > .IN] and pcb_port[.U13 > .GND] are too close (clearance: -0.05mm, minimum: 0.1mm)
+Pads pcb_port[.U13 > .GND] and pcb_port[.U13 > .EN] are too close (clearance: -0.05mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .DIR] and pcb_port[.U14 > .A1] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .DIR] and pcb_port[.U14 > .A2] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A1] and pcb_port[.U14 > .A2] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A1] and pcb_port[.U14 > .A3] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A2] and pcb_port[.U14 > .A3] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A2] and pcb_port[.U14 > .A4] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A3] and pcb_port[.U14 > .A4] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A3] and pcb_port[.U14 > .A5] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A4] and pcb_port[.U14 > .A5] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A4] and pcb_port[.U14 > .A6] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A5] and pcb_port[.U14 > .A6] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .A5] and pcb_port[.U14 > .A7] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B8] and pcb_port[.U14 > .B7] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B8] and pcb_port[.U14 > .B6] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B7] and pcb_port[.U14 > .B6] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B7] and pcb_port[.U14 > .B5] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B6] and pcb_port[.U14 > .B5] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B6] and pcb_port[.U14 > .B4] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B5] and pcb_port[.U14 > .B4] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B5] and pcb_port[.U14 > .B3] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B4] and pcb_port[.U14 > .B3] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B4] and pcb_port[.U14 > .B2] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B3] and pcb_port[.U14 > .B2] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B3] and pcb_port[.U14 > .B1] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B2] and pcb_port[.U14 > .B1] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B2] and pcb_port[.U14 > .N_OE] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B1] and pcb_port[.U14 > .N_OE] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .B1] and pcb_port[.U14 > .VCC] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.U14 > .N_OE] and pcb_port[.U14 > .VCC] are too close (clearance: -0.364mm, minimum: 0.1mm)
+Pads pcb_port[.R43 > .pin1] and pcb_port[.TP8 > .pin1] are too close (clearance: 0.017mm, minimum: 0.1mm)
+Courtyard of J1 overlaps with courtyard of C3
+Courtyard of R31 overlaps with courtyard of R97
+Courtyard of R34 overlaps with courtyard of R90
+Courtyard of J7 overlaps with courtyard of R41
+Courtyard of J7 overlaps with courtyard of R45
+Courtyard of J7 overlaps with courtyard of R46
+Courtyard of C41 overlaps with courtyard of R68
+Courtyard of C42 overlaps with courtyard of R65
+Courtyard of C42 overlaps with courtyard of R66
+Courtyard of C43 overlaps with courtyard of R66
+Courtyard of C43 overlaps with courtyard of R67
+Courtyard of R47 overlaps with courtyard of Q2
+Courtyard of R49 overlaps with courtyard of Q10
+Courtyard of R50 overlaps with courtyard of Q10
+Courtyard of R51 overlaps with courtyard of Q10
+Courtyard of J4 overlaps with courtyard of R26
+Courtyard of J4 overlaps with courtyard of R27
+Test point TP4 is not accessible because it is inside the courtyard of C40
+Test point TP5 is not accessible because it is inside the courtyard of U13
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+error: script "build:placement" exited with code 1

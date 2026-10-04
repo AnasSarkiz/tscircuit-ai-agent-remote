@@ -1,3 +1,9 @@
+# Latest A2 checkpoint — 2026-10-04
+
+**NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).
+
+Display HS20HS072RX/C5329582, bottom-contact twelve-pin AFC07-S12FCC-00/C11051; protected AKY2945/LP5234501000mAh3.7/4.2V, max pack35×52.5×5.7mm, PH3, 10kNTC. Approved PCBmax50×65mm; current50×65. Red/black outer contacts **PENDING PIN-NUMBER CONFIRMATION**; centre yellow NTC. No final mechanical or current acceptance implied.
+
 # AI Remote — accepted product direction
 
 Updated 2026-10-03 from the user's direct follow-up instructions. These requirements

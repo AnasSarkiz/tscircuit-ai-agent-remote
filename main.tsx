@@ -13,7 +13,7 @@ import { ControlsSheet } from "./src/board/ControlsSheet"
 import { BacklightSheet } from "./src/board/BacklightSheet"
 import { BoardFeatures } from "./src/board/BoardFeatures"
 
-// A1: complete, deliberately unrouted placement preview. PROTOTYPE, NOT FOR FABRICATION.
+// A2: display interface and mounting trial; deliberately unrouted. PROTOTYPE, NOT FOR FABRICATION.
 export default function AiAgentRemote() {
   return (
     <board

@@ -76,7 +76,8 @@ const originalPackage = JSON.parse(readFileSync(join(projectDir, "package.json")
 const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
-  description: "A1 complete unrouted handheld AI remote prototype; not fabrication ready",
+  description:
+    "A2 unrouted display and mounting trial; battery outer polarity pending; not fabrication ready",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,

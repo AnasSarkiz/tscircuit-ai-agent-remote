@@ -1,0 +1,1187 @@
+深圳市汉昇实业有限公司
+
+
+
+                深圳市汉昇实业有限公司
+                SHENZHEN HANSHENG INDUSTRAIL CO.LTD.,
+
+
+
+
+                H6+65;                              D
+                                                        LT
+              深
+           HA 圳     规格书
+             NS 汉     DATASHEET
+               HE 昇
+                 NG 实
+                   IN 业
+                     DU 有
+                制作     ST 限    审核              批准
+    汉昇
+                         RI 公
+    HS                     AL 司
+                             CO
+                                .,
+   版本：VER 1.0
+         EN
+      ZH
+   EN
+深圳市汉昇实业有限公司
+地址：深圳市南山区西丽镇牛成村 208 栋亿莱工业大厦 5 楼
+SH
+电话：0755-86114312/86114313/86114313
+传真：0755-86114314
+网址：www.hslcm.com
+                                    Table of Contents
+    REVISION HISTORY··················································································3
+
+1. GENERAL DESCRIPTION·········································································· 4
+
+    1.1 DESCRIPTION······················································································ 4
+
+                         深
+    1.2 GENERAL INFORMATION·······································································4
+                      HA 圳
+                        NS 汉
+2. ABSOLUTE MAXIMUM RATING·································································· 5
+
+                          HE 昇
+3. ELECTRICAL CHARACTERISTICS····························································· 6
+
+                            NG 实
+    3.1 LCM DC CHARACTERISTICS                                                       ······················· 6
+
+
+                              IN 业
+    3.2 BACK-LIGHT UNIT CHARACTERISTICS····················································6
+
+
+                                DU 有
+4. OPTICAL CHARACTERISTICS··································································· 7
+
+                                  ST 限
+5. MODULE OUTLINE DIMENSION······························································· 10
+
+                                    RI 公
+6. MODULE INTERFACE DESCRIPTION ·······················································11
+                                      AL 司
+7. REFERENCE APPLICATION CIRCUIT························································ 11
+
+
+8. TIMINGS FOR           SPI            CO
+                                 Interface ····························································· 12
+                                          .,
+                                            LT
+9. RELIABILITY TEST CONDITIONS ···························································· 13
+
+                                              D
+10. PACKING ····························································································· 13
+
+11. INSPECTION CRITERION·········································································14
+                 EN
+12. GENERAL PRECAUTIONS······································································· 18
+            ZH
+      EN
+SH
+
+
+                                                   2/18                                  www.hslcm.com
+REVISION HISTORY
+
+ Rev               Description              Page        Date
+
+  1.0              Initial Release           All      2020-11-4
+
+
+
+
+                                                      LT  D
+               深
+            HA 圳
+              NS 汉
+                HE 昇
+                  NG 实
+                    IN 业
+                      DU 有
+                        ST 限
+                          RI 公
+                            AL 司
+                              CO
+                                 .,
+          EN
+        ZH
+    EN
+SH
+
+
+                                     3/18          www.hslcm.com
+1. GENERAL DESCRIPTION
+
+  1.1     DESCRIPTION
+       HS20HS072RX is a transmissive type color active matrix TFT (Thin Film Transistor) liquid crystal
+  display (LCD) that uses amorphous silicon TFT as a switching device. This model is composed of a
+  TFT-LCD module (TFT-LCD panel, driver IC and FPC), a back-light unit and. The resolution of 2.4"
+  contains 240 RGB X320 pixels and can display up to 262k colors.
+
+  1.2     GENERAL INFORMATION
+
+            Items
+                          深
+                       HA 圳           Specification                 Unit             Note
+        Drive element
+                         NS 汉              a-Si TFT                   -                -
+     LCM outline size
+                           HE 昇      51.80(H) x36.20 (V)            mm
+         Active area
+     Number of pixels        NG 实    40.80 (H) x30.6 (V)
+                                     240(H)X320(V)
+                                                                    mm
+                                                                   pixels
+                                                                                       -
+                                                                                       -
+    Pixel arrangement
+                               IN 业    RGB stripe                     -                -
+         Pixel Pitch
+                                 DU 有  0.151x 0.153                 um                 -
+        Display color
+                                   ST 限   262K                     color               -
+    Viewing direction
+                                     RI 公 ALL                         -                -
+    Controller / Driver
+        Data interface                 AL 司
+                                        ST7789T3
+                                         SPI 4W
+                                                                      -
+                                                                      -
+                                                                                       -
+
+
+          Backlight
+                                         CO
+                                4 White LEDs In Parallels             -
+           Weight
+                                           .,
+                                           TBD                       g
+
+
+                                             LT
+                                               D
+                EN
+          ZH
+   EN
+SH
+
+
+                                                4/18                               www.hslcm.com
+2. ABSOLUTE MAXIMUM RATING
+                                                                (Ta=252°C, Vss=GND=0V)
+                                                                           Uni
+        Characteristics         Symbol       Min.      Typ       Max.              Notes
+                                                                            t
+                                 IOVCC       -0.3       -         4.6       V
+         Supply Voltage
+                                  VCI        -0.3       -         4.6       V
+      TFT Gate On voltage         VGH        -0.3       -          30       V
+
+                    深
+      TFT Gate Off voltage
+
+                 HA 圳
+    Backlight Forward Current
+                                  VGL
+                                   IF
+                                             -0.3
+                                              -
+                                                        -          30
+                                                                   80
+                                                                            V
+                                                                           mA
+
+                   NS 汉
+     Operating Temperature        TOPR       -20                  +70      °C      (1), (3)
+
+                     HE 昇
+      Storage Temperature         TSTG       -30                  +80      °C      (2), (3)
+            Humidity
+                       NG 实       RH          -                    90       %    Max. 60 °C
+
+  Notes:
+                         IN 业
+  (1) In case of below 0°C, the response time of liquid crystal (LC) becomes slower and the
+
+                           DU 有
+       color of panel becomes darker than normal one. Level of retardation depends on
+
+                             ST 限
+       temperature, because of the LC characteristics.
+  (2) If product is exposed to high temperatures for extended time, there is a possibility of
+
+                               RI 公
+       the polarizer film damage which could degrade the optical characteristics.
+
+                                 AL 司
+  (3) Permanent damage to the device may occur if maximum values are exceeded or
+       reverse voltage is loaded.
+        Functional operation should be restricted to the conditions described under normal
+        operating conditions.      CO
+                                     .,
+                                       LT
+                                         D
+             EN
+        ZH
+   EN
+SH
+
+
+                                           5/18
+                                                                             www.hslcm.com
+3. ELECTRICAL CHARACTERISTICS
+  3.1    LCM DC CHARACTERISTICS
+                                                                                                    (Ta=252°C)
+        Characteristics       Symbol          Min.           Typ.          Max.          Unit          Note
+   Power Supply Voltage 1      IOVCC          1.65            1.8            3.3          V
+   Power Supply Voltage 2          VCI        2.4            2.75            3.3          V
+
+                       深
+   Power Supply Voltage 3
+
+                    HA 圳
+    Power Supply for MTP
+                                    -
+                                   VPP
+                                               -
+                                               -
+                                                               -
+                                                               -
+                                                                              -
+                                                                              -
+                                                                                          V
+                                                                                          V
+
+                      NS 汉         IDD         -             TBD              -          mA         Normal mode
+    Current Consumption
+                        HE 昇  IDD-SLEEP                      TBD                         uA          Sleep mode
+
+                          NG 实
+    Input voltage “L” Level        VIL        GND              -       0.3IOVCC           V         IOVCC=1.65~
+                                                                                                        3.3
+
+                            IN 业
+    Input voltage “H” Level        VIH      0.7IOVCC           -           IOVCC          V
+
+
+                              DU 有
+   Output voltage “L” Level        VoL        GND              -       0.2IOVCC           V           IOL=1mA
+   Output voltage “H” Level        VoH      0.8IOVCC           -           IOVCC          V           IOH=-1mA
+
+                                ST 限
+                                  RI 公
+  3.2    BACK-LIGHT UNIT CHARACTERISTICS
+
+
+                                    AL 司
+  The back-light system is an edge-lighting type with 4 white LEDs. The characteristics of the
+  back-light are shown in the following tables.
+                                                                                          (Ta=252°C)
+    Characteristics       Symbol      CO Condition     Min.         Type          Max.     Unit          Notes
+     Forward Voltage          Vf
+                                        .,IL=80mA       2.8          3.0           3.2          V          -
+     Forward current          IL
+                                          LT             -           80             -         mA           -
+        Luminance
+        LED life time
+                              Lv
+                              -
+                                            D
+                                          IL=80mA
+                                          IL=80mA
+                                                        TBD
+                                                       20,000
+                                                                     TBD
+                                                                    25,000
+                                                                                   --
+                                                                                   --
+                                                                                           cd/m2
+                                                                                              Hr
+                                                                                                           -
+                                                                                                         Note 1
+  Note:        EN
+  (1) The “LED life time” is defined as the module brightness decrease to 50% of original brightness
+          ZH
+        at IL=80mA. The LED life time could be decreased if operating IL is larger than 80mA.
+
+   EN
+  Bcklight circuit diagram shown in below:
+
+SH
+
+
+                                                6/18                                            www.hslcm.com
+4. OPTICAL CHARACTERISTICS
+  The following items are measured under stable conditions. The optical characteristics should be
+  measured in a dark room.
+  Measuring equipment: BM-5AS, BM-7, EZ-Contrast.
+                                                                                    (Ta=252°C)
+          Parameter          Symbol     Condition     Min.       Typ.     Max.    Unit         Note
+         Contrast Ratio                                                                       BM-7
+                               C/R          -             280     300       -       -
+         (Center point)                                                                       Note(2)
+    Luminance of white
+      (Center point)
+                       深
+                    HA 圳        Lw       B/L on       15%        TBD      15%     cd/m2      CA-210
+
+
+                      NS 汉
+   Luminance uniformity        UW                         80          -     -      
+                                                                                               BM-7
+                                                                                              Note(3)
+                        HE 昇                                                                 BM-5AS
+        Response Time
+                          NG 实Tr + Tf
+
+                               WX          = 0.      0.288
+                                                           -      30
+
+                                                                 0.308
+                                                                            -
+
+                                                                          0.328
+                                                                                   ms
+                                                                                             Note(4)
+
+                    White
+                            IN 业
+                               WX
+                                         Normal
+                                                      0.305      0.325    0.345
+
+                              DU 有
+                                         viewing
+                                RX        angle       0.592      0.612    0.632
+      Color
+                     Red
+                                ST 限
+                                RY
+                                         B/L On
+                                                      0.309      0.329    0.349              CA-210
+
+                                  RI 公
+   Chromaticity                                                                     -
+                                GX                    0.279      0.299    0.319              Note(5)
+   (CIE 1931)                            Note(1)
+
+                                    AL 司
+                    Green
+                                Gy                    0.547      0.567    0.587
+                                BX                    0.124      0.144    0.164
+                     Blue
+                                BY    CO              0.090      0.110    0.130
+                                T      .,                 -      45        -
+
+        Viewing
+                     Hor.
+                                B        LT               -      20        -
+                                                                                  Deg
+                                                                                            EZ Contrast
+         Angle
+                     Ver.
+                                L
+                                R
+                                            D
+                                         C/R10
+                                                           -
+                                                           -
+                                                                  45
+                                                                  20
+                                                                            -
+                                                                            -
+                                                                                              Note(6)
+
+
+
+                  EN
+          Optima View Direction                                 ALL                           Note(7)
+
+           ZH
+  * This condition will be changed by the evaluation circumstance. If product is exposed to high
+          temperatures for extended time, there is a possibility of the polarizer film damage which
+    EN    could degrade the optical characteristics.
+SHNotes:
+  (1)     Test Equipment Setup: After stabilizing and leaving the panel alone at a given temperature for
+          30min, the measurement should be executed. Measurement should be executed in a stable,
+          windless, and dark room 30min after lighting the back-light. This should be measured in the
+          center of screen.
+
+
+
+
+                                                   7/18                                   www.hslcm.com
+                    深
+                 HA 圳
+(2)                NS 汉
+      Definition of Contrast Ratio (CR):
+                     HE 昇       Luminance measured when LCD on the “white” state
+                       NG 实
+      Contrast Ratio (CR) =
+                                Luminance measured when LCD on the “black” state
+
+(3)
+                         IN 业
+      Definition of Luminance Uniformity: Active area is divided into 9 measuring areas (Shown in
+
+
+                           DU 有
+      below), every measuring point is placed at the center of each measuring area.
+
+
+                             ST 限
+                                Min Luminance of white among 9-points
+      Luminance Uniformity =                                               x100%
+                                Max Luminance of white among 9-points
+
+                               RI 公
+                               H/6         H/3          H/3    H/6
+
+                                 AL 司                                   V/6
+                                  
+                                   CO                        
+                                     .,                                 V/3
+
+                                      LT                    
+
+                                  
+                                         D                   
+                                                                        V/3
+
+                                                                        V/6
+            EN
+       ZH                                         FPC
+
+ EN                         The spot locations for luminance measurement
+
+SH
+(4)   Definition of Response time: Sum of Tr and Tf.
+
+
+
+
+                                                 8/18                           www.hslcm.com
+                    深
+                 HA 圳
+(5)                NS 汉
+      Definition of Viewing Angle: The viewing angle range that the CR10.
+
+                     HE 昇
+                       NG 实
+                         IN 业
+                           DU 有
+                             ST 限
+                               RI 公
+                                 AL 司
+                                   CO
+                                     .,
+                                       LT
+                                         D
+            EN
+       ZH
+ EN
+SH
+(6)   Definition of Color Chromaticity (CIE 1931)
+      Color coordinate of white & red, green, blue at center point.
+(7)   The different Rubbing Direction will cause the different optima view direction.
+
+
+
+
+                                              9/18                                      www.hslcm.com
+SH
+  EN
+       ZH
+         EN
+                 深
+              HA 圳
+                NS 汉
+                  HE 昇
+                    NG 实
+                      IN 业
+                        DU 有
+                          ST 限
+                            RI 公
+                              AL 司
+                                CO
+                                   .,
+                                     LT
+                                        D
+6. MODULE INTERFACE DESCRIPTION
+    Pin
+              Symbol                            Description
+    No.
+      1         GND         Power Ground
+
+      2         CS         Chipselectinputpin
+
+      3          RS        Serves as command or parameter select.
+
+      4
+                    深
+                 HA 圳
+               SCL          Thispinisusedserialinterfaceclockin
+
+      5         SDA
+                   NS 汉    The data is applied on the rising edge of the SCL signal
+
+      6         RST
+                     HE 昇   Resetinputpin
+
+      7         NC
+                       NG 实  NC
+
+
+                         IN 业
+      8       I/O-VCC      I/O supply for interface logic circuits(2.8V)
+
+
+                           DU 有
+      9         VCC        Power supply for interface logic circuits(2.8V)
+
+     10          A
+                             ST 限
+                            Back-light Anode
+
+     11           K
+                               RI 公
+                            Back-light Cathode
+
+     12         GND
+                                 AL 司
+                           Power Ground
+
+
+
+                                   CO
+                                     .,
+                                       LT
+                                         D
+             EN
+          ZH
+   EN
+SH
+7. REFERENCE APPLICATION CIRCUIT
+  Please consult our technical department for detail information.
+
+
+
+
+                                             11/18                                www.hslcm.com
+                SH
+                  EN
+                     ZH
+                       EN
+                               深
+                                                        8. TIMINGS FOR SPI
+
+
+                            HA 圳
+                              NS 汉
+                                HE 昇                    Interface
+                                  NG 实
+    12/18
+                                    IN 业
+                                      DU 有
+                                        ST 限
+                                          RI 公
+                                            AL 司
+                                              CO
+                                                .,
+www.hslcm.com                                     LT
+                                                    D
+ 9. RELIABILITY TEST CONDITIONS
+
+
+    No.              Test Item                         Test Condition                           Notes
+     1       High Temperature Storage                       +80°C / 240H                 Inspection after
+                                                                                         2~4h storage at
+     2       Low Temperature Storage                        -30°C / 240H
+                                                                                         room temperature,
+     3      High Temperature Operating                      +70°C / 240H                 the sample shall be
+                                                                                         free from defects:
+     4
+
+     5
+                        深
+            Low Temperature Operating
+
+                     HA 圳
+                 Temperature Cycle
+                                                            -20°C / 240H
+                                            Ta=-10°C~+25~+50°C,10
+                                                                                         1. Air bubble in the
+                                                                                         LCD;
+                                            Cycle,per30min
+
+     6                 NS 汉
+            High Temperature /Humidity
+                                                      60°C ,90%RH / 120H
+                                                                                         2. Seal leak;
+                                                                                         3. Non-display;
+                         HE 昇
+                     storage
+                                               Frequency: 10Hz~55Hz~10Hz
+                                                                                         4. Missing
+
+     7                     NG 实
+                    Vibration Test            Amplitude:1.5mm, 2 hours for each
+                                                                                         segments;
+                                                                                         5.Glass crack;
+
+
+                             IN 业
+                                                      direction of X, Y, Z               6. The surface shall
+                                              Drop to the ground from 1m height,         be free from
+
+                               DU 有
+     8           Packing Drop Test
+                                                1 corner, 3 edges, 6 surfaces.           damage.
+
+
+                                 ST 限        Voltage:±8KV R: 330Ω C: 150pF
+                                                                                         7. The electrical
+                                                                                         characteristics
+     9                ESD test
+                                   RI 公       Air discharge, Three or five times.        requirements shall
+
+
+
+   Remarks:
+                                     AL 司                                                be satisfied.
+
+
+
+   (1)                                 CO
+          The test samples should be applied to only one test item.
+   (2)
+                                         .,
+          Sample size for each test item is 5~10pcs.
+   (3)
+                                           LT
+          For High Temperature/Humidity storage test, pure water (resistance>10M) should be used.
+   (4)
+
+
+   (5)
+                                             D
+          In case of malfunction defect caused by ESD damage, if it would be recovered to normal state
+          after resetting, it would be judge as a good part.
+          Failure judgment criterion: basic         specification,   electrical   characteristic,   mechanical
+                EN
+          characteristic, optical characteristic.
+
+           ZH
+    EN
+ SH
+10. PACKING SPECIFICATION
+   TBD
+
+
+
+
+                                                    13/18                                     www.hslcm.com
+11. INSPECTION CRITERION
+
+                                                                         Judgement standard
+                   Inspection item                                                       Acceptable number
+                                                                   Category
+                                                                                         A zone    B zone
+     Black spot, White spot,                          A               Φ≦0.10             Ignored   Ignored
+                                                  b
+     Bright Spot, Pinhole                             B            0.10<Φ≦0.20              2
+     Foreign Particle,                                C                Φ＞0.2                0
+     Bubble and Particle         a
+
+                             深
+     Between polarizer and Φ=(a+b)/2(mm)
+
+                          HA 圳
+     glass, scratch on polarizer
+                                                           Total defective point(B,C)         3
+
+                          Bright spot                                                     N≤2
+                            NS 汉                                   0.15<Φ≦0.20                     Ignored
+
+
+
+                              HE 昇
+                          Dark spot/ Black spot                    0.15<Φ≦0.20            N≤2
+ 1
+
+     Pixel point
+                                NG 实
+                          Attached to the two pixels are
+                          bright spots
+                                                                   0.15<Φ≦0.20            N≤2
+
+
+                                  IN 业
+                          Even a two pixel is dark                 0.15<Φ≦0.20            N≤2
+     defect
+
+                                    DU 有
+                          Pixel total number                       0.15<Φ≦0.20            N≤2
+
+
+                                      ST 限
+                          Note1: the spot defect caused by foreign matter is judged according
+                          to the defect of the foreign body.
+
+                                        RI 公
+                          Note 2: when the light is not wired to show the type of defects.
+
+
+     Black line, White
+     line, Bubble and
+                                          AL 司
+                                           W
+                                                      A
+                                                      B
+                                                                 W≦0.03
+                                                              0.03<W≦0.05
+                                                                          L≦3.0
+                                                                            L≦3.0
+                                                                                         Ignored
+                                                                                            2
+                                                                                                   Ignored
+
+
+ 2
+     Particle Between
+                                            CO        C             0.05<W                  0
+     Polarizer and
+     glass, Scratch on               L
+                                              .,            Total defective point(B,C)        2
+     polarizer
+                          W:Width, L:Length(mm)
+                                                LT
+ 3
+     Contrast
+     variation                              b     D   A
+                                                      B
+                                                      C
+                                                                       Φ≦0.1
+                                                                     0.1<Φ≦0.3
+                                                                       Φ＞0.3
+                                                                                         Ignored
+                                                                                            2
+                                                                                            0
+                                                                                                   Ignored
+
+
+
+                                a
+                   EN         Φ=(a+b)/2(mm)
+                                                            Total defective point(B,C)        2
+
+
+ 4
+            ZH
+     Bubble inside cell                                            any size               none      none
+      EN                  Scratch and damage on
+                          polarizer, particle on
+ SH  Polarizer defect
+                          polarizer or between
+                          polarizer and glass.
+                                                      Refer to item 1 and item 2.
+
+
+ 5   (if Polarizer is                                 A                Φ≦0.3             Ignored   Ignored
+     used)                                            B              0.3<Φ≦0.5              2
+                          Bubble, dent and convex     C                 0.5<Φ               0
+                                                           Total defective point(B,C)       2
+
+
+
+
+                                                      14/18                               www.hslcm.com
+                                                          Judgement standard
+     Inspection item                                                  Acceptable number
+                               Category
+                                                       A zone                                 B zone
+                       ①Stage surplus glass
+                                      b
+                                                    b≦0.3mm
+
+
+
+6   Surplus glass
+                          深
+                       ②Surrounding
+
+                       HA 圳
+                       glass
+                                          surplus
+
+
+
+
+                         NS 汉                       Should not influence outline dimension and assembling.
+
+
+                           HE 昇
+                       ①MURA
+                             NG 实                   Naked eye examination: red, green, blue screen does
+                                                    not allow the appearance, black screen requires visual
+
+                               IN 业                 is not obvious, the specific reference limit samples.
+                                                    Note: the principle of closing the sample is to be
+                                 DU 有               installed on the whole machine and the end user will
+
+                                   ST 限             not find it in the normal usage scenario.
+                                                    Inspection basis: 6%ND
+                                     RI 公           (MURA mainly in the black screen and indoor light is
+
+                                       AL 司         relatively dark will be found, it is recommended to turn
+                                                    off the indoor lighting inspection.)
+
+                                         CO
+                       ②Point Black / White /       1, under the black / gray screen check:
+7   MURA               point(MURA)
+                                           .,       D≦0.10mm Ignored；
+                                                    0.10mm<D≦0.3mm,N≦2；
+                                             LT     D>0.3mm: Unqualified。
+
+                                               D    2, switch to the red, green, blue in which any one of the
+                                                    screen appears black or white or point to point white or
+                                                    point of failure.
+                EN
+           ZH
+     EN
+SH
+
+
+                                                    15/18                                       www.hslcm.com
+                                                                                          Judgment standard
+              Inspection item
+                                                                                     Category(application: B zone)
+             ①The front of lead terminals                            A       If a≦t and b ≦1.0,    c is not limited
+
+                                                                     B       a≦t, 1≦b≦2mm, c≦3mm
+                                                             b
+                                                                     C       If glass crack cover alignment mark, b≦0.5mm.
+                        b
+
+
+                w
+                       深
+                    HA 圳             a
+                                                             c       D
+                                                                             Crack at two sids of lead terminals should not
+                                                                             cover patterns and alignment mark
+
+                      NS 汉
+             ②Surrounding
+                                 t
+
+
+                        HE 昇
+             crack―non-contact side
+                      seal
+                          NG 实
+                             c               b   a
+                                                             t
+
+
+                            IN 业                                         b < Inner borderline of the seal
+
+
+                              DU 有
+                                ST 限
+                                  RI 公
+                Inner border line of the seal
+    Glass       Outer border line of the seal
+
+                                    AL 司
+             ③ Surrounding crack― contact                                b < Outer borderline of the seal
+8   defect
+    crack    side
+
+
+                            seal      CO
+                                        .,                       t
+
+                              c          b
+                                          LT         a
+
+
+                                            D
+                    Inner border line of the seal
+               EN   Outer border line of the seal
+            ZH
+             ④Corner                                                 A          a ≦ t, b ≦ 3.0, c ≦ 3.0
+
+    EN                                                               *Glass crack should not cover patterns used for
+
+SH
+                                         a               t
+
+                w
+                                             c
+
+
+
+
+                                                                     16/18                                     www.hslcm.com
+                Inspection item                                        Judgement standard
+
+
+
+             Component soldering: No cold soldering,
+             short/open circuit, burr, tin ball.                  Component
+             The flat encapsulation component position
+             deviation must be less than 1/2 width of
+
+                 深
+             the pin (Pic.1)；
+
+              HA 圳
+             The sheet component deviation: pin
+                                                                    L≤W/2           W
+
+
+
+                NS 汉
+             deviates from the pad and contact with the
+             near components is not permitted（Pic.2）
+
+                  HE 昇
+                    NG 实
+             lead defect:
+             The lead lack must be less than 1/2of its                                    Component
+             width;
+                      IN 业                                 Soldering pad       Lead
+
+
+9
+    FPC
+    defect              DU 有
+             The lead burr must be less than 1/2 of the
+             seam;                                                                                     L1>0
+
+                          ST 限
+             Impurities connect with the near leads is     L2>0
+             not permitted
+                            RI 公
+                              AL 司                                          head         Base Board
+
+                                CO
+             Connector soldering:
+                                                            Soldering tin is not permit in this area
+
+                                  .,
+             Soldering tin is at contact position of the
+             plug and socket is not permitted                 Soldering tin is not permit in this area
+             No foundation is scald
+                                    LT
+                                      D
+             Serious cave distortion on plug and socket
+             contact pin is not permitted
+                                                                             socket
+                                                                             座
+                                                                                           Base Board
+
+
+             EN
+      ZH
+    EN
+SH
+
+
+                                           17/18                                        www.hslcm.com
+12. GENERAL PRECAUTIONS
+
+  1.1    HANDING
+   (1)   When the module is assembled, it should be attached to the system firmly. Be careful not to
+         twist and bent the module.
+   (2)   Refrain from strong mechanical shock and / or any force to the module. In addition to damage,
+         this may cause improper operation or damage to the module and back-light unit.
+   (3)   Note that display modules are very fragile and could be easily damaged. Do not press or
+
+
+   (4)
+                       深
+         scratch the surface harder than a HB pencil lead.
+
+                    HA 圳
+         Wipe off water droplets or oil immediately. If you leave the droplets for a long time, straining
+
+                      NS 汉
+         and discoloration may occur.
+   (5)
+                        HE 昇
+         If the display module surface becomes contaminated, breathe on the surface and gently wipe
+         it with a soft dry cloth. If it is heavily contaminated, should be wiped by moisten cloth with
+
+                          NG 实
+         isopropyl alcohol or ethyl alcohol solvents, DO NOT with water, ketone type materials (e.g.
+         acetone), aromatic, toluene, ethyl acid or methyl chloride, and so on.
+   (6)
+                            IN 业
+         If the liquid crystal material leaks from the panel, it should be kept away from the eyes or
+
+
+                              DU 有
+         mouth. In case of contact with hands, legs or clothes, it must be washed away thoroughly with
+         soap.
+   (7)
+                                ST 限
+         Use finger-stalls with sort gloves in order to keep display clean during the incoming inspection
+         and assembly process.
+                                  RI 公
+                                    AL 司
+   (8)   Protection film for polarizer on the module shall be slowly peeled off just before use so that the
+         electrostatic charge can be minimized.
+   (9)   Do not touch directly conductive parts such as the CMOS LSI pad and the interface terminals
+                                      CO
+         with bare hands, therefore operations should be grounded whenever he/she comes into
+         contact with the modules.
+                                        .,
+                                          LT
+   (10) Do not exceed the absolute maximum rating value. (The supply voltage variation, input voltage
+        variation, variation in part contents and environmental temperature, and so on), otherwise the
+
+
+  1.2
+        module may be damaged.
+
+         SOLDERING
+                                            D
+   (1)         EN
+         Use soldering irons with proper grounding and no leakage.
+   (2)    ZH
+         For No RoHS Product: soldering temperature is 290~350°C, soldering time is 3~5s; for RoHS
+         Product: soldering temperature is 340~370°C, soldering time is 3~5s.
+    EN
+   (3)   If soldering flux is used, be sure to remove any remaining flux after soldering (This does not
+         apply in the case of a non-halogen type of flux).
+ SH
+  1.3    STORAGE
+   (1)   DO NOT leave the module in high temperature and high humidity for a long times, keep the
+         temperature from 0°C to 35°C and relative humidity of less than 60%.
+   (2)   It is highly recommended to store the module in a dark place. The Liquid crystal is deteriorated
+         by ultraviolet, DO NOT leave it in direct sunlight and strong ultraviolet ray for many hours.
+
+
+                                                 18/18                                   www.hslcm.com
+void ST7789V_INITIAL ()
+ {
+//‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐ST7735R Reset Sequence‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐//
+RES =1;
+delay(100);                                                                                             //Delay 1ms
+RES =0;
+delay(200);                                                                                             //Delay 1ms
+RES =1;
+delay(500);                                                                                             //Delay 120ms
+//‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐//
+LCD_WriteCommand(0x11);
+delay (120); //Delay 120ms
+//‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐Display Setting‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐//
+                                                                                                                         D
+                                                                                                                        LT
+LCD_WriteCommand(0x36);
+LCD_WriteData(0x00); //竖屏显示
+//LCD_WriteData(0xA0); //横屏显示
+LCD_WriteCommand(0x3a);
+                                   深
+                                HA 圳
+LCD_WriteData(0x05);
+                                  NS 汉
+                                    HE 昇
+//‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐ST7789V Frame rate setting‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐//
+LCD_WriteCommand(0xb2);
+LCD_WriteData(0x0c);
+LCD_WriteData(0x0c);
+                                      NG 实
+LCD_WriteData(0x00);
+                                        IN 业
+LCD_WriteData(0x33);
+LCD_WriteData(0x33);                      DU 有
+LCD_WriteCommand(0xb7);
+                                            ST 限
+LCD_WriteData(0x35);
+                                              RI 公
+                                                AL 司
+//‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐ST7789V Power setting‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐//
+LCD_WriteCommand(0xbb);
+LCD_WriteData(0x20);
+LCD_WriteCommand(0xc0);
+                                                  CO
+                                                     .,
+LCD_WriteData(0x2c);
+LCD_WriteCommand(0xc2);
+LCD_WriteData(0x01);
+LCD_WriteCommand(0xc3);
+LCD_WriteData(0x0b);
+LCD_WriteCommand(0xc4);
+                           EN
+                   ZH
+LCD_WriteData(0x20);
+LCD_WriteCommand(0xc6);
+            EN
+LCD_WriteData(0x0f);
+     SH
+LCD_WriteCommand(0xd0);
+LCD_WriteData(0xa4);
+LCD_WriteData(0xa1);
+//‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐ST7789V gamma setting‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐//
+LCD_WriteCommand(0xe0);
+LCD_WriteData(0xd0);
+LCD_WriteData(0x03);
+LCD_WriteData(0x09);
+LCD_WriteData(0x0e);
+LCD_WriteData(0x11);
+LCD_WriteData(0x3d);
+LCD_WriteData(0x47);
+LCD_WriteData(0x55);
+LCD_WriteData(0x53);
+LCD_WriteData(0x1a);
+LCD_WriteData(0x16);
+LCD_WriteData(0x14);
+LCD_WriteData(0x1f);
+LCD_WriteData(0x22);
+LCD_WriteCommand(0xe1);
+LCD_WriteData(0xd0);
+LCD_WriteData(0x02);
+                                               LT   D
+LCD_WriteData(0x08);
+LCD_WriteData(0x0d);
+LCD_WriteData(0x12);
+LCD_WriteData(0x2c);
+                             深
+                          HA 圳
+LCD_WriteData(0x43);
+                            NS 汉
+LCD_WriteData(0x55);
+LCD_WriteData(0x53);          HE 昇
+LCD_WriteData(0x1e);
+LCD_WriteData(0x1b);
+                                NG 实
+LCD_WriteData(0x19);
+                                  IN 业
+LCD_WriteData(0x20);
+LCD_WriteData(0x22);                DU 有
+LCD_WriteCommand(0x29);
+                                      ST 限
+                                        RI 公
+                                          AL 司
+}
+
+
+
+
+                                            CO
+                                               .,
+                   EN
+              ZH
+         EN
+    SH
+
