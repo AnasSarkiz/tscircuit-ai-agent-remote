@@ -13,27 +13,31 @@ const routingTolerances = {
 } as const
 
 // Native phases. Their original events/paths must be preserved before edits.
-export function BoardRouting() {
+export function BoardRouting({ placementOnly = false }: { placementOnly?: boolean } = {}) {
   return (
     <>
-      <copperpour
-        name="L2_GND"
-        layer="inner1"
-        connectsTo="net.GND"
-        unbroken
-        clearance={0.2}
-        boardEdgeMargin={0.25}
-        cutoutMargin={0.25}
-        useThermalReliefs={false}
-      />
+      {!placementOnly && (
+        <>
+          <copperpour
+            name="L2_GND"
+            layer="inner1"
+            connectsTo="net.GND"
+            unbroken
+            clearance={0.2}
+            boardEdgeMargin={0.25}
+            cutoutMargin={0.25}
+            useThermalReliefs={false}
+          />
 
-      <autoroutingphase
-        name="regulator-switching"
-        phaseIndex={0}
-        pcbTracePaths={fanoutTracePath.array().parse(regulatorPaths)}
-        autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
-        {...routingTolerances}
-      />
+          <autoroutingphase
+            name="regulator-switching"
+            phaseIndex={0}
+            pcbTracePaths={fanoutTracePath.array().parse(regulatorPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+        </>
+      )}
 
       <differentialpair
         name="USB_MCU"

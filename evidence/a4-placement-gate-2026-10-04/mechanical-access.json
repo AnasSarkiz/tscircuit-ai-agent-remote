@@ -1,0 +1,105 @@
+{
+  "native_trace_count": 0,
+  "native_via_count": 0,
+  "native_pour_count": 0,
+  "headers": {
+    "J3": {
+      "native_body_min": [
+        18.0495126247406,
+        18.74999237060547,
+        -3.099993085861206
+      ],
+      "native_body_max": [
+        25.950512647628784,
+        26.349992156028748,
+        5.10000696182251
+      ],
+      "right_case_gap_mm": 3.249487352371215,
+      "glass_gap_mm": 0.8495126247406013,
+      "battery_xy_gap_mm": 0.5495126247406006,
+      "note": "CAD bounds only; mated harness/lead/solder tolerances not qualified"
+    },
+    "J4": {
+      "native_body_min": [
+        19.024999856948853,
+        1.7249984741210938,
+        -3.099993085861206
+      ],
+      "native_body_max": [
+        25.024999856948853,
+        9.42499852180481,
+        5.4500068664550785
+      ],
+      "right_case_gap_mm": 4.175000143051147,
+      "glass_gap_mm": 1.8249998569488532,
+      "battery_xy_gap_mm": 1.5249998569488525,
+      "note": "CAD bounds only; mated harness/lead/solder tolerances not qualified"
+    },
+    "J8": {
+      "native_body_min": [
+        19.024999856948853,
+        -15.275001525878906,
+        -3.099993085861206
+      ],
+      "native_body_max": [
+        25.024999856948853,
+        -7.57500147819519,
+        5.4500068664550785
+      ],
+      "right_case_gap_mm": 4.175000143051147,
+      "glass_gap_mm": 1.8249998569488532,
+      "battery_xy_gap_mm": 1.5249998569488525,
+      "note": "CAD bounds only; mated harness/lead/solder tolerances not qualified"
+    }
+  },
+  "testpoints_under_glass": [
+    {
+      "reference": "TP1",
+      "x": -17,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP2",
+      "x": -15.8,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP3",
+      "x": -13.6,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP4",
+      "x": -11.399999999999999,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP5",
+      "x": -9.2,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP6",
+      "x": -7,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP7",
+      "x": -4.799999999999999,
+      "y": 10.8,
+      "access": "glass removed; probe before final display assembly"
+    },
+    {
+      "reference": "TP8",
+      "x": -1,
+      "y": -5,
+      "access": "glass removed; probe before final display assembly"
+    }
+  ]
+}

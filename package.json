@@ -17,7 +17,7 @@
     "snapshot:update": "tsci snapshot --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
-    "build:placement": "tsci build index.circuit.tsx --routing-disabled --pcb-png --pcb-svgs --schematic-svgs",
+    "build:placement": "tsci build placement.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
     "format": "biome format --write .",
     "format:check": "biome format .",
     "test": "bun test ./tests"

@@ -15,9 +15,10 @@ import { BacklightSheet } from "./src/board/BacklightSheet"
 import { BoardFeatures } from "./src/board/BoardFeatures"
 
 // A4: 82.7% provisional BuyDisplay coverage trial and partial native copper; remaining routing is incomplete. NOT FOR FABRICATION.
-export default function AiAgentRemote() {
+export default function AiAgentRemote({ placementOnly = false }: { placementOnly?: boolean } = {}) {
   return (
     <board
+      routingDisabled={placementOnly}
       routeRemaining={false}
       width={50}
       height={65}
@@ -28,8 +29,8 @@ export default function AiAgentRemote() {
       pcbStyle={{ silkscreenFontSize: 0.7 }}
     >
       <BoardNets />
-      <BoardRouting />
-      <McuUsbSheet />
+      <BoardRouting placementOnly={placementOnly} />
+      <McuUsbSheet placementOnly={placementOnly} />
       <ChargerSheet />
       <RegulatorSheet />
       <DisplaySheet />

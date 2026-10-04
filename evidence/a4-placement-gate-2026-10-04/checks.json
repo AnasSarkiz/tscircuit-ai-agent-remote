@@ -1,0 +1,41 @@
+{
+  "source_parent": "9c8c746a707b5cd683d60280b6d10a3b5792ae75",
+  "canonical_sha256": "effa0fab8a267a5f3a64d7d0388178d1c72a9d4b4e5042d9c820c1eab576a882",
+  "placement_sha256": "6fb072d5bc71bba9b1b7886601f52ad40faebcfc72b9cc36c0f1bb7699a5467a",
+  "unrouted_placement_native_build_exit": 0,
+  "canonical_build_exit": 1,
+  "required_check_exits": {
+    "netlist": 0,
+    "pin_specification": 0,
+    "source": 0,
+    "schematic-placement": 0,
+    "placement": 0
+  },
+  "placement_counts": {
+    "traces": 0,
+    "vias": 0,
+    "pours": 0,
+    "purchased_cad_models": 126,
+    "cad_aabb_candidates": 0
+  },
+  "canonical_counts": {
+    "traces": 4,
+    "vias": 0,
+    "unconnected_port_errors": 426,
+    "missing_trace_errors": 5
+  },
+  "tests": {
+    "passed": 41,
+    "failed": 2,
+    "assertions": 402
+  },
+  "shorts_exit": 0,
+  "snapshot_exit": 0,
+  "same_electrical_and_physical_placement_elements": true,
+  "canonical_traces_and_pour_unchanged": true,
+  "routing_difficulty": "76 heuristic regions; worst5.4%, not a routing failure or copper proof",
+  "latest_official_core": "0.0.2080",
+  "polygon_paste_fix": "PR4344merged and revertedPR4349; no applicable fix installed",
+  "background_watcher": "paused",
+  "cross_chat_messages": "disabled"
+}

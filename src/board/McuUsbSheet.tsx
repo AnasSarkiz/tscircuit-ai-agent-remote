@@ -13,7 +13,7 @@ import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
 import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
 import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
 
-export function McuUsbSheet() {
+export function McuUsbSheet({ placementOnly = false }: { placementOnly?: boolean } = {}) {
   return (
     <schematicsheet
       name="mcu-usb-review"
@@ -47,12 +47,12 @@ export function McuUsbSheet() {
         <trace
           path={["U1.pin13", "R32.pin2", "net.MCU_USB_DN"]}
           width={0.2906}
-          pcbPath={["R32.pin2"]}
+          pcbPath={placementOnly ? undefined : ["R32.pin2"]}
         />
         <trace
           path={["U1.pin14", "R31.pin2", "net.MCU_USB_DP"]}
           width={0.2906}
-          pcbPath={["R31.pin2"]}
+          pcbPath={placementOnly ? undefined : ["R31.pin2"]}
         />
         <trace from="U1.pin37" to="net.MCU_UART_TX" />
         <trace from="U1.pin36" to="net.MCU_UART_RX" />

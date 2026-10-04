@@ -1,6 +1,12 @@
+## Latest placement gate review — A4
+
+**Native PCB placement checks pass, but the full placement gate is BLOCKED before additional routing.** Added a true copper-free inspection mode: `bun run build:placement`. Its native output has zero traces/vias/pours and exactly matches canonical components, connections, pads, holes and keepouts. All five required checks pass;126 native CAD body bounds have zero overlaps. Original four traces and saved routes remain unchanged. Current tests:41 pass/2 retained fabrication-schema failures. Fresh current Circuit JSON is rebuilt from the same source.
+
+Before additional routing: qualify the actual BuyDisplay portrait FPC/pin1/contact fold, the 0.8 mm PCB/PH-header thickness and USB stackup, and case actuators/harness/mounting fit. Battery outer contacts stay unassigned/unrouted as instructed. The431 remaining connection errors are routing work, not a circular prerequisite for starting routing. [Detailed placement review](evidence/a4-placement-gate-2026-10-04/review.md). **NOT FABRICATION READY.** Intended public runtime version `0.0.2-wip-a4-placement-review`; see its receipt before claiming publication complete. Watcher paused; cross-chat messages disabled.
+
 ## A4 publication verified — partial registry outcome
 
-Public [GitHub A4 implementation 1a0b0d0b](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/1a0b0d0b77294438c431a3e4246079e4363f2f50) and anonymous committed Circuit JSON are verified. Public [tscircuit 0.0.2-wip-a4-display-coverage](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a4-display-coverage#files) contains 91 of 92 matching runtime files, including the same fresh built Circuit JSON. The required C262650 connector STEP remains missing after HTTP413 in the official compressed upload and native fallback; publisher exit1, ready_to_build=false. **B-009 publication remains incomplete; NOT FABRICATION READY.** [Exact receipts](evidence/a4-display-coverage-2026-10-04/publication/review.md). These outcome notes change no board input and do not trigger another registry retry.
+Public [GitHub A4 implementation 1a0b0d0b](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/1a0b0d0b77294438c431a3e4246079e4363f2f50) and anonymous committed Circuit JSON are verified. Public [tscircuit 0.0.2-wip-a4-display-coverage](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a4-display-coverage#files) contains 91 of 92 matching runtime files, including the same fresh built Circuit JSON. The required C262650 connector STEP remains missing after HTTP413 in the official compressed upload and native fallback; publisher exit 1, ready_to_build=false. **B-009 publication remains incomplete; NOT FABRICATION READY.** [Exact receipts](evidence/a4-display-coverage-2026-10-04/publication/review.md). These outcome notes change no board input and do not trigger another registry retry.
 
 # Latest A4 — 82.7% physical display coverage trial
 
@@ -80,9 +86,9 @@ Source parent `420d8239ab03d360c0a837a89562ea4a1ffd86ef`; descriptive implementa
 | 7 physical prototype | not started | No physical hardware/test evidence |
 | 8 store release | not started | Public WIP preview only |
 
-Applicable commands: `bun run typecheck`, `bun run format:check`, `bun run test`; native `build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs`; `check netlist`, `check pin_specification`, `check source`, `check schematic-placement`, `check placement`; snapshot compare/update/compare after visual inspection. Five native checks/build exit0; final types and formatting exit0; tests 35 pass/1 existing B-010 failure/319 assertions. Current full schema audit162 failures, not hidden by source-only tests. Snapshot changes were inspected in current PCB and all thirteen sheet images; final compare exits0. Strict schematic/manufacturer qualification remains incomplete despite preview readability review.
+Applicable commands: `bun run typecheck`, `bun run format:check`, `bun run test`; native `build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs`; `check netlist`, `check pin_specification`, `check source`, `check schematic-placement`, `check placement`; snapshot compare/update/compare after visual inspection. Five native checks/build exit 0; final types and formatting exit 0; tests 35 pass/1 existing B-010 failure/319 assertions. Current full schema audit162 failures, not hidden by source-only tests. Snapshot changes were inspected in current PCB and all thirteen sheet images; final compare exits0. Strict schematic/manufacturer qualification remains incomplete despite preview readability review.
 
-Diagnostic exports from this exact JSON: `export dist/index/circuit.json --gerbers --output <absolute diagnostic ZIP>`, `--glb --output <absolute GLB>`; both exit0. Embedded Gerber converter0.0.109. The shorts check on the unrouted JSON exits0 with zero reported shorts and is diagnostic only and cannot complete stage5. Logs and hash receipt are under `evidence/routing-intake-2026-10-04/`. Imported definitions stay untouched. Current standalone mounting holes add two null-component schema failures; reported to the authorized correction chat. Current charger paste absence was also reported there.
+Diagnostic exports from this exact JSON: `export dist/index/circuit.json --gerbers --output <absolute diagnostic ZIP>`, `--glb --output <absolute GLB>`; both exit 0. Embedded Gerber converter0.0.109. The shorts check on the unrouted JSON exits0 with zero reported shorts and is diagnostic only and cannot complete stage5. Logs and hash receipt are under `evidence/routing-intake-2026-10-04/`. Imported definitions stay untouched. Current standalone mounting holes add two null-component schema failures; reported to the authorized correction chat. Current charger paste absence was also reported there.
 
 ## Public visibility and committed native build — 2026-10-04
 
@@ -122,7 +128,7 @@ Imported definitions and electrical connectivity are unchanged.
 Evidence: `evidence/connector-orientation-review-2026-10-04/`, native before/after
 JSON/GLB, inspected full-board/close-up 3D and PCB top, regenerated ratsnest/13
 A4 sheet images, geometry/connectivity comparison and command logs. Native build
-and all five pre-routing checks exit0. Placement zero errors/three warnings:
+and all five pre-routing checks exit 0. Placement zero errors/three warnings:
 J3/J4 inferred directions disagree with supplied CAD; J7 is an internal connector.
 Warnings remain visible. No imported insertion metadata was edited. Format/types
 pass; canonical tests 30 pass/one existing B-010 failure/272 assertions. Native
@@ -150,7 +156,7 @@ This outcome record changes no runtime input and needs no additional publication
 
 Board implementation/source commit **81e745660507007623d7c0ccc5076fce237aa4b9**
 was pushed to `origin/main` and its exact remote SHA verified. The normal native
-publisher completed with actual exit0, **75 successes/zero failures**, creating private
+publisher completed with actual exit 0, **75 successes/zero failures**, creating private
 release **0.0.2-wip-a1-board-runtime**. Exact-version API listing contains precisely
 the reviewed 75 files. All 75 remote contents match the local manifest byte-for-byte,
 including `dist/index/circuit.json`; zero missing, extra, mismatched or unverified files.
@@ -200,7 +206,7 @@ Independent revalidation and fresh native JSON are recorded in the `cdn-*` recei
 All five native pre-route diagnostics, independent TypeScript/build, root formatting/
 TypeScript and native snapshot passed. Tests remain 30 passes/one existing B-010 failure.
 One tool session interrupted the final build before producing its artifact; the build
-was restarted after confirming no competing process and its actual exit0 was preserved.
+was restarted after confirming no competing process and its actual exit 0 was preserved.
 The final JSON element counts, PCB geometry, courtyards, pads, schematic data and
 connectivity match the reviewed A1 artifact. Its only differences are 104 instances'
 OBJ/STEP URL fields and the native filesystem checksum. The 54 remote models have
@@ -236,7 +242,7 @@ filesystem checksum. All physical geometry, connectivity and element counts matc
 The previously inspected A1 board/schematic views remain applicable. No checks or native
 outputs were patched, and this packaging step does not change fabrication readiness.
 
-Full previous publication `0.0.2-wip-a1-integrated-placement-preview` ended exit1:
+Full previous publication `0.0.2-wip-a1-integrated-placement-preview` ended exit 1:
 1232 successes/118 reported failures. Exact readback found 108 of those failures present
 byte-identically and ten missing; package private=true/ready_to_build=false. That release
 remains incomplete. Its receipt is retained in `evidence/integrated-preview-publication-2026-10-04/`.
@@ -820,7 +826,7 @@ source-text finding is not a DRC result or imported-geometry waiver.
 
 Independent partial LCD logic application implemented with19 exact imported
 top-side PCB components, native A4,45×32 diagnostic canvas, routing disabled.
-Current build and five required checks exit0. Rotated actual J7 to face the
+Current build and five required checks exit 0. Rotated actual J7 to face the
 right edge; moved C43 out of its courtyard and grouped schematic VLCD bypasses
 to resolve the actionable warnings. Final schematic-placement output empty;
 placement0errors/0warnings. Current PCB and schematic PNG/SVG inspected.
@@ -828,7 +834,7 @@ Native snapshot exits0 and matches; generated snapshots reviewed. Five imported
 metadata/convention warnings remain visible, no component edits/suppressions.
 Pin-map tests checked actual TI LDO/buffer physical pins and LCD/FPC contact
 order, LED polarity, unused inputs and open outputs.12tests pass,1failsB-010,
-75 assertions; TypeScript and formatting exit0. Current JSON has19top parts,
+75 assertions; TypeScript and formatting exit 0. Current JSON has19top parts,
 zero traces/vias/errors but21schema-invalid elements. This is diagnostic
 evidence, not a full-board stage3–6 pass. DISPLAY.md records voltage/leakage
 estimates, required sequencing and unfinished backlight/IDD/cable/mechanics.
@@ -837,7 +843,7 @@ Core source proposal, isolated from board dependencies, base18e1d11…(0.0.2061)
 was reproduced/tested with upstream CI Bun1.4.0 and declared dependencies.
 Unchanged baseline fails; correction passes strict schema/physical-pad
 regression205assertions; related suite29pass/0fail/1existing skip,332assertions.
-Core TypeScript and ESM/declaration build exit0. Five existing changed PCB
+Core TypeScript and ESM/declaration build exit 0. Five existing changed PCB
 snapshots and new PCB/A4 snapshots visually reviewed. Proposal saved and sent
 to fix chat; full core suite unrun and no upstream release/push performed.
 Board remains pinned official0.0.2058, strict B-010 failure intact.
@@ -866,7 +872,7 @@ Protected battery sourcing exception still awaits the human reply.
 
 Independent17part top-side46×32mm amplifier application added as an unrouted
 native A4 diagnostic; complete-board source guard remains. Native build and all
-five required checks exit0. C51 rotated180° to remove actionable placement
+five required checks exit 0. C51 rotated180° to remove actionable placement
 advisory; native PCB/A4 outputs reviewed.53rectangular pads/53native paste
 shapes,zeroPCB traces/vias/errors.14tests pass/1strict B-010 test fails,
 107assertions; TypeScript/format pass.19native schema-invalid elements are
@@ -915,7 +921,7 @@ The C6617702 hold candidate is unmodified and remains unqualified: native cutout
 Independent native A4/top-side regulator and flyback review added with10 actual
 JLC imports. `HAPTICS.md` records manufacturer pin, voltage, default-off and
 remaining qualification requirements. Native build and all five required checks
-exit0. Network-enabled build resolves sandbox supplier lookup failures; retained
+exit 0. Network-enabled build resolves sandbox supplier lookup failures; retained
 import metadata/reference advisories remain B-007/B-008.24 native pads/24 paste
 shapes;zero PCB traces/vias/errors. PCB/A4 images actually inspected. Two new
 manufacturer connection/physical-pad/polarity tests pass; canonical suite19pass,
@@ -1045,7 +1051,7 @@ Official core0.0.2064 changes only capacity-autorouter dependency and version, n
 
 Final preceding battery milestone publication: native session48547 exited1,834reported successes/62failures for actual private0.0.2-wip-a0-battery-ready-review. Exact readback verifies55reported timeout files byte-for-byte; six previously known HTTP413 files and one new timeout file imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.tsx are currently404. Seven absent, no unverified files; private=true,ready_to_build=false. Evidence/readback/source hashes in the fabrication-rule review; material update sent to fix chat. Source was held unchanged throughout publisher run. B-009 persists; no full-publication claim or forced-ready/upload-omission workaround.
 
-Current milestone checks: formatting and TypeScript exit0; canonical22pass/one existing strict-native-JSON B-010fail/213assertions/8files. Independent official BOM converter characterization exits0 and reproduces B-015; all raw native failures remain disclosed. No routing or full-board gate enabled. Current milestone remote commit/publication follows standing authorization and remains pending until verified.
+Current milestone checks: formatting and TypeScript exit 0; canonical22pass/one existing strict-native-JSON B-010fail/213assertions/8files. Independent official BOM converter characterization exits0 and reproduces B-015; all raw native failures remain disclosed. No routing or full-board gate enabled. Current milestone remote commit/publication follows standing authorization and remains pending until verified.
 
 Git whitespace inspection reports22,063warnings:22,054in the untouched supplier STEP (native line endings),twoin unchanged official BOM CSV,twoSVG lines,fournative calculator AX lines and one netlist-log EOF. Original bytes/hashes are preserved; summary and original diagnostic hash/path saved in whitespace-review.json. These are disclosed non-geometric formatting artifacts, not accepted DRC violations or a fabricated clean whitespace result.
 
@@ -1055,7 +1061,7 @@ Base fa90b5420f8e567270697c68132f311444a42424 was pushed and exact GitHub main v
 
 Independent src/audio/hold-readback-review.tsx uses unchanged genuine C7836 SN74LVC1G17DBVR input on hardware HOLD, a distinct buffered output through1kohm C21190 to MCU_HOLD_READ,10kohm C98220 ground bias and100nF C45000 decoupling. Its pin1NC stays open. The Schmitt input accommodates slow button transitions; no GPIO is directly wired to the microphone-enable net. This is an architecture/connectivity review, not full dynamic privacy qualification. Actual GPIO/boot pulls, low-voltage input leakage, contact bounce, capacitor history, partial-supply behavior, local decoupling loops and microphone off deadline remain open.
 
-Native independent A4 build/allfive diagnostics/PDF/snapshots exit0; fourtop components,11SMT/11paste/11PCBports, zeroPCBtraces/vias/emitted errors. PCB/A4/snapshots/TI pin diagram and UNI-ROYAL package/land drawing visually reviewed. Strict unchanged nativeJSON fails sixelements B-010. Canonical formatting/TypeScript exit0; tests23pass/one existing B-010fail/228assertions. The additional boundary test verifies source pin identity, distinct input/output/readback nets, resistor values and openNC; it does not waive the full JSON gate or establish physical privacy. Original low-stock source/JSON/checks/snapshots were preserved before the genuine resistor change. Native group pcbStyle provides1mm reference labels without an imported-definition edit. Exact hashes and conditional electrical limits are in the dated qualification/source manifest.
+Native independent A4 build/allfive diagnostics/PDF/snapshots exit 0; fourtop components,11SMT/11paste/11PCBports, zeroPCBtraces/vias/emitted errors. PCB/A4/snapshots/TI pin diagram and UNI-ROYAL package/land drawing visually reviewed. Strict unchanged nativeJSON fails sixelements B-010. Canonical formatting/TypeScript exit 0; tests23pass/one existing B-010fail/228assertions. The additional boundary test verifies source pin identity, distinct input/output/readback nets, resistor values and openNC; it does not waive the full JSON gate or establish physical privacy. Original low-stock source/JSON/checks/snapshots were preserved before the genuine resistor change. Native group pcbStyle provides1mm reference labels without an imported-definition edit. Exact hashes and conditional electrical limits are in the dated qualification/source manifest.
 
 Current native searches report C22548 stock5, C98220 stock22, C7836 stock34179, C45000 stock3848 and exact higher-stock C21190/0603WAF1001T5E stock8,013,731. Supported unchanged C21190 import is used in this candidate; other candidate sheets retain their prior exact parts and need final whole-BOM procurement review. C25804/0603WAF1002T5E was genuinely imported but remains unselected because both catalogue queries are empty. The fix chat confirms positive-stock filtering and independent EasyEDA libraries: this alone is not a bug or assembly-stock proof. Observation/report/response saved without creating a false new defect. Resistor temperature and initial-tolerance allocation2.1%, local loading and full supplier-land acceptance remain conditional; aging/final temperature policy pending.
 
@@ -1077,7 +1083,7 @@ Human instruction: recheck actual assembly/routing blockers, continue independen
 
 B-008 is resolved for C105188, C94934, C20917 and C15127: regenerated complete, unedited definitions using documented official `easyeda0.0.370 convert -i <C-number> -o <file>`; native core0.0.2070 owns each label on the correct schematic component. The four pin-label and footprint blocks are byte-identical to their preserved originals. Official generated CAD URLs replace local asset aliases; previous local assets remain preserved. Native tsci import on pinned2235 still returned the old definition; its converter uses a CDN browser endpoint, so the documented converter CLI was used instead. No imported definition or runtime was manually patched. Initial core installation exposed a missing props export; official props0.0.682 and circuit-json0.0.513 were aligned and installed with Bun's supported force refresh.
 
-All four fixture builds and all20 required diagnostic checks exit0; all remain unrouted with zero traces/vias. Three native A4 PDF exports and snapshots exit0; corrected PCB/schematic images and rendered A4 pages were inspected. Correct references U7/D2/Q1/Q2 have native component ownership; missing-reference warnings are absent. B-003 has four linked ground pads/ports. B-005 persists: microphone has nine copper shapes but only five paste records; four polygon ground pads lack paste. USB polygon paste remains unqualified. Strict native schema still rejects comparator26/USB18/amplifier19 elements (B-010); the isolated microphone has zero strict schema failures. Canonical tests26pass/one existing B-010fail/235assertions/10files; formatting and TypeScript exit0. A saved upstream CLI excerpt was renamed `.ts.txt` preserving its bytes, because it is documentary source with absent upstream-relative files; no actual board code was excluded from TypeScript checking.
+All four fixture builds and all20 required diagnostic checks exit 0; all remain unrouted with zero traces/vias. Three native A4 PDF exports and snapshots exit 0; corrected PCB/schematic images and rendered A4 pages were inspected. Correct references U7/D2/Q1/Q2 have native component ownership; missing-reference warnings are absent. B-003 has four linked ground pads/ports. B-005 persists: microphone has nine copper shapes but only five paste records; four polygon ground pads lack paste. USB polygon paste remains unqualified. Strict native schema still rejects comparator26/USB18/amplifier19 elements (B-010); the isolated microphone has zero strict schema failures. Canonical tests26pass/one existing B-010fail/235assertions/10files; formatting and TypeScript exit 0. A saved upstream CLI excerpt was renamed `.ts.txt` preserving its bytes, because it is documentary source with absent upstream-relative files; no actual board code was excluded from TypeScript checking.
 
 Alternatives: C20613566, C49246973 and C7430168 speaker imports each fail with no EasyEDA library. Broad `speaker` search again returns unrelated components, retained but not selected. C41348533/LEADER LD-SM-430 imports and native builds successfully. Manufacturer drawing inspected: SMT2.7V motor, operating2.3–3.2V, 11mm maximum length, reference PCB lands. Its three native lands are polygons with zero paste records, so it does not avoid B-005. No CAD model is provided; electrical role of third mounting land, body bounds/courtyard, mechanical fit, reflow and full driver application remain unqualified. It stays a candidate; no blocked part has been silently substituted.
 

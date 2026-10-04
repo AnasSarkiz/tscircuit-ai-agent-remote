@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "A4 provisional ER-TFT026-1 82.7% physical coverage trial and partial native copper; panel availability, FPC fit, thin stackup and battery polarity pending; not fabrication ready",
+    "A4 placement-only inspection mode and preserved partial native copper; ER-TFT026-1 coverage82.7%; display FPC, thin stackup, actuator fit and battery polarity pending; not fabrication ready",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,
