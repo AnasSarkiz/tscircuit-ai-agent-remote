@@ -1,0 +1,590 @@
+{
+  "source_commit": "cec97000fe0cf2f799b1e84a455a4479f4ff93ed",
+  "canonical_sha256": "f4319f271856f07477340c3342ce9a576236be438913be4aca5bd9786487d1c5",
+  "components": 135,
+  "purchased": 125,
+  "native_features": 10,
+  "unique_jlc_parts": 44,
+  "missing_identity": [],
+  "missing_mpn": [],
+  "duplicate_references": [],
+  "bottom_population": [],
+  "connectors": [
+    {
+      "reference": "J1",
+      "mpn": "TYPE-C-31-M-12",
+      "jlc": [
+        "C165948"
+      ],
+      "native_feature": false,
+      "layer": "top",
+      "rotation": 0,
+      "center": {
+        "x": 0,
+        "y": -28.425043549999998
+      },
+      "smt_pad_count": 12,
+      "pads_without_native_paste": [
+        {
+          "id": "pcb_smtpad_57",
+          "pins": [
+            "pin13"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_58",
+          "pins": [
+            "pin14"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_59",
+          "pins": [
+            "pin15"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_60",
+          "pins": [
+            "pin16"
+          ],
+          "shape": "polygon",
+          "masked": false
+        }
+      ]
+    },
+    {
+      "reference": "J6",
+      "mpn": "SM06B-SRSS-TB(LF)(SN)",
+      "jlc": [
+        "C160405"
+      ],
+      "native_feature": false,
+      "layer": "top",
+      "rotation": 0,
+      "center": {
+        "x": -17.4,
+        "y": -12.052499999999998
+      },
+      "smt_pad_count": 8,
+      "pads_without_native_paste": []
+    },
+    {
+      "reference": "J3",
+      "mpn": "S3B-PH-K-S(LF)(SN)",
+      "jlc": [
+        "C157929"
+      ],
+      "native_feature": false,
+      "layer": "top",
+      "rotation": 0,
+      "center": {
+        "x": 22,
+        "y": 25
+      },
+      "smt_pad_count": 0,
+      "pads_without_native_paste": []
+    },
+    {
+      "reference": "J7",
+      "mpn": "AFC07-S50ECA-00",
+      "jlc": [
+        "C262650"
+      ],
+      "native_feature": false,
+      "layer": "top",
+      "rotation": 90,
+      "center": {
+        "x": 8.199999999999998,
+        "y": -12.625
+      },
+      "smt_pad_count": 52,
+      "pads_without_native_paste": []
+    },
+    {
+      "reference": "J4",
+      "mpn": "S2B-PH-K-S(LF)(SN)",
+      "jlc": [
+        "C173752"
+      ],
+      "native_feature": false,
+      "layer": "top",
+      "rotation": 180,
+      "center": {
+        "x": 22,
+        "y": 8
+      },
+      "smt_pad_count": 0,
+      "pads_without_native_paste": []
+    }
+  ],
+  "native_paste_missing_by_component": [
+    {
+      "reference": "J1",
+      "mpn": "TYPE-C-31-M-12",
+      "jlc": [
+        "C165948"
+      ],
+      "pads_without_native_paste": [
+        {
+          "id": "pcb_smtpad_57",
+          "pins": [
+            "pin13"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_58",
+          "pins": [
+            "pin14"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_59",
+          "pins": [
+            "pin15"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_60",
+          "pins": [
+            "pin16"
+          ],
+          "shape": "polygon",
+          "masked": false
+        }
+      ]
+    },
+    {
+      "reference": "U16",
+      "mpn": "BQ24074RGTR",
+      "jlc": [
+        "C54313"
+      ],
+      "pads_without_native_paste": [
+        {
+          "id": "pcb_smtpad_97",
+          "pins": [
+            "pin1"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_98",
+          "pins": [
+            "pin2"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_99",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_100",
+          "pins": [
+            "pin4"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_101",
+          "pins": [
+            "pin5"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_102",
+          "pins": [
+            "pin6"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_103",
+          "pins": [
+            "pin7"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_104",
+          "pins": [
+            "pin8"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_105",
+          "pins": [
+            "pin9"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_106",
+          "pins": [
+            "pin10"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_107",
+          "pins": [
+            "pin11"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_108",
+          "pins": [
+            "pin12"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_109",
+          "pins": [
+            "pin13"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_110",
+          "pins": [
+            "pin14"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_111",
+          "pins": [
+            "pin15"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_112",
+          "pins": [
+            "pin16"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_113",
+          "pins": [
+            "pin17"
+          ],
+          "shape": "polygon",
+          "masked": false
+        }
+      ]
+    },
+    {
+      "reference": "U4",
+      "mpn": "ICS-43434",
+      "jlc": [
+        "C5656610"
+      ],
+      "pads_without_native_paste": [
+        {
+          "id": "pcb_smtpad_399",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_400",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_401",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_402",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        }
+      ]
+    },
+    {
+      "reference": "U5",
+      "mpn": "ICS-43434",
+      "jlc": [
+        "C5656610"
+      ],
+      "pads_without_native_paste": [
+        {
+          "id": "pcb_smtpad_408",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_409",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_410",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_411",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "polygon",
+          "masked": false
+        }
+      ]
+    },
+    {
+      "reference": "U27",
+      "mpn": "TPS60230RGTR",
+      "jlc": [
+        "C1848364"
+      ],
+      "pads_without_native_paste": [
+        {
+          "id": "pcb_smtpad_448",
+          "pins": [
+            "pin1"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_449",
+          "pins": [
+            "pin2"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_450",
+          "pins": [
+            "pin3"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_451",
+          "pins": [
+            "pin4"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_452",
+          "pins": [
+            "pin5"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_453",
+          "pins": [
+            "pin6"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_454",
+          "pins": [
+            "pin7"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_455",
+          "pins": [
+            "pin8"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_456",
+          "pins": [
+            "pin9"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_457",
+          "pins": [
+            "pin10"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_458",
+          "pins": [
+            "pin11"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_459",
+          "pins": [
+            "pin12"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_460",
+          "pins": [
+            "pin13"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_461",
+          "pins": [
+            "pin14"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_462",
+          "pins": [
+            "pin15"
+          ],
+          "shape": "pill",
+          "masked": false
+        },
+        {
+          "id": "pcb_smtpad_463",
+          "pins": [
+            "pin16"
+          ],
+          "shape": "pill",
+          "masked": false
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "source_group": 16,
+    "schematic_sheet": 13,
+    "source_net": 76,
+    "source_port": 496,
+    "source_component": 135,
+    "source_board": 1,
+    "source_refdes_convention_warning": 9,
+    "source_component_internal_connection": 4,
+    "source_trace": 430,
+    "source_unnamed_trace_warning": 5,
+    "source_bus": 2,
+    "schematic_component": 135,
+    "schematic_text": 212,
+    "schematic_group": 16,
+    "schematic_port": 479,
+    "schematic_line": 17,
+    "schematic_symbol": 5,
+    "schematic_path": 65,
+    "schematic_circle": 4,
+    "schematic_rect": 1,
+    "schematic_trace": 326,
+    "schematic_net_label": 151,
+    "pcb_component": 135,
+    "pcb_group": 15,
+    "pcb_board": 1,
+    "pcb_smtpad": 487,
+    "pcb_solder_paste": 456,
+    "pcb_silkscreen_path": 554,
+    "pcb_silkscreen_text": 137,
+    "pcb_fabrication_note_path": 5,
+    "pcb_courtyard_outline": 107,
+    "pcb_hole": 8,
+    "pcb_plated_hole": 9,
+    "pcb_courtyard_rect": 18,
+    "pcb_silkscreen_circle": 9,
+    "pcb_keepout": 3,
+    "pcb_note_text": 10,
+    "pcb_note_rect": 2,
+    "pcb_port": 496,
+    "pcb_trace": 11,
+    "pcb_connector_not_in_accessible_orientation_warning": 2,
+    "cad_component": 135,
+    "pcb_component_missing_courtyard_warning": 10,
+    "pcb_debug_object": 4,
+    "source_missing_manufacturer_part_number_warning": 10,
+    "pcb_via": 2,
+    "pcb_copper_pour": 1,
+    "pcb_port_not_connected_error": 413,
+    "pcb_trace_missing_error": 5,
+    "source_component_pins_underspecified_warning": 9,
+    "source_no_power_pin_defined_warning": 15,
+    "source_no_ground_pin_defined_warning": 9,
+    "source_project_metadata": 1
+  },
+  "paste_missing_pad_count": 45
+}

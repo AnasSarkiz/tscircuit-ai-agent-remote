@@ -1,0 +1,19 @@
+{
+  "same_source_and_geometry": {
+    "source_component": true,
+    "source_port": true,
+    "source_net": true,
+    "source_trace": true,
+    "pcb_component": true,
+    "pcb_smtpad": true,
+    "pcb_plated_hole": true,
+    "pcb_hole": true,
+    "pcb_keepout": true,
+    "pcb_port": true
+  },
+  "placement_copper_counts": {
+    "pcb_trace": 0,
+    "pcb_via": 0,
+    "pcb_copper_pour": 0
+  }
+}

@@ -1,3 +1,9 @@
+## Current layout/BOM audit — 2026-10-04
+
+Preliminary native placement/connectivity/shorts checks pass; final layout and assembly BOM remain **blocked**. Current 135 components = 125 purchased parts + 10 native pads. Fresh supplier audit:43/44 exact identities match; C22548 stock 5 versus 7 required, C105588 (six 100 Ω parts) has no in-stock result. Current native paste is missing on45 SMT pads: U16 (17), U27 (16), U4/U5 (8), J1 (4). Official BOM probe125 rows / 31 blank Comment fields / 125 supplier-code footprints. Fresh current 3D and 13 A4 sheets reviewed; display physical mating, pack outer polarity,0.8 mm stackup/case fit and full routing remain open. Tests42 pass / 2 retained failures. In-stock resistor alternatives were found but not substituted. [Full audit](evidence/layout-bom-audit-2026-10-04/review.md) · [Current inventory](evidence/layout-bom-audit-2026-10-04/inventory.md). Source/copper/imports unchanged; no new package retry, watcher resume or cross-chat message. **NOT FABRICATION READY.**
+
+---
+
 ## A5 routing and connector checkpoint — 2026-10-04
 
 J8 removed; native motor pads preserve connections. Required native placement/source checks and partial-copper shorts pass. B-009/publication and B-010/schema remain separate from physical copper review. Remaining routing:413unconnected-port/5missing-trace errors. Q9/C20917 native route export reports “PCB port selector is not unique: .Q9 > port.pin1”; dependent gate routing is left unsaved/unrouted, with full raw events in evidence/a5-independent-routing-2026-10-04/native-controls. Charger ISET/combined phases exhausted capacity-autorouter0.0.953; failed sources/events/output preserved, proposed R1 move reverted after native overlaps. GND via aperture gap corrected in source with0.21clearance; measured final0.20730mm≥0.2mm. No new upstream chat messages authorized.
