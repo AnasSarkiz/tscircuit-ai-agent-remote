@@ -1,0 +1,428 @@
+{
+  "before_count": 4807,
+  "after_count": 4808,
+  "source_elements_identical": false,
+  "schematic_elements_identical": true,
+  "physical_components": 130,
+  "non_top_components": [],
+  "pcb_traces": 0,
+  "pcb_vias": 0,
+  "native_errors": [],
+  "connector_warnings": [
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_0",
+      "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
+      "message": "component is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection=\"from_above\"> for a connector accessed from above the PCB (+Z).",
+      "pcb_component_id": "pcb_component_17",
+      "source_component_id": "source_component_17",
+      "pcb_board_id": "pcb_board_0",
+      "facing_direction": "x-",
+      "recommended_facing_direction": "x+",
+      "subcircuit_id": "subcircuit_source_group_13"
+    },
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_1",
+      "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
+      "message": "component is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection=\"from_above\"> for a connector accessed from above the PCB (+Z).",
+      "pcb_component_id": "pcb_component_34",
+      "source_component_id": "source_component_34",
+      "pcb_board_id": "pcb_board_0",
+      "facing_direction": "y+",
+      "recommended_facing_direction": "x+",
+      "subcircuit_id": "subcircuit_source_group_13"
+    },
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "pcb_connector_not_in_accessible_orientation_warning_id": "pcb_connector_not_in_accessible_orientation_warning_2",
+      "warning_type": "pcb_connector_not_in_accessible_orientation_warning",
+      "message": "component is inferred to face x+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection=\"from_above\"> for a connector accessed from above the PCB (+Z).",
+      "pcb_component_id": "pcb_component_54",
+      "source_component_id": "source_component_54",
+      "pcb_board_id": "pcb_board_0",
+      "facing_direction": "x+",
+      "recommended_facing_direction": "x-",
+      "subcircuit_id": "subcircuit_source_group_13"
+    }
+  ],
+  "circuit_sha256": "8a8197574052d85fdbaf36ba09d3c426f34414d2aeb3d9978f0af02c6c58c14a",
+  "id_comparison": [
+    {
+      "type": "cad_component",
+      "id": "cad_component_117",
+      "changed_fields": [
+        "rotation"
+      ]
+    },
+    {
+      "type": "cad_component",
+      "id": "cad_component_54",
+      "changed_fields": [
+        "rotation"
+      ]
+    },
+    {
+      "type": "pcb_component",
+      "id": "pcb_component_117",
+      "changed_fields": [
+        "rotation",
+        "width"
+      ]
+    },
+    {
+      "type": "pcb_component",
+      "id": "pcb_component_54",
+      "changed_fields": [
+        "rotation",
+        "width"
+      ]
+    },
+    {
+      "type": "pcb_connector_not_in_accessible_orientation_warning",
+      "id": "pcb_connector_not_in_accessible_orientation_warning_2",
+      "changed_fields": [
+        "facing_direction",
+        "message",
+        "pcb_board_id",
+        "pcb_component_id",
+        "pcb_connector_not_in_accessible_orientation_warning_id",
+        "recommended_facing_direction",
+        "source_component_id",
+        "subcircuit_id",
+        "type",
+        "warning_type"
+      ]
+    },
+    {
+      "type": "pcb_courtyard_outline",
+      "id": "pcb_courtyard_outline_45",
+      "changed_fields": [
+        "outline"
+      ]
+    },
+    {
+      "type": "pcb_courtyard_outline",
+      "id": "pcb_courtyard_outline_99",
+      "changed_fields": [
+        "outline"
+      ]
+    },
+    {
+      "type": "pcb_group",
+      "id": "pcb_group_10",
+      "changed_fields": [
+        "center"
+      ]
+    },
+    {
+      "type": "pcb_group",
+      "id": "pcb_group_4",
+      "changed_fields": [
+        "center",
+        "width"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_251",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_252",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_253",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_254",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_419",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_420",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_421",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_port",
+      "id": "pcb_port_422",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_232",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_233",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_234",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_235",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_236",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_237",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_497",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_498",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_499",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_500",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_501",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_path",
+      "id": "pcb_silkscreen_path_502",
+      "changed_fields": [
+        "route"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "id": "pcb_silkscreen_text_119",
+      "changed_fields": [
+        "anchor_position",
+        "ccw_rotation"
+      ]
+    },
+    {
+      "type": "pcb_silkscreen_text",
+      "id": "pcb_silkscreen_text_56",
+      "changed_fields": [
+        "anchor_position",
+        "ccw_rotation"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_247",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_248",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_249",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_250",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_415",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_416",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_417",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_smtpad",
+      "id": "pcb_smtpad_418",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_234",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_235",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_236",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_237",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_394",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_395",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_396",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "pcb_solder_paste",
+      "id": "pcb_solder_paste_397",
+      "changed_fields": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "type": "source_project_metadata",
+      "id": null,
+      "changed_fields": [
+        "source_filesystem_md5_hash"
+      ]
+    }
+  ],
+  "source_connectivity_identical": true,
+  "source_metadata_difference": "source_filesystem_md5_hash only"
+}

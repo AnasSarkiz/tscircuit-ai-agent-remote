@@ -1,5 +1,31 @@
 # Validation — A1 integrated placement preview (work in progress)
 
+## Connector orientation implementation — 2026-10-04
+
+Parent source commit `3d6649aea36a1beac5901591659110dae014415f`. J4 speaker
+changed +90° → −90°, J8 motor changed −90° → +90°. Actual native GLB views
+confirm their cavities now face left/right board edges. USB-C/J3 battery/J6
+service retain outward CAD openings. J7 stays internal for the raised display;
+exact flex/latch/vertical access and all enclosure-side plug clearances are open.
+Imported definitions and electrical connectivity are unchanged.
+
+Evidence: `evidence/connector-orientation-review-2026-10-04/`, native before/after
+JSON/GLB, inspected full-board/close-up 3D and PCB top, regenerated ratsnest/13
+A4 sheet images, geometry/connectivity comparison and command logs. Native build
+and all five pre-routing checks exit0. Placement zero errors/three warnings:
+J3/J4 inferred directions disagree with supplied CAD; J7 is an internal connector.
+Warnings remain visible. No imported insertion metadata was edited. Format/types
+pass; canonical tests 30 pass/one existing B-010 failure/272 assertions. Native
+PCB snapshot updated only after inspection; schematic snapshot unchanged.
+130 physical top-side components, zero traces/vias/native errors remain.
+
+This is a placement-preview step, not completed placement or fabrication approval.
+All existing stage gates, B-005/B-010/B-015 and real mechanical/electrical
+qualification remain open. Routing disabled; background watcher paused. The
+same implementation is being published as a minimal board-only private release
+`0.0.2-wip-a1-connectors-outward`, including a fresh native `dist/index/circuit.json`.
+Remote success must be verified before this publication is called complete.
+
 ## Runtime-only package step — 2026-10-04
 
 ### Verified publication outcome

@@ -1,5 +1,14 @@
 # AI Remote A1 — complete unrouted placement preview
 
+Connector review, 2026-10-04: the speaker J4 and motor J8 were rotated 180° so
+their actual CAD mating cavities face the left/right board edges. USB-C, battery
+and service openings already face their intended edges. The display FPC stays
+internal for the raised screen; exact ribbon/latch/Z clearance remains provisional.
+Current full-board and connector close-up views are in
+`evidence/connector-orientation-review-2026-10-04/after/`. Native placement has
+zero errors and three preserved orientation warnings, detailed in that review.
+No routing was enabled.
+
 The runtime-only registry package is prepared with `bun run publish:prepare`.
 From `.publish/board`, install the pinned dependencies with `bun install --ignore-scripts`
 and build with `bun run build`. Remove that folder's generated `node_modules` before

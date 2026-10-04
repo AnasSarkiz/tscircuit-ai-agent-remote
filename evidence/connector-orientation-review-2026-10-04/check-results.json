@@ -1,0 +1,52 @@
+[
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  }
+]

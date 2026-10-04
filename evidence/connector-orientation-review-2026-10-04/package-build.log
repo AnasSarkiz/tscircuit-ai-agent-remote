@@ -1,0 +1,80 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is inferred to face x- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face x+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+TP7 has no courtyard
+TP8 has no courtyard
+<testpoint#1304(.test-access-group>.TP1) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1310(.test-access-group>.TP2) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1316(.test-access-group>.TP3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1322(.test-access-group>.TP4) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1328(.test-access-group>.TP5) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1334(.test-access-group>.TP6) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1340(.test-access-group>.TP7) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1346(.test-access-group>.TP8) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+All pins on J1 are underspecified (no pinAttributes set)
+All pins on J6 are underspecified (no pinAttributes set)
+All pins on J3 are underspecified (no pinAttributes set)
+All pins on J7 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on J4 are underspecified (no pinAttributes set)
+All pins on Q9 are underspecified (no pinAttributes set)
+All pins on SW5 are underspecified (no pinAttributes set)
+All pins on J8 are underspecified (no pinAttributes set)
+All pins on Q10 are underspecified (no pinAttributes set)
+U1 has no pin with requires_power=true
+J1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+J6 has no pin with requires_power=true
+U16 has no pin with requires_power=true
+J3 has no pin with requires_power=true
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+J4 has no pin with requires_power=true
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+U23 has no pin with requires_power=true
+SW5 has no pin with requires_power=true
+J8 has no pin with requires_power=true
+Q10 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+J6 has no pin with requires_ground=true
+J3 has no pin with requires_ground=true
+J7 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+J4 has no pin with requires_ground=true
+Q9 has no pin with requires_ground=true
+SW5 has no pin with requires_ground=true
+J8 has no pin with requires_ground=true
+Q10 has no pin with requires_ground=true
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

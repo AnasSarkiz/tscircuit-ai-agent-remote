@@ -1,0 +1,13 @@
+{
+  "pcb": {
+    "changed": true,
+    "sha256": "474ff929b850741cbfee327be9f77c01ff2ec58a1532dd9a97e77604d75d52b1"
+  },
+  "schematic": {
+    "changed": false,
+    "sha256": "a6786fa7eac6561d09293b7d5fd957205e8d8c079d2aa5e3b6e7475dcee9f7fc"
+  },
+  "review": "Native geometry comparison changes only J4/J8 and their groups, pads, paste and labels plus one warning and source filesystem metadata. Whole-board and close-up 3D views and PCB top inspected before accepting update. Schematic SVG unchanged.",
+  "initial_snapshot_exit_code": 1,
+  "update_exit_code": 0
+}
