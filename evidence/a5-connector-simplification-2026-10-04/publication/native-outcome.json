@@ -1,0 +1,17 @@
+{
+  "log_path": "/private/tmp/ai-remote-a5-motor-pads-publication.log",
+  "log_bytes": 7705724,
+  "log_sha256": "d2aa67ba806645bac461f9dc8375852a8e0a0c2600e684357b9a276aba8a467f",
+  "native_publisher_exit": 1,
+  "reported_successes": 94,
+  "reported_failures": 1,
+  "safe_status": [
+    "Archive upload failed, falling back to file-by-file upload: Error: FAIL [413]: POST /package_files/upload_archive",
+    "\ud83d\udce6 imports/AFC07_S50ECA_00/AFC07_S50ECA_00.obj",
+    "  imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step - failed",
+    "\u2b06\ufe0e imports/AFC07_S50ECA_00/AFC07_S50ECA_00.tsx",
+    "    - imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+    "      Error: FAIL [413]: POST /package_files/create",
+    "Publish completed with 94 files uploaded and 1 failed upload(s)"
+  ]
+}
