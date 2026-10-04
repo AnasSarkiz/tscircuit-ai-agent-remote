@@ -1,0 +1,53 @@
+{
+  "scope": "Newly generated independent signal traces only, conservative circumscribed pad/drill/keepout bounds; all native original records retained. Not whole-board DRC or thermal approval.",
+  "trace_count": 6,
+  "width_mm": 0.2,
+  "layers": [
+    "top"
+  ],
+  "vias": 0,
+  "minima": {
+    "different_net_pad": {
+      "clearance_mm": 0.2053311323566321,
+      "ids": [
+        "saved_phase_null_1_0",
+        "pcb_smtpad_134"
+      ]
+    },
+    "different_net_trace": {
+      "clearance_mm": 0.2998719999999999,
+      "ids": [
+        "saved_phase_null_1_0",
+        "saved_phase_null_1_2"
+      ]
+    },
+    "ordinary_drill": {
+      "clearance_mm": 0.3383372729725169,
+      "ids": [
+        "source_net_65_0",
+        "pcb_hole_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 4.717559858452503,
+      "ids": [
+        "source_net_65_0",
+        "pcb_keepout_1"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 4.059880065819415,
+      "ids": [
+        "source_net_65_0"
+      ]
+    }
+  },
+  "requirements_mm": {
+    "different_net_pad": 0.2,
+    "different_net_trace": 0.2,
+    "ordinary_drill": 0.25,
+    "keepout": 0.0,
+    "board_edge": 0.25
+  },
+  "violations": []
+}

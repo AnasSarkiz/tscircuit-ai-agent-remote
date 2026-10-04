@@ -1,0 +1,48 @@
+{
+  "source_parent": "bff3a87c974d4684f3fb159b0958abbb8a10620e",
+  "human_instruction": "nvm about the screen. just give me a link and countue routing",
+  "decision": "Defer external display sourcing/FPC work; advance only explicitly phased independent signals under the requested continuation. Do not approve full placement/fabrication or infer battery polarity.",
+  "display_reference": "https://www.buydisplay.com/download/manual/ER-TFT026-1_Datasheet.pdf",
+  "unchanged_constraints": [
+    "50x65mm PCB",
+    "60x75x15mm enclosure hard maximum",
+    "0.8mm stackup trial and USB impedance pending",
+    "all imported definitions unchanged",
+    "routeRemaining=false",
+    "J3 outer contacts open/unrouted",
+    "watcher paused",
+    "no messages to other chats"
+  ],
+  "retained_checks": [
+    "native shorts",
+    "actual trace clearance and drill/keepout measurements",
+    "saved routing events and per-phase pcbTracePaths",
+    "supported replay with exact geometry comparison",
+    "strict schema and whole-board fabrication gates"
+  ],
+  "phase1": [
+    "REG_FB",
+    "REG_PG"
+  ],
+  "phase2": [
+    "HOLD_BUFFER_OUT",
+    "USB_CC1",
+    "USB_CC2"
+  ],
+  "phase3": [
+    "CHARGER_ILIM",
+    "CHARGER_ISET",
+    "CHARGE_PGOOD_N",
+    "CHARGE_STATUS_N"
+  ],
+  "phase4": [
+    "MCU_EN",
+    "MCU_BOOT_N",
+    "MCU_RESET_N",
+    "MCU_UART_RX",
+    "MCU_UART_TX",
+    "SERVICE_UART_TX",
+    "MCU_HOLD_READ"
+  ],
+  "excluded_route_export_observation": "HAPTIC_NMOS_GATE: native end event says PCB port selector is not unique: .Q9 > port.pin1; generated attempt saved before source assignment removal."
+}

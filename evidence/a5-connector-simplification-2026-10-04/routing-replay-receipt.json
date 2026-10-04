@@ -1,0 +1,114 @@
+{
+  "original_four_exact_records_unchanged": true,
+  "full_native_replay_trace_and_via_records_equal": true,
+  "phases": [
+    {
+      "phase": "regulator-switching",
+      "paths": 2
+    },
+    {
+      "phase": "regulator-feedback-status",
+      "paths": 3
+    },
+    {
+      "phase": "independent-control-signals",
+      "paths": 3
+    },
+    {
+      "phase": "charger-current-limit",
+      "paths": 1
+    }
+  ],
+  "selected_nets": {
+    "REG_FB": {
+      "ports": [
+        {
+          "component": "U2",
+          "pin": 4
+        },
+        {
+          "component": "R5",
+          "pin": 2
+        },
+        {
+          "component": "R6",
+          "pin": 1
+        }
+      ],
+      "remaining_native_connection_errors": 0
+    },
+    "REG_PG": {
+      "ports": [
+        {
+          "component": "U2",
+          "pin": 5
+        },
+        {
+          "component": "R7",
+          "pin": 2
+        }
+      ],
+      "remaining_native_connection_errors": 0
+    },
+    "HOLD_BUFFER_OUT": {
+      "ports": [
+        {
+          "component": "U26",
+          "pin": 4
+        },
+        {
+          "component": "R100",
+          "pin": 1
+        }
+      ],
+      "remaining_native_connection_errors": 0
+    },
+    "USB_CC1": {
+      "ports": [
+        {
+          "component": "J1",
+          "pin": 6
+        },
+        {
+          "component": "R33",
+          "pin": 1
+        }
+      ],
+      "remaining_native_connection_errors": 0
+    },
+    "USB_CC2": {
+      "ports": [
+        {
+          "component": "J1",
+          "pin": 12
+        },
+        {
+          "component": "R34",
+          "pin": 1
+        }
+      ],
+      "remaining_native_connection_errors": 0
+    },
+    "CHARGER_ILIM": {
+      "ports": [
+        {
+          "component": "U16",
+          "pin": 12
+        },
+        {
+          "component": "R2",
+          "pin": 1
+        }
+      ],
+      "remaining_native_connection_errors": 0
+    }
+  },
+  "counts": {
+    "pcb_trace": 11,
+    "pcb_via": 2,
+    "pcb_port_not_connected_error": 413,
+    "pcb_trace_missing_error": 5,
+    "pcb_component": 135
+  },
+  "circuit_sha256": "f4319f271856f07477340c3342ce9a576236be438913be4aca5bd9786487d1c5"
+}

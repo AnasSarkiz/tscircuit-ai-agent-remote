@@ -1,3 +1,5 @@
+**Historical preview:** this table predates A5. J8 is now removed; see BOM.md and the fresh native circuit.json. This is not a fabrication CSV.
+
 # A1 integrated preview inventory
 
 Derived directly from the native full-board Circuit JSON. **Not an assembler BOM release.** Native fabrication CSV/MPN qualification remains B-015.

@@ -10,14 +10,14 @@ export function BoardNets() {
       <net name="AUDIO_PMOS_GATE" />
       <net name="BACKLIGHT_GATE" />
       <net name="BUCK_ENABLE" />
-      <net name="CHARGER_ILIM" />
+      <net name="CHARGER_ILIM" routingPhaseIndex={3} />
       <net name="CHARGER_ISET" />
       <net name="CHARGE_PGOOD_N" />
       <net name="CHARGE_STATUS_N" />
       <net name="GND" isGroundNet nominalTraceWidth={0.3} />
       <net name="HAPTIC_N" nominalTraceWidth={0.4} />
       <net name="HAPTIC_NMOS_GATE" />
-      <net name="HOLD_BUFFER_OUT" />
+      <net name="HOLD_BUFFER_OUT" routingPhaseIndex={2} />
       <net name="HOLD_HARDWARE" />
       <net name="LCD_BACKLIGHT_OUTPUT" isPowerNet nominalTraceWidth={0.3} />
       <net name="LCD_BACKLIGHT_RETURN_1" nominalTraceWidth={0.3} />
@@ -61,13 +61,13 @@ export function BoardNets() {
       <net name="MIC_WS_INPUT" />
       <net name="PACK_BAT" isPowerNet nominalTraceWidth={1} />
       <net name="PACK_NTC" />
-      <net name="REG_FB" />
-      <net name="REG_PG" />
+      <net name="REG_FB" routingPhaseIndex={1} />
+      <net name="REG_PG" routingPhaseIndex={1} />
       <net name="SERVICE_UART_TX" />
       <net name="SPEAKER_N" nominalTraceWidth={0.6} />
       <net name="SPEAKER_P" nominalTraceWidth={0.6} />
-      <net name="USB_CC1" />
-      <net name="USB_CC2" />
+      <net name="USB_CC1" routingPhaseIndex={2} />
+      <net name="USB_CC2" routingPhaseIndex={2} />
       <net name="USB_DN" nominalTraceWidth={0.2906} />
       <net name="USB_DP" nominalTraceWidth={0.2906} />
       <net name="V3V3" isPowerNet nominalTraceWidth={0.8} />

@@ -1,0 +1,14 @@
+{
+  "before": "  R1: { pcbX: -12.0, pcbY: -29.0, pcbRotation: 0, layer: \"top\" },",
+  "after": {
+    "pcbX": -11,
+    "pcbY": -23.25,
+    "pcbRotation": 0
+  },
+  "reason": "ISET combined and split native routing hit iteration limits. Move its resistor closer to the top-side charger pin with a free approach, preserving every completed native phase before the move. Imported definition unchanged. Native placement checks required before new phase.",
+  "plane_clearance_change": {
+    "before": 0.2,
+    "after": 0.21,
+    "reason": "Measured native BREP antipad copper clearance0.19735mm versus required0.2mm; increased source pour clearance to provide polygon discretization margin."
+  }
+}

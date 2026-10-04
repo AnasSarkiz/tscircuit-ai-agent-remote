@@ -1,5 +1,8 @@
 import { fanoutTracePath } from "@tscircuit/props"
 import regulatorPaths from "../../routes/a3/regulator.json"
+import regulatorControlPaths from "../../routes/a5/regulator-feedback-status.json"
+import chargerCurrentLimitPaths from "../../routes/a5/charger-current-limit.json"
+import independentControlPaths from "../../routes/a5/independent-control-signals.json"
 
 const routingTolerances = {
   minTraceWidth: 0.2,
@@ -23,7 +26,7 @@ export function BoardRouting({ placementOnly = false }: { placementOnly?: boolea
             layer="inner1"
             connectsTo="net.GND"
             unbroken
-            clearance={0.2}
+            clearance={0.21}
             boardEdgeMargin={0.25}
             cutoutMargin={0.25}
             useThermalReliefs={false}
@@ -33,6 +36,27 @@ export function BoardRouting({ placementOnly = false }: { placementOnly?: boolea
             name="regulator-switching"
             phaseIndex={0}
             pcbTracePaths={fanoutTracePath.array().parse(regulatorPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="regulator-feedback-status"
+            phaseIndex={1}
+            pcbTracePaths={fanoutTracePath.array().parse(regulatorControlPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="independent-control-signals"
+            phaseIndex={2}
+            pcbTracePaths={fanoutTracePath.array().parse(independentControlPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="charger-current-limit"
+            phaseIndex={3}
+            pcbTracePaths={fanoutTracePath.array().parse(chargerCurrentLimitPaths)}
             autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
             {...routingTolerances}
           />

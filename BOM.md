@@ -1,3 +1,7 @@
+## A5 BOM change — 2026-10-04
+
+J8/C173752 quantity reduced by one. Native TP_MOTOR_P/TP_MOTOR_N solder pads are PCB features, not purchased components. J6 remains. Earlier component counts below are historical; current total135 includes125purchased parts and10native testpoints. Motor remains external and its exact assembly/harness qualification is open. No manually repaired fabrication BOM is approved.
+
 # Latest A4 — 82.7% physical display coverage trial
 
 **WIP prototype; NOT FABRICATION READY.** This supersedes conflicting A3/A2 selections below. Provisional external BuyDisplay **ER-TFT026-1**, 46 × 64 mm portrait body, overlaps the unchanged 50 × 65 mm PCB by **82.712%** (81.737% with stated dimensional/position allocation). Overhang, flex and bezel are excluded. Bare-panel availability and the current drawing/FPC are still unconfirmed; this is not a qualified purchasable display selection.
@@ -12,7 +16,7 @@ Implemented genuine C157929/C173752 internal side-entry PH headers, TPS60230RGTR
 |---|---|---|---:|
 |External provisional display|ER-TFT026-1 no-touch bare panel|BuyDisplay; no current bare-panel orderability verified|1|
 |J3|S3B-PH-K-S(LF)(SN)|JLC C157929, genuine untouched import|1|
-|J4/J8|S2B-PH-K-S(LF)(SN)|JLC C173752, genuine untouched import|2|
+|J4|S2B-PH-K-S(LF)(SN)|JLC C173752, genuine untouched import; J8 removed in A5|1|
 |U27|TPS60230RGTR|JLC C1848364, genuine untouched import|1|
 |R102|RC0603FR-0710KL, 10 kΩ|existing genuine JLC import|1|
 |J7 retained|AFC07-S50ECA-00|JLC C262650; portrait mating provisional|1|

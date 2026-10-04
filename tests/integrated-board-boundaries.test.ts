@@ -37,7 +37,7 @@ function portNet(connection: { reference: string; pinNumber: number; netName: st
 }
 describe("Native A4 board boundaries and fabrication gate", () => {
   test("board has top-only physical components within the accepted PCB dimensions", () => {
-    expect(rawElements.filter((element) => element.type === "pcb_component")).toHaveLength(134)
+    expect(rawElements.filter((element) => element.type === "pcb_component")).toHaveLength(135)
     expect(
       rawElements.filter((element) => element.type === "pcb_component" && element.layer !== "top"),
     ).toEqual([])
@@ -87,8 +87,8 @@ describe("Native A4 board boundaries and fabrication gate", () => {
       { reference: "U5", pinNumber: 2, netName: "VMIC" },
       { reference: "J4", pinNumber: 1, netName: "SPEAKER_P" },
       { reference: "J4", pinNumber: 2, netName: "SPEAKER_N" },
-      { reference: "J8", pinNumber: 1, netName: "VMOTOR" },
-      { reference: "J8", pinNumber: 2, netName: "HAPTIC_N" },
+      { reference: "TP_MOTOR_P", pinNumber: 1, netName: "VMOTOR" },
+      { reference: "TP_MOTOR_N", pinNumber: 1, netName: "HAPTIC_N" },
       { reference: "U1", pinNumber: 8, netName: "MCU_MIC_BCLK" },
       { reference: "U1", pinNumber: 9, netName: "MCU_MIC_WS" },
       { reference: "U1", pinNumber: 10, netName: "MCU_MIC_SD" },

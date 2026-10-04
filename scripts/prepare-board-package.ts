@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "A4 placement-only inspection mode and preserved partial native copper; ER-TFT026-1 coverage82.7%; display FPC, thin stackup, actuator fit and battery polarity pending; not fabrication ready",
+    "A5 motor solder pads replacing J8 and saved partial native routing; 11 traces/2 vias; display FPC, full routing, thin stackup and battery polarity pending; not fabrication ready",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,

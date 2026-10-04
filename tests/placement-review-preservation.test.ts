@@ -8,12 +8,7 @@ const canonical = nativeElements.parse(
   JSON.parse(readFileSync(new URL("../dist/index/circuit.json", import.meta.url), "utf8")),
 )
 const placement = nativeElements.parse(
-  JSON.parse(
-    readFileSync(
-      new URL("../evidence/a4-placement-gate-2026-10-04/placement-circuit.json", import.meta.url),
-      "utf8",
-    ),
-  ),
+  JSON.parse(readFileSync(new URL("../dist/placement/circuit.json", import.meta.url), "utf8")),
 )
 const before = nativeElements.parse(
   JSON.parse(
@@ -52,13 +47,12 @@ describe("Native placement review preserves the board", () => {
     }
   })
 
-  test("the canonical four native traces remain exactly unchanged from the reviewed A4", () => {
+  test("the original four native traces remain exactly unchanged as routing continues", () => {
     const canonicalCopper = canonical.filter((element) =>
       ["pcb_trace", "pcb_via"].includes(element.type),
     )
-    expect(canonicalCopper).toHaveLength(4)
-    expect(canonicalCopper).toEqual(
-      before.filter((element) => ["pcb_trace", "pcb_via"].includes(element.type)),
-    )
+    const beforeCopper = before.filter((element) => ["pcb_trace", "pcb_via"].includes(element.type))
+    expect(beforeCopper).toHaveLength(4)
+    for (const trace of beforeCopper) expect(canonicalCopper).toContainEqual(trace)
   })
 })

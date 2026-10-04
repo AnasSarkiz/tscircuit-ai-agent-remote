@@ -1,0 +1,89 @@
+$ tsci build placement.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+Building 1 file(s)...
+Building placement.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/placement/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+<trace#1387(from:U27.pin1 to:R102.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1395(from:U27.pin9 to:C83.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1396(from:U27.pin12 to:C83.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1397(from:U27.pin10 to:C82.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1398(from:U27.pin11 to:C82.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP_MOTOR_P has no courtyard
+TP_MOTOR_N has no courtyard
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+TP7 has no courtyard
+TP8 has no courtyard
+<testpoint#1322(.ControlsSheet-group>.TP_MOTOR_P) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1328(.ControlsSheet-group>.TP_MOTOR_N) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1433(.test-access-group>.TP1) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1439(.test-access-group>.TP2) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1445(.test-access-group>.TP3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1451(.test-access-group>.TP4) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1457(.test-access-group>.TP5) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1463(.test-access-group>.TP6) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1469(.test-access-group>.TP7) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1475(.test-access-group>.TP8) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+All pins on J1 are underspecified (no pinAttributes set)
+All pins on J6 are underspecified (no pinAttributes set)
+All pins on J3 are underspecified (no pinAttributes set)
+All pins on J7 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on J4 are underspecified (no pinAttributes set)
+All pins on Q9 are underspecified (no pinAttributes set)
+All pins on SW5 are underspecified (no pinAttributes set)
+U1 has no pin with requires_power=true
+J1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+J6 has no pin with requires_power=true
+U16 has no pin with requires_power=true
+J3 has no pin with requires_power=true
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+J4 has no pin with requires_power=true
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+U23 has no pin with requires_power=true
+SW5 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+J6 has no pin with requires_ground=true
+J3 has no pin with requires_ground=true
+J7 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+J4 has no pin with requires_ground=true
+Q9 has no pin with requires_ground=true
+SW5 has no pin with requires_ground=true
+Generating preview images...
+[placement] Generating PCB SVG...
+[placement] Written pcb.svg
+[placement] Generating PCB PNG...
+[placement] Written pcb.png
+[placement] Generating schematic SVG...
+[placement] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

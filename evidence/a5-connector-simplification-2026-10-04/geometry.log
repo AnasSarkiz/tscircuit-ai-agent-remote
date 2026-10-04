@@ -1,0 +1,111 @@
+{
+  "scope": "Newly generated independent signal traces only, conservative circumscribed pad/drill/keepout bounds; all native original records retained. Not whole-board DRC or thermal approval.",
+  "trace_count": 7,
+  "width_mm": 0.2,
+  "layers": [
+    "bottom",
+    "top"
+  ],
+  "vias": 2,
+  "minima": {
+    "different_net_pad": {
+      "clearance_mm": 0.2053311323566321,
+      "ids": [
+        "saved_phase_null_1_0",
+        "pcb_smtpad_134"
+      ]
+    },
+    "different_net_trace": {
+      "clearance_mm": 0.2998719999999999,
+      "ids": [
+        "saved_phase_null_1_0",
+        "saved_phase_null_1_2"
+      ]
+    },
+    "ordinary_drill": {
+      "clearance_mm": 0.3383372729725169,
+      "ids": [
+        "saved_phase_null_2_1",
+        "pcb_hole_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 4.717559858452503,
+      "ids": [
+        "saved_phase_null_2_1",
+        "pcb_keepout_1"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 4.059880065819415,
+      "ids": [
+        "saved_phase_null_2_1"
+      ]
+    }
+  },
+  "requirements_mm": {
+    "different_net_pad": 0.2,
+    "different_net_trace": 0.2,
+    "ordinary_drill": 0.25,
+    "keepout": 0.0,
+    "board_edge": 0.25
+  },
+  "violations": []
+}
+{
+  "scope": "New ordinary through vias including same-net drill-to-pad clearance and actual native plane BREP apertures; conservative pad/hole bounding boxes.",
+  "vias": [
+    {
+      "via_id": "pcb_via_0",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.3258057075539539,
+        "drill_to_any_pad": 0.5258057075539538,
+        "drill_to_other_drill": 2.67444371161146,
+        "copper_to_other_trace": 0.9075058057416344,
+        "plane_antipad": 0.20730349123892233
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_1",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 1.4904441908009955,
+        "drill_to_any_pad": 1.6904441908009957,
+        "drill_to_other_drill": 13.942856985011947,
+        "copper_to_other_trace": 2.829271763472443,
+        "plane_antipad": 0.20730349123892355
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    }
+  ]
+}
