@@ -1,11 +1,22 @@
 ## Public visibility and committed native build — 2026-10-04
 
+Both destinations are now **public** and anonymously accessible. Published source
+commit **6f8f4a270e76c7455084a1d43ea92833694179f2** and registry release
+**0.0.2-wip-a1-public-board**. Native upload exited0, 75 successes/zero failures;
+anonymous exact-version readback verifies all 75 hashes with no missing, extra or
+unverified files. Public GitHub and registry `dist/index/circuit.json` are identical
+(2,298,951 bytes; SHA-256 `0be465e43d862abd74d8fa7b8f397738fcae90f8134c330cf2311bdf54d273ca`).
+Registry `is_private=false`, `is_unlisted=false`, `public_dist_enabled=true`.
+`ready_to_build=true` and null reported build errors do not establish a completed
+cloud build or fabrication readiness. Receipt-only follow-up changes no runtime
+input and needs no additional registry release.
+
 The user requested public GitHub and tscircuit destinations and a committed built
 Circuit JSON. The ignore rule now permits only `dist/index/circuit.json` within
 `dist`; other build artifacts remain excluded. The board-only preparer includes
 the current native build unchanged, so GitHub and the registry receive identical
-bytes. Target release: **0.0.2-wip-a1-public-board**. Remote visibility, upload and
-anonymous hash verification are pending below. Native build, all five pre-routing
+bytes. Published release: **0.0.2-wip-a1-public-board**. Public visibility and identical
+remote build hashes are verified below. Native build, all five pre-routing
 checks, format and root/staged TypeScript pass. Tests retain the known B-010
 failure (30 pass/one fail). The native JSON matches the inspected connector
 revision except its filesystem metadata; zero traces/vias/native errors. Existing WIP fabrication blockers

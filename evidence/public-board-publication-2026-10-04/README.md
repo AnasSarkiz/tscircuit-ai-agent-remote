@@ -28,5 +28,13 @@ The package retains 75 files, no documents/scripts/evidence/tests/unused compone
 package.json private=true is the npm accidental-publication guard; registry visibility
 is controlled by its official API and is public. No npm publication is requested.
 
-Target 0.0.2-wip-a1-public-board. Source commit, remote publisher exit, anonymous full
-readback and the GitHub circuit JSON hash will be recorded after publication.
+Both destinations are now **public** and anonymously accessible. Published source
+commit **6f8f4a270e76c7455084a1d43ea92833694179f2** and registry release
+**0.0.2-wip-a1-public-board**. Native upload exited0, 75 successes/zero failures;
+anonymous exact-version readback verifies all 75 hashes with no missing, extra or
+unverified files. Public GitHub and registry `dist/index/circuit.json` are identical
+(2,298,951 bytes; SHA-256 `0be465e43d862abd74d8fa7b8f397738fcae90f8134c330cf2311bdf54d273ca`).
+Registry `is_private=false`, `is_unlisted=false`, `public_dist_enabled=true`.
+`ready_to_build=true` and null reported build errors do not establish a completed
+cloud build or fabrication readiness. Receipt-only follow-up changes no runtime
+input and needs no additional registry release.
