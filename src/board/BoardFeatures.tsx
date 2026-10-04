@@ -14,7 +14,7 @@ export function BoardFeatures() {
     <>
       {/* M2 mounting trial: final enclosure, flex and hardware Z fit remain open. */}
       {[
-        { x: 2, y: 13 },
+        { x: 22, y: -23 },
         { x: -21.5, y: -29.5 },
       ].map((mount, index) => (
         <group key={index} name={`mount-${index + 1}`} pcbX={0} pcbY={0}>
@@ -51,19 +51,19 @@ export function BoardFeatures() {
         color="#ffb34d"
       />
       <pcbnoterect
-        pcbX={-0.5}
-        pcbY={-5.225}
-        width={54.36}
-        height={40.3}
+        pcbX={-5.8}
+        pcbY={-0.8}
+        width={46}
+        height={64}
         strokeWidth={0.15}
         isStrokeDashed
         color="#33b5e5"
       />
       <pcbnoterect
-        pcbX={-2.31}
-        pcbY={-5.225}
-        width={44.64}
-        height={33.48}
+        pcbX={-5.8}
+        pcbY={0}
+        width={39.6}
+        height={52.8}
         strokeWidth={0.1}
         isStrokeDashed
         color="#33b5e5"
@@ -71,14 +71,14 @@ export function BoardFeatures() {
       <pcbnotetext
         pcbX={0}
         pcbY={6.5}
-        text="BUYDISPLAY ER-TFT022-1 / NO TOUCH"
+        text="PROVISIONAL ER-TFT026-1 / 82.7% BODY COVERAGE"
         fontSize={1}
         color="#33b5e5"
       />
       <pcbnotetext
         pcbX={0}
         pcbY={-2}
-        text="A3 BuyDisplay trial; FPC / physical fit pending"
+        text="A4: availability, portrait FPC and thickness qualification pending"
         fontSize={0.7}
         color="#33b5e5"
       />
@@ -92,7 +92,7 @@ export function BoardFeatures() {
       <pcbnotetext pcbX={22.7} pcbY={32} text="TALK" fontSize={1} />
       <pcbnotetext pcbX={-24} pcbY={5.5} text="PRIVACY" fontSize={0.8} />
       <pcbnotetext pcbX={0} pcbY={-32} text="USB-C 5V / PROGRAM" fontSize={0.8} />
-      <pcbnotetext pcbX={0} pcbY={-31} text="A3 PROTOTYPE - NOT FOR FABRICATION" fontSize={0.7} />
+      <pcbnotetext pcbX={0} pcbY={-31} text="A4 PROTOTYPE - NOT FOR FABRICATION" fontSize={0.7} />
       <schematicsheet
         name="test-access"
         displayName="AI Remote A1 - Test access"

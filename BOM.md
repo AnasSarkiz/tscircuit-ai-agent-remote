@@ -1,3 +1,26 @@
+# Latest A4 — 82.7% physical display coverage trial
+
+**WIP prototype; NOT FABRICATION READY.** This supersedes conflicting A3/A2 selections below. Provisional external BuyDisplay **ER-TFT026-1**, 46 × 64 mm portrait body, overlaps the unchanged 50 × 65 mm PCB by **82.712%** (81.737% with stated dimensional/position allocation). Overhang, flex and bezel are excluded. Bare-panel availability and the current drawing/FPC are still unconfirmed; this is not a qualified purchasable display selection.
+
+Implemented genuine C157929/C173752 internal side-entry PH headers, TPS60230RGTR/C1848364 four-channel backlight with 10 kΩ nominal 62.4 mA total, moved placement/mounting trial, rotated battery envelope and **0.8 mm trial PCB**. The thin stackup and USB impedance need new qualification. Battery pin2=NTC; both outer contacts stay open. Four original native traces are preserved; most connections remain unrouted. Fresh canonical build retains 431 connection errors; 38 tests pass and two fabrication/schema gates fail. Placement and short checks pass without claiming full routing or fabrication approval.
+
+[Full A4 engineering review](evidence/a4-display-coverage-2026-10-04/review.md) · [Interactive A4 native model and display envelope](http://127.0.0.1:4949/evidence/a4-display-coverage-2026-10-04/mechanical.html). Current PCB count:134 physical components,496PCB ports,76named nets. Watcher remains paused and cross-chat issue messages remain disabled. Publication receipts are recorded separately; intended public package version `0.0.2-wip-a4-display-coverage`.
+
+## Active A4 substitutions
+
+| Reference | Exact part | Source | Quantity |
+|---|---|---|---:|
+|External provisional display|ER-TFT026-1 no-touch bare panel|BuyDisplay; no current bare-panel orderability verified|1|
+|J3|S3B-PH-K-S(LF)(SN)|JLC C157929, genuine untouched import|1|
+|J4/J8|S2B-PH-K-S(LF)(SN)|JLC C173752, genuine untouched import|2|
+|U27|TPS60230RGTR|JLC C1848364, genuine untouched import|1|
+|R102|RC0603FR-0710KL, 10 kΩ|existing genuine JLC import|1|
+|J7 retained|AFC07-S50ECA-00|JLC C262650; portrait mating provisional|1|
+
+No fresh whole-BOM assembly availability guarantee. External pack AKY2945/LP523450 centre contact NTC10k; outer polarity remains pending. PH headers are top-inserted through-hole parts and need manual/selective assembly qualification. Superseded A3 choices below are historical.
+
+---
+
 # Latest A3 BuyDisplay and first-copper checkpoint — 2026-10-04
 
 **Engineering prototype — NOT FABRICATION READY.** This supersedes conflicting A2/A1 selections below. The external screen is now **BuyDisplay/EastRising ER-TFT022-1, bare 2.2-inch 240×320 TFT, no touch**, purchased separately from the PCB. JLCPCB supplies the board electronics and the genuine **AFC07-S50ECA-00/C262650 top-contact50-pin connector**, not the screen. Its54.36×40.3 mm landscape glass spans the full50 mm PCB width. The raised-glass/flex/height tolerance study remains open inside the unchanged50×65 mm PCB and60×75×15 mm maximum enclosure.

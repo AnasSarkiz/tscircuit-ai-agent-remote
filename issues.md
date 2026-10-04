@@ -1,3 +1,7 @@
+## A4 coverage trial qualification — 2026-10-04
+
+The real source trial reaches82.712%physical PCB overlap, but current bare-panel availability/current manufacturer drawing, portrait FPC contact/pin1/fold, 0.8mm stackup/USB impedance, JST actual thickness acceptance and complete case/battery/harness tolerance fit remain open. These are design qualification tasks, not newly proven tool defects. Battery outer polarity remains unrouted. 431 unconnected/missing native connection errors remain and stage6 is not started. Existing B005/B010/B015/B009 are not cleared. [A4 review](evidence/a4-display-coverage-2026-10-04/review.md). No cross-chat message sent.
+
 # Latest A2 checkpoint — 2026-10-04
 
 **NOT FABRICATION READY.** This section supersedes conflicting historical A0/A1 selections and status below. A2 updates the genuine C11051 twelve-pin display connector, manufacturer display wiring, centre battery NTC, two native M2 mounting trials and provisional placement. Battery outer numbering remains pending; both outer contacts are unconnected/unrouted. Display/flex/enclosure/RF fit is still open; routing remains disabled. Full report: [A2 fabrication checkpoint](evidence/routing-intake-2026-10-04/fabrication-report.md).

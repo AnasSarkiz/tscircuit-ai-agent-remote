@@ -1,3 +1,13 @@
+# Latest A4 — 82.7% physical display coverage trial
+
+**WIP prototype; NOT FABRICATION READY.** This supersedes conflicting A3/A2 selections below. Provisional external BuyDisplay **ER-TFT026-1**, 46 × 64 mm portrait body, overlaps the unchanged 50 × 65 mm PCB by **82.712%** (81.737% with stated dimensional/position allocation). Overhang, flex and bezel are excluded. Bare-panel availability and the current drawing/FPC are still unconfirmed; this is not a qualified purchasable display selection.
+
+Implemented genuine C157929/C173752 internal side-entry PH headers, TPS60230RGTR/C1848364 four-channel backlight with 10 kΩ nominal 62.4 mA total, moved placement/mounting trial, rotated battery envelope and **0.8 mm trial PCB**. The thin stackup and USB impedance need new qualification. Battery pin2=NTC; both outer contacts stay open. Four original native traces are preserved; most connections remain unrouted. Fresh canonical build retains 431 connection errors; 38 tests pass and two fabrication/schema gates fail. Placement and short checks pass without claiming full routing or fabrication approval.
+
+[Full A4 engineering review](evidence/a4-display-coverage-2026-10-04/review.md) · [Interactive A4 native model and display envelope](http://127.0.0.1:4949/evidence/a4-display-coverage-2026-10-04/mechanical.html). Current PCB count:134 physical components,496PCB ports,76named nets. Watcher remains paused and cross-chat issue messages remain disabled. Publication receipts are recorded separately; intended public package version `0.0.2-wip-a4-display-coverage`.
+
+---
+
 ## Latest A3 result — verified approved compressed attempt
 
 The human approved official compression. The registry rejected the archive with HTTP 413; the native CLI fallback exited 1. Anonymous readback of [`0.0.2-wip-a3-buydisplay-first-copper-compressed`](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a3-buydisplay-first-copper-compressed#files) verifies 87 of 88 matching board-only files, including the current `dist/index/circuit.json`. The required C262650 STEP model is missing. HTTP 413 blocks both supported publication modes. B-009 remains open and `ready_to_build=false`; no custom upload, model omission or retry loop was used. [Exact outcome](evidence/a3-routing-2026-10-04/buydisplay/publication/compressed/review.md).

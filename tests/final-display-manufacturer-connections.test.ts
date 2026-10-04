@@ -10,7 +10,7 @@ const sourceElements = any_circuit_element
   .array()
   .parse(rawElements.filter((element) => element.type.startsWith("source_")))
 
-// Manufacturer pin maps: TI TPS7A20 / SN74LVC245A; BuyDisplay ER-TFT022-1 Rev2.0 pages 9-11 / ILI9341 unused pins.
+// Manufacturer pin maps: TI TPS7A20 / SN74LVC245A; BuyDisplay ER-TFT026-1 Rev3.0 pages 9-11 / ILI9341 unused pins.
 // This checks the native full-board source connections; mechanical flex fit remains open.
 const expectPinNet = ({
   name,
@@ -84,6 +84,7 @@ describe("display manufacturer physical pin requirements", () => {
       [2, "LCD_BACKLIGHT_RETURN_1"],
       [3, "LCD_BACKLIGHT_RETURN_2"],
       [4, "LCD_BACKLIGHT_RETURN_3"],
+      [5, "LCD_BACKLIGHT_RETURN_4"],
       [7, "VLCD"],
       [8, "VLCD"],
       [9, "VLCD"],
@@ -109,7 +110,7 @@ describe("display manufacturer physical pin requirements", () => {
         netName: "GND",
       })
   })
-  test("genuine top-contact connector pin 50 is north for the single right-edge fold", () => {
+  test("genuine top-contact connector retains pin 50 north; portrait mating remains provisional", () => {
     const connector = sourceElements.find(
       (element) => element.type === "source_component" && element.name === "J7",
     )
@@ -136,12 +137,35 @@ describe("display manufacturer physical pin requirements", () => {
     expect(Math.abs(terminalPositions[1].x - terminalPositions[0].x)).toBeLessThan(0.01)
     expect(terminalPositions[1].y - terminalPositions[0].y).toBeCloseTo(24.5, 2)
   })
+  test("TI TPS60230 powers four separate panel cathodes, retaining D1 regulation feedback", () => {
+    const driver = sourceElements.find(
+      (element) => element.type === "source_component" && element.name === "U27",
+    )
+    if (!driver || driver.type !== "source_component") throw new Error("Missing U27")
+    expect(driver.manufacturer_part_number).toBe("TPS60230RGTR")
+    expect(driver.supplier_part_numbers?.jlcpcb).toEqual(["C1848364"])
+    for (const [pinNumber, netName] of [
+      [3, "LCD_BACKLIGHT_RETURN_4"],
+      [4, "LCD_BACKLIGHT_RETURN_3"],
+      [5, "LCD_BACKLIGHT_RETURN_2"],
+      [6, "LCD_BACKLIGHT_RETURN_1"],
+      [7, "GND"],
+      [8, "LCD_BACKLIGHT_OUTPUT"],
+      [13, "V3V3"],
+      [14, "GND"],
+      [15, "BACKLIGHT_GATE"],
+      [16, "BACKLIGHT_GATE"],
+      [17, "GND"],
+    ] as const)
+      expectPinNet({ name: "U27", pinNumber, netName })
+  })
   test("unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open", () => {
     for (const pinNumber of [7, 8, 9]) expectPinNet({ name: "U14", pinNumber, netName: "GND" })
     for (const [name, pinNumbers] of [
       ["U14", [11, 12, 13]],
+      ["U27", [2]],
       ["U13", [4]],
-      ["J7", [46, 18, 12, 7, 6, 5, 4]],
+      ["J7", [18, 12, 7, 6, 5, 4]],
     ] as const) {
       const sourceComponent = sourceElements.find(
         (element) => element.type === "source_component" && element.name === name,

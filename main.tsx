@@ -14,7 +14,7 @@ import { ControlsSheet } from "./src/board/ControlsSheet"
 import { BacklightSheet } from "./src/board/BacklightSheet"
 import { BoardFeatures } from "./src/board/BoardFeatures"
 
-// A3: BuyDisplay trial and partial native copper; remaining routing is incomplete. NOT FOR FABRICATION.
+// A4: 82.7% provisional BuyDisplay coverage trial and partial native copper; remaining routing is incomplete. NOT FOR FABRICATION.
 export default function AiAgentRemote() {
   return (
     <board
@@ -22,7 +22,7 @@ export default function AiAgentRemote() {
       width={50}
       height={65}
       borderRadius={3}
-      thickness={1.6}
+      thickness={0.8}
       layers={4}
       autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
       pcbStyle={{ silkscreenFontSize: 0.7 }}

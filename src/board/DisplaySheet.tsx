@@ -13,7 +13,7 @@ export function DisplaySheet() {
   return (
     <schematicsheet
       name="display-logic-review"
-      displayName="AI Remote A3 - BuyDisplay ER-TFT022-1 four-wire SPI II"
+      displayName="AI Remote A4 - PROVISIONAL BuyDisplay ER-TFT026-1 SPI II"
       sheetIndex={4}
       sheetSize="A4"
     >
@@ -68,11 +68,12 @@ export function DisplaySheet() {
         <trace from="U14.pin7" to="net.GND" />
         <trace from="U14.pin8" to="net.GND" />
         <trace from="U14.pin9" to="net.GND" />
-        {/* BuyDisplay no-touch panel: SPI II IM[3:0]=1110; right fold mates panel n to connector 51-n (top contact). */}
+        {/* BuyDisplay no-touch panel: SPI II IM[3:0]=1110; existing panel n to connector 51-n is PROVISIONAL; new portrait flex/contact orientation must be confirmed before routing. */}
         <trace from="J7.pin50" to="net.LCD_BACKLIGHT_OUTPUT" />
         <trace from="J7.pin49" to="net.LCD_BACKLIGHT_RETURN_1" />
         <trace from="J7.pin48" to="net.LCD_BACKLIGHT_RETURN_2" />
         <trace from="J7.pin47" to="net.LCD_BACKLIGHT_RETURN_3" />
+        <trace from="J7.pin46" to="net.LCD_BACKLIGHT_RETURN_4" />
         <trace from="J7.pin45" to="net.GND" />
         <trace from="J7.pin44" to="net.VLCD" />
         <trace from="J7.pin43" to="net.VLCD" />
@@ -114,7 +115,7 @@ export function DisplaySheet() {
         <trace from="J7.pin1" to="net.GND" />
         <trace from="J7.pin51" to="net.GND" />
         <trace from="J7.pin52" to="net.GND" />
-        {/* Panel NC5, SDO33, TE39, absent touch44-47 remain open. */}
+        {/* Panel SDO33, TE39, absent touch44-47 remain open. */}
         <RC0603FR_07100KL name="R47" {...place("R47")} schX={-6.0} schY={0.75} schRotation={-90} />
         <RC0603FR_0710KL name="R42" {...place("R42")} schX={11.25} schY={0.75} schRotation={-90} />
         <trace from="U14.pin2" to="net.MCU_LCD_CS_N" />

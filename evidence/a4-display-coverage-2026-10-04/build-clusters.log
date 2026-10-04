@@ -1,0 +1,656 @@
+$ tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+<trace#1388(from:U27.pin1 to:R102.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1396(from:U27.pin9 to:C83.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1397(from:U27.pin12 to:C83.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1398(from:U27.pin10 to:C82.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1399(from:U27.pin11 to:C82.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+component is inferred to face y+ from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+TP7 has no courtyard
+TP8 has no courtyard
+<testpoint#1434(.test-access-group>.TP1) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1440(.test-access-group>.TP2) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1446(.test-access-group>.TP3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1452(.test-access-group>.TP4) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1458(.test-access-group>.TP5) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1464(.test-access-group>.TP6) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1470(.test-access-group>.TP7) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1476(.test-access-group>.TP8) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+All pins on J1 are underspecified (no pinAttributes set)
+All pins on J6 are underspecified (no pinAttributes set)
+All pins on J3 are underspecified (no pinAttributes set)
+All pins on J7 are underspecified (no pinAttributes set)
+All pins on Q1 are underspecified (no pinAttributes set)
+All pins on Q2 are underspecified (no pinAttributes set)
+All pins on J4 are underspecified (no pinAttributes set)
+All pins on Q9 are underspecified (no pinAttributes set)
+All pins on SW5 are underspecified (no pinAttributes set)
+All pins on J8 are underspecified (no pinAttributes set)
+U1 has no pin with requires_power=true
+J1 has no pin with requires_power=true
+D2 has no pin with requires_power=true
+J6 has no pin with requires_power=true
+U16 has no pin with requires_power=true
+J3 has no pin with requires_power=true
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+Q1 has no pin with requires_power=true
+Q2 has no pin with requires_power=true
+J4 has no pin with requires_power=true
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+U23 has no pin with requires_power=true
+SW5 has no pin with requires_power=true
+J8 has no pin with requires_power=true
+J1 has no pin with requires_ground=true
+J6 has no pin with requires_ground=true
+J3 has no pin with requires_ground=true
+J7 has no pin with requires_ground=true
+Q1 has no pin with requires_ground=true
+Q2 has no pin with requires_ground=true
+J4 has no pin with requires_ground=true
+Q9 has no pin with requires_ground=true
+SW5 has no pin with requires_ground=true
+J8 has no pin with requires_ground=true
+Failed to fetch supplier footprint for <chip#79(.mcu-usb-review-group>.U1) /> (jlcpcb:C2913201): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#255(.mcu-usb-review-group>.R38) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#252(.mcu-usb-review-group>.R37) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#249(.mcu-usb-review-group>.R36) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#238(.mcu-usb-review-group>.R35) /> (jlcpcb:C99782): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#227(.mcu-usb-review-group>.R34) /> (jlcpcb:C105580): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#216(.mcu-usb-review-group>.R33) /> (jlcpcb:C105580): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#205(.mcu-usb-review-group>.R32) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#194(.mcu-usb-review-group>.R31) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#156(.mcu-usb-review-group>.J6) /> (jlcpcb:C160405): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#139(.mcu-usb-review-group>.U12) /> (jlcpcb:C485802): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#138(.mcu-usb-review-group>.D2) /> (jlcpcb:C94934): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#121(.mcu-usb-review-group>.J1) /> (jlcpcb:C165948): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#258(.mcu-usb-review-group>.C30) /> (jlcpcb:C90053): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#343(.ChargerSheet-group>.U16) /> (jlcpcb:C54313): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#264(.mcu-usb-review-group>.C32) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#261(.mcu-usb-review-group>.C31) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#361(.ChargerSheet-group>.J3) /> (jlcpcb:C157929): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#371(.ChargerSheet-group>.C3) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#368(.ChargerSheet-group>.C2) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#365(.ChargerSheet-group>.C1) /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#374(.ChargerSheet-group>.R1) /> (jlcpcb:C126358): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#383(.ChargerSheet-group>.R4) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#380(.ChargerSheet-group>.R3) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#377(.ChargerSheet-group>.R2) /> (jlcpcb:C126358): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#418(.regulator-review>.U2) /> (jlcpcb:C2845237): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#438(.regulator-review>.R5) /> (jlcpcb:C364359): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#435(.regulator-review>.C5) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#432(.regulator-review>.C4) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#429(.regulator-review>.L1) /> (jlcpcb:C668312): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#449(.regulator-review>.R6) /> (jlcpcb:C114639): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#485(.display-logic-review-group>.U13) /> (jlcpcb:C2869847): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#460(.regulator-review>.R7) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#511(.display-logic-review-group>.U14) /> (jlcpcb:C7848): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#651(.display-logic-review-group>.C41) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#648(.display-logic-review-group>.C40) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#595(.display-logic-review-group>.J7) /> (jlcpcb:C262650): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#654(.display-logic-review-group>.C42) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#747(.display-logic-review-group>.R48) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#738(.display-logic-review-group>.R42) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#735(.display-logic-review-group>.R47) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#663(.display-logic-review-group>.R41) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#660(.display-logic-review-group>.R40) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#657(.display-logic-review-group>.C43) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#750(.display-logic-review-group>.R43) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#774(.display-logic-review-group>.R45) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#771(.display-logic-review-group>.R50) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#762(.display-logic-review-group>.R44) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#759(.display-logic-review-group>.R49) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#783(.display-logic-review-group>.R51) /> (jlcpcb:C14675): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#797(.speaker-amplifier-review-group>.U3) /> (jlcpcb:C910544): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#786(.display-logic-review-group>.R46) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#815(.speaker-amplifier-review-group>.Q1) /> (jlcpcb:C20917): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#820(.speaker-amplifier-review-group>.C50) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#817(.speaker-amplifier-review-group>.J4) /> (jlcpcb:C173752): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#816(.speaker-amplifier-review-group>.Q2) /> (jlcpcb:C15127): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#823(.speaker-amplifier-review-group>.C51) /> (jlcpcb:C45000): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#838(.speaker-amplifier-review-group>.R64) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#835(.speaker-amplifier-review-group>.R63) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#832(.speaker-amplifier-review-group>.R62) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#829(.speaker-amplifier-review-group>.R61) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#826(.speaker-amplifier-review-group>.R60) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#873(.speaker-amplifier-review-group>.R65) /> (jlcpcb:C107701): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#911(.speaker-amplifier-review-group>.R67) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#903(.speaker-amplifier-review-group>.R69) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#892(.speaker-amplifier-review-group>.R66) /> (jlcpcb:C107701): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#884(.speaker-amplifier-review-group>.R68) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#922(.speaker-amplifier-review-group>.R70) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <diode#961(.haptic-driver-review-group>.D3) /> (jlcpcb:C2480): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#960(.haptic-driver-review-group>.Q9) /> (jlcpcb:C20917): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#932(.haptic-driver-review-group>.U22) /> (jlcpcb:C963429): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#970(.haptic-driver-review-group>.C70) /> (jlcpcb:C90053): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#988(.haptic-driver-review-group>.R85) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#985(.haptic-driver-review-group>.R84) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#982(.haptic-driver-review-group>.R83) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#979(.haptic-driver-review-group>.R82) /> (jlcpcb:C22548): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#976(.haptic-driver-review-group>.C72) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#973(.haptic-driver-review-group>.C71) /> (jlcpcb:C84419): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1016(.mic-regulated-clock-review-group>.U23) /> (jlcpcb:C2869847): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1080(.mic-regulated-clock-review-group>.C75) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1077(.mic-regulated-clock-review-group>.C74) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1074(.mic-regulated-clock-review-group>.C73) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1042(.mic-regulated-clock-review-group>.U24) /> (jlcpcb:C24478): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1083(.mic-regulated-clock-review-group>.R86) /> (jlcpcb:C22548): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1095(.mic-regulated-clock-review-group>.R90) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1092(.mic-regulated-clock-review-group>.R89) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1089(.mic-regulated-clock-review-group>.R88) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1086(.mic-regulated-clock-review-group>.R87) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1098(.mic-regulated-clock-review-group>.R91) /> (jlcpcb:C98220): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1126(.mic-regulated-clock-review-group>.R95) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1123(.mic-regulated-clock-review-group>.R94) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1112(.mic-regulated-clock-review-group>.R93) /> (jlcpcb:C105881): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1101(.mic-regulated-clock-review-group>.R92) /> (jlcpcb:C105881): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1167(.hold-readback-review-group>.U26) /> (jlcpcb:C7836): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#1202(.battery-ready-review-group>.U25) /> (jlcpcb:C43698): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1187(.hold-readback-review-group>.C78) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1176(.hold-readback-review-group>.R100) /> (jlcpcb:C21190): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1173(.hold-readback-review-group>.R99) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1209(.battery-ready-review-group>.R96) /> (jlcpcb:C114622): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1218(.battery-ready-review-group>.C77) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1215(.battery-ready-review-group>.C76) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1212(.battery-ready-review-group>.R97) /> (jlcpcb:C114622): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1236(.MicrophonesSheet-group>.U4) /> (jlcpcb:C5656610): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#1257(.MicrophonesSheet-group>.R26) /> (jlcpcb:C14675): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1256(.MicrophonesSheet-group>.U7) /> (jlcpcb:C105188): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1253(.MicrophonesSheet-group>.C81) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1250(.MicrophonesSheet-group>.C80) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1243(.MicrophonesSheet-group>.U5) /> (jlcpcb:C5656610): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1260(.MicrophonesSheet-group>.R27) /> (jlcpcb:C22548): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1272(.MicrophonesSheet-group>.C26) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1269(.MicrophonesSheet-group>.C25) /> (jlcpcb:C45000): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1266(.MicrophonesSheet-group>.R30) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1263(.MicrophonesSheet-group>.R29) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <pushbutton#1310(.ControlsSheet-group>.SW4) /> (jlcpcb:C255576): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#1324(.ControlsSheet-group>.J8) /> (jlcpcb:C173752): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1319(.ControlsSheet-group>.SW5) /> (jlcpcb:C431540): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <pushbutton#1316(.ControlsSheet-group>.SW2) /> (jlcpcb:C255576): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <pushbutton#1313(.ControlsSheet-group>.SW1) /> (jlcpcb:C255576): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#1341(.BacklightSheet-group>.U27) /> (jlcpcb:C1848364): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1379(.BacklightSheet-group>.C83) /> (jlcpcb:C15849): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1376(.BacklightSheet-group>.C82) /> (jlcpcb:C15849): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1373(.BacklightSheet-group>.R104) /> (jlcpcb:C98220): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1370(.BacklightSheet-group>.R103) /> (jlcpcb:C105588): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#1359(.BacklightSheet-group>.R102) /> (jlcpcb:C114639): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1382(.BacklightSheet-group>.C84) /> (jlcpcb:C90053): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1385(.BacklightSheet-group>.C85) /> (jlcpcb:C90053): Unable to connect. Is the computer able to access the url?
+TP8 overlaps C32: 1 footprint overlap, 1 pad clearance violation. Move the components apart.
+R42 overlaps C71: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+Test point TP8 is not accessible because it is inside the courtyard of C32
+Autorouting was skipped because 3 PCB placement errors were found. Fix the placement errors or set placementDrcChecksDisabled to true to route anyway.
+Port [U1.3V3] is not connected to net [V3V3] by a PCB trace.
+Port [U1.GND1] is not connected to net [GND] by a PCB trace.
+Port [U1.GND2] is not connected to net [GND] by a PCB trace.
+Port [U1.GND3] is not connected to net [GND] by a PCB trace.
+Port [U1.EN] is not connected to net [MCU_EN] by a PCB trace.
+Port [U1.IO0] is not connected to net [MCU_BOOT_N] by a PCB trace.
+Port [U1.TXD0] is not connected to net [MCU_UART_TX] by a PCB trace.
+Port [U1.RXD0] is not connected to net [MCU_UART_RX] by a PCB trace.
+Port [U12.GND] is not connected to net [GND] by a PCB trace.
+Port [U12.VDD] is not connected to net [V3V3] by a PCB trace.
+Port [U12.N_RESET] is not connected to net [MCU_RESET_N] by a PCB trace.
+Port [R35.pin1] is not connected to net [MCU_RESET_N] by a PCB trace.
+Port [R35.pin2] is not connected to net [MCU_EN] by a PCB trace.
+Port [R37.pin1] is not connected to net [MCU_EN] by a PCB trace.
+Port [R37.pin2] is not connected to net [GND] by a PCB trace.
+Port [R36.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [R36.pin2] is not connected to net [MCU_BOOT_N] by a PCB trace.
+Port [R38.pin1] is not connected to net [MCU_UART_TX] by a PCB trace.
+Port [R38.pin2] is not connected to net [SERVICE_UART_TX] by a PCB trace.
+Port [J6.pin1] is not connected to net [GND] by a PCB trace.
+Port [J6.pin2] is not connected to net [V3V3] by a PCB trace.
+Port [J6.pin3] is not connected to net [MCU_EN] by a PCB trace.
+Port [J6.pin4] is not connected to net [MCU_BOOT_N] by a PCB trace.
+Port [J6.pin5] is not connected to net [SERVICE_UART_TX] by a PCB trace.
+Port [J6.pin6] is not connected to net [MCU_UART_RX] by a PCB trace.
+Port [J6.pin7] is not connected to net [GND] by a PCB trace.
+Port [J6.pin8] is not connected to net [GND] by a PCB trace.
+Port [J1.EH2] is not connected to net [GND] by a PCB trace.
+Port [J1.EH1] is not connected to net [GND] by a PCB trace.
+Port [J1.EH4] is not connected to net [GND] by a PCB trace.
+Port [J1.EH3] is not connected to net [GND] by a PCB trace.
+Port [J1.A1B12] is not connected to net [GND] by a PCB trace.
+Port [J1.B1A12] is not connected to net [GND] by a PCB trace.
+Port [J1.B4A9] is not connected to net [VBUS] by a PCB trace.
+Port [J1.A4B9] is not connected to net [VBUS] by a PCB trace.
+Port [J1.A5] is not connected to net [USB_CC1] by a PCB trace.
+Port [J1.B5] is not connected to net [USB_CC2] by a PCB trace.
+Port [J1.A6] is not connected to net [USB_DP] by a PCB trace.
+Port [J1.B6] is not connected to net [USB_DP] by a PCB trace.
+Port [J1.B7] is not connected to net [USB_DN] by a PCB trace.
+Port [J1.A7] is not connected to net [USB_DN] by a PCB trace.
+Port [D2.pin1] is not connected to net [USB_DP] by a PCB trace.
+Port [D2.pin2] is not connected to net [USB_DN] by a PCB trace.
+Port [D2.pin3] is not connected to net [GND] by a PCB trace.
+Port [R31.pin1] is not connected to net [USB_DP] by a PCB trace.
+Port [R32.pin1] is not connected to net [USB_DN] by a PCB trace.
+Port [R33.pin1] is not connected to net [USB_CC1] by a PCB trace.
+Port [R33.pin2] is not connected to net [GND] by a PCB trace.
+Port [R34.pin1] is not connected to net [USB_CC2] by a PCB trace.
+Port [R34.pin2] is not connected to net [GND] by a PCB trace.
+Port [C30.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C30.pin2] is not connected to net [GND] by a PCB trace.
+Port [C31.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C31.pin2] is not connected to net [GND] by a PCB trace.
+Port [C32.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C32.pin2] is not connected to net [GND] by a PCB trace.
+Port [U1.IO21] is not connected to net [MCU_HOLD_READ] by a PCB trace.
+Port [U1.IO15] is not connected to net [MCU_MIC_BCLK] by a PCB trace.
+Port [U1.IO16] is not connected to net [MCU_MIC_WS] by a PCB trace.
+Port [U1.IO17] is not connected to net [MCU_MIC_SD] by a PCB trace.
+Port [U1.IO9] is not connected to net [MCU_AUDIO_BCLK] by a PCB trace.
+Port [U1.IO8] is not connected to net [MCU_AUDIO_LRCLK] by a PCB trace.
+Port [U1.IO7] is not connected to net [MCU_AUDIO_DIN] by a PCB trace.
+Port [U1.IO4] is not connected to net [MCU_AUDIO_ENABLE] by a PCB trace.
+Port [U1.IO5] is not connected to net [MCU_HAPTIC_ENABLE] by a PCB trace.
+Port [U1.IO6] is not connected to net [LCD_ENABLE] by a PCB trace.
+Port [U1.IO10] is not connected to net [MCU_LCD_CS_N] by a PCB trace.
+Port [U1.IO12] is not connected to net [MCU_LCD_SCLK] by a PCB trace.
+Port [U1.IO11] is not connected to net [MCU_LCD_SDA] by a PCB trace.
+Port [U1.IO13] is not connected to net [MCU_LCD_DC] by a PCB trace.
+Port [U1.IO14] is not connected to net [MCU_LCD_RESET_N] by a PCB trace.
+Port [U1.IO47] is not connected to net [MCU_BACKLIGHT_PWM] by a PCB trace.
+Port [U16.TS] is not connected to net [PACK_NTC] by a PCB trace.
+Port [U16.BAT1] is not connected to net [PACK_BAT] by a PCB trace.
+Port [U16.BAT2] is not connected to net [PACK_BAT] by a PCB trace.
+Port [U16.N_CE] is not connected to net [GND] by a PCB trace.
+Port [U16.EN2] is not connected to net [GND] by a PCB trace.
+Port [U16.EN1] is not connected to net [GND] by a PCB trace.
+Port [U16.N_PGOOD] is not connected to net [CHARGE_PGOOD_N] by a PCB trace.
+Port [U16.VSS] is not connected to net [GND] by a PCB trace.
+Port [U16.N_CHG] is not connected to net [CHARGE_STATUS_N] by a PCB trace.
+Port [U16.OUT1] is not connected to net [VSYS] by a PCB trace.
+Port [U16.OUT2] is not connected to net [VSYS] by a PCB trace.
+Port [U16.ILIM] is not connected to net [CHARGER_ILIM] by a PCB trace.
+Port [U16.IN] is not connected to net [VBUS] by a PCB trace.
+Port [U16.ISET] is not connected to net [CHARGER_ISET] by a PCB trace.
+Port [U16.EP] is not connected to net [GND] by a PCB trace.
+Port [J3.pin2] is not connected to net [PACK_NTC] by a PCB trace.
+Port [C1.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [C1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C2.pin1] is not connected to net [PACK_BAT] by a PCB trace.
+Port [C2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C3.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C3.pin2] is not connected to net [GND] by a PCB trace.
+Port [R1.pin1] is not connected to net [CHARGER_ISET] by a PCB trace.
+Port [R1.pin2] is not connected to net [GND] by a PCB trace.
+Port [R2.pin1] is not connected to net [CHARGER_ILIM] by a PCB trace.
+Port [R2.pin2] is not connected to net [GND] by a PCB trace.
+Port [R3.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [R3.pin2] is not connected to net [CHARGE_PGOOD_N] by a PCB trace.
+Port [R4.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [R4.pin2] is not connected to net [CHARGE_STATUS_N] by a PCB trace.
+Port [U2.VIN] is not connected to net [VSYS] by a PCB trace.
+Port [U2.EN] is not connected to net [BUCK_ENABLE] by a PCB trace.
+Port [U2.MODE] is not connected to net [GND] by a PCB trace.
+Port [U2.AGND] is not connected to net [GND] by a PCB trace.
+Port [U2.GND] is not connected to net [GND] by a PCB trace.
+Ports [U2.L1, L1.pin1] are not connected together through the same net.
+Ports [U2.L2, L1.pin2] are not connected together through the same net.
+Port [U2.VOUT] is not connected to net [V3V3] by a PCB trace.
+Port [C4.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C5.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C5.pin2] is not connected to net [GND] by a PCB trace.
+Port [R5.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [R5.pin2] is not connected to net [REG_FB] by a PCB trace.
+Port [R6.pin1] is not connected to net [REG_FB] by a PCB trace.
+Port [R6.pin2] is not connected to net [GND] by a PCB trace.
+Port [U2.FB] is not connected to net [REG_FB] by a PCB trace.
+Port [R7.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [R7.pin2] is not connected to net [REG_PG] by a PCB trace.
+Port [U2.PG] is not connected to net [REG_PG] by a PCB trace.
+Port [U13.IN] is not connected to net [V3V3] by a PCB trace.
+Port [U13.GND] is not connected to net [GND] by a PCB trace.
+Port [U13.EN] is not connected to net [LCD_ENABLE] by a PCB trace.
+Port [U13.OUT] is not connected to net [VLCD] by a PCB trace.
+Port [R40.pin1] is not connected to net [LCD_ENABLE] by a PCB trace.
+Port [R40.pin2] is not connected to net [GND] by a PCB trace.
+Port [R41.pin1] is not connected to net [VLCD] by a PCB trace.
+Port [R41.pin2] is not connected to net [GND] by a PCB trace.
+Port [C40.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C40.pin2] is not connected to net [GND] by a PCB trace.
+Port [C41.pin1] is not connected to net [VLCD] by a PCB trace.
+Port [C41.pin2] is not connected to net [GND] by a PCB trace.
+Port [C42.pin1] is not connected to net [VLCD] by a PCB trace.
+Port [C42.pin2] is not connected to net [GND] by a PCB trace.
+Port [C43.pin1] is not connected to net [VLCD] by a PCB trace.
+Port [C43.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.DIR] is not connected to net [VLCD] by a PCB trace.
+Port [U14.GND] is not connected to net [GND] by a PCB trace.
+Port [U14.N_OE] is not connected to net [GND] by a PCB trace.
+Port [U14.VCC] is not connected to net [VLCD] by a PCB trace.
+Port [U14.A6] is not connected to net [GND] by a PCB trace.
+Port [U14.A7] is not connected to net [GND] by a PCB trace.
+Port [U14.A8] is not connected to net [GND] by a PCB trace.
+Port [J7.pin50] is not connected to net [LCD_BACKLIGHT_OUTPUT] by a PCB trace.
+Port [J7.pin49] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.
+Port [J7.pin48] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.
+Port [J7.pin47] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.
+Port [J7.pin46] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.
+Port [J7.pin45] is not connected to net [GND] by a PCB trace.
+Port [J7.pin44] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin43] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin42] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin41] is not connected to net [LCD_RESET_N] by a PCB trace.
+Port [J7.pin40] is not connected to net [GND] by a PCB trace.
+Port [J7.pin39] is not connected to net [GND] by a PCB trace.
+Port [J7.pin38] is not connected to net [GND] by a PCB trace.
+Port [J7.pin37] is not connected to net [GND] by a PCB trace.
+Port [J7.pin36] is not connected to net [GND] by a PCB trace.
+Port [J7.pin35] is not connected to net [GND] by a PCB trace.
+Port [J7.pin34] is not connected to net [GND] by a PCB trace.
+Port [J7.pin33] is not connected to net [GND] by a PCB trace.
+Port [J7.pin32] is not connected to net [GND] by a PCB trace.
+Port [J7.pin31] is not connected to net [GND] by a PCB trace.
+Port [J7.pin30] is not connected to net [GND] by a PCB trace.
+Port [J7.pin29] is not connected to net [GND] by a PCB trace.
+Port [J7.pin28] is not connected to net [GND] by a PCB trace.
+Port [J7.pin27] is not connected to net [GND] by a PCB trace.
+Port [J7.pin26] is not connected to net [GND] by a PCB trace.
+Port [J7.pin25] is not connected to net [GND] by a PCB trace.
+Port [J7.pin24] is not connected to net [GND] by a PCB trace.
+Port [J7.pin23] is not connected to net [GND] by a PCB trace.
+Port [J7.pin22] is not connected to net [GND] by a PCB trace.
+Port [J7.pin21] is not connected to net [GND] by a PCB trace.
+Port [J7.pin20] is not connected to net [GND] by a PCB trace.
+Port [J7.pin19] is not connected to net [GND] by a PCB trace.
+Port [J7.pin17] is not connected to net [LCD_SDA] by a PCB trace.
+Port [J7.pin16] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin15] is not connected to net [LCD_DC] by a PCB trace.
+Port [J7.pin14] is not connected to net [LCD_SCLK] by a PCB trace.
+Port [J7.pin13] is not connected to net [LCD_CS_N] by a PCB trace.
+Port [J7.pin11] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin10] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin9] is not connected to net [VLCD] by a PCB trace.
+Port [J7.pin8] is not connected to net [GND] by a PCB trace.
+Port [J7.pin3] is not connected to net [GND] by a PCB trace.
+Port [J7.pin2] is not connected to net [GND] by a PCB trace.
+Port [J7.pin1] is not connected to net [GND] by a PCB trace.
+Port [J7.pin51] is not connected to net [GND] by a PCB trace.
+Port [J7.pin52] is not connected to net [GND] by a PCB trace.
+Port [U14.A1] is not connected to net [MCU_LCD_CS_N] by a PCB trace.
+Port [R47.pin1] is not connected to net [MCU_LCD_CS_N] by a PCB trace.
+Port [R47.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.B1] is not connected to net [LCD_CS_N] by a PCB trace.
+Port [R42.pin1] is not connected to net [LCD_CS_N] by a PCB trace.
+Port [R42.pin2] is not connected to net [VLCD] by a PCB trace.
+Port [U14.A2] is not connected to net [MCU_LCD_RESET_N] by a PCB trace.
+Port [R48.pin1] is not connected to net [MCU_LCD_RESET_N] by a PCB trace.
+Port [R48.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.B2] is not connected to net [LCD_RESET_N] by a PCB trace.
+Port [R43.pin1] is not connected to net [LCD_RESET_N] by a PCB trace.
+Port [R43.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.A3] is not connected to net [MCU_LCD_DC] by a PCB trace.
+Port [R49.pin1] is not connected to net [MCU_LCD_DC] by a PCB trace.
+Port [R49.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.B3] is not connected to net [LCD_DC] by a PCB trace.
+Port [R44.pin1] is not connected to net [LCD_DC] by a PCB trace.
+Port [R44.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.A4] is not connected to net [MCU_LCD_SCLK] by a PCB trace.
+Port [R50.pin1] is not connected to net [MCU_LCD_SCLK] by a PCB trace.
+Port [R50.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.B4] is not connected to net [LCD_SCLK] by a PCB trace.
+Port [R45.pin1] is not connected to net [LCD_SCLK] by a PCB trace.
+Port [R45.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.A5] is not connected to net [MCU_LCD_SDA] by a PCB trace.
+Port [R51.pin1] is not connected to net [MCU_LCD_SDA] by a PCB trace.
+Port [R51.pin2] is not connected to net [GND] by a PCB trace.
+Port [U14.B5] is not connected to net [LCD_SDA] by a PCB trace.
+Port [R46.pin1] is not connected to net [LCD_SDA] by a PCB trace.
+Port [R46.pin2] is not connected to net [GND] by a PCB trace.
+Port [U3.GAIN_SLOT] is not connected to net [VSYS] by a PCB trace.
+Port [U3.VDD1] is not connected to net [VSYS] by a PCB trace.
+Port [U3.VDD2] is not connected to net [VSYS] by a PCB trace.
+Port [U3.GND1] is not connected to net [GND] by a PCB trace.
+Port [U3.GND2] is not connected to net [GND] by a PCB trace.
+Port [U3.GND3] is not connected to net [GND] by a PCB trace.
+Port [U3.EP] is not connected to net [GND] by a PCB trace.
+Port [U3.N_SD_MODE] is not connected to net [AMP_SD_MODE] by a PCB trace.
+Port [U3.OUTP] is not connected to net [SPEAKER_P] by a PCB trace.
+Port [U3.OUTN] is not connected to net [SPEAKER_N] by a PCB trace.
+Port [J4.pin1] is not connected to net [SPEAKER_P] by a PCB trace.
+Port [J4.pin2] is not connected to net [SPEAKER_N] by a PCB trace.
+Port [Q1.pin1] is not connected to net [AUDIO_NMOS_GATE] by a PCB trace.
+Port [Q1.pin2] is not connected to net [GND] by a PCB trace.
+Port [Q1.pin3] is not connected to net [AUDIO_PMOS_GATE] by a PCB trace.
+Port [Q2.pin1] is not connected to net [AUDIO_PMOS_GATE] by a PCB trace.
+Port [Q2.pin2] is not connected to net [VSYS] by a PCB trace.
+Port [Q2.pin3] is not connected to net [AUDIO_ENABLE_SUPPLY] by a PCB trace.
+Port [R60.pin1] is not connected to net [MCU_AUDIO_ENABLE] by a PCB trace.
+Port [R60.pin2] is not connected to net [AUDIO_NMOS_GATE] by a PCB trace.
+Port [R61.pin1] is not connected to net [AUDIO_NMOS_GATE] by a PCB trace.
+Port [R61.pin2] is not connected to net [GND] by a PCB trace.
+Port [R62.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [R62.pin2] is not connected to net [AUDIO_PMOS_GATE] by a PCB trace.
+Port [R63.pin1] is not connected to net [AUDIO_ENABLE_SUPPLY] by a PCB trace.
+Port [R63.pin2] is not connected to net [AMP_SD_MODE] by a PCB trace.
+Port [R64.pin1] is not connected to net [AMP_SD_MODE] by a PCB trace.
+Port [R64.pin2] is not connected to net [GND] by a PCB trace.
+Port [C50.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C50.pin2] is not connected to net [GND] by a PCB trace.
+Port [C51.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C51.pin2] is not connected to net [GND] by a PCB trace.
+Port [R65.pin1] is not connected to net [MCU_AUDIO_DIN] by a PCB trace.
+Port [R65.pin2] is not connected to net [AMP_DIN] by a PCB trace.
+Port [R68.pin1] is not connected to net [AMP_DIN] by a PCB trace.
+Port [R68.pin2] is not connected to net [GND] by a PCB trace.
+Port [U3.DIN] is not connected to net [AMP_DIN] by a PCB trace.
+Port [R66.pin1] is not connected to net [MCU_AUDIO_BCLK] by a PCB trace.
+Port [R66.pin2] is not connected to net [AMP_BCLK] by a PCB trace.
+Port [R69.pin1] is not connected to net [AMP_BCLK] by a PCB trace.
+Port [R69.pin2] is not connected to net [GND] by a PCB trace.
+Port [U3.BCLK] is not connected to net [AMP_BCLK] by a PCB trace.
+Port [R67.pin1] is not connected to net [MCU_AUDIO_LRCLK] by a PCB trace.
+Port [R67.pin2] is not connected to net [AMP_LRCLK] by a PCB trace.
+Port [R70.pin1] is not connected to net [AMP_LRCLK] by a PCB trace.
+Port [R70.pin2] is not connected to net [GND] by a PCB trace.
+Port [U3.LRCLK] is not connected to net [AMP_LRCLK] by a PCB trace.
+Port [U22.IN] is not connected to net [VSYS] by a PCB trace.
+Port [U22.GND] is not connected to net [GND] by a PCB trace.
+Port [U22.EN] is not connected to net [MCU_HAPTIC_ENABLE] by a PCB trace.
+Port [U22.OUT] is not connected to net [VMOTOR] by a PCB trace.
+Port [Q9.pin1] is not connected to net [HAPTIC_NMOS_GATE] by a PCB trace.
+Port [Q9.pin2] is not connected to net [GND] by a PCB trace.
+Port [Q9.pin3] is not connected to net [HAPTIC_N] by a PCB trace.
+Port [D3.cathode] is not connected to net [VMOTOR] by a PCB trace.
+Port [D3.anode] is not connected to net [HAPTIC_N] by a PCB trace.
+Port [C70.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C70.pin2] is not connected to net [GND] by a PCB trace.
+Port [C71.pin1] is not connected to net [VMOTOR] by a PCB trace.
+Port [C71.pin2] is not connected to net [GND] by a PCB trace.
+Port [C72.pin1] is not connected to net [VMOTOR] by a PCB trace.
+Port [C72.pin2] is not connected to net [HAPTIC_N] by a PCB trace.
+Port [R82.pin1] is not connected to net [VMOTOR] by a PCB trace.
+Port [R82.pin2] is not connected to net [GND] by a PCB trace.
+Port [R83.pin1] is not connected to net [MCU_HAPTIC_ENABLE] by a PCB trace.
+Port [R83.pin2] is not connected to net [HAPTIC_NMOS_GATE] by a PCB trace.
+Port [R84.pin1] is not connected to net [HAPTIC_NMOS_GATE] by a PCB trace.
+Port [R84.pin2] is not connected to net [GND] by a PCB trace.
+Port [R85.pin1] is not connected to net [MCU_HAPTIC_ENABLE] by a PCB trace.
+Port [R85.pin2] is not connected to net [GND] by a PCB trace.
+Port [U23.IN] is not connected to net [MIC_INPUT] by a PCB trace.
+Port [U23.GND] is not connected to net [GND] by a PCB trace.
+Port [U23.EN] is not connected to net [HOLD_HARDWARE] by a PCB trace.
+Port [U23.OUT] is not connected to net [VMIC] by a PCB trace.
+Port [U24.1A] is not connected to net [MIC_BCLK_INPUT] by a PCB trace.
+Port [U24.GND] is not connected to net [GND] by a PCB trace.
+Port [U24.2A] is not connected to net [MIC_WS_INPUT] by a PCB trace.
+Port [U24.2Y] is not connected to net [MIC_WS] by a PCB trace.
+Port [U24.VCC] is not connected to net [VMIC] by a PCB trace.
+Port [U24.1Y] is not connected to net [MIC_BCLK] by a PCB trace.
+Port [C73.pin1] is not connected to net [MIC_INPUT] by a PCB trace.
+Port [C73.pin2] is not connected to net [GND] by a PCB trace.
+Port [C74.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [C74.pin2] is not connected to net [GND] by a PCB trace.
+Port [C75.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [C75.pin2] is not connected to net [GND] by a PCB trace.
+Port [R86.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [R86.pin2] is not connected to net [GND] by a PCB trace.
+Port [R87.pin1] is not connected to net [HOLD_HARDWARE] by a PCB trace.
+Port [R87.pin2] is not connected to net [GND] by a PCB trace.
+Port [R88.pin1] is not connected to net [MCU_MIC_BCLK] by a PCB trace.
+Port [R88.pin2] is not connected to net [MIC_BCLK_INPUT] by a PCB trace.
+Port [R89.pin1] is not connected to net [MCU_MIC_WS] by a PCB trace.
+Port [R89.pin2] is not connected to net [MIC_WS_INPUT] by a PCB trace.
+Port [R90.pin1] is not connected to net [MIC_BCLK_INPUT] by a PCB trace.
+Port [R90.pin2] is not connected to net [GND] by a PCB trace.
+Port [R91.pin1] is not connected to net [MIC_WS_INPUT] by a PCB trace.
+Port [R91.pin2] is not connected to net [GND] by a PCB trace.
+Port [R92.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [R92.pin2] is not connected to net [MIC_BCLK] by a PCB trace.
+Port [R93.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [R93.pin2] is not connected to net [MIC_WS] by a PCB trace.
+Port [R94.pin1] is not connected to net [MIC_BCLK] by a PCB trace.
+Port [R94.pin2] is not connected to net [GND] by a PCB trace.
+Port [R95.pin1] is not connected to net [MIC_WS] by a PCB trace.
+Port [R95.pin2] is not connected to net [GND] by a PCB trace.
+Port [U26.A] is not connected to net [HOLD_HARDWARE] by a PCB trace.
+Port [U26.GND] is not connected to net [GND] by a PCB trace.
+Port [U26.Y] is not connected to net [HOLD_BUFFER_OUT] by a PCB trace.
+Port [U26.VCC] is not connected to net [V3V3] by a PCB trace.
+Port [R99.pin1] is not connected to net [HOLD_HARDWARE] by a PCB trace.
+Port [R99.pin2] is not connected to net [GND] by a PCB trace.
+Port [R100.pin1] is not connected to net [HOLD_BUFFER_OUT] by a PCB trace.
+Port [R100.pin2] is not connected to net [MCU_HOLD_READ] by a PCB trace.
+Port [C78.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C78.pin2] is not connected to net [GND] by a PCB trace.
+Port [U25.N_RESET] is not connected to net [BUCK_ENABLE] by a PCB trace.
+Port [U25.GND] is not connected to net [GND] by a PCB trace.
+Port [U25.N_MR] is not connected to net [VSYS] by a PCB trace.
+Port [U25.SENSE] is not connected to net [PACK_BAT] by a PCB trace.
+Port [U25.VDD] is not connected to net [VSYS] by a PCB trace.
+Port [R96.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [R96.pin2] is not connected to net [BUCK_ENABLE] by a PCB trace.
+Port [R97.pin1] is not connected to net [BUCK_ENABLE] by a PCB trace.
+Port [R97.pin2] is not connected to net [GND] by a PCB trace.
+Port [C76.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C76.pin2] is not connected to net [GND] by a PCB trace.
+Port [C77.pin1] is not connected to net [BUCK_ENABLE] by a PCB trace.
+Port [C77.pin2] is not connected to net [GND] by a PCB trace.
+Port [U4.WS] is not connected to net [MIC_WS] by a PCB trace.
+Port [U4.GND] is not connected to net [GND] by a PCB trace.
+Port [U4.SCK] is not connected to net [MIC_BCLK] by a PCB trace.
+Port [U4.VDD] is not connected to net [VMIC] by a PCB trace.
+Port [U4.SD] is not connected to net [MIC_SD] by a PCB trace.
+Port [U5.WS] is not connected to net [MIC_WS] by a PCB trace.
+Port [U5.GND] is not connected to net [GND] by a PCB trace.
+Port [U5.SCK] is not connected to net [MIC_BCLK] by a PCB trace.
+Port [U5.VDD] is not connected to net [VMIC] by a PCB trace.
+Port [U5.SD] is not connected to net [MIC_SD] by a PCB trace.
+Port [U4.LR] is not connected to net [GND] by a PCB trace.
+Port [U5.LR] is not connected to net [VMIC] by a PCB trace.
+Port [C80.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [C80.pin2] is not connected to net [GND] by a PCB trace.
+Port [C81.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [C81.pin2] is not connected to net [GND] by a PCB trace.
+Port [U7.pin1] is not connected to net [MIC_SD_BUFFERED] by a PCB trace.
+Port [U7.pin2] is not connected to net [GND] by a PCB trace.
+Port [U7.pin3] is not connected to net [MIC_SD] by a PCB trace.
+Port [U7.pin4] is not connected to net [MIC_SD_REF] by a PCB trace.
+Port [U7.pin5] is not connected to net [V3V3] by a PCB trace.
+Port [R26.pin1] is not connected to net [MIC_SD] by a PCB trace.
+Port [R26.pin2] is not connected to net [GND] by a PCB trace.
+Port [R27.pin1] is not connected to net [MIC_SD_BUFFERED] by a PCB trace.
+Port [R27.pin2] is not connected to net [MCU_MIC_SD] by a PCB trace.
+Port [R29.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [R29.pin2] is not connected to net [MIC_SD_REF] by a PCB trace.
+Port [R30.pin1] is not connected to net [MIC_SD_REF] by a PCB trace.
+Port [R30.pin2] is not connected to net [GND] by a PCB trace.
+Port [C25.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C25.pin2] is not connected to net [GND] by a PCB trace.
+Port [C26.pin1] is not connected to net [MIC_SD_REF] by a PCB trace.
+Port [C26.pin2] is not connected to net [GND] by a PCB trace.
+Port [SW4.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [SW4.pin2] is not connected to net [HOLD_HARDWARE] by a PCB trace.
+Port [SW1.pin1] is not connected to net [MCU_BOOT_N] by a PCB trace.
+Port [SW1.pin2] is not connected to net [GND] by a PCB trace.
+Port [SW2.pin1] is not connected to net [MCU_EN] by a PCB trace.
+Port [SW2.pin2] is not connected to net [GND] by a PCB trace.
+Port [SW5.pin2] is not connected to net [MIC_INPUT] by a PCB trace.
+Port [SW5.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [SW5.pin3] is not connected to net [GND] by a PCB trace.
+Port [SW5.pin4] is not connected to net [GND] by a PCB trace.
+Port [J8.pin1] is not connected to net [VMOTOR] by a PCB trace.
+Port [J8.pin2] is not connected to net [HAPTIC_N] by a PCB trace.
+Ports [U27.ISET, R102.pin1] are not connected together through the same net.
+Port [R102.pin2] is not connected to net [GND] by a PCB trace.
+Port [U27.D4] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.
+Port [U27.D3] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.
+Port [U27.D2] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.
+Port [U27.D1] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.
+Port [U27.PGND] is not connected to net [GND] by a PCB trace.
+Port [U27.VOUT] is not connected to net [LCD_BACKLIGHT_OUTPUT] by a PCB trace.
+Ports [U27.C2_POS, C83.pin1] are not connected together through the same net.
+Ports [U27.C2_NEG, C83.pin2] are not connected together through the same net.
+Ports [U27.C1_POS, C82.pin1] are not connected together through the same net.
+Ports [U27.C1_NEG, C82.pin2] are not connected together through the same net.
+Port [U27.VIN] is not connected to net [V3V3] by a PCB trace.
+Port [U27.GND] is not connected to net [GND] by a PCB trace.
+Port [U27.EN1] is not connected to net [BACKLIGHT_GATE] by a PCB trace.
+Port [U27.EN2] is not connected to net [BACKLIGHT_GATE] by a PCB trace.
+Port [U27.EP] is not connected to net [GND] by a PCB trace.
+Port [R103.pin1] is not connected to net [MCU_BACKLIGHT_PWM] by a PCB trace.
+Port [R103.pin2] is not connected to net [BACKLIGHT_GATE] by a PCB trace.
+Port [R104.pin1] is not connected to net [BACKLIGHT_GATE] by a PCB trace.
+Port [R104.pin2] is not connected to net [GND] by a PCB trace.
+Port [C84.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [C84.pin2] is not connected to net [GND] by a PCB trace.
+Port [C85.pin1] is not connected to net [LCD_BACKLIGHT_OUTPUT] by a PCB trace.
+Port [C85.pin2] is not connected to net [GND] by a PCB trace.
+Port [TP1.pin1] is not connected to net [GND] by a PCB trace.
+Port [TP2.pin1] is not connected to net [VBUS] by a PCB trace.
+Port [TP3.pin1] is not connected to net [PACK_BAT] by a PCB trace.
+Port [TP4.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [TP5.pin1] is not connected to net [V3V3] by a PCB trace.
+Port [TP6.pin1] is not connected to net [VMIC] by a PCB trace.
+Port [TP7.pin1] is not connected to net [HOLD_HARDWARE] by a PCB trace.
+Port [TP8.pin1] is not connected to net [CHARGE_STATUS_N] by a PCB trace.
+Trace [U2.pin9 to L1.pin1] is not connected (it has no PCB trace)
+Trace [U2.pin7 to L1.pin2] is not connected (it has no PCB trace)
+Trace [U27.pin1 to R102.pin1] is not connected (it has no PCB trace)
+Trace [U27.pin9 to C83.pin1] is not connected (it has no PCB trace)
+Trace [U27.pin12 to C83.pin2] is not connected (it has no PCB trace)
+Trace [U27.pin10 to C82.pin1] is not connected (it has no PCB trace)
+Trace [U27.pin11 to C82.pin2] is not connected (it has no PCB trace)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+error: script "build" exited with code 1

@@ -40,13 +40,13 @@ test("AKY2945 centre NTC is connected and unresolved outer polarity is left open
   }
 })
 
-test("frozen A3 M2 mounts are nonconductive holes with all-layer circular clearance", () => {
+test("A4 trial M2 mounts are nonconductive holes with all-layer circular clearance", () => {
   const mounts = elements.filter(
     (element) => element.type === "pcb_hole" && element.hole_diameter === 2.2,
   )
   expect(mounts).toHaveLength(2)
   for (const [x, y] of [
-    [2, 13],
+    [22, -23],
     [-21.5, -29.5],
   ]) {
     expect(

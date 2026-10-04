@@ -10,14 +10,15 @@ const sourceElements = any_circuit_element
   .array()
   .parse(rawElements.filter((element) => element.type.startsWith("source_")))
 
-test("TPS60231 current driver uses TI physical pins, three independent LED returns and same-rail enables", () => {
+test("TPS60230 current driver uses TI physical pins, four independent LED returns and same-rail enables", () => {
   const component = sourceElements.find(
     (element) => element.type === "source_component" && element.name === "U27",
   )
   if (!component || component.type !== "source_component")
-    throw new Error("Missing genuine TPS60231")
-  expect(component.manufacturer_part_number).toBe("TPS60231RGTR")
+    throw new Error("Missing genuine TPS60230")
+  expect(component.manufacturer_part_number).toBe("TPS60230RGTR")
   for (const [pinNumber, netName] of [
+    [3, "LCD_BACKLIGHT_RETURN_4"],
     [4, "LCD_BACKLIGHT_RETURN_3"],
     [5, "LCD_BACKLIGHT_RETURN_2"],
     [6, "LCD_BACKLIGHT_RETURN_1"],
@@ -49,7 +50,7 @@ test("TPS60231 current driver uses TI physical pins, three independent LED retur
       ),
     ).toBe(true)
   }
-  for (const pinNumber of [2, 3]) {
+  for (const pinNumber of [2]) {
     const port = sourceElements.find(
       (element) =>
         element.type === "source_port" &&

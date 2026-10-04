@@ -2,7 +2,7 @@ import { place } from "./placement"
 import { MAX98357AETE_T } from "../../imports/MAX98357AETE_T/MAX98357AETE_T"
 import { AO3400A } from "../../imports/AO3400A/AO3400A"
 import { AO3401A } from "../../imports/AO3401A/AO3401A"
-import { S2B_PH_SM4_TB_LF__SN_ } from "../../imports/S2B_PH_SM4_TB_LF__SN_/S2B_PH_SM4_TB_LF__SN_"
+import { S2B_PH_K_S_LF__SN_ } from "../../imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_"
 import { RC0603FR_071KL } from "../../imports/RC0603FR_071KL/RC0603FR_071KL"
 import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
 import { RC0603FR_07100RL } from "../../imports/RC0603FR_07100RL/RC0603FR_07100RL"
@@ -22,7 +22,7 @@ export function SpeakerSheet() {
         <MAX98357AETE_T name="U3" {...place("U3")} schX={2} schY={0} />
         <AO3400A name="Q1" {...place("Q1")} schX={-10} schY={-8} />
         <AO3401A name="Q2" {...place("Q2")} schX={-5} schY={-8} />
-        <S2B_PH_SM4_TB_LF__SN_ name="J4" {...place("J4")} schX={9} schY={0} />
+        <S2B_PH_K_S_LF__SN_ name="J4" {...place("J4")} schX={9} schY={0} />
         <GRM188R61A106ME69D name="C50" {...place("C50")} schX={1} schY={7} schRotation={-90} />
         <GRM188R71C104KA01D name="C51" {...place("C51")} schX={4} schY={7} schRotation={-90} />
         <RC0603FR_07100RL name="R60" {...place("R60")} schX={-15} schY={-8} />
@@ -42,8 +42,6 @@ export function SpeakerSheet() {
         <trace from="U3.pin10" to="net.SPEAKER_N" />
         <trace from="J4.pin1" to="net.SPEAKER_P" />
         <trace from="J4.pin2" to="net.SPEAKER_N" />
-        <trace from="J4.pin3" to="net.GND" />
-        <trace from="J4.pin4" to="net.GND" />
         <trace from="Q1.pin1" to="net.AUDIO_NMOS_GATE" />
         <trace from="Q1.pin2" to="net.GND" />
         <trace from="Q1.pin3" to="net.AUDIO_PMOS_GATE" />

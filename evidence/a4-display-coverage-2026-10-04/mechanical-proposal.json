@@ -1,0 +1,105 @@
+{
+  "revision": "A4 provisional display coverage trial",
+  "target": "physical display body overlapping PCB; excludes flex, bezel and external overhang",
+  "pcb": {
+    "width": 50,
+    "height": 65,
+    "radius": 3,
+    "thickness": 0.8,
+    "stackup_qualification": "PENDING; prior 1.6mm USB impedance study invalid for this trial"
+  },
+  "display": {
+    "supplier": "BuyDisplay / EastRising",
+    "part": "ER-TFT026-1 no touch",
+    "status": "PROVISIONAL: no current purchasable bare-panel listing verified",
+    "body": [
+      46,
+      64,
+      2.55
+    ],
+    "drawing_tolerances": [
+      0.2,
+      0.2,
+      0.1
+    ],
+    "centre": [
+      -5.8,
+      -0.8
+    ],
+    "body_bounds": [
+      -28.8,
+      -32.8,
+      17.2,
+      31.2
+    ],
+    "pcb_overlap_area": 2688.1400000000003,
+    "conservative_coverage_percent": 82.712,
+    "lower_coverage_with_dimension_and_position_allocation_percent": 81.73723076923076,
+    "position_allocation": 0.2,
+    "current_drawing_visual_review": "Unavailable current PDF download; indexed Rev3 text only. Historical Rev1 drawing inspected but its 3.4mm thickness and flex shape cannot qualify current 2.55mm variant.",
+    "active_area": [
+      39.6,
+      52.8
+    ],
+    "active_offset": "PROVISIONAL; do not qualify from historical drawing",
+    "connector": {
+      "part": "AFC07-S50ECA-00",
+      "jlc": "C262650",
+      "pins": 50,
+      "pitch": 0.5,
+      "contact": "top",
+      "fpc_thickness": 0.3,
+      "existing_reverse_mapping": "51 - panel pin, retained provisionally; portrait tail/fold/contact face not approved"
+    },
+    "connector_rail": "J3 at22,25; J4 at22,8; J8 at22,-9; J3 native rotation0, J4/J8 native rotation180; all mouths -Y. Mated bodies occupy right rail; wires must turn rearward before the next connector."
+  },
+  "battery": {
+    "part": "AKY2945/LP523450",
+    "xy": [
+      35,
+      52.5
+    ],
+    "centre": [
+      0,
+      -4.5
+    ],
+    "height_nominal": 5.7,
+    "height_with_conditional_10_percent_allowance": 6.27,
+    "pinout": "outer PENDING / centre NTC / outer PENDING"
+  },
+  "case": {
+    "maximum": [
+      60,
+      75,
+      15
+    ],
+    "centre_xy": [
+      0,
+      3.5
+    ],
+    "wall": 0.8
+  },
+  "antenna_keepout": {
+    "bounds": [
+      -22,
+      31.675,
+      -2,
+      39.675
+    ],
+    "nominal_display_gap": 0.475,
+    "gap_with_max_size_and_.2_position_allocation": 0.175
+  },
+  "z_budget": {
+    "rear_cover": 0.5,
+    "battery_clearance": 0.3,
+    "battery_conditional": 6.27,
+    "pcb_max": 0.9,
+    "module_max": 3.25,
+    "solder_allocation": 0.2,
+    "display_gap": 0.2,
+    "display_max": 2.65,
+    "front_cover": 0.6,
+    "total_conditional": 14.87,
+    "status": "Not qualified: swelling, case/board flatness, actual flex and connector solder termination tolerances unresolved; JST nominal 0.8mm minimum board needs actual lower tolerance review."
+  }
+}

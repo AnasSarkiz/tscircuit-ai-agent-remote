@@ -1,0 +1,1870 @@
+                                                           TFT LCD Display Datasheet                                       ER-TFT026-1
+EastRising
+                                          EA
+
+
+
+buydisplay.com
+
+
+
+
+                                                                                              0B
+
+
+
+
+                                                            1B   ER-TFT026-1
+                                                      2B   TFT LCD Display Datasheet
+
+
+
+                                                    ISO9001
+                                                     Registered Company
+
+
+
+
+                                                    sira
+                                                    CERTIFICATION
+                                                                            011
+
+
+
+
+                                           EastRising Technology Co., Limited
+
+
+       4B   Attention:
+       A. Some specifications of IC are not listed in this datasheet. Please refer to the IC datasheet for more details.
+
+       B. The related documents for interfacing, demo code, ic datasheet are all available, please download from our web.
+
+            C. Please pay more attention to “INSPECTION CRITERIA” in this datasheet. We assume you already agree with these criterions
+
+                         when you place an order with us. No more recommendations.
+
+
+                          7B
+
+
+
+
+             REV
+             8B3                 DESCRIPTION
+                                 9B4                                                                                        RELEASE DATE
+                                                                                                                            10B5
+
+
+
+
+                   1.0
+                   1B6           Preliminary Release
+                                 12B7                                                                                              13B8   Jun-19-2014
+
+
+
+
+                                                                                     14B937
+
+
+
+
+URL:        www.buydisplay.com                                   Document Name: ER-TFT026-1 Datasheet-Rev1.0                                  Page: 1 of 20
+                                                                                           TFT LCD Display Datasheet                                                      ER-TFT026-1
+EastRising
+                                                                            EA
+
+
+
+buydisplay.com
+
+
+
+
+                                                                                                       CONTENTS
+                                                      15B0H
+
+
+
+
+                          18BH              1. ORDERING INFORMATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                                          04          U
+
+
+
+
+                                                      1.1 Order Number - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - 04
+                                                      19B4H                                                                                                                                                    H
+
+
+
+
+                                                      1.2 Image - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 04
+                                                      20B15H                                                                                                                                                           H21B
+
+
+
+
+                                 21B8HU     2. SPECIFICATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                           05          U
+
+
+
+
+                                                      2.1 Display Specification - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 05
+                                                      2B194H
+
+
+
+
+                                                      2.2 Mechanical Specification - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 05
+                                                      23B015H
+
+
+
+
+                  24B1H                           H   2.3 Electrical Specification - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 05
+                                                      2.4 Optical Specification - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 05
+                                                      25B1H
+
+
+
+
+                                 26B31HU    3. OUTLINE DRAWING- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                            06              U
+
+
+
+
+                                 21B8HU     4. ELECTRICAL SPEC - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                              07          U
+
+
+
+
+                                                      4.1 Pin Configuration - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 07
+                                                      2B194H                                                                                                                                                   H
+
+
+
+
+                                                      4.2 Absolute Maximum Ratings - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 09
+                                                      23B015H                                                                                                                                          H
+
+
+
+
+                  24B1H                           H   4.3 Electrical Characteristics - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 09
+                                                                 H                                                                                                                                                     H5B21
+
+
+
+
+                                 H31B2869   5. INSPECTION CRITERIA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                                     10
+
+                                                      5.1 Acceptable Quality Level - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      32B970H                                                                                                                                              10  H       H
+
+
+
+
+                                                      5.2 Definition of Lot - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      3B0281H                                                                                                                                              10
+                                                                                                                                                                                                           H           H
+
+
+
+
+                                                      5.3 Condition of Cosmetic Inspection - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      34B129H                                                                                                                                              10
+                                                                                                                                                                                                           H           H
+
+
+
+
+                                                      5.4 Module Cosmetic Criteria - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      35B204H                                                                                                                                              11
+                                                                                                                                                                                                           H
+
+
+
+
+                                                      5.5 Screen Cosmetic Criteria (Non-Operating) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      36B14H                                                                                                                                               13
+                                                                                                                                                                                                           H       H
+
+
+
+
+                                                      5.6 Screen Cosmetic Criteria (Operating) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      37B42H                                                                                                                                               14  H
+
+
+
+
+38B54H                    6. PRECAUTIONS FOR USING - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                                                             16
+
+                                                      6.1 Handling Precautions - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      39B641H                                                                                                                                          16
+                                                      6.2 Power Supply Precautions- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      40B3752H                                                                                                                                         17
+                                                      6.3 Operating Precautions - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      41B386H                                                                                                                                          17
+                                                      6.4 Mechanical/Environmental Precautions - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      42B397H                                                                                                                                          17
+                                                      6.5 Storage Precautions - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      43B08H                                                                                                                                           17
+                                                      6.6 Others - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                      4B139H                                                                                                                                           17
+
+
+
+         45B20H
+
+
+
+
+                  URL:                                www.buydisplay.com                      Document Name: ER-TFT026-1 Datasheet-Rev1.0                                            Page: 2 of 20
+                                           TFT LCD Display Datasheet                                                    ER-TFT026-1
+EastRising
+                            EA
+
+
+
+buydisplay.com
+
+7. USING LCD MODULES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   H                                                                                                                                                     18
+
+       7.1 Liquid Crystal Display Modules - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       46B31H                                                                                                                                        18
+       7.2 Installing LCD Modules - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       47B2H                                                                                                                                         18
+                                                                                                                                                     H       H
+
+
+
+
+       7.3 Precaution for Handling LCD Modules - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       48B53H                                                                                                                                        19
+       7.4 Electro-Static Discharge Control- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       49B6H                                                                                                                                         19
+       7.5 Precaution for Soldering to EastRising LCM- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       50B47H                                                                                                                                        19
+       7.6 Precaution for Operation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       51B486H                                                                                                                                       20  H   H
+
+
+
+
+       7.7 Limited Warranty - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       52B497H                                                                                                                                       20  H
+
+
+
+
+       7.8 Return Policy - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       53B048H                                                                                                                                       20
+
+
+
+
+URL:   www.buydisplay.com                     Document Name: ER-TFT026-1 Datasheet-Rev1.0                                           Page: 3 of 20
+                                                 TFT LCD Display Datasheet                                       ER-TFT026-1
+EastRising
+                                           EA
+
+
+
+buydisplay.com
+
+ 1. ORDERING INFORMATION
+ 54B197
+
+
+
+
+          1.1 Order Number
+          5B2461
+
+
+
+
+                   Part Number(Order Number)
+                   60B574                              61B584   Description
+                   ER-TFT026-1                                  TFT LCD Module with no Touch Panel.
+                   ER-TP026-1                          4-wire Resistive Touch Panel used for ER-TFT026-1
+                   ER-CON50HT-1                                 ZIF Connector with 50 Pins 0.5mm Pitch SMD horizontal type top contact
+                   ER-DBT026-1                         Test or Demo Board for ER-TFT026-1 and ER-TP026-1
+
+
+
+
+                   1.2       Image
+
+
+
+
+                             Image for ER-TFT026-1↑                     Image for ER-CON50HT-1↑             Image for ER-TP026-1↑
+
+
+
+
+URL:                        www.buydisplay.com        Document Name: ER-TFT026-1 Datasheet-Rev1.0                        Page: 4 of 20
+                                                      TFT LCD Display Datasheet                                             ER-TFT026-1
+EastRising
+                                                EA
+
+
+
+buydisplay.com
+
+ 2. SPECIFICATION
+ 58B214039
+
+
+
+
+ 2.1 Display Specification
+ 40B59376
+
+
+
+
+             ITEM       60B574                                 STANDARD VALUE
+                                                               61B584                                                                     UNIT
+                                                                                                                                          62B594
+
+
+
+
+             Display Format
+             63B057                                            240（RGB）x 320 Dots
+                                                               64B158                                                                                                                                      --
+                                                                                                                                                                                                           65B29
+
+
+
+
+             Display Connector
+             6B308                                             FPC
+                                                               67B419                                                                                                                                      --
+                                                                                                                                                                                                           68B5270
+
+
+
+
+             FPC Connector
+             69B3                                                                  50 Pin,0.5mm Pitch, SMD Horizontal Type Top contact                                                                     --
+             Operating Temperature
+             70B648                                            -20 ~ +70
+                                                               71B685
+                                                                                                                                                                                        72B698   ℃
+
+             Storage Temperature
+             73B0689                                           -30 ~ +80
+                                                               74B16890
+                                                                                                                                                                                                 ℃
+                                                                                                                                                                                                 75B2691
+
+
+
+
+             Touch Panel Optional                              Yes                                                                                                                                         --         81B75
+
+
+
+
+             Sunlight Readable
+             82B796                                            83B07               No                                                                                                                      --
+                                                                                                                                                                                                           84B17
+
+
+
+
+ 2.2 Mechanical Specification
+             ITEM
+             86B30                                             STANDARD VALUE
+                                                               87B41                                                                      UNIT
+                                                                                                                                          8B52
+
+
+
+
+             Diagonal Size
+             89B63                                             2.6
+                                                               90B874                                                                              91B85                       inch
+             Outline Dimension with FPC Folded                 46.0×64.0                                                                                   mm
+             Active Area
+             92B86                                                        39.6×52.8                                                                        mm
+                                                                                                                                                           93B087
+
+
+
+
+             Dot Pitch
+             9B63                                              0.165×0.16510B974                                                                           mm         10B985
+
+
+
+
+             Gross Weight
+             102B96                                            0.04
+                                                               103B97                                                                                                          kg
+                                                                                                                                                                               104B98
+
+
+
+
+ 2.3 Electrica Specification
+             ITEM
+             106B3                                             STANDARD VALUE
+                                                               107B4                                                                      UNIT
+                                                                                                                                          108B52
+
+
+
+
+             IC Package
+             109B637                                           COG
+                                                               10B742                                                                                                                                      --
+                                                                                                                                                                                                           1B085
+
+
+
+
+             Controller
+             12B0967                                           ILI9341
+                                                               13B072                                                                                                                                      --
+                                                                                                                                                                                                           14B08
+
+
+
+
+             Interface
+             15B209                                            8080 8-bit Parallel, 8080 9-bit Parallel, 8080 16-bit
+                                                               16B309                                                                                                                                      --
+                                                                                                                                                                                                           17B4
+
+
+
+
+                                                               Parallel, 8080 18-bit Parallel,3-Wire SPI,4-Wire
+                                                               SPI,RGB.
+             Response Time (Typ)                               25                                                                                                              ms
+
+
+ 2.4 Optical Specification
+             ITEM
+             19B63                                             STANDARD VALUE
+                                                               120B74                                                                     UNIT
+                                                                                                                                          12B85
+
+
+
+
+             LCD Type
+             12B9653                                           TFT-LCD / Transmissive / Positive
+                                                               123B0754                                                                                                                                    --
+                                                                                                                                                                                                           124B85
+
+
+
+
+             Viewing Angle Range
+             128B56                                            Left:60, Right:60, Up:50, Down:60
+                                                               129B63                                                                                      deg
+                                                                                                                                                           130B2746
+
+
+
+
+             Colors
+             13B2856                                           65K/262K
+                                                               132B9657                                                                                                                                    --
+                                                                                                                                                                                                           13B02758
+
+
+
+
+             Contrast Ratio (Typ)
+             134B2859                                          500:1
+                                                               135B2960                                                                                                                                    --
+                                                                                                                                                                                                           136B0
+
+
+
+
+             Brightness (Typ)                                  300                                                                       cd/m2
+
+
+
+
+URL:                             www.buydisplay.com    Document Name: ER-TFT026-1 Datasheet-Rev1.0                                 Page: 5 of 20
+                                              138B524607                                                                                                           459B1376
+
+
+
+
+URL:
+
+
+                                                                                               REV            DESCRIPTION         DESIGN           DATE
+                                                                                                              1'ST DEGIN          JAVEN           May-29-2014
+                                                                                                A
+
+                                                                                                                                                                                     buydisplay.com
+                                                                                                                                                                                                 EastRising
+
+                                                                                                                                                                                                         EA
+www.buydisplay.com
+
+
+                                                                                                                                                                3. OUTLINE DRAWING
+
+
+
+
+                                                                                                                                                                                                      TFT LCD Display Datasheet
+Document Name: ER-TFT026-1 Datasheet-Rev1.0
+
+
+
+
+                                                                 m
+                                                                 o
+                                                                 c
+                                                                 .
+                                                                 y
+                                                                 a
+                                                                 l
+                                                                 p
+                                                                 s
+                                                                 i
+                                                                 d
+                                                                 y
+                                                             EastRising
+                                                                 u
+                                                                 b
+                                                                               EASTRISING TECHNOLOGY CO.,LTD
+                                                            TEL:86-755-33503874           FAX:86-755-33507642-801
+                                                           APPROVALS        DATE                                               GENERAL TOL.          UNITS
+                                                                                         MODEL NUMBER :                                               MM
+                                                           APP                                                                 SCALE:
+                                                                                         ER-TFT026-1                           N.T.S.
+                                                           CHK
+                                                                 JIM      May-29-2014   DO NOT SCALE THIS DRAWING.   PROJECTION SHEET:        1
+                                                           DWN
+
+
+
+
+Page: 6 of 20
+                                                                                                                                                                                                      ER-TFT026-1
+                                    TFT LCD Display Datasheet                                   ER-TFT026-1
+EastRising
+                              EA
+
+
+
+buydisplay.com
+
+ 4. ELECTRICAL SPEC
+ 4.1 Pin Configuration
+ 48B139562
+
+
+
+
+             Pin No      Pin Name                                        Descriptions
+               1           LEDA     Anode for LED backlighting
+               2          LEDK1     Cathode No.1 for LED backlighting
+
+               3          LEDK2     Cathode No.2 for LED backlighting
+               4          LEDK3     Cathode No.3 for LED backlighting
+               5          LEDK4     Cathode No.4 for LED backlighting
+               6            IM0
+               7            IM1
+                                    Select Interface Mode (Refer to Note1)
+               8            IM2
+
+               9            IM3
+              10          RESET     Reset pin
+              11          VSYNC     Frame Synchronizing Signal For RGB Interface
+              12          HSYNC     Line Synchronizing Signal For RGB Interface
+              13         DOTCLK     Dot Clock Signal For RGB Interface
+              14            DE      Data Enable Signal For RGB Interface
+             15-32      DB17-DB0    DATA BUS
+              33           SDO      Serial Output Signal
+              34            SDI     Serial Input Signal
+              35            RD      Read execution control pin
+              36        WRX(D/CX)   Write execution control pin ; Serial Register select s Signal
+              37        D/CX(SCL)   Register select signal; Serial Interface Clock
+              38           CSX      Chip Select Signal
+              39            TE      Tearing effect out pin synchronize MPU to frame writng
+              40           VDDI     Power Supply to the interface pins ,provide with 2.8V
+
+              41           VDDI     Power Supply to the interface pins ,provide with 2.8V
+              42            VCI     Logic power ,provide with 2.8V
+              43           GND      Ground
+
+              44            X+      Touch panel output
+              45            Y+      Touch panel output
+              46            X-      Touch panel output
+
+
+
+URL:           www.buydisplay.com     Document Name: ER-TFT026-1 Datasheet-Rev1.0                   Page: 7 of 20
+                                      TFT LCD Display Datasheet                                       ER-TFT026-1
+EastRising
+                          EA
+
+
+
+buydisplay.com
+     47                 Y-           Touch panel output
+       48               GND          Ground
+       49               GND          Ground
+
+       50               GND          Ground
+            `
+            Note 1:
+                                                                                                Pin in use
+  IM3       IM2   IM1    IM0         MCU-Interface Mode
+                                                                       Register/content                      GRAM
+
+   0         0     0      0     8080 MCU 8-bit Bus Interface I              D[7:0]              D[7:0],WRX,RDX,CSX,D/CX
+
+   0         0     0      1    8080 MCU 16-bit Bus Interface I              D[7:0]             D[15:0],WRX,RDX,CSX,D/CX
+
+   0         0     1      0     8080 MCU 9-bit Bus Interface I              D[7:0]              D[8:0],WRX,RDX,CSX,D/CX
+
+   0         0     1      1    8080 MCU 18-bit Bus Interface I              D[7:0]             D[17:0],WRX,RDX,CSX,D/CX
+
+   0         1     0      1    3-wire 9-bit data serial Interface I                           SCL,SDA,CSX
+
+   0         1     1      0    4-wire 8-bit data serial Interface I                        SCL,SDA,D/CX,CSX
+
+   1         0     0      0    8080 MCU 16-bit Bus Interface II             D[8:1]           D[17:0],D[8:1],WRX,RDX,CSX,D/CX
+
+   1         0     0      1     8080 MCU 8-bit Bus Interface II           D[17:10]             D[17:10],WRX,RDX,CSX,D/CX
+
+   1         0     1      0    8080 MCU 18-bit Bus Interface II             D[8:1]             D[17:0],WRX,RDX,CSX,D/CX
+
+   1         0     1      1     8080 MCU 9-bit Bus Interface II           D[17:10]             D[17:9],WRX,RDX,CSX,D/CX
+
+   1         1     0      1    3-wire 9-bit data serial Interface II                        SCL,SDI,SDO,CSX
+
+   1         1     1      0    4-wire 8-bit data serial Interface II                      SCL,SDI,D/CX,SDO,CSX
+
+
+
+
+URL:   www.buydisplay.com               Document Name: ER-TFT026-1 Datasheet-Rev1.0                             Page: 8 of 20
+                                                                                 TFT LCD Display Datasheet                                                                                                           ER-TFT026-1
+EastRising
+                                                                           EA
+
+
+
+buydisplay.com
+
+ 4.2 Absolute Maximum Ratings
+                                          43B251087           ITEM
+                                                              25B496                      SYMBOL
+                                                                                          253B047                                                                  MIN.
+                                                                                                                                                                   254B18                  TYP.
+                                                                                                                                                                                           25B49                                       MAX.
+                                                                                                                                                                                                                                       256B30                           UNIT
+                                                                                                                                                                                                                                                                        257B41
+
+
+
+
+                 Power Supply Voltage
+                 258B                                                                                                       VCI
+                                                                                                                            VC                                               -0.3                   -                                           +4.6                                       V
+                                                                                                                                                                                                                                                                                           260B574V
+
+
+
+
+                                Logic signal voltage
+                                261B58                                                                      VDDI
+                                                                                                            26B59                                                            -0.3                   -                                           +4.6                                       V
+       operating temperature
+       263B057                                                                                                                   Top
+                                                                                                                                 264B158T                                    -20                    -                                           +70                                        °C
+                        storage temperature
+                        265B9                                                                                       TST
+                                                                                                                    26B30                                                    -30                    -                                           +80                                        °C
+                                         Humidity                                                                                           RH                                -                                   90%(Max60°C)                                                             RH
+
+
+ 4.3 Electrical Characteristics
+                                                      ITEM
+                                                      268B5                                         SYMBOL
+                                                                                                    269B3                                                          MIN.
+                                                                                                                                                                   271B685                 TYP.
+                                                                                                                                                                                           27B69                     MAX.
+                                                                                                                                                                                                                     273B06                                   UNIT
+                                                                                                                                                                                                                                                              274B168
+
+
+
+
+  Power supply voltage                                                                                                                      VCI                              2.5                   2.8                                          3.3                                        V
+  Logic signalI/O voltage                                                                                           VDDI                                                     1.65                  2.8                                          3.3                                        V
+  Input voltage'H'level                                                                                                                     VIH                0.7VDDI                              -                         VDDI                                                         V
+  Input voltage'L'level                                                                                                                     VIL                              VSS                    -               0.3VDDI                                                                V
+
+  Output voltage'H'level                                                                                            VOH                                        0.8VDDI                              -                         VDDI                                                         V
+
+  Output voltage'L'level                                                                                                    VCL                                    VSS0                             -               0.2VDDI                                                                V
+
+
+ Backlight Characteristics
+                                                      ITEM
+                                                      268B5                       SYMBOL
+                                                                                  269B3                                                           CONDITION
+                                                                                                                                                  271B685                           MIN.            TYP.
+                                                                                                                                                                                                    27B69                     MAX.
+                                                                                                                                                                                                                              273B06                                             UNIT
+                                                                                                                                                                                                                                                                                 274B168
+
+
+
+
+  Supply voltage                                                                                                                            Vf              If=80mA                  -                      3.2                                 3.4                                                   V
+  Supply Current                                                                                                                            -                  -                     -                       -                                   -                                         mA
+  Reverse Voltage                                                                                                                Vr                            -                     -                       -                                   -                                                    V
+  Forward                                                              Normal                                               lpn                             4-chip                                          70                                  80
+  current                                                                                                                                                   Parallel                                                                                                                       mA
+                                                                       Dimming                                              lpd
+
+
+
+
+URL:                    www.buydisplay.com                                        Document Name: ER-TFT026-1 Datasheet-Rev1.0                                                                                                                          Page: 9 of 20
+                                                                                              TFT LCD Display Datasheet                          ER-TFT026-1
+EastRising
+                                                                                EA
+
+
+
+buydisplay.com
+
+        5. INSPECTION CRITERIA
+        286B3094
+
+
+
+
+                            5.1 Acceptable Quality Level
+                            H287B4130
+
+
+
+
+                              Each lot should satisfy the quality level defined as follows
+                                        28B5
+
+
+
+
+                   PARTITION
+                   289B63                                             AQL
+                                                                      290B874                                            DEFINITION
+                                                                                                                         291B85
+
+
+
+
+A. Major
+29B86                                                       0.4%
+                                                            293B087                  Functional defective as product
+                                                                                     294B18
+
+
+
+
+B. Minor
+295B8                                                       1.5%
+                                                            296B30                   Satisfy all functions as product but not satisfy cosmetic stanard
+                                                                                     297B41
+
+
+
+
+        5.2 Definition of Lot
+        298B5436
+
+
+
+
+           One lot means the delivery quantity to customer at one time.
+                                        29B63
+
+
+
+
+        5.3 Condition of Cosmetic Inspection
+        ◆ INSPECTION AND TEST
+        301B2985
+
+
+
+
+           -FUNCTION TEST               302B96
+
+
+
+
+           -APPEARANCE INSPECTION       30B297
+
+
+
+
+           -PACKING SPECIFICTION        304B1298
+
+
+
+
+        ◆ INSPECTION CONDITION
+        305B29
+
+
+
+
+          - Put under the lamp (20w¡Á2) at a distance 100mm from
+                                        306B
+
+
+
+
+          - Tilt upright 45 degree by the front (back) to inspect LCD appearance.
+                                        307B41
+
+
+
+
+        ◆ AQL INSPECTION LEVEL
+        308B52
+
+
+
+
+          - SAMPLING METHOD: MIL-STD-105D
+                                        309B6
+
+
+
+
+          - SAMPLING PLAN: SINGLE       310B74
+
+
+
+
+          - MAJOR DEFECT: 0.4% (MAJOR)  31B085
+
+
+
+
+          - MINOR DEFECT: 1.5% (MINOR)  312B096
+
+
+
+
+          - GENERAL LEVEL: II/NORMAL    31B07
+
+
+
+
+        314B
+
+
+
+
+URL:                                               www.buydisplay.com                          Document Name: ER-TFT026-1 Datasheet-Rev1.0               Page: 10 of 20
+                                               TFT LCD Display Datasheet                              ER-TFT026-1
+EastRising
+                                   EA
+
+
+
+buydisplay.com
+ 5.4 Module Cosmetic Criteria
+ 438B15209
+
+
+
+
+             NO.              Item                                       Judgment Criterion                     Partition
+              1     Difference in Spec.        None allowed                                                       Major
+              2     Pattern Peeling            No substrate pattern peeling and floating                          Major
+              3     Soldering defects          No soldering missing                                               Major
+                                               No soldering bridge                                                Major
+                                               No cold soldering                                                  Minor
+              4     Resist flaw on substrate   Invisible copper foil(￠0.5mm or more)on substrate pattern          Minor
+              5     Accretion of metallic      No soldering dust                                                  Minor
+                    Foreign matter             No accretion of metallic foreign matters(Not exceed￠0.2mm)
+              6     Stain                      No stain to spoil cosmetic badly                                   Minor
+              7     Plate discoloring          No plate fading,rusting and discoloring                            Minor
+              8     Solder amount              a. Soldering side of PCB                                           Minor
+
+
+                    1.Lead parts                  Solder to form a’Filet’
+                                                  all around the lead.
+                                                  Solder should not hide the
+                                                  lead form perfectly.(too much)
+                                               b.Components side
+                                                  (In case of ‘Through Hole PCB’)
+
+
+                                               Solder to reach the Components side of PCB
+
+
+
+
+                    2.Flat packages            Either ‘toe’(A) or ‘heal’ (B) of                                   Minor
+                                               the lead to be covered by ‘Filet’.
+                                                                                         A        B
+
+
+                                               Lead form to be assume over
+                                               Solder.
+
+
+
+
+                    3.Chips                    (3/2) H≧h≧(1/2)H                                                   Minor
+
+                                                                                              h   H
+
+
+
+
+URL:              www.buydisplay.com            Document Name: ER-TFT026-1 Datasheet-Rev1.0                 Page: 11 of 20
+                              TFT LCD Display Datasheet                                      ER-TFT026-1
+EastRising
+                       EA
+
+
+
+buydisplay.com
+   9   Backlight defects     1.Light fails or flickers.(Major)
+                             2. Color and luminance do not correspond to specifications.                  See
+                               (Major)                                                                     list
+                             3.Exceeds standards for display’s blemishes, foreign matter,                  ←
+                               dark lines or scratches.(Minor)
+   10    PCB defects           Oxidation or contamination on connectors.*
+                             2. Wrong parts, missing parts, or parts not in specification.*
+                             3.Jumpers set incorrectly.(Minor)                                            See
+                             4.Solder(if any)on bezel,LED pad,zebra pad,or screw hole                      list
+                               pad is not smooth.(Minor)                                                   ←
+                              *Minor if display functions correctly.Major if the display fails.
+
+   11    Soldering defects   1. Unmelted solder paste.                                                   Minor
+                             2. Cold solder joints,missing solder connections,or oxidation.*
+                             3. Solder bridges causing short circuits.*
+                             4. Residue or solder balls.
+                             5. Solder flux is black or brown.
+                              *Minor if display functions correctly. Major if the display fails.
+
+
+
+
+URL:    www.buydisplay.com      Document Name: ER-TFT026-1 Datasheet-Rev1.0                        Page: 12 of 20
+                                        TFT LCD Display Datasheet                                ER-TFT026-1
+    EastRising
+                            EA
+
+
+
+    buydisplay.com
+     5.5 Screen Cosmetic Criteria (Non-Operating)
+No.    Defect                    Judgment Criterion                                                              Partition
+
+1      Spots                     In accordance with Screen Cosmetic Criteria (Operating) No.1.                   Minor
+2      Lines                     In accordance with Screen Cosmetic Criteria (Operation) No.2.                   Minor
+3      Bubbles             in                                                                                    Minor
+       Polarizer                            Size: d mm                    Acceptable Qty in active area
+                                                 d≦0.3                              Disregard
+                                             0.3<d≦1.0                                  3
+                                             1.0<d≦1.5                                  1
+                                             1.5<d                                      0
+
+
+
+4      Scratch                   In accordance with spots and lines operating cosmetic criteria, When the        Minor
+                                 light reflects on the panel surface, the scratches are not to be remarkable.
+5      Allowable density         Above defects should be separated more than 30mm each other.                    Minor
+6      Coloration                Not to be noticeable coloration in the viewing area of the LCD panels.          Minor
+                                 Back-lit type should be judged with back-lit on state only.
+7      Contamination             Not to be noticeable.                                                           Minor
+
+
+
+
+    URL:   www.buydisplay.com              Document Name: ER-TFT026-1 Datasheet-Rev1.0                    Page: 13 of 20
+                                            TFT LCD Display Datasheet                                       ER-TFT026-1
+ EastRising
+                           EA
+
+
+
+    buydisplay.com
+    5.6 Screen Cosmetic Criteria (Operating)
+No.           Defect                                                Judgment Criterion                                    Partition
+1     Spots                      A) Clear                                                                                Minor
+                                               Size:d mm                           Acceptable Qty in active area
+                                                    d≦0.1                                    Disregard
+                                               0.1<d≦0.2                                         6
+                                               0.2<d≦0.3                                         2
+                                                     0.3<d                                       0
+                                 Note: Including pin holes and defective dots which must be within one pixel
+                                 Size.
+                                 B)    Unclear
+                                                Size:d mm                          Acceptable Qty in active area
+                                                    d≦0.2                                    Disregard
+                                               0.2<d≦0.5                                         6
+                                               0.5<d≦0.7                                         2
+                                                     0.7<d                                       0
+2     Lines                      A)    Clear                                                                             Minor
+
+
+                                   L 5.0                             (0)
+                                               8
+                                      2.0              (6)                                         See No.1
+                                                                                                        W
+                                                   0.02      0.05                0.1
+
+
+                                 Note: () – Acceptable Qty in active area
+                                    L - Length (mm)
+                                    W -Width(mm)
+                                    ∞-Disregard
+                                 B) Unclear
+
+                                  L 10.0                                               (0)
+                                               8
+                                                              (6)
+
+                                      2.0                                                            See No.1
+                                                                                                          W
+                                                0.05                       0.3               0.5
+
+
+
+           ‘Clear’ = The shade and size are not changed by Vo.
+           ‘Unclear’ = The shade and size are changed by Vo.
+
+
+
+
+    URL:    www.buydisplay.com               Document Name: ER-TFT026-1 Datasheet-Rev1.0                           Page: 14 of 20
+                                          TFT LCD Display Datasheet                                 ER-TFT026-1
+   EastRising
+                              EA
+
+
+
+   buydisplay.com
+ No.        Defect                                              Judgment Criterion                                 Partition
+
+
+  3          Rubbing line          Not to be noticeable.
+  4          Allowable density     Above defects should be separated more than 10mm each other.                  Minor
+  5          Rainbow               Not to be noticeable.                                                         Minor
+  6          Dot size              To be 95%~105%of the dot size (Typ.) in drawing.                              Minor
+                                   Partial defects of each dot (ex.pin-hole) should be treated as’spot’.
+                                   (see Screen Cosmetic Criteria (Operating) No.1)
+  7          Brightness            Brightness Uniformity must be BMAX/BMIN≦2                                     Minor
+             (only back-lit        - BMAX :Max.value by measure in 5 points
+             Module)               - BMIN : Min.value by measure in 5 points
+                                   Divide active area into 4 vertically and horizontally.
+                                   Measure 5 points shown in the following figure.
+
+
+
+
+  8          Contrast              Contrast Uniformity must be BmAX/BMIN≦2                                       Minor
+             Uniformity            Measure 5 points shown in the following figure.
+                                   Dashed lines divide active area into 4 vertically and horizontally.
+                                   Measuring points are located at the inter-sections of dashed line.
+
+
+
+
+                                   Note: BMAX – Max.value by measure in 5 points.
+                                        BMIN – Min.value by measure in 5 points.
+                                        O – Measuring points in ￠10mm.
+
+Note:
+(1) Size : d=(long length + short length)/2
+(2) The limit samples for each item have priority.
+(3) Complexed defects are defined item by item, but if the number of defects is defined in above table, the total
+number should not exceed 10.
+
+
+
+
+      URL:    www.buydisplay.com             Document Name: ER-TFT026-1 Datasheet-Rev1.0                   Page: 15 of 20
+                                                          TFT LCD Display Datasheet                      ER-TFT026-1
+   EastRising
+                                                    EA
+
+
+
+    buydisplay.com
+(4)    In case of ‘concentration’, even the spots or the lines of ‘disregarded’ size should not be allowed. Following three
+situations
+ Should be treated as ‘concentration’.
+            -7 or over defects in circle of ￠5mm.
+            -10 or over defects in circle of ￠10mm
+            -20 or over defects in circle of ￠20mm
+
+
+    319B6452   6. PRECAUTIONS FOR USING
+    6.1 Handling Precautions
+               H320B17458
+
+
+
+
+    ◆ This device is susceptible to Electro-Static Discharge (ESD) damage. Observe Anti-Static precautions.
+    321B85
+
+
+
+
+    ◆ EastRising display panel is made of glass. Do not subject it to a mechanical shock by dropping it or impact.
+    32B196
+
+
+
+
+    ◆ If EastRising display panel is damaged and the liquid crystal substance leaks out, be sure not to get any in
+    32B017
+
+
+
+
+      your mouth. If the substance contacts your skin or clothes, wash it off using soap and water.
+    ◆ Do not apply excessive force to the EastRising display surface or the adjoining areas since this may cause
+    324B18
+
+
+
+
+      the color tone to vary.
+    ◆ The polarizer covering the EastRising display surface of the LCD module is soft and easily scratched.
+    325B19
+
+
+
+
+      Handle this polarizer carefully.
+    ◆ If EastRising display surface becomes contaminated, breathe on the surface and gently wipe it with a soft
+    326B0
+
+
+
+
+      dry cloth. If it is heavily contaminated, moisten cloth with one of the following Isopropyl or alcohol.
+    ◆ Solvents other than those above-mentioned may damage the polarizer. Especially, do not use the Water.
+    327B41
+
+
+
+
+    ◆ Exercise care to minimize corrosion of the electrode. Corrosion of the electrodes is accelerated by water
+    328B5
+
+
+
+
+      droplets, moisture condensation or a current flow in a high-humidity environment.
+    ◆ Install the EastRising LCD Module by using the mounting holes. When mounting the LCD module make
+    329B6
+
+
+
+
+      sure it is free of twisting, warping and distortion. In particular, do not forcibly pull or bend the cable or the
+      backlight cable.
+    ◆ Do not attempt to disassemble or process EastRising LCD module.
+    30B274
+
+
+
+
+    ◆ NC terminal should be open. Do not connect anything.
+    31B285
+
+
+
+
+    ◆ If the logic circuit power is off, do not apply the input signals.
+    32B96
+
+
+
+
+    ◆ To prevent destruction of the elements by static electricity, be careful to maintain an optimum work
+    3B027
+
+
+
+
+      environment.
+      -Be sure to ground the body when handling EastRising LCD modules.
+                            34B128
+
+
+
+
+      -Tools required for assembling, such as soldering irons, must be properly grounded.
+                            35B29
+
+
+
+
+      -To reduce the amount of static electricity generated, do not conduct assembling and other work under dry
+                            36B0
+
+
+
+
+        conditions.
+      -The LCD module is coated with a film to protect the display surface. Exercise care when peeling off this
+                            37B41
+
+
+
+
+        protective film since static electricity may be generated.
+
+
+
+
+               URL:                  www.buydisplay.com    Document Name: ER-TFT026-1 Datasheet-Rev1.0       Page: 16 of 20
+                                                                                                       TFT LCD Display Datasheet                      ER-TFT026-1
+EastRising
+                                                                                                 EA
+
+
+
+buydisplay.com
+
+           6.2 Power Supply Precautions
+           ◆ Identify and, at all times, observe absolute maximum ratings for both logic and LC drivers. Note that there is
+                               38B524619
+
+
+
+
+           some variance between models.
+           ◆ Prevent the application of reverse polarity to VDD and VSS, however briefly.
+           340B7
+
+
+
+
+           ◆ Use a clean power source free from transients. Power-up conditions are occasionally jolting and may
+           341B85
+
+
+
+
+              exceed the maximum ratings of EastRising modules.
+           ◆ The VDD power of EastRising module should also supply the power to all devices that may access the
+           342B96
+
+
+
+
+              display. Don’t allow the data bus to be driven when the logic supply to the module is turned off.                                             43B07
+
+
+
+
+45B32198
+
+
+
+
+           6.3 Operating Precautions
+           ◆ DO NOT plug or unplug EastRising module when the system is powered up.
+                      345B29
+
+
+
+
+           ◆ Minimize the cable length between EastRising module and host MPU.
+           346B0
+
+
+
+
+           ◆ For models with backlights, do not disable the backlight by interrupting the HV line. Unload inverters
+           347B1
+
+
+
+
+              produce voltage extremes that may arc within a cable or at the display.
+           ◆ Operate EastRising module within the limits of the modules temperature specifications.
+           348B52
+
+
+
+
+           6.4 Mechanical/Environmental Precautions
+           349B652
+
+
+
+
+           ◆ Improper soldering is the major cause of module difficulty. Use of flux cleaner is not recommended
+           350B47
+
+
+
+
+              as they may seep under the electrometric connection and cause display failure.
+                                                                        351B48
+
+
+
+
+           ◆ Mount EastRising module so that it is free from torque and mechanical stress.
+           352B496
+
+
+
+
+           ◆ Surface of the LCD panel should not be touched or scratched. The display front surface is an easily
+           35B047
+
+
+
+
+              scratched, plastic polarizer. Avoid contact and clean only when necessary with soft, absorbent cotton
+              dampened with petroleum benzene.
+           ◆ Always employ anti-static procedure while handling EastRising module.
+           354B18
+
+
+
+
+           ◆ Prevent moisture build-up upon the module and observe the environmental constraints for storage tem
+           35B249
+
+
+
+
+           ◆ Do not store in direct sunlight
+           356B0
+
+
+
+
+           ◆ If leakage of the liquid crystal material should occur, avoid contact with this material, particularly ingestion.
+           357B41
+
+
+
+
+              If the body or clothing becomes contaminated by the liquid crystal material, wash thoroughly with water and
+              soap
+           468B352
+
+
+
+
+           6.5 Storage Precautions
+               When storing the LCD modules, avoid exposure to direct sunlight or to the light of fluorescent lamps.
+                                             359B6
+
+
+
+
+              Keep EastRising modules in bags (avoid high temperature / high humidity and low temperatures below 0C
+                                                                        360B574
+
+
+
+
+              Whenever possible, EastRising LCD modules should be stored in the same conditions in which they were
+                                                                        361B58
+
+
+
+
+              shipped from our company.
+           458B3629
+
+
+
+
+           6.6 Others
+              Liquid crystals solidify under low temperature (below the storage temperature range) leading to defective
+                                                     36B057
+
+
+
+
+              orientation or the generation of air bubbles (black or white). Air bubbles may also be generated if the module
+              is subject to a low temperature.
+              If EastRising LCD modules have been operating for a long time showing the same display patterns, the
+                                                              364B158
+
+
+
+
+                                           URL:                                   www.buydisplay.com    Document Name: ER-TFT026-1 Datasheet-Rev1.0       Page: 17 of 20
+                                                                            TFT LCD Display Datasheet                              ER-TFT026-1
+EastRising
+                                                                      EA
+
+
+
+buydisplay.com
+                            display patterns may remain on the screen as ghost images and a slight contrast irregularity may also
+                            appear. A normal operating status can be regained by suspending use for some time. It should be noted that
+                            this phenomenon does not adversely affect performance reliability.
+                            To minimize the performance degradation of the LCD modules resulting from destruction caused by static
+                            365B29
+
+
+
+
+                            electricity etc., exercise care to avoid holding the following sections when handling the modules.
+                                -Exposed area of the printed circuit board.
+                                                       36B0
+
+
+
+
+                                -Terminal electrode sections.
+                                                       367B41
+
+
+
+
+69B3845     362B
+
+
+
+
+7. USING LCD MODULES                                                                                                       H   H
+
+
+
+
+7.1 Liquid Crystal Display Modules
+369B14507
+
+
+
+
+   EastRising LCD is composed of glass and polarizer. Pay attention to the following items when handling.
+                                     370B64
+
+
+
+
+◆ Please keep the temperature within specified range for use and storage. Polarization degradation, bubble
+371B685
+
+
+
+
+   generation or polarizer peel-off may occur with high temperature and high humidity.
+◆ Do not touch, push or rub the exposed polarizers with anything harder than an HB pencil lead (glass,
+372B69
+
+
+
+
+   tweezers, etc.).
+◆ N-hexane is recommended for cleaning the adhesives used to attach front/rear polarizers and reflectors
+37B06
+
+
+
+
+   made of organic substances which will be damaged by chemicals such as acetone, toluene, ethanol and
+   isopropylalcohol.
+◆ When EastRising display surface becomes dusty, wipe gently with absorbent cotton or other soft material
+374B168
+
+
+
+
+   like chamois soaked in petroleum benzin. Do not scrub hard to avoid damaging the display surface.
+◆ Wipe off saliva or water drops immediately, contact with water over a long period of time may cause
+375B269
+
+
+
+
+   deformation or color fading.               376B0
+
+
+
+
+◆ Avoid contacting oil and fats.
+37B41
+
+
+
+
+◆ Condensation on the surface and contact with terminals due to cold will damage, stain or dirty the polarizers.
+378B52
+
+
+
+
+   After products are tested at low temperature they must be warmed up in a container before coming is
+   contacting with room temperature air.
+◆ Do not put or attach anything on EastRising display area to avoid leaving marks on.
+379B6
+
+
+
+
+◆ Do not touch the display with bare hands. This will stain the display area and degradate insulation
+380B74
+
+
+
+
+   between terminals (some cosmetics are determinated to the polarizers).
+                                              381B75
+
+
+
+
+◆ As glass is fragile. It tends to become or chipped during handling especially on the edges. Please
+382B796
+
+
+
+
+   avoid dropping or jarring.                 38B07
+
+
+
+
+7.2 Installing LCD Modules
+◆ Cover the surface with a transparent protective plate to protect the polarizer and LC cell.
+384B17259
+
+
+
+
+◆When assembling the LCM into other equipment, the spacer to the bit between the LCM and the fitting
+386B0
+
+
+
+
+  plate should have enough height to avoid causing stress to the module surface, refer to the individual
+                   387B41
+
+
+
+
+  specifications for measurements. The measurement tolerance should be±0.1mm.
+
+
+
+
+            URL:                                       www.buydisplay.com    Document Name: ER-TFT026-1 Datasheet-Rev1.0               Page: 18 of 20
+                                                                  TFT LCD Display Datasheet                      ER-TFT026-1
+EastRising
+                                                            EA
+
+
+
+buydisplay.com
+
+
+
+7.3 Precaution for Handling LCD Modules
+   Since EastRising LCM has been assembled and adjusted with a high degree of precision; avoid applying
+                           389B6
+
+
+
+
+   excessive shocks to the module or making any alterations or modifications to it.
+◆ Do not alter, modify or change the shape of the tab on the metal frame.
+390B874
+
+
+
+
+◆ Do not make extra holes on the printed circuit board, modify its shape or change the positions of
+391B85
+
+
+
+
+   components to be attached.
+◆ Do not damage or modify the pattern writing on the printed circuit board.
+392B86
+
+
+
+
+◆ Absolutely do not modify the zebra rubber strip (conductive rubber) or heat seal connector.
+39B087
+
+
+
+
+◆ Except for soldering the interface, do not make any alterations or modifications with a soldering iron.
+394B18
+
+
+
+
+◆ Do not drop, bend or twist EastRising LCM.
+395B28
+
+
+
+
+7.4 Electro-Static Discharge Control
+   Since this module uses a CMOS LSI, the same careful attention should be paid to electrostatic discharge as
+                           397B41
+
+
+
+
+   for an ordinary CMOS IC.
+◆ Make certain that you are grounded when handing LCM.
+398B52
+
+
+
+
+◆ Before remove LCM from its packing case or incorporating it into a set, be sure the module and your body
+39B6
+
+
+
+
+   have the same electric potential.
+◆ When soldering the terminal of LCM, make certain the AC power source for the soldering iron does not leak.
+40B397
+
+
+
+
+◆ When using an electric screwdriver to attach LCM, the screwdriver should be of ground potentiality to
+401B3985
+
+
+
+
+   minimize as much as possible any transmission of electromagnetic waves produced sparks coming from the
+   commutator of the motor.
+◆ As far as possible make the electric potential of your work clothes and that of the work bench the ground
+402B396
+
+
+
+
+   potential.
+◆ To reduce the generation of static electricity be careful that the air in the work is not too dried. A relative
+403B97
+
+
+
+
+   humidity of 50%-60% is recommended.
+
+7.5 Precaution for Soldering to EastRising LCM
+◆ Observe the following when soldering lead wire, connector cable and etc. to the LCM.
+46B0158392
+
+
+
+
+   -Soldering iron temperature : 280℃±10℃
+                           406B3
+
+
+
+
+   -Soldering time: 3-4 sec.
+                           407B1
+
+
+
+
+   -Solder: eutectic solder.
+                           408B52
+
+
+
+
+    If soldering flux is used, be sure to remove any remaining flux after finishing to soldering operation. (This
+                                    409B63
+
+
+
+
+   does not apply in the case of a non-halogen type of flux.) It is recommended that you protect the LCD
+   surface with a cover during soldering to prevent any damage due to flux spatters.
+◆ When soldering the electroluminescent panel and PC board, the panel and board should not be detached
+410B7
+
+
+
+
+   more than three times. This maximum number is determined by the temperature and time conditions
+   mentioned above, though there may be some variance depending on the temperature of the soldering iron.
+◆ When remove the electroluminescent panel from the PC board, be sure the solder has completely melted,
+41B085
+
+
+
+
+   the soldered pad on the PC board could be damaged.
+
+              463B120957
+
+
+
+
+             URL:                            www.buydisplay.com    Document Name: ER-TFT026-1 Datasheet-Rev1.0       Page: 19 of 20
+                                                                      TFT LCD Display Datasheet                       ER-TFT026-1
+EastRising
+                                                              EA
+
+
+
+buydisplay.com
+
+7.6 Precaution for Operation
+◆ Viewing angle varies with the change of liquid crystal driving voltage (VO). Adjust VO to show the best
+413B07
+
+
+
+
+   contrast.
+◆ Driving the EastRising LCD in the voltage above the limit shortens its life.
+41B08
+
+
+
+
+◆ Response time is greatly delayed at temperature below the operating temperature range. However, this
+415B209
+
+
+
+
+   does not mean the LCD will be out of the order. It will recover when it returns to the specified temperature
+   range.
+◆ If EastRising display area is pushed hard during operation, the display will become abnormal. However, it
+416B30
+
+
+
+
+   will return to normal if it is turned off and then back on.
+◆ Condensation on terminals can cause an electrochemical reaction disrupting the terminal circuit. Therefore,
+417B
+
+
+
+
+   it must be used under the relative condition of 40℃, 50% RH.
+◆ When turning the power on, input each signal after the positive/negative voltage becomes stable.
+418B52
+
+
+
+
+7.7 Limited Warranty
+ Unless agreed between EastRising and customer, EastRising will replace or repair any of its LCD modules
+49B163    420B17
+
+
+
+
+which are found to be functionally defective when inspected in accordance with EastRising LCD acceptance
+standards (copies available upon request) for a period of one year from date of shipments. Cosmetic/visual
+defects must be returned to EastRising within 90 days of shipment. Confirmation of such date shall be based
+on freight documents. The warranty liability of EastRising limited to repair and/or replacement on the terms set
+forth above. EastRising will not be responsible for any subsequent or consequential events.
+
+7.8 Return Policy
+    No warranty can be granted if the precautions stated above have been disregarded. The typical
+                                     42B196
+
+
+
+
+    examples of violations are:
+    -Broken LCD glass.               423B017
+
+
+
+
+    -PCB eyelet damaged or modified. 42B18
+
+
+
+
+    -PCB conductors damaged.         425B19
+
+
+
+
+    -Circuit modified in any way, including addition of components.
+                                     426B30
+
+
+
+
+    -PCB tampered with by grinding, engraving or painting varnish.
+                                     427B1
+
+
+
+
+    -Soldering to or modifying the bezel in any manner.
+                                     428B5
+
+
+
+
+    Module repairs will be invoiced to the customer upon mutual agreement. Modules must be returned with
+                            429B63
+
+
+
+
+    sufficient description of the failures or defects. Any connectors or cable installed by the customer must be
+    removed completely without damaging the PCB eyelet’s, conductors and terminals
+  .                430B27
+
+
+
+
+                                                                    That’s the end of the datasheeet
+
+
+
+                                                                                            431B285
+
+
+
+
+          URL:                                 www.buydisplay.com       Document Name: ER-TFT026-1 Datasheet-Rev1.0       Page: 20 of 20
+

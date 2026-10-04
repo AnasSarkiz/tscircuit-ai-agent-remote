@@ -35,7 +35,7 @@ function portNet(connection: { reference: string; pinNumber: number; netName: st
     ),
   ).toBe(true)
 }
-describe("Native A3 board boundaries and fabrication gate", () => {
+describe("Native A4 board boundaries and fabrication gate", () => {
   test("board has top-only physical components within the accepted PCB dimensions", () => {
     expect(rawElements.filter((element) => element.type === "pcb_component")).toHaveLength(134)
     expect(
@@ -44,7 +44,7 @@ describe("Native A3 board boundaries and fabrication gate", () => {
     expect(rawElements.find((element) => element.type === "pcb_board")).toMatchObject({
       width: 50,
       height: 65,
-      thickness: 1.6,
+      thickness: 0.8,
     })
   })
   test("fabrication requires nonempty actual copper and zero unresolved native errors", () => {

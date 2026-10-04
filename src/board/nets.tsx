@@ -23,6 +23,7 @@ export function BoardNets() {
       <net name="LCD_BACKLIGHT_RETURN_1" nominalTraceWidth={0.3} />
       <net name="LCD_BACKLIGHT_RETURN_2" nominalTraceWidth={0.3} />
       <net name="LCD_BACKLIGHT_RETURN_3" nominalTraceWidth={0.3} />
+      <net name="LCD_BACKLIGHT_RETURN_4" nominalTraceWidth={0.3} />
       <net name="LCD_CS_N" />
       <net name="LCD_DC" />
       <net name="LCD_ENABLE" />

@@ -1,0 +1,66 @@
+{
+  "format-check-final": {
+    "exists": true,
+    "bytes": 61
+  },
+  "typecheck-final": {
+    "exists": true,
+    "bytes": 15
+  },
+  "netlist-final": {
+    "exists": true,
+    "bytes": 28516
+  },
+  "pin-final": {
+    "exists": true,
+    "bytes": 3128
+  },
+  "source-final": {
+    "exists": true,
+    "bytes": 22
+  },
+  "schematic-placement-final": {
+    "exists": true,
+    "bytes": 10519
+  },
+  "shorts-final": {
+    "exists": true,
+    "bytes": 35
+  },
+  "snapshot-reviewed-update": {
+    "exists": true,
+    "bytes": 341
+  },
+  "package-typecheck": {
+    "exists": true,
+    "bytes": 0
+  },
+  "canonical_build_exit": 1,
+  "unconnected_port_errors": 426,
+  "missing_trace_errors": 5,
+  "tests": {
+    "pass": 38,
+    "fail": 2,
+    "assertions": 389
+  },
+  "strict_schema_failed_elements": 166,
+  "pcb_ports": 496,
+  "physical_components": 134,
+  "named_nets": 76,
+  "existing_imports_modified": false,
+  "saved_routes_modified": false,
+  "source_parent": "1ca49db16527d86674861c81b48b089801aca53d",
+  "trial_pcb_thickness": 0.8,
+  "native_geometry_unchanged": true,
+  "snapshot_verified_exit": 0,
+  "netlist_exit": 0,
+  "pin_specification_exit": 0,
+  "source_exit": 0,
+  "schematic_placement_exit": 0,
+  "placement_exit": 0,
+  "shorts_exit": 0,
+  "format_exit": 0,
+  "typecheck_exit": 0,
+  "package_typecheck_exit": 0,
+  "canonical_sha256": "6de07b31310cf256329d674396c8ab9dfefe5383b45a00938a8d88085282d413"
+}
