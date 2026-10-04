@@ -1,0 +1,20 @@
+{
+  "native_build_exit": 0,
+  "root_format_exit": 0,
+  "root_typecheck_exit": 0,
+  "staged_typecheck_exit": 0,
+  "canonical_tests_exit": 1,
+  "tests_passed": 30,
+  "tests_failed": 1,
+  "known_failure": "B-010 native schema conformity",
+  "assertions": 272,
+  "native_checks": {
+    "netlist": 0,
+    "pin_specification": 0,
+    "source": 0,
+    "schematic-placement": 0,
+    "placement": 0
+  },
+  "visual_reviews_remain_applicable": "all electrical/PCB/schematic elements unchanged except source_project_metadata",
+  "routing_enabled": false
+}

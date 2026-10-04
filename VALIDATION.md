@@ -1,3 +1,16 @@
+## Public visibility and committed native build — 2026-10-04
+
+The user requested public GitHub and tscircuit destinations and a committed built
+Circuit JSON. The ignore rule now permits only `dist/index/circuit.json` within
+`dist`; other build artifacts remain excluded. The board-only preparer includes
+the current native build unchanged, so GitHub and the registry receive identical
+bytes. Target release: **0.0.2-wip-a1-public-board**. Remote visibility, upload and
+anonymous hash verification are pending below. Native build, all five pre-routing
+checks, format and root/staged TypeScript pass. Tests retain the known B-010
+failure (30 pass/one fail). The native JSON matches the inspected connector
+revision except its filesystem metadata; zero traces/vias/native errors. Existing WIP fabrication blockers
+remain explicit; routing stays disabled and the background watcher stays paused.
+
 # Validation — A1 integrated placement preview (work in progress)
 
 ## Connector orientation implementation — 2026-10-04

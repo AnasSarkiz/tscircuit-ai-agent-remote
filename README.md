@@ -1,3 +1,16 @@
+# Public board publication — 2026-10-04
+
+The user requested public GitHub and tscircuit destinations and a committed built
+Circuit JSON. The ignore rule now permits only `dist/index/circuit.json` within
+`dist`; other build artifacts remain excluded. The board-only preparer includes
+the current native build unchanged, so GitHub and the registry receive identical
+bytes. Target release: **0.0.2-wip-a1-public-board**. Remote visibility, upload and
+anonymous hash verification are pending below. Native build, all five pre-routing
+checks, format and root/staged TypeScript pass. Tests retain the known B-010
+failure (30 pass/one fail). The native JSON matches the inspected connector
+revision except its filesystem metadata; zero traces/vias/native errors. Existing WIP fabrication blockers
+remain explicit; routing stays disabled and the background watcher stays paused.
+
 # AI Remote A1 — complete unrouted placement preview
 
 Connector review, 2026-10-04: the speaker J4 and motor J8 were rotated 180° so
@@ -15,13 +28,14 @@ upload succeeded for all 75 board-only files; exact-version readback verified
 all hashes, including the fresh `dist/index/circuit.json`. No documents/scripts
 were uploaded. Still a private, unrouted prototype with fabrication gates open.
 
-The runtime-only registry package is prepared with `bun run publish:prepare`.
-From `.publish/board`, install the pinned dependencies with `bun install --ignore-scripts`
-and build with `bun run build`. Remove that folder's generated `node_modules` before
-publishing through the native CLI with `--include-dist`. The generated package contains
+Build the current board with `bun run build:placement`, then prepare the runtime-only
+registry package with `bun run publish:prepare`. The preparer copies that native build
+into `.publish/board/dist/index/circuit.json` byte-for-byte; commit the same root
+`dist/index/circuit.json` to GitHub. Publish from `.publish/board` through the native
+CLI with `--include-dist`. Keep installed dependencies outside the upload folder. The generated package contains
 only the transitive board source, referenced imported OBJ/STEP models, build manifests
 and `dist/index/circuit.json`; research documents, tests and scripts remain in GitHub.
-Standard native file-by-file upload is used for this reduced package. It remains a private,
+Standard native file-by-file upload is used for this reduced package. It remains an
 unrouted prototype. Exact file hashes and remote verification are recorded under
 `evidence/minimal-board-publication-2026-10-04/`.
 

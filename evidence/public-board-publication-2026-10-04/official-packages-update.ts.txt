@@ -1,0 +1,348 @@
+import { canAccountManagePackage } from "lib/auth/package-permissions"
+import { publicMapPackage } from "lib/public-mapping/public-map-package"
+import { normalizePackageName } from "lib/utils/normalize-package-name"
+import { withWinterSpec } from "lib/with-winter-spec"
+import * as ZT from "lib/zod"
+import { z } from "zod"
+import {
+  registerWebhook,
+  listWebhooks,
+  deleteWebhook,
+} from "lib/github/webhook-api"
+import { getLatestCommit } from "lib/github/repositories"
+import { getPackagesQuery } from "lib/package/get-packages-query"
+
+export default withWinterSpec({
+  methods: ["POST"],
+  auth: "session",
+  jsonBody: z
+    .object({
+      package_id: z.string(),
+      name: z
+        .string()
+        .regex(
+          /^[@a-zA-Z0-9-_\/]+$/,
+          "Package name can only contain letters, numbers, hyphens, underscores, and forward slashes",
+        )
+        .transform((name) => name.replace(/^@/, ""))
+        .optional(),
+      description: z.string().optional(),
+      website: z.string().optional(),
+      is_private: z.boolean().optional(),
+      is_unlisted: z.boolean().optional(),
+      public_dist_enabled: z.boolean().optional(),
+      default_view: z.enum(["files", "3d", "pcb", "schematic"]).optional(),
+      github_repo_full_name: z.string().nullable().optional(),
+      allow_pr_previews: z.boolean().optional(),
+    })
+    .transform((data) => ({
+      ...data,
+      // Keep unlisted in sync when toggling privacy
+      is_unlisted:
+        data.is_private === true
+          ? true
+          : data.is_private === false && data.is_unlisted === undefined
+            ? false
+            : data.is_unlisted,
+    })),
+  jsonResponse: z.object({
+    package: ZT.public_package,
+  }),
+})(async (req, ctx) => {
+  const {
+    package_id,
+    name,
+    description,
+    is_private,
+    is_unlisted,
+    website,
+    default_view,
+    github_repo_full_name,
+    allow_pr_previews,
+    public_dist_enabled,
+  } = req.jsonBody
+
+  // Get the existing package or snippet
+  const existingPackage = await ctx.db
+    .selectFrom("main.package")
+    .where("package_id", "=", package_id)
+    .selectAll()
+    .executeTakeFirst()
+
+  if (!existingPackage) {
+    return ctx.error(404, {
+      error_code: "package_not_found",
+      message: "Package not found",
+    })
+  }
+
+  // Check if user has permission to update the package
+  const canManagePackage = await canAccountManagePackage(
+    { org_id: existingPackage.owner_org_id },
+    ctx,
+  )
+
+  if (!canManagePackage) {
+    return ctx.error(403, {
+      error_code: "forbidden",
+      message: "You don't have permission to update this package",
+    })
+  }
+
+  const tscircuitHandle = ctx.auth.tscircuit_handle
+
+  // Check for case-insensitive name conflicts if name is being updated
+  if (name) {
+    const fullName = `${tscircuitHandle}/${name}`
+    const normalizedNewFullName = normalizePackageName(fullName).replace(
+      /[-/]/g,
+      " ",
+    )
+    const existingPackageWithSameName = await ctx.db
+      .selectFrom("main.package")
+      .where("lower_normalized_name", "=", normalizedNewFullName)
+      .where("package_id", "!=", package_id)
+      .selectAll()
+      .executeTakeFirst()
+
+    if (existingPackageWithSameName) {
+      return ctx.error(400, {
+        error_code: "package_already_exists",
+        message: "A package with this name already exists",
+      })
+    }
+  }
+
+  // Handle GitHub repository connection/disconnection
+  let github_installation_id: string | null =
+    existingPackage.github_installation_id
+
+  if (github_repo_full_name !== undefined) {
+    if (github_repo_full_name) {
+      // Connect to GitHub repo - use the package's owner org
+      const installation = await ctx.db
+        .selectFrom("main.github_installation")
+        .selectAll()
+        .where("org_id", "=", existingPackage.owner_org_id)
+        .executeTakeFirst()
+
+      if (!installation) {
+        return ctx.error(400, {
+          error_code: "no_github_installation",
+          message:
+            "No GitHub installation found for your organization. Please install the GitHub app first.",
+        })
+      }
+
+      // Check if the repository is accessible to this installation
+      const repos = installation.repos as any[]
+      const repoAccess = repos.find(
+        (repo: any) => repo.full_name === github_repo_full_name,
+      )
+
+      if (!repoAccess) {
+        return ctx.error(403, {
+          error_code: "repository_not_accessible",
+          message:
+            "Repository is not accessible to your GitHub installation. Please ensure the repository is accessible to the GitHub app.",
+        })
+      }
+
+      // Check if webhook already exists and register if needed
+      try {
+        const existingWebhooks = await listWebhooks({
+          ctx,
+          installationId: installation.ext_github_installation_id,
+          repoFullName: github_repo_full_name,
+        })
+
+        const webhookUrl = `${ctx.env.REGISTRY_API_URL}/internal/github-webhooks/receive_webhook`
+        const existingWebhook = existingWebhooks.find(
+          (webhook) => webhook.config.url === webhookUrl,
+        )
+
+        if (!existingWebhook) {
+          await registerWebhook({
+            ctx,
+            installationId: installation.ext_github_installation_id,
+            repoFullName: github_repo_full_name,
+            webhookUrl,
+            events: ["push", "pull_request", "release"],
+          })
+        }
+      } catch (error) {
+        ctx.logger.error("Failed to register webhook", {
+          error: error instanceof Error ? error.message : String(error),
+          repository: github_repo_full_name,
+        })
+
+        console.error(error)
+
+        return ctx.error(500, {
+          error_code: "webhook_registration_failed",
+          message: "Failed to register webhook for the repository",
+        })
+      }
+
+      github_installation_id = installation.github_installation_id
+    } else if (existingPackage.github_repo_full_name) {
+      // Disconnect from GitHub repo - remove webhook if it exists
+      if (existingPackage.github_installation_id) {
+        const existingInstallation = await ctx.db
+          .selectFrom("main.github_installation")
+          .selectAll()
+          .where(
+            "github_installation_id",
+            "=",
+            existingPackage.github_installation_id,
+          )
+          .executeTakeFirst()
+
+        if (existingInstallation) {
+          try {
+            const existingWebhooks = await listWebhooks({
+              ctx,
+              installationId: existingInstallation.ext_github_installation_id,
+              repoFullName: existingPackage.github_repo_full_name,
+            })
+
+            const webhookUrl = `${ctx.env.REGISTRY_API_URL}/internal/github-webhooks/receive_webhook`
+            const existingWebhook = existingWebhooks.find(
+              (webhook) => webhook.config.url === webhookUrl,
+            )
+
+            if (existingWebhook) {
+              await deleteWebhook({
+                ctx,
+                installationId: existingInstallation.ext_github_installation_id,
+                repoFullName: existingPackage.github_repo_full_name,
+                webhookId: existingWebhook.id,
+              })
+            }
+          } catch (error) {
+            ctx.logger.error("Failed to remove webhook during disconnection", {
+              error: error instanceof Error ? error.message : String(error),
+              repository: existingPackage.github_repo_full_name,
+            })
+            // Continue with disconnection even if webhook removal fails
+          }
+        }
+      }
+
+      github_installation_id = null
+    }
+  }
+
+  // Update the package
+  const updatedPackage = await ctx.db
+    .updateTable("main.package")
+    .set({
+      name: name ? `${tscircuitHandle}/${name}` : existingPackage.name,
+      description: description ?? existingPackage.description,
+      is_private: is_private ?? existingPackage.is_private,
+      is_public:
+        is_private !== undefined ? !is_private : existingPackage.is_public,
+      is_unlisted: is_unlisted ?? existingPackage.is_unlisted,
+      public_dist_enabled:
+        public_dist_enabled ?? existingPackage.public_dist_enabled,
+      updated_at: new Date(),
+      website: website ?? existingPackage.website,
+      default_view: default_view ?? existingPackage.default_view,
+      github_repo_full_name:
+        github_repo_full_name !== undefined
+          ? github_repo_full_name
+          : existingPackage.github_repo_full_name,
+      github_installation_id:
+        github_repo_full_name !== undefined
+          ? github_installation_id
+          : existingPackage.github_installation_id,
+      allow_pr_previews:
+        allow_pr_previews !== undefined
+          ? Boolean(allow_pr_previews)
+          : existingPackage.allow_pr_previews,
+    })
+    .where("package_id", "=", package_id)
+    .returningAll()
+    .executeTakeFirstOrThrow()
+    .catch((e) => {
+      if (e.message.includes("duplicate key value")) {
+        throw ctx.error(400, {
+          error_code: "package_already_exists",
+          message: "A package with this name already exists",
+        })
+      }
+      throw e
+    })
+
+  // Queue initial sync from GitHub if a new repo was just connected
+  if (
+    github_repo_full_name &&
+    github_repo_full_name !== existingPackage.github_repo_full_name &&
+    github_installation_id
+  ) {
+    try {
+      const installation = await ctx.db
+        .selectFrom("main.github_installation")
+        .select(["ext_github_installation_id"])
+        .where("github_installation_id", "=", github_installation_id)
+        .executeTakeFirst()
+
+      if (installation) {
+        // Try to get latest commit from main, fallback to master
+        let latestCommit = await getLatestCommit({
+          ctx,
+          installationId: installation.ext_github_installation_id,
+          repoFullName: github_repo_full_name,
+          branch: "main",
+        })
+
+        if (!latestCommit) {
+          latestCommit = await getLatestCommit({
+            ctx,
+            installationId: installation.ext_github_installation_id,
+            repoFullName: github_repo_full_name,
+            branch: "master",
+          })
+        }
+
+        if (latestCommit) {
+          await ctx.queueJob("worker/packages/process_github_build_event", {
+            repository_full_name: github_repo_full_name,
+            branch_name: "main",
+            commit_sha: latestCommit.sha,
+            commit_message: latestCommit.message,
+            commit_author: latestCommit.author,
+            event_type: "push",
+          })
+
+          ctx.logger.info("Queued initial GitHub sync", {
+            package_id,
+            repository: github_repo_full_name,
+            commit_sha: latestCommit.sha,
+          })
+        } else {
+          ctx.logger.warn("Could not find latest commit for initial sync", {
+            package_id,
+            repository: github_repo_full_name,
+          })
+        }
+      }
+    } catch (error) {
+      ctx.logger.error("Failed to queue initial GitHub sync", {
+        error: error instanceof Error ? error.message : String(error),
+        package_id,
+        repository: github_repo_full_name,
+      })
+    }
+  }
+  const fetchedPackage = await getPackagesQuery(
+    {
+      package_id: updatedPackage.package_id,
+    },
+    ctx,
+  ).executeTakeFirst()
+
+  return ctx.json({
+    package: publicMapPackage(fetchedPackage!),
+  })
+})

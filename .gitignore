@@ -1,5 +1,8 @@
 node_modules/
-dist/
+dist/*
+!dist/index/
+dist/index/*
+!dist/index/circuit.json
 .tscircuit/cache/
 .claude/
 .DS_Store

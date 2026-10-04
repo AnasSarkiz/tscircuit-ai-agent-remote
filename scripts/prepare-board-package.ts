@@ -5,6 +5,7 @@ import ts from "typescript"
 
 const projectDir = resolve(import.meta.dir, "..")
 const packageDir = join(projectDir, ".publish/board")
+const circuitJsonPath = join(projectDir, "dist/index/circuit.json")
 const sourcePaths = new Set<string>()
 const externalModules = new Set<string>()
 
@@ -51,6 +52,11 @@ function collectSource(sourcePath: string): void {
   visit(sourceFile)
 }
 
+if (!existsSync(circuitJsonPath)) {
+  throw new Error(
+    "Build the current board before preparing the package: missing dist/index/circuit.json",
+  )
+}
 collectSource(join(projectDir, "index.circuit.tsx"))
 for (const moduleName of externalModules) {
   if (!["tscircuit", "@tscircuit/props"].includes(moduleName)) {
@@ -93,6 +99,8 @@ writeFileSync(join(packageDir, "package.json"), `${JSON.stringify(runtimePackage
 for (const filePath of ["tsconfig.json", "tscircuit.config.json", "bun.lock"]) {
   writeFileSync(join(packageDir, filePath), readFileSync(join(projectDir, filePath)))
 }
+mkdirSync(join(packageDir, "dist/index"), { recursive: true })
+writeFileSync(join(packageDir, "dist/index/circuit.json"), readFileSync(circuitJsonPath))
 const manifest = [...sourcePaths].sort().map((sourcePath) => ({
   path: relative(projectDir, sourcePath),
   bytes: readFileSync(sourcePath).length,
@@ -102,4 +110,6 @@ writeFileSync(
   join(projectDir, ".publish/source-manifest.json"),
   `${JSON.stringify({ entry: "index.circuit.tsx", externalModules: [...externalModules].sort(), files: manifest }, null, 2)}\n`,
 )
-console.log(`Prepared ${manifest.length} board source/model files in ${packageDir}`)
+console.log(
+  `Prepared ${manifest.length} board source/model files and built circuit.json in ${packageDir}`,
+)
