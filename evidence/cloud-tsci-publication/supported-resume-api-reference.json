@@ -1,0 +1,29 @@
+{
+  "official_repository": "https://github.com/tscircuit/registry-api",
+  "source_revision": "0037d83b5273243d12f0c2e6d431ce32a69abcca",
+  "references": [
+    {
+      "path": "routes/package_files/upload_archive.ts",
+      "sha256": "787056e2b91d4b247e912a4351c0fc588e2108a19da791bc91d29c3d341b1766",
+      "official_url": "https://github.com/tscircuit/registry-api/blob/0037d83b5273243d12f0c2e6d431ce32a69abcca/routes/package_files/upload_archive.ts"
+    },
+    {
+      "path": "tests/routes/package_files/upload_archive02-multipart-upload.test.ts",
+      "sha256": "0745df86b2633c95a6f652ca643bc5c6dfd1af6b19332d08d3954ad5d01ae8cf",
+      "official_url": "https://github.com/tscircuit/registry-api/blob/0037d83b5273243d12f0c2e6d431ce32a69abcca/tests/routes/package_files/upload_archive02-multipart-upload.test.ts"
+    },
+    {
+      "path": "routes/worker/package_releases/queue_all_build_tasks.ts",
+      "sha256": "b0e79f9fbb37e519ebf72a2cb8787b727331ca9fb1286d9d7a29282cda0950cb",
+      "official_url": "https://github.com/tscircuit/registry-api/blob/0037d83b5273243d12f0c2e6d431ce32a69abcca/routes/worker/package_releases/queue_all_build_tasks.ts"
+    },
+    {
+      "path": "routes/package_builds/get.ts",
+      "sha256": "89c88837a05337fcf275b3006a4e05115aa52dd50597c00f84c6907b445ab2d2",
+      "official_url": "https://github.com/tscircuit/registry-api/blob/0037d83b5273243d12f0c2e6d431ce32a69abcca/routes/package_builds/get.ts"
+    }
+  ],
+  "verified_contract": "POST /package_files/upload_archive accepts multipart form with package_name_with_version and archive File; gzipped JSON files[] upsert into the existing release, preserve original content_bytes, and automatically enable normal cloud-build scheduling.",
+  "credentials": "Existing native CLI session used through public Conf 13.1.0 SDK; no token output or extra authentication required.",
+  "helper_dependency": "conf@13.1.0 installed into ignored .tools/registry-client; board dependencies and lockfile unchanged."
+}

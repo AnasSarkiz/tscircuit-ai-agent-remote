@@ -1,5 +1,17 @@
 # Current tscircuit publication request — 2026-10-05
 
+## Supported resume — complete public upload
+
+**All116/116 files now match anonymous readback.** The public, listed `0.0.2-wip-cloud-routing` release contains the exact current native JSON and required C262650 STEP. No missing, extra, mismatched or unverified package files remain. See `resumed-complete-remote-receipt.json`. This completes the package upload; fabrication gates remain open.
+
+The earlier conclusion that publication had to stop at the size limit was premature. Read-only inspection of the official registry API at `0037d83b5273243d12f0c2e6d431ce32a69abcca` confirmed a tested, supported multipart archive route that upserts files into an existing release. References and exact source hashes are in `supported-resume-api-reference.json`. The maintained CLI has no resume flag, but the official HTTP API explicitly supports this operation.
+
+`resume-registry-upload.mjs` verifies every staged hash against the prior anonymous receipt, checks gzip round-trip bytes, and submits the two missing original text files together as a2,135,117-byte multipart gzip archive. HTTP200 returns both actual file IDs. Public Conf13.1.0 SDK uses the existing native CLI credential store without printing or copying credentials; its support dependency is isolated under ignored `.tools/registry-client`. No board dependency, native output, imported model, source wiring or runtime was modified. The archive endpoint's normal transaction enables build scheduling; no manual readiness override was used. The helper checks the current remote file set before mutations to prevent replaying stale partial-upload receipts.
+
+The registry automatically created cloud build `ac331034-5de6-4b66-adf8-e29efd851e84` for release `c6bd1e5c-0979-498a-bb8a-9533013cf51d`. The runner started at19:23:07UTC. Its actual result is recorded in `resumed-cloud-build-observation.json`; a running build is not a completed preview or fabrication approval. No duplicate build was requested. The optional external log-stream host is denied by the network proxy; status and logs remain observable through the supported registry build endpoint.
+
+Upload/readback supervisor logs and outcomes are retained. All322 checkpoint files remain unchanged. Earlier partial-publication and missing-authentication records below are historical and superseded by this successful byte-verified upload.
+
 ## Authenticated public outcome
 
 The user completed the native browser login flow; the authenticated account is verified as **AnasSarkiz**. The supported compressed push created the public, listed [0.0.2-wip-cloud-routing release](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files). Its public web URL responds HTTP200. **Publication remains incomplete: 114/116 staged files match anonymous readback; two required files are missing and ready_to_build=false.**

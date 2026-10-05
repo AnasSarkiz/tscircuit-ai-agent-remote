@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-05T19:20:52.469Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.2-wip-cloud-routing",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2135117,
+  "archive_sha256": "4d28b24f3f951e46850e66a9ee77d7dce7357e9400d8c829e7012b6b313e73c3",
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 5071958,
+      "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "24c84893-5955-44fd-8b11-9290d6ba99b8",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "d17e7fb5-2d81-45a4-a09f-5972e0937412",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    }
+  ]
+}
