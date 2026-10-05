@@ -1,0 +1,106 @@
+[
+  {
+    "type": "pcb_via",
+    "pcb_via_id": "pcb_via_0",
+    "x": -2,
+    "y": 0,
+    "hole_diameter": 0.4,
+    "outer_diameter": 0.8,
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "from_layer": "top",
+    "to_layer": "bottom",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0",
+    "source_trace_id": "source_trace_0",
+    "pcb_port_ids": [
+      "pcb_port_0",
+      "pcb_port_1"
+    ]
+  },
+  {
+    "type": "pcb_via",
+    "pcb_via_id": "pcb_via_1",
+    "x": 2,
+    "y": 0,
+    "hole_diameter": 0.4,
+    "outer_diameter": 0.8,
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "from_layer": "top",
+    "to_layer": "bottom",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0",
+    "source_trace_id": "source_trace_1",
+    "pcb_port_ids": [
+      "pcb_port_2",
+      "pcb_port_3"
+    ]
+  },
+  {
+    "type": "pcb_trace",
+    "pcb_trace_id": "pcb_trace_0",
+    "source_trace_id": "source_trace_2",
+    "connection_name": "source_trace_2",
+    "connectsTo": [
+      "pcb_port_1",
+      "pcb_port_3"
+    ],
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -2,
+        "y": 0,
+        "width": 1,
+        "layer": "bottom",
+        "start_pcb_port_id": "pcb_port_1"
+      },
+      {
+        "route_type": "wire",
+        "x": 2,
+        "y": 0,
+        "width": 1,
+        "layer": "bottom",
+        "end_pcb_port_id": "pcb_port_3"
+      }
+    ],
+    "__replaces_pcb_trace_id": "pcb_trace_0",
+    "subcircuit_id": "subcircuit_source_group_0"
+  },
+  {
+    "type": "pcb_trace_error",
+    "pcb_trace_error_id": "pcb_trace_error_0",
+    "error_type": "pcb_trace_error",
+    "message": "Trace [.PV_A > port.bottom to .PV_B > port.bottom] has dangling endpoint at (-2.00, 0.00)",
+    "source_trace_id": "source_trace_2",
+    "pcb_trace_id": "pcb_trace_0",
+    "center": {
+      "x": -2,
+      "y": 0
+    },
+    "pcb_component_ids": [],
+    "pcb_port_ids": []
+  },
+  {
+    "type": "pcb_trace_error",
+    "pcb_trace_error_id": "pcb_trace_error_1",
+    "error_type": "pcb_trace_error",
+    "message": "Trace [.PV_A > port.bottom to .PV_B > port.bottom] has dangling endpoint at (2.00, 0.00)",
+    "source_trace_id": "source_trace_2",
+    "pcb_trace_id": "pcb_trace_0",
+    "center": {
+      "x": 2,
+      "y": 0
+    },
+    "pcb_component_ids": [],
+    "pcb_port_ids": []
+  }
+]

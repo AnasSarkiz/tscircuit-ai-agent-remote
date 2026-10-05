@@ -37,7 +37,57 @@ function portNet(connection: { reference: string; pinNumber: number; netName: st
 }
 describe("Native A4 board boundaries and fabrication gate", () => {
   test("board has top-only physical components within the accepted PCB dimensions", () => {
-    expect(rawElements.filter((element) => element.type === "pcb_component")).toHaveLength(135)
+    const electronicIds = new Set(
+      sourceElements.flatMap((element) =>
+        element.type === "source_component" ? [element.source_component_id] : [],
+      ),
+    )
+    const viaFeatures = sourceElements.flatMap((element) =>
+      element.type === "source_manually_placed_via" ? [element] : [],
+    )
+    const pcbComponents = rawElements.filter((element) => element.type === "pcb_component")
+    expect(
+      pcbComponents.filter(
+        (element) =>
+          typeof element.source_component_id === "string" &&
+          electronicIds.has(element.source_component_id),
+      ),
+    ).toHaveLength(135)
+    const wrappers = pcbComponents.filter(
+      (element) =>
+        typeof element.source_component_id !== "string" ||
+        !electronicIds.has(element.source_component_id),
+    )
+    expect(wrappers).toHaveLength(viaFeatures.length)
+    const wrapperSchema = z.object({
+      source_component_id: z.string(),
+      center: z.object({ x: z.number(), y: z.number() }),
+      width: z.number().min(0.7),
+      height: z.number().min(0.7),
+    })
+    for (const rawWrapper of wrappers) {
+      const wrapper = wrapperSchema.parse(rawWrapper)
+      const feature = viaFeatures.find(
+        (element) => element.source_manually_placed_via_id === wrapper.source_component_id,
+      )
+      if (!feature) throw new Error(`Unqualified PCB feature ${wrapper.source_component_id}`)
+      const via = rawElements.find(
+        (element) =>
+          element.type === "pcb_via" &&
+          element.x === wrapper.center.x &&
+          element.y === wrapper.center.y &&
+          element.source_net_id === feature.source_net_id,
+      )
+      expect(via).toMatchObject({
+        x: wrapper.center.x,
+        y: wrapper.center.y,
+        outer_diameter: wrapper.width,
+        layers: ["top", "inner1", "inner2", "bottom"],
+        from_layer: "top",
+        to_layer: "bottom",
+      })
+      expect(wrapper.height).toBe(wrapper.width)
+    }
     expect(
       rawElements.filter((element) => element.type === "pcb_component" && element.layer !== "top"),
     ).toEqual([])

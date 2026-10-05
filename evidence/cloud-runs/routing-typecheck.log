@@ -1,0 +1,7 @@
+$ tsc --noEmit
+src/board/ManualPowerCopper.tsx(28,11): error TS2322: Type '{ key: string; name: string; connectsTo: string; layer: "inner2" | "bottom"; outline: { x: number; y: number; }[]; clearance: number; cutoutMargin: number; boardEdgeMargin: number; coveredWithSolderMask: true; useThermalReliefs: false; }' is not assignable to type 'CopperPourProps'.
+  Property 'key' does not exist on type 'CopperPourProps'.
+src/board/ManualPowerCopper.tsx(44,11): error TS2322: Type '{ key: string; name: string; connectsTo: string; pcbX: number; pcbY: number; holeDiameter: number; outerDiameter: number; fromLayer: "top"; toLayer: "bottom"; tented: true; }' is not assignable to type 'ViaProps'.
+  Property 'key' does not exist on type 'ViaProps'.
+src/board/Routing.tsx(58,15): error TS2322: Type '{ key: string; name: string; layer: "top"; connectsTo: string; outline: { x: number; y: number; }[]; clearance: number; cutoutMargin: number; boardEdgeMargin: number; coveredWithSolderMask: true; useThermalReliefs: false; }' is not assignable to type 'CopperPourProps'.
+  Property 'key' does not exist on type 'CopperPourProps'.

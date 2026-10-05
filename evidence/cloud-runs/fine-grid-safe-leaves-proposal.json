@@ -1,0 +1,12 @@
+{
+  "classification": "manual proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/native-keepout-clearance-qualified/circuit.json",
+  "grid_mm": 0.05,
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "MCU_LCD_SCLK",
+      "reason": "No conservative top/bottom/inner2 path: .R50 > .pin1 to .U14 > .pin5"
+    }
+  ]
+}

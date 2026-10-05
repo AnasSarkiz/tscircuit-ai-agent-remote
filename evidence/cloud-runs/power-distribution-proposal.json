@@ -1,0 +1,1243 @@
+{
+  "classification": "manual power proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/manual-digital-replay/circuit.json",
+  "paths": [
+    {
+      "net": "V3V3",
+      "from": ".C25 > .pin1",
+      "to": ".U7 > .pin5",
+      "width": 0.8,
+      "pcbPath": [
+        {
+          "x": -1.8,
+          "y": -0.8
+        },
+        {
+          "x": -1.7,
+          "y": -2.3
+        },
+        {
+          "x": -1.3,
+          "y": -2.6
+        },
+        {
+          "x": 0.2,
+          "y": -3.1
+        }
+      ],
+      "global_path_mm": [
+        [
+          -21.700024,
+          -16.5
+        ],
+        [
+          -22.799999999999976,
+          -17.29999999999979
+        ],
+        [
+          -22.699999999999974,
+          -18.799999999999812
+        ],
+        [
+          -22.29999999999997,
+          -19.099999999999817
+        ],
+        [
+          -20.799999999999947,
+          -19.599999999999824
+        ],
+        [
+          -18.300099,
+          -19.94996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "V3V3",
+      "from": ".C25 > .pin1",
+      "to": ".J6 > .pin2",
+      "width": 0.8,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "inner2"
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": 0.2,
+          "y": 3.9
+        },
+        {
+          "x": 2.1,
+          "y": 5.3
+        },
+        {
+          "x": 2.1,
+          "y": 5.3,
+          "via": true,
+          "fromLayer": "inner2",
+          "toLayer": "top"
+        },
+        {
+          "x": 2.1,
+          "y": 5.3
+        }
+      ],
+      "global_path_mm": [
+        [
+          -21.700024,
+          -16.5
+        ],
+        [
+          -21.200024,
+          -15.633975
+        ],
+        [
+          -20.799999999999947,
+          -12.599999999999724
+        ],
+        [
+          -18.9,
+          -11.2
+        ],
+        [
+          -18.9,
+          -10
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "inner2",
+        "inner2",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "V3V3",
+      "from": ".U7 > .pin5",
+      "to": ".R4 > .pin1",
+      "width": 0.8,
+      "pcbPath": [
+        {
+          "x": -1.300099,
+          "y": -1.74996
+        },
+        {
+          "x": -1.300099,
+          "y": -1.74996,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "inner2"
+        },
+        {
+          "x": -1.300099,
+          "y": -1.74996
+        },
+        {
+          "x": 1.6,
+          "y": -3.1
+        },
+        {
+          "x": 3.5,
+          "y": -7.053364
+        },
+        {
+          "x": 3.5,
+          "y": -7.053364,
+          "via": true,
+          "fromLayer": "inner2",
+          "toLayer": "top"
+        },
+        {
+          "x": 3.5,
+          "y": -7.053364
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.300099,
+          -19.94996
+        ],
+        [
+          -18.300099,
+          -20.74996
+        ],
+        [
+          -15.39999999999987,
+          -22.09999999999986
+        ],
+        [
+          -13.5,
+          -26.053364
+        ],
+        [
+          -13.5,
+          -25.253364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "inner2",
+        "inner2",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".C71 > .pin1",
+      "to": ".U22 > .pin5",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.3,
+          "y": -2.1
+        },
+        {
+          "x": -0.395,
+          "y": -3.95
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.799976000000001,
+          2.5
+        ],
+        [
+          15.200000000000564,
+          0.40000000000046043
+        ],
+        [
+          15.105,
+          -1.45
+        ],
+        [
+          14.205,
+          -1.45
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".U22 > .pin5",
+      "to": ".D3 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.695,
+          "y": -0.95
+        },
+        {
+          "x": -2.695,
+          "y": -0.95,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -2.695,
+          "y": -0.95
+        },
+        {
+          "x": -14.26495,
+          "y": -0.787564
+        },
+        {
+          "x": -14.26495,
+          "y": -0.787564,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": -14.26495,
+          "y": -0.787564
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.205,
+          -1.45
+        ],
+        [
+          12.805,
+          -1.45
+        ],
+        [
+          1.23505,
+          -1.287564
+        ],
+        [
+          0.53505,
+          -2.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".D3 > .pin1",
+      "to": ".C72 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.2,
+          "y": -4.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.53505,
+          -2.5
+        ],
+        [
+          2.300000000000381,
+          -6.499999999999638
+        ],
+        [
+          3.299976,
+          -12
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".C74 > .pin1",
+      "to": ".C75 > .pin1",
+      "width": 0.3,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          3.299976,
+          -23.75
+        ],
+        [
+          4.75,
+          -22.200024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".C75 > .pin1",
+      "to": ".C81 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.1,
+          "y": 1.85
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.75,
+          -22.200024
+        ],
+        [
+          2.9000000000003894,
+          -20.399999999999835
+        ],
+        [
+          3.299976,
+          -19.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".C75 > .pin1",
+      "to": ".U23 > .pin5",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": 0.05,
+          "y": -10.016025
+        },
+        {
+          "x": 0.05,
+          "y": -10.016025,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 0.05,
+          "y": -10.016025
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.75,
+          -22.200024
+        ],
+        [
+          3.883975,
+          -21.700024
+        ],
+        [
+          14.766025,
+          -21.45
+        ],
+        [
+          13.9,
+          -21.95
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".U23 > .pin5",
+      "to": ".R92 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.1,
+          "y": -1.1
+        },
+        {
+          "x": -0.1,
+          "y": -1.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -0.1,
+          "y": -1.1
+        },
+        {
+          "x": 0.5,
+          "y": -2.2
+        },
+        {
+          "x": -0.8,
+          "y": -3.6
+        },
+        {
+          "x": -1.619375,
+          "y": -8.25
+        },
+        {
+          "x": -1.619375,
+          "y": -8.25,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": -1.619375,
+          "y": -8.25
+        }
+      ],
+      "global_path_mm": [
+        [
+          13.9,
+          -21.95
+        ],
+        [
+          14.90000000000056,
+          -22.09999999999986
+        ],
+        [
+          15.500000000000568,
+          -23.199999999999875
+        ],
+        [
+          14.20000000000055,
+          -24.599999999999895
+        ],
+        [
+          13.380625,
+          -29.25
+        ],
+        [
+          14.24665,
+          -29.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".R92 > .pin1",
+      "to": ".R86 > .pin1",
+      "width": 0.3,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          14.24665,
+          -29.75
+        ],
+        [
+          12.75335,
+          -30
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".R92 > .pin1",
+      "to": ".U5 > .pin2",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.4,
+          "y": -0.95
+        },
+        {
+          "x": 4.7,
+          "y": -0.85
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.24665,
+          -29.75
+        ],
+        [
+          15.400000000000567,
+          -30.69999999999998
+        ],
+        [
+          19.700000000000628,
+          -30.59999999999998
+        ],
+        [
+          20.0147584,
+          -29.900049
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".C74 > .pin1",
+      "to": ".R29 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -2.3,
+          "y": -4.35
+        },
+        {
+          "x": -3.0,
+          "y": -4.55
+        },
+        {
+          "x": -8.4,
+          "y": -0.95
+        },
+        {
+          "x": -12.6,
+          "y": 0.05
+        },
+        {
+          "x": -13.3,
+          "y": 0.35
+        },
+        {
+          "x": -20.4,
+          "y": 0.15
+        },
+        {
+          "x": -21.0,
+          "y": 0.65
+        },
+        {
+          "x": -21.3,
+          "y": 1.25
+        },
+        {
+          "x": -22.553364,
+          "y": 1.75
+        },
+        {
+          "x": -22.553364,
+          "y": 1.75,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": -22.553364,
+          "y": 1.75
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.299976,
+          -23.75
+        ],
+        [
+          2.499976,
+          -23.75
+        ],
+        [
+          1.7000000000003723,
+          -28.099999999999945
+        ],
+        [
+          1.0000000000003624,
+          -28.299999999999947
+        ],
+        [
+          -4.399999999999714,
+          -24.699999999999896
+        ],
+        [
+          -8.599999999999774,
+          -23.699999999999882
+        ],
+        [
+          -9.299999999999784,
+          -23.399999999999878
+        ],
+        [
+          -16.399999999999885,
+          -23.59999999999988
+        ],
+        [
+          -16.999999999999893,
+          -23.099999999999874
+        ],
+        [
+          -17.299999999999898,
+          -22.499999999999865
+        ],
+        [
+          -18.553364,
+          -22.0
+        ],
+        [
+          -17.753364,
+          -22
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".R29 > .pin1",
+      "to": ".C80 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.8,
+          "y": -1.1
+        },
+        {
+          "x": -4.600024,
+          "y": -2.75
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.753364,
+          -22
+        ],
+        [
+          -18.79999999999992,
+          -23.099999999999874
+        ],
+        [
+          -21.600023999999998,
+          -24.75
+        ],
+        [
+          -20.700024,
+          -24.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VMIC",
+      "from": ".C80 > .pin1",
+      "to": ".U4 > .pin5",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": 1.8,
+          "y": 0.75
+        },
+        {
+          "x": 5.0,
+          "y": -2.55
+        },
+        {
+          "x": 4.1,
+          "y": -2.55
+        },
+        {
+          "x": 4.1,
+          "y": -2.55,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 4.1,
+          "y": -2.55
+        },
+        {
+          "x": 2.8,
+          "y": -2.25
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.700024,
+          -24.75
+        ],
+        [
+          -20.200024,
+          -23.883975
+        ],
+        [
+          -18.19999999999991,
+          -23.999999999999886
+        ],
+        [
+          -14.999999999999877,
+          -27.299999999999933
+        ],
+        [
+          -15.899999999999878,
+          -27.299999999999933
+        ],
+        [
+          -17.199999999999896,
+          -26.99999999999993
+        ],
+        [
+          -17.5571856,
+          -27.849951
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    },
+    {
+      "net": "VLCD",
+      "from": ".C41 > .pin1",
+      "to": ".R42 > .pin2",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.25,
+          "y": 1.65
+        },
+        {
+          "x": 0.85,
+          "y": 1.75
+        },
+        {
+          "x": 5.45,
+          "y": 1.85
+        },
+        {
+          "x": 6.75,
+          "y": 1.153364
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.75,
+          13.450023999999999
+        ],
+        [
+          16.40000000000058,
+          12.500000000000632
+        ],
+        [
+          16.500000000000583,
+          11.900000000000624
+        ],
+        [
+          16.600000000000584,
+          7.3000000000005585
+        ],
+        [
+          15.903364,
+          6.0
+        ],
+        [
+          15.003364,
+          6
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native power distribution"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin11",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin10",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U2 > .pin10",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".R62 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".C4 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".R96 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U25 > .pin6",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U25 > .pin3",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".C76 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".Q2 > .pin2",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".C70 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U22 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U3 > .pin2",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".C51 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U3 > .pin7",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U3 > .pin8",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".C50 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VSYS",
+      "port": ".TP4 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".R3 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".SW5 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".R5 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U2 > .pin6",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C5 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".R7 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C32 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C31 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".TP5 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U12 > .pin3",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C30 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U13 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C40 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U1 > .pin2",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".R36 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U27 > .pin13",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C84 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C78 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U26 > .pin5",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "V3V3",
+      "port": ".SW4 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "PACK_BAT",
+      "port": ".U16 > .pin3",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "PACK_BAT",
+      "port": ".U16 > .pin2",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "PACK_BAT",
+      "port": ".U25 > .pin5",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "PACK_BAT",
+      "port": ".TP3 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VBUS",
+      "port": ".U16 > .pin13",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VBUS",
+      "port": ".J1 > .pin16",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VBUS",
+      "port": ".J1 > .pin15",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VBUS",
+      "port": ".TP2 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VMOTOR",
+      "port": ".TP_MOTOR_P > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VMOTOR",
+      "port": ".R82 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U24 > .pin5",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VMIC",
+      "port": ".R93 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U5 > .pin5",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VMIC",
+      "port": ".TP6 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VLCD",
+      "port": ".U13 > .pin5",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VLCD",
+      "port": ".U14 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VLCD",
+      "port": ".U14 > .pin20",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VLCD",
+      "port": ".R41 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VLCD",
+      "port": ".C43 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "VLCD",
+      "port": ".C42 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "port": ".R63 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "MIC_INPUT",
+      "port": ".U23 > .pin1",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "MIC_INPUT",
+      "port": ".SW5 > .pin2",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "LCD_BACKLIGHT_OUTPUT",
+      "port": ".U27 > .pin8",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    }
+  ]
+}

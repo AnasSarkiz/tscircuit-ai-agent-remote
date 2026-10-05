@@ -1,0 +1,13 @@
+{"net": "BUCK_ENABLE", "manual_paths": 2, "unresolved": null}
+{"net": "CHARGER_ISET", "manual_paths": 1, "unresolved": null}
+{"net": "AUDIO_NMOS_GATE", "manual_paths": 1, "unresolved": null}
+{"net": "AUDIO_PMOS_GATE", "manual_paths": 2, "unresolved": null}
+{"net": "MCU_EN", "manual_paths": 2, "unresolved": null}
+{"net": "MCU_BOOT_N", "manual_paths": 1, "unresolved": null}
+{"net": "HOLD_HARDWARE", "manual_paths": 2, "unresolved": "No conservative top/bottom/inner2 path: .R99 > .pin1 to .TP7 > .pin1"}
+{"net": "AMP_SD_MODE", "manual_paths": 1, "unresolved": null}
+{"net": "MCU_AUDIO_ENABLE", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U1 > .pin4 to .R60 > .pin1"}
+{"net": "MCU_LCD_CS_N", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U1 > .pin18 to .R47 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin18 to .U14 > .pin2"}
+{"net": "MCU_LCD_SDA", "manual_paths": 2, "unresolved": null}
+{"net": "MCU_MIC_BCLK", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U1 > .pin8 to .R88 > .pin1"}
+{"net": "MCU_MIC_WS", "manual_paths": 1, "unresolved": null}

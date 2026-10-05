@@ -1,0 +1,455 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/r103-qualified-location/circuit.json",
+  "paths": [
+    {
+      "net": "MIC_WS",
+      "from": ".U4 > .pin1",
+      "to": "net.MIC_WS",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.35,
+          "y": -1.85
+        },
+        {
+          "x": -1.35,
+          "y": -1.85,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -1.35,
+          "y": -1.85
+        },
+        {
+          "x": 9.35,
+          "y": -3.05
+        },
+        {
+          "x": 12.05,
+          "y": -3.25
+        },
+        {
+          "x": 21.05,
+          "y": -3.25
+        },
+        {
+          "x": 26.55,
+          "y": -1.05
+        },
+        {
+          "x": 30.55,
+          "y": 1.25
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.5571856,
+          -29.650049
+        ],
+        [
+          -17.599999999999902,
+          -30.59999999999998
+        ],
+        [
+          -6.89999999999975,
+          -31.799999999999997
+        ],
+        [
+          -4.1999999999997115,
+          -32.0
+        ],
+        [
+          4.800000000000416,
+          -32.0
+        ],
+        [
+          10.300000000000495,
+          -29.79999999999997
+        ],
+        [
+          14.3,
+          -27.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    },
+    {
+      "net": "MIC_BCLK",
+      "from": ".R92 > .pin2",
+      "to": "net.MIC_BCLK",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 5.0,
+          "y": -1.35
+        },
+        {
+          "x": 7.7,
+          "y": -0.75
+        },
+        {
+          "x": 7.9,
+          "y": -0.15
+        },
+        {
+          "x": 7.8,
+          "y": 2.15
+        },
+        {
+          "x": 4.5,
+          "y": 4.75
+        },
+        {
+          "x": 3.3,
+          "y": 6.85
+        },
+        {
+          "x": 3.033975,
+          "y": 7.246636
+        },
+        {
+          "x": 2.133975,
+          "y": 7.246636
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.75335,
+          -29.75
+        ],
+        [
+          20.000000000000632,
+          -31.099999999999987
+        ],
+        [
+          22.70000000000067,
+          -30.49999999999998
+        ],
+        [
+          22.900000000000674,
+          -29.89999999999997
+        ],
+        [
+          22.800000000000672,
+          -27.599999999999937
+        ],
+        [
+          19.500000000000625,
+          -24.9999999999999
+        ],
+        [
+          18.30000000000061,
+          -22.89999999999987
+        ],
+        [
+          18.033974999999998,
+          -22.503364
+        ],
+        [
+          17.133975,
+          -22.503364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    },
+    {
+      "net": "MIC_BCLK",
+      "from": ".U4 > .pin4",
+      "to": "net.MIC_BCLK",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.75,
+          "y": 1.15
+        },
+        {
+          "x": 1.45,
+          "y": 1.05
+        },
+        {
+          "x": 1.95,
+          "y": 0.25
+        },
+        {
+          "x": 1.85,
+          "y": -0.95
+        },
+        {
+          "x": 1.85,
+          "y": -0.95,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 1.85,
+          "y": -0.95
+        },
+        {
+          "x": 0.15,
+          "y": -0.55
+        },
+        {
+          "x": -6.75,
+          "y": 6.95
+        },
+        {
+          "x": -7.85,
+          "y": 30.45
+        },
+        {
+          "x": -7.95,
+          "y": 56.45
+        },
+        {
+          "x": -7.25,
+          "y": 57.95
+        },
+        {
+          "x": -5.95,
+          "y": 59.35
+        },
+        {
+          "x": -3.05,
+          "y": 59.25
+        },
+        {
+          "x": 15.55,
+          "y": 59.25
+        },
+        {
+          "x": 16.25,
+          "y": 59.75
+        },
+        {
+          "x": 30.55,
+          "y": 58.75
+        },
+        {
+          "x": 32.25,
+          "y": 57.35
+        },
+        {
+          "x": 40.35,
+          "y": 36.85
+        },
+        {
+          "x": 40.35,
+          "y": 17.45
+        },
+        {
+          "x": 33.85,
+          "y": 3.75
+        },
+        {
+          "x": 33.85,
+          "y": 3.05
+        },
+        {
+          "x": 33.25,
+          "y": 2.65
+        },
+        {
+          "x": 31.216125,
+          "y": 1.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.7352416,
+          -27.849951
+        ],
+        [
+          -15.499999999999872,
+          -27.599999999999937
+        ],
+        [
+          -14.799999999999862,
+          -27.69999999999994
+        ],
+        [
+          -14.299999999999855,
+          -28.49999999999995
+        ],
+        [
+          -14.399999999999856,
+          -29.699999999999967
+        ],
+        [
+          -16.09999999999988,
+          -29.29999999999996
+        ],
+        [
+          -22.99999999999998,
+          -21.799999999999855
+        ],
+        [
+          -24.099999999999994,
+          1.700000000000479
+        ],
+        [
+          -24.199999999999996,
+          27.70000000000085
+        ],
+        [
+          -23.499999999999986,
+          29.20000000000087
+        ],
+        [
+          -22.199999999999967,
+          30.60000000000089
+        ],
+        [
+          -19.299999999999926,
+          30.500000000000888
+        ],
+        [
+          -0.6999999999996618,
+          30.500000000000888
+        ],
+        [
+          3.481659405224491e-13,
+          31.000000000000895
+        ],
+        [
+          14.300000000000551,
+          30.00000000000088
+        ],
+        [
+          16.000000000000576,
+          28.60000000000086
+        ],
+        [
+          24.10000000000069,
+          8.10000000000057
+        ],
+        [
+          24.10000000000069,
+          -11.299999999999706
+        ],
+        [
+          17.6000000000006,
+          -24.9999999999999
+        ],
+        [
+          17.6000000000006,
+          -25.69999999999991
+        ],
+        [
+          17.00000000000059,
+          -26.099999999999916
+        ],
+        [
+          14.966125,
+          -27.15
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "MCU_LCD_DC",
+      "ports": [
+        ".U14 > .pin4"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "ports": [
+        ".U14 > .pin5"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "ports": [
+        ".U14 > .pin3"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_WS",
+      "ports": [
+        ".R93 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_BCLK",
+      "ports": [
+        ".U5 > .pin4"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_SD",
+      "ports": [
+        ".U5 > .pin6"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_INPUT",
+      "ports": [
+        ".C73 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "ports": [
+        ".R63 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

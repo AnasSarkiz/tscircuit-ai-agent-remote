@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-power-copper.py",
+    "evidence/cloud-runs/pin-escape-routed/circuit.json",
+    "evidence/cloud-runs/power-copper-proposal.json",
+    "GND",
+    "VSYS",
+    "V3V3",
+    "PACK_BAT",
+    "VBUS",
+    "VMOTOR",
+    "VMIC",
+    "VLCD",
+    "MIC_INPUT",
+    "AUDIO_ENABLE_SUPPLY",
+    "HAPTIC_N",
+    "LCD_BACKLIGHT_OUTPUT",
+    "--ground-audit",
+    "evidence/cloud-runs/pin-escape-full-copper.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 77.59,
+  "peak_process_group_rss_bytes": 105902080,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

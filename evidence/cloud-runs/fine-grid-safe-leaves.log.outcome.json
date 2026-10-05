@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/native-keepout-clearance-qualified/circuit.json",
+    "evidence/cloud-runs/fine-grid-safe-leaves-proposal.json",
+    "MCU_LCD_SCLK",
+    "MCU_LCD_DC",
+    "MCU_LCD_RESET_N",
+    "LCD_CS_N",
+    "LCD_DC",
+    "LCD_SCLK",
+    "LCD_SDA",
+    "AUDIO_ENABLE_SUPPLY",
+    "MIC_INPUT",
+    "MIC_WS",
+    "MIC_BCLK",
+    "MIC_SD",
+    "--grid-mm",
+    ".05"
+  ],
+  "exit_code": -15,
+  "termination": "TIME_BUDGET_REACHED",
+  "elapsed_seconds": 300.36,
+  "peak_process_group_rss_bytes": 444039168,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": false,
+  "passing_validation_inferred": false
+}

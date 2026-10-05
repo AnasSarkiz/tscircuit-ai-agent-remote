@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/audit-copper.py",
+    "evidence/cloud-runs/r103-courtyard-corrected/circuit.json",
+    "evidence/cloud-runs/r103-corrected-copper-audit.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 9.51,
+  "peak_process_group_rss_bytes": 89026560,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,223 @@
+{
+  "classification": "manual proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+  "grid_mm": 0.1,
+  "paths": [
+    {
+      "net": "VBUS",
+      "from": ".J1 > .pin15",
+      "to": ".C1 > .pin1",
+      "width": 0.5,
+      "pcbPath": [
+        {
+          "x": 2.4,
+          "y": 3.1
+        },
+        {
+          "x": 2.8,
+          "y": 3.3
+        },
+        {
+          "x": 3.9,
+          "y": 3.3
+        },
+        {
+          "x": 6.50016,
+          "y": 2.174145
+        },
+        {
+          "x": 5.60016,
+          "y": 2.174145
+        },
+        {
+          "x": 5.60016,
+          "y": 2.174145,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "inner2"
+        },
+        {
+          "x": 5.60016,
+          "y": 2.174145
+        },
+        {
+          "x": 5.3,
+          "y": 0.4
+        },
+        {
+          "x": 2.0,
+          "y": -2.0
+        },
+        {
+          "x": 0.8,
+          "y": -2.1
+        },
+        {
+          "x": -5.2,
+          "y": 0.2
+        },
+        {
+          "x": -10.6,
+          "y": 2.700024
+        },
+        {
+          "x": -10.6,
+          "y": 2.700024,
+          "via": true,
+          "fromLayer": "inner2",
+          "toLayer": "top"
+        },
+        {
+          "x": -10.6,
+          "y": 2.700024
+        }
+      ],
+      "global_path_mm": [
+        [
+          2.4001603,
+          -25.8258552
+        ],
+        [
+          2.4000000000003823,
+          -24.8999999999999
+        ],
+        [
+          2.800000000000388,
+          -24.699999999999896
+        ],
+        [
+          3.9000000000004036,
+          -24.699999999999896
+        ],
+        [
+          6.50016,
+          -25.825855
+        ],
+        [
+          5.60016,
+          -25.825855
+        ],
+        [
+          5.3000000000004235,
+          -27.599999999999937
+        ],
+        [
+          2.0000000000003766,
+          -29.99999999999997
+        ],
+        [
+          0.8000000000003595,
+          -30.099999999999973
+        ],
+        [
+          -5.199999999999726,
+          -27.79999999999994
+        ],
+        [
+          -10.6,
+          -25.299976
+        ],
+        [
+          -12,
+          -25.299976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "inner2",
+        "inner2",
+        "inner2",
+        "inner2",
+        "inner2",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "VMIC",
+      "from": ".R92 > .pin1",
+      "to": ".R93 > .pin1",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.15335,
+          "y": -1.03923
+        },
+        {
+          "x": -0.15335,
+          "y": -1.03923,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -0.15335,
+          "y": -1.03923
+        },
+        {
+          "x": 0.99665,
+          "y": 2.3
+        },
+        {
+          "x": 0.99665,
+          "y": 2.3,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 0.99665,
+          "y": 2.3
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.24665,
+          -29.75
+        ],
+        [
+          14.84665,
+          -30.78923
+        ],
+        [
+          15.99665,
+          -27.45
+        ],
+        [
+          15.99665,
+          -28.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "PACK_BAT",
+      "reason": "No conservative top/bottom/inner2 path: .U25 > .pin5 to .TP3 > .pin1"
+    },
+    {
+      "net": "VBUS",
+      "reason": "No conservative top/bottom/inner2 path: .J1 > .pin15 to .J1 > .pin16; No conservative top/bottom/inner2 path: .J1 > .pin15 to .U16 > .pin13"
+    },
+    {
+      "net": "VSYS",
+      "reason": "No conservative top/bottom/inner2 path: .U16 > .pin10 to .U16 > .pin11; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C3 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U2 > .pin10; No conservative top/bottom/inner2 path: .U16 > .pin10 to .R62 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C4 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .R96 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U25 > .pin6; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U25 > .pin3; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C76 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .Q2 > .pin2; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U3 > .pin2; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C70 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C51 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U3 > .pin7; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U3 > .pin8; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U22 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C50 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .TP4 > .pin1"
+    },
+    {
+      "net": "VMIC",
+      "reason": "No conservative top/bottom/inner2 path: .R93 > .pin1 to .U24 > .pin5; No conservative top/bottom/inner2 path: .R93 > .pin1 to .U5 > .pin5; No conservative top/bottom/inner2 path: .R93 > .pin1 to .U5 > .pin2"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/r103-qualified-location/circuit.json",
+  "proposed_source_net_nominal_width_mm": 0.2,
+  "width_qualification": "evidence/cloud-runs/audio-enable-width-qualification.json",
+  "paths": [],
+  "unresolved": "No conservative top/bottom/inner2 path: .Q2 > .pin3 to .R63 > .pin1"
+}

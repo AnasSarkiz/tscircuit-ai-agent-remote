@@ -1,3 +1,28 @@
+## Current cloud routing checkpoint — 2026-10-05
+
+**Engineering WIP — routing incomplete; NOT FABRICATION READY.** Native output from the matching current source has **306 traces, 250 ordinary full-span vias, 190 pours and 90 native open-port errors**. The independent geometry audit reports **0 measured violations / 0 shorts**, with all **152 authored region widths preserved**, but **26 physically disconnected nets** remain. J7 accounts for46 native errors; unassigned J3 outer contacts are outside that count.
+
+[Current review](evidence/cloud-runs/review.md) · [Exact build receipt](context/build-checkpoint.json) · [Cloud continuation](CLOUD_HANDOFF.md). Native JSON SHA256 `81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`. TypeScript/maintained-source formatting pass; routing regressions17pass; board tests42pass/2failing fabrication/schema gates. Five electrical/placement checks and copper-free CLI placement build pass. Full routed CLI build/bitmap shorts/snapshot exceed time budgets; Gerber export/shorts fail unsupported polygon. Native schema169failures and32missing U16/U27 paste records remain. Battery/display mating, current/SI, BOM/CPL/stock and final mechanical/fabrication qualification are open.
+
+The managed cloud instance supports the checked native workflow. Source `scripts/cloud/env.sh`; use the single-operation supervisor. Verified lossless event archives prevent CLI file-loader memory exhaustion. Clean frozen installation still needs the unapplied api.github.com network allowance; startup instructions are saved as a draft. GitHub WIP publication does not approve fabrication, and registry retries remain deferred.
+
+| Stage | Current status | Remaining qualification |
+|---|---|---|
+| 1 requirements | in progress | Interface, current/stackup and external mechanical qualification |
+| 2 schematic/BOM | blocked | 32 missing paste records; supplier mating/numbering, stock and assembly metadata |
+| 3 placement | blocked | Native PCB checks pass; final FPC/harness/RF/case/CAD qualification pending |
+| 4 routing | in progress | 0 measured geometry violations/shorts, but90 native errors and26 disconnected nets |
+| 5 automated/visual | blocked | 2 tests,169 schema failures, unsupported Gerber polygon; CLI build/bitmap/snapshot time budgets |
+| 6 prototype fabrication | blocked | Complete copper and validated Gerbers/drills/BOM/CPL/stencil/assembler review missing |
+| 7 physical prototype | not started | No physical test evidence |
+| 8 prototype release | in progress | Public GitHub WIP checkpoint; registry retries deferred |
+
+---
+
+## Historical initial U2 move application — superseded by current native verification
+
+Applied the saved proposal to `src/board/RegulatorSheet.tsx`: U2 GND path endpoint and through-via move from local (-0.45, 1.8) to (-0.35, 1.85), corresponding to board (-3.35, -14.15) mm. TypeScript and diff whitespace checks pass. Native rebuild, saved-route replay and complete trace/pad/drill/plane clearance checks remain pending; the frozen generated `dist/index/circuit.json` still represents the previous source position. The 0.2500 mm hypothetical trace clearance is preliminary, not validation of generated copper. Locked installation remains blocked by HTTP 403 from api.github.com pending application of the saved network setting. No fabrication approval or registry publication is claimed.
+
 ## A7 cloud migration validation — 2026-10-05
 
 Base main: `52f479592772cdcfac8f2290718ddef8f360419c`. Current migration commit is identified by Git history; this record intentionally contains no self-referential commit hash. Last completed native RootCircuit replay is carried byte-for-byte into `dist/index/circuit.json`, SHA256 `ff99af3edc2ea509109e4b9b70188668d813673aacae55890c5f9cbe5dc77bd8`, 2,948,515 bytes. Loaded main/src source bytes restored exactly from that replay's source snapshot; no generated JSON was edited. Package scripts and cloud tooling were subsequently added, with the same installed dependency graph. Official pinned tscircuit0.0.2744, CLI0.1.2237, core0.0.2090, capacity autorouter0.0.958. Native default Pipeline9, auto_local; real saved phase paths plus expressly labelled manual paths.

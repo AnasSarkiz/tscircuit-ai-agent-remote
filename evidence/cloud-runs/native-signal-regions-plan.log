@@ -1,0 +1,21 @@
+{"net": "AUDIO_PMOS_GATE", "ordinary_via_escapes": 2, "power_regions": 2, "unresolved": []}
+{"net": "MCU_BOOT_N", "ordinary_via_escapes": 3, "power_regions": 4, "unresolved": []}
+{"net": "HOLD_HARDWARE", "ordinary_via_escapes": 2, "power_regions": 4, "unresolved": []}
+{"net": "AMP_SD_MODE", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "AMP_SD_MODE", "port": ".U3 > .pin4", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "MCU_LCD_SDA", "ordinary_via_escapes": 2, "power_regions": 1, "unresolved": []}
+{"net": "MCU_MIC_BCLK", "ordinary_via_escapes": 2, "power_regions": 5, "unresolved": []}
+{"net": "MCU_MIC_WS", "ordinary_via_escapes": 2, "power_regions": 6, "unresolved": []}
+{"net": "MCU_MIC_SD", "ordinary_via_escapes": 2, "power_regions": 8, "unresolved": []}
+{"net": "MIC_BCLK", "ordinary_via_escapes": 2, "power_regions": 0, "unresolved": [{"net": "MIC_BCLK", "port": ".U5 > .pin4", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}, {"net": "MIC_BCLK", "via_xy": [16.55335, -29.75], "reason": "No wide inner2 distribution path"}]}
+{"net": "MCU_LCD_SCLK", "ordinary_via_escapes": 2, "power_regions": 5, "unresolved": []}
+{"net": "MCU_LCD_DC", "ordinary_via_escapes": 2, "power_regions": 5, "unresolved": []}
+{"net": "MCU_LCD_RESET_N", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "MCU_LCD_RESET_N", "port": ".U14 > .pin3", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "LCD_CS_N", "ordinary_via_escapes": 2, "power_regions": 8, "unresolved": []}
+{"net": "LCD_DC", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "LCD_DC", "port": ".R44 > .pin1", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "LCD_SCLK", "ordinary_via_escapes": 0, "power_regions": 0, "unresolved": [{"net": "LCD_SCLK", "port": ".U14 > .pin15", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}, {"net": "LCD_SCLK", "port": ".R45 > .pin1", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "LCD_SDA", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "LCD_SDA", "port": ".U14 > .pin14", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "MIC_INPUT", "ordinary_via_escapes": 2, "power_regions": 0, "unresolved": [{"net": "MIC_INPUT", "via_xy": [11.800000000000516, -14.599999999999753], "reason": "No wide inner2 distribution path"}]}
+{"net": "AUDIO_ENABLE_SUPPLY", "ordinary_via_escapes": 0, "power_regions": 0, "unresolved": [{"net": "AUDIO_ENABLE_SUPPLY", "port": ".Q2 > .pin3", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}, {"net": "AUDIO_ENABLE_SUPPLY", "port": ".R63 > .pin1", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "VMIC", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "VMIC", "port": ".U24 > .pin5", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}, {"net": "VMIC", "port": ".R93 > .pin1", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}, {"net": "VMIC", "port": ".U5 > .pin2", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}, {"net": "VMIC", "port": ".U5 > .pin5", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "MIC_WS", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "MIC_WS", "port": ".R93 > .pin2", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}
+{"net": "MIC_SD", "ordinary_via_escapes": 1, "power_regions": 0, "unresolved": [{"net": "MIC_SD", "port": ".R26 > .pin1", "reason": "No ordinary via escape meeting pad/drill/copper clearance"}]}

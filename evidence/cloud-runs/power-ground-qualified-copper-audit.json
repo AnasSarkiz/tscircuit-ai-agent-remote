@@ -1,0 +1,869 @@
+{
+  "scope": "Every native wire, pad, through via and BREP pour; actual supported pad contours for DRC and connectivity, conservative interpolated wire thickness. No fabrication or thermal approval implied.",
+  "copper_features": 1631,
+  "native_errors": {
+    "pcb_port_not_connected_error": 102
+  },
+  "minima": {
+    "via_hole": {
+      "clearance_mm": 0.3,
+      "requirement_mm": 0.3,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_outer": {
+      "clearance_mm": 0.7,
+      "requirement_mm": 0.7,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_annulus": {
+      "clearance_mm": 0.19999999999999998,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "copper_pad_pour": {
+      "clearance_mm": 0.20417328133994578,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_446",
+        "pcb_copper_pour_71"
+      ]
+    },
+    "copper_pad_trace": {
+      "clearance_mm": 0.20007509791604258,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_137",
+        "pcb_trace_6:0"
+      ]
+    },
+    "copper_pad_via": {
+      "clearance_mm": 0.21500178559673425,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_134",
+        "pcb_via_185"
+      ]
+    },
+    "via_drill_to_pad": {
+      "clearance_mm": 0.20000119433619012,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_188",
+        "pcb_smtpad_16"
+      ]
+    },
+    "copper_pad": {
+      "clearance_mm": 0.19758659999999928,
+      "requirement_mm": 0.1,
+      "ids": [
+        "pcb_smtpad_217",
+        "pcb_smtpad_218"
+      ]
+    },
+    "copper_trace_via": {
+      "clearance_mm": 0.20976477948627154,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_22:5",
+        "pcb_via_187"
+      ]
+    },
+    "copper_pour_via": {
+      "clearance_mm": 0.20730303720868426,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_195",
+        "pcb_copper_pour_28"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 0.24999941637971776,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 0.039951473904787003,
+      "requirement_mm": 0,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "copper_via": {
+      "clearance_mm": 0.21234629564053245,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_37",
+        "pcb_via_53"
+      ]
+    },
+    "copper_pour_trace": {
+      "clearance_mm": 0.20658071289511518,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_10:0",
+        "pcb_copper_pour_45"
+      ]
+    },
+    "copper_trace": {
+      "clearance_mm": 0.21076390674672757,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_43:6",
+        "pcb_trace_44:7"
+      ]
+    },
+    "copper_to_drill": {
+      "clearance_mm": 0.25658072024423334,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_hole_5"
+      ]
+    },
+    "copper_pour": {
+      "clearance_mm": 0.21012748177569632,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_copper_pour_113",
+        "pcb_copper_pour_144"
+      ]
+    },
+    "drill_to_drill": {
+      "clearance_mm": 0.26041139833359017,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_via_168",
+        "pcb_via_169"
+      ]
+    }
+  },
+  "minima_scope": "Nearby copper pairs within 0.21 mm and drill pairs within 0.26 mm; STRtree excludes distant pairs without weakening any clearance requirement.",
+  "drc_violation_count": 0,
+  "short_count": 0,
+  "violations": [],
+  "route_errors": [],
+  "merged_named_nets": [],
+  "physically_open_net_count": 29,
+  "physically_open_nets": [
+    {
+      "net": "GND",
+      "island_count": 40,
+      "islands": [
+        [
+          "U1.pin1",
+          "U1.pin40",
+          "U1.pin41",
+          "U1.pinpin41_internal_1",
+          "U1.pinpin41_internal_2",
+          "U1.pinpin41_internal_3",
+          "U1.pinpin41_internal_4",
+          "U1.pinpin41_internal_5",
+          "U1.pinpin41_internal_6",
+          "U1.pinpin41_internal_7",
+          "U1.pinpin41_internal_8",
+          "J1.pin1",
+          "J1.pin2",
+          "J1.pin3",
+          "J1.pin4",
+          "J1.pin13",
+          "J1.pin14",
+          "D2.pin3",
+          "U12.pin1",
+          "J6.pin8",
+          "R33.pin2",
+          "R34.pin2",
+          "R37.pin2",
+          "C30.pin2",
+          "C31.pin2",
+          "C32.pin2",
+          "U16.pin4",
+          "U16.pin5",
+          "U16.pin6",
+          "U16.pin8",
+          "U16.pin17",
+          "C1.pin2",
+          "C2.pin2",
+          "C3.pin2",
+          "R1.pin2",
+          "R2.pin2",
+          "U2.pin2",
+          "U2.pin3",
+          "U2.pin8",
+          "C4.pin2",
+          "C5.pin2",
+          "R6.pin2",
+          "U13.pin2",
+          "U14.pin7",
+          "U14.pin8",
+          "U14.pin9",
+          "U14.pin10",
+          "U14.pin19",
+          "J7.pin51",
+          "J7.pin52",
+          "C40.pin2",
+          "C41.pin2",
+          "C42.pin2",
+          "C43.pin2",
+          "R40.pin2",
+          "R41.pin2",
+          "R47.pin2",
+          "R48.pin2",
+          "R43.pin2",
+          "R49.pin2",
+          "R44.pin2",
+          "R50.pin2",
+          "R45.pin2",
+          "R51.pin2",
+          "R46.pin2",
+          "Q1.pin2",
+          "R61.pin2",
+          "R64.pin2",
+          "R70.pin2",
+          "U22.pin2",
+          "C70.pin2",
+          "C71.pin2",
+          "R85.pin2",
+          "U23.pin2",
+          "U24.pin2",
+          "C73.pin2",
+          "C74.pin2",
+          "C75.pin2",
+          "R86.pin2",
+          "R90.pin2",
+          "R91.pin2",
+          "R94.pin2",
+          "R95.pin2",
+          "U26.pin3",
+          "R99.pin2",
+          "C78.pin2",
+          "U25.pin2",
+          "C76.pin2",
+          "C77.pin2",
+          "U4.pin2",
+          "U4.pin3",
+          "U4.pinpin3_internal_1",
+          "U4.pinpin3_internal_2",
+          "U4.pinpin3_internal_3",
+          "C80.pin2",
+          "C81.pin2",
+          "R30.pin2",
+          "C25.pin2",
+          "C26.pin2",
+          "SW1.pin2",
+          "SW2.pin2",
+          "SW5.pin3",
+          "SW5.pin4",
+          "SW5.pinpin4_internal_1",
+          "SW5.pinpin4_internal_2",
+          "SW5.pinpin4_internal_3",
+          "U27.pin7",
+          "U27.pin14",
+          "U27.pin17",
+          "R104.pin2",
+          "C84.pin2",
+          "C85.pin2",
+          "TP1.pin1"
+        ],
+        [
+          "J6.pin1"
+        ],
+        [
+          "J6.pin7"
+        ],
+        [
+          "J7.pin1"
+        ],
+        [
+          "J7.pin2"
+        ],
+        [
+          "J7.pin3"
+        ],
+        [
+          "J7.pin8"
+        ],
+        [
+          "J7.pin19"
+        ],
+        [
+          "J7.pin20"
+        ],
+        [
+          "J7.pin21"
+        ],
+        [
+          "J7.pin22"
+        ],
+        [
+          "J7.pin23"
+        ],
+        [
+          "J7.pin24"
+        ],
+        [
+          "J7.pin25"
+        ],
+        [
+          "J7.pin26"
+        ],
+        [
+          "J7.pin27"
+        ],
+        [
+          "J7.pin28"
+        ],
+        [
+          "J7.pin29"
+        ],
+        [
+          "J7.pin30"
+        ],
+        [
+          "J7.pin31"
+        ],
+        [
+          "J7.pin32"
+        ],
+        [
+          "J7.pin33"
+        ],
+        [
+          "J7.pin34"
+        ],
+        [
+          "J7.pin35"
+        ],
+        [
+          "J7.pin36"
+        ],
+        [
+          "J7.pin37"
+        ],
+        [
+          "J7.pin38"
+        ],
+        [
+          "J7.pin39"
+        ],
+        [
+          "J7.pin40"
+        ],
+        [
+          "J7.pin45"
+        ],
+        [
+          "U3.pin3",
+          "U3.pin11",
+          "U3.pin15",
+          "U3.pin17"
+        ],
+        [
+          "C50.pin2",
+          "R69.pin2"
+        ],
+        [
+          "C51.pin2"
+        ],
+        [
+          "R68.pin2"
+        ],
+        [
+          "Q9.pin2",
+          "R82.pin2",
+          "R84.pin2"
+        ],
+        [
+          "R87.pin2"
+        ],
+        [
+          "R97.pin2"
+        ],
+        [
+          "U5.pin3",
+          "U5.pinpin3_internal_1",
+          "U5.pinpin3_internal_2",
+          "U5.pinpin3_internal_3"
+        ],
+        [
+          "U7.pin2",
+          "R26.pin2"
+        ],
+        [
+          "R102.pin2"
+        ]
+      ]
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "island_count": 2,
+      "islands": [
+        [
+          "U1.pin20",
+          "R50.pin1"
+        ],
+        [
+          "U14.pin5"
+        ]
+      ]
+    },
+    {
+      "net": "MCU_LCD_DC",
+      "island_count": 2,
+      "islands": [
+        [
+          "U1.pin21",
+          "R49.pin1"
+        ],
+        [
+          "U14.pin4"
+        ]
+      ]
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "island_count": 2,
+      "islands": [
+        [
+          "U1.pin22",
+          "R48.pin1"
+        ],
+        [
+          "U14.pin3"
+        ]
+      ]
+    },
+    {
+      "net": "USB_DN",
+      "island_count": 4,
+      "islands": [
+        [
+          "J1.pin7"
+        ],
+        [
+          "J1.pin9"
+        ],
+        [
+          "D2.pin2"
+        ],
+        [
+          "R32.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "USB_DP",
+      "island_count": 4,
+      "islands": [
+        [
+          "J1.pin8"
+        ],
+        [
+          "J1.pin10"
+        ],
+        [
+          "D2.pin1"
+        ],
+        [
+          "R31.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "VBUS",
+      "island_count": 4,
+      "islands": [
+        [
+          "J1.pin15",
+          "TP2.pin1"
+        ],
+        [
+          "J1.pin16"
+        ],
+        [
+          "U16.pin13"
+        ],
+        [
+          "C1.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "PACK_BAT",
+      "island_count": 2,
+      "islands": [
+        [
+          "U16.pin2",
+          "U16.pin3",
+          "C2.pin1",
+          "U25.pin5"
+        ],
+        [
+          "TP3.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "VSYS",
+      "island_count": 5,
+      "islands": [
+        [
+          "U16.pin10"
+        ],
+        [
+          "U16.pin11"
+        ],
+        [
+          "C3.pin1",
+          "U2.pin10",
+          "C4.pin1",
+          "U3.pin7",
+          "U3.pin8",
+          "Q2.pin2",
+          "C50.pin1",
+          "C51.pin1",
+          "U22.pin1",
+          "C70.pin1",
+          "U25.pin3",
+          "U25.pin6",
+          "R96.pin1",
+          "C76.pin1",
+          "TP4.pin1"
+        ],
+        [
+          "U3.pin2"
+        ],
+        [
+          "R62.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "VLCD",
+      "island_count": 8,
+      "islands": [
+        [
+          "U13.pin5",
+          "U14.pin1",
+          "U14.pin20",
+          "C41.pin1",
+          "C42.pin1",
+          "C43.pin1",
+          "R41.pin1",
+          "R42.pin2"
+        ],
+        [
+          "J7.pin9"
+        ],
+        [
+          "J7.pin10"
+        ],
+        [
+          "J7.pin11"
+        ],
+        [
+          "J7.pin16"
+        ],
+        [
+          "J7.pin42"
+        ],
+        [
+          "J7.pin43"
+        ],
+        [
+          "J7.pin44"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_SDA",
+      "island_count": 3,
+      "islands": [
+        [
+          "U14.pin14"
+        ],
+        [
+          "J7.pin17"
+        ],
+        [
+          "R46.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_SCLK",
+      "island_count": 3,
+      "islands": [
+        [
+          "U14.pin15"
+        ],
+        [
+          "J7.pin14"
+        ],
+        [
+          "R45.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_DC",
+      "island_count": 3,
+      "islands": [
+        [
+          "U14.pin16"
+        ],
+        [
+          "J7.pin15"
+        ],
+        [
+          "R44.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_RESET_N",
+      "island_count": 2,
+      "islands": [
+        [
+          "U14.pin17",
+          "R43.pin1"
+        ],
+        [
+          "J7.pin41"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_CS_N",
+      "island_count": 3,
+      "islands": [
+        [
+          "U14.pin18"
+        ],
+        [
+          "J7.pin13"
+        ],
+        [
+          "R42.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_BACKLIGHT_RETURN_4",
+      "island_count": 2,
+      "islands": [
+        [
+          "J7.pin46"
+        ],
+        [
+          "U27.pin3"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_BACKLIGHT_RETURN_3",
+      "island_count": 2,
+      "islands": [
+        [
+          "J7.pin47"
+        ],
+        [
+          "U27.pin4"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_BACKLIGHT_RETURN_2",
+      "island_count": 2,
+      "islands": [
+        [
+          "J7.pin48"
+        ],
+        [
+          "U27.pin5"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_BACKLIGHT_RETURN_1",
+      "island_count": 2,
+      "islands": [
+        [
+          "J7.pin49"
+        ],
+        [
+          "U27.pin6"
+        ]
+      ]
+    },
+    {
+      "net": "LCD_BACKLIGHT_OUTPUT",
+      "island_count": 3,
+      "islands": [
+        [
+          "J7.pin50"
+        ],
+        [
+          "U27.pin8"
+        ],
+        [
+          "C85.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "SPEAKER_P",
+      "island_count": 2,
+      "islands": [
+        [
+          "U3.pin9"
+        ],
+        [
+          "J4.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "SPEAKER_N",
+      "island_count": 2,
+      "islands": [
+        [
+          "U3.pin10"
+        ],
+        [
+          "J4.pin2"
+        ]
+      ]
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "island_count": 2,
+      "islands": [
+        [
+          "Q2.pin3"
+        ],
+        [
+          "R63.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "MIC_INPUT",
+      "island_count": 2,
+      "islands": [
+        [
+          "U23.pin1",
+          "SW5.pin2"
+        ],
+        [
+          "C73.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "VMIC",
+      "island_count": 5,
+      "islands": [
+        [
+          "U23.pin5",
+          "C74.pin1",
+          "C75.pin1",
+          "R86.pin1",
+          "R92.pin1",
+          "U4.pin5",
+          "C80.pin1",
+          "C81.pin1",
+          "R29.pin1",
+          "TP6.pin1"
+        ],
+        [
+          "U24.pin5"
+        ],
+        [
+          "R93.pin1"
+        ],
+        [
+          "U5.pin2"
+        ],
+        [
+          "U5.pin5"
+        ]
+      ]
+    },
+    {
+      "net": "MIC_WS",
+      "island_count": 3,
+      "islands": [
+        [
+          "U24.pin4",
+          "R95.pin1",
+          "U5.pin1"
+        ],
+        [
+          "R93.pin2"
+        ],
+        [
+          "U4.pin1"
+        ]
+      ]
+    },
+    {
+      "net": "MIC_BCLK",
+      "island_count": 4,
+      "islands": [
+        [
+          "U24.pin6",
+          "R94.pin1"
+        ],
+        [
+          "R92.pin2"
+        ],
+        [
+          "U4.pin4"
+        ],
+        [
+          "U5.pin4"
+        ]
+      ]
+    },
+    {
+      "net": "MIC_SD",
+      "island_count": 2,
+      "islands": [
+        [
+          "U4.pin6",
+          "U7.pin3",
+          "R26.pin1"
+        ],
+        [
+          "U5.pin6"
+        ]
+      ]
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "island_count": 2,
+      "islands": [
+        [
+          "U27.pin15",
+          "U27.pin16",
+          "R104.pin1"
+        ],
+        [
+          "R103.pin2"
+        ]
+      ]
+    }
+  ],
+  "zero_drc_zero_shorts_and_connected": false,
+  "source_circuit_json": "evidence/cloud-runs/power-ground-qualified-geometry/circuit.json",
+  "source_sha256": "6ea2ae86a7ad406b9d90f4c0b5afa06be415ecbf347ed9b0f7d73e795e04ba8a"
+}

@@ -1,0 +1,23 @@
+{
+  "classification": "native via proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/fullspan-signal-regions/circuit.json",
+  "vias": [],
+  "unresolved": [
+    {
+      "isolated_native_group": "pcb_smtpad_116",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_298",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_302",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_328",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    }
+  ]
+}

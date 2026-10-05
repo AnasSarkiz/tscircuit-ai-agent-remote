@@ -1,0 +1,32 @@
+{
+  "reference": "R103",
+  "before": [
+    -2,
+    -9.5
+  ],
+  "after": [
+    1,
+    18.9
+  ],
+  "rotation_degrees": 0,
+  "reason": "100 mm gate detour and remote series termination; relocate passive beside driver, retaining genuine footprint and assembly side",
+  "placement_and_copper_qualification": "pending native build",
+  "first_rejected_trial": {
+    "position": [
+      1.8,
+      18.7
+    ],
+    "native_error": "R103 courtyard overlaps R104; autorouting skipped, generated output rejected"
+  },
+  "second_rejected_trial": {
+    "position": [
+      0.3,
+      19.3
+    ],
+    "native_error": "0.0788 mm clearance to existing U1.pin27/R36.pin2 trace; rejected without lowering 0.2 mm requirement"
+  },
+  "candidate_geometry_search": {
+    "native_courtyard_overlap_count": 0,
+    "minimum_foreign_top_copper_gap_mm": 0.8560737100097634
+  }
+}

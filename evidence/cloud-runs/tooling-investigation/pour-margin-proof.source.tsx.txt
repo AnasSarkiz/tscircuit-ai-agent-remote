@@ -1,0 +1,14 @@
+import { RootCircuit } from "tscircuit"
+for (const margin of [0.25, 0]) {
+ const root = new RootCircuit()
+ root.add(<board width={10} height={10} layers={4} routeRemaining={false}>
+ <net name="POWER" />
+ <via name="PA" pcbX={-2} pcbY={0} fromLayer="top" toLayer="bottom" holeDiameter={0.3} outerDiameter={0.7} connectsTo="net.POWER" />
+ <via name="PB" pcbX={2} pcbY={0} fromLayer="top" toLayer="bottom" holeDiameter={0.3} outerDiameter={0.7} connectsTo="net.POWER" />
+ <copperpour connectsTo="net.POWER" layer="inner2" boardEdgeMargin={margin} outline={[{x:-2.15,y:-0.15},{x:2.15,y:-0.15},{x:2.15,y:0.15},{x:-2.15,y:0.15}]} />
+ </board>)
+ await root.renderUntilSettled()
+ const circuit = root.getCircuitJson()
+ await Bun.write(`evidence/cloud-runs/pour-margin-${margin}.json`,JSON.stringify(circuit,null,2))
+ console.log(JSON.stringify({margin,pours:circuit.filter(r=>r.type==='pcb_copper_pour').length, errors:circuit.filter(r=>r.type.includes('error')).map(r=>r.type)}))
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "type": "source_trace_not_connected_error",
+    "source_trace_not_connected_error_id": "source_trace_not_connected_error_0",
+    "error_type": "source_trace_not_connected_error",
+    "message": "Could not find port for selector \".PV_A > port.inner2\". Component \"top\" found, but does not have pin \"inner2\". It has no ports",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "source_group_id": "source_group_0",
+    "selectors_not_found": [
+      ".PV_A > port.inner2"
+    ]
+  },
+  {
+    "type": "pcb_via",
+    "pcb_via_id": "pcb_via_0",
+    "x": -2,
+    "y": 0,
+    "hole_diameter": 0.4,
+    "outer_diameter": 0.8,
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "from_layer": "top",
+    "to_layer": "bottom",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0",
+    "source_net_id": "source_net_0",
+    "pcb_port_ids": [
+      "pcb_port_0",
+      "pcb_port_1"
+    ]
+  },
+  {
+    "type": "pcb_via",
+    "pcb_via_id": "pcb_via_1",
+    "x": 2,
+    "y": 0,
+    "hole_diameter": 0.4,
+    "outer_diameter": 0.8,
+    "layers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "from_layer": "top",
+    "to_layer": "bottom",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0",
+    "source_net_id": "source_net_0",
+    "pcb_port_ids": [
+      "pcb_port_2",
+      "pcb_port_3"
+    ]
+  },
+  {
+    "type": "source_trace_not_connected_error",
+    "source_trace_not_connected_error_id": "source_trace_not_connected_error_1",
+    "error_type": "source_trace_not_connected_error",
+    "message": "Could not find port for selector \".PV_A > port.inner2\". Component \"top\" found, but does not have pin \"inner2\". It has no ports",
+    "subcircuit_id": "subcircuit_source_group_0",
+    "source_group_id": "source_group_0",
+    "selectors_not_found": [
+      ".PV_A > port.inner2"
+    ]
+  }
+]

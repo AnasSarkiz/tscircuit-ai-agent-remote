@@ -1,0 +1,17 @@
+{
+  "classification": "manual power proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/r103-qualified-location/circuit.json",
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "SPEAKER_P",
+      "port": ".U3 > .pin9",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    },
+    {
+      "net": "SPEAKER_N",
+      "port": ".U3 > .pin10",
+      "reason": "No qualified wide path with a pad escape at most 1.2 mm from pad centre"
+    }
+  ]
+}

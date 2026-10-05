@@ -1,3 +1,13 @@
+## Current cloud routing checkpoint — 2026-10-05
+
+**Engineering WIP — routing incomplete; NOT FABRICATION READY.** Native output from the matching current source has **306 traces, 250 ordinary full-span vias, 190 pours and 90 native open-port errors**. The independent geometry audit reports **0 measured violations / 0 shorts**, with all **152 authored region widths preserved**, but **26 physically disconnected nets** remain. J7 accounts for46 native errors; unassigned J3 outer contacts are outside that count.
+
+[Current review](evidence/cloud-runs/review.md) · [Exact build receipt](context/build-checkpoint.json) · [Cloud continuation](CLOUD_HANDOFF.md). Native JSON SHA256 `81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`. TypeScript/maintained-source formatting pass; routing regressions17pass; board tests42pass/2failing fabrication/schema gates. Five electrical/placement checks and copper-free CLI placement build pass. Full routed CLI build/bitmap shorts/snapshot exceed time budgets; Gerber export/shorts fail unsupported polygon. Native schema169failures and32missing U16/U27 paste records remain. Battery/display mating, current/SI, BOM/CPL/stock and final mechanical/fabrication qualification are open.
+
+The managed cloud instance supports the checked native workflow. Source `scripts/cloud/env.sh`; use the single-operation supervisor. Verified lossless event archives prevent CLI file-loader memory exhaustion. Clean frozen installation still needs the unapplied api.github.com network allowance; startup instructions are saved as a draft. GitHub WIP publication does not approve fabrication, and registry retries remain deferred.
+
+---
+
 ## A7 Codex Cloud migration checkpoint — 2026-10-05
 
 Local memory-intensive routing is stopped at the user's request. Continue this existing board in Codex Cloud using [CLOUD_HANDOFF.md](CLOUD_HANDOFF.md), [cloud start prompt](context/cloud-start-prompt.txt), root AGENTS.md, repository skills and original request/decision records. Linux setup: `bash scripts/cloud/setup.sh`; task shell: `source scripts/cloud/env.sh`. Every heavy command uses the single-operation memory/time supervisor. No cloud VM execution has yet been verified; the GitHub connector currently omits this board repository and needs the user's browser connection update.

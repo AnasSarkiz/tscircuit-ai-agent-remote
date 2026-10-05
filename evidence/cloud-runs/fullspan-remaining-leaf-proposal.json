@@ -1,0 +1,328 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/fullspan-signal-regions/circuit.json",
+  "paths": [
+    {
+      "net": "MIC_INPUT",
+      "from": ".C73 > .pin1",
+      "to": "net.MIC_INPUT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.25,
+          "y": 0.9
+        },
+        {
+          "x": 7.0,
+          "y": 0.95
+        },
+        {
+          "x": 7.35,
+          "y": 0.45
+        },
+        {
+          "x": 8.05,
+          "y": -2.05
+        },
+        {
+          "x": 9.4,
+          "y": -3.05
+        },
+        {
+          "x": 10.15,
+          "y": -4.0
+        },
+        {
+          "x": 10.65,
+          "y": -4.5
+        },
+        {
+          "x": 10.65,
+          "y": -5.1
+        },
+        {
+          "x": 10.25,
+          "y": -5.5
+        },
+        {
+          "x": 5.5,
+          "y": -5.75
+        },
+        {
+          "x": -0.95,
+          "y": -5.7
+        },
+        {
+          "x": -1.65,
+          "y": -5.1
+        },
+        {
+          "x": -5.45,
+          "y": -3.5
+        }
+      ],
+      "global_path_mm": [
+        [
+          13,
+          -8.950023999999999
+        ],
+        [
+          12.10000000000052,
+          -7.999999999999659
+        ],
+        [
+          12.050000000000523,
+          -1.249999999999563
+        ],
+        [
+          12.550000000000523,
+          -0.899999999999558
+        ],
+        [
+          15.050000000000566,
+          -0.1999999999995481
+        ],
+        [
+          16.05000000000058,
+          1.1500000000004746
+        ],
+        [
+          17.00000000000059,
+          1.9000000000004817
+        ],
+        [
+          17.500000000000597,
+          2.400000000000489
+        ],
+        [
+          18.100000000000605,
+          2.400000000000489
+        ],
+        [
+          18.50000000000061,
+          2.000000000000483
+        ],
+        [
+          18.75000000000061,
+          -2.7499999999995843
+        ],
+        [
+          18.700000000000614,
+          -9.199999999999676
+        ],
+        [
+          18.100000000000605,
+          -9.899999999999686
+        ],
+        [
+          16.5,
+          -13.7
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "GND",
+      "ports": [
+        ".C2 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".C50 > .pin2",
+        ".R69 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".R68 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".Q9 > .pin2",
+        ".R82 > .pin2",
+        ".R84 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VBUS",
+      "ports": [
+        ".J1 > .pin16"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VBUS",
+      "ports": [
+        ".U16 > .pin13"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VBUS",
+      "ports": [
+        ".C1 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "PACK_BAT",
+      "ports": [
+        ".TP3 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".U16 > .pin10"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".U16 > .pin11"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".U3 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".R62 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "ports": [
+        ".U14 > .pin3"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "LCD_SDA",
+      "ports": [
+        ".R46 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "LCD_SCLK",
+      "ports": [
+        ".R45 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "LCD_DC",
+      "ports": [
+        ".R44 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "AMP_SD_MODE",
+      "ports": [
+        ".U3 > .pin4"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "ports": [
+        ".R63 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U24 > .pin5"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".R93 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U5 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U5 > .pin5"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_WS",
+      "ports": [
+        ".R93 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_BCLK",
+      "ports": [
+        ".R92 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_BCLK",
+      "ports": [
+        ".U5 > .pin4"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_SD",
+      "ports": [
+        ".U5 > .pin6"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

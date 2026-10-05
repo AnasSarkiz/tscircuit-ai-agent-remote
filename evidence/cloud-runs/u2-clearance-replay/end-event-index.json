@@ -1,0 +1,78 @@
+[
+  {
+    "file": "event-1.json",
+    "phase": "regulator-switching"
+  },
+  {
+    "file": "event-2.json",
+    "phase": "regulator-feedback-status"
+  },
+  {
+    "file": "event-3.json",
+    "phase": "independent-control-signals"
+  },
+  {
+    "file": "event-4.json",
+    "phase": "charger-current-limit"
+  },
+  {
+    "file": "event-5.json",
+    "phase": "amplifier-bclk"
+  },
+  {
+    "file": "event-6.json",
+    "phase": "amplifier-din"
+  },
+  {
+    "file": "event-7.json",
+    "phase": "backlight-current-setting"
+  },
+  {
+    "file": "event-8.json",
+    "phase": "backlight-c1-positive"
+  },
+  {
+    "file": "event-9.json",
+    "phase": "backlight-c1-negative"
+  },
+  {
+    "file": "event-10.json",
+    "phase": "backlight-c2-positive"
+  },
+  {
+    "file": "event-11.json",
+    "phase": "backlight-c2-negative"
+  },
+  {
+    "file": "event-12.json",
+    "phase": "regulator-pgood-reroute"
+  },
+  {
+    "file": "event-13.json",
+    "phase": "hold-readback"
+  },
+  {
+    "file": "event-14.json",
+    "phase": "haptic-enable"
+  },
+  {
+    "file": "event-15.json",
+    "phase": "display-enable"
+  },
+  {
+    "file": "event-16.json",
+    "phase": "mcu-amplifier-bclk"
+  },
+  {
+    "file": "event-17.json",
+    "phase": "mcu-amplifier-din"
+  },
+  {
+    "file": "event-18.json",
+    "phase": "charger-ntc"
+  },
+  {
+    "file": "event-19.json",
+    "phase": "service-uart"
+  }
+]

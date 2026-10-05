@@ -1,0 +1,101 @@
+"""Route open leaves to real copper in the connected island, using native paths."""
+import argparse
+import json
+import math
+import runpy
+from pathlib import Path
+
+helpers = runpy.run_path(str(Path(__file__).with_name('plan-power-copper.py')))
+Planner = helpers['Planner']
+
+
+def native_path(planner, specification):
+    port, positions, layers = specification['port'], specification['positions'], specification['layers']
+    component = planner.components[port['pcb_component_id']]
+    angle = math.radians(-component['rotation'])
+    local = []
+    for index, (x, y) in enumerate(positions[1:], 1):
+        dx, dy = x-component['display_offset_x'], y-component['display_offset_y']
+        waypoint = {'x': round(dx*math.cos(angle)-dy*math.sin(angle),6),
+                    'y': round(dx*math.sin(angle)+dy*math.cos(angle),6)}
+        local.append(waypoint)
+        if index < len(positions)-1 and layers[index] != layers[index+1]:
+            local.append({**waypoint,'via': True,'fromLayer':layers[index],'toLayer':layers[index+1]})
+            local.append(dict(waypoint))
+    return {'net': specification['net']['name'], 'from': planner.port_name(port),
+            'to': 'net.'+specification['net']['name'], 'width': specification['width'],
+            'pcbPath': local, 'global_path_mm': positions, 'segment_layers': layers,
+            'classification': 'manual native route to existing copper; physical contact must pass independent audit'}
+
+
+def main_targets(planner, specification):
+    physical, group, root = specification['physical'], specification['group'], specification['root']
+    targets = set()
+    for record in planner.circuit:
+        if record['type'] == 'pcb_via' and planner.via_root(record) == root and physical['physical_feature_groups'][record['pcb_via_id']] == group:
+            targets.update((layer, record['x'], record['y']) for layer in ('top','bottom','inner2'))
+        elif record['type'] == 'pcb_trace':
+            for index, (first, last) in enumerate(zip(record['route'],record['route'][1:])):
+                if first['route_type'] != 'wire' or last['route_type'] != 'wire' or first['layer'] != last['layer']:
+                    continue
+                if physical['physical_feature_groups'][f"{record['pcb_trace_id']}:{index}"] != group:
+                    continue
+                intervals=max(1,math.ceil(math.dist((first['x'],first['y']),(last['x'],last['y']))/2))
+                targets.update((first['layer'],first['x']+(last['x']-first['x'])*i/intervals,
+                                first['y']+(last['y']-first['y'])*i/intervals) for i in range(intervals+1))
+    return targets
+
+
+def route_contact(planner, specification):
+    port, net, targets = specification['port'], specification['net'], specification['targets']
+    root=planner.root(net['source_net_id']);width=net.get('trace_width',.2);origin=(port['x'],port['y'])
+    targets=sorted(targets,key=lambda p:math.dist(origin,p[1:]))
+    top_obstacles=planner.obstacles(root,'top',width)
+    for layer,x,y in [p for p in targets if p[0]=='top'][:12]:
+        positions=planner.grid_route((origin,(x,y),top_obstacles))
+        if positions:
+            return native_path(planner,{'port':port,'net':net,'width':width,'positions':positions,'layers':['top']*len(positions)})
+    exits=planner.grid_escape(origin,(top_obstacles,helpers['via_obstacles'](planner,root)))
+    for layer in ('bottom','inner2'):
+        obstacles=planner.obstacles(root,layer,width)
+        for _,x,y in [p for p in targets if p[0]==layer][:12]:
+            for via,escape in exits:
+                trunk=planner.grid_route((via,(x,y),obstacles))
+                if trunk:
+                    positions=escape+trunk[1:];layers=['top']*len(escape)+[layer]*(len(trunk)-1)
+                    return native_path(planner,{'port':port,'net':net,'width':width,'positions':positions,'layers':layers})
+    return None
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('circuit_json');parser.add_argument('copper_audit');parser.add_argument('output_json');parser.add_argument('nets',nargs='+')
+    parser.add_argument('--reserve-proposals',action='append',default=[])
+    parser.add_argument('--grid-mm',type=float,choices=(0.05,0.1),default=0.1)
+    args=parser.parse_args();circuit=json.loads(Path(args.circuit_json).read_text());physical=json.loads(Path(args.copper_audit).read_text());planner=Planner(circuit)
+    planner.set_grid(args.grid_mm)
+    for path in args.reserve_proposals:
+        planner.reserve_proposals(json.loads(Path(path).read_text()))
+    nets={r['name']:r for r in circuit if r['type']=='source_net'}
+    paths,unresolved=[],[]
+    for name in args.nets:
+        root=planner.root(nets[name]['source_net_id']);islands={}
+        for port in planner.ports.values():
+            if planner.root(port['source_port_id'])!=root or planner.source_ports[port['source_port_id']].get('source_component_id') not in planner.source_components or planner.port_name(port).startswith(('.J3 >','.J7 >')):
+                continue
+            groups=physical['physical_port_groups'][port['pcb_port_id']]
+            if len(groups)==1:islands.setdefault(groups[0],[]).append(port)
+        if len(islands)<2:continue
+        group=max(islands,key=lambda g:len(islands[g]));targets=main_targets(planner,{'physical':physical,'group':group,'root':root})
+        for other,alternatives in islands.items():
+            if other==group:continue
+            for port in alternatives:
+                path=route_contact(planner,{'port':port,'net':nets[name],'targets':targets})
+                if path:
+                    paths.append(path);planner.reserve_proposals({'paths':[path]});break
+            else:unresolved.append({'net':name,'ports':[planner.port_name(p) for p in alternatives],'reason':'No route to existing main-island copper'})
+        print(json.dumps({'net':name,'paths_so_far':len(paths)}),flush=True)
+        Path(args.output_json).write_text(json.dumps({'classification':'manual native proposals, not solver caches','source_circuit_json':args.circuit_json,'paths':paths,'unresolved':unresolved},indent=2)+'\n')
+
+
+if __name__=='__main__':main()

@@ -1,0 +1,51 @@
+{
+  "classification": "native via proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/r103-qualified-location/circuit.json",
+  "vias": [
+    {
+      "net": "GND",
+      "x": -16.608792999999988,
+      "y": -14.912668999999923,
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "classification": "manual native ground-plane stitching via",
+      "isolated_native_group": "pcb_smtpad_421"
+    },
+    {
+      "net": "GND",
+      "x": -18.371861999999965,
+      "y": -12.169216000000004,
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "classification": "manual native ground-plane stitching via",
+      "isolated_native_group": "pcb_smtpad_67"
+    },
+    {
+      "net": "GND",
+      "x": 20.062809000000005,
+      "y": -28.966909999999984,
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "classification": "manual native ground-plane stitching via",
+      "isolated_native_group": "pcb_smtpad_411"
+    }
+  ],
+  "unresolved": [
+    {
+      "isolated_native_group": "pcb_smtpad_275",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_298",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_302",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_328",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    }
+  ]
+}

@@ -1,17 +1,28 @@
 {
-  "native_build": "evidence/a7-routing-2026-10-05/native-latest-replay/circuit.json",
+  "native_build": "evidence/cloud-runs/final-native/circuit.json",
   "canonical_circuit_json": "dist/index/circuit.json",
   "byte_identical": true,
-  "sha256": "ff99af3edc2ea509109e4b9b70188668d813673aacae55890c5f9cbe5dc77bd8",
-  "size_bytes": 2948515,
-  "traces": 138,
-  "vias": 116,
-  "native_open_port_errors": 275,
-  "restored_source_snapshot": "evidence/a7-routing-2026-10-05/native-latest-replay/source-snapshot",
+  "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "size_bytes": 5071958,
+  "traces": 306,
+  "vias": 250,
+  "native_pours": 190,
+  "native_open_port_errors": 90,
+  "J7_native_open_port_errors": 46,
+  "physically_open_nets": 26,
+  "measured_geometry_violations": 0,
+  "measured_shorts": 0,
+  "authored_region_widths_checked": 152,
+  "authored_region_width_failures": 0,
+  "all_ordinary_vias_full_span": true,
+  "restored_source_snapshot": "evidence/cloud-runs/final-native/source-snapshot",
   "source_restore_byte_verified": true,
+  "fabrication_ready": false,
   "limitations": [
-    "Unbuilt via-clearance and explicit pipeline proposals preserved separately",
-    "No local routing after cloud migration request",
-    "Native recording completion is not DRC/fabrication approval"
+    "90 native open-port errors and 26 physically disconnected nets remain; J3 outer contacts are unassigned and omitted from that count.",
+    "J7 physical contact face/pin-1/fold mating remains unqualified.",
+    "32 missing pill-pad paste records, 169 strict-schema failures and unsupported polygon Gerber export remain.",
+    "Full routed CLI build, bitmap shorts and snapshot exceeded time budgets; direct native render completed.",
+    "Current, USB/speaker signal integrity, mechanical fit, stock/BOM/CPL and final fabrication review remain open."
   ]
 }

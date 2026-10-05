@@ -1,0 +1,220 @@
+{
+  "classification": "manual native copper proposals; not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/power-ground-qualified-geometry/circuit.json",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".J6 > .pin7",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.6,
+          "y": -3.8
+        },
+        {
+          "x": 2.6,
+          "y": -3.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.599999999999998,
+          -13.879999999999999
+        ],
+        [
+          -14.799999999999862,
+          -13.799999999999741
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 1.2026637102697144
+    },
+    {
+      "net": "GND",
+      "from": ".C51 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.739254,
+          "y": -0.6
+        },
+        {
+          "x": 1.739254,
+          "y": -0.6,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.5,
+          3.299976
+        ],
+        [
+          -14.1,
+          2.260746
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 1.1999995803749264
+    },
+    {
+      "net": "GND",
+      "from": ".R87 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.8
+        },
+        {
+          "x": 0.753364,
+          "y": -0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          9,
+          -29.246636
+        ],
+        [
+          9.8,
+          -29.246636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "GND",
+      "from": ".R97 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.8
+        },
+        {
+          "x": 0.753364,
+          "y": -0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -10.753364,
+          -14
+        ],
+        [
+          -10.753364,
+          -13.2
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "GND",
+      "from": ".R102 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.553364,
+          "y": 0.0
+        },
+        {
+          "x": 1.553364,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          2.5,
+          21.753364
+        ],
+        [
+          2.5,
+          22.553364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 0.7999999999999972
+    }
+  ],
+  "pours": [],
+  "vias": [],
+  "unresolved": [
+    {
+      "net": "GND",
+      "port": ".J6 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U3 > .pin17",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R69 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R68 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R84 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U5 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R26 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    }
+  ]
+}

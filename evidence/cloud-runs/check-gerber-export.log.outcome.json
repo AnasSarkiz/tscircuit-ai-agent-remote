@@ -1,0 +1,19 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/tsci",
+    "export",
+    "dist/index/circuit.json",
+    "--format",
+    "gerbers",
+    "--output",
+    "evidence/cloud-runs/final-gerbers.zip"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 3.51,
+  "peak_process_group_rss_bytes": 800739328,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

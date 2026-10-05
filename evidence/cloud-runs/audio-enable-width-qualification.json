@@ -1,0 +1,11 @@
+{
+  "net": "AUDIO_ENABLE_SUPPLY",
+  "previous_nominal_width_mm": 0.6,
+  "new_nominal_width_mm": 0.2,
+  "unchanged_minimum_trace_width_mm": 0.2,
+  "circuit_evidence": "SpeakerSheet.tsx Q2.pin3 to R63.pin1; R63=100 ohm to AMP_SD_MODE, R64=1 kohm pull-down; amplifier power pins remain VSYS",
+  "resistor_tolerance_fraction": 0.01,
+  "screening_supply_ceiling_v": 5.5,
+  "normal_bias_bound_a": 0.005050505050505051,
+  "qualification": "Only low-current enable bias path width changes; speaker and VSYS trunks retain existing widths, no hardware tests implied"
+}

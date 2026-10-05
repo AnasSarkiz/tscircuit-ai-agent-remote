@@ -1,0 +1,18 @@
+{"net": "MCU_BACKLIGHT_PWM", "manual_paths": 1, "unresolved": null}
+{"net": "BACKLIGHT_GATE", "manual_paths": 0, "unresolved": null}
+{"net": "LCD_CS_N", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U14 > .pin18 to .R42 > .pin1"}
+{"net": "LCD_DC", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U14 > .pin16 to .R44 > .pin1"}
+{"net": "LCD_SCLK", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U14 > .pin15 to .R45 > .pin1"}
+{"net": "LCD_SDA", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U14 > .pin14 to .R46 > .pin1"}
+{"net": "MCU_LCD_SCLK", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .R50 > .pin1 to .U14 > .pin5"}
+{"net": "MCU_LCD_DC", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .R49 > .pin1 to .U14 > .pin4"}
+{"net": "MCU_LCD_RESET_N", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .R48 > .pin1 to .U14 > .pin3"}
+{"net": "MIC_WS", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .R95 > .pin1 to .R93 > .pin2; No conservative top/bottom/inner2 path: .U24 > .pin4 to .U4 > .pin1"}
+{"net": "MIC_BCLK", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U24 > .pin6 to .R92 > .pin2; No conservative top/bottom/inner2 path: .U24 > .pin6 to .U5 > .pin4; No conservative top/bottom/inner2 path: .U24 > .pin6 to .U4 > .pin4"}
+{"net": "MIC_SD", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .R26 > .pin1 to .U5 > .pin6"}
+{"net": "MIC_INPUT", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U23 > .pin1 to .C73 > .pin1"}
+{"net": "AUDIO_ENABLE_SUPPLY", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .Q2 > .pin3 to .R63 > .pin1"}
+{"net": "SPEAKER_P", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U3 > .pin9 to .J4 > .pin1"}
+{"net": "SPEAKER_N", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U3 > .pin10 to .J4 > .pin2"}
+{"net": "USB_DP", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .J1 > .pin8 to .J1 > .pin10; No conservative top/bottom/inner2 path: .J1 > .pin8 to .D2 > .pin1; No conservative top/bottom/inner2 path: .J1 > .pin8 to .R31 > .pin1"}
+{"net": "USB_DN", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .J1 > .pin7 to .J1 > .pin9; No conservative top/bottom/inner2 path: .J1 > .pin7 to .D2 > .pin2; No conservative top/bottom/inner2 path: .J1 > .pin7 to .R32 > .pin1"}

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "git",
+    "add",
+    "CLOUD_HANDOFF.md",
+    "README.md",
+    "VALIDATION.md",
+    "context/build-checkpoint.json",
+    "context/checkpoint-sha256.json",
+    "dist/index/circuit.json",
+    "main.tsx",
+    "scripts/cloud/env.sh",
+    "scripts/cloud/archive-native-events.py",
+    "scripts/routing",
+    "src/board",
+    "tests/integrated-board-boundaries.test.ts",
+    "tests/placement-review-preservation.test.ts",
+    "evidence/cloud-runs",
+    "evidence/cloud-setup-smoke"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 9.01,
+  "peak_process_group_rss_bytes": 18735104,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

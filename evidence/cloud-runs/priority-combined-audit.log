@@ -1,0 +1,161 @@
+{
+  "scope": "Every native wire, pad, through via and BREP pour; actual supported pad contours for DRC and connectivity, conservative interpolated wire thickness. No fabrication or thermal approval implied.",
+  "copper_features": 1613,
+  "native_errors": {
+    "pcb_autorouting_error": 1,
+    "pcb_port_not_connected_error": 121,
+    "pcb_trace_missing_error": 7,
+    "pcb_trace_too_long_error": 1,
+    "pcb_bus_length_skew_error": 1
+  },
+  "minima": {
+    "via_hole": {
+      "clearance_mm": 0.3,
+      "requirement_mm": 0.3,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_outer": {
+      "clearance_mm": 0.7,
+      "requirement_mm": 0.7,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_annulus": {
+      "clearance_mm": 0.19999999999999998,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "copper_pad_pour": {
+      "clearance_mm": 0.20417328133994578,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_446",
+        "pcb_copper_pour_56"
+      ]
+    },
+    "copper_pad_trace": {
+      "clearance_mm": 0.20007509791604258,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_137",
+        "pcb_trace_6:0"
+      ]
+    },
+    "copper_pad": {
+      "clearance_mm": 0.19758659999999928,
+      "requirement_mm": 0.1,
+      "ids": [
+        "pcb_smtpad_217",
+        "pcb_smtpad_218"
+      ]
+    },
+    "copper_pad_via": {
+      "clearance_mm": 0.21500807401325286,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_316",
+        "pcb_via_19"
+      ]
+    },
+    "via_drill_to_pad": {
+      "clearance_mm": 0.21401507766564887,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_77",
+        "pcb_smtpad_379"
+      ]
+    },
+    "copper_trace_via": {
+      "clearance_mm": 0.20998776776022907,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_4",
+        "pcb_trace_262:2"
+      ]
+    },
+    "copper_pour_via": {
+      "clearance_mm": 0.20730304935993965,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_197",
+        "pcb_copper_pour_32"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 0.24999941637971776,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 0.039951473904787003,
+      "requirement_mm": 0,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "copper_via": {
+      "clearance_mm": 0.21290640962453788,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_38",
+        "pcb_via_109"
+      ]
+    },
+    "copper_pour_trace": {
+      "clearance_mm": 0.20658071289511518,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_10:0",
+        "pcb_copper_pour_32"
+      ]
+    },
+    "copper_trace": {
+      "clearance_mm": 0.20222599987898485,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_226:0",
+        "pcb_trace_229:0"
+      ]
+    },
+    "copper_to_drill": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_via_155"
+      ]
+    },
+    "copper_pour": {
+      "clearance_mm": 0.21012748177569632,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_copper_pour_100",
+        "pcb_copper_pour_131"
+      ]
+    },
+    "drill_to_drill": {
+      "clearance_mm": 0.26041139833359017,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_via_111",
+        "pcb_via_112"
+      ]
+    }
+  },
+  "minima_scope": "Nearby copper pairs within 0.21 mm and drill pairs within 0.26 mm; STRtree excludes distant pairs without weakening any clearance requirement.",
+  "drc_violation_count": 40,
+  "short_count": 0,
+  "merged_named_nets": [],
+  "physically_open_net_count": 49,
+  "zero_drc_zero_shorts_and_connected": false,
+  "source_circuit_json": "evidence/cloud-runs/priority-combined-native/circuit.json",
+  "source_sha256": "cf9d91f598da6a7c7e859b54092ee2d6a7035a19d7f326e1e34a81ce1a949218"
+}

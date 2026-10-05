@@ -1,0 +1,1276 @@
+{
+  "classification": "source path restoration proposals; native audit required",
+  "source_circuit_json": "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+  "paths": [
+    {
+      "net": "BUCK_ENABLE",
+      "from": ".R97 > .pin1",
+      "to": ".R96 > .pin2",
+      "width": 0.2,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          -9.246636,
+          -14
+        ],
+        [
+          -9.246636,
+          -12
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "BUCK_ENABLE",
+      "from": ".R96 > .pin2",
+      "to": ".U25 > .pin1",
+      "width": 0.2,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          -9.246636,
+          -12
+        ],
+        [
+          -8.89999,
+          -9.94996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "AUDIO_NMOS_GATE",
+      "from": ".Q1 > .pin1",
+      "to": ".R60 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 6.55,
+          "y": -6.6
+        },
+        {
+          "x": 7.25,
+          "y": -10.7
+        },
+        {
+          "x": 7.25,
+          "y": -15.0
+        },
+        {
+          "x": 7.75,
+          "y": -15.7
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.250002,
+          -1.94996
+        ],
+        [
+          -10.699999999999804,
+          -7.599999999999653
+        ],
+        [
+          -9.999999999999794,
+          -11.699999999999712
+        ],
+        [
+          -9.999999999999794,
+          -15.999999999999773
+        ],
+        [
+          -9.499999999999787,
+          -16.699999999999783
+        ],
+        [
+          -9.246636,
+          -17.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MCU_EN",
+      "from": ".U1 > .pin3",
+      "to": ".SW2 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -7.550046,
+          "y": 6.504953
+        },
+        {
+          "x": -7.550046,
+          "y": 6.504953,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -7.550046,
+          "y": 6.504953
+        },
+        {
+          "x": 15.6,
+          "y": 5.675456
+        },
+        {
+          "x": 17.649508,
+          "y": 5.875456
+        },
+        {
+          "x": 17.649508,
+          "y": 5.875456,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 17.649508,
+          "y": 5.875456
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.750045999999998,
+          28.6294967
+        ],
+        [
+          -19.550046,
+          28.629497
+        ],
+        [
+          3.6000000000003993,
+          27.80000000000085
+        ],
+        [
+          5.649508,
+          28.0
+        ],
+        [
+          4.849508,
+          28
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MCU_EN",
+      "from": ".R35 > .pin2",
+      "to": ".R37 > .pin1",
+      "width": 0.2,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          -0.75335,
+          5
+        ],
+        [
+          -0.753364,
+          2.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MCU_BOOT_N",
+      "from": ".U1 > .pin27",
+      "to": ".R36 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 9.8,
+          "y": -6.924544
+        }
+      ],
+      "global_path_mm": [
+        [
+          -3.2499540000000007,
+          14.6594967
+        ],
+        [
+          -2.199999999999683,
+          15.20000000000067
+        ],
+        [
+          0.753364,
+          26.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MCU_BOOT_N",
+      "from": ".U1 > .pin27",
+      "to": ".J6 > .pin4",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 8.250046,
+          "y": -8.331073
+        },
+        {
+          "x": 8.250046,
+          "y": -8.331073,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "inner2"
+        },
+        {
+          "x": 8.250046,
+          "y": -8.331073
+        },
+        {
+          "x": -9.4,
+          "y": -20.724544
+        },
+        {
+          "x": -11.5,
+          "y": -20.824544
+        },
+        {
+          "x": -11.6,
+          "y": -21.224544
+        },
+        {
+          "x": -11.6,
+          "y": -25.324544
+        },
+        {
+          "x": -10.9,
+          "y": -27.324544
+        },
+        {
+          "x": -4.9,
+          "y": -33.324544
+        },
+        {
+          "x": -4.9,
+          "y": -33.324544,
+          "via": true,
+          "fromLayer": "inner2",
+          "toLayer": "top"
+        },
+        {
+          "x": -4.9,
+          "y": -33.324544
+        }
+      ],
+      "global_path_mm": [
+        [
+          -3.2499540000000007,
+          14.6594967
+        ],
+        [
+          -3.749954,
+          13.793471
+        ],
+        [
+          -21.399999999999956,
+          1.4000000000004746
+        ],
+        [
+          -23.499999999999986,
+          1.3000000000004732
+        ],
+        [
+          -23.599999999999987,
+          0.9000000000004675
+        ],
+        [
+          -23.599999999999987,
+          -3.1999999999995907
+        ],
+        [
+          -22.899999999999977,
+          -5.199999999999619
+        ],
+        [
+          -16.9,
+          -11.2
+        ],
+        [
+          -16.9,
+          -10
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "inner2",
+        "inner2",
+        "inner2",
+        "inner2",
+        "inner2",
+        "inner2",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MCU_RESET_N",
+      "from": ".U12 > .pin2",
+      "to": ".R35 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.1,
+          "y": -0.65
+        },
+        {
+          "x": 0.2,
+          "y": -1.85
+        }
+      ],
+      "global_path_mm": [
+        [
+          1,
+          8.7
+        ],
+        [
+          0.10000000000034959,
+          7.100000000000556
+        ],
+        [
+          0.200000000000351,
+          5.900000000000539
+        ],
+        [
+          0.75335,
+          5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "AMP_SD_MODE",
+      "from": ".R63 > .pin2",
+      "to": ".R64 > .pin1",
+      "width": 0.2,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          -5.496636,
+          -16
+        ],
+        [
+          -7.00335,
+          -18
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MIC_SD_BUFFERED",
+      "from": ".U7 > .pin1",
+      "to": ".R27 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 2.8,
+          "y": -1.8
+        },
+        {
+          "x": 3.9,
+          "y": -1.8
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.699901,
+          -19.94996
+        ],
+        [
+          -14.199999999999854,
+          -20.79999999999984
+        ],
+        [
+          -13.099999999999838,
+          -20.79999999999984
+        ],
+        [
+          -12.24665,
+          -20
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MIC_SD_REF",
+      "from": ".U7 > .pin4",
+      "to": ".C26 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -2.3,
+          "y": 0.3
+        },
+        {
+          "x": -3.2,
+          "y": 0.2
+        },
+        {
+          "x": -3.9,
+          "y": 0.2
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.300099,
+          -18.05004
+        ],
+        [
+          -19.299999999999926,
+          -18.69999999999981
+        ],
+        [
+          -20.19999999999994,
+          -18.799999999999812
+        ],
+        [
+          -20.89999999999995,
+          -18.799999999999812
+        ],
+        [
+          -21.700024,
+          -18
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MIC_SD_REF",
+      "from": ".U7 > .pin4",
+      "to": ".R29 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.300099,
+          "y": 0.14996
+        },
+        {
+          "x": -1.300099,
+          "y": 0.14996,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -1.300099,
+          "y": 0.14996
+        },
+        {
+          "x": 0.753364,
+          "y": -3.8
+        },
+        {
+          "x": 0.753364,
+          "y": -3.8,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 0.753364,
+          "y": -3.8
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.300099,
+          -18.05004
+        ],
+        [
+          -18.300099,
+          -18.85004
+        ],
+        [
+          -16.246636,
+          -22.8
+        ],
+        [
+          -16.246636,
+          -22
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MIC_SD_REF",
+      "from": ".R29 > .pin2",
+      "to": ".R30 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 1.3,
+          "y": -0.6
+        },
+        {
+          "x": 1.3,
+          "y": -1.1
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.246636,
+          -22
+        ],
+        [
+          -15.699999999999875,
+          -22.599999999999866
+        ],
+        [
+          -15.699999999999875,
+          -23.099999999999874
+        ],
+        [
+          -16.246636,
+          -24
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "HAPTIC_NMOS_GATE",
+      "from": ".R83 > .pin2",
+      "to": ".R84 > .pin1",
+      "width": 0.2,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          15.496636,
+          -16.5
+        ],
+        [
+          14,
+          -16.503364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "from": ".U27 > .pin15",
+      "to": ".U27 > .pin16",
+      "width": 0.2,
+      "pcbPath": [],
+      "global_path_mm": [
+        [
+          5.749937,
+          22.499997
+        ],
+        [
+          5.249811,
+          22.499997
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "from": ".U27 > .pin16",
+      "to": ".R104 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -3.7,
+          "y": 2.3
+        },
+        {
+          "x": -4.2,
+          "y": 1.8
+        },
+        {
+          "x": -4.3,
+          "y": 0.3
+        },
+        {
+          "x": -4.2,
+          "y": -2.7
+        }
+      ],
+      "global_path_mm": [
+        [
+          5.249811,
+          22.499997
+        ],
+        [
+          2.300000000000381,
+          23.300000000000786
+        ],
+        [
+          1.8000000000003737,
+          22.80000000000078
+        ],
+        [
+          1.7000000000003723,
+          21.300000000000757
+        ],
+        [
+          1.8000000000003737,
+          18.300000000000715
+        ],
+        [
+          2.246636,
+          17.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "HOLD_HARDWARE",
+      "from": ".R99 > .pin1",
+      "to": ".U26 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.0,
+          "y": -3.1
+        },
+        {
+          "x": -0.6,
+          "y": -3.3
+        },
+        {
+          "x": 2.5,
+          "y": -4.7
+        },
+        {
+          "x": 3.75,
+          "y": -4.700099
+        }
+      ],
+      "global_path_mm": [
+        [
+          12.5,
+          16.246636
+        ],
+        [
+          15.60000000000057,
+          16.000000000000682
+        ],
+        [
+          15.800000000000573,
+          16.400000000000688
+        ],
+        [
+          17.200000000000593,
+          19.500000000000732
+        ],
+        [
+          17.200098999999998,
+          20.75
+        ],
+        [
+          16.300099,
+          20.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "HOLD_HARDWARE",
+      "from": ".U26 > .pin2",
+      "to": ".SW4 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 2.3,
+          "y": 0.45
+        },
+        {
+          "x": 4.0,
+          "y": 5.35
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.300099,
+          20.75
+        ],
+        [
+          17.300000000000594,
+          21.200000000000756
+        ],
+        [
+          19.000000000000618,
+          26.100000000000826
+        ],
+        [
+          23.550492,
+          30.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "AMP_LRCLK",
+      "from": ".U3 > .pin14",
+      "to": ".R70 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -2.35,
+          "y": 0.4
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.249997,
+          4.252095
+        ],
+        [
+          -19.099999999999923,
+          4.400000000000517
+        ],
+        [
+          -20.246636,
+          9
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "AMP_BCLK",
+      "from": ".U3 > .pin16",
+      "to": ".R69 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -2.35,
+          "y": -0.6
+        },
+        {
+          "x": -2.85,
+          "y": 0.3
+        },
+        {
+          "x": -4.25,
+          "y": 4.6
+        },
+        {
+          "x": -4.25,
+          "y": 5.7
+        },
+        {
+          "x": -3.55,
+          "y": 5.8
+        },
+        {
+          "x": 4.35,
+          "y": 5.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.249997,
+          3.252097
+        ],
+        [
+          -19.099999999999923,
+          3.400000000000503
+        ],
+        [
+          -19.59999999999993,
+          4.300000000000516
+        ],
+        [
+          -20.99999999999995,
+          8.600000000000577
+        ],
+        [
+          -20.99999999999995,
+          9.700000000000593
+        ],
+        [
+          -20.29999999999994,
+          9.800000000000594
+        ],
+        [
+          -12.399999999999828,
+          9.000000000000583
+        ],
+        [
+          -11.246636,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MCU_BACKLIGHT_PWM",
+      "from": ".U1 > .pin24",
+      "to": ".R103 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 6.145,
+          "y": -5.800467
+        },
+        {
+          "x": 6.145,
+          "y": -5.800467,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 6.145,
+          "y": -5.800467
+        },
+        {
+          "x": 11.380611,
+          "y": -3.724544
+        },
+        {
+          "x": 11.380611,
+          "y": -3.724544,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 11.380611,
+          "y": -3.724544
+        }
+      ],
+      "global_path_mm": [
+        [
+          -7.555,
+          13.3795907
+        ],
+        [
+          -5.855,
+          16.324077
+        ],
+        [
+          -0.619389,
+          18.4
+        ],
+        [
+          0.24663599999999997,
+          18.9
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "from": ".R103 > .pin2",
+      "to": "net.BACKLIGHT_GATE",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          1.753364,
+          18.9
+        ],
+        [
+          1.753364,
+          19.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    }
+  ],
+  "rejected": [
+    {
+      "from": ".U2 > .pin1",
+      "to": ".R97 > .pin1",
+      "net": "BUCK_ENABLE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U2 > .pin1",
+      "to": ".C77 > .pin1",
+      "net": "BUCK_ENABLE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U16 > .pin16",
+      "to": ".R1 > .pin1",
+      "net": "CHARGER_ISET",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R60 > .pin2",
+      "to": ".R61 > .pin1",
+      "net": "AUDIO_NMOS_GATE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".Q1 > .pin3",
+      "to": ".Q2 > .pin1",
+      "net": "AUDIO_PMOS_GATE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".Q2 > .pin1",
+      "to": ".R62 > .pin2",
+      "net": "AUDIO_PMOS_GATE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".SW2 > .pin1",
+      "to": ".R35 > .pin2",
+      "net": "MCU_EN",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R37 > .pin1",
+      "to": ".J6 > .pin3",
+      "net": "MCU_EN",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R36 > .pin2",
+      "to": ".SW1 > .pin1",
+      "net": "MCU_BOOT_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U23 > .pin3",
+      "to": ".R87 > .pin1",
+      "net": "HOLD_HARDWARE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U23 > .pin3",
+      "to": ".R99 > .pin1",
+      "net": "HOLD_HARDWARE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U3 > .pin4",
+      "to": ".R63 > .pin2",
+      "net": "AMP_SD_MODE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin4",
+      "to": ".R60 > .pin1",
+      "net": "MCU_AUDIO_ENABLE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin18",
+      "to": ".R47 > .pin1",
+      "net": "MCU_LCD_CS_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R47 > .pin1",
+      "to": ".U14 > .pin2",
+      "net": "MCU_LCD_CS_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin21",
+      "net": "MCU_LCD_DC",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U1 > .pin22",
+      "net": "MCU_LCD_RESET_N",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U1 > .pin20",
+      "net": "MCU_LCD_SCLK",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U1 > .pin19",
+      "to": ".R51 > .pin1",
+      "net": "MCU_LCD_SDA",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R51 > .pin1",
+      "to": ".U14 > .pin6",
+      "net": "MCU_LCD_SDA",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin8",
+      "to": ".R88 > .pin1",
+      "net": "MCU_MIC_BCLK",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin9",
+      "to": ".R89 > .pin1",
+      "net": "MCU_MIC_WS",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin10",
+      "to": ".R27 > .pin2",
+      "net": "MCU_MIC_SD",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U4 > .pin6",
+      "net": "MIC_SD",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U7 > .pin3",
+      "net": "MIC_SD",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U24 > .pin6",
+      "net": "MIC_BCLK",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U24 > .pin4",
+      "net": "MIC_WS",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U24 > .pin3",
+      "to": ".R91 > .pin1",
+      "net": "MIC_WS_INPUT",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".Q9 > .pin1",
+      "to": ".R83 > .pin2",
+      "net": "HAPTIC_NMOS_GATE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U16 > .pin7",
+      "to": ".R3 > .pin2",
+      "net": "CHARGE_PGOOD_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U16 > .pin9",
+      "to": ".R4 > .pin2",
+      "net": "CHARGE_STATUS_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U16 > .pin9",
+      "to": ".TP8 > .pin1",
+      "net": "CHARGE_STATUS_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R99 > .pin1",
+      "to": ".TP7 > .pin1",
+      "net": "HOLD_HARDWARE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U24 > .pin1",
+      "to": ".R88 > .pin2",
+      "net": "MIC_BCLK_INPUT",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U24 > .pin1",
+      "to": ".R90 > .pin1",
+      "net": "MIC_BCLK_INPUT",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U3 > .pin14",
+      "to": ".R67 > .pin2",
+      "net": "AMP_LRCLK",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R69 > .pin1",
+      "to": ".R66 > .pin2",
+      "net": "AMP_BCLK",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".R95 > .pin1",
+      "net": "MIC_WS",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U1 > .pin6",
+      "to": ".U13 > .pin3",
+      "net": "LCD_ENABLE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U13 > .pin3",
+      "to": ".R40 > .pin1",
+      "net": "LCD_ENABLE",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U1 > .pin12",
+      "to": ".R67 > .pin1",
+      "net": "MCU_AUDIO_LRCLK",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".J1 > .pin6",
+      "to": ".R33 > .pin1",
+      "net": "USB_CC1",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U14 > .pin17",
+      "to": ".R43 > .pin1",
+      "net": "LCD_RESET_N",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U24 > .pin3",
+      "to": ".R89 > .pin2",
+      "net": "MIC_WS_INPUT",
+      "reason": "Preserved path conflicts with reserved copper or ordinary drill clearance"
+    },
+    {
+      "from": ".U4 > .pin1",
+      "net": "MIC_WS",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".R92 > .pin2",
+      "net": "MIC_BCLK",
+      "reason": "Net has replacement source paths"
+    },
+    {
+      "from": ".U4 > .pin4",
+      "net": "MIC_BCLK",
+      "reason": "Net has replacement source paths"
+    }
+  ]
+}

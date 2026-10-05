@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-power.py",
+    "evidence/cloud-runs/pin-escape-routed/circuit.json",
+    "evidence/cloud-runs/power-hubs-proposal.json",
+    "VSYS",
+    "V3V3",
+    "PACK_BAT",
+    "VBUS",
+    "VMOTOR",
+    "VMIC",
+    "VLCD",
+    "MIC_INPUT",
+    "AUDIO_ENABLE_SUPPLY",
+    "HAPTIC_N",
+    "LCD_BACKLIGHT_OUTPUT"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 280.3,
+  "peak_process_group_rss_bytes": 112685056,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

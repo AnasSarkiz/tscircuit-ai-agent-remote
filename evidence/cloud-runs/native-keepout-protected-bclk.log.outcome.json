@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-existing-copper-routes.py",
+    "evidence/cloud-runs/r103-qualified-location/circuit.json",
+    "evidence/cloud-runs/r103-qualified-copper-audit.json",
+    "evidence/cloud-runs/native-keepout-protected-bclk-proposal.json",
+    "MIC_BCLK",
+    "--reserve-proposals",
+    "evidence/cloud-runs/ground-plane-stitches-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/exact-contour-signal-routing-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/native-keepout-protected-existing-paths.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/power-ground-leaf-contacts-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 25.03,
+  "peak_process_group_rss_bytes": 121671680,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

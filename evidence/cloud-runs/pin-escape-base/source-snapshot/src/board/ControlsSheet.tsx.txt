@@ -1,0 +1,53 @@
+import { groundPath } from "./GroundPaths"
+import { MSK12C02 } from "../../imports/MSK12C02/MSK12C02"
+import { SKSWCFE010 } from "../../imports/SKSWCFE010/SKSWCFE010"
+import { place } from "./placement"
+export function ControlsSheet({ placementOnly = false }: { placementOnly?: boolean } = {}) {
+  return (
+    <schematicsheet
+      name="ControlsSheet"
+      displayName="AI Remote A5 - Physical controls and motor solder pads"
+      sheetSize="A4"
+      sheetIndex={11}
+    >
+      <group name="ControlsSheet-group" schLayout={{ layoutMode: "relative" }}>
+        <SKSWCFE010 name="SW4" {...place("SW4")} schX={-8} schY={5} />
+        <SKSWCFE010 name="SW1" {...place("SW1")} schX={-8} schY={0} />
+        <SKSWCFE010 name="SW2" {...place("SW2")} schX={-8} schY={-5} />
+        <MSK12C02 name="SW5" {...place("SW5")} schX={4} schY={5} />
+        <testpoint
+          name="TP_MOTOR_P"
+          footprintVariant="pad"
+          padShape="circle"
+          padDiameter={2}
+          {...place("TP_MOTOR_P")}
+          schX={6}
+          schY={-3}
+          connections={{ pin1: "net.VMOTOR" }}
+        />
+        <testpoint
+          name="TP_MOTOR_N"
+          footprintVariant="pad"
+          padShape="circle"
+          padDiameter={2}
+          {...place("TP_MOTOR_N")}
+          schX={6}
+          schY={-6}
+          connections={{ pin1: "net.HAPTIC_N" }}
+        />
+        <silkscreentext text="M+" pcbX={20} pcbY={-8} fontSize={0.7} />
+        <silkscreentext text="M-" pcbX={20} pcbY={-11} fontSize={0.7} />
+        <trace from="SW4.pin1" to="net.V3V3" />
+        <trace from="SW4.pin2" to="net.HOLD_HARDWARE" />
+        <trace from="SW1.pin1" to="net.MCU_BOOT_N" />
+        <trace from="SW1.pin2" to="net.GND" width={0.3} pcbPath={groundPath("SW1.pin2", placementOnly)} />
+        <trace from="SW2.pin1" to="net.MCU_EN" />
+        <trace from="SW2.pin2" to="net.GND" width={0.3} pcbPath={groundPath("SW2.pin2", placementOnly)} />
+        <trace from="SW5.pin2" to="net.MIC_INPUT" />
+        <trace from="SW5.pin1" to="net.V3V3" />
+        <trace from="SW5.pin3" to="net.GND" width={0.3} pcbPath={groundPath("SW5.pin3", placementOnly)} />
+        <trace from="SW5.pin4" to="net.GND" width={0.3} pcbPath={groundPath("SW5.pin4", placementOnly)} />
+      </group>
+    </schematicsheet>
+  )
+}

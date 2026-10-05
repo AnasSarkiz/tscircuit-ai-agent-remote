@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/audit-region-widths.py",
+    "dist/index/circuit.json",
+    "src/board/manual-power-copper.json",
+    "evidence/cloud-runs/final-region-widths.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 1.0,
+  "peak_process_group_rss_bytes": 80003072,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

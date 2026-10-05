@@ -1,0 +1,2794 @@
+{
+  "classification": "manual native ground contacts; no zero-length markers",
+  "source_circuit_json": "evidence/cloud-runs/power-distribution-native/circuit.json",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".J1 > .pin1",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 5.125112,
+          "y": 1.405693
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.325112,
+          -26.5943068
+        ],
+        [
+          5.125112,
+          -26.594307
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J1 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 5.125112,
+          "y": -2.774131
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.325112,
+          -30.774130800000002
+        ],
+        [
+          5.125112,
+          -30.774131
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J1 > .pin3",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.525112,
+          "y": -2.774131
+        }
+      ],
+      "global_path_mm": [
+        [
+          -4.325112,
+          -30.774130800000002
+        ],
+        [
+          -3.525112,
+          -30.774131
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J1 > .pin4",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.618005,
+          "y": 2.1128
+        }
+      ],
+      "global_path_mm": [
+        [
+          -4.325112,
+          -26.5943068
+        ],
+        [
+          -3.618005,
+          -25.8872
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J1 > .pin13",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.62422,
+          "y": 2.598307
+        }
+      ],
+      "global_path_mm": [
+        [
+          -3.1999554999999997,
+          -25.8259568
+        ],
+        [
+          -3.62422,
+          -25.401693
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".D2 > .pin3",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.099999,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -1.249999,
+          -23
+        ],
+        [
+          -0.849999,
+          -23.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U12 > .pin1",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.0,
+          "y": -1.35
+        }
+      ],
+      "global_path_mm": [
+        [
+          1,
+          6.8
+        ],
+        [
+          1.0,
+          6.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J6 > .pin1",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.9,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -19.9,
+          -10
+        ],
+        [
+          -20.3,
+          -10.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J6 > .pin7",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 3.0,
+          "y": -3.88
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.599999999999998,
+          -13.879999999999999
+        ],
+        [
+          -14.4,
+          -13.88
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".J6 > .pin8",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.0,
+          "y": -3.88
+        }
+      ],
+      "global_path_mm": [
+        [
+          -21.2,
+          -13.879999999999999
+        ],
+        [
+          -20.4,
+          -13.88
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R33 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.75335,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -12,
+          -22.24665
+        ],
+        [
+          -11.4,
+          -22.24665
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R34 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.75335,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          1,
+          -21.24665
+        ],
+        [
+          1.6,
+          -21.24665
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R37 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.753364,
+          2.75
+        ],
+        [
+          1.353364,
+          2.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C30 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -1.799976,
+          10.5
+        ],
+        [
+          -1.199976,
+          10.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C31 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.700024,
+          0
+        ],
+        [
+          1.300024,
+          0.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C32 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.700024,
+          -6.5
+        ],
+        [
+          1.300024,
+          -6.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin4",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.499997,
+          "y": -1.149935
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.499997,
+          -26.749935
+        ],
+        [
+          -9.499997,
+          -27.149935
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin5",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.349935,
+          "y": -1.499997
+        }
+      ],
+      "global_path_mm": [
+        [
+          -8.749935,
+          -27.499997
+        ],
+        [
+          -8.349935,
+          -27.499997
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin17",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.989835,
+          "y": -0.989822
+        }
+      ],
+      "global_path_mm": [
+        [
+          -7.9998857,
+          -25.999873
+        ],
+        [
+          -8.989835,
+          -26.989822
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C1 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -12,
+          -26.700024
+        ],
+        [
+          -11.4,
+          -26.700024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C2 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.100024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.450024,
+          -26.25
+        ],
+        [
+          -15.850024,
+          -26.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C3 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.75,
+          -22.549976
+        ],
+        [
+          -2.15,
+          -22.549976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R1 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -11.246636,
+          -29
+        ],
+        [
+          -10.646636,
+          -29.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R2 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.153364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -8.753364,
+          -22
+        ],
+        [
+          -8.153364,
+          -22.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C4 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.25,
+          -11.949976
+        ],
+        [
+          -1.65,
+          -11.949976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C5 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.500024,
+          -19
+        ],
+        [
+          1.100024,
+          -19.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R6 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.35335,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.24665,
+          -21
+        ],
+        [
+          -1.64665,
+          -21.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U13 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.7,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          11.6,
+          13.75
+        ],
+        [
+          12.2,
+          13.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U14 > .pin7",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.375,
+          "y": -2.87095
+        }
+      ],
+      "global_path_mm": [
+        [
+          9.975,
+          5.12905
+        ],
+        [
+          10.375,
+          5.12905
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U14 > .pin8",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.025,
+          "y": -2.87095
+        }
+      ],
+      "global_path_mm": [
+        [
+          10.625,
+          5.12905
+        ],
+        [
+          11.025,
+          5.12905
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U14 > .pin9",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.675,
+          "y": -2.87095
+        }
+      ],
+      "global_path_mm": [
+        [
+          11.275,
+          5.12905
+        ],
+        [
+          11.675,
+          5.12905
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U14 > .pin10",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 3.325,
+          "y": -2.87095
+        }
+      ],
+      "global_path_mm": [
+        [
+          11.925,
+          5.12905
+        ],
+        [
+          12.325,
+          5.12905
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U14 > .pin19",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.275,
+          "y": 3.87095
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.725,
+          10.87095
+        ],
+        [
+          6.725,
+          11.87095
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C40 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.950023999999999,
+          10.5
+        ],
+        [
+          15.550024,
+          10.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C41 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.75,
+          12.049976000000001
+        ],
+        [
+          15.35,
+          12.049976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C42 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.450024,
+          9
+        ],
+        [
+          5.050024,
+          9.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C43 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.450024,
+          7.5
+        ],
+        [
+          5.050024,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R40 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.153364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          13.496636,
+          4.5
+        ],
+        [
+          14.096636,
+          4.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R41 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.35335,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.50335,
+          -5
+        ],
+        [
+          15.10335,
+          -5.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R47 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.75,
+          4.246636
+        ],
+        [
+          -2.15,
+          4.246636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R48 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.5,
+          2.753364
+        ],
+        [
+          -1.9,
+          2.753364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R43 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.003364,
+          7.5
+        ],
+        [
+          15.603364,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R49 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.5,
+          -1.753364
+        ],
+        [
+          -1.9,
+          -1.753364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R44 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.503364,
+          -3.25
+        ],
+        [
+          15.103364,
+          -3.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R50 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.5,
+          -4.753364
+        ],
+        [
+          -1.9,
+          -4.753364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R45 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.003364,
+          9
+        ],
+        [
+          15.603364,
+          9.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R51 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.5,
+          -6.246636
+        ],
+        [
+          -2.5,
+          -5.646636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R46 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.753364,
+          -5.25
+        ],
+        [
+          5.353364,
+          -5.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U3 > .pin3",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.251587,
+          "y": -1.099997
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.498413,
+          2.500003
+        ],
+        [
+          -16.498413,
+          2.900003
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U3 > .pin11",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.250063,
+          "y": 1.099997
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.000063,
+          5.4999970000000005
+        ],
+        [
+          -17.000063,
+          5.099997
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U3 > .pin15",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.099997,
+          "y": -0.248031
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.249997,
+          3.751969
+        ],
+        [
+          -17.849997,
+          3.751969
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U3 > .pin17",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.800127,
+          "y": -0.000127
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.749873,
+          3.999873
+        ],
+        [
+          -15.949873,
+          3.999873
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".Q1 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.999998,
+          "y": 1.34996
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.250002,
+          -0.05003999999999997
+        ],
+        [
+          -16.250002,
+          0.34996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C50 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.100024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.700024,
+          7.5
+        ],
+        [
+          -18.100024,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C51 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.5,
+          3.299976
+        ],
+        [
+          -12.9,
+          3.299976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R61 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.246636,
+          -20
+        ],
+        [
+          -8.646636,
+          -20.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R64 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.35335,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -5.49665,
+          -18
+        ],
+        [
+          -4.89665,
+          -18.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R68 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.153364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -6.246636,
+          6
+        ],
+        [
+          -6.846636,
+          6.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R69 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.153364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -12.753364,
+          7.5
+        ],
+        [
+          -12.153364,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R70 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -21.753364,
+          9
+        ],
+        [
+          -21.753364,
+          9.6
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U22 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.695,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.795,
+          -0.5
+        ],
+        [
+          16.195,
+          -0.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".Q9 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.999998,
+          "y": 0.54996
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.750002,
+          -8.94996
+        ],
+        [
+          14.750002,
+          -8.54996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C70 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.5,
+          -3.049976
+        ],
+        [
+          17.1,
+          -3.049976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C71 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.200024,
+          2.5
+        ],
+        [
+          16.800024,
+          2.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R82 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.75335,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.49665,
+          -15
+        ],
+        [
+          15.49665,
+          -14.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R84 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          14,
+          -14.996636
+        ],
+        [
+          14.6,
+          -14.996636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R85 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          17.003364,
+          -18
+        ],
+        [
+          17.603364,
+          -18.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U23 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.7,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.1,
+          -21
+        ],
+        [
+          16.7,
+          -21.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U24 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.4999,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.8999,
+          -26
+        ],
+        [
+          16.4999,
+          -26.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C73 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          13,
+          -7.549976
+        ],
+        [
+          13.6,
+          -7.549976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C74 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.700024,
+          -23.75
+        ],
+        [
+          5.300024,
+          -23.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C75 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.75,
+          -20.799976
+        ],
+        [
+          5.35,
+          -20.799976
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R86 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.15335,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          11.24665,
+          -30
+        ],
+        [
+          11.84665,
+          -30.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R87 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          9,
+          -29.246636
+        ],
+        [
+          9.6,
+          -29.246636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R90 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.503364,
+          -23.75
+        ],
+        [
+          15.103364,
+          -23.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R91 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          17.503364,
+          -23.5
+        ],
+        [
+          18.103364,
+          -23.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R94 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          18,
+          -20.496636
+        ],
+        [
+          18.6,
+          -20.496636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R95 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          18,
+          -24.996636
+        ],
+        [
+          18.6,
+          -24.996636
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U26 > .pin3",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300099,
+          "y": 1.34996
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.300099,
+          21.69996
+        ],
+        [
+          16.300099,
+          22.09996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R99 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          12.5,
+          17.753364
+        ],
+        [
+          12.5,
+          18.353364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C78 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.700024,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          15,
+          18.200024
+        ],
+        [
+          15.6,
+          18.200024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U25 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.95001,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -8.89999,
+          -9
+        ],
+        [
+          -8.29999,
+          -9.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R97 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -10.753364,
+          -14
+        ],
+        [
+          -10.753364,
+          -13.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C76 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.299976000000001,
+          -6
+        ],
+        [
+          -8.699976,
+          -6.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C77 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -4.299976,
+          -23
+        ],
+        [
+          -3.699976,
+          -23.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U4 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.085242,
+          "y": -0.900049
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.7352416,
+          -29.650049
+        ],
+        [
+          -16.335242,
+          -29.650049
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C80 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -19.299976,
+          -24.75
+        ],
+        [
+          -18.699976,
+          -24.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C81 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.700024,
+          -19.25
+        ],
+        [
+          5.300024,
+          -19.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".U7 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.900099,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.699901,
+          -19
+        ],
+        [
+          -15.099901,
+          -19.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R26 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.753364,
+          -18
+        ],
+        [
+          -13.753364,
+          -17.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R30 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.753364,
+          -24
+        ],
+        [
+          -17.753364,
+          -23.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C25 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.299976,
+          -16.5
+        ],
+        [
+          -19.699976,
+          -16.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C26 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.299976,
+          -18
+        ],
+        [
+          -19.699976,
+          -18.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".SW1 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.050492,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.400492,
+          29
+        ],
+        [
+          2.800492,
+          29.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".SW2 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.250492,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          8.150492,
+          28
+        ],
+        [
+          8.750492,
+          28.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".SW5 > .pin3",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.849932,
+          "y": 1.494022
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.50597835,
+          -3.249932
+        ],
+        [
+          -20.505978,
+          -2.849932
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".SW5 > .pin4",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 3.599942,
+          "y": 0.793948
+        }
+      ],
+      "global_path_mm": [
+        [
+          -21.60605235,
+          -4.599942
+        ],
+        [
+          -21.206052,
+          -4.599942
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R102 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": -0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          2.5,
+          21.753364
+        ],
+        [
+          3.1,
+          21.753364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".R104 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.353364,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.753364,
+          17.5
+        ],
+        [
+          4.353364,
+          17.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C84 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.700024,
+          24.5
+        ],
+        [
+          7.300024,
+          24.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".C85 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.300024,
+          "y": 0.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.700024,
+          17.5
+        ],
+        [
+          7.300024,
+          17.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    },
+    {
+      "net": "GND",
+      "from": ".TP1 > .pin1",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.0,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17,
+          10.8
+        ],
+        [
+          -17.0,
+          11.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native pad-to-ground-pour contact; endpoint outside its pad"
+    }
+  ],
+  "unresolved": [
+    {
+      "port": ".J1 > .pin14",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U16 > .pin6",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U16 > .pin8",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U4 > .pin3",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U5 > .pin3",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U27 > .pin7",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U27 > .pin14",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    },
+    {
+      "port": ".U27 > .pin17",
+      "reason": "No nonzero 0.3 mm contact beyond pad boundary to an existing ground pour"
+    }
+  ]
+}

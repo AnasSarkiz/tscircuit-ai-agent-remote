@@ -1,0 +1,27 @@
+{
+  "measurements": [
+    {
+      "native_json": "evidence/cloud-runs/original-a7-canonical.json",
+      "via_xy_mm": [
+        -3.45,
+        -14.2
+      ],
+      "nearest_other_net_bottom_trace": "CHARGER_ILIM",
+      "trace_id": "saved_phase_null_3_0",
+      "copper_gap_mm": 0.19205295731738603,
+      "minimum_required_mm": 0.2
+    },
+    {
+      "native_json": "dist/index/circuit.json",
+      "via_xy_mm": [
+        -3.35,
+        -14.15
+      ],
+      "nearest_other_net_bottom_trace": "CHARGER_ILIM",
+      "trace_id": "saved_phase_null_3_0",
+      "copper_gap_mm": 0.2981189744953677,
+      "minimum_required_mm": 0.2
+    }
+  ],
+  "historical_net_label_correction": "The original closest bottom trace is CHARGER_ILIM, not REG_PG."
+}

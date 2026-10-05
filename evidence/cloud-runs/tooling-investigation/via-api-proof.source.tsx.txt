@@ -1,0 +1,11 @@
+import { RootCircuit } from "tscircuit"
+const root = new RootCircuit()
+root.add(<board width={10} height={10} layers={4} autorouter={{routeRemaining:false}}>
+ <net name="POWER"/>
+ <via name="PV_A" pcbX={-2} pcbY={0} fromLayer="top" toLayer="bottom" holeDiameter={0.4} outerDiameter={0.8} connectsTo={["net.POWER", ".PV_A > port.top", ".PV_A > port.bottom"]} />
+ <via name="PV_B" pcbX={2} pcbY={0} fromLayer="top" toLayer="bottom" holeDiameter={0.4} outerDiameter={0.8} connectsTo={["net.POWER", ".PV_B > port.top", ".PV_B > port.bottom"]} />
+ <trace name="POWER_TRUNK" path={[".PV_A > port.bottom", ".PV_B > port.bottom", "net.POWER"]} width={1} pcbPath={[]} pcbPathRelativeTo=".PV_A > port.bottom" />
+</board>)
+await root.renderUntilSettled()
+await Bun.write("evidence/cloud-runs/via-api-proof.json",JSON.stringify(root.getCircuitJson(),null,2))
+console.log(JSON.stringify(root.getCircuitJson().filter(r=>r.type==='pcb_trace'||r.type==='pcb_via'||r.type.includes('error')),null,2))

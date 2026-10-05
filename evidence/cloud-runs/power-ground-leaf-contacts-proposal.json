@@ -1,0 +1,354 @@
+{
+  "classification": "manual native contact proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/r103-qualified-location/circuit.json",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".J1 > .pin14",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 3.600006,
+          "y": 2.174145
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.2000063,
+          -25.8258552
+        ],
+        [
+          3.600006,
+          -25.825855
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin8",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.750189,
+          "y": -0.899997
+        }
+      ],
+      "global_path_mm": [
+        [
+          -7.249811,
+          -27.499997
+        ],
+        [
+          -7.249811,
+          -26.899997
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    },
+    {
+      "net": "GND",
+      "from": ".U27 > .pin7",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.249809,
+          "y": -0.899997
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.249809,
+          19.500003
+        ],
+        [
+          6.249809,
+          20.100003
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    },
+    {
+      "net": "GND",
+      "from": ".U27 > .pin14",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.249809,
+          "y": 2.099997
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.249809,
+          22.499997
+        ],
+        [
+          6.249809,
+          23.099997
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    },
+    {
+      "net": "GND",
+      "from": ".U27 > .pin17",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.799873,
+          "y": 0.000127
+        }
+      ],
+      "global_path_mm": [
+        [
+          5.999873,
+          21.000127
+        ],
+        [
+          6.799873,
+          21.000127
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    },
+    {
+      "net": "LCD_BACKLIGHT_OUTPUT",
+      "from": ".C85 > .pin1",
+      "to": "net.LCD_BACKLIGHT_OUTPUT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.431347,
+          "y": 1.131371
+        }
+      ],
+      "global_path_mm": [
+        [
+          5.299976,
+          17.5
+        ],
+        [
+          6.431347,
+          18.631371
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native short pad-to-existing-copper contact; local power neck requires current qualification"
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "from": ".R103 > .pin2",
+      "to": "net.BACKLIGHT_GATE",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.753364,
+          "y": 0.6
+        }
+      ],
+      "global_path_mm": [
+        [
+          1.753364,
+          18.9
+        ],
+        [
+          1.753364,
+          19.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native nonzero contact to already connected copper; primary continuity independently verified"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "GND",
+      "ports": [
+        ".J6 > .pin1"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".U3 > .pin3",
+        ".U3 > .pin11",
+        ".U3 > .pin15",
+        ".U3 > .pin17"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".C50 > .pin2",
+        ".R69 > .pin2"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".R68 > .pin2"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".Q9 > .pin2",
+        ".R82 > .pin2",
+        ".R84 > .pin2"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".U5 > .pin3",
+        ".U5 > .pin3_internal_1",
+        ".U5 > .pin3_internal_2",
+        ".U5 > .pin3_internal_3"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".U7 > .pin2",
+        ".R26 > .pin2"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".U4 > .pin3"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VBUS",
+      "ports": [
+        ".J1 > .pin16"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VBUS",
+      "ports": [
+        ".U16 > .pin13"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VBUS",
+      "ports": [
+        ".C1 > .pin1"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "PACK_BAT",
+      "ports": [
+        ".TP3 > .pin1"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "PACK_BAT",
+      "ports": [
+        ".U16 > .pin3"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".U16 > .pin10"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".U16 > .pin11"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".U3 > .pin2"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VSYS",
+      "ports": [
+        ".R62 > .pin1"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U24 > .pin5"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".R93 > .pin1"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U5 > .pin2"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U5 > .pin5"
+      ],
+      "reason": "No nonzero 0.3 mm top contact within 3 mm to the connected island"
+    }
+  ]
+}

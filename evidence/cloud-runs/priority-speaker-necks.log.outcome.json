@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-power.py",
+    "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+    "evidence/cloud-runs/priority-speaker-necks-proposal.json",
+    "SPEAKER_P",
+    "SPEAKER_N",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-combined-signal-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-power-leaves-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 11.01,
+  "peak_process_group_rss_bytes": 137007104,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

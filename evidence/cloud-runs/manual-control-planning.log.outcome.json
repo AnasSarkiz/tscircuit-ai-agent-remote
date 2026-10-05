@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/clearance-corrections/circuit.json",
+    "evidence/cloud-runs/manual-controls-proposal.json",
+    "BUCK_ENABLE",
+    "CHARGER_ISET",
+    "CHARGE_PGOOD_N",
+    "CHARGE_STATUS_N",
+    "AUDIO_NMOS_GATE",
+    "AUDIO_PMOS_GATE",
+    "AMP_SD_MODE",
+    "AMP_LRCLK",
+    "MCU_AUDIO_LRCLK",
+    "MCU_EN",
+    "MCU_BOOT_N",
+    "MCU_RESET_N",
+    "HOLD_HARDWARE"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 46.05,
+  "peak_process_group_rss_bytes": 134139904,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

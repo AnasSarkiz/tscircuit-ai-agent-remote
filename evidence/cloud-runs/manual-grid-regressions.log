@@ -1,0 +1,13 @@
+test_circular_antipad_uses_the_actual_pad_contour (test_copper_audit.CopperAuditTests.test_circular_antipad_uses_the_actual_pad_contour) ... ok
+test_copper_contact_connects_the_two_pads (test_copper_audit.CopperAuditTests.test_copper_contact_connects_the_two_pads) ... ok
+test_copper_inside_a_drill_does_not_contact_its_annulus (test_copper_audit.CopperAuditTests.test_copper_inside_a_drill_does_not_contact_its_annulus) ... ok
+test_foreign_net_contact_is_a_short (test_copper_audit.CopperAuditTests.test_foreign_net_contact_is_a_short) ... ok
+test_route_markers_on_a_different_layer_do_not_close_an_open (test_copper_audit.CopperAuditTests.test_route_markers_on_a_different_layer_do_not_close_an_open) ... ok
+test_same_net_ordinary_via_drill_still_clears_component_pad (test_copper_audit.CopperAuditTests.test_same_net_ordinary_via_drill_still_clears_component_pad) ... ok
+test_fine_grid_resolves_a_corridor_between_coarse_rows (test_manual_signal_grid.ManualSignalGridTests.test_fine_grid_resolves_a_corridor_between_coarse_rows) ... ok
+test_separate_free_space_islands_have_no_route (test_manual_signal_grid.ManualSignalGridTests.test_separate_free_space_islands_have_no_route) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.920s
+
+OK

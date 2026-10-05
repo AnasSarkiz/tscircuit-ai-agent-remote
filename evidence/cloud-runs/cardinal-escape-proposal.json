@@ -1,0 +1,44 @@
+{
+  "classification": "manual proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/manual-digital-replay/circuit.json",
+  "grid_mm": 0.1,
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "MCU_LCD_DC",
+      "reason": "No conservative top/bottom/inner2 path: .R49 > .pin1 to .U14 > .pin4"
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "reason": "No conservative top/bottom/inner2 path: .R48 > .pin1 to .U14 > .pin3"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "reason": "No conservative top/bottom/inner2 path: .R50 > .pin1 to .U14 > .pin5"
+    },
+    {
+      "net": "HOLD_HARDWARE",
+      "reason": "No conservative top/bottom/inner2 path: .R99 > .pin1 to .U26 > .pin2"
+    },
+    {
+      "net": "MIC_WS_INPUT",
+      "reason": "No conservative top/bottom/inner2 path: .U24 > .pin3 to .R89 > .pin2"
+    },
+    {
+      "net": "MIC_BCLK_INPUT",
+      "reason": "No conservative top/bottom/inner2 path: .U24 > .pin1 to .R88 > .pin2"
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "reason": "No conservative top/bottom/inner2 path: .R104 > .pin1 to .R103 > .pin2"
+    },
+    {
+      "net": "MIC_INPUT",
+      "reason": "No conservative top/bottom/inner2 path: .U23 > .pin1 to .C73 > .pin1"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "reason": "No conservative top/bottom/inner2 path: .Q2 > .pin3 to .R63 > .pin1"
+    }
+  ]
+}

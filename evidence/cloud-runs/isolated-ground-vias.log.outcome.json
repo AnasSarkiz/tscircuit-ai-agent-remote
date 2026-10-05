@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-power-copper.py",
+    "evidence/cloud-runs/power-ground-qualified-geometry/circuit.json",
+    "evidence/cloud-runs/isolated-ground-vias-proposal.json",
+    "GND",
+    "--ground-audit",
+    "evidence/cloud-runs/power-ground-qualified-copper-audit.json",
+    "--reserve-paths",
+    "evidence/cloud-runs/remaining-layer-transitions-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 22.53,
+  "peak_process_group_rss_bytes": 94588928,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

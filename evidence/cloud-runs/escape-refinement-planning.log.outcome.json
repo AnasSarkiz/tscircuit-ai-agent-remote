@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/manual-digital-replay/circuit.json",
+    "evidence/cloud-runs/escape-refinement-proposal.json",
+    "CHARGE_PGOOD_N",
+    "CHARGE_STATUS_N",
+    "AMP_LRCLK",
+    "HOLD_HARDWARE",
+    "MCU_LCD_DC",
+    "MCU_LCD_RESET_N",
+    "MCU_LCD_SCLK",
+    "MIC_SD",
+    "MIC_BCLK",
+    "MIC_WS",
+    "MIC_BCLK_INPUT",
+    "MIC_WS_INPUT",
+    "BACKLIGHT_GATE"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 82.09,
+  "peak_process_group_rss_bytes": 135098368,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

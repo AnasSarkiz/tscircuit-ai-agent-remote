@@ -1,0 +1,17 @@
+59043 |       y_size: elm.height,
+59044 |       circle_diameter: Math.min(elm.width, elm.height),
+59045 |       circle_center_offset: (elm.height - elm.width) / 2
+59046 |     };
+59047 |   }
+59048 |   throw new Error(`Unsupported shape ${elm.shape}`);
+                    ^
+error: Unsupported shape polygon
+      at getApertureConfigFromPcbSolderPaste (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:59048:13)
+      at getAllApertureTemplateConfigsForLayer (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:57986:24)
+      at defineAperturesForLayer (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:57936:27)
+      at convertCircuitJsonToGerberCommands (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:59926:5)
+      at convertCircuitJsonToGerberFiles (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:60988:31)
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:354218:27)
+      at async <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:354513:11)
+
+Bun v1.3.9 (Linux x64)

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+    "evidence/cloud-runs/usb-qualified-pad-gap-proposal.json",
+    "USB_DP",
+    "USB_DN",
+    "LCD_SDA",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-combined-signal-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-power-leaves-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-speaker-necks-proposal.json",
+    "--grid-mm",
+    ".05",
+    "--copper-reserve-mm",
+    ".0001"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 21.52,
+  "peak_process_group_rss_bytes": 134524928,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

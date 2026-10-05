@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/audit-copper.py",
+    "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+    "evidence/cloud-runs/priority-base-copper-audit.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 5.51,
+  "peak_process_group_rss_bytes": 80035840,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

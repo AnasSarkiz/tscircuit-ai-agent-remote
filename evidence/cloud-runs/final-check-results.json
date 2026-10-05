@@ -1,0 +1,57 @@
+[
+  {
+    "name": "typecheck",
+    "exit_code": 0,
+    "log": "evidence/cloud-runs/check-typecheck.log"
+  },
+  {
+    "name": "board-tests",
+    "exit_code": 1,
+    "log": "evidence/cloud-runs/check-board-tests.log"
+  },
+  {
+    "name": "format",
+    "exit_code": 1,
+    "log": "evidence/cloud-runs/check-format.log"
+  },
+  {
+    "name": "netlist",
+    "exit_code": 0,
+    "log": "evidence/cloud-runs/check-netlist.log"
+  },
+  {
+    "name": "pin_specification",
+    "exit_code": 0,
+    "log": "evidence/cloud-runs/check-pin_specification.log"
+  },
+  {
+    "name": "source",
+    "exit_code": 0,
+    "log": "evidence/cloud-runs/check-source.log"
+  },
+  {
+    "name": "schematic-placement",
+    "exit_code": 0,
+    "log": "evidence/cloud-runs/check-schematic-placement.log"
+  },
+  {
+    "name": "placement",
+    "exit_code": 0,
+    "log": "evidence/cloud-runs/check-placement.log"
+  },
+  {
+    "name": "shorts-pcb",
+    "exit_code": 124,
+    "log": "evidence/cloud-runs/check-shorts-pcb.log"
+  },
+  {
+    "name": "shorts-gerber",
+    "exit_code": 1,
+    "log": "evidence/cloud-runs/check-shorts-gerber.log"
+  },
+  {
+    "name": "gerber-export",
+    "exit_code": 1,
+    "log": "evidence/cloud-runs/check-gerber-export.log"
+  }
+]

@@ -1,0 +1,9830 @@
+{
+  "classification": "manual native copper proposals; not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/pin-escape-routed/circuit.json",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".J1 > .pin13",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.9,
+          "y": 2.7
+        },
+        {
+          "x": -5.3,
+          "y": 2.6
+        },
+        {
+          "x": -5.3,
+          "y": 2.6,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -3.1999554999999997,
+          -25.8259568
+        ],
+        [
+          -3.8999999999997073,
+          -25.299999999999905
+        ],
+        [
+          -5.299999999999727,
+          -25.399999999999906
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 2.2791768763940623
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin4",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.799997,
+          "y": -1.26955
+        },
+        {
+          "x": -1.799997,
+          "y": -1.26955,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.499997,
+          -26.749935
+        ],
+        [
+          -9.799997,
+          -27.26955
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 0.5999997901874612
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin5",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.26955,
+          "y": -1.799997
+        },
+        {
+          "x": -1.26955,
+          "y": -1.799997,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -8.749935,
+          -27.499997
+        ],
+        [
+          -9.26955,
+          -27.799997
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 0.5999997901874636
+    },
+    {
+      "net": "GND",
+      "from": ".U16 > .pin17",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.3,
+          "y": -1.2
+        },
+        {
+          "x": -0.4,
+          "y": -2.3
+        },
+        {
+          "x": -0.4,
+          "y": -2.3,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -7.9998857,
+          -25.999873
+        ],
+        [
+          -8.29999999999977,
+          -27.199999999999932
+        ],
+        [
+          -8.399999999999771,
+          -28.299999999999947
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 2.341618721915625
+    },
+    {
+      "net": "GND",
+      "from": ".TP1 > .pin1",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.866025,
+          "y": -0.5
+        },
+        {
+          "x": -0.866025,
+          "y": -0.5,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17,
+          10.8
+        ],
+        [
+          -17.866025,
+          10.3
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "VSYS",
+      "from": ".C3 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.55,
+          "y": -1.05
+        },
+        {
+          "x": -0.55,
+          "y": -1.05,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.75,
+          -23.950024
+        ],
+        [
+          -1.699999999999676,
+          -23.799999999999883
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.0606635661588057
+    },
+    {
+      "net": "VSYS",
+      "from": ".C4 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": -0.0
+        },
+        {
+          "x": -1.500024,
+          "y": -0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.25,
+          -13.350024000000001
+        ],
+        [
+          -2.25,
+          -14.150024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999989
+    },
+    {
+      "net": "VSYS",
+      "from": ".U3 > .pin7",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 3.751663,
+          "y": 1.552095
+        },
+        {
+          "x": 3.751663,
+          "y": 1.552095,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.250003,
+          4.252095
+        ],
+        [
+          -12.998337,
+          5.552095
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.599999956837692
+    },
+    {
+      "net": "VSYS",
+      "from": ".U3 > .pin8",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.25,
+          "y": 0.7
+        },
+        {
+          "x": 2.25,
+          "y": 0.7,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.250003,
+          4.7519670000000005
+        ],
+        [
+          -14.499999999999858,
+          4.7000000000005215
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7518012164782378
+    },
+    {
+      "net": "VSYS",
+      "from": ".Q2 > .pin2",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.149985,
+          "y": 1.74996
+        },
+        {
+          "x": 1.149985,
+          "y": 1.74996,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.850014999999999,
+          1.44996
+        ],
+        [
+          -9.850015,
+          2.24996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000003
+    },
+    {
+      "net": "VSYS",
+      "from": ".C50 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.900024,
+          "y": -0.0
+        },
+        {
+          "x": -2.900024,
+          "y": -0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.299976,
+          7.5
+        ],
+        [
+          -15.099976,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.200000000000001
+    },
+    {
+      "net": "VSYS",
+      "from": ".C51 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.2,
+          "y": 1.1
+        },
+        {
+          "x": -1.5,
+          "y": 1.1
+        },
+        {
+          "x": -1.5,
+          "y": 1.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.5,
+          4.700024
+        ],
+        [
+          -12.399999999999828,
+          5.200000000000529
+        ],
+        [
+          -12.399999999999828,
+          5.500000000000533
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.5082946662867123
+    },
+    {
+      "net": "VSYS",
+      "from": ".U22 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.507436,
+          "y": -1.65
+        },
+        {
+          "x": 2.507436,
+          "y": -1.65,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.795,
+          -1.45
+        ],
+        [
+          18.007436,
+          -2.15
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.4000003764628037
+    },
+    {
+      "net": "VSYS",
+      "from": ".C70 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.739254,
+          "y": -0.6
+        },
+        {
+          "x": -1.739254,
+          "y": -0.6,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.5,
+          -4.450024
+        ],
+        [
+          17.1,
+          -5.489254
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.1999995803749273
+    },
+    {
+      "net": "VSYS",
+      "from": ".U25 > .pin3",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.35001,
+          "y": 0.94996
+        },
+        {
+          "x": 2.35001,
+          "y": 0.94996,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -8.89999,
+          -8.05004
+        ],
+        [
+          -7.89999,
+          -8.05004
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.0000000000000009
+    },
+    {
+      "net": "VSYS",
+      "from": ".U25 > .pin6",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.35001,
+          "y": -1.74996
+        },
+        {
+          "x": -1.35001,
+          "y": -1.74996,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -11.60001,
+          -9.94996
+        ],
+        [
+          -11.60001,
+          -10.74996
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999989
+    },
+    {
+      "net": "VSYS",
+      "from": ".R96 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.8,
+          "y": 0.9
+        },
+        {
+          "x": -0.8,
+          "y": 0.9,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -10.753364,
+          -12
+        ],
+        [
+          -10.799999999999805,
+          -11.099999999999703
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9012074769421947
+    },
+    {
+      "net": "VSYS",
+      "from": ".C76 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -10.700023999999999,
+          -6
+        ],
+        [
+          -10.200024,
+          -5.133975
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124376
+    },
+    {
+      "net": "VSYS",
+      "from": ".TP4 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.5,
+          "y": -0.866025
+        },
+        {
+          "x": 0.5,
+          "y": -0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -11.399999999999999,
+          10.8
+        ],
+        [
+          -10.9,
+          9.933975
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124384
+    },
+    {
+      "net": "V3V3",
+      "from": ".U1 > .pin2",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -9.950046,
+          "y": 7.774953
+        },
+        {
+          "x": -9.950046,
+          "y": 7.774953,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.750045999999998,
+          29.8994967
+        ],
+        [
+          -21.950046,
+          29.899497
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.2000000000000404
+    },
+    {
+      "net": "V3V3",
+      "from": ".U12 > .pin3",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.4,
+          "y": -0.69282
+        },
+        {
+          "x": -1.4,
+          "y": -0.69282,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -1,
+          7.75
+        ],
+        [
+          -1.4,
+          7.05718
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999997202499513
+    },
+    {
+      "net": "V3V3",
+      "from": ".J6 > .pin2",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.5,
+          "y": -1.2
+        },
+        {
+          "x": -1.5,
+          "y": -1.2,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.9,
+          -10
+        ],
+        [
+          -18.9,
+          -11.2
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.1999999999999993
+    },
+    {
+      "net": "V3V3",
+      "from": ".R36 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.753364,
+          "y": -0.8
+        },
+        {
+          "x": -0.753364,
+          "y": -0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -0.753364,
+          26.75
+        ],
+        [
+          -0.753364,
+          25.95
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "V3V3",
+      "from": ".C30 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.200024,
+          "y": -0.866025
+        },
+        {
+          "x": -1.200024,
+          "y": -0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -3.200024,
+          10.5
+        ],
+        [
+          -3.700024,
+          9.633975
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "V3V3",
+      "from": ".C31 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -0.700024,
+          0
+        ],
+        [
+          -1.500024,
+          0.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8
+    },
+    {
+      "net": "V3V3",
+      "from": ".C32 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.2,
+          "y": 0.9
+        },
+        {
+          "x": 2.0,
+          "y": 0.8
+        },
+        {
+          "x": 2.1,
+          "y": 0.7
+        },
+        {
+          "x": 2.1,
+          "y": 0.7,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -0.700024,
+          -6.5
+        ],
+        [
+          0.200000000000351,
+          -5.599999999999625
+        ],
+        [
+          2.0000000000003766,
+          -5.699999999999626
+        ],
+        [
+          2.100000000000378,
+          -5.799999999999628
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 3.2170061707815147
+    },
+    {
+      "net": "V3V3",
+      "from": ".R4 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.553364,
+          "y": -0.0
+        },
+        {
+          "x": -1.553364,
+          "y": -0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.5,
+          -25.253364
+        ],
+        [
+          -13.5,
+          -26.053364
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999972
+    },
+    {
+      "net": "V3V3",
+      "from": ".C5 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.4e-05,
+          "y": -1.212436
+        },
+        {
+          "x": -2.4e-05,
+          "y": -1.212436,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -0.9000239999999999,
+          -19
+        ],
+        [
+          -0.200024,
+          -20.212436
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.4000003764628068
+    },
+    {
+      "net": "V3V3",
+      "from": ".R5 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.75335,
+          "y": -0.8
+        },
+        {
+          "x": -0.75335,
+          "y": -0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.24665,
+          -19
+        ],
+        [
+          -2.24665,
+          -18.2
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "V3V3",
+      "from": ".R7 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.553364,
+          "y": 0.0
+        },
+        {
+          "x": -1.553364,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -0.753364,
+          -11
+        ],
+        [
+          -1.553364,
+          -11.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999999
+    },
+    {
+      "net": "V3V3",
+      "from": ".U13 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.966025,
+          "y": -1.45
+        },
+        {
+          "x": 1.966025,
+          "y": -1.45,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          11.6,
+          12.8
+        ],
+        [
+          12.466025,
+          12.3
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "V3V3",
+      "from": ".C40 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.45,
+          "y": 0.6
+        },
+        {
+          "x": -1.45,
+          "y": 0.6,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          13.549976000000001,
+          10.5
+        ],
+        [
+          12.80000000000053,
+          11.100000000000612
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9604498948804884
+    },
+    {
+      "net": "V3V3",
+      "from": ".U26 > .pin5",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.900099,
+          "y": -0.25714
+        },
+        {
+          "x": -0.900099,
+          "y": -0.25714,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          13.699901,
+          19.80004
+        ],
+        [
+          14.099901,
+          20.49286
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999997202499514
+    },
+    {
+      "net": "V3V3",
+      "from": ".U7 > .pin5",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.700099,
+          "y": -1.64278
+        },
+        {
+          "x": -1.700099,
+          "y": -1.64278,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.300099,
+          -19.94996
+        ],
+        [
+          -18.700099,
+          -20.64278
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.79999972024995
+    },
+    {
+      "net": "V3V3",
+      "from": ".C25 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -21.700024,
+          -16.5
+        ],
+        [
+          -22.500024,
+          -16.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "V3V3",
+      "from": ".SW4 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.850492,
+          "y": 0.0
+        },
+        {
+          "x": -0.850492,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          20.249508,
+          30.4
+        ],
+        [
+          21.049508,
+          30.4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "V3V3",
+      "from": ".SW5 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.557112,
+          "y": 1.094022
+        },
+        {
+          "x": -1.557112,
+          "y": 1.094022,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.50597835,
+          1.2499319999999998
+        ],
+        [
+          -20.905978,
+          0.557112
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999995452499479
+    },
+    {
+      "net": "V3V3",
+      "from": ".C84 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          5.299976,
+          24.5
+        ],
+        [
+          4.499976,
+          24.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999998
+    },
+    {
+      "net": "V3V3",
+      "from": ".TP5 > .pin1",
+      "to": "net.V3V3",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.6,
+          "y": -0.9
+        },
+        {
+          "x": 3.7,
+          "y": -1.9
+        },
+        {
+          "x": 3.7,
+          "y": -1.9,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.2,
+          10.8
+        ],
+        [
+          -7.59999999999976,
+          9.900000000000595
+        ],
+        [
+          -5.49999999999973,
+          8.900000000000581
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 4.1616966449911335
+    },
+    {
+      "net": "PACK_BAT",
+      "from": ".U16 > .pin2",
+      "to": "net.PACK_BAT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.366022,
+          "y": -0.249937
+        },
+        {
+          "x": -2.366022,
+          "y": -0.249937,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.499997,
+          -25.749937
+        ],
+        [
+          -10.366022,
+          -26.249937
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124378
+    },
+    {
+      "net": "PACK_BAT",
+      "from": ".C2 > .pin1",
+      "to": "net.PACK_BAT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": -0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": -0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.049976000000001,
+          -26.25
+        ],
+        [
+          -15.549976,
+          -25.383975
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124384
+    },
+    {
+      "net": "PACK_BAT",
+      "from": ".U25 > .pin5",
+      "to": "net.PACK_BAT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.35001,
+          "y": 0.0
+        },
+        {
+          "x": -2.35001,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -11.60001,
+          -9
+        ],
+        [
+          -12.60001,
+          -9.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.0
+    },
+    {
+      "net": "PACK_BAT",
+      "from": ".TP3 > .pin1",
+      "to": "net.PACK_BAT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.866025,
+          "y": -0.5
+        },
+        {
+          "x": -0.866025,
+          "y": -0.5,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -13.6,
+          10.8
+        ],
+        [
+          -14.466025,
+          10.3
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "VBUS",
+      "from": ".J1 > .pin15",
+      "to": "net.VBUS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.2,
+          "y": 5.0
+        },
+        {
+          "x": 2.0,
+          "y": 5.2
+        },
+        {
+          "x": 2.0,
+          "y": 5.2,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          2.4001603,
+          -25.8258552
+        ],
+        [
+          2.2000000000003794,
+          -22.999999999999872
+        ],
+        [
+          2.0000000000003766,
+          -22.79999999999987
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 3.1157778965308514
+    },
+    {
+      "net": "VBUS",
+      "from": ".C1 > .pin1",
+      "to": "net.VBUS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.2,
+          "y": 0.9
+        },
+        {
+          "x": 1.2,
+          "y": 1.1
+        },
+        {
+          "x": 1.2,
+          "y": 1.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -12,
+          -25.299976
+        ],
+        [
+          -11.09999999999981,
+          -26.199999999999918
+        ],
+        [
+          -10.899999999999807,
+          -27.199999999999932
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.292613079530317
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".U22 > .pin5",
+      "to": "net.VMOTOR",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.7,
+          "y": -1.1
+        },
+        {
+          "x": -2.7,
+          "y": -1.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.205,
+          -1.45
+        ],
+        [
+          12.80000000000053,
+          -1.599999999999568
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.4129844302038084
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".D3 > .pin1",
+      "to": "net.VMOTOR",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.96495,
+          "y": 1.2
+        },
+        {
+          "x": -1.96495,
+          "y": 1.2,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.53505,
+          -2.5
+        ],
+        [
+          0.53505,
+          -1.3
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.2
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".C71 > .pin1",
+      "to": "net.VMOTOR",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.300024,
+          "y": 0.0
+        },
+        {
+          "x": -2.300024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.799976000000001,
+          2.5
+        ],
+        [
+          13.199976,
+          2.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.6000000000000014
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".C72 > .pin1",
+      "to": "net.VMOTOR",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.299976,
+          -12
+        ],
+        [
+          2.499976,
+          -12.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999998
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".R82 > .pin1",
+      "to": "net.VMOTOR",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.55335,
+          "y": -0.0
+        },
+        {
+          "x": -1.55335,
+          "y": -0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          17.00335,
+          -15
+        ],
+        [
+          17.80335,
+          -15.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999972
+    },
+    {
+      "net": "VMOTOR",
+      "from": ".TP_MOTOR_P > .pin1",
+      "to": "net.VMOTOR",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.4,
+          "y": 0.0
+        },
+        {
+          "x": 1.4,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          22,
+          -8
+        ],
+        [
+          23.4,
+          -8.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.3999999999999986
+    },
+    {
+      "net": "VMIC",
+      "from": ".U23 > .pin5",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.1,
+          "y": -0.95
+        },
+        {
+          "x": -0.1,
+          "y": -0.95,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          13.9,
+          -21.95
+        ],
+        [
+          14.9,
+          -21.95
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.0
+    },
+    {
+      "net": "VMIC",
+      "from": ".C74 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.299976,
+          -23.75
+        ],
+        [
+          3.799976,
+          -22.883975
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "VMIC",
+      "from": ".C75 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.75,
+          -22.200024
+        ],
+        [
+          3.883975,
+          -21.700024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124389
+    },
+    {
+      "net": "VMIC",
+      "from": ".R86 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.75335,
+          "y": 0.8
+        },
+        {
+          "x": -0.75335,
+          "y": 0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          12.75335,
+          -30
+        ],
+        [
+          12.75335,
+          -30.8
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "VMIC",
+      "from": ".R92 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.75335,
+          "y": -0.8
+        },
+        {
+          "x": -0.75335,
+          "y": -0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.24665,
+          -29.75
+        ],
+        [
+          14.24665,
+          -30.55
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "VMIC",
+      "from": ".C80 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.700024,
+          -24.75
+        ],
+        [
+          -21.500024,
+          -24.75
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8000000000000007
+    },
+    {
+      "net": "VMIC",
+      "from": ".C81 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.500024,
+          "y": 0.0
+        },
+        {
+          "x": -1.500024,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.299976,
+          -19.25
+        ],
+        [
+          2.499976,
+          -19.25
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999998
+    },
+    {
+      "net": "VMIC",
+      "from": ".R29 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.553364,
+          "y": 0.0
+        },
+        {
+          "x": -1.553364,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.753364,
+          -22
+        ],
+        [
+          -18.553364,
+          -22.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999999999999972
+    },
+    {
+      "net": "VMIC",
+      "from": ".TP6 > .pin1",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.251666,
+          "y": -1.3
+        },
+        {
+          "x": 2.251666,
+          "y": -1.3,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -7,
+          10.8
+        ],
+        [
+          -4.748334,
+          9.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.5999999568376926
+    },
+    {
+      "net": "VLCD",
+      "from": ".U13 > .pin5",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.5,
+          "y": -0.25718
+        },
+        {
+          "x": -1.5,
+          "y": -0.25718,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          9.4,
+          12.8
+        ],
+        [
+          9.0,
+          13.49282
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999997202499507
+    },
+    {
+      "net": "VLCD",
+      "from": ".U14 > .pin1",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.525,
+          "y": -2.87095
+        },
+        {
+          "x": -3.525,
+          "y": -2.87095,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.074999999999999,
+          5.12905
+        ],
+        [
+          5.475,
+          5.12905
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.5999999999999996
+    },
+    {
+      "net": "VLCD",
+      "from": ".U14 > .pin20",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -3.61782,
+          "y": 3.27095
+        },
+        {
+          "x": -3.61782,
+          "y": 3.27095,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          6.074999999999999,
+          10.87095
+        ],
+        [
+          5.38218,
+          11.27095
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999997202499498
+    },
+    {
+      "net": "VLCD",
+      "from": ".C41 > .pin1",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.400024,
+          "y": 1.212436
+        },
+        {
+          "x": -1.400024,
+          "y": 1.212436,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.75,
+          13.450023999999999
+        ],
+        [
+          15.962436,
+          14.150024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.4000003764628073
+    },
+    {
+      "net": "VLCD",
+      "from": ".C42 > .pin1",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -1.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.049976,
+          9
+        ],
+        [
+          2.549976,
+          9.866025
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "VLCD",
+      "from": ".C43 > .pin1",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.55,
+          "y": 2.6
+        },
+        {
+          "x": -0.75,
+          "y": 2.7
+        },
+        {
+          "x": -0.75,
+          "y": 2.7,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          3.049976,
+          7.5
+        ],
+        [
+          3.2000000000003936,
+          10.100000000000598
+        ],
+        [
+          3.000000000000391,
+          10.2000000000006
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.8279315087987467
+    },
+    {
+      "net": "VLCD",
+      "from": ".R42 > .pin2",
+      "to": "net.VLCD",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.792594,
+          "y": 0.6
+        },
+        {
+          "x": 1.792594,
+          "y": 0.6,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.003364,
+          6
+        ],
+        [
+          16.042594,
+          6.6
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.199999580374928
+    },
+    {
+      "net": "MIC_INPUT",
+      "from": ".SW5 > .pin2",
+      "to": "net.MIC_INPUT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 0.750062,
+          "y": 2.694022
+        },
+        {
+          "x": 0.750062,
+          "y": 2.694022,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -20.50597835,
+          -1.7500619999999998
+        ],
+        [
+          -19.305978,
+          -1.750062
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.2000003499999998
+    },
+    {
+      "net": "HAPTIC_N",
+      "from": ".Q9 > .pin3",
+      "to": "net.HAPTIC_N",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.399998,
+          "y": -0.69282
+        },
+        {
+          "x": -1.399998,
+          "y": -0.69282,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.749998,
+          -8
+        ],
+        [
+          17.149998,
+          -7.30718
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.7999997202499506
+    },
+    {
+      "net": "HAPTIC_N",
+      "from": ".D3 > .pin2",
+      "to": "net.HAPTIC_N",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.26495,
+          "y": 1.212436
+        },
+        {
+          "x": 1.26495,
+          "y": 1.212436,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.46495,
+          -2.5
+        ],
+        [
+          3.76495,
+          -1.287564
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.4000003764628066
+    },
+    {
+      "net": "HAPTIC_N",
+      "from": ".C72 > .pin2",
+      "to": "net.HAPTIC_N",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.200024,
+          "y": 0.866025
+        },
+        {
+          "x": 1.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          4.700024,
+          -12
+        ],
+        [
+          5.200024,
+          -11.133975
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124393
+    },
+    {
+      "net": "HAPTIC_N",
+      "from": ".TP_MOTOR_N > .pin1",
+      "to": "net.HAPTIC_N",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.4,
+          "y": 0.0
+        },
+        {
+          "x": 1.4,
+          "y": 0.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          22,
+          -11
+        ],
+        [
+          23.4,
+          -11.0
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.3999999999999986
+    },
+    {
+      "net": "LCD_BACKLIGHT_OUTPUT",
+      "from": ".C85 > .pin1",
+      "to": "net.LCD_BACKLIGHT_OUTPUT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.300024,
+          "y": -2.771281
+        },
+        {
+          "x": -2.300024,
+          "y": -2.771281,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          5.299976,
+          17.5
+        ],
+        [
+          3.699976,
+          14.728719
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 3.1999997470251462
+    }
+  ],
+  "pours": [
+    {
+      "net": "V3V3",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -12.752278,
+          "y": 29.197143
+        },
+        {
+          "x": -12.729983,
+          "y": 29.193824
+        },
+        {
+          "x": -12.70791,
+          "y": 29.189255
+        },
+        {
+          "x": -0.661274,
+          "y": 26.339255
+        },
+        {
+          "x": -0.642285,
+          "y": 26.334267
+        },
+        {
+          "x": -0.623564,
+          "y": 26.328354
+        },
+        {
+          "x": -0.605155,
+          "y": 26.321529
+        },
+        {
+          "x": -0.587103,
+          "y": 26.31381
+        },
+        {
+          "x": -0.569452,
+          "y": 26.305213
+        },
+        {
+          "x": -0.552244,
+          "y": 26.295761
+        },
+        {
+          "x": -0.535521,
+          "y": 26.285476
+        },
+        {
+          "x": -0.519322,
+          "y": 26.274383
+        },
+        {
+          "x": -0.503688,
+          "y": 26.262509
+        },
+        {
+          "x": -0.488654,
+          "y": 26.249881
+        },
+        {
+          "x": -0.474259,
+          "y": 26.236531
+        },
+        {
+          "x": -0.460535,
+          "y": 26.222491
+        },
+        {
+          "x": -0.447518,
+          "y": 26.207794
+        },
+        {
+          "x": -0.435237,
+          "y": 26.192477
+        },
+        {
+          "x": -0.423722,
+          "y": 26.176575
+        },
+        {
+          "x": -0.413002,
+          "y": 26.160127
+        },
+        {
+          "x": -0.403101,
+          "y": 26.143173
+        },
+        {
+          "x": -0.394044,
+          "y": 26.125754
+        },
+        {
+          "x": -0.385853,
+          "y": 26.107911
+        },
+        {
+          "x": -0.378548,
+          "y": 26.089688
+        },
+        {
+          "x": -0.372145,
+          "y": 26.071129
+        },
+        {
+          "x": -0.366661,
+          "y": 26.052277
+        },
+        {
+          "x": -0.362108,
+          "y": 26.033179
+        },
+        {
+          "x": -0.358498,
+          "y": 26.013881
+        },
+        {
+          "x": -0.355839,
+          "y": 25.994429
+        },
+        {
+          "x": -0.354138,
+          "y": 25.97487
+        },
+        {
+          "x": -0.353398,
+          "y": 25.955251
+        },
+        {
+          "x": -0.353623,
+          "y": 25.935619
+        },
+        {
+          "x": -0.35481,
+          "y": 25.916022
+        },
+        {
+          "x": -0.356957,
+          "y": 25.896507
+        },
+        {
+          "x": -0.360059,
+          "y": 25.877121
+        },
+        {
+          "x": -0.364109,
+          "y": 25.85791
+        },
+        {
+          "x": -0.369097,
+          "y": 25.838921
+        },
+        {
+          "x": -0.37501,
+          "y": 25.8202
+        },
+        {
+          "x": -0.381835,
+          "y": 25.801791
+        },
+        {
+          "x": -0.389554,
+          "y": 25.783739
+        },
+        {
+          "x": -0.398151,
+          "y": 25.766088
+        },
+        {
+          "x": -0.407603,
+          "y": 25.74888
+        },
+        {
+          "x": -0.417888,
+          "y": 25.732157
+        },
+        {
+          "x": -0.428981,
+          "y": 25.715958
+        },
+        {
+          "x": -0.440855,
+          "y": 25.700324
+        },
+        {
+          "x": -0.453483,
+          "y": 25.68529
+        },
+        {
+          "x": -0.466833,
+          "y": 25.670895
+        },
+        {
+          "x": -0.480873,
+          "y": 25.657171
+        },
+        {
+          "x": -0.49557,
+          "y": 25.644154
+        },
+        {
+          "x": -0.510887,
+          "y": 25.631873
+        },
+        {
+          "x": -0.526789,
+          "y": 25.620358
+        },
+        {
+          "x": -0.543237,
+          "y": 25.609638
+        },
+        {
+          "x": -0.560191,
+          "y": 25.599737
+        },
+        {
+          "x": -0.57761,
+          "y": 25.59068
+        },
+        {
+          "x": -0.595453,
+          "y": 25.582489
+        },
+        {
+          "x": -0.613676,
+          "y": 25.575184
+        },
+        {
+          "x": -0.632235,
+          "y": 25.568781
+        },
+        {
+          "x": -0.651087,
+          "y": 25.563297
+        },
+        {
+          "x": -0.670185,
+          "y": 25.558744
+        },
+        {
+          "x": -0.689483,
+          "y": 25.555134
+        },
+        {
+          "x": -0.708935,
+          "y": 25.552475
+        },
+        {
+          "x": -0.728494,
+          "y": 25.550774
+        },
+        {
+          "x": -0.748113,
+          "y": 25.550034
+        },
+        {
+          "x": -0.767745,
+          "y": 25.550259
+        },
+        {
+          "x": -0.787342,
+          "y": 25.551446
+        },
+        {
+          "x": -0.806857,
+          "y": 25.553593
+        },
+        {
+          "x": -0.826243,
+          "y": 25.556695
+        },
+        {
+          "x": -0.845454,
+          "y": 25.560745
+        },
+        {
+          "x": -12.870129,
+          "y": 28.405549
+        },
+        {
+          "x": -21.997768,
+          "y": 29.502354
+        },
+        {
+          "x": -22.017197,
+          "y": 29.505174
+        },
+        {
+          "x": -22.036465,
+          "y": 29.508944
+        },
+        {
+          "x": -22.055524,
+          "y": 29.513655
+        },
+        {
+          "x": -22.07433,
+          "y": 29.519295
+        },
+        {
+          "x": -22.092836,
+          "y": 29.525851
+        },
+        {
+          "x": -22.110998,
+          "y": 29.533308
+        },
+        {
+          "x": -22.128772,
+          "y": 29.541646
+        },
+        {
+          "x": -22.146115,
+          "y": 29.550847
+        },
+        {
+          "x": -22.162987,
+          "y": 29.560888
+        },
+        {
+          "x": -22.179345,
+          "y": 29.571744
+        },
+        {
+          "x": -22.195151,
+          "y": 29.58339
+        },
+        {
+          "x": -22.210366,
+          "y": 29.595797
+        },
+        {
+          "x": -22.224954,
+          "y": 29.608937
+        },
+        {
+          "x": -22.23888,
+          "y": 29.622776
+        },
+        {
+          "x": -22.252111,
+          "y": 29.637281
+        },
+        {
+          "x": -22.264613,
+          "y": 29.652419
+        },
+        {
+          "x": -22.276358,
+          "y": 29.668152
+        },
+        {
+          "x": -22.287316,
+          "y": 29.684442
+        },
+        {
+          "x": -22.297462,
+          "y": 29.70125
+        },
+        {
+          "x": -22.306771,
+          "y": 29.718535
+        },
+        {
+          "x": -22.315221,
+          "y": 29.736257
+        },
+        {
+          "x": -22.322791,
+          "y": 29.754372
+        },
+        {
+          "x": -22.329463,
+          "y": 29.772837
+        },
+        {
+          "x": -22.335221,
+          "y": 29.791606
+        },
+        {
+          "x": -22.340051,
+          "y": 29.810636
+        },
+        {
+          "x": -22.343941,
+          "y": 29.829879
+        },
+        {
+          "x": -22.346883,
+          "y": 29.849291
+        },
+        {
+          "x": -22.348868,
+          "y": 29.868823
+        },
+        {
+          "x": -22.349893,
+          "y": 29.888429
+        },
+        {
+          "x": -22.349954,
+          "y": 29.908062
+        },
+        {
+          "x": -22.349052,
+          "y": 29.927675
+        },
+        {
+          "x": -22.347189,
+          "y": 29.947219
+        },
+        {
+          "x": -22.344369,
+          "y": 29.966648
+        },
+        {
+          "x": -22.340599,
+          "y": 29.985916
+        },
+        {
+          "x": -22.335888,
+          "y": 30.004975
+        },
+        {
+          "x": -22.330248,
+          "y": 30.023781
+        },
+        {
+          "x": -22.323692,
+          "y": 30.042287
+        },
+        {
+          "x": -22.316235,
+          "y": 30.060449
+        },
+        {
+          "x": -22.307897,
+          "y": 30.078223
+        },
+        {
+          "x": -22.298696,
+          "y": 30.095566
+        },
+        {
+          "x": -22.288655,
+          "y": 30.112438
+        },
+        {
+          "x": -22.277799,
+          "y": 30.128796
+        },
+        {
+          "x": -22.266153,
+          "y": 30.144602
+        },
+        {
+          "x": -22.253746,
+          "y": 30.159817
+        },
+        {
+          "x": -22.240606,
+          "y": 30.174405
+        },
+        {
+          "x": -22.226767,
+          "y": 30.188331
+        },
+        {
+          "x": -22.212262,
+          "y": 30.201562
+        },
+        {
+          "x": -22.197124,
+          "y": 30.214064
+        },
+        {
+          "x": -22.181391,
+          "y": 30.225809
+        },
+        {
+          "x": -22.165101,
+          "y": 30.236767
+        },
+        {
+          "x": -22.148293,
+          "y": 30.246913
+        },
+        {
+          "x": -22.131008,
+          "y": 30.256222
+        },
+        {
+          "x": -22.113286,
+          "y": 30.264672
+        },
+        {
+          "x": -22.095171,
+          "y": 30.272242
+        },
+        {
+          "x": -22.076706,
+          "y": 30.278914
+        },
+        {
+          "x": -22.057937,
+          "y": 30.284672
+        },
+        {
+          "x": -22.038907,
+          "y": 30.289502
+        },
+        {
+          "x": -22.019664,
+          "y": 30.293392
+        },
+        {
+          "x": -22.000252,
+          "y": 30.296334
+        },
+        {
+          "x": -21.98072,
+          "y": 30.298319
+        },
+        {
+          "x": -21.961114,
+          "y": 30.299344
+        },
+        {
+          "x": -21.941481,
+          "y": 30.299405
+        },
+        {
+          "x": -21.921868,
+          "y": 30.298503
+        },
+        {
+          "x": -21.902324,
+          "y": 30.29664
+        }
+      ],
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -21.950046,
+          29.899497
+        ],
+        [
+          -12.799999999999834,
+          28.800000000000864
+        ],
+        [
+          -0.753364,
+          25.95
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 0.473502,
+          "y": 25.382169
+        },
+        {
+          "x": 4.547261,
+          "y": 24.897195
+        },
+        {
+          "x": 4.566694,
+          "y": 24.894397
+        },
+        {
+          "x": 4.585966,
+          "y": 24.890648
+        },
+        {
+          "x": 4.60503,
+          "y": 24.885958
+        },
+        {
+          "x": 4.623842,
+          "y": 24.880338
+        },
+        {
+          "x": 4.642355,
+          "y": 24.873802
+        },
+        {
+          "x": 4.660525,
+          "y": 24.866366
+        },
+        {
+          "x": 4.678308,
+          "y": 24.858047
+        },
+        {
+          "x": 4.695662,
+          "y": 24.848865
+        },
+        {
+          "x": 4.712544,
+          "y": 24.838843
+        },
+        {
+          "x": 4.728915,
+          "y": 24.828005
+        },
+        {
+          "x": 4.744733,
+          "y": 24.816376
+        },
+        {
+          "x": 4.759962,
+          "y": 24.803985
+        },
+        {
+          "x": 4.774565,
+          "y": 24.790862
+        },
+        {
+          "x": 4.788506,
+          "y": 24.777039
+        },
+        {
+          "x": 4.801752,
+          "y": 24.762547
+        },
+        {
+          "x": 4.814271,
+          "y": 24.747424
+        },
+        {
+          "x": 4.826033,
+          "y": 24.731704
+        },
+        {
+          "x": 4.83701,
+          "y": 24.715426
+        },
+        {
+          "x": 4.847174,
+          "y": 24.698629
+        },
+        {
+          "x": 4.856502,
+          "y": 24.681353
+        },
+        {
+          "x": 4.864971,
+          "y": 24.663641
+        },
+        {
+          "x": 4.872561,
+          "y": 24.645535
+        },
+        {
+          "x": 4.879253,
+          "y": 24.627077
+        },
+        {
+          "x": 4.885032,
+          "y": 24.608314
+        },
+        {
+          "x": 4.889883,
+          "y": 24.58929
+        },
+        {
+          "x": 4.893794,
+          "y": 24.57005
+        },
+        {
+          "x": 4.896757,
+          "y": 24.550642
+        },
+        {
+          "x": 4.898764,
+          "y": 24.531112
+        },
+        {
+          "x": 4.89981,
+          "y": 24.511507
+        },
+        {
+          "x": 4.899893,
+          "y": 24.491874
+        },
+        {
+          "x": 4.899013,
+          "y": 24.472261
+        },
+        {
+          "x": 4.897171,
+          "y": 24.452715
+        },
+        {
+          "x": 4.894373,
+          "y": 24.433282
+        },
+        {
+          "x": 4.890624,
+          "y": 24.41401
+        },
+        {
+          "x": 4.885934,
+          "y": 24.394946
+        },
+        {
+          "x": 4.880314,
+          "y": 24.376134
+        },
+        {
+          "x": 4.873778,
+          "y": 24.357621
+        },
+        {
+          "x": 4.866342,
+          "y": 24.339451
+        },
+        {
+          "x": 4.858023,
+          "y": 24.321668
+        },
+        {
+          "x": 4.848841,
+          "y": 24.304314
+        },
+        {
+          "x": 4.838819,
+          "y": 24.287432
+        },
+        {
+          "x": 4.827981,
+          "y": 24.271061
+        },
+        {
+          "x": 4.816352,
+          "y": 24.255243
+        },
+        {
+          "x": 4.803961,
+          "y": 24.240014
+        },
+        {
+          "x": 4.790838,
+          "y": 24.225411
+        },
+        {
+          "x": 4.777015,
+          "y": 24.21147
+        },
+        {
+          "x": 4.762523,
+          "y": 24.198224
+        },
+        {
+          "x": 4.7474,
+          "y": 24.185705
+        },
+        {
+          "x": 4.73168,
+          "y": 24.173943
+        },
+        {
+          "x": 4.715402,
+          "y": 24.162966
+        },
+        {
+          "x": 4.698605,
+          "y": 24.152802
+        },
+        {
+          "x": 4.681329,
+          "y": 24.143474
+        },
+        {
+          "x": 4.663617,
+          "y": 24.135005
+        },
+        {
+          "x": 4.645511,
+          "y": 24.127415
+        },
+        {
+          "x": 4.627053,
+          "y": 24.120723
+        },
+        {
+          "x": 4.60829,
+          "y": 24.114944
+        },
+        {
+          "x": 4.589266,
+          "y": 24.110093
+        },
+        {
+          "x": 4.570026,
+          "y": 24.106182
+        },
+        {
+          "x": 4.550618,
+          "y": 24.103219
+        },
+        {
+          "x": 4.531088,
+          "y": 24.101212
+        },
+        {
+          "x": 4.511483,
+          "y": 24.100166
+        },
+        {
+          "x": 4.49185,
+          "y": 24.100083
+        },
+        {
+          "x": 4.472237,
+          "y": 24.100963
+        },
+        {
+          "x": 4.452691,
+          "y": 24.102805
+        },
+        {
+          "x": 0.252715,
+          "y": 24.602805
+        },
+        {
+          "x": 0.233973,
+          "y": 24.605487
+        },
+        {
+          "x": 0.21538,
+          "y": 24.609053
+        },
+        {
+          "x": 0.196976,
+          "y": 24.613495
+        },
+        {
+          "x": 0.178803,
+          "y": 24.618803
+        },
+        {
+          "x": 0.160901,
+          "y": 24.624965
+        },
+        {
+          "x": 0.143311,
+          "y": 24.631966
+        },
+        {
+          "x": 0.126072,
+          "y": 24.639793
+        },
+        {
+          "x": 0.109223,
+          "y": 24.648426
+        },
+        {
+          "x": 0.092801,
+          "y": 24.657847
+        },
+        {
+          "x": 0.076843,
+          "y": 24.668034
+        },
+        {
+          "x": 0.061386,
+          "y": 24.678965
+        },
+        {
+          "x": 0.046462,
+          "y": 24.690616
+        },
+        {
+          "x": 0.032107,
+          "y": 24.702959
+        },
+        {
+          "x": -1.021257,
+          "y": 25.652959
+        },
+        {
+          "x": -1.035509,
+          "y": 25.666462
+        },
+        {
+          "x": -1.049082,
+          "y": 25.680648
+        },
+        {
+          "x": -1.061942,
+          "y": 25.695482
+        },
+        {
+          "x": -1.074059,
+          "y": 25.71093
+        },
+        {
+          "x": -1.085404,
+          "y": 25.726954
+        },
+        {
+          "x": -1.095948,
+          "y": 25.743515
+        },
+        {
+          "x": -1.105667,
+          "y": 25.760573
+        },
+        {
+          "x": -1.114538,
+          "y": 25.778088
+        },
+        {
+          "x": -1.122538,
+          "y": 25.796017
+        },
+        {
+          "x": -1.129649,
+          "y": 25.814317
+        },
+        {
+          "x": -1.135853,
+          "y": 25.832944
+        },
+        {
+          "x": -1.141136,
+          "y": 25.851853
+        },
+        {
+          "x": -1.145485,
+          "y": 25.870998
+        },
+        {
+          "x": -1.148889,
+          "y": 25.890334
+        },
+        {
+          "x": -1.15134,
+          "y": 25.909813
+        },
+        {
+          "x": -1.152833,
+          "y": 25.929389
+        },
+        {
+          "x": -1.153363,
+          "y": 25.949015
+        },
+        {
+          "x": -1.152929,
+          "y": 25.968643
+        },
+        {
+          "x": -1.151533,
+          "y": 25.988227
+        },
+        {
+          "x": -1.149178,
+          "y": 26.007718
+        },
+        {
+          "x": -1.145869,
+          "y": 26.02707
+        },
+        {
+          "x": -1.141615,
+          "y": 26.046236
+        },
+        {
+          "x": -1.136425,
+          "y": 26.065171
+        },
+        {
+          "x": -1.130312,
+          "y": 26.083828
+        },
+        {
+          "x": -1.123292,
+          "y": 26.102163
+        },
+        {
+          "x": -1.11538,
+          "y": 26.120131
+        },
+        {
+          "x": -1.106596,
+          "y": 26.13769
+        },
+        {
+          "x": -1.096961,
+          "y": 26.154796
+        },
+        {
+          "x": -1.086498,
+          "y": 26.171409
+        },
+        {
+          "x": -1.075233,
+          "y": 26.187488
+        },
+        {
+          "x": -1.063192,
+          "y": 26.202995
+        },
+        {
+          "x": -1.050405,
+          "y": 26.217893
+        },
+        {
+          "x": -1.036902,
+          "y": 26.232145
+        },
+        {
+          "x": -1.022716,
+          "y": 26.245718
+        },
+        {
+          "x": -1.007882,
+          "y": 26.258578
+        },
+        {
+          "x": -0.992434,
+          "y": 26.270695
+        },
+        {
+          "x": -0.97641,
+          "y": 26.28204
+        },
+        {
+          "x": -0.959849,
+          "y": 26.292584
+        },
+        {
+          "x": -0.942791,
+          "y": 26.302303
+        },
+        {
+          "x": -0.925276,
+          "y": 26.311174
+        },
+        {
+          "x": -0.907347,
+          "y": 26.319174
+        },
+        {
+          "x": -0.889047,
+          "y": 26.326285
+        },
+        {
+          "x": -0.87042,
+          "y": 26.332489
+        },
+        {
+          "x": -0.851511,
+          "y": 26.337772
+        },
+        {
+          "x": -0.832366,
+          "y": 26.342121
+        },
+        {
+          "x": -0.81303,
+          "y": 26.345525
+        },
+        {
+          "x": -0.793551,
+          "y": 26.347976
+        },
+        {
+          "x": -0.773975,
+          "y": 26.349469
+        },
+        {
+          "x": -0.754349,
+          "y": 26.349999
+        },
+        {
+          "x": -0.734721,
+          "y": 26.349565
+        },
+        {
+          "x": -0.715137,
+          "y": 26.348169
+        },
+        {
+          "x": -0.695646,
+          "y": 26.345814
+        },
+        {
+          "x": -0.676294,
+          "y": 26.342505
+        },
+        {
+          "x": -0.657128,
+          "y": 26.338251
+        },
+        {
+          "x": -0.638193,
+          "y": 26.333061
+        },
+        {
+          "x": -0.619536,
+          "y": 26.326948
+        },
+        {
+          "x": -0.601201,
+          "y": 26.319928
+        },
+        {
+          "x": -0.583233,
+          "y": 26.312016
+        },
+        {
+          "x": -0.565674,
+          "y": 26.303232
+        },
+        {
+          "x": -0.548568,
+          "y": 26.293597
+        },
+        {
+          "x": -0.531955,
+          "y": 26.283134
+        },
+        {
+          "x": -0.515876,
+          "y": 26.271869
+        },
+        {
+          "x": -0.500369,
+          "y": 26.259828
+        },
+        {
+          "x": -0.485471,
+          "y": 26.247041
+        }
+      ],
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -0.753364,
+          25.95
+        ],
+        [
+          0.30000000000035243,
+          25.00000000000081
+        ],
+        [
+          4.499976,
+          24.5
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 7.269605,
+          "y": 25.87815
+        },
+        {
+          "x": 7.28795,
+          "y": 25.883985
+        },
+        {
+          "x": 7.306554,
+          "y": 25.888932
+        },
+        {
+          "x": 7.325375,
+          "y": 25.892977
+        },
+        {
+          "x": 7.344369,
+          "y": 25.896113
+        },
+        {
+          "x": 7.363492,
+          "y": 25.89833
+        },
+        {
+          "x": 7.3827,
+          "y": 25.899626
+        },
+        {
+          "x": 7.401947,
+          "y": 25.899995
+        },
+        {
+          "x": 7.42119,
+          "y": 25.899438
+        },
+        {
+          "x": 7.440384,
+          "y": 25.897956
+        },
+        {
+          "x": 7.459484,
+          "y": 25.895552
+        },
+        {
+          "x": 7.478446,
+          "y": 25.892232
+        },
+        {
+          "x": 8.478446,
+          "y": 25.692232
+        },
+        {
+          "x": 8.498077,
+          "y": 25.68779
+        },
+        {
+          "x": 8.51746,
+          "y": 25.682365
+        },
+        {
+          "x": 8.536545,
+          "y": 25.675973
+        },
+        {
+          "x": 8.555285,
+          "y": 25.668628
+        },
+        {
+          "x": 8.573631,
+          "y": 25.66035
+        },
+        {
+          "x": 8.591538,
+          "y": 25.65116
+        },
+        {
+          "x": 8.60896,
+          "y": 25.64108
+        },
+        {
+          "x": 8.625852,
+          "y": 25.630137
+        },
+        {
+          "x": 8.642173,
+          "y": 25.618358
+        },
+        {
+          "x": 8.657881,
+          "y": 25.605773
+        },
+        {
+          "x": 14.357782,
+          "y": 20.798633
+        },
+        {
+          "x": 14.372475,
+          "y": 20.785612
+        },
+        {
+          "x": 14.386511,
+          "y": 20.771884
+        },
+        {
+          "x": 14.399857,
+          "y": 20.757485
+        },
+        {
+          "x": 14.41248,
+          "y": 20.742448
+        },
+        {
+          "x": 14.42435,
+          "y": 20.72681
+        },
+        {
+          "x": 14.435439,
+          "y": 20.710608
+        },
+        {
+          "x": 14.445719,
+          "y": 20.693882
+        },
+        {
+          "x": 14.455166,
+          "y": 20.676671
+        },
+        {
+          "x": 14.463758,
+          "y": 20.659018
+        },
+        {
+          "x": 14.471472,
+          "y": 20.640964
+        },
+        {
+          "x": 14.478292,
+          "y": 20.622553
+        },
+        {
+          "x": 14.4842,
+          "y": 20.60383
+        },
+        {
+          "x": 14.489182,
+          "y": 20.58484
+        },
+        {
+          "x": 14.493226,
+          "y": 20.565628
+        },
+        {
+          "x": 14.496323,
+          "y": 20.546241
+        },
+        {
+          "x": 14.498465,
+          "y": 20.526725
+        },
+        {
+          "x": 14.499646,
+          "y": 20.507128
+        },
+        {
+          "x": 14.499865,
+          "y": 20.487496
+        },
+        {
+          "x": 14.49912,
+          "y": 20.467877
+        },
+        {
+          "x": 14.497413,
+          "y": 20.448318
+        },
+        {
+          "x": 14.494749,
+          "y": 20.428867
+        },
+        {
+          "x": 14.491133,
+          "y": 20.40957
+        },
+        {
+          "x": 14.486575,
+          "y": 20.390473
+        },
+        {
+          "x": 14.481086,
+          "y": 20.371624
+        },
+        {
+          "x": 14.474678,
+          "y": 20.353066
+        },
+        {
+          "x": 14.467367,
+          "y": 20.334845
+        },
+        {
+          "x": 14.459171,
+          "y": 20.317004
+        },
+        {
+          "x": 14.450109,
+          "y": 20.299588
+        },
+        {
+          "x": 14.440204,
+          "y": 20.282637
+        },
+        {
+          "x": 14.429479,
+          "y": 20.266192
+        },
+        {
+          "x": 14.41796,
+          "y": 20.250293
+        },
+        {
+          "x": 14.405674,
+          "y": 20.234979
+        },
+        {
+          "x": 14.392653,
+          "y": 20.220286
+        },
+        {
+          "x": 14.378925,
+          "y": 20.20625
+        },
+        {
+          "x": 14.364526,
+          "y": 20.192904
+        },
+        {
+          "x": 14.349489,
+          "y": 20.180281
+        },
+        {
+          "x": 14.333851,
+          "y": 20.168411
+        },
+        {
+          "x": 14.317649,
+          "y": 20.157322
+        },
+        {
+          "x": 14.300923,
+          "y": 20.147042
+        },
+        {
+          "x": 14.283712,
+          "y": 20.137595
+        },
+        {
+          "x": 14.266059,
+          "y": 20.129003
+        },
+        {
+          "x": 14.248005,
+          "y": 20.121289
+        },
+        {
+          "x": 14.229594,
+          "y": 20.114469
+        },
+        {
+          "x": 14.210871,
+          "y": 20.108561
+        },
+        {
+          "x": 14.191881,
+          "y": 20.103579
+        },
+        {
+          "x": 14.172669,
+          "y": 20.099535
+        },
+        {
+          "x": 14.153282,
+          "y": 20.096438
+        },
+        {
+          "x": 14.133766,
+          "y": 20.094296
+        },
+        {
+          "x": 14.114169,
+          "y": 20.093115
+        },
+        {
+          "x": 14.094537,
+          "y": 20.092896
+        },
+        {
+          "x": 14.074918,
+          "y": 20.093641
+        },
+        {
+          "x": 14.055359,
+          "y": 20.095348
+        },
+        {
+          "x": 14.035908,
+          "y": 20.098012
+        },
+        {
+          "x": 14.016611,
+          "y": 20.101628
+        },
+        {
+          "x": 13.997514,
+          "y": 20.106186
+        },
+        {
+          "x": 13.978665,
+          "y": 20.111675
+        },
+        {
+          "x": 13.960107,
+          "y": 20.118083
+        },
+        {
+          "x": 13.941886,
+          "y": 20.125394
+        },
+        {
+          "x": 13.924045,
+          "y": 20.13359
+        },
+        {
+          "x": 13.906629,
+          "y": 20.142652
+        },
+        {
+          "x": 13.889678,
+          "y": 20.152557
+        },
+        {
+          "x": 13.873233,
+          "y": 20.163282
+        },
+        {
+          "x": 13.857334,
+          "y": 20.174801
+        },
+        {
+          "x": 13.84202,
+          "y": 20.187087
+        },
+        {
+          "x": 8.220723,
+          "y": 24.927934
+        },
+        {
+          "x": 7.427883,
+          "y": 25.086502
+        },
+        {
+          "x": 4.630371,
+          "y": 24.12185
+        },
+        {
+          "x": 4.611659,
+          "y": 24.115908
+        },
+        {
+          "x": 4.592678,
+          "y": 24.11089
+        },
+        {
+          "x": 4.573474,
+          "y": 24.10681
+        },
+        {
+          "x": 4.554092,
+          "y": 24.103678
+        },
+        {
+          "x": 4.534581,
+          "y": 24.1015
+        },
+        {
+          "x": 4.514986,
+          "y": 24.100282
+        },
+        {
+          "x": 4.495354,
+          "y": 24.100027
+        },
+        {
+          "x": 4.475734,
+          "y": 24.100735
+        },
+        {
+          "x": 4.456172,
+          "y": 24.102406
+        },
+        {
+          "x": 4.436716,
+          "y": 24.105034
+        },
+        {
+          "x": 4.417412,
+          "y": 24.108614
+        },
+        {
+          "x": 4.398307,
+          "y": 24.113136
+        },
+        {
+          "x": 4.379447,
+          "y": 24.118591
+        },
+        {
+          "x": 4.360877,
+          "y": 24.124965
+        },
+        {
+          "x": 4.342643,
+          "y": 24.132242
+        },
+        {
+          "x": 4.324787,
+          "y": 24.140404
+        },
+        {
+          "x": 4.307354,
+          "y": 24.149434
+        },
+        {
+          "x": 4.290384,
+          "y": 24.159308
+        },
+        {
+          "x": 4.27392,
+          "y": 24.170002
+        },
+        {
+          "x": 4.258,
+          "y": 24.181492
+        },
+        {
+          "x": 4.242663,
+          "y": 24.193749
+        },
+        {
+          "x": 4.227946,
+          "y": 24.206743
+        },
+        {
+          "x": 4.213884,
+          "y": 24.220444
+        },
+        {
+          "x": 4.200512,
+          "y": 24.234819
+        },
+        {
+          "x": 4.18786,
+          "y": 24.249832
+        },
+        {
+          "x": 4.175961,
+          "y": 24.265448
+        },
+        {
+          "x": 4.164843,
+          "y": 24.28163
+        },
+        {
+          "x": 4.154531,
+          "y": 24.298337
+        },
+        {
+          "x": 4.145052,
+          "y": 24.31553
+        },
+        {
+          "x": 4.136428,
+          "y": 24.333167
+        },
+        {
+          "x": 4.12868,
+          "y": 24.351207
+        },
+        {
+          "x": 4.121826,
+          "y": 24.369605
+        },
+        {
+          "x": 4.115884,
+          "y": 24.388317
+        },
+        {
+          "x": 4.110866,
+          "y": 24.407298
+        },
+        {
+          "x": 4.106786,
+          "y": 24.426502
+        },
+        {
+          "x": 4.103654,
+          "y": 24.445884
+        },
+        {
+          "x": 4.101476,
+          "y": 24.465395
+        },
+        {
+          "x": 4.100258,
+          "y": 24.48499
+        },
+        {
+          "x": 4.100003,
+          "y": 24.504622
+        },
+        {
+          "x": 4.100711,
+          "y": 24.524242
+        },
+        {
+          "x": 4.102382,
+          "y": 24.543804
+        },
+        {
+          "x": 4.10501,
+          "y": 24.56326
+        },
+        {
+          "x": 4.10859,
+          "y": 24.582564
+        },
+        {
+          "x": 4.113112,
+          "y": 24.601669
+        },
+        {
+          "x": 4.118567,
+          "y": 24.620529
+        },
+        {
+          "x": 4.124941,
+          "y": 24.639099
+        },
+        {
+          "x": 4.132218,
+          "y": 24.657333
+        },
+        {
+          "x": 4.14038,
+          "y": 24.675189
+        },
+        {
+          "x": 4.14941,
+          "y": 24.692622
+        },
+        {
+          "x": 4.159284,
+          "y": 24.709592
+        },
+        {
+          "x": 4.169978,
+          "y": 24.726056
+        },
+        {
+          "x": 4.181468,
+          "y": 24.741976
+        },
+        {
+          "x": 4.193725,
+          "y": 24.757313
+        },
+        {
+          "x": 4.206719,
+          "y": 24.77203
+        },
+        {
+          "x": 4.22042,
+          "y": 24.786092
+        },
+        {
+          "x": 4.234795,
+          "y": 24.799464
+        },
+        {
+          "x": 4.249808,
+          "y": 24.812116
+        },
+        {
+          "x": 4.265424,
+          "y": 24.824015
+        },
+        {
+          "x": 4.281606,
+          "y": 24.835133
+        },
+        {
+          "x": 4.298313,
+          "y": 24.845445
+        },
+        {
+          "x": 4.315506,
+          "y": 24.854924
+        },
+        {
+          "x": 4.333143,
+          "y": 24.863548
+        },
+        {
+          "x": 4.351183,
+          "y": 24.871296
+        },
+        {
+          "x": 4.369581,
+          "y": 24.87815
+        }
+      ],
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          4.499976,
+          24.5
+        ],
+        [
+          7.400000000000453,
+          25.500000000000817
+        ],
+        [
+          8.400000000000468,
+          25.300000000000814
+        ],
+        [
+          14.099901,
+          20.49286
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 14.928492,
+          "y": 23.648263
+        },
+        {
+          "x": 14.936784,
+          "y": 23.667552
+        },
+        {
+          "x": 14.946076,
+          "y": 23.68638
+        },
+        {
+          "x": 14.956343,
+          "y": 23.704695
+        },
+        {
+          "x": 14.967558,
+          "y": 23.722446
+        },
+        {
+          "x": 14.979688,
+          "y": 23.739583
+        },
+        {
+          "x": 14.992701,
+          "y": 23.756061
+        },
+        {
+          "x": 20.742209,
+          "y": 30.656061
+        },
+        {
+          "x": 20.755143,
+          "y": 30.670831
+        },
+        {
+          "x": 20.768787,
+          "y": 30.684948
+        },
+        {
+          "x": 20.783107,
+          "y": 30.69838
+        },
+        {
+          "x": 20.798068,
+          "y": 30.711092
+        },
+        {
+          "x": 20.813636,
+          "y": 30.723055
+        },
+        {
+          "x": 20.829771,
+          "y": 30.734239
+        },
+        {
+          "x": 20.846436,
+          "y": 30.744619
+        },
+        {
+          "x": 20.863591,
+          "y": 30.754168
+        },
+        {
+          "x": 20.881193,
+          "y": 30.762864
+        },
+        {
+          "x": 20.8992,
+          "y": 30.770685
+        },
+        {
+          "x": 20.91757,
+          "y": 30.777614
+        },
+        {
+          "x": 20.936258,
+          "y": 30.783633
+        },
+        {
+          "x": 20.955218,
+          "y": 30.788728
+        },
+        {
+          "x": 20.974406,
+          "y": 30.792886
+        },
+        {
+          "x": 20.993774,
+          "y": 30.796098
+        },
+        {
+          "x": 21.013277,
+          "y": 30.798356
+        },
+        {
+          "x": 21.032867,
+          "y": 30.799654
+        },
+        {
+          "x": 21.052497,
+          "y": 30.799989
+        },
+        {
+          "x": 21.07212,
+          "y": 30.79936
+        },
+        {
+          "x": 21.091688,
+          "y": 30.79777
+        },
+        {
+          "x": 21.111155,
+          "y": 30.795221
+        },
+        {
+          "x": 21.130474,
+          "y": 30.79172
+        },
+        {
+          "x": 21.149597,
+          "y": 30.787275
+        },
+        {
+          "x": 21.168479,
+          "y": 30.781898
+        },
+        {
+          "x": 21.187075,
+          "y": 30.7756
+        },
+        {
+          "x": 21.205339,
+          "y": 30.768398
+        },
+        {
+          "x": 21.223227,
+          "y": 30.760308
+        },
+        {
+          "x": 21.240698,
+          "y": 30.75135
+        },
+        {
+          "x": 21.257707,
+          "y": 30.741545
+        },
+        {
+          "x": 21.274215,
+          "y": 30.730918
+        },
+        {
+          "x": 21.290182,
+          "y": 30.719493
+        },
+        {
+          "x": 21.305569,
+          "y": 30.707299
+        },
+        {
+          "x": 21.320339,
+          "y": 30.694365
+        },
+        {
+          "x": 21.334456,
+          "y": 30.680721
+        },
+        {
+          "x": 21.347888,
+          "y": 30.666401
+        },
+        {
+          "x": 21.3606,
+          "y": 30.65144
+        },
+        {
+          "x": 21.372563,
+          "y": 30.635872
+        },
+        {
+          "x": 21.383747,
+          "y": 30.619737
+        },
+        {
+          "x": 21.394127,
+          "y": 30.603072
+        },
+        {
+          "x": 21.403676,
+          "y": 30.585917
+        },
+        {
+          "x": 21.412372,
+          "y": 30.568315
+        },
+        {
+          "x": 21.420193,
+          "y": 30.550308
+        },
+        {
+          "x": 21.427122,
+          "y": 30.531938
+        },
+        {
+          "x": 21.433141,
+          "y": 30.51325
+        },
+        {
+          "x": 21.438236,
+          "y": 30.49429
+        },
+        {
+          "x": 21.442394,
+          "y": 30.475102
+        },
+        {
+          "x": 21.445606,
+          "y": 30.455734
+        },
+        {
+          "x": 21.447864,
+          "y": 30.436231
+        },
+        {
+          "x": 21.449162,
+          "y": 30.416641
+        },
+        {
+          "x": 21.449497,
+          "y": 30.397011
+        },
+        {
+          "x": 21.448868,
+          "y": 30.377388
+        },
+        {
+          "x": 21.447278,
+          "y": 30.35782
+        },
+        {
+          "x": 21.444729,
+          "y": 30.338353
+        },
+        {
+          "x": 21.441228,
+          "y": 30.319034
+        },
+        {
+          "x": 21.436783,
+          "y": 30.299911
+        },
+        {
+          "x": 21.431406,
+          "y": 30.281029
+        },
+        {
+          "x": 21.425108,
+          "y": 30.262433
+        },
+        {
+          "x": 21.417906,
+          "y": 30.244169
+        },
+        {
+          "x": 21.409816,
+          "y": 30.226281
+        },
+        {
+          "x": 21.400858,
+          "y": 30.20881
+        },
+        {
+          "x": 21.391053,
+          "y": 30.191801
+        },
+        {
+          "x": 21.380426,
+          "y": 30.175293
+        },
+        {
+          "x": 21.369001,
+          "y": 30.159326
+        },
+        {
+          "x": 21.356807,
+          "y": 30.143939
+        },
+        {
+          "x": 15.647963,
+          "y": 23.29274
+        },
+        {
+          "x": 14.471409,
+          "y": 20.344597
+        },
+        {
+          "x": 14.463687,
+          "y": 20.326547
+        },
+        {
+          "x": 14.455088,
+          "y": 20.308897
+        },
+        {
+          "x": 14.445633,
+          "y": 20.291691
+        },
+        {
+          "x": 14.435346,
+          "y": 20.274969
+        },
+        {
+          "x": 14.424251,
+          "y": 20.258772
+        },
+        {
+          "x": 14.412374,
+          "y": 20.243138
+        },
+        {
+          "x": 14.399744,
+          "y": 20.228107
+        },
+        {
+          "x": 14.386392,
+          "y": 20.213713
+        },
+        {
+          "x": 14.37235,
+          "y": 20.199992
+        },
+        {
+          "x": 14.357651,
+          "y": 20.186976
+        },
+        {
+          "x": 14.342332,
+          "y": 20.174698
+        },
+        {
+          "x": 14.326428,
+          "y": 20.163185
+        },
+        {
+          "x": 14.309979,
+          "y": 20.152467
+        },
+        {
+          "x": 14.293024,
+          "y": 20.142569
+        },
+        {
+          "x": 14.275603,
+          "y": 20.133515
+        },
+        {
+          "x": 14.257759,
+          "y": 20.125327
+        },
+        {
+          "x": 14.239535,
+          "y": 20.118024
+        },
+        {
+          "x": 14.220975,
+          "y": 20.111624
+        },
+        {
+          "x": 14.202122,
+          "y": 20.106142
+        },
+        {
+          "x": 14.183024,
+          "y": 20.101592
+        },
+        {
+          "x": 14.163725,
+          "y": 20.097985
+        },
+        {
+          "x": 14.144273,
+          "y": 20.095329
+        },
+        {
+          "x": 14.124713,
+          "y": 20.09363
+        },
+        {
+          "x": 14.105094,
+          "y": 20.092894
+        },
+        {
+          "x": 14.085463,
+          "y": 20.093121
+        },
+        {
+          "x": 14.065866,
+          "y": 20.094311
+        },
+        {
+          "x": 14.046351,
+          "y": 20.096461
+        },
+        {
+          "x": 14.026965,
+          "y": 20.099566
+        },
+        {
+          "x": 14.007755,
+          "y": 20.103618
+        },
+        {
+          "x": 13.988766,
+          "y": 20.108609
+        },
+        {
+          "x": 13.970046,
+          "y": 20.114525
+        },
+        {
+          "x": 13.951638,
+          "y": 20.121352
+        },
+        {
+          "x": 13.933588,
+          "y": 20.129074
+        },
+        {
+          "x": 13.915938,
+          "y": 20.137673
+        },
+        {
+          "x": 13.898732,
+          "y": 20.147128
+        },
+        {
+          "x": 13.88201,
+          "y": 20.157415
+        },
+        {
+          "x": 13.865813,
+          "y": 20.16851
+        },
+        {
+          "x": 13.850179,
+          "y": 20.180387
+        },
+        {
+          "x": 13.835148,
+          "y": 20.193017
+        },
+        {
+          "x": 13.820754,
+          "y": 20.206369
+        },
+        {
+          "x": 13.807033,
+          "y": 20.220411
+        },
+        {
+          "x": 13.794017,
+          "y": 20.23511
+        },
+        {
+          "x": 13.781739,
+          "y": 20.250429
+        },
+        {
+          "x": 13.770226,
+          "y": 20.266333
+        },
+        {
+          "x": 13.759508,
+          "y": 20.282782
+        },
+        {
+          "x": 13.74961,
+          "y": 20.299737
+        },
+        {
+          "x": 13.740556,
+          "y": 20.317158
+        },
+        {
+          "x": 13.732368,
+          "y": 20.335002
+        },
+        {
+          "x": 13.725065,
+          "y": 20.353226
+        },
+        {
+          "x": 13.718665,
+          "y": 20.371786
+        },
+        {
+          "x": 13.713183,
+          "y": 20.390639
+        },
+        {
+          "x": 13.708633,
+          "y": 20.409737
+        },
+        {
+          "x": 13.705026,
+          "y": 20.429036
+        },
+        {
+          "x": 13.70237,
+          "y": 20.448488
+        },
+        {
+          "x": 13.700671,
+          "y": 20.468048
+        },
+        {
+          "x": 13.699935,
+          "y": 20.487667
+        },
+        {
+          "x": 13.700162,
+          "y": 20.507298
+        },
+        {
+          "x": 13.701352,
+          "y": 20.526895
+        },
+        {
+          "x": 13.703502,
+          "y": 20.54641
+        },
+        {
+          "x": 13.706607,
+          "y": 20.565796
+        },
+        {
+          "x": 13.710659,
+          "y": 20.585006
+        },
+        {
+          "x": 13.71565,
+          "y": 20.603995
+        },
+        {
+          "x": 13.721566,
+          "y": 20.622715
+        },
+        {
+          "x": 13.728393,
+          "y": 20.641123
+        }
+      ],
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          14.099901,
+          20.49286
+        ],
+        [
+          15.300000000000566,
+          23.50000000000079
+        ],
+        [
+          21.049508,
+          30.4
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "PACK_BAT",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -13.451858,
+          "y": -25.424185
+        },
+        {
+          "x": -15.44017,
+          "y": -25.871769
+        },
+        {
+          "x": -15.464237,
+          "y": -25.876569
+        },
+        {
+          "x": -15.488511,
+          "y": -25.880183
+        },
+        {
+          "x": -15.512933,
+          "y": -25.882601
+        },
+        {
+          "x": -15.537444,
+          "y": -25.883818
+        },
+        {
+          "x": -15.561985,
+          "y": -25.883831
+        },
+        {
+          "x": -15.586497,
+          "y": -25.882639
+        },
+        {
+          "x": -15.610922,
+          "y": -25.880247
+        },
+        {
+          "x": -15.635199,
+          "y": -25.876658
+        },
+        {
+          "x": -15.659271,
+          "y": -25.871883
+        },
+        {
+          "x": -15.68308,
+          "y": -25.865933
+        },
+        {
+          "x": -15.706568,
+          "y": -25.858821
+        },
+        {
+          "x": -15.729679,
+          "y": -25.850565
+        },
+        {
+          "x": -15.752357,
+          "y": -25.841186
+        },
+        {
+          "x": -15.774548,
+          "y": -25.830705
+        },
+        {
+          "x": -15.796197,
+          "y": -25.819147
+        },
+        {
+          "x": -15.817254,
+          "y": -25.806542
+        },
+        {
+          "x": -15.837666,
+          "y": -25.792918
+        },
+        {
+          "x": -15.857386,
+          "y": -25.778309
+        },
+        {
+          "x": -15.876364,
+          "y": -25.76275
+        },
+        {
+          "x": -15.894557,
+          "y": -25.746279
+        },
+        {
+          "x": -15.911919,
+          "y": -25.728935
+        },
+        {
+          "x": -15.928409,
+          "y": -25.710759
+        },
+        {
+          "x": -15.943988,
+          "y": -25.691797
+        },
+        {
+          "x": -15.958618,
+          "y": -25.672093
+        },
+        {
+          "x": -15.972263,
+          "y": -25.651695
+        },
+        {
+          "x": -15.98489,
+          "y": -25.630652
+        },
+        {
+          "x": -15.99647,
+          "y": -25.609014
+        },
+        {
+          "x": -16.006975,
+          "y": -25.586835
+        },
+        {
+          "x": -16.016378,
+          "y": -25.564167
+        },
+        {
+          "x": -16.024658,
+          "y": -25.541064
+        },
+        {
+          "x": -16.031794,
+          "y": -25.517583
+        },
+        {
+          "x": -16.03777,
+          "y": -25.493781
+        },
+        {
+          "x": -16.04257,
+          "y": -25.469714
+        },
+        {
+          "x": -16.046184,
+          "y": -25.44544
+        },
+        {
+          "x": -16.048602,
+          "y": -25.421018
+        },
+        {
+          "x": -16.049819,
+          "y": -25.396507
+        },
+        {
+          "x": -16.049832,
+          "y": -25.371966
+        },
+        {
+          "x": -16.04864,
+          "y": -25.347454
+        },
+        {
+          "x": -16.046248,
+          "y": -25.323029
+        },
+        {
+          "x": -16.042659,
+          "y": -25.298752
+        },
+        {
+          "x": -16.037884,
+          "y": -25.27468
+        },
+        {
+          "x": -16.031934,
+          "y": -25.250871
+        },
+        {
+          "x": -16.024822,
+          "y": -25.227383
+        },
+        {
+          "x": -16.016566,
+          "y": -25.204272
+        },
+        {
+          "x": -16.007187,
+          "y": -25.181594
+        },
+        {
+          "x": -15.996706,
+          "y": -25.159403
+        },
+        {
+          "x": -15.985148,
+          "y": -25.137754
+        },
+        {
+          "x": -15.972543,
+          "y": -25.116697
+        },
+        {
+          "x": -15.958919,
+          "y": -25.096285
+        },
+        {
+          "x": -15.94431,
+          "y": -25.076565
+        },
+        {
+          "x": -15.928751,
+          "y": -25.057587
+        },
+        {
+          "x": -15.91228,
+          "y": -25.039394
+        },
+        {
+          "x": -15.894936,
+          "y": -25.022032
+        },
+        {
+          "x": -15.87676,
+          "y": -25.005542
+        },
+        {
+          "x": -15.857798,
+          "y": -24.989963
+        },
+        {
+          "x": -15.838094,
+          "y": -24.975333
+        },
+        {
+          "x": -15.817696,
+          "y": -24.961688
+        },
+        {
+          "x": -15.796653,
+          "y": -24.949061
+        },
+        {
+          "x": -15.775015,
+          "y": -24.937481
+        },
+        {
+          "x": -15.752836,
+          "y": -24.926976
+        },
+        {
+          "x": -15.730168,
+          "y": -24.917573
+        },
+        {
+          "x": -15.707065,
+          "y": -24.909293
+        },
+        {
+          "x": -15.683584,
+          "y": -24.902157
+        },
+        {
+          "x": -15.659782,
+          "y": -24.896181
+        },
+        {
+          "x": -13.509806,
+          "y": -24.412206
+        },
+        {
+          "x": -13.485666,
+          "y": -24.407393
+        },
+        {
+          "x": -13.461319,
+          "y": -24.403774
+        },
+        {
+          "x": -13.436822,
+          "y": -24.401358
+        },
+        {
+          "x": -13.412237,
+          "y": -24.40015
+        },
+        {
+          "x": -13.387622,
+          "y": -24.400153
+        },
+        {
+          "x": -13.363037,
+          "y": -24.401368
+        },
+        {
+          "x": -13.338542,
+          "y": -24.403791
+        },
+        {
+          "x": -13.314195,
+          "y": -24.407417
+        },
+        {
+          "x": -13.290057,
+          "y": -24.412237
+        },
+        {
+          "x": -13.266185,
+          "y": -24.418239
+        },
+        {
+          "x": -13.242637,
+          "y": -24.425409
+        },
+        {
+          "x": -13.219471,
+          "y": -24.433728
+        },
+        {
+          "x": -13.196742,
+          "y": -24.443178
+        },
+        {
+          "x": -10.162764,
+          "y": -25.793115
+        },
+        {
+          "x": -10.140594,
+          "y": -25.803639
+        },
+        {
+          "x": -10.118966,
+          "y": -25.815238
+        },
+        {
+          "x": -10.097934,
+          "y": -25.827884
+        },
+        {
+          "x": -10.077548,
+          "y": -25.841547
+        },
+        {
+          "x": -10.057857,
+          "y": -25.856193
+        },
+        {
+          "x": -10.038908,
+          "y": -25.871789
+        },
+        {
+          "x": -10.020747,
+          "y": -25.888295
+        },
+        {
+          "x": -10.003418,
+          "y": -25.905672
+        },
+        {
+          "x": -9.986962,
+          "y": -25.923879
+        },
+        {
+          "x": -9.97142,
+          "y": -25.942871
+        },
+        {
+          "x": -9.956828,
+          "y": -25.962603
+        },
+        {
+          "x": -9.943222,
+          "y": -25.983028
+        },
+        {
+          "x": -9.930635,
+          "y": -26.004095
+        },
+        {
+          "x": -9.919097,
+          "y": -26.025755
+        },
+        {
+          "x": -9.908635,
+          "y": -26.047954
+        },
+        {
+          "x": -9.899275,
+          "y": -26.07064
+        },
+        {
+          "x": -9.89104,
+          "y": -26.093759
+        },
+        {
+          "x": -9.883948,
+          "y": -26.117253
+        },
+        {
+          "x": -9.878019,
+          "y": -26.141067
+        },
+        {
+          "x": -9.873264,
+          "y": -26.165143
+        },
+        {
+          "x": -9.869697,
+          "y": -26.189424
+        },
+        {
+          "x": -9.867326,
+          "y": -26.21385
+        },
+        {
+          "x": -9.866156,
+          "y": -26.238364
+        },
+        {
+          "x": -9.86619,
+          "y": -26.262905
+        },
+        {
+          "x": -9.867429,
+          "y": -26.287415
+        },
+        {
+          "x": -9.869868,
+          "y": -26.311835
+        },
+        {
+          "x": -9.873503,
+          "y": -26.336105
+        },
+        {
+          "x": -9.878324,
+          "y": -26.360168
+        },
+        {
+          "x": -9.88432,
+          "y": -26.383965
+        },
+        {
+          "x": -9.891477,
+          "y": -26.40744
+        },
+        {
+          "x": -9.899777,
+          "y": -26.430535
+        },
+        {
+          "x": -9.9092,
+          "y": -26.453195
+        },
+        {
+          "x": -9.919724,
+          "y": -26.475365
+        },
+        {
+          "x": -9.931323,
+          "y": -26.496993
+        },
+        {
+          "x": -9.943969,
+          "y": -26.518025
+        },
+        {
+          "x": -9.957632,
+          "y": -26.538411
+        },
+        {
+          "x": -9.972278,
+          "y": -26.558102
+        },
+        {
+          "x": -9.987874,
+          "y": -26.577051
+        },
+        {
+          "x": -10.00438,
+          "y": -26.595212
+        },
+        {
+          "x": -10.021757,
+          "y": -26.612541
+        },
+        {
+          "x": -10.039964,
+          "y": -26.628997
+        },
+        {
+          "x": -10.058956,
+          "y": -26.644539
+        },
+        {
+          "x": -10.078688,
+          "y": -26.659131
+        },
+        {
+          "x": -10.099113,
+          "y": -26.672737
+        },
+        {
+          "x": -10.12018,
+          "y": -26.685324
+        },
+        {
+          "x": -10.14184,
+          "y": -26.696862
+        },
+        {
+          "x": -10.164039,
+          "y": -26.707324
+        },
+        {
+          "x": -10.186725,
+          "y": -26.716684
+        },
+        {
+          "x": -10.209844,
+          "y": -26.724919
+        },
+        {
+          "x": -10.233338,
+          "y": -26.732011
+        },
+        {
+          "x": -10.257152,
+          "y": -26.73794
+        },
+        {
+          "x": -10.281228,
+          "y": -26.742695
+        },
+        {
+          "x": -10.305509,
+          "y": -26.746262
+        },
+        {
+          "x": -10.329935,
+          "y": -26.748633
+        },
+        {
+          "x": -10.354449,
+          "y": -26.749803
+        },
+        {
+          "x": -10.37899,
+          "y": -26.749769
+        },
+        {
+          "x": -10.4035,
+          "y": -26.74853
+        },
+        {
+          "x": -10.42792,
+          "y": -26.746091
+        },
+        {
+          "x": -10.45219,
+          "y": -26.742456
+        },
+        {
+          "x": -10.476253,
+          "y": -26.737635
+        },
+        {
+          "x": -10.50005,
+          "y": -26.731639
+        },
+        {
+          "x": -10.523525,
+          "y": -26.724482
+        },
+        {
+          "x": -10.54662,
+          "y": -26.716182
+        },
+        {
+          "x": -10.56928,
+          "y": -26.706759
+        }
+      ],
+      "nominal_width_mm": 1,
+      "path_mm": [
+        [
+          -10.366022,
+          -26.249937
+        ],
+        [
+          -13.399999999999842,
+          -24.8999999999999
+        ],
+        [
+          -15.549976,
+          -25.383975
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -1.287781,
+          "y": -21.834082
+        },
+        {
+          "x": -1.299366,
+          "y": -21.829405
+        },
+        {
+          "x": -1.310702,
+          "y": -21.824154
+        },
+        {
+          "x": -1.321762,
+          "y": -21.818344
+        },
+        {
+          "x": -1.332519,
+          "y": -21.811988
+        },
+        {
+          "x": -1.342944,
+          "y": -21.805103
+        },
+        {
+          "x": -1.353012,
+          "y": -21.797705
+        },
+        {
+          "x": -1.362698,
+          "y": -21.789814
+        },
+        {
+          "x": -1.995732,
+          "y": -21.247214
+        },
+        {
+          "x": -5.207572,
+          "y": -21.149885
+        },
+        {
+          "x": -5.219873,
+          "y": -21.149209
+        },
+        {
+          "x": -5.232125,
+          "y": -21.147927
+        },
+        {
+          "x": -5.244299,
+          "y": -21.146044
+        },
+        {
+          "x": -5.256365,
+          "y": -21.143563
+        },
+        {
+          "x": -5.268295,
+          "y": -21.140491
+        },
+        {
+          "x": -5.280059,
+          "y": -21.136835
+        },
+        {
+          "x": -5.291628,
+          "y": -21.132603
+        },
+        {
+          "x": -5.302975,
+          "y": -21.127807
+        },
+        {
+          "x": -5.314072,
+          "y": -21.122458
+        },
+        {
+          "x": -5.324892,
+          "y": -21.116569
+        },
+        {
+          "x": -5.335408,
+          "y": -21.110154
+        },
+        {
+          "x": -5.345596,
+          "y": -21.103228
+        },
+        {
+          "x": -11.96544,
+          "y": -16.360653
+        },
+        {
+          "x": -14.138092,
+          "y": -16.644043
+        },
+        {
+          "x": -15.293875,
+          "y": -17.088575
+        },
+        {
+          "x": -15.448214,
+          "y": -17.628764
+        },
+        {
+          "x": -15.150323,
+          "y": -23.487305
+        },
+        {
+          "x": -15.150001,
+          "y": -23.499182
+        },
+        {
+          "x": -15.150245,
+          "y": -23.511062
+        },
+        {
+          "x": -15.151053,
+          "y": -23.522917
+        },
+        {
+          "x": -15.152423,
+          "y": -23.53472
+        },
+        {
+          "x": -15.154352,
+          "y": -23.546444
+        },
+        {
+          "x": -15.156836,
+          "y": -23.558064
+        },
+        {
+          "x": -15.15987,
+          "y": -23.569552
+        },
+        {
+          "x": -15.163446,
+          "y": -23.580884
+        },
+        {
+          "x": -15.167556,
+          "y": -23.592032
+        },
+        {
+          "x": -15.172192,
+          "y": -23.602973
+        },
+        {
+          "x": -15.177342,
+          "y": -23.613681
+        },
+        {
+          "x": -15.182995,
+          "y": -23.624132
+        },
+        {
+          "x": -15.189138,
+          "y": -23.634303
+        },
+        {
+          "x": -15.195758,
+          "y": -23.644171
+        },
+        {
+          "x": -16.32967,
+          "y": -25.250545
+        },
+        {
+          "x": -16.175823,
+          "y": -25.865932
+        },
+        {
+          "x": -12.98307,
+          "y": -28.768435
+        },
+        {
+          "x": -12.644523,
+          "y": -28.836144
+        },
+        {
+          "x": -11.15,
+          "y": -27.957013
+        },
+        {
+          "x": -11.15,
+          "y": -27.2
+        },
+        {
+          "x": -11.149699,
+          "y": -27.187733
+        },
+        {
+          "x": -11.148796,
+          "y": -27.175496
+        },
+        {
+          "x": -11.147294,
+          "y": -27.163317
+        },
+        {
+          "x": -11.145196,
+          "y": -27.151227
+        },
+        {
+          "x": -11.142508,
+          "y": -27.139255
+        },
+        {
+          "x": -11.139235,
+          "y": -27.127429
+        },
+        {
+          "x": -11.135386,
+          "y": -27.115778
+        },
+        {
+          "x": -11.13097,
+          "y": -27.104329
+        },
+        {
+          "x": -11.125997,
+          "y": -27.093111
+        },
+        {
+          "x": -11.12048,
+          "y": -27.082151
+        },
+        {
+          "x": -11.114432,
+          "y": -27.071474
+        },
+        {
+          "x": -11.107867,
+          "y": -27.061107
+        },
+        {
+          "x": -11.100802,
+          "y": -27.051075
+        },
+        {
+          "x": -11.093253,
+          "y": -27.041402
+        },
+        {
+          "x": -11.085238,
+          "y": -27.03211
+        },
+        {
+          "x": -11.076777,
+          "y": -27.023223
+        },
+        {
+          "x": -11.06789,
+          "y": -27.014762
+        },
+        {
+          "x": -11.058598,
+          "y": -27.006747
+        },
+        {
+          "x": -11.048925,
+          "y": -26.999198
+        },
+        {
+          "x": -11.038893,
+          "y": -26.992133
+        },
+        {
+          "x": -11.028526,
+          "y": -26.985568
+        },
+        {
+          "x": -11.017849,
+          "y": -26.97952
+        },
+        {
+          "x": -11.006889,
+          "y": -26.974003
+        },
+        {
+          "x": -10.995671,
+          "y": -26.96903
+        },
+        {
+          "x": -10.984222,
+          "y": -26.964614
+        },
+        {
+          "x": -10.972571,
+          "y": -26.960765
+        },
+        {
+          "x": -10.960745,
+          "y": -26.957492
+        },
+        {
+          "x": -10.948773,
+          "y": -26.954804
+        },
+        {
+          "x": -10.936683,
+          "y": -26.952706
+        },
+        {
+          "x": -10.924504,
+          "y": -26.951204
+        },
+        {
+          "x": -10.912267,
+          "y": -26.950301
+        },
+        {
+          "x": -10.9,
+          "y": -26.95
+        },
+        {
+          "x": -10.887733,
+          "y": -26.950301
+        },
+        {
+          "x": -10.875496,
+          "y": -26.951204
+        },
+        {
+          "x": -10.863317,
+          "y": -26.952706
+        },
+        {
+          "x": -10.851227,
+          "y": -26.954804
+        },
+        {
+          "x": -10.839255,
+          "y": -26.957492
+        },
+        {
+          "x": -10.827429,
+          "y": -26.960765
+        },
+        {
+          "x": -10.815778,
+          "y": -26.964614
+        },
+        {
+          "x": -10.804329,
+          "y": -26.96903
+        },
+        {
+          "x": -10.793111,
+          "y": -26.974003
+        },
+        {
+          "x": -10.782151,
+          "y": -26.97952
+        },
+        {
+          "x": -10.771474,
+          "y": -26.985568
+        },
+        {
+          "x": -10.761107,
+          "y": -26.992133
+        },
+        {
+          "x": -10.751075,
+          "y": -26.999198
+        },
+        {
+          "x": -10.741402,
+          "y": -27.006747
+        },
+        {
+          "x": -10.73211,
+          "y": -27.014762
+        },
+        {
+          "x": -10.723223,
+          "y": -27.023223
+        },
+        {
+          "x": -10.714762,
+          "y": -27.03211
+        },
+        {
+          "x": -10.706747,
+          "y": -27.041402
+        },
+        {
+          "x": -10.699198,
+          "y": -27.051075
+        },
+        {
+          "x": -10.692133,
+          "y": -27.061107
+        },
+        {
+          "x": -10.685568,
+          "y": -27.071474
+        },
+        {
+          "x": -10.67952,
+          "y": -27.082151
+        },
+        {
+          "x": -10.674003,
+          "y": -27.093111
+        },
+        {
+          "x": -10.66903,
+          "y": -27.104329
+        },
+        {
+          "x": -10.664614,
+          "y": -27.115778
+        },
+        {
+          "x": -10.660765,
+          "y": -27.127429
+        },
+        {
+          "x": -10.657492,
+          "y": -27.139255
+        },
+        {
+          "x": -10.654804,
+          "y": -27.151227
+        },
+        {
+          "x": -10.652706,
+          "y": -27.163317
+        },
+        {
+          "x": -10.651204,
+          "y": -27.175496
+        },
+        {
+          "x": -10.650301,
+          "y": -27.187733
+        },
+        {
+          "x": -10.65,
+          "y": -27.2
+        },
+        {
+          "x": -10.65,
+          "y": -28.1
+        },
+        {
+          "x": -10.650306,
+          "y": -28.112365
+        },
+        {
+          "x": -10.651223,
+          "y": -28.124699
+        },
+        {
+          "x": -10.652749,
+          "y": -28.136974
+        },
+        {
+          "x": -10.654881,
+          "y": -28.149157
+        },
+        {
+          "x": -10.657612,
+          "y": -28.161221
+        },
+        {
+          "x": -10.660936,
+          "y": -28.173134
+        },
+        {
+          "x": -10.664846,
+          "y": -28.184868
+        },
+        {
+          "x": -10.669331,
+          "y": -28.196395
+        },
+        {
+          "x": -10.674381,
+          "y": -28.207686
+        },
+        {
+          "x": -10.679984,
+          "y": -28.218713
+        },
+        {
+          "x": -10.686124,
+          "y": -28.22945
+        },
+        {
+          "x": -10.692789,
+          "y": -28.239869
+        },
+        {
+          "x": -10.69996,
+          "y": -28.249947
+        },
+        {
+          "x": -10.707621,
+          "y": -28.259657
+        },
+        {
+          "x": -10.715753,
+          "y": -28.268977
+        },
+        {
+          "x": -10.724336,
+          "y": -28.277883
+        },
+        {
+          "x": -10.733349,
+          "y": -28.286353
+        },
+        {
+          "x": -10.74277,
+          "y": -28.294368
+        },
+        {
+          "x": -10.752576,
+          "y": -28.301906
+        },
+        {
+          "x": -10.762742,
+          "y": -28.308951
+        },
+        {
+          "x": -10.773245,
+          "y": -28.315484
+        },
+        {
+          "x": -12.473245,
+          "y": -29.315484
+        },
+        {
+          "x": -12.483865,
+          "y": -29.321388
+        },
+        {
+          "x": -12.494759,
+          "y": -29.326769
+        },
+        {
+          "x": -12.505902,
+          "y": -29.331615
+        },
+        {
+          "x": -12.517267,
+          "y": -29.335914
+        },
+        {
+          "x": -12.528827,
+          "y": -29.339655
+        },
+        {
+          "x": -12.540556,
+          "y": -29.34283
+        },
+        {
+          "x": -12.552425,
+          "y": -29.345431
+        },
+        {
+          "x": -12.564406,
+          "y": -29.347453
+        },
+        {
+          "x": -12.576472,
+          "y": -29.34889
+        },
+        {
+          "x": -12.588593,
+          "y": -29.34974
+        },
+        {
+          "x": -12.600741,
+          "y": -29.349999
+        },
+        {
+          "x": -12.612887,
+          "y": -29.349668
+        },
+        {
+          "x": -12.625003,
+          "y": -29.348747
+        },
+        {
+          "x": -12.63706,
+          "y": -29.347238
+        },
+        {
+          "x": -12.649029,
+          "y": -29.345145
+        },
+        {
+          "x": -13.149029,
+          "y": -29.245145
+        },
+        {
+          "x": -13.161009,
+          "y": -29.242442
+        },
+        {
+          "x": -13.172841,
+          "y": -29.239153
+        },
+        {
+          "x": -13.184498,
+          "y": -29.235287
+        },
+        {
+          "x": -13.195951,
+          "y": -29.230854
+        },
+        {
+          "x": -13.207172,
+          "y": -29.225863
+        },
+        {
+          "x": -13.218135,
+          "y": -29.220327
+        },
+        {
+          "x": -13.228812,
+          "y": -29.21426
+        },
+        {
+          "x": -13.239179,
+          "y": -29.207676
+        },
+        {
+          "x": -13.24921,
+          "y": -29.20059
+        },
+        {
+          "x": -13.258881,
+          "y": -29.19302
+        },
+        {
+          "x": -13.268168,
+          "y": -29.184985
+        },
+        {
+          "x": -16.568168,
+          "y": -26.184985
+        },
+        {
+          "x": -16.577027,
+          "y": -26.176526
+        },
+        {
+          "x": -16.585461,
+          "y": -26.167643
+        },
+        {
+          "x": -16.59345,
+          "y": -26.158358
+        },
+        {
+          "x": -16.600974,
+          "y": -26.148693
+        },
+        {
+          "x": -16.608016,
+          "y": -26.13867
+        },
+        {
+          "x": -16.614558,
+          "y": -26.128315
+        },
+        {
+          "x": -16.620586,
+          "y": -26.117652
+        },
+        {
+          "x": -16.626084,
+          "y": -26.106706
+        },
+        {
+          "x": -16.631039,
+          "y": -26.095505
+        },
+        {
+          "x": -16.635439,
+          "y": -26.084074
+        },
+        {
+          "x": -16.639275,
+          "y": -26.072441
+        },
+        {
+          "x": -16.642536,
+          "y": -26.060634
+        },
+        {
+          "x": -16.842536,
+          "y": -25.260634
+        },
+        {
+          "x": -16.845154,
+          "y": -25.248986
+        },
+        {
+          "x": -16.847213,
+          "y": -25.237227
+        },
+        {
+          "x": -16.848708,
+          "y": -25.225382
+        },
+        {
+          "x": -16.849636,
+          "y": -25.21348
+        },
+        {
+          "x": -16.849995,
+          "y": -25.201547
+        },
+        {
+          "x": -16.849784,
+          "y": -25.189611
+        },
+        {
+          "x": -16.849003,
+          "y": -25.177698
+        },
+        {
+          "x": -16.847655,
+          "y": -25.165836
+        },
+        {
+          "x": -16.845741,
+          "y": -25.154052
+        },
+        {
+          "x": -16.843268,
+          "y": -25.142373
+        },
+        {
+          "x": -16.840239,
+          "y": -25.130825
+        },
+        {
+          "x": -16.836663,
+          "y": -25.119435
+        },
+        {
+          "x": -16.832547,
+          "y": -25.108229
+        },
+        {
+          "x": -16.827901,
+          "y": -25.097232
+        },
+        {
+          "x": -16.822735,
+          "y": -25.086469
+        },
+        {
+          "x": -16.817061,
+          "y": -25.075965
+        },
+        {
+          "x": -16.810892,
+          "y": -25.065744
+        },
+        {
+          "x": -16.804242,
+          "y": -25.055829
+        },
+        {
+          "x": -15.654065,
+          "y": -23.426411
+        },
+        {
+          "x": -15.949677,
+          "y": -17.612695
+        },
+        {
+          "x": -15.949998,
+          "y": -17.600947
+        },
+        {
+          "x": -15.949766,
+          "y": -17.589197
+        },
+        {
+          "x": -15.948983,
+          "y": -17.57747
+        },
+        {
+          "x": -15.947649,
+          "y": -17.565794
+        },
+        {
+          "x": -15.945768,
+          "y": -17.554193
+        },
+        {
+          "x": -15.943343,
+          "y": -17.542693
+        },
+        {
+          "x": -15.940381,
+          "y": -17.53132
+        },
+        {
+          "x": -15.740381,
+          "y": -16.83132
+        },
+        {
+          "x": -15.736752,
+          "y": -16.819699
+        },
+        {
+          "x": -15.732563,
+          "y": -16.808269
+        },
+        {
+          "x": -15.727821,
+          "y": -16.797056
+        },
+        {
+          "x": -15.72254,
+          "y": -16.786087
+        },
+        {
+          "x": -15.71673,
+          "y": -16.775388
+        },
+        {
+          "x": -15.710407,
+          "y": -16.764985
+        },
+        {
+          "x": -15.703585,
+          "y": -16.754902
+        },
+        {
+          "x": -15.69628,
+          "y": -16.745164
+        },
+        {
+          "x": -15.688509,
+          "y": -16.735792
+        },
+        {
+          "x": -15.680292,
+          "y": -16.72681
+        },
+        {
+          "x": -15.671647,
+          "y": -16.718238
+        },
+        {
+          "x": -15.662595,
+          "y": -16.710097
+        },
+        {
+          "x": -15.653157,
+          "y": -16.702407
+        },
+        {
+          "x": -15.643356,
+          "y": -16.695185
+        },
+        {
+          "x": -15.633215,
+          "y": -16.688449
+        },
+        {
+          "x": -15.622759,
+          "y": -16.682215
+        },
+        {
+          "x": -15.612011,
+          "y": -16.676497
+        },
+        {
+          "x": -15.600998,
+          "y": -16.671309
+        },
+        {
+          "x": -15.589745,
+          "y": -16.666664
+        },
+        {
+          "x": -14.289745,
+          "y": -16.166664
+        },
+        {
+          "x": -14.278566,
+          "y": -16.162666
+        },
+        {
+          "x": -14.267209,
+          "y": -16.159204
+        },
+        {
+          "x": -14.255701,
+          "y": -16.156284
+        },
+        {
+          "x": -14.244068,
+          "y": -16.153915
+        },
+        {
+          "x": -14.232335,
+          "y": -16.1521
+        },
+        {
+          "x": -11.932335,
+          "y": -15.8521
+        },
+        {
+          "x": -11.919882,
+          "y": -15.850792
+        },
+        {
+          "x": -11.907379,
+          "y": -15.850109
+        },
+        {
+          "x": -11.894858,
+          "y": -15.850053
+        },
+        {
+          "x": -11.88235,
+          "y": -15.850624
+        },
+        {
+          "x": -11.869885,
+          "y": -15.85182
+        },
+        {
+          "x": -11.857497,
+          "y": -15.85364
+        },
+        {
+          "x": -11.845215,
+          "y": -15.856077
+        },
+        {
+          "x": -11.83307,
+          "y": -15.859126
+        },
+        {
+          "x": -11.821094,
+          "y": -15.862779
+        },
+        {
+          "x": -11.809315,
+          "y": -15.867027
+        },
+        {
+          "x": -11.797764,
+          "y": -15.87186
+        },
+        {
+          "x": -11.786469,
+          "y": -15.877265
+        },
+        {
+          "x": -11.775459,
+          "y": -15.883229
+        },
+        {
+          "x": -11.764762,
+          "y": -15.889737
+        },
+        {
+          "x": -11.754404,
+          "y": -15.896772
+        },
+        {
+          "x": -5.11631,
+          "y": -20.652421
+        },
+        {
+          "x": -1.892428,
+          "y": -20.750115
+        },
+        {
+          "x": -1.880334,
+          "y": -20.750775
+        },
+        {
+          "x": -1.868286,
+          "y": -20.75202
+        },
+        {
+          "x": -1.856313,
+          "y": -20.753847
+        },
+        {
+          "x": -1.844442,
+          "y": -20.756252
+        },
+        {
+          "x": -1.832702,
+          "y": -20.759228
+        },
+        {
+          "x": -1.821119,
+          "y": -20.762771
+        },
+        {
+          "x": -1.809722,
+          "y": -20.766869
+        },
+        {
+          "x": -1.798537,
+          "y": -20.771515
+        },
+        {
+          "x": -1.787589,
+          "y": -20.776698
+        },
+        {
+          "x": -1.776906,
+          "y": -20.782404
+        },
+        {
+          "x": -1.766512,
+          "y": -20.788622
+        },
+        {
+          "x": -1.756431,
+          "y": -20.795335
+        },
+        {
+          "x": -1.746686,
+          "y": -20.802529
+        },
+        {
+          "x": -1.737302,
+          "y": -20.810186
+        },
+        {
+          "x": -1.070849,
+          "y": -21.381432
+        },
+        {
+          "x": 2.087781,
+          "y": -22.565918
+        },
+        {
+          "x": 2.099161,
+          "y": -22.570507
+        },
+        {
+          "x": 2.110302,
+          "y": -22.575649
+        },
+        {
+          "x": 2.121178,
+          "y": -22.581331
+        },
+        {
+          "x": 2.131761,
+          "y": -22.587541
+        },
+        {
+          "x": 2.142028,
+          "y": -22.594262
+        },
+        {
+          "x": 2.151952,
+          "y": -22.601479
+        },
+        {
+          "x": 2.161509,
+          "y": -22.609174
+        },
+        {
+          "x": 2.170678,
+          "y": -22.617328
+        },
+        {
+          "x": 2.179436,
+          "y": -22.625923
+        },
+        {
+          "x": 2.187761,
+          "y": -22.634937
+        },
+        {
+          "x": 2.195635,
+          "y": -22.644349
+        },
+        {
+          "x": 2.203036,
+          "y": -22.654136
+        },
+        {
+          "x": 2.209949,
+          "y": -22.664274
+        },
+        {
+          "x": 2.216356,
+          "y": -22.67474
+        },
+        {
+          "x": 2.222241,
+          "y": -22.685506
+        },
+        {
+          "x": 2.227592,
+          "y": -22.696549
+        },
+        {
+          "x": 2.232394,
+          "y": -22.707841
+        },
+        {
+          "x": 2.236636,
+          "y": -22.719355
+        },
+        {
+          "x": 2.240308,
+          "y": -22.731064
+        },
+        {
+          "x": 2.243401,
+          "y": -22.742938
+        },
+        {
+          "x": 2.245907,
+          "y": -22.75495
+        },
+        {
+          "x": 2.247822,
+          "y": -22.76707
+        },
+        {
+          "x": 2.249139,
+          "y": -22.77927
+        },
+        {
+          "x": 2.249856,
+          "y": -22.79152
+        },
+        {
+          "x": 2.249971,
+          "y": -22.80379
+        },
+        {
+          "x": 2.249484,
+          "y": -22.816051
+        },
+        {
+          "x": 2.248396,
+          "y": -22.828273
+        },
+        {
+          "x": 2.24671,
+          "y": -22.840427
+        },
+        {
+          "x": 2.244429,
+          "y": -22.852484
+        },
+        {
+          "x": 2.241559,
+          "y": -22.864414
+        },
+        {
+          "x": 2.238108,
+          "y": -22.876189
+        },
+        {
+          "x": 2.234082,
+          "y": -22.887781
+        },
+        {
+          "x": 2.229493,
+          "y": -22.899161
+        },
+        {
+          "x": 2.224351,
+          "y": -22.910302
+        },
+        {
+          "x": 2.218669,
+          "y": -22.921178
+        },
+        {
+          "x": 2.212459,
+          "y": -22.931761
+        },
+        {
+          "x": 2.205738,
+          "y": -22.942028
+        },
+        {
+          "x": 2.198521,
+          "y": -22.951952
+        },
+        {
+          "x": 2.190826,
+          "y": -22.961509
+        },
+        {
+          "x": 2.182672,
+          "y": -22.970678
+        },
+        {
+          "x": 2.174077,
+          "y": -22.979436
+        },
+        {
+          "x": 2.165063,
+          "y": -22.987761
+        },
+        {
+          "x": 2.155651,
+          "y": -22.995635
+        },
+        {
+          "x": 2.145864,
+          "y": -23.003036
+        },
+        {
+          "x": 2.135726,
+          "y": -23.009949
+        },
+        {
+          "x": 2.12526,
+          "y": -23.016356
+        },
+        {
+          "x": 2.114494,
+          "y": -23.022241
+        },
+        {
+          "x": 2.103451,
+          "y": -23.027592
+        },
+        {
+          "x": 2.092159,
+          "y": -23.032394
+        },
+        {
+          "x": 2.080645,
+          "y": -23.036636
+        },
+        {
+          "x": 2.068936,
+          "y": -23.040308
+        },
+        {
+          "x": 2.057062,
+          "y": -23.043401
+        },
+        {
+          "x": 2.04505,
+          "y": -23.045907
+        },
+        {
+          "x": 2.03293,
+          "y": -23.047822
+        },
+        {
+          "x": 2.02073,
+          "y": -23.049139
+        },
+        {
+          "x": 2.00848,
+          "y": -23.049856
+        },
+        {
+          "x": 1.99621,
+          "y": -23.049971
+        },
+        {
+          "x": 1.983949,
+          "y": -23.049484
+        },
+        {
+          "x": 1.971727,
+          "y": -23.048396
+        },
+        {
+          "x": 1.959573,
+          "y": -23.04671
+        },
+        {
+          "x": 1.947516,
+          "y": -23.044429
+        },
+        {
+          "x": 1.935586,
+          "y": -23.041559
+        },
+        {
+          "x": 1.923811,
+          "y": -23.038108
+        },
+        {
+          "x": 1.912219,
+          "y": -23.034082
+        }
+      ],
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          2.0000000000003766,
+          -22.79999999999987
+        ],
+        [
+          -1.1999999999996689,
+          -21.599999999999852
+        ],
+        [
+          -1.8999999999996788,
+          -20.999999999999844
+        ],
+        [
+          -5.199999999999726,
+          -20.899999999999842
+        ],
+        [
+          -11.899999999999821,
+          -16.099999999999774
+        ],
+        [
+          -14.199999999999854,
+          -16.39999999999978
+        ],
+        [
+          -15.499999999999872,
+          -16.899999999999785
+        ],
+        [
+          -15.699999999999875,
+          -17.599999999999795
+        ],
+        [
+          -15.39999999999987,
+          -23.49999999999988
+        ],
+        [
+          -16.599999999999888,
+          -25.199999999999903
+        ],
+        [
+          -16.399999999999885,
+          -25.999999999999915
+        ],
+        [
+          -13.099999999999838,
+          -28.999999999999957
+        ],
+        [
+          -12.599999999999831,
+          -29.09999999999996
+        ],
+        [
+          -10.899999999999807,
+          -28.09999999999993
+        ],
+        [
+          -10.899999999999807,
+          -27.199999999999932
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 13.050685,
+          "y": 2.514564
+        },
+        {
+          "x": 13.051579,
+          "y": 2.521872
+        },
+        {
+          "x": 13.052831,
+          "y": 2.529127
+        },
+        {
+          "x": 13.054438,
+          "y": 2.536312
+        },
+        {
+          "x": 13.056395,
+          "y": 2.54341
+        },
+        {
+          "x": 13.058698,
+          "y": 2.550402
+        },
+        {
+          "x": 13.061341,
+          "y": 2.557274
+        },
+        {
+          "x": 13.064318,
+          "y": 2.564007
+        },
+        {
+          "x": 13.067622,
+          "y": 2.570587
+        },
+        {
+          "x": 13.071245,
+          "y": 2.576996
+        },
+        {
+          "x": 13.075178,
+          "y": 2.58322
+        },
+        {
+          "x": 13.079412,
+          "y": 2.589243
+        },
+        {
+          "x": 13.083936,
+          "y": 2.595051
+        },
+        {
+          "x": 13.08874,
+          "y": 2.600631
+        },
+        {
+          "x": 13.093812,
+          "y": 2.605968
+        },
+        {
+          "x": 13.099139,
+          "y": 2.611049
+        },
+        {
+          "x": 13.10471,
+          "y": 2.615863
+        },
+        {
+          "x": 13.110509,
+          "y": 2.620398
+        },
+        {
+          "x": 13.116525,
+          "y": 2.624643
+        },
+        {
+          "x": 13.122741,
+          "y": 2.628588
+        },
+        {
+          "x": 13.129144,
+          "y": 2.632223
+        },
+        {
+          "x": 13.135717,
+          "y": 2.635539
+        },
+        {
+          "x": 13.142445,
+          "y": 2.638529
+        },
+        {
+          "x": 13.149312,
+          "y": 2.641185
+        },
+        {
+          "x": 13.1563,
+          "y": 2.643501
+        },
+        {
+          "x": 13.163394,
+          "y": 2.645471
+        },
+        {
+          "x": 13.170576,
+          "y": 2.647091
+        },
+        {
+          "x": 13.177829,
+          "y": 2.648356
+        },
+        {
+          "x": 13.185135,
+          "y": 2.649264
+        },
+        {
+          "x": 13.192477,
+          "y": 2.649812
+        },
+        {
+          "x": 13.199837,
+          "y": 2.65
+        },
+        {
+          "x": 13.207197,
+          "y": 2.649826
+        },
+        {
+          "x": 13.21454,
+          "y": 2.649291
+        },
+        {
+          "x": 13.221848,
+          "y": 2.648397
+        },
+        {
+          "x": 13.229103,
+          "y": 2.647145
+        },
+        {
+          "x": 13.236288,
+          "y": 2.645538
+        },
+        {
+          "x": 13.243386,
+          "y": 2.643581
+        },
+        {
+          "x": 13.250378,
+          "y": 2.641278
+        },
+        {
+          "x": 13.25725,
+          "y": 2.638635
+        },
+        {
+          "x": 13.263983,
+          "y": 2.635658
+        },
+        {
+          "x": 13.270563,
+          "y": 2.632354
+        },
+        {
+          "x": 13.276972,
+          "y": 2.628731
+        },
+        {
+          "x": 13.283196,
+          "y": 2.624798
+        },
+        {
+          "x": 13.289219,
+          "y": 2.620564
+        },
+        {
+          "x": 13.295027,
+          "y": 2.61604
+        },
+        {
+          "x": 13.300607,
+          "y": 2.611236
+        },
+        {
+          "x": 13.305944,
+          "y": 2.606164
+        },
+        {
+          "x": 13.311025,
+          "y": 2.600837
+        },
+        {
+          "x": 13.315839,
+          "y": 2.595266
+        },
+        {
+          "x": 13.320374,
+          "y": 2.589467
+        },
+        {
+          "x": 13.324619,
+          "y": 2.583451
+        },
+        {
+          "x": 13.328564,
+          "y": 2.577235
+        },
+        {
+          "x": 13.332199,
+          "y": 2.570832
+        },
+        {
+          "x": 13.335515,
+          "y": 2.564259
+        },
+        {
+          "x": 13.338505,
+          "y": 2.557531
+        },
+        {
+          "x": 13.341161,
+          "y": 2.550664
+        },
+        {
+          "x": 13.343477,
+          "y": 2.543676
+        },
+        {
+          "x": 13.345447,
+          "y": 2.536582
+        },
+        {
+          "x": 13.347067,
+          "y": 2.5294
+        },
+        {
+          "x": 13.348332,
+          "y": 2.522147
+        },
+        {
+          "x": 13.34924,
+          "y": 2.514841
+        },
+        {
+          "x": 13.349788,
+          "y": 2.507499
+        },
+        {
+          "x": 13.349976,
+          "y": 2.500139
+        },
+        {
+          "x": 13.349802,
+          "y": 2.492779
+        },
+        {
+          "x": 13.349267,
+          "y": 2.485436
+        },
+        {
+          "x": 12.949291,
+          "y": -1.614564
+        },
+        {
+          "x": 12.948397,
+          "y": -1.621872
+        },
+        {
+          "x": 12.947145,
+          "y": -1.629127
+        },
+        {
+          "x": 12.945538,
+          "y": -1.636312
+        },
+        {
+          "x": 12.943581,
+          "y": -1.64341
+        },
+        {
+          "x": 12.941278,
+          "y": -1.650402
+        },
+        {
+          "x": 12.938635,
+          "y": -1.657274
+        },
+        {
+          "x": 12.935658,
+          "y": -1.664007
+        },
+        {
+          "x": 12.932354,
+          "y": -1.670587
+        },
+        {
+          "x": 12.928731,
+          "y": -1.676996
+        },
+        {
+          "x": 12.924798,
+          "y": -1.68322
+        },
+        {
+          "x": 12.920564,
+          "y": -1.689243
+        },
+        {
+          "x": 12.91604,
+          "y": -1.695051
+        },
+        {
+          "x": 12.911236,
+          "y": -1.700631
+        },
+        {
+          "x": 12.906164,
+          "y": -1.705968
+        },
+        {
+          "x": 12.900837,
+          "y": -1.711049
+        },
+        {
+          "x": 12.895266,
+          "y": -1.715863
+        },
+        {
+          "x": 12.889467,
+          "y": -1.720398
+        },
+        {
+          "x": 12.883451,
+          "y": -1.724643
+        },
+        {
+          "x": 12.877235,
+          "y": -1.728588
+        },
+        {
+          "x": 12.870832,
+          "y": -1.732223
+        },
+        {
+          "x": 12.864259,
+          "y": -1.735539
+        },
+        {
+          "x": 12.857531,
+          "y": -1.738529
+        },
+        {
+          "x": 12.850664,
+          "y": -1.741185
+        },
+        {
+          "x": 12.843676,
+          "y": -1.743501
+        },
+        {
+          "x": 12.836582,
+          "y": -1.745471
+        },
+        {
+          "x": 12.8294,
+          "y": -1.747091
+        },
+        {
+          "x": 12.822147,
+          "y": -1.748356
+        },
+        {
+          "x": 12.814841,
+          "y": -1.749264
+        },
+        {
+          "x": 12.807499,
+          "y": -1.749812
+        },
+        {
+          "x": 12.800139,
+          "y": -1.75
+        },
+        {
+          "x": 12.792779,
+          "y": -1.749826
+        },
+        {
+          "x": 12.785436,
+          "y": -1.749291
+        },
+        {
+          "x": 12.778128,
+          "y": -1.748397
+        },
+        {
+          "x": 12.770873,
+          "y": -1.747145
+        },
+        {
+          "x": 12.763688,
+          "y": -1.745538
+        },
+        {
+          "x": 12.75659,
+          "y": -1.743581
+        },
+        {
+          "x": 12.749598,
+          "y": -1.741278
+        },
+        {
+          "x": 12.742726,
+          "y": -1.738635
+        },
+        {
+          "x": 12.735993,
+          "y": -1.735658
+        },
+        {
+          "x": 12.729413,
+          "y": -1.732354
+        },
+        {
+          "x": 12.723004,
+          "y": -1.728731
+        },
+        {
+          "x": 12.71678,
+          "y": -1.724798
+        },
+        {
+          "x": 12.710757,
+          "y": -1.720564
+        },
+        {
+          "x": 12.704949,
+          "y": -1.71604
+        },
+        {
+          "x": 12.699369,
+          "y": -1.711236
+        },
+        {
+          "x": 12.694032,
+          "y": -1.706164
+        },
+        {
+          "x": 12.688951,
+          "y": -1.700837
+        },
+        {
+          "x": 12.684137,
+          "y": -1.695266
+        },
+        {
+          "x": 12.679602,
+          "y": -1.689467
+        },
+        {
+          "x": 12.675357,
+          "y": -1.683451
+        },
+        {
+          "x": 12.671412,
+          "y": -1.677235
+        },
+        {
+          "x": 12.667777,
+          "y": -1.670832
+        },
+        {
+          "x": 12.664461,
+          "y": -1.664259
+        },
+        {
+          "x": 12.661471,
+          "y": -1.657531
+        },
+        {
+          "x": 12.658815,
+          "y": -1.650664
+        },
+        {
+          "x": 12.656499,
+          "y": -1.643676
+        },
+        {
+          "x": 12.654529,
+          "y": -1.636582
+        },
+        {
+          "x": 12.652909,
+          "y": -1.6294
+        },
+        {
+          "x": 12.651644,
+          "y": -1.622147
+        },
+        {
+          "x": 12.650736,
+          "y": -1.614841
+        },
+        {
+          "x": 12.650188,
+          "y": -1.607499
+        },
+        {
+          "x": 12.65,
+          "y": -1.600139
+        },
+        {
+          "x": 12.650174,
+          "y": -1.592779
+        },
+        {
+          "x": 12.650709,
+          "y": -1.585436
+        }
+      ],
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          12.80000000000053,
+          -1.599999999999568
+        ],
+        [
+          13.199976,
+          2.5
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "VMIC",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 15.9408,
+          "y": -24.348277
+        },
+        {
+          "x": 15.943156,
+          "y": -24.355209
+        },
+        {
+          "x": 15.945171,
+          "y": -24.362247
+        },
+        {
+          "x": 15.94684,
+          "y": -24.369375
+        },
+        {
+          "x": 15.94816,
+          "y": -24.376576
+        },
+        {
+          "x": 15.949126,
+          "y": -24.383833
+        },
+        {
+          "x": 15.949737,
+          "y": -24.391128
+        },
+        {
+          "x": 15.949992,
+          "y": -24.398445
+        },
+        {
+          "x": 15.949889,
+          "y": -24.405765
+        },
+        {
+          "x": 15.749889,
+          "y": -29.605765
+        },
+        {
+          "x": 15.749434,
+          "y": -29.613016
+        },
+        {
+          "x": 15.748629,
+          "y": -29.620236
+        },
+        {
+          "x": 15.747475,
+          "y": -29.627408
+        },
+        {
+          "x": 15.745975,
+          "y": -29.634517
+        },
+        {
+          "x": 15.744132,
+          "y": -29.641544
+        },
+        {
+          "x": 15.741952,
+          "y": -29.648474
+        },
+        {
+          "x": 15.739438,
+          "y": -29.65529
+        },
+        {
+          "x": 15.736597,
+          "y": -29.661977
+        },
+        {
+          "x": 15.733436,
+          "y": -29.668518
+        },
+        {
+          "x": 15.729962,
+          "y": -29.674898
+        },
+        {
+          "x": 15.726183,
+          "y": -29.681103
+        },
+        {
+          "x": 15.722109,
+          "y": -29.687118
+        },
+        {
+          "x": 15.717747,
+          "y": -29.692928
+        },
+        {
+          "x": 15.71311,
+          "y": -29.69852
+        },
+        {
+          "x": 15.708207,
+          "y": -29.703881
+        },
+        {
+          "x": 15.70305,
+          "y": -29.708998
+        },
+        {
+          "x": 15.697652,
+          "y": -29.71386
+        },
+        {
+          "x": 15.692024,
+          "y": -29.718455
+        },
+        {
+          "x": 15.686181,
+          "y": -29.722772
+        },
+        {
+          "x": 14.332831,
+          "y": -30.672772
+        },
+        {
+          "x": 14.326703,
+          "y": -30.676852
+        },
+        {
+          "x": 14.320382,
+          "y": -30.680628
+        },
+        {
+          "x": 14.313884,
+          "y": -30.684088
+        },
+        {
+          "x": 14.307223,
+          "y": -30.687226
+        },
+        {
+          "x": 14.300417,
+          "y": -30.690032
+        },
+        {
+          "x": 14.293481,
+          "y": -30.692502
+        },
+        {
+          "x": 14.286433,
+          "y": -30.694628
+        },
+        {
+          "x": 14.279288,
+          "y": -30.696406
+        },
+        {
+          "x": 14.272065,
+          "y": -30.697831
+        },
+        {
+          "x": 14.264781,
+          "y": -30.6989
+        },
+        {
+          "x": 14.257453,
+          "y": -30.699611
+        },
+        {
+          "x": 14.250099,
+          "y": -30.69996
+        },
+        {
+          "x": 14.242736,
+          "y": -30.699949
+        },
+        {
+          "x": 14.235383,
+          "y": -30.699576
+        },
+        {
+          "x": 14.228058,
+          "y": -30.698843
+        },
+        {
+          "x": 14.220777,
+          "y": -30.697752
+        },
+        {
+          "x": 14.213558,
+          "y": -30.696304
+        },
+        {
+          "x": 14.206419,
+          "y": -30.694504
+        },
+        {
+          "x": 14.199377,
+          "y": -30.692356
+        },
+        {
+          "x": 14.192449,
+          "y": -30.689865
+        },
+        {
+          "x": 14.185651,
+          "y": -30.687037
+        },
+        {
+          "x": 14.179001,
+          "y": -30.683879
+        },
+        {
+          "x": 14.172513,
+          "y": -30.680398
+        },
+        {
+          "x": 14.166204,
+          "y": -30.676603
+        },
+        {
+          "x": 14.160089,
+          "y": -30.672504
+        },
+        {
+          "x": 14.154182,
+          "y": -30.668109
+        },
+        {
+          "x": 14.148498,
+          "y": -30.663429
+        },
+        {
+          "x": 14.143051,
+          "y": -30.658477
+        },
+        {
+          "x": 14.137853,
+          "y": -30.653262
+        },
+        {
+          "x": 14.132917,
+          "y": -30.6478
+        },
+        {
+          "x": 14.128255,
+          "y": -30.642101
+        },
+        {
+          "x": 14.123878,
+          "y": -30.636181
+        },
+        {
+          "x": 14.119798,
+          "y": -30.630053
+        },
+        {
+          "x": 14.116022,
+          "y": -30.623732
+        },
+        {
+          "x": 14.112562,
+          "y": -30.617234
+        },
+        {
+          "x": 14.109424,
+          "y": -30.610573
+        },
+        {
+          "x": 14.106618,
+          "y": -30.603767
+        },
+        {
+          "x": 14.104148,
+          "y": -30.596831
+        },
+        {
+          "x": 14.102022,
+          "y": -30.589783
+        },
+        {
+          "x": 14.100244,
+          "y": -30.582638
+        },
+        {
+          "x": 14.098819,
+          "y": -30.575415
+        },
+        {
+          "x": 14.09775,
+          "y": -30.568131
+        },
+        {
+          "x": 14.097039,
+          "y": -30.560803
+        },
+        {
+          "x": 14.09669,
+          "y": -30.553449
+        },
+        {
+          "x": 14.096701,
+          "y": -30.546086
+        },
+        {
+          "x": 14.097074,
+          "y": -30.538733
+        },
+        {
+          "x": 14.097807,
+          "y": -30.531408
+        },
+        {
+          "x": 14.098898,
+          "y": -30.524127
+        },
+        {
+          "x": 14.100346,
+          "y": -30.516908
+        },
+        {
+          "x": 14.102146,
+          "y": -30.509769
+        },
+        {
+          "x": 14.104294,
+          "y": -30.502727
+        },
+        {
+          "x": 14.106785,
+          "y": -30.495799
+        },
+        {
+          "x": 14.109613,
+          "y": -30.489001
+        },
+        {
+          "x": 14.112771,
+          "y": -30.482351
+        },
+        {
+          "x": 14.116252,
+          "y": -30.475863
+        },
+        {
+          "x": 14.120047,
+          "y": -30.469554
+        },
+        {
+          "x": 14.124146,
+          "y": -30.463439
+        },
+        {
+          "x": 14.128541,
+          "y": -30.457532
+        },
+        {
+          "x": 14.133221,
+          "y": -30.451848
+        },
+        {
+          "x": 14.138173,
+          "y": -30.446401
+        },
+        {
+          "x": 14.143388,
+          "y": -30.441203
+        },
+        {
+          "x": 14.14885,
+          "y": -30.436267
+        },
+        {
+          "x": 14.154549,
+          "y": -30.431605
+        },
+        {
+          "x": 14.160469,
+          "y": -30.427228
+        },
+        {
+          "x": 15.452968,
+          "y": -29.519943
+        },
+        {
+          "x": 15.648971,
+          "y": -24.423878
+        },
+        {
+          "x": 14.7592,
+          "y": -22.001723
+        },
+        {
+          "x": 14.756831,
+          "y": -21.994752
+        },
+        {
+          "x": 14.754808,
+          "y": -21.987673
+        },
+        {
+          "x": 14.753134,
+          "y": -21.980503
+        },
+        {
+          "x": 14.751814,
+          "y": -21.97326
+        },
+        {
+          "x": 14.750852,
+          "y": -21.965961
+        },
+        {
+          "x": 14.750248,
+          "y": -21.958623
+        },
+        {
+          "x": 14.750005,
+          "y": -21.951265
+        },
+        {
+          "x": 14.750124,
+          "y": -21.943903
+        },
+        {
+          "x": 14.750604,
+          "y": -21.936557
+        },
+        {
+          "x": 14.751443,
+          "y": -21.929242
+        },
+        {
+          "x": 14.752641,
+          "y": -21.921978
+        },
+        {
+          "x": 14.754193,
+          "y": -21.914781
+        },
+        {
+          "x": 14.756097,
+          "y": -21.907669
+        },
+        {
+          "x": 14.758347,
+          "y": -21.900659
+        },
+        {
+          "x": 14.760939,
+          "y": -21.893768
+        },
+        {
+          "x": 14.763866,
+          "y": -21.887012
+        },
+        {
+          "x": 14.76712,
+          "y": -21.880409
+        },
+        {
+          "x": 14.770695,
+          "y": -21.873972
+        },
+        {
+          "x": 14.774581,
+          "y": -21.867719
+        },
+        {
+          "x": 14.77877,
+          "y": -21.861664
+        },
+        {
+          "x": 14.78325,
+          "y": -21.855822
+        },
+        {
+          "x": 14.788012,
+          "y": -21.850207
+        },
+        {
+          "x": 14.793043,
+          "y": -21.844832
+        },
+        {
+          "x": 14.798333,
+          "y": -21.839711
+        },
+        {
+          "x": 14.803867,
+          "y": -21.834855
+        },
+        {
+          "x": 14.809632,
+          "y": -21.830277
+        },
+        {
+          "x": 14.815616,
+          "y": -21.825987
+        },
+        {
+          "x": 14.821802,
+          "y": -21.821996
+        },
+        {
+          "x": 14.828177,
+          "y": -21.818313
+        },
+        {
+          "x": 14.834726,
+          "y": -21.814947
+        },
+        {
+          "x": 14.841431,
+          "y": -21.811907
+        },
+        {
+          "x": 14.848277,
+          "y": -21.8092
+        },
+        {
+          "x": 14.855248,
+          "y": -21.806831
+        },
+        {
+          "x": 14.862327,
+          "y": -21.804808
+        },
+        {
+          "x": 14.869497,
+          "y": -21.803134
+        },
+        {
+          "x": 14.87674,
+          "y": -21.801814
+        },
+        {
+          "x": 14.884039,
+          "y": -21.800852
+        },
+        {
+          "x": 14.891377,
+          "y": -21.800248
+        },
+        {
+          "x": 14.898735,
+          "y": -21.800005
+        },
+        {
+          "x": 14.906097,
+          "y": -21.800124
+        },
+        {
+          "x": 14.913443,
+          "y": -21.800604
+        },
+        {
+          "x": 14.920758,
+          "y": -21.801443
+        },
+        {
+          "x": 14.928022,
+          "y": -21.802641
+        },
+        {
+          "x": 14.935219,
+          "y": -21.804193
+        },
+        {
+          "x": 14.942331,
+          "y": -21.806097
+        },
+        {
+          "x": 14.949341,
+          "y": -21.808347
+        },
+        {
+          "x": 14.956232,
+          "y": -21.810939
+        },
+        {
+          "x": 14.962988,
+          "y": -21.813866
+        },
+        {
+          "x": 14.969591,
+          "y": -21.81712
+        },
+        {
+          "x": 14.976028,
+          "y": -21.820695
+        },
+        {
+          "x": 14.982281,
+          "y": -21.824581
+        },
+        {
+          "x": 14.988336,
+          "y": -21.82877
+        },
+        {
+          "x": 14.994178,
+          "y": -21.83325
+        },
+        {
+          "x": 14.999793,
+          "y": -21.838012
+        },
+        {
+          "x": 15.005168,
+          "y": -21.843043
+        },
+        {
+          "x": 15.010289,
+          "y": -21.848333
+        },
+        {
+          "x": 15.015145,
+          "y": -21.853867
+        },
+        {
+          "x": 15.019723,
+          "y": -21.859632
+        },
+        {
+          "x": 15.024013,
+          "y": -21.865616
+        },
+        {
+          "x": 15.028004,
+          "y": -21.871802
+        },
+        {
+          "x": 15.031687,
+          "y": -21.878177
+        },
+        {
+          "x": 15.035053,
+          "y": -21.884726
+        },
+        {
+          "x": 15.038093,
+          "y": -21.891431
+        },
+        {
+          "x": 15.0408,
+          "y": -21.898277
+        }
+      ],
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.9,
+          -21.95
+        ],
+        [
+          15.800000000000573,
+          -24.399999999999892
+        ],
+        [
+          15.60000000000057,
+          -29.599999999999966
+        ],
+        [
+          14.24665,
+          -30.55
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "VMIC",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 12.778117,
+          "y": -30.947941
+        },
+        {
+          "x": 12.770829,
+          "y": -30.948978
+        },
+        {
+          "x": 12.763497,
+          "y": -30.949656
+        },
+        {
+          "x": 12.756142,
+          "y": -30.949974
+        },
+        {
+          "x": 12.74878,
+          "y": -30.94993
+        },
+        {
+          "x": 12.741428,
+          "y": -30.949526
+        },
+        {
+          "x": 12.734106,
+          "y": -30.94876
+        },
+        {
+          "x": 12.72683,
+          "y": -30.947637
+        },
+        {
+          "x": 12.719618,
+          "y": -30.946158
+        },
+        {
+          "x": 12.712487,
+          "y": -30.944327
+        },
+        {
+          "x": 12.705454,
+          "y": -30.942148
+        },
+        {
+          "x": 12.698537,
+          "y": -30.939626
+        },
+        {
+          "x": 12.691752,
+          "y": -30.936769
+        },
+        {
+          "x": 12.685115,
+          "y": -30.933581
+        },
+        {
+          "x": 12.678643,
+          "y": -30.930072
+        },
+        {
+          "x": 12.67235,
+          "y": -30.92625
+        },
+        {
+          "x": 12.666253,
+          "y": -30.922123
+        },
+        {
+          "x": 12.660366,
+          "y": -30.917703
+        },
+        {
+          "x": 12.654702,
+          "y": -30.912998
+        },
+        {
+          "x": 12.649277,
+          "y": -30.908022
+        },
+        {
+          "x": 12.644102,
+          "y": -30.902785
+        },
+        {
+          "x": 12.63919,
+          "y": -30.897301
+        },
+        {
+          "x": 12.634553,
+          "y": -30.891582
+        },
+        {
+          "x": 12.630202,
+          "y": -30.885643
+        },
+        {
+          "x": 12.626148,
+          "y": -30.879497
+        },
+        {
+          "x": 12.622401,
+          "y": -30.87316
+        },
+        {
+          "x": 12.618969,
+          "y": -30.866646
+        },
+        {
+          "x": 12.615861,
+          "y": -30.859972
+        },
+        {
+          "x": 12.613083,
+          "y": -30.853153
+        },
+        {
+          "x": 12.610644,
+          "y": -30.846207
+        },
+        {
+          "x": 12.608549,
+          "y": -30.839149
+        },
+        {
+          "x": 12.606802,
+          "y": -30.831997
+        },
+        {
+          "x": 12.605409,
+          "y": -30.824767
+        },
+        {
+          "x": 12.604372,
+          "y": -30.817479
+        },
+        {
+          "x": 12.603694,
+          "y": -30.810147
+        },
+        {
+          "x": 12.603376,
+          "y": -30.802792
+        },
+        {
+          "x": 12.60342,
+          "y": -30.79543
+        },
+        {
+          "x": 12.603824,
+          "y": -30.788078
+        },
+        {
+          "x": 12.60459,
+          "y": -30.780756
+        },
+        {
+          "x": 12.605713,
+          "y": -30.77348
+        },
+        {
+          "x": 12.607192,
+          "y": -30.766268
+        },
+        {
+          "x": 12.609023,
+          "y": -30.759137
+        },
+        {
+          "x": 12.611202,
+          "y": -30.752104
+        },
+        {
+          "x": 12.613724,
+          "y": -30.745187
+        },
+        {
+          "x": 12.616581,
+          "y": -30.738402
+        },
+        {
+          "x": 12.619769,
+          "y": -30.731765
+        },
+        {
+          "x": 12.623278,
+          "y": -30.725293
+        },
+        {
+          "x": 12.6271,
+          "y": -30.719
+        },
+        {
+          "x": 12.631227,
+          "y": -30.712903
+        },
+        {
+          "x": 12.635647,
+          "y": -30.707016
+        },
+        {
+          "x": 12.640352,
+          "y": -30.701352
+        },
+        {
+          "x": 12.645328,
+          "y": -30.695927
+        },
+        {
+          "x": 12.650565,
+          "y": -30.690752
+        },
+        {
+          "x": 12.656049,
+          "y": -30.68584
+        },
+        {
+          "x": 12.661768,
+          "y": -30.681203
+        },
+        {
+          "x": 12.667707,
+          "y": -30.676852
+        },
+        {
+          "x": 12.673853,
+          "y": -30.672798
+        },
+        {
+          "x": 12.68019,
+          "y": -30.669051
+        },
+        {
+          "x": 12.686704,
+          "y": -30.665619
+        },
+        {
+          "x": 12.693378,
+          "y": -30.662511
+        },
+        {
+          "x": 12.700197,
+          "y": -30.659733
+        },
+        {
+          "x": 12.707143,
+          "y": -30.657294
+        },
+        {
+          "x": 12.714201,
+          "y": -30.655199
+        },
+        {
+          "x": 12.721353,
+          "y": -30.653452
+        },
+        {
+          "x": 12.728583,
+          "y": -30.652059
+        },
+        {
+          "x": 14.221883,
+          "y": -30.402059
+        },
+        {
+          "x": 14.229171,
+          "y": -30.401022
+        },
+        {
+          "x": 14.236503,
+          "y": -30.400344
+        },
+        {
+          "x": 14.243858,
+          "y": -30.400026
+        },
+        {
+          "x": 14.25122,
+          "y": -30.40007
+        },
+        {
+          "x": 14.258572,
+          "y": -30.400474
+        },
+        {
+          "x": 14.265894,
+          "y": -30.40124
+        },
+        {
+          "x": 14.27317,
+          "y": -30.402363
+        },
+        {
+          "x": 14.280382,
+          "y": -30.403842
+        },
+        {
+          "x": 14.287513,
+          "y": -30.405673
+        },
+        {
+          "x": 14.294546,
+          "y": -30.407852
+        },
+        {
+          "x": 14.301463,
+          "y": -30.410374
+        },
+        {
+          "x": 14.308248,
+          "y": -30.413231
+        },
+        {
+          "x": 14.314885,
+          "y": -30.416419
+        },
+        {
+          "x": 14.321357,
+          "y": -30.419928
+        },
+        {
+          "x": 14.32765,
+          "y": -30.42375
+        },
+        {
+          "x": 14.333747,
+          "y": -30.427877
+        },
+        {
+          "x": 14.339634,
+          "y": -30.432297
+        },
+        {
+          "x": 14.345298,
+          "y": -30.437002
+        },
+        {
+          "x": 14.350723,
+          "y": -30.441978
+        },
+        {
+          "x": 14.355898,
+          "y": -30.447215
+        },
+        {
+          "x": 14.36081,
+          "y": -30.452699
+        },
+        {
+          "x": 14.365447,
+          "y": -30.458418
+        },
+        {
+          "x": 14.369798,
+          "y": -30.464357
+        },
+        {
+          "x": 14.373852,
+          "y": -30.470503
+        },
+        {
+          "x": 14.377599,
+          "y": -30.47684
+        },
+        {
+          "x": 14.381031,
+          "y": -30.483354
+        },
+        {
+          "x": 14.384139,
+          "y": -30.490028
+        },
+        {
+          "x": 14.386917,
+          "y": -30.496847
+        },
+        {
+          "x": 14.389356,
+          "y": -30.503793
+        },
+        {
+          "x": 14.391451,
+          "y": -30.510851
+        },
+        {
+          "x": 14.393198,
+          "y": -30.518003
+        },
+        {
+          "x": 14.394591,
+          "y": -30.525233
+        },
+        {
+          "x": 14.395628,
+          "y": -30.532521
+        },
+        {
+          "x": 14.396306,
+          "y": -30.539853
+        },
+        {
+          "x": 14.396624,
+          "y": -30.547208
+        },
+        {
+          "x": 14.39658,
+          "y": -30.55457
+        },
+        {
+          "x": 14.396176,
+          "y": -30.561922
+        },
+        {
+          "x": 14.39541,
+          "y": -30.569244
+        },
+        {
+          "x": 14.394287,
+          "y": -30.57652
+        },
+        {
+          "x": 14.392808,
+          "y": -30.583732
+        },
+        {
+          "x": 14.390977,
+          "y": -30.590863
+        },
+        {
+          "x": 14.388798,
+          "y": -30.597896
+        },
+        {
+          "x": 14.386276,
+          "y": -30.604813
+        },
+        {
+          "x": 14.383419,
+          "y": -30.611598
+        },
+        {
+          "x": 14.380231,
+          "y": -30.618235
+        },
+        {
+          "x": 14.376722,
+          "y": -30.624707
+        },
+        {
+          "x": 14.3729,
+          "y": -30.631
+        },
+        {
+          "x": 14.368773,
+          "y": -30.637097
+        },
+        {
+          "x": 14.364353,
+          "y": -30.642984
+        },
+        {
+          "x": 14.359648,
+          "y": -30.648648
+        },
+        {
+          "x": 14.354672,
+          "y": -30.654073
+        },
+        {
+          "x": 14.349435,
+          "y": -30.659248
+        },
+        {
+          "x": 14.343951,
+          "y": -30.66416
+        },
+        {
+          "x": 14.338232,
+          "y": -30.668797
+        },
+        {
+          "x": 14.332293,
+          "y": -30.673148
+        },
+        {
+          "x": 14.326147,
+          "y": -30.677202
+        },
+        {
+          "x": 14.31981,
+          "y": -30.680949
+        },
+        {
+          "x": 14.313296,
+          "y": -30.684381
+        },
+        {
+          "x": 14.306622,
+          "y": -30.687489
+        },
+        {
+          "x": 14.299803,
+          "y": -30.690267
+        },
+        {
+          "x": 14.292857,
+          "y": -30.692706
+        },
+        {
+          "x": 14.285799,
+          "y": -30.694801
+        },
+        {
+          "x": 14.278647,
+          "y": -30.696548
+        },
+        {
+          "x": 14.271417,
+          "y": -30.697941
+        }
+      ],
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.24665,
+          -30.55
+        ],
+        [
+          12.75335,
+          -30.8
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 23.501738,
+          "y": -10.82781
+        },
+        {
+          "x": 23.510065,
+          "y": -10.83301
+        },
+        {
+          "x": 23.518126,
+          "y": -10.838612
+        },
+        {
+          "x": 23.525903,
+          "y": -10.844602
+        },
+        {
+          "x": 23.533376,
+          "y": -10.850967
+        },
+        {
+          "x": 23.540528,
+          "y": -10.857691
+        },
+        {
+          "x": 23.547342,
+          "y": -10.864758
+        },
+        {
+          "x": 23.5538,
+          "y": -10.87215
+        },
+        {
+          "x": 23.559888,
+          "y": -10.879851
+        },
+        {
+          "x": 23.565591,
+          "y": -10.887841
+        },
+        {
+          "x": 23.570895,
+          "y": -10.896101
+        },
+        {
+          "x": 23.575787,
+          "y": -10.904612
+        },
+        {
+          "x": 23.580256,
+          "y": -10.913352
+        },
+        {
+          "x": 23.58429,
+          "y": -10.922301
+        },
+        {
+          "x": 23.587881,
+          "y": -10.931438
+        },
+        {
+          "x": 23.591019,
+          "y": -10.940739
+        },
+        {
+          "x": 23.593696,
+          "y": -10.950183
+        },
+        {
+          "x": 23.595908,
+          "y": -10.959748
+        },
+        {
+          "x": 23.597647,
+          "y": -10.969409
+        },
+        {
+          "x": 23.59891,
+          "y": -10.979144
+        },
+        {
+          "x": 23.599693,
+          "y": -10.988929
+        },
+        {
+          "x": 23.599996,
+          "y": -10.998741
+        },
+        {
+          "x": 23.599817,
+          "y": -11.008556
+        },
+        {
+          "x": 23.599156,
+          "y": -11.01835
+        },
+        {
+          "x": 23.598016,
+          "y": -11.0281
+        },
+        {
+          "x": 23.596399,
+          "y": -11.037782
+        },
+        {
+          "x": 23.594308,
+          "y": -11.047374
+        },
+        {
+          "x": 23.59175,
+          "y": -11.056851
+        },
+        {
+          "x": 23.588729,
+          "y": -11.066191
+        },
+        {
+          "x": 23.585254,
+          "y": -11.075372
+        },
+        {
+          "x": 23.581333,
+          "y": -11.084371
+        },
+        {
+          "x": 23.576974,
+          "y": -11.093167
+        },
+        {
+          "x": 23.57219,
+          "y": -11.101738
+        },
+        {
+          "x": 23.56699,
+          "y": -11.110065
+        },
+        {
+          "x": 23.561388,
+          "y": -11.118126
+        },
+        {
+          "x": 23.555398,
+          "y": -11.125903
+        },
+        {
+          "x": 23.549033,
+          "y": -11.133376
+        },
+        {
+          "x": 23.542309,
+          "y": -11.140528
+        },
+        {
+          "x": 23.535242,
+          "y": -11.147342
+        },
+        {
+          "x": 23.52785,
+          "y": -11.1538
+        },
+        {
+          "x": 23.520149,
+          "y": -11.159888
+        },
+        {
+          "x": 23.512159,
+          "y": -11.165591
+        },
+        {
+          "x": 23.503899,
+          "y": -11.170895
+        },
+        {
+          "x": 23.495388,
+          "y": -11.175787
+        },
+        {
+          "x": 23.486648,
+          "y": -11.180256
+        },
+        {
+          "x": 23.477699,
+          "y": -11.18429
+        },
+        {
+          "x": 23.468562,
+          "y": -11.187881
+        },
+        {
+          "x": 23.459261,
+          "y": -11.191019
+        },
+        {
+          "x": 23.449817,
+          "y": -11.193696
+        },
+        {
+          "x": 23.440252,
+          "y": -11.195908
+        },
+        {
+          "x": 23.430591,
+          "y": -11.197647
+        },
+        {
+          "x": 23.420856,
+          "y": -11.19891
+        },
+        {
+          "x": 23.411071,
+          "y": -11.199693
+        },
+        {
+          "x": 23.401259,
+          "y": -11.199996
+        },
+        {
+          "x": 23.391444,
+          "y": -11.199817
+        },
+        {
+          "x": 23.38165,
+          "y": -11.199156
+        },
+        {
+          "x": 23.3719,
+          "y": -11.198016
+        },
+        {
+          "x": 23.362218,
+          "y": -11.196399
+        },
+        {
+          "x": 23.352626,
+          "y": -11.194308
+        },
+        {
+          "x": 23.343149,
+          "y": -11.19175
+        },
+        {
+          "x": 23.333809,
+          "y": -11.188729
+        },
+        {
+          "x": 23.324628,
+          "y": -11.185254
+        },
+        {
+          "x": 23.315629,
+          "y": -11.181333
+        },
+        {
+          "x": 23.306833,
+          "y": -11.176974
+        },
+        {
+          "x": 23.298262,
+          "y": -11.17219
+        },
+        {
+          "x": 17.04826,
+          "y": -7.47937
+        },
+        {
+          "x": 17.039933,
+          "y": -7.47417
+        },
+        {
+          "x": 17.031872,
+          "y": -7.468568
+        },
+        {
+          "x": 17.024095,
+          "y": -7.462578
+        },
+        {
+          "x": 17.016622,
+          "y": -7.456213
+        },
+        {
+          "x": 17.00947,
+          "y": -7.449489
+        },
+        {
+          "x": 17.002656,
+          "y": -7.442422
+        },
+        {
+          "x": 16.996198,
+          "y": -7.43503
+        },
+        {
+          "x": 16.99011,
+          "y": -7.427329
+        },
+        {
+          "x": 16.984407,
+          "y": -7.419339
+        },
+        {
+          "x": 16.979103,
+          "y": -7.411079
+        },
+        {
+          "x": 16.974211,
+          "y": -7.402568
+        },
+        {
+          "x": 16.969742,
+          "y": -7.393828
+        },
+        {
+          "x": 16.965708,
+          "y": -7.384879
+        },
+        {
+          "x": 16.962117,
+          "y": -7.375742
+        },
+        {
+          "x": 16.958979,
+          "y": -7.366441
+        },
+        {
+          "x": 16.956302,
+          "y": -7.356997
+        },
+        {
+          "x": 16.95409,
+          "y": -7.347432
+        },
+        {
+          "x": 16.952351,
+          "y": -7.337771
+        },
+        {
+          "x": 16.951088,
+          "y": -7.328036
+        },
+        {
+          "x": 16.950305,
+          "y": -7.318251
+        },
+        {
+          "x": 16.950002,
+          "y": -7.308439
+        },
+        {
+          "x": 16.950181,
+          "y": -7.298624
+        },
+        {
+          "x": 16.950842,
+          "y": -7.28883
+        },
+        {
+          "x": 16.951982,
+          "y": -7.27908
+        },
+        {
+          "x": 16.953599,
+          "y": -7.269398
+        },
+        {
+          "x": 16.95569,
+          "y": -7.259806
+        },
+        {
+          "x": 16.958248,
+          "y": -7.250329
+        },
+        {
+          "x": 16.961269,
+          "y": -7.240989
+        },
+        {
+          "x": 16.964744,
+          "y": -7.231808
+        },
+        {
+          "x": 16.968665,
+          "y": -7.222809
+        },
+        {
+          "x": 16.973024,
+          "y": -7.214013
+        },
+        {
+          "x": 16.977808,
+          "y": -7.205442
+        },
+        {
+          "x": 16.983008,
+          "y": -7.197115
+        },
+        {
+          "x": 16.98861,
+          "y": -7.189054
+        },
+        {
+          "x": 16.9946,
+          "y": -7.181277
+        },
+        {
+          "x": 17.000965,
+          "y": -7.173804
+        },
+        {
+          "x": 17.007689,
+          "y": -7.166652
+        },
+        {
+          "x": 17.014756,
+          "y": -7.159838
+        },
+        {
+          "x": 17.022148,
+          "y": -7.15338
+        },
+        {
+          "x": 17.029849,
+          "y": -7.147292
+        },
+        {
+          "x": 17.037839,
+          "y": -7.141589
+        },
+        {
+          "x": 17.046099,
+          "y": -7.136285
+        },
+        {
+          "x": 17.05461,
+          "y": -7.131393
+        },
+        {
+          "x": 17.06335,
+          "y": -7.126924
+        },
+        {
+          "x": 17.072299,
+          "y": -7.12289
+        },
+        {
+          "x": 17.081436,
+          "y": -7.119299
+        },
+        {
+          "x": 17.090737,
+          "y": -7.116161
+        },
+        {
+          "x": 17.100181,
+          "y": -7.113484
+        },
+        {
+          "x": 17.109746,
+          "y": -7.111272
+        },
+        {
+          "x": 17.119407,
+          "y": -7.109533
+        },
+        {
+          "x": 17.129142,
+          "y": -7.10827
+        },
+        {
+          "x": 17.138927,
+          "y": -7.107487
+        },
+        {
+          "x": 17.148739,
+          "y": -7.107184
+        },
+        {
+          "x": 17.158554,
+          "y": -7.107363
+        },
+        {
+          "x": 17.168348,
+          "y": -7.108024
+        },
+        {
+          "x": 17.178098,
+          "y": -7.109164
+        },
+        {
+          "x": 17.18778,
+          "y": -7.110781
+        },
+        {
+          "x": 17.197372,
+          "y": -7.112872
+        },
+        {
+          "x": 17.206849,
+          "y": -7.11543
+        },
+        {
+          "x": 17.216189,
+          "y": -7.118451
+        },
+        {
+          "x": 17.22537,
+          "y": -7.121926
+        },
+        {
+          "x": 17.234369,
+          "y": -7.125847
+        },
+        {
+          "x": 17.243165,
+          "y": -7.130206
+        },
+        {
+          "x": 17.251736,
+          "y": -7.13499
+        }
+      ],
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          17.149998,
+          -7.30718
+        ],
+        [
+          23.4,
+          -11.0
+        ]
+      ],
+      "classification": "manual native power copper region; current qualification pending"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "GND",
+      "port": ".U16 > .pin6",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U16 > .pin8",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U3 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U3 > .pin11",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U3 > .pin15",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U3 > .pin17",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U4 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U5 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin10",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin11",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U2 > .pin10",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U3 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".R62 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -2.25,
+        -14.150024
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -10.799999999999805,
+        -11.099999999999703
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -11.60001,
+        -10.74996
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -7.89999,
+        -8.05004
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -10.200024,
+        -5.133975
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        17.1,
+        -5.489254
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -9.850015,
+        2.24996
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        18.007436,
+        -2.15
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -12.399999999999828,
+        5.500000000000533
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -14.499999999999858,
+        4.7000000000005215
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -12.998337,
+        5.552095
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -15.099976,
+        7.5
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -10.9,
+        9.933975
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "port": ".R3 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U2 > .pin6",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "V3V3",
+      "port": ".C78 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "V3V3",
+      "port": ".U27 > .pin13",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        12.466025,
+        12.3
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        12.80000000000053,
+        11.100000000000612
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -3.700024,
+        9.633975
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -5.49999999999973,
+        8.900000000000581
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -1.4,
+        7.05718
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -1.500024,
+        0.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        2.100000000000378,
+        -5.799999999999628
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -20.905978,
+        0.557112
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -1.553364,
+        -11.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -18.9,
+        -11.2
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -2.24665,
+        -18.2
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -0.200024,
+        -20.212436
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -22.500024,
+        -16.5
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -18.700099,
+        -20.64278
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "V3V3",
+      "via_xy": [
+        -13.5,
+        -26.053364
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "PACK_BAT",
+      "port": ".U16 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "PACK_BAT",
+      "via_xy": [
+        -12.60001,
+        -9.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "PACK_BAT",
+      "via_xy": [
+        -14.466025,
+        10.3
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VBUS",
+      "port": ".J1 > .pin16",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VBUS",
+      "port": ".U16 > .pin13",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VBUS",
+      "port": ".TP2 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMOTOR",
+      "via_xy": [
+        0.53505,
+        -1.3
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMOTOR",
+      "via_xy": [
+        23.4,
+        -8.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMOTOR",
+      "via_xy": [
+        17.80335,
+        -15.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMOTOR",
+      "via_xy": [
+        2.499976,
+        -12.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U24 > .pin5",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".R93 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U4 > .pin5",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U5 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U5 > .pin5",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "via_xy": [
+        3.883975,
+        -21.700024
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMIC",
+      "via_xy": [
+        3.799976,
+        -22.883975
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMIC",
+      "via_xy": [
+        2.499976,
+        -19.25
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMIC",
+      "via_xy": [
+        -18.553364,
+        -22.0
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMIC",
+      "via_xy": [
+        -21.500024,
+        -24.75
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VMIC",
+      "via_xy": [
+        -4.748334,
+        9.5
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VLCD",
+      "port": ".R41 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VLCD",
+      "via_xy": [
+        5.38218,
+        11.27095
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VLCD",
+      "via_xy": [
+        3.000000000000391,
+        10.2000000000006
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VLCD",
+      "via_xy": [
+        15.962436,
+        14.150024
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VLCD",
+      "via_xy": [
+        2.549976,
+        9.866025
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VLCD",
+      "via_xy": [
+        5.475,
+        5.12905
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VLCD",
+      "via_xy": [
+        16.042594,
+        6.6
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "MIC_INPUT",
+      "port": ".U23 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "MIC_INPUT",
+      "port": ".C73 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "port": ".Q2 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "port": ".R63 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "HAPTIC_N",
+      "via_xy": [
+        5.200024,
+        -11.133975
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "HAPTIC_N",
+      "via_xy": [
+        3.76495,
+        -1.287564
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "LCD_BACKLIGHT_OUTPUT",
+      "port": ".U27 > .pin8",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    }
+  ]
+}

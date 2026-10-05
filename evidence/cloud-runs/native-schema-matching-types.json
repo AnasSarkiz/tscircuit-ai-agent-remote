@@ -1,0 +1,361 @@
+[
+  {
+    "type": "pcb_component",
+    "id": "pcb_component_0",
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "number",
+        "path": [
+          "display_offset_x"
+        ],
+        "message": "Expected string, received number"
+      },
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "number",
+        "path": [
+          "display_offset_y"
+        ],
+        "message": "Expected string, received number"
+      }
+    ]
+  },
+  {
+    "type": "schematic_group",
+    "id": "schematic_group_0",
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "null",
+        "path": [
+          "subcircuit_id"
+        ],
+        "message": "Expected string, received null"
+      }
+    ]
+  },
+  {
+    "type": "pcb_group",
+    "id": "pcb_group_0",
+    "issues": [
+      {
+        "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+        "received": "null",
+        "code": "invalid_type",
+        "path": [
+          "anchor_alignment"
+        ],
+        "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+      }
+    ]
+  },
+  {
+    "type": "pcb_hole",
+    "id": "pcb_hole_6",
+    "issues": [
+      {
+        "code": "invalid_union",
+        "unionErrors": [
+          {
+            "issues": [
+              {
+                "code": "invalid_union",
+                "unionErrors": [
+                  {
+                    "issues": [
+                      {
+                        "code": "invalid_union",
+                        "unionErrors": [
+                          {
+                            "issues": [
+                              {
+                                "code": "invalid_union",
+                                "unionErrors": [
+                                  {
+                                    "issues": [
+                                      {
+                                        "code": "invalid_union",
+                                        "unionErrors": [
+                                          {
+                                            "issues": [
+                                              {
+                                                "code": "invalid_type",
+                                                "expected": "string",
+                                                "received": "null",
+                                                "path": [
+                                                  "pcb_component_id"
+                                                ],
+                                                "message": "Expected string, received null"
+                                              }
+                                            ],
+                                            "name": "ZodError"
+                                          },
+                                          {
+                                            "issues": [
+                                              {
+                                                "code": "invalid_type",
+                                                "expected": "string",
+                                                "received": "null",
+                                                "path": [
+                                                  "pcb_component_id"
+                                                ],
+                                                "message": "Expected string, received null"
+                                              },
+                                              {
+                                                "received": "circle",
+                                                "code": "invalid_literal",
+                                                "expected": "oval",
+                                                "path": [
+                                                  "hole_shape"
+                                                ],
+                                                "message": "Invalid literal value, expected \"oval\""
+                                              },
+                                              {
+                                                "code": "invalid_type",
+                                                "expected": "number",
+                                                "received": "undefined",
+                                                "path": [
+                                                  "hole_width"
+                                                ],
+                                                "message": "Required"
+                                              },
+                                              {
+                                                "code": "invalid_type",
+                                                "expected": "number",
+                                                "received": "undefined",
+                                                "path": [
+                                                  "hole_height"
+                                                ],
+                                                "message": "Required"
+                                              }
+                                            ],
+                                            "name": "ZodError"
+                                          }
+                                        ],
+                                        "path": [],
+                                        "message": "Invalid input"
+                                      }
+                                    ],
+                                    "name": "ZodError"
+                                  },
+                                  {
+                                    "issues": [
+                                      {
+                                        "code": "invalid_type",
+                                        "expected": "string",
+                                        "received": "null",
+                                        "path": [
+                                          "pcb_component_id"
+                                        ],
+                                        "message": "Expected string, received null"
+                                      },
+                                      {
+                                        "received": "circle",
+                                        "code": "invalid_literal",
+                                        "expected": "pill",
+                                        "path": [
+                                          "hole_shape"
+                                        ],
+                                        "message": "Invalid literal value, expected \"pill\""
+                                      },
+                                      {
+                                        "code": "invalid_type",
+                                        "expected": "number",
+                                        "received": "undefined",
+                                        "path": [
+                                          "hole_width"
+                                        ],
+                                        "message": "Required"
+                                      },
+                                      {
+                                        "code": "invalid_type",
+                                        "expected": "number",
+                                        "received": "undefined",
+                                        "path": [
+                                          "hole_height"
+                                        ],
+                                        "message": "Required"
+                                      }
+                                    ],
+                                    "name": "ZodError"
+                                  }
+                                ],
+                                "path": [],
+                                "message": "Invalid input"
+                              }
+                            ],
+                            "name": "ZodError"
+                          },
+                          {
+                            "issues": [
+                              {
+                                "code": "invalid_type",
+                                "expected": "string",
+                                "received": "null",
+                                "path": [
+                                  "pcb_component_id"
+                                ],
+                                "message": "Expected string, received null"
+                              },
+                              {
+                                "received": "circle",
+                                "code": "invalid_literal",
+                                "expected": "rotated_pill",
+                                "path": [
+                                  "hole_shape"
+                                ],
+                                "message": "Invalid literal value, expected \"rotated_pill\""
+                              },
+                              {
+                                "code": "invalid_type",
+                                "expected": "number",
+                                "received": "undefined",
+                                "path": [
+                                  "hole_width"
+                                ],
+                                "message": "Required"
+                              },
+                              {
+                                "code": "invalid_type",
+                                "expected": "number",
+                                "received": "undefined",
+                                "path": [
+                                  "hole_height"
+                                ],
+                                "message": "Required"
+                              },
+                              {
+                                "code": "invalid_union",
+                                "unionErrors": [
+                                  {
+                                    "issues": [
+                                      {
+                                        "code": "invalid_type",
+                                        "expected": "string",
+                                        "received": "undefined",
+                                        "path": [
+                                          "ccw_rotation"
+                                        ],
+                                        "message": "Required"
+                                      }
+                                    ],
+                                    "name": "ZodError"
+                                  },
+                                  {
+                                    "issues": [
+                                      {
+                                        "code": "invalid_type",
+                                        "expected": "number",
+                                        "received": "undefined",
+                                        "path": [
+                                          "ccw_rotation"
+                                        ],
+                                        "message": "Required"
+                                      }
+                                    ],
+                                    "name": "ZodError"
+                                  }
+                                ],
+                                "path": [
+                                  "ccw_rotation"
+                                ],
+                                "message": "Invalid input"
+                              }
+                            ],
+                            "name": "ZodError"
+                          }
+                        ],
+                        "path": [],
+                        "message": "Invalid input"
+                      }
+                    ],
+                    "name": "ZodError"
+                  },
+                  {
+                    "issues": [
+                      {
+                        "code": "invalid_type",
+                        "expected": "string",
+                        "received": "null",
+                        "path": [
+                          "pcb_component_id"
+                        ],
+                        "message": "Expected string, received null"
+                      }
+                    ],
+                    "name": "ZodError"
+                  }
+                ],
+                "path": [],
+                "message": "Invalid input"
+              }
+            ],
+            "name": "ZodError"
+          },
+          {
+            "issues": [
+              {
+                "code": "invalid_type",
+                "expected": "string",
+                "received": "null",
+                "path": [
+                  "pcb_component_id"
+                ],
+                "message": "Expected string, received null"
+              },
+              {
+                "received": "circle",
+                "code": "invalid_literal",
+                "expected": "rect",
+                "path": [
+                  "hole_shape"
+                ],
+                "message": "Invalid literal value, expected \"rect\""
+              },
+              {
+                "code": "invalid_type",
+                "expected": "number",
+                "received": "undefined",
+                "path": [
+                  "hole_width"
+                ],
+                "message": "Required"
+              },
+              {
+                "code": "invalid_type",
+                "expected": "number",
+                "received": "undefined",
+                "path": [
+                  "hole_height"
+                ],
+                "message": "Required"
+              }
+            ],
+            "name": "ZodError"
+          }
+        ],
+        "path": [],
+        "message": "Invalid input"
+      }
+    ]
+  },
+  {
+    "type": "pcb_silkscreen_text",
+    "id": "pcb_silkscreen_text_119",
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "null",
+        "path": [
+          "pcb_component_id"
+        ],
+        "message": "Expected string, received null"
+      }
+    ]
+  }
+]

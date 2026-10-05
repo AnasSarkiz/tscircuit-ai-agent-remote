@@ -1,0 +1,955 @@
+src/board/BacklightSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    25  25 │           <GRM188R61A106ME69D name="C85" {...place("C85")} schX={8} schY={-5} schRotation={-90} />
+    26  26 │           <trace name="BL_CURRENT_SETTING" from="U27.pin1" to="R102.pin1" routingPhaseIndex={7} />
+    27     │ - ········<trace·from="R102.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R102.pin2",·placementOnly)}·/>
+        27 │ + ········<trace
+        28 │ + ··········from="R102.pin2"
+        29 │ + ··········to="net.GND"
+        30 │ + ··········width={0.3}
+        31 │ + ··········pcbPath={groundPath("R102.pin2",·placementOnly)}
+        32 │ + ········/>
+    28  33 │           {/* D5/pin2 is unused; D1 remains connected as TI requires for output regulation. */}
+    29  34 │           <trace from="U27.pin3" to="net.LCD_BACKLIGHT_RETURN_4" />
+    ······ │ 
+    31  36 │           <trace from="U27.pin5" to="net.LCD_BACKLIGHT_RETURN_2" />
+    32  37 │           <trace from="U27.pin6" to="net.LCD_BACKLIGHT_RETURN_1" />
+    33     │ - ········<trace·from="U27.pin7"·to="net.GND"·width={0.3}·pcbPath={groundPath("U27.pin7",·placementOnly)}·/>
+        38 │ + ········<trace
+        39 │ + ··········from="U27.pin7"
+        40 │ + ··········to="net.GND"
+        41 │ + ··········width={0.3}
+        42 │ + ··········pcbPath={groundPath("U27.pin7",·placementOnly)}
+        43 │ + ········/>
+    34  44 │           <trace from="U27.pin8" to="net.LCD_BACKLIGHT_OUTPUT" />
+    35  45 │           <trace
+    ······ │ 
+    63  73 │           />
+    64  74 │           <trace from="U27.pin13" to="net.V3V3" />
+    65     │ - ········<trace·from="U27.pin14"·to="net.GND"·width={0.3}·pcbPath={groundPath("U27.pin14",·placementOnly)}·/>
+        75 │ + ········<trace
+        76 │ + ··········from="U27.pin14"
+        77 │ + ··········to="net.GND"
+        78 │ + ··········width={0.3}
+        79 │ + ··········pcbPath={groundPath("U27.pin14",·placementOnly)}
+        80 │ + ········/>
+    66  81 │           <trace from="U27.pin15" to="net.BACKLIGHT_GATE" />
+    67  82 │           <trace from="U27.pin16" to="net.BACKLIGHT_GATE" />
+    68     │ - ········<trace·from="U27.pin17"·to="net.GND"·width={0.2}·pcbPath={groundPath("U27.pin17",·placementOnly)}·/>
+        83 │ + ········<trace
+        84 │ + ··········from="U27.pin17"
+        85 │ + ··········to="net.GND"
+        86 │ + ··········width={0.2}
+        87 │ + ··········pcbPath={groundPath("U27.pin17",·placementOnly)}
+        88 │ + ········/>
+    69  89 │           <trace from="R103.pin1" to="net.MCU_BACKLIGHT_PWM" />
+    70  90 │           <trace from="R103.pin2" to="net.BACKLIGHT_GATE" />
+    71  91 │           <trace from="R104.pin1" to="net.BACKLIGHT_GATE" />
+    72     │ - ········<trace·from="R104.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R104.pin2",·placementOnly)}·/>
+        92 │ + ········<trace
+        93 │ + ··········from="R104.pin2"
+        94 │ + ··········to="net.GND"
+        95 │ + ··········width={0.3}
+        96 │ + ··········pcbPath={groundPath("R104.pin2",·placementOnly)}
+        97 │ + ········/>
+    73  98 │           <trace from="C84.pin1" to="net.V3V3" />
+    74     │ - ········<trace·from="C84.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C84.pin2",·placementOnly)}·/>
+        99 │ + ········<trace
+       100 │ + ··········from="C84.pin2"
+       101 │ + ··········to="net.GND"
+       102 │ + ··········width={0.3}
+       103 │ + ··········pcbPath={groundPath("C84.pin2",·placementOnly)}
+       104 │ + ········/>
+    75 105 │           <trace from="C85.pin1" to="net.LCD_BACKLIGHT_OUTPUT" />
+    76     │ - ········<trace·from="C85.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C85.pin2",·placementOnly)}·/>
+       106 │ + ········<trace
+       107 │ + ··········from="C85.pin2"
+       108 │ + ··········to="net.GND"
+       109 │ + ··········width={0.3}
+       110 │ + ··········pcbPath={groundPath("C85.pin2",·placementOnly)}
+       111 │ + ········/>
+    77 112 │         </group>
+    78 113 │       </schematicsheet>
+  
+
+src/board/BatteryReadySheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    20 20 │           <GRM188R71C104KA01D name="C77" {...place("C77")} schX={0} schY={-2} schRotation={-90} />
+    21 21 │           <trace from="U25.pin1" to="net.BUCK_ENABLE" />
+    22    │ - ········<trace·from="U25.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U25.pin2",·placementOnly)}·/>
+       22 │ + ········<trace
+       23 │ + ··········from="U25.pin2"
+       24 │ + ··········to="net.GND"
+       25 │ + ··········width={0.3}
+       26 │ + ··········pcbPath={groundPath("U25.pin2",·placementOnly)}
+       27 │ + ········/>
+    23 28 │           <trace from="U25.pin3" to="net.VSYS" />
+    24 29 │           <trace from="U25.pin5" to="net.PACK_BAT" />
+    ····· │ 
+    27 32 │           <trace from="R96.pin2" to="net.BUCK_ENABLE" />
+    28 33 │           <trace from="R97.pin1" to="net.BUCK_ENABLE" />
+    29    │ - ········<trace·from="R97.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R97.pin2",·placementOnly)}·/>
+       34 │ + ········<trace
+       35 │ + ··········from="R97.pin2"
+       36 │ + ··········to="net.GND"
+       37 │ + ··········width={0.3}
+       38 │ + ··········pcbPath={groundPath("R97.pin2",·placementOnly)}
+       39 │ + ········/>
+    30 40 │           <trace from="C76.pin1" to="net.VSYS" />
+    31    │ - ········<trace·from="C76.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C76.pin2",·placementOnly)}·/>
+       41 │ + ········<trace
+       42 │ + ··········from="C76.pin2"
+       43 │ + ··········to="net.GND"
+       44 │ + ··········width={0.3}
+       45 │ + ··········pcbPath={groundPath("C76.pin2",·placementOnly)}
+       46 │ + ········/>
+    32 47 │           <trace from="C77.pin1" to="net.BUCK_ENABLE" />
+    33    │ - ········<trace·from="C77.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C77.pin2",·placementOnly)}·/>
+       48 │ + ········<trace
+       49 │ + ··········from="C77.pin2"
+       50 │ + ··········to="net.GND"
+       51 │ + ··········width={0.3}
+       52 │ + ··········pcbPath={groundPath("C77.pin2",·placementOnly)}
+       53 │ + ········/>
+    34 54 │         </group>
+    35 55 │       </schematicsheet>
+  
+
+src/board/ChargerSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    43 43 │           <trace from="J3.pin2" to="net.PACK_NTC" />
+    44 44 │           <trace from="C1.pin1" to="net.VBUS" />
+    45    │ - ········<trace·from="C1.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C1.pin2",·placementOnly)}·/>
+       45 │ + ········<trace
+       46 │ + ··········from="C1.pin2"
+       47 │ + ··········to="net.GND"
+       48 │ + ··········width={0.3}
+       49 │ + ··········pcbPath={groundPath("C1.pin2",·placementOnly)}
+       50 │ + ········/>
+    46 51 │           <trace from="C2.pin1" to="net.PACK_BAT" />
+    47    │ - ········<trace·from="C2.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C2.pin2",·placementOnly)}·/>
+       52 │ + ········<trace
+       53 │ + ··········from="C2.pin2"
+       54 │ + ··········to="net.GND"
+       55 │ + ··········width={0.3}
+       56 │ + ··········pcbPath={groundPath("C2.pin2",·placementOnly)}
+       57 │ + ········/>
+    48 58 │           <trace from="C3.pin1" to="net.VSYS" />
+    49    │ - ········<trace·from="C3.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C3.pin2",·placementOnly)}·/>
+       59 │ + ········<trace
+       60 │ + ··········from="C3.pin2"
+       61 │ + ··········to="net.GND"
+       62 │ + ··········width={0.3}
+       63 │ + ··········pcbPath={groundPath("C3.pin2",·placementOnly)}
+       64 │ + ········/>
+    50 65 │           <trace from="R1.pin1" to="net.CHARGER_ISET" />
+    51    │ - ········<trace·from="R1.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R1.pin2",·placementOnly)}·/>
+       66 │ + ········<trace
+       67 │ + ··········from="R1.pin2"
+       68 │ + ··········to="net.GND"
+       69 │ + ··········width={0.3}
+       70 │ + ··········pcbPath={groundPath("R1.pin2",·placementOnly)}
+       71 │ + ········/>
+    52 72 │           <trace from="R2.pin1" to="net.CHARGER_ILIM" />
+    53    │ - ········<trace·from="R2.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R2.pin2",·placementOnly)}·/>
+       73 │ + ········<trace
+       74 │ + ··········from="R2.pin2"
+       75 │ + ··········to="net.GND"
+       76 │ + ··········width={0.3}
+       77 │ + ··········pcbPath={groundPath("R2.pin2",·placementOnly)}
+       78 │ + ········/>
+    54 79 │           <trace from="R3.pin1" to="net.V3V3" />
+    55 80 │           <trace from="R3.pin2" to="net.CHARGE_PGOOD_N" />
+  
+
+src/board/ControlsSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    41 41 │           <trace from="SW4.pin2" to="net.HOLD_HARDWARE" />
+    42 42 │           <trace from="SW1.pin1" to="net.MCU_BOOT_N" />
+    43    │ - ········<trace·from="SW1.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("SW1.pin2",·placementOnly)}·/>
+       43 │ + ········<trace
+       44 │ + ··········from="SW1.pin2"
+       45 │ + ··········to="net.GND"
+       46 │ + ··········width={0.3}
+       47 │ + ··········pcbPath={groundPath("SW1.pin2",·placementOnly)}
+       48 │ + ········/>
+    44 49 │           <trace from="SW2.pin1" to="net.MCU_EN" />
+    45    │ - ········<trace·from="SW2.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("SW2.pin2",·placementOnly)}·/>
+       50 │ + ········<trace
+       51 │ + ··········from="SW2.pin2"
+       52 │ + ··········to="net.GND"
+       53 │ + ··········width={0.3}
+       54 │ + ··········pcbPath={groundPath("SW2.pin2",·placementOnly)}
+       55 │ + ········/>
+    46 56 │           <trace from="SW5.pin2" to="net.MIC_INPUT" />
+    47 57 │           <trace from="SW5.pin1" to="net.V3V3" />
+    48    │ - ········<trace·from="SW5.pin3"·to="net.GND"·width={0.3}·pcbPath={groundPath("SW5.pin3",·placementOnly)}·/>
+    49    │ - ········<trace·from="SW5.pin4"·to="net.GND"·width={0.3}·pcbPath={groundPath("SW5.pin4",·placementOnly)}·/>
+       58 │ + ········<trace
+       59 │ + ··········from="SW5.pin3"
+       60 │ + ··········to="net.GND"
+       61 │ + ··········width={0.3}
+       62 │ + ··········pcbPath={groundPath("SW5.pin3",·placementOnly)}
+       63 │ + ········/>
+       64 │ + ········<trace
+       65 │ + ··········from="SW5.pin4"
+       66 │ + ··········to="net.GND"
+       67 │ + ··········width={0.3}
+       68 │ + ··········pcbPath={groundPath("SW5.pin4",·placementOnly)}
+       69 │ + ········/>
+    50 70 │         </group>
+    51 71 │       </schematicsheet>
+  
+
+src/board/DisplaySheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     48  48 │           <A_0603WAF1001T5E name="R41" {...place("R41")} schX={-3.0} schY={-6.75} schRotation={-90} />
+     49  49 │           <trace from="U13.pin1" to="net.V3V3" />
+     50     │ - ········<trace·from="U13.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U13.pin2",·placementOnly)}·/>
+         50 │ + ········<trace
+         51 │ + ··········from="U13.pin2"
+         52 │ + ··········to="net.GND"
+         53 │ + ··········width={0.3}
+         54 │ + ··········pcbPath={groundPath("U13.pin2",·placementOnly)}
+         55 │ + ········/>
+     51  56 │           <trace from="U13.pin3" to="net.LCD_ENABLE" />
+     52  57 │           <trace from="U13.pin5" to="net.VLCD" />
+     53  58 │           <trace from="R40.pin1" to="net.LCD_ENABLE" />
+     54     │ - ········<trace·from="R40.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R40.pin2",·placementOnly)}·/>
+         59 │ + ········<trace
+         60 │ + ··········from="R40.pin2"
+         61 │ + ··········to="net.GND"
+         62 │ + ··········width={0.3}
+         63 │ + ··········pcbPath={groundPath("R40.pin2",·placementOnly)}
+         64 │ + ········/>
+     55  65 │           <trace from="R41.pin1" to="net.VLCD" />
+     56     │ - ········<trace·from="R41.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R41.pin2",·placementOnly)}·/>
+         66 │ + ········<trace
+         67 │ + ··········from="R41.pin2"
+         68 │ + ··········to="net.GND"
+         69 │ + ··········width={0.3}
+         70 │ + ··········pcbPath={groundPath("R41.pin2",·placementOnly)}
+         71 │ + ········/>
+     57  72 │           <trace from="C40.pin1" to="net.V3V3" />
+     58     │ - ········<trace·from="C40.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C40.pin2",·placementOnly)}·/>
+         73 │ + ········<trace
+         74 │ + ··········from="C40.pin2"
+         75 │ + ··········to="net.GND"
+         76 │ + ··········width={0.3}
+         77 │ + ··········pcbPath={groundPath("C40.pin2",·placementOnly)}
+         78 │ + ········/>
+     59  79 │           <trace from="C41.pin1" to="net.VLCD" />
+     60     │ - ········<trace·from="C41.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C41.pin2",·placementOnly)}·/>
+         80 │ + ········<trace
+         81 │ + ··········from="C41.pin2"
+         82 │ + ··········to="net.GND"
+         83 │ + ··········width={0.3}
+         84 │ + ··········pcbPath={groundPath("C41.pin2",·placementOnly)}
+         85 │ + ········/>
+     61  86 │           <trace from="C42.pin1" to="net.VLCD" />
+     62     │ - ········<trace·from="C42.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C42.pin2",·placementOnly)}·/>
+         87 │ + ········<trace
+         88 │ + ··········from="C42.pin2"
+         89 │ + ··········to="net.GND"
+         90 │ + ··········width={0.3}
+         91 │ + ··········pcbPath={groundPath("C42.pin2",·placementOnly)}
+         92 │ + ········/>
+     63  93 │           <trace from="C43.pin1" to="net.VLCD" />
+     64     │ - ········<trace·from="C43.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C43.pin2",·placementOnly)}·/>
+         94 │ + ········<trace
+         95 │ + ··········from="C43.pin2"
+         96 │ + ··········to="net.GND"
+         97 │ + ··········width={0.3}
+         98 │ + ··········pcbPath={groundPath("C43.pin2",·placementOnly)}
+         99 │ + ········/>
+     65 100 │           <trace from="U14.pin1" to="net.VLCD" />
+     66     │ - ········<trace·from="U14.pin10"·to="net.GND"·width={0.3}·pcbPath={groundPath("U14.pin10",·placementOnly)}·/>
+     67     │ - ········<trace·from="U14.pin19"·to="net.GND"·width={0.3}·pcbPath={groundPath("U14.pin19",·placementOnly)}·/>
+        101 │ + ········<trace
+        102 │ + ··········from="U14.pin10"
+        103 │ + ··········to="net.GND"
+        104 │ + ··········width={0.3}
+        105 │ + ··········pcbPath={groundPath("U14.pin10",·placementOnly)}
+        106 │ + ········/>
+        107 │ + ········<trace
+        108 │ + ··········from="U14.pin19"
+        109 │ + ··········to="net.GND"
+        110 │ + ··········width={0.3}
+        111 │ + ··········pcbPath={groundPath("U14.pin19",·placementOnly)}
+        112 │ + ········/>
+     68 113 │           <trace from="U14.pin20" to="net.VLCD" />
+     69     │ - ········<trace·from="U14.pin7"·to="net.GND"·width={0.3}·pcbPath={groundPath("U14.pin7",·placementOnly)}·/>
+     70     │ - ········<trace·from="U14.pin8"·to="net.GND"·width={0.3}·pcbPath={groundPath("U14.pin8",·placementOnly)}·/>
+     71     │ - ········<trace·from="U14.pin9"·to="net.GND"·width={0.3}·pcbPath={groundPath("U14.pin9",·placementOnly)}·/>
+        114 │ + ········<trace
+        115 │ + ··········from="U14.pin7"
+        116 │ + ··········to="net.GND"
+        117 │ + ··········width={0.3}
+        118 │ + ··········pcbPath={groundPath("U14.pin7",·placementOnly)}
+        119 │ + ········/>
+        120 │ + ········<trace
+        121 │ + ··········from="U14.pin8"
+        122 │ + ··········to="net.GND"
+        123 │ + ··········width={0.3}
+        124 │ + ··········pcbPath={groundPath("U14.pin8",·placementOnly)}
+        125 │ + ········/>
+        126 │ + ········<trace
+        127 │ + ··········from="U14.pin9"
+        128 │ + ··········to="net.GND"
+        129 │ + ··········width={0.3}
+        130 │ + ··········pcbPath={groundPath("U14.pin9",·placementOnly)}
+        131 │ + ········/>
+     72 132 │           {/* BuyDisplay no-touch panel: SPI II IM[3:0]=1110; existing panel n to connector 51-n is PROVISIONAL; new portrait flex/contact orientation must be confirmed before routing. */}
+     73 133 │           <trace from="J7.pin50" to="net.LCD_BACKLIGHT_OUTPUT" />
+    ······· │ 
+    122 182 │           <trace from="U14.pin2" to="net.MCU_LCD_CS_N" />
+    123 183 │           <trace from="R47.pin1" to="net.MCU_LCD_CS_N" />
+    124     │ - ········<trace·from="R47.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R47.pin2",·placementOnly)}·/>
+        184 │ + ········<trace
+        185 │ + ··········from="R47.pin2"
+        186 │ + ··········to="net.GND"
+        187 │ + ··········width={0.3}
+        188 │ + ··········pcbPath={groundPath("R47.pin2",·placementOnly)}
+        189 │ + ········/>
+    125 190 │           <trace from="U14.pin18" to="net.LCD_CS_N" />
+    126 191 │           <trace from="R42.pin1" to="net.LCD_CS_N" />
+    ······· │ 
+    130 195 │           <trace from="U14.pin3" to="net.MCU_LCD_RESET_N" />
+    131 196 │           <trace from="R48.pin1" to="net.MCU_LCD_RESET_N" />
+    132     │ - ········<trace·from="R48.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R48.pin2",·placementOnly)}·/>
+        197 │ + ········<trace
+        198 │ + ··········from="R48.pin2"
+        199 │ + ··········to="net.GND"
+        200 │ + ··········width={0.3}
+        201 │ + ··········pcbPath={groundPath("R48.pin2",·placementOnly)}
+        202 │ + ········/>
+    133 203 │           <trace from="U14.pin17" to="net.LCD_RESET_N" />
+    134 204 │           <trace from="R43.pin1" to="net.LCD_RESET_N" />
+    135     │ - ········<trace·from="R43.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R43.pin2",·placementOnly)}·/>
+        205 │ + ········<trace
+        206 │ + ··········from="R43.pin2"
+        207 │ + ··········to="net.GND"
+        208 │ + ··········width={0.3}
+        209 │ + ··········pcbPath={groundPath("R43.pin2",·placementOnly)}
+        210 │ + ········/>
+    136 211 │           <RC0603FR_07100KL name="R49" {...place("R49")} schX={-6.0} schY={-3.75} schRotation={-90} />
+    137 212 │           <RC0603FR_0710KL name="R44" {...place("R44")} schX={11.25} schY={-3.75} schRotation={-90} />
+    138 213 │           <trace from="U14.pin4" to="net.MCU_LCD_DC" />
+    139 214 │           <trace from="R49.pin1" to="net.MCU_LCD_DC" />
+    140     │ - ········<trace·from="R49.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R49.pin2",·placementOnly)}·/>
+        215 │ + ········<trace
+        216 │ + ··········from="R49.pin2"
+        217 │ + ··········to="net.GND"
+        218 │ + ··········width={0.3}
+        219 │ + ··········pcbPath={groundPath("R49.pin2",·placementOnly)}
+        220 │ + ········/>
+    141 221 │           <trace from="U14.pin16" to="net.LCD_DC" />
+    142 222 │           <trace from="R44.pin1" to="net.LCD_DC" />
+    143     │ - ········<trace·from="R44.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R44.pin2",·placementOnly)}·/>
+        223 │ + ········<trace
+        224 │ + ··········from="R44.pin2"
+        225 │ + ··········to="net.GND"
+        226 │ + ··········width={0.3}
+        227 │ + ··········pcbPath={groundPath("R44.pin2",·placementOnly)}
+        228 │ + ········/>
+    144 229 │           <RC0603FR_07100KL name="R50" {...place("R50")} schX={-6.0} schY={-6.0} schRotation={-90} />
+    145 230 │           <RC0603FR_0710KL name="R45" {...place("R45")} schX={11.25} schY={-6.0} schRotation={-90} />
+    146 231 │           <trace from="U14.pin5" to="net.MCU_LCD_SCLK" />
+  39 more lines truncated
+  
+
+src/board/HapticSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    32 32 │           <RC0603FR_07100KL name="R85" {...place("R85")} schX={-6} schY={-6} schRotation={-90} />
+    33 33 │           <trace from="U22.pin1" to="net.VSYS" />
+    34    │ - ········<trace·from="U22.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U22.pin2",·placementOnly)}·/>
+       34 │ + ········<trace
+       35 │ + ··········from="U22.pin2"
+       36 │ + ··········to="net.GND"
+       37 │ + ··········width={0.3}
+       38 │ + ··········pcbPath={groundPath("U22.pin2",·placementOnly)}
+       39 │ + ········/>
+    35 40 │           <trace from="U22.pin3" to="net.MCU_HAPTIC_ENABLE" />
+    36 41 │           <trace from="U22.pin5" to="net.VMOTOR" />
+    37 42 │           <trace from="Q9.pin1" to="net.HAPTIC_NMOS_GATE" />
+    38    │ - ········<trace·from="Q9.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("Q9.pin2",·placementOnly)}·/>
+       43 │ + ········<trace
+       44 │ + ··········from="Q9.pin2"
+       45 │ + ··········to="net.GND"
+       46 │ + ··········width={0.3}
+       47 │ + ··········pcbPath={groundPath("Q9.pin2",·placementOnly)}
+       48 │ + ········/>
+    39 49 │           <trace from="Q9.pin3" to="net.HAPTIC_N" />
+    40 50 │           <trace from="D3.pin1" to="net.VMOTOR" />
+    41 51 │           <trace from="D3.pin2" to="net.HAPTIC_N" />
+    42 52 │           <trace from="C70.pin1" to="net.VSYS" />
+    43    │ - ········<trace·from="C70.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C70.pin2",·placementOnly)}·/>
+       53 │ + ········<trace
+       54 │ + ··········from="C70.pin2"
+       55 │ + ··········to="net.GND"
+       56 │ + ··········width={0.3}
+       57 │ + ··········pcbPath={groundPath("C70.pin2",·placementOnly)}
+       58 │ + ········/>
+    44 59 │           <trace from="C71.pin1" to="net.VMOTOR" />
+    45    │ - ········<trace·from="C71.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C71.pin2",·placementOnly)}·/>
+       60 │ + ········<trace
+       61 │ + ··········from="C71.pin2"
+       62 │ + ··········to="net.GND"
+       63 │ + ··········width={0.3}
+       64 │ + ··········pcbPath={groundPath("C71.pin2",·placementOnly)}
+       65 │ + ········/>
+    46 66 │           <trace from="C72.pin1" to="net.VMOTOR" />
+    47 67 │           <trace from="C72.pin2" to="net.HAPTIC_N" />
+    48 68 │           <trace from="R82.pin1" to="net.VMOTOR" />
+    49    │ - ········<trace·from="R82.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R82.pin2",·placementOnly)}·/>
+       69 │ + ········<trace
+       70 │ + ··········from="R82.pin2"
+       71 │ + ··········to="net.GND"
+       72 │ + ··········width={0.3}
+       73 │ + ··········pcbPath={groundPath("R82.pin2",·placementOnly)}
+       74 │ + ········/>
+    50 75 │           <trace from="R83.pin1" to="net.MCU_HAPTIC_ENABLE" />
+    51 76 │           <trace from="R83.pin2" to="net.HAPTIC_NMOS_GATE" />
+    52 77 │           <trace from="R84.pin1" to="net.HAPTIC_NMOS_GATE" />
+    53    │ - ········<trace·from="R84.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R84.pin2",·placementOnly)}·/>
+       78 │ + ········<trace
+       79 │ + ··········from="R84.pin2"
+       80 │ + ··········to="net.GND"
+       81 │ + ··········width={0.3}
+       82 │ + ··········pcbPath={groundPath("R84.pin2",·placementOnly)}
+       83 │ + ········/>
+    54 84 │           <trace from="R85.pin1" to="net.MCU_HAPTIC_ENABLE" />
+    55    │ - ········<trace·from="R85.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R85.pin2",·placementOnly)}·/>
+       85 │ + ········<trace
+       86 │ + ··········from="R85.pin2"
+       87 │ + ··········to="net.GND"
+       88 │ + ··········width={0.3}
+       89 │ + ··········pcbPath={groundPath("R85.pin2",·placementOnly)}
+       90 │ + ········/>
+    56 91 │         </group>
+    57 92 │       </schematicsheet>
+  
+
+src/board/HoldSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    24 24 │           <GRM188R71C104KA01D name="C78" {...place("C78")} schX={-5} schY={3} schRotation={-90} />
+    25 25 │           <trace from="U26.pin2" to="net.HOLD_HARDWARE" />
+    26    │ - ········<trace·from="U26.pin3"·to="net.GND"·width={0.3}·pcbPath={groundPath("U26.pin3",·placementOnly)}·/>
+       26 │ + ········<trace
+       27 │ + ··········from="U26.pin3"
+       28 │ + ··········to="net.GND"
+       29 │ + ··········width={0.3}
+       30 │ + ··········pcbPath={groundPath("U26.pin3",·placementOnly)}
+       31 │ + ········/>
+    27 32 │           <trace from="U26.pin4" to="net.HOLD_BUFFER_OUT" />
+    28 33 │           <trace from="U26.pin5" to="net.V3V3" />
+    29 34 │           <trace from="R99.pin1" to="net.HOLD_HARDWARE" />
+    30    │ - ········<trace·from="R99.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R99.pin2",·placementOnly)}·/>
+       35 │ + ········<trace
+       36 │ + ··········from="R99.pin2"
+       37 │ + ··········to="net.GND"
+       38 │ + ··········width={0.3}
+       39 │ + ··········pcbPath={groundPath("R99.pin2",·placementOnly)}
+       40 │ + ········/>
+    31 41 │           <trace from="R100.pin1" to="net.HOLD_BUFFER_OUT" />
+    32 42 │           <trace from="R100.pin2" to="net.MCU_HOLD_READ" />
+    33 43 │           <trace from="C78.pin1" to="net.V3V3" />
+    34    │ - ········<trace·from="C78.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C78.pin2",·placementOnly)}·/>
+       44 │ + ········<trace
+       45 │ + ··········from="C78.pin2"
+       46 │ + ··········to="net.GND"
+       47 │ + ··········width={0.3}
+       48 │ + ··········pcbPath={groundPath("C78.pin2",·placementOnly)}
+       49 │ + ········/>
+    35 50 │         </group>
+    36 51 │       </schematicsheet>
+  
+
+src/board/McuUsbSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     41  41 │           <GRM188R71C104KA01D name="C32" {...place("C32")} schX={8.4} schY={7} schRotation={-90} />
+     42  42 │           <trace from="U1.pin2" to="net.V3V3" />
+     43     │ - ········<trace·from="U1.pin1"·to="net.GND"·width={0.3}·pcbPath={groundPath("U1.pin1",·placementOnly)}·/>
+     44     │ - ········<trace·from="U1.pin40"·to="net.GND"·width={0.3}·pcbPath={groundPath("U1.pin40",·placementOnly)}·/>
+     45     │ - ········<trace·from="U1.pin41"·to="net.GND"·width={0.3}·pcbPath={groundPath("U1.pin41",·placementOnly)}·/>
+         43 │ + ········<trace
+         44 │ + ··········from="U1.pin1"
+         45 │ + ··········to="net.GND"
+         46 │ + ··········width={0.3}
+         47 │ + ··········pcbPath={groundPath("U1.pin1",·placementOnly)}
+         48 │ + ········/>
+         49 │ + ········<trace
+         50 │ + ··········from="U1.pin40"
+         51 │ + ··········to="net.GND"
+         52 │ + ··········width={0.3}
+         53 │ + ··········pcbPath={groundPath("U1.pin40",·placementOnly)}
+         54 │ + ········/>
+         55 │ + ········<trace
+         56 │ + ··········from="U1.pin41"
+         57 │ + ··········to="net.GND"
+         58 │ + ··········width={0.3}
+         59 │ + ··········pcbPath={groundPath("U1.pin41",·placementOnly)}
+         60 │ + ········/>
+     46  61 │           <trace from="U1.pin3" to="net.MCU_EN" />
+     47  62 │           <trace from="U1.pin27" to="net.MCU_BOOT_N" />
+    ······· │ 
+     58  73 │           <trace from="U1.pin37" to="net.MCU_UART_TX" />
+     59  74 │           <trace from="U1.pin36" to="net.MCU_UART_RX" />
+     60     │ - ········<trace·from="U12.pin1"·to="net.GND"·width={0.3}·pcbPath={groundPath("U12.pin1",·placementOnly)}·/>
+         75 │ + ········<trace
+         76 │ + ··········from="U12.pin1"
+         77 │ + ··········to="net.GND"
+         78 │ + ··········width={0.3}
+         79 │ + ··········pcbPath={groundPath("U12.pin1",·placementOnly)}
+         80 │ + ········/>
+     61  81 │           <trace from="U12.pin3" to="net.V3V3" />
+     62  82 │           <trace from="U12.pin2" to="net.MCU_RESET_N" />
+    ······· │ 
+     64  84 │           <trace from="R35.pin2" to="net.MCU_EN" />
+     65  85 │           <trace from="R37.pin1" to="net.MCU_EN" />
+     66     │ - ········<trace·from="R37.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R37.pin2",·placementOnly)}·/>
+         86 │ + ········<trace
+         87 │ + ··········from="R37.pin2"
+         88 │ + ··········to="net.GND"
+         89 │ + ··········width={0.3}
+         90 │ + ··········pcbPath={groundPath("R37.pin2",·placementOnly)}
+         91 │ + ········/>
+     67  92 │           <trace from="R36.pin1" to="net.V3V3" />
+     68  93 │           <trace from="R36.pin2" to="net.MCU_BOOT_N" />
+     69  94 │           <trace from="R38.pin1" to="net.MCU_UART_TX" />
+     70  95 │           <trace from="R38.pin2" to="net.SERVICE_UART_TX" />
+     71     │ - ········<trace·from="J6.pin1"·to="net.GND"·width={0.3}·pcbPath={groundPath("J6.pin1",·placementOnly)}·/>
+         96 │ + ········<trace
+         97 │ + ··········from="J6.pin1"
+         98 │ + ··········to="net.GND"
+         99 │ + ··········width={0.3}
+        100 │ + ··········pcbPath={groundPath("J6.pin1",·placementOnly)}
+        101 │ + ········/>
+     72 102 │           <trace from="J6.pin2" to="net.V3V3" />
+     73 103 │           <trace from="J6.pin3" to="net.MCU_EN" />
+    ······· │ 
+     75 105 │           <trace from="J6.pin5" to="net.SERVICE_UART_TX" />
+     76 106 │           <trace from="J6.pin6" to="net.MCU_UART_RX" />
+     77     │ - ········<trace·from="J6.pin7"·to="net.GND"·width={0.3}·pcbPath={groundPath("J6.pin7",·placementOnly)}·/>
+     78     │ - ········<trace·from="J6.pin8"·to="net.GND"·width={0.3}·pcbPath={groundPath("J6.pin8",·placementOnly)}·/>
+     79     │ - ········<trace·from="J1.pin1"·to="net.GND"·width={0.3}·pcbPath={groundPath("J1.pin1",·placementOnly)}·/>
+     80     │ - ········<trace·from="J1.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("J1.pin2",·placementOnly)}·/>
+     81     │ - ········<trace·from="J1.pin3"·to="net.GND"·width={0.3}·pcbPath={groundPath("J1.pin3",·placementOnly)}·/>
+     82     │ - ········<trace·from="J1.pin4"·to="net.GND"·width={0.3}·pcbPath={groundPath("J1.pin4",·placementOnly)}·/>
+     83     │ - ········<trace·from="J1.pin13"·to="net.GND"·width={0.3}·pcbPath={groundPath("J1.pin13",·placementOnly)}·/>
+     84     │ - ········<trace·from="J1.pin14"·to="net.GND"·width={0.3}·pcbPath={groundPath("J1.pin14",·placementOnly)}·/>
+        107 │ + ········<trace
+        108 │ + ··········from="J6.pin7"
+        109 │ + ··········to="net.GND"
+        110 │ + ··········width={0.3}
+        111 │ + ··········pcbPath={groundPath("J6.pin7",·placementOnly)}
+        112 │ + ········/>
+        113 │ + ········<trace
+        114 │ + ··········from="J6.pin8"
+        115 │ + ··········to="net.GND"
+        116 │ + ··········width={0.3}
+        117 │ + ··········pcbPath={groundPath("J6.pin8",·placementOnly)}
+        118 │ + ········/>
+        119 │ + ········<trace
+        120 │ + ··········from="J1.pin1"
+        121 │ + ··········to="net.GND"
+        122 │ + ··········width={0.3}
+        123 │ + ··········pcbPath={groundPath("J1.pin1",·placementOnly)}
+        124 │ + ········/>
+        125 │ + ········<trace
+        126 │ + ··········from="J1.pin2"
+        127 │ + ··········to="net.GND"
+        128 │ + ··········width={0.3}
+        129 │ + ··········pcbPath={groundPath("J1.pin2",·placementOnly)}
+        130 │ + ········/>
+        131 │ + ········<trace
+        132 │ + ··········from="J1.pin3"
+        133 │ + ··········to="net.GND"
+        134 │ + ··········width={0.3}
+        135 │ + ··········pcbPath={groundPath("J1.pin3",·placementOnly)}
+        136 │ + ········/>
+        137 │ + ········<trace
+        138 │ + ··········from="J1.pin4"
+        139 │ + ··········to="net.GND"
+        140 │ + ··········width={0.3}
+        141 │ + ··········pcbPath={groundPath("J1.pin4",·placementOnly)}
+        142 │ + ········/>
+        143 │ + ········<trace
+        144 │ + ··········from="J1.pin13"
+        145 │ + ··········to="net.GND"
+        146 │ + ··········width={0.3}
+        147 │ + ··········pcbPath={groundPath("J1.pin13",·placementOnly)}
+        148 │ + ········/>
+        149 │ + ········<trace
+        150 │ + ··········from="J1.pin14"
+        151 │ + ··········to="net.GND"
+        152 │ + ··········width={0.3}
+        153 │ + ··········pcbPath={groundPath("J1.pin14",·placementOnly)}
+        154 │ + ········/>
+     85 155 │           <trace from="J1.pin15" to="net.VBUS" />
+     86 156 │           <trace from="J1.pin16" to="net.VBUS" />
+    ······· │ 
+     93 163 │           <trace from="D2.pin1" to="net.USB_DP" />
+     94 164 │           <trace from="D2.pin2" to="net.USB_DN" />
+     95     │ - ········<trace·from="D2.pin3"·to="net.GND"·width={0.3}·pcbPath={groundPath("D2.pin3",·placementOnly)}·/>
+        165 │ + ········<trace
+        166 │ + ··········from="D2.pin3"
+        167 │ + ··········to="net.GND"
+        168 │ + ··········width={0.3}
+        169 │ + ··········pcbPath={groundPath("D2.pin3",·placementOnly)}
+        170 │ + ········/>
+     96 171 │           <trace from="R31.pin1" to="net.USB_DP" />
+     97 172 │           <trace from="R32.pin1" to="net.USB_DN" />
+     98 173 │           <trace from="R33.pin1" to="net.USB_CC1" />
+     99     │ - ········<trace·from="R33.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R33.pin2",·placementOnly)}·/>
+        174 │ + ········<trace
+        175 │ + ··········from="R33.pin2"
+        176 │ + ··········to="net.GND"
+        177 │ + ··········width={0.3}
+        178 │ + ··········pcbPath={groundPath("R33.pin2",·placementOnly)}
+        179 │ + ········/>
+    100 180 │           <trace from="R34.pin1" to="net.USB_CC2" />
+    101     │ - ········<trace·from="R34.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R34.pin2",·placementOnly)}·/>
+        181 │ + ········<trace
+        182 │ + ··········from="R34.pin2"
+        183 │ + ··········to="net.GND"
+        184 │ + ··········width={0.3}
+        185 │ + ··········pcbPath={groundPath("R34.pin2",·placementOnly)}
+        186 │ + ········/>
+    102 187 │           <trace from="C30.pin1" to="net.V3V3" />
+    103     │ - ········<trace·from="C30.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C30.pin2",·placementOnly)}·/>
+        188 │ + ········<trace
+        189 │ + ··········from="C30.pin2"
+        190 │ + ··········to="net.GND"
+  21 more lines truncated
+  
+
+src/board/MicrophoneClockSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    48  48 │           <RC0603FR_0710KL name="R95" {...place("R95")} schX={11.25} schY={-1.5} schRotation={-90} />
+    49  49 │           <trace from="U23.pin1" to="net.MIC_INPUT" />
+    50     │ - ········<trace·from="U23.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U23.pin2",·placementOnly)}·/>
+        50 │ + ········<trace
+        51 │ + ··········from="U23.pin2"
+        52 │ + ··········to="net.GND"
+        53 │ + ··········width={0.3}
+        54 │ + ··········pcbPath={groundPath("U23.pin2",·placementOnly)}
+        55 │ + ········/>
+    51  56 │           <trace from="U23.pin3" to="net.HOLD_HARDWARE" />
+    52  57 │           <trace from="U23.pin5" to="net.VMIC" />
+    53  58 │           <trace from="U24.pin1" to="net.MIC_BCLK_INPUT" />
+    54     │ - ········<trace·from="U24.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U24.pin2",·placementOnly)}·/>
+        59 │ + ········<trace
+        60 │ + ··········from="U24.pin2"
+        61 │ + ··········to="net.GND"
+        62 │ + ··········width={0.3}
+        63 │ + ··········pcbPath={groundPath("U24.pin2",·placementOnly)}
+        64 │ + ········/>
+    55  65 │           <trace from="U24.pin3" to="net.MIC_WS_INPUT" />
+    56  66 │           <trace from="U24.pin4" to="net.MIC_WS" />
+    ······ │ 
+    58  68 │           <trace from="U24.pin6" to="net.MIC_BCLK" />
+    59  69 │           <trace from="C73.pin1" to="net.MIC_INPUT" />
+    60     │ - ········<trace·from="C73.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C73.pin2",·placementOnly)}·/>
+        70 │ + ········<trace
+        71 │ + ··········from="C73.pin2"
+        72 │ + ··········to="net.GND"
+        73 │ + ··········width={0.3}
+        74 │ + ··········pcbPath={groundPath("C73.pin2",·placementOnly)}
+        75 │ + ········/>
+    61  76 │           <trace from="C74.pin1" to="net.VMIC" />
+    62     │ - ········<trace·from="C74.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C74.pin2",·placementOnly)}·/>
+        77 │ + ········<trace
+        78 │ + ··········from="C74.pin2"
+        79 │ + ··········to="net.GND"
+        80 │ + ··········width={0.3}
+        81 │ + ··········pcbPath={groundPath("C74.pin2",·placementOnly)}
+        82 │ + ········/>
+    63  83 │           <trace from="C75.pin1" to="net.VMIC" />
+    64     │ - ········<trace·from="C75.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C75.pin2",·placementOnly)}·/>
+        84 │ + ········<trace
+        85 │ + ··········from="C75.pin2"
+        86 │ + ··········to="net.GND"
+        87 │ + ··········width={0.3}
+        88 │ + ··········pcbPath={groundPath("C75.pin2",·placementOnly)}
+        89 │ + ········/>
+    65  90 │           <trace from="R86.pin1" to="net.VMIC" />
+    66     │ - ········<trace·from="R86.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R86.pin2",·placementOnly)}·/>
+        91 │ + ········<trace
+        92 │ + ··········from="R86.pin2"
+        93 │ + ··········to="net.GND"
+        94 │ + ··········width={0.3}
+        95 │ + ··········pcbPath={groundPath("R86.pin2",·placementOnly)}
+        96 │ + ········/>
+    67  97 │           <trace from="R87.pin1" to="net.HOLD_HARDWARE" />
+    68     │ - ········<trace·from="R87.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R87.pin2",·placementOnly)}·/>
+        98 │ + ········<trace
+        99 │ + ··········from="R87.pin2"
+       100 │ + ··········to="net.GND"
+       101 │ + ··········width={0.3}
+       102 │ + ··········pcbPath={groundPath("R87.pin2",·placementOnly)}
+       103 │ + ········/>
+    69 104 │           <trace from="R88.pin1" to="net.MCU_MIC_BCLK" />
+    70 105 │           <trace from="R88.pin2" to="net.MIC_BCLK_INPUT" />
+    ······ │ 
+    72 107 │           <trace from="R89.pin2" to="net.MIC_WS_INPUT" />
+    73 108 │           <trace from="R90.pin1" to="net.MIC_BCLK_INPUT" />
+    74     │ - ········<trace·from="R90.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R90.pin2",·placementOnly)}·/>
+       109 │ + ········<trace
+       110 │ + ··········from="R90.pin2"
+       111 │ + ··········to="net.GND"
+       112 │ + ··········width={0.3}
+       113 │ + ··········pcbPath={groundPath("R90.pin2",·placementOnly)}
+       114 │ + ········/>
+    75 115 │           <trace from="R91.pin1" to="net.MIC_WS_INPUT" />
+    76     │ - ········<trace·from="R91.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R91.pin2",·placementOnly)}·/>
+       116 │ + ········<trace
+       117 │ + ··········from="R91.pin2"
+       118 │ + ··········to="net.GND"
+       119 │ + ··········width={0.3}
+       120 │ + ··········pcbPath={groundPath("R91.pin2",·placementOnly)}
+       121 │ + ········/>
+    77 122 │           <trace from="R92.pin1" to="net.VMIC" />
+    78 123 │           <trace from="R92.pin2" to="net.MIC_BCLK" />
+    ······ │ 
+    80 125 │           <trace from="R93.pin2" to="net.MIC_WS" />
+    81 126 │           <trace from="R94.pin1" to="net.MIC_BCLK" />
+    82     │ - ········<trace·from="R94.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R94.pin2",·placementOnly)}·/>
+       127 │ + ········<trace
+       128 │ + ··········from="R94.pin2"
+       129 │ + ··········to="net.GND"
+       130 │ + ··········width={0.3}
+       131 │ + ··········pcbPath={groundPath("R94.pin2",·placementOnly)}
+       132 │ + ········/>
+    83 133 │           <trace from="R95.pin1" to="net.MIC_WS" />
+    84     │ - ········<trace·from="R95.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R95.pin2",·placementOnly)}·/>
+       134 │ + ········<trace
+       135 │ + ··········from="R95.pin2"
+       136 │ + ··········to="net.GND"
+       137 │ + ··········width={0.3}
+       138 │ + ··········pcbPath={groundPath("R95.pin2",·placementOnly)}
+       139 │ + ········/>
+    85 140 │         </group>
+    86 141 │       </schematicsheet>
+  
+
+src/board/MicrophonesSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    28  28 │           <GRM188R71C104KA01D name="C26" {...place("C26")} schX={-10} schY={-9} />
+    29  29 │           <trace from="U4.pin1" to="net.MIC_WS" />
+    30     │ - ········<trace·from="U4.pin3"·to="net.GND"·width={0.3}·pcbPath={groundPath("U4.pin3",·placementOnly)}·/>
+        30 │ + ········<trace
+        31 │ + ··········from="U4.pin3"
+        32 │ + ··········to="net.GND"
+        33 │ + ··········width={0.3}
+        34 │ + ··········pcbPath={groundPath("U4.pin3",·placementOnly)}
+        35 │ + ········/>
+    31  36 │           <trace from="U4.pin4" to="net.MIC_BCLK" />
+    32  37 │           <trace from="U4.pin5" to="net.VMIC" />
+    33  38 │           <trace from="U4.pin6" to="net.MIC_SD" />
+    34  39 │           <trace from="U5.pin1" to="net.MIC_WS" />
+    35     │ - ········<trace·from="U5.pin3"·to="net.GND"·width={0.3}·pcbPath={groundPath("U5.pin3",·placementOnly)}·/>
+        40 │ + ········<trace
+        41 │ + ··········from="U5.pin3"
+        42 │ + ··········to="net.GND"
+        43 │ + ··········width={0.3}
+        44 │ + ··········pcbPath={groundPath("U5.pin3",·placementOnly)}
+        45 │ + ········/>
+    36  46 │           <trace from="U5.pin4" to="net.MIC_BCLK" />
+    37  47 │           <trace from="U5.pin5" to="net.VMIC" />
+    38  48 │           <trace from="U5.pin6" to="net.MIC_SD" />
+    39     │ - ········<trace·from="U4.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U4.pin2",·placementOnly)}·/>
+        49 │ + ········<trace
+        50 │ + ··········from="U4.pin2"
+        51 │ + ··········to="net.GND"
+        52 │ + ··········width={0.3}
+        53 │ + ··········pcbPath={groundPath("U4.pin2",·placementOnly)}
+        54 │ + ········/>
+    40  55 │           <trace from="U5.pin2" to="net.VMIC" />
+    41  56 │           <trace from="C80.pin1" to="net.VMIC" />
+    42     │ - ········<trace·from="C80.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C80.pin2",·placementOnly)}·/>
+        57 │ + ········<trace
+        58 │ + ··········from="C80.pin2"
+        59 │ + ··········to="net.GND"
+        60 │ + ··········width={0.3}
+        61 │ + ··········pcbPath={groundPath("C80.pin2",·placementOnly)}
+        62 │ + ········/>
+    43  63 │           <trace from="C81.pin1" to="net.VMIC" />
+    44     │ - ········<trace·from="C81.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C81.pin2",·placementOnly)}·/>
+        64 │ + ········<trace
+        65 │ + ··········from="C81.pin2"
+        66 │ + ··········to="net.GND"
+        67 │ + ··········width={0.3}
+        68 │ + ··········pcbPath={groundPath("C81.pin2",·placementOnly)}
+        69 │ + ········/>
+    45  70 │           <trace from="U7.pin1" to="net.MIC_SD_BUFFERED" />
+    46     │ - ········<trace·from="U7.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("U7.pin2",·placementOnly)}·/>
+        71 │ + ········<trace
+        72 │ + ··········from="U7.pin2"
+        73 │ + ··········to="net.GND"
+        74 │ + ··········width={0.3}
+        75 │ + ··········pcbPath={groundPath("U7.pin2",·placementOnly)}
+        76 │ + ········/>
+    47  77 │           <trace from="U7.pin3" to="net.MIC_SD" />
+    48  78 │           <trace from="U7.pin4" to="net.MIC_SD_REF" />
+    49  79 │           <trace from="U7.pin5" to="net.V3V3" />
+    50  80 │           <trace from="R26.pin1" to="net.MIC_SD" />
+    51     │ - ········<trace·from="R26.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R26.pin2",·placementOnly)}·/>
+        81 │ + ········<trace
+        82 │ + ··········from="R26.pin2"
+        83 │ + ··········to="net.GND"
+        84 │ + ··········width={0.3}
+        85 │ + ··········pcbPath={groundPath("R26.pin2",·placementOnly)}
+        86 │ + ········/>
+    52  87 │           <trace from="R27.pin1" to="net.MIC_SD_BUFFERED" />
+    53  88 │           <trace from="R27.pin2" to="net.MCU_MIC_SD" />
+    ······ │ 
+    55  90 │           <trace from="R29.pin2" to="net.MIC_SD_REF" />
+    56  91 │           <trace from="R30.pin1" to="net.MIC_SD_REF" />
+    57     │ - ········<trace·from="R30.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R30.pin2",·placementOnly)}·/>
+        92 │ + ········<trace
+        93 │ + ··········from="R30.pin2"
+        94 │ + ··········to="net.GND"
+        95 │ + ··········width={0.3}
+        96 │ + ··········pcbPath={groundPath("R30.pin2",·placementOnly)}
+        97 │ + ········/>
+    58  98 │           <trace from="C25.pin1" to="net.V3V3" />
+    59     │ - ········<trace·from="C25.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C25.pin2",·placementOnly)}·/>
+        99 │ + ········<trace
+       100 │ + ··········from="C25.pin2"
+       101 │ + ··········to="net.GND"
+       102 │ + ··········width={0.3}
+       103 │ + ··········pcbPath={groundPath("C25.pin2",·placementOnly)}
+       104 │ + ········/>
+    60 105 │           <trace from="C26.pin1" to="net.MIC_SD_REF" />
+    61     │ - ········<trace·from="C26.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C26.pin2",·placementOnly)}·/>
+       106 │ + ········<trace
+       107 │ + ··········from="C26.pin2"
+       108 │ + ··········to="net.GND"
+       109 │ + ··········width={0.3}
+       110 │ + ··········pcbPath={groundPath("C26.pin2",·placementOnly)}
+       111 │ + ········/>
+    62 112 │         </group>
+    63 113 │       </schematicsheet>
+  
+
+src/board/SpeakerSheet.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    45  45 │           <trace from="J4.pin2" to="net.SPEAKER_N" />
+    46  46 │           <trace from="Q1.pin1" to="net.AUDIO_NMOS_GATE" />
+    47     │ - ········<trace·from="Q1.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("Q1.pin2",·placementOnly)}·/>
+        47 │ + ········<trace
+        48 │ + ··········from="Q1.pin2"
+        49 │ + ··········to="net.GND"
+        50 │ + ··········width={0.3}
+        51 │ + ··········pcbPath={groundPath("Q1.pin2",·placementOnly)}
+        52 │ + ········/>
+    48  53 │           <trace from="Q1.pin3" to="net.AUDIO_PMOS_GATE" />
+    49  54 │           <trace from="Q2.pin1" to="net.AUDIO_PMOS_GATE" />
+    ······ │ 
+    53  58 │           <trace from="R60.pin2" to="net.AUDIO_NMOS_GATE" />
+    54  59 │           <trace from="R61.pin1" to="net.AUDIO_NMOS_GATE" />
+    55     │ - ········<trace·from="R61.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R61.pin2",·placementOnly)}·/>
+        60 │ + ········<trace
+        61 │ + ··········from="R61.pin2"
+        62 │ + ··········to="net.GND"
+        63 │ + ··········width={0.3}
+        64 │ + ··········pcbPath={groundPath("R61.pin2",·placementOnly)}
+        65 │ + ········/>
+    56  66 │           <trace from="R62.pin1" to="net.VSYS" />
+    57  67 │           <trace from="R62.pin2" to="net.AUDIO_PMOS_GATE" />
+    ······ │ 
+    59  69 │           <trace from="R63.pin2" to="net.AMP_SD_MODE" />
+    60  70 │           <trace from="R64.pin1" to="net.AMP_SD_MODE" />
+    61     │ - ········<trace·from="R64.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R64.pin2",·placementOnly)}·/>
+        71 │ + ········<trace
+        72 │ + ··········from="R64.pin2"
+        73 │ + ··········to="net.GND"
+        74 │ + ··········width={0.3}
+        75 │ + ··········pcbPath={groundPath("R64.pin2",·placementOnly)}
+        76 │ + ········/>
+    62  77 │           <trace from="C50.pin1" to="net.VSYS" />
+    63     │ - ········<trace·from="C50.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C50.pin2",·placementOnly)}·/>
+        78 │ + ········<trace
+        79 │ + ··········from="C50.pin2"
+        80 │ + ··········to="net.GND"
+        81 │ + ··········width={0.3}
+        82 │ + ··········pcbPath={groundPath("C50.pin2",·placementOnly)}
+        83 │ + ········/>
+    64  84 │           <trace from="C51.pin1" to="net.VSYS" />
+    65     │ - ········<trace·from="C51.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("C51.pin2",·placementOnly)}·/>
+        85 │ + ········<trace
+        86 │ + ··········from="C51.pin2"
+        87 │ + ··········to="net.GND"
+        88 │ + ··········width={0.3}
+        89 │ + ··········pcbPath={groundPath("C51.pin2",·placementOnly)}
+        90 │ + ········/>
+    66  91 │           <RC0603FR_0722RL name="R65" {...place("R65")} schX={-9} schY={4} />
+    67  92 │           <RC0603FR_0710KL name="R68" {...place("R68")} schX={-4} schY={4} schRotation={-90} />
+    ······ │ 
+    69  94 │           <trace from="R65.pin2" to="net.AMP_DIN" />
+    70  95 │           <trace from="R68.pin1" to="net.AMP_DIN" />
+    71     │ - ········<trace·from="R68.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R68.pin2",·placementOnly)}·/>
+        96 │ + ········<trace
+        97 │ + ··········from="R68.pin2"
+        98 │ + ··········to="net.GND"
+        99 │ + ··········width={0.3}
+       100 │ + ··········pcbPath={groundPath("R68.pin2",·placementOnly)}
+       101 │ + ········/>
+    72 102 │           <trace from="U3.pin1" to="net.AMP_DIN" />
+    73 103 │           <RC0603FR_0722RL name="R66" {...place("R66")} schX={-9} schY={1} />
+    ······ │ 
+    76 106 │           <trace from="R66.pin2" to="net.AMP_BCLK" />
+    77 107 │           <trace from="R69.pin1" to="net.AMP_BCLK" />
+    78     │ - ········<trace·from="R69.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R69.pin2",·placementOnly)}·/>
+       108 │ + ········<trace
+       109 │ + ··········from="R69.pin2"
+       110 │ + ··········to="net.GND"
+       111 │ + ··········width={0.3}
+       112 │ + ··········pcbPath={groundPath("R69.pin2",·placementOnly)}
+       113 │ + ········/>
+    79 114 │           <trace from="U3.pin16" to="net.AMP_BCLK" />
+    80 115 │           <RC0603FR_0722RL name="R67" {...place("R67")} schX={-9} schY={-2} />
+    ······ │ 
+    83 118 │           <trace from="R67.pin2" to="net.AMP_LRCLK" />
+    84 119 │           <trace from="R70.pin1" to="net.AMP_LRCLK" />
+    85     │ - ········<trace·from="R70.pin2"·to="net.GND"·width={0.3}·pcbPath={groundPath("R70.pin2",·placementOnly)}·/>
+       120 │ + ········<trace
+       121 │ + ··········from="R70.pin2"
+       122 │ + ··········to="net.GND"
+       123 │ + ··········width={0.3}
+       124 │ + ··········pcbPath={groundPath("R70.pin2",·placementOnly)}
+       125 │ + ········/>
+    86 126 │           <trace from="U3.pin14" to="net.AMP_LRCLK" />
+    87 127 │         </group>
+  
+
+Checked 59 files in 22ms. No fixes applied.
+Found 11 errors.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+

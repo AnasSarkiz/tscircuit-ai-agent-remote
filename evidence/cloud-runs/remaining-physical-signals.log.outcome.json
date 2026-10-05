@@ -1,0 +1,32 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/power-ground-qualified-geometry/circuit.json",
+    "evidence/cloud-runs/remaining-physical-signals-proposal.json",
+    "AUDIO_ENABLE_SUPPLY",
+    "MIC_INPUT",
+    "BACKLIGHT_GATE",
+    "LCD_CS_N",
+    "LCD_DC",
+    "LCD_SCLK",
+    "LCD_SDA",
+    "MCU_LCD_SCLK",
+    "MCU_LCD_DC",
+    "MCU_LCD_RESET_N",
+    "MIC_WS",
+    "MIC_BCLK",
+    "MIC_SD",
+    "SPEAKER_P",
+    "SPEAKER_N",
+    "USB_DP",
+    "USB_DN"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 81.59,
+  "peak_process_group_rss_bytes": 96563200,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

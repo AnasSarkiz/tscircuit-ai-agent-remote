@@ -1,0 +1,647 @@
+{
+  "classification": "manual proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/power-distribution-native/circuit.json",
+  "grid_mm": 0.1,
+  "paths": [
+    {
+      "net": "LCD_CS_N",
+      "from": ".U14 > .pin18",
+      "to": ".R42 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.625,
+          "y": 4.27095
+        },
+        {
+          "x": -1.625,
+          "y": 4.27095,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -1.625,
+          "y": 4.27095
+        },
+        {
+          "x": 1.3,
+          "y": 0.2
+        },
+        {
+          "x": 1.89856,
+          "y": -0.5
+        },
+        {
+          "x": 1.89856,
+          "y": -0.5,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 1.89856,
+          "y": -0.5
+        }
+      ],
+      "global_path_mm": [
+        [
+          7.375,
+          10.87095
+        ],
+        [
+          7.375,
+          12.27095
+        ],
+        [
+          10.300000000000495,
+          8.200000000000571
+        ],
+        [
+          10.89856,
+          7.5
+        ],
+        [
+          13.496636,
+          6
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "LCD_RESET_N",
+      "from": ".U14 > .pin17",
+      "to": ".R43 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -0.8,
+          "y": 1.7
+        },
+        {
+          "x": 1.2,
+          "y": 0.5
+        }
+      ],
+      "global_path_mm": [
+        [
+          8.025,
+          10.87095
+        ],
+        [
+          8.200000000000465,
+          9.700000000000593
+        ],
+        [
+          10.200000000000493,
+          8.500000000000576
+        ],
+        [
+          13.496636,
+          7.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "LCD_SCLK",
+      "from": ".U14 > .pin15",
+      "to": ".R45 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.2,
+          "y": 4.0
+        },
+        {
+          "x": -0.4,
+          "y": 4.3
+        },
+        {
+          "x": -0.675,
+          "y": 4.603001
+        },
+        {
+          "x": -0.675,
+          "y": 4.603001,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -0.675,
+          "y": 4.603001
+        },
+        {
+          "x": -1.6,
+          "y": 5.0
+        },
+        {
+          "x": -2.2,
+          "y": 4.8
+        },
+        {
+          "x": -2.3,
+          "y": 4.3
+        },
+        {
+          "x": -2.3,
+          "y": 3.9
+        },
+        {
+          "x": 1.6,
+          "y": -1.2
+        },
+        {
+          "x": 2.2,
+          "y": -1.2
+        },
+        {
+          "x": 3.9,
+          "y": 0.8
+        },
+        {
+          "x": 3.0,
+          "y": 0.8
+        },
+        {
+          "x": 3.0,
+          "y": 0.8,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 3.0,
+          "y": 0.8
+        }
+      ],
+      "global_path_mm": [
+        [
+          9.325,
+          10.87095
+        ],
+        [
+          9.200000000000479,
+          12.000000000000625
+        ],
+        [
+          8.60000000000047,
+          12.30000000000063
+        ],
+        [
+          8.325,
+          12.603001
+        ],
+        [
+          7.400000000000453,
+          13.00000000000064
+        ],
+        [
+          6.800000000000445,
+          12.800000000000637
+        ],
+        [
+          6.700000000000443,
+          12.30000000000063
+        ],
+        [
+          6.700000000000443,
+          11.900000000000624
+        ],
+        [
+          10.600000000000499,
+          6.800000000000551
+        ],
+        [
+          11.200000000000507,
+          6.800000000000551
+        ],
+        [
+          12.900000000000519,
+          8.80000000000058
+        ],
+        [
+          12.000000000000519,
+          8.80000000000058
+        ],
+        [
+          13.496636,
+          9
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MIC_WS_INPUT",
+      "from": ".U24 > .pin3",
+      "to": ".R89 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 1.8999,
+          "y": 0.65
+        },
+        {
+          "x": 1.8999,
+          "y": 0.65,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 1.8999,
+          "y": 0.65
+        },
+        {
+          "x": 2.8,
+          "y": 3.4
+        },
+        {
+          "x": 2.8,
+          "y": 3.9
+        },
+        {
+          "x": 2.3,
+          "y": 4.2
+        },
+        {
+          "x": 1.7,
+          "y": 4.1
+        },
+        {
+          "x": -6.996636,
+          "y": -3.866025
+        },
+        {
+          "x": -6.996636,
+          "y": -3.866025,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": -6.996636,
+          "y": -3.866025
+        }
+      ],
+      "global_path_mm": [
+        [
+          15.8999,
+          -25.35
+        ],
+        [
+          16.8999,
+          -25.35
+        ],
+        [
+          17.8000000000006,
+          -22.599999999999866
+        ],
+        [
+          17.8000000000006,
+          -22.09999999999986
+        ],
+        [
+          17.300000000000594,
+          -21.799999999999855
+        ],
+        [
+          16.700000000000585,
+          -21.899999999999856
+        ],
+        [
+          8.003364,
+          -29.866025
+        ],
+        [
+          7.503364,
+          -29
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "MIC_INPUT",
+      "from": ".U23 > .pin1",
+      "to": ".SW5 > .pin2",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.9,
+          "y": -0.6
+        },
+        {
+          "x": 2.1,
+          "y": 0.2
+        },
+        {
+          "x": 2.2,
+          "y": 1.2
+        },
+        {
+          "x": 2.5,
+          "y": 1.474871
+        },
+        {
+          "x": 2.5,
+          "y": 1.474871,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 2.5,
+          "y": 1.474871
+        },
+        {
+          "x": -10.0,
+          "y": -7.0
+        },
+        {
+          "x": -13.3,
+          "y": -9.0
+        },
+        {
+          "x": -18.8,
+          "y": -8.5
+        },
+        {
+          "x": -20.2,
+          "y": -8.5
+        },
+        {
+          "x": -22.2,
+          "y": -10.3
+        },
+        {
+          "x": -22.9,
+          "y": -10.1
+        },
+        {
+          "x": -28.4,
+          "y": -7.7
+        },
+        {
+          "x": -35.4,
+          "y": -2.5
+        },
+        {
+          "x": -36.6,
+          "y": 13.8
+        },
+        {
+          "x": -36.6,
+          "y": 16.2
+        },
+        {
+          "x": -35.505978,
+          "y": 16.649938
+        },
+        {
+          "x": -35.505978,
+          "y": 16.649938,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": -35.505978,
+          "y": 16.649938
+        },
+        {
+          "x": -34.4,
+          "y": 17.0
+        },
+        {
+          "x": -34.3,
+          "y": 18.2
+        }
+      ],
+      "global_path_mm": [
+        [
+          16.1,
+          -21.95
+        ],
+        [
+          16.90000000000059,
+          -21.599999999999852
+        ],
+        [
+          17.10000000000059,
+          -20.79999999999984
+        ],
+        [
+          17.200000000000593,
+          -19.799999999999827
+        ],
+        [
+          17.5,
+          -19.525129
+        ],
+        [
+          5.000000000000419,
+          -27.999999999999943
+        ],
+        [
+          1.7000000000003723,
+          -29.99999999999997
+        ],
+        [
+          -3.799999999999706,
+          -29.499999999999964
+        ],
+        [
+          -5.199999999999726,
+          -29.499999999999964
+        ],
+        [
+          -7.199999999999754,
+          -31.29999999999999
+        ],
+        [
+          -7.899999999999764,
+          -31.099999999999987
+        ],
+        [
+          -13.399999999999842,
+          -28.699999999999953
+        ],
+        [
+          -20.39999999999994,
+          -23.49999999999988
+        ],
+        [
+          -21.59999999999996,
+          -7.199999999999648
+        ],
+        [
+          -21.59999999999996,
+          -4.7999999999996135
+        ],
+        [
+          -20.505978,
+          -4.350062
+        ],
+        [
+          -19.399999999999928,
+          -3.999999999999602
+        ],
+        [
+          -19.299999999999926,
+          -2.799999999999585
+        ],
+        [
+          -20.50597835,
+          -1.7500619999999998
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "MCU_LCD_DC",
+      "reason": "No conservative top/bottom/inner2 path: .R49 > .pin1 to .U14 > .pin4"
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "reason": "No conservative top/bottom/inner2 path: .R48 > .pin1 to .U14 > .pin3"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "reason": "No conservative top/bottom/inner2 path: .R50 > .pin1 to .U14 > .pin5"
+    },
+    {
+      "net": "LCD_DC",
+      "reason": "No conservative top/bottom/inner2 path: .U14 > .pin16 to .R44 > .pin1"
+    },
+    {
+      "net": "LCD_SDA",
+      "reason": "No conservative top/bottom/inner2 path: .U14 > .pin14 to .R46 > .pin1"
+    },
+    {
+      "net": "MIC_WS",
+      "reason": "No conservative top/bottom/inner2 path: .R95 > .pin1 to .R93 > .pin2; No conservative top/bottom/inner2 path: .U24 > .pin4 to .U4 > .pin1"
+    },
+    {
+      "net": "MIC_BCLK",
+      "reason": "No conservative top/bottom/inner2 path: .U24 > .pin6 to .R92 > .pin2; No conservative top/bottom/inner2 path: .U24 > .pin6 to .U5 > .pin4; No conservative top/bottom/inner2 path: .U24 > .pin6 to .U4 > .pin4"
+    },
+    {
+      "net": "MIC_SD",
+      "reason": "No conservative top/bottom/inner2 path: .R26 > .pin1 to .U5 > .pin6"
+    },
+    {
+      "net": "BACKLIGHT_GATE",
+      "reason": "No conservative top/bottom/inner2 path: .R104 > .pin1 to .R103 > .pin2"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "reason": "No conservative top/bottom/inner2 path: .Q2 > .pin3 to .R63 > .pin1"
+    },
+    {
+      "net": "SPEAKER_P",
+      "reason": "No conservative top/bottom/inner2 path: .U3 > .pin9 to .J4 > .pin1"
+    },
+    {
+      "net": "SPEAKER_N",
+      "reason": "No conservative top/bottom/inner2 path: .U3 > .pin10 to .J4 > .pin2"
+    },
+    {
+      "net": "USB_DP",
+      "reason": "No conservative top/bottom/inner2 path: .J1 > .pin8 to .J1 > .pin10; No conservative top/bottom/inner2 path: .J1 > .pin8 to .D2 > .pin1; No conservative top/bottom/inner2 path: .J1 > .pin8 to .R31 > .pin1"
+    },
+    {
+      "net": "USB_DN",
+      "reason": "No conservative top/bottom/inner2 path: .J1 > .pin7 to .J1 > .pin9; No conservative top/bottom/inner2 path: .J1 > .pin7 to .D2 > .pin2; No conservative top/bottom/inner2 path: .J1 > .pin7 to .R32 > .pin1"
+    },
+    {
+      "net": "VBUS",
+      "reason": "No conservative top/bottom/inner2 path: .J1 > .pin15 to .J1 > .pin16; No conservative top/bottom/inner2 path: .J1 > .pin15 to .U16 > .pin13; No conservative top/bottom/inner2 path: .J1 > .pin15 to .C1 > .pin1; No conservative top/bottom/inner2 path: .J1 > .pin15 to .TP2 > .pin1"
+    },
+    {
+      "net": "PACK_BAT",
+      "reason": "No conservative top/bottom/inner2 path: .U16 > .pin2 to .U16 > .pin3; No conservative top/bottom/inner2 path: .U16 > .pin2 to .C2 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin2 to .U25 > .pin5; No conservative top/bottom/inner2 path: .U16 > .pin2 to .TP3 > .pin1"
+    },
+    {
+      "net": "VSYS",
+      "reason": "No conservative top/bottom/inner2 path: .U16 > .pin10 to .U16 > .pin11; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C3 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U2 > .pin10; No conservative top/bottom/inner2 path: .U16 > .pin10 to .R62 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C4 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .R96 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U25 > .pin6; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U25 > .pin3; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C76 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .Q2 > .pin2; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U3 > .pin2; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C70 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C51 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U3 > .pin7; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U3 > .pin8; No conservative top/bottom/inner2 path: .U16 > .pin10 to .U22 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .C50 > .pin1; No conservative top/bottom/inner2 path: .U16 > .pin10 to .TP4 > .pin1"
+    },
+    {
+      "net": "V3V3",
+      "reason": "No conservative top/bottom/inner2 path: .U1 > .pin2 to .R36 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .TP5 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C30 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C84 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .U27 > .pin13; No conservative top/bottom/inner2 path: .U1 > .pin2 to .SW5 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .U12 > .pin3; No conservative top/bottom/inner2 path: .U1 > .pin2 to .U26 > .pin5; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C31 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .U13 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C78 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C40 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .J6 > .pin2; No conservative top/bottom/inner2 path: .U1 > .pin2 to .SW4 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C32 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .R7 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C25 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .U7 > .pin5; No conservative top/bottom/inner2 path: .U1 > .pin2 to .U2 > .pin6; No conservative top/bottom/inner2 path: .U1 > .pin2 to .R5 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .C5 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .R4 > .pin1; No conservative top/bottom/inner2 path: .U1 > .pin2 to .R3 > .pin1"
+    },
+    {
+      "net": "VMIC",
+      "reason": "No conservative top/bottom/inner2 path: .U23 > .pin5 to .U24 > .pin5; No conservative top/bottom/inner2 path: .U23 > .pin5 to .R93 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .R92 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .U5 > .pin5; No conservative top/bottom/inner2 path: .U23 > .pin5 to .R86 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .C75 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .U5 > .pin2; No conservative top/bottom/inner2 path: .U23 > .pin5 to .C74 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .C81 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .R29 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .U4 > .pin5; No conservative top/bottom/inner2 path: .U23 > .pin5 to .C80 > .pin1; No conservative top/bottom/inner2 path: .U23 > .pin5 to .TP6 > .pin1"
+    },
+    {
+      "net": "MIC_INPUT",
+      "reason": "No conservative top/bottom/inner2 path: .U23 > .pin1 to .C73 > .pin1"
+    },
+    {
+      "net": "LCD_BACKLIGHT_OUTPUT",
+      "reason": "No conservative top/bottom/inner2 path: .U27 > .pin8 to .C85 > .pin1"
+    }
+  ]
+}

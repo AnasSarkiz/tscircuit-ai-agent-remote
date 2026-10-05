@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/restore-compatible-paths.py",
+    "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+    "evidence/cloud-runs/verified-routing-before-priority-trial/retired-paths.json",
+    "evidence/cloud-runs/priority-compatible-restoration-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-combined-signal-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-power-leaves-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-speaker-necks-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/usb-dn-first-complete-candidates-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 24.03,
+  "peak_process_group_rss_bytes": 98775040,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

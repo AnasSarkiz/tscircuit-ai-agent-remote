@@ -1,0 +1,23 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+    "evidence/cloud-runs/priority-power-leaves-proposal.json",
+    "PACK_BAT",
+    "VBUS",
+    "VSYS",
+    "VMIC",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-pin-escapes-proposal.json",
+    "--reserve-proposals",
+    "evidence/cloud-runs/priority-usb-data-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 59.57,
+  "peak_process_group_rss_bytes": 102076416,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

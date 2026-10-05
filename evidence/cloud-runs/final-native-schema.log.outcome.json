@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bun",
+    "-e",
+    "import {any_circuit_element} from \"circuit-json\"; import {createHash} from \"node:crypto\"; const path=\"dist/index/circuit.json\"; const bytes=await Bun.file(path).text(); const native=JSON.parse(bytes); const byType={}; for(const element of native){if(!any_circuit_element.safeParse(element).success)byType[element.type]=(byType[element.type]??0)+1;} const summary={schema_package:\"circuit-json@0.0.517\",source_circuit_json:path,source_sha256:createHash(\"sha256\").update(bytes).digest(\"hex\"),failing_elements:Object.values(byType).reduce((a,b)=>a+b,0),by_type:byType}; await Bun.write(\"evidence/cloud-runs/final-native-schema.json\",JSON.stringify(summary,null,2));console.log(JSON.stringify(summary));process.exit(summary.failing_elements?1:0);"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 8.01,
+  "peak_process_group_rss_bytes": 273772544,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

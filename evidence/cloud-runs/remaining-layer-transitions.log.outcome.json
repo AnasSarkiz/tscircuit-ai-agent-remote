@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/power-ground-qualified-geometry/circuit.json",
+    "evidence/cloud-runs/remaining-layer-transitions-proposal.json",
+    "LCD_CS_N",
+    "MCU_LCD_DC",
+    "MIC_WS",
+    "BACKLIGHT_GATE"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 92.61,
+  "peak_process_group_rss_bytes": 181088256,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

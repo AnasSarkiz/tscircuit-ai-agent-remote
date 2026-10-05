@@ -1,0 +1,29 @@
+{
+  "classification": "lossless original native event archive; not a solver cache",
+  "archive": "native-events.tar.gz",
+  "archive_sha256": "3ab51b1ef742f50caf2308c21bbb419dbbb0fd780f20ad2f5f7c16b4b4c5f770",
+  "verified_exact_original_bytes_before_removal": true,
+  "files": {
+    "event-1.json": {
+      "bytes": 9254758,
+      "sha256": "e47808a2dd989d4caf00fd99a90c283dbb7426f28b5a4bb9867998a84fefc3ae"
+    },
+    "event-2.json": {
+      "bytes": 9257701,
+      "sha256": "9e03a11eb8f090d2a6fe76ddd757b789880ac7b9306ba8d3bc6adbe13c2dcbb0"
+    },
+    "start-1.json": {
+      "bytes": 9250261,
+      "sha256": "3de8cb3541b756098c2bc04ac8c637c197ebf74edc69768ba9da4d2791c4b220"
+    },
+    "start-3.json": {
+      "bytes": 9254318,
+      "sha256": "bd76cc610537a8fa57e1d5d5fb398767787073178d165e9f9209b7936141f8bb"
+    },
+    "start-5.json": {
+      "bytes": 9263581,
+      "sha256": "6dd28c50a9dfde0cf007ea64d5e6f10f951466f7eb86e031ef51277cc5f705b7"
+    }
+  },
+  "restore": "tar -xzf native-events.tar.gz (run inside this capture directory)"
+}

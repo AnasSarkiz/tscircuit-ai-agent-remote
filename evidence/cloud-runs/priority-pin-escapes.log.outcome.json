@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/cloud-runs/priority-power-ground-base/circuit.json",
+    "evidence/cloud-runs/priority-pin-escapes-proposal.json",
+    "MCU_LCD_SCLK",
+    "MCU_LCD_DC",
+    "MCU_LCD_RESET_N",
+    "LCD_CS_N",
+    "LCD_DC",
+    "LCD_SCLK",
+    "LCD_SDA",
+    "AUDIO_ENABLE_SUPPLY",
+    "MIC_INPUT",
+    "MIC_WS",
+    "MIC_BCLK",
+    "MIC_SD",
+    "--grid-mm",
+    ".1"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 26.53,
+  "peak_process_group_rss_bytes": 105865216,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

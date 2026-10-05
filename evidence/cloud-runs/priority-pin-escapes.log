@@ -1,0 +1,12 @@
+{"net": "MCU_LCD_SCLK", "manual_paths": 2, "unresolved": null}
+{"net": "MCU_LCD_DC", "manual_paths": 2, "unresolved": null}
+{"net": "MCU_LCD_RESET_N", "manual_paths": 2, "unresolved": null}
+{"net": "LCD_CS_N", "manual_paths": 1, "unresolved": null}
+{"net": "LCD_DC", "manual_paths": 1, "unresolved": null}
+{"net": "LCD_SCLK", "manual_paths": 1, "unresolved": null}
+{"net": "LCD_SDA", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U14 > .pin14 to .R46 > .pin1"}
+{"net": "AUDIO_ENABLE_SUPPLY", "manual_paths": 1, "unresolved": null}
+{"net": "MIC_INPUT", "manual_paths": 1, "unresolved": null}
+{"net": "MIC_WS", "manual_paths": 4, "unresolved": null}
+{"net": "MIC_BCLK", "manual_paths": 4, "unresolved": null}
+{"net": "MIC_SD", "manual_paths": 0, "unresolved": "No conservative top/bottom/inner2 path: .U4 > .pin6 to .U7 > .pin3; No conservative top/bottom/inner2 path: .U4 > .pin6 to .R26 > .pin1; No conservative top/bottom/inner2 path: .U4 > .pin6 to .U5 > .pin6"}

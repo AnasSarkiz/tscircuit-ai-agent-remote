@@ -1,0 +1,147 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/cloud-runs/r103-qualified-location/circuit.json",
+  "paths": [
+    {
+      "net": "MIC_WS",
+      "from": ".U4 > .pin1",
+      "to": "net.MIC_WS",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.35,
+          "y": -1.85
+        },
+        {
+          "x": -1.35,
+          "y": -1.85,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -1.35,
+          "y": -1.85
+        },
+        {
+          "x": 9.35,
+          "y": -3.05
+        },
+        {
+          "x": 12.05,
+          "y": -3.25
+        },
+        {
+          "x": 21.05,
+          "y": -3.25
+        },
+        {
+          "x": 26.55,
+          "y": -1.05
+        },
+        {
+          "x": 30.55,
+          "y": 1.25
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.5571856,
+          -29.650049
+        ],
+        [
+          -17.599999999999902,
+          -30.59999999999998
+        ],
+        [
+          -6.89999999999975,
+          -31.799999999999997
+        ],
+        [
+          -4.1999999999997115,
+          -32.0
+        ],
+        [
+          4.800000000000416,
+          -32.0
+        ],
+        [
+          10.300000000000495,
+          -29.79999999999997
+        ],
+        [
+          14.3,
+          -27.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "MCU_LCD_DC",
+      "ports": [
+        ".U14 > .pin4"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "ports": [
+        ".U14 > .pin5"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "ports": [
+        ".U14 > .pin3"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_WS",
+      "ports": [
+        ".R93 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_BCLK",
+      "ports": [
+        ".U5 > .pin4"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_SD",
+      "ports": [
+        ".U5 > .pin6"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_INPUT",
+      "ports": [
+        ".C73 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "ports": [
+        ".R63 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

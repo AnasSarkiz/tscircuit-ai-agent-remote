@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-ground-stitches.py",
+    "evidence/cloud-runs/fullspan-signal-regions/circuit.json",
+    "evidence/cloud-runs/fullspan-signal-regions-copper-audit.json",
+    "evidence/cloud-runs/fullspan-ground-stitches-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 14.52,
+  "peak_process_group_rss_bytes": 106344448,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}
