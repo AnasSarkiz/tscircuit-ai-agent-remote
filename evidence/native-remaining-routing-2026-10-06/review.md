@@ -1,4 +1,4 @@
-# Native router continuation — 2026-10-06 UTC
+# Native router continuation — 2026-10-06 (Europe/Tirane)
 
 Engineering WIP; not fabrication ready. The user authorized remaining-trace
 routing and suggested tscircuit bus lanes and fanout. All heavy work used the
@@ -134,3 +134,5 @@ an optional final `2` selects the tested expanded boundary. Outputs are trial
 inputs/outcomes, not approved board routes.
 
 All 359 initially staged files were checked for session credential patterns; no matches remained. The authored diff whitespace check passes; the full diff retains whitespace in captured native/source/log evidence as recorded in `whitespace-review.json`. No native evidence bytes were reformatted to hide these diagnostics.
+
+The diagnostics source commit `2e789746bb1297f2b98a59715a393cfd4eea5259` is pushed to public main. Anonymous GitHub report and native JSON readbacks match local bytes. The unchanged native hash matches the previously complete public tscircuit receipt. A fresh registry download redirect was blocked by the cloud proxy (HTTP403); no new registry readback is claimed. `publication-receipt.json` records UTC timing; this evidence folder uses the local Europe/Tirane date.
