@@ -1,0 +1,73 @@
+{
+  "revision": "2c1d8d28e884450a2e31f4bb27709c7e7ea458ba",
+  "repository_url": "https://github.com/AnasSarkiz/tscircuit-ai-agent-remote",
+  "public": true,
+  "anonymous_file_readback": [
+    {
+      "path": "dist/index/circuit.json",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "ff99af3edc2ea509109e4b9b70188668d813673aacae55890c5f9cbe5dc77bd8"
+    },
+    {
+      "path": "context/checkpoint-sha256.json",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "24834258dc98446262e58b9aa9416ea94f8ced2234f145bc36603f3483e82f80"
+    },
+    {
+      "path": "CLOUD_HANDOFF.md",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "d8f2773d2ab673c5a0f02dfb6ff9611b4f2d8f13c8e8315a37d409ba4495b5e8"
+    },
+    {
+      "path": "AGENTS.md",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "6f15fd2130ed558c62f5c05d8a77db1f7540d5a967c8d693cda8c1b3269a585e"
+    },
+    {
+      "path": "scripts/cloud/setup.sh",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "7753ea16f0792611e13ea026f666300c1095597b1fc651f024e68d23c5716965"
+    },
+    {
+      "path": "scripts/cloud/run_with_budget.py",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "14d058ecac37d7653a93de9bf5ce9d26ba7b8080683053d1436de6395a7112cb"
+    },
+    {
+      "path": ".agents/skills/tscircuit/SKILL.md",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "1a837c3a57a9d86b535dc68b698f1935a2b33148371fa5b8a765cd3800b1b4a2"
+    },
+    {
+      "path": ".agents/skills/board-cloud-start/SKILL.md",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "6b542de35e7a706b3532cf7e829b7193c10231d45e18a5f5910bb2bfced6cf8d"
+    },
+    {
+      "path": "context/user-decisions.md",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "64e820cfadeb69d522a66d42bf9bcc3d3a499e7d6dc083e9b63ebdf62e27ecaf"
+    },
+    {
+      "path": "context/cloud-start-prompt.txt",
+      "anonymous_http_status": 200,
+      "byte_identical": true,
+      "sha256": "3ca625826cdca01b2e3e31f01268bad3727851e2d43e85709cc9a226129c7920"
+    }
+  ],
+  "anonymous_git_tree_manifest_verified": 296,
+  "missing_or_different_git_blobs": [],
+  "cloud_environment": "NOT CREATED: board absent from existing GitHub connector repository list; browser account access update pending",
+  "registry_release": "No new A7 registry release, deferred under human routing brief",
+  "diff_check": "Whitespace diagnostics in copied skill/handbook and generated mechanical bundle preserved as source/generator bytes; no runtime validation implied",
+  "checked_at_utc": "2026-10-05T09:45:04.814056+00:00"
+}

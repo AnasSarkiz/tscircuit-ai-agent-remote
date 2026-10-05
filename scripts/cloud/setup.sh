@@ -20,4 +20,5 @@ fi
 python3 -m pip install --target .geometry-runtime -r scripts/cloud/requirements.txt
 "$cloud_bun" --version
 python3 --version
+python3 scripts/cloud/smoke_test.py
 echo "Dependencies installed. Routing and heavy board builds were not started."

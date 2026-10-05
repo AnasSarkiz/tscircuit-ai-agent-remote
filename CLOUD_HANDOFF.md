@@ -297,3 +297,5 @@ The latest native replay's event/start JSON files are preserved in native-latest
 Root AGENTS.md, repository tscircuit skill, board-cloud-start skill, original human briefs and curated decisions are included. This captures the relevant continuation context; no claim of full automatic conversation export.
 
 Formatting currently reports13 errors in the frozen board replay source; context/local-format.log preserves the result. Reformat only with subsequent native rebuild/replay validation. No Mac routing resumes.
+
+In the actual Linux environment, run `python3 scripts/cloud/smoke_test.py` before heavy work. It exercises success, timeout, small memory termination and exclusive locking with tiny Python child processes, retains logs/receipt and launches no native routing. It has only been syntax-checked locally; Linux outcomes remain unverified.
