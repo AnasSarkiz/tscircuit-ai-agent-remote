@@ -10,6 +10,10 @@ The earlier conclusion that publication had to stop at the size limit was premat
 
 The registry automatically created cloud build `ac331034-5de6-4b66-adf8-e29efd851e84` for release `c6bd1e5c-0979-498a-bb8a-9533013cf51d`. The runner started at19:23:07UTC. Its actual result is recorded in `resumed-cloud-build-observation.json`; a running build is not a completed preview or fabrication approval. No duplicate build was requested. The optional external log-stream host is denied by the network proxy; status and logs remain observable through the supported registry build endpoint.
 
+The anonymous registry preview endpoint now reports `circuit_json_found=true` and identifies `index.circuit.tsx`. Its full native array matches the local built JSON exactly (6,848 elements); `resumed-registry-preview-receipt.json` retains the verification. [Board preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/c6bd1e5c-0979-498a-bb8a-9533013cf51d/preview). This establishes that the registry finds the existing built board, independently of the still-running cloud CI job. Browser UI and newly generated thumbnails have not been visually verified here.
+
+Two observation windows (300 and600 seconds) ended with the registry still reporting `build_in_progress=true`, no completion timestamp and no error. The observation deadlines did not stop or cancel the remote build and are not build failures. A fresh final API read agrees; see `resumed-cloud-build-latest-receipt.json`. The cloud CI result remains **pending**, while exact package publication and discovery of the locally generated board data are passed. Further investigation should read this existing build's status rather than create duplicate jobs.
+
 Upload/readback supervisor logs and outcomes are retained. All322 checkpoint files remain unchanged. Earlier partial-publication and missing-authentication records below are historical and superseded by this successful byte-verified upload.
 
 ## Authenticated public outcome

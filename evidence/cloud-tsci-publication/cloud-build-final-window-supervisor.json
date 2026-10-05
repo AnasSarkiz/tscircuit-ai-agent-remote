@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/monitor-registry-build.py",
+    "--build-id",
+    "ac331034-5de6-4b66-adf8-e29efd851e84",
+    "--output",
+    "evidence/cloud-tsci-publication/resumed-cloud-build-observation.json",
+    "--seconds",
+    "600"
+  ],
+  "exit_code": 2,
+  "termination": null,
+  "elapsed_seconds": 600.25,
+  "peak_process_group_rss_bytes": 18264064,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

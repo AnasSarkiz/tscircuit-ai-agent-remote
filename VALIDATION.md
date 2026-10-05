@@ -2,13 +2,15 @@
 
 Latest public [tscircuit0.0.2-wip-cloud-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files) contains**116/116 byte-verified files**, including current native JSON and required C262650 STEP, after supported multipart archive resume. No missing/extra/mismatched/unverified files remain. The registry automatically started a cloud build; its actual result is retained separately. [Exact upload/build evidence](evidence/cloud-tsci-publication/review.md). Earlier partial-publication and authentication-block text is historical; fabrication remains blocked.
 
+The anonymous registry preview API finds `index.circuit.tsx` and returns all6,848 native elements identical to the locally generated board. [Preview receipt](evidence/cloud-tsci-publication/resumed-registry-preview-receipt.json). Cloud CI completion and fresh thumbnails remain unverified while its job runs.
+
 Public implementation [fbcfd99](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/fbcfd99ac7f83a0c812433a2b3fde871aef2e832) is verified on `main`. Anonymous commit and exact-revision native JSON requests return HTTP200; the remote JSON matches the audited local build byte-for-byte. [Publication receipt](context/cloud-routing-publication-receipt.json). This receipt update changes no board inputs or generated copper.
 
 **Engineering WIP — routing incomplete; NOT FABRICATION READY.** Native output from the matching current source has **306 traces, 250 ordinary full-span vias, 190 pours and 90 native open-port errors**. The independent geometry audit reports **0 measured violations / 0 shorts**, with all **152 authored region widths preserved**, but **26 physically disconnected nets** remain. J7 accounts for46 native errors; unassigned J3 outer contacts are outside that count.
 
 [Current review](evidence/cloud-runs/review.md) · [Exact build receipt](context/build-checkpoint.json) · [Cloud continuation](CLOUD_HANDOFF.md). Native JSON SHA256 `81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`. TypeScript/maintained-source formatting pass; routing regressions17pass; board tests42pass/2failing fabrication/schema gates. Five electrical/placement checks and copper-free CLI placement build pass. Full routed CLI build/bitmap shorts/snapshot exceed time budgets; Gerber export/shorts fail unsupported polygon. Native schema169failures and32missing U16/U27 paste records remain. Battery/display mating, current/SI, BOM/CPL/stock and final mechanical/fabrication qualification are open.
 
-The managed cloud instance supports the checked native workflow. Source `scripts/cloud/env.sh`; use the single-operation supervisor. Verified lossless event archives prevent CLI file-loader memory exhaustion. Clean frozen installation still needs the unapplied api.github.com network allowance; startup instructions are saved as a draft. GitHub WIP publication does not approve fabrication, and registry retries remain deferred.
+The managed cloud instance supports the checked native workflow. Source `scripts/cloud/env.sh`; use the single-operation supervisor. Verified lossless event archives prevent CLI file-loader memory exhaustion. Clean frozen installation still needs the unapplied api.github.com network allowance; startup instructions are saved as a draft. GitHub and complete registry WIP publication do not approve fabrication; do not repeat unchanged uploads.
 
 | Stage | Current status | Remaining qualification |
 |---|---|---|
@@ -19,7 +21,7 @@ The managed cloud instance supports the checked native workflow. Source `scripts
 | 5 automated/visual | blocked | 2 tests,169 schema failures, unsupported Gerber polygon; CLI build/bitmap/snapshot time budgets |
 | 6 prototype fabrication | blocked | Complete copper and validated Gerbers/drills/BOM/CPL/stencil/assembler review missing |
 | 7 physical prototype | not started | No physical test evidence |
-| 8 prototype release | in progress | Public GitHub WIP checkpoint; registry retries deferred |
+| 8 prototype release | in progress | Public GitHub and byte-verified tscircuit WIP; cloud CI completion pending |
 
 ---
 

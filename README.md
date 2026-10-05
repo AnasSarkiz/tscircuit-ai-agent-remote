@@ -2,11 +2,13 @@
 
 Public [tscircuit0.0.2-wip-cloud-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files) now has**116/116 exact-matching files**, including current native JSON and required display-connector STEP. A supported multipart archive resumed the existing release and enabled its normal cloud build, which has started. [Exact upload/build evidence](evidence/cloud-tsci-publication/review.md). This is an engineering WIP; fabrication is not approved.
 
+[Board preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/c6bd1e5c-0979-498a-bb8a-9533013cf51d/preview): the registry preview endpoint finds `index.circuit.tsx` and returns the native board array identical to the locally generated artifact. The separate cloud CI build remains running in the latest observation; no completed CI result is claimed.
+
 **Engineering WIP — routing incomplete; NOT FABRICATION READY.** Native output from the matching current source has **306 traces, 250 ordinary full-span vias, 190 pours and 90 native open-port errors**. The independent geometry audit reports **0 measured violations / 0 shorts**, with all **152 authored region widths preserved**, but **26 physically disconnected nets** remain. J7 accounts for46 native errors; unassigned J3 outer contacts are outside that count.
 
 [Current review](evidence/cloud-runs/review.md) · [Exact build receipt](context/build-checkpoint.json) · [Cloud continuation](CLOUD_HANDOFF.md). Native JSON SHA256 `81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`. TypeScript/maintained-source formatting pass; routing regressions17pass; board tests42pass/2failing fabrication/schema gates. Five electrical/placement checks and copper-free CLI placement build pass. Full routed CLI build/bitmap shorts/snapshot exceed time budgets; Gerber export/shorts fail unsupported polygon. Native schema169failures and32missing U16/U27 paste records remain. Battery/display mating, current/SI, BOM/CPL/stock and final mechanical/fabrication qualification are open.
 
-The managed cloud instance supports the checked native workflow. Source `scripts/cloud/env.sh`; use the single-operation supervisor. Verified lossless event archives prevent CLI file-loader memory exhaustion. Clean frozen installation still needs the unapplied api.github.com network allowance; startup instructions are saved as a draft. GitHub WIP publication does not approve fabrication, and registry retries remain deferred.
+The managed cloud instance supports the checked native workflow. Source `scripts/cloud/env.sh`; use the single-operation supervisor. Verified lossless event archives prevent CLI file-loader memory exhaustion. Clean frozen installation still needs the unapplied api.github.com network allowance; startup instructions are saved as a draft. GitHub and complete registry WIP publication do not approve fabrication; do not repeat unchanged uploads.
 
 ---
 
