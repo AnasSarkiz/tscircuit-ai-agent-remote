@@ -1,0 +1,473 @@
+{
+  "scope": "New ordinary through vias including same-net drill-to-pad clearance and actual native plane BREP apertures; conservative pad/hole bounding boxes.",
+  "vias": [
+    {
+      "via_id": "pcb_via_0",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.3258057075539539,
+        "drill_to_any_pad": 0.5258057075539538,
+        "drill_to_other_drill": 2.67444371161146,
+        "copper_to_other_trace": 0.31161124661423,
+        "plane_antipad": 0.20730349123892233
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_1",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 1.4904441908009955,
+        "drill_to_any_pad": 1.6904441908009957,
+        "drill_to_other_drill": 5.8017205915600565,
+        "copper_to_other_trace": 2.829271763472443,
+        "plane_antipad": 0.20730349123892355
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_2",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.29318022098165397,
+        "drill_to_any_pad": 0.3000474999999966,
+        "drill_to_other_drill": 2.670534534888732,
+        "copper_to_other_trace": 0.2152308645268701,
+        "plane_antipad": 0.20730349123892244
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_3",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.8983153457115941,
+        "drill_to_any_pad": 0.846404034516119,
+        "drill_to_other_drill": 1.6452749093105474,
+        "copper_to_other_trace": 1.1459999999999964,
+        "plane_antipad": 0.20730349123892233
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_4",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.6302055000000003,
+        "drill_to_any_pad": 0.8302055000000003,
+        "drill_to_other_drill": 2.670534534888732,
+        "copper_to_other_trace": 0.3198989908875849,
+        "plane_antipad": 0.207303491238921
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_5",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 1.9605446086317926,
+        "drill_to_any_pad": 2.1605446086317928,
+        "drill_to_other_drill": 4.893156352920261,
+        "copper_to_other_trace": 2.594216512868977,
+        "plane_antipad": 0.20730349123892244
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_6",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.33954156643541145,
+        "drill_to_any_pad": 0.20000119433619049,
+        "drill_to_other_drill": 11.923671205608919,
+        "copper_to_other_trace": 2.9741517672590354,
+        "plane_antipad": 0.20730323137852114
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_7",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.5819706597605713,
+        "drill_to_any_pad": 0.20000112471540968,
+        "drill_to_other_drill": 1.9498109269026425,
+        "copper_to_other_trace": 0.7515577878278414,
+        "plane_antipad": 0.20730306252013964
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_8",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.25638734864597224,
+        "drill_to_any_pad": 0.2999555000000015,
+        "drill_to_other_drill": 3.658032439790923,
+        "copper_to_other_trace": 0.845669635029555,
+        "plane_antipad": 0.20730349123892244
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_9",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.9786271147315945,
+        "drill_to_any_pad": 0.30000000000000004,
+        "drill_to_other_drill": 1.949810926902643,
+        "copper_to_other_trace": 1.3427631776813138,
+        "plane_antipad": 0.20730349123892367
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_10",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.5879999999999989,
+        "drill_to_any_pad": 0.7879999999999988,
+        "drill_to_other_drill": 5.8017205915600565,
+        "copper_to_other_trace": 2.1978980342905947,
+        "plane_antipad": 0.20730349123892355
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_11",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 1.6959999999999957,
+        "drill_to_any_pad": 1.895999999999996,
+        "drill_to_other_drill": 1.6452749093105474,
+        "copper_to_other_trace": 1.5552461195573946,
+        "plane_antipad": 0.20730349123892233
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_12",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.5206880095648503,
+        "drill_to_any_pad": 0.7206880095648502,
+        "drill_to_other_drill": 4.893156352920261,
+        "copper_to_other_trace": 0.8310473326172292,
+        "plane_antipad": 0.2073034912389231
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_13",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.7569517219516474,
+        "drill_to_any_pad": 0.9569517219516473,
+        "drill_to_other_drill": 2.2787567273603218,
+        "copper_to_other_trace": 0.7472365820408564,
+        "plane_antipad": 0.20730303720827303
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_14",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.729869471400136,
+        "drill_to_any_pad": 0.929869471400136,
+        "drill_to_other_drill": 10.296064896797072,
+        "copper_to_other_trace": 2.4386503934746058,
+        "plane_antipad": 0.20730349123892222
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_15",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 0.2150000000000013,
+        "drill_to_any_pad": 0.41500000000000126,
+        "drill_to_other_drill": 8.53414751164995,
+        "copper_to_other_trace": 1.4567643471577707,
+        "plane_antipad": 0.20730349123892222
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_16",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 1.0469542881877785,
+        "drill_to_any_pad": 1.2469542881877784,
+        "drill_to_other_drill": 0.4149999999999999,
+        "copper_to_other_trace": 3.8811299273709574,
+        "plane_antipad": 0.2073032857256507
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    },
+    {
+      "via_id": "pcb_via_17",
+      "hole_mm": 0.3,
+      "outer_mm": 0.7,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "min_clearances_mm": {
+        "copper_to_pad": 1.9476060820068088,
+        "drill_to_any_pad": 2.147606082006809,
+        "drill_to_other_drill": 2.2787567273603218,
+        "copper_to_other_trace": 0.4241744946534892,
+        "plane_antipad": 0.20730349123892222
+      },
+      "requirements_mm": {
+        "copper_to_pad": 0.2,
+        "drill_to_any_pad": 0.2,
+        "drill_to_other_drill": 0.25,
+        "copper_to_other_trace": 0.2,
+        "plane_antipad": 0.2
+      },
+      "violations": []
+    }
+  ]
+}

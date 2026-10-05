@@ -1,0 +1,44 @@
+{
+  "major_placement": "FROZEN FOR ROUTING",
+  "pcb_nominal_mm": [
+    50,
+    65,
+    1
+  ],
+  "enclosure_limit_mm": [
+    60,
+    75,
+    16
+  ],
+  "mechanical_views_inspected": [
+    "top",
+    "side",
+    "bottom"
+  ],
+  "modeled_new_collision": false,
+  "allocated_height_mm": 15.07,
+  "original_nominal_1mm_thickness_allocation_max_mm": 1.1,
+  "selected_stack_finished_thickness_max_mm": 1.122,
+  "updated_allocated_height_mm": 15.092,
+  "enclosure_height_margin_mm": 0.908,
+  "minor_passive_change": {
+    "C4_before": [
+      -2,
+      -13.2,
+      180
+    ],
+    "C4_after": [
+      -2.25,
+      -12.65,
+      90
+    ],
+    "center_displacement_mm": 0.6041522986797286,
+    "reason": "Short regulator input escape joining full-width local input copper; original saved PG route requires rerouting",
+    "status": "Native placement now has no courtyard error; copper validation in progress"
+  },
+  "limitations": [
+    "Display FPC mating/fold unconfirmed",
+    "Two J3 outer contact numbers unconfirmed",
+    "Physical tolerance/fit still untested"
+  ]
+}

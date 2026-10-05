@@ -1,0 +1,17 @@
+{
+  "native_build": "evidence/a7-routing-2026-10-05/native-latest-replay/circuit.json",
+  "canonical_circuit_json": "dist/index/circuit.json",
+  "byte_identical": true,
+  "sha256": "ff99af3edc2ea509109e4b9b70188668d813673aacae55890c5f9cbe5dc77bd8",
+  "size_bytes": 2948515,
+  "traces": 138,
+  "vias": 116,
+  "native_open_port_errors": 275,
+  "restored_source_snapshot": "evidence/a7-routing-2026-10-05/native-latest-replay/source-snapshot",
+  "source_restore_byte_verified": true,
+  "limitations": [
+    "Unbuilt via-clearance and explicit pipeline proposals preserved separately",
+    "No local routing after cloud migration request",
+    "Native recording completion is not DRC/fabrication approval"
+  ]
+}

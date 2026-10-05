@@ -1,0 +1,12 @@
+$ tsc --noEmit
+evidence/a7-routing-2026-10-05/before/Routing.tsx(2,28): error TS2307: Cannot find module '../../routes/a3/regulator.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(3,35): error TS2307: Cannot find module '../../routes/a5/regulator-feedback-status.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(4,38): error TS2307: Cannot find module '../../routes/a5/charger-current-limit.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(5,37): error TS2307: Cannot find module '../../routes/a5/independent-control-signals.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(7,32): error TS2307: Cannot find module '../../routes/a6/amplifier-bclk.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(8,31): error TS2307: Cannot find module '../../routes/a6/amplifier-din.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(10,42): error TS2307: Cannot find module '../../routes/a6/backlight-current-setting.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(12,38): error TS2307: Cannot find module '../../routes/a6/backlight-c1-positive.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(14,38): error TS2307: Cannot find module '../../routes/a6/backlight-c1-negative.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(16,38): error TS2307: Cannot find module '../../routes/a6/backlight-c2-positive.json' or its corresponding type declarations.
+evidence/a7-routing-2026-10-05/before/Routing.tsx(18,38): error TS2307: Cannot find module '../../routes/a6/backlight-c2-negative.json' or its corresponding type declarations.

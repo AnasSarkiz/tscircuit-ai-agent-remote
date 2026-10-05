@@ -1,0 +1,13 @@
+{
+  "scope": "Actual new wire copper to different-net native BREP plane on matching layers, including segment crossings. No plane geometry modification.",
+  "segments_checked": 10,
+  "minimum": {
+    "trace": "saved_phase_null_18_0",
+    "segment_index": 11,
+    "plane": "pcb_copper_pour_0",
+    "clearance_mm": 0.20850691299129445,
+    "center_in_plane_copper": false
+  },
+  "required_clearance_mm": 0.2,
+  "violations": []
+}

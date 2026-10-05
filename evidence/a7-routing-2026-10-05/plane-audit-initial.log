@@ -1,0 +1,71 @@
+{
+  "scope": "Newly generated independent signal traces only, conservative circumscribed pad/drill/keepout bounds; all native original records retained. Not whole-board DRC or thermal approval.",
+  "trace_count": 12,
+  "actual_widths_mm": [
+    0.2
+  ],
+  "layers": [
+    "bottom",
+    "inner1",
+    "inner2",
+    "top"
+  ],
+  "vias": 18,
+  "minima": {
+    "different_net_pad": {
+      "clearance_mm": 0.20596124391718842,
+      "ids": [
+        "source_net_59_0",
+        "pcb_smtpad_286"
+      ]
+    },
+    "different_net_trace": {
+      "clearance_mm": 0.3686007987957677,
+      "ids": [
+        "saved_phase_null_19_0",
+        "source_net_62_0"
+      ]
+    },
+    "ordinary_drill": {
+      "clearance_mm": 0.46490818955213375,
+      "ids": [
+        "source_net_46_0",
+        "pcb_hole_4"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 2.014463195912755,
+      "ids": [
+        "source_net_62_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 1.649404551661776,
+      "ids": [
+        "source_net_62_0"
+      ]
+    }
+  },
+  "requirements_mm": {
+    "different_net_pad": 0.2,
+    "different_net_trace": 0.2,
+    "ordinary_drill": 0.25,
+    "keepout": 0.0,
+    "board_edge": 0.25
+  },
+  "violations": []
+}
+{
+  "scope": "Actual new wire copper to different-net native BREP plane on matching layers, including segment crossings. No plane geometry modification.",
+  "segments_checked": 10,
+  "minimum": {
+    "trace": "saved_phase_null_18_0",
+    "segment_index": 11,
+    "plane": "pcb_copper_pour_0",
+    "clearance_mm": 0.20850691299129445,
+    "center_in_plane_copper": false
+  },
+  "required_clearance_mm": 0.2,
+  "violations": []
+}

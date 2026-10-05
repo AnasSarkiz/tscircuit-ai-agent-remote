@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/anassarkiz/tsci/tscircuit-store/boards/tscircuit-ai-agent-remote--01a0fe57/evidence/a7-routing-2026-10-05/audit-vias.py", line 5, in <module>
+    a=runpy.run_path('evidence/a7-routing-2026-10-05/audit-signals.py')
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "evidence/a7-routing-2026-10-05/audit-signals.py", line 57, in <module>
+    assert all(p['width']>=0.2 and p['layer'] in ['top','bottom'] for p in r if p['route_type']=='wire')
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

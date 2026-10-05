@@ -1,3 +1,13 @@
+## A7 Codex Cloud migration checkpoint — 2026-10-05
+
+Local memory-intensive routing is stopped at the user's request. Continue this existing board in Codex Cloud using [CLOUD_HANDOFF.md](CLOUD_HANDOFF.md), [cloud start prompt](context/cloud-start-prompt.txt), root AGENTS.md, repository skills and original request/decision records. Linux setup: `bash scripts/cloud/setup.sh`; task shell: `source scripts/cloud/env.sh`. Every heavy command uses the single-operation memory/time supervisor. No cloud VM execution has yet been verified; the GitHub connector currently omits this board repository and needs the user's browser connection update.
+
+Canonical generated `dist/index/circuit.json` is byte-identical to the last completed native replay and its restored board source: **138 traces, 116 vias, 275 native unconnected-port errors**. It is a partial engineering prototype. The two battery outer contacts and contact-dependent display fanout remain deferred. Known actual U2 ordinary-via clearance is **0.192053 mm versus 0.20 mm required**; its unbuilt correction is saved separately. Full copper/placement/mechanical/current/USB/paste/BOM/fabrication gates remain open. No new registry publication is attempted under the current A7 brief.
+
+[Exact build receipt](context/build-checkpoint.json) and [296-file checkpoint manifest](context/checkpoint-sha256.json) identify the carried-over bytes. TypeScript passes; tests **40 pass / 4 fail**, formatting **13 errors** retained. These failures are not suppressed. Linux dependency setup/supervisor execution awaits the actual cloud environment. Historical raw native trials are losslessly archived with per-file hashes; accepted route files remain directly usable. Do not restart incomplete trials as accepted copper.
+
+---
+
 ## A6 public outcome — verified 2026-10-04
 
 Public [GitHub A6 implementation](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/a699a2d4337d5eafa26a777fee58c037de491f8f) and committed circuit JSON are anonymously byte-verified. Public [tscircuit0.0.2-wip-a6-bom-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a6-bom-routing#files) has102/103matching board-only files, including this JSON and all saved routes. The required11.4MB C262650 connector STEP is404 after native compressed/fallbackHTTP413; publisher exit1, ready_to_build=false, no mismatched/unverified or extra files. **B-009 publication remains incomplete.** GitHub push succeeded. [Exact receipts](evidence/a6-bom-routing-2026-10-04/publication/review.md). Receipt-only update changes no runtime inputs and does not trigger another upload. **NOT FABRICATION READY.**

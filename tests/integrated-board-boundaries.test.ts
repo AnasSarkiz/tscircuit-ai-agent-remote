@@ -44,7 +44,7 @@ describe("Native A4 board boundaries and fabrication gate", () => {
     expect(rawElements.find((element) => element.type === "pcb_board")).toMatchObject({
       width: 50,
       height: 65,
-      thickness: 0.8,
+      thickness: 1.0,
     })
   })
   test("fabrication requires nonempty actual copper and zero unresolved native errors", () => {

@@ -1,0 +1,754 @@
+Continue work on the existing `tscircuit-ai-agent-remote` repository.
+
+Do NOT start over.
+
+We are now moving from placement review into the **routing + copper validation stage**.
+
+The current board is approximately:
+
+- 50 × 65 mm
+- 4 layers
+- top-side assembly
+- ESP32-S3
+- USB-C
+- rechargeable 1S battery
+- display
+- two microphones
+- audio amplifier
+- external speaker connector
+- external haptic motor connector
+- TALK button
+- privacy switch
+- BQ24074 charger
+- TPS63802 regulator
+
+Before routing, there is one mechanical item that appears to be missing:
+
+# ADD PCB MOUNTING HOLES
+
+Add **2 × M2 mounting holes** to the PCB.
+
+Use:
+
+- approximately **2.2 mm NPTH**
+- no copper plating
+- suitable mechanical keepout around the hole
+- sufficient screw-head/standoff clearance
+- preferably plastic mounting hardware in the final enclosure
+
+Do NOT blindly place them in the corners.
+
+Their locations must be chosen after checking:
+
+- display body
+- display FPC
+- battery
+- speaker
+- haptic motor
+- TALK button
+- privacy switch
+- USB-C
+- antenna keepout
+- component placement
+- enclosure wall clearance
+
+Avoid putting a mounting hole or metallic standoff near the ESP32 antenna.
+
+The holes should mechanically support the board against:
+
+- USB-C insertion/removal
+- TALK-button force
+- side-switch force
+- cable movement
+
+Prefer:
+
+- one lower-side mounting point
+- one upper/mid-side mounting point
+
+if those locations are mechanically valid.
+
+Add clear mechanical keepouts around them.
+
+Document final:
+
+- X/Y positions
+- hole diameter
+- screw type
+- keepout diameter
+- distance from PCB edge
+
+---
+
+# VERIFY DISPLAY AND BATTERY BEFORE FINAL ROUTING
+
+Use the finalized display/battery choices from the latest design decision.
+
+Display target:
+
+**HS20HS072RX / C5329582**
+- 2.0"
+- 240 × 320
+- ST7789T3
+- SPI
+- 12-pin FPC
+
+Display connector target:
+
+**AFC07-S12FCC-00 / C11051**
+- 12 pin
+- 0.5 mm pitch
+- bottom contact
+
+Battery target:
+
+**LP523450 / AKY2945-class protected pack**
+- 3.7 V nominal
+- 4.2 V charge
+- approximately 1000 mAh
+- 10 kΩ NTC
+- approximately 3 A peak capability
+- JST PH 3-pin style harness
+
+Before routing:
+
+- verify display pinout
+- verify display FPC orientation
+- verify connector contact side
+- verify battery connector polarity
+- verify BAT / GND / NTC order
+- verify battery mechanical envelope
+- verify battery cable exit
+- verify display FPC bend radius and cable path
+
+Do NOT route around an incorrect connector pin order.
+
+---
+
+# THEN ROUTE THE COMPLETE PCB
+
+Once the above checks pass, enable routing and route the board.
+
+This must be treated as a serious production-oriented routing pass.
+
+Do NOT simply run an autorouter and declare success.
+
+Use the autorouter where appropriate, but manually inspect and improve the result.
+
+---
+
+# 4-LAYER STACK
+
+Use the intended 4-layer architecture.
+
+Preferred intent:
+
+```text
+L1 — components + critical/short signals
+L2 — continuous GND plane
+L3 — power distribution + slower signals
+L4 — additional signals
+```
+
+Keep L2 as continuous a ground reference as reasonably possible.
+
+Do not unnecessarily cut or fragment the ground plane.
+
+Avoid routing signal traces across large ground-plane gaps.
+
+---
+
+# TRACE WIDTH RULES
+
+Do not use one default trace width for everything.
+
+Define net classes or equivalent routing rules.
+
+## Low-current digital signals
+
+Typical GPIO / SPI / control:
+
+approximately:
+
+`0.15–0.20 mm`
+
+Use larger widths where routing space allows.
+
+## Power rails
+
+Calculate required widths from actual current.
+
+At minimum separately review:
+
+- VBUS 5 V
+- PACK_BAT
+- VSYS
+- 3V3
+- display backlight power
+- speaker amplifier power
+- haptic motor current
+
+Do not use thin signal traces for power.
+
+For high-current battery/system paths, prefer:
+
+- wide traces
+- polygons/pours where appropriate
+- multiple vias when changing layers
+
+Design for expected peak current, not merely average current.
+
+The provisional system load is around the 1.5 A range and battery capability is higher, so PACK_BAT and VSYS must be treated as meaningful power nets.
+
+Calculate the actual minimum copper width required for:
+
+- continuous current
+- peak current
+- acceptable temperature rise
+- 1 oz copper unless another copper weight is selected
+
+Document the calculation.
+
+---
+
+# USB ROUTING
+
+USB D+ and D− require special treatment.
+
+Route them as a matched differential pair.
+
+Check:
+
+- same reference plane
+- minimal stubs
+- minimal vias
+- short route
+- continuous ground beneath them
+- spacing consistency
+- no routing through noisy power section
+
+Aim for appropriate USB 2.0 differential impedance.
+
+Do not claim exact 90 Ω differential impedance unless the actual JLCPCB stackup, dielectric thickness and trace geometry have been calculated.
+
+If impedance control is required, calculate:
+
+- trace width
+- pair spacing
+- copper thickness
+- dielectric thickness
+- dielectric constant
+
+using the actual board stackup.
+
+Keep USB ESD protection close to the connector.
+
+---
+
+# ESP32 RF AREA
+
+The ESP32 antenna area remains critical.
+
+Absolutely no:
+
+- copper
+- vias
+- traces
+- planes
+- batteries
+- display metal
+- screws
+- mounting hardware
+
+in the manufacturer-required antenna keepout.
+
+Inspect every PCB layer.
+
+Do not assume an L1 keepout is sufficient.
+
+---
+
+# SWITCHING REGULATOR ROUTING
+
+The TPS63802 section needs careful layout.
+
+Follow TI's recommended layout as closely as possible.
+
+Minimize:
+
+- switching loop area
+- L1/L2 switch-node area
+- distance to input capacitor
+- distance to output capacitor
+
+Keep the switch node away from:
+
+- microphones
+- microphone clock/data
+- antenna
+- sensitive ADC
+- USB
+
+Use wide short power connections.
+
+Ground return must be low impedance.
+
+Review the actual copper against the manufacturer layout recommendations after routing.
+
+---
+
+# CHARGER ROUTING
+
+For BQ24074:
+
+Keep:
+
+- input capacitor close
+- BAT capacitor close
+- OUT capacitor close
+- exposed pad properly grounded
+- high-current BAT/OUT/VBUS paths short and wide
+
+Check thermal copper.
+
+The charger may dissipate significant heat while charging.
+
+Do not bury it in an isolated tiny copper island.
+
+---
+
+# MICROPHONE ROUTING
+
+Two microphones are sensitive audio components.
+
+Keep them away from:
+
+- regulator switch node
+- USB
+- speaker amplifier output
+- haptic motor current
+- high-current power traces
+
+Keep microphone clock/data routes controlled and reasonably short.
+
+Provide clean ground reference.
+
+Review possible crosstalk and return paths.
+
+Remember:
+
+**B-005 microphone solder-paste issue is still a fabrication blocker unless it has now been resolved upstream.**
+
+Routing success does NOT resolve B-005.
+
+---
+
+# SPEAKER ROUTING
+
+MAX98357 output is differential.
+
+Never connect either speaker output to GND.
+
+Route speaker + and − as a pair.
+
+Keep them:
+
+- reasonably close together
+- away from microphones
+- away from antenna
+- away from sensitive logic where practical
+
+Review amplifier supply current path separately.
+
+---
+
+# HAPTIC ROUTING
+
+Route motor current separately from sensitive microphone/audio circuits.
+
+Ensure the haptic MOSFET:
+
+- has correct gate resistor/pulldown
+- has appropriate protection
+- has suitable current path
+- does not inject large return currents through sensitive ground paths
+
+---
+
+# GROUNDING REVIEW
+
+After routing, inspect ground return paths.
+
+Pay special attention to:
+
+- ESP32
+- USB
+- regulator
+- charger
+- microphones
+- audio amplifier
+- display
+- haptic driver
+
+Add stitching vias where useful.
+
+Do not create isolated ground islands.
+
+Do not create long narrow ground bottlenecks.
+
+---
+
+# VIA REVIEW
+
+Review every high-current via.
+
+For high-current layer changes:
+
+- use multiple vias if necessary
+- calculate whether via barrel capacity is adequate
+
+Check:
+
+- drill diameter
+- finished hole
+- annular ring
+- board manufacturer minimums
+
+Do not use tiny vias unnecessarily on power paths.
+
+---
+
+# CHECK FOR SHORTS
+
+This is mandatory.
+
+After routing run all available tscircuit/native checks for:
+
+- shorts
+- disconnected nets
+- unrouted connections
+- copper collisions
+- trace-to-pad collisions
+- trace-to-via collisions
+- incorrect layer connections
+- clearance violations
+- duplicate connections
+- unintended net merging
+
+Also inspect `circuit.json`.
+
+Do not rely only on a successful compile.
+
+If a native checker does not cover something adequately, perform an independent geometry/net analysis.
+
+---
+
+# CHECK FOR OPEN CONNECTIONS
+
+Verify that every required connection is physically routed.
+
+The final board must report:
+
+`0 UNROUTED REQUIRED CONNECTIONS`
+
+Do not count intentional NC pins.
+
+Cross-check netlist versus copper.
+
+---
+
+# TRACE CLEARANCE REVIEW
+
+Measure the minimum actual trace/space geometry.
+
+Confirm compliance with the selected JLCPCB process.
+
+Check:
+
+- trace-to-trace
+- trace-to-pad
+- pad-to-pad
+- via-to-trace
+- via-to-pad
+- copper-to-board-edge
+- copper-to-NPTH mounting holes
+
+Do not merely assume the router followed valid rules.
+
+---
+
+# POWER TRACE REVIEW
+
+Produce a table:
+
+| Net | Expected peak current | Width | Layer | Via count | Result |
+|---|---:|---:|---|---:|---|
+| VBUS | ... | ... | ... | ... | PASS/FAIL |
+| PACK_BAT | ... | ... | ... | ... | PASS/FAIL |
+| VSYS | ... | ... | ... | ... | PASS/FAIL |
+| V3V3 | ... | ... | ... | ... | PASS/FAIL |
+| BACKLIGHT | ... | ... | ... | ... | PASS/FAIL |
+| SPEAKER SUPPLY | ... | ... | ... | ... | PASS/FAIL |
+| HAPTIC | ... | ... | ... | ... | PASS/FAIL |
+
+If any power route is too narrow, FIX IT.
+
+---
+
+# CRITICAL SIGNAL REVIEW
+
+Produce another table:
+
+| Interface | Review |
+|---|---|
+| USB D+/D− | PASS/FAIL |
+| Display SPI | PASS/FAIL |
+| Microphone I2S | PASS/FAIL |
+| Speaker I2S | PASS/FAIL |
+| ESP32 antenna | PASS/FAIL |
+| Charger | PASS/FAIL |
+| Buck-boost | PASS/FAIL |
+| Battery ADC/NTC | PASS/FAIL |
+
+Explain any remaining concerns.
+
+---
+
+# ROUTE QUALITY REVIEW
+
+Do not accept ugly or unnecessarily complex autorouting.
+
+Inspect for:
+
+- unnecessary zigzags
+- loops
+- excessive vias
+- traces circling around components
+- traces unnecessarily changing layers
+- narrow neck-downs on power
+- acute angles
+- poor return paths
+- unnecessary long routes
+
+Clean these up.
+
+The routing should look intentional.
+
+---
+
+# SAVE ROUTES
+
+Preserve the real native routing output.
+
+Save:
+
+- native route artifacts
+- full `circuit.json`
+- routing configuration
+- any supported route-cache/replay data
+
+We must be able to reproduce the exact routing.
+
+Do not rely on screenshots alone.
+
+---
+
+# RUN DRC / CONNECTIVITY CHECKS
+
+After routing:
+
+Run every meaningful available check.
+
+At minimum:
+
+- build
+- TypeScript
+- formatting
+- connectivity
+- shorts
+- placement
+- routing completion
+- PCB DRC
+- schema validation
+- fabrication validation where supported
+
+Record exact outputs in `VALIDATION.md`.
+
+Do NOT hide existing failures such as B-005/B-010/B-015.
+
+---
+
+# FABRICATION EXPORT
+
+Once routing checks pass, generate:
+
+- Gerbers
+- drill files
+- board outline
+- paste layers
+- solder mask
+- BOM
+- CPL / pick-and-place
+
+Inspect them.
+
+Do not simply generate the ZIP.
+
+Specifically inspect:
+
+### Copper
+- all four layers
+
+### Paste
+- microphones
+- USB-C
+- charger
+- regulator
+- fine-pitch parts
+
+### Drill
+- mounting holes
+- vias
+- connector holes if any
+
+### Board outline
+- 50 × 65 mm
+- rounded corners
+- no accidental internal contours
+
+### CPL
+- orientation
+- top-side only
+- connector rotations
+- ESP32
+- IC pin-1 orientations
+
+---
+
+# MOUNTING HOLE FABRICATION CHECK
+
+Verify the new M2 holes appear as:
+
+- NPTH
+- correct diameter
+- correct drill file
+- no copper plating
+- no unwanted copper inside keepout
+
+Inspect the fabrication output, not only PCB preview.
+
+---
+
+# FINAL VISUAL OUTPUTS
+
+Generate and inspect:
+
+1. routed PCB top
+2. routed PCB bottom
+3. copper L1
+4. copper L2
+5. copper L3
+6. copper L4
+7. ratsnest/connectivity status
+8. 3D top
+9. 3D bottom
+10. schematic
+11. Gerber preview
+
+---
+
+# DO NOT CALL IT FABRICATION READY AUTOMATICALLY
+
+Routing completion alone is NOT enough.
+
+Only state:
+
+`FABRICATION READY`
+
+if ALL of the following pass:
+
+- 0 unintended shorts
+- 0 required unrouted nets
+- trace clearances pass
+- power widths pass
+- USB review passes
+- ESP32 RF keepout passes
+- ground review passes
+- mounting holes pass
+- display mechanical fit passes
+- battery mechanical fit passes
+- battery polarity passes
+- paste layers pass
+- B-005 resolved
+- BOM is correct
+- CPL is correct
+- Gerbers inspected
+- drill files inspected
+- schema/tooling failures affecting fabrication resolved
+- no unresolved fabrication blocker remains
+
+Otherwise state:
+
+`NOT FABRICATION READY`
+
+and list the exact blockers.
+
+---
+
+# REQUIRED FINAL REPORT
+
+At the end return:
+
+### Board
+- dimensions
+- layer count
+- component count
+- via count
+- routed trace count / length if available
+
+### Mounting
+- M2 hole coordinates
+- hole diameter
+- keepout
+- antenna distance
+
+### Routing
+- unrouted connection count
+- short count
+- DRC violation count
+
+### Power
+- power trace width/current table
+
+### USB
+- D+/D− length
+- length mismatch
+- number of vias
+- estimated/target impedance method
+
+### RF
+- antenna keepout result
+
+### Fabrication
+- Gerber result
+- drill result
+- BOM result
+- CPL result
+- paste result
+
+### Known blockers
+Keep them explicit.
+
+### Final status
+
+Exactly one:
+
+`FABRICATION READY`
+
+or
+
+`NOT FABRICATION READY`
+
+Do not report success because an autorouter finished.
+
+The goal is a PCB whose actual copper has been reviewed for **correct connectivity, no shorts, appropriate trace widths, appropriate clearances, correct return paths and manufacturability**.

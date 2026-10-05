@@ -1,0 +1,67 @@
+{
+  "scope": "All generated wire segments, exact right-angle pad boxes and conservative bounds for curved pads/drills/keepouts. All native records retained. Plane/via audits separate; not thermal approval.",
+  "trace_count": 134,
+  "actual_widths_mm": [
+    0.2,
+    0.27,
+    0.275,
+    0.28,
+    0.2979,
+    0.3,
+    0.4,
+    0.7,
+    0.8,
+    1
+  ],
+  "layers": [
+    "bottom",
+    "inner1",
+    "inner2",
+    "top"
+  ],
+  "vias": 116,
+  "minima": {
+    "different_net_pad": {
+      "clearance_mm": 0.20007509791604303,
+      "ids": [
+        "pcb_trace_23",
+        "pcb_smtpad_137"
+      ]
+    },
+    "different_net_trace": {
+      "clearance_mm": 0.21512599718433467,
+      "ids": [
+        "saved_phase_null_10_0",
+        "saved_phase_null_8_0"
+      ]
+    },
+    "ordinary_drill": {
+      "clearance_mm": 0.3383372729725169,
+      "ids": [
+        "saved_phase_null_2_1",
+        "pcb_hole_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 0.35550299999999735,
+      "ids": [
+        "pcb_trace_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 1.1805030000000003,
+      "ids": [
+        "pcb_trace_0"
+      ]
+    }
+  },
+  "requirements_mm": {
+    "different_net_pad": 0.2,
+    "different_net_trace": 0.2,
+    "ordinary_drill": 0.25,
+    "keepout": 0.0,
+    "board_edge": 0.25
+  },
+  "violations": []
+}

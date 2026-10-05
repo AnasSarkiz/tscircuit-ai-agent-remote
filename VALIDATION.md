@@ -1,3 +1,28 @@
+## A7 cloud migration validation — 2026-10-05
+
+Base main: `52f479592772cdcfac8f2290718ddef8f360419c`. Current migration commit is identified by Git history; this record intentionally contains no self-referential commit hash. Last completed native RootCircuit replay is carried byte-for-byte into `dist/index/circuit.json`, SHA256 `ff99af3edc2ea509109e4b9b70188668d813673aacae55890c5f9cbe5dc77bd8`, 2,948,515 bytes. Loaded main/src source bytes restored exactly from that replay's source snapshot; no generated JSON was edited. Package scripts and cloud tooling were subsequently added, with the same installed dependency graph. Official pinned tscircuit0.0.2744, CLI0.1.2237, core0.0.2090, capacity autorouter0.0.958. Native default Pipeline9, auto_local; real saved phase paths plus expressly labelled manual paths.
+
+Actual generated counts:138 traces/116 vias/one GND pour/275 native open-port errors. The latter is not a count of all accidental missing connections: J7 accounts for46, J3 outer contacts are unassigned and omitted from native errors, unused/NC classification remains incomplete. No complete DRC/fabrication approval. Known U2 GND via drill-to-REG_PG clearance0.1920529573 mm below0.20 mm is unresolved; separate proposal not applied. Prior width/clearance review remains limited to the recorded subsets and is not generalized to138 traces.
+
+Local migration checks:296 manifest files verified with zero mismatch; bash syntax0; Python compile0; TypeScript0; tests40pass/4fail/406assertions/16files; format13errors/exit1. Failing tests retain strict-schema, placement equality, original-four-trace equality and zero-native-error gates. Logs are context/local-typecheck.log, local-tests.log and local-format.log. Formatting was not applied to the frozen replay source before a new native rebuild. Linux-only guards return2 on Mac; Linux install, memory termination, timeout and locking are unverified until cloud setup/smoke tests. No heavy build/routing was started after the cloud migration instruction.
+
+The user requests cloud because Mac routing exhausts memory. Historical trial ZIP receipts verify every original byte before duplicate-directory removal; latest raw start/event archive contains38files. Current full JSON, source snapshot, routes and imports are directly present. Cloud setup uses exact lockfile and a65% total-memory budget with one process group; stops are explicitly incomplete, not passing output. See CLOUD_HANDOFF.md for decisions, deferred pins, power/current/mechanical review, retry limits and first actions. Watcher paused; other-chat messaging revoked; registry retries deferred.
+
+| Stage | Current status | Migration evidence / unresolved work |
+|---|---|---|
+| 1 requirements | in progress | 50×65×1.0 mm/four layers, max60×75×16 mm; actual interface/mechanical qualification remains |
+| 2 schematic/BOM | blocked | Imported parts/paste/metadata, display mating and pack outer numbers remain open |
+| 3 placement | blocked | Conditional frozen major placement; complete mechanical/FPC/harness/RF review remains |
+| 4 copper | in progress | 138 traces/116 vias; required missing copper and actual clearance error remain |
+| 5 checks/visual | blocked | Four retained tests,13format errors, schema/Gerber tool issues; current whole-copper review incomplete |
+| 6 prototype fabrication | blocked | No validated complete copper or approved fabrication set |
+| 7 physical test | not started | No hardware evidence |
+| 8 release | in progress | Public Git checkpoint planned; registry remains historical partial A6, not a new A7 release |
+
+GitHub public visibility verified via configured account; remote main matches the base before migration push. Anonymous exact-commit JSON/source verification is recorded in context/cloud-publication-receipt.json after push. Codex Cloud currently cannot list this board repository; browser connector update is pending. No environment creation/publishing/cloud execution is claimed yet.
+
+---
+
 ## A6 public outcome — verified 2026-10-04
 
 Public [GitHub A6 implementation](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/a699a2d4337d5eafa26a777fee58c037de491f8f) and committed circuit JSON are anonymously byte-verified. Public [tscircuit0.0.2-wip-a6-bom-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-a6-bom-routing#files) has102/103matching board-only files, including this JSON and all saved routes. The required11.4MB C262650 connector STEP is404 after native compressed/fallbackHTTP413; publisher exit1, ready_to_build=false, no mismatched/unverified or extra files. **B-009 publication remains incomplete.** GitHub push succeeded. [Exact receipts](evidence/a6-bom-routing-2026-10-04/publication/review.md). Receipt-only update changes no runtime inputs and does not trigger another upload. **NOT FABRICATION READY.**

@@ -1,0 +1,10 @@
+--- last-built/main.tsx
++++ unbuilt-proposal/main.tsx
+@@ -26,6 +26,7 @@
+       thickness={1.0}
+       layers={4}
+       autorouterEffortLevel="1x"
++      autorouterVersion="beta_pipeline9"
+       autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+       pcbStyle={{ silkscreenFontSize: 0.7, viaHoleDiameter: 0.3, viaPadDiameter: 0.7 }}
+     >

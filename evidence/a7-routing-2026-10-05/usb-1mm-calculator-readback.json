@@ -1,0 +1,12 @@
+{
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "method": "Live manufacturer UI; result row and layer table visually inspected and accessibility text read, 2026-10-05",
+  "input": {"board_type":"Rigid", "layers":4, "nominal_thickness_mm":1, "outer_copper_oz":1, "inner_copper_oz":0.5, "model":"Differential Pair (Non coplanar)", "signal_layer":"L1", "reference_layer":"L2", "target_ohm":90, "gap_input_mm":0.21, "calculator_fit_tolerance_percent":0.5},
+  "selected_standard_stack":"JLC04101H-7628",
+  "finished_thickness_mm":1.02,
+  "finished_thickness_tolerance_percent":10,
+  "result":{"trace_width_mm":0.2979,"trace_spacing_mm":0.2101},
+  "layers":[{"layer":"L1", "copper_mm":0.035},{"material":"7628 RC49%", "dielectric_mm":0.2104},{"layer":"L2", "copper_mm":0.0152},{"material":"0.5mm H/HOZ without copper", "dielectric_mm":0.5},{"layer":"L3", "copper_mm":0.0152},{"material":"7628 RC49%", "dielectric_mm":0.2104},{"layer":"L4", "copper_mm":0.035}],
+  "not_qualified":["Actual routed geometry, skew, discontinuities, neckdowns and return paths", "Order-specific manufacturer impedance review"],
+  "physical_impedance_tolerance_is_distinct_from_calculator_fit_tolerance":true
+}

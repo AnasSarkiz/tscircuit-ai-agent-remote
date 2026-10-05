@@ -1,0 +1,469 @@
+Continue working on `tscircuit-ai-agent-remote`.
+
+## IMPORTANT CHANGE OF PRIORITY
+
+Stop spending the majority of the work on isolated component research and diagnostic fixtures.
+
+I need to SEE THE ACTUAL PCB.
+
+The previous work has spent too much time validating individual components without producing the complete handheld board.
+
+The primary goal of this milestone is:
+
+# BUILD THE COMPLETE PCB NOW
+
+Create the real complete-board `main.tsx`, place the actual components, generate the PCB view, generate the schematic, and generate the 3D view.
+
+It is acceptable for some components or mechanical details to remain provisional.
+
+Clearly mark provisional parts as:
+
+`PROVISIONAL`
+
+or
+
+`BLOCKED`
+
+But do not allow unresolved non-critical issues to prevent us from assembling and viewing the full board.
+
+---
+
+# FIRST DELIVERABLE
+
+Before doing more extensive research, create a complete working board containing at least:
+
+- ESP32-S3-WROOM-1-N8R8 / C2913201
+- USB-C
+- BQ24074RGTR / C54313
+- TPS63802DLAR / C2845237
+- 2× ICS-43434 / C5656610
+- MAX98357AETE+T / C910544
+- display connector
+- speaker connector
+- battery connector
+- hold-to-talk button
+- microphone privacy switch
+- haptic motor connector + driver
+- power/support components
+- BOOT/RESET
+- useful test points
+
+Create the integrated schematic.
+
+Then create the PCB.
+
+---
+
+# PCB SIZE
+
+Start with:
+
+**50 mm × 55 mm**
+
+Do NOT spend time trying to force 50 × 50 mm immediately.
+
+Maximum permitted size:
+
+**50 × 65 mm**
+
+Use rounded corners.
+
+The product should look like a small handheld AI remote.
+
+---
+
+# PHYSICAL LAYOUT
+
+I want a real intentional placement, not components dumped by an auto-placer.
+
+Suggested front/product arrangement:
+
+```text
+       TOP EDGE
+
+┌────────────────────────────┐
+│          TALK              │
+│          BUTTON            │
+│                            │
+│ ┌────────────────────────┐ │
+│ │                        │ │
+│ │        DISPLAY         │ │
+│ │                        │ │
+│ │                        │ │
+│ └────────────────────────┘ │
+│                            │
+│ MIC                    MIC │
+│                            │
+│                            │
+│                            │
+│          USB-C             │
+└────────────────────────────┘
+
+       BOTTOM EDGE
+```
+
+The PCB should visually resemble the intended product.
+
+---
+
+# ESP32 PLACEMENT
+
+Put the ESP32-S3 module near an edge where its antenna can have proper clearance.
+
+The RF antenna region has higher priority than making the board perfectly symmetrical.
+
+If necessary:
+
+- place ESP32 near upper side/edge
+- allow antenna section to overhang PCB
+- move display slightly
+- increase PCB height
+
+Do not keep postponing placement because the exact enclosure is unfinished.
+
+Make a reasonable provisional mechanical arrangement and document what must change later.
+
+---
+
+# DISPLAY
+
+Use the best current display candidate.
+
+If the exact final display has not yet been approved:
+
+USE A PROVISIONAL DISPLAY CONNECTOR AND MECHANICAL ENVELOPE.
+
+Clearly mark it:
+
+`DISPLAY — PROVISIONAL`
+
+Do not block the entire PCB because the final display has not yet been selected.
+
+The display envelope is extremely important because it determines the physical board design.
+
+Show its mechanical area in the PCB/3D representation where possible.
+
+---
+
+# SPEAKER
+
+The speaker itself does NOT need to be PCB mounted.
+
+Use:
+
+- MAX98357A amplifier
+- 2-pin speaker connector
+
+Assume an external enclosure-mounted 8 Ω speaker.
+
+Mark the exact speaker model as provisional if necessary.
+
+Do not block the PCB because a JLCPCB speaker import is unavailable.
+
+---
+
+# HAPTIC MOTOR
+
+Same philosophy.
+
+Use:
+
+- small external vibration motor
+- 2-pin connector
+- MOSFET driver
+- required protection
+
+The physical vibration motor may live in the enclosure.
+
+Do not block the PCB because a PCB-mounted vibration motor footprint is problematic.
+
+---
+
+# BATTERY
+
+Use a PCB battery connector.
+
+Assume initially:
+
+- 1S LiPo
+- 3.7 V nominal
+- 500–1000 mAh
+- external protected battery pack
+
+Clearly document that exact battery pack and polarity must still be finalized.
+
+Do NOT let this prevent construction of the PCB.
+
+---
+
+# MICROPHONE
+
+Keep the two ICS-43434 microphones in the design.
+
+The known solder-paste problem remains a FABRICATION blocker.
+
+It is NOT a reason to avoid building the board.
+
+Place both microphones on the PCB in sensible acoustic positions.
+
+Mark:
+
+`B-005 — FABRICATION BLOCKER`
+
+Continue working on the upstream fix separately.
+
+---
+
+# TALK BUTTON
+
+Place the TALK button on the TOP EDGE.
+
+This is the primary hardware control.
+
+The enclosure should eventually press this button from the top.
+
+Use the best currently available genuine imported switch.
+
+If its final mechanical choice is not complete, mark it provisional and continue.
+
+---
+
+# PRIVACY SWITCH
+
+Add the physical microphone privacy switch now.
+
+Place it on one side edge.
+
+It must eventually physically disable microphone power.
+
+If the final isolation circuit still needs qualification, implement the current best architecture and mark the remaining validation work.
+
+---
+
+# USB-C
+
+USB-C goes centered or nearly centered on the bottom edge.
+
+It should provide:
+
+- 5 V input
+- charging
+- native ESP32 USB programming
+
+Place ESD and USB support components close to it.
+
+---
+
+# POWER SECTION
+
+Group:
+
+- USB input
+- charger
+- battery connector
+- power-path components
+- regulator
+
+together sensibly.
+
+Keep switching power circuitry away from the microphones as much as practical.
+
+---
+
+# AUDIO SECTION
+
+Place:
+
+- MAX98357A
+- speaker connector
+
+reasonably close together.
+
+Keep noisy speaker-current paths away from microphone circuitry.
+
+---
+
+# TOP SIDE ONLY
+
+Continue using:
+
+**TOP-side assembly only**
+
+Do not put electronic components on the bottom.
+
+The battery and speaker are enclosure components, not bottom-side PCB components.
+
+---
+
+# DO NOT ROUTE YET
+
+Still do NOT perform complete routing.
+
+However:
+
+I want the board assembled and placed.
+
+Use ratsnest/unrouted connections so we can visually see the actual PCB architecture.
+
+Routing will come after we review the placement.
+
+---
+
+# VERY IMPORTANT: DO NOT STOP ON A BLOCKER
+
+From now on distinguish:
+
+## Blocks viewing the PCB
+
+Examples:
+
+- project does not compile
+- component prevents complete board creation
+- impossible electrical architecture
+
+These should be solved immediately.
+
+## Blocks fabrication
+
+Examples:
+
+- microphone paste bug
+- exact battery model
+- unqualified speaker model
+- incomplete enclosure dimensions
+- missing STEP model
+
+These MUST be documented but should NOT stop creation and placement of the PCB.
+
+This project is currently a prototype design.
+
+We need iteration, not perfect qualification before seeing anything.
+
+---
+
+# WORKFLOW
+
+Work in this order:
+
+### STEP 1
+Create the full integrated schematic.
+
+### STEP 2
+Create the PCB outline.
+
+### STEP 3
+Place the major product components:
+
+- display
+- TALK button
+- ESP32
+- USB-C
+- microphones
+- privacy switch
+- battery connector
+- speaker connector
+
+### STEP 4
+Place:
+
+- charger
+- regulator
+- amplifier
+- haptic driver
+- support passives
+- test points
+
+### STEP 5
+Compile the complete board.
+
+### STEP 6
+Generate immediately:
+
+- PCB top view
+- PCB X-ray/ratsnest view
+- 3D top
+- 3D bottom
+- complete schematic
+
+### STEP 7
+Inspect placement.
+
+### STEP 8
+Only after the board is visible, continue deeper electrical/component qualification.
+
+---
+
+# SHOW PROGRESS THROUGH ACTUAL BOARD OUTPUTS
+
+Do not return another response consisting primarily of:
+
+- research notes
+- datasheet notes
+- component candidates
+- issue descriptions
+
+without producing the PCB.
+
+Every meaningful iteration should regenerate and inspect the actual complete board.
+
+I want visual progress.
+
+---
+
+# REQUIRED OUTPUT THIS ITERATION
+
+At the end of THIS ITERATION provide:
+
+### 1. PCB TOP IMAGE
+
+I need to see the actual board.
+
+### 2. PCB X-RAY / RATSNEST IMAGE
+
+Show how everything is connected before routing.
+
+### 3. 3D TOP IMAGE
+
+### 4. 3D BOTTOM IMAGE
+
+### 5. COMPLETE SCHEMATIC
+
+Not isolated subsystem fixtures.
+
+### 6. BOARD DIMENSIONS
+
+For example:
+
+`50 × 55 mm`
+
+### 7. COMPONENT COUNT
+
+Example:
+
+`86 components`
+
+### 8. PROVISIONAL PARTS
+
+Short list only.
+
+### 9. FABRICATION BLOCKERS
+
+Short list only.
+
+### 10. CURRENT GIT COMMIT
+
+---
+
+# DEFINITION OF SUCCESS
+
+This milestone is successful if I can finally look at the result and say:
+
+> This is clearly the physical AI remote PCB we are building.
+
+It does NOT need to be fabrication ready yet.
+
+Do not call it fabrication ready.
+
+Do not route it yet.
+
+But BUILD THE BOARD NOW.

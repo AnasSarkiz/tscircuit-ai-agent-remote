@@ -1,0 +1,13 @@
+--- last-built/src/board/RegulatorSheet.tsx
++++ unbuilt-proposal/src/board/RegulatorSheet.tsx
+@@ -34,8 +34,8 @@
+           pcbPath={placementOnly ? undefined : [
+             { x: -0.15, y: 0.5 },
+             { x: -0.15, y: 1.2 },
+-            { x: -0.45, y: 1.8 },
+-            { x: -0.45, y: 1.8, via: true, fromLayer: "top", toLayer: "bottom" },
++            { x: -0.35, y: 1.85 },
++            { x: -0.35, y: 1.85, via: true, fromLayer: "top", toLayer: "bottom" },
+           ]}
+         />
+         <trace path={["U2.pin3", "U2.pin2", "net.GND"]} width={0.3} pcbPath={placementOnly ? undefined : ["U2.pin2"]} />

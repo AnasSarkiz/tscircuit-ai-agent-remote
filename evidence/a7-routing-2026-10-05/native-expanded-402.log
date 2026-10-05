@@ -1,0 +1,191 @@
+{"event":"board:renderPhaseStarted","phase":"ReactSubtreesRender"}
+{"event":"board:renderPhaseStarted","phase":"RenderIsolatedSubcircuits"}
+{"event":"board:renderPhaseStarted","phase":"InflateSubcircuitCircuitJson"}
+{"event":"board:renderPhaseStarted","phase":"SourceNameDuplicateComponentRemoval"}
+{"event":"board:renderPhaseStarted","phase":"PcbFootprintStringRender"}
+{"event":"board:renderPhaseStarted","phase":"FetchPartFootprint"}
+{"event":"board:renderPhaseStarted","phase":"ResolveFootprintPinLabels"}
+{"event":"board:renderPhaseStarted","phase":"InitializePortsFromChildren"}
+{"event":"board:renderPhaseStarted","phase":"CreateNetsFromProps"}
+{"event":"board:renderPhaseStarted","phase":"AssignFallbackProps"}
+{"event":"board:renderPhaseStarted","phase":"CreateTracesFromProps"}
+{"event":"board:renderPhaseStarted","phase":"CreateTracesFromNetLabels"}
+{"event":"board:renderPhaseStarted","phase":"CreateTraceHintsFromProps"}
+{"event":"board:renderPhaseStarted","phase":"CreateAutoplacedBreakoutPoints"}
+{"event":"board:renderPhaseStarted","phase":"SourceGroupRender"}
+{"event":"board:renderPhaseStarted","phase":"AssignNameToUnnamedComponents"}
+{"event":"board:renderPhaseStarted","phase":"SourceRender"}
+{"event":"board:renderPhaseStarted","phase":"CheckRefDesConvention"}
+{"event":"board:renderPhaseStarted","phase":"SourceComponentPropertyValidation"}
+{"event":"board:renderPhaseStarted","phase":"SourceParentAttachment"}
+{"event":"board:renderPhaseStarted","phase":"PortMatching"}
+{"event":"board:renderPhaseStarted","phase":"OptimizeSelectorCache"}
+{"event":"board:renderPhaseStarted","phase":"SourceTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"SourceAddConnectivityMapKey"}
+{"event":"board:renderPhaseStarted","phase":"SourceDesignRuleChecks"}
+{"event":"board:renderPhaseStarted","phase":"SimulationRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicComponentRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicPortRender"}
+{"event":"board:renderPhaseStarted","phase":"SymbolContainerRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicPrimitiveRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicSymbolResize"}
+{"event":"board:renderPhaseStarted","phase":"SchematicComponentSizeCalculation"}
+{"event":"board:renderPhaseStarted","phase":"SchematicLayout"}
+{"event":"board:renderPhaseStarted","phase":"SchematicSectionRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicSheetRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicReplaceNetLabelsWithSymbols"}
+{"event":"board:renderPhaseStarted","phase":"SchematicLabelNetsWithConflictingNames"}
+{"event":"board:renderPhaseStarted","phase":"PanelBoardLayout"}
+{"event":"board:renderPhaseStarted","phase":"ValidatePcbCoordinates"}
+{"event":"board:renderPhaseStarted","phase":"PcbComponentRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbPrimitiveRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbFootprintLayout"}
+{"event":"board:renderPhaseStarted","phase":"PcbPortRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbPortAttachment"}
+{"event":"board:renderPhaseStarted","phase":"PcbComponentSizeCalculation"}
+{"event":"board:renderPhaseStarted","phase":"PcbComponentAnchorAlignment"}
+{"event":"board:renderPhaseStarted","phase":"PcbCalcPlacementResolution"}
+{"event":"board:renderPhaseStarted","phase":"PcbLayout"}
+{"event":"board:renderPhaseStarted","phase":"PcbBoardAutoSize"}
+{"event":"board:renderPhaseStarted","phase":"PanelLayout"}
+{"event":"board:renderPhaseStarted","phase":"PcbFlexRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbAutoplaceBreakoutPoints"}
+{"event":"board:renderPhaseStarted","phase":"PcbTraceHintRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbManualTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbPlacementDesignRuleChecks"}
+{"event":"board:renderPhaseStarted","phase":"PcbTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbRouteNetIslands"}
+{"event":"board:renderPhaseStarted","phase":"PcbTraceTeardropRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbCopperPourRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbViaStitchRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbCopperPourCleanup"}
+{"event":"board:renderPhaseStarted","phase":"PcbDesignRuleChecks"}
+{"event":"board:renderPhaseStarted","phase":"SilkscreenOverlapAdjustment"}
+{"event":"board:renderPhaseStarted","phase":"CadModelRender"}
+{"event":"board:renderPhaseStarted","phase":"PartsEngineRender"}
+{"event":"board:renderPhaseStarted","phase":"MissingManufacturerPartNumberWarning"}
+{"event":"board:renderPhaseStarted","phase":"PartOrientationAnalysis"}
+{"event":"board:renderPhaseStarted","phase":"SupplierFootprintMismatchWarning"}
+{"event":"board:renderPhaseStarted","phase":"SimulationSpiceEngineRender"}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-switching","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-feedback-status","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"independent-control-signals","paths":3}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"charger-current-limit","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"amplifier-bclk","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"amplifier-din","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-current-setting","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c1-positive","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c1-negative","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c2-positive","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c2-negative","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-pgood-reroute","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"hold-readback","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"haptic-enable","paths":3}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"display-enable","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"mcu-amplifier-bclk","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"mcu-amplifier-din","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"charger-ntc","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"service-uart","paths":3}
+autorouting:start
+{"event":"autorouting:progress","phase":"charge-pgood-n","progress":0,"iterationsPerSecond":1.6129032258064515}
+ENOSPC: no space left on device, write
+      fd: 6,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 6,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 7,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 5,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+ENOSPC: no space left on device, write
+      fd: 6,
+ syscall: "write",
+   errno: -28,
+    code: "ENOSPC"
+
+{"event":"autorouting:progress","phase":"charge-pgood-n","progress":0.17,"iterationsPerSecond":41780}
+{"event":"autorouting:progress","phase":"charge-pgood-n","progress":0.20718350143007677,"iterationsPerSecond":150.6849315068493}
+{"event":"autorouting:progress","phase":"charge-pgood-n","progress":0.2105855788047569,"iterationsPerSecond":1.644736842105263}

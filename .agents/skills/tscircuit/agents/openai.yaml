@@ -1,0 +1,7 @@
+interface:
+  display_name: "tscircuit Maintainer"
+  short_description: "Maintain tscircuit repos by project conventions"
+  default_prompt: "Use $tscircuit to work on this tscircuit repository as maintainer staff and follow its current handbook and local conventions."
+
+policy:
+  allow_implicit_invocation: true

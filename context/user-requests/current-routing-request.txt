@@ -1,0 +1,847 @@
+Continue from the current public `tscircuit-ai-agent-remote` repository.
+
+Current checkpoint:
+
+`52f479592772cdcfac8f2290718ddef8f360419c`
+
+Do NOT restart the project.
+
+# PRIMARY GOAL
+
+## ROUTE THE PCB NOW.
+
+Do not spend this milestone primarily on research, documentation, package publication, upstream issues, or component discovery.
+
+I want substantial actual copper progress.
+
+Current board has only:
+
+- 20 traces
+- 2 vias
+- 402 unconnected PCB-port errors
+
+That is still very early routing.
+
+The goal of this milestone is:
+
+> Route every connection that can safely be routed now.
+
+---
+
+# FIRST — FREEZE THE MECHANICAL STACK
+
+Change the PCB thickness from:
+
+`0.8 mm`
+
+to:
+
+`1.0 mm`
+
+because the selected JST PH board connectors require a board thickness that remains inside their valid tolerance across manufacturing variation.
+
+Update the enclosure study maximum thickness from:
+
+`15 mm`
+
+to:
+
+`16 mm`
+
+Do NOT resize the PCB.
+
+PCB remains:
+
+**50 × 65 mm**
+
+Enclosure maximum becomes:
+
+**60 × 75 × 16 mm**
+
+Re-run the mechanical model once after this change.
+
+If there is no new collision:
+
+`PLACEMENT FROZEN`
+
+Then stop changing major component positions unless routing proves a real placement failure.
+
+---
+
+# INTENTIONALLY UNROUTED ITEMS
+
+Two categories are still unresolved.
+
+## Battery J3
+
+Confirmed:
+
+`J3 centre = PACK_NTC`
+
+Keep it routed as appropriate.
+
+The two outer contacts are still:
+
+`BAT+ / GND NUMBERING PENDING`
+
+Do not guess them.
+
+Leave exactly those two battery outer contacts unrouted.
+
+---
+
+## Display J7
+
+The BuyDisplay ER-TFT026-1 logical pinout is known, but the actual:
+
+- FPC contact face
+- pin-1 orientation
+- portrait fold
+- connector mating orientation
+
+are not physically confirmed.
+
+Therefore:
+
+**Do NOT route J7-dependent display pins yet.**
+
+However, this must NOT stop routing of the rest of the PCB.
+
+Route all display circuitry up to the connector-side endpoints where safe.
+
+---
+
+# DO NOT LET THESE BLOCK ROUTING
+
+These issues remain fabrication blockers but are NOT reasons to stop routing:
+
+- missing pill-pad paste
+- Gerber polygon shorts-tool failure
+- strict schema failures
+- BOM Comment problems
+- registry STEP upload failure
+- tscircuit package publication issues
+- battery outer pin numbering
+- display FPC physical orientation
+
+Document them and continue.
+
+---
+
+# ROUTING TARGET
+
+At the end of this milestone there should NOT still be ~400 open PCB ports.
+
+Route essentially the whole board except explicitly blocked connections.
+
+Aim for:
+
+`ACCIDENTAL UNROUTED = 0`
+
+with only documented intentional unresolved connections.
+
+---
+
+# ROUTING ORDER
+
+Route in this priority order.
+
+## 1. Regulator / power conversion
+
+Complete TPS63802 routing first.
+
+Critical nets:
+
+- VSYS
+- V3V3
+- GND
+- switch node L1
+- switch node L2
+- FB
+- PG
+- enable
+- input capacitor
+- output capacitor
+
+The existing L1/L2 saved routes may remain only after manual review.
+
+Existing switch-node path begins around:
+
+`0.275 mm → 0.4 → 0.7 → 1.0 mm`
+
+The narrow section near the IC may be unavoidable due to pad width, but:
+
+- make it extremely short
+- widen immediately outside the pad
+- minimize loop area
+- compare against TI recommended layout
+
+Do not let an autorouter create long switch-node copper.
+
+---
+
+# 2. Ground
+
+Use the intended L2 ground plane.
+
+Keep L2 as continuous as possible.
+
+Add GND vias where appropriate near:
+
+- regulator
+- charger
+- ESP32
+- USB
+- amplifier
+- microphones
+- display circuitry
+
+Do NOT add ground/copper/vias in ESP32 antenna keepout.
+
+Check for:
+
+- isolated islands
+- narrow ground bottlenecks
+- broken return paths
+
+---
+
+# 3. Charger
+
+Route BQ24074 circuitry.
+
+Route:
+
+- VBUS → charger IN
+- charger OUT → VSYS
+- BAT internal charger connections
+- capacitors
+- ISET
+- ILIM
+- PGOOD
+- CHG
+- NTC
+- grounds
+
+Do not route J3 BAT+/GND outer contacts yet.
+
+The charger BAT net may be routed internally from U16 to associated circuitry, but stop before the unresolved connector outer contact.
+
+Use short/wide paths for:
+
+- IN
+- OUT
+- BAT
+- VSYS
+
+Review exposed-pad GND/thermal connection.
+
+---
+
+# 4. Main power distribution
+
+Route:
+
+- VBUS
+- VSYS
+- V3V3
+- VMIC
+- VLCD
+- VMOTOR
+- AUDIO_ENABLE_SUPPLY
+
+Do NOT use 0.2 mm signal traces for major power nets.
+
+Current nominal targets already defined include approximately:
+
+- PACK_BAT: 1.0 mm
+- VSYS: 1.0 mm
+- V3V3: 0.8 mm
+- VBUS: 0.5 mm
+
+These are minimum starting values, not permission to create narrow neckdowns.
+
+Use polygons/pours where useful.
+
+Audit the actual narrowest section of every power net.
+
+---
+
+# 5. ESP32 support signals
+
+Route:
+
+- EN
+- BOOT
+- reset
+- UART/service
+- HOLD
+- haptic control
+- audio control
+- microphone signals
+- LCD MCU-side signals
+
+Keep ESP32 antenna region completely copper-free on every layer as required.
+
+---
+
+# 6. Microphone section
+
+Route:
+
+- MIC_BCLK
+- MIC_WS
+- MIC_SD
+- MIC_SD_BUFFERED
+- MIC_SD_REF
+- VMIC
+- microphone decoupling
+- comparator interface
+
+Keep microphone paths away from:
+
+- regulator switch node
+- haptic
+- speaker outputs
+- USB
+
+Use continuous ground reference.
+
+Make BCLK/WS short and clean.
+
+Do not route noisy high-current nets between the microphones and their reference/processing circuitry if avoidable.
+
+---
+
+# 7. Audio amplifier
+
+Complete:
+
+- AMP_BCLK
+- AMP_LRCLK
+- AMP_DIN
+- AMP_SD_MODE
+- amplifier enable circuitry
+- supply
+- decoupling
+- speaker output
+
+BCLK and DIN already have partial saved routes.
+
+Finish LRCLK.
+
+The prior solver failure is not a reason to stop.
+
+Try:
+
+- a different route order
+- another layer
+- manual/native explicit path
+- small passive movement only if necessary
+
+Do not move major blocks.
+
+---
+
+# SPEAKER OUTPUT
+
+Route:
+
+- SPEAKER_P
+- SPEAKER_N
+
+as a differential-style closely coupled pair.
+
+Neither goes to GND.
+
+Use appropriately wide copper.
+
+Keep away from:
+
+- microphones
+- ESP32 antenna
+- sensitive clock/data
+
+Route all the way to J4.
+
+---
+
+# 8. Haptic
+
+Route:
+
+- VMOTOR
+- HAPTIC_N
+- MOSFET gate
+- flyback diode
+- motor solder pads
+
+The motor output is now solder pads:
+
+- M+
+- M−
+
+Route them fully.
+
+Keep motor-current returns away from microphone/audio sensitive paths.
+
+Use appropriately wide traces.
+
+---
+
+# 9. Backlight
+
+The new TPS60230 four-channel backlight implementation is already partially routed.
+
+Finish all remaining:
+
+- power
+- GND
+- enable/PWM
+- LED output
+- four LED returns
+- flying capacitors
+- current-setting resistor
+- decoupling
+
+Existing accepted C1/C2 routing may remain.
+
+Do not modify routes that already passed clearance unless needed.
+
+---
+
+# 10. Display logic — route everything EXCEPT final J7 mating-dependent endpoints
+
+Route:
+
+- MCU → level translator
+- LCD_ENABLE
+- VLCD
+- SPI/control logic
+- level translator outputs up toward J7
+
+Do not commit the actual final J7 physical-contact fanout until FPC orientation is proven.
+
+Clearly identify these as:
+
+`INTENTIONAL DISPLAY UNROUTED`
+
+---
+
+# 11. USB-C
+
+Now that PCB thickness becomes 1.0 mm:
+
+select the actual intended JLCPCB 4-layer 1.0 mm stackup.
+
+Calculate USB geometry from that stackup.
+
+Route:
+
+- J1 D+
+- J1 D−
+- ESD
+- series resistors
+- ESP32 native USB
+
+Use an actual differential pair.
+
+Target approximately:
+
+**90 Ω differential**
+
+But only claim the impedance based on calculated stackup geometry.
+
+Document:
+
+- trace width
+- pair gap
+- dielectric height
+- copper thickness
+- estimated impedance
+- D+ length
+- D− length
+- mismatch
+- via count
+
+Do not blindly use the current:
+
+`0.2906 mm / 0.1999 mm`
+
+unless calculation confirms it.
+
+Also remove the awkward numerical contradiction between:
+
+`pcbTraceGap = 0.1999`
+
+and:
+
+`traceClearance = 0.2`
+
+Use routing values that are internally consistent.
+
+---
+
+# 12. Controls
+
+Route all controls:
+
+- TALK
+- privacy switch
+- BOOT
+- RESET
+- HOLD
+- service interface
+
+Check switch startup states.
+
+---
+
+# USE ALL FOUR LAYERS INTENTIONALLY
+
+Preferred:
+
+### L1
+components, short signals, local power
+
+### L2
+continuous GND
+
+### L3
+power / slower signals
+
+### L4
+signal routing
+
+Do NOT route almost everything only on top just because the early saved phases did.
+
+Use the four-layer board properly.
+
+---
+
+# ROUTING QUALITY
+
+Do not simply accept autorouter output.
+
+Inspect every route.
+
+Fix:
+
+- unnecessary loops
+- giant detours
+- excessive vias
+- acute corners
+- narrow power neckdowns
+- tracks squeezed unnecessarily between pads
+- poor layer transitions
+- traces that destroy return paths
+
+Routing should look deliberately engineered.
+
+---
+
+# TRACE WIDTH RULES
+
+Signal:
+
+approximately:
+
+`0.20–0.25 mm`
+
+where appropriate.
+
+Power:
+
+based on actual current.
+
+Speaker/haptic:
+
+wider than small logic traces.
+
+USB:
+
+based on impedance calculation.
+
+Switch nodes:
+
+short and wide as allowed by pad geometry.
+
+Do not use one global trace width for all nets.
+
+---
+
+# WHOLE-BOARD COPPER AUDIT
+
+The A6 geometry audit only covered newly added traces.
+
+For A7 create a NEW audit covering:
+
+**ALL PCB traces and ALL vias on the final current board.**
+
+Do not compare only against newly generated traces.
+
+Check every routed segment against:
+
+- other-net pads
+- other-net traces
+- vias
+- holes
+- mounting-hole keepouts
+- antenna keepout
+- PCB edge
+- pours
+
+Report global minimums.
+
+---
+
+# CHECK SHORTS
+
+Run PCB-level shorts checks continuously during routing.
+
+Since the Gerber shorts tool currently fails on polygon paste:
+
+1. run native PCB shorts check
+2. independently analyze actual copper/net geometry
+3. retain Gerber failure as a fabrication-tool blocker
+
+Do NOT claim Gerber shorts pass until the Gerber tool actually works.
+
+---
+
+# OPEN CONNECTION AUDIT
+
+At the end classify every open port.
+
+Create three categories:
+
+## INTENTIONAL — BATTERY
+Only unresolved outer J3 contacts.
+
+## INTENTIONAL — DISPLAY
+Only physical-contact-dependent J7 connections.
+
+## ACCIDENTAL
+Everything else.
+
+Target:
+
+`ACCIDENTAL UNROUTED = 0`
+
+If accidental connections remain:
+
+continue routing.
+
+Do NOT stop merely because the solver gets stuck.
+
+Try another routing phase, layer, ordering, or explicit native path.
+
+---
+
+# SAVED ROUTES
+
+Continue the good A6 practice.
+
+Every accepted route must be preserved as real native saved routing data.
+
+Keep:
+
+- native start data
+- routing events
+- generated path
+- replay result
+- final Circuit JSON
+
+Verify replay reproduces the intended geometry.
+
+Do NOT manually create fake route-cache JSON.
+
+---
+
+# POWER AUDIT
+
+At completion generate:
+
+| Net | Peak Current | Narrowest Copper | Layer | Vias | PASS/FAIL |
+|---|---:|---:|---|---:|---|
+| VBUS | | | | | |
+| PACK_BAT internal | | | | | |
+| VSYS | | | | | |
+| V3V3 | | | | | |
+| VLCD | | | | | |
+| VMIC | | | | | |
+| VMOTOR | | | | | |
+| speaker supply | | | | | |
+| LCD backlight | | | | | |
+
+Do not report nominal net width.
+
+Measure the **actual narrowest routed geometry**.
+
+---
+
+# REGULATOR AUDIT
+
+Separately report TPS63802:
+
+- shortest switch-loop geometry
+- narrowest L1 path
+- narrowest L2 path
+- input capacitor distance
+- output capacitor distance
+- feedback path
+- ground return
+
+Include image/coordinates where useful.
+
+---
+
+# VIA AUDIT
+
+Report:
+
+- total vias
+- minimum hole diameter
+- minimum outer diameter
+- smallest annular ring
+- power vias
+- signal vias
+- GND stitching vias
+
+Verify no via violates:
+
+- pad clearance
+- hole clearance
+- antenna keepout
+- mounting keepout
+
+---
+
+# FINAL ROUTING SCREENSHOTS
+
+Generate and inspect:
+
+1. full routed PCB
+2. L1
+3. L2
+4. L3
+5. L4
+6. top without silkscreen clutter
+7. bottom
+8. 3D top
+9. 3D bottom
+10. ratsnest/open-connections view
+
+---
+
+# DO NOT SPEND TIME ON PUBLICATION YET
+
+Do NOT repeatedly retry the missing C262650 STEP upload.
+
+Registry publication is not this milestone.
+
+First finish the PCB routing.
+
+---
+
+# DO NOT STOP FOR PASTE
+
+U16 and U27 pill-shaped paste issue remains a fabrication blocker.
+
+It does NOT prevent routing.
+
+Finish copper first.
+
+---
+
+# SUCCESS CRITERIA
+
+A7 should finish with a board that is **mostly or completely routed**.
+
+Expected outcome:
+
+- hundreds fewer unconnected ports
+- all safe nets routed
+- power routes complete
+- USB complete
+- audio complete
+- microphones complete
+- controls complete
+- haptic complete
+- backlight complete
+- regulator complete
+- charger complete except unresolved J3 outer connector contacts
+- display logic complete except final uncertain J7 physical mating contacts
+
+Do not finish another milestone with only a handful of new traces.
+
+Continue routing until:
+
+`ACCIDENTAL UNROUTED = 0`
+
+or until there is a specific demonstrable physical routing impossibility that requires a placement change.
+
+---
+
+# REQUIRED FINAL REPORT
+
+Report exactly:
+
+### Routing
+- total traces before: 20
+- total traces after
+- vias before: 2
+- vias after
+- open PCB ports before: 402
+- open PCB ports after
+- accidental unrouted count
+- intentional battery unrouted count
+- intentional display unrouted count
+
+### Copper validation
+- shorts
+- global minimum clearance
+- narrowest signal trace
+- narrowest power trace
+- narrowest power neckdown
+
+### USB
+- D+ length
+- D− length
+- mismatch
+- width
+- gap
+- impedance calculation
+- vias
+
+### Power
+full actual-width audit table
+
+### Mechanical
+- PCB = 50 × 65 × 1.0 mm
+- enclosure ≤ 60 × 75 × 16 mm
+- mounting holes pass/fail
+- antenna pass/fail
+
+### Blockers
+Only actual remaining blockers.
+
+### Final state
+
+Use:
+
+`ROUTING COMPLETE`
+
+or:
+
+`ROUTING PARTIAL — X ACCIDENTAL CONNECTIONS REMAIN`
+
+and separately:
+
+`FABRICATION READY = NO`
+
+until the battery/display/paste/Gerber/BOM/CPL gates are resolved.
+
+The priority is now simple:
+
+# ROUTE THE BOARD.

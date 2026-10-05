@@ -1,0 +1,300 @@
+{
+  "accepted_native_paths": {},
+  "failed_trials": [
+    {
+      "phase": "vsys",
+      "directory": "evidence/a7-routing-2026-10-05/native-expanded-301",
+      "errors": [],
+      "interrupted": true
+    },
+    {
+      "phase": "v3v3",
+      "directory": "evidence/a7-routing-2026-10-05/native-expanded-302",
+      "errors": [],
+      "interrupted": true
+    }
+  ],
+  "pending": [
+    {
+      "name": "vbus",
+      "nets": [
+        "VBUS"
+      ],
+      "index": 102
+    },
+    {
+      "name": "pack-bat",
+      "nets": [
+        "PACK_BAT"
+      ],
+      "index": 103
+    },
+    {
+      "name": "charger-iset",
+      "nets": [
+        "CHARGER_ISET"
+      ],
+      "index": 104
+    },
+    {
+      "name": "charge-pgood-n",
+      "nets": [
+        "CHARGE_PGOOD_N"
+      ],
+      "index": 105
+    },
+    {
+      "name": "charge-status-n",
+      "nets": [
+        "CHARGE_STATUS_N"
+      ],
+      "index": 106
+    },
+    {
+      "name": "buck-enable",
+      "nets": [
+        "BUCK_ENABLE"
+      ],
+      "index": 107
+    },
+    {
+      "name": "mcu-en",
+      "nets": [
+        "MCU_EN"
+      ],
+      "index": 108
+    },
+    {
+      "name": "mcu-boot-n",
+      "nets": [
+        "MCU_BOOT_N"
+      ],
+      "index": 109
+    },
+    {
+      "name": "mcu-reset-n",
+      "nets": [
+        "MCU_RESET_N"
+      ],
+      "index": 110
+    },
+    {
+      "name": "mcu-mic-bclk",
+      "nets": [
+        "MCU_MIC_BCLK"
+      ],
+      "index": 111
+    },
+    {
+      "name": "mcu-mic-ws",
+      "nets": [
+        "MCU_MIC_WS"
+      ],
+      "index": 112
+    },
+    {
+      "name": "mcu-mic-sd",
+      "nets": [
+        "MCU_MIC_SD"
+      ],
+      "index": 113
+    },
+    {
+      "name": "mic-input",
+      "nets": [
+        "MIC_INPUT"
+      ],
+      "index": 114
+    },
+    {
+      "name": "vmic",
+      "nets": [
+        "VMIC"
+      ],
+      "index": 115
+    },
+    {
+      "name": "mic-bclk-input",
+      "nets": [
+        "MIC_BCLK_INPUT"
+      ],
+      "index": 116
+    },
+    {
+      "name": "mic-ws-input",
+      "nets": [
+        "MIC_WS_INPUT"
+      ],
+      "index": 117
+    },
+    {
+      "name": "mic-bclk",
+      "nets": [
+        "MIC_BCLK"
+      ],
+      "index": 118
+    },
+    {
+      "name": "mic-ws",
+      "nets": [
+        "MIC_WS"
+      ],
+      "index": 119
+    },
+    {
+      "name": "mic-sd",
+      "nets": [
+        "MIC_SD"
+      ],
+      "index": 120
+    },
+    {
+      "name": "mic-sd-buffered",
+      "nets": [
+        "MIC_SD_BUFFERED"
+      ],
+      "index": 121
+    },
+    {
+      "name": "mic-sd-ref",
+      "nets": [
+        "MIC_SD_REF"
+      ],
+      "index": 122
+    },
+    {
+      "name": "amp-sd-mode",
+      "nets": [
+        "AMP_SD_MODE"
+      ],
+      "index": 123
+    },
+    {
+      "name": "mcu-audio-enable",
+      "nets": [
+        "MCU_AUDIO_ENABLE"
+      ],
+      "index": 124
+    },
+    {
+      "name": "mcu-audio-lrclk",
+      "nets": [
+        "MCU_AUDIO_LRCLK"
+      ],
+      "index": 125
+    },
+    {
+      "name": "audio-nmos-gate",
+      "nets": [
+        "AUDIO_NMOS_GATE"
+      ],
+      "index": 126
+    },
+    {
+      "name": "audio-pmos-gate",
+      "nets": [
+        "AUDIO_PMOS_GATE"
+      ],
+      "index": 127
+    },
+    {
+      "name": "audio-enable-supply",
+      "nets": [
+        "AUDIO_ENABLE_SUPPLY"
+      ],
+      "index": 128
+    },
+    {
+      "name": "amp-lrclk",
+      "nets": [
+        "AMP_LRCLK"
+      ],
+      "index": 129
+    },
+    {
+      "name": "speaker-p",
+      "nets": [
+        "SPEAKER_P",
+        "SPEAKER_N"
+      ],
+      "index": 130
+    },
+    {
+      "name": "vmotor",
+      "nets": [
+        "VMOTOR"
+      ],
+      "index": 132
+    },
+    {
+      "name": "haptic-nmos-gate",
+      "nets": [
+        "HAPTIC_NMOS_GATE"
+      ],
+      "index": 133
+    },
+    {
+      "name": "haptic-n",
+      "nets": [
+        "HAPTIC_N"
+      ],
+      "index": 134
+    },
+    {
+      "name": "hold-hardware",
+      "nets": [
+        "HOLD_HARDWARE"
+      ],
+      "index": 135
+    },
+    {
+      "name": "mcu-lcd-cs-n",
+      "nets": [
+        "MCU_LCD_CS_N"
+      ],
+      "index": 136
+    },
+    {
+      "name": "mcu-lcd-sclk",
+      "nets": [
+        "MCU_LCD_SCLK"
+      ],
+      "index": 137
+    },
+    {
+      "name": "mcu-lcd-sda",
+      "nets": [
+        "MCU_LCD_SDA"
+      ],
+      "index": 138
+    },
+    {
+      "name": "mcu-lcd-dc",
+      "nets": [
+        "MCU_LCD_DC"
+      ],
+      "index": 139
+    },
+    {
+      "name": "mcu-lcd-reset-n",
+      "nets": [
+        "MCU_LCD_RESET_N"
+      ],
+      "index": 140
+    },
+    {
+      "name": "mcu-backlight-pwm",
+      "nets": [
+        "MCU_BACKLIGHT_PWM"
+      ],
+      "index": 141
+    },
+    {
+      "name": "backlight-gate",
+      "nets": [
+        "BACKLIGHT_GATE"
+      ],
+      "index": 142
+    }
+  ]
+}
