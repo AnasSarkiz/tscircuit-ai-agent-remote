@@ -11,6 +11,18 @@ build has the identical SHA256 below. See `evidence/pipeline9-routing-2026-10-05
 and the preserved source snapshots/events/outcomes. Do not claim Pipeline9 completed
 routing, accept the rejected reduced-copper output, or enable unqualified contacts.
 
+The explicit selection is published at GitHub board commit
+`a9600d81e40761d3fc7c2471c57cb05d77c548a4` and public tscircuit WIP version
+`0.0.2-wip-pipeline9` (release `60b0df33-f229-4c85-8515-e9f5d2250674`).
+All 116 files are anonymously byte-verified. The preview API finds the exact
+native JSON and its preview page responds HTTP200. The earlier cloud-routing
+release below is historical. The supported resume helper now accepts explicit
+`--max-archive-bytes 3000000`; its three bounded archives overcame HTTP413 for
+the full archive while preserving all original bytes. Use fresh receipts for
+future mutations; this release is already complete. Cloud CI completion and
+fresh browser visual review are not claimed. Updated startup instructions were
+saved as a draft, not applied or published.
+
 Latest human request: "push it to tsci" supersedes the earlier registry deferral. Native browser authentication completed as AnasSarkiz. Public release `0.0.2-wip-cloud-routing` now has**116/116 exact-matching files**, including current board JSON and required C262650 STEP. The official multipart archive endpoint resumed the existing release without changing any file bytes and enabled normal cloud scheduling. Build `ac331034-5de6-4b66-adf8-e29efd851e84` has started; check `evidence/cloud-tsci-publication/resumed-cloud-build-observation.json` for its actual result. See the current review and `resumed-complete-remote-receipt.json`. Do not repeat a full push, omit/modify required files or manually override readiness. Startup draft records the current workflow.
 
 The registry preview API now finds `index.circuit.tsx` and returns the exact6,848-element native board array; its preview page responds HTTP200. `resumed-registry-preview-receipt.json` records this. Cloud CI remains running without an error or completion after two observation windows; the fresh final read is `resumed-cloud-build-latest-receipt.json`. Do not call this CI-passed or fabricate new preview-image validation. The locally built board and full registry upload are already verified; continue observing the existing remote job if needed.

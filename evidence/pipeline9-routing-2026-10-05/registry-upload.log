@@ -1,0 +1,12 @@
+143 |     method: "POST",
+144 |     headers: { Authorization: `Bearer ${sessionToken}` },
+145 |     body: form,
+146 |     signal: AbortSignal.timeout(300_000),
+147 |   })
+148 |   if (!response.ok) throw new Error(`Archive upload failed with HTTP${response.status}`)
+                                    ^
+error: Archive upload failed with HTTP413
+      at uploadArchive (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:148:31)
+      at async main (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:184:33)
+
+Bun v1.3.9 (Linux x64)

@@ -1,4 +1,11 @@
-## Current cloud routing checkpoint — 2026-10-05
+## Current Pipeline9 WIP checkpoint — 2026-10-05
+
+Pipeline9 is now explicitly selected. Its actual routing trials failed, so no
+new copper was accepted. The restored board and all 116 package files are
+verified in public version `0.0.2-wip-pipeline9`; see the [Pipeline9 review](evidence/pipeline9-routing-2026-10-05/review.md)
+and [preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/60b0df33-f229-4c85-8515-e9f5d2250674/preview).
+There are still 90 native opens and 26 disconnected nets. The cloud-routing
+release described below is the preceding publication, not fabrication approval.
 
 Latest public [tscircuit0.0.2-wip-cloud-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files) contains**116/116 byte-verified files**, including current native JSON and required C262650 STEP, after supported multipart archive resume. No missing/extra/mismatched/unverified files remain. The registry automatically started a cloud build; its actual result is retained separately. [Exact upload/build evidence](evidence/cloud-tsci-publication/review.md). Earlier partial-publication and authentication-block text is historical; fabrication remains blocked.
 
@@ -1224,3 +1231,9 @@ It still has 90 native opens and 26 physically disconnected nets. Prior schema,
 paste, supplier-mating and fabrication failures remain unresolved. The explicit
 selection does not reroute saved paths or make the board fabrication ready.
 Evidence and final publication receipts: [Pipeline9 review](evidence/pipeline9-routing-2026-10-05/review.md).
+
+Published board source: [GitHub a9600d8](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/a9600d81e40761d3fc7c2471c57cb05d77c548a4).
+Public [Pipeline9 WIP preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/60b0df33-f229-4c85-8515-e9f5d2250674/preview)
+has 116/116 original files verified by anonymous hash readback. The preview API
+returns the exact local native board. Upload completion is verified; cloud CI,
+new browser visual review and fabrication approval are not inferred.

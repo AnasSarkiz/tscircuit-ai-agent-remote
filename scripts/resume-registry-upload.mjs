@@ -81,9 +81,42 @@ function prepareArchive(options) {
       throw new Error("Archive round-trip verification failed")
     }
   }
+  const maxArchiveBytes = options["max-archive-bytes"]
+    ? z.coerce.number().int().positive().parse(options["max-archive-bytes"])
+    : undefined
+  const fileGroups = []
+  let currentFiles = []
+  let currentCompressedBytes = 0
+  for (const file of files) {
+    const compressedBytes = gzipSync(JSON.stringify({ files: [file] }), { level: 9 }).length
+    if (maxArchiveBytes && compressedBytes > maxArchiveBytes)
+      throw new Error(`File exceeds the selected archive budget: ${file.file_path}`)
+    if (
+      maxArchiveBytes &&
+      currentFiles.length &&
+      currentCompressedBytes + compressedBytes > maxArchiveBytes
+    ) {
+      fileGroups.push(currentFiles)
+      currentFiles = []
+      currentCompressedBytes = 0
+    }
+    currentFiles.push(file)
+    currentCompressedBytes += compressedBytes
+  }
+  if (currentFiles.length) fileGroups.push(currentFiles)
+  const archives = fileGroups.map((group) => {
+    const payload = gzipSync(JSON.stringify({ files: group }), { level: 9 })
+    if (maxArchiveBytes && payload.length > maxArchiveBytes)
+      throw new Error("Compressed archive exceeds the selected budget")
+    const decodedGroup = JSON.parse(gunzipSync(payload).toString("utf8"))
+    if (JSON.stringify(decodedGroup.files) !== JSON.stringify(group))
+      throw new Error("Chunk archive round-trip verification failed")
+    return { payload, paths: group.map((file) => file.file_path) }
+  })
   return {
     receipt,
     archive,
+    archives,
     files: originals.map((original) => ({
       path: original.filePath,
       bytes: original.bytes.length,
@@ -131,30 +164,43 @@ async function uploadArchive(prepared) {
   const registryUrl = config.get("registryApiUrl") ?? "https://registry-api.tscircuit.com"
   if (registryUrl !== "https://registry-api.tscircuit.com")
     throw new Error("Unexpected registry destination")
-  const form = new FormData()
-  form.set("package_name_with_version", prepared.receipt.version)
-  form.set(
-    "archive",
-    new File([prepared.archive], "missing-package-files.json.gz", {
-      type: "application/gzip",
-    }),
-  )
-  const response = await fetch(`${registryUrl}/package_files/upload_archive`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${sessionToken}` },
-    body: form,
-    signal: AbortSignal.timeout(120_000),
-  })
-  if (!response.ok) throw new Error(`Archive upload failed with HTTP${response.status}`)
-  const uploaded = uploadResponse.parse(await response.json())
-  const paths = uploaded.package_files.map((file) => file.file_path.replace(/^\//, "")).sort()
-  if (paths.join("\n") !== prepared.receipt.missing_files.slice().sort().join("\n")) {
-    throw new Error("Registry response does not contain every requested file")
+  const uploadedFiles = []
+  for (const [archiveIndex, archive] of prepared.archives.entries()) {
+    const form = new FormData()
+    form.set("package_name_with_version", prepared.receipt.version)
+    form.set(
+      "archive",
+      new File([archive.payload], "missing-package-files.json.gz", {
+        type: "application/gzip",
+      }),
+    )
+    const response = await fetch(`${registryUrl}/package_files/upload_archive`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${sessionToken}` },
+      body: form,
+      signal: AbortSignal.timeout(300_000),
+    })
+    if (!response.ok) throw new Error(`Archive upload failed with HTTP${response.status}`)
+    const uploaded = uploadResponse.parse(await response.json())
+    const paths = uploaded.package_files.map((file) => file.file_path.replace(/^\//, "")).sort()
+    if (paths.join("\n") !== archive.paths.slice().sort().join("\n")) {
+      throw new Error("Registry response does not contain every requested file")
+    }
+    uploadedFiles.push(...uploaded.package_files)
+    console.log(
+      JSON.stringify({
+        archive_index: archiveIndex,
+        archive_bytes: archive.payload.length,
+        archive_sha256: sha256(archive.payload),
+        http_status: response.status,
+        uploaded_files: uploaded.package_files,
+      }),
+    )
   }
   return {
-    http_status: response.status,
+    http_status: 200,
     verified_owner: handle,
-    uploaded_files: uploaded.package_files,
+    uploaded_files: uploadedFiles,
   }
 }
 
@@ -165,6 +211,7 @@ async function main() {
       output: { type: "string" },
       stage: { type: "string", default: ".publish/board" },
       upload: { type: "boolean", default: false },
+      "max-archive-bytes": { type: "string" },
     },
   })
   if (!options.receipt || !options.output) throw new Error("Specify --receipt and --output")
@@ -175,6 +222,11 @@ async function main() {
     transport: "Official /package_files/upload_archive multipart form, existing release",
     archive_bytes: prepared.archive.length,
     archive_sha256: sha256(prepared.archive),
+    archives: prepared.archives.map((archive) => ({
+      bytes: archive.payload.length,
+      sha256: sha256(archive.payload),
+      paths: archive.paths,
+    })),
     round_trip_byte_verified: true,
     files: prepared.files,
     uploaded: false,

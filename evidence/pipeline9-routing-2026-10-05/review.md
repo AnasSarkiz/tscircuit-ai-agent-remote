@@ -64,3 +64,32 @@ zero shorts, with 26 disconnected nets; the full gate correctly fails.
 TypeScript and formatting pass. All 265 protected files match their prior
 hashes. Existing strict-schema, paste, supplier-mating and fabrication failures
 remain applicable because the native geometry and components are unchanged.
+
+The board source and evidence were pushed to public main at
+`a9600d81e40761d3fc7c2471c57cb05d77c548a4`.
+Public tscircuit release `0.0.2-wip-pipeline9`, release ID
+`60b0df33-f229-4c85-8515-e9f5d2250674`, now has all 116 files byte-verified
+by anonymous readback: no missing, extra or mismatched files. The supported
+release-create API's default readiness was preserved, and normal build
+scheduling was enabled by the official archive upload endpoint.
+
+The first 5,823,924-byte full multipart archive was rejected HTTP413. Explicit
+3,000,000-byte archive budgeting in the resume helper produced three exact-byte
+archives: 2,756,770 bytes/16 files, 2,991,947 bytes/68 files and 78,366 bytes/32
+files. All three returned HTTP200. The helper preserves local-hash/stale-remote
+guards, validates every archive round trip and every server-returned file set,
+and records each accepted chunk. No original file was truncated or omitted,
+and no library/runtime or readiness override was used. The client timeout is
+300 seconds per request to accommodate complete model uploads. A partial chunk
+failure remains an error and requires fresh readback before resuming.
+
+`final-registry-receipt.json` is the authoritative 116/116 receipt. The earlier
+empty-release and rejected full-upload receipts are retained historical evidence.
+Publication is not evidence of completed cloud CI, new browser visual review,
+zero native errors or fabrication readiness.
+
+The preview API finds `index.circuit.tsx` and returns all 6,848 native elements
+equal to the local JSON. Its preview page and the exact public GitHub source
+respond HTTP200. See `public-preview-receipt.json`. The onboarding startup
+instructions were saved as a draft with the Pipeline9 diagnostics and explicit
+archive budgeting; that save does not apply or publish the environment.
