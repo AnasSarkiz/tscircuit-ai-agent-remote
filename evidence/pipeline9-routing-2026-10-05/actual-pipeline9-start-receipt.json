@@ -1,0 +1,48 @@
+{
+  "phaseName": "pipeline9-usb-connector",
+  "autorouterName": "tscircuit",
+  "autorouterVersion": "beta_pipeline9",
+  "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "connectionCount": 2,
+  "previousTraceCount": 7,
+  "obstacleCount": 9279,
+  "cacheStatus": "disabled",
+  "cacheDisabledReason": "no_cache_engine",
+  "input_sha256": "b4325fd580224d8ca962171e88559666ef4243184f7dd1a9221ac80680d7da9a",
+  "input_constraints": {
+    "layerCount": 4,
+    "minTraceWidth": 0.2,
+    "minViaDiameter": 0.7,
+    "minViaHoleDiameter": 0.3,
+    "minViaPadDiameter": 0.7,
+    "allowViaInPad": null,
+    "allowBlindAndBuriedVias": false,
+    "minTraceToPadEdgeClearance": 0.2,
+    "minBoardEdgeClearance": 0.25,
+    "differentialPairs": [
+      {
+        "connectionNames": [
+          "source_net_69",
+          "source_net_68"
+        ],
+        "lengthTolerance": 0.5,
+        "traceGap": 0.2101,
+        "maxUncoupledLength": 5
+      }
+    ]
+  },
+  "connections": [
+    {
+      "name": "source_net_68",
+      "width": 0.2979,
+      "nominalTraceWidth": 0.2979,
+      "terminal_count": 4
+    },
+    {
+      "name": "source_net_69",
+      "width": 0.2979,
+      "nominalTraceWidth": 0.2979,
+      "terminal_count": 4
+    }
+  ]
+}

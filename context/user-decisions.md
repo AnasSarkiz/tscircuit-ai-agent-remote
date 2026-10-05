@@ -1,5 +1,7 @@
 # Accepted human decisions and continuation authority
 
+Latest routing request, 2026-10-05: use Pipeline9. Explicitly select the supported `autorouterVersion="beta_pipeline9"` and preserve actual native solver events before accepting new routes. Keep the existing zero-shorts, geometry and full-connectivity requirements; do not interpret this request as approval to guess J3 outer polarity or J7 contact orientation.
+
 Latest request, 2026-10-05: "push it to tsci" explicitly authorizes publishing the current engineering WIP to tscircuit, superseding the earlier registry-upload deferral. Preserve all imported models and fabrication blockers; do not represent partial or unauthenticated publication as success.
 
 This is a curated decision record, not a full conversation export. Original supplied briefs are in user-requests/ and current artifacts/validation supply exact engineering evidence.

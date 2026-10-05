@@ -245,7 +245,7 @@
     "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
     "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx": "369a0da56e474295976a0a32c678ee6ce1edc81b8da1eedf93e7c0fa68351232",
     "index.circuit.tsx": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58",
-    "main.tsx": "b33bd70f1b65b589beef7344ee5c048ed34447d7c998d6b84700b823db13c5db",
+    "main.tsx": "c2416ee4dd6da2854630dbe3c3bd84b5ed6ac7e18c8c6d4a1343e0af61b56318",
     "package.json": "830bf964818eebb3189a25d97e17ac19eb7c3df404ca8edcace008fa1709174e",
     "routes/README.md": "569ec85527cb431e88079da5c4b306d7901a679fa392cb8326807ba1434ef31a",
     "routes/a3/regulator-native-original.json": "c980e18895737ae147577872b5ec56809f52dd561136cf6027c94d6175a50e51",
@@ -322,7 +322,8 @@
     "src/mcu/esp32-s3-usb-review.tsx": "9fff0314c23a39280d9a8a2b8de4ab2fb07e80092288b304b2c7869f7c921beb",
     "src/power/battery-ready-review.tsx": "722ba5938161eef1fbcdb67d2e82d6e470c0a7b4ebef954ef981f28d9f7eb53f",
     "src/power/regulated-3v3.tsx": "e8ebb7e7549c74e7c8f6de80568efb17ee602fdb42048d13cfb951391709e969",
-    "src/power/type-c-current-review.tsx": "24d632425486a158ea36608b2e2c6c3d7449ca74c40ca1a113eea893ae12c7ca"
+    "src/power/type-c-current-review.tsx": "24d632425486a158ea36608b2e2c6c3d7449ca74c40ca1a113eea893ae12c7ca",
+    "scripts/routing/solve-pipeline9.mjs": "594ca9781f6ce72ebda0b66a79b42450d797476a42fb8fede71a2b8ed8f0b740"
   },
   "meaning": "Accepted cloud routing WIP source/native build; hashes identify bytes, not fabrication approval. Original migration manifest is preserved in evidence/cloud-runs/original-migration-checkpoint-sha256.json."
 }

@@ -1,0 +1,14 @@
+{
+  "classification": "Completed native replay-only trial; no new solve occurred and no routing progress claimed",
+  "requested_pipeline": "beta_pipeline9",
+  "reason": "Net selectors are excluded by getTracePortPathSelectors; changed the phase to explicit physical port selectors before retrying.",
+  "counts": {
+    "pcb_trace": 306,
+    "pcb_via": 250,
+    "pcb_copper_pour": 190,
+    "pcb_port_not_connected_error": 90
+  },
+  "baseline_copper_identical": true,
+  "new_solver_started": false,
+  "fabrication_ready": false
+}

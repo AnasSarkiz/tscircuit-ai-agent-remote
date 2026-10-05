@@ -1211,3 +1211,16 @@ Current evidence: `evidence/blocker-recheck-2026-10-03-1357/` (baseline definiti
 Current main build was run and exits1 with the intentional incomplete-board guard (main-build-guard.log). This is not a full-board validation pass. Native private publication planned suffix wip-a0-reference-import-review; GitHub/private package results will be independently recorded after the source commit. Fix chat reports core PR4344 open for polygon paste; unpublished code was not installed.
 
 Staged diff whitespace review reports13 supplier/native-output warnings: one untouched native motor import blank line, eight SVG/snapshot blank-line spaces and four native log EOF blank lines. Exact evidence/component bytes are preserved; these do not represent copper/assembly checks or accepted electrical warnings. Authored formatting passes. The unstaged diff check before staging had no findings; it did not inspect then-untracked evidence.
+# Pipeline9 selection — 2026-10-05
+
+`main.tsx` explicitly selects `beta_pipeline9`. Native routing metadata confirms
+`AutoroutingPipelineSolver9_PreloadedTraceGraph` from unchanged capacity-autorouter
+0.0.958. The full-copper trial timed out; a direct public-library trial exhausted
+the memory budget; a signal-first trial ended with an actual iteration-limit
+routing error. No newly solved copper was accepted. The original copper was
+restored and freshly rebuilt, byte-identical to SHA256
+`81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`.
+It still has 90 native opens and 26 physically disconnected nets. Prior schema,
+paste, supplier-mating and fabrication failures remain unresolved. The explicit
+selection does not reroute saved paths or make the board fabrication ready.
+Evidence and final publication receipts: [Pipeline9 review](evidence/pipeline9-routing-2026-10-05/review.md).

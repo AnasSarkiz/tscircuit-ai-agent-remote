@@ -1,5 +1,16 @@
 # AI Remote cloud continuation — current 2026-10-05
 
+Latest routing request: explicitly use Pipeline9. `main.tsx` now selects
+`autorouterVersion="beta_pipeline9"`; dependencies remain pinned. Actual native
+metadata verified `AutoroutingPipelineSolver9_PreloadedTraceGraph`. The full-copper
+USB attempt reached its time budget; the same input via the public library reached
+the memory budget. A temporary signal-first trial reduced the input to 2,996
+obstacles but returned `aJ ran out of iterations (capacity-autorouter@0.0.958)`.
+No new route was accepted. All original copper is restored, and a fresh native
+build has the identical SHA256 below. See `evidence/pipeline9-routing-2026-10-05/review.md`
+and the preserved source snapshots/events/outcomes. Do not claim Pipeline9 completed
+routing, accept the rejected reduced-copper output, or enable unqualified contacts.
+
 Latest human request: "push it to tsci" supersedes the earlier registry deferral. Native browser authentication completed as AnasSarkiz. Public release `0.0.2-wip-cloud-routing` now has**116/116 exact-matching files**, including current board JSON and required C262650 STEP. The official multipart archive endpoint resumed the existing release without changing any file bytes and enabled normal cloud scheduling. Build `ac331034-5de6-4b66-adf8-e29efd851e84` has started; check `evidence/cloud-tsci-publication/resumed-cloud-build-observation.json` for its actual result. See the current review and `resumed-complete-remote-receipt.json`. Do not repeat a full push, omit/modify required files or manually override readiness. Startup draft records the current workflow.
 
 The registry preview API now finds `index.circuit.tsx` and returns the exact6,848-element native board array; its preview page responds HTTP200. `resumed-registry-preview-receipt.json` records this. Cloud CI remains running without an error or completion after two observation windows; the fresh final read is `resumed-cloud-build-latest-receipt.json`. Do not call this CI-passed or fabricate new preview-image validation. The locally built board and full registry upload are already verified; continue observing the existing remote job if needed.

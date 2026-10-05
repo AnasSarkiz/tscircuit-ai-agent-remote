@@ -1,0 +1,21 @@
+{
+  "core_version": "0.0.2090",
+  "props_version": "0.0.688",
+  "capacity_autorouter_version": "0.0.958",
+  "board_selection": "autorouterVersion=\"beta_pipeline9\"",
+  "preset": "auto_local",
+  "native_solver_name": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "source_evidence": {
+    "node_modules/@tscircuit/core/dist/index.js": "6510b301b0aaae38cd09fa2f189aa34258cc6c590c58031ffa9e2bcb9ef5911e",
+    "node_modules/@tscircuit/props/lib/components/group.ts": "8d577eaa406828ff3331592749bbb8783c431fb70430310e3cc5378f67b0a37c",
+    "node_modules/@tscircuit/capacity-autorouter/dist/index.d.ts": "b5465cf6defa1b4c02712923a7cddc19bcd6f9e339c3f4431e378d45645f4dc9"
+  },
+  "core_solver_selection_lines": [
+    107323,
+    107348,
+    119929
+  ],
+  "public_prop_definition": "node_modules/@tscircuit/props/lib/components/group.ts:544",
+  "remaining_route_policy": "Explicit verified physical port phases; deferred J3 outer contacts and J7 contact-dependent fanout remain excluded",
+  "no_dependency_runtime_or_import_changes": true
+}
