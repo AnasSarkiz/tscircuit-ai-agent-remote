@@ -1,0 +1,14 @@
+$ bun scripts/prepare-board-package.ts
+58 |   )
+59 | }
+60 | collectSource(join(projectDir, "index.circuit.tsx"))
+61 | for (const moduleName of externalModules) {
+62 |   if (!["tscircuit", "@tscircuit/props"].includes(moduleName)) {
+63 |     throw new Error(`Unreviewed external module: ${moduleName}`)
+                   ^
+error: Unreviewed external module: zod
+      at /workspace/tscircuit-ai-agent-remote/scripts/prepare-board-package.ts:63:15
+      at loadAndEvaluateModule (2:1)
+
+Bun v1.3.9 (Linux x64)
+error: script "publish:prepare" exited with code 1

@@ -1,5 +1,7 @@
 ## Current cloud routing checkpoint — 2026-10-05
 
+Latest tscircuit publication request: board-only package prepared; native push exits1 before upload because cloud authentication is absent. Network additions are saved in an unapplied draft. [Exact publication preparation/status](evidence/cloud-tsci-publication/review.md). No new registry release is verified; previous deferral text is historical.
+
 Public implementation [fbcfd99](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/fbcfd99ac7f83a0c812433a2b3fde871aef2e832) is verified on `main`. Anonymous commit and exact-revision native JSON requests return HTTP200; the remote JSON matches the audited local build byte-for-byte. [Publication receipt](context/cloud-routing-publication-receipt.json). This receipt update changes no board inputs or generated copper.
 
 **Engineering WIP — routing incomplete; NOT FABRICATION READY.** Native output from the matching current source has **306 traces, 250 ordinary full-span vias, 190 pours and 90 native open-port errors**. The independent geometry audit reports **0 measured violations / 0 shorts**, with all **152 authored region widths preserved**, but **26 physically disconnected nets** remain. J7 accounts for46 native errors; unassigned J3 outer contacts are outside that count.

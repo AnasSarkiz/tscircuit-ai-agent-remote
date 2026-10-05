@@ -1,5 +1,7 @@
 # AI Remote cloud continuation — current 2026-10-05
 
+Latest human request: "push it to tsci" supersedes the earlier registry deferral. `.publish/board` is prepared with matching source and native JSON; the supported push stops before upload because no tscircuit session is configured in this cloud. Network additions and continuation instructions are saved as an unapplied environment draft. See `evidence/cloud-tsci-publication/review.md`. Resume the native public WIP upload after network configuration and browser authentication; no new release has been uploaded or verified.
+
 **WIP prototype. Routing incomplete; NOT FABRICATION READY.** Continue this existing checkout. Linux cloud is running and tested. No Mac routing, replacement board, worktree, watcher, registry retry, supplier messages or fabrication order.
 
 Repository: https://github.com/AnasSarkiz/tscircuit-ai-agent-remote, public main. Entry `index.circuit.tsx` delegates to `main.tsx`. Current exact native build: `dist/index/circuit.json`, **306 traces / 250 full-span vias / 190 pours / 90 native open-port errors**. Source/current build receipt: `context/build-checkpoint.json`. SHA256 `81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`. Matching native origin/source snapshot: `evidence/cloud-runs/final-native/`.

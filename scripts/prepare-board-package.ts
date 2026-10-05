@@ -59,7 +59,7 @@ if (!existsSync(circuitJsonPath)) {
 }
 collectSource(join(projectDir, "index.circuit.tsx"))
 for (const moduleName of externalModules) {
-  if (!["tscircuit", "@tscircuit/props"].includes(moduleName)) {
+  if (!["tscircuit", "@tscircuit/props", "zod"].includes(moduleName)) {
     throw new Error(`Unreviewed external module: ${moduleName}`)
   }
 }
@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "A6 qualified resistor substitutions, official polygon paste fix and saved partial native routing; incomplete copper, pill paste, display FPC, stackup and battery polarity; not fabrication ready",
+    "Handheld Wi-Fi AI agent remote; cloud-routed WIP prototype with incomplete connections and unresolved paste, display/battery mating and fabrication gates; not fabrication ready",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,
@@ -98,6 +98,7 @@ const runtimePackage = {
     "@types/bun": originalPackage.devDependencies["@types/bun"],
     tscircuit: originalPackage.devDependencies.tscircuit,
     typescript: originalPackage.devDependencies.typescript,
+    zod: "3.25.76",
   },
   overrides: originalPackage.overrides,
 }

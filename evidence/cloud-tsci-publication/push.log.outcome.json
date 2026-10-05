@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd .publish/board && exec ../../node_modules/.bin/tsci push index.circuit.tsx --include-dist --compress --version-tag wip-cloud-routing"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 2.5,
+  "peak_process_group_rss_bytes": 717770752,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

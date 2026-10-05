@@ -1,5 +1,7 @@
 # Accepted human decisions and continuation authority
 
+Latest request, 2026-10-05: "push it to tsci" explicitly authorizes publishing the current engineering WIP to tscircuit, superseding the earlier registry-upload deferral. Preserve all imported models and fabrication blockers; do not represent partial or unauthenticated publication as success.
+
 This is a curated decision record, not a full conversation export. Original supplied briefs are in user-requests/ and current artifacts/validation supply exact engineering evidence.
 
 - Continue the existing handheld AI remote to prototype fabrication readiness; do not restart. No fabrication order or invented physical tests.
