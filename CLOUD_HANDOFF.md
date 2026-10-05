@@ -1,6 +1,6 @@
 # AI Remote cloud continuation — current 2026-10-05
 
-Latest human request: "push it to tsci" supersedes the earlier registry deferral. `.publish/board` is prepared with matching source and native JSON; the supported push stops before upload because no tscircuit session is configured in this cloud. Network additions and continuation instructions are saved as an unapplied environment draft. See `evidence/cloud-tsci-publication/review.md`. Resume the native public WIP upload after network configuration and browser authentication; no new release has been uploaded or verified.
+Latest human request: "push it to tsci" supersedes the earlier registry deferral. Native browser authentication completed as AnasSarkiz. Public release `0.0.2-wip-cloud-routing` has114/116 exact-matching staged files; the supported compressed/fallback push exits1. Current board JSON and required C262650 connector STEP are missing after HTTP413; ready_to_build=false. See `evidence/cloud-tsci-publication/review.md` and its anonymous receipt. Registry requests now work; do not ask for an unnecessary network change or repeat an unchanged full push. Resolve the supported size limit without omitting/modifying required files or overriding readiness. Startup draft records the actual result.
 
 **WIP prototype. Routing incomplete; NOT FABRICATION READY.** Continue this existing checkout. Linux cloud is running and tested. No Mac routing, replacement board, worktree, watcher, registry retry, supplier messages or fabrication order.
 

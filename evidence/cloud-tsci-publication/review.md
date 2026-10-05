@@ -1,5 +1,24 @@
 # Current tscircuit publication request — 2026-10-05
 
+## Authenticated public outcome
+
+The user completed the native browser login flow; the authenticated account is verified as **AnasSarkiz**. The supported compressed push created the public, listed [0.0.2-wip-cloud-routing release](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files). Its public web URL responds HTTP200. **Publication remains incomplete: 114/116 staged files match anonymous readback; two required files are missing and ready_to_build=false.**
+
+The full archive receives HTTP413. Native file-by-file fallback reports113 successes and3 failures, then exits1 after211.76 seconds. Exact anonymous readback verifies that the USB-C STEP persisted despite its reported timeout. The missing files are:
+
+- `dist/index/circuit.json`: 5,071,958 bytes, SHA256 `81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`; HTTP413 upload and HTTP404 anonymous readback.
+- `imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step`: 11,395,444 bytes, SHA256 `ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0`; HTTP413 upload and HTTP404 anonymous readback.
+
+All114 other files match exact local hashes, with no extra, mismatched or unverified remote files. See `authenticated-remote-receipt.json`, `authenticated-safe-push-status.log` and explicit outcomes. The readback helper's first attempt encountered a response-variable shadowing bug; the helper was corrected and rerun against all116 files. Its original failed log/outcome is retained rather than mistaken for completed verification.
+
+All116 staging hashes still match the reviewed manifest. No board source, imported model, native JSON or pinned dependency was modified to reduce upload size. The current official upstream `lib/shared/push-snippet.ts` was inspected and retains the same full-archive/file-by-file paths; no supported resumable/chunked CLI route was found there. No duplicate unchanged full push or readiness override was attempted. The exact native JSON is already verified on public GitHub, separately from this incomplete registry release.
+
+The raw publisher log remains outside Git in `/tmp`; its hash/size and safe diagnostic status lines are recorded, without committing full archive request payloads or credentials. Native browser authentication now works, and actual registry requests succeeded despite unknown network-policy metadata. Applying the saved network draft is no longer a demonstrated prerequisite for these observed requests. Startup instructions were updated as a draft to reflect this outcome and avoid repeating the earlier unnecessary network/login instructions.
+
+**The remaining publication blocker is the registry request-size limit. The board remains an engineering WIP, not fabrication ready.** Routing/paste/schema/mating/export gates remain documented in `../cloud-runs/review.md`; registry publication would not clear them.
+
+## Initial preparation before browser authentication — historical
+
 **Prepared engineering WIP; registry upload blocked before any upload. NOT FABRICATION READY.** The user explicitly requested "push it to tsci", superseding the earlier registry deferral.
 
 The existing board-only packaging helper now accepts the already-used Zod schema module and includes its exact installed version, 3.25.76. Its obsolete A6 description is replaced by the current WIP description. No board source, native JSON, imported definition/model, saved routing cache, or installed dependency changed.

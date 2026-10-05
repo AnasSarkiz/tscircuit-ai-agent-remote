@@ -1,6 +1,6 @@
 ## Current cloud routing checkpoint — 2026-10-05
 
-Latest tscircuit publication request: board-only package prepared; native push exits1 before upload because cloud authentication is absent. Network additions are saved in an unapplied draft. [Exact publication preparation/status](evidence/cloud-tsci-publication/review.md). No new registry release is verified; previous deferral text is historical.
+Latest public [tscircuit0.0.2-wip-cloud-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files) is **incomplete**: authenticated native push exits1; anonymous verification finds114/116 exact matches. Current native JSON and required C262650 connector STEP are missing after HTTP413; ready_to_build=false, no extra/mismatched/unverified files. [Exact outcome](evidence/cloud-tsci-publication/review.md). Native browser authentication succeeded. Earlier deferral/authentication-block text is historical.
 
 Public implementation [fbcfd99](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/fbcfd99ac7f83a0c812433a2b3fde871aef2e832) is verified on `main`. Anonymous commit and exact-revision native JSON requests return HTTP200; the remote JSON matches the audited local build byte-for-byte. [Publication receipt](context/cloud-routing-publication-receipt.json). This receipt update changes no board inputs or generated copper.
 

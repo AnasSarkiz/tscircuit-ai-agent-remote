@@ -1,6 +1,6 @@
 ## Current cloud routing checkpoint — 2026-10-05
 
-The latest user request authorizes a tscircuit WIP publication. The board-only package is prepared, but the native push exits1 before uploading: this cloud has no tscircuit login. Required network additions are saved as an unapplied environment draft. [Publication status](evidence/cloud-tsci-publication/review.md). No new registry release is verified.
+Public [tscircuit0.0.2-wip-cloud-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files) has114/116 exact-matching files after native authenticated upload. **Publication is incomplete:** the current board JSON and required display-connector STEP are missing after HTTP413; ready_to_build=false. [Exact publication outcome](evidence/cloud-tsci-publication/review.md). Authentication succeeded; no unchanged duplicate retry or fabrication approval is claimed.
 
 **Engineering WIP — routing incomplete; NOT FABRICATION READY.** Native output from the matching current source has **306 traces, 250 ordinary full-span vias, 190 pours and 90 native open-port errors**. The independent geometry audit reports **0 measured violations / 0 shorts**, with all **152 authored region widths preserved**, but **26 physically disconnected nets** remain. J7 accounts for46 native errors; unassigned J3 outer contacts are outside that count.
 

@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/verify-registry-publication.py", line 139, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/verify-registry-publication.py", line 115, in main
+    record['files'] = list(executor.map(read_file, paths, [context] * len(paths)))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/verify-registry-publication.py", line 64, in read_file
+    'http_status': response.get('http_status'),
+                   ^^^^^^^^^^^^
+AttributeError: 'HTTPResponse' object has no attribute 'get'

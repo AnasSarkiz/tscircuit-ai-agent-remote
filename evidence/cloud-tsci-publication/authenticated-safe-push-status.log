@@ -1,0 +1,12 @@
+Uploading package archive...
+Archive upload failed, falling back to file-by-file upload: Error: FAIL [413]: POST /package_files/upload_archive
+Upload Summary
+  Succeeded: 113 files
+  Failed: 3 files
+    - dist/index/circuit.json
+      Error: FAIL [413]: POST /package_files/create
+    - imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step
+      Error: FAIL [413]: POST /package_files/create
+    - imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+Publish completed with 113 files uploaded and 3 failed upload(s)
