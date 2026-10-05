@@ -1,0 +1,49 @@
+{
+  "classification": "manual native copper proposals; not solver caches",
+  "source_circuit_json": "evidence/native-remaining-routing-2026-10-06/amplifier-routed-native/circuit.json",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "unresolved": [
+    {
+      "net": "GND",
+      "port": ".C2 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R44 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".U3 > .pin17",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R69 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R68 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".C70 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R84 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".C73 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    }
+  ]
+}

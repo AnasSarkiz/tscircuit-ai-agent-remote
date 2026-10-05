@@ -1,0 +1,145 @@
+{
+  "classification": "manual proposals, not solver caches",
+  "source_circuit_json": "evidence/native-remaining-routing-2026-10-06/amplifier-clear-region-native/circuit.json",
+  "grid_mm": 0.05,
+  "copper_clearance_mm": 0.21000000000000002,
+  "paths": [
+    {
+      "net": "AMP_SD_MODE",
+      "from": ".U3 > .pin4",
+      "to": ".R63 > .pin2",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 1.271074,
+          "y": -1.799997
+        },
+        {
+          "x": 1.271074,
+          "y": -1.799997,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 1.271074,
+          "y": -1.799997
+        },
+        {
+          "x": 1.35,
+          "y": -6.15
+        },
+        {
+          "x": 1.65,
+          "y": -6.6
+        },
+        {
+          "x": 3.380611,
+          "y": -7.0
+        },
+        {
+          "x": 3.380611,
+          "y": -7.0,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 3.380611,
+          "y": -7.0
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.998541,
+          2.500003
+        ],
+        [
+          -15.478926,
+          2.200003
+        ],
+        [
+          -15.39999999999987,
+          -2.149999999999576
+        ],
+        [
+          -15.099999999999866,
+          -2.599999999999582
+        ],
+        [
+          -13.369389,
+          -3.0
+        ],
+        [
+          -12.503364,
+          -2.5
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top"
+      ],
+      "classification": "manual native trace"
+    },
+    {
+      "net": "AMP_SD_MODE",
+      "from": ".R63 > .pin2",
+      "to": ".R64 > .pin1",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 1.1,
+          "y": 1.35
+        },
+        {
+          "x": 0.6,
+          "y": 1.75
+        },
+        {
+          "x": -0.89665,
+          "y": 2.4
+        }
+      ],
+      "global_path_mm": [
+        [
+          -12.503364,
+          -2.5
+        ],
+        [
+          -12.849999999999834,
+          -3.8499999999996
+        ],
+        [
+          -12.349999999999827,
+          -4.249999999999606
+        ],
+        [
+          -10.853349999999999,
+          -4.9
+        ],
+        [
+          -10.853349999999999,
+          -4
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native trace"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "reason": "No ordinary through-via top/bottom path: .Q2 > .pin3 to .R63 > .pin1"
+    }
+  ]
+}

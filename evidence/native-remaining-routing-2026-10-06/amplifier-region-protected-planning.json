@@ -1,0 +1,13 @@
+{
+  "classification": "manual proposals, not solver caches",
+  "source_circuit_json": "evidence/native-remaining-routing-2026-10-06/amplifier-clear-region-native/circuit.json",
+  "grid_mm": 0.05,
+  "copper_clearance_mm": 0.27,
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "AMP_SD_MODE",
+      "reason": "No ordinary through-via top/bottom path: .U3 > .pin4 to .R63 > .pin2; No ordinary through-via top/bottom path: .U3 > .pin4 to .R64 > .pin1"
+    }
+  ]
+}

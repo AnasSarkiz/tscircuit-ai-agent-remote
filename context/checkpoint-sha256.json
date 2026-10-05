@@ -283,8 +283,8 @@
     "scripts/routing/plan-ground-contacts.py": "2750f06a85ce293846cf778a567714336cb8f829536ee26e275352f79b163be4",
     "scripts/routing/plan-ground-stitches.py": "f5c28e35af5422cf3543ed732c48c652f42b8aac11d4bf5681167f99297126c8",
     "scripts/routing/plan-manual-power.py": "c1dc2f4606f54d72239bbdf37ef79358ca7e7e4bd370b8bdb14d3762344e3114",
-    "scripts/routing/plan-manual-signals.py": "d092163788b14dde813d555d23fbde29b449cf582405481621cd7469e527387d",
-    "scripts/routing/plan-power-copper.py": "9d56335fc887c7807d1ddff50ad22db80997f6afe7b03f615a1712b6bc9f6887",
+    "scripts/routing/plan-manual-signals.py": "b52a05f4051b26c90c6854757301ee764944390ee0a9374da8bb3621a1f4d1dd",
+    "scripts/routing/plan-power-copper.py": "4a1755151ec269ae894540e0d340da574d2a6a7f068dd2a112606aaa81995054",
     "scripts/routing/render-copper-review.mjs": "d3d92d31322e3712089022e7788989099703fc2bfd0745b44ce84d1ecdcc1a44",
     "scripts/routing/restore-compatible-paths.py": "f1e925be1056f50b0aa2f2cdacd69b42f47c1adee0dc90290786dc3e7e5f4cc6",
     "scripts/routing/tests/test_copper_audit.py": "533673887216fa9bd70a971b55e99747b44b3b948646f7f677e63d340f851a1d",
@@ -324,7 +324,8 @@
     "src/power/regulated-3v3.tsx": "e8ebb7e7549c74e7c8f6de80568efb17ee602fdb42048d13cfb951391709e969",
     "src/power/type-c-current-review.tsx": "24d632425486a158ea36608b2e2c6c3d7449ca74c40ca1a113eea893ae12c7ca",
     "scripts/routing/solve-pipeline9.mjs": "594ca9781f6ce72ebda0b66a79b42450d797476a42fb8fede71a2b8ed8f0b740",
-    "scripts/resume-registry-upload.mjs": "519e4cbdd172c280c74a9e33752c6cda5a09c04c0fc4f55f0dd2a0e0cd83d15a"
+    "scripts/resume-registry-upload.mjs": "519e4cbdd172c280c74a9e33752c6cda5a09c04c0fc4f55f0dd2a0e0cd83d15a",
+    "scripts/routing/solve-native-stage.mjs": "fed551ea39e3a218d7b0655bb945af30d318fa7c0df2f984877fae974072713b"
   },
   "meaning": "Accepted cloud routing WIP source/native build; hashes identify bytes, not fabrication approval. Original migration manifest is preserved in evidence/cloud-runs/original-migration-checkpoint-sha256.json."
 }

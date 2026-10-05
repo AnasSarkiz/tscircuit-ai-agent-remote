@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-clear-region-native/circuit.json",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-clear-region-planning.json",
+    "AUDIO_ENABLE_SUPPLY",
+    "AMP_SD_MODE",
+    "--grid-mm",
+    "0.05"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 16.52,
+  "peak_process_group_rss_bytes": 183734272,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

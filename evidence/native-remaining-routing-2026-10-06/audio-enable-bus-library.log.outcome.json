@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "/tmp/solve-native-bus.mjs",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-bus-lanes/start-35.json",
+    "source_net_5",
+    "evidence/native-remaining-routing-2026-10-06/audio-enable-bus.srj.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 1.0,
+  "peak_process_group_rss_bytes": 229404672,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

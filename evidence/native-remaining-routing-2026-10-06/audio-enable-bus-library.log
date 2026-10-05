@@ -1,0 +1,12 @@
+{"phase":"retry_layers","progress":0,"iterations":1}
+14 |   lastLog=Date.now()
+15 |   await new Promise(resolve=>setTimeout(resolve,0))
+16 |  }
+17 | }
+18 | writeFileSync(outputPath+'.outcome.json',JSON.stringify({solved:solver.solved,failed:solver.failed,error:solver.error,phase:solver.phase,iterations:solver.iterations},null,2))
+19 | if (solver.failed) throw new Error(solver.error ?? 'Bus lane solver failed')
+                                  ^
+error: No collision-free local dogbone assignment
+      at /tmp/solve-native-bus.mjs:19:30
+
+Bun v1.3.9 (Linux x64)

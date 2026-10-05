@@ -1,4 +1,26 @@
-# AI Remote cloud continuation — current 2026-10-05
+# AI Remote cloud continuation — current 2026-10-06
+
+Latest continuation tried native bus lanes and fanout, finer manual/power grids,
+passive relocation, explicit AMP_SD_MODE paths and four ground-repair approaches.
+**No new board copper/placement was accepted.** Bus lanes returned a terminal-
+count error and no collision-free dogbone assignment; fanout routed 0/1. Manual
+AMP paths joined the signal but split U3 ground. Moving the escape via did not
+repair it; reducing the top cutout margin also introduced six drill violations.
+Exact baseline sources and canonical JSON are restored. Read
+`evidence/native-remaining-routing-2026-10-06/review.md` and its restored checkpoint
+before retrying. Captured inputs/events/source snapshots are losslessly archived.
+The new `scripts/routing/solve-native-stage.mjs` uses public native solver APIs;
+results remain diagnostic until native regeneration and physical audits pass.
+The stock DSN export drops required copper geometry/rules, so Freerouting was
+not invoked. Required clearance/width/via rules and original caches are intact.
+
+The original Pipeline9 SRJs and upstream report were delivered in
+https://github.com/tscircuit/tscircuit-autorouter/issues/2878. The accepted board
+and existing public WIP release below are unchanged. Fresh clean install is
+blocked by HTTP401 for the locked pcb-trace-linter GitHub archive; retained
+Linux tools work. No fresh dependency-install success or fabrication readiness
+is claimed.
+
 
 Latest routing request: explicitly use Pipeline9. `main.tsx` now selects
 `autorouterVersion="beta_pipeline9"`; dependencies remain pinned. Actual native

@@ -1,0 +1,33 @@
+{
+  "accepted_new_routes": 0,
+  "restored_source": [
+    {
+      "path": "main.tsx",
+      "sha256": "c2416ee4dd6da2854630dbe3c3bd84b5ed6ac7e18c8c6d4a1343e0af61b56318",
+      "matches_pretrial_bytes": true
+    },
+    {
+      "path": "src/board/Routing.tsx",
+      "sha256": "ad42b90d146171bbdf31427265d8244f1fc83054ae14fdf7b1fb7fa773ae1e62",
+      "matches_pretrial_bytes": true
+    },
+    {
+      "path": "src/board/nets.tsx",
+      "sha256": "ec888a0a101f7b015a96dd25c0961f7d4b63136d7f6b717f34f006bc5463341b",
+      "matches_pretrial_bytes": true
+    },
+    {
+      "path": "src/board/placement.ts",
+      "sha256": "a6ff8c9f5956da6812f06b6b9abdbf35497d165cda0f36357170e01e1bb1d52c",
+      "matches_pretrial_bytes": true
+    },
+    {
+      "path": "src/board/manual-signal-paths.json",
+      "sha256": "be4fe6f909d0ef098d7b704922bab73848a81ea89fadcfc3bdce277cdd86c05d",
+      "matches_pretrial_bytes": true
+    }
+  ],
+  "canonical_native_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "native_board_unchanged": true,
+  "reason": "Two manual AMP routes close AMP_SD_MODE but split U3 GND; rejected. Final 0.21 mm top cutout trial additionally violates six 0.25 mm copper-to-drill gaps. Manufacturing checks are retained."
+}

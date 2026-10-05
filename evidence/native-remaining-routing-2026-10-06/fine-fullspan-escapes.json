@@ -1,0 +1,414 @@
+{
+  "classification": "manual native copper proposals; not solver caches",
+  "source_circuit_json": "dist/index/circuit.json",
+  "paths": [
+    {
+      "net": "VMIC",
+      "from": ".U23 > .pin5",
+      "to": "net.VMIC",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -1.25,
+          "y": -1.85
+        },
+        {
+          "x": -1.25,
+          "y": -1.85,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          13.9,
+          -21.95
+        ],
+        [
+          13.75000000000054,
+          -22.84999999999987
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9124143795445167
+    },
+    {
+      "net": "VBUS",
+      "from": ".J1 > .pin15",
+      "to": "net.VBUS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.55,
+          "y": 3.05
+        },
+        {
+          "x": 2.8,
+          "y": 3.2
+        },
+        {
+          "x": 4.6,
+          "y": 3.2
+        },
+        {
+          "x": 4.6,
+          "y": 3.2,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          2.4001603,
+          -25.8258552
+        ],
+        [
+          2.5500000000003844,
+          -24.9499999999999
+        ],
+        [
+          2.800000000000388,
+          -24.799999999999898
+        ],
+        [
+          4.6000000000004135,
+          -24.799999999999898
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.9801275107112635
+    },
+    {
+      "net": "VBUS",
+      "from": ".J1 > .pin16",
+      "to": "net.VBUS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.2,
+          "y": 1.1
+        },
+        {
+          "x": -2.05,
+          "y": 0.95
+        },
+        {
+          "x": -2.05,
+          "y": 0.95,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.3999571,
+          -25.8260203
+        ],
+        [
+          -2.199999999999683,
+          -26.899999999999928
+        ],
+        [
+          -2.049999999999681,
+          -27.04999999999993
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.3045674959977394
+    },
+    {
+      "net": "PACK_BAT",
+      "from": ".U16 > .pin2",
+      "to": "net.PACK_BAT",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -2.4,
+          "y": -0.65
+        },
+        {
+          "x": -1.95,
+          "y": -1.55
+        },
+        {
+          "x": -0.5,
+          "y": -3.0
+        },
+        {
+          "x": -0.5,
+          "y": -3.0,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -9.499997,
+          -25.749937
+        ],
+        [
+          -10.3999999999998,
+          -26.649999999999924
+        ],
+        [
+          -9.949999999999793,
+          -27.549999999999937
+        ],
+        [
+          -8.499999999999773,
+          -28.999999999999957
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 4.329679131206166
+    },
+    {
+      "net": "VSYS",
+      "from": ".U16 > .pin10",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.35,
+          "y": 0.3
+        },
+        {
+          "x": 2.35,
+          "y": 0.3,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -6.5000029999999995,
+          -26.249809
+        ],
+        [
+          -5.649999999999732,
+          -25.69999999999991
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.0123216072427537
+    },
+    {
+      "net": "VSYS",
+      "from": ".C4 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.200024,
+          "y": 0.866025
+        },
+        {
+          "x": -0.200024,
+          "y": 0.866025,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -2.25,
+          -13.350024000000001
+        ],
+        [
+          -3.116025,
+          -12.850024
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.9999996503124398
+    },
+    {
+      "net": "VSYS",
+      "from": ".R62 > .pin1",
+      "to": "net.VSYS",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": -0.5,
+          "y": 0.8
+        },
+        {
+          "x": -0.5,
+          "y": 0.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -5.49665,
+          -14
+        ],
+        [
+          -5.7499999999997335,
+          -14.799999999999756
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.8391580438150337
+    }
+  ],
+  "pours": [],
+  "vias": [],
+  "unresolved": [
+    {
+      "net": "GND",
+      "port": ".C2 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R44 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R69 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R68 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".C70 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".R84 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "GND",
+      "port": ".C73 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "port": ".Q2 > .pin3",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "port": ".R63 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U24 > .pin5",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".R93 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U5 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VMIC",
+      "port": ".U5 > .pin5",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VBUS",
+      "port": ".U16 > .pin13",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VBUS",
+      "port": ".C1 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VBUS",
+      "via_xy": [
+        -2.049999999999681,
+        -27.04999999999993
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "PACK_BAT",
+      "port": ".TP3 > .pin1",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin11",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U3 > .pin2",
+      "reason": "No ordinary via escape meeting pad/drill/copper clearance"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -5.7499999999997335,
+        -14.799999999999756
+      ],
+      "reason": "No wide inner2 distribution path"
+    },
+    {
+      "net": "VSYS",
+      "via_xy": [
+        -3.116025,
+        -12.850024
+      ],
+      "reason": "No wide inner2 distribution path"
+    }
+  ]
+}

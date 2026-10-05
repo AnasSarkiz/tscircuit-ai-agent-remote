@@ -1,5 +1,12 @@
 # Accepted human decisions and continuation authority
 
+Latest routing continuation, 2026-10-06: proceed with manual tracing or a qualified
+remaining-trace router, and try tscircuit bus-lane/fanout solvers where useful.
+Preserve existing copper, manufacturing rules and actual native solver evidence;
+accept changes only after independent clearance, short, width and connectivity
+checks. The requested Pipeline9 SRJs and upstream bug report were delivered in
+https://github.com/tscircuit/tscircuit-autorouter/issues/2878.
+
 Latest routing request, 2026-10-05: use Pipeline9. Explicitly select the supported `autorouterVersion="beta_pipeline9"` and preserve actual native solver events before accepting new routes. Keep the existing zero-shorts, geometry and full-connectivity requirements; do not interpret this request as approval to guess J3 outer polarity or J7 contact orientation.
 
 Latest request, 2026-10-05: "push it to tsci" explicitly authorizes publishing the current engineering WIP to tscircuit, superseding the earlier registry-upload deferral. Preserve all imported models and fabrication blockers; do not represent partial or unauthenticated publication as success.

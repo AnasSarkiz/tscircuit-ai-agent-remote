@@ -164,11 +164,13 @@ class ManualSignalPlanner:
         return blocked, labels
 
     def set_copper_reserve(self, reserve):
-        if reserve not in (0.0001, 0.01):
-            raise ValueError('Supported extra copper planning reserves are 0.0001 mm and 0.01 mm')
+        if reserve not in (0.0001, 0.01, 0.07):
+            raise ValueError('Supported extra copper planning reserves are 0.0001 mm, 0.01 mm and 0.07 mm')
         # The board requirement remains 0.20 mm. A 0.01 mm extra reserve
         # blocks the actual 0.2021 mm USB pad-exit gap; native/audit gates
         # still independently enforce the unchanged 0.20 mm requirement.
+        # The 0.07 mm reserve also protects existing regions from the native
+        # 0.26 mm pour cutout margin, with 0.01 mm planning headroom.
         self.copper_clearance = 0.2 + reserve
 
     def grid_edge_clear(self, first, last, obstacles, blocked):
@@ -542,7 +544,7 @@ def main():
     parser.add_argument("--off-top", default="", help="Comma-separated nets requiring a layer change before their long run")
     parser.add_argument('--reserve-proposals', action='append', default=[])
     parser.add_argument('--grid-mm', type=float, choices=(0.05, 0.1), default=0.1)
-    parser.add_argument('--copper-reserve-mm', type=float, choices=(0.0001, 0.01), default=0.01)
+    parser.add_argument('--copper-reserve-mm', type=float, choices=(0.0001, 0.01, 0.07), default=0.01)
     args = parser.parse_args()
     circuit = json.loads(Path(args.circuit_json).read_text())
     planner = ManualSignalPlanner(circuit)

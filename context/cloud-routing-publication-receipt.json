@@ -13,12 +13,7 @@
     "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315"
   },
   "push_outcome": {
-    "command": [
-      "git",
-      "push",
-      "origin",
-      "HEAD:main"
-    ],
+    "command": ["git", "push", "origin", "HEAD:main"],
     "exit_code": 0,
     "termination": null,
     "elapsed_seconds": 45.07,

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-power-copper.py",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-routed-native/circuit.json",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-ground-escapes.json",
+    "GND",
+    "--ground-audit",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-copper-audit.json",
+    "--grid-mm",
+    "0.05",
+    "--preserve-region-width"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 34.04,
+  "peak_process_group_rss_bytes": 141901824,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

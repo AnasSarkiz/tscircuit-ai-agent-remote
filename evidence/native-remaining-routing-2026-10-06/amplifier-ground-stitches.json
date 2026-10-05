@@ -1,0 +1,39 @@
+{
+  "classification": "native via proposals, not solver caches",
+  "source_circuit_json": "evidence/native-remaining-routing-2026-10-06/amplifier-routed-native/circuit.json",
+  "vias": [],
+  "unresolved": [
+    {
+      "isolated_native_group": "pcb_smtpad_116",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_275",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_298",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_302",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_328",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_343",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_249",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    },
+    {
+      "isolated_native_group": "pcb_smtpad_318",
+      "reason": "No ordinary via with annulus contact to both the island and inner1 GND plane"
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+.tools/core-0.0.2091-official/index.js format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! The size of the file is 5.2 MiB, which exceeds the configured maximum of 1.0 MiB for this project.
+    Use the `files.maxSize` configuration to change the maximum size of files processed, or `files.includes` to ignore the file.
+  
+
+.tools/config/tscircuit-nodejs/config.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    1 1 │   {
+    2   │ - → "sessionToken":·"[REDACTED CLI SESSION CREDENTIAL]",
+    3   │ - → "tscircuitHandle":·"AnasSarkiz",
+    4   │ - → "accountId":·"84198f66-bb86-4dc1-97f0-cdf2cf2c843a",
+    5   │ - → "sessionId":·"480d4f77-8633-40dd-867b-2aa5d81ccbbd"
+    6   │ - }
+      2 │ + ··"sessionToken":·"[REDACTED CLI SESSION CREDENTIAL]",
+      3 │ + ··"tscircuitHandle":·"AnasSarkiz",
+      4 │ + ··"accountId":·"84198f66-bb86-4dc1-97f0-cdf2cf2c843a",
+      5 │ + ··"sessionId":·"480d4f77-8633-40dd-867b-2aa5d81ccbbd"
+      6 │ + }
+      7 │ + 
+  
+
+.tools/pour-margin-proof.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     1  1 │   import { RootCircuit } from "tscircuit"
+     2  2 │   for (const margin of [0.25, 0]) {
+     3    │ - ·const·root·=·new·RootCircuit()
+     4    │ - ·root.add(<board·width={10}·height={10}·layers={4}·routeRemaining={false}>
+     5    │ - ·<net·name="POWER"·/>
+     6    │ - ·<via·name="PA"·pcbX={-2}·pcbY={0}·fromLayer="top"·toLayer="bottom"·holeDiameter={0.3}·outerDiameter={0.7}·connectsTo="net.POWER"·/>
+     7    │ - ·<via·name="PB"·pcbX={2}·pcbY={0}·fromLayer="top"·toLayer="bottom"·holeDiameter={0.3}·outerDiameter={0.7}·connectsTo="net.POWER"·/>
+     8    │ - ·<copperpour·connectsTo="net.POWER"·layer="inner2"·boardEdgeMargin={margin}·outline={[{x:-2.15,y:-0.15},{x:2.15,y:-0.15},{x:2.15,y:0.15},{x:-2.15,y:0.15}]}·/>
+     9    │ - ·</board>)
+    10    │ - ·await·root.renderUntilSettled()
+    11    │ - ·const·circuit·=·root.getCircuitJson()
+    12    │ - ·await·Bun.write(`evidence/cloud-runs/pour-margin-${margin}.json`,JSON.stringify(circuit,null,2))
+    13    │ - ·console.log(JSON.stringify({margin,pours:circuit.filter(r=>r.type==='pcb_copper_pour').length,·errors:circuit.filter(r=>r.type.includes('error')).map(r=>r.type)}))
+        3 │ + ··const·root·=·new·RootCircuit()
+        4 │ + ··root.add(
+        5 │ + ····<board·width={10}·height={10}·layers={4}·routeRemaining={false}>
+        6 │ + ······<net·name="POWER"·/>
+        7 │ + ······<via
+        8 │ + ········name="PA"
+        9 │ + ········pcbX={-2}
+       10 │ + ········pcbY={0}
+       11 │ + ········fromLayer="top"
+       12 │ + ········toLayer="bottom"
+       13 │ + ········holeDiameter={0.3}
+       14 │ + ········outerDiameter={0.7}
+       15 │ + ········connectsTo="net.POWER"
+       16 │ + ······/>
+       17 │ + ······<via
+       18 │ + ········name="PB"
+       19 │ + ········pcbX={2}
+       20 │ + ········pcbY={0}
+       21 │ + ········fromLayer="top"
+       22 │ + ········toLayer="bottom"
+       23 │ + ········holeDiameter={0.3}
+       24 │ + ········outerDiameter={0.7}
+       25 │ + ········connectsTo="net.POWER"
+       26 │ + ······/>
+       27 │ + ······<copperpour
+       28 │ + ········connectsTo="net.POWER"
+       29 │ + ········layer="inner2"
+       30 │ + ········boardEdgeMargin={margin}
+       31 │ + ········outline={[
+       32 │ + ··········{·x:·-2.15,·y:·-0.15·},
+       33 │ + ··········{·x:·2.15,·y:·-0.15·},
+       34 │ + ··········{·x:·2.15,·y:·0.15·},
+       35 │ + ··········{·x:·-2.15,·y:·0.15·},
+       36 │ + ········]}
+       37 │ + ······/>
+       38 │ + ····</board>,
+       39 │ + ··)
+       40 │ + ··await·root.renderUntilSettled()
+       41 │ + ··const·circuit·=·root.getCircuitJson()
+       42 │ + ··await·Bun.write(
+       43 │ + ····`evidence/cloud-runs/pour-margin-${margin}.json`,
+       44 │ + ····JSON.stringify(circuit,·null,·2),
+       45 │ + ··)
+       46 │ + ··console.log(
+       47 │ + ····JSON.stringify({
+       48 │ + ······margin,
+       49 │ + ······pours:·circuit.filter((r)·=>·r.type·===·"pcb_copper_pour").length,
+       50 │ + ······errors:·circuit.filter((r)·=>·r.type.includes("error")).map((r)·=>·r.type),
+       51 │ + ····}),
+       52 │ + ··)
+    14 53 │   }
+    15 54 │   
+  
+
+.tools/registry-api-reference/biome.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     9  9 │     },
+    10 10 │     "files": {
+    11    │ - ····"ignore":·[
+    12    │ - ······"cosmos-export",
+    13    │ - ······"dist",
+    14    │ - ······"package.json",
+    15    │ - ······".winterspec",
+    16    │ - ······"lib/db/zapatos",
+    17    │ - ······".next"
+    18    │ - ····]
+       11 │ + ····"ignore":·["cosmos-export",·"dist",·"package.json",·".winterspec",·"lib/db/zapatos",·".next"]
+    19 12 │     },
+    20 13 │     "javascript": {
+  
+
+.tools/registry-api-reference/lib/account/delete-account.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     1  1 │   import { KyselyDatabaseInstance } from "lib/db/kysely-types"
+     2    │ - import·{
+     3    │ - ··deletePackage,
+     4    │ - ··deletePackageWithoutTransaction,
+     5    │ - }·from·"lib/package/delete-package"
+        2 │ + import·{·deletePackage,·deletePackageWithoutTransaction·}·from·"lib/package/delete-package"
+     6  3 │   
+     7  4 │   export const deleteAccount = async (
+    ····· │ 
+    34 31 │   
+    35 32 │       // Delete sessions
+    36    │ - ····await·trx
+    37    │ - ······.deleteFrom("main.session")
+    38    │ - ······.where("account_id",·"=",·account_id)
+    39    │ - ······.execute()
+       33 │ + ····await·trx.deleteFrom("main.session").where("account_id",·"=",·account_id).execute()
+    40 34 │   
+    41 35 │       // Delete login pages
+    ····· │ 
+    60 54 │   
+    61 55 │       for (const org of ownedOrgs) {
+    62    │ - ······await·trx
+    63    │ - ········.deleteFrom("main.org_account")
+    64    │ - ········.where("org_id",·"=",·org.org_id)
+    65    │ - ········.execute()
+       56 │ + ······await·trx.deleteFrom("main.org_account").where("org_id",·"=",·org.org_id).execute()
+    66 57 │       }
+    67 58 │   
+    68 59 │       // Delete all orgs owned by this account (including personal org)
+    69    │ - ····await·trx
+    70    │ - ······.deleteFrom("main.org")
+    71    │ - ······.where("owner_account_id",·"=",·account_id)
+    72    │ - ······.execute()
+       60 │ + ····await·trx.deleteFrom("main.org").where("owner_account_id",·"=",·account_id).execute()
+    73 61 │   
+    74 62 │       // Finally, delete the account
+    75    │ - ····await·trx
+    76    │ - ······.deleteFrom("main.account")
+    77    │ - ······.where("account_id",·"=",·account_id)
+    78    │ - ······.execute()
+       63 │ + ····await·trx.deleteFrom("main.account").where("account_id",·"=",·account_id).execute()
+    79 64 │     })
+    80 65 │   }
+  
+
+.tools/registry-api-reference/lib/account/setup-account.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     11  11 │     env?: Partial<EnvironmentVars>
+     12  12 │     logger?: Logger
+     13     │ - ··error?:·(
+     14     │ - ····status:·number,
+     15     │ - ····payload:·{·error_code:·string;·message:·string·},
+     16     │ - ··)·=>·Response
+         13 │ + ··error?:·(status:·number,·payload:·{·error_code:·string;·message:·string·})·=>·Response
+     17  14 │   }
+     18  15 │   
+    ······· │ 
+     49  46 │     const { github_username, email, tscircuit_handle } = params
+     50  47 │     const fallbackOrgName =
+     51     │ - ····params.org_name·??
+     52     │ - ····(tscircuit_handle·||·undefined)·??
+     53     │ - ····github_username·??
+     54     │ - ····`org-${randomUUID()}`
+         48 │ + ····params.org_name·??·(tscircuit_handle·||·undefined)·??·github_username·??·`org-${randomUUID()}`
+     55  49 │   
+     56  50 │     const accountValues: Record<string, any> = {
+    ······· │ 
+     96  90 │           .values({
+     97  91 │             org_name: fallbackOrgName,
+     98     │ - ··········...(tscircuit_handle·!==·undefined
+     99     │ - ············?·{·tscircuit_handle:·tscircuit_handle·}
+    100     │ - ············:·{}),
+         92 │ + ··········...(tscircuit_handle·!==·undefined·?·{·tscircuit_handle:·tscircuit_handle·}·:·{}),
+    101  93 │             owner_account_id: account.account_id,
+    102  94 │             is_personal_org: true,
+  
+
+.tools/registry-api-reference/lib/admin/ActionButton.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    34 34 │           <input key={key} type="hidden" name={key} value={value} />
+    35 35 │         ))}
+    36    │ - ······<button
+    37    │ - ········type="submit"
+    38    │ - ········className={className}
+    39    │ - ········disabled={disabled}
+    40    │ - ········title={title}
+    41    │ - ······>
+       36 │ + ······<button·type="submit"·className={className}·disabled={disabled}·title={title}>
+    42 37 │           {children}
+    43 38 │         </button>
+  
+
+.tools/registry-api-reference/lib/admin/Table.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     87  87 │     if (columnKey === "github_username" && typeof cellValue === "string") {
+     88  88 │       return (
+     89     │ - ······<a
+     90     │ - ········href={`https://github.com/${cellValue}`}
+     91     │ - ········className="text-blue-500·hover:underline"
+     92     │ - ······>
+         89 │ + ······<a·href={`https://github.com/${cellValue}`}·className="text-blue-500·hover:underline">
+     93  90 │           {cellValue}
+     94  91 │         </a>
+    ······· │ 
+     99  96 │     if (columnKey === "pgboss_job_id") {
+    100  97 │       return (
+    101     │ - ······<a
+    102     │ - ········href={`/admin/pgboss/get-job?id=${cellValue}`}
+    103     │ - ········className="text-blue-500·hover:underline"
+    104     │ - ······>
+         98 │ + ······<a·href={`/admin/pgboss/get-job?id=${cellValue}`}·className="text-blue-500·hover:underline">
+    105  99 │           {cellValue.split("-")[0]}...
+    106 100 │         </a>
+    ······· │ 
+    124 118 │         <div className="flex flex-col space-y-1">
+    125 119 │           {cellValue}
+    126     │ - ········<a
+    127     │ - ··········href={`/admin/autorouting_jobs/list?autorouting_cache_key=${cellValue}`}
+    128     │ - ········>
+    129     │ - ··········(used·by)
+    130     │ - ········</a>
+        120 │ + ········<a·href={`/admin/autorouting_jobs/list?autorouting_cache_key=${cellValue}`}>(used·by)</a>
+    131 121 │           <a
+    132 122 │             href={`/admin/autorouting_jobs/list?autorouting_cache_key=${cellValue}&completed_using_cache=false`}
+    ······· │ 
+    276 266 │         <tbody>
+    277 267 │           {rows.map((row, rowIndex) => (
+    278     │ - ··········<tr
+    279     │ - ············key={rowIndex}
+    280     │ - ············className={rowClassName·?·rowClassName(row)·:·undefined}
+    281     │ - ··········>
+        268 │ + ··········<tr·key={rowIndex}·className={rowClassName·?·rowClassName(row)·:·undefined}>
+    282 269 │               {keys.map((key) => (
+    283 270 │                 <td key={key} className="border border-gray-300 p-1">
+    284     │ - ················<Cell
+    285     │ - ··················columnKey={key}
+    286     │ - ··················cellValue={row[key]}
+    287     │ - ··················timezone={timezone!}
+    288     │ - ················/>
+        271 │ + ················<Cell·columnKey={key}·cellValue={row[key]}·timezone={timezone!}·/>
+    289 272 │                 </td>
+    290 273 │               ))}
+  
+
+.tools/registry-api-reference/lib/admin/time-ago.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     2  2 │     if (!date) return ""
+     3  3 │     const dateObj = typeof date === "string" ? new Date(date) : date
+     4    │ - ··if·(!(dateObj·instanceof·Date)·||·Number.isNaN(dateObj.getTime()))
+     5    │ - ····return·"Invalid·Date"
+        4 │ + ··if·(!(dateObj·instanceof·Date)·||·Number.isNaN(dateObj.getTime()))·return·"Invalid·Date"
+     6  5 │     const now = new Date()
+     7  6 │     const timeDiff = now.getTime() - dateObj.getTime()
+  
+
+.tools/registry-api-reference/lib/ai/gemini/getBatchJobStatus.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     8  8 │   ): Promise<GeminiBatchJobStatus | null> {
+     9  9 │     try {
+    10    │ - ····const·res·=·await·fetch(
+    11    │ - ······`${env.GEMINI_API_URL}/v1beta/${jobName}?key=${env.GEMINI_API_KEY}`,
+    12    │ - ······{
+    13    │ - ········method:·"GET",
+    14    │ - ········headers:·{·"Content-Type":·"application/json"·},
+    15    │ - ······},
+    16    │ - ····)
+       10 │ + ····const·res·=·await·fetch(`${env.GEMINI_API_URL}/v1beta/${jobName}?key=${env.GEMINI_API_KEY}`,·{
+       11 │ + ······method:·"GET",
+       12 │ + ······headers:·{·"Content-Type":·"application/json"·},
+       13 │ + ····})
+    17 14 │   
+    18 15 │       const json = await res.json()
+    ····· │ 
+    26 23 │   }
+    27 24 │   
+    28    │ - export·async·function·extractResultText(
+    29    │ - ··status:·GeminiBatchJobStatus,
+    30    │ - ):·Promise<string·|·null>·{
+       25 │ + export·async·function·extractResultText(status:·GeminiBatchJobStatus):·Promise<string·|·null>·{
+    31 26 │     // Check inline response first
+    32 27 │     if (status.response?.inlinedResponses?.inlinedResponses) {
+    33 28 │       const candidate =
+    34    │ - ······status.response.inlinedResponses.inlinedResponses[0]?.response
+    35    │ - ········?.candidates?.[0]
+       29 │ + ······status.response.inlinedResponses.inlinedResponses[0]?.response?.candidates?.[0]
+    36 30 │       return candidate?.content?.parts?.[0]?.text || null
+    37 31 │     }
+  
+
+.tools/registry-api-reference/lib/anthropic/calculate-ai-cost.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     1  1 │   import type { Anthropic } from "@anthropic-ai/sdk"
+     2  2 │   
+     3    │ - export·type·AnthropicModel·=·Parameters<
+     4    │ - ··Anthropic["messages"]["create"]
+     5    │ - >[0]["model"]
+        3 │ + export·type·AnthropicModel·=·Parameters<Anthropic["messages"]["create"]>[0]["model"]
+     6  4 │   
+     7  5 │   const MODEL_COSTS: Partial<
+    ····· │ 
+    34 32 │       modelCosts = MODEL_COSTS["claude-3-5-sonnet-20240620"]!
+    35 33 │     }
+    36    │ - ··return·(
+    37    │ - ····modelCosts.inputCostPerToken·*·inputTokens·+
+    38    │ - ····modelCosts.outputCostPerToken·*·outputTokens
+    39    │ - ··)
+       34 │ + ··return·modelCosts.inputCostPerToken·*·inputTokens·+·modelCosts.outputCostPerToken·*·outputTokens
+    40 35 │   }
+    41 36 │   
+  
+
+.tools/registry-api-reference/lib/anthropic/generate-package-description.ts format ━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    15 15 │   
+    16 16 │       const anthropic = getAnthropicClient()
+    17    │ - ····const·readableNetlist·=·circuit_json
+    18    │ - ······?·convertCircuitJsonToReadableNetlist(circuit_json)
+    19    │ - ······:·null
+       17 │ + ····const·readableNetlist·=·circuit_json·?·convertCircuitJsonToReadableNetlist(circuit_json)·:·null
+    20 18 │   
+    21 19 │       prompt = `Given this electronic component code${
+    ····· │ 
+    39 37 │       return {
+    40 38 │         description:
+    41    │ - ········response.content[0]?.type·===·"text"
+    42    │ - ··········?·(response.content[0]?.text?.trim()·??·null)
+    43    │ - ··········:·null,
+       39 │ + ········response.content[0]?.type·===·"text"·?·(response.content[0]?.text?.trim()·??·null)·:·null,
+    44 40 │         input: prompt,
+    45 41 │       }
+  
+
+.tools/registry-api-reference/lib/anthropic/generate-package-usage-instructions.ts format ━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    107 107 │       return {
+    108 108 │         usageInstructions:
+    109     │ - ········response.content[0]?.type·===·"text"
+    110     │ - ··········?·(response.content[0]?.text?.trim()·??·null)
+    111     │ - ··········:·null,
+        109 │ + ········response.content[0]?.type·===·"text"·?·(response.content[0]?.text?.trim()·??·null)·:·null,
+    112 110 │         input: prompt,
+    113 111 │       }
+  
+
+.tools/registry-api-reference/lib/anthropic/update-package-ai-properties.ts format ━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     13  13 │    * Updates the AI-generated properties for a package if they are out of date
+     14  14 │    */
+     15     │ - export·async·function·updatePackageAiProperties(
+     16     │ - ··packageId:·string,
+     17     │ - ··db:·KyselyDatabaseInstance,
+     18     │ - )·{
+         15 │ + export·async·function·updatePackageAiProperties(packageId:·string,·db:·KyselyDatabaseInstance)·{
+     19  16 │     // Get package info
+     20  17 │     const pkg = await db
+     21  18 │       .selectFrom("main.package")
+     22     │ - ····.select([
+     23     │ - ······"package_id",
+     24     │ - ······"name",
+     25     │ - ······"description",
+     26     │ - ······"ai_description",
+     27     │ - ······"ai_usage_instructions",
+     28     │ - ····])
+     29     │ - ····.select(
+     30     │ - ······sql<Date·|·null>`ai_properties_last_updated_at`.as(
+     31     │ - ········"ai_properties_last_updated_at",
+     32     │ - ······),
+     33     │ - ····)
+         19 │ + ····.select(["package_id",·"name",·"description",·"ai_description",·"ai_usage_instructions"])
+         20 │ + ····.select(sql<Date·|·null>`ai_properties_last_updated_at`.as("ai_properties_last_updated_at"))
+     34  21 │       .where("package_id", "=", packageId)
+     35  22 │       .executeTakeFirstOrThrow()
+    ······· │ 
+     55  42 │     const needsUpdate =
+     56  43 │       !pkg.ai_properties_last_updated_at ||
+     57     │ - ····pkg.ai_properties_last_updated_at·<
+     58     │ - ······new·Date(latestPackageRelease.updated_at)
+         44 │ + ····pkg.ai_properties_last_updated_at·<·new·Date(latestPackageRelease.updated_at)
+     59  45 │   
+     60  46 │     if (!needsUpdate) {
+    ······· │ 
+     68  54 │     debug("Updating AI properties", { packageId, packageName: pkg.name })
+     69  55 │   
+     70     │ - ··const·fsMap·=·await·getPackageReleaseFsMap(
+     71     │ - ····latestPackageRelease.package_release_id,
+     72     │ - ····{
+     73     │ - ······db,
+     74     │ - ····},
+     75     │ - ··)
+         56 │ + ··const·fsMap·=·await·getPackageReleaseFsMap(latestPackageRelease.package_release_id,·{
+         57 │ + ····db,
+         58 │ + ··})
+     76  59 │   
+     77  60 │     const aiReadableFsMap = convertToAiReadableFsMap(fsMap)
+    ······· │ 
+     91  74 │     }
+     92  75 │   
+     93     │ - ··const·circuitJson·=·await·getPackageReleaseCircuitJson(
+     94     │ - ····latestPackageRelease.package_release_id,
+     95     │ - ····{
+     96     │ - ······db,
+     97     │ - ····},
+     98     │ - ··)
+         76 │ + ··const·circuitJson·=·await·getPackageReleaseCircuitJson(latestPackageRelease.package_release_id,·{
+         77 │ + ····db,
+         78 │ + ··})
+     99  79 │   
+    100  80 │     // Generate AI description
+    101  81 │     const { description: aiDescription, input: ai_description_input } =
+    102     │ - ····await·generatePackageDescription(
+    103     │ - ······aiReadableFsMap,
+    104     │ - ······circuitJson,
+    105     │ - ······pkg.description·??·undefined,
+    106     │ - ····)
+         82 │ + ····await·generatePackageDescription(aiReadableFsMap,·circuitJson,·pkg.description·??·undefined)
+    107  83 │   
+    108  84 │     // Generate AI usage instructions
+    109     │ - ··const·{
+    110     │ - ····usageInstructions:·aiUsageInstructions,
+    111     │ - ····input:·ai_usage_instructions_input,
+    112     │ - ··}·=·await·generatePackageUsageInstructions(
+    113     │ - ····aiReadableFsMap,
+    114     │ - ····pkg.name,
+    115     │ - ····pkg.description·??·undefined,
+    116     │ - ··)
+         85 │ + ··const·{·usageInstructions:·aiUsageInstructions,·input:·ai_usage_instructions_input·}·=
+         86 │ + ····await·generatePackageUsageInstructions(aiReadableFsMap,·pkg.name,·pkg.description·??·undefined)
+    117  87 │   
+    118  88 │     // Update package with new AI properties using raw SQL to avoid TypeScript issues
+    ······· │ 
+    125  95 │         ai_usage_instructions_input,
+    126  96 │         ai_properties_last_updated_at: sql`CURRENT_TIMESTAMP`,
+    127     │ - ······ai_properties_updated_for_package_release_id:
+    128     │ - ········latestPackageRelease.package_release_id,
+         97 │ + ······ai_properties_updated_for_package_release_id:·latestPackageRelease.package_release_id,
+    129  98 │       })
+    130  99 │       .where("package_id", "=", packageId)
+  
+
+.tools/registry-api-reference/lib/attio/record-account-signup.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     51  51 │   
+     52  52 │   const getDealName = (account: AccountSignupParams["account"]) =>
+     53     │ - ··`tscircuit·signup:·${
+     54     │ - ····account.tscircuit_handle·||·account.github_username·||·account.email
+     55     │ - ··}`
+         53 │ + ··`tscircuit·signup:·${account.tscircuit_handle·||·account.github_username·||·account.email}`
+     56  54 │   
+     57  55 │   const formatSignupDate = (date: Date | string | null | undefined) => {
+    ······· │ 
+     69  67 │     const { account } = params
+     70  68 │     if (!account.email) {
+     71     │ - ····ctx.logger?.info(
+     72     │ - ······"skipped·Attio·signup·record·because·account·has·no·email",
+     73     │ - ······{
+     74     │ - ········account_id:·account.account_id,
+     75     │ - ······},
+     76     │ - ····)
+         69 │ + ····ctx.logger?.info("skipped·Attio·signup·record·because·account·has·no·email",·{
+         70 │ + ······account_id:·account.account_id,
+         71 │ + ····})
+     77  72 │       return
+     78  73 │     }
+    ······· │ 
+    112 107 │       const personRecordId = personResponse.data?.id?.record_id
+    113 108 │       if (!personRecordId) {
+    114     │ - ······ctx.logger?.error(
+    115     │ - ········"skipped·Attio·signup·deal·because·person·record·id·is·missing",
+    116     │ - ········{
+    117     │ - ··········account_id:·account.account_id,
+    118     │ - ········},
+    119     │ - ······)
+        109 │ + ······ctx.logger?.error("skipped·Attio·signup·deal·because·person·record·id·is·missing",·{
+        110 │ + ········account_id:·account.account_id,
+        111 │ + ······})
+    120 112 │         return
+    121 113 │       }
+  
+
+.tools/registry-api-reference/lib/auth/package-permissions.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    63 63 │     return (
+    64 64 │       ctx.auth.orgs?.some(
+    65    │ - ······(org)·=>
+    66    │ - ········org.org_id·===·targetOrgId·&&
+    67    │ - ········org.user_permissions?.can_manage_packages·===·true,
+       65 │ + ······(org)·=>·org.org_id·===·targetOrgId·&&·org.user_permissions?.can_manage_packages·===·true,
+    68 66 │       ) ?? false
+    69 67 │     )
+  
+
+.tools/registry-api-reference/lib/autorouting/update-autorouting-job/getFreeroutingKy.ts format ━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     4  4 │   import crypto from "node:crypto"
+     5  5 │   
+     6    │ - export·const·getFreeroutingKy·=·(
+     7    │ - ··job:·MinimalAutoroutingJob,
+     8    │ - ··ctx:·MinimalAppContext,
+     9    │ - )·=>·{
+        6 │ + export·const·getFreeroutingKy·=·(job:·MinimalAutoroutingJob,·ctx:·MinimalAppContext)·=>·{
+    10  7 │     return defaultKy.create({
+    11  8 │       prefixUrl: ctx.env.FREEROUTING_SERVER_URL,
+    12  9 │       headers: {
+    13    │ - ······"Freerouting-Profile-ID":
+    14    │ - ········job.freerouting_profile_id·??·crypto.randomUUID(),
+       10 │ + ······"Freerouting-Profile-ID":·job.freerouting_profile_id·??·crypto.randomUUID(),
+    15 11 │         "Freerouting-Environment-Host": "tscircuit/0.0.1",
+    16 12 │       },
+  
+
+.tools/registry-api-reference/lib/autorouting/update-autorouting-job/index.ts format ━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     5  5 │   import { updateJobStatusBasedOnFreeroutingState } from "./updateJobStatusBasedOnFreeroutingState"
+     6  6 │   
+     7    │ - export·const·updateAutoroutingJob·=·async·(
+     8    │ - ··job:·MinimalAutoroutingJob,
+     9    │ - ··ctx:·MinimalAppContext,
+    10    │ - )·=>·{
+        7 │ + export·const·updateAutoroutingJob·=·async·(job:·MinimalAutoroutingJob,·ctx:·MinimalAppContext)·=>·{
+    11  8 │     const frKy = getFreeroutingKy(job, ctx)
+    12  9 │   
+  
+
+.tools/registry-api-reference/lib/autorouting/update-autorouting-job/queueJobOnFreeroutingAndUpdate.ts format ━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     57  57 │       : (input_circuit_json as any)
+     58  58 │   
+     59     │ - ··const·autorouterConfiguration·=·Array.isArray(
+     60     │ - ····(input_circuit_json·as·any)?.[0],
+     61     │ - ··)
+         59 │ + ··const·autorouterConfiguration·=·Array.isArray((input_circuit_json·as·any)?.[0])
+     62  60 │       ? (input_circuit_json as any)?.[0]?.filter(
+     63     │ - ········(element:·any)·=>
+     64     │ - ··········element.type·===·"pcb_group"·&&
+     65     │ - ··········element.subcircuit_id·===·subcircuit_id,
+         61 │ + ········(element:·any)·=>·element.type·===·"pcb_group"·&&·element.subcircuit_id·===·subcircuit_id,
+     66  62 │         )?.[0]?.autorouter_configuration
+     67  63 │       : undefined
+     68  64 │   
+     69     │ - ··const·dsnFile·=·convertCircuitJsonToDsnString(
+     70     │ - ····circuitJsonForSubcircuit·as·any,
+     71     │ - ····{
+     72     │ - ······traceClearance:·autorouterConfiguration?.trace_clearance,
+     73     │ - ····},
+     74     │ - ··)
+         65 │ + ··const·dsnFile·=·convertCircuitJsonToDsnString(circuitJsonForSubcircuit·as·any,·{
+         66 │ + ····traceClearance:·autorouterConfiguration?.trace_clearance,
+         67 │ + ··})
+     75  68 │     // Upload the input DSN file
+     76  69 │     await frKy.post(`v1/jobs/${createdJob.id}/input`, {
+  
+
+.tools/registry-api-reference/lib/build/fetchCircuitJsonForPackage.ts format ━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     19 19 │     ctx: MinimalAppContext,
+     20 20 │   ) {
+     21    │ - ··package_release_id·??=·await·getLatestPackageReleaseIdForPackage(
+     22    │ - ····package_id!,
+     23    │ - ····ctx,
+     24    │ - ··)
+        21 │ + ··package_release_id·??=·await·getLatestPackageReleaseIdForPackage(package_id!,·ctx)
+     25 22 │   
+     26 23 │     const fsMap = await getPackageReleaseFsMap(package_release_id, ctx)
+    ······ │ 
+     84 81 │       }
+     85 82 │   
+     86    │ - ····ctx.logger.error(
+     87    │ - ······"Failed·to·parse·compilation·service·response·as·JSON:",
+     88    │ - ······errorDetails,
+     89    │ - ····)
+        83 │ + ····ctx.logger.error("Failed·to·parse·compilation·service·response·as·JSON:",·errorDetails)
+     90 84 │       const detailedErrorMessage = `Failed to parse JSON response from compilation service. Status: ${response.status} ${response.statusText}`
+     91 85 │   
+  
+
+The number of diagnostics exceeds the limit allowed. Use --max-diagnostics to increase it.
+Diagnostics not shown: 635.
+Checked 1293 files in 255ms. No fixes applied.
+Found 654 errors.
+Found 1 warning.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+

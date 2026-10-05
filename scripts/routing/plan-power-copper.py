@@ -282,8 +282,10 @@ def main():
     parser.add_argument('--ground-audit', required=True)
     parser.add_argument('--reserve-paths', help='Additional authored paths that the native build has not rendered yet')
     parser.add_argument('--preserve-region-width', action='store_true', help='Reserve beyond native 0.26 mm cutouts and draw above the required width')
+    parser.add_argument('--grid-mm', type=float, choices=(0.05, 0.1), default=0.1)
     args = parser.parse_args()
     circuit=json.loads(Path(args.circuit_json).read_text());planner=Planner(circuit)
+    planner.set_grid(args.grid_mm)
     if args.preserve_region_width:
         planner.via_copper_clearance = .27
     if args.reserve_paths:

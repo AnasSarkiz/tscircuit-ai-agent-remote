@@ -1,0 +1,11 @@
+{
+  "full_staged_whitespace_check_exit_code": 2,
+  "preserved_evidence_files_with_whitespace": [
+    "evidence/native-remaining-routing-2026-10-06/format-fixed.log",
+    "evidence/native-remaining-routing-2026-10-06/format-sanitized-detail.log",
+    "evidence/native-remaining-routing-2026-10-06/format-scoped.log",
+    "evidence/native-remaining-routing-2026-10-06/format.log"
+  ],
+  "authored_changes_whitespace_check_exit_code": 0,
+  "note": "Native captures, captured source snapshots and tool logs preserve original whitespace; credential-bearing formatter text was separately redacted before staging."
+}

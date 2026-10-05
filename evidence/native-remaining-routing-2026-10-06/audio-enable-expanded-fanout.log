@@ -1,0 +1,12 @@
+{"progress":0,"iterations":1}
+51 | }
+52 | writeFileSync(`${outputPath}.solver-outcome.json`, JSON.stringify({
+53 |   solved: solver.solved, failed: solver.failed, error: solver.error,
+54 |   phase: solver.phase, iterations: solver.iterations,
+55 | }, null, 2))
+56 | if (solver.failed) throw new Error(solver.error ?? "Native solver failed")
+                                  ^
+error: FanoutSolver: best layer assignment routed 0/1 connections
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/solve-native-stage.mjs:56:30
+
+Bun v1.3.9 (Linux x64)

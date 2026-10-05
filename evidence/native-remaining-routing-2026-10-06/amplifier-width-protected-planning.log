@@ -1,0 +1,6 @@
+usage: plan-manual-signals.py [-h] [--off-top OFF_TOP]
+                              [--reserve-proposals RESERVE_PROPOSALS]
+                              [--grid-mm {0.05,0.1}]
+                              [--copper-reserve-mm {0.0001,0.01}]
+                              circuit_json output_json nets [nets ...]
+plan-manual-signals.py: error: argument --copper-reserve-mm: invalid choice: '0.27' (choose from 0.0001, 0.01)

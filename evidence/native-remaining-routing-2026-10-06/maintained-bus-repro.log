@@ -1,0 +1,12 @@
+{"phase":"retry_layers","progress":0,"iterations":1}
+89 |     },
+90 |     null,
+91 |     2,
+92 |   ),
+93 | )
+94 | if (solver.failed) throw new Error(solver.error ?? "Native solver failed")
+                                  ^
+error: No collision-free local dogbone assignment
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/solve-native-stage.mjs:94:30
+
+Bun v1.3.9 (Linux x64)

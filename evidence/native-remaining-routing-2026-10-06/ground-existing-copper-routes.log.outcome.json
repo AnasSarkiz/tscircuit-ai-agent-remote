@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-existing-copper-routes.py",
+    "evidence/native-remaining-routing-2026-10-06/amplifier-ground-preserved-native/circuit.json",
+    "evidence/native-remaining-routing-2026-10-06/final-copper-audit.json",
+    "evidence/native-remaining-routing-2026-10-06/ground-existing-copper-routes.json",
+    "GND",
+    "--grid-mm",
+    "0.05"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 37.55,
+  "peak_process_group_rss_bytes": 158035968,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,77 @@
+Pinned @tscircuit/cli 0.1.2237 bundled dsn-converter 0.0.90; official installed source excerpts.
+353368:     }
+353369:   };
+353370:   library.padstacks.push(viaPadstack);
+353371:   return viaName;
+353372: }
+353373: var debug13 = Debug5("dsn-converter:processPcbTraces");
+353374: var DEFAULT_VIA_DIAMETER = 600;
+353375: var DEFAULT_VIA_HOLE = 300;
+353376: function layerRefToDsnLayer(layer) {
+353377:   if (layer === "top")
+353378:     return "F.Cu";
+353379:   if (layer === "bottom")
+353380:     return "B.Cu";
+353381:   const innerMatch = String(layer).match(/^inner(\d+)$/);
+353382:   if (innerMatch)
+353635: }
+353636: function convertCircuitJsonToDsnJson(circuitElements, options = {}) {
+353637:   const pcbBoard = circuitElements.find((element) => element.type === "pcb_board");
+353638:   const numLayers = pcbBoard?.num_layers ?? 2;
+353639:   const layers = generateLayers(numLayers);
+353640:   const layerNames = generateLayerNames(numLayers);
+353641:   const defaultViaName = getViaPadstackName(numLayers, 600, 300);
+353642:   const pcb = {
+353643:     is_dsn_pcb: true,
+353644:     filename: "",
+353645:     parser: {
+353646:       string_quote: "",
+353647:       host_version: "",
+353648:       space_in_quoted_tokens: "",
+353649:       host_cad: ""
+353650:     },
+353651:     resolution: {
+353652:       unit: "um",
+353662:           coordinates: calculateBoardBoundary(pcbBoard)
+353663:         }
+353664:       },
+353665:       via: defaultViaName,
+353666:       rule: {
+353667:         clearances: [
+353668:           {
+353669:             value: options.traceClearance ?? 150
+353670:           },
+353671:           {
+353672:             value: 50,
+353673:             type: "smd_smd"
+353674:           }
+353675:         ],
+353700:           name: "kicad_default",
+353701:           description: "",
+353702:           net_names: [],
+353703:           circuit: {
+353704:             use_via: defaultViaName
+353705:           },
+353706:           rule: {
+353707:             clearances: [
+353708:               {
+353709:                 value: options.traceClearance ?? 150
+353710:               }
+353711:             ],
+353712:             width: 150
+353713:           }
+353714:         }
+353715:       ]
+353716:     },
+353717:     wiring: {
+353718:       wires: []
+353719:     }
+353720:   };
+353721:   const componentGroups = groupComponents(circuitElements);
+353722:   processComponentsAndPads(componentGroups, circuitElements, pcb);
+353723:   processPlatedHoles(componentGroups, circuitElements, pcb, numLayers);
+353724:   processNets(circuitElements, pcb);
+353725:   processPcbTraces(circuitElements, pcb, numLayers);
+353726:   return pcb;
+353727: }
+353728: function calculateBoardBoundary(pcbBoard) {

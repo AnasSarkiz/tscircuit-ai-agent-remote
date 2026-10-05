@@ -1,0 +1,55 @@
+/workspace/tscircuit-ai-agent-remote/.tools/registry-api-reference/biome.json:3:3 deserialize ━━━━━━━━━━
+
+  × Found an unknown key `organizeImports`.
+  
+    1 │ {
+    2 │   "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+  > 3 │   "organizeImports": {
+      │   ^^^^^^^^^^^^^^^^^
+    4 │     "enabled": true
+    5 │   },
+  
+  i Known keys:
+  
+  - $schema
+  - root
+  - extends
+  - vcs
+  - files
+  - formatter
+  - linter
+  - javascript
+  - json
+  - css
+  - graphql
+  - grit
+  - html
+  - overrides
+  - plugins
+  - assist
+  
+
+/workspace/tscircuit-ai-agent-remote/.tools/registry-api-reference/biome.json:11:5 deserialize ━━━━━━━━━━
+
+  × Found an unknown key `ignore`.
+  
+     9 │   },
+    10 │   "files": {
+  > 11 │     "ignore": [
+       │     ^^^^^^^^
+    12 │       "cosmos-export",
+    13 │       "dist",
+  
+  i Known keys:
+  
+  - maxSize
+  - ignoreUnknown
+  - includes
+  - experimentalScannerIgnores
+  
+
+configuration ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Biome exited because the configuration resulted in errors. Please fix them.
+  
+

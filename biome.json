@@ -12,7 +12,9 @@
       "!bun.lock",
       "!imports/**",
       "!.upstream-work/**",
-      "!.publish/**"
+      "!.publish/**",
+      "!!.tools/**",
+      "!!.geometry-runtime/**"
     ]
   },
   "formatter": {

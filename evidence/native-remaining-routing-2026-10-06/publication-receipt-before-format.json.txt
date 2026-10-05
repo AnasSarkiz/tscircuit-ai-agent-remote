@@ -1,0 +1,63 @@
+{
+  "implementation_revision": "fbcfd99ac7f83a0c812433a2b3fde871aef2e832",
+  "branch": "main",
+  "repository_url": "https://github.com/AnasSarkiz/tscircuit-ai-agent-remote",
+  "commit_url": "https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/fbcfd99ac7f83a0c812433a2b3fde871aef2e832",
+  "public_anonymous_commit_http_status": 200,
+  "remote_main_verified": "fbcfd99ac7f83a0c812433a2b3fde871aef2e832",
+  "anonymous_native_json_readback": {
+    "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/fbcfd99ac7f83a0c812433a2b3fde871aef2e832/dist/index/circuit.json",
+    "http_status": 200,
+    "byte_identical": true,
+    "size_bytes": 5071958,
+    "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315"
+  },
+  "push_outcome": {
+    "command": [
+      "git",
+      "push",
+      "origin",
+      "HEAD:main"
+    ],
+    "exit_code": 0,
+    "termination": null,
+    "elapsed_seconds": 45.07,
+    "peak_process_group_rss_bytes": 484601856,
+    "memory_budget_bytes": 22333829939,
+    "completed_command": true,
+    "passing_validation_inferred": false
+  },
+  "current_validation": {
+    "native_build": "evidence/cloud-runs/final-native/circuit.json",
+    "canonical_circuit_json": "dist/index/circuit.json",
+    "byte_identical": true,
+    "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+    "size_bytes": 5071958,
+    "traces": 306,
+    "vias": 250,
+    "native_pours": 190,
+    "native_open_port_errors": 90,
+    "J7_native_open_port_errors": 46,
+    "physically_open_nets": 26,
+    "measured_geometry_violations": 0,
+    "measured_shorts": 0,
+    "authored_region_widths_checked": 152,
+    "authored_region_width_failures": 0,
+    "all_ordinary_vias_full_span": true,
+    "restored_source_snapshot": "evidence/cloud-runs/final-native/source-snapshot",
+    "source_restore_byte_verified": true,
+    "fabrication_ready": false,
+    "limitations": [
+      "90 native open-port errors and 26 physically disconnected nets remain; J3 outer contacts are unassigned and omitted from that count.",
+      "J7 physical contact face/pin-1/fold mating remains unqualified.",
+      "32 missing pill-pad paste records, 169 strict-schema failures and unsupported polygon Gerber export remain.",
+      "Full routed CLI build, bitmap shorts and snapshot exceeded time budgets; direct native render completed.",
+      "Current, USB/speaker signal integrity, mechanical fit, stock/BOM/CPL and final fabrication review remain open."
+    ]
+  },
+  "publication_status": "Public GitHub engineering WIP; routing incomplete; NOT FABRICATION READY",
+  "registry": "Deferred under existing human routing scope; no release or retry",
+  "onboarding": "Current environment works; startup instructions saved as an unapplied draft; clean frozen install still blocked by api.github.com policy",
+  "checked_at_utc": "2026-10-05T17:57:47.535741+00:00",
+  "receipt_commit_scope": "Receipt and validation documentation only; implementation revision identifies the checked board inputs and native build."
+}

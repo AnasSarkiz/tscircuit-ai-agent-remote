@@ -1,0 +1,21 @@
+import { readFileSync, writeFileSync } from 'node:fs'
+import { SOLVERS } from '/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js'
+const [startPath, connectionName, outputPath] = process.argv.slice(2)
+const event = JSON.parse(readFileSync(startPath, 'utf8'))
+const input = {...event.simpleRouteJson, connections: event.simpleRouteJson.connections.filter(connection => connection.name === connectionName)}
+if (input.connections.length !== 1) throw new Error('Expected one selected original connection')
+writeFileSync(outputPath+'.input.json', JSON.stringify(input,null,2))
+const solver = new SOLVERS.BusLanesPipelineSolver(input)
+let lastLog = 0
+while (!solver.solved && !solver.failed) {
+ solver.step()
+ if (Date.now()-lastLog >= 5000) {
+  console.log(JSON.stringify({phase:solver.phase,progress:solver.progress,iterations:solver.iterations}))
+  lastLog=Date.now()
+  await new Promise(resolve=>setTimeout(resolve,0))
+ }
+}
+writeFileSync(outputPath+'.outcome.json',JSON.stringify({solved:solver.solved,failed:solver.failed,error:solver.error,phase:solver.phase,iterations:solver.iterations},null,2))
+if (solver.failed) throw new Error(solver.error ?? 'Bus lane solver failed')
+writeFileSync(outputPath,JSON.stringify(solver.getOutput(),null,2))
+console.log(JSON.stringify({solved:solver.solved,traceCount:solver.traces.length}))

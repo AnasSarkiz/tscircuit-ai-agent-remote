@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bun",
+    "scripts/routing/solve-native-stage.mjs",
+    "bus_lanes",
+    "/tmp/remaining-native-bus-start.json",
+    "source_net_5",
+    "/tmp/remaining-native-bus-repro.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 1.0,
+  "peak_process_group_rss_bytes": 242536448,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

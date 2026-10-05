@@ -1237,3 +1237,32 @@ Public [Pipeline9 WIP preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-age
 has 116/116 original files verified by anonymous hash readback. The preview API
 returns the exact local native board. Upload completion is verified; cloud CI,
 new browser visual review and fabrication approval are not inferred.
+
+
+# Native bus-lane/fanout continuation — 2026-10-06
+
+Actual native bus-lanes and public fanout trials failed. Manual AMP_SD_MODE
+routes closed the signal net but split U3's previously connected ground.
+The later top cutout trial retained that regression and introduced six drill
+clearance violations. No proposed route, placement or margin change was accepted;
+exact baseline source bytes and native JSON are restored. Current accepted
+counts remain 90 native open errors / 26 physically open nets, with zero measured
+geometry violations and shorts and all 152 baseline region widths passing.
+The whole-board connectivity/fabrication gate remains blocked.
+
+[Routing trial review](evidence/native-remaining-routing-2026-10-06/review.md)
+contains original native inputs/events, resource outcomes, source snapshots,
+physical audits, width checks and byte-verified restoration. The stock DSN
+converter loses required copper/keepouts and uses weaker defaults; no
+Freerouting result was accepted. Maintained diagnostic helpers add the finer
+power grid, optional larger planning reserve and public bus/fanout repro.
+No manufacturer imports, dependency versions, genuine caches or manufacturing
+checks were modified. The existing public `0.0.2-wip-pipeline9` release remains
+the exact accepted board revision; this change publishes diagnostics only.
+
+Fresh diagnostics checks: TypeScript passes; routing regressions 17/17 pass;
+board tests 42 pass / 2 existing fabrication/schema failures; root formatting
+passes after force-ignoring cloud runtime caches. All 325 checkpoint files
+verify, including unchanged board native/source/cache bytes. The formatter's
+local credential-bearing diagnostic was redacted before publication; the
+hygiene scan found no credential pattern in newly saved evidence.
