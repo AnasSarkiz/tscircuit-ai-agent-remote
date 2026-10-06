@@ -1,0 +1,37 @@
+{
+  "commit": "81c066f8044f98c4d25e685a65edb3bc792affcb",
+  "url": "https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/81c066f8044f98c4d25e685a65edb3bc792affcb",
+  "checked_at_utc": "2026-10-06T15:14:24.275791+00:00",
+  "anonymous_access": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "anonymous_http_status": 200,
+      "bytes": 5219932,
+      "remote_sha256": "8a68235d7b446165de53665adb2e53ca971e7e179969c2eb07c1e1185b140042",
+      "local_byte_identical": true
+    },
+    {
+      "path": "src/board/ComponentNotes.tsx",
+      "anonymous_http_status": 200,
+      "bytes": 12516,
+      "remote_sha256": "3198e7dd06ad5d8058ae3fe54de46333a886ca0ff45303341ca826ec145c3920",
+      "local_byte_identical": true
+    },
+    {
+      "path": "main.tsx",
+      "anonymous_http_status": 200,
+      "bytes": 2594,
+      "remote_sha256": "ff52f63d5aaf75f37ed61cad9d17afd065b4a23f34ae2a379591c20303f80ae3",
+      "local_byte_identical": true
+    },
+    {
+      "path": "index.circuit.tsx",
+      "anonymous_http_status": 200,
+      "bytes": 33,
+      "remote_sha256": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58",
+      "local_byte_identical": true
+    }
+  ],
+  "all_checked_bytes_match": true
+}

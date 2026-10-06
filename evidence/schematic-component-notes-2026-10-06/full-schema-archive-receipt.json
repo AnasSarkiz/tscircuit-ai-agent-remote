@@ -1,0 +1,11 @@
+{
+  "classification": "Lossless native schema diagnostic archive; not modified native JSON",
+  "original_path": "evidence/schematic-component-notes-2026-10-06/full-schema-audit.json",
+  "original_bytes": 80494006,
+  "original_sha256": "ade19be01db665e210258e0ea9f1aa4f767456dcfd462ed1e071cd84a65518a2",
+  "archive_path": "evidence/schematic-component-notes-2026-10-06/full-schema-audit.json.gz",
+  "archive_bytes": 2219978,
+  "archive_sha256": "39e566e30239b0f6b090a77a5341d76c926481166fa605bddf9143eb86cd6941",
+  "all_original_bytes_verified_before_removal": true,
+  "restore": "gzip -dk full-schema-audit.json.gz"
+}

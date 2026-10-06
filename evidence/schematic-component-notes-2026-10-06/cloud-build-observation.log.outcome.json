@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/monitor-registry-build.py",
+    "--build-id",
+    "6873fe90-66f8-45be-8122-3a5fd15e15b9",
+    "--output",
+    "evidence/schematic-component-notes-2026-10-06/cloud-build-observation.json",
+    "--seconds",
+    "80"
+  ],
+  "exit_code": 2,
+  "termination": null,
+  "elapsed_seconds": 80.61,
+  "peak_process_group_rss_bytes": 18083840,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

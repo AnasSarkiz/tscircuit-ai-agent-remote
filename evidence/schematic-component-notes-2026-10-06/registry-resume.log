@@ -1,0 +1,44 @@
+{"archive_index":0,"archive_bytes":2144942,"archive_sha256":"6cd3e21b26ffcbf6495cc02faea0099a882164be43580da4d46a58ee03151534","http_status":200,"uploaded_files":[{"package_file_id":"1b4f3e89-7b18-4ce7-beba-d809ea06ef83","file_path":"dist/index/circuit.json"},{"package_file_id":"7a329884-f90b-40ea-9422-e602633a5d94","file_path":"imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"}]}
+{
+  "checked_at_utc": "2026-10-06T15:13:02.655Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.4-wip-schematic-notes",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2144942,
+  "archive_sha256": "6cd3e21b26ffcbf6495cc02faea0099a882164be43580da4d46a58ee03151534",
+  "archives": [
+    {
+      "bytes": 2144942,
+      "sha256": "6cd3e21b26ffcbf6495cc02faea0099a882164be43580da4d46a58ee03151534",
+      "paths": [
+        "dist/index/circuit.json",
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 5219932,
+      "sha256": "8a68235d7b446165de53665adb2e53ca971e7e179969c2eb07c1e1185b140042"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "1b4f3e89-7b18-4ce7-beba-d809ea06ef83",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "7a329884-f90b-40ea-9422-e602633a5d94",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    }
+  ]
+}

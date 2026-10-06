@@ -1,5 +1,16 @@
 ## Schematic component explanations — 2026-10-06
 
+Public version0.0.4-wip-schematic-notes is verified:120/120exact files,
+latest/public/listed/ready=true and26native A4sheets. Accepted GitHub source is
+81c066f8044f98c4d25e685a65edb3bc792affcb; nativeSHA256 is
+8a68235d7b446165de53665adb2e53ca971e7e179969c2eb07c1e1185b140042.
+[Updated native preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/7fe00b28-1971-41f3-b4e5-c327c6b6b3e0/preview).
+Automatic cloud job6873fe90-66f8-45be-8122-3a5fd15e15b9 is recorded separately.
+No duplicate cloud build or model/native-file edits were used for publication.
+The first80-second observation ends with the automatic cloud job still running;
+remote CI is pending. Read the recorded build ID rather than requesting another.
+
+
 Revision `0.0.4-wip-schematic-notes` adds a plain-English explanation for every
 schematic component reference: 125 purchased components and 10 solder/test
 pads. The 13 circuit drawings link to paired A4 component-guide pages, numbered

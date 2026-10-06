@@ -112,3 +112,45 @@ and ordering remain blocked. No imported part/model, source connection, copper
 geometry, test criterion or native error has been edited to obtain a pass.
 Native events are archived losslessly with every original byte verified before
 removing uncompressed duplicates; they are evidence, not replacement route caches.
+
+
+## Public publication
+
+Accepted implementation source is public GitHub commit
+[`81c066f`](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/81c066f8044f98c4d25e685a65edb3bc792affcb).
+Anonymous raw readback verifies the exact native JSON, ComponentNotes, board
+entry and declarative main against local bytes. The public repository visibility
+receipt is retained separately.
+
+Public tscircuit version
+[`0.0.4-wip-schematic-notes`](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/7fe00b28-1971-41f3-b4e5-c327c6b6b3e0/preview)
+(release7fe00b28-1971-41f3-b4e5-c327c6b6b3e0) is the latest public listed release.
+All120staged runtime files match anonymous remote byte hashes, with no missing
+or extra files, and ready_to_build=true. Its native preview discovers
+index.circuit.tsx and matches the complete accepted native JSON object, including
+all26A4sheets. Its public preview page responds HTTP200. No browser thumbnail
+or successful cloud CI result is inferred from that HTTP response.
+
+The native publisher initially encountered HTTP413 and reported three fallback
+file failures. Anonymous readback found118/120matching files and only two
+actually missing; the TPS63802 model had already persisted. The supported
+multipart archive helper uploaded the exact missing native JSON and AFC07 model
+in one byte-verified2,144,942-byte archive, with no native/model modifications,
+full repush, duplicate version or readiness override. Fresh anonymous readback
+then confirmed120/120exact files. Large raw CLI error payloads are retained in
+/tmp with a hash receipt; only diagnostic status lines and command outcomes are
+committed. Full schema diagnostics are preserved in a lossless gzip archive,
+with every original byte verified and a separate restore/hash receipt.
+
+The registry automatically scheduled cloud build
+6873fe90-66f8-45be-8122-3a5fd15e15b9. Its observed status is retained separately;
+no duplicate build was requested. Publication/annotation validation is complete;
+whole-board fabrication and hardware qualification remain blocked.
+
+
+The80-second bounded observation finished while the automatic cloud job remained
+in progress, with no completed result or error. This observation deadline neither
+cancels the job nor means it passed/failed. Its logs/status remain recorded in
+cloud-build-observation.json; successful remote CI is not claimed. Local native
+build completion, exact publication bytes and preview discovery are verified
+independently. No further cloud build was queued.
