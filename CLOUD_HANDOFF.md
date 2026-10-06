@@ -7,7 +7,10 @@ active-net plane semantics; representing SMT pad metal as structure planes had
 made the router skip real missing signal connections. Corrected fixed-area
 input is qualified, but the actual strict signal trial saved an empty SES
 (0 wires / 0 vias) after geometry/no-connection errors. Manual contacts at actual
-nominal net widths also returned0. Read
+nominal net widths also returned0.
+The supported 0.0001 mm extra-reserve /0.05 mm manual-grid trial also returned
+0 paths on all6 eligible signals, preserving the required0.20 mm native minimum.
+Read
 `evidence/freerouting-continuation-2026-10-06/review.md` and
 `scripts/routing/FREEROUTING.md`. Earlier DSN-development qualifications lack
 the net-semantics check; never use normalized writer output as routing input.

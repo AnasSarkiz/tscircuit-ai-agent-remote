@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-manual-signals.py",
+    "dist/index/circuit.json",
+    "evidence/freerouting-continuation-2026-10-06/manual-required-clearance-proposals.json",
+    "AUDIO_ENABLE_SUPPLY",
+    "AMP_SD_MODE",
+    "MCU_LCD_RESET_N",
+    "MIC_SD",
+    "MIC_WS",
+    "MIC_BCLK",
+    "--grid-mm",
+    "0.05",
+    "--copper-reserve-mm",
+    "0.0001"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 41.04,
+  "peak_process_group_rss_bytes": 262533120,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

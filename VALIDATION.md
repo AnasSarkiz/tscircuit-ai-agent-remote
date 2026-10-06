@@ -15,6 +15,14 @@ remain. All152 region widths pass. Native SHA256 remains
 42pass/2failed fabrication/schema gates. No board version or duplicate unchanged
 registry upload. Existing public WIP and all fabrication blockers below remain.
 
+The final supported 0.0001 mm extra-reserve /0.05 mm manual-grid attempt returned
+0 paths on all6 eligible signals. Public diagnostic implementation
+[a32567f](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/a32567fc3575efcb990eaf70086fdcde94cac657)
+is verified on `main`; repository metadata reports public, and unauthenticated
+HTTP200 reads of its native JSON/review match the exact committed bytes.
+See `context/freerouting-publication-receipt.json`. Registry board revision is
+unchanged; publication does not approve fabrication.
+
 Current actual frozen cloud setup and4 supervisor smoke cases passed, as did
 checksum-verified Freerouting/JDK installation, repeat and CLI readiness.
 Reviewed tooling hashes update the authored source checkpoint while preserving

@@ -2,8 +2,11 @@
 
 **No new board routes were accepted. Routing remains incomplete; NOT
 FABRICATION READY.** The actual Freerouting SES contains zero new wires and
-zero vias. Both manual contact trials returned zero proposals. The canonical
-native board and its inputs are unchanged from public board commit
+zero vias. Both manual contact trials returned zero proposals. The board
+also received a fresh 0.05 mm manual-grid trial with the supported
+0.0001 mm extra reserve (actual 0.2001 mm clearance), which returned zero paths
+on all six eligible signal nets. Required native clearances remain unchanged.
+The canonical native board and its inputs are unchanged from public board commit
 `f9218aeda3400357075a57367aec7b89008f83af`.
 
 Fresh independent audit of `dist/index/circuit.json`: **0 measured geometry
@@ -66,6 +69,7 @@ tooling/diagnostic revision, not a new board version.
 | Same qualified input, signal-only / all pours treated as obstacles | Attempted connections and logged no-connection, coordinate-range and null simplex-division errors. Saved an actual SES after 227.74 s: **0 wires / 0 vias**. No completed autorouting-pass event appears in the log. Exit 0 does not establish completion: official 2.5.0 CLI also returns 0 for timed-out jobs with saved output. |
 | Manual nonzero contacts, old universal width | 0 proposals. |
 | Manual nonzero contacts, actual nominal widths | 0 proposals; 30 unresolved contact groups recorded. |
+| Manual 0.05 mm grid / actual 0.2001 mm copper clearance | 0 paths on AUDIO_ENABLE_SUPPLY, AMP_SD_MODE, MCU_LCD_RESET_N, MIC_SD, MIC_WS and MIC_BCLK; every missing ordinary through-via path recorded. |
 
 Logs and `.outcome.json` files preserve the real command statuses, budgets and
 memory observations. Operator cancellation receipts distinguish those trials
