@@ -1,3 +1,27 @@
+## Latest placement, component and programmer review — 2026-10-06
+
+**NOT READY TO ORDER.** Electrical placement needs correction even though the
+native overlap check passes: U1's nearest external3V3 bypass is26.160mm away;
+U5's assigned100nF bypass is18.191mm away on a different supply copper island.
+The manufacturer's local microphone bypass recommendation is not met by the
+current separate-via arrangement.19 IC supply locations are measured in the
+[new six-point review](evidence/board-programmer-stock-review-2026-10-06/review.md).
+
+The requested Standard JST programmer v0.8.0 can use UART conditionally:
+J5.1TX→J6.6RX, J5.2GND→J6.1GND, J5.3RX→J6.5TX. A custom3-to6 adapter,
+separate target power, matching firmware and manual BOOT/RESET are required.
+5host logical and8target logical/physical groups pass; no actual flashing test.
+Fresh manufacturer pin tests5pass/0fail. Board copper/parts/imports remain
+unchanged:26 open nets/90 native port errors and existing fabrication blockers.
+
+All43 exact JLCPCB identities/125 placements have a dated stock manifest;
+**current stock is unverified**, because the inherited proxy denies
+jlcsearch.tscircuit.com with403. That one domain was added to the reusable
+network draft; review/save and publish it in environment settings before retry.
+Saving the draft does not apply or publish it. Historical C107701 stock8vs5
+per board and C98220 stock22vs20 warrant priority refresh. No unchanged board
+registry upload or fabrication approval is claimed.
+
 ## Current order-readiness audit — 2026-10-06
 
 **NOT READY TO ORDER.** Fresh current native render is byte-identical to the

@@ -1,0 +1,82 @@
+{
+  "checked_at_utc": "2026-10-06T12:02:18.446273+00:00",
+  "git_parent": "02035bbec54e20763c8f6e401b25fffeca1b7898",
+  "input_files": [
+    {
+      "path": "dist/index/circuit.json",
+      "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+      "bytes": 5071958
+    },
+    {
+      "path": "references/esp32-s3-module.pdf",
+      "sha256": "27d71971da07c280c6068d08c74720d1a25b8f20cf8494dc1765bdd28d40d435",
+      "bytes": 1280501
+    },
+    {
+      "path": "references/tps3839.pdf",
+      "sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "bytes": 948524
+    },
+    {
+      "path": "evidence/microphone-open-drain-review-2026-10-03/ICS-43434.pdf",
+      "sha256": "6f87312bec5078aef44866f4e765137aad0a085b144f3a4f27d697f28f68b0c8",
+      "bytes": 1132567
+    },
+    {
+      "path": "evidence/order-readiness-2026-10-06/copper-audit.json",
+      "sha256": "1ac30034fe24ea99f0d2c2a17c05ea74c3c5cb7107485743948c96800ce263a4",
+      "bytes": 117308
+    },
+    {
+      "path": "evidence/order-readiness-2026-10-06/component-summary.json",
+      "sha256": "e57a282e44f921cd466015e2a29f3d9583e5fda57ad0c3ba9e028d96dbb3d32b",
+      "bytes": 3379
+    },
+    {
+      "path": "evidence/order-readiness-2026-10-06/pin-assignments.json",
+      "sha256": "5d1c86430e1f0eb783f540d3821f9937a735c7d454d68010a7b51659ac18276c",
+      "bytes": 184442
+    },
+    {
+      "path": "src/board/placement.ts",
+      "sha256": "a6ff8c9f5956da6812f06b6b9abdbf35497d165cda0f36357170e01e1bb1d52c",
+      "bytes": 8541
+    },
+    {
+      "path": "src/board/McuUsbSheet.tsx",
+      "sha256": "dd3ad2c57c5921bb14194244e275cd0df3f0294b4ebb10c33bc0ef4374b77ff2",
+      "bytes": 9082
+    },
+    {
+      "path": "src/board/MicrophonesSheet.tsx",
+      "sha256": "1aafc636577531646dff7b58ee2e8ec0931b809a714467dd524d6c9f2ebc01d6",
+      "bytes": 4488
+    },
+    {
+      "path": "src/board/manual-signal-paths.json",
+      "sha256": "be4fe6f909d0ef098d7b704922bab73848a81ea89fadcfc3bdce277cdd86c05d",
+      "bytes": 171712
+    },
+    {
+      "path": "src/board/manual-power-copper.json",
+      "sha256": "14f69c4dc28a5fa3568049f8ab3eae3f6e6f875ef9a176e0b99ad4abc377060d",
+      "bytes": 149163
+    },
+    {
+      "path": "src/board/ground-paths.json",
+      "sha256": "b584def96334f60e42cee4dc72dae82c784307dc9e8256428c6bd7d87a7b21eb",
+      "bytes": 606
+    },
+    {
+      "path": "evidence/board-programmer-stock-review-2026-10-06/programmer-upstream-cdc_uart.c",
+      "sha256": "ab47278e646cf7364354edf95785055d4e7089bfd963444bfa29d7558c30d32a",
+      "bytes": 9987
+    }
+  ],
+  "programmer_upstream_commit": "3fff5b240ca8200c7ad538cb61c02dfc39bda831",
+  "programmer_upstream_url": "https://github.com/raspberrypi/debugprobe/blob/3fff5b240ca8200c7ad538cb61c02dfc39bda831/src/cdc_uart.c",
+  "board_runtime_inputs_changed": false,
+  "native_copper_changed": false,
+  "physical_hardware_tested": false,
+  "fabrication_ready": false
+}

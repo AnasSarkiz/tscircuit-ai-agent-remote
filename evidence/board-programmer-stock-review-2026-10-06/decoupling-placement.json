@@ -1,0 +1,835 @@
+{
+  "target_native_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "measurements": [
+    {
+      "reference": "U1",
+      "pin": 2,
+      "net": "V3V3",
+      "ic_supply_pin_center_mm": {
+        "x": -20.750045999999998,
+        "y": 29.8994967
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C30",
+        "capacitance_f": 1e-05,
+        "supply_pin_center_mm": {
+          "x": -3.200024,
+          "y": 10.5
+        },
+        "supply_pin_center_distance_mm": 26.159964533878764,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C30",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": -3.200024,
+            "y": 10.5
+          },
+          "supply_pin_center_distance_mm": 26.159964533878764,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C31",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -0.700024,
+            "y": 0
+          },
+          "supply_pin_center_distance_mm": 35.99976784805417,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C32",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -0.700024,
+            "y": -6.5
+          },
+          "supply_pin_center_distance_mm": 41.556308091718094,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U12",
+      "pin": 3,
+      "net": "V3V3",
+      "ic_supply_pin_center_mm": {
+        "x": -1,
+        "y": 7.75
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C30",
+        "capacitance_f": 1e-05,
+        "supply_pin_center_mm": {
+          "x": -3.200024,
+          "y": 10.5
+        },
+        "supply_pin_center_distance_mm": 3.5217333233190726,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U2",
+      "pin": 10,
+      "net": "VSYS",
+      "ic_supply_pin_center_mm": {
+        "x": -2.25005865,
+        "y": -15.000002
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C4",
+        "capacitance_f": 1e-05,
+        "supply_pin_center_mm": {
+          "x": -2.25,
+          "y": -13.350024000000001
+        },
+        "supply_pin_center_distance_mm": 1.6499780010423835,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C4",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": -2.25,
+            "y": -13.350024000000001
+          },
+          "supply_pin_center_distance_mm": 1.6499780010423835,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U2",
+      "pin": 6,
+      "net": "V3V3",
+      "ic_supply_pin_center_mm": {
+        "x": -2.25005865,
+        "y": -16.999998
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C5",
+        "capacitance_f": 2.2e-05,
+        "supply_pin_center_mm": {
+          "x": -0.9000239999999999,
+          "y": -19
+        },
+        "supply_pin_center_distance_mm": 2.4130067459923557,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C5",
+          "capacitance_f": 2.2e-05,
+          "supply_pin_center_mm": {
+            "x": -0.9000239999999999,
+            "y": -19
+          },
+          "supply_pin_center_distance_mm": 2.4130067459923557,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U13",
+      "pin": 1,
+      "net": "V3V3",
+      "ic_supply_pin_center_mm": {
+        "x": 11.6,
+        "y": 12.8
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C40",
+        "capacitance_f": 1e-05,
+        "supply_pin_center_mm": {
+          "x": 13.549976000000001,
+          "y": 10.5
+        },
+        "supply_pin_center_distance_mm": 3.0153617362724505,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C40",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": 13.549976000000001,
+            "y": 10.5
+          },
+          "supply_pin_center_distance_mm": 3.0153617362724505,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U13",
+      "pin": 5,
+      "net": "VLCD",
+      "ic_supply_pin_center_mm": {
+        "x": 9.4,
+        "y": 12.8
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C41",
+        "capacitance_f": 2.2e-05,
+        "supply_pin_center_mm": {
+          "x": 14.75,
+          "y": 13.450023999999999
+        },
+        "supply_pin_center_distance_mm": 5.389344227322652,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C41",
+          "capacitance_f": 2.2e-05,
+          "supply_pin_center_mm": {
+            "x": 14.75,
+            "y": 13.450023999999999
+          },
+          "supply_pin_center_distance_mm": 5.389344227322652,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U14",
+      "pin": 20,
+      "net": "VLCD",
+      "ic_supply_pin_center_mm": {
+        "x": 6.074999999999999,
+        "y": 10.87095
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C42",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": 3.049976,
+          "y": 9
+        },
+        "supply_pin_center_distance_mm": 3.556855929479854,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C42",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": 3.049976,
+            "y": 9
+          },
+          "supply_pin_center_distance_mm": 3.556855929479854,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C43",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": 3.049976,
+            "y": 7.5
+          },
+          "supply_pin_center_distance_mm": 4.529246527081077,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U3",
+      "pin": 2,
+      "net": "VSYS",
+      "ic_supply_pin_center_mm": {
+        "x": -16.998539,
+        "y": 2.500003
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C51",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": -13.5,
+          "y": 4.700024
+        },
+        "supply_pin_center_distance_mm": 4.132779637842067,
+        "same_supply_copper_island": false,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C51",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -13.5,
+            "y": 4.700024
+          },
+          "supply_pin_center_distance_mm": 4.132779637842067,
+          "same_supply_copper_island": false,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C50",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": -17.299976,
+            "y": 7.5
+          },
+          "supply_pin_center_distance_mm": 5.009075190589377,
+          "same_supply_copper_island": false,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_302"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U3",
+      "pin": 7,
+      "net": "VSYS",
+      "ic_supply_pin_center_mm": {
+        "x": -15.250003,
+        "y": 4.252095
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C51",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": -13.5,
+          "y": 4.700024
+        },
+        "supply_pin_center_distance_mm": 1.8064193558113792,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C51",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -13.5,
+            "y": 4.700024
+          },
+          "supply_pin_center_distance_mm": 1.8064193558113792,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C50",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": -17.299976,
+            "y": 7.5
+          },
+          "supply_pin_center_distance_mm": 3.8407390160949504,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_302"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U3",
+      "pin": 8,
+      "net": "VSYS",
+      "ic_supply_pin_center_mm": {
+        "x": -15.250003,
+        "y": 4.7519670000000005
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C51",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": -13.5,
+          "y": 4.700024
+        },
+        "supply_pin_center_distance_mm": 1.7507737076098666,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C51",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -13.5,
+            "y": 4.700024
+          },
+          "supply_pin_center_distance_mm": 1.7507737076098666,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C50",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": -17.299976,
+            "y": 7.5
+          },
+          "supply_pin_center_distance_mm": 3.4284216003604344,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_302"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U22",
+      "pin": 1,
+      "net": "VSYS",
+      "ic_supply_pin_center_mm": {
+        "x": 16.795,
+        "y": -1.45
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C70",
+        "capacitance_f": 1e-05,
+        "supply_pin_center_mm": {
+          "x": 16.5,
+          "y": -4.450024
+        },
+        "supply_pin_center_distance_mm": 3.0144931581571055,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_318"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C70",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": 16.5,
+            "y": -4.450024
+          },
+          "supply_pin_center_distance_mm": 3.0144931581571055,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_318"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U22",
+      "pin": 5,
+      "net": "VMOTOR",
+      "ic_supply_pin_center_mm": {
+        "x": 14.205,
+        "y": -1.45
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C71",
+        "capacitance_f": 2.2e-05,
+        "supply_pin_center_mm": {
+          "x": 14.799976000000001,
+          "y": 2.5
+        },
+        "supply_pin_center_distance_mm": 3.994558353632602,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C71",
+          "capacitance_f": 2.2e-05,
+          "supply_pin_center_mm": {
+            "x": 14.799976000000001,
+            "y": 2.5
+          },
+          "supply_pin_center_distance_mm": 3.994558353632602,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U23",
+      "pin": 1,
+      "net": "MIC_INPUT",
+      "ic_supply_pin_center_mm": {
+        "x": 16.1,
+        "y": -21.95
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C73",
+        "capacitance_f": 1e-05,
+        "supply_pin_center_mm": {
+          "x": 13,
+          "y": -8.950023999999999
+        },
+        "supply_pin_center_distance_mm": 13.364481882982819,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_343"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C73",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": 13,
+            "y": -8.950023999999999
+          },
+          "supply_pin_center_distance_mm": 13.364481882982819,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_343"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U23",
+      "pin": 5,
+      "net": "VMIC",
+      "ic_supply_pin_center_mm": {
+        "x": 13.9,
+        "y": -21.95
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C75",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": 4.75,
+          "y": -22.200024
+        },
+        "supply_pin_center_distance_mm": 9.153415318916542,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C75",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": 4.75,
+            "y": -22.200024
+          },
+          "supply_pin_center_distance_mm": 9.153415318916542,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        },
+        {
+          "capacitor": "C74",
+          "capacitance_f": 1e-05,
+          "supply_pin_center_mm": {
+            "x": 3.299976,
+            "y": -23.75
+          },
+          "supply_pin_center_distance_mm": 10.751767705850794,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U24",
+      "pin": 5,
+      "net": "VMIC",
+      "ic_supply_pin_center_mm": {
+        "x": 14.1001,
+        "y": -26
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C75",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": 4.75,
+          "y": -22.200024
+        },
+        "supply_pin_center_distance_mm": 10.09277898353947,
+        "same_supply_copper_island": false,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U4",
+      "pin": 5,
+      "net": "VMIC",
+      "ic_supply_pin_center_mm": {
+        "x": -17.5571856,
+        "y": -27.849951
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C80",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": -20.700024,
+          "y": -24.75
+        },
+        "supply_pin_center_distance_mm": 4.414422885374209,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C80",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -20.700024,
+            "y": -24.75
+          },
+          "supply_pin_center_distance_mm": 4.414422885374209,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U5",
+      "pin": 5,
+      "net": "VMIC",
+      "ic_supply_pin_center_mm": {
+        "x": 19.1928144,
+        "y": -28.099951
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C75",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": 4.75,
+          "y": -22.200024
+        },
+        "supply_pin_center_distance_mm": 15.601411038690582,
+        "same_supply_copper_island": false,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C81",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": 3.299976,
+            "y": -19.25
+          },
+          "supply_pin_center_distance_mm": 18.19076538001949,
+          "same_supply_copper_island": false,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U7",
+      "pin": 5,
+      "net": "V3V3",
+      "ic_supply_pin_center_mm": {
+        "x": -18.300099,
+        "y": -19.94996
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C25",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": -21.700024,
+          "y": -16.5
+        },
+        "supply_pin_center_distance_mm": 4.843729349088882,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C25",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": -21.700024,
+            "y": -16.5
+          },
+          "supply_pin_center_distance_mm": 4.843729349088882,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    },
+    {
+      "reference": "U26",
+      "pin": 5,
+      "net": "V3V3",
+      "ic_supply_pin_center_mm": {
+        "x": 13.699901,
+        "y": 19.80004
+      },
+      "nearest_same_rail_bypass": {
+        "capacitor": "C78",
+        "capacitance_f": 1e-07,
+        "supply_pin_center_mm": {
+          "x": 15,
+          "y": 16.799976
+        },
+        "supply_pin_center_distance_mm": 3.2696546322045985,
+        "same_supply_copper_island": true,
+        "native_cap_supply_error": false,
+        "ground_island_ids": [
+          "pcb_smtpad_367"
+        ]
+      },
+      "assigned_bypass_measurements": [
+        {
+          "capacitor": "C78",
+          "capacitance_f": 1e-07,
+          "supply_pin_center_mm": {
+            "x": 15,
+            "y": 16.799976
+          },
+          "supply_pin_center_distance_mm": 3.2696546322045985,
+          "same_supply_copper_island": true,
+          "native_cap_supply_error": false,
+          "ground_island_ids": [
+            "pcb_smtpad_367"
+          ]
+        }
+      ],
+      "scope": "Euclidean native port-centre distance; not routed length, loop inductance or a datasheet maximum-distance rule."
+    }
+  ],
+  "placement_electrical_qualification": "blocked",
+  "scope": "Current assigned capacitors and nearest same-rail capacitor with GND return. No invented pass threshold."
+}

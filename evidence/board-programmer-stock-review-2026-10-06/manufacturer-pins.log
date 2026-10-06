@@ -1,0 +1,13 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/current-board-manufacturer-connections.test.ts:
+(pass) current MCU USB, supply, reset and boot use Espressif physical pins [3.66ms]
+(pass) current charger and battery supervisor retain manufacturer power and control pins [3.16ms]
+(pass) current regulator retains TI power, ground, feedback and switching pin identities [1.21ms]
+(pass) current amplifier supply and differential speaker outputs retain manufacturer pin assignments [1.59ms]
+(pass) current dual microphone power, data, clocks and channel select retain TDK pins [0.76ms]
+
+ 5 pass
+ 0 fail
+ 70 expect() calls
+Ran 5 tests across 1 file. [395.00ms]

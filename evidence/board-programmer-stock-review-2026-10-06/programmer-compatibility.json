@@ -1,0 +1,437 @@
+{
+  "checked_at_utc": "2026-10-06T12:05:55.129876+00:00",
+  "target_native_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "programmer_native_sha256": "aae5f4176b4a0b7c3db3999e68fcc9d8d924a36484d8f28752d64c9dc7aa82dc",
+  "programmer_version": "0.8.0",
+  "programmer_release_id": "3d6952c4-e6ee-4711-a7c7-dded0cdef4eb",
+  "host_source_checks": [
+    {
+      "endpoints": [
+        [
+          "J5",
+          1
+        ],
+        [
+          "R_UART_TX",
+          2
+        ]
+      ],
+      "logical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "R_UART_TX",
+          1
+        ],
+        [
+          "U1",
+          11
+        ]
+      ],
+      "logical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J5",
+          3
+        ],
+        [
+          "R_UART_RX",
+          2
+        ]
+      ],
+      "logical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "R_UART_RX",
+          1
+        ],
+        [
+          "U1",
+          12
+        ]
+      ],
+      "logical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J5",
+          2
+        ],
+        [
+          "U1",
+          57
+        ]
+      ],
+      "logical_connected": true
+    }
+  ],
+  "target_source_and_physical_checks": [
+    {
+      "endpoints": [
+        [
+          "J6",
+          6
+        ],
+        [
+          "U1",
+          36
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          5
+        ],
+        [
+          "R38",
+          2
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "R38",
+          1
+        ],
+        [
+          "U1",
+          37
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          1
+        ],
+        [
+          "J6",
+          7
+        ],
+        [
+          "J6",
+          8
+        ],
+        [
+          "U1",
+          1
+        ],
+        [
+          "U1",
+          40
+        ],
+        [
+          "U1",
+          41
+        ],
+        [
+          "U12",
+          1
+        ],
+        [
+          "R37",
+          2
+        ],
+        [
+          "SW1",
+          2
+        ],
+        [
+          "SW2",
+          2
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          3
+        ],
+        [
+          "U1",
+          3
+        ],
+        [
+          "R35",
+          2
+        ],
+        [
+          "R37",
+          1
+        ],
+        [
+          "SW2",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "U12",
+          2
+        ],
+        [
+          "R35",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          4
+        ],
+        [
+          "U1",
+          27
+        ],
+        [
+          "R36",
+          2
+        ],
+        [
+          "SW1",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          2
+        ],
+        [
+          "U1",
+          2
+        ],
+        [
+          "U12",
+          3
+        ],
+        [
+          "R36",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true,
+      "no_native_port_errors": true
+    }
+  ],
+  "target_connector_pin_assignments": [
+    {
+      "reference": "J6",
+      "pin_number": 1,
+      "source_port_name": "pin1",
+      "port_hints": [
+        "pin1",
+        "1"
+      ],
+      "named_nets": [
+        "GND"
+      ],
+      "pcb_port_id": "pcb_port_71",
+      "physical_island_ids": [
+        "pcb_smtpad_367"
+      ],
+      "net_has_missing_physical_connections": true,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 2,
+      "source_port_name": "pin2",
+      "port_hints": [
+        "pin2",
+        "2"
+      ],
+      "named_nets": [
+        "V3V3"
+      ],
+      "pcb_port_id": "pcb_port_72",
+      "physical_island_ids": [
+        "pcb_smtpad_483"
+      ],
+      "net_has_missing_physical_connections": false,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 3,
+      "source_port_name": "pin3",
+      "port_hints": [
+        "pin3",
+        "3"
+      ],
+      "named_nets": [
+        "MCU_EN"
+      ],
+      "pcb_port_id": "pcb_port_73",
+      "physical_island_ids": [
+        "pcb_smtpad_88"
+      ],
+      "net_has_missing_physical_connections": false,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 4,
+      "source_port_name": "pin4",
+      "port_hints": [
+        "pin4",
+        "4"
+      ],
+      "named_nets": [
+        "MCU_BOOT_N"
+      ],
+      "pcb_port_id": "pcb_port_74",
+      "physical_island_ids": [
+        "pcb_smtpad_436"
+      ],
+      "net_has_missing_physical_connections": false,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 5,
+      "source_port_name": "pin5",
+      "port_hints": [
+        "pin5",
+        "5"
+      ],
+      "named_nets": [
+        "SERVICE_UART_TX"
+      ],
+      "pcb_port_id": "pcb_port_75",
+      "physical_island_ids": [
+        "saved_phase_null_22_0:18"
+      ],
+      "net_has_missing_physical_connections": false,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 6,
+      "source_port_name": "pin6",
+      "port_hints": [
+        "pin6",
+        "6"
+      ],
+      "named_nets": [
+        "MCU_UART_RX"
+      ],
+      "pcb_port_id": "pcb_port_76",
+      "physical_island_ids": [
+        "saved_phase_null_22_2:31"
+      ],
+      "net_has_missing_physical_connections": false,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 7,
+      "source_port_name": "pin7",
+      "port_hints": [
+        "pin7",
+        "7"
+      ],
+      "named_nets": [
+        "GND"
+      ],
+      "pcb_port_id": "pcb_port_77",
+      "physical_island_ids": [
+        "pcb_smtpad_367"
+      ],
+      "net_has_missing_physical_connections": true,
+      "native_port_error": false
+    },
+    {
+      "reference": "J6",
+      "pin_number": 8,
+      "source_port_name": "pin8",
+      "port_hints": [
+        "pin8",
+        "8"
+      ],
+      "named_nets": [
+        "GND"
+      ],
+      "pcb_port_id": "pcb_port_78",
+      "physical_island_ids": [
+        "pcb_smtpad_367"
+      ],
+      "net_has_missing_physical_connections": true,
+      "native_port_error": false
+    }
+  ],
+  "adapter_mapping": [
+    {
+      "host": "J5.1 TX",
+      "target": "J6.6 MCU_UART_RX"
+    },
+    {
+      "host": "J5.2 GND",
+      "target": "J6.1 GND"
+    },
+    {
+      "host": "J5.3 RX",
+      "target": "J6.5 SERVICE_UART_TX"
+    }
+  ],
+  "direct_cable_mating": false,
+  "target_pins_unconnected_to_uart_cable": [
+    2,
+    3,
+    4
+  ],
+  "logic_voltage_v": 3.3,
+  "uart_supplies_target_power": false,
+  "automatic_boot_reset_control": false,
+  "target_reset_supervisor": "TPS3839G33DBZR, push-pull active-low output",
+  "target_reset_series_resistance_ohms": 4700,
+  "target_en_pulldown_resistance_ohms": 100000,
+  "target_boot_pullup_resistance_ohms": 10000,
+  "target_uart_tx_series_resistance_ohms": 1000,
+  "target_ground_entire_board_connected": false,
+  "target_power_paths_complete": false,
+  "host_physical_copper_audited": false,
+  "adapter_physical_continuity_verified": false,
+  "flashed_firmware_verified": false,
+  "programming_hardware_tested": false,
+  "fabrication_ready": false
+}

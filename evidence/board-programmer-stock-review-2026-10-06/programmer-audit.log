@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/evidence/board-programmer-stock-review-2026-10-06/audit-programmer.py", line 144, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/evidence/board-programmer-stock-review-2026-10-06/audit-programmer.py", line 102, in main
+    logical_connected = electrically_joined(target, endpoints)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/evidence/board-programmer-stock-review-2026-10-06/audit-programmer.py", line 35, in electrically_joined
+    ports = port_lookup(circuit)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/evidence/board-programmer-stock-review-2026-10-06/audit-programmer.py", line 29, in port_lookup
+    return {(names[row['source_component_id']], row['pin_number']): row
+                                                ~~~^^^^^^^^^^^^^^
+KeyError: 'pin_number'

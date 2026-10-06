@@ -1,0 +1,11 @@
+{
+  "source_path": "programmer-source/dist/circuits/programmer/circuit.json",
+  "source_sha256": "aae5f4176b4a0b7c3db3999e68fcc9d8d924a36484d8f28752d64c9dc7aa82dc",
+  "source_bytes": 2107022,
+  "gzip_path": "programmer-source/dist/circuits/programmer/circuit.json.gz",
+  "gzip_sha256": "4a4a1093bd259e1c53412432de5b64df3188872f5fa9c4894d81a3438fd78714",
+  "gzip_bytes": 117353,
+  "decompressed_byte_identical": true,
+  "restoration": "gzip -dc programmer-source/dist/circuits/programmer/circuit.json.gz > /tmp/reviewed-standard-jst-programmer.circuit.json",
+  "audit_reads_gzip_directly": true
+}

@@ -1,0 +1,17 @@
+Usage: tsci search [options] <query...>
+
+Search for footprints, CAD models or packages in the tscircuit ecosystem
+
+Arguments:
+  query        Search query (e.g. keyword, author, or package name)
+
+Options:
+  --kicad      Search KiCad footprints
+  --jlcpcb     Search JLCPCB components
+  --lcsc       Alias for --jlcpcb
+  --ti         Search Texas Instruments components
+  --digikey    Search DigiKey components
+  --mouser     Search Mouser components
+  --tscircuit  Search tscircuit registry packages
+  --json       Output search results as JSON
+  -h, --help   display help for command

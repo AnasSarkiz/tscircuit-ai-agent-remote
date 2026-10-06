@@ -1,0 +1,873 @@
+{
+  "manifest_created_at_utc": "2026-10-06T11:58:35.254022+00:00",
+  "target_native_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "identity_count": 43,
+  "purchased_count": 125,
+  "fresh_stock_verified_count": 0,
+  "lookup_probe": "supplier-http-receipt.json",
+  "parts": [
+    {
+      "jlcpcb_part": "C105188",
+      "references": [
+        "U7"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TLV3201AIDBVR"
+      ],
+      "historical_listing_mpn": "TLV3201AIDBVR",
+      "historical_stock": 31358,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C105580",
+      "references": [
+        "R33",
+        "R34"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "RC0603FR-075K1L"
+      ],
+      "historical_listing_mpn": "RC0603FR-075K1L",
+      "historical_stock": 5622,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C105881",
+      "references": [
+        "R92",
+        "R93"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "RC0603FR-07330RL"
+      ],
+      "historical_listing_mpn": "RC0603FR-07330RL",
+      "historical_stock": 85110,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C107701",
+      "references": [
+        "R31",
+        "R32",
+        "R65",
+        "R66",
+        "R67"
+      ],
+      "required_per_board": 5,
+      "native_mpns": [
+        "RC0603FR-0722RL"
+      ],
+      "historical_listing_mpn": "RC0603FR-0722RL",
+      "historical_stock": 8,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": true
+    },
+    {
+      "jlcpcb_part": "C114622",
+      "references": [
+        "R96",
+        "R97"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "RC0603FR-07470KL"
+      ],
+      "historical_listing_mpn": "RC0603FR-07470KL",
+      "historical_stock": 44425,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C114639",
+      "references": [
+        "R6"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "RC0603FR-079K1L"
+      ],
+      "historical_listing_mpn": "RC0603FR-079K1L",
+      "historical_stock": 14893,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C126358",
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "RC0603FR-073KL"
+      ],
+      "historical_listing_mpn": "RC0603FR-073KL",
+      "historical_stock": 192,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C14675",
+      "references": [
+        "R37",
+        "R3",
+        "R4",
+        "R7",
+        "R40",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "R85",
+        "R87",
+        "R26"
+      ],
+      "required_per_board": 13,
+      "native_mpns": [
+        "RC0603FR-07100KL"
+      ],
+      "historical_listing_mpn": "RC0603FR-07100KL",
+      "historical_stock": 5999,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C15127",
+      "references": [
+        "Q2"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "AO3401A"
+      ],
+      "historical_listing_mpn": "AO3401A",
+      "historical_stock": 715902,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C157929",
+      "references": [
+        "J3"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "S3B-PH-K-S(LF)(SN)"
+      ],
+      "historical_listing_mpn": "S3B-PH-K-S(LF)(SN)",
+      "historical_stock": 227315,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C15849",
+      "references": [
+        "C82",
+        "C83"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "CL10A105KB8NNNC"
+      ],
+      "historical_listing_mpn": "CL10A105KB8NNNC",
+      "historical_stock": 5979916,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C160405",
+      "references": [
+        "J6"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "SM06B-SRSS-TB(LF)(SN)"
+      ],
+      "historical_listing_mpn": "SM06B-SRSS-TB(LF)(SN)",
+      "historical_stock": 60961,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C165948",
+      "references": [
+        "J1"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TYPE-C-31-M-12"
+      ],
+      "historical_listing_mpn": "TYPE-C-31-M-12",
+      "historical_stock": 89797,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C173752",
+      "references": [
+        "J4"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "S2B-PH-K-S(LF)(SN)"
+      ],
+      "historical_listing_mpn": "S2B-PH-K-S(LF)(SN)",
+      "historical_stock": 100050,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C1848364",
+      "references": [
+        "U27"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TPS60230RGTR"
+      ],
+      "historical_listing_mpn": "TPS60230RGTR",
+      "historical_stock": 2723,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C19666",
+      "references": [
+        "C1"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "CL10A475KO8NNNC"
+      ],
+      "historical_listing_mpn": "CL10A475KO8NNNC",
+      "historical_stock": 1373603,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C20917",
+      "references": [
+        "Q1",
+        "Q9"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "AO3400A"
+      ],
+      "historical_listing_mpn": "AO3400A",
+      "historical_stock": 1535925,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C21190",
+      "references": [
+        "R38",
+        "R41",
+        "R62",
+        "R64",
+        "R82",
+        "R86",
+        "R100",
+        "R27"
+      ],
+      "required_per_board": 8,
+      "native_mpns": [
+        "0603WAF1001T5E"
+      ],
+      "historical_listing_mpn": "0603WAF1001T5E",
+      "historical_stock": 8013731,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C22775",
+      "references": [
+        "R60",
+        "R63",
+        "R83",
+        "R88",
+        "R89",
+        "R103"
+      ],
+      "required_per_board": 6,
+      "native_mpns": [
+        "0603WAF1000T5E"
+      ],
+      "historical_listing_mpn": "0603WAF1000T5E",
+      "historical_stock": 7325193,
+      "historical_checked_at": "2026-10-04 (A6 saved lookup; exact UTC timestamp unavailable)",
+      "historical_receipt": "evidence/a6-bom-routing-2026-10-04/C22775-current-stock.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C24478",
+      "references": [
+        "U24"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "74LVC2G07GW,125"
+      ],
+      "historical_listing_mpn": "74LVC2G07GW,125",
+      "historical_stock": 348,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C2480",
+      "references": [
+        "D3"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "SS14"
+      ],
+      "historical_listing_mpn": "SS14",
+      "historical_stock": 2818967,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C255576",
+      "references": [
+        "SW4",
+        "SW1",
+        "SW2"
+      ],
+      "required_per_board": 3,
+      "native_mpns": [
+        "SKSWCFE010"
+      ],
+      "historical_listing_mpn": "SKSWCFE010",
+      "historical_stock": 18510,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C262650",
+      "references": [
+        "J7"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "AFC07-S50ECA-00"
+      ],
+      "historical_listing_mpn": "AFC07-S50ECA-00",
+      "historical_stock": 28817,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C2845237",
+      "references": [
+        "U2"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TPS63802DLAR"
+      ],
+      "historical_listing_mpn": "TPS63802DLAR",
+      "historical_stock": 3970,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C2869847",
+      "references": [
+        "U13",
+        "U23"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "TPS7A2028PDBVR"
+      ],
+      "historical_listing_mpn": "TPS7A2028PDBVR",
+      "historical_stock": 71,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C2913201",
+      "references": [
+        "U1"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "ESP32-S3-WROOM-1-N8R8"
+      ],
+      "historical_listing_mpn": "ESP32-S3-WROOM-1-N8R8",
+      "historical_stock": 6547,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C364359",
+      "references": [
+        "R5"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "RC0603FR-0751K1L"
+      ],
+      "historical_listing_mpn": "RC0603FR-0751K1L",
+      "historical_stock": 7984,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C431540",
+      "references": [
+        "SW5"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "MSK12C02"
+      ],
+      "historical_listing_mpn": "MSK12C02",
+      "historical_stock": 147825,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C43698",
+      "references": [
+        "U25"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TPS3808G33DBVR"
+      ],
+      "historical_listing_mpn": "TPS3808G33DBVR",
+      "historical_stock": 6139,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C45000",
+      "references": [
+        "C31",
+        "C32",
+        "C42",
+        "C43",
+        "C51",
+        "C72",
+        "C75",
+        "C78",
+        "C76",
+        "C77",
+        "C80",
+        "C81",
+        "C25",
+        "C26"
+      ],
+      "required_per_board": 14,
+      "native_mpns": [
+        "GRM188R71C104KA01D"
+      ],
+      "historical_listing_mpn": "GRM188R71C104KA01D",
+      "historical_stock": 3848,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C485802",
+      "references": [
+        "U12"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TPS3839G33DBZR"
+      ],
+      "historical_listing_mpn": "TPS3839G33DBZR",
+      "historical_stock": 3520,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C54313",
+      "references": [
+        "U16"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "BQ24074RGTR"
+      ],
+      "historical_listing_mpn": "BQ24074RGTR",
+      "historical_stock": 677,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C5656610",
+      "references": [
+        "U4",
+        "U5"
+      ],
+      "required_per_board": 2,
+      "native_mpns": [
+        "ICS-43434"
+      ],
+      "historical_listing_mpn": "ICS-43434",
+      "historical_stock": 3807,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C668312",
+      "references": [
+        "L1"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "DFE201612E-R47M=P2"
+      ],
+      "historical_listing_mpn": "DFE201612E-R47M=P2",
+      "historical_stock": 1427,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C7836",
+      "references": [
+        "U26"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "SN74LVC1G17DBVR"
+      ],
+      "historical_listing_mpn": "SN74LVC1G17DBVR",
+      "historical_stock": 34179,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C7848",
+      "references": [
+        "U14"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "SN74LVC245APWR"
+      ],
+      "historical_listing_mpn": "SN74LVC245APWR",
+      "historical_stock": 75200,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C84419",
+      "references": [
+        "C5",
+        "C41",
+        "C71"
+      ],
+      "required_per_board": 3,
+      "native_mpns": [
+        "GRM188R61A226ME15D"
+      ],
+      "historical_listing_mpn": "GRM188R61A226ME15D",
+      "historical_stock": 55406,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C90053",
+      "references": [
+        "C30",
+        "C2",
+        "C3",
+        "C4",
+        "C40",
+        "C50",
+        "C70",
+        "C73",
+        "C74",
+        "C84",
+        "C85"
+      ],
+      "required_per_board": 11,
+      "native_mpns": [
+        "GRM188R61A106ME69D"
+      ],
+      "historical_listing_mpn": "GRM188R61A106ME69D",
+      "historical_stock": 8623,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C910544",
+      "references": [
+        "U3"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "MAX98357AETE+T"
+      ],
+      "historical_listing_mpn": "MAX98357AETE+T",
+      "historical_stock": 29625,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C94934",
+      "references": [
+        "D2"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TPD2EUSB30ADRTR"
+      ],
+      "historical_listing_mpn": "TPD2EUSB30ADRTR",
+      "historical_stock": 5439,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C963429",
+      "references": [
+        "U22"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "TPS7A2030PDBVR"
+      ],
+      "historical_listing_mpn": "TPS7A2030PDBVR",
+      "historical_stock": 6825,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    },
+    {
+      "jlcpcb_part": "C98220",
+      "references": [
+        "R36",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R61",
+        "R68",
+        "R69",
+        "R70",
+        "R84",
+        "R90",
+        "R91",
+        "R94",
+        "R95",
+        "R99",
+        "R29",
+        "R30",
+        "R102",
+        "R104"
+      ],
+      "required_per_board": 20,
+      "native_mpns": [
+        "RC0603FR-0710KL"
+      ],
+      "historical_listing_mpn": "RC0603FR-0710KL",
+      "historical_stock": 22,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": true
+    },
+    {
+      "jlcpcb_part": "C99782",
+      "references": [
+        "R35"
+      ],
+      "required_per_board": 1,
+      "native_mpns": [
+        "RC0603FR-074K7L"
+      ],
+      "historical_listing_mpn": "RC0603FR-074K7L",
+      "historical_stock": 20923,
+      "historical_checked_at": "2026-10-04T20:06:27.281542+00:00",
+      "historical_receipt": "evidence/layout-bom-audit-2026-10-04/supplier-receipt.json",
+      "current_stock": null,
+      "current_availability_status": "UNVERIFIED_PROXY_ACCESS_BLOCKED",
+      "historical_covers_one_board_before_assembly_loss": true,
+      "historical_stock_covers_less_than_two_boards": false
+    }
+  ],
+  "stock_reserved": false,
+  "notes": [
+    "Historical listings are not current stock or assembly reservations.",
+    "Exact part identities remain; blocked access is not zero stock.",
+    "Batch size, assembly allowance, minimum quantity, stock origin and actual JLC order feedback need qualification.",
+    "External display, battery, speaker and motor are not PCB assembly parts."
+  ]
+}

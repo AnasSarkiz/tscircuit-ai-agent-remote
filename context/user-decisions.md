@@ -1,5 +1,17 @@
 # Accepted human decisions and continuation authority
 
+Latest review request, 2026-10-06: check placement, part suitability, current
+JLCPCB availability, real nets and issues, and programming using
+https://tscircuit.com/tscircuit/standard-jst-programmer#3d. Its public v0.8.0
+UART J5 has 3.3V TX/GND/RX and supports the ESP32-S3 UART bootloader conditionally.
+Current six-pin J6 requires a reviewed three-to-six adapter, separate target
+power, matching programmer firmware and manual BOOT/RESET. This is not direct
+SWD compatibility or hardware-tested programming. Preserve native USB access.
+Measured remote MCU/microphone bypass placements now block final electrical
+placement acceptance despite passing overlap checks. See
+evidence/board-programmer-stock-review-2026-10-06/review.md. Current supplier
+lookup is proxy-blocked; historical stock is not current availability.
+
 Latest request, 2026-10-06: independently verify current actual connections,
 shorts/DRC, every trace width, real components/pin assignments and whether the
 board is ready to order. Preserve real failures and do not approve fabrication
