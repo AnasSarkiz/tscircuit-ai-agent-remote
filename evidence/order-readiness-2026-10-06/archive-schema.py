@@ -1,4 +1,5 @@
 """Preserve the full strict-schema failure tree and publish a compact summary."""
+import argparse
 import gzip
 import hashlib
 import json
@@ -8,8 +9,11 @@ FOLDER = Path(__file__).resolve().parent
 
 
 def main():
-    original = FOLDER / 'schema-audit.json'
-    compressed = FOLDER / 'schema-audit.json.gz'
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('folder', nargs='?', type=Path, default=FOLDER)
+    folder = parser.parse_args().folder
+    original = folder / 'schema-audit.json'
+    compressed = folder / 'schema-audit.json.gz'
     if compressed.exists():
         raise FileExistsError(compressed)
     original_bytes = original.read_bytes()
@@ -20,7 +24,7 @@ def main():
                            for failure in result['failures']]
     summary['full_original_failure_tree'] = compressed.name
     summary['full_original_failure_tree_sha256'] = original_sha256
-    (FOLDER / 'schema-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+    (folder / 'schema-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     with gzip.open(compressed, 'wb', compresslevel=5) as stream:
         stream.write(original_bytes)
     with gzip.open(compressed, 'rb') as stream:
@@ -33,7 +37,7 @@ def main():
                'archive_sha256': hashlib.sha256(compressed.read_bytes()).hexdigest(),
                'verified_exact_original_bytes_before_removal': True,
                'restore': 'gzip -dk schema-audit.json.gz'}
-    (FOLDER / 'schema-archive.json').write_text(json.dumps(receipt, indent=2) + '\n')
+    (folder / 'schema-archive.json').write_text(json.dumps(receipt, indent=2) + '\n')
     if hashlib.sha256(original.read_bytes()).hexdigest() != original_sha256:
         raise ValueError('Original schema receipt changed before removal')
     original.unlink()

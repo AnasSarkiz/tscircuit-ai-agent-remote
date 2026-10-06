@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/tsci",
+    "push",
+    "--help"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 2.5,
+  "peak_process_group_rss_bytes": 605552640,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -70,6 +70,27 @@ test("current MCU USB, supply, reset and boot use Espressif physical pins", () =
   }
 })
 
+test("current MCU external capacitors match Espressif's 22uF and 100nF reference values", () => {
+  for (const [reference, capacitance, manufacturerPartNumber] of [
+    ["C30", 22e-6, "GRM188R61A226ME15D"],
+    ["C31", 100e-9, "GRM188R71C104KA01D"],
+  ] as const) {
+    const capacitor = sourceElements.find(
+      (element) => element.type === "source_component" && element.name === reference,
+    )
+    if (
+      !capacitor ||
+      capacitor.type !== "source_component" ||
+      capacitor.ftype !== "simple_capacitor"
+    )
+      throw new Error(`Missing MCU bypass ${reference}`)
+    expect(capacitor.capacitance).toBeCloseTo(capacitance, 12)
+    expect(capacitor.manufacturer_part_number).toBe(manufacturerPartNumber)
+    expectPinNet({ reference, pinNumber: 1, netName: "V3V3" })
+    expectPinNet({ reference, pinNumber: 2, netName: "GND" })
+  }
+})
+
 test("current charger and battery supervisor retain manufacturer power and control pins", () => {
   for (const [reference, pinNumber, netName] of [
     ["U16", 1, "PACK_NTC"],

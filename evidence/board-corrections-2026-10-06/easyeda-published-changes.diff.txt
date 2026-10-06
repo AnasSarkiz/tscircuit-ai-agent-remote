@@ -1,0 +1,151 @@
+--- node_modules/easyeda/dist/index.js
+
++++ .upstream-work/published-corrections/easyeda-0.0.371/package/dist/index.js
+
+@@ -14273,6 +14273,43 @@
+
+ // lib/utils/easyeda-unit-to-mm.ts
+ var mil10ToMm = (value) => value * 10 * 0.0254;
+ 
++// lib/utils/expand-easyeda-path-data.ts
++var expandEasyEdaPathData = (pathData) => {
++  const rawRoute = [];
++  let currentPoint;
++  for (const commandMatch of pathData.matchAll(/([MLAZ])([^MLAZ]*)/gi)) {
++    const command = commandMatch[1]?.toUpperCase();
++    const values = commandMatch[2]?.match(/[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g)?.map(Number) ?? [];
++    if ((command === "M" || command === "L") && values.length >= 2) {
++      currentPoint = { x: values[0], y: values[1] };
++      rawRoute.push(currentPoint);
++    } else if (command === "A" && currentPoint && values.length >= 7) {
++      const [radiusX, , , largeArcFlag, sweepFlag, endX, endY] = values;
++      const generatedArcRoute = generateArcFromSweep(
++        currentPoint.x,
++        currentPoint.y,
++        endX,
++        endY,
++        radiusX,
++        largeArcFlag === 1,
++        sweepFlag === 1
++      );
++      const maxArcSegments = 16;
++      const arcRoute = generatedArcRoute.length <= maxArcSegments + 1 ? generatedArcRoute : Array.from(
++        { length: maxArcSegments + 1 },
++        (_, pointIndex) => generatedArcRoute.at(
++          Math.round(
++            pointIndex * (generatedArcRoute.length - 1) / maxArcSegments
++          )
++        )
++      ).filter((point4) => !!point4);
++      rawRoute.push(...arcRoute.slice(1));
++      currentPoint = { x: endX, y: endY };
++    }
++  }
++  return rawRoute;
++};
++
+ // node_modules/@tscircuit/math-utils/dist/chunk-EFLPMB4J.js
+ function orientation(p, q, r) {
+   const val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+@@ -14386,6 +14423,22 @@
+
+     if (route.length >= 3 && Math.abs(area) > 1e-8) polygons.push(route);
+   }
+   return polygons;
++};
++
++// lib/utils/get-easyeda-npth-slot-geometry.ts
++var getEasyEdaNpthSlotGeometry = (solidRegion) => {
++  const rawRoute = expandEasyEdaPathData(solidRegion.pathData);
++  if (rawRoute.length < 2) return null;
++  const points = rawRoute.map((point4) => ({
++    x: mil2mm(point4.x) * 10,
++    y: mil2mm(point4.y) * 10
++  }));
++  const firstPoint = points[0];
++  const lastPoint = points.at(-1);
++  if (firstPoint.x !== lastPoint.x || firstPoint.y !== lastPoint.y) {
++    points.push({ ...firstPoint });
++  }
++  return { points };
+ };
+ 
+ // lib/utils/normalize-pin-labels.ts
+@@ -14976,40 +15029,7 @@
+
+   stroke_width: mil10ToMm(track.width)
+ });
+ var handleFabricationNoteSolidRegion = (solidRegion, index) => {
+-  const rawRoute = [];
+-  let currentPoint;
+-  for (const commandMatch of solidRegion.pathData.matchAll(
+-    /([MLAZ])([^MLAZ]*)/gi
+-  )) {
+-    const command = commandMatch[1]?.toUpperCase();
+-    const values = commandMatch[2]?.match(/[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g)?.map(Number) ?? [];
+-    if ((command === "M" || command === "L") && values.length >= 2) {
+-      currentPoint = { x: values[0], y: values[1] };
+-      rawRoute.push(currentPoint);
+-    } else if (command === "A" && currentPoint && values.length >= 7) {
+-      const [radiusX, , , largeArcFlag, sweepFlag, endX, endY] = values;
+-      const generatedArcRoute = generateArcFromSweep(
+-        currentPoint.x,
+-        currentPoint.y,
+-        endX,
+-        endY,
+-        radiusX,
+-        largeArcFlag === 1,
+-        sweepFlag === 1
+-      );
+-      const maxArcSegments = 16;
+-      const arcRoute = generatedArcRoute.length <= maxArcSegments + 1 ? generatedArcRoute : Array.from(
+-        { length: maxArcSegments + 1 },
+-        (_, pointIndex) => generatedArcRoute.at(
+-          Math.round(
+-            pointIndex * (generatedArcRoute.length - 1) / maxArcSegments
+-          )
+-        )
+-      ).filter((point4) => !!point4);
+-      rawRoute.push(...arcRoute.slice(1));
+-      currentPoint = { x: endX, y: endY };
+-    }
+-  }
++  const rawRoute = expandEasyEdaPathData(solidRegion.pathData);
+   const route = rawRoute.map((point4) => ({
+     x: mil10ToMm(point4.x),
+     y: mil10ToMm(point4.y)
+@@ -15140,9 +15160,11 @@
+
+   });
+ };
+ var LEAD_SHAPE_LAYER = 100;
++var NPTH_FILL_STYLE = "npth";
+ var isPcbSolidRegionCutout = (shape) => {
+   return shape.fillStyle === "cutout" && shape.layermask !== LEAD_SHAPE_LAYER;
+ };
++var isPcbSolidRegionNpth = (shape) => shape.fillStyle === NPTH_FILL_STYLE && shape.layermask !== LEAD_SHAPE_LAYER;
+ var getCadPositionZMmFromMetadata = (easyEdaJson) => {
+   const svgNode = easyEdaJson.packageDetail.dataStr.shape.find(
+     (shape) => shape.type === "SVGNODE" && shape.svgData.attrs?.uuid
+@@ -15337,6 +15359,20 @@
+
+     (shape) => shape.type === "SOLIDREGION" && isPcbSolidRegionCutout(shape)
+   ).forEach((sr, index) => {
+     circuitElements.push(handleCutout(sr, index));
++  });
++  easyEdaJson.packageDetail.dataStr.shape.filter(
++    (shape) => shape.type === "SOLIDREGION" && isPcbSolidRegionNpth(shape)
++  ).forEach((sr, index) => {
++    const geometry = getEasyEdaNpthSlotGeometry(sr);
++    if (!geometry) return;
++    circuitElements.push(
++      pcb_cutout.parse({
++        type: "pcb_cutout",
++        pcb_cutout_id: `pcb_cutout_npth_${index + 1}`,
++        shape: "polygon",
++        points: geometry.points
++      })
++    );
+   });
+   const boardOutlineTracks = easyEdaJson.packageDetail.dataStr.shape.filter(
+     (shape) => shape.type === "TRACK" && shape.layer === 10

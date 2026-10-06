@@ -1,0 +1,49 @@
+{
+  "completed": true,
+  "exit_code": 0,
+  "package_manifest": {
+    "name": "@tsci/AnasSarkiz.tscircuit-ai-agent-remote",
+    "version": "0.0.3-wip-local-bypass",
+    "description": "Handheld Wi-Fi AI agent remote; WIP with local MCU bypass and 22uF bulk correction, incomplete routing and unresolved fabrication gates; not ready to order",
+    "main": "index.circuit.tsx",
+    "author": "AnasSarkiz",
+    "private": true,
+    "scripts": {
+      "dev": "tsci dev",
+      "build": "tsci build index.circuit.tsx",
+      "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+      "@biomejs/biome": "2.5.14",
+      "@tscircuit/capacity-autorouter": "0.0.958",
+      "@tscircuit/checks": "0.0.237",
+      "@tscircuit/cli": "0.1.2237",
+      "@tscircuit/core": "0.0.2090",
+      "@tscircuit/modelprinter": "0.0.6",
+      "@types/bun": "1.4.2",
+      "@types/three": "0.179.0",
+      "circuit-to-svg": "0.0.440",
+      "easyeda": "0.0.370",
+      "tscircuit": "0.0.2744",
+      "typescript": "5.9.3"
+    },
+    "overrides": {
+      "@tscircuit/core": "0.0.2090",
+      "easyeda": "0.0.370",
+      "@tscircuit/props": "0.0.688",
+      "circuit-json": "0.0.517",
+      "@tscircuit/capacity-autorouter": "0.0.958"
+    }
+  },
+  "exact_root_dependency_declarations": true,
+  "exact_original_lockfile_bytes": true,
+  "package_manifest_sha256": "c16de48a3d13b459d6df1e1e1f42fe5ff4c0c011c04c6dd51e7bbdb3b03a33c6",
+  "lockfile_sha256": "ad1dbf393decb6f2a5c43b1d167ec0a382ac18f8f7bb80dbec4e83d3a235c8ba",
+  "install_seconds": 10.52,
+  "installed_packages": 303,
+  "snapshot_reference_hashes": {
+    "index.circuit-pcb.snap.svg": "65309851432e01135cee986acfab34e9cf2f248370178767c40ad0c2f47302a2",
+    "index.circuit-schematic.snap.svg": "c1204773def226bad39b7571a323854819e8a3f896a9adaf0b01c75801897126"
+  },
+  "fabrication_ready": false
+}

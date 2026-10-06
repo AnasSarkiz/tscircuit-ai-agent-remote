@@ -1,0 +1,43 @@
+{
+  "parent_commit": "c0aca2b64708c04c1793e39093b3fd8bf8b41e5d",
+  "original_files_checked": 336,
+  "intentional_changes": [
+    {
+      "path": "dist/index/circuit.json",
+      "before_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+      "after_sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe"
+    },
+    {
+      "path": "package.json",
+      "before_sha256": "830bf964818eebb3189a25d97e17ac19eb7c3df404ca8edcace008fa1709174e",
+      "after_sha256": "729e6f8ade50d7d3ec346f8191631b3bd3302c23e0859d620550f0cdbb71d20c"
+    },
+    {
+      "path": "scripts/routing/render-copper-review.mjs",
+      "before_sha256": "d3d92d31322e3712089022e7788989099703fc2bfd0745b44ce84d1ecdcc1a44",
+      "after_sha256": "37dc6c94ecdcef866c843f0d4621273ba31ad48ed00861b40fdf8000e23f2ad1"
+    },
+    {
+      "path": "src/board/McuUsbSheet.tsx",
+      "before_sha256": "dd3ad2c57c5921bb14194244e275cd0df3f0294b4ebb10c33bc0ef4374b77ff2",
+      "after_sha256": "654dd3e6647ed5f41f4fd748427be6fb868c56695457d3c8608eaf83cbb33755"
+    },
+    {
+      "path": "src/board/manual-signal-paths.json",
+      "before_sha256": "be4fe6f909d0ef098d7b704922bab73848a81ea89fadcfc3bdce277cdd86c05d",
+      "after_sha256": "851d21d234cf313994798a155ed84c1e3df67c5b3bcb76ab94d6729238aa2987"
+    },
+    {
+      "path": "src/board/placement.ts",
+      "before_sha256": "a6ff8c9f5956da6812f06b6b9abdbf35497d165cda0f36357170e01e1bb1d52c",
+      "after_sha256": "23ed3d7f0b625d3941e88174aed5f260dd6ec2ee520d4880a9b20fe8079e3269"
+    },
+    {
+      "path": "tests/current-board-manufacturer-connections.test.ts",
+      "before_sha256": "26beed35cdfca1d2fe31273302f1301d9c1964f3036ceb449621d2968ee26efe",
+      "after_sha256": "cf3ee944006f035f324a7df76d45d78a0bd29936fc56a9f169ae57fd128072ef"
+    }
+  ],
+  "import_model_lockfile_solver_cache_bytes_unchanged": true,
+  "fabrication_ready": false
+}

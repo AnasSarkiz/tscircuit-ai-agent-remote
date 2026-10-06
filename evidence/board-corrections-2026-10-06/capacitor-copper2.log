@@ -1,0 +1,164 @@
+{
+  "scope": "Every native wire, pad, through via and BREP pour; actual supported pad contours for DRC and connectivity, conservative interpolated wire thickness. No fabrication or thermal approval implied.",
+  "copper_features": 1538,
+  "native_errors": {
+    "pcb_autorouting_error": 1,
+    "pcb_port_not_connected_error": 129,
+    "pcb_trace_missing_error": 7,
+    "pcb_trace_too_long_error": 5,
+    "pcb_trace_error": 4,
+    "pcb_pad_trace_clearance_error": 1,
+    "pcb_via_trace_clearance_error": 1,
+    "pcb_pad_pad_clearance_error": 2
+  },
+  "minima": {
+    "via_hole": {
+      "clearance_mm": 0.3,
+      "requirement_mm": 0.3,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_outer": {
+      "clearance_mm": 0.7,
+      "requirement_mm": 0.7,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_annulus": {
+      "clearance_mm": 0.19999999999999998,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "copper_pad_pour": {
+      "clearance_mm": 0.20417328133994578,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_446",
+        "pcb_copper_pour_51"
+      ]
+    },
+    "copper_pad_trace": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_92",
+        "pcb_trace_28:0"
+      ]
+    },
+    "copper_pad": {
+      "clearance_mm": 0.19758659999999928,
+      "requirement_mm": 0.1,
+      "ids": [
+        "pcb_smtpad_217",
+        "pcb_smtpad_218"
+      ]
+    },
+    "copper_pad_via": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_95",
+        "pcb_via_180"
+      ]
+    },
+    "via_drill_to_pad": {
+      "clearance_mm": 0.05000090000000058,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_180",
+        "pcb_smtpad_95"
+      ]
+    },
+    "copper_pour_via": {
+      "clearance_mm": 0.20730304935993965,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_115",
+        "pcb_copper_pour_30"
+      ]
+    },
+    "copper_trace_via": {
+      "clearance_mm": 0.03332408127786784,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_199",
+        "pcb_trace_258:13"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 0.24999941637971776,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 0.039951473904787003,
+      "requirement_mm": 0,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "copper_via": {
+      "clearance_mm": 0.21234629564053245,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_37",
+        "pcb_via_91"
+      ]
+    },
+    "copper_pour_trace": {
+      "clearance_mm": 0.20658071289511518,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_10:0",
+        "pcb_copper_pour_30"
+      ]
+    },
+    "copper_trace": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_28:0",
+        "pcb_trace_83:0"
+      ]
+    },
+    "copper_to_drill": {
+      "clearance_mm": 0.23332141943879708,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_trace_258:13",
+        "pcb_via_199"
+      ]
+    },
+    "copper_pour": {
+      "clearance_mm": 0.2099998851298141,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_copper_pour_69",
+        "pcb_copper_pour_112"
+      ]
+    },
+    "drill_to_drill": {
+      "clearance_mm": 0.26041139833359017,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_via_185",
+        "pcb_via_186"
+      ]
+    }
+  },
+  "minima_scope": "Nearby copper pairs within 0.21 mm and drill pairs within 0.26 mm; STRtree excludes distant pairs without weakening any clearance requirement.",
+  "drc_violation_count": 12,
+  "short_count": 6,
+  "merged_named_nets": [],
+  "physically_open_net_count": 47,
+  "zero_drc_zero_shorts_and_connected": false,
+  "source_circuit_json": "evidence/board-corrections-2026-10-06/capacitor-native2/circuit.json",
+  "source_sha256": "c63056b64b2f752a2f3f75a98e778fd1dcb81c113d5320c682e6b71aeb5453bf"
+}

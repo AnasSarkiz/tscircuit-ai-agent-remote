@@ -1,0 +1,54 @@
+{
+  "latest_packages_inspected": [
+    {
+      "package": "@tscircuit/core",
+      "latest": "0.0.2095",
+      "latest_published_at": "2026-10-05T23:39:56.387Z",
+      "tarball": "https://registry.npmjs.org/@tscircuit/core/-/core-0.0.2095.tgz",
+      "integrity": "sha512-o1rEGe9Gc6F1kcdEXxj+kW5FIyourOeB2lxkv7w+mz/727MIYg8c6o8Ufr2Rw/z2GcJlbIRGBhlMsBfmkSINJw=="
+    },
+    {
+      "package": "@tscircuit/cli",
+      "latest": "0.1.2251",
+      "latest_published_at": "2026-10-06T00:21:18.289Z",
+      "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2251.tgz",
+      "integrity": "sha512-IzCfxURCpRmiPXXwRp09te9dhCxXgNvcuaKs5m/Mk339jv7D15bJ2E3+n/kpMZ/KWBTNEPTrEYZCZDTPNjkPJA=="
+    },
+    {
+      "package": "easyeda",
+      "latest": "0.0.371",
+      "latest_published_at": "2026-10-04T15:02:35.276Z",
+      "tarball": "https://registry.npmjs.org/easyeda/-/easyeda-0.0.371.tgz",
+      "integrity": "sha512-+O5gvgJvYA3EaJCdpKa9Gp9dTFS7b43F9PwMMRXKIbrwywHFT1kaYRuQCkprRbwkat8nuWzER7uxek03vmXW4A=="
+    }
+  ],
+  "sources_integrity_verified": true,
+  "board_dependency_pins_changed": false,
+  "upstream_code_or_imports_patched": false,
+  "remaining_blockers": [
+    {
+      "stage": "paste",
+      "generator": "tscircuit/core",
+      "source": "lib/components/primitive-components/SmtPad.ts",
+      "cause": "pill and rotated_pill branches insert pad but no pcb_solder_paste; still present in published core0.0.2095",
+      "affected_parts": [
+        "U16/C54313",
+        "U27/C1848364"
+      ],
+      "missing_pads": 32
+    },
+    {
+      "stage": "gerber_export_and_official_shorts",
+      "generator": "circuit-json-to-gerber embedded in CLI0.1.2251",
+      "cause": "getApertureConfigFromPcbSolderPaste rejects polygon; current core emits actual polygon paste",
+      "error": "Unsupported shape polygon"
+    },
+    {
+      "stage": "strict_schema",
+      "cause": "Numeric display offsets, nullable optional group/feature ownership differ from installed schemas",
+      "failing_elements": 169,
+      "specific_evidence": "schema-details.json"
+    }
+  ],
+  "fabrication_ready": false
+}

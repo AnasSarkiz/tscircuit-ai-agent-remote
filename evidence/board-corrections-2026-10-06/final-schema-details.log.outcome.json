@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "evidence/order-readiness-2026-10-06/audit-schema-details.mjs",
+    "evidence/board-corrections-2026-10-06/final-native/circuit.json",
+    "evidence/board-corrections-2026-10-06"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 90112,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

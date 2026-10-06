@@ -2,8 +2,8 @@ import { readFileSync, writeFileSync } from "node:fs"
 import { createHash } from "node:crypto"
 import { pcb_component, pcb_group, schematic_group, pcb_silkscreen_text, pcb_hole } from "circuit-json"
 
-const folder = "evidence/order-readiness-2026-10-06"
-const nativeBytes = readFileSync(`${folder}/native-build/circuit.json`)
+const folder = process.argv[3] ?? "evidence/order-readiness-2026-10-06"
+const nativeBytes = readFileSync(process.argv[2] ?? `${folder}/native-build/circuit.json`)
 const schemas = { pcb_component, pcb_group, schematic_group, pcb_silkscreen_text, pcb_hole }
 const failures = []
 for (const [index, element] of JSON.parse(nativeBytes.toString("utf8")).entries()) {

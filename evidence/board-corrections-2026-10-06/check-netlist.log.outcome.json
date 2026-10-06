@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/tsci",
+    "check",
+    "netlist",
+    "index.circuit.tsx"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 89.63,
+  "peak_process_group_rss_bytes": 10697682944,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

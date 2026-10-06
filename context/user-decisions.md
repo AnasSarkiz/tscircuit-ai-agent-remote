@@ -1,3 +1,9 @@
+Latest implementation request,2026-10-06: autonomously fix the review issues
+and keep tscircuit updated. This explicitly supersedes historical registry
+upload deferrals. Continue independent corrections without per-issue approval;
+preserve actual source/copper evidence and fabrication gates. No guessing
+battery polarity or display mating, no orders or physical-test claims.
+
 # Accepted human decisions and continuation authority
 
 Latest review request, 2026-10-06: check placement, part suitability, current

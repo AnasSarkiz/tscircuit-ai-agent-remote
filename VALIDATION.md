@@ -1,3 +1,34 @@
+## Latest MCU correction — 2026-10-06
+
+**Revision `0.0.3-wip-local-bypass`; NOT READY TO ORDER.** C31 now has a
+native top-layer local supply/ground connection beside U1: supply-pin distance
+falls from36.000mm to2.000mm, with a0.8mm branch to the existing U1 supply
+escape and no additional supply via. C30 now uses the genuine imported
+22µF GRM188R61A226ME15D/C84419 shown in Espressif's reference circuit.
+Bulk placement/effective capacitance and microphone bypasses still need work.
+
+Fresh native copper has306 traces,249 full-span ordinary vias and190 pours:
+**0measured shorts/clearance violations**, but26 open nets/90 native errors and
+35GND islands remain. All152 authored region widths pass; two switch traces
+and55 nominal-width branches still need correction/current qualification.
+Eight target programmer copper groups pass; programming is not hardware-tested.
+The supported BOM resolver generates125 purchased rows with verified recorded
+MPNs/package labels and no blank descriptions. Current stock, rotations,
+169schema failures,32missing paste apertures, polygon Gerber export and exact
+battery/display mating still block fabrication.
+
+[Correction evidence](evidence/board-corrections-2026-10-06/review.md).
+The complete publication package now installs with the original frozen lockfile.
+Its native CLI build finishes in222.33seconds and reports the90open-port errors;
+all physical copper records match the validated board. Publication/remote CI
+receipts are separate; this is a WIP step, not fabrication approval.
+
+Fresh frozen-install snapshot also completes and fails on both original SVG
+references (246.93seconds); references were not updated. Source discovery is
+working, while board validation remains blocked.
+
+---
+
 ## Latest placement, component and programmer review — 2026-10-06
 
 **NOT READY TO ORDER.** Electrical placement needs correction even though the

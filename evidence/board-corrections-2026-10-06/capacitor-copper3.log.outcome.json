@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/audit-copper.py",
+    "evidence/board-corrections-2026-10-06/capacitor-native3/circuit.json",
+    "evidence/board-corrections-2026-10-06/capacitor-copper3.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 13.54,
+  "peak_process_group_rss_bytes": 86728704,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

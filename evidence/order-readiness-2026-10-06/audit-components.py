@@ -1,4 +1,5 @@
 """Inventory current real parts, pin assignments, physical islands and paste."""
+import argparse
 import csv
 import hashlib
 import json
@@ -12,9 +13,14 @@ NATIVE = FOLDER / 'native-build/circuit.json'
 
 
 def main():
-    native_bytes = NATIVE.read_bytes()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--native", type=Path, default=NATIVE)
+    parser.add_argument("--copper-audit", type=Path, default=FOLDER / "copper-audit.json")
+    parser.add_argument("--output-dir", type=Path, default=FOLDER)
+    args = parser.parse_args()
+    native_bytes = args.native.read_bytes()
     circuit = json.loads(native_bytes)
-    copper_audit = json.loads((FOLDER / 'copper-audit.json').read_text())
+    copper_audit = json.loads(args.copper_audit.read_text())
     if copper_audit['source_sha256'] != hashlib.sha256(native_bytes).hexdigest():
         raise ValueError('Copper audit does not match native input')
     helpers = runpy.run_path(str(ROOT / 'scripts/routing/audit-trace-widths.py'))
@@ -72,9 +78,9 @@ def main():
                 'net_has_missing_physical_connections': bool(open_names.intersection(names)),
                 'native_port_error': pcb_port['pcb_port_id'] in error_ports,
             })
-    (FOLDER / 'component-inventory.json').write_text(json.dumps(inventory, indent=2) + '\n')
-    (FOLDER / 'pin-assignments.json').write_text(json.dumps(pin_assignments, indent=2) + '\n')
-    with (FOLDER / 'pin-assignments.csv').open('w', newline='') as stream:
+    (args.output_dir / 'component-inventory.json').write_text(json.dumps(inventory, indent=2) + '\n')
+    (args.output_dir / 'pin-assignments.json').write_text(json.dumps(pin_assignments, indent=2) + '\n')
+    with (args.output_dir / 'pin-assignments.csv').open('w', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=list(pin_assignments[0]))
         writer.writeheader()
         for pin in pin_assignments:
@@ -94,7 +100,7 @@ def main():
         'scope': 'Exact native purchased-part identities, current pin-to-net table, physical island membership and paste coverage. Island IDs are within this audit only; open-net flags do not identify a correct/main island. No complete datasheet, orientation, stock, stencil or assembly approval inferred.',
         'fabrication_ready': False,
     }
-    (FOLDER / 'component-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+    (args.output_dir / 'component-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     print(json.dumps({key: entry for key, entry in summary.items() if key != 'supplier_quantities'}))
 
 

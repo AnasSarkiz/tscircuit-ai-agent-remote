@@ -1,0 +1,1352 @@
+--- node_modules/@tscircuit/core/dist/index.js
+
++++ .upstream-work/published-corrections/tscircuit-core-0.0.2095/package/dist/index.js
+
+@@ -4002,6 +4002,7 @@
+
+           },
+           width: element.width,
+           height: element.height,
++          ccwRotationDegrees: element.rotation,
+           connectedTo: []
+         });
+       } else if (element.shape === "circle") {
+@@ -7708,6 +7709,12 @@
+
+ import { getUnitVectorFromDirection } from "@tscircuit/math-utils";
+ 
+ // lib/utils/autorouting/getBoundsForSchematic.ts
++import {
++  applyToPoint as applyToPoint5,
++  compose as compose4,
++  rotateDEG,
++  translate as translate3
++} from "transformation-matrix";
+ function normalizeAngle(angle) {
+   const normalized = angle % 360;
+   return normalized < 0 ? normalized + 360 : normalized;
+@@ -7804,6 +7811,19 @@
+
+       cy2 = elm.center?.y;
+       w2 = elm.width;
+       h2 = elm.height;
++      if (elm.rotation && cx2 !== void 0 && cy2 !== void 0 && w2 !== void 0 && h2 !== void 0) {
++        const transform = compose4(translate3(cx2, cy2), rotateDEG(elm.rotation));
++        for (const x2 of [-w2 / 2, w2 / 2]) {
++          for (const y2 of [-h2 / 2, h2 / 2]) {
++            const point6 = applyToPoint5(transform, { x: x2, y: y2 });
++            minX = Math.min(minX, point6.x);
++            maxX = Math.max(maxX, point6.x);
++            minY = Math.min(minY, point6.y);
++            maxY = Math.max(maxY, point6.y);
++          }
++        }
++        continue;
++      }
+     } else if (elm.type === "schematic_circle") {
+       cx2 = elm.center?.x;
+       cy2 = elm.center?.y;
+@@ -9271,7 +9291,7 @@
+
+ // lib/components/primitive-components/CourtyardOutline.ts
+ import { courtyardOutlineProps } from "@tscircuit/props";
+ import { getBoundsFromPoints } from "@tscircuit/math-utils";
+-import { applyToPoint as applyToPoint5 } from "transformation-matrix";
++import { applyToPoint as applyToPoint6 } from "transformation-matrix";
+ var CourtyardOutline = class extends PrimitiveComponent2 {
+   pcb_courtyard_outline_id = null;
+   isPcbPrimitive = true;
+@@ -9299,7 +9319,7 @@
+
+       pcb_component_id,
+       layer,
+       outline: props.outline.map((p2) => {
+-        const transformedPosition = applyToPoint5(transform, {
++        const transformedPosition = applyToPoint6(transform, {
+           x: p2.x,
+           y: p2.y
+         });
+@@ -9443,7 +9463,7 @@
+
+ };
+ 
+ // lib/components/primitive-components/Cutout.ts
+-import { applyToPoint as applyToPoint6 } from "transformation-matrix";
++import { applyToPoint as applyToPoint7 } from "transformation-matrix";
+ import { cutoutProps } from "@tscircuit/props";
+ var Cutout = class extends PrimitiveComponent2 {
+   pcb_cutout_id = null;
+@@ -9491,7 +9511,7 @@
+
+     } else if (props.shape === "polygon") {
+       const transform = this._computePcbGlobalTransformBeforeLayout();
+       const transformedPoints = props.points.map(
+-        (p2) => applyToPoint6(transform, p2)
++        (p2) => applyToPoint7(transform, p2)
+       );
+       const polygonData = {
+         shape: "polygon",
+@@ -9624,7 +9644,7 @@
+
+ 
+ // lib/components/primitive-components/FabricationNotePath.ts
+ import { fabricationNotePathProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint7 } from "transformation-matrix";
++import { applyToPoint as applyToPoint8 } from "transformation-matrix";
+ var FabricationNotePath = class extends PrimitiveComponent2 {
+   fabrication_note_path_id = null;
+   isPcbPrimitive = true;
+@@ -9653,7 +9673,7 @@
+
+       layer,
+       color: props.color,
+       route: props.route.map((p2) => {
+-        const transformedPosition = applyToPoint7(transform, {
++        const transformedPosition = applyToPoint8(transform, {
+           x: p2.x,
+           y: p2.y
+         });
+@@ -10190,7 +10210,7 @@
+
+ 
+ // lib/components/primitive-components/PcbNoteLine.ts
+ import { pcbNoteLineProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint9 } from "transformation-matrix";
++import { applyToPoint as applyToPoint10 } from "transformation-matrix";
+ var PcbNoteLine = class extends PrimitiveComponent2 {
+   pcb_note_line_id = null;
+   isPcbPrimitive = true;
+@@ -10207,8 +10227,8 @@
+
+     const subcircuit = this.getSubcircuit();
+     const group = this.getGroup();
+     const transform = this._computePcbGlobalTransformBeforeLayout();
+-    const start = applyToPoint9(transform, { x: props.x1, y: props.y1 });
+-    const end = applyToPoint9(transform, { x: props.x2, y: props.y2 });
++    const start = applyToPoint10(transform, { x: props.x1, y: props.y1 });
++    const end = applyToPoint10(transform, { x: props.x2, y: props.y2 });
+     const pcb_component_id = this.parent?.pcb_component_id ?? this.getPrimitiveContainer()?.pcb_component_id ?? void 0;
+     const pcb_note_line = db2.pcb_note_line.insert({
+       pcb_component_id,
+@@ -10253,7 +10273,7 @@
+
+ 
+ // lib/components/primitive-components/PcbNotePath.ts
+ import { pcbNotePathProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint10 } from "transformation-matrix";
++import { applyToPoint as applyToPoint11 } from "transformation-matrix";
+ var PcbNotePath = class extends PrimitiveComponent2 {
+   pcb_note_path_id = null;
+   isPcbPrimitive = true;
+@@ -10275,7 +10295,7 @@
+
+       const { x: x2, y: y2, ...rest } = point6;
+       const numericX = typeof x2 === "string" ? parseFloat(x2) : x2;
+       const numericY = typeof y2 === "string" ? parseFloat(y2) : y2;
+-      const transformed = applyToPoint10(transform, { x: numericX, y: numericY });
++      const transformed = applyToPoint11(transform, { x: numericX, y: numericY });
+       return { ...rest, x: transformed.x, y: transformed.y };
+     });
+     const pcb_note_path = db2.pcb_note_path.insert({
+@@ -10326,7 +10346,7 @@
+
+ 
+ // lib/components/primitive-components/PcbNoteRect.ts
+ import { pcbNoteRectProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint11 } from "transformation-matrix";
++import { applyToPoint as applyToPoint12 } from "transformation-matrix";
+ var PcbNoteRect = class extends PrimitiveComponent2 {
+   pcb_note_rect_id = null;
+   isPcbPrimitive = true;
+@@ -10341,7 +10361,7 @@
+
+     const { db: db2 } = this.root;
+     const { _parsedProps: props } = this;
+     const transform = this._computePcbGlobalTransformBeforeLayout();
+-    const center = applyToPoint11(transform, { x: 0, y: 0 });
++    const center = applyToPoint12(transform, { x: 0, y: 0 });
+     const subcircuit = this.getSubcircuit();
+     const group = this.getGroup();
+     const pcb_component_id = this.parent?.pcb_component_id ?? this.getPrimitiveContainer()?.pcb_component_id ?? void 0;
+@@ -10389,7 +10409,7 @@
+
+ 
+ // lib/components/primitive-components/PcbNoteText.ts
+ import { pcbNoteTextProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint12 } from "transformation-matrix";
++import { applyToPoint as applyToPoint13 } from "transformation-matrix";
+ var PcbNoteText = class extends PrimitiveComponent2 {
+   pcb_note_text_id = null;
+   isPcbPrimitive = true;
+@@ -10404,7 +10424,7 @@
+
+     const { db: db2 } = this.root;
+     const { _parsedProps: props } = this;
+     const transform = this._computePcbGlobalTransformBeforeLayout();
+-    const anchorPosition = applyToPoint12(transform, { x: 0, y: 0 });
++    const anchorPosition = applyToPoint13(transform, { x: 0, y: 0 });
+     const subcircuit = this.getSubcircuit();
+     const group = this.getGroup();
+     const pcb_component_id = this.parent?.pcb_component_id ?? this.getPrimitiveContainer()?.pcb_component_id ?? void 0;
+@@ -10452,7 +10472,7 @@
+
+ // lib/components/primitive-components/PcbSoldermaskOpening.ts
+ import { pcbSoldermaskOpeningProps } from "@tscircuit/props";
+ import { getBoundsFromPoints as getBoundsFromPoints2 } from "@tscircuit/math-utils";
+-import { applyToPoint as applyToPoint13, decomposeTSR as decomposeTSR4 } from "transformation-matrix";
++import { applyToPoint as applyToPoint14, decomposeTSR as decomposeTSR4 } from "transformation-matrix";
+ var PcbSoldermaskOpening = class extends PrimitiveComponent2 {
+   pcb_soldermask_opening_id = null;
+   isPcbPrimitive = true;
+@@ -10502,11 +10522,11 @@
+
+       pcb_group_id: this.getGroup()?.pcb_group_id ?? void 0,
+       subcircuit_id: this.getSubcircuit().subcircuit_id ?? void 0
+     };
+-    const center = applyToPoint13(transform, { x: 0, y: 0 });
++    const center = applyToPoint14(transform, { x: 0, y: 0 });
+     const rotation5 = decomposeTSR4(transform, false, isFlipped).rotation.angle * 180 / Math.PI;
+     const geometry = props.shape === "polygon" ? {
+       shape: "polygon",
+-      points: props.points.map((point6) => applyToPoint13(transform, point6))
++      points: props.points.map((point6) => applyToPoint14(transform, point6))
+     } : props.shape === "circle" ? { shape: "circle", ...center, radius: props.radius } : {
+       ...Math.abs(rotation5) < 1e-8 ? { shape: "rect" } : { shape: "rotated_rect", ccw_rotation: rotation5 },
+       ...center,
+@@ -10546,7 +10566,7 @@
+
+ 
+ // lib/components/primitive-components/PcbTrace.ts
+ import { pcb_trace_route_point } from "circuit-json";
+-import { applyToPoint as applyToPoint14 } from "transformation-matrix";
++import { applyToPoint as applyToPoint15 } from "transformation-matrix";
+ import { z as z7 } from "zod";
+ var pcbTraceProps = z7.object({
+   route: z7.array(pcb_trace_route_point),
+@@ -10576,7 +10596,7 @@
+
+     const transformedRoute = props.route.map((point6) => {
+       if (point6.route_type === "wire") {
+         const { x: x2, y: y2, ...restOfPoint } = point6;
+-        const transformedPoint = applyToPoint14(parentTransform, { x: x2, y: y2 });
++        const transformedPoint = applyToPoint15(parentTransform, { x: x2, y: y2 });
+         return {
+           ...restOfPoint,
+           ...transformedPoint,
+@@ -10585,7 +10605,7 @@
+
+       }
+       if (point6.route_type === "via") {
+         const { x: x2, y: y2, ...restOfPoint } = point6;
+-        const transformedPoint = applyToPoint14(parentTransform, { x: x2, y: y2 });
++        const transformedPoint = applyToPoint15(parentTransform, { x: x2, y: y2 });
+         return {
+           ...restOfPoint,
+           ...transformedPoint,
+@@ -10597,8 +10617,8 @@
+
+       }
+       return {
+         ...point6,
+-        start: applyToPoint14(parentTransform, point6.start),
+-        end: applyToPoint14(parentTransform, point6.end),
++        start: applyToPoint15(parentTransform, point6.start),
++        end: applyToPoint15(parentTransform, point6.end),
+         start_layer: maybeFlipLayer(point6.start_layer),
+         end_layer: maybeFlipLayer(point6.end_layer)
+       };
+@@ -11203,7 +11223,7 @@
+
+ 
+ // lib/components/primitive-components/SchematicArc.ts
+ import { schematicArcProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint15 } from "transformation-matrix";
++import { applyToPoint as applyToPoint16 } from "transformation-matrix";
+ var SchematicArc = class extends PrimitiveComponent2 {
+   isSchematicPrimitive = true;
+   get config() {
+@@ -11249,8 +11269,8 @@
+
+     const { db: db2 } = this.root;
+     const arc = db2.schematic_arc.get(this.schematic_arc_id);
+     if (!arc) return;
+-    const newCenter = applyToPoint15(transform, arc.center);
+-    const edgePoint = applyToPoint15(transform, {
++    const newCenter = applyToPoint16(transform, arc.center);
++    const edgePoint = applyToPoint16(transform, {
+       x: arc.center.x + arc.radius,
+       y: arc.center.y
+     });
+@@ -11264,7 +11284,7 @@
+
+ 
+ // lib/components/primitive-components/SchematicCircle.ts
+ import { schematicCircleProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint16 } from "transformation-matrix";
++import { applyToPoint as applyToPoint17 } from "transformation-matrix";
+ var SchematicCircle = class extends PrimitiveComponent2 {
+   isSchematicPrimitive = true;
+   get config() {
+@@ -11309,8 +11329,8 @@
+
+     const { db: db2 } = this.root;
+     const circle = db2.schematic_circle.get(this.schematic_circle_id);
+     if (!circle) return;
+-    const newCenter = applyToPoint16(transform, circle.center);
+-    const edgePoint = applyToPoint16(transform, {
++    const newCenter = applyToPoint17(transform, circle.center);
++    const edgePoint = applyToPoint17(transform, {
+       x: circle.center.x + circle.radius,
+       y: circle.center.y
+     });
+@@ -11324,7 +11344,7 @@
+
+ 
+ // lib/components/primitive-components/SchematicLine.ts
+ import { schematicLineProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint17 } from "transformation-matrix";
++import { applyToPoint as applyToPoint18 } from "transformation-matrix";
+ var SchematicLine = class extends PrimitiveComponent2 {
+   isSchematicPrimitive = true;
+   get config() {
+@@ -11368,8 +11388,8 @@
+
+     const { db: db2 } = this.root;
+     const line = db2.schematic_line.get(this.schematic_line_id);
+     if (!line) return;
+-    const p1 = applyToPoint17(transform, { x: line.x1, y: line.y1 });
+-    const p2 = applyToPoint17(transform, { x: line.x2, y: line.y2 });
++    const p1 = applyToPoint18(transform, { x: line.x1, y: line.y1 });
++    const p2 = applyToPoint18(transform, { x: line.x2, y: line.y2 });
+     db2.schematic_line.update(this.schematic_line_id, {
+       x1: p1.x,
+       y1: p1.y,
+@@ -11511,7 +11531,7 @@
+
+ }
+ 
+ // lib/components/primitive-components/SchematicPath.ts
+-import { applyToPoint as applyToPoint18 } from "transformation-matrix";
++import { applyToPoint as applyToPoint19 } from "transformation-matrix";
+ var SchematicPath = class extends PrimitiveComponent2 {
+   isSchematicPrimitive = true;
+   schematic_path_ids = [];
+@@ -11585,7 +11605,7 @@
+
+       const path = db2.schematic_path.get(pathId);
+       if (!path) continue;
+       const newPoints = path.points.map((point6) => {
+-        const transformed = applyToPoint18(transform, point6);
++        const transformed = applyToPoint19(transform, point6);
+         return { x: transformed.x, y: transformed.y };
+       });
+       db2.schematic_path.update(pathId, {
+@@ -11597,7 +11617,7 @@
+
+ 
+ // lib/components/primitive-components/SchematicRect.ts
+ import { schematicRectProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint19 } from "transformation-matrix";
++import { applyToPoint as applyToPoint20 } from "transformation-matrix";
+ var SchematicRect = class extends PrimitiveComponent2 {
+   isSchematicPrimitive = true;
+   get config() {
+@@ -11643,11 +11663,11 @@
+
+     const { db: db2 } = this.root;
+     const rect = db2.schematic_rect.get(this.schematic_rect_id);
+     if (!rect) return;
+-    const topLeft = applyToPoint19(transform, {
++    const topLeft = applyToPoint20(transform, {
+       x: rect.center.x - rect.width / 2,
+       y: rect.center.y + rect.height / 2
+     });
+-    const bottomRight = applyToPoint19(transform, {
++    const bottomRight = applyToPoint20(transform, {
+       x: rect.center.x + rect.width / 2,
+       y: rect.center.y - rect.height / 2
+     });
+@@ -11667,7 +11687,7 @@
+
+ 
+ // lib/components/primitive-components/SchematicText.ts
+ import { schematicTextProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint20 } from "transformation-matrix";
++import { applyToPoint as applyToPoint21 } from "transformation-matrix";
+ var SchematicText = class extends PrimitiveComponent2 {
+   isSchematicPrimitive = true;
+   schematic_text_id;
+@@ -11711,7 +11731,7 @@
+
+     const { db: db2 } = this.root;
+     const text = db2.schematic_text.get(this.schematic_text_id);
+     if (!text) return;
+-    const newPosition = applyToPoint20(transform, text.position);
++    const newPosition = applyToPoint21(transform, text.position);
+     db2.schematic_text.update(this.schematic_text_id, {
+       position: { x: newPosition.x, y: newPosition.y }
+     });
+@@ -11783,7 +11803,7 @@
+
+ 
+ // lib/components/primitive-components/SilkscreenLine.ts
+ import { silkscreenLineProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint21 } from "transformation-matrix";
++import { applyToPoint as applyToPoint22 } from "transformation-matrix";
+ var SilkscreenLine = class extends PrimitiveComponent2 {
+   pcb_silkscreen_line_id = null;
+   isPcbPrimitive = true;
+@@ -11806,8 +11826,8 @@
+
+     }
+     const subcircuit = this.getSubcircuit();
+     const transform = this._computePcbGlobalTransformBeforeLayout();
+-    const p1 = applyToPoint21(transform, { x: props.x1, y: props.y1 });
+-    const p2 = applyToPoint21(transform, { x: props.x2, y: props.y2 });
++    const p1 = applyToPoint22(transform, { x: props.x1, y: props.y1 });
++    const p2 = applyToPoint22(transform, { x: props.x2, y: props.y2 });
+     const pcb_component_id = this.parent?.pcb_component_id ?? this.getPrimitiveContainer()?.pcb_component_id;
+     const pcb_silkscreen_line = db2.pcb_silkscreen_line.insert({
+       pcb_component_id,
+@@ -11849,7 +11869,7 @@
+
+ 
+ // lib/components/primitive-components/SilkscreenPath.ts
+ import { silkscreenPathProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint22 } from "transformation-matrix";
++import { applyToPoint as applyToPoint23 } from "transformation-matrix";
+ var SilkscreenPath = class extends PrimitiveComponent2 {
+   pcb_silkscreen_path_id = null;
+   isPcbPrimitive = true;
+@@ -11877,7 +11897,7 @@
+
+       pcb_component_id,
+       layer,
+       route: props.route.map((p2) => {
+-        const transformedPosition = applyToPoint22(transform, {
++        const transformedPosition = applyToPoint23(transform, {
+           x: p2.x,
+           y: p2.y
+         });
+@@ -12042,8 +12062,8 @@
+
+ // lib/components/primitive-components/SilkscreenText.ts
+ import { silkscreenTextProps } from "@tscircuit/props";
+ import {
+-  applyToPoint as applyToPoint23,
+-  compose as compose4,
++  applyToPoint as applyToPoint24,
++  compose as compose5,
+   decomposeTSR as decomposeTSR7,
+   flipY as flipY3,
+   identity as identity5
+@@ -12106,8 +12126,8 @@
+
+     if (resolvedPcbSxVisibility === "hidden") return;
+     const fontSize = props.fontSize ?? resolvedPcbSxFontSize ?? this.getInheritedProperty("pcbStyle")?.silkscreenFontSize ?? this._footprinterFontSize ?? 1;
+     const hasResolvedPcbSxPosition = resolvedPcbSxPcbX !== void 0 || resolvedPcbSxPcbY !== void 0;
+-    const position = hasResolvedPcbSxPosition && this._footprinterFontSize !== void 0 ? applyToPoint23(
+-      compose4(
++    const position = hasResolvedPcbSxPosition && this._footprinterFontSize !== void 0 ? applyToPoint24(
++      compose5(
+         this.parent?._computePcbGlobalTransformBeforeLayout() ?? identity5(),
+         isFlipped ? flipY3() : identity5()
+       ),
+@@ -12194,7 +12214,7 @@
+
+ import {
+   distance as distance5
+ } from "circuit-json";
+-import { applyToPoint as applyToPoint25, decomposeTSR as decomposeTSR8 } from "transformation-matrix";
++import { applyToPoint as applyToPoint26, decomposeTSR as decomposeTSR8 } from "transformation-matrix";
+ 
+ // lib/utils/pcb/get-axis-aligned-size-from-rotated-rect.ts
+ function getAxisAlignedSizeFromRotatedRect({
+@@ -12220,7 +12240,7 @@
+
+ // lib/utils/pcb/get-polygon-solder-paste-contours.ts
+ import Flatten from "@flatten-js/core";
+ import { getBoundsFromPoints as getBoundsFromPoints3 } from "@tscircuit/math-utils";
+-import { applyToPoint as applyToPoint24, compose as compose5, scale, translate as translate3 } from "transformation-matrix";
++import { applyToPoint as applyToPoint25, compose as compose6, scale, translate as translate4 } from "transformation-matrix";
+ var createPolygon = (points) => {
+   const polygon = new Flatten.Polygon(
+     points.map(({ x: x2, y: y2 }) => new Flatten.Point(x2, y2))
+@@ -12239,15 +12259,15 @@
+
+     const bounds = getBoundsFromPoints3(points);
+     const centerX = (bounds.minX + bounds.maxX) / 2;
+     const centerY = (bounds.minY + bounds.maxY) / 2;
+-    const copperToPasteTransform = compose5(
+-      translate3(centerX, centerY),
++    const copperToPasteTransform = compose6(
++      translate4(centerX, centerY),
+       scale(0.7),
+-      translate3(-centerX, -centerY)
++      translate4(-centerX, -centerY)
+     );
+     paste = Flatten.BooleanOperations.intersect(
+       copper,
+       createPolygon(
+-        points.map((point6) => applyToPoint24(copperToPasteTransform, point6))
++        points.map((point6) => applyToPoint25(copperToPasteTransform, point6))
+       )
+     );
+   } else {
+@@ -12372,7 +12392,7 @@
+
+     if (props.shape !== "polygon") return super._getPcbBoundsBeforeLayout();
+     const padToBoardTransform = this._computePcbGlobalTransformBeforeLayout();
+     const boardPoints = props.points.map(
+-      (point6) => applyToPoint25(padToBoardTransform, point6)
++      (point6) => applyToPoint26(padToBoardTransform, point6)
+     );
+     const bounds = getBoundsFromPoints4(boardPoints);
+     return {
+@@ -12572,7 +12592,7 @@
+
+         y: distance5.parse(y2)
+       }));
+       const transformedPoints = localPoints.map(
+-        (point6) => applyToPoint25(globalTransform, point6)
++        (point6) => applyToPoint26(globalTransform, point6)
+       );
+       pcb_smtpad = db2.pcb_smtpad.insert({
+         pcb_component_id,
+@@ -12597,10 +12617,10 @@
+
+             shape: "polygon",
+             layer: pcb_smtpad.layer,
+             points: contour.points.map(
+-              (point6) => applyToPoint25(globalTransform, point6)
++              (point6) => applyToPoint26(globalTransform, point6)
+             ),
+             holes: contour.holes?.map(
+-              (hole) => hole.map((point6) => applyToPoint25(globalTransform, point6))
++              (hole) => hole.map((point6) => applyToPoint26(globalTransform, point6))
+             ),
+             pcb_component_id: pcb_component_id ?? void 0,
+             pcb_smtpad_id: pcb_smtpad.pcb_smtpad_id,
+@@ -12848,7 +12868,7 @@
+
+ 
+ // lib/components/primitive-components/Symbol/Symbol.ts
+ import { symbolProps } from "@tscircuit/props";
+-import { compose as compose6, translate as translate4, scale as scale2 } from "transformation-matrix";
++import { compose as compose7, translate as translate5, scale as scale2 } from "transformation-matrix";
+ var SymbolComponent = class extends PrimitiveComponent2 {
+   isPrimitiveContainer = true;
+   schematic_symbol_id;
+@@ -12958,10 +12978,10 @@
+
+     const scaleX = targetWidth !== void 0 && currentWidth > 0 ? targetWidth / currentWidth : 1;
+     const scaleY = targetHeight !== void 0 && currentHeight > 0 ? targetHeight / currentHeight : 1;
+     const globalPos = this._getGlobalSchematicPositionBeforeLayout();
+-    this.userCoordinateToResizedSymbolTransformMat = compose6(
+-      translate4(globalPos.x, globalPos.y),
++    this.userCoordinateToResizedSymbolTransformMat = compose7(
++      translate5(globalPos.x, globalPos.y),
+       scale2(scaleX, scaleY),
+-      translate4(-currentCenterX, -currentCenterY)
++      translate5(-currentCenterX, -currentCenterY)
+     );
+   }
+ };
+@@ -13807,7 +13827,7 @@
+
+ };
+ 
+ // lib/utils/get-bounds-of-pcb-components.ts
+-import { applyToPoint as applyToPoint26 } from "transformation-matrix";
++import { applyToPoint as applyToPoint27 } from "transformation-matrix";
+ var NON_PHYSICAL_PCB_PRIMITIVE_PREFIXES = [
+   "Silkscreen",
+   "PcbNote",
+@@ -13832,7 +13852,7 @@
+
+         { x: localBounds.left, y: localBounds.top }
+       ];
+       const boardWorldCorners = footprintLocalCorners.map(
+-        (corner) => applyToPoint26(child._computePcbGlobalTransformBeforeLayout(), corner)
++        (corner) => applyToPoint27(child._computePcbGlobalTransformBeforeLayout(), corner)
+       );
+       const cornerXs = boardWorldCorners.map((corner) => corner.x);
+       const cornerYs = boardWorldCorners.map((corner) => corner.y);
+@@ -14978,23 +14998,23 @@
+
+ import { cadModelBase, point3 } from "@tscircuit/props";
+ import { rotation } from "circuit-json";
+ import {
+-  applyToPoint as applyToPoint27,
+-  compose as compose7,
++  applyToPoint as applyToPoint28,
++  compose as compose8,
+   flipY as flipY4,
+   identity as identity7,
+   rotate as rotate3,
+-  translate as translate5
++  translate as translate6
+ } from "transformation-matrix";
+ var renderAssemblyCadModel = (owner, model, placement) => {
+   const base = cadModelBase.parse(typeof model === "string" ? {} : model);
+   const bottom = placement.layer === "bottom";
+   const offset = point3.parse(base.positionOffset ?? { x: 0, y: 0, z: 0 });
+-  const transform = compose7(
+-    translate5(placement.position.x, placement.position.y),
++  const transform = compose8(
++    translate6(placement.position.x, placement.position.y),
+     rotate3(placement.pcbRotation * Math.PI / 180),
+     bottom ? flipY4() : identity7()
+   );
+-  const xy2 = applyToPoint27(transform, offset);
++  const xy2 = applyToPoint28(transform, offset);
+   const authoredRotation = base.pcbRotationOffset ?? base.rotationOffset ?? 0;
+   const rotationOffset = typeof authoredRotation === "number" ? { x: 0, y: 0, z: authoredRotation } : {
+     x: rotation.parse(authoredRotation.x),
+@@ -18756,7 +18776,7 @@
+
+ // lib/components/normal-components/Board/Board.ts
+ import { getBoundsFromPoints as getBoundsFromPoints13 } from "@tscircuit/math-utils";
+ import { boardProps } from "@tscircuit/props";
+-import { compose as compose17, translate as translate17 } from "transformation-matrix";
++import { compose as compose18, translate as translate18 } from "transformation-matrix";
+ 
+ // lib/utils/autorouting/getAncestorSubcircuitIds.ts
+ var getDescendantSubcircuitIds = (db2, root_subcircuit_id) => {
+@@ -18869,7 +18889,7 @@
+
+ import { symbols as symbols3 } from "schematic-symbols";
+ 
+ // lib/components/normal-components/Capacitor_addPolarityFabricationSymbols.ts
+-import { applyToPoint as applyToPoint28, compose as compose8, rotate as rotate4, translate as translate6 } from "transformation-matrix";
++import { applyToPoint as applyToPoint29, compose as compose9, rotate as rotate4, translate as translate7 } from "transformation-matrix";
+ var generatedPaths = /* @__PURE__ */ new WeakMap();
+ var getPolarity = (port) => {
+   const hints = [port.name, ...port.port_hints ?? []].map(
+@@ -18911,11 +18931,11 @@
+
+   if (!positive || !negative) return;
+   const distance27 = Math.hypot(negative.x - positive.x, negative.y - positive.y);
+   if (distance27 < 1e-6) return;
+-  const frame = compose8(
+-    translate6((positive.x + negative.x) / 2, (positive.y + negative.y) / 2),
++  const frame = compose9(
++    translate7((positive.x + negative.x) / 2, (positive.y + negative.y) / 2),
+     rotate4(Math.atan2(negative.y - positive.y, negative.x - positive.x))
+   );
+-  const point6 = (x2, y2) => applyToPoint28(frame, { x: x2, y: y2 });
++  const point6 = (x2, y2) => applyToPoint29(frame, { x: x2, y: y2 });
+   const offset = distance27 / 4;
+   const halfSize = Math.min(distance27 * 0.12, 0.3);
+   const routes = [
+@@ -19065,7 +19085,7 @@
+
+ 
+ // lib/utils/extractPcbPrimitivesFromCircuitJson.ts
+ import { transformPCBElements } from "@tscircuit/circuit-json-util";
+-import { compose as compose9, inverse, rotate as rotate5, translate as translate7 } from "transformation-matrix";
++import { compose as compose10, inverse, rotate as rotate5, translate as translate8 } from "transformation-matrix";
+ var extractPcbPrimitivesFromCircuitJson = ({
+   pcbComponent,
+   db: db2,
+@@ -19074,8 +19094,8 @@
+
+   const componentCenter = pcbComponent.center || { x: 0, y: 0 };
+   const componentRotation = pcbComponent.rotation || 0;
+   const absoluteToComponentRelativeTransform = inverse(
+-    compose9(
+-      translate7(componentCenter.x, componentCenter.y),
++    compose10(
++      translate8(componentCenter.x, componentCenter.y),
+       rotate5(componentRotation * Math.PI / 180)
+     )
+   );
+@@ -20616,21 +20636,21 @@
+
+ 
+ // lib/components/primitive-components/Group/get-autorouting-phase-pcb-trace-paths.ts
+ import { fanoutTracePath as fanoutTracePath2 } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint30, inverse as inverse2 } from "transformation-matrix";
++import { applyToPoint as applyToPoint31, inverse as inverse2 } from "transformation-matrix";
+ 
+ // lib/components/primitive-components/Group/get-saved-pcb-trace-path-transform.ts
+-import { compose as compose10, translate as translate8 } from "transformation-matrix";
++import { compose as compose11, translate as translate9 } from "transformation-matrix";
+ function getSavedPcbTracePathTransform(group, port) {
+   const before = port._getGlobalPcbPositionBeforeLayout();
+   const after = port._getGlobalPcbPositionAfterLayout();
+-  return compose10(
+-    translate8(after.x - before.x, after.y - before.y),
++  return compose11(
++    translate9(after.x - before.x, after.y - before.y),
+     group._computePcbGlobalTransformBeforeLayout()
+   );
+ }
+ 
+ // lib/components/primitive-components/Group/get-saved-autorouting-phase-traces.ts
+-import { applyToPoint as applyToPoint29 } from "transformation-matrix";
++import { applyToPoint as applyToPoint30 } from "transformation-matrix";
+ import "@tscircuit/props";
+ var touchesEndpoint = ({
+   point: point6,
+@@ -20697,7 +20717,7 @@
+
+     const transform = getSavedPcbTracePathTransform(group, port);
+     const route = resolveSavedTraceRouteWidths(path.route).map((point6) => ({
+       ...point6,
+-      ...applyToPoint29(transform, point6)
++      ...applyToPoint30(transform, point6)
+     }));
+     for (const point6 of route) {
+       const layers = point6.route_type === "wire" ? [point6.layer] : [point6.from_layer, point6.to_layer];
+@@ -20910,7 +20930,7 @@
+
+               connection: selector,
+               route: route.map((point6) => ({
+                 ...point6,
+-                ...applyToPoint30(transform, point6)
++                ...applyToPoint31(transform, point6)
+               }))
+             })
+           );
+@@ -83307,7 +83327,7 @@
+
+   midpoint,
+   pointToSegmentClosestPoint as pointToSegmentClosestPoint2
+ } from "@tscircuit/math-utils";
+-import { applyToPoint as applyToPoint32, compose as compose12, scale as scale3, translate as translate10 } from "transformation-matrix";
++import { applyToPoint as applyToPoint33, compose as compose13, scale as scale3, translate as translate11 } from "transformation-matrix";
+ 
+ // node_modules/@tscircuit/implicit-copper-pour-solver/lib/geometry.ts
+ import {
+@@ -83323,10 +83343,10 @@
+
+   segmentToSegmentMinDistance
+ } from "@tscircuit/math-utils";
+ import {
+-  applyToPoint as applyToPoint31,
+-  compose as compose11,
+-  rotateDEG,
+-  translate as translate9
++  applyToPoint as applyToPoint32,
++  compose as compose12,
++  rotateDEG as rotateDEG2,
++  translate as translate10
+ } from "transformation-matrix";
+ var rectTransforms = /* @__PURE__ */ new WeakMap();
+ var getRectTransforms = (primitive) => {
+@@ -83335,14 +83355,14 @@
+
+   const transforms = {
+     // compose applies the rightmost operation first: move the world point to
+     // the rectangle origin, then undo its counter-clockwise rotation.
+-    toLocal: compose11(
+-      rotateDEG(-primitive.rotation),
+-      translate9(-primitive.x, -primitive.y)
++    toLocal: compose12(
++      rotateDEG2(-primitive.rotation),
++      translate10(-primitive.x, -primitive.y)
+     ),
+     // Rotate a rectangle-local point before translating it into board space.
+-    toWorld: compose11(
+-      translate9(primitive.x, primitive.y),
+-      rotateDEG(primitive.rotation)
++    toWorld: compose12(
++      translate10(primitive.x, primitive.y),
++      rotateDEG2(primitive.rotation)
+     )
+   };
+   rectTransforms.set(primitive, transforms);
+@@ -83377,7 +83397,7 @@
+
+     return distanceToPolygon(point6, primitive.points);
+   }
+   const { toLocal } = getRectTransforms(primitive);
+-  return pointToBoxDistance(applyToPoint31(toLocal, point6), {
++  return pointToBoxDistance(applyToPoint32(toLocal, point6), {
+     center: { x: 0, y: 0 },
+     width: primitive.halfWidth * 2,
+     height: primitive.halfHeight * 2
+@@ -83421,8 +83441,8 @@
+
+     return closestPoint;
+   }
+   const { toLocal, toWorld } = getRectTransforms(primitive);
+-  const localPoint = applyToPoint31(toLocal, point6);
+-  return applyToPoint31(toWorld, {
++  const localPoint = applyToPoint32(toLocal, point6);
++  return applyToPoint32(toWorld, {
+     x: clamp(localPoint.x, -primitive.halfWidth, primitive.halfWidth),
+     y: clamp(localPoint.y, -primitive.halfHeight, primitive.halfHeight)
+   });
+@@ -84013,8 +84033,8 @@
+
+     1,
+     Math.round(problem.minRegionArea / problem.gridPitch ** 2)
+   );
+-  const gridVertexToWorld = compose12(
+-    translate10(problem.bounds.minX, problem.bounds.minY),
++  const gridVertexToWorld = compose13(
++    translate11(problem.bounds.minX, problem.bounds.minY),
+     scale3(problem.gridPitch)
+   );
+   for (const labeledLayer of problem.labeledLayers) {
+@@ -84033,7 +84053,7 @@
+
+         }
+         const loop = loops[0];
+         const points = loop.map(([i2, j2]) => {
+-          const point6 = applyToPoint32(gridVertexToWorld, { x: i2, y: j2 });
++          const point6 = applyToPoint33(gridVertexToWorld, { x: i2, y: j2 });
+           return {
+             x: clamp2(point6.x, problem.bounds.minX, problem.bounds.maxX),
+             y: clamp2(point6.y, problem.bounds.minY, problem.bounds.maxY)
+@@ -84069,9 +84089,9 @@
+
+ } from "circuit-json-to-connectivity-map";
+ import {
+   applyToPoints,
+-  compose as compose13,
+-  rotateDEG as rotateDEG2,
+-  translate as translate11
++  compose as compose14,
++  rotateDEG as rotateDEG3,
++  translate as translate12
+ } from "transformation-matrix";
+ var DEFAULT_GRID_PITCH = 0.25;
+ var DEFAULT_TRACE_CLEARANCE = 0.2;
+@@ -84099,9 +84119,9 @@
+
+   const radius = Math.min(width, height) / 2;
+   const axisLength = Math.max(width, height) - radius * 2;
+   const halfAxis = axisLength / 2;
+-  const axisToWorld = compose13(
+-    translate11(x2, y2),
+-    rotateDEG2(rotation5 + (height > width ? 90 : 0))
++  const axisToWorld = compose14(
++    translate12(x2, y2),
++    rotateDEG3(rotation5 + (height > width ? 90 : 0))
+   );
+   const [start, end] = applyToPoints(axisToWorld, [
+     { x: -halfAxis, y: 0 },
+@@ -92109,26 +92129,6 @@
+
+     }
+   }
+ };
+-var expandChipsToFitPins = (problem) => {
+-  for (const chip of problem.chips) {
+-    const halfWidth = chip.width / 2;
+-    const halfHeight = chip.height / 2;
+-    let maxDx = 0;
+-    let maxDy = 0;
+-    for (const pin of chip.pins) {
+-      const dx2 = Math.abs(pin.x - chip.center.x);
+-      const dy2 = Math.abs(pin.y - chip.center.y);
+-      if (dx2 > maxDx) maxDx = dx2;
+-      if (dy2 > maxDy) maxDy = dy2;
+-    }
+-    const newHalfWidth = Math.max(halfWidth, maxDx);
+-    const newHalfHeight = Math.max(halfHeight, maxDy);
+-    if (newHalfWidth > halfWidth || newHalfHeight > halfHeight) {
+-      chip.width = newHalfWidth * 2;
+-      chip.height = newHalfHeight * 2;
+-    }
+-  }
+-};
+ function doesTraceOverlapWithExistingTraces(newTracePath, existingTraces) {
+   for (let i2 = 0; i2 < newTracePath.length - 1; i2++) {
+     const newSegmentP1 = newTracePath[i2];
+@@ -93167,6 +93167,11 @@
+
+     let p1New;
+     let p2New;
+     const isHVHShape = coordsEqual(p0.y, p1.y) && coordsEqual(p1.x, p2.x) && coordsEqual(p2.y, p3.y);
++    const isVHVShape = coordsEqual(p0.x, p1.x) && coordsEqual(p1.y, p2.y) && coordsEqual(p2.x, p3.x);
++    const isSameDirection = isHVHShape ? Math.sign(p1.x - p0.x) === Math.sign(p3.x - p2.x) : Math.sign(p1.y - p0.y) === Math.sign(p3.y - p2.y);
++    if (!(isHVHShape || isVHVShape) || !isSameDirection) {
++      return { ...targetTrace };
++    }
+     if (isHVHShape) {
+       const idealX = (p0.x + p3.x) / 2;
+       p1New = { x: idealX, y: p1.y };
+@@ -106580,7 +106585,6 @@
+
+       _chipObstacleSpatialIndex: void 0,
+       _hideRatsNet: this.hideRatsNet
+     });
+-    expandChipsToFitPins(cloned);
+     correctPinsInsideChips(cloned);
+     return cloned;
+   }
+@@ -107787,7 +107791,7 @@
+
+ 
+ // lib/utils/edit-events/apply-edit-events-to-circuit-json.ts
+ import { transformPCBElement } from "@tscircuit/circuit-json-util";
+-import { translate as translate12 } from "transformation-matrix";
++import { translate as translate13 } from "transformation-matrix";
+ 
+ // lib/utils/edit-events/apply-trace-hint-edit-event.ts
+ import { su as su4 } from "@tscircuit/circuit-json-util";
+@@ -107832,7 +107836,7 @@
+
+       );
+       const needsMovement = !component || component.center.x !== editEvent.new_center.x || component.center.y !== editEvent.new_center.y;
+       if (needsMovement && editEvent.original_center) {
+-        const mat = translate12(
++        const mat = translate13(
+           editEvent.new_center.x - editEvent.original_center.x,
+           editEvent.new_center.y - editEvent.original_center.y
+         );
+@@ -109345,7 +109349,7 @@
+
+ 
+ // lib/components/primitive-components/TraceHint.ts
+ import { traceHintProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint33 } from "transformation-matrix";
++import { applyToPoint as applyToPoint34 } from "transformation-matrix";
+ var TraceHint = class extends PrimitiveComponent2 {
+   matchedPort = null;
+   get config() {
+@@ -109385,7 +109389,7 @@
+
+     const globalTransform = this._computePcbGlobalTransformBeforeLayout();
+     return offsets.map(
+       (offset) => ({
+-        ...applyToPoint33(globalTransform, offset),
++        ...applyToPoint34(globalTransform, offset),
+         via: offset.via,
+         to_layer: offset.to_layer,
+         trace_width: offset.trace_width
+@@ -110898,7 +110902,7 @@
+
+   transformPCBElements as transformPCBElements2
+ } from "@tscircuit/circuit-json-util";
+ import { normalizeDegrees as normalizeDegrees7 } from "@tscircuit/math-utils";
+-import { compose as compose14, rotate as rotate6, translate as translate13 } from "transformation-matrix";
++import { compose as compose15, rotate as rotate6, translate as translate14 } from "transformation-matrix";
+ var updateCadRotation = ({
+   db: db2,
+   pcbComponentId,
+@@ -110950,11 +110954,11 @@
+
+         const member = db2.pcb_component.get(memberId);
+         if (!member) continue;
+         const originalCenter2 = member.center;
+-        const transformMatrix2 = compose14(
++        const transformMatrix2 = compose15(
+           group._computePcbGlobalTransformBeforeLayout(),
+-          translate13(center.x + rotatedRel.x, center.y + rotatedRel.y),
++          translate14(center.x + rotatedRel.x, center.y + rotatedRel.y),
+           rotate6(angleRad),
+-          translate13(-originalCenter2.x, -originalCenter2.y)
++          translate14(-originalCenter2.x, -originalCenter2.y)
+         );
+         const related = db2.toArray().filter(
+           (elm) => "pcb_component_id" in elm && elm.pcb_component_id === memberId
+@@ -110984,11 +110988,11 @@
+
+       }
+       const originalCenter2 = pcbComponent.center;
+       const rotationDegrees2 = ccwRotationDegrees ?? ccwRotationOffset ?? 0;
+-      const transformMatrix2 = compose14(
++      const transformMatrix2 = compose15(
+         group._computePcbGlobalTransformBeforeLayout(),
+-        translate13(center.x, center.y),
++        translate14(center.x, center.y),
+         rotate6(rotationDegrees2 * Math.PI / 180),
+-        translate13(-originalCenter2.x, -originalCenter2.y)
++        translate14(-originalCenter2.x, -originalCenter2.y)
+       );
+       const related = db2.toArray().filter(
+         (elm) => "pcb_component_id" in elm && elm.pcb_component_id === componentId
+@@ -111009,11 +111013,11 @@
+
+     );
+     const originalCenter = initialPackedComponent?.center ?? pcbGroup.center;
+     const rotationDegrees = ccwRotationDegrees ?? ccwRotationOffset ?? 0;
+-    const transformMatrix = compose14(
++    const transformMatrix = compose15(
+       group._computePcbGlobalTransformBeforeLayout(),
+-      translate13(center.x, center.y),
++      translate14(center.x, center.y),
+       rotate6(rotationDegrees * Math.PI / 180),
+-      translate13(-originalCenter.x, -originalCenter.y)
++      translate14(-originalCenter.x, -originalCenter.y)
+     );
+     const relatedElements = db2.toArray().filter((elm) => {
+       if ("source_group_id" in elm && elm.source_group_id) {
+@@ -113390,9 +113394,9 @@
+
+ // lib/components/primitive-components/NetLabel.ts
+ import { netLabelProps } from "@tscircuit/props";
+ import {
+-  applyToPoint as applyToPoint34,
++  applyToPoint as applyToPoint35,
+   identity as identity8,
+-  translate as translate14
++  translate as translate15
+ } from "transformation-matrix";
+ import { calculateElbow as calculateElbow3 } from "calculate-elbow";
+ var NetLabel = class extends PrimitiveComponent2 {
+@@ -113455,11 +113459,11 @@
+
+       const connectedPorts = this._getConnectedPorts();
+       if (connectedPorts.length > 0) {
+         const portPos = connectedPorts[0]._getGlobalSchematicPositionBeforeLayout();
+-        const parentCenter = applyToPoint34(
++        const parentCenter = applyToPoint35(
+           this.parent?.computeSchematicGlobalTransform?.() ?? identity8(),
+           { x: 0, y: 0 }
+         );
+-        return translate14(portPos.x - parentCenter.x, portPos.y - parentCenter.y);
++        return translate15(portPos.x - parentCenter.x, portPos.y - parentCenter.y);
+       }
+     }
+     return super.computeSchematicPropsTransform();
+@@ -115224,16 +115228,24 @@
+
+     const sectionId = sectionIdBySchematicComponentId.get(
+       schematicComponent.schematic_component_id
+     );
+-    const layoutBounds = getSchematicComponentWithTextBounds({ db: db2, schematicComponent }) ?? getBoundFromCenteredRect7({
++    const obstacleBounds = (schematicComponent.is_box_with_pins === false ? void 0 : getSchematicComponentWithTextBounds({ db: db2, schematicComponent })) ?? getBoundFromCenteredRect7({
+       center: schematicComponent.center,
+       width: schematicComponent.size.width,
+       height: schematicComponent.size.height
+     });
++    if (schematicComponent.is_box_with_pins !== false) {
++      for (const port of schematicPorts) {
++        obstacleBounds.minX = Math.min(obstacleBounds.minX, port.center.x);
++        obstacleBounds.maxX = Math.max(obstacleBounds.maxX, port.center.x);
++        obstacleBounds.minY = Math.min(obstacleBounds.minY, port.center.y);
++        obstacleBounds.maxY = Math.max(obstacleBounds.maxY, port.center.y);
++      }
++    }
+     chips.push({
+       chipId,
+-      center: getBoundsCenter2(layoutBounds),
+-      width: layoutBounds.maxX - layoutBounds.minX,
+-      height: layoutBounds.maxY - layoutBounds.minY,
++      center: getBoundsCenter2(obstacleBounds),
++      width: obstacleBounds.maxX - obstacleBounds.minX,
++      height: obstacleBounds.maxY - obstacleBounds.minY,
+       pins,
+       sectionId
+     });
+@@ -116994,7 +117006,7 @@
+
+ import { getBoundsFromPoints as getBoundsFromPoints11 } from "@tscircuit/math-utils";
+ 
+ // lib/components/primitive-components/Breakout/get-saved-fanout-traces.ts
+-import { applyToPoint as applyToPoint35, compose as compose15, translate as translate15 } from "transformation-matrix";
++import { applyToPoint as applyToPoint36, compose as compose16, translate as translate16 } from "transformation-matrix";
+ 
+ // lib/components/primitive-components/BreakoutPoint.ts
+ import { breakoutPointProps } from "@tscircuit/props";
+@@ -117158,13 +117170,13 @@
+
+         );
+       const pcbExit = db2.pcb_breakout_point.get(exit.pcb_breakout_point_id);
+       const localExit = path.route.at(-1);
+-      const transform = compose15(
++      const transform = compose16(
+         exit._computePcbGlobalTransformBeforeLayout(),
+-        translate15(-localExit.x, -localExit.y)
++        translate16(-localExit.x, -localExit.y)
+       );
+-      const originalExit = applyToPoint35(transform, localExit);
++      const originalExit = applyToPoint36(transform, localExit);
+       const route = resolveSavedTraceRouteWidths(path.route).map((point6) => {
+-        const position = applyToPoint35(transform, point6);
++        const position = applyToPoint36(transform, point6);
+         return {
+           ...point6,
+           x: position.x + pcbExit.x - originalExit.x,
+@@ -117659,7 +117671,7 @@
+
+ var package_default = {
+   name: "@tscircuit/core",
+   type: "module",
+-  version: "0.0.2089",
++  version: "0.0.2094",
+   types: "dist/index.d.ts",
+   main: "dist/index.js",
+   module: "dist/index.js",
+@@ -117695,7 +117707,7 @@
+
+     "@tscircuit/bga-fanout-solver": "github:tscircuit/bga-fanout-solver#247c835cb8d69b65e53891dcf869731079415b39",
+     "@tscircuit/bus-lanes-solver": "https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.21.tgz",
+     "@tscircuit/capacity-autorouter": "^0.0.958",
+-    "@tscircuit/checks": "^0.0.237",
++    "@tscircuit/checks": "^0.0.240",
+     "@tscircuit/circuit-json-util": "^0.0.119",
+     "@tscircuit/common": "^0.0.20",
+     "@tscircuit/copper-pour-solver": "^0.0.67",
+@@ -117716,9 +117728,9 @@
+
+     "@tscircuit/miniflex": "^0.0.4",
+     "@tscircuit/modelprinter": "^0.0.6",
+     "@tscircuit/ngspice-spice-engine": "^0.0.20",
+-    "@tscircuit/props": "^0.0.687",
++    "@tscircuit/props": "^0.0.689",
+     "@tscircuit/schematic-match-adapt": "^0.0.18",
+-    "@tscircuit/schematic-trace-solver": "https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.225.tgz",
++    "@tscircuit/schematic-trace-solver": "https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.228.tgz",
+     "@tscircuit/solver-utils": "^0.0.16",
+     "@tscircuit/soup-util": "^0.0.41",
+     "@tscircuit/via-stitch-solver": "github:tscircuit/via-stitch-solver#64f2ac7781b795bdc0d74ba411988e60767fa653",
+@@ -117735,7 +117747,7 @@
+
+     "circuit-json": "^0.0.516",
+     "circuit-json-to-bpc": "^0.0.13",
+     "circuit-json-to-connectivity-map": "^0.0.33",
+-    "circuit-json-to-gltf": "^0.0.144",
++    "circuit-json-to-gltf": "^0.0.145",
+     "circuit-json-to-spice": "^0.0.45",
+     "circuit-to-svg": "^0.0.440",
+     concurrently: "^9.1.2",
+@@ -117802,7 +117814,7 @@
+
+   },
+   overrides: {
+     "@tscircuit/circuit-json-util": "^0.0.119",
+-    "@tscircuit/props": "^0.0.687",
++    "@tscircuit/props": "^0.0.689",
+     "circuit-json": "^0.0.516",
+     "@tscircuit/cableprinter": "^0.0.4"
+   }
+@@ -119110,12 +119122,11 @@
+
+     if (!this.isSubcircuit) return;
+     const disabledLegacyAutorouterPreset = getDisabledLegacyAutorouterPreset(this);
+     if (!disabledLegacyAutorouterPreset) return;
+-    db2.source_property_ignored_warning.insert({
++    db2.source_invalid_component_property_error.insert({
+       source_component_id: this.source_component_id ?? "",
+       property_name: "autorouter",
+-      subcircuit_id: this.subcircuit_id ?? void 0,
+-      error_type: "source_property_ignored_warning",
+-      message: `The "${disabledLegacyAutorouterPreset}" autorouter is deprecated, so autorouting has been disabled for this subcircuit. Use the default autorouter and introduce <autoroutingphase /> or <fanout /> elements as needed.`
++      error_type: "source_invalid_component_property_error",
++      message: `The "${disabledLegacyAutorouterPreset}" autorouter is deprecated and is not enabled by this platform. Use the default autorouter and introduce <autoroutingphase /> or <fanout /> elements as needed.`
+     });
+   }
+   doInitialSourceParentAttachment() {
+@@ -121028,7 +121039,7 @@
+
+ import { ledProps, resolveManufacturerPartNumber as resolveManufacturerPartNumber9 } from "@tscircuit/props";
+ 
+ // lib/components/normal-components/Led_addPolarityFabricationSymbol.ts
+-import { applyToPoint as applyToPoint36, compose as compose16, rotate as rotate7, translate as translate16 } from "transformation-matrix";
++import { applyToPoint as applyToPoint37, compose as compose17, rotate as rotate7, translate as translate17 } from "transformation-matrix";
+ var generatedNotes = /* @__PURE__ */ new WeakMap();
+ var getPolarity2 = (port) => {
+   const hints = [port.name, ...port.port_hints ?? []].map(
+@@ -121069,11 +121080,11 @@
+
+   const distance27 = Math.hypot(k2.x - a2.x, k2.y - a2.y);
+   if (distance27 < 1e-6) return;
+   const angle = Math.atan2(k2.y - a2.y, k2.x - a2.x);
+-  const frame = compose16(
+-    translate16((a2.x + k2.x) / 2, (a2.y + k2.y) / 2),
++  const frame = compose17(
++    translate17((a2.x + k2.x) / 2, (a2.y + k2.y) / 2),
+     rotate7(angle)
+   );
+-  const point6 = (x2, y2) => applyToPoint36(frame, { x: x2, y: y2 });
++  const point6 = (x2, y2) => applyToPoint37(frame, { x: x2, y: y2 });
+   const common = {
+     pcb_component_id: pcb.pcb_component_id,
+     subcircuit_id: led.getSubcircuit()?.subcircuit_id ?? void 0,
+@@ -123359,9 +123370,9 @@
+
+   _computePcbGlobalTransformBeforeLayout() {
+     if (this._panelPositionOffset) {
+       const parentTransform = this.parent?._computePcbGlobalTransformBeforeLayout?.() ?? { a: 1, b: 0, c: 0, d: 1, e: 0, f: 0 };
+-      return compose17(
++      return compose18(
+         parentTransform,
+-        translate17(this._panelPositionOffset.x, this._panelPositionOffset.y)
++        translate18(this._panelPositionOffset.x, this._panelPositionOffset.y)
+       );
+     }
+     return super._computePcbGlobalTransformBeforeLayout();
+@@ -123904,7 +123915,7 @@
+
+ // lib/components/normal-components/Subpanel.ts
+ import { subpanelProps } from "@tscircuit/props";
+ import { distance as distance24 } from "circuit-json";
+-import { compose as compose18, identity as identity10, translate as translate18 } from "transformation-matrix";
++import { compose as compose19, identity as identity10, translate as translate19 } from "transformation-matrix";
+ 
+ // lib/utils/panels/generate-panel-tabs-and-mouse-bites.ts
+ import * as Flatten2 from "@flatten-js/core";
+@@ -124416,9 +124427,9 @@
+
+   _computePcbGlobalTransformBeforeLayout() {
+     if (this._panelPositionOffset) {
+       const parentTransform = this.parent?._computePcbGlobalTransformBeforeLayout?.() ?? identity10();
+-      return compose18(
++      return compose19(
+         parentTransform,
+-        translate18(this._panelPositionOffset.x, this._panelPositionOffset.y)
++        translate19(this._panelPositionOffset.x, this._panelPositionOffset.y)
+       );
+     }
+     return super._computePcbGlobalTransformBeforeLayout();
+@@ -126344,10 +126355,10 @@
+
+ 
+ // lib/components/primitive-components/FabricationNoteDimension.ts
+ import { fabricationNoteDimensionProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint38 } from "transformation-matrix";
++import { applyToPoint as applyToPoint39 } from "transformation-matrix";
+ 
+ // lib/utils/pcb/resolve-pcb-dimension-offset-direction.ts
+-import { applyToPoint as applyToPoint37 } from "transformation-matrix";
++import { applyToPoint as applyToPoint38 } from "transformation-matrix";
+ var resolvePcbDimensionOffsetDirection = ({
+   from,
+   offset,
+@@ -126356,7 +126367,7 @@
+
+   transform
+ }) => {
+   if (offsetDirection) {
+-    return applyToPoint37({ ...transform, e: 0, f: 0 }, offsetDirection);
++    return applyToPoint38({ ...transform, e: 0, f: 0 }, offsetDirection);
+   }
+   const dx2 = to.x - from.x;
+   const dy2 = to.y - from.y;
+@@ -126384,13 +126395,13 @@
+
+         this.renderError(
+           `FabricationNoteDimension could not find selector "${input}"`
+         );
+-        return applyToPoint38(transform, { x: 0, y: 0 });
++        return applyToPoint39(transform, { x: 0, y: 0 });
+       }
+       return target._getGlobalPcbPositionBeforeLayout();
+     }
+     const numericX = typeof input.x === "string" ? parseFloat(input.x) : input.x;
+     const numericY = typeof input.y === "string" ? parseFloat(input.y) : input.y;
+-    return applyToPoint38(transform, { x: numericX, y: numericY });
++    return applyToPoint39(transform, { x: numericX, y: numericY });
+   }
+   doInitialPcbPrimitiveRender() {
+     if (this.root?.pcbDisabled) return;
+@@ -126494,7 +126505,7 @@
+
+ 
+ // lib/components/primitive-components/PcbNoteDimension.ts
+ import { pcbNoteDimensionProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint39 } from "transformation-matrix";
++import { applyToPoint as applyToPoint40 } from "transformation-matrix";
+ var PcbNoteDimension = class extends PrimitiveComponent2 {
+   pcb_note_dimension_id = null;
+   isPcbPrimitive = true;
+@@ -126511,7 +126522,7 @@
+
+       );
+       if (!target) {
+         this.renderError(`PcbNoteDimension could not find selector "${input}"`);
+-        return applyToPoint39(transform, { x: 0, y: 0 });
++        return applyToPoint40(transform, { x: 0, y: 0 });
+       }
+       const targetPcbComponentId = target.pcb_component_id;
+       const root = this.root;
+@@ -126528,7 +126539,7 @@
+
+     }
+     const numericX = typeof input.x === "string" ? parseFloat(input.x) : input.x;
+     const numericY = typeof input.y === "string" ? parseFloat(input.y) : input.y;
+-    return applyToPoint39(transform, { x: numericX, y: numericY });
++    return applyToPoint40(transform, { x: numericX, y: numericY });
+   }
+   doInitialPcbPrimitiveRender() {
+     if (this.root?.pcbDisabled) return;
+@@ -129306,7 +129317,7 @@
+
+   getTransformedSvgPathRoutes,
+   loadImageSource
+ } from "@tscircuit/image-utils";
+-import { applyToPoint as applyToPoint40 } from "transformation-matrix";
++import { applyToPoint as applyToPoint41 } from "transformation-matrix";
+ var SilkscreenGraphic = class extends PrimitiveComponent2 {
+   pcb_silkscreen_graphic_id = null;
+   pcb_silkscreen_graphic_ids = [];
+@@ -129408,7 +129419,7 @@
+
+           { x: halfWidth, y: -halfHeight },
+           { x: -halfWidth, y: -halfHeight }
+         ]).map(
+-          (point6) => applyToPoint40(transform, point6)
++          (point6) => applyToPoint41(transform, point6)
+         )
+       },
+       inner_rings: []
+@@ -132642,17 +132653,17 @@
+
+ 
+ // lib/components/primitive-components/PcbBend.ts
+ import { pcbBendProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint41 } from "transformation-matrix";
++import { applyToPoint as applyToPoint42 } from "transformation-matrix";
+ 
+ // lib/components/primitive-components/getPcbFlexBoardTransform.ts
+-import { compose as compose19, translate as translate19 } from "transformation-matrix";
++import { compose as compose20, translate as translate20 } from "transformation-matrix";
+ function getPcbFlexBoardTransform(primitive) {
+   const boardId = primitive._getBoard()?.pcb_board_id;
+   const board = boardId ? primitive.root.db.pcb_board.get(boardId) : null;
+   if (!board)
+     throw new Error(`${primitive.componentName} must be inside a board`);
+-  const transform = compose19(
+-    translate19(-board.center.x, -board.center.y),
++  const transform = compose20(
++    translate20(-board.center.x, -board.center.y),
+     primitive._computePcbGlobalTransformBeforeLayout()
+   );
+   return { board, transform };
+@@ -132676,8 +132687,8 @@
+
+       pcb_group_id: this.getGroup()?.pcb_group_id ?? void 0,
+       subcircuit_id: this.getSubcircuit().subcircuit_id ?? void 0,
+       name: props.name,
+-      start: applyToPoint41(transform, { x: props.x1, y: props.y1 }),
+-      end: applyToPoint41(transform, { x: props.x2, y: props.y2 }),
++      start: applyToPoint42(transform, { x: props.x1, y: props.y1 }),
++      end: applyToPoint42(transform, { x: props.x2, y: props.y2 }),
+       bend_angle: props.bendAngle,
+       bend_radius: props.bendRadius,
+       bend_side: props.bendSide
+@@ -132713,7 +132724,7 @@
+
+ 
+ // lib/components/primitive-components/PcbStiffener.ts
+ import { pcbStiffenerProps } from "@tscircuit/props";
+-import { applyToPoint as applyToPoint42, decomposeTSR as decomposeTSR11 } from "transformation-matrix";
++import { applyToPoint as applyToPoint43, decomposeTSR as decomposeTSR11 } from "transformation-matrix";
+ var PcbStiffener = class extends PrimitiveComponent2 {
+   pcb_stiffener_id = null;
+   get config() {
+@@ -132736,14 +132747,14 @@
+
+     };
+     const geometry = props.shape === "rect" ? {
+       shape: "rect",
+-      center: applyToPoint42(transform, { x: 0, y: 0 }),
++      center: applyToPoint43(transform, { x: 0, y: 0 }),
+       rotation: decomposeTSR11(transform).rotation.angle * 180 / Math.PI,
+       width: props.width,
+       height: props.height
+     } : {
+       shape: "polygon",
+       outline: props.outline.map(
+-        (point6) => applyToPoint42(transform, point6)
++        (point6) => applyToPoint43(transform, point6)
+       )
+     };
+     this.pcb_stiffener_id = db2.pcb_stiffener.insert({

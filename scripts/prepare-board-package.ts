@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "Handheld Wi-Fi AI agent remote; cloud-routed WIP prototype with incomplete connections and unresolved paste, display/battery mating and fabrication gates; not fabrication ready",
+    "Handheld Wi-Fi AI agent remote; WIP with local MCU bypass and 22uF bulk correction, incomplete routing and unresolved fabrication gates; not ready to order",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,
@@ -86,24 +86,19 @@ const runtimePackage = {
     build: "tsci build index.circuit.tsx",
     typecheck: "tsc --noEmit",
   },
-  devDependencies: {
-    "@tscircuit/cli": originalPackage.devDependencies["@tscircuit/cli"],
-    "@tscircuit/core": originalPackage.devDependencies["@tscircuit/core"],
-    "@tscircuit/checks": originalPackage.devDependencies["@tscircuit/checks"],
-    "circuit-to-svg": originalPackage.devDependencies["circuit-to-svg"],
-    "@tscircuit/modelprinter": originalPackage.devDependencies["@tscircuit/modelprinter"],
-    "@tscircuit/capacity-autorouter":
-      originalPackage.devDependencies["@tscircuit/capacity-autorouter"],
-    "@tscircuit/props": originalPackage.overrides["@tscircuit/props"],
-    "@types/bun": originalPackage.devDependencies["@types/bun"],
-    tscircuit: originalPackage.devDependencies.tscircuit,
-    typescript: originalPackage.devDependencies.typescript,
-    zod: "3.25.76",
-  },
+  // Keep dependency declarations identical to the copied, validated lockfile.
+  devDependencies: originalPackage.devDependencies,
   overrides: originalPackage.overrides,
 }
 writeFileSync(join(packageDir, "package.json"), `${JSON.stringify(runtimePackage, null, 2)}\n`)
-for (const filePath of ["tsconfig.json", "tscircuit.config.json", "bun.lock"]) {
+for (const filePath of [
+  "tsconfig.json",
+  "tscircuit.config.json",
+  "bun.lock",
+  "README.md",
+  "VALIDATION.md",
+  "BOM.md",
+]) {
   writeFileSync(join(packageDir, filePath), readFileSync(join(projectDir, filePath)))
 }
 mkdirSync(join(packageDir, "dist/index"), { recursive: true })

@@ -1,0 +1,13 @@
+{
+  "native_sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe",
+  "inspected": [
+    "visual-review/mcu-local-bypass.png",
+    "visual-review/four-layer-review.png"
+  ],
+  "findings": [
+    "C31 local top supply branch meets existing U1 supply escape; ground pad/contact opens into top ground. Native geometric connectivity independently checked.",
+    "Antenna exclusion, rounded outline, full copper layers and remaining open display/USB/audio/power connections remain visible.",
+    "Long existing native warning annotations obscure portions of full-board diagnostic views; these are not assembly artwork or final fabrication previews."
+  ],
+  "fabrication_ready": false
+}

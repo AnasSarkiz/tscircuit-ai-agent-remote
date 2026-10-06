@@ -1,0 +1,27 @@
+{
+  "accepted_native": "final-native/circuit.json",
+  "trials": [
+    {
+      "capture": "capacitor-native",
+      "placement_input": "placement-candidate.json",
+      "accepted": false,
+      "reason": "6 placement/edge/keepout/courtyard errors; operator-stopped native render; no completed board accepted",
+      "native_stop_exit": -15
+    },
+    {
+      "capture": "capacitor-native2",
+      "placement_input": "placement-candidate2.json",
+      "accepted": false,
+      "reason": "Placement passed, but native source length errors skipped phase replay and actual copper had 12 violations/47 open nets",
+      "audit": "capacitor-copper2.json"
+    },
+    {
+      "capture": "capacitor-native3",
+      "accepted_as_final": false,
+      "reason": "Qualified C31 geometry trial; superseded by final native with genuine22uF C30, correct version and formatted source",
+      "audit": "capacitor-copper3.json"
+    }
+  ],
+  "imported_definitions_patched": false,
+  "fabrication_approval_inferred": false
+}

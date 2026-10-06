@@ -1,3 +1,18 @@
+## Latest C30 and BOM export correction — 2026-10-06
+
+C30 is now genuine **GRM188R61A226ME15D/C84419,22µF**, replacing
+GRM188R61A106ME69D/C90053,10µF. C84419 quantity is4; C90053 quantity is10.
+There are125 purchased placements and43 exact JLC identities, plus10native
+solder pads. Imported definitions/models were not edited.
+
+The official BOM0.0.19 `resolvePart` API matches each native part to a recorded
+exact supplier MPN/package label:125rows,0blank descriptions,0supplier codes
+used as package labels. [Export method and receipt](evidence/board-corrections-2026-10-06/resolved-bom-receipt.json).
+These dated labels do not qualify current stock, land patterns, rotation or
+assembly. Export remains marked NOT-FOR-FABRICATION until all board gates pass.
+
+---
+
 ## A6 current checkpoint — 2026-10-04
 
 **Engineering prototype — NOT FABRICATION READY.** This supersedes historical A5 counts below. Genuine in-stock replacements are implemented: seven C22548→C21190 (eight C21190 total), six C105588→C22775. Active125 purchased PCB parts /43identities plus10native pads. Published core0.0.2083 polygon paste fixes13 formerly missing pads;32 pill pads still lack paste. Current native copper20traces/2vias; five missing backlight traces resolved, unconnected-port errors413→402. Genuine saved phase replay and actual added-copper geometry verified; all prior11traces/2vias unchanged.

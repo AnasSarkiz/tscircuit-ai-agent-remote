@@ -26,6 +26,11 @@ const views = [
   ...["top", "inner1", "inner2", "bottom"].map((layer) => ({ name: layer, layer })),
   { name: "top-mask", layer: "top", showSolderMask: true },
   { name: "top-paste", layer: "top", showSolderPaste: true },
+  {
+    name: "mcu-local-bypass",
+    layer: "top",
+    viewport: { minX: -25, minY: 26, maxX: -17, maxY: 32.5 },
+  },
   { name: "usb-charger", layer: "top", viewport: { minX: -24, minY: -32, maxX: 4, maxY: -18 } },
   {
     name: "amplifier-regulator",

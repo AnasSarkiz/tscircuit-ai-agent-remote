@@ -1,0 +1,28 @@
+{
+  "source_version": "0.0.3-wip-local-bypass",
+  "native_sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe",
+  "checks": {
+    "netlist": {
+      "exit_code": 0,
+      "seconds": 89.63,
+      "rss_bytes": 10697682944
+    },
+    "pin_specification": {
+      "exit_code": 0,
+      "seconds": 96.74,
+      "rss_bytes": 12469645312
+    },
+    "source": {
+      "exit_code": 0,
+      "seconds": 85.11,
+      "rss_bytes": 11859595264
+    },
+    "schematic-placement": {
+      "exit_code": 0,
+      "seconds": 79.08,
+      "rss_bytes": 12220653568
+    }
+  },
+  "retained_schematic_suggestions_and_react_warnings": true,
+  "full_board_readiness": false
+}

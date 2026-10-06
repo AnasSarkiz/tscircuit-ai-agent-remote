@@ -1,0 +1,72 @@
+{
+  "command": "bun node_modules/.bin/tsci snapshot index.circuit.tsx",
+  "fresh_frozen_install": true,
+  "outcome": {
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "snapshot",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 1,
+    "termination": null,
+    "elapsed_seconds": 246.93,
+    "peak_process_group_rss_bytes": 3272462336,
+    "memory_budget_bytes": 22333829939,
+    "completed_command": true,
+    "passing_validation_inferred": false
+  },
+  "result": "Both PCB and schematic snapshots mismatch; not updated or accepted.",
+  "reference_snapshots": [
+    {
+      "path": "__snapshots__/index.circuit-pcb.snap.svg",
+      "sha256": "65309851432e01135cee986acfab34e9cf2f248370178767c40ad0c2f47302a2",
+      "unchanged": true
+    },
+    {
+      "path": "__snapshots__/index.circuit-schematic.snap.svg",
+      "sha256": "c1204773def226bad39b7571a323854819e8a3f896a9adaf0b01c75801897126",
+      "unchanged": true
+    }
+  ],
+  "physical_records": {
+    "pcb_smtpad": {
+      "count": 487,
+      "exact_equal": true
+    },
+    "pcb_plated_hole": {
+      "count": 9,
+      "exact_equal": true
+    },
+    "pcb_port": {
+      "count": 658,
+      "exact_equal": true
+    },
+    "pcb_trace": {
+      "count": 306,
+      "exact_equal": true
+    },
+    "pcb_via": {
+      "count": 249,
+      "exact_equal": true
+    },
+    "pcb_copper_pour": {
+      "count": 190,
+      "exact_equal": true
+    },
+    "pcb_keepout": {
+      "count": 3,
+      "exact_equal": true
+    },
+    "pcb_board": {
+      "count": 1,
+      "exact_equal": true
+    },
+    "pcb_hole": {
+      "count": 8,
+      "exact_equal": true
+    }
+  },
+  "fabrication_ready": false,
+  "generated_circuit_json_sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe"
+}

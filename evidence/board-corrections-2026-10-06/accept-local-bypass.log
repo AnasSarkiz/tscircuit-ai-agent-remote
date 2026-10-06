@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/evidence/board-corrections-2026-10-06/accept-local-bypass.py", line 51, in <module>
+    assert math.dist((cap_route[-1]['x'], cap_route[-1]['y']),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,13 @@
+10 | const nativeBytes = readFileSync(circuitPath)
+11 | const circuitJson = JSON.parse(nativeBytes.toString("utf8"))
+12 | const supplierReceipt = JSON.parse(readFileSync("evidence/layout-bom-audit-2026-10-04/supplier-receipt.json", "utf8"))
+13 | const supplierParts = new Map(supplierReceipt.records.map(receipt => {
+14 |   const exactParts = receipt.exact_results.filter(part => `C${part.lcsc}` === receipt.jlc)
+15 |   if (exactParts.length !== 1) throw new Error(`Unqualified supplier identity ${receipt.jlc}`)
+                                              ^
+error: Unqualified supplier identity C105588
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/evidence/board-corrections-2026-10-06/export-resolved-bom.mjs:15:42)
+      at map (1:11)
+      at /workspace/tscircuit-ai-agent-remote/evidence/board-corrections-2026-10-06/export-resolved-bom.mjs:13:55
+
+Bun v1.3.9 (Linux x64)

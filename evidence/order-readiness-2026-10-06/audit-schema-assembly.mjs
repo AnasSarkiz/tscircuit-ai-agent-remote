@@ -4,8 +4,8 @@ import { any_circuit_element } from "circuit-json"
 import { convertCircuitJsonToPickAndPlaceRows, convertCircuitJsonToPickAndPlaceCsv } from "circuit-json-to-pnp-csv"
 import { convertCircuitJsonToBomRows, convertBomRowsToCsv } from "../bom-export-review-2026-10-03/runtime/node_modules/circuit-json-to-bom-csv/dist/index.js"
 
-const folder = "evidence/order-readiness-2026-10-06"
-const nativeBytes = readFileSync(`${folder}/native-build/circuit.json`)
+const folder = process.argv[3] ?? "evidence/order-readiness-2026-10-06"
+const nativeBytes = readFileSync(process.argv[2] ?? `${folder}/native-build/circuit.json`)
 const circuitJson = JSON.parse(nativeBytes.toString("utf8"))
 const source_sha256 = createHash("sha256").update(nativeBytes).digest("hex")
 const by_type = {}

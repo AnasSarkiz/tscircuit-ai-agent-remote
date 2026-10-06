@@ -1,0 +1,39 @@
+{
+  "completed_native_cli_build": true,
+  "cli_build_exit_code": 1,
+  "why_build_fails": "90 actual native open-port errors; source discovery and generation completed, not a passing board build.",
+  "exact_physical_records": {
+    "pcb_smtpad": true,
+    "pcb_plated_hole": true,
+    "pcb_port": true,
+    "pcb_trace": true,
+    "pcb_via": true,
+    "pcb_copper_pour": true,
+    "pcb_keepout": true,
+    "pcb_board": true,
+    "pcb_hole": true
+  },
+  "canonical_native_sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe",
+  "cli_native_sha256": "5bc76eba51e568b95e01fd07d0e3f19ca12a1ac790f9a53253a02553218e4b3b",
+  "entire_native_json_byte_identical": false,
+  "nonphysical_metadata_differs": true,
+  "outputs": {
+    "circuit.json": {
+      "bytes": 5149171,
+      "sha256": "5bc76eba51e568b95e01fd07d0e3f19ca12a1ac790f9a53253a02553218e4b3b"
+    },
+    "pcb.svg": {
+      "bytes": 2304256,
+      "sha256": "6519826b6fe7b91811bb07cfb5b04235e8509dfeb96f394e81926cfa0ce0284c"
+    },
+    "pcb.png": {
+      "bytes": 278454,
+      "sha256": "5fb0c5c2e1819120ea5c86bd170f2999088544fcb45cc4c241e75c6d5cf72b44"
+    },
+    "schematic.svg": {
+      "bytes": 246742,
+      "sha256": "0c5c587b383f3e31c29c4025761a88227bfa14899a88d98ef27ffd356562b462"
+    }
+  },
+  "fabrication_ready": false
+}

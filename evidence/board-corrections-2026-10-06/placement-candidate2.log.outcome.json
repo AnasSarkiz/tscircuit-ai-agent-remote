@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bun",
+    "scripts/routing/capture-placement.tsx",
+    "evidence/board-corrections-2026-10-06/placement-candidate2.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 19.04,
+  "peak_process_group_rss_bytes": 1092997120,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}
