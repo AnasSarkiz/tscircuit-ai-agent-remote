@@ -1,0 +1,37 @@
+{
+  "verified_at": "2026-10-06T13:28:36.921195+02:00",
+  "commit": "4e6a9f1088d5b5de23828add2866888f80816179",
+  "remote_main_commit": "4e6a9f1088d5b5de23828add2866888f80816179",
+  "remote_main_matches": true,
+  "repository": {
+    "isPrivate": false,
+    "url": "https://github.com/AnasSarkiz/tscircuit-ai-agent-remote",
+    "visibility": "PUBLIC"
+  },
+  "unauthenticated_reads": [
+    {
+      "path": "dist/index/circuit.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/4e6a9f1088d5b5de23828add2866888f80816179/dist/index/circuit.json",
+      "unauthenticated_http_status": 200,
+      "byte_identical": true,
+      "sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315"
+    },
+    {
+      "path": "evidence/order-readiness-2026-10-06/review.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/4e6a9f1088d5b5de23828add2866888f80816179/evidence/order-readiness-2026-10-06/review.md",
+      "unauthenticated_http_status": 200,
+      "byte_identical": true,
+      "sha256": "f8c0794c29ef5e7e28d278d602afb0312b9ed651836dead059583c3d8f8f160c"
+    },
+    {
+      "path": "evidence/order-readiness-2026-10-06/trace-widths.csv",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/4e6a9f1088d5b5de23828add2866888f80816179/evidence/order-readiness-2026-10-06/trace-widths.csv",
+      "unauthenticated_http_status": 200,
+      "byte_identical": true,
+      "sha256": "18c2afd597c1744c3e9df8756c97434fbd70bc0f9045df433b9710c59c53df69"
+    }
+  ],
+  "new_board_revision": false,
+  "tscircuit_version_unchanged": "0.0.2-wip-pipeline9",
+  "fabrication_ready": false
+}

@@ -16,6 +16,12 @@ qualification remain open. Types and60 routing regressions pass; board tests
 47pass/2real failed gates. Board/import/dependency/cache bytes unchanged.
 [Full order-readiness report and measurements](evidence/order-readiness-2026-10-06/review.md).
 This verification adds no copper and does not create a duplicate registry upload.
+Public audit implementation
+[4e6a9f1](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/4e6a9f1088d5b5de23828add2866888f80816179)
+is on `main`. Repository visibility is public; unauthenticated HTTP200 reads
+of its native JSON, full report and per-trace CSV match exact local bytes.
+See `context/order-readiness-publication-receipt.json`. The registry board
+remains0.0.2-wip-pipeline9; this does not approve fabrication.
 
 ## Manual/Freerouting continuation — 2026-10-06
 
