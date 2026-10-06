@@ -1,0 +1,43 @@
+{
+  "checked_at_utc": "2026-10-06T17:53:09.784Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.5-wip-style-vias-power",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2199267,
+  "archive_sha256": "2e1940ca34fcb4141d5f230acf438890b1c1ee40df42155ea8df9c8b9617336b",
+  "archives": [
+    {
+      "bytes": 2199267,
+      "sha256": "2e1940ca34fcb4141d5f230acf438890b1c1ee40df42155ea8df9c8b9617336b",
+      "paths": [
+        "dist/index/circuit.json",
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 5538930,
+      "sha256": "e0892f6267aaefefa8d41cc625409363ed4161444c7befe0a527557334d1618b"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "ec6dc359-2dee-4ff6-aa5a-d28570c849f3",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "571f870e-1082-4ac0-aab5-e5fc5ced35cf",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    }
+  ]
+}

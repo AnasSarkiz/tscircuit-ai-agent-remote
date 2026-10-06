@@ -1,6 +1,6 @@
 # Six-point board review — 2026-10-06
 
-Engineering WIP. Final supported native build, export gates and visual review recorded; publication receipts are being collected. This is not fabrication approval.
+Engineering WIP. Final supported native build, export gates, visual review and public publication are recorded. This is not fabrication approval.
 
 The user clarified that high-current PCB routes belong on top/bottom copper. Low-current control, pull-up and measurement branches are separately recorded with their current basis; transient/thermal qualification remains open.
 
@@ -57,3 +57,15 @@ All26actual A4pages, all4copper layers, mask/paste and5critical zooms were inspe
 Original native event bytes were losslessly archived and independently hash-verified before removal of only their uncompressed duplicates. Archives are evidence, not fabricated routing caches. Original solver files, models and lockfile remain unchanged.
 
 UI analysis remains blocked. The onboarding setup skill states: “Saving persists configuration; it does not execute scripts, apply runtime changes, or publish.” The additive network draft is saved but its runtime application is unverified; publish it in Environment settings and use supported proxy-CA trust before retrying the external UI analysis module. [Exact setup skill](skill://plugin_connector_1p_ed5feb9070a08191b08c81c47947bc16/setup/SKILL.md). No certificate verification or policy bypass was used.
+
+## Public implementation and publication
+
+GitHub main contains implementation commit [`206a9897aee67b8a9bf57f77eb929d5d3b564f91`](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/206a9897aee67b8a9bf57f77eb929d5d3b564f91). Anonymous GitHub reads confirm public visibility, exact native bytes, and all122root source/model/documentation/native files used by the package. The package metadata is the documented packaging-helper transformation with identical dependency pins/overrides.
+
+**Public tscircuit0.0.5-wip-style-vias-power**: [native preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/436cf0a3-fcb3-4479-a6b7-7fbbc616cc27/preview). All123files are anonymously byte-verified, public/listed/ready=true, no missing/mismatched/extra files. The native preview endpoint returns the exact validated source object, SHA256e0892f6267aaefefa8d41cc625409363ed4161444c7befe0a527557334d1618b,6989elements/26schematic sheets. No browser thumbnail or cloud-CI success is inferred.
+
+The supported initial CLI publication exits1 in278.17s after archive and individual-file transport failures. Readback finds121exact files and only2missing; two gateway-reported failed files had actually persisted. A Node resume attempt fails before reaching the registry because it does not use this environment's proxy. The corrected pinned-Bun run uploads only the2missing files using the official multipart archive endpoint:75.20s, exact-byte round trip,2,199,267compressed bytes, HTTP200. Fresh readback confirms123/123andready=true. No original model was dropped or modified. The finalization helper only reads the already-ready release and records `ready_transition_performed:false`; it does not queue a duplicate build. The raw failed CLI log is excluded from Git because it contains large request bodies; its SHA and sanitized outcome are recorded.
+
+The public preview verification succeeds. Its initial combined observation then fails because the build-list endpoint requires GET, not POST; that failed method call is retained. The corrected separate read-only GET list/get observations find exactly one automatic cloud job, `a11fb73a-101f-48f7-a1f1-de7aaf7e0319`, started2026-10-06T17:55:43.520Z. Its current recorded result remains in`cloud-build-observation.json`. No rebuild, explicit queue request or passing remote CI claim is made. The prior0.0.4automatic job is now observed completed-failed, rather than still pending.
+
+This is a published engineering prototype, **not ready to order**. Zero measured copper shorts/clearance violations does not erase89native connection errors,25physically open nets,169schema failures, missing paste, unqualified interfaces, stock and current/assembly/mechanical gates.

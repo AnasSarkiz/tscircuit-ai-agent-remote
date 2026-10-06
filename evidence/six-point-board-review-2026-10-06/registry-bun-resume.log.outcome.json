@@ -1,0 +1,22 @@
+{
+  "command": [
+    "bun",
+    "scripts/resume-registry-upload.mjs",
+    "--receipt",
+    "evidence/six-point-board-review-2026-10-06/post-resume-registry-receipt.json",
+    "--output",
+    "evidence/six-point-board-review-2026-10-06/registry-bun-resume-receipt.json",
+    "--stage",
+    ".publish/board",
+    "--max-archive-bytes",
+    "3000000",
+    "--upload"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 75.2,
+  "peak_process_group_rss_bytes": 444338176,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

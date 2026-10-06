@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-06T17:56:40.773591+00:00",
+  "release_id": "436cf0a3-fcb3-4479-a6b7-7fbbc616cc27",
+  "version": "0.0.5-wip-style-vias-power",
+  "preview_endpoint_url": "https://registry-api.tscircuit.com/package_releases/get_preview_circuit_json?package_release_id=436cf0a3-fcb3-4479-a6b7-7fbbc616cc27",
+  "anonymous_http_status": 200,
+  "exact_native_object_equality": true,
+  "matching_native_paths": [
+    [
+      "$.preview_circuit_json_response.circuit_json",
+      "index.circuit.tsx"
+    ]
+  ],
+  "local_native_json_sha256": "e0892f6267aaefefa8d41cc625409363ed4161444c7befe0a527557334d1618b",
+  "native_elements": 6989,
+  "schematic_sheet_count": 26,
+  "preview_page_url": "https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/436cf0a3-fcb3-4479-a6b7-7fbbc616cc27/preview",
+  "preview_page_anonymous_http_status": 200,
+  "browser_thumbnail_or_remote_CI_success_inferred": false,
+  "fabrication_ready": false
+}

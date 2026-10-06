@@ -1,0 +1,34 @@
+{
+  "version": "0.0.5-wip-style-vias-power",
+  "command": [
+    "tsci",
+    "push",
+    "--include-dist",
+    "--compress"
+  ],
+  "outcome": {
+    "command": [
+      "bash",
+      "-c",
+      "cd .publish/board && bun ../../node_modules/.bin/tsci push --include-dist --compress"
+    ],
+    "exit_code": 1,
+    "termination": null,
+    "elapsed_seconds": 278.17,
+    "peak_process_group_rss_bytes": 943595520,
+    "memory_budget_bytes": 22333829939,
+    "completed_command": true,
+    "passing_validation_inferred": false
+  },
+  "raw_cli_log_sha256": "fcd58488d0a3ad534c24742b5cf13b9e28cd4e657d331eb1402f387c5c11388b",
+  "raw_log_not_committed": "CLI failed-archive logging includes large request bodies; raw output retained under /tmp only.",
+  "archive_upload_failed": true,
+  "reported_success_file_count": 105,
+  "failed_file_paths": [
+    "dist/index/circuit.json",
+    "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+    "imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.step",
+    "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step"
+  ],
+  "followup": "Anonymous full file readback followed by exact-byte, missing-file-only official archive upload."
+}
