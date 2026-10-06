@@ -158,3 +158,37 @@ formatting are recorded in `final-source-checks-complete.log`. The supported
 source snapshot completes in 61.10 seconds and exits 1 with PCB and schematic
 mismatches. Existing snapshot references were preserved. All underlying failed
 commands completed normally; a completed command is not inferred to have passed.
+
+## Verified public publication
+
+Source commit [`b47059aa028a9e3bba37be1e64d101fd57e24097`](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/b47059aa028a9e3bba37be1e64d101fd57e24097)
+is public. Anonymous GitHub readback verifies all 125 packaged paths against
+the repository source/native bytes and observes the HTML Public badge. Only
+supported `package.json` publication metadata differs between repository and
+curated runtime; the board source and native JSON match exactly.
+
+Public tsci version `0.0.7-wip-manual-routing-repairs` is release
+`52ef3bae-1c65-4056-81db-2e9841c86fb6`.
+[Exact native preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/52ef3bae-1c65-4056-81db-2e9841c86fb6/preview).
+All 125 files hash-match anonymous readback; no missing/extra/mismatched files
+remain. The public/listed release is ready to build. Its native preview exactly
+matches all 7,568 validated local elements and 26 A4 pages, with HTTP 200.
+
+The initial official compressed push completed with exit 1 after HTTP 413/502
+upload failures. Anonymous inspection after completion established exactly 122
+matching stored files and three missing files. Only those missing native/STEP
+files were resumed through the official archive API, with a 2,645,759-byte
+round-trip-verified archive and HTTP 200. The first read made while the upload
+was still running had inconsistent transient file/list counts and was not used
+for a retry. All authenticated raw logs remain outside the repository in `/tmp`.
+`official-tsci-push-outcome.json`, `stable-partial-registry-receipt.json`,
+`resume-registry-upload-receipt.json` and `final-registry-receipt.json` preserve
+the distinct failed/partial/resumed/verified outcomes.
+
+One existing automatic cloud job is observed:
+`84d57c5a-b0b1-474a-abfb-f164c10dcb8b`. Its user-code job started at
+2026-10-06T23:56:42.772Z; circuit JSON building had not started at the recorded
+read. No duplicate job was queued and no passing cloud CI is claimed.
+Publication and preview verification do not alter the 52 open connections or
+any other fabrication blocker. This metadata update changes no packaged board,
+source, model, dependency or native bytes.

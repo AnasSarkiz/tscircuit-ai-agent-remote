@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-10-06T23:56:19.391Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.7-wip-manual-routing-repairs",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2645759,
+  "archive_sha256": "d027f71d204ed99892b4e14279aa4bd0708ee584d033c0a8dc07ec3f109be42d",
+  "archives": [
+    {
+      "bytes": 2645759,
+      "sha256": "d027f71d204ed99892b4e14279aa4bd0708ee584d033c0a8dc07ec3f109be42d",
+      "paths": [
+        "dist/index/circuit.json",
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+        "imports/TPS60230RGTR/TPS60230RGTR.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 6972730,
+      "sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    },
+    {
+      "path": "imports/TPS60230RGTR/TPS60230RGTR.step",
+      "bytes": 1965446,
+      "sha256": "92700d32fa26ea3dd2f1b2b9df263fc1964d5ab2f499326308ff14bee7794854"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "55d43846-09dc-4ac1-a274-cfb2170f17a0",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "33427509-0305-458b-8970-e71898d86e2c",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    },
+    {
+      "package_file_id": "1646c399-3e18-4525-9a48-314b5b3d0fda",
+      "file_path": "imports/TPS60230RGTR/TPS60230RGTR.step"
+    }
+  ]
+}

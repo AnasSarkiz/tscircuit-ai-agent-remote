@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-06T23:56:56.733375+00:00",
+  "release_id": "52ef3bae-1c65-4056-81db-2e9841c86fb6",
+  "version": "0.0.7-wip-manual-routing-repairs",
+  "preview_endpoint_url": "https://registry-api.tscircuit.com/package_releases/get_preview_circuit_json?package_release_id=52ef3bae-1c65-4056-81db-2e9841c86fb6",
+  "anonymous_http_status": 200,
+  "exact_native_object_equality": true,
+  "matching_native_paths": [
+    [
+      "$.preview_circuit_json_response.circuit_json",
+      "index.circuit.tsx"
+    ]
+  ],
+  "local_native_json_sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184",
+  "native_elements": 7568,
+  "schematic_sheet_count": 26,
+  "preview_page_url": "https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/52ef3bae-1c65-4056-81db-2e9841c86fb6/preview",
+  "preview_page_anonymous_http_status": 200,
+  "cloud_CI_success_inferred": false,
+  "fabrication_ready": false
+}

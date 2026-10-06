@@ -1,0 +1,23 @@
+{
+  "command": [
+    "bun",
+    "scripts/resume-registry-upload.mjs",
+    "--receipt",
+    "evidence/routing-zero-drc-2026-10-07/stable-partial-registry-receipt.json",
+    "--output",
+    "evidence/routing-zero-drc-2026-10-07/resume-registry-upload-receipt.json",
+    "--stage",
+    ".publish/board",
+    "--max-archive-bytes",
+    "3000000",
+    "--upload"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 24.53,
+  "peak_process_group_rss_bytes": 591056896,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false,
+  "raw_authenticated_log_retained_only_in_tmp": true
+}

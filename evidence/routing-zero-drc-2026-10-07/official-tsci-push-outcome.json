@@ -1,0 +1,24 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd .publish/board\nexec bun /workspace/tscircuit-ai-agent-remote/node_modules/.bin/tsci push --include-dist --compress"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 133.18,
+  "peak_process_group_rss_bytes": 1051656192,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false,
+  "raw_authenticated_log_retained_only_in_tmp": true,
+  "full_publication_inferred": false,
+  "requires_anonymous_file_verification_before_any_retry": true,
+  "reported_http_status_codes": [
+    "413",
+    "502"
+  ],
+  "stable_anonymous_verification_receipt": "stable-partial-registry-receipt.json",
+  "verified_stored_files": 122,
+  "verified_missing_files": 3
+}

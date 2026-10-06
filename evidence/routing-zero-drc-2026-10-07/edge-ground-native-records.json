@@ -1,0 +1,141 @@
+{
+  "native_sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184",
+  "source_traces": [
+    {
+      "type": "source_trace",
+      "source_trace_id": "source_trace_812",
+      "connected_source_port_ids": [
+        "source_port_414",
+        "source_port_686"
+      ],
+      "connected_source_net_ids": [
+        "source_net_14"
+      ],
+      "subcircuit_id": "subcircuit_source_group_15",
+      "name": "CONNECTION_PAD_EDGE_GND_0",
+      "display_name": ".U5 > .pin3 to .CONNECTION_VIA_46 > .top",
+      "min_trace_thickness": 0.4,
+      "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_15_connectivity_net1"
+    },
+    {
+      "type": "source_trace",
+      "source_trace_id": "source_trace_813",
+      "connected_source_port_ids": [
+        "source_port_405",
+        "source_port_688"
+      ],
+      "connected_source_net_ids": [
+        "source_net_14"
+      ],
+      "subcircuit_id": "subcircuit_source_group_15",
+      "name": "CONNECTION_PAD_EDGE_GND_1",
+      "display_name": ".U4 > .pin3 to .CONNECTION_VIA_47 > .top",
+      "min_trace_thickness": 0.36,
+      "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_15_connectivity_net1"
+    }
+  ],
+  "actual_named_native_traces": [
+    {
+      "type": "pcb_trace",
+      "pcb_trace_id": "pcb_trace_359",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 21.1625082,
+          "y": -28.193194168582917,
+          "width": 0.4,
+          "layer": "top",
+          "start_pcb_port_id": "pcb_port_414",
+          "is_inside_copper_pour": true,
+          "copper_pour_id": "pcb_copper_pour_120"
+        },
+        {
+          "route_type": "wire",
+          "x": 21.727201,
+          "y": -27.628501,
+          "width": 0.4,
+          "layer": "top",
+          "end_pcb_port_id": "pcb_port_686",
+          "is_inside_copper_pour": true,
+          "copper_pour_id": "pcb_copper_pour_120"
+        }
+      ],
+      "source_trace_id": "source_trace_812",
+      "subcircuit_id": "subcircuit_source_group_15",
+      "trace_length": 0.7985964769619597
+    },
+    {
+      "type": "pcb_trace",
+      "pcb_trace_id": "pcb_trace_360",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -16.2965836,
+          "y": -28.505577319013966,
+          "width": 0.36,
+          "layer": "top",
+          "start_pcb_port_id": "pcb_port_405",
+          "is_inside_copper_pour": true,
+          "copper_pour_id": "pcb_copper_pour_90"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.667038,
+          "y": -28.72274,
+          "width": 0.36,
+          "layer": "top",
+          "end_pcb_port_id": "pcb_port_688",
+          "is_inside_copper_pour": true,
+          "copper_pour_id": "pcb_copper_pour_90"
+        }
+      ],
+      "source_trace_id": "source_trace_813",
+      "subcircuit_id": "subcircuit_source_group_15",
+      "trace_length": 0.42941366127826275
+    }
+  ],
+  "native_warning_records_preserved": [
+    {
+      "type": "pcb_trace_warning",
+      "pcb_trace_warning_id": "pcb_trace_warning_0",
+      "warning_type": "pcb_trace_warning",
+      "message": "Trace [.U5 > .pin3 to .CONNECTION_VIA_46 > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.3mm).",
+      "center": {
+        "x": -19.575046750000006,
+        "y": 31.169496993749814
+      },
+      "source_trace_id": "source_trace_812",
+      "pcb_trace_id": "pcb_trace_0",
+      "pcb_component_ids": [
+        "pcb_component_103",
+        "pcb_component_230"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_414",
+        "pcb_port_686"
+      ]
+    },
+    {
+      "type": "pcb_trace_warning",
+      "pcb_trace_warning_id": "pcb_trace_warning_1",
+      "warning_type": "pcb_trace_warning",
+      "message": "Trace [.U4 > .pin3 to .CONNECTION_VIA_47 > .top] is routed thinner than requested (requested: 0.36mm, actual: 0.3mm).",
+      "center": {
+        "x": -19.595046750000005,
+        "y": 31.169496988749813
+      },
+      "source_trace_id": "source_trace_813",
+      "pcb_trace_id": "pcb_trace_0",
+      "pcb_component_ids": [
+        "pcb_component_102",
+        "pcb_component_231"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_405",
+        "pcb_port_688"
+      ]
+    }
+  ],
+  "native_records_changed": false,
+  "fabrication_qualified": false
+}
