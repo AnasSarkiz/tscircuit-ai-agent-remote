@@ -1,0 +1,43 @@
+{
+  "checked_at_utc": "2026-10-06T22:22:14.350Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.6-wip-connection-repairs",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2320894,
+  "archive_sha256": "3a3dced2392ecb6c761a0c53be0156c98cd6e8a9786ac0bbc2f49905781458c4",
+  "archives": [
+    {
+      "bytes": 2320894,
+      "sha256": "3a3dced2392ecb6c761a0c53be0156c98cd6e8a9786ac0bbc2f49905781458c4",
+      "paths": [
+        "dist/index/circuit.json",
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 6947353,
+      "sha256": "fb2f9c96ff000de1e18d6bf4d35bd41fea2323fc0b10730df4a0262b0bbdb73d"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "444d944a-ab1c-45ae-8e72-18f2c41c9624",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "48172126-d0a0-4fc7-bb68-3fabda94dee2",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    }
+  ]
+}

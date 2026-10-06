@@ -1,0 +1,766 @@
+{
+  "source_circuit_json": "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json",
+  "native_sha256": "fb2f9c96ff000de1e18d6bf4d35bd41fea2323fc0b10730df4a0262b0bbdb73d",
+  "converter": "circuit-json-to-bom-csv@0.0.19",
+  "method": "Official resolvePart callback; exact native MPN and JLC identity matched to recorded supplier package. No CSV repair or imported footprint edit.",
+  "bom_rows": 125,
+  "blank_description_count": 0,
+  "supplier_code_as_package_count": 0,
+  "supplier_identity_count": 43,
+  "manufacturer_company_names_available": false,
+  "current_stock_verified": false,
+  "stock_receipt_date": "2026-10-04T20:06:27.281542+00:00",
+  "fabrication_ready": false,
+  "resolved_parts": [
+    {
+      "designator": "U1",
+      "jlcpcb_part": "C2913201",
+      "mpn": "ESP32-S3-WROOM-1-N8R8",
+      "supplier_package": "SMD,25.5x18mm"
+    },
+    {
+      "designator": "J1",
+      "jlcpcb_part": "C165948",
+      "mpn": "TYPE-C-31-M-12",
+      "supplier_package": "SMD"
+    },
+    {
+      "designator": "D2",
+      "jlcpcb_part": "C94934",
+      "mpn": "TPD2EUSB30ADRTR",
+      "supplier_package": "SOT(9x3)"
+    },
+    {
+      "designator": "U12",
+      "jlcpcb_part": "C485802",
+      "mpn": "TPS3839G33DBZR",
+      "supplier_package": "SOT-23-3"
+    },
+    {
+      "designator": "J6",
+      "jlcpcb_part": "C160405",
+      "mpn": "SM06B-SRSS-TB(LF)(SN)",
+      "supplier_package": "SMD,P=1mm,卧贴"
+    },
+    {
+      "designator": "R31",
+      "jlcpcb_part": "C107701",
+      "mpn": "RC0603FR-0722RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R32",
+      "jlcpcb_part": "C107701",
+      "mpn": "RC0603FR-0722RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R33",
+      "jlcpcb_part": "C105580",
+      "mpn": "RC0603FR-075K1L",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R34",
+      "jlcpcb_part": "C105580",
+      "mpn": "RC0603FR-075K1L",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R35",
+      "jlcpcb_part": "C99782",
+      "mpn": "RC0603FR-074K7L",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R36",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R37",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R38",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C30",
+      "jlcpcb_part": "C84419",
+      "mpn": "GRM188R61A226ME15D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C31",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C32",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U16",
+      "jlcpcb_part": "C54313",
+      "mpn": "BQ24074RGTR",
+      "supplier_package": "QFN-16-EP(3x3)"
+    },
+    {
+      "designator": "J3",
+      "jlcpcb_part": "C157929",
+      "mpn": "S3B-PH-K-S(LF)(SN)",
+      "supplier_package": "弯插,P=2mm"
+    },
+    {
+      "designator": "C1",
+      "jlcpcb_part": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C2",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C3",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R1",
+      "jlcpcb_part": "C126358",
+      "mpn": "RC0603FR-073KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R2",
+      "jlcpcb_part": "C126358",
+      "mpn": "RC0603FR-073KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R3",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R4",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U2",
+      "jlcpcb_part": "C2845237",
+      "mpn": "TPS63802DLAR",
+      "supplier_package": "VSON-10(2x3)"
+    },
+    {
+      "designator": "L1",
+      "jlcpcb_part": "C668312",
+      "mpn": "DFE201612E-R47M=P2",
+      "supplier_package": "0806"
+    },
+    {
+      "designator": "C4",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C5",
+      "jlcpcb_part": "C84419",
+      "mpn": "GRM188R61A226ME15D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R5",
+      "jlcpcb_part": "C364359",
+      "mpn": "RC0603FR-0751K1L",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R6",
+      "jlcpcb_part": "C114639",
+      "mpn": "RC0603FR-079K1L",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R7",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U13",
+      "jlcpcb_part": "C2869847",
+      "mpn": "TPS7A2028PDBVR",
+      "supplier_package": "SOT-23-5"
+    },
+    {
+      "designator": "U14",
+      "jlcpcb_part": "C7848",
+      "mpn": "SN74LVC245APWR",
+      "supplier_package": "TSSOP-20"
+    },
+    {
+      "designator": "J7",
+      "jlcpcb_part": "C262650",
+      "mpn": "AFC07-S50ECA-00",
+      "supplier_package": "SMD,P=0.5mm,卧贴"
+    },
+    {
+      "designator": "C40",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C41",
+      "jlcpcb_part": "C84419",
+      "mpn": "GRM188R61A226ME15D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C42",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C43",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R40",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R41",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R47",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R42",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R48",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R43",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R49",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R44",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R50",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R45",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R51",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R46",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U3",
+      "jlcpcb_part": "C910544",
+      "mpn": "MAX98357AETE+T",
+      "supplier_package": "TQFN-16-EP(3x3)"
+    },
+    {
+      "designator": "Q1",
+      "jlcpcb_part": "C20917",
+      "mpn": "AO3400A",
+      "supplier_package": "SOT-23"
+    },
+    {
+      "designator": "Q2",
+      "jlcpcb_part": "C15127",
+      "mpn": "AO3401A",
+      "supplier_package": "SOT-23"
+    },
+    {
+      "designator": "J4",
+      "jlcpcb_part": "C173752",
+      "mpn": "S2B-PH-K-S(LF)(SN)",
+      "supplier_package": "弯插,P=2mm"
+    },
+    {
+      "designator": "C50",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C51",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R60",
+      "jlcpcb_part": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R61",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R62",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R63",
+      "jlcpcb_part": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R64",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R65",
+      "jlcpcb_part": "C107701",
+      "mpn": "RC0603FR-0722RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R68",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R66",
+      "jlcpcb_part": "C107701",
+      "mpn": "RC0603FR-0722RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R69",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R67",
+      "jlcpcb_part": "C107701",
+      "mpn": "RC0603FR-0722RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R70",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U22",
+      "jlcpcb_part": "C963429",
+      "mpn": "TPS7A2030PDBVR",
+      "supplier_package": "SOT-23-5"
+    },
+    {
+      "designator": "Q9",
+      "jlcpcb_part": "C20917",
+      "mpn": "AO3400A",
+      "supplier_package": "SOT-23"
+    },
+    {
+      "designator": "D3",
+      "jlcpcb_part": "C2480",
+      "mpn": "SS14",
+      "supplier_package": "SMA(DO-214AC)"
+    },
+    {
+      "designator": "C70",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C71",
+      "jlcpcb_part": "C84419",
+      "mpn": "GRM188R61A226ME15D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C72",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R82",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R83",
+      "jlcpcb_part": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R84",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R85",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U23",
+      "jlcpcb_part": "C2869847",
+      "mpn": "TPS7A2028PDBVR",
+      "supplier_package": "SOT-23-5"
+    },
+    {
+      "designator": "U24",
+      "jlcpcb_part": "C24478",
+      "mpn": "74LVC2G07GW,125",
+      "supplier_package": "SOT-363-6"
+    },
+    {
+      "designator": "C73",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C74",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C75",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R86",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R87",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R88",
+      "jlcpcb_part": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R89",
+      "jlcpcb_part": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R90",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R91",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R92",
+      "jlcpcb_part": "C105881",
+      "mpn": "RC0603FR-07330RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R93",
+      "jlcpcb_part": "C105881",
+      "mpn": "RC0603FR-07330RL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R94",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R95",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U26",
+      "jlcpcb_part": "C7836",
+      "mpn": "SN74LVC1G17DBVR",
+      "supplier_package": "SOT-23-5"
+    },
+    {
+      "designator": "R99",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R100",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C78",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U25",
+      "jlcpcb_part": "C43698",
+      "mpn": "TPS3808G33DBVR",
+      "supplier_package": "SOT-23-6"
+    },
+    {
+      "designator": "R96",
+      "jlcpcb_part": "C114622",
+      "mpn": "RC0603FR-07470KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R97",
+      "jlcpcb_part": "C114622",
+      "mpn": "RC0603FR-07470KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C76",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C77",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U4",
+      "jlcpcb_part": "C5656610",
+      "mpn": "ICS-43434",
+      "supplier_package": "LGA-6(3.5x2.7)"
+    },
+    {
+      "designator": "U5",
+      "jlcpcb_part": "C5656610",
+      "mpn": "ICS-43434",
+      "supplier_package": "LGA-6(3.5x2.7)"
+    },
+    {
+      "designator": "C80",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C81",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "U7",
+      "jlcpcb_part": "C105188",
+      "mpn": "TLV3201AIDBVR",
+      "supplier_package": "SOT-23-5"
+    },
+    {
+      "designator": "R26",
+      "jlcpcb_part": "C14675",
+      "mpn": "RC0603FR-07100KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R27",
+      "jlcpcb_part": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R29",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R30",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C25",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C26",
+      "jlcpcb_part": "C45000",
+      "mpn": "GRM188R71C104KA01D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "SW4",
+      "jlcpcb_part": "C255576",
+      "mpn": "SKSWCFE010",
+      "supplier_package": "SMD,3x2mm"
+    },
+    {
+      "designator": "SW1",
+      "jlcpcb_part": "C255576",
+      "mpn": "SKSWCFE010",
+      "supplier_package": "SMD,3x2mm"
+    },
+    {
+      "designator": "SW2",
+      "jlcpcb_part": "C255576",
+      "mpn": "SKSWCFE010",
+      "supplier_package": "SMD,3x2mm"
+    },
+    {
+      "designator": "SW5",
+      "jlcpcb_part": "C431540",
+      "mpn": "MSK12C02",
+      "supplier_package": "SMD,8x2.8mm"
+    },
+    {
+      "designator": "U27",
+      "jlcpcb_part": "C1848364",
+      "mpn": "TPS60230RGTR",
+      "supplier_package": "VQFN-16-EP(3x3)"
+    },
+    {
+      "designator": "R102",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R103",
+      "jlcpcb_part": "C22775",
+      "mpn": "0603WAF1000T5E",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "R104",
+      "jlcpcb_part": "C98220",
+      "mpn": "RC0603FR-0710KL",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C82",
+      "jlcpcb_part": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C83",
+      "jlcpcb_part": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C84",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    },
+    {
+      "designator": "C85",
+      "jlcpcb_part": "C90053",
+      "mpn": "GRM188R61A106ME69D",
+      "supplier_package": "0603"
+    }
+  ]
+}

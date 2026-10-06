@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-10-06T22:21:13.610488+00:00",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.6-wip-connection-repairs",
+  "public_url": "https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.6-wip-connection-repairs#files",
+  "anonymous_access": true,
+  "ready_to_build": false,
+  "is_private": false,
+  "is_unlisted": false,
+  "cloud_build_error": null,
+  "transpilation_error": null,
+  "release_http_status": null,
+  "package_http_status": null,
+  "file_list_http_status": null,
+  "missing_from_list": [
+    "dist/index/circuit.json",
+    "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+  ],
+  "extra_remote_files": [],
+  "matching_files": 123,
+  "expected_files": 125,
+  "missing_files": [
+    "dist/index/circuit.json",
+    "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+  ],
+  "unverified_or_mismatched_files": [],
+  "complete_public_upload": false
+}
+Traceback (most recent call last):
+  File "/tmp/verify-connection-github.py", line 17, in <module>
+    repo=json.load(urllib.request.urlopen('https://api.github.com/repos/AnasSarkiz/tscircuit-ai-agent-remote',timeout=30))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized

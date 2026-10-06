@@ -1,0 +1,12 @@
+{
+  "supported_cli_command": "tsci push --include-dist --compress",
+  "exit_code": 1,
+  "elapsed_seconds": 127.69,
+  "http_error_statuses": [
+    "413",
+    "502"
+  ],
+  "raw_log_kept_outside_repository": true,
+  "exact_remote_file_verification_required_before_resume": true,
+  "status_extraction": "Numeric status in short error contexts; raw authenticated log not published"
+}

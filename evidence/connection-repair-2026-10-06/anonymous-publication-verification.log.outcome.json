@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "python3 scripts/verify-registry-publication.py --version AnasSarkiz/tscircuit-ai-agent-remote@0.0.6-wip-connection-repairs --stage .publish/board --output evidence/connection-repair-2026-10-06/initial-registry-receipt.json\npython3 /tmp/verify-connection-github.py"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 22.53,
+  "peak_process_group_rss_bytes": 69165056,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}
