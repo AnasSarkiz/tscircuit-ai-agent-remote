@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".tools/freerouting/jdk-25.0.4.1+1/bin/java",
+    "-Xmx6g",
+    "-Djava.awt.headless=true",
+    "--class-path",
+    ".tools/freerouting/freerouting-2.5.0.jar",
+    "scripts/routing/FreeroutingTransfer.java",
+    "evidence/freerouting-continuation-2026-10-06/partitioned.dsn",
+    "evidence/freerouting-continuation-2026-10-06/partitioned-roundtrip.dsn",
+    "evidence/freerouting-continuation-2026-10-06/partitioned-engine-rules.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 4.51,
+  "peak_process_group_rss_bytes": 576462848,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

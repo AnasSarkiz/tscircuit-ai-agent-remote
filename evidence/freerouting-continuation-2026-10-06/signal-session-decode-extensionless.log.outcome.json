@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/freerouting_bridge.py",
+    "session",
+    "evidence/freerouting-continuation-2026-10-06/fixed-areas-signal-proposed.ses",
+    "evidence/freerouting-continuation-2026-10-06/fixed-areas.dsn.manifest.json",
+    "evidence/freerouting-continuation-2026-10-06/fixed-areas-verification.json",
+    "evidence/freerouting-continuation-2026-10-06/signal-proposals.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 90112,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

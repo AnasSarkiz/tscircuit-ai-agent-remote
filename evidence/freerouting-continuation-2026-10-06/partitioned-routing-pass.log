@@ -1,0 +1,183 @@
+2026-10-06 04:35:36.242 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-06 04:35:36.532 INFO   Hardware: 4 CPU cores, 407 CPU score, 6144 MB RAM
+2026-10-06 04:35:36.534 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-06 04:35:36.537 INFO   Configured network proxy: proxy:8080
+2026-10-06 04:35:40.197 INFO   [C4772A\420294] Loading board file 'partitioned.dsn'...
+2026-10-06 04:35:44.778 INFO   [C4772A\420294] Job 'C4772A\420294' started at 2026-10-06T04:35:44.778515110Z.
+2026-10-06 04:36:05.328 WARN   Design Warning: Board has 402 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 402 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 402 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#3055 [net MCU_UART_RX] <-> FixedTrace#2304 [net MIC_SD]
+          - FixedVia#3054 [net MCU_UART_RX] <-> ObstacleArea#54
+          - FixedVia#3054 [net MCU_UART_RX] <-> ObstacleArea#55
+          - FixedVia#3054 [net MCU_UART_RX] <-> ObstacleArea#56
+          - FixedVia#3054 [net MCU_UART_RX] <-> ObstacleArea#57
+          ... and 397 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 402 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-06 04:36:05.450 INFO   [C4772A\420294] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=3.
+2026-10-06 04:36:23.173 INFO   [C4772A\420294] Auto-routing stage started on board 'b20e6cf8373889263faaafe1d43ff643' with baseline score 469.86 for 524 unrouted items.
+2026-10-06 04:38:12
+Full thread dump OpenJDK 64-Bit Server VM (25.0.4.1+1-LTS mixed mode, sharing):
+
+Threads class SMR info:
+_java_thread_list=0x00007fef80c032e0, length=15, elements={
+0x00007ff01c02abc0, 0x00007ff01c0cdde0, 0x00007ff01c0cf610, 0x00007ff01c0d1060,
+0x00007ff01c0d2980, 0x00007ff01c0d4200, 0x00007ff01c0d6000, 0x00007ff01c0d79f0,
+0x00007ff01c11bdf0, 0x00007ff01c11eda0, 0x00007ff01c531300, 0x00007ff01c512080,
+0x00007fefa003d680, 0x00007fefa003a310, 0x00007fefac9630b0
+}
+
+"main" #3 [3907] prio=5 os_prio=0 cpu=3243.83ms elapsed=157.16s tid=0x00007ff01c02abc0 nid=3907 waiting on condition  [0x00007ff022e80000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleepNanos0(java.base@25.0.4.1/Native Method)
+	at java.lang.Thread.sleepNanos(java.base@25.0.4.1/Thread.java:509)
+	at java.lang.Thread.sleep(java.base@25.0.4.1/Thread.java:540)
+	at app.freerouting.cli.CliRunner.initializeCli(CliRunner.java:98)
+	at app.freerouting.Freerouting.initializeCli(Freerouting.java:65)
+	at app.freerouting.Freerouting.main(Freerouting.java:705)
+
+"Reference Handler" #13 [3917] daemon prio=10 os_prio=0 cpu=2.53ms elapsed=157.15s tid=0x00007ff01c0cdde0 nid=3917 waiting on condition  [0x00007ff020218000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.ref.Reference.waitForReferencePendingList(java.base@25.0.4.1/Native Method)
+	at java.lang.ref.Reference.processPendingReferences(java.base@25.0.4.1/Reference.java:246)
+	at java.lang.ref.Reference$ReferenceHandler.run(java.base@25.0.4.1/Reference.java:208)
+
+"Finalizer" #14 [3918] daemon prio=8 os_prio=0 cpu=0.22ms elapsed=157.15s tid=0x00007ff01c0cf610 nid=3918 in Object.wait()  [0x00007ff020118000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@25.0.4.1/Native Method)
+	- waiting on <0x0000000680c009f0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:389)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:351)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@25.0.4.1/ReferenceQueue.java:137)
+	at java.lang.ref.ReferenceQueue.remove(java.base@25.0.4.1/ReferenceQueue.java:215)
+	- locked <0x0000000680c009f0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.Finalizer$FinalizerThread.run(java.base@25.0.4.1/Finalizer.java:165)
+
+"Signal Dispatcher" #15 [3919] daemon prio=9 os_prio=0 cpu=0.16ms elapsed=157.15s tid=0x00007ff01c0d1060 nid=3919 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Service Thread" #16 [3920] daemon prio=9 os_prio=0 cpu=4.15ms elapsed=157.15s tid=0x00007ff01c0d2980 nid=3920 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Monitor Deflation Thread" #17 [3921] daemon prio=9 os_prio=0 cpu=17.30ms elapsed=157.15s tid=0x00007ff01c0d4200 nid=3921 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #18 [3922] daemon prio=9 os_prio=0 cpu=19371.51ms elapsed=157.15s tid=0x00007ff01c0d6000 nid=3922 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"C1 CompilerThread0" #20 [3923] daemon prio=9 os_prio=0 cpu=1515.28ms elapsed=157.15s tid=0x00007ff01c0d79f0 nid=3923 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"Notification Thread" #21 [3924] daemon prio=9 os_prio=0 cpu=0.08ms elapsed=157.15s tid=0x00007ff01c11bdf0 nid=3924 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" #22 [3925] daemon prio=8 os_prio=0 cpu=0.39ms elapsed=157.15s tid=0x00007ff01c11eda0 nid=3925 in Object.wait()  [0x00007fefc3dfe000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait0(java.base@25.0.4.1/Native Method)
+	- waiting on <0x0000000680c018a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.Object.wait(java.base@25.0.4.1/Object.java:389)
+	at java.lang.ref.ReferenceQueue.remove0(java.base@25.0.4.1/ReferenceQueue.java:123)
+	at java.lang.ref.ReferenceQueue.remove(java.base@25.0.4.1/ReferenceQueue.java:201)
+	- locked <0x0000000680c018a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at jdk.internal.ref.CleanerImpl.run(java.base@25.0.4.1/CleanerImpl.java:146)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+	at jdk.internal.misc.InnocuousThread.run(java.base@25.0.4.1/InnocuousThread.java:148)
+
+"HttpClient-1-SelectorManager" #27 [3931] daemon prio=5 os_prio=0 cpu=14.01ms elapsed=155.31s tid=0x00007ff01c531300 nid=3931 runnable  [0x00007fefc3800000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.EPoll.wait(java.base@25.0.4.1/Native Method)
+	at sun.nio.ch.EPollSelectorImpl.doSelect(java.base@25.0.4.1/EPollSelectorImpl.java:117)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@25.0.4.1/SelectorImpl.java:130)
+	- locked <0x0000000680c01dc8> (a sun.nio.ch.Util$2)
+	- locked <0x0000000680c01d78> (a sun.nio.ch.EPollSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(java.base@25.0.4.1/SelectorImpl.java:142)
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.run(java.net.http@25.0.4.1/HttpClientImpl.java:1338)
+
+"Thread-0" #30 [3934] daemon prio=5 os_prio=0 cpu=4462.20ms elapsed=155.26s tid=0x00007ff01c512080 nid=3934 waiting on condition  [0x00007fefc3700000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleepNanos0(java.base@25.0.4.1/Native Method)
+	at java.lang.Thread.sleepNanos(java.base@25.0.4.1/Thread.java:509)
+	at java.lang.Thread.sleep(java.base@25.0.4.1/Thread.java:540)
+	at app.freerouting.management.jobs.RoutingJobScheduler.lambda$new$0(RoutingJobScheduler.java:294)
+	at app.freerouting.management.jobs.RoutingJobScheduler$$Lambda/0x00000000161dcd78.run(Unknown Source)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+
+"VirtualThread-unblocker" #34 [3939] daemon prio=5 os_prio=0 cpu=0.18ms elapsed=150.27s tid=0x00007fefa003d680 nid=3939 runnable  [0x00007fefc3200000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.VirtualThread.takeVirtualThreadListToUnblock(java.base@25.0.4.1/Native Method)
+	at java.lang.VirtualThread.unblockVirtualThreads(java.base@25.0.4.1/VirtualThread.java:1519)
+	at java.lang.VirtualThread$$Lambda/0x000000001627ed30.run(java.base@25.0.4.1/Unknown Source)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+	at jdk.internal.misc.InnocuousThread.run(java.base@25.0.4.1/InnocuousThread.java:148)
+
+"Thread-1" #37 [3941] daemon prio=5 os_prio=0 cpu=126747.19ms elapsed=148.18s tid=0x00007fefa003a310 nid=3941 runnable  [0x00007fefc3cfd000]
+   java.lang.Thread.State: RUNNABLE
+	at app.freerouting.geometry.planar.Simplex.removeRedundantLines(Simplex.java:912)
+	at app.freerouting.geometry.planar.Simplex.intersection(Simplex.java:629)
+	at app.freerouting.geometry.planar.Simplex.cutoutFrom(Simplex.java:711)
+	at app.freerouting.geometry.planar.Simplex.cutoutFrom(Simplex.java:14)
+	at app.freerouting.geometry.planar.Simplex.cutout(Simplex.java:696)
+	at app.freerouting.geometry.planar.PolylineArea.cutoutHolePiece(PolylineArea.java:29)
+	at app.freerouting.geometry.planar.PolylineArea.splitToConvex(PolylineArea.java:192)
+	at app.freerouting.autoroute.drill.DrillPage.getDrills(DrillPage.java:103)
+	at app.freerouting.autoroute.maze.MazeExpansionEngine.expandToDrillsOfPage(MazeExpansionEngine.java:150)
+	at app.freerouting.autoroute.maze.MazeSearchEngine.occupyNextElement(MazeSearchEngine.java:349)
+	at app.freerouting.autoroute.maze.MazeSearchEngine.findConnection(MazeSearchEngine.java:301)
+	at app.freerouting.autoroute.maze.AutorouteEngine.autorouteConnection(AutorouteEngine.java:156)
+	at app.freerouting.autoroute.pipeline.AutorouteConnectionRouter.route(AutorouteConnectionRouter.java:93)
+	at app.freerouting.autoroute.pipeline.BatchAutorouter.autorouteItem(BatchAutorouter.java:560)
+	at app.freerouting.autoroute.pipeline.AutoroutePassRunner.runSingleThread(AutoroutePassRunner.java:134)
+	at app.freerouting.autoroute.pipeline.BatchAutorouter.autoroutePass(BatchAutorouter.java:460)
+	at app.freerouting.autoroute.pipeline.AutorouteBatchLoop.autoroutePass(AutorouteBatchLoop.java:694)
+	at app.freerouting.autoroute.pipeline.AutorouteBatchLoop.run(AutorouteBatchLoop.java:343)
+	at app.freerouting.autoroute.pipeline.BatchAutorouter.runBatchLoop(BatchAutorouter.java:527)
+	at app.freerouting.autoroute.pipeline.RoutingPipeline.runRoutingStage(RoutingPipeline.java:106)
+	at app.freerouting.autoroute.pipeline.RoutingPipeline.run(RoutingPipeline.java:90)
+	at app.freerouting.management.jobs.RoutingJobSchedulerActionThread.threadAction(RoutingJobSchedulerActionThread.java:192)
+	at app.freerouting.core.StoppableThread.run(StoppableThread.java:18)
+
+"Thread-2" #38 [3942] daemon prio=5 os_prio=0 cpu=51.16ms elapsed=148.17s tid=0x00007fefac9630b0 nid=3942 waiting on condition  [0x00007fefc3000000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleepNanos0(java.base@25.0.4.1/Native Method)
+	at java.lang.Thread.sleepNanos(java.base@25.0.4.1/Thread.java:509)
+	at java.lang.Thread.sleep(java.base@25.0.4.1/Thread.java:540)
+	at app.freerouting.management.jobs.RoutingJobSchedulerActionThread.lambda$threadAction$0(RoutingJobSchedulerActionThread.java:63)
+	at app.freerouting.management.jobs.RoutingJobSchedulerActionThread$$Lambda/0x000000001628b198.run(Unknown Source)
+	at java.lang.Thread.runWith(java.base@25.0.4.1/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4.1/Thread.java:1474)
+
+"GC Thread#3" os_prio=0 cpu=997.79ms elapsed=156.70s tid=0x00007fefe4008820 nid=3929 runnable  
+
+"GC Thread#2" os_prio=0 cpu=898.13ms elapsed=156.70s tid=0x00007fefe4007ae0 nid=3928 runnable  
+
+"GC Thread#1" os_prio=0 cpu=969.48ms elapsed=156.70s tid=0x00007fefe4006e10 nid=3927 runnable  
+
+"VM Thread" os_prio=0 cpu=73.30ms elapsed=157.15s tid=0x00007ff01c0c28c0 nid=3916 runnable  
+
+"VM Periodic Task Thread" os_prio=0 cpu=5.56ms elapsed=157.16s tid=0x00007ff01c0b29e0 nid=3915 waiting on condition  
+
+"G1 Service" os_prio=0 cpu=9.20ms elapsed=157.16s tid=0x00007ff01c09c320 nid=3912 runnable  
+
+"G1 Refine#0" os_prio=0 cpu=88.84ms elapsed=157.16s tid=0x00007ff01c09b130 nid=3911 runnable  
+
+"G1 Conc#0" os_prio=0 cpu=9.16ms elapsed=157.16s tid=0x00007ff01c06cc80 nid=3910 runnable  
+
+"G1 Main Marker" os_prio=0 cpu=0.35ms elapsed=157.16s tid=0x00007ff01c06bab0 nid=3909 runnable  
+
+"GC Thread#0" os_prio=0 cpu=964.94ms elapsed=157.16s tid=0x00007ff01c058230 nid=3908 runnable  
+
+JNI global refs: 16, weak refs: 0
+
+Heap
+ garbage-first heap   total reserved 6291456K, committed 1003520K, used 779734K [0x0000000680000000, 0x0000000800000000)
+  region size 4096K, 90 young (368640K), 9 survivors (36864K)
+ Metaspace       used 25312K, committed 25856K, reserved 1114112K
+  class space    used 2823K, committed 3072K, reserved 1048576K
+

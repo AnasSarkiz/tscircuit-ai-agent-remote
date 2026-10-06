@@ -1,5 +1,27 @@
 # AI Remote cloud continuation — current 2026-10-06
 
+Latest manual/Freerouting continuation accepted **zero new board routes**.
+Official Freerouting2.5.0/JDK25 are installed with verified release checksums.
+The maintained exact-geometry bridge now checks engine pad topology/grid and
+active-net plane semantics; representing SMT pad metal as structure planes had
+made the router skip real missing signal connections. Corrected fixed-area
+input is qualified, but the actual strict signal trial saved an empty SES
+(0 wires / 0 vias) after geometry/no-connection errors. Manual contacts at actual
+nominal net widths also returned0. Read
+`evidence/freerouting-continuation-2026-10-06/review.md` and
+`scripts/routing/FREEROUTING.md`. Earlier DSN-development qualifications lack
+the net-semantics check; never use normalized writer output as routing input.
+
+Fresh audit still measures0 geometry violations/0 shorts, **26 disconnected
+nets / 90 native errors**, and152 authored widths pass. Source/current native
+JSON are unchanged. No zero-DRC/fabrication approval or new registry version.
+52 routing regressions, TypeScript and formatting pass; board tests retain
+42pass/2failed gates. Actual frozen install and4 supervisor smoke cases now
+pass, superseding older installation-block wording below. Checkpoint hashes
+record the reviewed helper-width fix and new tools; board/import/cache hashes
+remain preserved. Startup/installation changes are a saved draft, not an applied
+or published environment. Keep all existing interface/manufacturing restrictions.
+
 Latest continuation tried native bus lanes and fanout, finer manual/power grids,
 passive relocation, explicit AMP_SD_MODE paths and four ground-repair approaches.
 **No new board copper/placement was accepted.** Bus lanes returned a terminal-

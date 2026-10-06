@@ -1,3 +1,27 @@
+## Manual/Freerouting continuation — 2026-10-06
+
+**No new board route accepted. NOT FABRICATION READY.** The actual Freerouting
+SES contains0 new wires/0 vias; nominal-width manual contacts also returned0.
+The exact native transfer is qualified through official public APIs, including
+pad topology, the actual10nm grid and active signal-net plane/class semantics.
+Existing pads/copper/rules are preserved; no generated JSON, imported definition
+or replay cache was edited. [Routing evidence and limitations](evidence/freerouting-continuation-2026-10-06/review.md).
+
+Fresh independent native audit:0 measured geometry violations/0 shorts, but
+26 physically disconnected nets; overall audit fails. Native90 open-port errors
+remain. All152 region widths pass. Native SHA256 remains
+`81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315`.
+52 routing regressions, TypeScript and formatting pass; canonical board tests
+42pass/2failed fabrication/schema gates. No board version or duplicate unchanged
+registry upload. Existing public WIP and all fabrication blockers below remain.
+
+Current actual frozen cloud setup and4 supervisor smoke cases passed, as did
+checksum-verified Freerouting/JDK installation, repeat and CLI readiness.
+Reviewed tooling hashes update the authored source checkpoint while preserving
+all prior board/import/cache hashes. Reusable install/start instructions are
+saved as a draft; saving does not apply or publish it or prove fresh-task restore.
+Older clean-install failure wording below is superseded by these actual results.
+
 ## Current Pipeline9 WIP checkpoint — 2026-10-05
 
 Pipeline9 is now explicitly selected. Its actual routing trials failed, so no

@@ -1,0 +1,30 @@
+{
+  "command": [
+    ".tools/freerouting/jdk-25.0.4.1+1-jre/bin/java",
+    "-Xmx6g",
+    "-Djava.awt.headless=true",
+    "-jar",
+    ".tools/freerouting/freerouting-2.5.0.jar",
+    "-da",
+    "--gui.enabled=false",
+    "--api_server.enabled=false",
+    "--user_data_path=.tools/freerouting/config",
+    "-de",
+    "evidence/freerouting-continuation-2026-10-06/baseline.dsn",
+    "-do",
+    "evidence/freerouting-continuation-2026-10-06/roundtrip.dsn",
+    "--router.autorouter.enabled=false",
+    "--router.fanout.enabled=false",
+    "--router.optimizer.enabled=false",
+    "--router.autorouter.max_passes=1",
+    "-mt",
+    "0"
+  ],
+  "exit_code": 143,
+  "termination": "TIME_BUDGET_REACHED",
+  "elapsed_seconds": 150.52,
+  "peak_process_group_rss_bytes": 1223909376,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": false,
+  "passing_validation_inferred": false
+}

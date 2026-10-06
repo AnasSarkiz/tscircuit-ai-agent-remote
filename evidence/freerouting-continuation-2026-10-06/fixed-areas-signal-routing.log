@@ -1,0 +1,1017 @@
+2026-10-06 05:17:57.824 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-06 05:17:57.827 DEBUG  [startup] user-data path : .tools/freerouting/config  (source: CLI argument --user_data_path)
+2026-10-06 05:17:57.827 DEBUG  [startup] log file       : /workspace/tscircuit-ai-agent-remote/.tools/freerouting/config/freerouting.log
+2026-10-06 05:17:57.884 DEBUG  Settings loaded from '.tools/freerouting/config/freerouting.json'.
+2026-10-06 05:17:58.106 INFO   Hardware: 4 CPU cores, 410 CPU score, 6144 MB RAM
+2026-10-06 05:17:58.107 DEBUG  UTC Time: 2026-10-06T05:17:57.884733330Z
+2026-10-06 05:17:58.109 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-06 05:17:58.110 DEBUG  GUI Language: en
+2026-10-06 05:17:58.110 DEBUG  Host: N/A
+2026-10-06 05:17:58.113 INFO   Configured network proxy: proxy:8080
+2026-10-06 05:17:58.115 DEBUG  Analytics are disabled
+2026-10-06 05:17:59.218 DEBUG  Loaded router settings from: .tools/freerouting/config/freerouting.json
+2026-10-06 05:17:59.219 DEBUG  Applied CLI router setting: router.autorouter.ignore_net_classes = PRESERVE,ROUTE_VMIC,ROUTE_VBUS,ROUTE_PACK_BAT,ROUTE_VSYS
+2026-10-06 05:17:59.219 DEBUG  Applied CLI router setting: router.layers.routable = true,false,true,true
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.plane_as_obstacle = true
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.autorouter.enabled = true
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.autorouter.max_passes = 1
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.strict_drc = true
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.job_timeout = 00:03:00
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.fanout.enabled = false
+2026-10-06 05:17:59.220 DEBUG  Applied CLI router setting: router.optimizer.enabled = false
+2026-10-06 05:17:59.221 DEBUG  Applied CLI router setting: router.max_threads = 0
+2026-10-06 05:17:59.221 DEBUG  No router settings found in environment variables
+2026-10-06 05:17:59.318 DEBUG  Set DEFAULT clearance (all layers): 21000 (0.525 mm) from DSN value 210.0
+2026-10-06 05:17:59.332 DEBUG  Set clearance (all layers): wire_area = 27000 (0.675 mm), classes [1,5]
+2026-10-06 05:17:59.332 DEBUG  Set clearance (all layers): via_area = 27000 (0.675 mm), classes [2,5]
+2026-10-06 05:17:59.332 DEBUG  Set clearance (all layers): smd_smd = 10000 (0.25 mm), classes [3,3]
+2026-10-06 05:17:59.335 DEBUG  Set clearance (all layers): via_padviareserve = 0 (0.0 mm), classes [2,6]
+2026-10-06 05:17:59.338 DEBUG  Set clearance (all layers): wire_drillreserve = 0 (0.0 mm), classes [1,7]
+2026-10-06 05:17:59.338 DEBUG  Set clearance (all layers): via_drillreserve = 0 (0.0 mm), classes [2,7]
+2026-10-06 05:17:59.340 DEBUG  Set default trace width (all layers): DSN=200.0 → board=20000 (0.5 mm)
+2026-10-06 05:17:59.438 DEBUG  Version check skipped or timed out: javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-10-06 05:17:59.942 DEBUG  Loaded router settings from DSN file: fixed-areas.dsn (4 layers)
+2026-10-06 05:17:59.944 DEBUG  Merging settings from 5 sources:
+2026-10-06 05:17:59.945 DEBUG    - Default Settings (priority 0): base settings
+2026-10-06 05:17:59.946 DEBUG    - freerouting.json (priority 10): 0 fields changed
+2026-10-06 05:17:59.947 DEBUG    - DSN file: fixed-areas.dsn (priority 20): 7 fields changed
+2026-10-06 05:17:59.947 DEBUG    - Environment Variables (priority 55): 0 fields changed
+2026-10-06 05:17:59.947 DEBUG    - CLI Arguments (priority 60): 12 fields changed
+2026-10-06 05:17:59.947 DEBUG  Settings merged successfully from 5 source(s)
+2026-10-06 05:17:59.988 INFO   [52DDBF\3F2B25] Loading board file 'fixed-areas.dsn'...
+2026-10-06 05:18:00.018 DEBUG  Set DEFAULT clearance (all layers): 21000 (0.525 mm) from DSN value 210.0
+2026-10-06 05:18:00.019 DEBUG  Set clearance (all layers): wire_area = 27000 (0.675 mm), classes [1,5]
+2026-10-06 05:18:00.019 DEBUG  Set clearance (all layers): via_area = 27000 (0.675 mm), classes [2,5]
+2026-10-06 05:18:00.019 DEBUG  Set clearance (all layers): smd_smd = 10000 (0.25 mm), classes [3,3]
+2026-10-06 05:18:00.020 DEBUG  Set clearance (all layers): via_padviareserve = 0 (0.0 mm), classes [2,6]
+2026-10-06 05:18:00.020 DEBUG  Set clearance (all layers): wire_drillreserve = 0 (0.0 mm), classes [1,7]
+2026-10-06 05:18:00.020 DEBUG  Set clearance (all layers): via_drillreserve = 0 (0.0 mm), classes [2,7]
+2026-10-06 05:18:00.020 DEBUG  Set default trace width (all layers): DSN=200.0 → board=20000 (0.5 mm)
+2026-10-06 05:18:01.507 DEBUG  applyBoardSpecificOptimizations changed parameters:
+  Layer 0: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> false; preferredDirectionTraceCost: 1.0 -> 1.8; undesiredDirectionTraceCost: 1.0 -> 3.0999999999999996;
+  Layer 1: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> true; undesiredDirectionTraceCost: 1.0 -> 1.8;
+  Layer 2: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> false; undesiredDirectionTraceCost: 1.0 -> 2.3;
+  Layer 3: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> true; preferredDirectionTraceCost: 1.0 -> 1.8; undesiredDirectionTraceCost: 1.0 -> 2.6;
+2026-10-06 05:18:01.550 DEBUG  Copper-to-edge clearance capped from 250000 to 25000 board units because a pin is closer to the board outline.
+2026-10-06 05:18:01.563 DEBUG  Applied copper-to-edge clearance override: 250.0 um (25000 board units).
+2026-10-06 05:18:02.315 DEBUG  Applied plane_as_obstacle override: true
+2026-10-06 05:18:02.316 DEBUG  Applied clearance tolerance: 1.0 um.
+2026-10-06 05:18:02.333 DEBUG  Set DEFAULT clearance (all layers): 21000 (0.525 mm) from DSN value 210.0
+2026-10-06 05:18:02.334 DEBUG  Set clearance (all layers): wire_area = 27000 (0.675 mm), classes [1,5]
+2026-10-06 05:18:02.334 DEBUG  Set clearance (all layers): via_area = 27000 (0.675 mm), classes [2,5]
+2026-10-06 05:18:02.334 DEBUG  Set clearance (all layers): smd_smd = 10000 (0.25 mm), classes [3,3]
+2026-10-06 05:18:02.334 DEBUG  Set clearance (all layers): via_padviareserve = 0 (0.0 mm), classes [2,6]
+2026-10-06 05:18:02.334 DEBUG  Set clearance (all layers): wire_drillreserve = 0 (0.0 mm), classes [1,7]
+2026-10-06 05:18:02.334 DEBUG  Set clearance (all layers): via_drillreserve = 0 (0.0 mm), classes [2,7]
+2026-10-06 05:18:02.334 DEBUG  Set default trace width (all layers): DSN=200.0 → board=20000 (0.5 mm)
+2026-10-06 05:18:02.655 DEBUG  Loaded router settings from DSN file: fixed-areas.dsn (4 layers)
+2026-10-06 05:18:02.655 DEBUG  Merging settings from 6 sources:
+2026-10-06 05:18:02.655 DEBUG    - Default Settings (priority 0): base settings
+2026-10-06 05:18:02.655 DEBUG    - freerouting.json (priority 10): 0 fields changed
+2026-10-06 05:18:02.656 DEBUG    - DSN file: fixed-areas.dsn (priority 20): 7 fields changed
+2026-10-06 05:18:02.656 DEBUG    - Environment Variables (priority 55): 0 fields changed
+2026-10-06 05:18:02.656 DEBUG    - CLI Arguments (priority 60): 12 fields changed
+2026-10-06 05:18:02.656 DEBUG    - API Settings (priority 70): 47 fields changed
+2026-10-06 05:18:02.656 DEBUG  Settings merged successfully from 6 source(s)
+2026-10-06 05:18:02.657 INFO   [52DDBF\3F2B25] Job '52DDBF\3F2B25' started at 2026-10-06T05:18:02.657413758Z.
+2026-10-06 05:18:13.620 WARN   Design Warning: Board has 2299 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 2299 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 2299 fixed trace/via clearance violations (first 5 shown):
+          - ObstacleArea#3742 [net LCD_CS_N] <-> FixedVia#2211 [net MIC_INPUT]
+          - ObstacleArea#3742 [net LCD_CS_N] <-> FixedVia#2262 [net LCD_CS_N]
+          - ObstacleArea#3742 [net LCD_CS_N] <-> FixedVia#2984 [net LCD_CS_N]
+          - ObstacleArea#3741 [net LCD_CS_N] <-> FixedVia#2262 [net LCD_CS_N]
+          - ObstacleArea#3741 [net LCD_CS_N] <-> FixedVia#2261 [net LCD_CS_N]
+          ... and 2294 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 2299 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-06 05:18:13.684 INFO   [52DDBF\3F2B25] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=3.
+2026-10-06 05:18:14.411 DEBUG  [52DDBF\3F2B25] Checking fanout pre-pass. settings.fanout.enabled=false, smdPins=945
+2026-10-06 05:18:36.306 INFO   [52DDBF\3F2B25] Auto-routing stage started on board '271a493200479f634526e89b7ca9ecc8' with baseline score 630.38 for 499 unrouted items.
+2026-10-06 05:18:47.850 DEBUG  Queuing item for routing: Via on net 'MIC_BCLK' (connected: 36/40, plane: false)
+2026-10-06 05:18:47.851 DEBUG  Queuing item for routing: Via on net 'MIC_WS' (connected: 30/32, plane: false)
+2026-10-06 05:18:47.856 DEBUG  Queuing item for routing: Via on net 'MIC_SD' (connected: 26/28, plane: false)
+2026-10-06 05:18:47.857 DEBUG  Queuing item for routing: Via on net 'MCU_LCD_RESET_N' (connected: 9/11, plane: false)
+2026-10-06 05:18:47.857 DEBUG  Queuing item for routing: PolylineTrace on net 'AMP_SD_MODE' (connected: 5/7, plane: false)
+2026-10-06 05:18:47.860 DEBUG  Queuing item for routing: ConductionArea on net 'MIC_SD' (connected: 2/28, plane: false)
+2026-10-06 05:18:47.860 DEBUG  Queuing item for routing: ConductionArea on net 'MIC_BCLK' (connected: 2/40, plane: false)
+2026-10-06 05:18:47.860 DEBUG  Queuing item for routing: ConductionArea on net 'MIC_WS' (connected: 2/32, plane: false)
+2026-10-06 05:18:47.860 DEBUG  Queuing item for routing: ConductionArea on net 'MIC_BCLK' (connected: 2/40, plane: false)
+2026-10-06 05:18:47.860 DEBUG  Queuing item for routing: ConductionArea on net 'AUDIO_ENABLE_SUPPLY' (connected: 2/4, plane: false)
+2026-10-06 05:18:47.860 DEBUG  Queuing item for routing: ConductionArea on net 'AUDIO_ENABLE_SUPPLY' (connected: 2/4, plane: false)
+2026-10-06 05:18:47.861 DEBUG  Queuing item for routing: ConductionArea on net 'AMP_SD_MODE' (connected: 2/7, plane: false)
+2026-10-06 05:18:47.863 DEBUG  Queuing item for routing: ConductionArea on net 'MCU_LCD_RESET_N' (connected: 2/11, plane: false)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25] Pass #1: 499 incompletes across 13 items to route
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'AMP_SD_MODE' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'AUDIO_ENABLE_SUPPLY' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'BACKLIGHT_GATE' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'GND' has 398 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'HAPTIC_N' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'HOLD_HARDWARE' has 2 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_BACKLIGHT_OUTPUT' has 2 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_BACKLIGHT_RETURN_1' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_BACKLIGHT_RETURN_2' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_BACKLIGHT_RETURN_3' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_BACKLIGHT_RETURN_4' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_CS_N' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_DC' has 2 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_RESET_N' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_SCLK' has 2 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'LCD_SDA' has 2 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'MCU_BOOT_N' has 2 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'MCU_LCD_DC' has 1 incomplete(s)
+2026-10-06 05:18:52.215 DEBUG  [52DDBF\3F2B25]   Net 'MCU_LCD_RESET_N' has 1 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'MCU_MIC_BCLK' has 2 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'MCU_MIC_SD' has 4 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'MIC_BCLK' has 2 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'MIC_INPUT' has 2 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'MIC_SD' has 1 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'MIC_WS' has 1 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'PACK_BAT' has 3 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'SPEAKER_N' has 1 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'SPEAKER_P' has 1 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'USB_DN' has 3 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'USB_DP' has 3 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'V3V3' has 13 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'VBUS' has 4 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'VLCD' has 12 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'VMIC' has 7 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'VMOTOR' has 4 incomplete(s)
+2026-10-06 05:18:52.216 DEBUG  [52DDBF\3F2B25]   Net 'VSYS' has 14 incomplete(s)
+2026-10-06 05:18:54.133 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:54.133 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.106 DEBUG  [52DDBF\3F2B25] Autorouter Failed to route connection between conductionarea, conductionarea, pin of component #657, pin of component #422 and via, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, via, via, polylinetrace, polylinetrace, polylinetrace, conductionarea, conductionarea, conductionarea, pin of component #456, pin of component #426, pin of component #402, because no connection was found between their nets.
+2026-10-06 05:18:55.644 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.644 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.644 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.644 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.681 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.681 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.681 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.681 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.690 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.691 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.691 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.691 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.692 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.693 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.693 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.693 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.698 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.698 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:55.699 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:55.699 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.335 DEBUG  [52DDBF\3F2B25] Autorouter Failed to route connection between conductionarea, pin of component #424 and via, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, via, via, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, conductionarea, conductionarea, conductionarea, conductionarea, pin of component #655, pin of component #454, pin of component #428, pin of component #400, because no connection was found between their nets.
+2026-10-06 05:18:56.673 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.673 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.673 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.673 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.692 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.692 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.692 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.692 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.729 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.730 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.730 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.730 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.758 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.758 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:56.758 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:56.758 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.485 DEBUG  [52DDBF\3F2B25] Autorouter Failed to route connection between conductionarea, pin of component #659 and via, via, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, polylinetrace, conductionarea, conductionarea, conductionarea, pin of component #866, pin of component #862, pin of component #458, because no connection was found between their nets.
+2026-10-06 05:18:57.905 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.905 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.905 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.905 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.911 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.911 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.911 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.911 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.949 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.949 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.949 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.949 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.975 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.975 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:57.975 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:57.975 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.003 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:58.003 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.003 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:58.003 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.022 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:58.022 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.022 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:58.022 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.035 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:58.036 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.036 DEBUG  IntPoint: x is out of range
+2026-10-06 05:18:58.036 DEBUG  IntPoint: y is out of range
+2026-10-06 05:18:58.741 DEBUG  [52DDBF\3F2B25] Autorouter Failed to route connection between conductionarea, pin of component #215 and via, via, polylinetrace, polylinetrace, polylinetrace, conductionarea, conductionarea, pin of component #302, pin of component #22, because no connection was found between their nets.
+2026-10-06 05:18:59.715 DEBUG  [52DDBF\3F2B25] Autorouter Failed to route connection between conductionarea, pin of component #320 and polylinetrace, conductionarea, conductionarea, pin of component #354, pin of component #352, because no connection was found between their nets.
+2026-10-06 05:19:02.663 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.663 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.663 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.663 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.668 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.668 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.668 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.668 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.673 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.673 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.673 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.673 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.676 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.676 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.676 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.676 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.683 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.683 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.683 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.683 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.699 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.699 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.699 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.699 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.719 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.719 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.719 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.719 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.767 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.767 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.767 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.767 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.772 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.772 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.772 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.772 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.790 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.790 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.790 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.790 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.813 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.813 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.813 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.813 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.816 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.816 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.816 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.816 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.830 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.830 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.830 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.830 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.858 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.858 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.858 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.858 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.867 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.867 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.867 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.867 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.918 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.918 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.918 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.918 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.950 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.950 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.950 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.950 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.953 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.953 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.955 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.955 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.955 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.955 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.959 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.959 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.959 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.959 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.988 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.988 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.991 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.991 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.991 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.991 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.992 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.992 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.992 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.992 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.993 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.994 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.994 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.994 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.994 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.995 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.995 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.995 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.995 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.997 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.997 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:02.997 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:02.997 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.000 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.000 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.000 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.000 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.006 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.006 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.006 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.006 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.021 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.021 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.021 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.021 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.038 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.038 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.038 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.038 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.114 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.114 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.114 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.114 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.120 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.120 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.120 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.120 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.131 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.131 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.131 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.131 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.139 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.139 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.139 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.139 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.151 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.151 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.151 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.151 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.169 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.169 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.169 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.169 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.193 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.193 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.193 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.193 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.217 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.217 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.217 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.217 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.236 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.236 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.236 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.236 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.273 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.273 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.273 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.273 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.368 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.368 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.368 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.368 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.379 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.379 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.379 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.379 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.396 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.396 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.396 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.396 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.423 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.423 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.432 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.432 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.434 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.434 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.434 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.434 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.438 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.438 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.438 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.438 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.449 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.449 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.449 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.449 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.472 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.472 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.472 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.472 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.475 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.475 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.475 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.475 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.502 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.502 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.502 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.502 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.541 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.541 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.544 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.544 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.573 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.573 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.573 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.573 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.589 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.589 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.589 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.589 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.604 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.604 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.604 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.604 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.612 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.612 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.612 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.612 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.623 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.623 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.623 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.623 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.641 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.641 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.641 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.641 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.674 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.674 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.674 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.674 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.710 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.710 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.710 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.710 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.776 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.776 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.776 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.776 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.893 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.893 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.893 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.893 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.999 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.999 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:03.999 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:03.999 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.014 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.014 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.019 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.019 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.034 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.034 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.034 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.034 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.073 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.073 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.073 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.073 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.111 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.111 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.111 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.111 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.142 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.142 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.142 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.142 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.146 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.146 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.146 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.146 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.154 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.154 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.154 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.154 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.175 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.175 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.175 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.175 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.198 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.198 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.198 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.198 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.204 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.204 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.204 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.204 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.208 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.208 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.208 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.208 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.226 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.226 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.226 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.226 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.248 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.248 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.260 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.260 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.260 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.260 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.264 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.264 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.264 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.264 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.299 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.299 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.299 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.299 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.329 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.329 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.329 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.329 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.391 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.391 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.422 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.422 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.428 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.428 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.428 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.428 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.485 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.485 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.485 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.485 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.501 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.501 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.501 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.501 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.534 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.534 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.534 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.534 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.565 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.565 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.565 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.565 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.597 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.597 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.597 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.597 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.627 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.627 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.627 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.627 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.708 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.708 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.708 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.708 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.710 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.710 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.710 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.710 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.742 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.742 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.742 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.742 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.782 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.782 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.782 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.782 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.830 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.847 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.847 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.847 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.847 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.867 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.867 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.867 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.867 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.893 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.893 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.897 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.897 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.922 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.922 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.922 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.922 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.954 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.954 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.954 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.954 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.976 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.976 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.976 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.976 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:04.996 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:04.996 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.025 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.025 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.025 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.025 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.061 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.061 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.061 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.061 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.087 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.087 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.087 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.087 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.124 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.124 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.124 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.124 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.128 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.128 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.128 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.128 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.189 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.189 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.189 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.189 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.229 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.229 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.229 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.229 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.249 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.249 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.249 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.249 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.293 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.293 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.293 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.293 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.340 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.340 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.340 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.340 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.378 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.378 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.379 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.379 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.396 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.396 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.486 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.486 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.497 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.497 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.505 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.505 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.529 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.529 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.536 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.536 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.537 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.537 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.550 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.550 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.550 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.550 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.553 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.553 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.553 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.553 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.556 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.556 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.556 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.556 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.566 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.566 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.566 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.566 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.600 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.600 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.600 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.600 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.654 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.654 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.654 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.654 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.686 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.686 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.686 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.686 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.728 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.728 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.731 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.731 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.786 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.786 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.786 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.786 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.793 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.793 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.793 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.793 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.835 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.835 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.835 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.835 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.873 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.873 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.873 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.873 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.884 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.884 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.918 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.918 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.918 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.918 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.939 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.939 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.939 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.939 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.966 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.966 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.966 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.966 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.986 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.986 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:05.986 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:05.986 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.004 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.004 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.004 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.004 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.036 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.036 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.036 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.036 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.043 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.043 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.043 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.043 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.048 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.048 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.048 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.048 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.076 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.076 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.078 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.078 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.078 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.078 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.091 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.091 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.091 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.091 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.110 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.110 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.110 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.110 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.127 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.127 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.127 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.127 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.136 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.136 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.136 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.136 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.138 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.138 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.138 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.138 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.150 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.150 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.150 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.150 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.167 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.167 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.167 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.167 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.183 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.183 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.183 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.183 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.206 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.206 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.206 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.206 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.215 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.215 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.215 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.215 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.237 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.237 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.237 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.237 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.261 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.261 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.262 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.262 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.264 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.264 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.264 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.264 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.265 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.265 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.265 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.265 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.266 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.266 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.266 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.266 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.315 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.315 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.315 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.315 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.328 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.328 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.328 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.328 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.346 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.346 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.346 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.346 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.364 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.364 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.364 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.364 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.373 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.373 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.373 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.373 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.375 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.375 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.375 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.375 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.388 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.388 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.388 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.388 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.434 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.434 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.434 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.434 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.437 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.437 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.437 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.437 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.448 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.448 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.448 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.448 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.474 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.474 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.474 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.474 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.502 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.502 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.502 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.502 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.561 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.561 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.567 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.567 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.567 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.567 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.597 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.597 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.597 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.597 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.644 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.644 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.644 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.644 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.656 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.656 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.656 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.656 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.712 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.712 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.712 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.712 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.720 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.720 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.720 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.720 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.751 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.751 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.751 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.751 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.757 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.757 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.757 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.757 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.780 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.780 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.780 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.780 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.800 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.800 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.800 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.800 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.816 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.816 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.816 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.816 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.823 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.823 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.823 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.823 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.857 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.857 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.857 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.857 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.890 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.890 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.890 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.890 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:06.906 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:06.906 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.187 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.187 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.187 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.187 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.195 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.195 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.195 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.195 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.204 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.204 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.204 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.204 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.250 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.250 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.250 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.250 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.429 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.429 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.429 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.429 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.458 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.458 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.458 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.458 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.484 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.484 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.484 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.484 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.503 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.503 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.572 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.572 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.572 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.572 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.578 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.578 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.578 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.578 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.604 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.604 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.604 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.604 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.631 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.631 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.669 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.669 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.695 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.695 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.701 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.701 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.701 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.701 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.704 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.704 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.704 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.704 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.807 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.807 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.807 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.807 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.810 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.810 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.810 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.810 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.865 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.865 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.865 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.865 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.868 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.868 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.868 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.868 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.877 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.878 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.878 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.878 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.909 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.909 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.912 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.913 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.913 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.913 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.922 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.922 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.922 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.922 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.986 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.986 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:07.987 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:07.987 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:08.054 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:08.054 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:08.119 DEBUG  IntPoint: x is out of range
+2026-10-06 05:19:08.119 DEBUG  IntPoint: y is out of range
+2026-10-06 05:19:08.127 WARN   Simplex.calc_division_lines: division not found
+2026-10-06 05:19:08.127 WARN   Simplex.cutout_from: division line is null
+2026-10-06 05:21:32.756 INFO   Saving output file '/workspace/tscircuit-ai-agent-remote/evidence/freerouting-continuation-2026-10-06/fixed-areas-signal-proposed.ses' (SES)...
+2026-10-06 05:21:32.764 INFO   Successfully saved output file '/workspace/tscircuit-ai-agent-remote/evidence/freerouting-continuation-2026-10-06/fixed-areas-signal-proposed.ses' (127724 bytes).

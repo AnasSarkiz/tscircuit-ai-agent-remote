@@ -1,0 +1,11 @@
+{
+  "classification": "No routing acceptance inferred from a completed pass",
+  "native_source_unchanged": true,
+  "initial_output_failure": "Comma-separated -do filenames are not supported; corrected to separate arguments",
+  "pad_plane_semantics_failure": "Structure planes create containsPlane=true nets before network parsing. Each fixed pad metal area then caused the router to skip actual incomplete signal connections.",
+  "correction": "All existing regions and SMT pad metal now use SYSTEM_FIXED wiring-area scopes. Active net plane flags and routing class membership are checked through the official public reader.",
+  "initial_run_log": "native-pad-metal-routing.log",
+  "corrected_output_but_wrong_net_semantics_log": "native-pad-metal-debug-routing.log",
+  "qualified_corrected_input": "fixed-areas.dsn",
+  "qualification": "fixed-areas-verification.json"
+}

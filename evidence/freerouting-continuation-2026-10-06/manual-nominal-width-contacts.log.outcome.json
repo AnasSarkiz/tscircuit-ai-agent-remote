@@ -1,0 +1,27 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-copper-contacts.py",
+    "dist/index/circuit.json",
+    "evidence/cloud-runs/final-copper-audit.json",
+    "evidence/freerouting-continuation-2026-10-06/manual-nominal-width-contact-proposals.json",
+    "GND",
+    "MCU_LCD_RESET_N",
+    "AMP_SD_MODE",
+    "AUDIO_ENABLE_SUPPLY",
+    "VMIC",
+    "MIC_WS",
+    "MIC_BCLK",
+    "MIC_SD",
+    "VBUS",
+    "PACK_BAT",
+    "VSYS"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 19.02,
+  "peak_process_group_rss_bytes": 101789696,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

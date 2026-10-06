@@ -12,6 +12,10 @@ audit_helpers = runpy.run_path(str(Path(__file__).with_name('audit-copper.py')))
 Planner = contact_helpers['Planner']
 
 
+def contact_width(net_record, island_already_connected):
+    return .2 if net_record['name'] == 'GND' and island_already_connected else net_record.get('trace_width', .2)
+
+
 def top_shapes(circuit):
     for record in circuit:
         ty = record['type']
@@ -67,19 +71,23 @@ def main():
         # they do not claim that endpoint markers alone prove connectivity.
         pending.extend((main_group,[p]) for p in islands[main_group] if p['pcb_port_id'] in missing)
         for group, alternatives in pending:
-            width=.2 if name=='GND' and group==main_group else .3
+            # Missing physical connections must use the actual source net
+            # width: a universal 0.3 mm both blocks legal 0.2 mm signal escapes
+            # and undersizes the 0.5/1.0 mm power nets. The existing 0.2 mm GND
+            # marker contact is only for an independently connected island.
+            width=contact_width(net_records[name], group==main_group)
             for port in alternatives:
                 positions = contact_helpers['plan_contact'](planner, {'port': port, 'ground': target,'width':width})
                 if positions:
                     path = contact_helpers['record_contact'](planner, {'port': port, 'positions': positions,'width':width})
                     path.update({'net': name, 'to': 'net.'+name,
-                                 'classification': 'manual native short pad-to-existing-copper contact; local power neck requires current qualification' if group!=main_group else 'manual native nonzero contact to already connected copper; primary continuity independently verified'})
+                                 'classification': 'manual native nominal-width pad-to-existing-copper contact; electrical/current qualification required' if group!=main_group else 'manual native nonzero contact to already connected copper; primary continuity independently verified'})
                     paths.append(path)
                     planner.copper.append((root, 'top', LineString(positions).buffer(width/2)))
                     break
             else:
                 unresolved.append({'net': name, 'ports': [planner.port_name(p) for p in alternatives],
-                                   'reason': 'No nonzero 0.3 mm top contact within 3 mm to the connected island'})
+                                   'reason': f'No nonzero {width:.6g} mm top contact within 3 mm to the connected island'})
         print(json.dumps({'net': name, 'planned_so_far': len(paths)}), flush=True)
     Path(args.output_json).write_text(json.dumps({'classification': 'manual native contact proposals, not solver caches',
         'source_circuit_json': args.circuit_json, 'paths': paths, 'unresolved': unresolved}, indent=2)+'\n')

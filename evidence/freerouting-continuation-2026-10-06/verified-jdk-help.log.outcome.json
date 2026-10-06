@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".tools/freerouting/jdk-25.0.4.1+1/bin/java",
+    "-Djava.awt.headless=true",
+    "-jar",
+    ".tools/freerouting/freerouting-2.5.0.jar",
+    "-help",
+    "-da",
+    "--gui.enabled=false",
+    "--api_server.enabled=false",
+    "--user_data_path=.tools/freerouting/config"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 2.5,
+  "peak_process_group_rss_bytes": 118857728,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

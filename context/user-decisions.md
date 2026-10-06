@@ -1,5 +1,10 @@
 # Accepted human decisions and continuation authority
 
+Latest clarification: use manual tracing together with Freerouting for remaining
+connections. Continue autonomously within the existing board requirements;
+accept only actual native copper that passes clearance/short/width/connectivity
+checks. Tool completion or saved output is not routing/fabrication approval.
+
 Latest routing continuation, 2026-10-06: proceed with manual tracing or a qualified
 remaining-trace router, and try tscircuit bus-lane/fanout solvers where useful.
 Preserve existing copper, manufacturing rules and actual native solver evidence;

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 673, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 669, in main
+    {'export': export_design, 'verify': verify_transfer, 'session': session_proposals}[args.command](args)
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 498, in verify_transfer
+    raise ValueError(f'Native pad split into disconnected pieces in the engine: {identifier}')
+ValueError: Native pad split into disconnected pieces in the engine: ('pcb_smtpad_400', 'top')

@@ -1,0 +1,23 @@
+{
+  "classification": "Reviewed tooling checkpoint update, not new board copper or artifact checksum bypass",
+  "unchanged_prior_hashes": 324,
+  "reviewed_helper_changes": [
+    {
+      "path": "scripts/routing/plan-copper-contacts.py",
+      "previous_sha256": "5400939561b208724591b189148e645bfea86df153017851411f98a8afb08b29",
+      "reviewed_sha256": "4eabf9d7ab6a9846f428f6e7cbe338eb2dc1e03024ca91869d489e23305502d0"
+    }
+  ],
+  "added_tooling_files": [
+    "scripts/cloud/install-freerouting.py",
+    "scripts/routing/FreeroutingTransfer.java",
+    "scripts/routing/freerouting_bridge.py",
+    "scripts/routing/freerouting_copper_source.py",
+    "scripts/routing/FREEROUTING.md",
+    "scripts/routing/tests/test_freerouting_bridge.py",
+    "scripts/routing/tests/test_freerouting_copper_source.py",
+    "scripts/routing/tests/test_copper_contact_width.py"
+  ],
+  "routing_regressions_passed": 52,
+  "board_inputs_and_canonical_json_unchanged": true
+}

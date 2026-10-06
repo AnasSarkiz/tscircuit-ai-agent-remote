@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".tools/freerouting/jdk-25.0.4.1+1/bin/java",
+    "-Xmx6g",
+    "-Djava.awt.headless=true",
+    "--class-path",
+    ".tools/freerouting/freerouting-2.5.0.jar",
+    "scripts/routing/FreeroutingTransfer.java",
+    "evidence/freerouting-continuation-2026-10-06/baseline.dsn",
+    "evidence/freerouting-continuation-2026-10-06/public-api-roundtrip.dsn"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 8.52,
+  "peak_process_group_rss_bytes": 704954368,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,7 @@
+scripts/routing/FreeroutingTransfer.java:74: error: cannot find symbol
+            for (int corner = 0; corner < tile.cornerCount(); corner++) {
+                                              ^
+  symbol:   method cornerCount()
+  location: variable tile of type TileShape
+1 error
+error: compilation failed

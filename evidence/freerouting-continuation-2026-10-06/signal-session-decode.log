@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 736, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 732, in main
+    {'export': export_design, 'verify': verify_transfer, 'session': session_proposals}[args.command](args)
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 647, in session_proposals
+    raise ValueError('Session refers to a different base design')
+ValueError: Session refers to a different base design

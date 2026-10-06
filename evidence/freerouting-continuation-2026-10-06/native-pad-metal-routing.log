@@ -1,0 +1,52 @@
+2026-10-06 05:07:44.974 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-06 05:07:45.261 INFO   Hardware: 4 CPU cores, 408 CPU score, 6144 MB RAM
+2026-10-06 05:07:45.264 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-06 05:07:45.267 INFO   Configured network proxy: proxy:8080
+2026-10-06 05:07:47.902 INFO   [2E985B\6E541A] Loading board file 'native-pad-metal.dsn'...
+2026-10-06 05:07:50.556 INFO   [2E985B\6E541A] Job '2E985B\6E541A' started at 2026-10-06T05:07:50.556528503Z.
+2026-10-06 05:07:56.375 WARN   Design Warning: Board has 220 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 220 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 220 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#3742 [net MCU_UART_RX] <-> FixedTrace#2991 [net MIC_SD]
+          - FixedVia#3736 [net PACK_NTC] <-> FixedTrace#3064 [net CHARGE_STATUS_N]
+          - FixedVia#3736 [net PACK_NTC] <-> FixedTrace#3063 [net CHARGE_STATUS_N]
+          - FixedVia#3735 [net PACK_NTC] <-> FixedTrace#2878 [net AUDIO_NMOS_GATE]
+          - FixedVia#3735 [net PACK_NTC] <-> FixedTrace#2856 [net BUCK_ENABLE]
+          ... and 215 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 220 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-06 05:07:56.482 INFO   [2E985B\6E541A] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=3.
+2026-10-06 05:08:09.577 INFO   [2E985B\6E541A] Auto-routing stage started on board '64f3f2bb708d8105b8a091120960bad1' with baseline score 646.12 for 498 unrouted items.
+2026-10-06 05:08:22.627 INFO   [2E985B\6E541A] Auto-routing pass #1 on board '64f3f2bb708d8105b8a091120960bad1' was completed in 6.73 seconds with score 646.12 (498 unrouted and 220 violations), using 26.09 CPU seconds and the job allocated 20.10 GB of memory so far.
+2026-10-06 05:08:42.045 INFO   [2E985B\6E541A] Auto-routing stage completed: started with 498 unrouted nets, completed in 39.30 seconds, final score: 646.12 (498 unrouted and 220 violations), using 45.04 total CPU seconds, 34.94 GB total allocated, and 625.2 MB peak heap usage.
+2026-10-06 05:08:42.047 INFO   [2E985B\6E541A] Job '2E985B\6E541A' finished with state: COMPLETED (elapsed: 51.49 seconds, finished at UTC: 2026-10-06T05:08:42.046073596Z).
+2026-10-06 05:08:42.067 INFO   Saving output file '/workspace/tscircuit-ai-agent-remote/evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.ses,evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.dsn' (DSN)...
+2026-10-06 05:08:42.067 ERROR  Couldn't save the output file 'evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.ses,evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.dsn'
+java.nio.file.NoSuchFileException: evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.ses,evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.dsn
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:213)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:244)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:426)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:215)
+	at java.base/java.nio.file.Files.write(Files.java:3174)
+	at app.freerouting.cli.CliRunner.writeCliOutputIfAvailable(CliRunner.java:218)
+	at app.freerouting.cli.CliRunner.initializeCli(CliRunner.java:105)
+	at app.freerouting.Freerouting.initializeCli(Freerouting.java:65)
+	at app.freerouting.Freerouting.main(Freerouting.java:705)
+2026-10-06 05:08:42.067 ERROR  Couldn't save the output file 'evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.ses,evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.dsn'
+java.nio.file.NoSuchFileException: evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.ses,evidence/freerouting-continuation-2026-10-06/native-pad-metal-proposed.dsn
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:213)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:244)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:426)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:215)
+	at java.base/java.nio.file.Files.write(Files.java:3174)
+	at app.freerouting.cli.CliRunner.writeCliOutputIfAvailable(CliRunner.java:218)
+	at app.freerouting.cli.CliRunner.initializeCli(CliRunner.java:105)
+	at app.freerouting.Freerouting.initializeCli(Freerouting.java:65)
+	at app.freerouting.Freerouting.main(Freerouting.java:705)

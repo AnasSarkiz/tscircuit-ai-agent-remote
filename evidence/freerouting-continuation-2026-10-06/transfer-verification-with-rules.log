@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 463, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 459, in main
+    (export_design if args.command == 'export' else verify_transfer)(args)
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 374, in verify_transfer
+    original, roundtrip = design_snapshot(args.original_dsn), design_snapshot(args.roundtrip_dsn)
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 339, in design_snapshot
+    layer, contour = dsn_shape(one_scope(wire, 'path'), scale_mm)
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 260, in one_scope
+    raise ValueError(f'Expected exactly one {name} scope, found {len(matches)}')
+ValueError: Expected exactly one path scope, found 0

@@ -1,0 +1,105 @@
+{
+  "classification": "Lossless original DSN/SES/engine receipt archive; no geometry or whitespace normalization",
+  "archive": "evidence/freerouting-continuation-2026-10-06/geometry-artifacts.tar.gz",
+  "archive_sha256": "4ac79c322ef027039fe0d09e86d3c3e6418c1245cdf18b35879eaaae96e5672d",
+  "verified_members": {
+    "analytical-engine-rules.json": {
+      "sha256": "22ed33e878e8fe0e592d3f6a91c9cded861455598436ff2c1a8e642847ede998",
+      "bytes": 146210
+    },
+    "analytical-roundtrip.dsn": {
+      "sha256": "48421c121e8a970ef390cb2cee3d2df53517f534ad6b665b2a2a2d60c17d7361",
+      "bytes": 1605781
+    },
+    "analytical.dsn": {
+      "sha256": "1021119dcf29255bca904a60b1f7b207f839626afac13cc5c283239dfc82115d",
+      "bytes": 1097773
+    },
+    "analytical.dsn.manifest.json": {
+      "sha256": "0e9664470612a74b3f3027f23204b9cce47cbb8c9d405a3ec31f2a0c8be20a23",
+      "bytes": 4293746
+    },
+    "baseline.dsn": {
+      "sha256": "54c1a7dbf244c2a8f04c5630c8b125dff4d09821dffaa9a1108877ac80a9e655",
+      "bytes": 4551015
+    },
+    "baseline.dsn.manifest.json": {
+      "sha256": "be2091c895c31a9a12e0ee4f7bd7b3cb0a96315cd3e9a8d47d8acbde750d6ea0",
+      "bytes": 2788214
+    },
+    "engine-rules.json": {
+      "sha256": "a2e91516676c8b28e0abf3fc2a7d9659284021f37e4b53f30b990d3cb24536b5",
+      "bytes": 4369
+    },
+    "fixed-areas-engine-rules.json": {
+      "sha256": "4d75797865867b42022c208b9fba464460c47ef4fa88b52c20688f796bf6dfea",
+      "bytes": 154879
+    },
+    "fixed-areas-roundtrip.dsn": {
+      "sha256": "d532a0b47ecc17f4c94b6be6473256b35860c1011c1988c2754f1acb5bdb7550",
+      "bytes": 1712447
+    },
+    "fixed-areas-signal-proposed.ses": {
+      "sha256": "25845d4b505aa039c38b7e921b2aa7fe890515fed9d8f5a2a9d015e2098a7149",
+      "bytes": 127724
+    },
+    "fixed-areas.dsn": {
+      "sha256": "259574092f076374ee390e62d33df1463252997daccfdfad4166262cabfba74c",
+      "bytes": 1190782
+    },
+    "fixed-areas.dsn.manifest.json": {
+      "sha256": "f7f967a348bf5e38611c194c1983c1cf4bc28fc500f0b1da90adb366aae9d63b",
+      "bytes": 4389678
+    },
+    "grid-aligned.dsn": {
+      "sha256": "7ea81f6e732bbacc7337f099612c946f49fc95342c0adc5b3f0deca7b7145d9b",
+      "bytes": 1096268
+    },
+    "grid-aligned.dsn.manifest.json": {
+      "sha256": "fb0bc6e304d0c4cb8c60c26dc58d9cc7d95cb79363b3b0ba21bb29223502d8fc",
+      "bytes": 4303285
+    },
+    "native-pad-metal-debug-proposed.ses": {
+      "sha256": "369850c743babd02c533afe18524b1d21951952ef64f3430d24f38d43e6dd692",
+      "bytes": 127734
+    },
+    "native-pad-metal-engine-rules.json": {
+      "sha256": "30d1e65a31fc44a0c6c0ca763a2c81650618525369e16213b84928b17ce4f149",
+      "bytes": 145773
+    },
+    "native-pad-metal-roundtrip.dsn": {
+      "sha256": "5eab4ab9eb48f7ae628efc7cade56dc907851f1dbd9c95aeee8f2f1aede14078",
+      "bytes": 1712447
+    },
+    "native-pad-metal.dsn": {
+      "sha256": "8116daa986b0396d09f75361f40e83b129facf9ae2cdd68289540dbe35fae18a",
+      "bytes": 1174046
+    },
+    "native-pad-metal.dsn.manifest.json": {
+      "sha256": "d77cfe41ead25fe74b89093d8121afcdb049f8b68fc690ff1e44aeb316926a5e",
+      "bytes": 4389678
+    },
+    "partitioned-engine-rules.json": {
+      "sha256": "7a5375f6fc02ddca3e41b4fa542980b909ec3c37f9d4dffbcf23a3a15c4f0ccb",
+      "bytes": 4369
+    },
+    "partitioned-roundtrip.dsn": {
+      "sha256": "8a22ea7c685864d60f92501509d2ce4bdd04a4d6f3495b2db10d93c6f71789d0",
+      "bytes": 5180732
+    },
+    "partitioned.dsn": {
+      "sha256": "eb43aac2473eb563feb66be85d0118702fa9fe030ba7228b0f4bb2b586cbb44c",
+      "bytes": 4590718
+    },
+    "partitioned.dsn.manifest.json": {
+      "sha256": "2fda8b45667ec099eec8b8123a32e36b4a851b19104e2bf9759888c6a313c820",
+      "bytes": 2800297
+    },
+    "public-api-roundtrip.dsn": {
+      "sha256": "761c87973b39433a071f6d171c9a26eaf1da27b754afd5e7258d8650be879e81",
+      "bytes": 5115063
+    }
+  },
+  "restore_command": "tar -xzf evidence/freerouting-continuation-2026-10-06/geometry-artifacts.tar.gz -C evidence/freerouting-continuation-2026-10-06",
+  "all_members_byte_verified": true
+}

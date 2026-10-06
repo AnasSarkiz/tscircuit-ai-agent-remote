@@ -1,0 +1,33 @@
+{
+  "classification": "Geometry transfer qualification only; not routed-board DRC",
+  "original_sha256": "259574092f076374ee390e62d33df1463252997daccfdfad4166262cabfba74c",
+  "roundtrip_sha256": "d532a0b47ecc17f4c94b6be6473256b35860c1011c1988c2754f1acb5bdb7550",
+  "geometry": {
+    "pads": {
+      "checked": 1013,
+      "maximum_area_difference_mm2": 3.299989703875071e-05
+    },
+    "pours": {
+      "checked": 159,
+      "maximum_area_difference_mm2": 0.003939193711021544
+    },
+    "keepouts": {
+      "checked": 8,
+      "maximum_area_difference_mm2": 0.003403575152638391
+    },
+    "wires": {
+      "checked": 99,
+      "maximum_area_difference_mm2": 0.000393965687532487
+    }
+  },
+  "existing_vias_checked": 250,
+  "copper_regions_checked": 1046,
+  "coordinate_tolerance_mm": 2e-05,
+  "engine_rules_sha256": "4d75797865867b42022c208b9fba464460c47ef4fa88b52c20688f796bf6dfea",
+  "actual_engine_pad_topology_checked": true,
+  "active_net_semantics_checked": true,
+  "actual_engine_grid_mm": 1e-05,
+  "native_pad_layer_unions_checked": 523,
+  "roundtrip_is_routing_input": false,
+  "qualified": true
+}

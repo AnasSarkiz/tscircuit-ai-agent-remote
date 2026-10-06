@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 687, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 683, in main
+    {'export': export_design, 'verify': verify_transfer, 'session': session_proposals}[args.command](args)
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 504, in verify_transfer
+    raise ValueError(f'Actual engine changed pad geometry beyond 2 nm: {identifier}')
+ValueError: Actual engine changed pad geometry beyond 2 nm: ('pcb_smtpad_478_0-1', 'top')

@@ -1,0 +1,8 @@
+{
+  "classification": "Interrupted diagnostic; no accepted routes",
+  "pid": 3906,
+  "reason": "Drill-page obstacle polygon subdivision remains CPU/memory intensive; replace curve tessellation with equivalent analytical native circle/capsule geometry and strengthen pad topology qualification.",
+  "observed_before_cancellation": "MazeSearchEngine -> DrillPage.getDrills -> PolylineArea.splitToConvex; no completed-pass output or session file",
+  "signal": "SIGTERM",
+  "time_unix": 1791261747.933067
+}

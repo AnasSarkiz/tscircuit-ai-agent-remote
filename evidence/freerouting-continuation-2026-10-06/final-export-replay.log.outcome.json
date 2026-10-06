@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/freerouting_bridge.py",
+    "export",
+    "dist/index/circuit.json",
+    ".tools/freerouting/fixed-areas-replay.dsn",
+    "--pour-tile-mm",
+    "5",
+    "--nets",
+    "MCU_LCD_RESET_N",
+    "AMP_SD_MODE",
+    "AUDIO_ENABLE_SUPPLY",
+    "VMIC",
+    "MIC_WS",
+    "MIC_BCLK",
+    "MIC_SD",
+    "VBUS",
+    "PACK_BAT",
+    "VSYS"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 11.51,
+  "peak_process_group_rss_bytes": 103706624,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

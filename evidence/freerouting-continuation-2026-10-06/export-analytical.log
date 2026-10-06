@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 666, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 662, in main
+    {'export': export_design, 'verify': verify_transfer, 'session': session_proposals}[args.command](args)
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 175, in export_design
+    primitives = native_pad_primitives(record, contour)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/freerouting_bridge.py", line 64, in native_pad_primitives
+    center = center_record['x'], center_record['y']
+             ~~~~~~~~~~~~~^^^^^
+KeyError: 'x'

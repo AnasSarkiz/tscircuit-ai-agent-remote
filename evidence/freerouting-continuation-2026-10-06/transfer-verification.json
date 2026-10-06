@@ -1,0 +1,29 @@
+{
+  "classification": "Geometry transfer qualification only; not routed-board DRC",
+  "original_sha256": "54c1a7dbf244c2a8f04c5630c8b125dff4d09821dffaa9a1108877ac80a9e655",
+  "roundtrip_sha256": "761c87973b39433a071f6d171c9a26eaf1da27b754afd5e7258d8650be879e81",
+  "geometry": {
+    "pads": {
+      "checked": 917,
+      "maximum_area_difference_mm2": 5.455991097426986e-05
+    },
+    "pours": {
+      "checked": 39,
+      "maximum_area_difference_mm2": 0.0037565120610878375
+    },
+    "keepouts": {
+      "checked": 8,
+      "maximum_area_difference_mm2": 0.003396828569588238
+    },
+    "wires": {
+      "checked": 99,
+      "maximum_area_difference_mm2": 0.000393965687532487
+    }
+  },
+  "existing_vias_checked": 250,
+  "copper_regions_checked": 190,
+  "coordinate_tolerance_mm": 2e-05,
+  "engine_rules_sha256": "a2e91516676c8b28e0abf3fc2a7d9659284021f37e4b53f30b990d3cb24536b5",
+  "roundtrip_is_routing_input": false,
+  "qualified": true
+}

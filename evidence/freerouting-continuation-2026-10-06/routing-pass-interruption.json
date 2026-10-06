@@ -1,0 +1,8 @@
+{
+  "classification": "Interrupted diagnostic; no accepted routes",
+  "pid": 3580,
+  "reason": "Repeated post-load existing-connectivity searches across complex copper regions; testing exact geometric partition, not dropping copper.",
+  "observed_before_cancellation": "RoutingPipeline.awaitPostLoad; BoardStatistics.getUnconnectedSet; no routing pass output or session file",
+  "signal": "SIGTERM",
+  "time_unix": 1791261218.3876607
+}

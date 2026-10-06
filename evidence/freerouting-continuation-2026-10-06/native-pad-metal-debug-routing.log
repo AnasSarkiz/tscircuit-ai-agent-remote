@@ -1,0 +1,105 @@
+2026-10-06 05:09:40.920 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-06 05:09:40.922 DEBUG  [startup] user-data path : .tools/freerouting/config  (source: CLI argument --user_data_path)
+2026-10-06 05:09:40.923 DEBUG  [startup] log file       : /workspace/tscircuit-ai-agent-remote/.tools/freerouting/config/freerouting.log
+2026-10-06 05:09:40.998 DEBUG  Settings loaded from '.tools/freerouting/config/freerouting.json'.
+2026-10-06 05:09:41.221 INFO   Hardware: 4 CPU cores, 403 CPU score, 6144 MB RAM
+2026-10-06 05:09:41.221 DEBUG  UTC Time: 2026-10-06T05:09:40.998774544Z
+2026-10-06 05:09:41.224 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-06 05:09:41.224 DEBUG  GUI Language: en
+2026-10-06 05:09:41.224 DEBUG  Host: N/A
+2026-10-06 05:09:41.229 INFO   Configured network proxy: proxy:8080
+2026-10-06 05:09:41.230 DEBUG  Analytics are disabled
+2026-10-06 05:09:42.358 DEBUG  Loaded router settings from: .tools/freerouting/config/freerouting.json
+2026-10-06 05:09:42.359 DEBUG  Applied CLI router setting: router.autorouter.ignore_net_classes = PRESERVE
+2026-10-06 05:09:42.359 DEBUG  Applied CLI router setting: router.layers.routable = true,false,true,true
+2026-10-06 05:09:42.359 DEBUG  Applied CLI router setting: router.autorouter.enabled = true
+2026-10-06 05:09:42.359 DEBUG  Applied CLI router setting: router.autorouter.max_passes = 3
+2026-10-06 05:09:42.359 DEBUG  Applied CLI router setting: router.strict_drc = true
+2026-10-06 05:09:42.360 DEBUG  Applied CLI router setting: router.job_timeout = 00:10:00
+2026-10-06 05:09:42.361 DEBUG  Applied CLI router setting: router.fanout.enabled = false
+2026-10-06 05:09:42.361 DEBUG  Applied CLI router setting: router.optimizer.enabled = false
+2026-10-06 05:09:42.361 DEBUG  Applied CLI router setting: router.max_threads = 0
+2026-10-06 05:09:42.362 DEBUG  No router settings found in environment variables
+2026-10-06 05:09:42.524 DEBUG  Set DEFAULT clearance (all layers): 21000 (0.525 mm) from DSN value 210.0
+2026-10-06 05:09:42.537 DEBUG  Set clearance (all layers): wire_area = 27000 (0.675 mm), classes [1,5]
+2026-10-06 05:09:42.537 DEBUG  Set clearance (all layers): via_area = 27000 (0.675 mm), classes [2,5]
+2026-10-06 05:09:42.537 DEBUG  Set clearance (all layers): smd_smd = 10000 (0.25 mm), classes [3,3]
+2026-10-06 05:09:42.540 DEBUG  Set clearance (all layers): via_padviareserve = 0 (0.0 mm), classes [2,6]
+2026-10-06 05:09:42.553 DEBUG  Set clearance (all layers): wire_drillreserve = 0 (0.0 mm), classes [1,7]
+2026-10-06 05:09:42.553 DEBUG  Set clearance (all layers): via_drillreserve = 0 (0.0 mm), classes [2,7]
+2026-10-06 05:09:42.555 DEBUG  Set default trace width (all layers): DSN=200.0 → board=20000 (0.5 mm)
+2026-10-06 05:09:42.654 DEBUG  Version check skipped or timed out: javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2026-10-06 05:09:43.864 DEBUG  Loaded router settings from DSN file: native-pad-metal.dsn (4 layers)
+2026-10-06 05:09:43.866 DEBUG  Merging settings from 5 sources:
+2026-10-06 05:09:43.866 DEBUG    - Default Settings (priority 0): base settings
+2026-10-06 05:09:43.867 DEBUG    - freerouting.json (priority 10): 0 fields changed
+2026-10-06 05:09:43.868 DEBUG    - DSN file: native-pad-metal.dsn (priority 20): 7 fields changed
+2026-10-06 05:09:43.868 DEBUG    - Environment Variables (priority 55): 0 fields changed
+2026-10-06 05:09:43.868 DEBUG    - CLI Arguments (priority 60): 11 fields changed
+2026-10-06 05:09:43.868 DEBUG  Settings merged successfully from 5 source(s)
+2026-10-06 05:09:43.881 INFO   [AE0941\098524] Loading board file 'native-pad-metal.dsn'...
+2026-10-06 05:09:43.914 DEBUG  Set DEFAULT clearance (all layers): 21000 (0.525 mm) from DSN value 210.0
+2026-10-06 05:09:43.915 DEBUG  Set clearance (all layers): wire_area = 27000 (0.675 mm), classes [1,5]
+2026-10-06 05:09:43.915 DEBUG  Set clearance (all layers): via_area = 27000 (0.675 mm), classes [2,5]
+2026-10-06 05:09:43.915 DEBUG  Set clearance (all layers): smd_smd = 10000 (0.25 mm), classes [3,3]
+2026-10-06 05:09:43.915 DEBUG  Set clearance (all layers): via_padviareserve = 0 (0.0 mm), classes [2,6]
+2026-10-06 05:09:43.915 DEBUG  Set clearance (all layers): wire_drillreserve = 0 (0.0 mm), classes [1,7]
+2026-10-06 05:09:43.915 DEBUG  Set clearance (all layers): via_drillreserve = 0 (0.0 mm), classes [2,7]
+2026-10-06 05:09:43.915 DEBUG  Set default trace width (all layers): DSN=200.0 → board=20000 (0.5 mm)
+2026-10-06 05:09:45.113 DEBUG  applyBoardSpecificOptimizations changed parameters:
+  Layer 0: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> false; preferredDirectionTraceCost: 1.0 -> 1.8; undesiredDirectionTraceCost: 1.0 -> 3.0999999999999996;
+  Layer 1: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> true; undesiredDirectionTraceCost: 1.0 -> 1.8;
+  Layer 2: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> false; undesiredDirectionTraceCost: 1.0 -> 2.3;
+  Layer 3: bendCost: null -> 0.0; preferredDirectionHorizontal: null -> true; preferredDirectionTraceCost: 1.0 -> 1.8; undesiredDirectionTraceCost: 1.0 -> 2.6;
+2026-10-06 05:09:45.185 DEBUG  Copper-to-edge clearance capped from 250000 to 25000 board units because a pin is closer to the board outline.
+2026-10-06 05:09:45.199 DEBUG  Applied copper-to-edge clearance override: 250.0 um (25000 board units).
+2026-10-06 05:09:45.199 DEBUG  Applied plane_as_obstacle override: false
+2026-10-06 05:09:45.200 DEBUG  Applied clearance tolerance: 1.0 um.
+2026-10-06 05:09:45.234 DEBUG  Set DEFAULT clearance (all layers): 21000 (0.525 mm) from DSN value 210.0
+2026-10-06 05:09:45.235 DEBUG  Set clearance (all layers): wire_area = 27000 (0.675 mm), classes [1,5]
+2026-10-06 05:09:45.235 DEBUG  Set clearance (all layers): via_area = 27000 (0.675 mm), classes [2,5]
+2026-10-06 05:09:45.235 DEBUG  Set clearance (all layers): smd_smd = 10000 (0.25 mm), classes [3,3]
+2026-10-06 05:09:45.235 DEBUG  Set clearance (all layers): via_padviareserve = 0 (0.0 mm), classes [2,6]
+2026-10-06 05:09:45.235 DEBUG  Set clearance (all layers): wire_drillreserve = 0 (0.0 mm), classes [1,7]
+2026-10-06 05:09:45.235 DEBUG  Set clearance (all layers): via_drillreserve = 0 (0.0 mm), classes [2,7]
+2026-10-06 05:09:45.235 DEBUG  Set default trace width (all layers): DSN=200.0 → board=20000 (0.5 mm)
+2026-10-06 05:09:46.624 DEBUG  Loaded router settings from DSN file: native-pad-metal.dsn (4 layers)
+2026-10-06 05:09:46.625 DEBUG  Merging settings from 6 sources:
+2026-10-06 05:09:46.625 DEBUG    - Default Settings (priority 0): base settings
+2026-10-06 05:09:46.625 DEBUG    - freerouting.json (priority 10): 0 fields changed
+2026-10-06 05:09:46.625 DEBUG    - DSN file: native-pad-metal.dsn (priority 20): 7 fields changed
+2026-10-06 05:09:46.625 DEBUG    - Environment Variables (priority 55): 0 fields changed
+2026-10-06 05:09:46.625 DEBUG    - CLI Arguments (priority 60): 11 fields changed
+2026-10-06 05:09:46.626 DEBUG    - API Settings (priority 70): 47 fields changed
+2026-10-06 05:09:46.626 DEBUG  Settings merged successfully from 6 source(s)
+2026-10-06 05:09:46.628 INFO   [AE0941\098524] Job 'AE0941\098524' started at 2026-10-06T05:09:46.627818677Z.
+2026-10-06 05:09:54.827 WARN   Design Warning: Board has 220 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 220 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 220 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#3742 [net MCU_UART_RX] <-> FixedTrace#2991 [net MIC_SD]
+          - FixedVia#3736 [net PACK_NTC] <-> FixedTrace#3064 [net CHARGE_STATUS_N]
+          - FixedVia#3736 [net PACK_NTC] <-> FixedTrace#3063 [net CHARGE_STATUS_N]
+          - FixedVia#3735 [net PACK_NTC] <-> FixedTrace#2878 [net AUDIO_NMOS_GATE]
+          - FixedVia#3735 [net PACK_NTC] <-> FixedTrace#2856 [net BUCK_ENABLE]
+          ... and 215 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 220 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-06 05:09:54.901 INFO   [AE0941\098524] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=3.
+2026-10-06 05:09:55.535 DEBUG  [AE0941\098524] Checking fanout pre-pass. settings.fanout.enabled=false, smdPins=945
+2026-10-06 05:10:12.762 INFO   [AE0941\098524] Auto-routing stage started on board '64f3f2bb708d8105b8a091120960bad1' with baseline score 643.29 for 502 unrouted items.
+2026-10-06 05:10:30.701 INFO   [AE0941\098524] Auto-routing pass #1 on board '64f3f2bb708d8105b8a091120960bad1' was completed in 9.17 seconds with score 643.29 (502 unrouted and 220 violations), using 35.74 CPU seconds and the job allocated 29.37 GB of memory so far.
+2026-10-06 05:10:48.754 DEBUG  === Performance Profile ===
+2026-10-06 05:10:48.754 DEBUG  === Routing Parameters ===
+2026-10-06 05:10:48.754 DEBUG    Via Costs: 50, Plane Via Costs: 5
+2026-10-06 05:10:48.754 DEBUG    Layer Costs (Preferred / Against):
+2026-10-06 05:10:48.754 DEBUG      Layer 1: 1.8 / 3.1
+2026-10-06 05:10:48.754 DEBUG      Layer 2: 1.0 / 1.8
+2026-10-06 05:10:48.754 DEBUG      Layer 3: 1.0 / 2.3
+2026-10-06 05:10:48.754 DEBUG      Layer 4: 1.8 / 2.6
+2026-10-06 05:10:48.754 DEBUG  
+2026-10-06 05:10:48.755 DEBUG  ===========================
+2026-10-06 05:10:57.386 INFO   [AE0941\098524] Auto-routing stage completed: started with 502 unrouted nets, completed in 53.87 seconds, final score: 643.29 (502 unrouted and 220 violations), using 61.69 total CPU seconds, 50.89 GB total allocated, and 756.3 MB peak heap usage.
+2026-10-06 05:10:57.678 INFO   [AE0941\098524] Job 'AE0941\098524' finished with state: COMPLETED (elapsed: 1 minute 11.05 seconds, finished at UTC: 2026-10-06T05:10:57.676847835Z).
+2026-10-06 05:10:57.725 INFO   Saving output file '/workspace/tscircuit-ai-agent-remote/evidence/freerouting-continuation-2026-10-06/native-pad-metal-debug-proposed.ses' (SES)...
+2026-10-06 05:10:57.728 INFO   Successfully saved output file '/workspace/tscircuit-ai-agent-remote/evidence/freerouting-continuation-2026-10-06/native-pad-metal-debug-proposed.ses' (127734 bytes).
