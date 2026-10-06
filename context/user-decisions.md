@@ -1,3 +1,8 @@
+Latest request, 2026-10-06: add text in the schematic explaining each component.
+Use readable native schematic annotations and paired A4 guide pages where
+needed; preserve electrical source, PCB layout/routing and existing fabrication
+gates. Publish the annotated revision under the standing public authorization.
+
 Latest implementation request,2026-10-06: autonomously fix the review issues
 and keep tscircuit updated. This explicitly supersedes historical registry
 upload deferrals. Continue independent corrections without per-issue approval;

@@ -1,3 +1,34 @@
+## Schematic component explanations — 2026-10-06
+
+Revision `0.0.4-wip-schematic-notes` adds a plain-English explanation for every
+schematic component reference: 125 purchased components and 10 solder/test
+pads. The 13 circuit drawings link to paired A4 component-guide pages, numbered
+14–26, to keep the original symbols and connections readable.
+
+Open the schematic sheet selector in tscircuit and choose a **Component guide**
+page for the relevant circuit. Guides explain power, controls, USB/programming,
+display, speaker, haptic drive, microphones, backlight and measurement access.
+Battery connector polarity and display mating remain explicitly unverified.
+
+[Annotation validation and rendered pages](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/schematic-component-notes-2026-10-06/review.md).
+This documentation revision does not establish fabrication or hardware readiness.
+
+The fresh frozen-install native CLI build completed in249.96seconds and
+retains90open-port errors. Annotation coverage/native schema, TypeScript and
+formatting checks pass. AllPCB/source nets/ports and the original schematic
+symbols/wires/labels match the prior board. The source checkpoint verifies
+unchanged imports, models, lockfile and routing artifacts. The accepted schematic
+snapshot adds all26A4pages; the PCB reference remains unchanged.
+
+Final board checks remain blocked:47tests pass/3fail,169native schema failures
+and90open ports. The placement fixture's extra mismatch is only10native test
+pads receiving empty supplier maps from the CLI; strict PCB/net comparison
+passes. The required source snapshot reaches its recorded360-second budget;
+the supported snapshot of accepted native JSON completes, passes the reviewed
+schematic reference and retains the original PCB-reference mismatch.
+
+---
+
 ## Latest MCU correction — 2026-10-06
 
 **Revision `0.0.3-wip-local-bypass`; NOT READY TO ORDER.** C31 now has a

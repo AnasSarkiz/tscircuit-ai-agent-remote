@@ -59,7 +59,7 @@ if (!existsSync(circuitJsonPath)) {
 }
 collectSource(join(projectDir, "index.circuit.tsx"))
 for (const moduleName of externalModules) {
-  if (!["tscircuit", "@tscircuit/props", "zod"].includes(moduleName)) {
+  if (!["tscircuit", "@tscircuit/props", "zod", "react"].includes(moduleName)) {
     throw new Error(`Unreviewed external module: ${moduleName}`)
   }
 }
@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "Handheld Wi-Fi AI agent remote; WIP with local MCU bypass and 22uF bulk correction, incomplete routing and unresolved fabrication gates; not ready to order",
+    "Handheld Wi-Fi AI agent remote; WIP with 13 paired A4 component guides covering every schematic component, incomplete routing and unresolved fabrication gates; not ready to order",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "scripts/render-schematic-guides.mjs",
+    "dist/index/circuit.json",
+    "evidence/schematic-component-notes-2026-10-06/accepted-views"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 2.01,
+  "peak_process_group_rss_bytes": 205811712,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

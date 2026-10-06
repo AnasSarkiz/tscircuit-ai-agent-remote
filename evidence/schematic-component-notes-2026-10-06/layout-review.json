@@ -1,0 +1,28 @@
+{
+  "parent_commit": "540f5c84e37ea882b7d24db39b9731b2c40ebb74",
+  "version": "0.0.4-wip-schematic-notes",
+  "preliminary_rejected_layouts": [
+    {
+      "native": "placement.json",
+      "views": "placement-views",
+      "reason": "Side notes extend beyond an A4 circuit sheet."
+    },
+    {
+      "native": "placement-guide-panels.json",
+      "views": "panel-views",
+      "reason": "Side panel clips circuit or notes at A4 edges."
+    },
+    {
+      "native": "native/circuit.json",
+      "views": "final-views",
+      "reason": "Microphone sheet footer at -11.82 shifted top labels against A4 inner frame; corrected caption to -10.5 and rebuilt the actual native CLI output."
+    }
+  ],
+  "paired_placement_preview": "paired-placement.json",
+  "accepted_source": "Current source uses paired A4 guide pages and a short cross-reference on each original diagram; final native output and final views are reviewed separately.",
+  "react_version": "19.3.0",
+  "dependency_declarations_lockfile_import_models_copper_authored_paths_changed": false,
+  "fabrication_ready": false,
+  "final_native": "evidence/schematic-component-notes-2026-10-06/final-native/circuit.json",
+  "final_accepted_views": "evidence/schematic-component-notes-2026-10-06/accepted-views"
+}

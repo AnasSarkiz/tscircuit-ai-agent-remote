@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bun",
+    "-e",
+    "import { readFileSync,writeFileSync } from \"node:fs\"; import { any_circuit_element } from \"circuit-json\"; const b=JSON.parse(readFileSync(\"dist/index/circuit.json\",\"utf8\")); const failures=b.flatMap((e,i)=>{const r=any_circuit_element.safeParse(e); return r.success?[]:[{index:i,type:e.type,issues:r.error.issues}]}); writeFileSync(\"evidence/schematic-component-notes-2026-10-06/full-schema-audit.json\",JSON.stringify({failures:failures.length,types:Object.groupBy(failures,x=>x.type),whole_board_passed:failures.length===0},null,2)+\"\\n\"); console.log(JSON.stringify({failures:failures.length,types:Object.fromEntries(Object.entries(Object.groupBy(failures,x=>x.type)).map(([k,v])=>[k,v.length]))}));"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 10.51,
+  "peak_process_group_rss_bytes": 757497856,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

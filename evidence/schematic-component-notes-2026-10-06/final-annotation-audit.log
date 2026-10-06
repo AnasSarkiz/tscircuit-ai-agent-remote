@@ -1,0 +1,33 @@
+17 |     type !== "source_missing_manufacturer_part_number_warning",
+18 | )
+19 | const unchangedRecords = unchangedTypes.map((type) => {
+20 |   const before = previous.filter((element) => element.type === type)
+21 |   const after = circuitJson.filter((element) => element.type === type)
+22 |   assert.deepEqual(after, before, `Annotation changed ${type}`)
+              ^
+AssertionError: Annotation changed source_project_metadata
++ actual - expected
+
+  91
+  32,32,123
++ 32,32,32,32,115,111,117,114,99,101,95,102,105,108,101,115,121,115,116,101,109,95,109,100,53,95,104,97,115,104,58,32,39,54,50,50,102,98,54,48,97,49,52,98,99,51,101,54,102,102,56,97,55,100,102,102,51,49,102,98,97,57,56,50,48,39,44
+- 32,32,32,32,115,111,102,116,119,97,114,101,95,117,115,101,100,95,115,116,114,105,110,103,58,32,39,64,116,115,99,105,114,99,117,105,116,47,99,111,114,101,64,48,46,48,46,50,48,57,48,39,44
+- 32,32,32,32,115,111,117,114,99,101,95,112,114,111,106,101,99,116,95,109,101,116,97,100,97,116,97,95,105,100,58,32,39,115,111,117,114,99,101,95,112,114,111,106,101,99,116,95,109,101,116,97,100,97,116,97,95,48,39,44
+  32,32,32,32,116,121,112,101,58,32,39,115,111,117,114,99,101,95,112,114,111,106,101,99,116,95,109,101,116,97,100,97,116,97,39
+  32,32,125
+  93
+
+ generatedMessage: false,
+     actual: [
+  [Object ...]
+],
+   expected: [
+  [Object ...]
+],
+   operator: "deepStrictEqual",
+       code: "ERR_ASSERTION"
+
+      at /workspace/tscircuit-ai-agent-remote/evidence/schematic-component-notes-2026-10-06/audit-annotations.mjs:22:10
+      at map (native:1:11)
+
+Bun v1.3.9 (Linux x64)
