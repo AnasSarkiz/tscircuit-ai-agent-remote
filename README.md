@@ -1,3 +1,35 @@
+## Current connection repairs — 2026-10-06
+
+**0.0.6-wip-connection-repairs — NOT READY TO ORDER.** This is the current
+accepted source/native checkpoint; the entries below are historical.
+
+Manual native routing reduces open-port errors from 89 to **53** and physically
+open nets from 25 to **13**. The actual frozen-install CLI build completes in
+256.86 seconds and exits 1 on the remaining errors. Its unchanged native output
+has 380 traces, 322 full-span 0.30/0.45 mm vias and 269 pours. Independent copper
+measurement finds **zero shorts and zero clearance violations**, preserves all
+8,152 previously connected numbered-terminal pairs and adds 1,690 connected
+pairs. All 245 authored regions meet their nominal widths after fixing an
+outline-generator defect at short bends. Component footprints, poses, models
+and original solver caches remain unchanged.
+
+Source checks, CLI schematic style, TypeScript, formatting and 80 routing
+regressions pass. Full board tests remain 48 pass / 2 fail. Remaining native
+errors are 46 J7, four backlight U27, two SPEAKER_N contacts and U4 ground.
+J3's centre NTC is routed; its outer polarity and J7 mating remain unqualified.
+Two regulator routes violate their explicit source widths; 63 nominal-width
+branches, current/signal integrity, 169 schema failures, 32 missing paste
+records and polygon Gerber export still block fabrication. Dated stock still
+shows J6/C160405 unavailable. The standard programmer needs the documented
+adapter and has not been hardware-tested.
+
+[Actual repair review and receipts](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/connection-repair-2026-10-06/review.md).
+Matching public source/native publication is established by its anonymous
+verification receipts, not by preview availability or a passing cloud CI claim.
+No fabrication order or physical test has been performed.
+
+---
+
 ## Current six-point review — 2026-10-06
 
 **0.0.5-wip-style-vias-power — NOT READY TO ORDER.** This entry supersedes the older counts and status below.

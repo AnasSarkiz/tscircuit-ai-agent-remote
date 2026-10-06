@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-existing-copper-routes.py",
+    "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-audit.json",
+    "evidence/connection-repair-2026-10-06/clock-usb-top-after-corridors-proposal.json",
+    "LCD_SCLK",
+    "USB_DN",
+    "--grid-mm",
+    ".05",
+    "--copper-reserve-mm",
+    ".0001",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/combined-control-corridors-reservation.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/usb-display-after-corridors-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/explicit-cap-exit-proposal.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 30.54,
+  "peak_process_group_rss_bytes": 180314112,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

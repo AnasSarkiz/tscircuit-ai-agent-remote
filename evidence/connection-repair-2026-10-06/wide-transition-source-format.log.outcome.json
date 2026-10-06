@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/biome",
+    "format",
+    "--write",
+    "src/board/connection-copper.json",
+    "scripts/routing/export-native-srj.tsx"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 806912,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

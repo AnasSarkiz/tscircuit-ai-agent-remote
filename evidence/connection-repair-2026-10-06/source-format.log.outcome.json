@@ -1,0 +1,24 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/biome",
+    "format",
+    "--write",
+    "main.tsx",
+    "src/board/ManualConnectionCopper.tsx",
+    "src/board/ManualSignalPaths.tsx",
+    "src/board/ManualInnerSignalCopper.tsx",
+    "src/board/Routing.tsx",
+    "src/board/nets.tsx",
+    "src/board/connection-copper.json",
+    "src/board/manual-power-copper.json",
+    "package.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 761856,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-microphone-ground-traces.py",
+    "evidence/connection-repair-2026-10-06/final-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/microphone-u4-ground-landing-proposal.json",
+    "--replace-clock-escapes",
+    "--ports",
+    ".U4 > .pin3",
+    "--ground-landing-pad",
+    "--copper-audit",
+    "evidence/connection-repair-2026-10-06/final-copper-audit.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 24.03,
+  "peak_process_group_rss_bytes": 139706368,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

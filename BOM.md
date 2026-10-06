@@ -1,3 +1,11 @@
+## Connection repair checkpoint — 2026-10-06
+
+**0.0.6-wip-connection-repairs remains an untested, incomplete WIP.** Connection repairs retain all 125 purchased placements / 43 exact JLCPCB identities and ten native pads. No part, footprint, position or model is replaced. Dated October 6 stock matches the actual current identities: J6/C160405 remains unavailable, and positive total stock does not qualify assembly allocation, reservations or rotations. U16/U27 still have 32 missing native paste records.
+
+[Actual source/native review](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/connection-repair-2026-10-06/review.md). Earlier revision requirements and BOM history follow.
+
+---
+
 ## Current six-point review — 2026-10-06
 
 **0.0.5-wip-style-vias-power — NOT READY TO ORDER.** This entry supersedes the older counts and status below.

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-relocated-connections.py", line 73, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-relocated-connections.py", line 35, in main
+    seed=bridges['main_escape'](planner,{'net':nets[name],'root':root,'physical':{'physical_feature_groups':{},'physical_port_groups':{p['pcb_port_id']:[] for p in planner.ports.values()}},'group':'retired','ports':ports[:1]})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-connection-bridges.py", line 50, in main_escape
+    targets = contacts['main_targets'](planner, specification)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-existing-copper-routes.py", line 44, in main_targets
+    if physical['physical_feature_groups'][f"{record['pcb_trace_id']}:{index}"] != group:
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'pcb_trace_0:0'

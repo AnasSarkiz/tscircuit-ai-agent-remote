@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/connection-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.96
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/connection-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.4
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/connection-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.48
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/connection-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.69
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/connection-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 12.93
+    }
+  ],
+  "passed": true
+}

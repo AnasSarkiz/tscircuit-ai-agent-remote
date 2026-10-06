@@ -1,0 +1,30 @@
+{
+  "source_sha256": "91ac0afa9b1e92519a1fc84a880890c1b7b19e09be679363414b4751569852ba",
+  "selected_connection_names": [
+    "source_net_65",
+    "source_net_64"
+  ],
+  "differential_pair": {
+    "connectionNames": [
+      "source_net_65",
+      "source_net_64"
+    ],
+    "lengthTolerance": 2,
+    "traceGap": 0.2,
+    "maxUncoupledLength": 5
+  },
+  "obstacle_count": 670,
+  "stage": "fanout",
+  "options": {
+    "sourceComponentId": "pcb_component_51",
+    "escapeLayers": [
+      "top",
+      "bottom"
+    ],
+    "traceWidth": 0.275,
+    "viaDiameter": 0.45,
+    "viaHoleDiameter": 0.3,
+    "clearance": 0.2,
+    "completeOriginalEndpoints": true
+  }
+}

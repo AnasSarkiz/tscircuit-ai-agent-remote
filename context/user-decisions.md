@@ -1,3 +1,5 @@
+Latest request, 2026-10-06: fix the connection errors autonomously and keep the matching tscircuit source/native updated. Repair independently verified interfaces without per-issue approval, preserve actual connection/width/DRC evidence and report unresolved gates honestly. Do not guess J3 outer polarity or J7 physical mating, alter genuine imports or solver caches, hide native errors, place an order, resume the watcher or send other-chat messages.
+
 Latest six-point request,2026-10-06: use the native USB-C standard connector
 schematic for J1, run UI and CLI style analysis, verify current JLCPCB stock,
 require ordinary through vias with0.30mm holes/0.45mm pads, and route high-current

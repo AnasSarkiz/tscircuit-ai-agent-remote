@@ -1,0 +1,16 @@
+{"starting": "board-tests"}
+{"name": "board-tests", "command": ["bun", "run", "test"], "exit_code": 1, "elapsed_seconds": 2.84, "completed": true}
+{"starting": "strict-schema-assembly"}
+{"name": "strict-schema-assembly", "command": ["node", "evidence/order-readiness-2026-10-06/audit-schema-assembly.mjs", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06"], "exit_code": 1, "elapsed_seconds": 18.69, "completed": true}
+{"starting": "official-shorts"}
+{"name": "official-shorts", "command": ["bun", "node_modules/.bin/tsci", "check", "shorts", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json"], "exit_code": 1, "elapsed_seconds": 2.74, "completed": true}
+{"starting": "native-schematic-style"}
+{"name": "native-schematic-style", "command": ["bun", "node_modules/.bin/tsci", "check", "schematic-placement", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json"], "exit_code": 0, "elapsed_seconds": 2.46, "completed": true}
+{"starting": "component-guides"}
+{"name": "component-guides", "command": ["bun", "scripts/audit-schematic-guides.mjs", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/guide-coverage.json"], "exit_code": 0, "elapsed_seconds": 0.54, "completed": true}
+{"starting": "render-copper"}
+{"name": "render-copper", "command": ["bun", "scripts/routing/render-copper-review.mjs", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/rendered"], "exit_code": 0, "elapsed_seconds": 8.14, "completed": true}
+{"starting": "render-schematics"}
+{"name": "render-schematics", "command": ["bun", "scripts/render-schematic-guides.mjs", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/schematics"], "exit_code": 0, "elapsed_seconds": 1.46, "completed": true}
+{"starting": "latest-srj"}
+{"name": "latest-srj", "command": ["bun", "scripts/routing/export-native-srj.tsx", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/final-native.srj.json"], "exit_code": 0, "elapsed_seconds": 8.31, "completed": true}

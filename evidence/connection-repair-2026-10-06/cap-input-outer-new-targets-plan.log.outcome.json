@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-outer-connections.py",
+    "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-audit.json",
+    "evidence/connection-repair-2026-10-06/cap-input-outer-new-targets-proposal.json",
+    "--ports",
+    ".C1 > .pin1",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/remaining-signal-ground-proposal.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 25.54,
+  "peak_process_group_rss_bytes": 184258560,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

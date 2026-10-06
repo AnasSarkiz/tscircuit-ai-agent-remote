@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/qualify-connection-native.py", line 11, in <module>
+    assert path.read_bytes()==(runtime/path).read_bytes(),f'Runtime source mismatch: {path}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Runtime source mismatch: package.json

@@ -1,0 +1,20 @@
+{
+  "checked_immutable_files": 264,
+  "mismatched_or_missing": [
+    "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx"
+  ],
+  "imports_models_original_solver_cache_and_lock_unchanged": false,
+  "inherited_checkpoint_is_v4": true,
+  "inherited_mismatches_explained_by_previously_accepted_v5": [
+    {
+      "file": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "inherited_v4_sha256": "369a0da56e474295976a0a32c678ee6ce1edc81b8da1eedf93e7c0fa68351232",
+      "accepted_v5_sha256": "0299a72b4e6bddd44cd3e1ad4f6c3be27921516d7b3da2f99ce8583fb3fb814c",
+      "current_matches_accepted_v5": true,
+      "reason": "Previously accepted native USB-C schematic and canonical role aliases; no connection-repair import edit."
+    }
+  ],
+  "current_matches_accepted_starting_commit": true,
+  "accepted_starting_commit": "345d3752935d448959b0da931c492f4be97fb59c",
+  "imports_models_original_solver_cache_and_lock_unchanged_in_connection_repair": true
+}

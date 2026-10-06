@@ -1,0 +1,165 @@
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `Fragment`. It was passed a child from BoardRouting. See https://react.dev/link/warning-keys for more information.
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+{"event":"board:renderPhaseStarted","phase":"ReactSubtreesRender"}
+{"event":"board:renderPhaseStarted","phase":"RenderIsolatedSubcircuits"}
+{"event":"board:renderPhaseStarted","phase":"InflateSubcircuitCircuitJson"}
+{"event":"board:renderPhaseStarted","phase":"SourceNameDuplicateComponentRemoval"}
+{"event":"board:renderPhaseStarted","phase":"PcbFootprintStringRender"}
+{"event":"board:renderPhaseStarted","phase":"FetchPartFootprint"}
+{"event":"board:renderPhaseStarted","phase":"ResolveFootprintPinLabels"}
+{"event":"board:renderPhaseStarted","phase":"InitializePortsFromChildren"}
+{"event":"board:renderPhaseStarted","phase":"CreateNetsFromProps"}
+{"event":"board:renderPhaseStarted","phase":"AssignFallbackProps"}
+{"event":"board:renderPhaseStarted","phase":"CreateTracesFromProps"}
+{"event":"board:renderPhaseStarted","phase":"CreateTracesFromNetLabels"}
+{"event":"board:renderPhaseStarted","phase":"CreateTraceHintsFromProps"}
+{"event":"board:renderPhaseStarted","phase":"CreateAutoplacedBreakoutPoints"}
+{"event":"board:renderPhaseStarted","phase":"SourceGroupRender"}
+{"event":"board:renderPhaseStarted","phase":"AssignNameToUnnamedComponents"}
+{"event":"board:renderPhaseStarted","phase":"SourceRender"}
+{"event":"board:renderPhaseStarted","phase":"CheckRefDesConvention"}
+{"event":"board:renderPhaseStarted","phase":"SourceComponentPropertyValidation"}
+{"event":"board:renderPhaseStarted","phase":"SourceParentAttachment"}
+{"event":"board:renderPhaseStarted","phase":"PortMatching"}
+{"event":"board:renderPhaseStarted","phase":"OptimizeSelectorCache"}
+{"event":"board:renderPhaseStarted","phase":"SourceTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"SourceAddConnectivityMapKey"}
+{"event":"board:renderPhaseStarted","phase":"SourceDesignRuleChecks"}
+{"event":"board:renderPhaseStarted","phase":"SimulationRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicComponentRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicPortRender"}
+{"event":"board:renderPhaseStarted","phase":"SymbolContainerRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicPrimitiveRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicSymbolResize"}
+{"event":"board:renderPhaseStarted","phase":"SchematicComponentSizeCalculation"}
+{"event":"board:renderPhaseStarted","phase":"SchematicLayout"}
+{"event":"board:renderPhaseStarted","phase":"SchematicSectionRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicSheetRender"}
+{"event":"board:renderPhaseStarted","phase":"SchematicReplaceNetLabelsWithSymbols"}
+{"event":"board:renderPhaseStarted","phase":"SchematicLabelNetsWithConflictingNames"}
+{"event":"board:renderPhaseStarted","phase":"PanelBoardLayout"}
+{"event":"board:renderPhaseStarted","phase":"ValidatePcbCoordinates"}
+{"event":"board:renderPhaseStarted","phase":"PcbComponentRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbPrimitiveRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbFootprintLayout"}
+{"event":"board:renderPhaseStarted","phase":"PcbPortRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbPortAttachment"}
+{"event":"board:renderPhaseStarted","phase":"PcbComponentSizeCalculation"}
+{"event":"board:renderPhaseStarted","phase":"PcbComponentAnchorAlignment"}
+{"event":"board:renderPhaseStarted","phase":"PcbCalcPlacementResolution"}
+{"event":"board:renderPhaseStarted","phase":"PcbLayout"}
+{"event":"board:renderPhaseStarted","phase":"PcbBoardAutoSize"}
+{"event":"board:renderPhaseStarted","phase":"PanelLayout"}
+{"event":"board:renderPhaseStarted","phase":"PcbFlexRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbAutoplaceBreakoutPoints"}
+{"event":"board:renderPhaseStarted","phase":"PcbTraceHintRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbManualTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbPlacementDesignRuleChecks"}
+{"event":"board:renderPhaseStarted","phase":"PcbTraceRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbRouteNetIslands"}
+{"event":"board:renderPhaseStarted","phase":"PcbTraceTeardropRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbCopperPourRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbViaStitchRender"}
+{"event":"board:renderPhaseStarted","phase":"PcbCopperPourCleanup"}
+{"event":"board:renderPhaseStarted","phase":"PcbDesignRuleChecks"}
+{"event":"board:renderPhaseStarted","phase":"SilkscreenOverlapAdjustment"}
+{"event":"board:renderPhaseStarted","phase":"CadModelRender"}
+{"event":"board:renderPhaseStarted","phase":"PartsEngineRender"}
+{"event":"board:renderPhaseStarted","phase":"MissingManufacturerPartNumberWarning"}
+{"event":"board:renderPhaseStarted","phase":"PartOrientationAnalysis"}
+{"event":"board:renderPhaseStarted","phase":"SupplierFootprintMismatchWarning"}
+{"event":"board:renderPhaseStarted","phase":"SimulationSpiceEngineRender"}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-switching","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-feedback-status","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"independent-control-signals","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"charger-current-limit","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"amplifier-din","paths":2}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-current-setting","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c1-positive","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c1-negative","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c2-positive","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"backlight-c2-negative","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"regulator-pgood-reroute","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"hold-readback","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"haptic-enable","paths":3}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"mcu-amplifier-bclk","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"mcu-amplifier-din","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"charger-ntc","paths":1}
+autorouting:start
+{"event":"autorouting:end","subcircuit":"subcircuit_source_group_15","phase":"service-uart","paths":3}
+{
+  "counts": {
+    "source_project_metadata": 1,
+    "source_group": 16,
+    "schematic_sheet": 26,
+    "source_net": 76,
+    "source_port": 618,
+    "source_component": 135,
+    "source_manually_placed_via": 61,
+    "source_board": 1,
+    "source_refdes_convention_warning": 8,
+    "source_component_internal_connection": 4,
+    "source_trace": 767,
+    "source_bus": 2,
+    "source_no_power_pin_defined_warning": 14,
+    "source_pin_missing_trace_warning": 2,
+    "source_no_ground_pin_defined_warning": 8,
+    "source_component_pins_underspecified_warning": 8,
+    "schematic_component": 135,
+    "schematic_text": 388,
+    "schematic_path": 72,
+    "schematic_circle": 6,
+    "schematic_group": 16,
+    "schematic_port": 479,
+    "schematic_line": 17,
+    "schematic_symbol": 5,
+    "schematic_rect": 14,
+    "schematic_trace": 313,
+    "schematic_net_label": 140,
+    "pcb_component": 196,
+    "pcb_group": 15,
+    "pcb_board": 1,
+    "pcb_smtpad": 487,
+    "pcb_solder_paste": 469,
+    "pcb_silkscreen_path": 540,
+    "pcb_silkscreen_text": 137,
+    "pcb_fabrication_note_path": 5,
+    "pcb_courtyard_outline": 100,
+    "pcb_hole": 8,
+    "pcb_plated_hole": 9,
+    "pcb_courtyard_rect": 25,
+    "pcb_silkscreen_circle": 9,
+    "pcb_keepout": 3,
+    "pcb_note_text": 10,
+    "pcb_note_rect": 2,
+    "pcb_via": 251,
+    "pcb_port": 618,
+    "pcb_trace": 346,
+    "pcb_connector_not_in_accessible_orientation_warning": 3,
+    "cad_component": 135,
+    "source_missing_manufacturer_part_number_warning": 10,
+    "pcb_component_missing_courtyard_warning": 10,
+    "pcb_debug_object": 17,
+    "pcb_copper_pour": 210,
+    "pcb_port_not_connected_error": 76
+  }
+}

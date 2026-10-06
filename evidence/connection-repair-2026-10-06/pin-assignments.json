@@ -1,0 +1,9450 @@
+[
+  {
+    "reference": "U1",
+    "pin_number": 1,
+    "source_port_name": "GND1",
+    "port_hints": [
+      "GND1",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_0",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 2,
+    "source_port_name": "3V3",
+    "port_hints": [
+      "3V3",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_1",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 3,
+    "source_port_name": "EN",
+    "port_hints": [
+      "EN",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "MCU_EN"
+    ],
+    "pcb_port_id": "pcb_port_2",
+    "physical_island_ids": [
+      "pcb_smtpad_88"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 4,
+    "source_port_name": "IO4",
+    "port_hints": [
+      "IO4",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_3",
+    "physical_island_ids": [
+      "pcb_smtpad_287"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 5,
+    "source_port_name": "IO5",
+    "port_hints": [
+      "IO5",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "MCU_HAPTIC_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_4",
+    "physical_island_ids": [
+      "saved_phase_null_15_2:13"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 6,
+    "source_port_name": "IO6",
+    "port_hints": [
+      "IO6",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "LCD_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_5",
+    "physical_island_ids": [
+      "pcb_smtpad_236"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 7,
+    "source_port_name": "IO7",
+    "port_hints": [
+      "IO7",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_DIN"
+    ],
+    "pcb_port_id": "pcb_port_6",
+    "physical_island_ids": [
+      "pcb_smtpad_296"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 8,
+    "source_port_name": "IO15",
+    "port_hints": [
+      "IO15",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "MCU_MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_7",
+    "physical_island_ids": [
+      "pcb_smtpad_354"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 9,
+    "source_port_name": "IO16",
+    "port_hints": [
+      "IO16",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [
+      "MCU_MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_8",
+    "physical_island_ids": [
+      "pcb_smtpad_356"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 10,
+    "source_port_name": "IO17",
+    "port_hints": [
+      "IO17",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "MCU_MIC_SD"
+    ],
+    "pcb_port_id": "pcb_port_9",
+    "physical_island_ids": [
+      "pcb_smtpad_424"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 11,
+    "source_port_name": "IO18",
+    "port_hints": [
+      "IO18",
+      "pin11",
+      "11"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_10",
+    "physical_island_ids": [
+      "pcb_smtpad_10"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 12,
+    "source_port_name": "IO8",
+    "port_hints": [
+      "IO8",
+      "pin12",
+      "12"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_LRCLK"
+    ],
+    "pcb_port_id": "pcb_port_11",
+    "physical_island_ids": [
+      "pcb_smtpad_304"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 13,
+    "source_port_name": "IO19",
+    "port_hints": [
+      "IO19",
+      "pin13",
+      "13"
+    ],
+    "named_nets": [
+      "MCU_USB_DN"
+    ],
+    "pcb_port_id": "pcb_port_12",
+    "physical_island_ids": [
+      "pcb_smtpad_78"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 14,
+    "source_port_name": "IO20",
+    "port_hints": [
+      "IO20",
+      "pin14",
+      "14"
+    ],
+    "named_nets": [
+      "MCU_USB_DP"
+    ],
+    "pcb_port_id": "pcb_port_13",
+    "physical_island_ids": [
+      "pcb_smtpad_76"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 15,
+    "source_port_name": "IO3",
+    "port_hints": [
+      "IO3",
+      "pin15",
+      "15"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_14",
+    "physical_island_ids": [
+      "pcb_smtpad_14"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 16,
+    "source_port_name": "IO46",
+    "port_hints": [
+      "IO46",
+      "pin16",
+      "16"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_15",
+    "physical_island_ids": [
+      "pcb_smtpad_15"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 17,
+    "source_port_name": "IO9",
+    "port_hints": [
+      "IO9",
+      "pin17",
+      "17"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_16",
+    "physical_island_ids": [
+      "pcb_smtpad_300"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 18,
+    "source_port_name": "IO10",
+    "port_hints": [
+      "IO10",
+      "pin18",
+      "18"
+    ],
+    "named_nets": [
+      "MCU_LCD_CS_N"
+    ],
+    "pcb_port_id": "pcb_port_17",
+    "physical_island_ids": [
+      "pcb_smtpad_17"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 19,
+    "source_port_name": "IO11",
+    "port_hints": [
+      "IO11",
+      "pin19",
+      "19"
+    ],
+    "named_nets": [
+      "MCU_LCD_SDA"
+    ],
+    "pcb_port_id": "pcb_port_18",
+    "physical_island_ids": [
+      "pcb_smtpad_256"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 20,
+    "source_port_name": "IO12",
+    "port_hints": [
+      "IO12",
+      "pin20",
+      "20"
+    ],
+    "named_nets": [
+      "MCU_LCD_SCLK"
+    ],
+    "pcb_port_id": "pcb_port_19",
+    "physical_island_ids": [
+      "pcb_smtpad_252"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 21,
+    "source_port_name": "IO13",
+    "port_hints": [
+      "IO13",
+      "pin21",
+      "21"
+    ],
+    "named_nets": [
+      "MCU_LCD_DC"
+    ],
+    "pcb_port_id": "pcb_port_20",
+    "physical_island_ids": [
+      "pcb_smtpad_248"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 22,
+    "source_port_name": "IO14",
+    "port_hints": [
+      "IO14",
+      "pin22",
+      "22"
+    ],
+    "named_nets": [
+      "MCU_LCD_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_21",
+    "physical_island_ids": [
+      "pcb_smtpad_157"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 23,
+    "source_port_name": "IO21",
+    "port_hints": [
+      "IO21",
+      "pin23",
+      "23"
+    ],
+    "named_nets": [
+      "MCU_HOLD_READ"
+    ],
+    "pcb_port_id": "pcb_port_22",
+    "physical_island_ids": [
+      "pcb_smtpad_22"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 24,
+    "source_port_name": "IO47",
+    "port_hints": [
+      "IO47",
+      "pin24",
+      "24"
+    ],
+    "named_nets": [
+      "MCU_BACKLIGHT_PWM"
+    ],
+    "pcb_port_id": "pcb_port_23",
+    "physical_island_ids": [
+      "pcb_smtpad_468"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 25,
+    "source_port_name": "IO48",
+    "port_hints": [
+      "IO48",
+      "pin25",
+      "25"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_24",
+    "physical_island_ids": [
+      "pcb_smtpad_24"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 26,
+    "source_port_name": "IO45",
+    "port_hints": [
+      "IO45",
+      "pin26",
+      "26"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_25",
+    "physical_island_ids": [
+      "pcb_smtpad_25"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 27,
+    "source_port_name": "IO0",
+    "port_hints": [
+      "IO0",
+      "pin27",
+      "27"
+    ],
+    "named_nets": [
+      "MCU_BOOT_N"
+    ],
+    "pcb_port_id": "pcb_port_26",
+    "physical_island_ids": [
+      "pcb_smtpad_436"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 28,
+    "source_port_name": "IO35",
+    "port_hints": [
+      "IO35",
+      "pin28",
+      "28"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_27",
+    "physical_island_ids": [
+      "pcb_smtpad_27"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 29,
+    "source_port_name": "IO36",
+    "port_hints": [
+      "IO36",
+      "pin29",
+      "29"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_28",
+    "physical_island_ids": [
+      "pcb_smtpad_28"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 30,
+    "source_port_name": "IO37",
+    "port_hints": [
+      "IO37",
+      "pin30",
+      "30"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_29",
+    "physical_island_ids": [
+      "pcb_smtpad_29"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 31,
+    "source_port_name": "IO38",
+    "port_hints": [
+      "IO38",
+      "pin31",
+      "31"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_30",
+    "physical_island_ids": [
+      "pcb_smtpad_30"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 32,
+    "source_port_name": "IO39",
+    "port_hints": [
+      "IO39",
+      "pin32",
+      "32"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_31",
+    "physical_island_ids": [
+      "pcb_smtpad_31"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 33,
+    "source_port_name": "IO40",
+    "port_hints": [
+      "IO40",
+      "pin33",
+      "33"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_32",
+    "physical_island_ids": [
+      "pcb_smtpad_32"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 34,
+    "source_port_name": "IO41",
+    "port_hints": [
+      "IO41",
+      "pin34",
+      "34"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_33",
+    "physical_island_ids": [
+      "pcb_smtpad_33"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 35,
+    "source_port_name": "IO42",
+    "port_hints": [
+      "IO42",
+      "pin35",
+      "35"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_34",
+    "physical_island_ids": [
+      "pcb_smtpad_34"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 36,
+    "source_port_name": "RXD0",
+    "port_hints": [
+      "RXD0",
+      "pin36",
+      "36"
+    ],
+    "named_nets": [
+      "MCU_UART_RX"
+    ],
+    "pcb_port_id": "pcb_port_35",
+    "physical_island_ids": [
+      "saved_phase_null_22_2:31"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 37,
+    "source_port_name": "TXD0",
+    "port_hints": [
+      "TXD0",
+      "pin37",
+      "37"
+    ],
+    "named_nets": [
+      "MCU_UART_TX"
+    ],
+    "pcb_port_id": "pcb_port_36",
+    "physical_island_ids": [
+      "pcb_smtpad_36"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 38,
+    "source_port_name": "IO2",
+    "port_hints": [
+      "IO2",
+      "pin38",
+      "38"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_37",
+    "physical_island_ids": [
+      "pcb_smtpad_37"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 39,
+    "source_port_name": "IO1",
+    "port_hints": [
+      "IO1",
+      "pin39",
+      "39"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_38",
+    "physical_island_ids": [
+      "pcb_smtpad_38"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 40,
+    "source_port_name": "GND2",
+    "port_hints": [
+      "GND2",
+      "pin40",
+      "40"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_39",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": 41,
+    "source_port_name": "GND3",
+    "port_hints": [
+      "GND3",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_40",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_1",
+    "port_hints": [
+      "pin41_internal_1",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_41",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_2",
+    "port_hints": [
+      "pin41_internal_2",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_42",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_3",
+    "port_hints": [
+      "pin41_internal_3",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_43",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_4",
+    "port_hints": [
+      "pin41_internal_4",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_44",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_5",
+    "port_hints": [
+      "pin41_internal_5",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_45",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_6",
+    "port_hints": [
+      "pin41_internal_6",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_46",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_7",
+    "port_hints": [
+      "pin41_internal_7",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_47",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U1",
+    "pin_number": null,
+    "source_port_name": "pin41_internal_8",
+    "port_hints": [
+      "pin41_internal_8",
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_48",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 1,
+    "source_port_name": "S2",
+    "port_hints": [
+      "S2",
+      "EH2",
+      "SHELL2",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_49",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 2,
+    "source_port_name": "S1",
+    "port_hints": [
+      "S1",
+      "EH1",
+      "SHELL1",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_50",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 3,
+    "source_port_name": "S4",
+    "port_hints": [
+      "S4",
+      "EH4",
+      "SHELL4",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_51",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 4,
+    "source_port_name": "S3",
+    "port_hints": [
+      "S3",
+      "EH3",
+      "SHELL3",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_52",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 5,
+    "source_port_name": "B8",
+    "port_hints": [
+      "B8",
+      "SBU2",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_53",
+    "physical_island_ids": [
+      "pcb_smtpad_49"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 6,
+    "source_port_name": "A5",
+    "port_hints": [
+      "A5",
+      "CC1",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "USB_CC1"
+    ],
+    "pcb_port_id": "pcb_port_54",
+    "physical_island_ids": [
+      "pcb_smtpad_50"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 7,
+    "source_port_name": "B7",
+    "port_hints": [
+      "B7",
+      "DN2",
+      "DM2",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "USB_DN"
+    ],
+    "pcb_port_id": "pcb_port_55",
+    "physical_island_ids": [
+      "pcb_smtpad_77"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 8,
+    "source_port_name": "A6",
+    "port_hints": [
+      "A6",
+      "DP1",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "USB_DP"
+    ],
+    "pcb_port_id": "pcb_port_56",
+    "physical_island_ids": [
+      "pcb_smtpad_75"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 9,
+    "source_port_name": "A7",
+    "port_hints": [
+      "A7",
+      "DN1",
+      "DM1",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [
+      "USB_DN"
+    ],
+    "pcb_port_id": "pcb_port_57",
+    "physical_island_ids": [
+      "pcb_smtpad_77"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 10,
+    "source_port_name": "B6",
+    "port_hints": [
+      "B6",
+      "DP2",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "USB_DP"
+    ],
+    "pcb_port_id": "pcb_port_58",
+    "physical_island_ids": [
+      "pcb_smtpad_75"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 11,
+    "source_port_name": "A8",
+    "port_hints": [
+      "A8",
+      "SBU1",
+      "pin11",
+      "11"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_59",
+    "physical_island_ids": [
+      "pcb_smtpad_55"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 12,
+    "source_port_name": "B5",
+    "port_hints": [
+      "B5",
+      "CC2",
+      "pin12",
+      "12"
+    ],
+    "named_nets": [
+      "USB_CC2"
+    ],
+    "pcb_port_id": "pcb_port_60",
+    "physical_island_ids": [
+      "pcb_smtpad_56"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 13,
+    "source_port_name": "A1B12",
+    "port_hints": [
+      "A1B12",
+      "GND1",
+      "pin13",
+      "13"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_61",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 14,
+    "source_port_name": "B1A12",
+    "port_hints": [
+      "B1A12",
+      "GND2",
+      "pin14",
+      "14"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_62",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 15,
+    "source_port_name": "B4A9",
+    "port_hints": [
+      "B4A9",
+      "VBUS1",
+      "pin15",
+      "15"
+    ],
+    "named_nets": [
+      "VBUS"
+    ],
+    "pcb_port_id": "pcb_port_63",
+    "physical_island_ids": [
+      "pcb_smtpad_115"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J1",
+    "pin_number": 16,
+    "source_port_name": "A4B9",
+    "port_hints": [
+      "A4B9",
+      "VBUS2",
+      "pin16",
+      "16"
+    ],
+    "named_nets": [
+      "VBUS"
+    ],
+    "pcb_port_id": "pcb_port_64",
+    "physical_island_ids": [
+      "pcb_smtpad_115"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "D2",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "GND",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_65",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "D2",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "D_POS",
+      "1"
+    ],
+    "named_nets": [
+      "USB_DP"
+    ],
+    "pcb_port_id": "pcb_port_66",
+    "physical_island_ids": [
+      "pcb_smtpad_75"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "D2",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "D_NEG",
+      "2"
+    ],
+    "named_nets": [
+      "USB_DN"
+    ],
+    "pcb_port_id": "pcb_port_67",
+    "physical_island_ids": [
+      "pcb_smtpad_77"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U12",
+    "pin_number": 1,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_68",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U12",
+    "pin_number": 2,
+    "source_port_name": "N_RESET",
+    "port_hints": [
+      "N_RESET",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_69",
+    "physical_island_ids": [
+      "pcb_smtpad_65"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U12",
+    "pin_number": 3,
+    "source_port_name": "VDD",
+    "port_hints": [
+      "VDD",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_70",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_71",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_72",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "MCU_EN"
+    ],
+    "pcb_port_id": "pcb_port_73",
+    "physical_island_ids": [
+      "pcb_smtpad_88"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 4,
+    "source_port_name": "pin4",
+    "port_hints": [
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "MCU_BOOT_N"
+    ],
+    "pcb_port_id": "pcb_port_74",
+    "physical_island_ids": [
+      "pcb_smtpad_436"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 5,
+    "source_port_name": "pin5",
+    "port_hints": [
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "SERVICE_UART_TX"
+    ],
+    "pcb_port_id": "pcb_port_75",
+    "physical_island_ids": [
+      "saved_phase_null_22_0:18"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 6,
+    "source_port_name": "pin6",
+    "port_hints": [
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "MCU_UART_RX"
+    ],
+    "pcb_port_id": "pcb_port_76",
+    "physical_island_ids": [
+      "saved_phase_null_22_2:31"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 7,
+    "source_port_name": "pin7",
+    "port_hints": [
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_77",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J6",
+    "pin_number": 8,
+    "source_port_name": "pin8",
+    "port_hints": [
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_78",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R31",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "USB_DP"
+    ],
+    "pcb_port_id": "pcb_port_79",
+    "physical_island_ids": [
+      "pcb_smtpad_75"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R31",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_USB_DP"
+    ],
+    "pcb_port_id": "pcb_port_80",
+    "physical_island_ids": [
+      "pcb_smtpad_76"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R32",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "USB_DN"
+    ],
+    "pcb_port_id": "pcb_port_81",
+    "physical_island_ids": [
+      "pcb_smtpad_77"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R32",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_USB_DN"
+    ],
+    "pcb_port_id": "pcb_port_82",
+    "physical_island_ids": [
+      "pcb_smtpad_78"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R33",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "USB_CC1"
+    ],
+    "pcb_port_id": "pcb_port_83",
+    "physical_island_ids": [
+      "pcb_smtpad_50"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R33",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_84",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R34",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "USB_CC2"
+    ],
+    "pcb_port_id": "pcb_port_85",
+    "physical_island_ids": [
+      "pcb_smtpad_56"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R34",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_86",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R35",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_87",
+    "physical_island_ids": [
+      "pcb_smtpad_65"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R35",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_EN"
+    ],
+    "pcb_port_id": "pcb_port_88",
+    "physical_island_ids": [
+      "pcb_smtpad_88"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R36",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_89",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R36",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_BOOT_N"
+    ],
+    "pcb_port_id": "pcb_port_90",
+    "physical_island_ids": [
+      "pcb_smtpad_436"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R37",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_EN"
+    ],
+    "pcb_port_id": "pcb_port_91",
+    "physical_island_ids": [
+      "pcb_smtpad_88"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R37",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_92",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R38",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_UART_TX"
+    ],
+    "pcb_port_id": "pcb_port_93",
+    "physical_island_ids": [
+      "pcb_smtpad_36"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R38",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "SERVICE_UART_TX"
+    ],
+    "pcb_port_id": "pcb_port_94",
+    "physical_island_ids": [
+      "saved_phase_null_22_0:18"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C30",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_95",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C30",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_96",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C31",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_97",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C31",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_98",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C32",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_99",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C32",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_100",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 1,
+    "source_port_name": "TS",
+    "port_hints": [
+      "TS",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "PACK_NTC"
+    ],
+    "pcb_port_id": "pcb_port_101",
+    "physical_island_ids": [
+      "pcb_smtpad_97"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 2,
+    "source_port_name": "BAT1",
+    "port_hints": [
+      "BAT1",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "PACK_BAT"
+    ],
+    "pcb_port_id": "pcb_port_102",
+    "physical_island_ids": [
+      "pcb_smtpad_481"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 3,
+    "source_port_name": "BAT2",
+    "port_hints": [
+      "BAT2",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "PACK_BAT"
+    ],
+    "pcb_port_id": "pcb_port_103",
+    "physical_island_ids": [
+      "pcb_smtpad_481"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 4,
+    "source_port_name": "N_CE",
+    "port_hints": [
+      "N_CE",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_104",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 5,
+    "source_port_name": "EN2",
+    "port_hints": [
+      "EN2",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_105",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 6,
+    "source_port_name": "EN1",
+    "port_hints": [
+      "EN1",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_106",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 7,
+    "source_port_name": "N_PGOOD",
+    "port_hints": [
+      "N_PGOOD",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "CHARGE_PGOOD_N"
+    ],
+    "pcb_port_id": "pcb_port_107",
+    "physical_island_ids": [
+      "pcb_smtpad_124"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 8,
+    "source_port_name": "VSS",
+    "port_hints": [
+      "VSS",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_108",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 9,
+    "source_port_name": "N_CHG",
+    "port_hints": [
+      "N_CHG",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [
+      "CHARGE_STATUS_N"
+    ],
+    "pcb_port_id": "pcb_port_109",
+    "physical_island_ids": [
+      "pcb_smtpad_486"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 10,
+    "source_port_name": "OUT1",
+    "port_hints": [
+      "OUT1",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_110",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 11,
+    "source_port_name": "OUT2",
+    "port_hints": [
+      "OUT2",
+      "pin11",
+      "11"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_111",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 12,
+    "source_port_name": "ILIM",
+    "port_hints": [
+      "ILIM",
+      "pin12",
+      "12"
+    ],
+    "named_nets": [
+      "CHARGER_ILIM"
+    ],
+    "pcb_port_id": "pcb_port_112",
+    "physical_island_ids": [
+      "pcb_smtpad_123"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 13,
+    "source_port_name": "IN",
+    "port_hints": [
+      "IN",
+      "pin13",
+      "13"
+    ],
+    "named_nets": [
+      "VBUS"
+    ],
+    "pcb_port_id": "pcb_port_113",
+    "physical_island_ids": [
+      "pcb_smtpad_115"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 14,
+    "source_port_name": "TMR",
+    "port_hints": [
+      "TMR",
+      "pin14",
+      "14"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_114",
+    "physical_island_ids": [
+      "pcb_smtpad_110"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 15,
+    "source_port_name": "ITERM",
+    "port_hints": [
+      "ITERM",
+      "pin15",
+      "15"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_115",
+    "physical_island_ids": [
+      "pcb_smtpad_111"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 16,
+    "source_port_name": "ISET",
+    "port_hints": [
+      "ISET",
+      "pin16",
+      "16"
+    ],
+    "named_nets": [
+      "CHARGER_ISET"
+    ],
+    "pcb_port_id": "pcb_port_116",
+    "physical_island_ids": [
+      "pcb_smtpad_121"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U16",
+    "pin_number": 17,
+    "source_port_name": "EP",
+    "port_hints": [
+      "EP",
+      "pin17",
+      "17"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_117",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J3",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_118",
+    "physical_island_ids": [
+      "pcb_plated_hole_6"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J3",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "PACK_NTC"
+    ],
+    "pcb_port_id": "pcb_port_119",
+    "physical_island_ids": [
+      "pcb_smtpad_97"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J3",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "3"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_120",
+    "physical_island_ids": [
+      "pcb_plated_hole_4"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C1",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VBUS"
+    ],
+    "pcb_port_id": "pcb_port_121",
+    "physical_island_ids": [
+      "pcb_smtpad_115"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C1",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_122",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C2",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "PACK_BAT"
+    ],
+    "pcb_port_id": "pcb_port_123",
+    "physical_island_ids": [
+      "pcb_smtpad_481"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C2",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_124",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C3",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_125",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C3",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_126",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R1",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "CHARGER_ISET"
+    ],
+    "pcb_port_id": "pcb_port_127",
+    "physical_island_ids": [
+      "pcb_smtpad_121"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R1",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_128",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R2",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "CHARGER_ILIM"
+    ],
+    "pcb_port_id": "pcb_port_129",
+    "physical_island_ids": [
+      "pcb_smtpad_123"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R2",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_130",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R3",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_131",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R3",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "CHARGE_PGOOD_N"
+    ],
+    "pcb_port_id": "pcb_port_132",
+    "physical_island_ids": [
+      "pcb_smtpad_124"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R4",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_133",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R4",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "CHARGE_STATUS_N"
+    ],
+    "pcb_port_id": "pcb_port_134",
+    "physical_island_ids": [
+      "pcb_smtpad_486"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 1,
+    "source_port_name": "EN",
+    "port_hints": [
+      "EN",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "BUCK_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_135",
+    "physical_island_ids": [
+      "pcb_smtpad_389"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 2,
+    "source_port_name": "MODE",
+    "port_hints": [
+      "MODE",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_136",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 3,
+    "source_port_name": "AGND",
+    "port_hints": [
+      "AGND",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_137",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 4,
+    "source_port_name": "FB",
+    "port_hints": [
+      "FB",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "REG_FB"
+    ],
+    "pcb_port_id": "pcb_port_138",
+    "physical_island_ids": [
+      "pcb_smtpad_146"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 5,
+    "source_port_name": "PG",
+    "port_hints": [
+      "PG",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "REG_PG"
+    ],
+    "pcb_port_id": "pcb_port_139",
+    "physical_island_ids": [
+      "saved_phase_null_13_0:16"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 6,
+    "source_port_name": "VOUT",
+    "port_hints": [
+      "VOUT",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_140",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 7,
+    "source_port_name": "L2",
+    "port_hints": [
+      "L2",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_141",
+    "physical_island_ids": [
+      "pcb_smtpad_131"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 8,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_142",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 9,
+    "source_port_name": "L1",
+    "port_hints": [
+      "L1",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_143",
+    "physical_island_ids": [
+      "pcb_smtpad_129"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U2",
+    "pin_number": 10,
+    "source_port_name": "VIN",
+    "port_hints": [
+      "VIN",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_144",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "L1",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_145",
+    "physical_island_ids": [
+      "pcb_smtpad_129"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "L1",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_146",
+    "physical_island_ids": [
+      "pcb_smtpad_131"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C4",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_147",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C4",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_148",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C5",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_149",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C5",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_150",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R5",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_151",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R5",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "REG_FB"
+    ],
+    "pcb_port_id": "pcb_port_152",
+    "physical_island_ids": [
+      "pcb_smtpad_146"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R6",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "REG_FB"
+    ],
+    "pcb_port_id": "pcb_port_153",
+    "physical_island_ids": [
+      "pcb_smtpad_146"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R6",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_154",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R7",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_155",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R7",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "REG_PG"
+    ],
+    "pcb_port_id": "pcb_port_156",
+    "physical_island_ids": [
+      "saved_phase_null_13_0:16"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U13",
+    "pin_number": 1,
+    "source_port_name": "IN",
+    "port_hints": [
+      "IN",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_157",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U13",
+    "pin_number": 2,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_158",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U13",
+    "pin_number": 3,
+    "source_port_name": "EN",
+    "port_hints": [
+      "EN",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "LCD_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_159",
+    "physical_island_ids": [
+      "pcb_smtpad_236"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U13",
+    "pin_number": 4,
+    "source_port_name": "N",
+    "port_hints": [
+      "N",
+      "C",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_160",
+    "physical_island_ids": [
+      "pcb_smtpad_153"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U13",
+    "pin_number": 5,
+    "source_port_name": "OUT",
+    "port_hints": [
+      "OUT",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_161",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 1,
+    "source_port_name": "DIR",
+    "port_hints": [
+      "DIR",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_162",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 2,
+    "source_port_name": "A1",
+    "port_hints": [
+      "A1",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_LCD_CS_N"
+    ],
+    "pcb_port_id": "pcb_port_163",
+    "physical_island_ids": [
+      "pcb_smtpad_17"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 3,
+    "source_port_name": "A2",
+    "port_hints": [
+      "A2",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "MCU_LCD_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_164",
+    "physical_island_ids": [
+      "pcb_smtpad_157"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 4,
+    "source_port_name": "A3",
+    "port_hints": [
+      "A3",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "MCU_LCD_DC"
+    ],
+    "pcb_port_id": "pcb_port_165",
+    "physical_island_ids": [
+      "pcb_smtpad_248"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 5,
+    "source_port_name": "A4",
+    "port_hints": [
+      "A4",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "MCU_LCD_SCLK"
+    ],
+    "pcb_port_id": "pcb_port_166",
+    "physical_island_ids": [
+      "pcb_smtpad_252"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 6,
+    "source_port_name": "A5",
+    "port_hints": [
+      "A5",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "MCU_LCD_SDA"
+    ],
+    "pcb_port_id": "pcb_port_167",
+    "physical_island_ids": [
+      "pcb_smtpad_256"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 7,
+    "source_port_name": "A6",
+    "port_hints": [
+      "A6",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_168",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 8,
+    "source_port_name": "A7",
+    "port_hints": [
+      "A7",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_169",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 9,
+    "source_port_name": "A8",
+    "port_hints": [
+      "A8",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_170",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 10,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_171",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 11,
+    "source_port_name": "B8",
+    "port_hints": [
+      "B8",
+      "pin11",
+      "11"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_172",
+    "physical_island_ids": [
+      "pcb_smtpad_165"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 12,
+    "source_port_name": "B7",
+    "port_hints": [
+      "B7",
+      "pin12",
+      "12"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_173",
+    "physical_island_ids": [
+      "pcb_smtpad_166"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 13,
+    "source_port_name": "B6",
+    "port_hints": [
+      "B6",
+      "pin13",
+      "13"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_174",
+    "physical_island_ids": [
+      "pcb_smtpad_167"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 14,
+    "source_port_name": "B5",
+    "port_hints": [
+      "B5",
+      "pin14",
+      "14"
+    ],
+    "named_nets": [
+      "LCD_SDA"
+    ],
+    "pcb_port_id": "pcb_port_175",
+    "physical_island_ids": [
+      "pcb_smtpad_258"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 15,
+    "source_port_name": "B4",
+    "port_hints": [
+      "B4",
+      "pin15",
+      "15"
+    ],
+    "named_nets": [
+      "LCD_SCLK"
+    ],
+    "pcb_port_id": "pcb_port_176",
+    "physical_island_ids": [
+      "pcb_smtpad_254"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 16,
+    "source_port_name": "B3",
+    "port_hints": [
+      "B3",
+      "pin16",
+      "16"
+    ],
+    "named_nets": [
+      "LCD_DC"
+    ],
+    "pcb_port_id": "pcb_port_177",
+    "physical_island_ids": [
+      "pcb_smtpad_250"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 17,
+    "source_port_name": "B2",
+    "port_hints": [
+      "B2",
+      "pin17",
+      "17"
+    ],
+    "named_nets": [
+      "LCD_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_178",
+    "physical_island_ids": [
+      "pcb_smtpad_246"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 18,
+    "source_port_name": "B1",
+    "port_hints": [
+      "B1",
+      "pin18",
+      "18"
+    ],
+    "named_nets": [
+      "LCD_CS_N"
+    ],
+    "pcb_port_id": "pcb_port_179",
+    "physical_island_ids": [
+      "pcb_smtpad_242"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 19,
+    "source_port_name": "N_OE",
+    "port_hints": [
+      "N_OE",
+      "pin19",
+      "19"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_180",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U14",
+    "pin_number": 20,
+    "source_port_name": "VCC",
+    "port_hints": [
+      "VCC",
+      "pin20",
+      "20"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_181",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_182",
+    "physical_island_ids": [
+      "pcb_smtpad_175"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_183",
+    "physical_island_ids": [
+      "pcb_smtpad_176"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_184",
+    "physical_island_ids": [
+      "pcb_smtpad_177"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 4,
+    "source_port_name": "pin4",
+    "port_hints": [
+      "pin4",
+      "4"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_185",
+    "physical_island_ids": [
+      "pcb_smtpad_178"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 5,
+    "source_port_name": "pin5",
+    "port_hints": [
+      "pin5",
+      "5"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_186",
+    "physical_island_ids": [
+      "pcb_smtpad_179"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 6,
+    "source_port_name": "pin6",
+    "port_hints": [
+      "pin6",
+      "6"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_187",
+    "physical_island_ids": [
+      "pcb_smtpad_180"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 7,
+    "source_port_name": "pin7",
+    "port_hints": [
+      "pin7",
+      "7"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_188",
+    "physical_island_ids": [
+      "pcb_smtpad_181"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 8,
+    "source_port_name": "pin8",
+    "port_hints": [
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_189",
+    "physical_island_ids": [
+      "pcb_smtpad_182"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 9,
+    "source_port_name": "pin9",
+    "port_hints": [
+      "pin9",
+      "9"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_190",
+    "physical_island_ids": [
+      "pcb_smtpad_183"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 10,
+    "source_port_name": "pin10",
+    "port_hints": [
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_191",
+    "physical_island_ids": [
+      "pcb_smtpad_184"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 11,
+    "source_port_name": "pin11",
+    "port_hints": [
+      "pin11",
+      "11"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_192",
+    "physical_island_ids": [
+      "pcb_smtpad_185"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 12,
+    "source_port_name": "pin12",
+    "port_hints": [
+      "pin12",
+      "12"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_193",
+    "physical_island_ids": [
+      "pcb_smtpad_186"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 13,
+    "source_port_name": "pin13",
+    "port_hints": [
+      "pin13",
+      "13"
+    ],
+    "named_nets": [
+      "LCD_CS_N"
+    ],
+    "pcb_port_id": "pcb_port_194",
+    "physical_island_ids": [
+      "pcb_smtpad_187"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 14,
+    "source_port_name": "pin14",
+    "port_hints": [
+      "pin14",
+      "14"
+    ],
+    "named_nets": [
+      "LCD_SCLK"
+    ],
+    "pcb_port_id": "pcb_port_195",
+    "physical_island_ids": [
+      "pcb_smtpad_188"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 15,
+    "source_port_name": "pin15",
+    "port_hints": [
+      "pin15",
+      "15"
+    ],
+    "named_nets": [
+      "LCD_DC"
+    ],
+    "pcb_port_id": "pcb_port_196",
+    "physical_island_ids": [
+      "pcb_smtpad_189"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 16,
+    "source_port_name": "pin16",
+    "port_hints": [
+      "pin16",
+      "16"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_197",
+    "physical_island_ids": [
+      "pcb_smtpad_190"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 17,
+    "source_port_name": "pin17",
+    "port_hints": [
+      "pin17",
+      "17"
+    ],
+    "named_nets": [
+      "LCD_SDA"
+    ],
+    "pcb_port_id": "pcb_port_198",
+    "physical_island_ids": [
+      "pcb_smtpad_191"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 18,
+    "source_port_name": "pin18",
+    "port_hints": [
+      "pin18",
+      "18"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_199",
+    "physical_island_ids": [
+      "pcb_smtpad_192"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J7",
+    "pin_number": 19,
+    "source_port_name": "pin19",
+    "port_hints": [
+      "pin19",
+      "19"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_200",
+    "physical_island_ids": [
+      "pcb_smtpad_193"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 20,
+    "source_port_name": "pin20",
+    "port_hints": [
+      "pin20",
+      "20"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_201",
+    "physical_island_ids": [
+      "pcb_smtpad_194"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 21,
+    "source_port_name": "pin21",
+    "port_hints": [
+      "pin21",
+      "21"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_202",
+    "physical_island_ids": [
+      "pcb_smtpad_195"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 22,
+    "source_port_name": "pin22",
+    "port_hints": [
+      "pin22",
+      "22"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_203",
+    "physical_island_ids": [
+      "pcb_smtpad_196"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 23,
+    "source_port_name": "pin23",
+    "port_hints": [
+      "pin23",
+      "23"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_204",
+    "physical_island_ids": [
+      "pcb_smtpad_197"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 24,
+    "source_port_name": "pin24",
+    "port_hints": [
+      "pin24",
+      "24"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_205",
+    "physical_island_ids": [
+      "pcb_smtpad_198"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 25,
+    "source_port_name": "pin25",
+    "port_hints": [
+      "pin25",
+      "25"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_206",
+    "physical_island_ids": [
+      "pcb_smtpad_199"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 26,
+    "source_port_name": "pin26",
+    "port_hints": [
+      "pin26",
+      "26"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_207",
+    "physical_island_ids": [
+      "pcb_smtpad_200"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 27,
+    "source_port_name": "pin27",
+    "port_hints": [
+      "pin27",
+      "27"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_208",
+    "physical_island_ids": [
+      "pcb_smtpad_201"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 28,
+    "source_port_name": "pin28",
+    "port_hints": [
+      "pin28",
+      "28"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_209",
+    "physical_island_ids": [
+      "pcb_smtpad_202"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 29,
+    "source_port_name": "pin29",
+    "port_hints": [
+      "pin29",
+      "29"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_210",
+    "physical_island_ids": [
+      "pcb_smtpad_203"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 30,
+    "source_port_name": "pin30",
+    "port_hints": [
+      "pin30",
+      "30"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_211",
+    "physical_island_ids": [
+      "pcb_smtpad_204"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 31,
+    "source_port_name": "pin31",
+    "port_hints": [
+      "pin31",
+      "31"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_212",
+    "physical_island_ids": [
+      "pcb_smtpad_205"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 32,
+    "source_port_name": "pin32",
+    "port_hints": [
+      "pin32",
+      "32"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_213",
+    "physical_island_ids": [
+      "pcb_smtpad_206"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 33,
+    "source_port_name": "pin33",
+    "port_hints": [
+      "pin33",
+      "33"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_214",
+    "physical_island_ids": [
+      "pcb_smtpad_207"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 34,
+    "source_port_name": "pin34",
+    "port_hints": [
+      "pin34",
+      "34"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_215",
+    "physical_island_ids": [
+      "pcb_smtpad_208"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 35,
+    "source_port_name": "pin35",
+    "port_hints": [
+      "pin35",
+      "35"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_216",
+    "physical_island_ids": [
+      "pcb_smtpad_209"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 36,
+    "source_port_name": "pin36",
+    "port_hints": [
+      "pin36",
+      "36"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_217",
+    "physical_island_ids": [
+      "pcb_smtpad_210"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 37,
+    "source_port_name": "pin37",
+    "port_hints": [
+      "pin37",
+      "37"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_218",
+    "physical_island_ids": [
+      "pcb_smtpad_211"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 38,
+    "source_port_name": "pin38",
+    "port_hints": [
+      "pin38",
+      "38"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_219",
+    "physical_island_ids": [
+      "pcb_smtpad_212"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 39,
+    "source_port_name": "pin39",
+    "port_hints": [
+      "pin39",
+      "39"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_220",
+    "physical_island_ids": [
+      "pcb_smtpad_213"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 40,
+    "source_port_name": "pin40",
+    "port_hints": [
+      "pin40",
+      "40"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_221",
+    "physical_island_ids": [
+      "pcb_smtpad_214"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 41,
+    "source_port_name": "pin41",
+    "port_hints": [
+      "pin41",
+      "41"
+    ],
+    "named_nets": [
+      "LCD_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_222",
+    "physical_island_ids": [
+      "pcb_smtpad_217"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 42,
+    "source_port_name": "pin42",
+    "port_hints": [
+      "pin42",
+      "42"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_223",
+    "physical_island_ids": [
+      "pcb_smtpad_218"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 43,
+    "source_port_name": "pin43",
+    "port_hints": [
+      "pin43",
+      "43"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_224",
+    "physical_island_ids": [
+      "pcb_smtpad_219"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 44,
+    "source_port_name": "pin44",
+    "port_hints": [
+      "pin44",
+      "44"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_225",
+    "physical_island_ids": [
+      "pcb_smtpad_220"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 45,
+    "source_port_name": "pin45",
+    "port_hints": [
+      "pin45",
+      "45"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_226",
+    "physical_island_ids": [
+      "pcb_smtpad_221"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 46,
+    "source_port_name": "pin46",
+    "port_hints": [
+      "pin46",
+      "46"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_4"
+    ],
+    "pcb_port_id": "pcb_port_227",
+    "physical_island_ids": [
+      "pcb_smtpad_222"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 47,
+    "source_port_name": "pin47",
+    "port_hints": [
+      "pin47",
+      "47"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_3"
+    ],
+    "pcb_port_id": "pcb_port_228",
+    "physical_island_ids": [
+      "pcb_smtpad_223"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 48,
+    "source_port_name": "pin48",
+    "port_hints": [
+      "pin48",
+      "48"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_2"
+    ],
+    "pcb_port_id": "pcb_port_229",
+    "physical_island_ids": [
+      "pcb_smtpad_224"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 49,
+    "source_port_name": "pin49",
+    "port_hints": [
+      "pin49",
+      "49"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_1"
+    ],
+    "pcb_port_id": "pcb_port_230",
+    "physical_island_ids": [
+      "pcb_smtpad_225"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 50,
+    "source_port_name": "pin50",
+    "port_hints": [
+      "pin50",
+      "50"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_OUTPUT"
+    ],
+    "pcb_port_id": "pcb_port_231",
+    "physical_island_ids": [
+      "pcb_smtpad_226"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 51,
+    "source_port_name": "pin51",
+    "port_hints": [
+      "pin51",
+      "51"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_232",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "J7",
+    "pin_number": 52,
+    "source_port_name": "pin52",
+    "port_hints": [
+      "pin52",
+      "52"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_233",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "C40",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_234",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C40",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_235",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C41",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_236",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C41",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_237",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C42",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_238",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C42",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_239",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C43",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_240",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C43",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_241",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R40",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_242",
+    "physical_island_ids": [
+      "pcb_smtpad_236"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R40",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_243",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R41",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_244",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R41",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_245",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R47",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_LCD_CS_N"
+    ],
+    "pcb_port_id": "pcb_port_246",
+    "physical_island_ids": [
+      "pcb_smtpad_17"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R47",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_247",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R42",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_CS_N"
+    ],
+    "pcb_port_id": "pcb_port_248",
+    "physical_island_ids": [
+      "pcb_smtpad_242"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R42",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "VLCD"
+    ],
+    "pcb_port_id": "pcb_port_249",
+    "physical_island_ids": [
+      "pcb_smtpad_241"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R48",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_LCD_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_250",
+    "physical_island_ids": [
+      "pcb_smtpad_157"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R48",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_251",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R43",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_RESET_N"
+    ],
+    "pcb_port_id": "pcb_port_252",
+    "physical_island_ids": [
+      "pcb_smtpad_246"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R43",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_253",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R49",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_LCD_DC"
+    ],
+    "pcb_port_id": "pcb_port_254",
+    "physical_island_ids": [
+      "pcb_smtpad_248"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R49",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_255",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R44",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_DC"
+    ],
+    "pcb_port_id": "pcb_port_256",
+    "physical_island_ids": [
+      "pcb_smtpad_250"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R44",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_257",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R50",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_LCD_SCLK"
+    ],
+    "pcb_port_id": "pcb_port_258",
+    "physical_island_ids": [
+      "pcb_smtpad_252"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R50",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_259",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R45",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_SCLK"
+    ],
+    "pcb_port_id": "pcb_port_260",
+    "physical_island_ids": [
+      "pcb_smtpad_254"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R45",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_261",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R51",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_LCD_SDA"
+    ],
+    "pcb_port_id": "pcb_port_262",
+    "physical_island_ids": [
+      "pcb_smtpad_256"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R51",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_263",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R46",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_SDA"
+    ],
+    "pcb_port_id": "pcb_port_264",
+    "physical_island_ids": [
+      "pcb_smtpad_258"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R46",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_265",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 1,
+    "source_port_name": "DIN",
+    "port_hints": [
+      "DIN",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "AMP_DIN"
+    ],
+    "pcb_port_id": "pcb_port_266",
+    "physical_island_ids": [
+      "pcb_smtpad_297"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 2,
+    "source_port_name": "GAIN_SLOT",
+    "port_hints": [
+      "GAIN_SLOT",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_267",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 3,
+    "source_port_name": "GND1",
+    "port_hints": [
+      "GND1",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_268",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 4,
+    "source_port_name": "N_SD_MODE",
+    "port_hints": [
+      "N_SD_MODE",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "AMP_SD_MODE"
+    ],
+    "pcb_port_id": "pcb_port_269",
+    "physical_island_ids": [
+      "pcb_smtpad_262"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 5,
+    "source_port_name": "pin5",
+    "port_hints": [
+      "pin5",
+      "5"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_270",
+    "physical_island_ids": [
+      "pcb_smtpad_263"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 6,
+    "source_port_name": "pin6",
+    "port_hints": [
+      "pin6",
+      "6"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_271",
+    "physical_island_ids": [
+      "pcb_smtpad_264"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 7,
+    "source_port_name": "VDD1",
+    "port_hints": [
+      "VDD1",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_272",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 8,
+    "source_port_name": "VDD2",
+    "port_hints": [
+      "VDD2",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_273",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 9,
+    "source_port_name": "OUTP",
+    "port_hints": [
+      "OUTP",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [
+      "SPEAKER_P"
+    ],
+    "pcb_port_id": "pcb_port_274",
+    "physical_island_ids": [
+      "pcb_smtpad_267"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 10,
+    "source_port_name": "OUTN",
+    "port_hints": [
+      "OUTN",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [
+      "SPEAKER_N"
+    ],
+    "pcb_port_id": "pcb_port_275",
+    "physical_island_ids": [
+      "pcb_smtpad_268"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "U3",
+    "pin_number": 11,
+    "source_port_name": "GND2",
+    "port_hints": [
+      "GND2",
+      "pin11",
+      "11"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_276",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 12,
+    "source_port_name": "pin12",
+    "port_hints": [
+      "pin12",
+      "12"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_277",
+    "physical_island_ids": [
+      "pcb_smtpad_270"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 13,
+    "source_port_name": "pin13",
+    "port_hints": [
+      "pin13",
+      "13"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_278",
+    "physical_island_ids": [
+      "pcb_smtpad_271"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 14,
+    "source_port_name": "LRCLK",
+    "port_hints": [
+      "LRCLK",
+      "pin14",
+      "14"
+    ],
+    "named_nets": [
+      "AMP_LRCLK"
+    ],
+    "pcb_port_id": "pcb_port_279",
+    "physical_island_ids": [
+      "pcb_smtpad_305"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 15,
+    "source_port_name": "GND3",
+    "port_hints": [
+      "GND3",
+      "pin15",
+      "15"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_280",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 16,
+    "source_port_name": "BCLK",
+    "port_hints": [
+      "BCLK",
+      "pin16",
+      "16"
+    ],
+    "named_nets": [
+      "AMP_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_281",
+    "physical_island_ids": [
+      "pcb_smtpad_301"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U3",
+    "pin_number": 17,
+    "source_port_name": "EP",
+    "port_hints": [
+      "EP",
+      "pin17",
+      "17"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_282",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q1",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "D",
+      "3"
+    ],
+    "named_nets": [
+      "AUDIO_PMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_283",
+    "physical_island_ids": [
+      "pcb_smtpad_291"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q1",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "G",
+      "1"
+    ],
+    "named_nets": [
+      "AUDIO_NMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_284",
+    "physical_island_ids": [
+      "pcb_smtpad_276"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q1",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "S",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_285",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q2",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "D",
+      "3"
+    ],
+    "named_nets": [
+      "AUDIO_ENABLE_SUPPLY"
+    ],
+    "pcb_port_id": "pcb_port_286",
+    "physical_island_ids": [
+      "pcb_smtpad_293"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q2",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "G",
+      "1"
+    ],
+    "named_nets": [
+      "AUDIO_PMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_287",
+    "physical_island_ids": [
+      "pcb_smtpad_291"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q2",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "S",
+      "2"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_288",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J4",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "SPEAKER_P"
+    ],
+    "pcb_port_id": "pcb_port_289",
+    "physical_island_ids": [
+      "pcb_smtpad_267"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "J4",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "SPEAKER_N"
+    ],
+    "pcb_port_id": "pcb_port_290",
+    "physical_island_ids": [
+      "pcb_plated_hole_8"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "C50",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_291",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C50",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_292",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C51",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_293",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C51",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_294",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R60",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_295",
+    "physical_island_ids": [
+      "pcb_smtpad_287"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R60",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "AUDIO_NMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_296",
+    "physical_island_ids": [
+      "pcb_smtpad_276"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R61",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "AUDIO_NMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_297",
+    "physical_island_ids": [
+      "pcb_smtpad_276"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R61",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_298",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R62",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_299",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R62",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "AUDIO_PMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_300",
+    "physical_island_ids": [
+      "pcb_smtpad_291"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R63",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "AUDIO_ENABLE_SUPPLY"
+    ],
+    "pcb_port_id": "pcb_port_301",
+    "physical_island_ids": [
+      "pcb_smtpad_293"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R63",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "AMP_SD_MODE"
+    ],
+    "pcb_port_id": "pcb_port_302",
+    "physical_island_ids": [
+      "pcb_smtpad_262"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R64",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "AMP_SD_MODE"
+    ],
+    "pcb_port_id": "pcb_port_303",
+    "physical_island_ids": [
+      "pcb_smtpad_262"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R64",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_304",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R65",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_DIN"
+    ],
+    "pcb_port_id": "pcb_port_305",
+    "physical_island_ids": [
+      "pcb_smtpad_296"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R65",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "AMP_DIN"
+    ],
+    "pcb_port_id": "pcb_port_306",
+    "physical_island_ids": [
+      "pcb_smtpad_297"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R68",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "AMP_DIN"
+    ],
+    "pcb_port_id": "pcb_port_307",
+    "physical_island_ids": [
+      "pcb_smtpad_297"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R68",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_308",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R66",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_309",
+    "physical_island_ids": [
+      "pcb_smtpad_300"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R66",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "AMP_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_310",
+    "physical_island_ids": [
+      "pcb_smtpad_301"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R69",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "AMP_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_311",
+    "physical_island_ids": [
+      "pcb_smtpad_301"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R69",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_312",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R67",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_AUDIO_LRCLK"
+    ],
+    "pcb_port_id": "pcb_port_313",
+    "physical_island_ids": [
+      "pcb_smtpad_304"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R67",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "AMP_LRCLK"
+    ],
+    "pcb_port_id": "pcb_port_314",
+    "physical_island_ids": [
+      "pcb_smtpad_305"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R70",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "AMP_LRCLK"
+    ],
+    "pcb_port_id": "pcb_port_315",
+    "physical_island_ids": [
+      "pcb_smtpad_305"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R70",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_316",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U22",
+    "pin_number": 1,
+    "source_port_name": "IN",
+    "port_hints": [
+      "IN",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_317",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U22",
+    "pin_number": 2,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_318",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U22",
+    "pin_number": 3,
+    "source_port_name": "EN",
+    "port_hints": [
+      "EN",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "MCU_HAPTIC_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_319",
+    "physical_island_ids": [
+      "saved_phase_null_15_2:13"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U22",
+    "pin_number": 4,
+    "source_port_name": "N",
+    "port_hints": [
+      "N",
+      "C",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_320",
+    "physical_island_ids": [
+      "pcb_smtpad_311"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U22",
+    "pin_number": 5,
+    "source_port_name": "OUT",
+    "port_hints": [
+      "OUT",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "VMOTOR"
+    ],
+    "pcb_port_id": "pcb_port_321",
+    "physical_island_ids": [
+      "pcb_smtpad_324"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q9",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "D",
+      "3"
+    ],
+    "named_nets": [
+      "HAPTIC_N"
+    ],
+    "pcb_port_id": "pcb_port_322",
+    "physical_island_ids": [
+      "pcb_smtpad_447"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q9",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "G",
+      "1"
+    ],
+    "named_nets": [
+      "HAPTIC_NMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_323",
+    "physical_island_ids": [
+      "pcb_smtpad_329"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "Q9",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "S",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_324",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "D3",
+    "pin_number": 1,
+    "source_port_name": "cathode",
+    "port_hints": [
+      "cathode",
+      "neg",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMOTOR"
+    ],
+    "pcb_port_id": "pcb_port_325",
+    "physical_island_ids": [
+      "pcb_smtpad_324"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "D3",
+    "pin_number": 2,
+    "source_port_name": "anode",
+    "port_hints": [
+      "anode",
+      "pos",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "HAPTIC_N"
+    ],
+    "pcb_port_id": "pcb_port_326",
+    "physical_island_ids": [
+      "pcb_smtpad_447"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C70",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_327",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C70",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_328",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C71",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMOTOR"
+    ],
+    "pcb_port_id": "pcb_port_329",
+    "physical_island_ids": [
+      "pcb_smtpad_324"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C71",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_330",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C72",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMOTOR"
+    ],
+    "pcb_port_id": "pcb_port_331",
+    "physical_island_ids": [
+      "pcb_smtpad_324"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C72",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "HAPTIC_N"
+    ],
+    "pcb_port_id": "pcb_port_332",
+    "physical_island_ids": [
+      "pcb_smtpad_447"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R82",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VMOTOR"
+    ],
+    "pcb_port_id": "pcb_port_333",
+    "physical_island_ids": [
+      "pcb_smtpad_324"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R82",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_334",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R83",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_HAPTIC_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_335",
+    "physical_island_ids": [
+      "saved_phase_null_15_2:13"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R83",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "HAPTIC_NMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_336",
+    "physical_island_ids": [
+      "pcb_smtpad_329"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R84",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "HAPTIC_NMOS_GATE"
+    ],
+    "pcb_port_id": "pcb_port_337",
+    "physical_island_ids": [
+      "pcb_smtpad_329"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R84",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_338",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R85",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_HAPTIC_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_339",
+    "physical_island_ids": [
+      "saved_phase_null_15_2:13"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R85",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_340",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U23",
+    "pin_number": 1,
+    "source_port_name": "IN",
+    "port_hints": [
+      "IN",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_341",
+    "physical_island_ids": [
+      "pcb_smtpad_444"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U23",
+    "pin_number": 2,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_342",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U23",
+    "pin_number": 3,
+    "source_port_name": "EN",
+    "port_hints": [
+      "EN",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "HOLD_HARDWARE"
+    ],
+    "pcb_port_id": "pcb_port_343",
+    "physical_island_ids": [
+      "pcb_smtpad_375"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U23",
+    "pin_number": 4,
+    "source_port_name": "N",
+    "port_hints": [
+      "N",
+      "C",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_344",
+    "physical_island_ids": [
+      "pcb_smtpad_335"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U23",
+    "pin_number": 5,
+    "source_port_name": "OUT",
+    "port_hints": [
+      "OUT",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_345",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U24",
+    "pin_number": 1,
+    "source_port_name": "1A",
+    "port_hints": [
+      "1A",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_BCLK_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_346",
+    "physical_island_ids": [
+      "pcb_smtpad_358"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U24",
+    "pin_number": 2,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_347",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U24",
+    "pin_number": 3,
+    "source_port_name": "2A",
+    "port_hints": [
+      "2A",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "MIC_WS_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_348",
+    "physical_island_ids": [
+      "pcb_smtpad_355"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U24",
+    "pin_number": 4,
+    "source_port_name": "2Y",
+    "port_hints": [
+      "2Y",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_349",
+    "physical_island_ids": [
+      "pcb_smtpad_394"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U24",
+    "pin_number": 5,
+    "source_port_name": "VCC",
+    "port_hints": [
+      "VCC",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_350",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U24",
+    "pin_number": 6,
+    "source_port_name": "1Y",
+    "port_hints": [
+      "1Y",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_351",
+    "physical_island_ids": [
+      "pcb_smtpad_405"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C73",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_352",
+    "physical_island_ids": [
+      "pcb_smtpad_444"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C73",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_353",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C74",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_354",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C74",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_355",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C75",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_356",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C75",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_357",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R86",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_358",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R86",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_359",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R87",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "HOLD_HARDWARE"
+    ],
+    "pcb_port_id": "pcb_port_360",
+    "physical_island_ids": [
+      "pcb_smtpad_375"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R87",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_361",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R88",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_362",
+    "physical_island_ids": [
+      "pcb_smtpad_354"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R88",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MIC_BCLK_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_363",
+    "physical_island_ids": [
+      "pcb_smtpad_358"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R89",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_364",
+    "physical_island_ids": [
+      "pcb_smtpad_356"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R89",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MIC_WS_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_365",
+    "physical_island_ids": [
+      "pcb_smtpad_355"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R90",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_BCLK_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_366",
+    "physical_island_ids": [
+      "pcb_smtpad_358"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R90",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_367",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R91",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_WS_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_368",
+    "physical_island_ids": [
+      "pcb_smtpad_355"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R91",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_369",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R92",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_370",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R92",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_371",
+    "physical_island_ids": [
+      "pcb_smtpad_405"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R93",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_372",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R93",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_373",
+    "physical_island_ids": [
+      "pcb_smtpad_394"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R94",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_374",
+    "physical_island_ids": [
+      "pcb_smtpad_405"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R94",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_375",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R95",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_376",
+    "physical_island_ids": [
+      "pcb_smtpad_394"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R95",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_377",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U26",
+    "pin_number": 1,
+    "source_port_name": "N_C",
+    "port_hints": [
+      "N_C",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_378",
+    "physical_island_ids": [
+      "pcb_smtpad_373"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U26",
+    "pin_number": 2,
+    "source_port_name": "A",
+    "port_hints": [
+      "A",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "HOLD_HARDWARE"
+    ],
+    "pcb_port_id": "pcb_port_379",
+    "physical_island_ids": [
+      "pcb_smtpad_375"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U26",
+    "pin_number": 3,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_380",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U26",
+    "pin_number": 4,
+    "source_port_name": "Y",
+    "port_hints": [
+      "Y",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "HOLD_BUFFER_OUT"
+    ],
+    "pcb_port_id": "pcb_port_381",
+    "physical_island_ids": [
+      "pcb_smtpad_376"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U26",
+    "pin_number": 5,
+    "source_port_name": "VCC",
+    "port_hints": [
+      "VCC",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_382",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R99",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "HOLD_HARDWARE"
+    ],
+    "pcb_port_id": "pcb_port_383",
+    "physical_island_ids": [
+      "pcb_smtpad_375"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R99",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_384",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R100",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "HOLD_BUFFER_OUT"
+    ],
+    "pcb_port_id": "pcb_port_385",
+    "physical_island_ids": [
+      "pcb_smtpad_376"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R100",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_HOLD_READ"
+    ],
+    "pcb_port_id": "pcb_port_386",
+    "physical_island_ids": [
+      "pcb_smtpad_22"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C78",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_387",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C78",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_388",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U25",
+    "pin_number": 1,
+    "source_port_name": "N_RESET",
+    "port_hints": [
+      "N_RESET",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "BUCK_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_389",
+    "physical_island_ids": [
+      "pcb_smtpad_389"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U25",
+    "pin_number": 2,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_390",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U25",
+    "pin_number": 3,
+    "source_port_name": "N_MR",
+    "port_hints": [
+      "N_MR",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_391",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U25",
+    "pin_number": 4,
+    "source_port_name": "CT",
+    "port_hints": [
+      "CT",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_392",
+    "physical_island_ids": [
+      "pcb_smtpad_385"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U25",
+    "pin_number": 5,
+    "source_port_name": "SENSE",
+    "port_hints": [
+      "SENSE",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "PACK_BAT"
+    ],
+    "pcb_port_id": "pcb_port_393",
+    "physical_island_ids": [
+      "pcb_smtpad_481"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U25",
+    "pin_number": 6,
+    "source_port_name": "VDD",
+    "port_hints": [
+      "VDD",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_394",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R96",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_395",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R96",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "BUCK_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_396",
+    "physical_island_ids": [
+      "pcb_smtpad_389"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R97",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "BUCK_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_397",
+    "physical_island_ids": [
+      "pcb_smtpad_389"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R97",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_398",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C76",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_399",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C76",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_400",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C77",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "BUCK_ENABLE"
+    ],
+    "pcb_port_id": "pcb_port_401",
+    "physical_island_ids": [
+      "pcb_smtpad_389"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C77",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_402",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": 1,
+    "source_port_name": "WS",
+    "port_hints": [
+      "WS",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_403",
+    "physical_island_ids": [
+      "pcb_smtpad_394"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": 2,
+    "source_port_name": "LR",
+    "port_hints": [
+      "LR",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_404",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": 3,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_405",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "U4",
+    "pin_number": 4,
+    "source_port_name": "SCK",
+    "port_hints": [
+      "SCK",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_406",
+    "physical_island_ids": [
+      "pcb_smtpad_405"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": 5,
+    "source_port_name": "VDD",
+    "port_hints": [
+      "VDD",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_407",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": 6,
+    "source_port_name": "SD",
+    "port_hints": [
+      "SD",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "MIC_SD"
+    ],
+    "pcb_port_id": "pcb_port_408",
+    "physical_island_ids": [
+      "pcb_smtpad_398"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": null,
+    "source_port_name": "pin3_internal_1",
+    "port_hints": [
+      "pin3_internal_1",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_409",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": null,
+    "source_port_name": "pin3_internal_2",
+    "port_hints": [
+      "pin3_internal_2",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_410",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U4",
+    "pin_number": null,
+    "source_port_name": "pin3_internal_3",
+    "port_hints": [
+      "pin3_internal_3",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_411",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": 1,
+    "source_port_name": "WS",
+    "port_hints": [
+      "WS",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_WS"
+    ],
+    "pcb_port_id": "pcb_port_412",
+    "physical_island_ids": [
+      "pcb_smtpad_394"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": 2,
+    "source_port_name": "LR",
+    "port_hints": [
+      "LR",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_413",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": 3,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_414",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": 4,
+    "source_port_name": "SCK",
+    "port_hints": [
+      "SCK",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "MIC_BCLK"
+    ],
+    "pcb_port_id": "pcb_port_415",
+    "physical_island_ids": [
+      "pcb_smtpad_405"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": 5,
+    "source_port_name": "VDD",
+    "port_hints": [
+      "VDD",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_416",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": 6,
+    "source_port_name": "SD",
+    "port_hints": [
+      "SD",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "MIC_SD"
+    ],
+    "pcb_port_id": "pcb_port_417",
+    "physical_island_ids": [
+      "pcb_smtpad_398"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": null,
+    "source_port_name": "pin3_internal_1",
+    "port_hints": [
+      "pin3_internal_1",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_418",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": null,
+    "source_port_name": "pin3_internal_2",
+    "port_hints": [
+      "pin3_internal_2",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_419",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U5",
+    "pin_number": null,
+    "source_port_name": "pin3_internal_3",
+    "port_hints": [
+      "pin3_internal_3",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_420",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C80",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_421",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C80",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_422",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C81",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_423",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C81",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_424",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U7",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "GND",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_425",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U7",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "IN_POS",
+      "3"
+    ],
+    "named_nets": [
+      "MIC_SD"
+    ],
+    "pcb_port_id": "pcb_port_426",
+    "physical_island_ids": [
+      "pcb_smtpad_398"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U7",
+    "pin_number": 4,
+    "source_port_name": "pin4",
+    "port_hints": [
+      "pin4",
+      "IN_NEG",
+      "4"
+    ],
+    "named_nets": [
+      "MIC_SD_REF"
+    ],
+    "pcb_port_id": "pcb_port_427",
+    "physical_island_ids": [
+      "pcb_smtpad_425"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U7",
+    "pin_number": 5,
+    "source_port_name": "pin5",
+    "port_hints": [
+      "pin5",
+      "VCC",
+      "5"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_428",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U7",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "OUT",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_SD_BUFFERED"
+    ],
+    "pcb_port_id": "pcb_port_429",
+    "physical_island_ids": [
+      "pcb_smtpad_420"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R26",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_SD"
+    ],
+    "pcb_port_id": "pcb_port_430",
+    "physical_island_ids": [
+      "pcb_smtpad_398"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R26",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_431",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R27",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_SD_BUFFERED"
+    ],
+    "pcb_port_id": "pcb_port_432",
+    "physical_island_ids": [
+      "pcb_smtpad_420"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R27",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MCU_MIC_SD"
+    ],
+    "pcb_port_id": "pcb_port_433",
+    "physical_island_ids": [
+      "pcb_smtpad_424"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R29",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_434",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R29",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "MIC_SD_REF"
+    ],
+    "pcb_port_id": "pcb_port_435",
+    "physical_island_ids": [
+      "pcb_smtpad_425"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R30",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_SD_REF"
+    ],
+    "pcb_port_id": "pcb_port_436",
+    "physical_island_ids": [
+      "pcb_smtpad_425"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R30",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_437",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C25",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_438",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C25",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_439",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C26",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MIC_SD_REF"
+    ],
+    "pcb_port_id": "pcb_port_440",
+    "physical_island_ids": [
+      "pcb_smtpad_425"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C26",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_441",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW4",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_442",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW4",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "HOLD_HARDWARE"
+    ],
+    "pcb_port_id": "pcb_port_443",
+    "physical_island_ids": [
+      "pcb_smtpad_375"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW1",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_BOOT_N"
+    ],
+    "pcb_port_id": "pcb_port_444",
+    "physical_island_ids": [
+      "pcb_smtpad_436"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW1",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_445",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW2",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_EN"
+    ],
+    "pcb_port_id": "pcb_port_446",
+    "physical_island_ids": [
+      "pcb_smtpad_88"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW2",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_447",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_448",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "MIC_INPUT"
+    ],
+    "pcb_port_id": "pcb_port_449",
+    "physical_island_ids": [
+      "pcb_smtpad_444"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": 3,
+    "source_port_name": "pin3",
+    "port_hints": [
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_450",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": 4,
+    "source_port_name": "pin4",
+    "port_hints": [
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_451",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": null,
+    "source_port_name": "pin4_internal_1",
+    "port_hints": [
+      "pin4_internal_1",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_452",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": null,
+    "source_port_name": "pin4_internal_2",
+    "port_hints": [
+      "pin4_internal_2",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_453",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "SW5",
+    "pin_number": null,
+    "source_port_name": "pin4_internal_3",
+    "port_hints": [
+      "pin4_internal_3",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_454",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP_MOTOR_P",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMOTOR"
+    ],
+    "pcb_port_id": "pcb_port_455",
+    "physical_island_ids": [
+      "pcb_smtpad_324"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP_MOTOR_N",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "HAPTIC_N"
+    ],
+    "pcb_port_id": "pcb_port_456",
+    "physical_island_ids": [
+      "pcb_smtpad_447"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 1,
+    "source_port_name": "ISET",
+    "port_hints": [
+      "ISET",
+      "pin1",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_457",
+    "physical_island_ids": [
+      "pcb_smtpad_466"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 2,
+    "source_port_name": "D5",
+    "port_hints": [
+      "D5",
+      "pin2",
+      "2"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_458",
+    "physical_island_ids": [
+      "pcb_smtpad_449"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 3,
+    "source_port_name": "D4",
+    "port_hints": [
+      "D4",
+      "pin3",
+      "3"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_4"
+    ],
+    "pcb_port_id": "pcb_port_459",
+    "physical_island_ids": [
+      "pcb_smtpad_450"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "U27",
+    "pin_number": 4,
+    "source_port_name": "D3",
+    "port_hints": [
+      "D3",
+      "pin4",
+      "4"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_3"
+    ],
+    "pcb_port_id": "pcb_port_460",
+    "physical_island_ids": [
+      "pcb_smtpad_451"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "U27",
+    "pin_number": 5,
+    "source_port_name": "D2",
+    "port_hints": [
+      "D2",
+      "pin5",
+      "5"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_2"
+    ],
+    "pcb_port_id": "pcb_port_461",
+    "physical_island_ids": [
+      "pcb_smtpad_452"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "U27",
+    "pin_number": 6,
+    "source_port_name": "D1",
+    "port_hints": [
+      "D1",
+      "pin6",
+      "6"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_RETURN_1"
+    ],
+    "pcb_port_id": "pcb_port_462",
+    "physical_island_ids": [
+      "pcb_smtpad_453"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": true
+  },
+  {
+    "reference": "U27",
+    "pin_number": 7,
+    "source_port_name": "PGND",
+    "port_hints": [
+      "PGND",
+      "pin7",
+      "7"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_463",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 8,
+    "source_port_name": "VOUT",
+    "port_hints": [
+      "VOUT",
+      "pin8",
+      "8"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_OUTPUT"
+    ],
+    "pcb_port_id": "pcb_port_464",
+    "physical_island_ids": [
+      "pcb_smtpad_455"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 9,
+    "source_port_name": "C2_POS",
+    "port_hints": [
+      "C2_POS",
+      "pin9",
+      "9"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_465",
+    "physical_island_ids": [
+      "pcb_smtpad_456"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 10,
+    "source_port_name": "C1_POS",
+    "port_hints": [
+      "C1_POS",
+      "pin10",
+      "10"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_466",
+    "physical_island_ids": [
+      "pcb_smtpad_472"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 11,
+    "source_port_name": "C1_NEG",
+    "port_hints": [
+      "C1_NEG",
+      "pin11",
+      "11"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_467",
+    "physical_island_ids": [
+      "pcb_smtpad_471"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 12,
+    "source_port_name": "C2_NEG",
+    "port_hints": [
+      "C2_NEG",
+      "pin12",
+      "12"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_468",
+    "physical_island_ids": [
+      "pcb_smtpad_459"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 13,
+    "source_port_name": "VIN",
+    "port_hints": [
+      "VIN",
+      "pin13",
+      "13"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_469",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 14,
+    "source_port_name": "GND",
+    "port_hints": [
+      "GND",
+      "pin14",
+      "14"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_470",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 15,
+    "source_port_name": "EN1",
+    "port_hints": [
+      "EN1",
+      "pin15",
+      "15"
+    ],
+    "named_nets": [
+      "BACKLIGHT_GATE"
+    ],
+    "pcb_port_id": "pcb_port_471",
+    "physical_island_ids": [
+      "pcb_smtpad_463"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 16,
+    "source_port_name": "EN2",
+    "port_hints": [
+      "EN2",
+      "pin16",
+      "16"
+    ],
+    "named_nets": [
+      "BACKLIGHT_GATE"
+    ],
+    "pcb_port_id": "pcb_port_472",
+    "physical_island_ids": [
+      "pcb_smtpad_463"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "U27",
+    "pin_number": 17,
+    "source_port_name": "EP",
+    "port_hints": [
+      "EP",
+      "pin17",
+      "17"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_473",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R102",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_474",
+    "physical_island_ids": [
+      "pcb_smtpad_466"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R102",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_475",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "R103",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "MCU_BACKLIGHT_PWM"
+    ],
+    "pcb_port_id": "pcb_port_476",
+    "physical_island_ids": [
+      "pcb_smtpad_468"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R103",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "BACKLIGHT_GATE"
+    ],
+    "pcb_port_id": "pcb_port_477",
+    "physical_island_ids": [
+      "pcb_smtpad_463"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R104",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "anode",
+      "pos",
+      "left",
+      "1"
+    ],
+    "named_nets": [
+      "BACKLIGHT_GATE"
+    ],
+    "pcb_port_id": "pcb_port_478",
+    "physical_island_ids": [
+      "pcb_smtpad_463"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "R104",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "cathode",
+      "neg",
+      "right",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_479",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C82",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_480",
+    "physical_island_ids": [
+      "pcb_smtpad_472"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C82",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_481",
+    "physical_island_ids": [
+      "pcb_smtpad_471"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C83",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_482",
+    "physical_island_ids": [
+      "pcb_smtpad_456"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C83",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [],
+    "pcb_port_id": "pcb_port_483",
+    "physical_island_ids": [
+      "pcb_smtpad_459"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C84",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_484",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "C84",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_485",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C85",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "LCD_BACKLIGHT_OUTPUT"
+    ],
+    "pcb_port_id": "pcb_port_486",
+    "physical_island_ids": [
+      "pcb_smtpad_455"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "C85",
+    "pin_number": 2,
+    "source_port_name": "pin2",
+    "port_hints": [
+      "pin2",
+      "2"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_487",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP1",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "GND"
+    ],
+    "pcb_port_id": "pcb_port_488",
+    "physical_island_ids": [
+      "pcb_copper_pour_97"
+    ],
+    "net_has_missing_physical_connections": true,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP2",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VBUS"
+    ],
+    "pcb_port_id": "pcb_port_489",
+    "physical_island_ids": [
+      "pcb_smtpad_115"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP3",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "PACK_BAT"
+    ],
+    "pcb_port_id": "pcb_port_490",
+    "physical_island_ids": [
+      "pcb_smtpad_481"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP4",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VSYS"
+    ],
+    "pcb_port_id": "pcb_port_491",
+    "physical_island_ids": [
+      "pcb_smtpad_290"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP5",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "V3V3"
+    ],
+    "pcb_port_id": "pcb_port_492",
+    "physical_island_ids": [
+      "pcb_smtpad_483"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP6",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "VMIC"
+    ],
+    "pcb_port_id": "pcb_port_493",
+    "physical_island_ids": [
+      "pcb_smtpad_404"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP7",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "HOLD_HARDWARE"
+    ],
+    "pcb_port_id": "pcb_port_494",
+    "physical_island_ids": [
+      "pcb_smtpad_375"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  },
+  {
+    "reference": "TP8",
+    "pin_number": 1,
+    "source_port_name": "pin1",
+    "port_hints": [
+      "pin1",
+      "1"
+    ],
+    "named_nets": [
+      "CHARGE_STATUS_N"
+    ],
+    "pcb_port_id": "pcb_port_495",
+    "physical_island_ids": [
+      "pcb_smtpad_486"
+    ],
+    "net_has_missing_physical_connections": false,
+    "native_port_error": false
+  }
+]

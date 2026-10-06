@@ -1,0 +1,23 @@
+{
+  "native_sha256": "fb2f9c96ff000de1e18d6bf4d35bd41fea2323fc0b10730df4a0262b0bbdb73d",
+  "checked_supply_speaker_regions": 21,
+  "supply_trunks_on_outer_layers": true,
+  "inner_control_exceptions": [
+    {
+      "source_region_index": 41,
+      "branch_requirement": {
+        "net": "VSYS",
+        "terminal": ".U3 > .pin2",
+        "nominal_width_mm": 0.2,
+        "layers": [
+          "inner2",
+          "inner1"
+        ],
+        "maximum_dc_current_a": null,
+        "basis": "MAX98357A pin2 GAIN_SLOT is a gain-mode input; PVDD pins7/8 carry amplifier supply current separately. Exact gain-input current/width qualification remains blocked; the fresh official ADI datasheet request is policy-denied."
+      }
+    }
+  ],
+  "GAIN_input_current_qualified": false,
+  "current_capacity_qualified": false
+}

@@ -1,0 +1,228 @@
+[
+  {
+    "port": ".U3 > .pin4",
+    "net": "AMP_SD_MODE",
+    "width": 0.2,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".R63 > .pin1",
+    "net": "AUDIO_ENABLE_SUPPLY",
+    "width": 0.2,
+    "origin_blocked": false,
+    "escapes": 3,
+    "first_escapes": [
+      [
+        [
+          -5.899999999999736,
+          -14.899999999999757
+        ],
+        [
+          [
+            -7.003364,
+            -16
+          ],
+          [
+            -5.899999999999736,
+            -14.899999999999757
+          ]
+        ]
+      ],
+      [
+        [
+          -5.549999999999731,
+          -15.09999999999976
+        ],
+        [
+          [
+            -7.003364,
+            -16
+          ],
+          [
+            -5.799999999999734,
+            -15.09999999999976
+          ],
+          [
+            -5.549999999999731,
+            -15.09999999999976
+          ]
+        ]
+      ]
+    ],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".U24 > .pin5",
+    "net": "VMIC",
+    "width": 0.3,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".R93 > .pin1",
+    "net": "VMIC",
+    "width": 0.3,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".U5 > .pin2",
+    "net": "VMIC",
+    "width": 0.3,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".U5 > .pin5",
+    "net": "VMIC",
+    "width": 0.3,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".R93 > .pin2",
+    "net": "MIC_WS",
+    "width": 0.2,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".U5 > .pin4",
+    "net": "MIC_BCLK",
+    "width": 0.2,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".U14 > .pin15",
+    "net": "LCD_SCLK",
+    "width": 0.2,
+    "origin_blocked": false,
+    "escapes": 4,
+    "first_escapes": [
+      [
+        [
+          8.000000000000462,
+          12.200000000000628
+        ],
+        [
+          [
+            9.325,
+            10.87095
+          ],
+          [
+            9.150000000000475,
+            11.950000000000628
+          ],
+          [
+            8.850000000000477,
+            12.100000000000627
+          ],
+          [
+            8.000000000000462,
+            12.200000000000628
+          ]
+        ]
+      ],
+      [
+        [
+          10.500000000000497,
+          12.600000000000634
+        ],
+        [
+          [
+            9.325,
+            10.87095
+          ],
+          [
+            9.500000000000483,
+            11.950000000000628
+          ],
+          [
+            10.200000000000493,
+            12.30000000000063
+          ],
+          [
+            10.500000000000497,
+            12.600000000000634
+          ]
+        ]
+      ]
+    ],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".U14 > .pin14",
+    "net": "LCD_SDA",
+    "width": 0.2,
+    "origin_blocked": false,
+    "escapes": 4,
+    "first_escapes": [
+      [
+        [
+          10.650000000000503,
+          12.400000000000631
+        ],
+        [
+          [
+            9.975,
+            10.87095
+          ],
+          [
+            10.150000000000489,
+            11.950000000000628
+          ],
+          [
+            10.650000000000503,
+            12.400000000000631
+          ]
+        ]
+      ],
+      [
+        [
+          10.350000000000492,
+          12.75000000000064
+        ],
+        [
+          [
+            9.975,
+            10.87095
+          ],
+          [
+            10.250000000000497,
+            12.650000000000631
+          ],
+          [
+            10.350000000000492,
+            12.75000000000064
+          ]
+        ]
+      ]
+    ],
+    "near_foreign_copper": []
+  },
+  {
+    "port": ".C2 > .pin2",
+    "net": "GND",
+    "width": 0.3,
+    "origin_blocked": false,
+    "escapes": 0,
+    "first_escapes": [],
+    "near_foreign_copper": []
+  }
+]

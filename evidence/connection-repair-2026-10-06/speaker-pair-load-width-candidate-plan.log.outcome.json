@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-speaker-pair.py",
+    "evidence/connection-repair-2026-10-06/control-corridors-cap-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/speaker-pair-load-width-candidate-proposal.json",
+    "--replace-existing-speakers",
+    "--prefer-layer",
+    "top",
+    "--output-order",
+    "negative-first",
+    "--nominal-trunk-mm",
+    ".3"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 62.09,
+  "peak_process_group_rss_bytes": 390750208,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

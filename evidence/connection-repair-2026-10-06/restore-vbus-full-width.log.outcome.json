@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/restore-vbus-full-width.py",
+    "src/board/connection-copper.json",
+    "evidence/connection-repair-2026-10-06/usb-clock-native/source-snapshot/src/board/connection-copper.json.txt"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 90112,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-connection-bridges.py",
+    "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-audit.json",
+    "evidence/connection-repair-2026-10-06/remaining-signal-ground-proposal.json",
+    "GND",
+    "USB_DP",
+    "USB_DN",
+    "LCD_SDA",
+    "LCD_SCLK",
+    "--grid-mm",
+    ".05",
+    "--copper-reserve-mm",
+    ".0001"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 62.6,
+  "peak_process_group_rss_bytes": 288423936,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

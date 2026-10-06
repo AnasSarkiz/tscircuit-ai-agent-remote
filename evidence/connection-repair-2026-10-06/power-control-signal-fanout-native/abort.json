@@ -1,0 +1,7 @@
+{
+  "status": "REJECTED INCOMPLETE NATIVE RENDER",
+  "reason": "Supported fanout replay emits the retained path, then starts a second completion stage with Pipeline9. Cancelled after217.81seconds. The entire AMP_DIN net is instead migrated to explicit manual native copper, including its phase-index assignment.",
+  "accepted": false,
+  "signal": "SIGTERM",
+  "native_circuit_json_available": false
+}

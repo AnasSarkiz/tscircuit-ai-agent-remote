@@ -1,0 +1,140 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/connection-repair-2026-10-06/power-control-manual-native/circuit.json",
+  "paths": [
+    {
+      "net": "USB_DP",
+      "from": ".J1 > .pin10",
+      "to": "net.USB_DP",
+      "width": 0.2979,
+      "pcbPath": [
+        {
+          "x": 0.75,
+          "y": 3.05
+        },
+        {
+          "x": 0.45,
+          "y": 3.2
+        },
+        {
+          "x": -0.05,
+          "y": 3.2
+        },
+        {
+          "x": -0.249936,
+          "y": 3.074043
+        },
+        {
+          "x": -0.249936,
+          "y": 2.174043
+        }
+      ],
+      "global_path_mm": [
+        [
+          0.750062,
+          -25.8259568
+        ],
+        [
+          0.7500000000003588,
+          -24.9499999999999
+        ],
+        [
+          0.45000000000035456,
+          -24.799999999999898
+        ],
+        [
+          -0.049999999999652545,
+          -24.799999999999898
+        ],
+        [
+          -0.249936,
+          -24.9259568
+        ],
+        [
+          -0.249936,
+          -25.8259568
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    },
+    {
+      "net": "USB_DP",
+      "from": ".D2 > .pin1",
+      "to": "net.USB_DP",
+      "width": 0.2979,
+      "pcbPath": [
+        {
+          "x": 0.500064,
+          "y": -2.825957
+        }
+      ],
+      "global_path_mm": [
+        [
+          -0.250001,
+          -23.350012
+        ],
+        [
+          -0.249936,
+          -25.8259568
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "USB_DP",
+      "ports": [
+        ".R31 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "USB_DN",
+      "ports": [
+        ".J1 > .pin9"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "USB_DN",
+      "ports": [
+        ".D2 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "USB_DN",
+      "ports": [
+        ".R32 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "LCD_SDA",
+      "ports": [
+        ".R46 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "LCD_SCLK",
+      "ports": [
+        ".R45 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

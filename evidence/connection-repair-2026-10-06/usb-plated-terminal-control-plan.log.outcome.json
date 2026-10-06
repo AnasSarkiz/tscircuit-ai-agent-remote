@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-usb-control-replacement.py",
+    "evidence/connection-repair-2026-10-06/control-corridors-cap-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/usb-plated-terminal-control-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/clock-reset-replacement-proposal.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 76.17,
+  "peak_process_group_rss_bytes": 346910720,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

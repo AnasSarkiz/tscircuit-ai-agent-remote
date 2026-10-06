@@ -1,0 +1,18 @@
+{"starting": "copper"}
+{"name": "copper", "command": ["python3", "scripts/routing/audit-copper.py", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/final-copper-audit.json"], "exit_code": 1, "elapsed_seconds": 20.86, "completed": true}
+{"starting": "connection-widths"}
+{"name": "connection-widths", "command": ["python3", "scripts/routing/audit-region-widths.py", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "src/board/connection-copper.json", "evidence/connection-repair-2026-10-06/final-connection-region-widths.json"], "exit_code": 0, "elapsed_seconds": 0.88, "completed": true}
+{"starting": "power-widths"}
+{"name": "power-widths", "command": ["python3", "scripts/routing/audit-region-widths.py", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "src/board/manual-power-copper.json", "evidence/connection-repair-2026-10-06/final-power-region-widths.json"], "exit_code": 0, "elapsed_seconds": 1.21, "completed": true}
+{"starting": "inner-widths"}
+{"name": "inner-widths", "command": ["python3", "scripts/routing/audit-region-widths.py", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "src/board/inner-signal-copper.json", "evidence/connection-repair-2026-10-06/final-inner-region-widths.json"], "exit_code": 0, "elapsed_seconds": 0.73, "completed": true}
+{"starting": "wire-widths"}
+{"name": "wire-widths", "command": ["python3", "scripts/routing/audit-trace-widths.py", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/final-trace-widths.json"], "exit_code": 1, "elapsed_seconds": 0.22, "completed": true}
+{"starting": "preservation"}
+{"name": "preservation", "command": ["python3", "scripts/routing/audit-connection-preservation.py", "evidence/six-point-board-review-2026-10-06/final-native/circuit.json", "evidence/connection-repair-2026-10-06/baseline-native-rounded-pad-audit.json", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/final-copper-audit.json", "evidence/connection-repair-2026-10-06/final-connection-preservation.json"], "exit_code": 0, "elapsed_seconds": 0.19, "completed": true}
+{"starting": "compliance"}
+{"name": "compliance", "command": ["python3", "evidence/six-point-board-review-2026-10-06/review-compliance.py", "evidence/connection-repair-2026-10-06/nominal-envelope-native/circuit.json", "evidence/connection-repair-2026-10-06/final-copper-audit.json", "evidence/connection-repair-2026-10-06/final-native-compliance.json"], "exit_code": 0, "elapsed_seconds": 0.36, "completed": true}
+{"starting": "typecheck"}
+{"name": "typecheck", "command": ["bun", "run", "typecheck"], "exit_code": 0, "elapsed_seconds": 10.09, "completed": true}
+{"starting": "format"}
+{"name": "format", "command": ["bun", "run", "format:check"], "exit_code": 0, "elapsed_seconds": 0.15, "completed": true}

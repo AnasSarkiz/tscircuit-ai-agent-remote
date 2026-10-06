@@ -1,0 +1,186 @@
+{
+  "classification": "authored native connection proposals; actual replay/audit required",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".C2 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.95,
+          "y": -0.2
+        },
+        {
+          "x": 2.95,
+          "y": -0.2,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.450024,
+          -26.25
+        ],
+        [
+          -18.699999999999918,
+          -26.049999999999915
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 2.2588474938728527,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    },
+    {
+      "net": "GND",
+      "from": ".R68 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 3.15,
+          "y": -0.2
+        },
+        {
+          "x": 3.45,
+          "y": -0.65
+        },
+        {
+          "x": 3.5,
+          "y": -0.9
+        },
+        {
+          "x": 5.05,
+          "y": -1.75
+        },
+        {
+          "x": 5.05,
+          "y": -1.75,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -6.246636,
+          6
+        ],
+        [
+          -3.8499999999997065,
+          5.800000000000537
+        ],
+        [
+          -3.5499999999997023,
+          5.350000000000534
+        ],
+        [
+          -3.4999999999997016,
+          5.100000000000527
+        ],
+        [
+          -1.9499999999996795,
+          4.250000000000512
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 4.9685171720193715,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    },
+    {
+      "net": "GND",
+      "from": ".Q9 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 1.25,
+          "y": 4.55
+        },
+        {
+          "x": 1.65,
+          "y": 4.85
+        },
+        {
+          "x": 2.55,
+          "y": 4.85
+        },
+        {
+          "x": 2.55,
+          "y": 4.85,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          14.750002,
+          -8.94996
+        ],
+        [
+          14.500000000000554,
+          -12.549999999999724
+        ],
+        [
+          14.100000000000549,
+          -12.849999999999728
+        ],
+        [
+          13.200000000000536,
+          -12.849999999999728
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 5.0087101576050514,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    }
+  ],
+  "pours": [],
+  "vias": [],
+  "unresolved": [],
+  "repaired_islands": [
+    {
+      "net": "GND",
+      "ports": [
+        ".C2 > .pin2"
+      ]
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".R68 > .pin2"
+      ]
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".Q9 > .pin2",
+        ".R82 > .pin2",
+        ".R84 > .pin2"
+      ]
+    }
+  ]
+}

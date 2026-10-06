@@ -54,9 +54,8 @@ def pad_escape(planner, specification):
         targets = []
         for index, obstacle in enumerate(wide_obstacles):
             for terminal in specification['connected_targets']:
-                anchor = planner.grid_anchor((terminal,), (grid_data[index][0], obstacle))[0]
-                if anchor:
-                    targets.append((index, *anchor[0]))
+                options=planner.grid_anchor_options((terminal,), (grid_data[index][0], obstacle))[0]
+                targets.extend((index,*anchor[0]) for anchor in options)
         reachable_context = {'grid_data':grid_data,'obstacles':wide_obstacles,'targets':targets,
             'via_blocked':planner.grid_data(via_obstacles(planner,specification))[0]}
         if not targets:
@@ -89,9 +88,8 @@ def pad_escape(planner, specification):
 def via_exit_reachable(planner, specification):
     starts=[]
     for layer,obstacle in enumerate(specification['obstacles']):
-        anchor=planner.grid_anchor((specification['target'],), (specification['grid_data'][layer][0],obstacle))[0]
-        if anchor:
-            starts.append((layer,*anchor[0]))
+        options=planner.grid_anchor_options((specification['target'],), (specification['grid_data'][layer][0],obstacle))[0]
+        starts.extend((layer,*anchor[0]) for anchor in options)
     return multilayer_components_reachable([record[1] for record in specification['grid_data']],
         specification['via_blocked'],starts,specification['targets'],planner.layer_component_cache)
 
@@ -120,7 +118,9 @@ def escape_record(planner, specification):
     return {'net': net['name'], 'from': planner.port_name(port), 'to': 'net.'+net['name'], 'width': width,
             'pcbPath': local, 'global_path_mm': positions, 'segment_layers': ['top']*len(positions),
             'classification': 'manual native ordinary via escape; power current qualification pending' if net['name'] != 'GND' else 'manual native GND via escape',
-            'top_length_mm': sum(math.dist(a,b) for a,b in zip(positions,positions[1:]))}
+            'top_length_mm': sum(math.dist(a,b) for a,b in zip(positions,positions[1:])),
+            'via_outer_mm': specification.get('via_outer_mm', .7),
+            'via_hole_mm': specification.get('via_hole_mm', .3)}
 
 
 def inner_obstacles(planner, specification):
@@ -184,21 +184,43 @@ def wide_multilayer_route(planner, specification):
     layers = tuple(specification.get('layers', ('inner2', 'bottom')))
     if len(layers) != 2 or any(layer not in ('top', 'inner1', 'inner2', 'bottom') for layer in layers):
         raise ValueError('Wide distribution routing requires two supported layers')
+    first_layer,last_layer=specification.get('first_layer'),specification.get('last_layer')
+    if any(layer is not None and layer not in layers for layer in (first_layer,last_layer)):
+        raise ValueError('Endpoint layers must be selected routing layers')
     obstacles = [inner_obstacles(planner, {**specification, 'layer': layer}) for layer in layers]
-    for layer, obstacle in zip(layers, obstacles):
-        route = planner.grid_route((first, last, obstacle))
-        if route:
-            return [(layer, route)], []
+    preferred_width = specification.get('preferred_width_mm')
+    if preferred_width is None:
+        for layer, obstacle in zip(layers, obstacles):
+            if (first_layer is not None and first_layer!=layer) or (last_layer is not None and last_layer!=layer):continue
+            route = planner.grid_route((first, last, obstacle))
+            if route:
+                return [(layer, route)], []
     grid_data = [planner.grid_data(obstacle) for obstacle in obstacles]
     blocked = [data[0] for data in grid_data]
+    preferred_blocked = [planner.grid_data(inner_obstacles(planner, {**specification, 'layer': layer,
+        'width': preferred_width}))[0] for layer in layers] if preferred_width is not None else None
     via_blocked = planner.grid_data(via_obstacles(planner, specification))[0]
     starts, targets = {}, {}
     for index in range(2):
-        start, target = planner.grid_anchor((first, last), (blocked[index], obstacles[index]))
-        if start:
-            starts[(index, *start[0])] = start[1]
-        if target:
-            targets[(index, *target[0])] = target[1]
+        if specification.get('multi_anchor'):
+            start_options,target_options=planner.grid_anchor_options((first,last),(blocked[index],obstacles[index]))
+            if first_layer is not None and layers[index]!=first_layer:start_options=[]
+            if last_layer is not None and layers[index]!=last_layer:target_options=[]
+            for options,destination in ((start_options,starts),(target_options,targets)):
+                by_component={}
+                for node,path in options:
+                    identifier=int(grid_data[index][1][node])
+                    if identifier not in by_component or LineString(path).length<LineString(by_component[identifier][1]).length:
+                        by_component[identifier]=(node,path)
+                for node,path in by_component.values():destination[(index,*node)]=path
+        else:
+            start, target = planner.grid_anchor((first, last), (blocked[index], obstacles[index]))
+            if first_layer is not None and layers[index]!=first_layer:start=None
+            if last_layer is not None and layers[index]!=last_layer:target=None
+            if start:
+                starts[(index, *start[0])] = start[1]
+            if target:
+                targets[(index, *target[0])] = target[1]
     if not starts or not targets:
         return None
     if not multilayer_components_reachable([data[1] for data in grid_data], via_blocked, starts, targets,
@@ -234,6 +256,10 @@ def wide_multilayer_route(planner, specification):
                     positions.append(position)
             positions.extend(reversed(targets[node]))
             parts.append((layers[layer_index], positions))
+            # Keep the weighted path: straightening it against only minimum
+            # width obstacles would reintroduce the long narrow shortcut.
+            if preferred_blocked is not None:
+                return parts, vias
             simplified_parts = []
             for layer, positions in parts:
                 obstacle = obstacles[layers.index(layer)]
@@ -257,7 +283,8 @@ def wide_multilayer_route(planner, specification):
                 continue
             if not planner.grid_edge_clear((y,x), (ny,nx), obstacles[layer], blocked[layer]):
                 continue
-            neighbors.append(((layer,ny,nx), math.hypot(dy,dx)))
+            penalty = 25 if preferred_blocked is not None and (preferred_blocked[layer][y,x] or preferred_blocked[layer][ny,nx]) else 1
+            neighbors.append(((layer,ny,nx), math.hypot(dy,dx)*penalty))
         if not via_blocked[y,x] and not blocked[1-layer][y,x]:
             neighbors.append(((1-layer,y,x), 10))
         for neighbor, edge_cost in neighbors:

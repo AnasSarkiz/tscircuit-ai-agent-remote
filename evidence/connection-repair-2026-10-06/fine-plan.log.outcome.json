@@ -1,0 +1,27 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-connection-bridges.py",
+    "evidence/connection-repair-2026-10-06/trial-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/trial-audit.json",
+    "evidence/connection-repair-2026-10-06/fine-proposal.json",
+    "AMP_SD_MODE",
+    "AUDIO_ENABLE_SUPPLY",
+    "VMIC",
+    "MIC_WS",
+    "MIC_BCLK",
+    "LCD_DC",
+    "LCD_SCLK",
+    "LCD_SDA",
+    "GND",
+    "--grid-mm",
+    "0.05"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 79.67,
+  "peak_process_group_rss_bytes": 321413120,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

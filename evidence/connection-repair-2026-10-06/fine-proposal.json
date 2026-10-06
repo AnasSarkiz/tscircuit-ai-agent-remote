@@ -1,0 +1,242 @@
+{
+  "classification": "authored native connection proposals; actual replay/audit required",
+  "paths": [
+    {
+      "net": "LCD_DC",
+      "from": ".U14 > .pin16",
+      "to": "net.LCD_DC",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -0.15,
+          "y": 3.95
+        },
+        {
+          "x": 0.15,
+          "y": 4.1
+        },
+        {
+          "x": 1.15,
+          "y": 4.2
+        },
+        {
+          "x": 1.55,
+          "y": 4.6
+        },
+        {
+          "x": 1.55,
+          "y": 4.6,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          8.675,
+          10.87095
+        ],
+        [
+          8.850000000000477,
+          11.950000000000628
+        ],
+        [
+          9.150000000000475,
+          12.100000000000627
+        ],
+        [
+          10.150000000000489,
+          12.200000000000628
+        ],
+        [
+          10.550000000000495,
+          12.600000000000634
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 2.9992318023569515
+    },
+    {
+      "net": "LCD_DC",
+      "from": ".R44 > .pin1",
+      "to": "net.LCD_DC",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -0.753364,
+          "y": 1.8
+        },
+        {
+          "x": -0.753364,
+          "y": 1.8,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          12.996636,
+          -3.25
+        ],
+        [
+          12.996636,
+          -1.45
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.8
+    }
+  ],
+  "pours": [
+    {
+      "net": "LCD_DC",
+      "layer": "inner1",
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "path_mm": [
+        [
+          12.996636,
+          -1.45
+        ],
+        [
+          10.550000000000495,
+          12.600000000000634
+        ]
+      ],
+      "outline": [
+        {
+          "x": 10.450497,
+          "y": 12.582673
+        },
+        {
+          "x": 10.649503,
+          "y": 12.617327
+        },
+        {
+          "x": 13.096139,
+          "y": -1.432673
+        },
+        {
+          "x": 12.897133,
+          "y": -1.467327
+        }
+      ]
+    }
+  ],
+  "vias": [],
+  "unresolved": [
+    {
+      "net": "AMP_SD_MODE",
+      "ports": [
+        ".U3 > .pin4"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "ports": [
+        ".R63 > .pin1"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U24 > .pin5"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".R93 > .pin1"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U5 > .pin2"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "VMIC",
+      "ports": [
+        ".U5 > .pin5"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "MIC_WS",
+      "ports": [
+        ".R93 > .pin2"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "MIC_BCLK",
+      "ports": [
+        ".U5 > .pin4"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "LCD_SCLK",
+      "ports": [
+        ".R45 > .pin1"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "LCD_SDA",
+      "ports": [
+        ".R46 > .pin1"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".C2 > .pin2"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".R68 > .pin2"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    },
+    {
+      "net": "GND",
+      "ports": [
+        ".Q9 > .pin2",
+        ".R82 > .pin2",
+        ".R84 > .pin2"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    }
+  ],
+  "repaired_islands": [
+    {
+      "net": "LCD_DC",
+      "ports": [
+        ".R44 > .pin1"
+      ]
+    }
+  ]
+}

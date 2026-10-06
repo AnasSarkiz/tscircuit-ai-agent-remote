@@ -1,0 +1,20 @@
+{
+  "classification": "authored outer-layer connection proposals; native geometry and pad-neck load qualification required",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "pad_necks": [],
+  "unresolved": [
+    {
+      "net": "SPEAKER_P",
+      "port": ".U3 > .pin9",
+      "reason": "No outer trunk with a legal full-span via and at most5mm package neck; current qualification remains required"
+    },
+    {
+      "net": "SPEAKER_N",
+      "port": ".U3 > .pin10",
+      "reason": "No outer trunk with a legal full-span via and at most5mm package neck; current qualification remains required"
+    }
+  ],
+  "repaired_islands": []
+}

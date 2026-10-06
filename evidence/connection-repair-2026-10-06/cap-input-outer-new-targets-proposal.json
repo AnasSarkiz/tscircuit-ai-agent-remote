@@ -1,0 +1,16 @@
+{
+  "classification": "authored outer-layer connection proposals; native geometry and pad-neck load qualification required",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "pad_necks": [],
+  "unresolved": [
+    {
+      "net": "VBUS",
+      "port": ".C1 > .pin1",
+      "reason": "No outer trunk with a legal full-span via and at most5mm package neck; current qualification remains required"
+    }
+  ],
+  "repaired_islands": [],
+  "rejected_narrow_routes": []
+}

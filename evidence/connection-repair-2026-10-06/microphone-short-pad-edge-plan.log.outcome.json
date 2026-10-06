@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-microphone-ground-traces.py",
+    "evidence/connection-repair-2026-10-06/usb-clock-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/microphone-short-pad-edge-proposal.json",
+    "--width-mm",
+    ".36",
+    "--replace-clock-escapes"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 26.54,
+  "peak_process_group_rss_bytes": 132390912,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

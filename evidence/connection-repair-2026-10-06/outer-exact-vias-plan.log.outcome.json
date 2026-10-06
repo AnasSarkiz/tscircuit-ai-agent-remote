@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-outer-connections.py",
+    "evidence/connection-repair-2026-10-06/relocated-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/relocated-audit.json",
+    "evidence/connection-repair-2026-10-06/outer-exact-vias-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/amplifier-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/status-contact-proposal.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 46.58,
+  "peak_process_group_rss_bytes": 298553344,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

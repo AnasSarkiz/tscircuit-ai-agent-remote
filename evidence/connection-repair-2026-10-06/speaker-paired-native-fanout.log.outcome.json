@@ -1,0 +1,19 @@
+{
+  "command": [
+    "bun",
+    "scripts/routing/solve-native-pair.mjs",
+    "evidence/connection-repair-2026-10-06/current-native.srj.json",
+    "source_net_65",
+    "source_net_64",
+    "evidence/connection-repair-2026-10-06/speaker-paired-native-fanout.json",
+    "fanout",
+    "source_component_51"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 1.0,
+  "peak_process_group_rss_bytes": 179363840,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

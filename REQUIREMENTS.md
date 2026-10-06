@@ -1,3 +1,11 @@
+## Connection repair checkpoint — 2026-10-06
+
+**0.0.6-wip-connection-repairs remains an untested, incomplete WIP.** All high-current supply/speaker trunks require outer PCB layers. The new gain-mode inner VSYS branch is separately identified and still requires input-current qualification. The 0.30 mm hole / 0.45 mm full-span via requirement is measured on all 322 emitted vias. No minimum-width or DRC requirement is lowered to accept these repairs.
+
+[Actual source/native review](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/connection-repair-2026-10-06/review.md). Earlier revision requirements and BOM history follow.
+
+---
+
 ## Current six-point review — 2026-10-06
 
 **0.0.5-wip-style-vias-power — NOT READY TO ORDER.** This entry supersedes the older counts and status below.

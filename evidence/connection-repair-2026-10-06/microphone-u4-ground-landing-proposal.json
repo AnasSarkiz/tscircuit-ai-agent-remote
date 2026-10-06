@@ -1,0 +1,15 @@
+{
+  "classification": "authored native pad-edge ground traces; final native geometry/preservation qualification required",
+  "straight_paths": [],
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "ground_landings": [],
+  "unresolved": [
+    {
+      "port": ".U4 > .pin3",
+      "reason": "No clear native ground landing and pad-edge wire retaining actual ground-plane contact"
+    }
+  ],
+  "source_native": "evidence/connection-repair-2026-10-06/final-native/circuit.json"
+}

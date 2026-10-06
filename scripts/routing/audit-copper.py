@@ -54,7 +54,20 @@ def pad_contour(record):
     if shape == 'circle':
         contour = Point(center).buffer(width / 2, quad_segs=128)
     elif shape in ('rect', 'rotated_rect', 'rotated_pill_hole_with_rect_pad'):
-        contour = box(x-width/2, y-height/2, x+width/2, y+height/2)
+        radius=record.get('corner_radius',0) if shape in ('rect','rotated_rect') else 0
+        if not isinstance(radius,(int,float)) or not math.isfinite(radius) or radius<0:
+            raise ValueError('Invalid native rectangle corner radius')
+        # Match native rounded rectangles and SVG radius clamping. Genuine
+        # imported pill pads are emitted as rotated_rect with corner_radius;
+        # replacing those arcs with a bounding box blocks legal pad fanouts.
+        radius=min(radius,width/2,height/2)
+        if radius:
+            dx,dy=width/2-radius,height/2-radius
+            if dx<1e-12 and dy<1e-12:core=Point(center)
+            elif dx<1e-12 or dy<1e-12:core=LineString([(x-dx,y-dy),(x+dx,y+dy)])
+            else:core=box(x-dx,y-dy,x+dx,y+dy)
+            contour=core.buffer(radius,quad_segs=128)
+        else:contour = box(x-width/2, y-height/2, x+width/2, y+height/2)
     elif shape in ('pill', 'rotated_pill'):
         radius = min(width, height) / 2
         dx, dy = max(0, width-height)/2, max(0, height-width)/2
@@ -281,6 +294,8 @@ def main():
     result = audit(json.loads(path.read_text()))
     result['source_circuit_json'] = str(path)
     result['source_sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+    result['audit_script_sha256'] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    result['pad_contour_method'] = 'Native rounded rectangles honour corner_radius and rotation; rectangular bounds only where the native shape has no radius. Requirements and 0.000001 mm tolerance unchanged.'
     Path(args.output_json).write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps({key: value for key, value in result.items() if key not in ('violations', 'route_errors', 'physically_open_nets', 'physical_port_groups', 'physical_feature_groups')}, indent=2))
     return 0 if result['zero_drc_zero_shorts_and_connected'] else 1

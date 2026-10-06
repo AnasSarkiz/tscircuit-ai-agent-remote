@@ -1,0 +1,68 @@
+[
+  {
+    "net": "SPEAKER_P",
+    "terminal": [
+      21.02500195,
+      8
+    ],
+    "terminal_blocked": [
+      false,
+      false
+    ],
+    "targets": [
+      [
+        0,
+        800,
+        893
+      ],
+      [
+        1,
+        800,
+        893
+      ]
+    ],
+    "via_candidate": [
+      -16,
+      6.5
+    ],
+    "candidate_blocked": [
+      true,
+      false
+    ],
+    "candidate_reaches_connector": false,
+    "near_connector_copper": []
+  },
+  {
+    "net": "SPEAKER_N",
+    "terminal": [
+      23.02499795,
+      8
+    ],
+    "terminal_blocked": [
+      false,
+      false
+    ],
+    "targets": [
+      [
+        0,
+        800,
+        968
+      ],
+      [
+        1,
+        800,
+        968
+      ]
+    ],
+    "via_candidate": [
+      -16.5,
+      6.5
+    ],
+    "candidate_blocked": [
+      false,
+      false
+    ],
+    "candidate_reaches_connector": false,
+    "near_connector_copper": []
+  }
+]

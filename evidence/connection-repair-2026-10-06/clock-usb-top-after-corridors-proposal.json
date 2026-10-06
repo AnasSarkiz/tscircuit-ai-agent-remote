@@ -1,0 +1,35 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-native/circuit.json",
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "LCD_SCLK",
+      "ports": [
+        ".R45 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "USB_DN",
+      "ports": [
+        ".J1 > .pin9"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "USB_DN",
+      "ports": [
+        ".D2 > .pin2"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "USB_DN",
+      "ports": [
+        ".R32 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

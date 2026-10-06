@@ -1,0 +1,14 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/connection-repair-2026-10-06/usb-ground-power-speaker-native/circuit.json",
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "VBUS",
+      "ports": [
+        ".C1 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

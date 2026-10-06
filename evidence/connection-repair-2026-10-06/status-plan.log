@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-relocated-connections.py", line 105, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-relocated-connections.py", line 24, in main
+    if len(retired)!=len(names):raise ValueError('Every selected source path needs a real native trace')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Every selected source path needs a real native trace

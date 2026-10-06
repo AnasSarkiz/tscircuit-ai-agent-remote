@@ -1,0 +1,68 @@
+{
+  "classification": "authored control/ground connection proposals; native geometry and load qualification required",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "repaired_islands": [],
+  "unresolved": [
+    {
+      "net": "VSYS",
+      "port": ".R62 > .pin1",
+      "reason": "No qualified escape/strip to actual main island"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U3 > .pin2",
+      "reason": "No qualified escape/strip to actual main island"
+    },
+    {
+      "net": "GND",
+      "port": ".C2 > .pin2",
+      "reason": "No qualified escape/strip to actual main island"
+    },
+    {
+      "net": "GND",
+      "port": ".R68 > .pin2",
+      "reason": "No qualified escape/strip to actual main island"
+    },
+    {
+      "net": "GND",
+      "port": ".Q9 > .pin2",
+      "reason": "No qualified escape/strip to actual main island"
+    },
+    {
+      "net": "GND",
+      "port": ".R82 > .pin2",
+      "reason": "No qualified escape/strip to actual main island"
+    },
+    {
+      "net": "GND",
+      "port": ".R84 > .pin2",
+      "reason": "No qualified escape/strip to actual main island"
+    }
+  ],
+  "branch_requirements": [
+    {
+      "net": "VSYS",
+      "terminal": ".R62 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 0.0055,
+      "basis": "R62 is the verified1kohm gate pull-up. At5.5V even a grounded gate draws at most5.5mA."
+    },
+    {
+      "net": "VSYS",
+      "terminal": ".U3 > .pin2",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": null,
+      "basis": "MAX98357A pin2 GAIN_SLOT is a gain-mode input; PVDD pins7/8 carry amplifier supply current separately. Exact gain-input current/width qualification remains blocked; the fresh official ADI datasheet request is policy-denied."
+    }
+  ]
+}

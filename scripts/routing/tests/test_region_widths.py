@@ -44,6 +44,30 @@ class RegionWidthTests(unittest.TestCase):
         self.assertEqual(result['failed_region_count'], 1)
         self.assertGreater(result['measurements'][0]['uncovered_required_copper_mm2'], .019)
 
+    def native_via_termination(self, via_net='signal', diameter=.45):
+        helper = runpy.run_path(str(Path(__file__).resolve().parents[1]/'audit-region-widths.py'))
+        circuit = [
+            {'type':'source_net','name':'SIGNAL','source_net_id':'signal'},
+            {'type':'source_net','name':'OTHER','source_net_id':'other'},
+            {'type':'pcb_via','pcb_via_id':'via','source_net_id':via_net,
+             'x':0,'y':0,'outer_diameter':diameter,'hole_diameter':.3,
+             'layers':['top','inner1','inner2','bottom']},
+            {'type':'pcb_copper_pour','source_net_id':'signal','layer':'bottom','shape':'brep',
+             'brep_shape':{'outer_ring':{'vertices':[{'x':.05,'y':-.15},{'x':1,'y':-.15},
+                 {'x':1,'y':.15},{'x':.05,'y':.15}]},'inner_rings':[]}},
+        ]
+        return helper['measure_regions'](circuit,[{'net':'SIGNAL','layer':'bottom',
+            'nominal_width_mm':.3,'path_mm':[[0,0],[1,0]]}])[0]
+
+    def test_actual_same_net_via_land_covers_pour_termination(self):
+        self.assertTrue(self.native_via_termination()['required_width_preserved'])
+
+    def test_foreign_via_land_cannot_cover_required_width(self):
+        self.assertFalse(self.native_via_termination(via_net='other')['required_width_preserved'])
+
+    def test_land_with_no_annulus_cannot_cover_required_width(self):
+        self.assertFalse(self.native_via_termination(diameter=.3)['required_width_preserved'])
+
 
 if __name__ == '__main__':
     unittest.main()

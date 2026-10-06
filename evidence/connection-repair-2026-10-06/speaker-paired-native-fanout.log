@@ -1,0 +1,16 @@
+37093 |   })[0];
+37094 |   const requestedGrid = busSpec.sourceComponentId ? componentGrids.find(
+37095 |     (grid2) => grid2.componentId === busSpec.sourceComponentId
+37096 |   ) : void 0;
+37097 |   if (busSpec.sourceComponentId && !requestedGrid) {
+37098 |     throw new Error(
+                      ^
+error: FanoutSolver: source component "source_component_51" for bus "connection:source_net_64" was not found
+      at chooseSourceGrid (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:37098:15)
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:37392:24)
+      at map (1:11)
+      at prepareFanoutBuses (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:37368:59)
+      at new FanoutSolver (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:46745:26)
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/solve-native-pair.mjs:36:37
+
+Bun v1.3.9 (Linux x64)

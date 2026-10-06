@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-outer-connections.py", line 101, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-outer-connections.py", line 72, in main
+    planner.set_copper_reserve(reserve)
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-manual-signals.py", line 181, in set_copper_reserve
+    raise ValueError('Supported extra copper planning reserves are 0.0001 mm, 0.01 mm and 0.07 mm')
+ValueError: Supported extra copper planning reserves are 0.0001 mm, 0.01 mm and 0.07 mm

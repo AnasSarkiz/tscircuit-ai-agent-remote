@@ -69,6 +69,28 @@ class ManualSignalGridTests(unittest.TestCase):
         self.assertTrue(reachable(labels, np.array([[False, True, True, True, False]]), starts, targets))
         self.assertFalse(reachable(labels, np.array([[False, True, True, True, True]]), starts, targets))
 
+    def test_reserved_requested_via_keeps_a_legal_neighboring_corridor_open(self):
+        circuit = [
+            {'type':'pcb_board','outline':[{'x':x,'y':y} for x,y in [(-25,-32.5),(25,-32.5),(25,32.5),(-25,32.5)]]},
+            {'type':'source_net','source_net_id':'own','name':'OWN'},
+            {'type':'source_net','source_net_id':'neighbor','name':'NEIGHBOR'},
+            {'type':'source_component','source_component_id':'pad','name':'P1'},
+            {'type':'source_port','source_port_id':'source_pad','source_component_id':'pad','name':'pin1'},
+            {'type':'pcb_port','pcb_port_id':'pcb_pad','source_port_id':'source_pad','x':0,'y':0},
+            {'type':'source_trace','source_trace_id':'connection','connected_source_port_ids':['source_pad'],'connected_source_net_ids':['own']},
+        ]
+        for diameter, expected in [(.45, True), (.7, False)]:
+            planner=Planner(circuit);planner.set_grid(.05)
+            planner.reserve_proposals({'paths':[{'net':'OWN','from':'.P1 > .pin1','to':'net.OWN','width':.2,
+                'global_path_mm':[(0,0),(0,-2)],'segment_layers':['top','top'],
+                'pcbPath':[{'x':0,'y':-2,'via':True,'fromLayer':'top','toLayer':'bottom'}],
+                'via_outer_mm':diameter,'via_hole_mm':.3}]})
+            obstacles=unary_union([planner.obstacles(planner.root('neighbor'),'inner2',.2),
+                box(-26,-33,.59,33),box(.65,-33,26,33)])
+            route=planner.grid_route(((.6,-3),(.6,-1),obstacles))
+            self.assertEqual(route is not None,expected)
+            if route:self.assertFalse(LineString(route).intersects(obstacles))
+
     def test_qualified_usb_exit_preserves_the_required_copper_clearance(self):
         circuit = [{'type': 'pcb_board', 'outline': [
             {'x': x, 'y': y} for x, y in [(-25, -32.5), (25, -32.5), (25, 32.5), (-25, 32.5)]]}]

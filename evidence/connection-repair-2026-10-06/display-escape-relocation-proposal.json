@@ -1,0 +1,89 @@
+{
+  "classification": "authored buffer DC escape replacement preserving original inner copper; native qualification required",
+  "paths": [
+    {
+      "net": "LCD_DC",
+      "from": ".U14 > .pin16",
+      "to": "net.LCD_DC",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -0.35,
+          "y": 4.1
+        },
+        {
+          "x": -0.35,
+          "y": 4.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          8.675,
+          10.87095
+        ],
+        [
+          8.650000000000475,
+          12.100000000000627
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 1.229304235127137,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    }
+  ],
+  "pours": [
+    {
+      "net": "LCD_DC",
+      "layer": "inner1",
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "path_mm": [
+        [
+          8.650000000000475,
+          12.100000000000627
+        ],
+        [
+          10.584311217676188,
+          12.402965129123393
+        ]
+      ],
+      "outline": [
+        {
+          "x": 10.568682,
+          "y": 12.502749
+        },
+        {
+          "x": 10.59994,
+          "y": 12.303182
+        },
+        {
+          "x": 8.665629,
+          "y": 12.000217
+        },
+        {
+          "x": 8.634371,
+          "y": 12.199783
+        }
+      ]
+    }
+  ],
+  "vias": [],
+  "unresolved": [],
+  "retired_authored_escape_indices": [
+    6
+  ],
+  "retired_authored_traces": [
+    "pcb_trace_298"
+  ],
+  "retired_authored_vias": [
+    "pcb_via_242"
+  ]
+}

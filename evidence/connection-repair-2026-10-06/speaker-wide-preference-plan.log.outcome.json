@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-outer-connections.py",
+    "evidence/connection-repair-2026-10-06/power-control-manual-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/power-control-manual-audit.json",
+    "evidence/connection-repair-2026-10-06/speaker-wide-preference-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/ground-speaker-relocation-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/independent-ground-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/outer-after-corridors-fixed-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/audio-din-inner-proposal.json",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/usb-display-precision-proposal.json",
+    "--ports",
+    ".U3 > .pin9",
+    ".U3 > .pin10",
+    "--short-outer-necks"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 47.57,
+  "peak_process_group_rss_bytes": 392265728,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

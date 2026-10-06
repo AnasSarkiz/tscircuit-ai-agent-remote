@@ -1,0 +1,102 @@
+import { pcbPath } from "@tscircuit/props"
+import { z } from "zod"
+import connections from "./connection-copper.json"
+import { viaHoleDiameterMm, viaPadDiameterMm } from "./viaGeometry"
+
+const paths = z
+  .array(
+    z.object({
+      net: z.string(),
+      from: z.string(),
+      to: z.string(),
+      width: z.number().positive(),
+      pcbPath,
+    }),
+  )
+  .parse(connections.paths)
+const regions = z
+  .array(
+    z.object({
+      net: z.string(),
+      layer: z.enum(["inner1", "inner2"]),
+      nominal_width_mm: z.number().positive(),
+      outline: z.array(z.object({ x: z.number(), y: z.number() })).min(3),
+    }),
+  )
+  .parse(connections.pours)
+const vias = z
+  .array(
+    z.object({
+      net: z.string(),
+      x: z.number(),
+      y: z.number(),
+      hole_mm: z.literal(viaHoleDiameterMm),
+      outer_mm: z.literal(viaPadDiameterMm),
+    }),
+  )
+  .parse(connections.vias)
+const outerPowerNets = new Set([
+  "PACK_BAT",
+  "VBUS",
+  "VSYS",
+  "V3V3",
+  "VMOTOR",
+  "HAPTIC_N",
+  "SPEAKER_P",
+  "SPEAKER_N",
+])
+for (const region of regions) {
+  if (outerPowerNets.has(region.net))
+    throw new Error(`High-current connection must use outer copper: ${region.net}`)
+}
+
+// Authored connections between verified physical islands. These are native PCB
+// features, separate from saved Pipeline9 output. Deferred connector contacts
+// remain open and continue to appear in the real native build checks.
+export function ManualConnectionCopper({
+  placementOnly = false,
+}: {
+  placementOnly?: boolean
+} = {}) {
+  if (placementOnly) return null
+  return (
+    <>
+      {paths.map((path, index) => (
+        <trace
+          name={`CONNECTION_ESCAPE_${path.net}_${index}`}
+          from={path.from}
+          to={path.to}
+          width={path.width}
+          pcbPathRelativeTo={path.from}
+          pcbPath={path.pcbPath}
+        />
+      ))}
+      {regions.map((region, index) => (
+        <copperpour
+          name={`CONNECTION_STRIP_${region.net}_${index}`}
+          connectsTo={`net.${region.net}`}
+          layer={region.layer}
+          outline={region.outline}
+          clearance={0.21}
+          cutoutMargin={0.26}
+          boardEdgeMargin={0}
+          coveredWithSolderMask
+          useThermalReliefs={false}
+        />
+      ))}
+      {vias.map((via, index) => (
+        <via
+          name={`CONNECTION_VIA_${index}`}
+          connectsTo={`net.${via.net}`}
+          pcbX={via.x}
+          pcbY={via.y}
+          holeDiameter={via.hole_mm}
+          outerDiameter={via.outer_mm}
+          fromLayer="top"
+          toLayer="bottom"
+          tented
+        />
+      ))}
+    </>
+  )
+}

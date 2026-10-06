@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/evidence/connection-repair-2026-10-06/plan-control-corridors.py", line 9, in <module>
+    if old['net']!='LCD_CS_N' or old['nominal_width_mm']!=.2:raise ValueError('Unexpected width/source corridor')
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unexpected width/source corridor

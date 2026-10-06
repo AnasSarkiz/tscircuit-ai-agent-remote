@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/audit-connection-preservation.py",
+    "dist/index/circuit.json",
+    "evidence/six-point-board-review-2026-10-06/final-copper-audit.json",
+    "evidence/connection-repair-2026-10-06/trial-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/trial-audit.json",
+    "evidence/connection-repair-2026-10-06/trial-preservation.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 593920,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

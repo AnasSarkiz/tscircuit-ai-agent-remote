@@ -1,0 +1,38 @@
+{
+  "native_sha256": "fb2f9c96ff000de1e18d6bf4d35bd41fea2323fc0b10730df4a0262b0bbdb73d",
+  "viewed_copper_layers": [
+    "top",
+    "inner1",
+    "inner2",
+    "bottom"
+  ],
+  "viewed_details": [
+    "charger-vbus-necks",
+    "speaker-output",
+    "left-microphone",
+    "microphones",
+    "usb-charger",
+    "display-backlight",
+    "top-mask",
+    "top-paste"
+  ],
+  "viewed_schematic_pages": [
+    1,
+    2,
+    5,
+    7,
+    10,
+    14
+  ],
+  "other_schematic_pages": "25/26 SVGs byte-identical to previously reviewed v5 pages; changed speaker page 5 inspected explicitly",
+  "observations": [
+    "Retained ground and supply copper surrounds the revised escapes without a visually apparent foreign-net crossing; actual geometry audit is the clearance/short proof.",
+    "Left microphone ground contacts the main ground plane; native U4 open-port report remains unresolved. Right microphone has the explicit native ground join.",
+    "J7 and backlight fanout remain visibly incomplete; battery outer polarity is still marked pending.",
+    "Speaker positive escape is present; the negative output is still disconnected in the actual physical audit.",
+    "Mask/paste diagnostic view does not qualify U16/U27 missing paste or unsupported polygon export.",
+    "Standard USB-C schematic and A4 component guides remain readable; 25 SVG pages exactly match the accepted v5 rendering."
+  ],
+  "fabrication_approved": false,
+  "hardware_tested": false
+}

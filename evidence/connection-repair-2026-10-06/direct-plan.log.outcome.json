@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-existing-copper-routes.py",
+    "dist/index/circuit.json",
+    "evidence/six-point-board-review-2026-10-06/final-copper-audit.json",
+    "evidence/connection-repair-2026-10-06/direct-proposal.json",
+    "MCU_LCD_RESET_N",
+    "AMP_SD_MODE",
+    "AUDIO_ENABLE_SUPPLY",
+    "VMIC",
+    "MIC_WS",
+    "MIC_BCLK",
+    "MIC_SD",
+    "LCD_DC",
+    "LCD_SCLK",
+    "LCD_SDA",
+    "GND",
+    "--grid-mm",
+    "0.1"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 44.56,
+  "peak_process_group_rss_bytes": 158932992,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

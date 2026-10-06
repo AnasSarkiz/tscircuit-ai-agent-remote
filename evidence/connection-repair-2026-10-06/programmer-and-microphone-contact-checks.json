@@ -1,0 +1,193 @@
+{
+  "native_sha256": "fb2f9c96ff000de1e18d6bf4d35bd41fea2323fc0b10730df4a0262b0bbdb73d",
+  "programmer_prior_receipt": "../board-programmer-stock-review-2026-10-06/programmer-compatibility.json",
+  "eight_target_paths": [
+    {
+      "endpoints": [
+        [
+          "J6",
+          6
+        ],
+        [
+          "U1",
+          36
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          5
+        ],
+        [
+          "R38",
+          2
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "R38",
+          1
+        ],
+        [
+          "U1",
+          37
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          1
+        ],
+        [
+          "J6",
+          7
+        ],
+        [
+          "J6",
+          8
+        ],
+        [
+          "U1",
+          1
+        ],
+        [
+          "U1",
+          40
+        ],
+        [
+          "U1",
+          41
+        ],
+        [
+          "U12",
+          1
+        ],
+        [
+          "R37",
+          2
+        ],
+        [
+          "SW1",
+          2
+        ],
+        [
+          "SW2",
+          2
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          3
+        ],
+        [
+          "U1",
+          3
+        ],
+        [
+          "R35",
+          2
+        ],
+        [
+          "R37",
+          1
+        ],
+        [
+          "SW2",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "U12",
+          2
+        ],
+        [
+          "R35",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          4
+        ],
+        [
+          "U1",
+          27
+        ],
+        [
+          "R36",
+          2
+        ],
+        [
+          "SW1",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    },
+    {
+      "endpoints": [
+        [
+          "J6",
+          2
+        ],
+        [
+          "U1",
+          2
+        ],
+        [
+          "U12",
+          3
+        ],
+        [
+          "R36",
+          1
+        ]
+      ],
+      "logical_connected": true,
+      "physical_connected": true
+    }
+  ],
+  "microphone_ground_contacts": [
+    {
+      "reference": "U4",
+      "ground_pin_physically_connected_to_main_GND": true
+    },
+    {
+      "reference": "U5",
+      "ground_pin_physically_connected_to_main_GND": true
+    }
+  ],
+  "adapter_required": true,
+  "direct_cable_mating": false,
+  "programming_hardware_tested": false,
+  "U4_native_ground_report_resolved": false,
+  "fabrication_ready": false
+}

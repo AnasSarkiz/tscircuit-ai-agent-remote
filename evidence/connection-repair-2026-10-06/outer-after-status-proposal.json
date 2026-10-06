@@ -1,0 +1,45 @@
+{
+  "classification": "authored outer-layer connection proposals; native geometry and pad-neck load qualification required",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "pad_necks": [],
+  "unresolved": [
+    {
+      "net": "VBUS",
+      "port": ".J1 > .pin16",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    },
+    {
+      "net": "VBUS",
+      "port": ".U16 > .pin13",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    },
+    {
+      "net": "VBUS",
+      "port": ".C1 > .pin1",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin10",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    },
+    {
+      "net": "VSYS",
+      "port": ".U16 > .pin11",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    },
+    {
+      "net": "SPEAKER_P",
+      "port": ".U3 > .pin9",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    },
+    {
+      "net": "SPEAKER_N",
+      "port": ".U3 > .pin10",
+      "reason": "No outer trunk with a legal full-span via and at most1.5mm package neck"
+    }
+  ],
+  "repaired_islands": []
+}

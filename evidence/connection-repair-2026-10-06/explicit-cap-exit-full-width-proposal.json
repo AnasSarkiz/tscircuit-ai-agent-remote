@@ -1,0 +1,14 @@
+{
+  "classification": "authored precise capacitor escape and outer .5mm trunk; native/current qualification required",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "unresolved": [
+    {
+      "net": "VBUS",
+      "port": ".C1 > .pin1",
+      "reason": "Explicit via is legal but no full-width outer trunk to actual main-island copper"
+    }
+  ],
+  "pad_necks": []
+}

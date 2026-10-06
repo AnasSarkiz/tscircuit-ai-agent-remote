@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-relocated-connections.py",
+    "evidence/connection-repair-2026-10-06/relocated-native/circuit.json",
+    "evidence/connection-repair-2026-10-06/relocated-audit.json",
+    "evidence/connection-repair-2026-10-06/status-proposal.json",
+    "38",
+    "--reserve-proposals",
+    "evidence/connection-repair-2026-10-06/amplifier-proposal.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 393216,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

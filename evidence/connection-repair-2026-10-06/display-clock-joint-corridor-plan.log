@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-display-clock-corridor.py", line 48, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-display-clock-corridor.py", line 14, in main
+    p=h['Planner'](c,{'relocated_trace_layers':{old['pcb_trace_id']:{layer:None for layer in ('top','bottom','inner1','inner2')}},'retired_feature_ids':features});p.set_grid(.05);p.set_copper_reserve(.0001);p.via_copper_clearance=.27;ports={p.port_name(q):q for q in p.ports.values()};base=list(p.copper),list(p.holes),dict(p.plated_hole_roots);failures=[]
+                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-manual-signals.py", line 218, in port_name
+    name = self.source_components[source_port["source_component_id"]]["name"]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_manually_placed_via_0'

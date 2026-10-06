@@ -154,16 +154,23 @@ class ManualSignalPlanner:
                 self.copper.append((net_root, record["layer"], shape))
         self.set_grid(0.1)
 
-    def set_grid(self, step):
-        if step not in (0.05, 0.1):
-            raise ValueError('Supported routing grids are 0.05 mm and 0.1 mm')
-        self.grid_step = step
-        self.x_coordinates = np.arange(-24.5, 24.50001, self.grid_step)
-        self.y_coordinates = np.arange(-32.0, 32.00001, self.grid_step)
-        self.grid_x, self.grid_y = np.meshgrid(self.x_coordinates, self.y_coordinates)
-        self.grid_cache = []
-        self.layer_component_cache = []
-        self.grid_edge_cache = []
+    def set_grid(self, step, bounds=None):
+        if bounds is None:
+            if step not in (0.05, 0.1):
+                raise ValueError('Full-board routing grids are 0.05 mm and 0.1 mm')
+            bounds=(-24.5,-32.,24.5,32.)
+        else:
+            xmin,ymin,xmax,ymax=bounds
+            if step not in (.01,.025,.05,.1) or not (-24.5<=xmin<xmax<=24.5 and -32.<=ymin<ymax<=32.) or (xmax-xmin)*(ymax-ymin)>400:
+                raise ValueError('Fine grids require a bounded local area inside the existing board grid')
+        self.grid_step=step
+        xmin,ymin,xmax,ymax=bounds
+        self.x_coordinates=np.arange(xmin,xmax+step/10,step)
+        self.y_coordinates=np.arange(ymin,ymax+step/10,step)
+        self.grid_x,self.grid_y=np.meshgrid(self.x_coordinates,self.y_coordinates)
+        self.grid_cache=[]
+        self.layer_component_cache=[]
+        self.grid_edge_cache=[]
 
     def grid_data(self, obstacles):
         for cached_obstacles, blocked, labels in self.grid_cache:
@@ -256,11 +263,11 @@ class ManualSignalPlanner:
             if path['pcbPath'] and path['pcbPath'][-1].get('via'):
                 via_positions.append(positions[-1])
             for position in via_positions:
-                hole = Point(position).buffer(.15)
+                hole = Point(position).buffer(path.get('via_hole_mm', .3)/2)
                 self.holes.append(hole)
                 self.plated_hole_roots[hole.wkb] = root
                 for layer in ('top','inner1','inner2','bottom'):
-                    self.copper.append((root,layer,Point(position).buffer(.35)))
+                    self.copper.append((root,layer,Point(position).buffer(path.get('via_outer_mm', .7)/2)))
             if end:
                 # Planning-only connectivity follows verified terminal geometry,
                 # avoiding duplicate reroutes when reserving a prior proposal.
@@ -364,7 +371,7 @@ class ManualSignalPlanner:
             escapes.append([position])
             for escape_path in escapes:
                 escape = escape_path[-1]
-                approximate = round((escape[1] + 32) / self.grid_step), round((escape[0] + 24.5) / self.grid_step)
+                approximate = round((escape[1] - self.y_coordinates[0]) / self.grid_step), round((escape[0] - self.x_coordinates[0]) / self.grid_step)
                 candidates = [(approximate[0] + dy, approximate[1] + dx) for dy in range(-3, 4) for dx in range(-3, 4)]
                 candidates = [n for n in candidates if 0 <= n[0] < blocked.shape[0] and 0 <= n[1] < blocked.shape[1]]
                 candidates.sort(key=lambda n: math.dist((self.x_coordinates[n[1]], self.y_coordinates[n[0]]), escape))
@@ -376,6 +383,32 @@ class ManualSignalPlanner:
                 if result:
                     break
             results.append(result)
+        return results
+
+    def grid_anchor_options(self, endpoints, grid_obstacles):
+        """Return every geometrically valid escape into the sampled grid."""
+        blocked,obstacles=grid_obstacles
+        results=[]
+        for position in endpoints:
+            escapes=[]
+            for distance in (.9,1.1,1.3,1.5,.7,.5,.3):
+                for dx,dy in ((1,0),(-1,0),(0,1),(0,-1)):
+                    point=(position[0]+distance*dx,position[1]+distance*dy)
+                    if not LineString([position,point]).intersects(obstacles):escapes.append([position,point])
+            escapes.append([position]);options={}
+            for escape_path in escapes:
+                escape=escape_path[-1]
+                approximate=round((escape[1]-self.y_coordinates[0])/self.grid_step),round((escape[0]-self.x_coordinates[0])/self.grid_step)
+                candidates=[(approximate[0]+dy,approximate[1]+dx) for dy in range(-3,4) for dx in range(-3,4)]
+                candidates=[node for node in candidates if 0<=node[0]<blocked.shape[0] and 0<=node[1]<blocked.shape[1]]
+                candidates.sort(key=lambda node:math.dist((self.x_coordinates[node[1]],self.y_coordinates[node[0]]),escape))
+                for node in candidates:
+                    coordinate=float(self.x_coordinates[node[1]]),float(self.y_coordinates[node[0]])
+                    if not blocked[node] and not LineString([escape,coordinate]).intersects(obstacles):
+                        path=escape_path+[coordinate]
+                        if node not in options or LineString(path).length<LineString(options[node]).length:options[node]=path
+                        break
+            results.append(list(options.items()))
         return results
 
     def plan_net(self, net):

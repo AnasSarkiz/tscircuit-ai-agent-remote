@@ -1,0 +1,38 @@
+{
+  "classification": "authored native pad-edge ground traces; final native geometry/preservation qualification required",
+  "straight_paths": [
+    {
+      "net": "GND",
+      "from": ".U5 > .pin3",
+      "width": 0.36,
+      "proposal_via_index": 0,
+      "planned_clipped_start_mm": [
+        21.1625082,
+        -28.193194168582917
+      ],
+      "planned_end_mm": [
+        21.727201,
+        -27.628501
+      ],
+      "classification": "native pcbStraightLine using original imported pad bounds; actual replay required"
+    }
+  ],
+  "paths": [],
+  "pours": [],
+  "vias": [
+    {
+      "net": "GND",
+      "x": 21.727201,
+      "y": -27.628501,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45
+    }
+  ],
+  "unresolved": [
+    {
+      "port": ".U4 > .pin3",
+      "reason": "No qualified straight pad-edge ground join and full-span via"
+    }
+  ],
+  "source_native": "evidence/connection-repair-2026-10-06/usb-clock-native/circuit.json"
+}

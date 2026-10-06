@@ -1,0 +1,52 @@
+{
+  "classification": "authored native bridge from retained charger-status via to intact inner route",
+  "paths": [],
+  "pours": [
+    {
+      "net": "CHARGE_STATUS_N",
+      "layer": "inner2",
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "path_mm": [
+        [
+          -6.5000029999999995,
+          -27.349935
+        ],
+        [
+          -5.500003,
+          -26.749935
+        ]
+      ],
+      "outline": [
+        {
+          "x": -5.551967,
+          "y": -26.663328
+        },
+        {
+          "x": -5.448039,
+          "y": -26.836542
+        },
+        {
+          "x": -6.448039,
+          "y": -27.436542
+        },
+        {
+          "x": -6.551967,
+          "y": -27.263328
+        }
+      ]
+    }
+  ],
+  "vias": [],
+  "unresolved": [],
+  "retired_inner_escapes": [
+    {
+      "source_name": "MANUAL_INNER_ESCAPE_38_0",
+      "original_path_index": 38,
+      "escape_index": 0,
+      "original_pcb_trace_id": "pcb_trace_283",
+      "retired_via_id": "pcb_via_195"
+    }
+  ],
+  "repaired_islands": []
+}

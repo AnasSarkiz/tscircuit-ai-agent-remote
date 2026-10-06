@@ -4,6 +4,7 @@ import json
 import math
 import runpy
 from pathlib import Path
+from shapely.geometry import Polygon
 
 helpers = runpy.run_path(str(Path(__file__).with_name('plan-power-copper.py')))
 Planner = helpers['Planner']
@@ -31,9 +32,12 @@ def native_path(planner, specification):
 def main_targets(planner, specification):
     physical, group, root = specification['physical'], specification['group'], specification['root']
     targets = set()
+    for port in planner.ports.values():
+        if planner.root(port['source_port_id']) == root and physical['physical_port_groups'][port['pcb_port_id']] == [group]:
+            targets.add(('top', port['x'], port['y']))
     for record in planner.circuit:
         if record['type'] == 'pcb_via' and planner.via_root(record) == root and physical['physical_feature_groups'][record['pcb_via_id']] == group:
-            targets.update((layer, record['x'], record['y']) for layer in ('top','bottom','inner2'))
+            targets.update((layer, record['x'], record['y']) for layer in ('top','bottom','inner1','inner2'))
         elif record['type'] == 'pcb_trace':
             for index, (first, last) in enumerate(zip(record['route'],record['route'][1:])):
                 if first['route_type'] != 'wire' or last['route_type'] != 'wire' or first['layer'] != last['layer']:
@@ -55,7 +59,7 @@ def route_contact(planner, specification):
         positions=planner.grid_route((origin,(x,y),top_obstacles))
         if positions:
             return native_path(planner,{'port':port,'net':net,'width':width,'positions':positions,'layers':['top']*len(positions)})
-    exits=planner.grid_escape(origin,(top_obstacles,helpers['via_obstacles'](planner,{'root':root})))
+    exits=planner.grid_escape(origin,(top_obstacles,helpers['via_obstacles'](planner,{'root':root,'via_outer_mm':.45,'via_hole_mm':.3})))
     # Internal paths require native regions; pcbPath vias must be full span.
     for layer in ('bottom',):
         obstacles=planner.obstacles(root,layer,width)
@@ -73,12 +77,48 @@ def main():
     parser.add_argument('circuit_json');parser.add_argument('copper_audit');parser.add_argument('output_json');parser.add_argument('nets',nargs='+')
     parser.add_argument('--reserve-proposals',action='append',default=[])
     parser.add_argument('--grid-mm',type=float,choices=(0.05,0.1),default=0.1)
+    parser.add_argument('--copper-reserve-mm',type=float,help='Extra geometric reserve beyond the unchanged required clearance')
     parser.add_argument('--ports',nargs='+',help='Restrict repairs to these numbered pad selectors')
-    args=parser.parse_args();circuit=json.loads(Path(args.circuit_json).read_text());physical=json.loads(Path(args.copper_audit).read_text());planner=Planner(circuit)
+    args=parser.parse_args();circuit=json.loads(Path(args.circuit_json).read_text());physical=json.loads(Path(args.copper_audit).read_text())
+    reserved=[json.loads(Path(path).read_text()) for path in args.reserve_proposals]
+    manual=json.loads(Path('src/board/manual-signal-paths.json').read_text())['paths']
+    names={f"MANUAL_{manual[index]['net']}_{index}" for proposal in reserved
+           for index in proposal.get('retired_manual_path_indices',[])}
+    sources={r['source_trace_id']:r for r in circuit if r['type']=='source_trace'}
+    retired={r['pcb_trace_id']:{layer:None for layer in ('top','bottom','inner1','inner2')}
+             for r in circuit if r['type']=='pcb_trace' and sources[r['source_trace_id']].get('name') in names}
+    if len(retired)!=len(names):raise ValueError('Every retirement must identify a real native path')
+    for proposal in reserved:
+        for item in proposal.get('retired_replay_connections',[]):
+            trace_id=item['original_pcb_trace_id']
+            if not any(record.get('pcb_trace_id')==trace_id for record in circuit):
+                raise ValueError('Cached retirement must identify a real native trace')
+            retired[trace_id]={layer:None for layer in ('top','bottom','inner1','inner2')}
+    retired_features={item for proposal in reserved for key in ('retired_native_vias','retired_authored_vias','retired_authored_regions') for item in proposal.get(key,[])}
+    for proposal in reserved:
+        for item in proposal.get('retired_inner_escapes',[]):
+            retired[item['original_pcb_trace_id']]={layer:None for layer in ('top','bottom','inner1','inner2')}
+            retired_features.add(item['retired_via_id'])
+        for trace_id in proposal.get('retired_authored_traces',[]):
+            retired[trace_id]={layer:None for layer in ('top','bottom','inner1','inner2')}
+    planner=Planner(circuit,{'relocated_trace_layers':retired,'retired_feature_ids':retired_features})
     planner.set_grid(args.grid_mm)
-    for path in args.reserve_proposals:
-        planner.reserve_proposals(json.loads(Path(path).read_text()))
+    if args.copper_reserve_mm is not None:
+        planner.set_copper_reserve(args.copper_reserve_mm)
     nets={r['name']:r for r in circuit if r['type']=='source_net'}
+    # Preserve nominal strip widths when the native pour engine regenerates
+    # around a new trace. Pad/trace clearance requirements remain unchanged.
+    extra=max(0,.27-planner.copper_clearance)
+    for record in circuit:
+        if record['type']!='pcb_copper_pour' or record['pcb_copper_pour_id'] in retired_features or planner.root(record['source_net_id']) in planner.reflow_ground_roots:continue
+        brep=record['brep_shape'];shape=Polygon([(p['x'],p['y']) for p in brep['outer_ring']['vertices']],
+            [[(p['x'],p['y']) for p in ring['vertices']] for ring in brep['inner_rings']])
+        planner.copper.append((planner.root(record['source_net_id']),record['layer'],shape.buffer(extra)))
+    for proposal in reserved:
+        planner.reserve_proposals(proposal)
+        for region in proposal.get('pours',[]):
+            shape=Polygon([(p['x'],p['y']) for p in region['outline']])
+            planner.copper.append((planner.root(nets[region['net']]['source_net_id']),region['layer'],shape.buffer(extra)))
     paths,unresolved=[],[]
     for name in args.nets:
         root=planner.root(nets[name]['source_net_id']);islands={}

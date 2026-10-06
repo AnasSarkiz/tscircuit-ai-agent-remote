@@ -39,6 +39,21 @@ const views = [
   },
   { name: "microphones", layer: "top", viewport: { minX: 7, minY: -32, maxX: 24, maxY: -6 } },
   {
+    name: "left-microphone",
+    layer: "top",
+    viewport: { minX: -19, minY: -31, maxX: -12, maxY: -24 },
+  },
+  {
+    name: "charger-vbus-necks",
+    layer: "top",
+    viewport: { minX: -13, minY: -26, maxX: -6, maxY: -19 },
+  },
+  {
+    name: "speaker-output",
+    layer: "top",
+    viewport: { minX: -23, minY: 4, maxX: -10, maxY: 12 },
+  },
+  {
     name: "display-backlight",
     layer: "top",
     viewport: { minX: -3, minY: -26, maxX: 24, maxY: 20 },
