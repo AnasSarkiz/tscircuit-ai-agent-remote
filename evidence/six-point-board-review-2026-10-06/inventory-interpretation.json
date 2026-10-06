@@ -1,0 +1,15 @@
+{
+  "source_native_sha256": "8a68235d7b446165de53665adb2e53ca971e7e179969c2eb07c1e1185b140042",
+  "parts_checked": 43,
+  "exact_mpn_matches": 43,
+  "reported_stock_covers_one_board": 42,
+  "zero_reported_stock": [
+    "C160405"
+  ],
+  "positive_stock_with_zero_canPresaleNumber": [
+    "C2913201",
+    "C94934",
+    "C54313"
+  ],
+  "scope": "The retained raw field is canPresaleNumber, not a verified assembler allocation. Historical normalized available_to_buy fields are a conservative interpretation, not proof that positive stocked parts are unavailable. No assembly reservation or supplier rotations are confirmed."
+}

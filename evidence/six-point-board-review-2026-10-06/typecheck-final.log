@@ -1,0 +1,5 @@
+$ tsc --noEmit
+src/board/ManualInnerSignalCopper.tsx(62,13): error TS2322: Type '{ key: string; name: string; connectsTo: string; layer: "inner1" | "inner2"; outline: { x: number; y: number; }[]; clearance: number; cutoutMargin: number; boardEdgeMargin: number; coveredWithSolderMask: true; useThermalReliefs: false; }' is not assignable to type 'CopperPourProps'.
+  Property 'key' does not exist on type 'CopperPourProps'.
+src/board/ManualInnerSignalCopper.tsx(77,11): error TS2322: Type '{ key: number; name: string; connectsTo: string; pcbX: number; pcbY: number; holeDiameter: 0.3; outerDiameter: 0.45; fromLayer: "top"; toLayer: "bottom"; tented: true; }' is not assignable to type 'ViaProps'.
+  Property 'key' does not exist on type 'ViaProps'.

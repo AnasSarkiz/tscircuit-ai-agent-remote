@@ -43,6 +43,16 @@ class ManualSignalGridTests(unittest.TestCase):
         self.assertTrue(exits)
         self.assertTrue(all(not LineString(route).intersects(obstacle) for _, route in exits))
 
+    def test_escape_mask_rejects_unreachable_ordinary_via_exits(self):
+        planner = self.planner()
+        allowed = np.zeros(planner.grid_x.shape,dtype=bool)
+        allowed |= (planner.grid_x > 1.8) & (abs(planner.grid_y) < .1)
+        exits = planner.grid_escape((-1,0), (box(10,10,11,11),box(12,12,13,13),allowed))
+        self.assertTrue(exits)
+        self.assertTrue(all(position[0]>1.8 for position,route in exits))
+        with self.assertRaises(ValueError):
+            planner.grid_escape((-1,0), (box(10,10,11,11),box(12,12,13,13),np.zeros((2,2),dtype=bool)))
+
     def test_diagonal_contact_does_not_connect_free_grid_components(self):
         labels = helpers['connected_grid_labels'](np.array([[False, True], [True, False]]))
         self.assertNotEqual(labels[0, 0], labels[1, 1])

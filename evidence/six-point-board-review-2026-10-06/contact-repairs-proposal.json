@@ -1,0 +1,161 @@
+{
+  "classification": "authored contact repairs; native replay required",
+  "vias": [
+    {
+      "net": "MIC_INPUT",
+      "x": 16.5,
+      "y": -13.7,
+      "outer_mm": 0.45,
+      "hole_mm": 0.3,
+      "classification": "manual native full-span contact repair"
+    },
+    {
+      "net": "MIC_INPUT",
+      "x": 14.700000000000557,
+      "y": -17.29999999999979,
+      "outer_mm": 0.45,
+      "hole_mm": 0.3,
+      "classification": "manual native full-span contact repair"
+    }
+  ],
+  "pours": [
+    {
+      "net": "MIC_WS",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          14.3,
+          -27.5
+        ],
+        [
+          14.400000000000553,
+          -26.499999999999922
+        ],
+        [
+          14.966125,
+          -24.85
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 14.299501,
+          "y": -26.48995
+        },
+        {
+          "x": 14.301327,
+          "y": -26.478443
+        },
+        {
+          "x": 14.304467,
+          "y": -26.467222
+        },
+        {
+          "x": 14.870592,
+          "y": -24.817222
+        },
+        {
+          "x": 15.061658,
+          "y": -24.882778
+        },
+        {
+          "x": 14.499334,
+          "y": -26.521702
+        },
+        {
+          "x": 14.400499,
+          "y": -27.51005
+        },
+        {
+          "x": 14.199501,
+          "y": -27.48995
+        }
+      ],
+      "classification": "manual native restored low-current terminal contact"
+    },
+    {
+      "net": "MIC_INPUT",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          16.5,
+          -13.7
+        ],
+        [
+          14.700000000000557,
+          -17.29999999999979
+        ]
+      ],
+      "nominal_width_mm": 0.3,
+      "drawn_width_mm": 0.302,
+      "outline": [
+        {
+          "x": 14.835059,
+          "y": -17.367529
+        },
+        {
+          "x": 14.564941,
+          "y": -17.232471
+        },
+        {
+          "x": 16.364941,
+          "y": -13.632471
+        },
+        {
+          "x": 16.635059,
+          "y": -13.767529
+        }
+      ],
+      "classification": "manual native restored low-current terminal contact"
+    },
+    {
+      "net": "MIC_INPUT",
+      "layer": "inner1",
+      "path_mm": [
+        [
+          14.700000000000557,
+          -17.29999999999979
+        ],
+        [
+          15.1,
+          -21.95
+        ]
+      ],
+      "nominal_width_mm": 0.3,
+      "drawn_width_mm": 0.302,
+      "outline": [
+        {
+          "x": 15.250444,
+          "y": -21.937059
+        },
+        {
+          "x": 14.949556,
+          "y": -21.962941
+        },
+        {
+          "x": 14.549556,
+          "y": -17.312941
+        },
+        {
+          "x": 14.850444,
+          "y": -17.287059
+        }
+      ],
+      "classification": "manual native restored low-current terminal contact"
+    }
+  ],
+  "unresolved": [],
+  "TP1_move": {
+    "from": [
+      -17,
+      10.8
+    ],
+    "to": [
+      -22.2,
+      12.3
+    ],
+    "pad_diameter_mm": 1,
+    "scope": "Native test pad only, wholly in measured main top GND island with a nonzero contact and clearance to pads/drills"
+  }
+}

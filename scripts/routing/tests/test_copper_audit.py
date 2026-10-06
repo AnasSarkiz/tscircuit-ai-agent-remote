@@ -31,6 +31,17 @@ def trace(layer):
 
 
 class CopperAuditTests(unittest.TestCase):
+    def test_requested_through_via_meets_published_jlc_via_dimensions(self):
+        via = {'type': 'pcb_via', 'pcb_via_id': 'requested_via', 'source_net_id': 'net_a',
+               'x': 0, 'y': 2, 'hole_diameter': .3, 'outer_diameter': .45,
+               'layers': ['top', 'inner1', 'inner2', 'bottom']}
+        result = AUDIT(fixture() + [trace('top'), via])
+        self.assertTrue(result['zero_drc_zero_shorts_and_connected'])
+        via['outer_diameter'] = .44
+        result = AUDIT(fixture() + [trace('top'), via])
+        self.assertTrue(any(issue['category'] == 'via_annulus' for issue in result['violations']))
+        self.assertFalse(result['zero_drc_zero_shorts_and_connected'])
+
     def test_a_partial_layer_via_is_not_qualified_for_the_standard_stack(self):
         records = fixture() + [{'type': 'pcb_via', 'pcb_via_id': 'partial_via', 'source_net_id': 'net_a',
             'x': 0, 'y': 2, 'hole_diameter': .3, 'outer_diameter': .7, 'layers': ['top', 'inner1', 'inner2']}]

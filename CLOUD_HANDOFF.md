@@ -1,3 +1,23 @@
+## Current six-point review — 2026-10-06
+
+**0.0.5-wip-style-vias-power — NOT READY TO ORDER.** This entry supersedes the older counts and status below.
+
+J1 now uses the requested native USB-C schematic symbol while preserving its numbered contacts, supplier identity, physical footprint and models. CLI schematic-placement analysis reports zero issues. The actual UI analysis was invoked but its external analysis module failed to load; this is a blocked check, not a passing result.
+
+The clarified high-current requirement is implemented: all 80 authored high-current trunks and 59 audited native high-current traces use top/bottom copper. Six low-current pull-up/control/probe branches have separate documented requirements. All 217 vias physically span all four layers, with exactly 0.30 mm holes and 0.45 mm pads; blind/buried vias are explicitly disabled. All 151 native supply/control and relocated signal regions meet their nominal widths.
+
+The supported frozen-install CLI build completes in 247.03 seconds and exits 1 with **89 real open-port errors**. Native output contains 328 traces, 217 vias and 183 pours. The independent geometry audit measures zero shorts and zero clearance violations, preserves all 8,146 previously connected port pairs, and still finds **25 physically open nets**. All 125 purchased component footprints, poses and models are unchanged. TP1 moves to (-22.2, 12.3) mm inside the main ground island. The five source checks, copper-free placement build, TypeScript, formatting and 64 routing regressions pass. Board tests report 48 pass / 2 fail (fabrication and strict native schema).
+
+Official exact-part JLCPCB pages cover all 43 identities / 125 placements: 42 identities report enough total stock for one board; **J6 C160405 reports zero stock**. Positive stock for U1, D2 and U16 does not qualify assembly allocation. No stock reservation or assembler rotation approval is claimed.
+
+Remaining fabrication blockers include unresolved J3 numbered outer polarity and J7 FPC mating, incomplete connections, 169 strict native-schema failures, missing pill-pad paste, unsupported polygon Gerber shorts/export, two regulator switching routes with 0.275 mm necks below their explicit 1.0 mm source requirement, 55 nominal-net-width branches requiring load review, and supplier rotations/current/stackup/signal-integrity/mechanical qualification. The standard JST programmer needs the documented adapter; direct connector mating and hardware operation are untested.
+
+The supported source snapshot comparison completes in 61.13 seconds and fails on PCB and schematic differences; committed references are retained. All 26 native A4 pages, four copper layers, mask/paste and critical zooms were inspected. Native component guides cover all 135 references with valid annotation schema. Final component inventory confirms 32 missing pill-pad paste records on U16/U27.
+
+[Full review and actual receipts](evidence/six-point-board-review-2026-10-06/review.md). Publication is recorded independently; native preview availability does not establish passing cloud CI or fabrication approval. No order or physical test has been performed.
+
+---
+
 ## Schematic component explanations — 2026-10-06
 
 Public version0.0.4-wip-schematic-notes is verified:120/120exact files,

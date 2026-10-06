@@ -155,8 +155,12 @@ def audit(circuit):
             contour = Point(position(record)).buffer(record['outer_diameter']/2, quad_segs=128)
             copper_record({'id': identifier, 'kind': 'via', 'root': root, 'layers': record['layers'], 'shape': contour, 'clearance_shape': contour})
             drills.append({'id': identifier, 'shape': drill_contour(record), 'root': root, 'plated': True})
-            for category, gap, minimum in [('via_hole', record['hole_diameter'], .3), ('via_outer', record['outer_diameter'], .7),
-                                            ('via_annulus', (record['outer_diameter']-record['hole_diameter'])/2, .2)]:
+            # User's 2026-10-06 geometry requirement: 0.30 drill / 0.45 pad.
+            # JLCPCB's official "Min. Via hole size/diameter" capability says
+            # pad diameter >= drill + 0.10 mm (0.15 mm preferred). PTH land
+            # annular-ring rules are separate from ordinary via requirements.
+            for category, gap, minimum in [('via_hole', record['hole_diameter'], .3), ('via_outer', record['outer_diameter'], .45),
+                                            ('via_annulus', (record['outer_diameter']-record['hole_diameter'])/2, .075)]:
                 measure(category, gap, minimum, [identifier])
         elif ty == 'pcb_hole':
             drills.append({'id': record['pcb_hole_id'], 'shape': drill_contour(record), 'root': None, 'plated': False})

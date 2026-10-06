@@ -2,6 +2,7 @@ import { describe, expect, test } from "bun:test"
 import { readFileSync } from "node:fs"
 import { any_circuit_element } from "circuit-json"
 import { z } from "zod"
+import { viaPadDiameterMm } from "../src/board/viaGeometry"
 
 const rawElements = z
   .array(z.object({ type: z.string() }).passthrough())
@@ -62,8 +63,8 @@ describe("Native A4 board boundaries and fabrication gate", () => {
     const wrapperSchema = z.object({
       source_component_id: z.string(),
       center: z.object({ x: z.number(), y: z.number() }),
-      width: z.number().min(0.7),
-      height: z.number().min(0.7),
+      width: z.literal(viaPadDiameterMm),
+      height: z.literal(viaPadDiameterMm),
     })
     for (const rawWrapper of wrappers) {
       const wrapper = wrapperSchema.parse(rawWrapper)

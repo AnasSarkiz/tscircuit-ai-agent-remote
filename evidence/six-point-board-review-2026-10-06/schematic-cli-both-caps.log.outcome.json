@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/tsci",
+    "check",
+    "schematic-placement",
+    "evidence/six-point-board-review-2026-10-06/style-input/circuit.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 3.0,
+  "peak_process_group_rss_bytes": 758394880,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -47,7 +47,7 @@ def main():
     vias, unresolved = [], []
     for group, shapes in islands.items():
         island = unary_union(shapes)
-        obstacles = helpers['via_obstacles'](planner, root)
+        obstacles = helpers['via_obstacles'](planner, {'root': root})
         min_x, min_y, max_x, max_y = island.bounds
         candidates = [(float(x), float(y)) for x in np.arange(min_x, max_x, .1) for y in np.arange(min_y, max_y, .1)]
         candidates.sort(key=lambda p: Point(p).distance(island.representative_point()))

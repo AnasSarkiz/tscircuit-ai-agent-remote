@@ -1,0 +1,207 @@
+Building 1 file(s)...
+Building placement.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/placement/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "S" prefix is being used with a <chip />, try using it with a <switch /> or <pushbutton />
+U1 has no pin with requires_power=true
+Port B8 on J1 is missing a trace
+Port A8 on J1 is missing a trace
+D2 has no pin with requires_power=true
+J6 has no pin with requires_power=true
+J6 has no pin with requires_ground=true
+All pins on J6 are underspecified (no pinAttributes set)
+U16 has no pin with requires_power=true
+J3 has no pin with requires_power=true
+J3 has no pin with requires_ground=true
+All pins on J3 are underspecified (no pinAttributes set)
+U13 has no pin with requires_power=true
+J7 has no pin with requires_power=true
+J7 has no pin with requires_ground=true
+All pins on J7 are underspecified (no pinAttributes set)
+Q1 has no pin with requires_power=true
+Q1 has no pin with requires_ground=true
+All pins on Q1 are underspecified (no pinAttributes set)
+Q2 has no pin with requires_power=true
+Q2 has no pin with requires_ground=true
+All pins on Q2 are underspecified (no pinAttributes set)
+J4 has no pin with requires_power=true
+J4 has no pin with requires_ground=true
+All pins on J4 are underspecified (no pinAttributes set)
+U22 has no pin with requires_power=true
+Q9 has no pin with requires_power=true
+Q9 has no pin with requires_ground=true
+All pins on Q9 are underspecified (no pinAttributes set)
+U23 has no pin with requires_power=true
+SW5 has no pin with requires_power=true
+SW5 has no pin with requires_ground=true
+All pins on SW5 are underspecified (no pinAttributes set)
+J6 is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J3 is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J4 is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+TP_MOTOR_P has no courtyard
+TP_MOTOR_N has no courtyard
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+TP7 has no courtyard
+TP8 has no courtyard
+<testpoint#1389(.ControlsSheet-group>.TP_MOTOR_P) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1395(.ControlsSheet-group>.TP_MOTOR_N) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1502(.test-access-group>.TP1) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1508(.test-access-group>.TP2) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1514(.test-access-group>.TP3) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1520(.test-access-group>.TP4) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1526(.test-access-group>.TP5) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1532(.test-access-group>.TP6) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1538(.test-access-group>.TP7) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1544(.test-access-group>.TP8) /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+Failed to fetch supplier footprint for <chip#78(.mcu-usb-review-group>.U1) /> (jlcpcb:C2913201): EasyEDA API rate limit exceeded while searching for "C2913201" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#137(.mcu-usb-review-group>.D2) /> (jlcpcb:C94934): EasyEDA API rate limit exceeded while searching for "C94934" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#138(.mcu-usb-review-group>.U12) /> (jlcpcb:C485802): EasyEDA API rate limit exceeded while searching for "C485802" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <connector#120(.mcu-usb-review-group>.J1) /> (jlcpcb:C165948): EasyEDA API rate limit exceeded while searching for "C165948" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#155(.mcu-usb-review-group>.J6) /> (jlcpcb:C160405): EasyEDA API rate limit exceeded while searching for "C160405" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#204(.mcu-usb-review-group>.R32) /> (jlcpcb:C107701): EasyEDA API rate limit exceeded while searching for "C107701" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#226(.mcu-usb-review-group>.R34) /> (jlcpcb:C105580): EasyEDA API rate limit exceeded while searching for "C105580" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#248(.mcu-usb-review-group>.R36) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#254(.mcu-usb-review-group>.R38) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#265(.mcu-usb-review-group>.C30) /> (jlcpcb:C84419): EasyEDA API rate limit exceeded while searching for "C84419" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#268(.mcu-usb-review-group>.C31) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#351(.ChargerSheet-group>.U16) /> (jlcpcb:C54313): EasyEDA API rate limit exceeded while searching for "C54313" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#376(.ChargerSheet-group>.C2) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#379(.ChargerSheet-group>.C3) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#382(.ChargerSheet-group>.R1) /> (jlcpcb:C126358): EasyEDA API rate limit exceeded while searching for "C126358" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#385(.ChargerSheet-group>.R2) /> (jlcpcb:C126358): EasyEDA API rate limit exceeded while searching for "C126358" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#391(.ChargerSheet-group>.R4) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#441(.regulator-review>.C4) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#444(.regulator-review>.C5) /> (jlcpcb:C84419): EasyEDA API rate limit exceeded while searching for "C84419" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#458(.regulator-review>.R6) /> (jlcpcb:C114639): EasyEDA API rate limit exceeded while searching for "C114639" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#495(.display-logic-review-group>.U13) /> (jlcpcb:C2869847): EasyEDA API rate limit exceeded while searching for "C2869847" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#521(.display-logic-review-group>.U14) /> (jlcpcb:C7848): EasyEDA API rate limit exceeded while searching for "C7848" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#661(.display-logic-review-group>.C41) /> (jlcpcb:C84419): EasyEDA API rate limit exceeded while searching for "C84419" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#667(.display-logic-review-group>.C43) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#670(.display-logic-review-group>.R40) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#756(.display-logic-review-group>.R42) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#768(.display-logic-review-group>.R43) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#777(.display-logic-review-group>.R49) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#193(.mcu-usb-review-group>.R31) /> (jlcpcb:C107701): EasyEDA API rate limit exceeded while searching for "C107701" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#215(.mcu-usb-review-group>.R33) /> (jlcpcb:C105580): EasyEDA API rate limit exceeded while searching for "C105580" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#237(.mcu-usb-review-group>.R35) /> (jlcpcb:C99782): EasyEDA API rate limit exceeded while searching for "C99782" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#251(.mcu-usb-review-group>.R37) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#271(.mcu-usb-review-group>.C32) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#369(.ChargerSheet-group>.J3) /> (jlcpcb:C157929): EasyEDA API rate limit exceeded while searching for "C157929" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#373(.ChargerSheet-group>.C1) /> (jlcpcb:C19666): EasyEDA API rate limit exceeded while searching for "C19666" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#388(.ChargerSheet-group>.R3) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#427(.regulator-review>.U2) /> (jlcpcb:C2845237): EasyEDA API rate limit exceeded while searching for "C2845237" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <inductor#438(.regulator-review>.L1) /> (jlcpcb:C668312): EasyEDA API rate limit exceeded while searching for "C668312" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#447(.regulator-review>.R5) /> (jlcpcb:C364359): EasyEDA API rate limit exceeded while searching for "C364359" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#469(.regulator-review>.R7) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#605(.display-logic-review-group>.J7) /> (jlcpcb:C262650): EasyEDA API rate limit exceeded while searching for "C262650" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#658(.display-logic-review-group>.C40) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#664(.display-logic-review-group>.C42) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#673(.display-logic-review-group>.R41) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#753(.display-logic-review-group>.R47) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#765(.display-logic-review-group>.R48) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#780(.display-logic-review-group>.R44) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#789(.display-logic-review-group>.R50) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#816(.speaker-amplifier-review-group>.U3) /> (jlcpcb:C910544): EasyEDA API rate limit exceeded while searching for "C910544" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#792(.display-logic-review-group>.R45) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#801(.display-logic-review-group>.R51) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#804(.display-logic-review-group>.R46) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#834(.speaker-amplifier-review-group>.Q1) /> (jlcpcb:C20917): EasyEDA API rate limit exceeded while searching for "C20917" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#836(.speaker-amplifier-review-group>.J4) /> (jlcpcb:C173752): EasyEDA API rate limit exceeded while searching for "C173752" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#842(.speaker-amplifier-review-group>.C51) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#848(.speaker-amplifier-review-group>.R61) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#851(.speaker-amplifier-review-group>.R62) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#862(.speaker-amplifier-review-group>.R63) /> (jlcpcb:C22775): EasyEDA API rate limit exceeded while searching for "C22775" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#865(.speaker-amplifier-review-group>.R64) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#908(.speaker-amplifier-review-group>.R65) /> (jlcpcb:C107701): EasyEDA API rate limit exceeded while searching for "C107701" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#919(.speaker-amplifier-review-group>.R68) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#938(.speaker-amplifier-review-group>.R69) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#946(.speaker-amplifier-review-group>.R67) /> (jlcpcb:C107701): EasyEDA API rate limit exceeded while searching for "C107701" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#957(.speaker-amplifier-review-group>.R70) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#968(.haptic-driver-review-group>.U22) /> (jlcpcb:C963429): EasyEDA API rate limit exceeded while searching for "C963429" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#996(.haptic-driver-review-group>.Q9) /> (jlcpcb:C20917): EasyEDA API rate limit exceeded while searching for "C20917" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1009(.haptic-driver-review-group>.C71) /> (jlcpcb:C84419): EasyEDA API rate limit exceeded while searching for "C84419" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1012(.haptic-driver-review-group>.C72) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1015(.haptic-driver-review-group>.R82) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1026(.haptic-driver-review-group>.R83) /> (jlcpcb:C22775): EasyEDA API rate limit exceeded while searching for "C22775" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1029(.haptic-driver-review-group>.R84) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1032(.haptic-driver-review-group>.R85) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1122(.mic-regulated-clock-review-group>.C74) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1142(.mic-regulated-clock-review-group>.R88) /> (jlcpcb:C22775): EasyEDA API rate limit exceeded while searching for "C22775" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1154(.mic-regulated-clock-review-group>.R92) /> (jlcpcb:C105881): EasyEDA API rate limit exceeded while searching for "C105881" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1179(.mic-regulated-clock-review-group>.R95) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1221(.hold-readback-review-group>.U26) /> (jlcpcb:C7836): EasyEDA API rate limit exceeded while searching for "C7836" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1264(.battery-ready-review-group>.R96) /> (jlcpcb:C114622): EasyEDA API rate limit exceeded while searching for "C114622" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1267(.battery-ready-review-group>.R97) /> (jlcpcb:C114622): EasyEDA API rate limit exceeded while searching for "C114622" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1270(.battery-ready-review-group>.C76) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1273(.battery-ready-review-group>.C77) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1292(.MicrophonesSheet-group>.U4) /> (jlcpcb:C5656610): EasyEDA API rate limit exceeded while searching for "C5656610" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1306(.MicrophonesSheet-group>.C80) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#835(.speaker-amplifier-review-group>.Q2) /> (jlcpcb:C15127): EasyEDA API rate limit exceeded while searching for "C15127" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#839(.speaker-amplifier-review-group>.C50) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#845(.speaker-amplifier-review-group>.R60) /> (jlcpcb:C22775): EasyEDA API rate limit exceeded while searching for "C22775" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#927(.speaker-amplifier-review-group>.R66) /> (jlcpcb:C107701): EasyEDA API rate limit exceeded while searching for "C107701" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <diode#997(.haptic-driver-review-group>.D3) /> (jlcpcb:C2480): EasyEDA API rate limit exceeded while searching for "C2480" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1006(.haptic-driver-review-group>.C70) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1061(.mic-regulated-clock-review-group>.U23) /> (jlcpcb:C2869847): EasyEDA API rate limit exceeded while searching for "C2869847" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1087(.mic-regulated-clock-review-group>.U24) /> (jlcpcb:C24478): EasyEDA API rate limit exceeded while searching for "C24478" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1119(.mic-regulated-clock-review-group>.C73) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1125(.mic-regulated-clock-review-group>.C75) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1128(.mic-regulated-clock-review-group>.R86) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1139(.mic-regulated-clock-review-group>.R87) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1145(.mic-regulated-clock-review-group>.R89) /> (jlcpcb:C22775): EasyEDA API rate limit exceeded while searching for "C22775" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1148(.mic-regulated-clock-review-group>.R90) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1151(.mic-regulated-clock-review-group>.R91) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1165(.mic-regulated-clock-review-group>.R93) /> (jlcpcb:C105881): EasyEDA API rate limit exceeded while searching for "C105881" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1176(.mic-regulated-clock-review-group>.R94) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1227(.hold-readback-review-group>.R99) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1230(.hold-readback-review-group>.R100) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1241(.hold-readback-review-group>.C78) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1257(.battery-ready-review-group>.U25) /> (jlcpcb:C43698): EasyEDA API rate limit exceeded while searching for "C43698" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1299(.MicrophonesSheet-group>.U5) /> (jlcpcb:C5656610): EasyEDA API rate limit exceeded while searching for "C5656610" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1309(.MicrophonesSheet-group>.C81) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1313(.MicrophonesSheet-group>.R26) /> (jlcpcb:C14675): EasyEDA API rate limit exceeded while searching for "C14675" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1327(.MicrophonesSheet-group>.R29) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1330(.MicrophonesSheet-group>.R30) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1333(.MicrophonesSheet-group>.C25) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1336(.MicrophonesSheet-group>.C26) /> (jlcpcb:C45000): EasyEDA API rate limit exceeded while searching for "C45000" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <pushbutton#1378(.ControlsSheet-group>.SW1) /> (jlcpcb:C255576): EasyEDA API rate limit exceeded while searching for "C255576" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <pushbutton#1381(.ControlsSheet-group>.SW2) /> (jlcpcb:C255576): EasyEDA API rate limit exceeded while searching for "C255576" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1416(.BacklightSheet-group>.U27) /> (jlcpcb:C1848364): EasyEDA API rate limit exceeded while searching for "C1848364" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1437(.BacklightSheet-group>.R103) /> (jlcpcb:C22775): EasyEDA API rate limit exceeded while searching for "C22775" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1440(.BacklightSheet-group>.R104) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1446(.BacklightSheet-group>.C83) /> (jlcpcb:C15849): EasyEDA API rate limit exceeded while searching for "C15849" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1312(.MicrophonesSheet-group>.U7) /> (jlcpcb:C105188): EasyEDA API rate limit exceeded while searching for "C105188" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1316(.MicrophonesSheet-group>.R27) /> (jlcpcb:C21190): EasyEDA API rate limit exceeded while searching for "C21190" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <pushbutton#1375(.ControlsSheet-group>.SW4) /> (jlcpcb:C255576): EasyEDA API rate limit exceeded while searching for "C255576" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <chip#1384(.ControlsSheet-group>.SW5) /> (jlcpcb:C431540): EasyEDA API rate limit exceeded while searching for "C431540" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <resistor#1434(.BacklightSheet-group>.R102) /> (jlcpcb:C98220): EasyEDA API rate limit exceeded while searching for "C98220" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1443(.BacklightSheet-group>.C82) /> (jlcpcb:C15849): EasyEDA API rate limit exceeded while searching for "C15849" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1449(.BacklightSheet-group>.C84) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Failed to fetch supplier footprint for <capacitor#1452(.BacklightSheet-group>.C85) /> (jlcpcb:C90053): EasyEDA API rate limit exceeded while searching for "C90053" (HTTP 403). EasyEDA rate-limits by IP — the part number is likely fine. Wait ~2 minutes and try again.
+Generating preview images...
+[placement] Generating PCB SVG...
+[placement] Written pcb.svg
+[placement] Generating PCB PNG...
+[placement] Written pcb.png
+[placement] Generating schematic SVG...
+[placement] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

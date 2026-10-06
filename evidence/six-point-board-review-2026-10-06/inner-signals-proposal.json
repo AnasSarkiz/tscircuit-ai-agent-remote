@@ -1,0 +1,5096 @@
+{
+  "classification": "authored native inner signal regions and unchanged pad escapes; not solver output",
+  "original_source_sha256": "851d21d234cf313994798a155ed84c1e3df67c5b3bcb76ab94d6729238aa2987",
+  "paths": [
+    {
+      "original_path_index": 3,
+      "net": "BUCK_ENABLE",
+      "from": ".U2 > .pin1",
+      "to": ".C77 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U2 > .pin1",
+          "to": "net.BUCK_ENABLE",
+          "pcbPathRelativeTo": ".U2 > .pin1",
+          "pcbPath": [
+            {
+              "x": -1.700043,
+              "y": 0.999998
+            },
+            {
+              "x": -1.700043,
+              "y": 0.999998,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -1.700043,
+              "y": 0.999998
+            }
+          ]
+        },
+        {
+          "from": ".C77 > .pin1",
+          "to": "net.BUCK_ENABLE",
+          "pcbPathRelativeTo": ".U2 > .pin1",
+          "pcbPath": [
+            {
+              "x": -2.700024,
+              "y": -6.0
+            },
+            {
+              "x": -2.700024,
+              "y": -6.0
+            },
+            {
+              "x": -2.700024,
+              "y": -6.0,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -2.700024,
+              "y": -6.0
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "BUCK_ENABLE",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -4.700043,
+            -15.000002
+          ],
+          [
+            -3.9999999999997087,
+            -16.899999999999785
+          ],
+          [
+            -3.9999999999997087,
+            -18.299999999999805
+          ],
+          [
+            -4.499999999999716,
+            -18.69999999999981
+          ],
+          [
+            -5.199999999999726,
+            -18.59999999999981
+          ],
+          [
+            -10.3999999999998,
+            -12.499999999999723
+          ],
+          [
+            -13.099999999999838,
+            -11.199999999999704
+          ],
+          [
+            -13.699999999999847,
+            -11.499999999999709
+          ],
+          [
+            -13.799999999999848,
+            -12.099999999999717
+          ],
+          [
+            -13.499999999999844,
+            -13.799999999999741
+          ],
+          [
+            -5.799999999999734,
+            -21.699999999999854
+          ],
+          [
+            -5.700024,
+            -22.0
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -3.899,
+            "y": -16.881985
+          },
+          {
+            "x": -3.899,
+            "y": -18.348543
+          },
+          {
+            "x": -4.471027,
+            "y": -18.806164
+          },
+          {
+            "x": -5.252088,
+            "y": -18.694584
+          },
+          {
+            "x": -10.463029,
+            "y": -12.58175
+          },
+          {
+            "x": -13.09916,
+            "y": -11.312502
+          },
+          {
+            "x": -13.60883,
+            "y": -11.567336
+          },
+          {
+            "x": -13.697526,
+            "y": -12.099512
+          },
+          {
+            "x": -13.405946,
+            "y": -13.751794
+          },
+          {
+            "x": -5.711504,
+            "y": -21.646092
+          },
+          {
+            "x": -5.604205,
+            "y": -21.968068
+          },
+          {
+            "x": -5.795843,
+            "y": -22.031932
+          },
+          {
+            "x": -5.888496,
+            "y": -21.753908
+          },
+          {
+            "x": -13.594054,
+            "y": -13.848206
+          },
+          {
+            "x": -13.902474,
+            "y": -12.100488
+          },
+          {
+            "x": -13.79117,
+            "y": -11.432664
+          },
+          {
+            "x": -13.10084,
+            "y": -11.087498
+          },
+          {
+            "x": -10.336971,
+            "y": -12.41825
+          },
+          {
+            "x": -5.147912,
+            "y": -18.505416
+          },
+          {
+            "x": -4.528973,
+            "y": -18.593836
+          },
+          {
+            "x": -4.101,
+            "y": -18.251457
+          },
+          {
+            "x": -4.101,
+            "y": -16.918015
+          },
+          {
+            "x": -4.794815,
+            "y": -15.03492
+          },
+          {
+            "x": -4.605271,
+            "y": -14.965084
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 4,
+      "net": "CHARGER_ISET",
+      "from": ".U16 > .pin16",
+      "to": ".R1 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U16 > .pin16",
+          "to": "net.CHARGER_ISET",
+          "pcbPathRelativeTo": ".U16 > .pin16",
+          "pcbPath": [
+            {
+              "x": -1.26955,
+              "y": 1.799997
+            },
+            {
+              "x": -1.26955,
+              "y": 1.799997,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -1.26955,
+              "y": 1.799997
+            }
+          ]
+        },
+        {
+          "from": ".R1 > .pin1",
+          "to": "net.CHARGER_ISET",
+          "pcbPathRelativeTo": ".U16 > .pin16",
+          "pcbPath": [
+            {
+              "x": -4.753364,
+              "y": -2.2
+            },
+            {
+              "x": -4.753364,
+              "y": -2.2
+            },
+            {
+              "x": -4.753364,
+              "y": -2.2,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -4.753364,
+              "y": -2.2
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "CHARGER_ISET",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -9.26955,
+            -24.200003
+          ],
+          [
+            -12.699999999999832,
+            -27.199999999999932
+          ],
+          [
+            -12.753364,
+            -28.2
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -12.601416,
+            "y": -27.24796
+          },
+          {
+            "x": -12.652508,
+            "y": -28.205382
+          },
+          {
+            "x": -12.85422,
+            "y": -28.194618
+          },
+          {
+            "x": -12.798584,
+            "y": -27.15204
+          },
+          {
+            "x": -9.336038,
+            "y": -24.123975
+          },
+          {
+            "x": -9.203062,
+            "y": -24.276031
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 8,
+      "net": "MCU_EN",
+      "from": ".U1 > .pin3",
+      "to": ".SW2 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin3",
+          "to": "net.MCU_EN",
+          "pcbPathRelativeTo": ".U1 > .pin3",
+          "pcbPath": [
+            {
+              "x": -7.550046,
+              "y": 6.504953
+            },
+            {
+              "x": -7.550046,
+              "y": 6.504953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -7.550046,
+              "y": 6.504953
+            }
+          ]
+        },
+        {
+          "from": ".SW2 > .pin1",
+          "to": "net.MCU_EN",
+          "pcbPathRelativeTo": ".U1 > .pin3",
+          "pcbPath": [
+            {
+              "x": 17.649508,
+              "y": 5.875456
+            },
+            {
+              "x": 17.649508,
+              "y": 5.875456
+            },
+            {
+              "x": 17.649508,
+              "y": 5.875456,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 17.649508,
+              "y": 5.875456
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_EN",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -19.550046,
+            28.629497
+          ],
+          [
+            3.6000000000003993,
+            27.80000000000085
+          ],
+          [
+            5.649508,
+            28.0
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": 3.59689,
+            "y": 27.901176
+          },
+          {
+            "x": 5.639699,
+            "y": 28.100523
+          },
+          {
+            "x": 5.659317,
+            "y": 27.899477
+          },
+          {
+            "x": 3.60311,
+            "y": 27.698824
+          },
+          {
+            "x": -19.553663,
+            "y": 28.528562
+          },
+          {
+            "x": -19.546429,
+            "y": 28.730432
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 9,
+      "net": "MCU_EN",
+      "from": ".SW2 > .pin1",
+      "to": ".R35 > .pin2",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".SW2 > .pin1",
+          "to": "net.MCU_EN",
+          "pcbPathRelativeTo": ".SW2 > .pin1",
+          "pcbPath": [
+            {
+              "x": -1.650492,
+              "y": -1.6
+            },
+            {
+              "x": -1.650492,
+              "y": -1.6,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -1.650492,
+              "y": -1.6
+            }
+          ]
+        },
+        {
+          "from": ".R35 > .pin2",
+          "to": "net.MCU_EN",
+          "pcbPathRelativeTo": ".SW2 > .pin1",
+          "pcbPath": [
+            {
+              "x": -7.25335,
+              "y": -22.2
+            },
+            {
+              "x": -7.25335,
+              "y": -22.2
+            },
+            {
+              "x": -7.25335,
+              "y": -22.2,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -7.25335,
+              "y": -22.2
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_EN",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            4.849508,
+            26.4
+          ],
+          [
+            13.000000000000533,
+            15.90000000000068
+          ],
+          [
+            15.800000000000573,
+            4.800000000000523
+          ],
+          [
+            18.50000000000061,
+            1.9000000000004817
+          ],
+          [
+            18.40000000000061,
+            1.2000000000004718
+          ],
+          [
+            17.900000000000603,
+            1.000000000000469
+          ],
+          [
+            5.000000000000419,
+            1.2000000000004718
+          ],
+          [
+            -0.75335,
+            5.8
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": 13.092757,
+            "y": 15.945218
+          },
+          {
+            "x": 15.89159,
+            "y": 4.849846
+          },
+          {
+            "x": 18.606811,
+            "y": 1.933498
+          },
+          {
+            "x": 18.491727,
+            "y": 1.12791
+          },
+          {
+            "x": 17.918696,
+            "y": 0.898698
+          },
+          {
+            "x": 4.963902,
+            "y": 1.099548
+          },
+          {
+            "x": -0.816422,
+            "y": 5.721114
+          },
+          {
+            "x": -0.690278,
+            "y": 5.878886
+          },
+          {
+            "x": 5.036098,
+            "y": 1.300452
+          },
+          {
+            "x": 17.881304,
+            "y": 1.101302
+          },
+          {
+            "x": 18.308273,
+            "y": 1.27209
+          },
+          {
+            "x": 18.393189,
+            "y": 1.866502
+          },
+          {
+            "x": 15.70841,
+            "y": 4.750154
+          },
+          {
+            "x": 12.907243,
+            "y": 15.854782
+          },
+          {
+            "x": 4.769724,
+            "y": 26.338069
+          },
+          {
+            "x": 4.929292,
+            "y": 26.461931
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 16,
+      "net": "MCU_AUDIO_ENABLE",
+      "from": ".U1 > .pin4",
+      "to": ".R60 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin4",
+          "to": "net.MCU_AUDIO_ENABLE",
+          "pcbPathRelativeTo": ".U1 > .pin4",
+          "pcbPath": [
+            {
+              "x": -11.001712,
+              "y": 6.534953
+            },
+            {
+              "x": -11.001712,
+              "y": 6.534953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -11.001712,
+              "y": 6.534953
+            }
+          ]
+        },
+        {
+          "from": ".R60 > .pin1",
+          "to": "net.MCU_AUDIO_ENABLE",
+          "pcbPathRelativeTo": ".U1 > .pin4",
+          "pcbPath": [
+            {
+              "x": -0.139005,
+              "y": -39.074544
+            },
+            {
+              "x": -0.139005,
+              "y": -39.074544
+            },
+            {
+              "x": -0.139005,
+              "y": -39.074544,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -0.139005,
+              "y": -39.074544
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_AUDIO_ENABLE",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -23.001712,
+            28.659497
+          ],
+          [
+            -23.69999999999999,
+            27.600000000000847
+          ],
+          [
+            -23.599999999999987,
+            -0.1999999999995481
+          ],
+          [
+            -19.49999999999993,
+            -4.399999999999608
+          ],
+          [
+            -19.49999999999993,
+            -5.9999999999996305
+          ],
+          [
+            -18.499999999999915,
+            -8.599999999999667
+          ],
+          [
+            -13.99999999999985,
+            -13.499999999999737
+          ],
+          [
+            -13.89999999999985,
+            -14.099999999999746
+          ],
+          [
+            -12.139005,
+            -16.95
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -23.598891,
+            "y": 27.569876
+          },
+          {
+            "x": -23.499148,
+            "y": -0.158724
+          },
+          {
+            "x": -19.399,
+            "y": -4.358875
+          },
+          {
+            "x": -19.399,
+            "y": -5.981247
+          },
+          {
+            "x": -18.412624,
+            "y": -8.545824
+          },
+          {
+            "x": -13.905309,
+            "y": -13.45379
+          },
+          {
+            "x": -13.803639,
+            "y": -14.063805
+          },
+          {
+            "x": -12.053084,
+            "y": -16.89691
+          },
+          {
+            "x": -12.224926,
+            "y": -17.00309
+          },
+          {
+            "x": -13.996361,
+            "y": -14.136195
+          },
+          {
+            "x": -14.094691,
+            "y": -13.54621
+          },
+          {
+            "x": -18.587376,
+            "y": -8.654176
+          },
+          {
+            "x": -19.601,
+            "y": -6.018753
+          },
+          {
+            "x": -19.601,
+            "y": -4.441125
+          },
+          {
+            "x": -23.700852,
+            "y": -0.241276
+          },
+          {
+            "x": -23.801109,
+            "y": 27.630124
+          },
+          {
+            "x": -23.086043,
+            "y": 28.715078
+          },
+          {
+            "x": -22.917381,
+            "y": 28.603916
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 19,
+      "net": "MCU_LCD_DC",
+      "from": ".U1 > .pin21",
+      "to": ".R49 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin21",
+          "to": "net.MCU_LCD_DC",
+          "pcbPathRelativeTo": ".U1 > .pin21",
+          "pcbPath": [
+            {
+              "x": 0.635,
+              "y": -7.544953
+            },
+            {
+              "x": 0.635,
+              "y": -7.544953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 0.635,
+              "y": -7.544953
+            }
+          ]
+        },
+        {
+          "from": ".R49 > .pin1",
+          "to": "net.MCU_LCD_DC",
+          "pcbPathRelativeTo": ".U1 > .pin21",
+          "pcbPath": [
+            {
+              "x": 8.633975,
+              "y": -21.87118
+            },
+            {
+              "x": 8.633975,
+              "y": -21.87118
+            },
+            {
+              "x": 8.633975,
+              "y": -21.87118,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 8.633975,
+              "y": -21.87118
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_LCD_DC",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -11.365,
+            14.579591
+          ],
+          [
+            -4.1999999999997115,
+            3.2000000000005002
+          ],
+          [
+            -3.366025,
+            0.253364
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -4.106779,
+            "y": 3.241503
+          },
+          {
+            "x": -3.268842,
+            "y": 0.280869
+          },
+          {
+            "x": -3.463208,
+            "y": 0.225859
+          },
+          {
+            "x": -4.293221,
+            "y": 3.158497
+          },
+          {
+            "x": -11.450469,
+            "y": 14.525776
+          },
+          {
+            "x": -11.279531,
+            "y": 14.633406
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 20,
+      "net": "MCU_LCD_RESET_N",
+      "from": ".U1 > .pin22",
+      "to": ".R48 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin22",
+          "to": "net.MCU_LCD_RESET_N",
+          "pcbPathRelativeTo": ".U1 > .pin22",
+          "pcbPath": [
+            {
+              "x": 1.905,
+              "y": -7.544953
+            },
+            {
+              "x": 1.905,
+              "y": -7.544953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 1.905,
+              "y": -7.544953
+            }
+          ]
+        },
+        {
+          "from": ".R48 > .pin1",
+          "to": "net.MCU_LCD_RESET_N",
+          "pcbPathRelativeTo": ".U1 > .pin22",
+          "pcbPath": [
+            {
+              "x": 10.366025,
+              "y": -20.377908
+            },
+            {
+              "x": 10.366025,
+              "y": -20.377908
+            },
+            {
+              "x": 10.366025,
+              "y": -20.377908,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 10.366025,
+              "y": -20.377908
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_LCD_RESET_N",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -10.095,
+            14.579591
+          ],
+          [
+            -1.633975,
+            1.746636
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -1.549653,
+            "y": 1.802231
+          },
+          {
+            "x": -1.718297,
+            "y": 1.691041
+          },
+          {
+            "x": -10.179322,
+            "y": 14.523996
+          },
+          {
+            "x": -10.010678,
+            "y": 14.635186
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 21,
+      "net": "MCU_LCD_SCLK",
+      "from": ".U1 > .pin20",
+      "to": ".R50 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin20",
+          "to": "net.MCU_LCD_SCLK",
+          "pcbPathRelativeTo": ".U1 > .pin20",
+          "pcbPath": [
+            {
+              "x": -0.635,
+              "y": -7.544953
+            },
+            {
+              "x": -0.635,
+              "y": -7.544953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -0.635,
+              "y": -7.544953
+            }
+          ]
+        },
+        {
+          "from": ".R50 > .pin1",
+          "to": "net.MCU_LCD_SCLK",
+          "pcbPathRelativeTo": ".U1 > .pin20",
+          "pcbPath": [
+            {
+              "x": 8.633975,
+              "y": -24.87118
+            },
+            {
+              "x": 8.633975,
+              "y": -24.87118
+            },
+            {
+              "x": 8.633975,
+              "y": -24.87118,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 8.633975,
+              "y": -24.87118
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_LCD_SCLK",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -12.635,
+            14.579591
+          ],
+          [
+            -3.366025,
+            -2.746636
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -3.276968,
+            "y": -2.698993
+          },
+          {
+            "x": -3.455082,
+            "y": -2.794279
+          },
+          {
+            "x": -12.724057,
+            "y": 14.531948
+          },
+          {
+            "x": -12.545943,
+            "y": 14.627234
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 22,
+      "net": "MCU_LCD_SDA",
+      "from": ".U1 > .pin19",
+      "to": ".R51 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin19",
+          "to": "net.MCU_LCD_SDA",
+          "pcbPathRelativeTo": ".U1 > .pin19",
+          "pcbPath": [
+            {
+              "x": -1.905,
+              "y": -7.544953
+            },
+            {
+              "x": -1.905,
+              "y": -7.544953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -1.905,
+              "y": -7.544953
+            }
+          ]
+        },
+        {
+          "from": ".R51 > .pin1",
+          "to": "net.MCU_LCD_SDA",
+          "pcbPathRelativeTo": ".U1 > .pin19",
+          "pcbPath": [
+            {
+              "x": 8.633975,
+              "y": -29.377908
+            },
+            {
+              "x": 8.633975,
+              "y": -29.377908
+            },
+            {
+              "x": 8.633975,
+              "y": -29.377908,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 8.633975,
+              "y": -29.377908
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_LCD_SDA",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -13.905,
+            14.579591
+          ],
+          [
+            -3.366025,
+            -7.253364
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -3.275068,
+            "y": -7.209458
+          },
+          {
+            "x": -3.456982,
+            "y": -7.29727
+          },
+          {
+            "x": -13.995957,
+            "y": 14.535685
+          },
+          {
+            "x": -13.814043,
+            "y": 14.623497
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 24,
+      "net": "MIC_SD",
+      "from": ".U7 > .pin3",
+      "to": ".R26 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U7 > .pin3",
+          "to": "net.MIC_SD",
+          "pcbPathRelativeTo": ".U7 > .pin3",
+          "pcbPath": [
+            {
+              "x": 2.166124,
+              "y": 1.44996
+            },
+            {
+              "x": 2.166124,
+              "y": 1.44996,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 2.166124,
+              "y": 1.44996
+            }
+          ]
+        },
+        {
+          "from": ".R26 > .pin1",
+          "to": "net.MIC_SD",
+          "pcbPathRelativeTo": ".U7 > .pin3",
+          "pcbPath": [
+            {
+              "x": 6.139005,
+              "y": 0.2
+            },
+            {
+              "x": 6.139005,
+              "y": 0.2
+            },
+            {
+              "x": 6.139005,
+              "y": 0.2,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 6.139005,
+              "y": 0.2
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_SD",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -14.833876,
+            -17.55004
+          ],
+          [
+            -10.899999999999807,
+            -18.799999999999812
+          ],
+          [
+            -10.860995,
+            -18.8
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -10.88434,
+            "y": -18.699
+          },
+          {
+            "x": -10.860995,
+            "y": -18.699
+          },
+          {
+            "x": -10.860995,
+            "y": -18.901
+          },
+          {
+            "x": -10.91566,
+            "y": -18.901
+          },
+          {
+            "x": -14.864461,
+            "y": -17.646298
+          },
+          {
+            "x": -14.803291,
+            "y": -17.453782
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 27,
+      "net": "MIC_SD_REF",
+      "from": ".U7 > .pin4",
+      "to": ".R29 > .pin2",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U7 > .pin4",
+          "to": "net.MIC_SD_REF",
+          "pcbPathRelativeTo": ".U7 > .pin4",
+          "pcbPath": [
+            {
+              "x": -1.300099,
+              "y": 0.14996
+            },
+            {
+              "x": -1.300099,
+              "y": 0.14996,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -1.300099,
+              "y": 0.14996
+            }
+          ]
+        },
+        {
+          "from": ".R29 > .pin2",
+          "to": "net.MIC_SD_REF",
+          "pcbPathRelativeTo": ".U7 > .pin4",
+          "pcbPath": [
+            {
+              "x": 0.753364,
+              "y": -3.8
+            },
+            {
+              "x": 0.753364,
+              "y": -3.8
+            },
+            {
+              "x": 0.753364,
+              "y": -3.8,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 0.753364,
+              "y": -3.8
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_SD_REF",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -18.300099,
+            -18.85004
+          ],
+          [
+            -16.246636,
+            -22.8
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -16.157022,
+            "y": -22.753413
+          },
+          {
+            "x": -16.33625,
+            "y": -22.846587
+          },
+          {
+            "x": -18.389713,
+            "y": -18.896627
+          },
+          {
+            "x": -18.210485,
+            "y": -18.803453
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 29,
+      "net": "MIC_BCLK",
+      "from": ".U24 > .pin6",
+      "to": ".R94 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U24 > .pin6",
+          "to": "net.MIC_BCLK",
+          "pcbPathRelativeTo": ".U24 > .pin6",
+          "pcbPath": [
+            {
+              "x": -0.033875,
+              "y": -1.15
+            },
+            {
+              "x": -0.033875,
+              "y": -1.15,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -0.033875,
+              "y": -1.15
+            }
+          ]
+        },
+        {
+          "from": ".R94 > .pin1",
+          "to": "net.MIC_BCLK",
+          "pcbPathRelativeTo": ".U24 > .pin6",
+          "pcbPath": [
+            {
+              "x": 2.133975,
+              "y": 3.496636
+            },
+            {
+              "x": 2.133975,
+              "y": 3.496636
+            },
+            {
+              "x": 2.133975,
+              "y": 3.496636,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 2.133975,
+              "y": 3.496636
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_BCLK",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            14.966125,
+            -27.15
+          ],
+          [
+            17.133975,
+            -22.503364
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": 17.042446,
+            "y": -22.460662
+          },
+          {
+            "x": 17.225504,
+            "y": -22.546066
+          },
+          {
+            "x": 15.057654,
+            "y": -27.192702
+          },
+          {
+            "x": 14.874596,
+            "y": -27.107298
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 30,
+      "net": "MIC_WS",
+      "from": ".U24 > .pin4",
+      "to": ".R95 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U24 > .pin4",
+          "to": "net.MIC_WS",
+          "pcbPathRelativeTo": ".U24 > .pin4",
+          "pcbPath": [
+            {
+              "x": -0.033875,
+              "y": 1.15
+            },
+            {
+              "x": -0.033875,
+              "y": 1.15,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -0.033875,
+              "y": 1.15
+            }
+          ]
+        },
+        {
+          "from": ".R95 > .pin1",
+          "to": "net.MIC_WS",
+          "pcbPathRelativeTo": ".U24 > .pin4",
+          "pcbPath": [
+            {
+              "x": 3.8,
+              "y": -0.503364
+            },
+            {
+              "x": 3.8,
+              "y": -0.503364
+            },
+            {
+              "x": 3.8,
+              "y": -0.503364,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 3.8,
+              "y": -0.503364
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_WS",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            14.966125,
+            -24.85
+          ],
+          [
+            14.300000000000551,
+            -26.99999999999993
+          ],
+          [
+            14.300000000000551,
+            -27.499999999999936
+          ],
+          [
+            14.90000000000056,
+            -27.89999999999994
+          ],
+          [
+            18.8,
+            -26.503364
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": 14.401,
+            "y": -27.015288
+          },
+          {
+            "x": 14.401,
+            "y": -27.445946
+          },
+          {
+            "x": 14.913765,
+            "y": -27.78779
+          },
+          {
+            "x": 18.765948,
+            "y": -26.408277
+          },
+          {
+            "x": 18.834052,
+            "y": -26.598451
+          },
+          {
+            "x": 14.886235,
+            "y": -28.01221
+          },
+          {
+            "x": 14.199,
+            "y": -27.554054
+          },
+          {
+            "x": 14.199,
+            "y": -26.984712
+          },
+          {
+            "x": 14.869649,
+            "y": -24.820109
+          },
+          {
+            "x": 15.062601,
+            "y": -24.879891
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 36,
+      "net": "CHARGE_PGOOD_N",
+      "from": ".U16 > .pin7",
+      "to": ".R3 > .pin2",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U16 > .pin7",
+          "to": "net.CHARGE_PGOOD_N",
+          "pcbPathRelativeTo": ".U16 > .pin7",
+          "pcbPath": [
+            {
+              "x": 0.3,
+              "y": -2.4
+            },
+            {
+              "x": 0.850063,
+              "y": -2.539227
+            },
+            {
+              "x": 0.850063,
+              "y": -2.539227,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 0.850063,
+              "y": -2.539227
+            }
+          ]
+        },
+        {
+          "from": ".R3 > .pin2",
+          "to": "net.CHARGE_PGOOD_N",
+          "pcbPathRelativeTo": ".U16 > .pin7",
+          "pcbPath": [
+            {
+              "x": 0.619389,
+              "y": -4.5
+            },
+            {
+              "x": 0.619389,
+              "y": -4.5
+            },
+            {
+              "x": 0.619389,
+              "y": -4.5,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 0.619389,
+              "y": -4.5
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "CHARGE_PGOOD_N",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -7.149937,
+            -28.539227
+          ],
+          [
+            -7.380611,
+            -30.5
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -7.280303,
+            "y": -30.511801
+          },
+          {
+            "x": -7.480919,
+            "y": -30.488199
+          },
+          {
+            "x": -7.250245,
+            "y": -28.527426
+          },
+          {
+            "x": -7.049629,
+            "y": -28.551028
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 37,
+      "net": "CHARGE_STATUS_N",
+      "from": ".U16 > .pin9",
+      "to": ".R4 > .pin2",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U16 > .pin9",
+          "to": "net.CHARGE_STATUS_N",
+          "pcbPathRelativeTo": ".U16 > .pin9",
+          "pcbPath": [
+            {
+              "x": 1.499997,
+              "y": -1.349935
+            },
+            {
+              "x": 1.499997,
+              "y": -1.349935,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 1.499997,
+              "y": -1.349935
+            }
+          ]
+        },
+        {
+          "from": ".R4 > .pin2",
+          "to": "net.CHARGE_STATUS_N",
+          "pcbPathRelativeTo": ".U16 > .pin9",
+          "pcbPath": [
+            {
+              "x": -6.0,
+              "y": 3.119389
+            },
+            {
+              "x": -6.0,
+              "y": 3.119389
+            },
+            {
+              "x": -6.0,
+              "y": 3.119389,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -6.0,
+              "y": 3.119389
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "CHARGE_STATUS_N",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -6.500003,
+            -27.349935
+          ],
+          [
+            -8.899999999999778,
+            -23.49999999999988
+          ],
+          [
+            -13.89999999999985,
+            -23.399999999999878
+          ],
+          [
+            -14.0,
+            -22.880611
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -8.956751,
+            "y": -23.599885
+          },
+          {
+            "x": -13.983728,
+            "y": -23.499346
+          },
+          {
+            "x": -14.099178,
+            "y": -22.899706
+          },
+          {
+            "x": -13.900822,
+            "y": -22.861516
+          },
+          {
+            "x": -13.816272,
+            "y": -23.300654
+          },
+          {
+            "x": -8.843249,
+            "y": -23.400115
+          },
+          {
+            "x": -6.414293,
+            "y": -27.296505
+          },
+          {
+            "x": -6.585713,
+            "y": -27.403365
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 38,
+      "net": "CHARGE_STATUS_N",
+      "from": ".U16 > .pin9",
+      "to": ".TP8 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U16 > .pin9",
+          "to": "net.CHARGE_STATUS_N",
+          "pcbPathRelativeTo": ".U16 > .pin9",
+          "pcbPath": [
+            {
+              "x": 2.499997,
+              "y": -0.749935
+            },
+            {
+              "x": 2.499997,
+              "y": -0.749935,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 2.499997,
+              "y": -0.749935
+            }
+          ]
+        },
+        {
+          "from": ".TP8 > .pin1",
+          "to": "net.CHARGE_STATUS_N",
+          "pcbPathRelativeTo": ".U16 > .pin9",
+          "pcbPath": [
+            {
+              "x": 7.866025,
+              "y": 21.5
+            },
+            {
+              "x": 7.866025,
+              "y": 21.5
+            },
+            {
+              "x": 7.866025,
+              "y": 21.5,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 7.866025,
+              "y": 21.5
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "CHARGE_STATUS_N",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -5.500003,
+            -26.749935
+          ],
+          [
+            -5.199999999999726,
+            -27.89999999999994
+          ],
+          [
+            1.5000000000003695,
+            -28.199999999999946
+          ],
+          [
+            1.7000000000003723,
+            -27.69999999999994
+          ],
+          [
+            3.7000000000004007,
+            -17.8999999999998
+          ],
+          [
+            18.200000000000607,
+            -3.299999999999592
+          ],
+          [
+            20.300000000000637,
+            -0.6999999999995552
+          ],
+          [
+            20.100000000000634,
+            0.8000000000004661
+          ],
+          [
+            19.500000000000625,
+            1.2000000000004718
+          ],
+          [
+            18.800000000000615,
+            1.000000000000469
+          ],
+          [
+            18.50000000000061,
+            0.7000000000004647
+          ],
+          [
+            -0.133975,
+            -4.5
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -5.121071,
+            "y": -27.802433
+          },
+          {
+            "x": 1.432863,
+            "y": -28.095893
+          },
+          {
+            "x": 1.602854,
+            "y": -27.670914
+          },
+          {
+            "x": 3.607074,
+            "y": -17.850238
+          },
+          {
+            "x": 18.124685,
+            "y": -3.232506
+          },
+          {
+            "x": 20.194148,
+            "y": -0.670313
+          },
+          {
+            "x": 20.005929,
+            "y": 0.741327
+          },
+          {
+            "x": 19.482837,
+            "y": 1.090055
+          },
+          {
+            "x": 18.852912,
+            "y": 0.910076
+          },
+          {
+            "x": 18.552677,
+            "y": 0.609841
+          },
+          {
+            "x": -0.106827,
+            "y": -4.597283
+          },
+          {
+            "x": -0.161123,
+            "y": -4.402717
+          },
+          {
+            "x": 18.447323,
+            "y": 0.790159
+          },
+          {
+            "x": 18.747088,
+            "y": 1.089924
+          },
+          {
+            "x": 19.517163,
+            "y": 1.309945
+          },
+          {
+            "x": 20.194071,
+            "y": 0.858673
+          },
+          {
+            "x": 20.405852,
+            "y": -0.729687
+          },
+          {
+            "x": 18.275315,
+            "y": -3.367494
+          },
+          {
+            "x": 3.792926,
+            "y": -17.949762
+          },
+          {
+            "x": 1.797146,
+            "y": -27.729086
+          },
+          {
+            "x": 1.567137,
+            "y": -28.304107
+          },
+          {
+            "x": -5.278929,
+            "y": -27.997567
+          },
+          {
+            "x": -5.597733,
+            "y": -26.775429
+          },
+          {
+            "x": -5.402273,
+            "y": -26.724441
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 49,
+      "net": "LCD_ENABLE",
+      "from": ".U1 > .pin6",
+      "to": ".U13 > .pin3",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin6",
+          "to": "net.LCD_ENABLE",
+          "pcbPathRelativeTo": ".U1 > .pin6",
+          "pcbPath": [
+            {
+              "x": -7.364405,
+              "y": 1.894953
+            },
+            {
+              "x": -7.364405,
+              "y": 1.894953,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -7.364405,
+              "y": 1.894953
+            }
+          ]
+        },
+        {
+          "from": ".U13 > .pin3",
+          "to": "net.LCD_ENABLE",
+          "pcbPathRelativeTo": ".U1 > .pin6",
+          "pcbPath": [
+            {
+              "x": 26.0,
+              "y": -7.424544
+            },
+            {
+              "x": 26.0,
+              "y": -7.424544
+            },
+            {
+              "x": 26.0,
+              "y": -7.424544,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 26.0,
+              "y": -7.424544
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "LCD_ENABLE",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -19.364405,
+            24.019497
+          ],
+          [
+            -20.29999999999994,
+            26.50000000000083
+          ],
+          [
+            -19.999999999999936,
+            27.10000000000084
+          ],
+          [
+            -15.499999999999872,
+            27.20000000000084
+          ],
+          [
+            5.200000000000422,
+            27.10000000000084
+          ],
+          [
+            8.60000000000047,
+            24.500000000000803
+          ],
+          [
+            13.200000000000536,
+            18.800000000000722
+          ],
+          [
+            14.0,
+            14.7
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -20.410085,
+            "y": 26.505673
+          },
+          {
+            "x": -20.06311,
+            "y": 27.199622
+          },
+          {
+            "x": -15.500878,
+            "y": 27.301005
+          },
+          {
+            "x": 5.234408,
+            "y": 27.200835
+          },
+          {
+            "x": 8.670984,
+            "y": 24.572865
+          },
+          {
+            "x": 13.294332,
+            "y": 18.843933
+          },
+          {
+            "x": 14.099131,
+            "y": 14.719343
+          },
+          {
+            "x": 13.900869,
+            "y": 14.680657
+          },
+          {
+            "x": 13.105668,
+            "y": 18.756067
+          },
+          {
+            "x": 8.529016,
+            "y": 24.427135
+          },
+          {
+            "x": 5.165592,
+            "y": 26.999165
+          },
+          {
+            "x": -15.499122,
+            "y": 27.098995
+          },
+          {
+            "x": -19.93689,
+            "y": 27.000378
+          },
+          {
+            "x": -20.189915,
+            "y": 26.494327
+          },
+          {
+            "x": -19.269904,
+            "y": 24.055141
+          },
+          {
+            "x": -19.458906,
+            "y": 23.983853
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 50,
+      "net": "LCD_ENABLE",
+      "from": ".U13 > .pin3",
+      "to": ".R40 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U13 > .pin3",
+          "to": "net.LCD_ENABLE",
+          "pcbPathRelativeTo": ".U13 > .pin3",
+          "pcbPath": [
+            {
+              "x": 3.7,
+              "y": 1.55
+            },
+            {
+              "x": 5.0,
+              "y": 0.95
+            },
+            {
+              "x": 4.1,
+              "y": 0.95
+            },
+            {
+              "x": 4.1,
+              "y": 0.95,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 4.1,
+              "y": 0.95
+            }
+          ]
+        },
+        {
+          "from": ".R40 > .pin1",
+          "to": "net.LCD_ENABLE",
+          "pcbPathRelativeTo": ".U13 > .pin3",
+          "pcbPath": [
+            {
+              "x": 5.889005,
+              "y": -8.45
+            },
+            {
+              "x": 5.889005,
+              "y": -8.45
+            },
+            {
+              "x": 5.889005,
+              "y": -8.45,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 5.889005,
+              "y": -8.45
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "LCD_ENABLE",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            14.6,
+            14.7
+          ],
+          [
+            16.500000000000583,
+            12.200000000000628
+          ],
+          [
+            17.289005,
+            5.3
+          ],
+          [
+            16.389005,
+            5.3
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": 16.597195,
+            "y": 12.239031
+          },
+          {
+            "x": 17.402212,
+            "y": 5.199
+          },
+          {
+            "x": 16.389005,
+            "y": 5.199
+          },
+          {
+            "x": 16.389005,
+            "y": 5.401
+          },
+          {
+            "x": 17.175798,
+            "y": 5.401
+          },
+          {
+            "x": 16.402805,
+            "y": 12.160969
+          },
+          {
+            "x": 14.519588,
+            "y": 14.638887
+          },
+          {
+            "x": 14.680412,
+            "y": 14.761113
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 51,
+      "net": "MCU_AUDIO_LRCLK",
+      "from": ".U1 > .pin12",
+      "to": ".R67 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin12",
+          "to": "net.MCU_AUDIO_LRCLK",
+          "pcbPathRelativeTo": ".U1 > .pin12",
+          "pcbPath": [
+            {
+              "x": -7.364405,
+              "y": -5.725047
+            },
+            {
+              "x": -7.364405,
+              "y": -5.725047,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -7.364405,
+              "y": -5.725047
+            }
+          ]
+        },
+        {
+          "from": ".R67 > .pin1",
+          "to": "net.MCU_AUDIO_LRCLK",
+          "pcbPathRelativeTo": ".U1 > .pin12",
+          "pcbPath": [
+            {
+              "x": 2.687804,
+              "y": -19.024544
+            },
+            {
+              "x": 2.687804,
+              "y": -19.024544
+            },
+            {
+              "x": 2.687804,
+              "y": -19.024544,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 2.687804,
+              "y": -19.024544
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_AUDIO_LRCLK",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -19.364405,
+            16.399497
+          ],
+          [
+            -13.599999999999845,
+            10.600000000000605
+          ],
+          [
+            -10.699999999999804,
+            6.6000000000005485
+          ],
+          [
+            -9.312196,
+            3.1
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -13.522835,
+            "y": 10.665636
+          },
+          {
+            "x": -10.610786,
+            "y": 6.649017
+          },
+          {
+            "x": -9.218307,
+            "y": 3.137228
+          },
+          {
+            "x": -9.406085,
+            "y": 3.062772
+          },
+          {
+            "x": -10.789214,
+            "y": 6.550983
+          },
+          {
+            "x": -13.677165,
+            "y": 10.534364
+          },
+          {
+            "x": -19.436039,
+            "y": 16.328296
+          },
+          {
+            "x": -19.292771,
+            "y": 16.470698
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 52,
+      "net": "USB_CC1",
+      "from": ".J1 > .pin6",
+      "to": ".R33 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".J1 > .pin6",
+          "to": "net.USB_CC1",
+          "pcbPathRelativeTo": ".J1 > .pin6",
+          "pcbPath": [
+            {
+              "x": -1.2,
+              "y": 1.2
+            },
+            {
+              "x": -0.549934,
+              "y": 0.961608
+            },
+            {
+              "x": -0.549934,
+              "y": 0.961608,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -0.549934,
+              "y": 0.961608
+            }
+          ]
+        },
+        {
+          "from": ".R33 > .pin1",
+          "to": "net.USB_CC1",
+          "pcbPathRelativeTo": ".J1 > .pin6",
+          "pcbPath": [
+            {
+              "x": -11.133975,
+              "y": 3.74665
+            },
+            {
+              "x": -11.133975,
+              "y": 3.74665
+            },
+            {
+              "x": -11.133975,
+              "y": 3.74665,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -11.133975,
+              "y": 3.74665
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "USB_CC1",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -0.549934,
+            -27.038392
+          ],
+          [
+            -3.6999999999997044,
+            -25.199999999999903
+          ],
+          [
+            -8.99999999999978,
+            -22.999999999999872
+          ],
+          [
+            -12.999999999999837,
+            -21.999999999999858
+          ],
+          [
+            -14.499999999999858,
+            -22.299999999999862
+          ],
+          [
+            -14.69999999999986,
+            -22.79999999999987
+          ],
+          [
+            -14.59999999999986,
+            -23.399999999999878
+          ],
+          [
+            -13.99999999999985,
+            -23.899999999999885
+          ],
+          [
+            -11.133975,
+            -24.25335
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -3.745019,
+            "y": -25.290668
+          },
+          {
+            "x": -9.031783,
+            "y": -23.096163
+          },
+          {
+            "x": -13.002463,
+            "y": -22.103493
+          },
+          {
+            "x": -14.426543,
+            "y": -22.388309
+          },
+          {
+            "x": -14.595728,
+            "y": -22.811271
+          },
+          {
+            "x": -14.506538,
+            "y": -23.346412
+          },
+          {
+            "x": -13.958161,
+            "y": -23.803394
+          },
+          {
+            "x": -11.121616,
+            "y": -24.153109
+          },
+          {
+            "x": -11.146334,
+            "y": -24.353591
+          },
+          {
+            "x": -14.041839,
+            "y": -23.996606
+          },
+          {
+            "x": -14.693462,
+            "y": -23.453588
+          },
+          {
+            "x": -14.804272,
+            "y": -22.788729
+          },
+          {
+            "x": -14.573457,
+            "y": -22.211691
+          },
+          {
+            "x": -12.997537,
+            "y": -21.896507
+          },
+          {
+            "x": -8.968217,
+            "y": -22.903837
+          },
+          {
+            "x": -3.654981,
+            "y": -25.109332
+          },
+          {
+            "x": -0.499025,
+            "y": -26.951161
+          },
+          {
+            "x": -0.600843,
+            "y": -27.125623
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 129,
+      "net": "MIC_WS_INPUT",
+      "from": ".U24 > .pin3",
+      "to": ".R89 > .pin2",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U24 > .pin3",
+          "to": "net.MIC_WS_INPUT",
+          "pcbPathRelativeTo": ".U24 > .pin3",
+          "pcbPath": [
+            {
+              "x": 1.8999,
+              "y": 0.65
+            },
+            {
+              "x": 1.8999,
+              "y": 0.65,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 1.8999,
+              "y": 0.65
+            }
+          ]
+        },
+        {
+          "from": ".R89 > .pin2",
+          "to": "net.MIC_WS_INPUT",
+          "pcbPathRelativeTo": ".U24 > .pin3",
+          "pcbPath": [
+            {
+              "x": -6.996636,
+              "y": -3.866025
+            },
+            {
+              "x": -6.996636,
+              "y": -3.866025
+            },
+            {
+              "x": -6.996636,
+              "y": -3.866025,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -6.996636,
+              "y": -3.866025
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_WS_INPUT",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            16.8999,
+            -25.35
+          ],
+          [
+            17.8000000000006,
+            -22.599999999999866
+          ],
+          [
+            17.8000000000006,
+            -22.09999999999986
+          ],
+          [
+            17.300000000000594,
+            -21.799999999999855
+          ],
+          [
+            16.700000000000585,
+            -21.899999999999856
+          ],
+          [
+            8.003364,
+            -29.866025
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": 17.699,
+            "y": -22.583891
+          },
+          {
+            "x": 17.699,
+            "y": -22.157185
+          },
+          {
+            "x": 17.279923,
+            "y": -21.905739
+          },
+          {
+            "x": 16.74614,
+            "y": -21.994703
+          },
+          {
+            "x": 8.071585,
+            "y": -29.940503
+          },
+          {
+            "x": 7.935143,
+            "y": -29.791547
+          },
+          {
+            "x": 16.65386,
+            "y": -21.805297
+          },
+          {
+            "x": 17.320077,
+            "y": -21.694261
+          },
+          {
+            "x": 17.901,
+            "y": -22.042815
+          },
+          {
+            "x": 17.901,
+            "y": -22.616109
+          },
+          {
+            "x": 16.995889,
+            "y": -25.381418
+          },
+          {
+            "x": 16.803911,
+            "y": -25.318582
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 237,
+      "net": "MCU_BACKLIGHT_PWM",
+      "from": ".U1 > .pin24",
+      "to": ".R103 > .pin1",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U1 > .pin24",
+          "to": "net.MCU_BACKLIGHT_PWM",
+          "pcbPathRelativeTo": ".U1 > .pin24",
+          "pcbPath": [
+            {
+              "x": 6.145,
+              "y": -5.800467
+            },
+            {
+              "x": 6.145,
+              "y": -5.800467,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 6.145,
+              "y": -5.800467
+            }
+          ]
+        },
+        {
+          "from": ".R103 > .pin1",
+          "to": "net.MCU_BACKLIGHT_PWM",
+          "pcbPathRelativeTo": ".U1 > .pin24",
+          "pcbPath": [
+            {
+              "x": 11.380611,
+              "y": -3.724544
+            },
+            {
+              "x": 11.380611,
+              "y": -3.724544
+            },
+            {
+              "x": 11.380611,
+              "y": -3.724544,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 11.380611,
+              "y": -3.724544
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MCU_BACKLIGHT_PWM",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -5.855,
+            16.324077
+          ],
+          [
+            -0.619389,
+            18.4
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -0.656616,
+            "y": 18.493889
+          },
+          {
+            "x": -0.582162,
+            "y": 18.306111
+          },
+          {
+            "x": -5.817773,
+            "y": 16.230188
+          },
+          {
+            "x": -5.892227,
+            "y": 16.417966
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 238,
+      "net": "MIC_WS",
+      "from": ".U4 > .pin1",
+      "to": "net.MIC_WS",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U4 > .pin1",
+          "to": "net.MIC_WS",
+          "pcbPathRelativeTo": ".U4 > .pin1",
+          "pcbPath": [
+            {
+              "x": -1.35,
+              "y": -1.85
+            },
+            {
+              "x": -1.35,
+              "y": -1.85,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": -1.35,
+              "y": -1.85
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_WS",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -17.599999999999902,
+            -30.59999999999998
+          ],
+          [
+            -6.89999999999975,
+            -31.799999999999997
+          ],
+          [
+            -4.1999999999997115,
+            -32.0
+          ],
+          [
+            4.800000000000416,
+            -32.0
+          ],
+          [
+            10.300000000000495,
+            -29.79999999999997
+          ],
+          [
+            14.3,
+            -27.5
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -6.890638,
+            "y": -31.699417
+          },
+          {
+            "x": -4.196264,
+            "y": -31.899
+          },
+          {
+            "x": 4.780549,
+            "y": -31.899
+          },
+          {
+            "x": 10.255852,
+            "y": -29.708879
+          },
+          {
+            "x": 14.249654,
+            "y": -27.412442
+          },
+          {
+            "x": 14.350346,
+            "y": -27.587558
+          },
+          {
+            "x": 10.344148,
+            "y": -29.891121
+          },
+          {
+            "x": 4.819451,
+            "y": -32.101
+          },
+          {
+            "x": -4.203736,
+            "y": -32.101
+          },
+          {
+            "x": -6.909362,
+            "y": -31.900583
+          },
+          {
+            "x": -17.611257,
+            "y": -30.700371
+          },
+          {
+            "x": -17.588743,
+            "y": -30.499629
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    },
+    {
+      "original_path_index": 246,
+      "net": "MIC_BCLK",
+      "from": ".U4 > .pin4",
+      "to": "net.MIC_BCLK",
+      "width": 0.2,
+      "escapes": [
+        {
+          "from": ".U4 > .pin4",
+          "to": "net.MIC_BCLK",
+          "pcbPathRelativeTo": ".U4 > .pin4",
+          "pcbPath": [
+            {
+              "x": 0.75,
+              "y": 1.15
+            },
+            {
+              "x": 1.45,
+              "y": 1.05
+            },
+            {
+              "x": 1.95,
+              "y": 0.25
+            },
+            {
+              "x": 1.85,
+              "y": -0.95
+            },
+            {
+              "x": 1.85,
+              "y": -0.95,
+              "via": true,
+              "fromLayer": "top",
+              "toLayer": "bottom"
+            },
+            {
+              "x": 1.85,
+              "y": -0.95
+            }
+          ]
+        }
+      ],
+      "region": {
+        "net": "MIC_BCLK",
+        "layer": "inner2",
+        "path_mm": [
+          [
+            -14.399999999999856,
+            -29.699999999999967
+          ],
+          [
+            -16.09999999999988,
+            -29.29999999999996
+          ],
+          [
+            -18.09999999999991,
+            -27.199999999999932
+          ],
+          [
+            -18.19999999999991,
+            -26.099999999999916
+          ],
+          [
+            -22.49999999999997,
+            -20.499999999999837
+          ],
+          [
+            -23.19999999999998,
+            -16.39999999999978
+          ],
+          [
+            -24.099999999999994,
+            1.500000000000476
+          ],
+          [
+            -24.199999999999996,
+            27.70000000000085
+          ],
+          [
+            -23.499999999999986,
+            29.20000000000087
+          ],
+          [
+            -22.199999999999967,
+            30.60000000000089
+          ],
+          [
+            -19.299999999999926,
+            30.500000000000888
+          ],
+          [
+            -0.6999999999996618,
+            30.500000000000888
+          ],
+          [
+            3.481659405224491e-13,
+            31.000000000000895
+          ],
+          [
+            14.300000000000551,
+            30.00000000000088
+          ],
+          [
+            16.000000000000576,
+            28.60000000000086
+          ],
+          [
+            24.10000000000069,
+            8.10000000000057
+          ],
+          [
+            24.10000000000069,
+            -11.299999999999706
+          ],
+          [
+            18.30000000000061,
+            -20.499999999999837
+          ],
+          [
+            18.200000000000607,
+            -23.099999999999874
+          ],
+          [
+            17.500000000000597,
+            -25.799999999999912
+          ],
+          [
+            14.966125,
+            -27.15
+          ]
+        ],
+        "nominal_width_mm": 0.2,
+        "drawn_width_mm": 0.202,
+        "outline": [
+          {
+            "x": -16.152402,
+            "y": -29.391428
+          },
+          {
+            "x": -18.1974,
+            "y": -27.24418
+          },
+          {
+            "x": -18.297935,
+            "y": -26.138295
+          },
+          {
+            "x": -22.595348,
+            "y": -20.541664
+          },
+          {
+            "x": -23.300571,
+            "y": -16.411074
+          },
+          {
+            "x": -24.20099,
+            "y": 1.49727
+          },
+          {
+            "x": -24.301086,
+            "y": 27.722223
+          },
+          {
+            "x": -23.584812,
+            "y": 29.257095
+          },
+          {
+            "x": -22.242623,
+            "y": 30.70253
+          },
+          {
+            "x": -19.298259,
+            "y": 30.601
+          },
+          {
+            "x": -0.732367,
+            "y": 30.601
+          },
+          {
+            "x": -0.029166,
+            "y": 31.103286
+          },
+          {
+            "x": 14.33927,
+            "y": 30.0985
+          },
+          {
+            "x": 16.084346,
+            "y": 28.661379
+          },
+          {
+            "x": 24.201,
+            "y": 8.11923
+          },
+          {
+            "x": 24.201,
+            "y": -11.32918
+          },
+          {
+            "x": 18.399884,
+            "y": -20.530949
+          },
+          {
+            "x": 18.300506,
+            "y": -23.114785
+          },
+          {
+            "x": 17.586636,
+            "y": -25.868282
+          },
+          {
+            "x": 15.013616,
+            "y": -27.239138
+          },
+          {
+            "x": 14.918634,
+            "y": -27.060862
+          },
+          {
+            "x": 17.413364,
+            "y": -25.731718
+          },
+          {
+            "x": 18.099494,
+            "y": -23.085215
+          },
+          {
+            "x": 18.200116,
+            "y": -20.469051
+          },
+          {
+            "x": 23.999,
+            "y": -11.27082
+          },
+          {
+            "x": 23.999,
+            "y": 8.08077
+          },
+          {
+            "x": 15.915654,
+            "y": 28.538621
+          },
+          {
+            "x": 14.26073,
+            "y": 29.9015
+          },
+          {
+            "x": 0.029166,
+            "y": 30.896714
+          },
+          {
+            "x": -0.667633,
+            "y": 30.399
+          },
+          {
+            "x": -19.301741,
+            "y": 30.399
+          },
+          {
+            "x": -22.157377,
+            "y": 30.49747
+          },
+          {
+            "x": -23.415188,
+            "y": 29.142905
+          },
+          {
+            "x": -24.098914,
+            "y": 27.677777
+          },
+          {
+            "x": -23.99901,
+            "y": 1.50273
+          },
+          {
+            "x": -23.099429,
+            "y": -16.388926
+          },
+          {
+            "x": -22.404652,
+            "y": -20.458336
+          },
+          {
+            "x": -18.102065,
+            "y": -26.061705
+          },
+          {
+            "x": -18.0026,
+            "y": -27.15582
+          },
+          {
+            "x": -16.047598,
+            "y": -29.208572
+          },
+          {
+            "x": -14.376867,
+            "y": -29.601685
+          },
+          {
+            "x": -14.423133,
+            "y": -29.798315
+          }
+        ],
+        "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+      }
+    }
+  ],
+  "pours": [
+    {
+      "net": "BUCK_ENABLE",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -4.700043,
+          -15.000002
+        ],
+        [
+          -3.9999999999997087,
+          -16.899999999999785
+        ],
+        [
+          -3.9999999999997087,
+          -18.299999999999805
+        ],
+        [
+          -4.499999999999716,
+          -18.69999999999981
+        ],
+        [
+          -5.199999999999726,
+          -18.59999999999981
+        ],
+        [
+          -10.3999999999998,
+          -12.499999999999723
+        ],
+        [
+          -13.099999999999838,
+          -11.199999999999704
+        ],
+        [
+          -13.699999999999847,
+          -11.499999999999709
+        ],
+        [
+          -13.799999999999848,
+          -12.099999999999717
+        ],
+        [
+          -13.499999999999844,
+          -13.799999999999741
+        ],
+        [
+          -5.799999999999734,
+          -21.699999999999854
+        ],
+        [
+          -5.700024,
+          -22.0
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -3.899,
+          "y": -16.881985
+        },
+        {
+          "x": -3.899,
+          "y": -18.348543
+        },
+        {
+          "x": -4.471027,
+          "y": -18.806164
+        },
+        {
+          "x": -5.252088,
+          "y": -18.694584
+        },
+        {
+          "x": -10.463029,
+          "y": -12.58175
+        },
+        {
+          "x": -13.09916,
+          "y": -11.312502
+        },
+        {
+          "x": -13.60883,
+          "y": -11.567336
+        },
+        {
+          "x": -13.697526,
+          "y": -12.099512
+        },
+        {
+          "x": -13.405946,
+          "y": -13.751794
+        },
+        {
+          "x": -5.711504,
+          "y": -21.646092
+        },
+        {
+          "x": -5.604205,
+          "y": -21.968068
+        },
+        {
+          "x": -5.795843,
+          "y": -22.031932
+        },
+        {
+          "x": -5.888496,
+          "y": -21.753908
+        },
+        {
+          "x": -13.594054,
+          "y": -13.848206
+        },
+        {
+          "x": -13.902474,
+          "y": -12.100488
+        },
+        {
+          "x": -13.79117,
+          "y": -11.432664
+        },
+        {
+          "x": -13.10084,
+          "y": -11.087498
+        },
+        {
+          "x": -10.336971,
+          "y": -12.41825
+        },
+        {
+          "x": -5.147912,
+          "y": -18.505416
+        },
+        {
+          "x": -4.528973,
+          "y": -18.593836
+        },
+        {
+          "x": -4.101,
+          "y": -18.251457
+        },
+        {
+          "x": -4.101,
+          "y": -16.918015
+        },
+        {
+          "x": -4.794815,
+          "y": -15.03492
+        },
+        {
+          "x": -4.605271,
+          "y": -14.965084
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "CHARGER_ISET",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -9.26955,
+          -24.200003
+        ],
+        [
+          -12.699999999999832,
+          -27.199999999999932
+        ],
+        [
+          -12.753364,
+          -28.2
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -12.601416,
+          "y": -27.24796
+        },
+        {
+          "x": -12.652508,
+          "y": -28.205382
+        },
+        {
+          "x": -12.85422,
+          "y": -28.194618
+        },
+        {
+          "x": -12.798584,
+          "y": -27.15204
+        },
+        {
+          "x": -9.336038,
+          "y": -24.123975
+        },
+        {
+          "x": -9.203062,
+          "y": -24.276031
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_EN",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -19.550046,
+          28.629497
+        ],
+        [
+          3.6000000000003993,
+          27.80000000000085
+        ],
+        [
+          5.649508,
+          28.0
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 3.59689,
+          "y": 27.901176
+        },
+        {
+          "x": 5.639699,
+          "y": 28.100523
+        },
+        {
+          "x": 5.659317,
+          "y": 27.899477
+        },
+        {
+          "x": 3.60311,
+          "y": 27.698824
+        },
+        {
+          "x": -19.553663,
+          "y": 28.528562
+        },
+        {
+          "x": -19.546429,
+          "y": 28.730432
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_EN",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          4.849508,
+          26.4
+        ],
+        [
+          13.000000000000533,
+          15.90000000000068
+        ],
+        [
+          15.800000000000573,
+          4.800000000000523
+        ],
+        [
+          18.50000000000061,
+          1.9000000000004817
+        ],
+        [
+          18.40000000000061,
+          1.2000000000004718
+        ],
+        [
+          17.900000000000603,
+          1.000000000000469
+        ],
+        [
+          5.000000000000419,
+          1.2000000000004718
+        ],
+        [
+          -0.75335,
+          5.8
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 13.092757,
+          "y": 15.945218
+        },
+        {
+          "x": 15.89159,
+          "y": 4.849846
+        },
+        {
+          "x": 18.606811,
+          "y": 1.933498
+        },
+        {
+          "x": 18.491727,
+          "y": 1.12791
+        },
+        {
+          "x": 17.918696,
+          "y": 0.898698
+        },
+        {
+          "x": 4.963902,
+          "y": 1.099548
+        },
+        {
+          "x": -0.816422,
+          "y": 5.721114
+        },
+        {
+          "x": -0.690278,
+          "y": 5.878886
+        },
+        {
+          "x": 5.036098,
+          "y": 1.300452
+        },
+        {
+          "x": 17.881304,
+          "y": 1.101302
+        },
+        {
+          "x": 18.308273,
+          "y": 1.27209
+        },
+        {
+          "x": 18.393189,
+          "y": 1.866502
+        },
+        {
+          "x": 15.70841,
+          "y": 4.750154
+        },
+        {
+          "x": 12.907243,
+          "y": 15.854782
+        },
+        {
+          "x": 4.769724,
+          "y": 26.338069
+        },
+        {
+          "x": 4.929292,
+          "y": 26.461931
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_AUDIO_ENABLE",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -23.001712,
+          28.659497
+        ],
+        [
+          -23.69999999999999,
+          27.600000000000847
+        ],
+        [
+          -23.599999999999987,
+          -0.1999999999995481
+        ],
+        [
+          -19.49999999999993,
+          -4.399999999999608
+        ],
+        [
+          -19.49999999999993,
+          -5.9999999999996305
+        ],
+        [
+          -18.499999999999915,
+          -8.599999999999667
+        ],
+        [
+          -13.99999999999985,
+          -13.499999999999737
+        ],
+        [
+          -13.89999999999985,
+          -14.099999999999746
+        ],
+        [
+          -12.139005,
+          -16.95
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -23.598891,
+          "y": 27.569876
+        },
+        {
+          "x": -23.499148,
+          "y": -0.158724
+        },
+        {
+          "x": -19.399,
+          "y": -4.358875
+        },
+        {
+          "x": -19.399,
+          "y": -5.981247
+        },
+        {
+          "x": -18.412624,
+          "y": -8.545824
+        },
+        {
+          "x": -13.905309,
+          "y": -13.45379
+        },
+        {
+          "x": -13.803639,
+          "y": -14.063805
+        },
+        {
+          "x": -12.053084,
+          "y": -16.89691
+        },
+        {
+          "x": -12.224926,
+          "y": -17.00309
+        },
+        {
+          "x": -13.996361,
+          "y": -14.136195
+        },
+        {
+          "x": -14.094691,
+          "y": -13.54621
+        },
+        {
+          "x": -18.587376,
+          "y": -8.654176
+        },
+        {
+          "x": -19.601,
+          "y": -6.018753
+        },
+        {
+          "x": -19.601,
+          "y": -4.441125
+        },
+        {
+          "x": -23.700852,
+          "y": -0.241276
+        },
+        {
+          "x": -23.801109,
+          "y": 27.630124
+        },
+        {
+          "x": -23.086043,
+          "y": 28.715078
+        },
+        {
+          "x": -22.917381,
+          "y": 28.603916
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_LCD_DC",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -11.365,
+          14.579591
+        ],
+        [
+          -4.1999999999997115,
+          3.2000000000005002
+        ],
+        [
+          -3.366025,
+          0.253364
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -4.106779,
+          "y": 3.241503
+        },
+        {
+          "x": -3.268842,
+          "y": 0.280869
+        },
+        {
+          "x": -3.463208,
+          "y": 0.225859
+        },
+        {
+          "x": -4.293221,
+          "y": 3.158497
+        },
+        {
+          "x": -11.450469,
+          "y": 14.525776
+        },
+        {
+          "x": -11.279531,
+          "y": 14.633406
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_LCD_RESET_N",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -10.095,
+          14.579591
+        ],
+        [
+          -1.633975,
+          1.746636
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -1.549653,
+          "y": 1.802231
+        },
+        {
+          "x": -1.718297,
+          "y": 1.691041
+        },
+        {
+          "x": -10.179322,
+          "y": 14.523996
+        },
+        {
+          "x": -10.010678,
+          "y": 14.635186
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -12.635,
+          14.579591
+        ],
+        [
+          -3.366025,
+          -2.746636
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -3.276968,
+          "y": -2.698993
+        },
+        {
+          "x": -3.455082,
+          "y": -2.794279
+        },
+        {
+          "x": -12.724057,
+          "y": 14.531948
+        },
+        {
+          "x": -12.545943,
+          "y": 14.627234
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_LCD_SDA",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -13.905,
+          14.579591
+        ],
+        [
+          -3.366025,
+          -7.253364
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -3.275068,
+          "y": -7.209458
+        },
+        {
+          "x": -3.456982,
+          "y": -7.29727
+        },
+        {
+          "x": -13.995957,
+          "y": 14.535685
+        },
+        {
+          "x": -13.814043,
+          "y": 14.623497
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_SD",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -14.833876,
+          -17.55004
+        ],
+        [
+          -10.899999999999807,
+          -18.799999999999812
+        ],
+        [
+          -10.860995,
+          -18.8
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -10.88434,
+          "y": -18.699
+        },
+        {
+          "x": -10.860995,
+          "y": -18.699
+        },
+        {
+          "x": -10.860995,
+          "y": -18.901
+        },
+        {
+          "x": -10.91566,
+          "y": -18.901
+        },
+        {
+          "x": -14.864461,
+          "y": -17.646298
+        },
+        {
+          "x": -14.803291,
+          "y": -17.453782
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_SD_REF",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -18.300099,
+          -18.85004
+        ],
+        [
+          -16.246636,
+          -22.8
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -16.157022,
+          "y": -22.753413
+        },
+        {
+          "x": -16.33625,
+          "y": -22.846587
+        },
+        {
+          "x": -18.389713,
+          "y": -18.896627
+        },
+        {
+          "x": -18.210485,
+          "y": -18.803453
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_BCLK",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          14.966125,
+          -27.15
+        ],
+        [
+          17.133975,
+          -22.503364
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 17.042446,
+          "y": -22.460662
+        },
+        {
+          "x": 17.225504,
+          "y": -22.546066
+        },
+        {
+          "x": 15.057654,
+          "y": -27.192702
+        },
+        {
+          "x": 14.874596,
+          "y": -27.107298
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_WS",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          14.966125,
+          -24.85
+        ],
+        [
+          14.300000000000551,
+          -26.99999999999993
+        ],
+        [
+          14.300000000000551,
+          -27.499999999999936
+        ],
+        [
+          14.90000000000056,
+          -27.89999999999994
+        ],
+        [
+          18.8,
+          -26.503364
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 14.401,
+          "y": -27.015288
+        },
+        {
+          "x": 14.401,
+          "y": -27.445946
+        },
+        {
+          "x": 14.913765,
+          "y": -27.78779
+        },
+        {
+          "x": 18.765948,
+          "y": -26.408277
+        },
+        {
+          "x": 18.834052,
+          "y": -26.598451
+        },
+        {
+          "x": 14.886235,
+          "y": -28.01221
+        },
+        {
+          "x": 14.199,
+          "y": -27.554054
+        },
+        {
+          "x": 14.199,
+          "y": -26.984712
+        },
+        {
+          "x": 14.869649,
+          "y": -24.820109
+        },
+        {
+          "x": 15.062601,
+          "y": -24.879891
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "CHARGE_PGOOD_N",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -7.149937,
+          -28.539227
+        ],
+        [
+          -7.380611,
+          -30.5
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -7.280303,
+          "y": -30.511801
+        },
+        {
+          "x": -7.480919,
+          "y": -30.488199
+        },
+        {
+          "x": -7.250245,
+          "y": -28.527426
+        },
+        {
+          "x": -7.049629,
+          "y": -28.551028
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "CHARGE_STATUS_N",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -6.500003,
+          -27.349935
+        ],
+        [
+          -8.899999999999778,
+          -23.49999999999988
+        ],
+        [
+          -13.89999999999985,
+          -23.399999999999878
+        ],
+        [
+          -14.0,
+          -22.880611
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -8.956751,
+          "y": -23.599885
+        },
+        {
+          "x": -13.983728,
+          "y": -23.499346
+        },
+        {
+          "x": -14.099178,
+          "y": -22.899706
+        },
+        {
+          "x": -13.900822,
+          "y": -22.861516
+        },
+        {
+          "x": -13.816272,
+          "y": -23.300654
+        },
+        {
+          "x": -8.843249,
+          "y": -23.400115
+        },
+        {
+          "x": -6.414293,
+          "y": -27.296505
+        },
+        {
+          "x": -6.585713,
+          "y": -27.403365
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "CHARGE_STATUS_N",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -5.500003,
+          -26.749935
+        ],
+        [
+          -5.199999999999726,
+          -27.89999999999994
+        ],
+        [
+          1.5000000000003695,
+          -28.199999999999946
+        ],
+        [
+          1.7000000000003723,
+          -27.69999999999994
+        ],
+        [
+          3.7000000000004007,
+          -17.8999999999998
+        ],
+        [
+          18.200000000000607,
+          -3.299999999999592
+        ],
+        [
+          20.300000000000637,
+          -0.6999999999995552
+        ],
+        [
+          20.100000000000634,
+          0.8000000000004661
+        ],
+        [
+          19.500000000000625,
+          1.2000000000004718
+        ],
+        [
+          18.800000000000615,
+          1.000000000000469
+        ],
+        [
+          18.50000000000061,
+          0.7000000000004647
+        ],
+        [
+          -0.133975,
+          -4.5
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -5.121071,
+          "y": -27.802433
+        },
+        {
+          "x": 1.432863,
+          "y": -28.095893
+        },
+        {
+          "x": 1.602854,
+          "y": -27.670914
+        },
+        {
+          "x": 3.607074,
+          "y": -17.850238
+        },
+        {
+          "x": 18.124685,
+          "y": -3.232506
+        },
+        {
+          "x": 20.194148,
+          "y": -0.670313
+        },
+        {
+          "x": 20.005929,
+          "y": 0.741327
+        },
+        {
+          "x": 19.482837,
+          "y": 1.090055
+        },
+        {
+          "x": 18.852912,
+          "y": 0.910076
+        },
+        {
+          "x": 18.552677,
+          "y": 0.609841
+        },
+        {
+          "x": -0.106827,
+          "y": -4.597283
+        },
+        {
+          "x": -0.161123,
+          "y": -4.402717
+        },
+        {
+          "x": 18.447323,
+          "y": 0.790159
+        },
+        {
+          "x": 18.747088,
+          "y": 1.089924
+        },
+        {
+          "x": 19.517163,
+          "y": 1.309945
+        },
+        {
+          "x": 20.194071,
+          "y": 0.858673
+        },
+        {
+          "x": 20.405852,
+          "y": -0.729687
+        },
+        {
+          "x": 18.275315,
+          "y": -3.367494
+        },
+        {
+          "x": 3.792926,
+          "y": -17.949762
+        },
+        {
+          "x": 1.797146,
+          "y": -27.729086
+        },
+        {
+          "x": 1.567137,
+          "y": -28.304107
+        },
+        {
+          "x": -5.278929,
+          "y": -27.997567
+        },
+        {
+          "x": -5.597733,
+          "y": -26.775429
+        },
+        {
+          "x": -5.402273,
+          "y": -26.724441
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "LCD_ENABLE",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -19.364405,
+          24.019497
+        ],
+        [
+          -20.29999999999994,
+          26.50000000000083
+        ],
+        [
+          -19.999999999999936,
+          27.10000000000084
+        ],
+        [
+          -15.499999999999872,
+          27.20000000000084
+        ],
+        [
+          5.200000000000422,
+          27.10000000000084
+        ],
+        [
+          8.60000000000047,
+          24.500000000000803
+        ],
+        [
+          13.200000000000536,
+          18.800000000000722
+        ],
+        [
+          14.0,
+          14.7
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -20.410085,
+          "y": 26.505673
+        },
+        {
+          "x": -20.06311,
+          "y": 27.199622
+        },
+        {
+          "x": -15.500878,
+          "y": 27.301005
+        },
+        {
+          "x": 5.234408,
+          "y": 27.200835
+        },
+        {
+          "x": 8.670984,
+          "y": 24.572865
+        },
+        {
+          "x": 13.294332,
+          "y": 18.843933
+        },
+        {
+          "x": 14.099131,
+          "y": 14.719343
+        },
+        {
+          "x": 13.900869,
+          "y": 14.680657
+        },
+        {
+          "x": 13.105668,
+          "y": 18.756067
+        },
+        {
+          "x": 8.529016,
+          "y": 24.427135
+        },
+        {
+          "x": 5.165592,
+          "y": 26.999165
+        },
+        {
+          "x": -15.499122,
+          "y": 27.098995
+        },
+        {
+          "x": -19.93689,
+          "y": 27.000378
+        },
+        {
+          "x": -20.189915,
+          "y": 26.494327
+        },
+        {
+          "x": -19.269904,
+          "y": 24.055141
+        },
+        {
+          "x": -19.458906,
+          "y": 23.983853
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "LCD_ENABLE",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          14.6,
+          14.7
+        ],
+        [
+          16.500000000000583,
+          12.200000000000628
+        ],
+        [
+          17.289005,
+          5.3
+        ],
+        [
+          16.389005,
+          5.3
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 16.597195,
+          "y": 12.239031
+        },
+        {
+          "x": 17.402212,
+          "y": 5.199
+        },
+        {
+          "x": 16.389005,
+          "y": 5.199
+        },
+        {
+          "x": 16.389005,
+          "y": 5.401
+        },
+        {
+          "x": 17.175798,
+          "y": 5.401
+        },
+        {
+          "x": 16.402805,
+          "y": 12.160969
+        },
+        {
+          "x": 14.519588,
+          "y": 14.638887
+        },
+        {
+          "x": 14.680412,
+          "y": 14.761113
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_AUDIO_LRCLK",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -19.364405,
+          16.399497
+        ],
+        [
+          -13.599999999999845,
+          10.600000000000605
+        ],
+        [
+          -10.699999999999804,
+          6.6000000000005485
+        ],
+        [
+          -9.312196,
+          3.1
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -13.522835,
+          "y": 10.665636
+        },
+        {
+          "x": -10.610786,
+          "y": 6.649017
+        },
+        {
+          "x": -9.218307,
+          "y": 3.137228
+        },
+        {
+          "x": -9.406085,
+          "y": 3.062772
+        },
+        {
+          "x": -10.789214,
+          "y": 6.550983
+        },
+        {
+          "x": -13.677165,
+          "y": 10.534364
+        },
+        {
+          "x": -19.436039,
+          "y": 16.328296
+        },
+        {
+          "x": -19.292771,
+          "y": 16.470698
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "USB_CC1",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -0.549934,
+          -27.038392
+        ],
+        [
+          -3.6999999999997044,
+          -25.199999999999903
+        ],
+        [
+          -8.99999999999978,
+          -22.999999999999872
+        ],
+        [
+          -12.999999999999837,
+          -21.999999999999858
+        ],
+        [
+          -14.499999999999858,
+          -22.299999999999862
+        ],
+        [
+          -14.69999999999986,
+          -22.79999999999987
+        ],
+        [
+          -14.59999999999986,
+          -23.399999999999878
+        ],
+        [
+          -13.99999999999985,
+          -23.899999999999885
+        ],
+        [
+          -11.133975,
+          -24.25335
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -3.745019,
+          "y": -25.290668
+        },
+        {
+          "x": -9.031783,
+          "y": -23.096163
+        },
+        {
+          "x": -13.002463,
+          "y": -22.103493
+        },
+        {
+          "x": -14.426543,
+          "y": -22.388309
+        },
+        {
+          "x": -14.595728,
+          "y": -22.811271
+        },
+        {
+          "x": -14.506538,
+          "y": -23.346412
+        },
+        {
+          "x": -13.958161,
+          "y": -23.803394
+        },
+        {
+          "x": -11.121616,
+          "y": -24.153109
+        },
+        {
+          "x": -11.146334,
+          "y": -24.353591
+        },
+        {
+          "x": -14.041839,
+          "y": -23.996606
+        },
+        {
+          "x": -14.693462,
+          "y": -23.453588
+        },
+        {
+          "x": -14.804272,
+          "y": -22.788729
+        },
+        {
+          "x": -14.573457,
+          "y": -22.211691
+        },
+        {
+          "x": -12.997537,
+          "y": -21.896507
+        },
+        {
+          "x": -8.968217,
+          "y": -22.903837
+        },
+        {
+          "x": -3.654981,
+          "y": -25.109332
+        },
+        {
+          "x": -0.499025,
+          "y": -26.951161
+        },
+        {
+          "x": -0.600843,
+          "y": -27.125623
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_WS_INPUT",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          16.8999,
+          -25.35
+        ],
+        [
+          17.8000000000006,
+          -22.599999999999866
+        ],
+        [
+          17.8000000000006,
+          -22.09999999999986
+        ],
+        [
+          17.300000000000594,
+          -21.799999999999855
+        ],
+        [
+          16.700000000000585,
+          -21.899999999999856
+        ],
+        [
+          8.003364,
+          -29.866025
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": 17.699,
+          "y": -22.583891
+        },
+        {
+          "x": 17.699,
+          "y": -22.157185
+        },
+        {
+          "x": 17.279923,
+          "y": -21.905739
+        },
+        {
+          "x": 16.74614,
+          "y": -21.994703
+        },
+        {
+          "x": 8.071585,
+          "y": -29.940503
+        },
+        {
+          "x": 7.935143,
+          "y": -29.791547
+        },
+        {
+          "x": 16.65386,
+          "y": -21.805297
+        },
+        {
+          "x": 17.320077,
+          "y": -21.694261
+        },
+        {
+          "x": 17.901,
+          "y": -22.042815
+        },
+        {
+          "x": 17.901,
+          "y": -22.616109
+        },
+        {
+          "x": 16.995889,
+          "y": -25.381418
+        },
+        {
+          "x": 16.803911,
+          "y": -25.318582
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MCU_BACKLIGHT_PWM",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -5.855,
+          16.324077
+        ],
+        [
+          -0.619389,
+          18.4
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -0.656616,
+          "y": 18.493889
+        },
+        {
+          "x": -0.582162,
+          "y": 18.306111
+        },
+        {
+          "x": -5.817773,
+          "y": 16.230188
+        },
+        {
+          "x": -5.892227,
+          "y": 16.417966
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_WS",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -17.599999999999902,
+          -30.59999999999998
+        ],
+        [
+          -6.89999999999975,
+          -31.799999999999997
+        ],
+        [
+          -4.1999999999997115,
+          -32.0
+        ],
+        [
+          4.800000000000416,
+          -32.0
+        ],
+        [
+          10.300000000000495,
+          -29.79999999999997
+        ],
+        [
+          14.3,
+          -27.5
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -6.890638,
+          "y": -31.699417
+        },
+        {
+          "x": -4.196264,
+          "y": -31.899
+        },
+        {
+          "x": 4.780549,
+          "y": -31.899
+        },
+        {
+          "x": 10.255852,
+          "y": -29.708879
+        },
+        {
+          "x": 14.249654,
+          "y": -27.412442
+        },
+        {
+          "x": 14.350346,
+          "y": -27.587558
+        },
+        {
+          "x": 10.344148,
+          "y": -29.891121
+        },
+        {
+          "x": 4.819451,
+          "y": -32.101
+        },
+        {
+          "x": -4.203736,
+          "y": -32.101
+        },
+        {
+          "x": -6.909362,
+          "y": -31.900583
+        },
+        {
+          "x": -17.611257,
+          "y": -30.700371
+        },
+        {
+          "x": -17.588743,
+          "y": -30.499629
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    },
+    {
+      "net": "MIC_BCLK",
+      "layer": "inner2",
+      "path_mm": [
+        [
+          -14.399999999999856,
+          -29.699999999999967
+        ],
+        [
+          -16.09999999999988,
+          -29.29999999999996
+        ],
+        [
+          -18.09999999999991,
+          -27.199999999999932
+        ],
+        [
+          -18.19999999999991,
+          -26.099999999999916
+        ],
+        [
+          -22.49999999999997,
+          -20.499999999999837
+        ],
+        [
+          -23.19999999999998,
+          -16.39999999999978
+        ],
+        [
+          -24.099999999999994,
+          1.500000000000476
+        ],
+        [
+          -24.199999999999996,
+          27.70000000000085
+        ],
+        [
+          -23.499999999999986,
+          29.20000000000087
+        ],
+        [
+          -22.199999999999967,
+          30.60000000000089
+        ],
+        [
+          -19.299999999999926,
+          30.500000000000888
+        ],
+        [
+          -0.6999999999996618,
+          30.500000000000888
+        ],
+        [
+          3.481659405224491e-13,
+          31.000000000000895
+        ],
+        [
+          14.300000000000551,
+          30.00000000000088
+        ],
+        [
+          16.000000000000576,
+          28.60000000000086
+        ],
+        [
+          24.10000000000069,
+          8.10000000000057
+        ],
+        [
+          24.10000000000069,
+          -11.299999999999706
+        ],
+        [
+          18.30000000000061,
+          -20.499999999999837
+        ],
+        [
+          18.200000000000607,
+          -23.099999999999874
+        ],
+        [
+          17.500000000000597,
+          -25.799999999999912
+        ],
+        [
+          14.966125,
+          -27.15
+        ]
+      ],
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "outline": [
+        {
+          "x": -16.152402,
+          "y": -29.391428
+        },
+        {
+          "x": -18.1974,
+          "y": -27.24418
+        },
+        {
+          "x": -18.297935,
+          "y": -26.138295
+        },
+        {
+          "x": -22.595348,
+          "y": -20.541664
+        },
+        {
+          "x": -23.300571,
+          "y": -16.411074
+        },
+        {
+          "x": -24.20099,
+          "y": 1.49727
+        },
+        {
+          "x": -24.301086,
+          "y": 27.722223
+        },
+        {
+          "x": -23.584812,
+          "y": 29.257095
+        },
+        {
+          "x": -22.242623,
+          "y": 30.70253
+        },
+        {
+          "x": -19.298259,
+          "y": 30.601
+        },
+        {
+          "x": -0.732367,
+          "y": 30.601
+        },
+        {
+          "x": -0.029166,
+          "y": 31.103286
+        },
+        {
+          "x": 14.33927,
+          "y": 30.0985
+        },
+        {
+          "x": 16.084346,
+          "y": 28.661379
+        },
+        {
+          "x": 24.201,
+          "y": 8.11923
+        },
+        {
+          "x": 24.201,
+          "y": -11.32918
+        },
+        {
+          "x": 18.399884,
+          "y": -20.530949
+        },
+        {
+          "x": 18.300506,
+          "y": -23.114785
+        },
+        {
+          "x": 17.586636,
+          "y": -25.868282
+        },
+        {
+          "x": 15.013616,
+          "y": -27.239138
+        },
+        {
+          "x": 14.918634,
+          "y": -27.060862
+        },
+        {
+          "x": 17.413364,
+          "y": -25.731718
+        },
+        {
+          "x": 18.099494,
+          "y": -23.085215
+        },
+        {
+          "x": 18.200116,
+          "y": -20.469051
+        },
+        {
+          "x": 23.999,
+          "y": -11.27082
+        },
+        {
+          "x": 23.999,
+          "y": 8.08077
+        },
+        {
+          "x": 15.915654,
+          "y": 28.538621
+        },
+        {
+          "x": 14.26073,
+          "y": 29.9015
+        },
+        {
+          "x": 0.029166,
+          "y": 30.896714
+        },
+        {
+          "x": -0.667633,
+          "y": 30.399
+        },
+        {
+          "x": -19.301741,
+          "y": 30.399
+        },
+        {
+          "x": -22.157377,
+          "y": 30.49747
+        },
+        {
+          "x": -23.415188,
+          "y": 29.142905
+        },
+        {
+          "x": -24.098914,
+          "y": 27.677777
+        },
+        {
+          "x": -23.99901,
+          "y": 1.50273
+        },
+        {
+          "x": -23.099429,
+          "y": -16.388926
+        },
+        {
+          "x": -22.404652,
+          "y": -20.458336
+        },
+        {
+          "x": -18.102065,
+          "y": -26.061705
+        },
+        {
+          "x": -18.0026,
+          "y": -27.15582
+        },
+        {
+          "x": -16.047598,
+          "y": -29.208572
+        },
+        {
+          "x": -14.376867,
+          "y": -29.601685
+        },
+        {
+          "x": -14.423133,
+          "y": -29.798315
+        }
+      ],
+      "classification": "manual native relocation of low-current signal to inner2; full-span outer pad-escape vias"
+    }
+  ]
+}

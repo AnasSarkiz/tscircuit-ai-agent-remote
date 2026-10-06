@@ -1,0 +1,152 @@
+{
+  "scope": "Every native wire, pad, through via and BREP pour; actual supported pad contours for DRC and connectivity, conservative interpolated wire thickness. No fabrication or thermal approval implied.",
+  "copper_features": 1648,
+  "native_errors": {
+    "pcb_port_not_connected_error": 146,
+    "pcb_trace_error": 258,
+    "pcb_pad_trace_clearance_error": 14,
+    "pcb_via_trace_clearance_error": 8
+  },
+  "minima": {
+    "via_hole": {
+      "clearance_mm": 0.3,
+      "requirement_mm": 0.3,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_outer": {
+      "clearance_mm": 0.45,
+      "requirement_mm": 0.45,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_annulus": {
+      "clearance_mm": 0.07500000000000001,
+      "requirement_mm": 0.075,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "copper_pad_pour": {
+      "clearance_mm": 0.204173211416443,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_446",
+        "pcb_copper_pour_181"
+      ]
+    },
+    "copper_pad_trace": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_4",
+        "pcb_trace_266:0"
+      ]
+    },
+    "via_drill_to_pad": {
+      "clearance_mm": 0.20000119433619012,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_203",
+        "pcb_smtpad_16"
+      ]
+    },
+    "copper_pad": {
+      "clearance_mm": 0.19758659999999928,
+      "requirement_mm": 0.1,
+      "ids": [
+        "pcb_smtpad_217",
+        "pcb_smtpad_218"
+      ]
+    },
+    "copper_pad_via": {
+      "clearance_mm": 0.34093373344054184,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_292",
+        "pcb_via_200"
+      ]
+    },
+    "copper_pour_via": {
+      "clearance_mm": 0.20790459221463123,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_24",
+        "pcb_copper_pour_149"
+      ]
+    },
+    "copper_trace_via": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_7",
+        "pcb_trace_274:0"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 0.24999941637971776,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 0.039951473904787003,
+      "requirement_mm": 0,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "copper_trace": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_2:0",
+        "pcb_trace_290:0"
+      ]
+    },
+    "copper_pour_trace": {
+      "clearance_mm": 0.2065807128951152,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_10:0",
+        "pcb_copper_pour_92"
+      ]
+    },
+    "copper_to_drill": {
+      "clearance_mm": 0.0,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_trace_266:0",
+        "pcb_via_207"
+      ]
+    },
+    "copper_pour": {
+      "clearance_mm": 0.20999936384610915,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_copper_pour_325"
+      ]
+    },
+    "drill_to_drill": {
+      "clearance_mm": 0.26041139833359017,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_via_113",
+        "pcb_via_114"
+      ]
+    }
+  },
+  "minima_scope": "Nearby copper pairs within 0.21 mm and drill pairs within 0.26 mm; STRtree excludes distant pairs without weakening any clearance requirement.",
+  "drc_violation_count": 318,
+  "short_count": 217,
+  "merged_named_nets": [],
+  "physically_open_net_count": 42,
+  "zero_drc_zero_shorts_and_connected": false,
+  "source_circuit_json": "evidence/six-point-board-review-2026-10-06/outer-candidate-native/circuit.json",
+  "source_sha256": "c2382a8ba6fdb6250f5ef5d2f70f4a25278faceea73e9a4ac5c89d97d396e9d2"
+}

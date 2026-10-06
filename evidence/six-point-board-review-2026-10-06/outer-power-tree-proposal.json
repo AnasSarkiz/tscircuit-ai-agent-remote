@@ -1,0 +1,5396 @@
+{
+  "classification": "authored outer-layer high-current replacement; requires native replay and audit",
+  "source_circuit_json": "evidence/six-point-board-review-2026-10-06/via-baseline-native/circuit.json",
+  "pours": [
+    {
+      "net": "PACK_BAT",
+      "nominal_width_mm": 1,
+      "path_mm": [
+        [
+          -8.8,
+          -28.5
+        ],
+        [
+          -10.299999999999798,
+          -27.79999999999994
+        ],
+        [
+          -12.399999999999828,
+          -29.19999999999996
+        ],
+        [
+          -13.19999999999984,
+          -29.19999999999996
+        ],
+        [
+          -13.799999999999848,
+          -28.59999999999995
+        ],
+        [
+          -15.549976,
+          -25.383975
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -10.256536,
+          "y": -28.373151
+        },
+        {
+          "x": -12.248309,
+          "y": -29.701
+        },
+        {
+          "x": -13.407521,
+          "y": -29.701
+        },
+        {
+          "x": -14.20546,
+          "y": -28.903061
+        },
+        {
+          "x": -15.990044,
+          "y": -25.623435
+        },
+        {
+          "x": -15.109908,
+          "y": -25.144515
+        },
+        {
+          "x": -13.39454,
+          "y": -28.296939
+        },
+        {
+          "x": -12.992479,
+          "y": -28.699
+        },
+        {
+          "x": -12.551691,
+          "y": -28.699
+        },
+        {
+          "x": -10.343464,
+          "y": -27.226849
+        },
+        {
+          "x": -8.588134,
+          "y": -28.046002
+        },
+        {
+          "x": -9.011866,
+          "y": -28.953998
+        }
+      ],
+      "drawn_width_mm": 1.002,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          4,
+          -24.8
+        ],
+        [
+          3.500000000000398,
+          -22.499999999999865
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 3.254729,
+          "y": -22.55332
+        },
+        {
+          "x": 3.745271,
+          "y": -22.44668
+        },
+        {
+          "x": 4.245271,
+          "y": -24.74668
+        },
+        {
+          "x": 3.754729,
+          "y": -24.85332
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          3.500000000000398,
+          -22.499999999999865
+        ],
+        [
+          1.8000000000003737,
+          -19.799999999999827
+        ],
+        [
+          1.8000000000003737,
+          -18.69999999999981
+        ],
+        [
+          1.400000000000368,
+          -16.799999999999784
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 1.549,
+          "y": -19.872437
+        },
+        {
+          "x": 1.549,
+          "y": -18.726135
+        },
+        {
+          "x": 1.154384,
+          "y": -16.851709
+        },
+        {
+          "x": 1.645616,
+          "y": -16.748291
+        },
+        {
+          "x": 2.051,
+          "y": -18.673865
+        },
+        {
+          "x": 2.051,
+          "y": -19.727563
+        },
+        {
+          "x": 3.712404,
+          "y": -22.366264
+        },
+        {
+          "x": 3.287596,
+          "y": -22.633736
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          1.400000000000368,
+          -16.799999999999784
+        ],
+        [
+          -5.799999999999734,
+          -8.599999999999667
+        ],
+        [
+          -14.499999999999858,
+          0.40000000000046043
+        ],
+        [
+          -17.299999999999898,
+          0.40000000000046043
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -5.984645,
+          "y": -8.770128
+        },
+        {
+          "x": -14.606468,
+          "y": 0.149
+        },
+        {
+          "x": -17.3,
+          "y": 0.149
+        },
+        {
+          "x": -17.3,
+          "y": 0.651
+        },
+        {
+          "x": -14.393532,
+          "y": 0.651
+        },
+        {
+          "x": -5.615355,
+          "y": -8.429872
+        },
+        {
+          "x": 1.588611,
+          "y": -16.63439
+        },
+        {
+          "x": 1.211389,
+          "y": -16.96561
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          -17.299999999999898,
+          0.40000000000046043
+        ],
+        [
+          -18.299999999999912,
+          1.2000000000004718
+        ],
+        [
+          -19.999999999999936,
+          2.900000000000496
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -18.467654,
+          "y": 1.012686
+        },
+        {
+          "x": -20.177484,
+          "y": 2.722516
+        },
+        {
+          "x": -19.822516,
+          "y": 3.077484
+        },
+        {
+          "x": -18.132346,
+          "y": 1.387314
+        },
+        {
+          "x": -17.143202,
+          "y": 0.595998
+        },
+        {
+          "x": -17.456798,
+          "y": 0.204002
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          -19.999999999999936,
+          2.900000000000496
+        ],
+        [
+          -20.99999999999995,
+          10.400000000000603
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -21.248798,
+          "y": 10.366827
+        },
+        {
+          "x": -20.751202,
+          "y": 10.433173
+        },
+        {
+          "x": -19.751202,
+          "y": 2.933173
+        },
+        {
+          "x": -20.248798,
+          "y": 2.866827
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          -20.99999999999995,
+          10.400000000000603
+        ],
+        [
+          -18.19999999999991,
+          10.500000000000604
+        ],
+        [
+          -17.999999999999908,
+          10.500000000000604
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -18.204481,
+          "y": 10.751
+        },
+        {
+          "x": -18.0,
+          "y": 10.751
+        },
+        {
+          "x": -18.0,
+          "y": 10.249
+        },
+        {
+          "x": -18.195519,
+          "y": 10.249
+        },
+        {
+          "x": -20.991041,
+          "y": 10.14916
+        },
+        {
+          "x": -21.008959,
+          "y": 10.65084
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VBUS",
+      "nominal_width_mm": 0.5,
+      "path_mm": [
+        [
+          -17.999999999999908,
+          10.500000000000604
+        ],
+        [
+          -14.9,
+          10.8
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -14.924177,
+          "y": 11.049833
+        },
+        {
+          "x": -14.875823,
+          "y": 10.550167
+        },
+        {
+          "x": -17.975823,
+          "y": 10.250167
+        },
+        {
+          "x": -18.024177,
+          "y": 10.749833
+        }
+      ],
+      "drawn_width_mm": 0.502,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -21.950046,
+          29.899497
+        ],
+        [
+          -13.29999999999984,
+          29.30000000000087
+        ],
+        [
+          -4.8999999999997215,
+          26.000000000000824
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -13.210763,
+          "y": 29.695777
+        },
+        {
+          "x": -4.753373,
+          "y": 26.373231
+        },
+        {
+          "x": -5.046627,
+          "y": 25.626769
+        },
+        {
+          "x": -13.389237,
+          "y": 28.904223
+        },
+        {
+          "x": -21.977771,
+          "y": 29.499457
+        },
+        {
+          "x": -21.922321,
+          "y": 30.299537
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -4.8999999999997215,
+          26.000000000000824
+        ],
+        [
+          -1.699999999999676,
+          25.900000000000823
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -1.687475,
+          "y": 26.300804
+        },
+        {
+          "x": -1.712525,
+          "y": 25.499196
+        },
+        {
+          "x": -4.912525,
+          "y": 25.599196
+        },
+        {
+          "x": -4.887475,
+          "y": 26.400804
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -1.699999999999676,
+          25.900000000000823
+        ],
+        [
+          -0.753364,
+          25.95
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -0.774515,
+          "y": 26.350442
+        },
+        {
+          "x": -0.732213,
+          "y": 25.549558
+        },
+        {
+          "x": -1.678849,
+          "y": 25.499558
+        },
+        {
+          "x": -1.721151,
+          "y": 26.300442
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -0.753364,
+          25.95
+        ],
+        [
+          4.499976,
+          24.5
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 4.606668,
+          "y": 24.886546
+        },
+        {
+          "x": 4.393284,
+          "y": 24.113454
+        },
+        {
+          "x": -0.860056,
+          "y": 25.563454
+        },
+        {
+          "x": -0.646672,
+          "y": 26.336546
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          4.499976,
+          24.5
+        ],
+        [
+          6.100000000000435,
+          25.70000000000082
+        ],
+        [
+          7.800000000000459,
+          25.60000000000082
+        ],
+        [
+          10.600000000000499,
+          23.400000000000787
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 5.976913,
+          "y": 26.108934
+        },
+        {
+          "x": 7.948961,
+          "y": 25.992931
+        },
+        {
+          "x": 10.847746,
+          "y": 23.715314
+        },
+        {
+          "x": 10.352254,
+          "y": 23.084686
+        },
+        {
+          "x": 7.651039,
+          "y": 25.207069
+        },
+        {
+          "x": 6.223087,
+          "y": 25.291066
+        },
+        {
+          "x": 4.740574,
+          "y": 24.179198
+        },
+        {
+          "x": 4.259378,
+          "y": 24.820802
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          10.600000000000499,
+          23.400000000000787
+        ],
+        [
+          13.200000000000536,
+          20.500000000000746
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 13.498572,
+          "y": 20.767686
+        },
+        {
+          "x": 12.901428,
+          "y": 20.232314
+        },
+        {
+          "x": 10.301428,
+          "y": 23.132314
+        },
+        {
+          "x": 10.898572,
+          "y": 23.667686
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          13.200000000000536,
+          20.500000000000746
+        ],
+        [
+          14.099901,
+          20.49286
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 14.103083,
+          "y": 20.893847
+        },
+        {
+          "x": 14.096719,
+          "y": 20.091873
+        },
+        {
+          "x": 13.196818,
+          "y": 20.099013
+        },
+        {
+          "x": 13.203182,
+          "y": 20.900987
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          14.099901,
+          20.49286
+        ],
+        [
+          12.400000000000524,
+          19.200000000000728
+        ],
+        [
+          11.800000000000516,
+          19.000000000000725
+        ],
+        [
+          10.500000000000497,
+          17.800000000000708
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 12.589854,
+          "y": 18.840593
+        },
+        {
+          "x": 12.008621,
+          "y": 18.646849
+        },
+        {
+          "x": 10.77199,
+          "y": 17.505344
+        },
+        {
+          "x": 10.22801,
+          "y": 18.094656
+        },
+        {
+          "x": 11.591379,
+          "y": 19.353151
+        },
+        {
+          "x": 12.210146,
+          "y": 19.559407
+        },
+        {
+          "x": 13.857151,
+          "y": 20.812036
+        },
+        {
+          "x": 14.342651,
+          "y": 20.173684
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          10.500000000000497,
+          17.800000000000708
+        ],
+        [
+          12.7,
+          11.6
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 13.077914,
+          "y": 11.734098
+        },
+        {
+          "x": 12.322086,
+          "y": 11.465902
+        },
+        {
+          "x": 10.122086,
+          "y": 17.665902
+        },
+        {
+          "x": 10.877914,
+          "y": 17.934098
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          12.7,
+          11.6
+        ],
+        [
+          10.4,
+          9.2
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 10.689517,
+          "y": 8.922546
+        },
+        {
+          "x": 10.110483,
+          "y": 9.477454
+        },
+        {
+          "x": 12.410483,
+          "y": 11.877454
+        },
+        {
+          "x": 12.989517,
+          "y": 11.322546
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          10.4,
+          9.2
+        ],
+        [
+          11.600000000000513,
+          2.5000000000004903
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 11.994719,
+          "y": 2.570696
+        },
+        {
+          "x": 11.205281,
+          "y": 2.429304
+        },
+        {
+          "x": 10.005281,
+          "y": 9.129304
+        },
+        {
+          "x": 10.794719,
+          "y": 9.270696
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          11.600000000000513,
+          2.5000000000004903
+        ],
+        [
+          11.600000000000513,
+          0.300000000000459
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 12.001,
+          "y": 0.3
+        },
+        {
+          "x": 11.199,
+          "y": 0.3
+        },
+        {
+          "x": 11.199,
+          "y": 2.5
+        },
+        {
+          "x": 12.001,
+          "y": 2.5
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          11.600000000000513,
+          0.300000000000459
+        ],
+        [
+          4.6000000000004135,
+          0.40000000000046043
+        ],
+        [
+          -1.5999999999996746,
+          5.30000000000053
+        ],
+        [
+          -2.3,
+          7.05718
+        ],
+        [
+          -1.4,
+          7.05718
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 4.458158,
+          "y": 0.000985
+        },
+        {
+          "x": -1.932821,
+          "y": 5.051921
+        },
+        {
+          "x": -2.891392,
+          "y": 7.45818
+        },
+        {
+          "x": -1.4,
+          "y": 7.45818
+        },
+        {
+          "x": -1.4,
+          "y": 6.65618
+        },
+        {
+          "x": -1.708608,
+          "y": 6.65618
+        },
+        {
+          "x": -1.267179,
+          "y": 5.548079
+        },
+        {
+          "x": 4.741842,
+          "y": 0.799015
+        },
+        {
+          "x": 11.605728,
+          "y": 0.700959
+        },
+        {
+          "x": 11.594272,
+          "y": -0.100959
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -1.4,
+          7.05718
+        ],
+        [
+          -2.69999999999969,
+          8.400000000000574
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -2.988106,
+          "y": 8.121081
+        },
+        {
+          "x": -2.411894,
+          "y": 8.678919
+        },
+        {
+          "x": -1.111894,
+          "y": 7.336099
+        },
+        {
+          "x": -1.688106,
+          "y": 6.778261
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -2.69999999999969,
+          8.400000000000574
+        ],
+        [
+          -3.700024,
+          9.633975
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -4.011564,
+          "y": 9.3815
+        },
+        {
+          "x": -3.388484,
+          "y": 9.88645
+        },
+        {
+          "x": -2.38846,
+          "y": 8.652475
+        },
+        {
+          "x": -3.01154,
+          "y": 8.147525
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          14.099901,
+          20.49286
+        ],
+        [
+          16.800000000000587,
+          24.4000000000008
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 16.47011,
+          "y": 24.627977
+        },
+        {
+          "x": 17.12989,
+          "y": 24.172023
+        },
+        {
+          "x": 14.429791,
+          "y": 20.264883
+        },
+        {
+          "x": 13.770011,
+          "y": 20.720837
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          16.800000000000587,
+          24.4000000000008
+        ],
+        [
+          21.049508,
+          30.4
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 20.72227,
+          "y": 30.631767
+        },
+        {
+          "x": 21.376746,
+          "y": 30.168233
+        },
+        {
+          "x": 17.127238,
+          "y": 24.168233
+        },
+        {
+          "x": 16.472762,
+          "y": 24.631767
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -1.4,
+          7.05718
+        ],
+        [
+          -2.0999999999996817,
+          4.000000000000512
+        ],
+        [
+          -0.6999999999996618,
+          2.000000000000483
+        ],
+        [
+          -1.500024,
+          -6.5
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -1.669371,
+          "y": 4.084078
+        },
+        {
+          "x": -0.286951,
+          "y": 2.109191
+        },
+        {
+          "x": -1.100788,
+          "y": -6.537576
+        },
+        {
+          "x": -1.89926,
+          "y": -6.462424
+        },
+        {
+          "x": -1.113049,
+          "y": 1.890809
+        },
+        {
+          "x": -2.530629,
+          "y": 3.915922
+        },
+        {
+          "x": -1.790884,
+          "y": 7.14668
+        },
+        {
+          "x": -1.009116,
+          "y": 6.96768
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -1.500024,
+          -6.5
+        ],
+        [
+          -1.553364,
+          -11
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -1.152392,
+          "y": -11.004753
+        },
+        {
+          "x": -1.954336,
+          "y": -10.995247
+        },
+        {
+          "x": -1.900996,
+          "y": -6.495247
+        },
+        {
+          "x": -1.099052,
+          "y": -6.504753
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -3.700024,
+          9.633975
+        ],
+        [
+          -3.4999999999997016,
+          9.100000000000584
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -3.124482,
+          "y": 9.240667
+        },
+        {
+          "x": -3.875518,
+          "y": 8.959333
+        },
+        {
+          "x": -4.075542,
+          "y": 9.493308
+        },
+        {
+          "x": -3.324506,
+          "y": 9.774642
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -3.4999999999997016,
+          9.100000000000584
+        ],
+        [
+          -9.199999999999783,
+          14.900000000000666
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -9.486005,
+          "y": 14.618926
+        },
+        {
+          "x": -8.913995,
+          "y": 15.181074
+        },
+        {
+          "x": -3.213995,
+          "y": 9.381074
+        },
+        {
+          "x": -3.786005,
+          "y": 8.818926
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -9.199999999999783,
+          14.900000000000666
+        ],
+        [
+          -10.799999999999805,
+          17.400000000000702
+        ],
+        [
+          -11.399999999999814,
+          17.500000000000703
+        ],
+        [
+          -14.299999999999855,
+          17.3000000000007
+        ],
+        [
+          -18.999999999999922,
+          14.900000000000666
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -11.041694,
+          "y": 17.033751
+        },
+        {
+          "x": -11.419432,
+          "y": 17.096707
+        },
+        {
+          "x": -14.190636,
+          "y": 16.90559
+        },
+        {
+          "x": -18.817634,
+          "y": 14.542867
+        },
+        {
+          "x": -19.182366,
+          "y": 15.257133
+        },
+        {
+          "x": -14.409364,
+          "y": 17.69441
+        },
+        {
+          "x": -11.380568,
+          "y": 17.903293
+        },
+        {
+          "x": -10.558306,
+          "y": 17.766249
+        },
+        {
+          "x": -8.862249,
+          "y": 15.116161
+        },
+        {
+          "x": -9.537751,
+          "y": 14.683839
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -18.999999999999922,
+          14.900000000000666
+        ],
+        [
+          -20.19999999999994,
+          12.600000000000634
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -19.844479,
+          "y": 12.414511
+        },
+        {
+          "x": -20.555521,
+          "y": 12.785489
+        },
+        {
+          "x": -19.355521,
+          "y": 15.085489
+        },
+        {
+          "x": -18.644479,
+          "y": 14.714511
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -20.19999999999994,
+          12.600000000000634
+        ],
+        [
+          -21.899999999999963,
+          10.800000000000608
+        ],
+        [
+          -21.999999999999964,
+          10.400000000000603
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": -21.536422,
+          "y": 10.600948
+        },
+        {
+          "x": -21.610973,
+          "y": 10.302743
+        },
+        {
+          "x": -22.389027,
+          "y": 10.497257
+        },
+        {
+          "x": -22.263578,
+          "y": 10.999052
+        },
+        {
+          "x": -20.491532,
+          "y": 12.875336
+        },
+        {
+          "x": -19.908468,
+          "y": 12.324664
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "V3V3",
+      "nominal_width_mm": 0.8,
+      "path_mm": [
+        [
+          -21.999999999999964,
+          10.400000000000603
+        ],
+        [
+          -20.905978,
+          0.557112
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -20.507432,
+          "y": 0.60141
+        },
+        {
+          "x": -21.304524,
+          "y": 0.512814
+        },
+        {
+          "x": -22.398546,
+          "y": 10.355702
+        },
+        {
+          "x": -21.601454,
+          "y": 10.444298
+        }
+      ],
+      "drawn_width_mm": 0.802,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.205,
+          -2.25
+        ],
+        [
+          11.40000000000051,
+          -1.8999999999995723
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 11.381304,
+          "y": -2.049838
+        },
+        {
+          "x": 11.418696,
+          "y": -1.750162
+        },
+        {
+          "x": 14.223696,
+          "y": -2.100162
+        },
+        {
+          "x": 14.186304,
+          "y": -2.399838
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          11.40000000000051,
+          -1.8999999999995723
+        ],
+        [
+          11.500000000000512,
+          -0.7999999999995566
+        ],
+        [
+          13.200000000000536,
+          0.9000000000004675
+        ],
+        [
+          13.414335,
+          3.3
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 11.35457,
+          "y": -0.731884
+        },
+        {
+          "x": 13.054474,
+          "y": 0.96802
+        },
+        {
+          "x": 13.263934,
+          "y": 3.313432
+        },
+        {
+          "x": 13.564736,
+          "y": 3.286568
+        },
+        {
+          "x": 13.345526,
+          "y": 0.83198
+        },
+        {
+          "x": 11.64543,
+          "y": -0.868116
+        },
+        {
+          "x": 11.55038,
+          "y": -1.913671
+        },
+        {
+          "x": 11.24962,
+          "y": -1.886329
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.205,
+          -2.25
+        ],
+        [
+          11.40000000000051,
+          -6.6999999999996405
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 11.52774,
+          "y": -6.78052
+        },
+        {
+          "x": 11.27226,
+          "y": -6.61948
+        },
+        {
+          "x": 14.07726,
+          "y": -2.16948
+        },
+        {
+          "x": 14.33274,
+          "y": -2.33052
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          11.40000000000051,
+          -6.6999999999996405
+        ],
+        [
+          11.500000000000512,
+          -8.299999999999663
+        ],
+        [
+          12.300000000000523,
+          -9.799999999999685
+        ],
+        [
+          12.700000000000529,
+          -9.799999999999685
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 11.648661,
+          "y": -8.257865
+        },
+        {
+          "x": 12.3906,
+          "y": -9.649
+        },
+        {
+          "x": 12.7,
+          "y": -9.649
+        },
+        {
+          "x": 12.7,
+          "y": -9.951
+        },
+        {
+          "x": 12.2094,
+          "y": -9.951
+        },
+        {
+          "x": 11.351339,
+          "y": -8.342135
+        },
+        {
+          "x": 11.249294,
+          "y": -6.709419
+        },
+        {
+          "x": 11.550706,
+          "y": -6.690581
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          12.700000000000529,
+          -9.799999999999685
+        ],
+        [
+          17.10000000000059,
+          -7.999999999999659
+        ],
+        [
+          23.4,
+          -8
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 17.070308,
+          "y": -7.849
+        },
+        {
+          "x": 23.4,
+          "y": -7.849
+        },
+        {
+          "x": 23.4,
+          "y": -8.151
+        },
+        {
+          "x": 17.129692,
+          "y": -8.151
+        },
+        {
+          "x": 12.757174,
+          "y": -9.939758
+        },
+        {
+          "x": 12.642826,
+          "y": -9.660242
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          23.4,
+          -8
+        ],
+        [
+          20.700000000000642,
+          -10.19999999999969
+        ],
+        [
+          17.803350000000002,
+          -15
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 20.815725,
+          "y": -10.300485
+        },
+        {
+          "x": 17.932633,
+          "y": -15.078018
+        },
+        {
+          "x": 17.674067,
+          "y": -14.921982
+        },
+        {
+          "x": 20.584275,
+          "y": -10.099515
+        },
+        {
+          "x": 23.304617,
+          "y": -7.88294
+        },
+        {
+          "x": 23.495383,
+          "y": -8.11706
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.205,
+          -2.25
+        ],
+        [
+          10.00000000000049,
+          -2.299999999999578
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 10.001795,
+          "y": -2.450989
+        },
+        {
+          "x": 9.998205,
+          "y": -2.149011
+        },
+        {
+          "x": 14.203205,
+          "y": -2.099011
+        },
+        {
+          "x": 14.206795,
+          "y": -2.400989
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          10.00000000000049,
+          -2.299999999999578
+        ],
+        [
+          7.90000000000046,
+          -1.599999999999568
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 7.85225,
+          "y": -1.743251
+        },
+        {
+          "x": 7.94775,
+          "y": -1.456749
+        },
+        {
+          "x": 10.04775,
+          "y": -2.156749
+        },
+        {
+          "x": 9.95225,
+          "y": -2.443251
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          7.90000000000046,
+          -1.599999999999568
+        ],
+        [
+          1.23505,
+          -1.287564
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 1.227979,
+          "y": -1.438398
+        },
+        {
+          "x": 1.242121,
+          "y": -1.13673
+        },
+        {
+          "x": 7.907071,
+          "y": -1.449166
+        },
+        {
+          "x": 7.892929,
+          "y": -1.750834
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "VMOTOR",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          1.23505,
+          -1.287564
+        ],
+        [
+          3.399976,
+          -12.0
+        ],
+        [
+          2.499976,
+          -12
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 3.584545,
+          "y": -12.151
+        },
+        {
+          "x": 2.499976,
+          "y": -12.151
+        },
+        {
+          "x": 2.499976,
+          "y": -11.849
+        },
+        {
+          "x": 3.215407,
+          "y": -11.849
+        },
+        {
+          "x": 1.087042,
+          "y": -1.317476
+        },
+        {
+          "x": 1.383058,
+          "y": -1.257652
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          17.149998,
+          -8.692820000000001
+        ],
+        [
+          23.4,
+          -11
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 23.469608,
+          "y": -10.811438
+        },
+        {
+          "x": 23.330392,
+          "y": -11.188562
+        },
+        {
+          "x": 17.08039,
+          "y": -8.881382
+        },
+        {
+          "x": 17.219606,
+          "y": -8.504258
+        }
+      ],
+      "drawn_width_mm": 0.402,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          17.149998,
+          -8.692820000000001
+        ],
+        [
+          10.200000000000493,
+          -12.199999999999719
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 10.290554,
+          "y": -12.379446
+        },
+        {
+          "x": 10.109446,
+          "y": -12.020554
+        },
+        {
+          "x": 17.059444,
+          "y": -8.513374
+        },
+        {
+          "x": 17.240552,
+          "y": -8.872266
+        }
+      ],
+      "drawn_width_mm": 0.402,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          10.200000000000493,
+          -12.199999999999719
+        ],
+        [
+          7.90000000000046,
+          -10.299999999999692
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 7.771987,
+          "y": -10.454963
+        },
+        {
+          "x": 8.028013,
+          "y": -10.145037
+        },
+        {
+          "x": 10.328013,
+          "y": -12.045037
+        },
+        {
+          "x": 10.071987,
+          "y": -12.354963
+        }
+      ],
+      "drawn_width_mm": 0.402,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          7.90000000000046,
+          -10.299999999999692
+        ],
+        [
+          5.200024,
+          -11.133975
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 5.259344,
+          "y": -11.326022
+        },
+        {
+          "x": 5.140704,
+          "y": -10.941928
+        },
+        {
+          "x": 7.84068,
+          "y": -10.107953
+        },
+        {
+          "x": 7.95932,
+          "y": -10.492047
+        }
+      ],
+      "drawn_width_mm": 0.402,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          5.200024,
+          -11.133975
+        ],
+        [
+          4.6000000000004135,
+          -3.7999999999995993
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 4.399669,
+          "y": -3.81639
+        },
+        {
+          "x": 4.800331,
+          "y": -3.78361
+        },
+        {
+          "x": 5.400355,
+          "y": -11.117585
+        },
+        {
+          "x": 4.999693,
+          "y": -11.150365
+        }
+      ],
+      "drawn_width_mm": 0.402,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "HAPTIC_N",
+      "nominal_width_mm": 0.4,
+      "path_mm": [
+        [
+          4.6000000000004135,
+          -3.7999999999995993
+        ],
+        [
+          3.06495,
+          -2.5
+        ]
+      ],
+      "layer": "top",
+      "outline": [
+        {
+          "x": 2.935051,
+          "y": -2.653386
+        },
+        {
+          "x": 3.194849,
+          "y": -2.346614
+        },
+        {
+          "x": 4.729899,
+          "y": -3.646614
+        },
+        {
+          "x": 4.470101,
+          "y": -3.953386
+        }
+      ],
+      "drawn_width_mm": 0.402,
+      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+    },
+    {
+      "net": "AUDIO_PMOS_GATE",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -14.7,
+          -2
+        ],
+        [
+          -5.599999999999731,
+          -12.099999999999717
+        ],
+        [
+          -6.50335,
+          -13.133975
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -5.39814,
+          "y": -12.098457
+        },
+        {
+          "x": -6.389636,
+          "y": -13.233323
+        },
+        {
+          "x": -6.617064,
+          "y": -13.034627
+        },
+        {
+          "x": -5.80186,
+          "y": -12.101543
+        },
+        {
+          "x": -14.812182,
+          "y": -2.101075
+        },
+        {
+          "x": -14.587818,
+          "y": -1.898925
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "HOLD_HARDWARE",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          13.848334,
+          -18.75
+        ],
+        [
+          17.10000000000059,
+          5.700000000000536
+        ],
+        [
+          17.300099,
+          20.75
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 16.949133,
+          "y": 5.710996
+        },
+        {
+          "x": 17.149112,
+          "y": 20.752007
+        },
+        {
+          "x": 17.451086,
+          "y": 20.747993
+        },
+        {
+          "x": 17.250867,
+          "y": 5.689004
+        },
+        {
+          "x": 13.998016,
+          "y": -18.769907
+        },
+        {
+          "x": 13.698652,
+          "y": -18.730093
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "LCD_CS_N",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          7.375,
+          13.87095
+        ],
+        [
+          13.200000000000536,
+          6.900000000000553
+        ],
+        [
+          12.696636,
+          6
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 13.382542,
+          "y": 6.917037
+        },
+        {
+          "x": 12.828424,
+          "y": 5.926292
+        },
+        {
+          "x": 12.564848,
+          "y": 6.073708
+        },
+        {
+          "x": 13.017458,
+          "y": 6.882963
+        },
+        {
+          "x": 7.259128,
+          "y": 13.774127
+        },
+        {
+          "x": 7.490872,
+          "y": 13.967773
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_BOOT_N",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.7499540000000007,
+          13.793471
+        ],
+        [
+          1.0000000000003624,
+          29.500000000000874
+        ],
+        [
+          0.09950799999999993,
+          31.8
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 0.840326,
+          "y": 29.49365
+        },
+        {
+          "x": -0.041099,
+          "y": 31.74495
+        },
+        {
+          "x": 0.240115,
+          "y": 31.85505
+        },
+        {
+          "x": 1.159674,
+          "y": 29.50635
+        },
+        {
+          "x": -3.605419,
+          "y": 13.749761
+        },
+        {
+          "x": -3.894489,
+          "y": 13.837181
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_BOOT_N",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.7499540000000007,
+          13.793471
+        ],
+        [
+          -20.89999999999995,
+          1.4000000000004746
+        ],
+        [
+          -23.09999999999998,
+          1.4000000000004746
+        ],
+        [
+          -23.599999999999987,
+          0.9000000000004675
+        ],
+        [
+          -23.69999999999999,
+          0.300000000000459
+        ],
+        [
+          -19.49999999999993,
+          -5.499999999999623
+        ],
+        [
+          -19.49999999999993,
+          -5.9999999999996305
+        ],
+        [
+          -18.399999999999913,
+          -8.699999999999669
+        ],
+        [
+          -16.9,
+          -11.6
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -20.85115,
+          "y": 1.249
+        },
+        {
+          "x": -23.037454,
+          "y": 1.249
+        },
+        {
+          "x": -23.45901,
+          "y": 0.827444
+        },
+        {
+          "x": -23.540677,
+          "y": 0.337438
+        },
+        {
+          "x": -19.349,
+          "y": -5.451069
+        },
+        {
+          "x": -19.349,
+          "y": -5.970421
+        },
+        {
+          "x": -18.262739,
+          "y": -8.636698
+        },
+        {
+          "x": -16.765879,
+          "y": -11.530627
+        },
+        {
+          "x": -17.034121,
+          "y": -11.669373
+        },
+        {
+          "x": -18.537261,
+          "y": -8.763302
+        },
+        {
+          "x": -19.651,
+          "y": -6.029579
+        },
+        {
+          "x": -19.651,
+          "y": -5.548931
+        },
+        {
+          "x": -23.859323,
+          "y": 0.262562
+        },
+        {
+          "x": -23.74099,
+          "y": 0.972556
+        },
+        {
+          "x": -23.162546,
+          "y": 1.551
+        },
+        {
+          "x": -20.94885,
+          "y": 1.551
+        },
+        {
+          "x": -3.838397,
+          "y": 13.915859
+        },
+        {
+          "x": -3.661511,
+          "y": 13.671083
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_DC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -11.365,
+          14.579591
+        ],
+        [
+          -11.365,
+          16.579591
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -11.516,
+          "y": 16.579591
+        },
+        {
+          "x": -11.214,
+          "y": 16.579591
+        },
+        {
+          "x": -11.214,
+          "y": 14.579591
+        },
+        {
+          "x": -11.516,
+          "y": 14.579591
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_DC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -11.365,
+          14.579591
+        ],
+        [
+          -15.799999999999876,
+          10.90000000000061
+        ],
+        [
+          -24.199999999999996,
+          1.1000000000004704
+        ],
+        [
+          -24.299999999999997,
+          0.10000000000045617
+        ],
+        [
+          -23.499999999999986,
+          -3.0999999999995893
+        ],
+        [
+          -17.299999999999898,
+          -12.199999999999719
+        ],
+        [
+          -16.599999999999888,
+          -12.29999999999972
+        ],
+        [
+          -15.39999999999987,
+          -10.599999999999696
+        ],
+        [
+          -15.39999999999987,
+          -1.6999999999995694
+        ],
+        [
+          -14.899999999999864,
+          -1.2999999999995637
+        ],
+        [
+          -7.799999999999763,
+          -0.1999999999995481
+        ],
+        [
+          -3.3660250000000005,
+          0.25336400000000125
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -15.693705,
+          "y": 10.791985
+        },
+        {
+          "x": -24.054471,
+          "y": 1.037759
+        },
+        {
+          "x": -24.147134,
+          "y": 0.111126
+        },
+        {
+          "x": -23.360042,
+          "y": -3.037242
+        },
+        {
+          "x": -17.212712,
+          "y": -12.059937
+        },
+        {
+          "x": -16.670091,
+          "y": -12.137454
+        },
+        {
+          "x": -15.551,
+          "y": -10.552074
+        },
+        {
+          "x": -15.551,
+          "y": -1.627426
+        },
+        {
+          "x": -14.962897,
+          "y": -1.156943
+        },
+        {
+          "x": -7.819252,
+          "y": -0.050181
+        },
+        {
+          "x": -3.381384,
+          "y": 0.403581
+        },
+        {
+          "x": -3.350666,
+          "y": 0.103147
+        },
+        {
+          "x": -7.780748,
+          "y": -0.349819
+        },
+        {
+          "x": -14.837103,
+          "y": -1.443057
+        },
+        {
+          "x": -15.249,
+          "y": -1.772574
+        },
+        {
+          "x": -15.249,
+          "y": -10.647926
+        },
+        {
+          "x": -16.529909,
+          "y": -12.462546
+        },
+        {
+          "x": -17.387288,
+          "y": -12.340063
+        },
+        {
+          "x": -23.639958,
+          "y": -3.162758
+        },
+        {
+          "x": -24.452866,
+          "y": 0.088874
+        },
+        {
+          "x": -24.345529,
+          "y": 1.162241
+        },
+        {
+          "x": -15.906295,
+          "y": 11.008015
+        },
+        {
+          "x": -11.461416,
+          "y": 14.695801
+        },
+        {
+          "x": -11.268584,
+          "y": 14.463381
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_DC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.3660250000000005,
+          0.25336400000000125
+        ],
+        [
+          1.400000000000368,
+          2.400000000000489
+        ],
+        [
+          6,
+          7.1
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 1.312012,
+          "y": 2.52598
+        },
+        {
+          "x": 5.892085,
+          "y": 7.205619
+        },
+        {
+          "x": 6.107915,
+          "y": 6.994381
+        },
+        {
+          "x": 1.487988,
+          "y": 2.27402
+        },
+        {
+          "x": -3.304014,
+          "y": 0.115685
+        },
+        {
+          "x": -3.428036,
+          "y": 0.391043
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -12.635,
+          14.579591
+        ],
+        [
+          -12.635,
+          16.379591
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -12.786,
+          "y": 16.379591
+        },
+        {
+          "x": -12.484,
+          "y": 16.379591
+        },
+        {
+          "x": -12.484,
+          "y": 14.579591
+        },
+        {
+          "x": -12.786,
+          "y": 14.579591
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -12.635,
+          14.579591
+        ],
+        [
+          -3.3660250000000005,
+          -2.7466359999999987
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -3.23288,
+          "y": -2.675408
+        },
+        {
+          "x": -3.49917,
+          "y": -2.817864
+        },
+        {
+          "x": -12.768145,
+          "y": 14.508363
+        },
+        {
+          "x": -12.501855,
+          "y": 14.650819
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_SCLK",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.3660250000000005,
+          -2.7466359999999987
+        ],
+        [
+          6.600000000000442,
+          5.200000000000529
+        ],
+        [
+          8.5,
+          7.1
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 6.499226,
+          "y": 5.312773
+        },
+        {
+          "x": 8.393227,
+          "y": 7.206773
+        },
+        {
+          "x": 8.606773,
+          "y": 6.993227
+        },
+        {
+          "x": 6.700774,
+          "y": 5.087227
+        },
+        {
+          "x": -3.271885,
+          "y": -2.864698
+        },
+        {
+          "x": -3.460165,
+          "y": -2.628574
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_SDA",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -13.905,
+          14.579591
+        ],
+        [
+          -13.905,
+          16.379591
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -14.056,
+          "y": 16.379591
+        },
+        {
+          "x": -13.754,
+          "y": 16.379591
+        },
+        {
+          "x": -13.754,
+          "y": 14.579591
+        },
+        {
+          "x": -14.056,
+          "y": 14.579591
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_SDA",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -13.905,
+          14.579591
+        ],
+        [
+          -3.3660250000000005,
+          -7.253364000000001
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -3.230039,
+          "y": -7.187722
+        },
+        {
+          "x": -3.502011,
+          "y": -7.319006
+        },
+        {
+          "x": -14.040986,
+          "y": 14.513949
+        },
+        {
+          "x": -13.769014,
+          "y": 14.645233
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_LCD_SDA",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.3660250000000005,
+          -7.253364000000001
+        ],
+        [
+          0.30000000000035243,
+          -2.999999999999588
+        ],
+        [
+          3.300000000000395,
+          -0.2999999999995495
+        ],
+        [
+          9.325,
+          6.52905
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 0.191872,
+          "y": -2.894166
+        },
+        {
+          "x": 3.192523,
+          "y": -0.19358
+        },
+        {
+          "x": 9.211769,
+          "y": 6.628949
+        },
+        {
+          "x": 9.438231,
+          "y": 6.429151
+        },
+        {
+          "x": 3.407477,
+          "y": -0.40642
+        },
+        {
+          "x": 0.408128,
+          "y": -3.105834
+        },
+        {
+          "x": -3.251647,
+          "y": -7.351948
+        },
+        {
+          "x": -3.480403,
+          "y": -7.15478
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_BCLK",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -19.550046000000002,
+          22.279497
+        ],
+        [
+          -7.299999999999756,
+          15.10000000000067
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -7.223649,
+          "y": 15.230275
+        },
+        {
+          "x": -7.376351,
+          "y": 14.969725
+        },
+        {
+          "x": -19.626397,
+          "y": 22.149222
+        },
+        {
+          "x": -19.473695,
+          "y": 22.409772
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_BCLK",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -7.299999999999756,
+          15.10000000000067
+        ],
+        [
+          6.600000000000442,
+          3.3000000000005016
+        ],
+        [
+          7.400000000000453,
+          3.3000000000005016
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 6.65545,
+          "y": 3.451
+        },
+        {
+          "x": 7.4,
+          "y": 3.451
+        },
+        {
+          "x": 7.4,
+          "y": 3.149
+        },
+        {
+          "x": 6.54455,
+          "y": 3.149
+        },
+        {
+          "x": -7.397723,
+          "y": 14.984886
+        },
+        {
+          "x": -7.202277,
+          "y": 15.215114
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_BCLK",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          7.400000000000453,
+          3.3000000000005016
+        ],
+        [
+          8.60000000000047,
+          -1.6999999999995694
+        ],
+        [
+          10.300000000000495,
+          -20.599999999999838
+        ],
+        [
+          12.496636,
+          -27.383975
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 8.749405,
+          "y": -1.675487
+        },
+        {
+          "x": 10.448875,
+          "y": -20.569601
+        },
+        {
+          "x": 12.640293,
+          "y": -27.337459
+        },
+        {
+          "x": 12.352979,
+          "y": -27.430491
+        },
+        {
+          "x": 10.151125,
+          "y": -20.630399
+        },
+        {
+          "x": 8.450595,
+          "y": -1.724513
+        },
+        {
+          "x": 7.25317,
+          "y": 3.264761
+        },
+        {
+          "x": 7.54683,
+          "y": 3.335239
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -19.550046000000002,
+          19.739497
+        ],
+        [
+          -22.699999999999974,
+          10.400000000000603
+        ],
+        [
+          -22.29999999999997,
+          4.400000000000517
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -22.547341,
+          "y": 10.380141
+        },
+        {
+          "x": -22.149334,
+          "y": 4.410044
+        },
+        {
+          "x": -22.450666,
+          "y": 4.389956
+        },
+        {
+          "x": -22.852659,
+          "y": 10.419859
+        },
+        {
+          "x": -19.693127,
+          "y": 19.787754
+        },
+        {
+          "x": -19.406965,
+          "y": 19.69124
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -22.29999999999997,
+          4.400000000000517
+        ],
+        [
+          -21.69999999999996,
+          0.2000000000004576
+        ],
+        [
+          -19.299999999999926,
+          -1.7999999999995708
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -21.558729,
+          "y": 0.278832
+        },
+        {
+          "x": -19.203332,
+          "y": -1.683999
+        },
+        {
+          "x": -19.396668,
+          "y": -1.916001
+        },
+        {
+          "x": -21.841271,
+          "y": 0.121168
+        },
+        {
+          "x": -22.449482,
+          "y": 4.378645
+        },
+        {
+          "x": -22.150518,
+          "y": 4.421355
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -19.299999999999926,
+          -1.7999999999995708
+        ],
+        [
+          -19.399999999999928,
+          -3.999999999999602
+        ],
+        [
+          -18.09999999999991,
+          -5.399999999999622
+        ],
+        [
+          -17.199999999999896,
+          -8.299999999999663
+        ],
+        [
+          -17.3999999999999,
+          -8.79999999999967
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -19.246282,
+          "y": -3.943631
+        },
+        {
+          "x": -17.965969,
+          "y": -5.322429
+        },
+        {
+          "x": -17.039917,
+          "y": -8.306374
+        },
+        {
+          "x": -17.2598,
+          "y": -8.85608
+        },
+        {
+          "x": -17.5402,
+          "y": -8.74392
+        },
+        {
+          "x": -17.360083,
+          "y": -8.293626
+        },
+        {
+          "x": -18.234031,
+          "y": -5.477571
+        },
+        {
+          "x": -19.553718,
+          "y": -4.056369
+        },
+        {
+          "x": -19.450844,
+          "y": -1.793143
+        },
+        {
+          "x": -19.149156,
+          "y": -1.806857
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -17.3999999999999,
+          -8.79999999999967
+        ],
+        [
+          -15.099999999999866,
+          -11.399999999999707
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -14.986902,
+          "y": -11.299951
+        },
+        {
+          "x": -15.213098,
+          "y": -11.500049
+        },
+        {
+          "x": -17.513098,
+          "y": -8.900049
+        },
+        {
+          "x": -17.286902,
+          "y": -8.699951
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -15.099999999999866,
+          -11.399999999999707
+        ],
+        [
+          -14.099999999999852,
+          -13.799999999999741
+        ],
+        [
+          -13.75335,
+          -19.2
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -13.950924,
+          "y": -13.765182
+        },
+        {
+          "x": -13.60266,
+          "y": -19.190327
+        },
+        {
+          "x": -13.90404,
+          "y": -19.209673
+        },
+        {
+          "x": -14.249076,
+          "y": -13.834818
+        },
+        {
+          "x": -15.239385,
+          "y": -11.458077
+        },
+        {
+          "x": -14.960615,
+          "y": -11.341923
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -19.550046000000002,
+          21.009497
+        ],
+        [
+          -13.499999999999844,
+          19.500000000000732
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -13.463446,
+          "y": 19.646509
+        },
+        {
+          "x": -13.536554,
+          "y": 19.353491
+        },
+        {
+          "x": -19.5866,
+          "y": 20.862988
+        },
+        {
+          "x": -19.513492,
+          "y": 21.156006
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -13.499999999999844,
+          19.500000000000732
+        ],
+        [
+          -6.499999999999744,
+          15.400000000000674
+        ],
+        [
+          -5.699999999999733,
+          14.600000000000662
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -6.406944,
+          "y": 15.520491
+        },
+        {
+          "x": -5.593227,
+          "y": 14.706773
+        },
+        {
+          "x": -5.806773,
+          "y": 14.493227
+        },
+        {
+          "x": -6.593056,
+          "y": 15.279509
+        },
+        {
+          "x": -13.576316,
+          "y": 19.369705
+        },
+        {
+          "x": -13.423684,
+          "y": 19.630295
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -5.699999999999733,
+          14.600000000000662
+        ],
+        [
+          -3.4999999999997016,
+          14.50000000000066
+        ],
+        [
+          -1.5999999999996746,
+          12.900000000000638
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -3.441941,
+          "y": 14.648517
+        },
+        {
+          "x": -1.502736,
+          "y": 13.015502
+        },
+        {
+          "x": -1.697264,
+          "y": 12.784498
+        },
+        {
+          "x": -3.558059,
+          "y": 14.351483
+        },
+        {
+          "x": -5.706857,
+          "y": 14.449156
+        },
+        {
+          "x": -5.693143,
+          "y": 14.750844
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -1.5999999999996746,
+          12.900000000000638
+        ],
+        [
+          -2.599999999999689,
+          2.6000000000004917
+        ],
+        [
+          -3.1999999999996973,
+          2.000000000000483
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -2.454939,
+          "y": 2.531515
+        },
+        {
+          "x": -3.093227,
+          "y": 1.893227
+        },
+        {
+          "x": -3.306773,
+          "y": 2.106773
+        },
+        {
+          "x": -2.745061,
+          "y": 2.668485
+        },
+        {
+          "x": -1.750293,
+          "y": 12.914592
+        },
+        {
+          "x": -1.449707,
+          "y": 12.885408
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.1999999999996973,
+          2.000000000000483
+        ],
+        [
+          -2.69999999999969,
+          0.300000000000459
+        ],
+        [
+          -2.69999999999969,
+          -9.599999999999682
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -2.549,
+          "y": 0.321745
+        },
+        {
+          "x": -2.549,
+          "y": -9.6
+        },
+        {
+          "x": -2.851,
+          "y": -9.6
+        },
+        {
+          "x": -2.851,
+          "y": 0.278255
+        },
+        {
+          "x": -3.344864,
+          "y": 1.957393
+        },
+        {
+          "x": -3.055136,
+          "y": 2.042607
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -2.69999999999969,
+          -9.599999999999682
+        ],
+        [
+          -2.0999999999996817,
+          -11.499999999999709
+        ],
+        [
+          1.400000000000368,
+          -18.199999999999804
+        ],
+        [
+          4.6000000000004135,
+          -21.49999999999985
+        ],
+        [
+          6.096636,
+          -29.0
+        ],
+        [
+          5.196636,
+          -29
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -1.96001,
+          "y": -11.44186
+        },
+        {
+          "x": 1.523679,
+          "y": -18.110635
+        },
+        {
+          "x": 4.739374,
+          "y": -21.426821
+        },
+        {
+          "x": 6.280745,
+          "y": -29.151
+        },
+        {
+          "x": 5.196636,
+          "y": -29.151
+        },
+        {
+          "x": 5.196636,
+          "y": -28.849
+        },
+        {
+          "x": 5.912527,
+          "y": -28.849
+        },
+        {
+          "x": 4.460626,
+          "y": -21.573179
+        },
+        {
+          "x": 1.276321,
+          "y": -18.289365
+        },
+        {
+          "x": -2.23999,
+          "y": -11.55814
+        },
+        {
+          "x": -2.843991,
+          "y": -9.645471
+        },
+        {
+          "x": -2.556009,
+          "y": -9.554529
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MIC_INPUT",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          15.1,
+          -21.95
+        ],
+        [
+          7.90000000000046,
+          -15.79999999999977
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 7.801928,
+          "y": -15.914816
+        },
+        {
+          "x": 7.998072,
+          "y": -15.685184
+        },
+        {
+          "x": 15.198072,
+          "y": -21.835184
+        },
+        {
+          "x": 15.001928,
+          "y": -22.064816
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MIC_INPUT",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          7.90000000000046,
+          -15.79999999999977
+        ],
+        [
+          1.7000000000003723,
+          -12.29999999999972
+        ],
+        [
+          -2.4999999999996874,
+          -8.899999999999672
+        ],
+        [
+          -9.299999999999784,
+          -6.899999999999643
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 1.61479,
+          "y": -12.425297
+        },
+        {
+          "x": -2.571556,
+          "y": -9.03635
+        },
+        {
+          "x": -9.342607,
+          "y": -7.044864
+        },
+        {
+          "x": -9.257393,
+          "y": -6.755136
+        },
+        {
+          "x": -2.428444,
+          "y": -8.76365
+        },
+        {
+          "x": 1.78521,
+          "y": -12.174703
+        },
+        {
+          "x": 7.974231,
+          "y": -15.668506
+        },
+        {
+          "x": 7.825769,
+          "y": -15.931494
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MIC_INPUT",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -9.299999999999784,
+          -6.899999999999643
+        ],
+        [
+          -17.299999999999898,
+          -3.1999999999995907
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -17.363386,
+          "y": -3.337052
+        },
+        {
+          "x": -17.236614,
+          "y": -3.062948
+        },
+        {
+          "x": -9.236614,
+          "y": -6.762948
+        },
+        {
+          "x": -9.363386,
+          "y": -7.037052
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "MIC_INPUT",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -17.299999999999898,
+          -3.1999999999995907
+        ],
+        [
+          -18.7,
+          -3
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -18.721355,
+          "y": -3.149482
+        },
+        {
+          "x": -18.678645,
+          "y": -2.850518
+        },
+        {
+          "x": -17.278645,
+          "y": -3.050518
+        },
+        {
+          "x": -17.321355,
+          "y": -3.349482
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          9,
+          13.49282
+        ],
+        [
+          7.500000000000455,
+          14.600000000000662
+        ],
+        [
+          6.800000000000445,
+          14.40000000000066
+        ],
+        [
+          5.38218,
+          11.27095
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 7.470076,
+          "y": 14.434408
+        },
+        {
+          "x": 6.908691,
+          "y": 14.274012
+        },
+        {
+          "x": 5.519719,
+          "y": 11.208629
+        },
+        {
+          "x": 5.244641,
+          "y": 11.333271
+        },
+        {
+          "x": 6.691309,
+          "y": 14.525988
+        },
+        {
+          "x": 7.529924,
+          "y": 14.765592
+        },
+        {
+          "x": 9.089674,
+          "y": 13.614309
+        },
+        {
+          "x": 8.910326,
+          "y": 13.371331
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          5.38218,
+          11.27095
+        ],
+        [
+          3,
+          10.2
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 3.061915,
+          "y": 10.062278
+        },
+        {
+          "x": 2.938085,
+          "y": 10.337722
+        },
+        {
+          "x": 5.320265,
+          "y": 11.408672
+        },
+        {
+          "x": 5.444095,
+          "y": 11.133228
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          3,
+          10.2
+        ],
+        [
+          2.549976,
+          9.866025
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 2.639964,
+          "y": 9.744768
+        },
+        {
+          "x": 2.459988,
+          "y": 9.987282
+        },
+        {
+          "x": 2.910012,
+          "y": 10.321257
+        },
+        {
+          "x": 3.089988,
+          "y": 10.078743
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          2.549976,
+          9.866025
+        ],
+        [
+          6.600000000000442,
+          7.500000000000561
+        ],
+        [
+          6.700000000000443,
+          6.800000000000551
+        ],
+        [
+          5.475,
+          5.129049999999999
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 6.739165,
+          "y": 7.593579
+        },
+        {
+          "x": 6.858192,
+          "y": 6.760389
+        },
+        {
+          "x": 5.59678,
+          "y": 5.039771
+        },
+        {
+          "x": 5.35322,
+          "y": 5.218329
+        },
+        {
+          "x": 6.541808,
+          "y": 6.839611
+        },
+        {
+          "x": 6.460835,
+          "y": 7.406421
+        },
+        {
+          "x": 2.473807,
+          "y": 9.735644
+        },
+        {
+          "x": 2.626145,
+          "y": 9.996406
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          9,
+          13.49282
+        ],
+        [
+          15.962436,
+          14.150024
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 15.948246,
+          "y": 14.300356
+        },
+        {
+          "x": 15.976626,
+          "y": 13.999692
+        },
+        {
+          "x": 9.01419,
+          "y": 13.342488
+        },
+        {
+          "x": 8.98581,
+          "y": 13.643152
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          15.962436,
+          14.150024
+        ],
+        [
+          16.042594,
+          6.6
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 16.193585,
+          "y": 6.601603
+        },
+        {
+          "x": 15.891603,
+          "y": 6.598397
+        },
+        {
+          "x": 15.811445,
+          "y": 14.148421
+        },
+        {
+          "x": 16.113427,
+          "y": 14.151627
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VLCD",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          16.042594,
+          6.6
+        ],
+        [
+          15.100000000000563,
+          2.8000000000004945
+        ],
+        [
+          14.700000000000557,
+          -5.799999999999628
+        ],
+        [
+          13.6,
+          -6.5
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 15.250145,
+          "y": 2.778104
+        },
+        {
+          "x": 14.847195,
+          "y": -5.885312
+        },
+        {
+          "x": 13.681068,
+          "y": -6.627393
+        },
+        {
+          "x": 13.518932,
+          "y": -6.372607
+        },
+        {
+          "x": 14.552805,
+          "y": -5.714688
+        },
+        {
+          "x": 14.949855,
+          "y": 2.821896
+        },
+        {
+          "x": 15.896036,
+          "y": 6.636354
+        },
+        {
+          "x": 16.189152,
+          "y": 6.563646
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.3,
+          -22.64282
+        ],
+        [
+          14.24665,
+          -30.55
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 14.397647,
+          "y": -30.551019
+        },
+        {
+          "x": 14.095653,
+          "y": -30.548981
+        },
+        {
+          "x": 14.149003,
+          "y": -22.641801
+        },
+        {
+          "x": 14.450997,
+          "y": -22.643839
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.24665,
+          -30.55
+        ],
+        [
+          12.75335,
+          -30.8
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 12.778283,
+          "y": -30.948927
+        },
+        {
+          "x": 12.728417,
+          "y": -30.651073
+        },
+        {
+          "x": 14.221717,
+          "y": -30.401073
+        },
+        {
+          "x": 14.271583,
+          "y": -30.698927
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          14.3,
+          -22.64282
+        ],
+        [
+          3.883975,
+          -21.700024
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 3.870363,
+          "y": -21.850409
+        },
+        {
+          "x": 3.897587,
+          "y": -21.549639
+        },
+        {
+          "x": 14.313612,
+          "y": -22.492435
+        },
+        {
+          "x": 14.286388,
+          "y": -22.793205
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          3.883975,
+          -21.700024
+        ],
+        [
+          2.199976,
+          -21.844744
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 2.212905,
+          "y": -21.995189
+        },
+        {
+          "x": 2.187047,
+          "y": -21.694299
+        },
+        {
+          "x": 3.871046,
+          "y": -21.549579
+        },
+        {
+          "x": 3.896904,
+          "y": -21.850469
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          3.883975,
+          -21.700024
+        ],
+        [
+          4.300000000000409,
+          -18.299999999999805
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": 4.150118,
+          "y": -18.281661
+        },
+        {
+          "x": 4.449882,
+          "y": -18.318339
+        },
+        {
+          "x": 4.033857,
+          "y": -21.718363
+        },
+        {
+          "x": 3.734093,
+          "y": -21.681685
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          4.300000000000409,
+          -18.299999999999805
+        ],
+        [
+          2.799976,
+          -18.383975
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 2.808416,
+          "y": -18.534739
+        },
+        {
+          "x": 2.791536,
+          "y": -18.233211
+        },
+        {
+          "x": 4.29156,
+          "y": -18.149236
+        },
+        {
+          "x": 4.30844,
+          "y": -18.450764
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          2.199976,
+          -21.844744
+        ],
+        [
+          -3.799999999999706,
+          -23.199999999999875
+        ],
+        [
+          -13.89999999999985,
+          -26.899999999999928
+        ],
+        [
+          -17.4,
+          -26.9
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -3.757217,
+          "y": -23.34514
+        },
+        {
+          "x": -13.873212,
+          "y": -27.051
+        },
+        {
+          "x": -17.4,
+          "y": -27.051
+        },
+        {
+          "x": -17.4,
+          "y": -26.749
+        },
+        {
+          "x": -13.926788,
+          "y": -26.749
+        },
+        {
+          "x": -3.842783,
+          "y": -23.05486
+        },
+        {
+          "x": 2.166707,
+          "y": -21.697455
+        },
+        {
+          "x": 2.233245,
+          "y": -21.992033
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -17.4,
+          -26.9
+        ],
+        [
+          -19.65862,
+          -23.1
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -19.788423,
+          "y": -23.177151
+        },
+        {
+          "x": -19.528817,
+          "y": -23.022849
+        },
+        {
+          "x": -17.270197,
+          "y": -26.822849
+        },
+        {
+          "x": -17.529803,
+          "y": -26.977151
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -19.65862,
+          -23.1
+        ],
+        [
+          -21.500024,
+          -24.75
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -21.399256,
+          "y": -24.862458
+        },
+        {
+          "x": -21.600792,
+          "y": -24.637542
+        },
+        {
+          "x": -19.759388,
+          "y": -22.987542
+        },
+        {
+          "x": -19.557852,
+          "y": -23.212458
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          2.799976,
+          -18.383975
+        ],
+        [
+          1.400000000000368,
+          -15.09999999999976
+        ],
+        [
+          3.481659405224491e-13,
+          -13.69999999999974
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": 1.272558,
+          "y": -15.186104
+        },
+        {
+          "x": -0.106773,
+          "y": -13.806773
+        },
+        {
+          "x": 0.106773,
+          "y": -13.593227
+        },
+        {
+          "x": 1.527442,
+          "y": -15.013896
+        },
+        {
+          "x": 2.938881,
+          "y": -18.324759
+        },
+        {
+          "x": 2.661071,
+          "y": -18.443191
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          3.481659405224491e-13,
+          -13.69999999999974
+        ],
+        [
+          -2.399999999999686,
+          -11.199999999999704
+        ],
+        [
+          -3.6999999999997044,
+          -9.299999999999677
+        ],
+        [
+          -4.09999999999971,
+          -7.299999999999649
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -2.517573,
+          "y": -11.295568
+        },
+        {
+          "x": -3.842024,
+          "y": -9.359833
+        },
+        {
+          "x": -4.248068,
+          "y": -7.329614
+        },
+        {
+          "x": -3.951932,
+          "y": -7.270386
+        },
+        {
+          "x": -3.557976,
+          "y": -9.240167
+        },
+        {
+          "x": -2.282427,
+          "y": -11.104432
+        },
+        {
+          "x": 0.108929,
+          "y": -13.595428
+        },
+        {
+          "x": -0.108929,
+          "y": -13.804572
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -4.09999999999971,
+          -7.299999999999649
+        ],
+        [
+          -3.9999999999997087,
+          -0.6999999999995552
+        ],
+        [
+          -3.799999999999706,
+          -0.49999999999955236
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -4.150055,
+          "y": -0.636509
+        },
+        {
+          "x": -3.906773,
+          "y": -0.393227
+        },
+        {
+          "x": -3.693227,
+          "y": -0.606773
+        },
+        {
+          "x": -3.849945,
+          "y": -0.763491
+        },
+        {
+          "x": -3.949017,
+          "y": -7.302288
+        },
+        {
+          "x": -4.250983,
+          "y": -7.297712
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -3.799999999999706,
+          -0.49999999999955236
+        ],
+        [
+          -4.09999999999971,
+          0.40000000000046043
+        ],
+        [
+          -4.1999999999997115,
+          1.000000000000469
+        ]
+      ],
+      "layer": "bottom",
+      "outline": [
+        {
+          "x": -4.246998,
+          "y": 0.363489
+        },
+        {
+          "x": -4.348945,
+          "y": 0.975176
+        },
+        {
+          "x": -4.051055,
+          "y": 1.024824
+        },
+        {
+          "x": -3.953002,
+          "y": 0.436511
+        },
+        {
+          "x": -3.656749,
+          "y": -0.45225
+        },
+        {
+          "x": -3.943251,
+          "y": -0.54775
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    },
+    {
+      "net": "VMIC",
+      "nominal_width_mm": 0.3,
+      "path_mm": [
+        [
+          -4.1999999999997115,
+          1.000000000000469
+        ],
+        [
+          -4.1,
+          8.4
+        ]
+      ],
+      "layer": "inner2",
+      "outline": [
+        {
+          "x": -4.250986,
+          "y": 8.40204
+        },
+        {
+          "x": -3.949014,
+          "y": 8.39796
+        },
+        {
+          "x": -4.049014,
+          "y": 0.99796
+        },
+        {
+          "x": -4.350986,
+          "y": 1.00204
+        }
+      ],
+      "drawn_width_mm": 0.302,
+      "classification": "manual native low-current distribution region"
+    }
+  ],
+  "vias": [
+    {
+      "net": "GND",
+      "x": -16.608792999999988,
+      "y": -14.912668999999923,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native ground-plane stitching via",
+      "isolated_native_group": "pcb_smtpad_421"
+    },
+    {
+      "net": "GND",
+      "x": -18.371861999999965,
+      "y": -12.169216000000004,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native ground-plane stitching via",
+      "isolated_native_group": "pcb_smtpad_67"
+    },
+    {
+      "net": "GND",
+      "x": 20.062809000000005,
+      "y": -28.966909999999984,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native ground-plane stitching via",
+      "isolated_native_group": "pcb_smtpad_411"
+    },
+    {
+      "net": "VBUS",
+      "x": 3.500000000000398,
+      "y": -22.499999999999865,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VBUS",
+      "x": 1.400000000000368,
+      "y": -16.799999999999784,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VBUS",
+      "x": -17.299999999999898,
+      "y": 0.40000000000046043,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VBUS",
+      "x": -19.999999999999936,
+      "y": 2.900000000000496,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VBUS",
+      "x": -20.99999999999995,
+      "y": 10.400000000000603,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VBUS",
+      "x": -17.999999999999908,
+      "y": 10.500000000000604,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -4.8999999999997215,
+      "y": 26.000000000000824,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -1.699999999999676,
+      "y": 25.900000000000823,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": 10.600000000000499,
+      "y": 23.400000000000787,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": 13.200000000000536,
+      "y": 20.500000000000746,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": 10.500000000000497,
+      "y": 17.800000000000708,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": 11.600000000000513,
+      "y": 2.5000000000004903,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": 11.600000000000513,
+      "y": 0.300000000000459,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -2.69999999999969,
+      "y": 8.400000000000574,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": 16.800000000000587,
+      "y": 24.4000000000008,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -3.4999999999997016,
+      "y": 9.100000000000584,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -9.199999999999783,
+      "y": 14.900000000000666,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -18.999999999999922,
+      "y": 14.900000000000666,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -20.19999999999994,
+      "y": 12.600000000000634,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "V3V3",
+      "x": -21.999999999999964,
+      "y": 10.400000000000603,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMOTOR",
+      "x": 11.40000000000051,
+      "y": -1.8999999999995723,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMOTOR",
+      "x": 11.40000000000051,
+      "y": -6.6999999999996405,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMOTOR",
+      "x": 12.700000000000529,
+      "y": -9.799999999999685,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMOTOR",
+      "x": 10.00000000000049,
+      "y": -2.299999999999578,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMOTOR",
+      "x": 7.90000000000046,
+      "y": -1.599999999999568,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "HAPTIC_N",
+      "x": 10.200000000000493,
+      "y": -12.199999999999719,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "HAPTIC_N",
+      "x": 7.90000000000046,
+      "y": -10.299999999999692,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "HAPTIC_N",
+      "x": 4.6000000000004135,
+      "y": -3.7999999999995993,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_BCLK",
+      "x": -7.299999999999756,
+      "y": 15.10000000000067,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_BCLK",
+      "x": 7.400000000000453,
+      "y": 3.3000000000005016,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "x": -22.29999999999997,
+      "y": 4.400000000000517,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "x": -19.299999999999926,
+      "y": -1.7999999999995708,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "x": -17.3999999999999,
+      "y": -8.79999999999967,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_SD",
+      "x": -15.099999999999866,
+      "y": -11.399999999999707,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "x": -13.499999999999844,
+      "y": 19.500000000000732,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "x": -5.699999999999733,
+      "y": 14.600000000000662,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "x": -1.5999999999996746,
+      "y": 12.900000000000638,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "x": -3.1999999999996973,
+      "y": 2.000000000000483,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MCU_MIC_WS",
+      "x": -2.69999999999969,
+      "y": -9.599999999999682,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MIC_INPUT",
+      "x": 7.90000000000046,
+      "y": -15.79999999999977,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MIC_INPUT",
+      "x": -9.299999999999784,
+      "y": -6.899999999999643,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "MIC_INPUT",
+      "x": -17.299999999999898,
+      "y": -3.1999999999995907,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMIC",
+      "x": 4.300000000000409,
+      "y": -18.299999999999805,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMIC",
+      "x": 3.481659405224491e-13,
+      "y": -13.69999999999974,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMIC",
+      "x": -4.09999999999971,
+      "y": -7.299999999999649,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMIC",
+      "x": -3.799999999999706,
+      "y": -0.49999999999955236,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    },
+    {
+      "net": "VMIC",
+      "x": -4.1999999999997115,
+      "y": 1.000000000000469,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45,
+      "classification": "manual native through via between outer power regions"
+    }
+  ],
+  "unresolved": [
+    {
+      "net": "PACK_BAT",
+      "unreachable_terminals_mm": [
+        [
+          -12.600010000000001,
+          -9
+        ],
+        [
+          -10.1,
+          8.3
+        ]
+      ],
+      "nominal_width_mm": 1,
+      "reason": "No legal distribution tree at required width"
+    },
+    {
+      "net": "VSYS",
+      "unreachable_terminals_mm": [
+        [
+          -2.25,
+          -14.150024
+        ],
+        [
+          -14.450003,
+          4.252095
+        ],
+        [
+          -13.517952000000001,
+          5.7519670000000005
+        ],
+        [
+          -10.1,
+          2.3
+        ],
+        [
+          -14.699976,
+          7.5
+        ],
+        [
+          -12.7,
+          5.3999999999999995
+        ],
+        [
+          18.007436,
+          -2.15
+        ],
+        [
+          17.1,
+          -5.489254
+        ],
+        [
+          -7.89999,
+          -8.05004
+        ],
+        [
+          -11.60001,
+          -10.74996
+        ],
+        [
+          -10.8,
+          -11.1
+        ],
+        [
+          -10.200024,
+          -5.1339749999999995
+        ],
+        [
+          -10.899999999999999,
+          9.933975
+        ]
+      ],
+      "nominal_width_mm": 1,
+      "reason": "No legal distribution tree at required width"
+    },
+    {
+      "net": "V3V3",
+      "unreachable_terminals_mm": [
+        [
+          -18.9,
+          -11.2
+        ],
+        [
+          -9.753364,
+          -29.2
+        ],
+        [
+          -13.5,
+          -26.053364
+        ],
+        [
+          -0.200024,
+          -20.212436
+        ],
+        [
+          -0.20000000000000018,
+          -20.8
+        ],
+        [
+          14.2,
+          17.3
+        ],
+        [
+          -18.700099,
+          -20.64278
+        ],
+        [
+          -22.500024,
+          -16.5
+        ],
+        [
+          8.135576,
+          23.299997
+        ],
+        [
+          -5.499999999999999,
+          8.9
+        ]
+      ],
+      "nominal_width_mm": 0.8,
+      "reason": "No legal distribution tree at required width"
+    }
+  ],
+  "source_sha256": "aaf11d9cba40d7b68819bb98f5e0271eafb1534bcfb406532a5f8a55dd0324f7",
+  "retired_pour_ids": [
+    "pcb_copper_pour_100",
+    "pcb_copper_pour_101",
+    "pcb_copper_pour_102",
+    "pcb_copper_pour_103",
+    "pcb_copper_pour_104",
+    "pcb_copper_pour_105",
+    "pcb_copper_pour_106",
+    "pcb_copper_pour_107",
+    "pcb_copper_pour_108",
+    "pcb_copper_pour_109",
+    "pcb_copper_pour_110",
+    "pcb_copper_pour_111",
+    "pcb_copper_pour_112",
+    "pcb_copper_pour_113",
+    "pcb_copper_pour_114",
+    "pcb_copper_pour_115",
+    "pcb_copper_pour_116",
+    "pcb_copper_pour_117",
+    "pcb_copper_pour_118",
+    "pcb_copper_pour_119",
+    "pcb_copper_pour_120",
+    "pcb_copper_pour_121",
+    "pcb_copper_pour_122",
+    "pcb_copper_pour_123",
+    "pcb_copper_pour_124",
+    "pcb_copper_pour_125",
+    "pcb_copper_pour_126",
+    "pcb_copper_pour_127",
+    "pcb_copper_pour_128",
+    "pcb_copper_pour_129",
+    "pcb_copper_pour_130",
+    "pcb_copper_pour_131",
+    "pcb_copper_pour_132",
+    "pcb_copper_pour_133",
+    "pcb_copper_pour_134",
+    "pcb_copper_pour_135",
+    "pcb_copper_pour_136",
+    "pcb_copper_pour_137",
+    "pcb_copper_pour_138",
+    "pcb_copper_pour_139",
+    "pcb_copper_pour_140",
+    "pcb_copper_pour_141",
+    "pcb_copper_pour_142",
+    "pcb_copper_pour_143",
+    "pcb_copper_pour_144",
+    "pcb_copper_pour_145",
+    "pcb_copper_pour_146",
+    "pcb_copper_pour_147",
+    "pcb_copper_pour_148",
+    "pcb_copper_pour_149",
+    "pcb_copper_pour_150",
+    "pcb_copper_pour_151",
+    "pcb_copper_pour_152",
+    "pcb_copper_pour_153",
+    "pcb_copper_pour_154",
+    "pcb_copper_pour_155",
+    "pcb_copper_pour_156",
+    "pcb_copper_pour_157",
+    "pcb_copper_pour_158",
+    "pcb_copper_pour_159",
+    "pcb_copper_pour_160",
+    "pcb_copper_pour_161",
+    "pcb_copper_pour_162",
+    "pcb_copper_pour_163",
+    "pcb_copper_pour_164",
+    "pcb_copper_pour_165",
+    "pcb_copper_pour_166",
+    "pcb_copper_pour_167",
+    "pcb_copper_pour_168",
+    "pcb_copper_pour_169",
+    "pcb_copper_pour_170",
+    "pcb_copper_pour_171",
+    "pcb_copper_pour_172",
+    "pcb_copper_pour_173",
+    "pcb_copper_pour_174",
+    "pcb_copper_pour_175",
+    "pcb_copper_pour_176",
+    "pcb_copper_pour_177",
+    "pcb_copper_pour_178",
+    "pcb_copper_pour_179",
+    "pcb_copper_pour_180",
+    "pcb_copper_pour_181",
+    "pcb_copper_pour_182",
+    "pcb_copper_pour_183",
+    "pcb_copper_pour_184",
+    "pcb_copper_pour_185",
+    "pcb_copper_pour_186",
+    "pcb_copper_pour_187",
+    "pcb_copper_pour_188",
+    "pcb_copper_pour_189",
+    "pcb_copper_pour_190",
+    "pcb_copper_pour_191",
+    "pcb_copper_pour_192",
+    "pcb_copper_pour_193",
+    "pcb_copper_pour_194",
+    "pcb_copper_pour_195",
+    "pcb_copper_pour_196",
+    "pcb_copper_pour_197",
+    "pcb_copper_pour_198",
+    "pcb_copper_pour_199",
+    "pcb_copper_pour_200",
+    "pcb_copper_pour_201",
+    "pcb_copper_pour_202",
+    "pcb_copper_pour_203",
+    "pcb_copper_pour_204",
+    "pcb_copper_pour_205",
+    "pcb_copper_pour_206",
+    "pcb_copper_pour_207",
+    "pcb_copper_pour_208",
+    "pcb_copper_pour_209",
+    "pcb_copper_pour_210",
+    "pcb_copper_pour_211",
+    "pcb_copper_pour_212",
+    "pcb_copper_pour_213",
+    "pcb_copper_pour_214",
+    "pcb_copper_pour_215",
+    "pcb_copper_pour_216",
+    "pcb_copper_pour_217",
+    "pcb_copper_pour_218",
+    "pcb_copper_pour_219",
+    "pcb_copper_pour_220",
+    "pcb_copper_pour_221",
+    "pcb_copper_pour_222",
+    "pcb_copper_pour_223",
+    "pcb_copper_pour_224",
+    "pcb_copper_pour_225",
+    "pcb_copper_pour_226",
+    "pcb_copper_pour_227",
+    "pcb_copper_pour_228",
+    "pcb_copper_pour_229",
+    "pcb_copper_pour_230",
+    "pcb_copper_pour_231",
+    "pcb_copper_pour_80",
+    "pcb_copper_pour_81",
+    "pcb_copper_pour_82",
+    "pcb_copper_pour_83",
+    "pcb_copper_pour_84",
+    "pcb_copper_pour_85",
+    "pcb_copper_pour_86",
+    "pcb_copper_pour_87",
+    "pcb_copper_pour_88",
+    "pcb_copper_pour_89",
+    "pcb_copper_pour_90",
+    "pcb_copper_pour_91",
+    "pcb_copper_pour_92",
+    "pcb_copper_pour_93",
+    "pcb_copper_pour_94",
+    "pcb_copper_pour_95",
+    "pcb_copper_pour_96",
+    "pcb_copper_pour_97",
+    "pcb_copper_pour_98",
+    "pcb_copper_pour_99"
+  ],
+  "retired_via_ids": [
+    "pcb_via_0",
+    "pcb_via_1",
+    "pcb_via_10",
+    "pcb_via_11",
+    "pcb_via_12",
+    "pcb_via_13",
+    "pcb_via_14",
+    "pcb_via_15",
+    "pcb_via_16",
+    "pcb_via_17",
+    "pcb_via_18",
+    "pcb_via_19",
+    "pcb_via_2",
+    "pcb_via_20",
+    "pcb_via_21",
+    "pcb_via_22",
+    "pcb_via_23",
+    "pcb_via_24",
+    "pcb_via_25",
+    "pcb_via_26",
+    "pcb_via_27",
+    "pcb_via_28",
+    "pcb_via_29",
+    "pcb_via_3",
+    "pcb_via_30",
+    "pcb_via_31",
+    "pcb_via_32",
+    "pcb_via_33",
+    "pcb_via_34",
+    "pcb_via_35",
+    "pcb_via_36",
+    "pcb_via_37",
+    "pcb_via_38",
+    "pcb_via_39",
+    "pcb_via_4",
+    "pcb_via_40",
+    "pcb_via_44",
+    "pcb_via_45",
+    "pcb_via_46",
+    "pcb_via_47",
+    "pcb_via_48",
+    "pcb_via_49",
+    "pcb_via_5",
+    "pcb_via_50",
+    "pcb_via_51",
+    "pcb_via_52",
+    "pcb_via_53",
+    "pcb_via_54",
+    "pcb_via_55",
+    "pcb_via_56",
+    "pcb_via_57",
+    "pcb_via_58",
+    "pcb_via_59",
+    "pcb_via_6",
+    "pcb_via_60",
+    "pcb_via_61",
+    "pcb_via_62",
+    "pcb_via_63",
+    "pcb_via_64",
+    "pcb_via_65",
+    "pcb_via_66",
+    "pcb_via_67",
+    "pcb_via_68",
+    "pcb_via_69",
+    "pcb_via_7",
+    "pcb_via_70",
+    "pcb_via_71",
+    "pcb_via_72",
+    "pcb_via_73",
+    "pcb_via_74",
+    "pcb_via_75",
+    "pcb_via_76",
+    "pcb_via_77",
+    "pcb_via_78",
+    "pcb_via_79",
+    "pcb_via_8",
+    "pcb_via_80",
+    "pcb_via_9"
+  ],
+  "replaced_authored_region_count": 152
+}

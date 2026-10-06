@@ -55,7 +55,7 @@ def route_contact(planner, specification):
         positions=planner.grid_route((origin,(x,y),top_obstacles))
         if positions:
             return native_path(planner,{'port':port,'net':net,'width':width,'positions':positions,'layers':['top']*len(positions)})
-    exits=planner.grid_escape(origin,(top_obstacles,helpers['via_obstacles'](planner,root)))
+    exits=planner.grid_escape(origin,(top_obstacles,helpers['via_obstacles'](planner,{'root':root})))
     # Internal paths require native regions; pcbPath vias must be full span.
     for layer in ('bottom',):
         obstacles=planner.obstacles(root,layer,width)
@@ -73,6 +73,7 @@ def main():
     parser.add_argument('circuit_json');parser.add_argument('copper_audit');parser.add_argument('output_json');parser.add_argument('nets',nargs='+')
     parser.add_argument('--reserve-proposals',action='append',default=[])
     parser.add_argument('--grid-mm',type=float,choices=(0.05,0.1),default=0.1)
+    parser.add_argument('--ports',nargs='+',help='Restrict repairs to these numbered pad selectors')
     args=parser.parse_args();circuit=json.loads(Path(args.circuit_json).read_text());physical=json.loads(Path(args.copper_audit).read_text());planner=Planner(circuit)
     planner.set_grid(args.grid_mm)
     for path in args.reserve_proposals:
@@ -90,6 +91,9 @@ def main():
         group=max(islands,key=lambda g:len(islands[g]));targets=main_targets(planner,{'physical':physical,'group':group,'root':root})
         for other,alternatives in islands.items():
             if other==group:continue
+            if args.ports:
+                alternatives=[port for port in alternatives if planner.port_name(port) in args.ports]
+                if not alternatives:continue
             for port in alternatives:
                 path=route_contact(planner,{'port':port,'net':nets[name],'targets':targets})
                 if path:

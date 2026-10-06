@@ -58,7 +58,10 @@ def connected_grid_labels(blocked):
 
 
 class ManualSignalPlanner:
-    def __init__(self, circuit):
+    def __init__(self, circuit, planning_changes=None):
+        planning_changes = planning_changes or {}
+        retired_feature_ids = set(planning_changes.get('retired_feature_ids', ()))
+        relocated_trace_layers = planning_changes.get('relocated_trace_layers', {})
         self.circuit = circuit
         self.parent = {}
         for record in circuit:
@@ -92,6 +95,8 @@ class ManualSignalPlanner:
         self.holes = []
         self.plated_hole_roots = {}
         for record in circuit:
+            if record.get('pcb_via_id') in retired_feature_ids:
+                continue
             if record["type"] in ("pcb_hole", "pcb_via"):
                 hole = geometry_helpers['drill_contour'](record)
                 self.holes.append(hole)
@@ -120,12 +125,20 @@ class ManualSignalPlanner:
                 for start, end in zip(record["route"], record["route"][1:]):
                     if start["route_type"] == end["route_type"] == "wire":
                         radius = (max(start["width"], end["width"]) if record.get("route_thickness_mode") == "interpolated" else start["width"]) / 2
-                        self.copper.append((net_root, start["layer"], LineString([point(start), point(end)]).buffer(radius)))
+                        planned_layer = relocated_trace_layers.get(record['pcb_trace_id'], {}).get(start['layer'], start['layer'])
+                        if planned_layer is not None:
+                            self.copper.append((net_root, planned_layer, LineString([point(start), point(end)]).buffer(radius)))
             elif record["type"] == "pcb_via":
+                if record['pcb_via_id'] in retired_feature_ids:
+                    continue
                 net_root = self.via_root(record)
                 for layer in record["layers"]:
                     self.copper.append((net_root, layer, Point(point(record)).buffer(record["outer_diameter"] / 2)))
             elif record["type"] == "pcb_copper_pour":
+                # Retire explicitly selected authored regions during replacement
+                # planning only. The original native scene remains immutable.
+                if record['pcb_copper_pour_id'] in retired_feature_ids:
+                    continue
                 net_root = self.root(record["source_net_id"])
                 # This board regenerates its GND pours around every new route.
                 # Power regions must remain obstacles to protect their width.
@@ -480,9 +493,14 @@ class ManualSignalPlanner:
         return None
 
     def grid_escape(self, position, obstacles):
-        top_obstacles, via_obstacles = obstacles
+        top_obstacles, via_obstacles = obstacles[:2]
         blocked = contains_xy(top_obstacles, self.grid_x, self.grid_y)
         via_blocked = contains_xy(via_obstacles, self.grid_x, self.grid_y)
+        if len(obstacles) == 3:
+            allowed_exits = obstacles[2]
+            if allowed_exits.dtype != np.bool_ or allowed_exits.shape != via_blocked.shape:
+                raise ValueError('Exit reachability mask must match the native planning grid')
+            via_blocked |= ~allowed_exits
 
         def coordinate(node):
             return float(self.x_coordinates[node[1]]), float(self.y_coordinates[node[0]])

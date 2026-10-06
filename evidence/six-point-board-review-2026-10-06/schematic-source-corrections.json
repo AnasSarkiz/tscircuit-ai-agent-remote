@@ -1,0 +1,156 @@
+{
+  "rotation_changes": [
+    {
+      "reference": "C83",
+      "file": "src/board/BacklightSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": 180,
+      "basis": "rotate C83 by 180\u00b0 so pin2 faces U27 and reduce this trace from 2 turns to 1"
+    },
+    {
+      "reference": "R102",
+      "file": "src/board/BacklightSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R102 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "R104",
+      "file": "src/board/BacklightSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R104 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "C1",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C1 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "C2",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C2 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "C3",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C3 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "R1",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R1 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "R2",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R2 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "R3",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R3 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "R4",
+      "file": "src/board/ChargerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R4 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "R63",
+      "file": "src/board/SpeakerSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R63 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "C80",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C80 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "C81",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C81 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "R26",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R26 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "R29",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R29 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "R30",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate R30 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "C25",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C25 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "C26",
+      "file": "src/board/MicrophonesSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate C26 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "SW4",
+      "file": "src/board/ControlsSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate SW4 by -90\u00b0 so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "reference": "SW1",
+      "file": "src/board/ControlsSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate SW1 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    },
+    {
+      "reference": "SW2",
+      "file": "src/board/ControlsSheet.tsx",
+      "old_schematic_rotation": 0,
+      "new_schematic_rotation": -90,
+      "basis": "rotate SW2 by -90\u00b0 so its ground-connected pin faces down and the component is vertical"
+    }
+  ],
+  "schematic_only_capacitor_grouping": [
+    "C80/C81",
+    "C74/C75"
+  ],
+  "physical_component_positions_changed": false
+}

@@ -1,0 +1,28 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/six-point-board-review-2026-10-06/own-pad-native/circuit.json",
+  "paths": [],
+  "unresolved": [
+    {
+      "net": "GND",
+      "ports": [
+        ".TP1 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_INPUT",
+      "ports": [
+        ".C73 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    },
+    {
+      "net": "MIC_WS",
+      "ports": [
+        ".U4 > .pin1"
+      ],
+      "reason": "No route to existing main-island copper"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-06T17:44:37.921034+00:00",
+  "native_sha256": "e0892f6267aaefefa8d41cc625409363ed4161444c7befe0a527557334d1618b",
+  "reviewed_four_copper_layers": [
+    "top",
+    "bottom",
+    "inner1",
+    "inner2"
+  ],
+  "reviewed_mask_paste": [
+    "top-mask",
+    "top-paste"
+  ],
+  "reviewed_critical_views": [
+    "mcu-local-bypass",
+    "usb-charger",
+    "amplifier-regulator",
+    "microphones",
+    "display-backlight"
+  ],
+  "schematics_reviewed": "All 26 actual native A4 pages in four contact sheets, detailed MCU/USB, charger, speaker, microphone, backlight pages and MCU component guide. Text remains inside A4; guides and cross references readable.",
+  "retained_visual_limitations": [
+    "Warnings about inherited imported connector access metadata overlay diagnostic PCB renders; exact insertion metadata requires qualified imports.",
+    "J3 outer pins and J7 contact-dependent routes remain open.",
+    "U16 and U27 pill-pad paste remains incomplete.",
+    "Small default imported pin labels / MCU pin fanout require zoom; zero CLI style issues is not electrical or assembly approval.",
+    "Physical bodies, enclosure/display fold fit, stackup and programmer adapter remain unqualified."
+  ],
+  "committed_snapshot_reference_changed": false,
+  "snapshot_baseline_result": "Supported source snapshot comparison completes in61.13 seconds and exits1 on PCB and schematic mismatches. Original references retained; first reference-less run auto-created files and is not a passing baseline comparison.",
+  "fabrication_ready": false
+}

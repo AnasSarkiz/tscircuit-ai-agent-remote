@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-outer-power.py",
+    "evidence/six-point-board-review-2026-10-06/via-baseline-native/circuit.json",
+    "src/board/manual-power-copper.json",
+    "evidence/six-point-board-review-2026-10-06/outer-power-inner-signals-proposal.json",
+    "--relocated-signals",
+    "evidence/six-point-board-review-2026-10-06/inner-signals-proposal.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 200.39,
+  "peak_process_group_rss_bytes": 285671424,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

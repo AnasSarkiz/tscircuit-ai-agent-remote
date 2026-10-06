@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/reanchor-inner-escapes.py", line 19, in <module>
+    ports = {planner.port_name(port): port for port in planner.ports.values()}
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-manual-signals.py", line 218, in port_name
+    name = self.source_components[source_port["source_component_id"]]["name"]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_manually_placed_via_0'

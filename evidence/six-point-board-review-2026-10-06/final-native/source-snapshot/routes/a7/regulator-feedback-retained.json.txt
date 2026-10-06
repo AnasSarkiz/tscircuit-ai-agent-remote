@@ -1,0 +1,68 @@
+[
+  {
+    "connection": ".R6 > port.pin1",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -3.75335,
+        "y": -21,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -3.75335,
+        "y": -20.99965,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -3.75335,
+        "y": -19,
+        "width": 0.2,
+        "layer": "top"
+      }
+    ]
+  },
+  {
+    "connection": ".U2 > port.FB",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -3.90004265,
+        "y": -16.500126,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -3.541946819249721,
+        "y": -16.460299724556165,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -3.0542123216744774,
+        "y": -16.963355905488655,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -3.136279993331006,
+        "y": -18.383279993331005,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -3.75335,
+        "y": -19,
+        "width": 0.2,
+        "layer": "top"
+      }
+    ]
+  }
+]

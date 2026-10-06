@@ -1,0 +1,17 @@
+<SchematicSheet name="BacklightSheet" id="schematic_sheet_11">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="C83" positionAnchor="center" schX="8" schY="1" width="0.6" height="0.65" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<CapacitorSymbolHorizontal componentName="C83" schX="8" schY="1" width="0.6" height="0.65" message="Use schOrientation=&quot;vertical&quot; on this capacitor to fix the symbol orientation" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="mcu-usb-review" id="schematic_sheet_0">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="J1" positionAnchor="center" schX="-10" schY="0" width="1.6" height="3.2" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicPinPaddingToEdgeTooLarge message="Move schematic pins closer to the box edge or change the schematic box width" componentName="J1" pinSides="bottom" edgeSides="left,right" suggestedSchWidth="1.15" />
+<SchematicBoxInnerLabelCollision message="Inner labels are colliding. Increase the schWidth or schHeight." componentName="J1" currentSchWidth="1.6" currentSchHeight="3.2" overlappingSides="right,bottom" />
+</SchematicPlacementIssues>
+</SchematicSheet>

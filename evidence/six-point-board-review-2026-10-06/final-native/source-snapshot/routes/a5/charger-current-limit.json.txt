@@ -1,0 +1,123 @@
+[
+  {
+    "connection": ".U16 > port.ILIM",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -6.5000029999999995,
+        "y": -25.249811,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -5.801676560039386,
+        "y": -24.6800232,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -1.2896108114638987,
+        "y": -24.6800232,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -0.9994845600393887,
+        "y": -24.6800232,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -0.95,
+        "y": -24.502,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "via",
+        "x": -0.95,
+        "y": -24.502,
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "via_diameter": 0.7,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -0.95,
+        "y": -24.502,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -0.95,
+        "y": -17.608,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -6.857537197704712,
+        "y": -11.700462802295288,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.003,
+        "y": -11.555,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "via",
+        "x": -7.003,
+        "y": -11.555,
+        "from_layer": "bottom",
+        "to_layer": "top",
+        "via_diameter": 0.7,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.003,
+        "y": -11.555,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7366017000000005,
+        "y": -12.140183932129965,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7366017000000005,
+        "y": -21.642629770629053,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7366017000000005,
+        "y": -21.658816067870035,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.246636,
+        "y": -22,
+        "width": 0.2,
+        "layer": "top"
+      }
+    ]
+  }
+]

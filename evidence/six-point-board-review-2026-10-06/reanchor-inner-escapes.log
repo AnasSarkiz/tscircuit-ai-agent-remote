@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/reanchor-inner-escapes.py", line 16, in <module>
+    planner = helpers['Planner'](json.loads(args.native_json.read_text()))
+              ~~~~~~~^^^^^^^^^^^
+KeyError: 'Planner'

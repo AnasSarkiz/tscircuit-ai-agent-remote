@@ -42,7 +42,7 @@ def main():
         if path['pcbPath'] and path['pcbPath'][-1].get('via'):
             via_points.append(positions[-1])
         if not blocked and via_points:
-            via_obstacles = helpers['via_obstacles'](planner, root)
+            via_obstacles = helpers['via_obstacles'](planner, {'root': root})
             blocked = any(Point(point).intersects(via_obstacles) for point in via_points)
         if blocked:
             rejected.append({'from': path['from'], 'to': path['to'], 'net': path['net'],

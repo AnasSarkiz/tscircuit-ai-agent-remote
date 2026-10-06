@@ -77,7 +77,7 @@ const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,
   description:
-    "Handheld Wi-Fi AI agent remote; WIP with 13 paired A4 component guides covering every schematic component, incomplete routing and unresolved fabrication gates; not ready to order",
+    "Handheld Wi-Fi AI agent remote; WIP with standard USB-C schematic, 0.30/0.45 mm through vias, outer-layer supply trunks and A4 component guides; incomplete routing and unresolved fabrication gates; not ready to order",
   main: "index.circuit.tsx",
   author: originalPackage.author,
   private: true,

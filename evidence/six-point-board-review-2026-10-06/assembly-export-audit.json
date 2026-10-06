@@ -1,0 +1,888 @@
+{
+  "source_sha256": "e0892f6267aaefefa8d41cc625409363ed4161444c7befe0a527557334d1618b",
+  "fabrication_ready": false,
+  "scope": "Official BOM 0.0.19 and PnP 0.0.16 converters, not a fabrication package. Full installed schema tested independently without changing the input. Strict supplier rotation qualification error retained.",
+  "bom_rows": 125,
+  "blank_bom_comment_count": 31,
+  "supplier_code_as_footprint_count": 125,
+  "pnp_rows": 125,
+  "all_pnp_top": true,
+  "rotationWarnings": [
+    {
+      "designator": "U1",
+      "pcb_component_id": "pcb_component_0",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "J1",
+      "pcb_component_id": "pcb_component_1",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "J1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "D2",
+      "pcb_component_id": "pcb_component_2",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "D2: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U12",
+      "pcb_component_id": "pcb_component_3",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U12: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "J6",
+      "pcb_component_id": "pcb_component_4",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "J6: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R31",
+      "pcb_component_id": "pcb_component_5",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R31: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R32",
+      "pcb_component_id": "pcb_component_6",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R32: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R33",
+      "pcb_component_id": "pcb_component_7",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R33: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R34",
+      "pcb_component_id": "pcb_component_8",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R34: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R35",
+      "pcb_component_id": "pcb_component_9",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R35: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R36",
+      "pcb_component_id": "pcb_component_10",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R36: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R37",
+      "pcb_component_id": "pcb_component_11",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R37: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R38",
+      "pcb_component_id": "pcb_component_12",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R38: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C30",
+      "pcb_component_id": "pcb_component_13",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C30: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C31",
+      "pcb_component_id": "pcb_component_14",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C31: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "C32",
+      "pcb_component_id": "pcb_component_15",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C32: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U16",
+      "pcb_component_id": "pcb_component_16",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U16: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "J3",
+      "pcb_component_id": "pcb_component_17",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "J3: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C1",
+      "pcb_component_id": "pcb_component_18",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "C2",
+      "pcb_component_id": "pcb_component_19",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C2: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "C3",
+      "pcb_component_id": "pcb_component_20",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C3: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R1",
+      "pcb_component_id": "pcb_component_21",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R2",
+      "pcb_component_id": "pcb_component_22",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R2: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R3",
+      "pcb_component_id": "pcb_component_23",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R3: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R4",
+      "pcb_component_id": "pcb_component_24",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R4: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "U2",
+      "pcb_component_id": "pcb_component_25",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U2: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "L1",
+      "pcb_component_id": "pcb_component_26",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "L1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "C4",
+      "pcb_component_id": "pcb_component_27",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C4: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "C5",
+      "pcb_component_id": "pcb_component_28",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C5: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R5",
+      "pcb_component_id": "pcb_component_29",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R5: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R6",
+      "pcb_component_id": "pcb_component_30",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R6: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R7",
+      "pcb_component_id": "pcb_component_31",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R7: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U13",
+      "pcb_component_id": "pcb_component_32",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U13: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U14",
+      "pcb_component_id": "pcb_component_33",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U14: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "J7",
+      "pcb_component_id": "pcb_component_34",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "J7: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "C40",
+      "pcb_component_id": "pcb_component_35",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C40: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C41",
+      "pcb_component_id": "pcb_component_36",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C41: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "C42",
+      "pcb_component_id": "pcb_component_37",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C42: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C43",
+      "pcb_component_id": "pcb_component_38",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C43: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R40",
+      "pcb_component_id": "pcb_component_39",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R40: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R41",
+      "pcb_component_id": "pcb_component_40",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R41: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R47",
+      "pcb_component_id": "pcb_component_41",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R47: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "R42",
+      "pcb_component_id": "pcb_component_42",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R42: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R48",
+      "pcb_component_id": "pcb_component_43",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R48: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R43",
+      "pcb_component_id": "pcb_component_44",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R43: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R49",
+      "pcb_component_id": "pcb_component_45",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R49: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "R44",
+      "pcb_component_id": "pcb_component_46",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R44: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R50",
+      "pcb_component_id": "pcb_component_47",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R50: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "R45",
+      "pcb_component_id": "pcb_component_48",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R45: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R51",
+      "pcb_component_id": "pcb_component_49",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R51: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R46",
+      "pcb_component_id": "pcb_component_50",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R46: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U3",
+      "pcb_component_id": "pcb_component_51",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U3: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "Q1",
+      "pcb_component_id": "pcb_component_52",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "Q1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "Q2",
+      "pcb_component_id": "pcb_component_53",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "Q2: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "J4",
+      "pcb_component_id": "pcb_component_54",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "J4: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "C50",
+      "pcb_component_id": "pcb_component_55",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C50: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "C51",
+      "pcb_component_id": "pcb_component_56",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C51: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "R60",
+      "pcb_component_id": "pcb_component_57",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R60: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R61",
+      "pcb_component_id": "pcb_component_58",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R61: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R62",
+      "pcb_component_id": "pcb_component_59",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R62: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R63",
+      "pcb_component_id": "pcb_component_60",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R63: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R64",
+      "pcb_component_id": "pcb_component_61",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R64: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R65",
+      "pcb_component_id": "pcb_component_62",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R65: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R68",
+      "pcb_component_id": "pcb_component_63",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R68: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R66",
+      "pcb_component_id": "pcb_component_64",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R66: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R69",
+      "pcb_component_id": "pcb_component_65",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R69: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R67",
+      "pcb_component_id": "pcb_component_66",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R67: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R70",
+      "pcb_component_id": "pcb_component_67",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R70: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "U22",
+      "pcb_component_id": "pcb_component_68",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U22: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "Q9",
+      "pcb_component_id": "pcb_component_69",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "Q9: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "D3",
+      "pcb_component_id": "pcb_component_70",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "D3: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C70",
+      "pcb_component_id": "pcb_component_71",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C70: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "C71",
+      "pcb_component_id": "pcb_component_72",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C71: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C72",
+      "pcb_component_id": "pcb_component_73",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C72: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R82",
+      "pcb_component_id": "pcb_component_74",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R82: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R83",
+      "pcb_component_id": "pcb_component_75",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R83: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R84",
+      "pcb_component_id": "pcb_component_76",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R84: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R85",
+      "pcb_component_id": "pcb_component_77",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R85: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U23",
+      "pcb_component_id": "pcb_component_78",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U23: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U24",
+      "pcb_component_id": "pcb_component_79",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U24: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C73",
+      "pcb_component_id": "pcb_component_80",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C73: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "C74",
+      "pcb_component_id": "pcb_component_81",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C74: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C75",
+      "pcb_component_id": "pcb_component_82",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C75: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R86",
+      "pcb_component_id": "pcb_component_83",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R86: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R87",
+      "pcb_component_id": "pcb_component_84",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R87: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R88",
+      "pcb_component_id": "pcb_component_85",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R88: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R89",
+      "pcb_component_id": "pcb_component_86",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R89: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R90",
+      "pcb_component_id": "pcb_component_87",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R90: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R91",
+      "pcb_component_id": "pcb_component_88",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R91: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R92",
+      "pcb_component_id": "pcb_component_89",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R92: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R93",
+      "pcb_component_id": "pcb_component_90",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R93: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R94",
+      "pcb_component_id": "pcb_component_91",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R94: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R95",
+      "pcb_component_id": "pcb_component_92",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R95: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "U26",
+      "pcb_component_id": "pcb_component_93",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U26: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R99",
+      "pcb_component_id": "pcb_component_94",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R99: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R100",
+      "pcb_component_id": "pcb_component_95",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R100: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C78",
+      "pcb_component_id": "pcb_component_96",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C78: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "U25",
+      "pcb_component_id": "pcb_component_97",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U25: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R96",
+      "pcb_component_id": "pcb_component_98",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R96: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R97",
+      "pcb_component_id": "pcb_component_99",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R97: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "C76",
+      "pcb_component_id": "pcb_component_100",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C76: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C77",
+      "pcb_component_id": "pcb_component_101",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C77: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U4",
+      "pcb_component_id": "pcb_component_102",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U4: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U5",
+      "pcb_component_id": "pcb_component_103",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U5: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C80",
+      "pcb_component_id": "pcb_component_104",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C80: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C81",
+      "pcb_component_id": "pcb_component_105",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C81: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "U7",
+      "pcb_component_id": "pcb_component_106",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U7: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R26",
+      "pcb_component_id": "pcb_component_107",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R26: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R27",
+      "pcb_component_id": "pcb_component_108",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R27: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "R29",
+      "pcb_component_id": "pcb_component_109",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R29: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R30",
+      "pcb_component_id": "pcb_component_110",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R30: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 180 is unverified."
+    },
+    {
+      "designator": "C25",
+      "pcb_component_id": "pcb_component_111",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C25: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C26",
+      "pcb_component_id": "pcb_component_112",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C26: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "SW4",
+      "pcb_component_id": "pcb_component_113",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "SW4: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "SW1",
+      "pcb_component_id": "pcb_component_114",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "SW1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "SW2",
+      "pcb_component_id": "pcb_component_115",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "SW2: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "SW5",
+      "pcb_component_id": "pcb_component_116",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "SW5: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 270 is unverified."
+    },
+    {
+      "designator": "U27",
+      "pcb_component_id": "pcb_component_119",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "U27: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R102",
+      "pcb_component_id": "pcb_component_120",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R102: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "R103",
+      "pcb_component_id": "pcb_component_121",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R103: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "R104",
+      "pcb_component_id": "pcb_component_122",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "R104: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C82",
+      "pcb_component_id": "pcb_component_123",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C82: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "C83",
+      "pcb_component_id": "pcb_component_124",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C83: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 90 is unverified."
+    },
+    {
+      "designator": "C84",
+      "pcb_component_id": "pcb_component_125",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C84: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    },
+    {
+      "designator": "C85",
+      "pcb_component_id": "pcb_component_126",
+      "supplier": "jlcpcb",
+      "reason": "missing_supplier_pin1_location",
+      "message": "C85: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+    }
+  ],
+  "strict_rotation_error": "U1: cannot verify jlcpcb pick-and-place rotation (missing_supplier_pin1_location); PCB rotation 0 is unverified."
+}

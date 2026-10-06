@@ -1,0 +1,69 @@
+{
+  "scope": "High-current distribution runs on top/bottom. Low-current terminal branches may use inner layers. Current and signal-integrity qualification remain separate fabrication gates.",
+  "branches": [
+    {
+      "net": "VSYS",
+      "terminal": ".Q2 > .pin2",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 0.061,
+      "basis": "Q2 powers only amplifier SD_MODE through R63=100 ohms; R62=1 kohm pulls its gate. Amplifier supply pins U3.2/7/8 use VSYS directly. A conservative 5.5 V rail bounds even a grounded SD_MODE input at 55 mA plus 5.5 mA gate pull. This is a control branch, not the amplifier supply trunk."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".R3 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 3.3e-05,
+      "basis": "100 kohm charger PGOOD pull-up, at 3.3 V; logic branch, not a supply trunk."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".R4 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 3.3e-05,
+      "basis": "100 kohm charger status pull-up, at 3.3 V; logic branch, not a supply trunk."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".R7 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "basis": "Regulator power-good pull-up only. Does not feed a powered load.",
+      "maximum_dc_current_a": 3.3e-05
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".C32 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "basis": "Auxiliary 100 nF capacitor branch. Main MCU supply and local C31 bypass retain their separate routes. AC bypass and loop impedance remain unqualified."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".TP5 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "basis": "Voltage measurement pad; this branch is not a power output."
+    }
+  ]
+}

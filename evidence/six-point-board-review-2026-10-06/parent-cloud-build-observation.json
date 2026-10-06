@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-06T17:17:05.517833+00:00",
+  "existing_build_id": "6873fe90-66f8-45be-8122-3a5fd15e15b9",
+  "response": {
+    "ok": true,
+    "package_build": {
+      "package_build_id": "6873fe90-66f8-45be-8122-3a5fd15e15b9",
+      "package_release_id": "7fe00b28-1971-41f3-b4e5-c327c6b6b3e0",
+      "created_at": "2026-10-06T15:13:54.153Z",
+      "transpilation_in_progress": false,
+      "transpilation_started_at": null,
+      "transpilation_completed_at": null,
+      "transpilation_logs": null,
+      "transpilation_error": null,
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_logs": null,
+      "circuit_json_build_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_started_at": null,
+      "image_generation_completed_at": null,
+      "image_generation_logs": null,
+      "image_generation_error": null,
+      "build_in_progress": false,
+      "package_build_website_url": null,
+      "user_code_job_started_at": "2026-10-06T15:13:56.165Z",
+      "user_code_job_completed_at": "2026-10-06T15:25:42.269Z",
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "user_code_job_completed_logs": null,
+      "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=7b6525c6bd474d7c592bf3c8e31d53cb7d686ad5b95b3742ec4f20a1340fd0b5"
+    }
+  }
+}

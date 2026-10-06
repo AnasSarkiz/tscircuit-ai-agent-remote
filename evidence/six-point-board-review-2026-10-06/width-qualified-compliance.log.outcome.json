@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "evidence/six-point-board-review-2026-10-06/review-compliance.py",
+    "evidence/six-point-board-review-2026-10-06/width-qualified-native/circuit.json",
+    "evidence/six-point-board-review-2026-10-06/width-qualified-copper.json",
+    "evidence/six-point-board-review-2026-10-06/width-qualified-compliance.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 405504,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

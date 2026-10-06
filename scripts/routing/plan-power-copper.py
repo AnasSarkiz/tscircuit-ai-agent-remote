@@ -19,35 +19,81 @@ from shapely.ops import unary_union
 Planner = runpy.run_path(str(Path(__file__).with_name('plan-manual-signals.py')))["ManualSignalPlanner"]
 
 
-def via_obstacles(planner, root):
+def via_obstacles(planner, specification):
+    root = specification['root']
+    radius = specification.get('via_outer_mm', .7) / 2
+    drill_radius = specification.get('via_hole_mm', .3) / 2
     shapes = []
     for record, shape in planner.pads:
         port = planner.ports.get(record.get('pcb_port_id'))
         own = port and planner.root(port['source_port_id']) == root
-        shapes.append(shape.buffer(planner.copper_clearance + (.15 if own else .35)))
-    shapes.extend(shape.buffer(.41) for shape in planner.holes)
-    shapes.extend(shape.buffer(.56) for _, shape in planner.keepouts)
-    shapes.extend(shape.buffer(.35 + max(planner.copper_clearance, planner.via_copper_clearance)) for other_root, _, shape in planner.copper if other_root != root)
-    shapes.append(box(-26, -34, 26, 34).difference(planner.board.buffer(-.61)))
+        shapes.append(shape.buffer(planner.copper_clearance + (drill_radius if own else radius)))
+    shapes.extend(shape.buffer(.26 + drill_radius) for shape in planner.holes)
+    shapes.extend(shape.buffer(.21 + radius) for _, shape in planner.keepouts)
+    shapes.extend(shape.buffer(radius + max(planner.copper_clearance, planner.via_copper_clearance)) for other_root, _, shape in planner.copper if other_root != root)
+    shapes.append(box(-26, -34, 26, 34).difference(planner.board.buffer(-.26-radius)))
     return unary_union(shapes)
 
 
 def pad_escape(planner, specification):
     root, width, origin = specification['root'], specification['width'], specification['origin']
     top_obstacles = planner.obstacles(root, 'top', width)
-    exits = via_obstacles(planner, root)
-    if specification['net']['name'] != 'GND':
+    exits = via_obstacles(planner, specification)
+    if specification.get('distribution_layers'):
+        wide_obstacles = [inner_obstacles(planner, {**specification, 'layer': layer,
+            'width': specification['distribution_width_mm']}) for layer in specification['distribution_layers']]
+        # A through-via exit must admit the required distribution width on
+        # at least one selected routing layer, as well as a legal top escape.
+        exits = unary_union([exits, wide_obstacles[0].intersection(wide_obstacles[1])])
+    elif specification['net']['name'] != 'GND':
         exits = unary_union([exits, inner_obstacles(planner, {'root': root,
             'width': specification['net'].get('trace_width', .3), 'new_vias': specification['new_vias']})])
+    reachable_context = None
+    if specification.get('connected_targets'):
+        grid_data = [planner.grid_data(obstacle) for obstacle in wide_obstacles]
+        targets = []
+        for index, obstacle in enumerate(wide_obstacles):
+            for terminal in specification['connected_targets']:
+                anchor = planner.grid_anchor((terminal,), (grid_data[index][0], obstacle))[0]
+                if anchor:
+                    targets.append((index, *anchor[0]))
+        reachable_context = {'grid_data':grid_data,'obstacles':wide_obstacles,'targets':targets,
+            'via_blocked':planner.grid_data(via_obstacles(planner,specification))[0]}
+        if not targets:
+            return None
     for distance in np.arange(.6, 3.41, .2):
         for degrees in range(0, 360, 30):
             radians = math.radians(degrees)
             target = (round(origin[0] + float(distance)*math.cos(radians), 6),
                       round(origin[1] + float(distance)*math.sin(radians), 6))
-            if not Point(target).intersects(exits) and not LineString([origin, target]).intersects(top_obstacles):
+            if (not Point(target).intersects(exits) and not LineString([origin, target]).intersects(top_obstacles)
+                and (reachable_context is None or via_exit_reachable(planner, {**reachable_context,'target':target}))):
                 return target, [origin, target]
-    candidates = planner.grid_escape(origin, (top_obstacles, exits))
+    grid_obstacles = (top_obstacles, exits)
+    if reachable_context:
+        labels = [record[1] for record in reachable_context['grid_data']]
+        allowed_exits = np.zeros(labels[0].shape,dtype=bool)
+        for layer, layer_labels in enumerate(labels):
+            for identifier in np.unique(layer_labels):
+                if not identifier:
+                    continue
+                y,x = np.argwhere(layer_labels==identifier)[0]
+                if multilayer_components_reachable(labels,reachable_context['via_blocked'],[(layer,int(y),int(x))],
+                                                  reachable_context['targets'],planner.layer_component_cache):
+                    allowed_exits |= layer_labels==identifier
+        grid_obstacles = (top_obstacles, exits, allowed_exits)
+    candidates = planner.grid_escape(origin, grid_obstacles)
     return candidates[0] if candidates else None
+
+
+def via_exit_reachable(planner, specification):
+    starts=[]
+    for layer,obstacle in enumerate(specification['obstacles']):
+        anchor=planner.grid_anchor((specification['target'],), (specification['grid_data'][layer][0],obstacle))[0]
+        if anchor:
+            starts.append((layer,*anchor[0]))
+    return multilayer_components_reachable([record[1] for record in specification['grid_data']],
+        specification['via_blocked'],starts,specification['targets'],planner.layer_component_cache)
 
 
 def escape_record(planner, specification):
@@ -64,9 +110,13 @@ def escape_record(planner, specification):
     for start, end in zip(positions, positions[1:]):
         planner.copper.append((root, 'top', LineString([start,end]).buffer(width/2)))
     target = positions[-1]
-    planner.holes.append(Point(target).buffer(.15))
+    via_hole_radius = specification.get('via_hole_mm', .3) / 2
+    via_pad_radius = specification.get('via_outer_mm', .7) / 2
+    hole = Point(target).buffer(via_hole_radius)
+    planner.holes.append(hole)
+    planner.plated_hole_roots[hole.wkb] = root
     for layer in ('top','inner1','inner2','bottom'):
-        planner.copper.append((root, layer, Point(target).buffer(.35)))
+        planner.copper.append((root, layer, Point(target).buffer(via_pad_radius)))
     return {'net': net['name'], 'from': planner.port_name(port), 'to': 'net.'+net['name'], 'width': width,
             'pcbPath': local, 'global_path_mm': positions, 'segment_layers': ['top']*len(positions),
             'classification': 'manual native ordinary via escape; power current qualification pending' if net['name'] != 'GND' else 'manual native GND via escape',
@@ -77,7 +127,10 @@ def inner_obstacles(planner, specification):
     root, width, new_vias = specification['root'], specification['width'], specification['new_vias']
     layer = specification.get('layer', 'inner2')
     clearance = specification.get('copper_clearance_mm', .21)
-    shapes = [shape.buffer(clearance+width/2) for record,shape in planner.pads
+    # Native rectangular-pad cutouts expand each bounding-box edge, including
+    # square corners. Reserve that expansion before the round strip radius so
+    # actual Euclidean clearance cannot mask a narrowed native region.
+    shapes = [shape.envelope.buffer(clearance, join_style=2).buffer(width/2) for record,shape in planner.pads
               if layer in record.get('layers', [record.get('layer')]) and
               (not (port := planner.ports.get(record.get('pcb_port_id'))) or planner.root(port['source_port_id']) != root)]
     shapes.extend(shape.buffer(clearance+width/2) for other_root, copper_layer, shape in planner.copper if other_root != root and copper_layer == layer)
@@ -128,7 +181,9 @@ def multilayer_components_reachable(labels, via_blocked, starts, targets, cache=
 
 def wide_multilayer_route(planner, specification):
     first, last = specification['first'], specification['last']
-    layers = ('inner2', 'bottom')
+    layers = tuple(specification.get('layers', ('inner2', 'bottom')))
+    if len(layers) != 2 or any(layer not in ('top', 'inner1', 'inner2', 'bottom') for layer in layers):
+        raise ValueError('Wide distribution routing requires two supported layers')
     obstacles = [inner_obstacles(planner, {**specification, 'layer': layer}) for layer in layers]
     for layer, obstacle in zip(layers, obstacles):
         route = planner.grid_route((first, last, obstacle))
@@ -136,7 +191,7 @@ def wide_multilayer_route(planner, specification):
             return [(layer, route)], []
     grid_data = [planner.grid_data(obstacle) for obstacle in obstacles]
     blocked = [data[0] for data in grid_data]
-    via_blocked = planner.grid_data(via_obstacles(planner, specification['root']))[0]
+    via_blocked = planner.grid_data(via_obstacles(planner, specification))[0]
     starts, targets = {}, {}
     for index in range(2):
         start, target = planner.grid_anchor((first, last), (blocked[index], obstacles[index]))

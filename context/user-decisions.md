@@ -1,3 +1,13 @@
+Latest six-point request,2026-10-06: use the native USB-C standard connector
+schematic for J1, run UI and CLI style analysis, verify current JLCPCB stock,
+require ordinary through vias with0.30mm holes/0.45mm pads, and route high-current
+paths on the outer PCB layers (explicit user clarification). The J1 symbol change
+and additional canonical role aliases are explicitly requested; preserve the
+original numbered physical contacts, imported footprint and manufacturer model.
+Saved solver output remains immutable; any dimensional replay adaptation is
+explicitly authored and must be independently measured. Preserve unresolved
+J3/J7 mating and fabrication gates; no orders or invented stock/hardware evidence.
+
 Latest request, 2026-10-06: add text in the schematic explaining each component.
 Use readable native schematic annotations and paired A4 guide pages where
 needed; preserve electrical source, PCB layout/routing and existing fabrication

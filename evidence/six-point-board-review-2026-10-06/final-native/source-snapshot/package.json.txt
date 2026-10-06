@@ -1,0 +1,34 @@
+{
+  "name": "@tsci/AnasSarkiz.tscircuit-ai-agent-remote",
+  "version": "0.0.5-wip-style-vias-power",
+  "description": "Handheld Wi-Fi AI agent remote; WIP with standard USB-C schematic, 0.30/0.45 mm through vias, outer-layer supply trunks and A4 component guides; incomplete routing and unresolved fabrication gates; not ready to order",
+  "main": "index.circuit.tsx",
+  "author": "AnasSarkiz",
+  "private": true,
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build index.circuit.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "@tscircuit/checks": "0.0.237",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2090",
+    "@tscircuit/modelprinter": "0.0.6",
+    "@types/bun": "1.4.2",
+    "@types/three": "0.179.0",
+    "circuit-to-svg": "0.0.440",
+    "easyeda": "0.0.370",
+    "tscircuit": "0.0.2744",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@tscircuit/core": "0.0.2090",
+    "easyeda": "0.0.370",
+    "@tscircuit/props": "0.0.688",
+    "circuit-json": "0.0.517",
+    "@tscircuit/capacity-autorouter": "0.0.958"
+  }
+}
