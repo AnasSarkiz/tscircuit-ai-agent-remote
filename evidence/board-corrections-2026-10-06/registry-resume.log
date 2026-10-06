@@ -1,0 +1,12 @@
+178 |       method: "POST",
+179 |       headers: { Authorization: `Bearer ${sessionToken}` },
+180 |       body: form,
+181 |       signal: AbortSignal.timeout(300_000),
+182 |     })
+183 |     if (!response.ok) throw new Error(`Archive upload failed with HTTP${response.status}`)
+                                      ^
+error: Archive upload failed with HTTP502
+      at uploadArchive (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:183:33)
+      at async main (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:236:33)
+
+Bun v1.3.9 (Linux x64)

@@ -1,3 +1,17 @@
+## Public correction checkpoint — 2026-10-06
+
+Accepted source commit: `7c8c78efcd8ffb6072ce824aa95de75672c36188`.
+Public tsci version: `0.0.3-wip-local-bypass`, release
+`8dd2f2c2-5ce3-4826-a126-aa7cc7ea78b8`. All119 package files hash-match
+anonymous readback; native preview exactly matches the accepted JSON.
+[Preview](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/8dd2f2c2-5ce3-4826-a126-aa7cc7ea78b8/preview).
+Cloud build `5f93c81b-9582-428b-872d-654926e8d60d` was scheduled automatically;
+it completed with user_code_job_infrastructure_error while waiting on part
+orientation and its RPC stream disconnected. See cloud-build-failure.md; do not
+queue duplicate jobs or claim successful cloud CI.
+Full-board gates remain false. See the correction review and public receipts
+under `evidence/board-corrections-2026-10-06/`.
+
 ## Latest MCU correction — 2026-10-06
 
 **Revision `0.0.3-wip-local-bypass`; NOT READY TO ORDER.** C31 now has a

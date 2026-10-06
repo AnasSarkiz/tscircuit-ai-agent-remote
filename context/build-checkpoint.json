@@ -66,5 +66,22 @@
   "publication_runtime_snapshot_passed": false,
   "publication_runtime_snapshot_seconds": 246.93,
   "publication_runtime_snapshot_references_changed": false,
-  "publication_runtime_snapshot_receipt": "evidence/board-corrections-2026-10-06/snapshot-receipt.json"
+  "publication_runtime_snapshot_receipt": "evidence/board-corrections-2026-10-06/snapshot-receipt.json",
+  "public_source_commit": "7c8c78efcd8ffb6072ce824aa95de75672c36188",
+  "public_package_version": "0.0.3-wip-local-bypass",
+  "public_package_release_id": "8dd2f2c2-5ce3-4826-a126-aa7cc7ea78b8",
+  "public_package_files_verified": 119,
+  "public_package_all_bytes_match": true,
+  "public_native_preview_exact_object_match": true,
+  "public_preview_url": "https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/8dd2f2c2-5ce3-4826-a126-aa7cc7ea78b8/preview",
+  "public_package_cloud_build_id": "5f93c81b-9582-428b-872d-654926e8d60d",
+  "public_package_cloud_CI_passed": false,
+  "public_package_cloud_CI_status": "failed-infrastructure",
+  "public_package_publication_receipt": "evidence/board-corrections-2026-10-06/final-registry-receipt.json",
+  "public_package_preview_receipt": "evidence/board-corrections-2026-10-06/public-preview-receipt.json",
+  "public_package_cloud_CI_error": {
+    "message": "There was an error running the job on our infrastructure, this is probably not your code, see build logs",
+    "error_code": "user_code_job_infrastructure_error"
+  },
+  "public_package_cloud_CI_completed_at": "2026-10-06T13:42:50.630Z"
 }

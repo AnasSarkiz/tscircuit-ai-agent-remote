@@ -1,0 +1,22 @@
+{
+  "command": [
+    "bun",
+    "scripts/resume-registry-upload.mjs",
+    "--receipt",
+    "evidence/board-corrections-2026-10-06/initial-registry-receipt.json",
+    "--output",
+    "evidence/board-corrections-2026-10-06/registry-resume-receipt.json",
+    "--stage",
+    ".publish/board",
+    "--max-archive-bytes",
+    "3000000",
+    "--upload"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 3.0,
+  "peak_process_group_rss_bytes": 429400064,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

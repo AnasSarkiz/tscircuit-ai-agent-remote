@@ -1,0 +1,65 @@
+{
+  "checked_at_utc": "2026-10-06T13:34:35.001548+00:00",
+  "commit": "7c8c78efcd8ffb6072ce824aa95de75672c36188",
+  "commit_url": "https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/7c8c78efcd8ffb6072ce824aa95de75672c36188",
+  "public_repo_anonymous_http_status": 200,
+  "authenticated_headers_used": false,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "anonymous_http_status": 200,
+      "sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe",
+      "local_bytes_match": true
+    },
+    {
+      "path": "src/board/McuUsbSheet.tsx",
+      "anonymous_http_status": 200,
+      "sha256": "654dd3e6647ed5f41f4fd748427be6fb868c56695457d3c8608eaf83cbb33755",
+      "local_bytes_match": true
+    },
+    {
+      "path": "src/board/placement.ts",
+      "anonymous_http_status": 200,
+      "sha256": "23ed3d7f0b625d3941e88174aed5f260dd6ec2ee520d4880a9b20fe8079e3269",
+      "local_bytes_match": true
+    },
+    {
+      "path": "src/board/manual-signal-paths.json",
+      "anonymous_http_status": 200,
+      "sha256": "851d21d234cf313994798a155ed84c1e3df67c5b3bcb76ab94d6729238aa2987",
+      "local_bytes_match": true
+    },
+    {
+      "path": "package.json",
+      "anonymous_http_status": 200,
+      "sha256": "729e6f8ade50d7d3ec346f8191631b3bd3302c23e0859d620550f0cdbb71d20c",
+      "local_bytes_match": true
+    },
+    {
+      "path": "scripts/prepare-board-package.ts",
+      "anonymous_http_status": 200,
+      "sha256": "d0e8709a6a900eb512a2796eb849c991abc7a3b6ef600f40d5da6e450bab7023",
+      "local_bytes_match": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "anonymous_http_status": 200,
+      "sha256": "e88e5b15cfe407e3cce6bb9ab3e4bd69a195b68f0c43b6ac3f53a09d688463b9",
+      "local_bytes_match": true
+    },
+    {
+      "path": "README.md",
+      "anonymous_http_status": 200,
+      "sha256": "e8d27a962df52185cdb0ba9487df4d58080a095888b5f1a2b5f2787a4f128089",
+      "local_bytes_match": true
+    },
+    {
+      "path": "BOM.md",
+      "anonymous_http_status": 200,
+      "sha256": "a1c1c022a875822be1ff08636e632c65dcb07b2b475157acc5dee5ce4276eb1a",
+      "local_bytes_match": true
+    }
+  ],
+  "all_exact_match": true,
+  "fabrication_ready": false
+}

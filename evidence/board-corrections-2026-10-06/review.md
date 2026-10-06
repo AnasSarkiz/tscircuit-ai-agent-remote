@@ -166,3 +166,51 @@ All generated physical records again exactly match the accepted native board.
 [Snapshot receipt](snapshot-receipt.json) records the original references and
 physical comparison. These outcomes supersede the earlier loader timeout, not
 the remaining board errors.
+
+## Completed public WIP publication
+
+The accepted implementation is public on GitHub at
+[7c8c78e](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/commit/7c8c78efcd8ffb6072ce824aa95de75672c36188).
+Anonymous HTTP200 readback verifies the canonical native JSON, changed electrical
+source, publisher helper and all three packaged review documents byte-for-byte.
+
+The public listed tscircuit release is
+[0.0.3-wip-local-bypass](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/8dd2f2c2-5ce3-4826-a126-aa7cc7ea78b8/preview).
+All119/119 files match exact anonymous hashes; no missing, extra or mismatched
+files remain, and ready_to_build=true. The native preview endpoint discovers
+index.circuit.tsx and returns the exact full validated native array. HTTP200
+on the preview page is recorded; browser thumbnails have not been verified.
+
+Native CLI push encountered HTTP413 for the full archive and two large files.
+The supported official multipart gzip resume returned HTTP502 initially, but
+its transaction subsequently persisted both files. A fresh all-file readback
+first saw117 files; the retry helper then detected the changed remote file set
+and refused any duplicate upload. A subsequent fresh readback proves119 files.
+Do not mistake the failed transport response for absent content or overwrite
+that original outcome with a false successful request. Raw full-archive error
+output is retained outside Git, with its size/hash and safe status lines recorded.
+
+The registry scheduled build5f93c81b-9582-428b-872d-654926e8d60d automatically.
+Its status is recorded separately in cloud-build-observation.json; no duplicate
+build was requested. Exact upload and existing native preview discovery are
+verified; a running cloud job does not establish successful CI or fabrication.
+
+The first80-second cloud observation ended while the build was still running,
+with no completion timestamp or error. Registry logs show successful file
+creation, bundled dependency symlinks and execution of
+`bunx tscircuit build --ci --concurrency 4`. Cloud bundled versions are not
+assumed to match the locally validated frozen installation. The observation
+deadline did not cancel or fail the remote job. The latest follow-up observation
+is preserved separately; pending must not be reported as successful cloud CI.
+
+### Final remote cloud result
+
+The follow-up observation completed with **failed infrastructure**, not pending
+or successful CI. Registry completion:2026-10-06T13:42:50.630Z; error code
+`user_code_job_infrastructure_error`. Logs show a worker waiting on
+`analyze-part-orientation`, then `ReadableStream received over RPC disconnected
+prematurely.` The exact part/service root cause is unproven.
+[Cloud failure report](cloud-build-failure.md) preserves reproducible package
+inputs, public IDs, expected/observed behavior and the actual final logs.
+Publication and existing native preview remain verified. No orientation check
+was disabled and no duplicate job was queued.

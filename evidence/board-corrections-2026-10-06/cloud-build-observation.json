@@ -1,0 +1,1090 @@
+{
+  "build_id": "5f93c81b-9582-428b-872d-654926e8d60d",
+  "observations": [
+    {
+      "checked_at_utc": "2026-10-06T13:38:26.763131+00:00",
+      "status": {
+        "build_in_progress": true,
+        "started_at": "2026-10-06T13:37:26.743Z",
+        "completed_at": null,
+        "error": null,
+        "website_url": null
+      }
+    },
+    {
+      "checked_at_utc": "2026-10-06T13:38:47.073752+00:00",
+      "status": {
+        "build_in_progress": true,
+        "started_at": "2026-10-06T13:37:26.743Z",
+        "completed_at": null,
+        "error": null,
+        "website_url": null
+      }
+    },
+    {
+      "checked_at_utc": "2026-10-06T13:39:07.532199+00:00",
+      "status": {
+        "build_in_progress": true,
+        "started_at": "2026-10-06T13:37:26.743Z",
+        "completed_at": null,
+        "error": null,
+        "website_url": null
+      }
+    },
+    {
+      "checked_at_utc": "2026-10-06T13:39:27.850028+00:00",
+      "status": {
+        "build_in_progress": true,
+        "started_at": "2026-10-06T13:37:26.743Z",
+        "completed_at": null,
+        "error": null,
+        "website_url": null
+      }
+    },
+    {
+      "checked_at_utc": "2026-10-06T13:39:46.715452+00:00",
+      "status": {
+        "build_in_progress": true,
+        "started_at": "2026-10-06T13:37:26.743Z",
+        "completed_at": null,
+        "error": null,
+        "website_url": null
+      }
+    }
+  ],
+  "latest_build": {
+    "package_build_id": "5f93c81b-9582-428b-872d-654926e8d60d",
+    "package_release_id": "8dd2f2c2-5ce3-4826-a126-aa7cc7ea78b8",
+    "created_at": "2026-10-06T13:37:26.495Z",
+    "transpilation_in_progress": false,
+    "transpilation_started_at": null,
+    "transpilation_completed_at": null,
+    "transpilation_logs": [],
+    "transpilation_error": null,
+    "circuit_json_build_in_progress": false,
+    "circuit_json_build_started_at": null,
+    "circuit_json_build_completed_at": null,
+    "circuit_json_build_logs": [],
+    "circuit_json_build_error": null,
+    "image_generation_in_progress": false,
+    "image_generation_started_at": null,
+    "image_generation_completed_at": null,
+    "image_generation_logs": [],
+    "image_generation_error": null,
+    "build_in_progress": true,
+    "package_build_website_url": null,
+    "user_code_job_started_at": "2026-10-06T13:37:26.743Z",
+    "user_code_job_completed_at": null,
+    "user_code_job_error": null,
+    "user_code_job_completed_logs": [
+      {
+        "msg": "Starting execution",
+        "action": "execution_start",
+        "timestamp": "2026-10-06T13:38:08.421Z"
+      },
+      {
+        "msg": "Sandbox ready: tscircuit-runtime-b6f3804570a1ed2f0da88d5a095a4b94808ed8fac9fed",
+        "action": "sandbox_ready",
+        "timestamp": "2026-10-06T13:38:10.521Z"
+      },
+      {
+        "msg": "Wrote .npmrc with auth token",
+        "file": ".npmrc",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:10.610Z"
+      },
+      {
+        "msg": "Created directory: imports/AFC07_S50ECA_00",
+        "action": "create_directory",
+        "directory": "imports/AFC07_S50ECA_00",
+        "timestamp": "2026-10-06T13:38:27.655Z"
+      },
+      {
+        "msg": "Created directory: imports/AO3400A",
+        "action": "create_directory",
+        "directory": "imports/AO3400A",
+        "timestamp": "2026-10-06T13:38:27.682Z"
+      },
+      {
+        "msg": "Created directory: imports/AO3401A",
+        "action": "create_directory",
+        "directory": "imports/AO3401A",
+        "timestamp": "2026-10-06T13:38:27.706Z"
+      },
+      {
+        "msg": "Created directory: imports/A_0603WAF1000T5E",
+        "action": "create_directory",
+        "directory": "imports/A_0603WAF1000T5E",
+        "timestamp": "2026-10-06T13:38:27.729Z"
+      },
+      {
+        "msg": "Created directory: imports/A_0603WAF1001T5E",
+        "action": "create_directory",
+        "directory": "imports/A_0603WAF1001T5E",
+        "timestamp": "2026-10-06T13:38:27.752Z"
+      },
+      {
+        "msg": "Created directory: imports",
+        "action": "create_directory",
+        "directory": "imports",
+        "timestamp": "2026-10-06T13:38:27.779Z"
+      },
+      {
+        "msg": "Created directory: imports/BQ24074RGTR",
+        "action": "create_directory",
+        "directory": "imports/BQ24074RGTR",
+        "timestamp": "2026-10-06T13:38:27.803Z"
+      },
+      {
+        "msg": "Created directory: imports/CL10A105KB8NNNC",
+        "action": "create_directory",
+        "directory": "imports/CL10A105KB8NNNC",
+        "timestamp": "2026-10-06T13:38:27.824Z"
+      },
+      {
+        "msg": "Created directory: imports/CL10A475KO8NNNC",
+        "action": "create_directory",
+        "directory": "imports/CL10A475KO8NNNC",
+        "timestamp": "2026-10-06T13:38:27.848Z"
+      },
+      {
+        "msg": "Created directory: imports/DFE201612E_R47M_P2",
+        "action": "create_directory",
+        "directory": "imports/DFE201612E_R47M_P2",
+        "timestamp": "2026-10-06T13:38:27.872Z"
+      },
+      {
+        "msg": "Created directory: imports/ESP32_S3_WROOM_1_N8R8",
+        "action": "create_directory",
+        "directory": "imports/ESP32_S3_WROOM_1_N8R8",
+        "timestamp": "2026-10-06T13:38:27.896Z"
+      },
+      {
+        "msg": "Created directory: imports/GRM188R61A106ME69D",
+        "action": "create_directory",
+        "directory": "imports/GRM188R61A106ME69D",
+        "timestamp": "2026-10-06T13:38:27.918Z"
+      },
+      {
+        "msg": "Created directory: imports/GRM188R61A226ME15D",
+        "action": "create_directory",
+        "directory": "imports/GRM188R61A226ME15D",
+        "timestamp": "2026-10-06T13:38:27.945Z"
+      },
+      {
+        "msg": "Created directory: imports/GRM188R71C104KA01D",
+        "action": "create_directory",
+        "directory": "imports/GRM188R71C104KA01D",
+        "timestamp": "2026-10-06T13:38:27.969Z"
+      },
+      {
+        "msg": "Created directory: imports/ICS_43434",
+        "action": "create_directory",
+        "directory": "imports/ICS_43434",
+        "timestamp": "2026-10-06T13:38:27.997Z"
+      },
+      {
+        "msg": "Created directory: imports/MAX98357AETE_T",
+        "action": "create_directory",
+        "directory": "imports/MAX98357AETE_T",
+        "timestamp": "2026-10-06T13:38:28.020Z"
+      },
+      {
+        "msg": "Created directory: imports/MSK12C02",
+        "action": "create_directory",
+        "directory": "imports/MSK12C02",
+        "timestamp": "2026-10-06T13:38:28.044Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_07100KL",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_07100KL",
+        "timestamp": "2026-10-06T13:38:28.066Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_0710KL",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_0710KL",
+        "timestamp": "2026-10-06T13:38:28.090Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_0722RL",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_0722RL",
+        "timestamp": "2026-10-06T13:38:28.110Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_073KL",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_073KL",
+        "timestamp": "2026-10-06T13:38:28.132Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_07470KL",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_07470KL",
+        "timestamp": "2026-10-06T13:38:28.156Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_074K7L",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_074K7L",
+        "timestamp": "2026-10-06T13:38:28.180Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_0751K1L",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_0751K1L",
+        "timestamp": "2026-10-06T13:38:28.200Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_075K1L",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_075K1L",
+        "timestamp": "2026-10-06T13:38:28.221Z"
+      },
+      {
+        "msg": "Created directory: imports/RC0603FR_079K1L",
+        "action": "create_directory",
+        "directory": "imports/RC0603FR_079K1L",
+        "timestamp": "2026-10-06T13:38:28.248Z"
+      },
+      {
+        "msg": "Created directory: imports/S2B_PH_K_S_LF__SN_",
+        "action": "create_directory",
+        "directory": "imports/S2B_PH_K_S_LF__SN_",
+        "timestamp": "2026-10-06T13:38:28.275Z"
+      },
+      {
+        "msg": "Created directory: imports/S3B_PH_K_S_LF__SN_",
+        "action": "create_directory",
+        "directory": "imports/S3B_PH_K_S_LF__SN_",
+        "timestamp": "2026-10-06T13:38:28.304Z"
+      },
+      {
+        "msg": "Created directory: imports/SKSWCFE010",
+        "action": "create_directory",
+        "directory": "imports/SKSWCFE010",
+        "timestamp": "2026-10-06T13:38:28.330Z"
+      },
+      {
+        "msg": "Created directory: imports/SM06B_SRSS_TB_LF__SN_",
+        "action": "create_directory",
+        "directory": "imports/SM06B_SRSS_TB_LF__SN_",
+        "timestamp": "2026-10-06T13:38:28.353Z"
+      },
+      {
+        "msg": "Created directory: imports/SN74LVC1G17DBVR",
+        "action": "create_directory",
+        "directory": "imports/SN74LVC1G17DBVR",
+        "timestamp": "2026-10-06T13:38:28.379Z"
+      },
+      {
+        "msg": "Created directory: imports/SN74LVC245APWR",
+        "action": "create_directory",
+        "directory": "imports/SN74LVC245APWR",
+        "timestamp": "2026-10-06T13:38:28.403Z"
+      },
+      {
+        "msg": "Created directory: imports/TLV3201AIDBVR",
+        "action": "create_directory",
+        "directory": "imports/TLV3201AIDBVR",
+        "timestamp": "2026-10-06T13:38:28.430Z"
+      },
+      {
+        "msg": "Created directory: imports/TPD2EUSB30ADRTR",
+        "action": "create_directory",
+        "directory": "imports/TPD2EUSB30ADRTR",
+        "timestamp": "2026-10-06T13:38:28.454Z"
+      },
+      {
+        "msg": "Created directory: imports/TPS3808G33DBVR",
+        "action": "create_directory",
+        "directory": "imports/TPS3808G33DBVR",
+        "timestamp": "2026-10-06T13:38:28.486Z"
+      },
+      {
+        "msg": "Created directory: imports/TPS3839G33DBZR",
+        "action": "create_directory",
+        "directory": "imports/TPS3839G33DBZR",
+        "timestamp": "2026-10-06T13:38:28.518Z"
+      },
+      {
+        "msg": "Created directory: imports/TPS60230RGTR",
+        "action": "create_directory",
+        "directory": "imports/TPS60230RGTR",
+        "timestamp": "2026-10-06T13:38:28.548Z"
+      },
+      {
+        "msg": "Created directory: imports/TPS63802DLAR",
+        "action": "create_directory",
+        "directory": "imports/TPS63802DLAR",
+        "timestamp": "2026-10-06T13:38:28.584Z"
+      },
+      {
+        "msg": "Created directory: imports/TPS7A2028PDBVR",
+        "action": "create_directory",
+        "directory": "imports/TPS7A2028PDBVR",
+        "timestamp": "2026-10-06T13:38:28.616Z"
+      },
+      {
+        "msg": "Created directory: imports/TYPE_C_31_M_12",
+        "action": "create_directory",
+        "directory": "imports/TYPE_C_31_M_12",
+        "timestamp": "2026-10-06T13:38:28.641Z"
+      },
+      {
+        "msg": "Created directory: routes/a3",
+        "action": "create_directory",
+        "directory": "routes/a3",
+        "timestamp": "2026-10-06T13:38:28.669Z"
+      },
+      {
+        "msg": "Created directory: routes/a5",
+        "action": "create_directory",
+        "directory": "routes/a5",
+        "timestamp": "2026-10-06T13:38:28.700Z"
+      },
+      {
+        "msg": "Created directory: routes/a6",
+        "action": "create_directory",
+        "directory": "routes/a6",
+        "timestamp": "2026-10-06T13:38:28.726Z"
+      },
+      {
+        "msg": "Created directory: routes/a7",
+        "action": "create_directory",
+        "directory": "routes/a7",
+        "timestamp": "2026-10-06T13:38:28.753Z"
+      },
+      {
+        "msg": "Created directory: src/board",
+        "action": "create_directory",
+        "directory": "src/board",
+        "timestamp": "2026-10-06T13:38:28.779Z"
+      },
+      {
+        "msg": "Wrote file: BOM.md",
+        "file": "BOM.md",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:28.822Z"
+      },
+      {
+        "msg": "Wrote file: README.md",
+        "file": "README.md",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:28.848Z"
+      },
+      {
+        "msg": "Wrote file: VALIDATION.md",
+        "file": "VALIDATION.md",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:28.884Z"
+      },
+      {
+        "msg": "Wrote file: bun.lock",
+        "file": "bun.lock",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:28.924Z"
+      },
+      {
+        "msg": "Wrote file: imports/AFC07_S50ECA_00/AFC07_S50ECA_00.obj",
+        "file": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:29.007Z"
+      },
+      {
+        "msg": "Wrote file: imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+        "file": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.094Z"
+      },
+      {
+        "msg": "Wrote file: imports/AFC07_S50ECA_00/AFC07_S50ECA_00.tsx",
+        "file": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.138Z"
+      },
+      {
+        "msg": "Wrote file: imports/AO3400A/AO3400A.tsx",
+        "file": "imports/AO3400A/AO3400A.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.174Z"
+      },
+      {
+        "msg": "Wrote file: imports/AO3401A/AO3401A.tsx",
+        "file": "imports/AO3401A/AO3401A.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.217Z"
+      },
+      {
+        "msg": "Wrote file: imports/A_0603WAF1000T5E/A_0603WAF1000T5E.obj",
+        "file": "imports/A_0603WAF1000T5E/A_0603WAF1000T5E.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.260Z"
+      },
+      {
+        "msg": "Wrote file: imports/A_0603WAF1000T5E/A_0603WAF1000T5E.step",
+        "file": "imports/A_0603WAF1000T5E/A_0603WAF1000T5E.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.444Z"
+      },
+      {
+        "msg": "Wrote file: imports/A_0603WAF1000T5E/A_0603WAF1000T5E.tsx",
+        "file": "imports/A_0603WAF1000T5E/A_0603WAF1000T5E.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.486Z"
+      },
+      {
+        "msg": "Wrote file: imports/A_0603WAF1001T5E/A_0603WAF1001T5E.tsx",
+        "file": "imports/A_0603WAF1001T5E/A_0603WAF1001T5E.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.539Z"
+      },
+      {
+        "msg": "Wrote file: imports/A_74LVC2G07GW_125.tsx",
+        "file": "imports/A_74LVC2G07GW_125.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.594Z"
+      },
+      {
+        "msg": "Wrote file: imports/BQ24074RGTR/BQ24074RGTR.obj",
+        "file": "imports/BQ24074RGTR/BQ24074RGTR.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.657Z"
+      },
+      {
+        "msg": "Wrote file: imports/BQ24074RGTR/BQ24074RGTR.step",
+        "file": "imports/BQ24074RGTR/BQ24074RGTR.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.882Z"
+      },
+      {
+        "msg": "Wrote file: imports/BQ24074RGTR/BQ24074RGTR.tsx",
+        "file": "imports/BQ24074RGTR/BQ24074RGTR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:30.946Z"
+      },
+      {
+        "msg": "Wrote file: imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+        "file": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.007Z"
+      },
+      {
+        "msg": "Wrote file: imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+        "file": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.256Z"
+      },
+      {
+        "msg": "Wrote file: imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+        "file": "imports/CL10A105KB8NNNC/CL10A105KB8NNNC.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.307Z"
+      },
+      {
+        "msg": "Wrote file: imports/CL10A475KO8NNNC/CL10A475KO8NNNC.obj",
+        "file": "imports/CL10A475KO8NNNC/CL10A475KO8NNNC.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.351Z"
+      },
+      {
+        "msg": "Wrote file: imports/CL10A475KO8NNNC/CL10A475KO8NNNC.step",
+        "file": "imports/CL10A475KO8NNNC/CL10A475KO8NNNC.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.544Z"
+      },
+      {
+        "msg": "Wrote file: imports/CL10A475KO8NNNC/CL10A475KO8NNNC.tsx",
+        "file": "imports/CL10A475KO8NNNC/CL10A475KO8NNNC.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.586Z"
+      },
+      {
+        "msg": "Wrote file: imports/DFE201612E_R47M_P2/DFE201612E_R47M_P2.tsx",
+        "file": "imports/DFE201612E_R47M_P2/DFE201612E_R47M_P2.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.642Z"
+      },
+      {
+        "msg": "Wrote file: imports/ESP32_S3_WROOM_1_N8R8/ESP32_S3_WROOM_1_N8R8.obj",
+        "file": "imports/ESP32_S3_WROOM_1_N8R8/ESP32_S3_WROOM_1_N8R8.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.699Z"
+      },
+      {
+        "msg": "Wrote file: imports/ESP32_S3_WROOM_1_N8R8/ESP32_S3_WROOM_1_N8R8.step",
+        "file": "imports/ESP32_S3_WROOM_1_N8R8/ESP32_S3_WROOM_1_N8R8.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.865Z"
+      },
+      {
+        "msg": "Wrote file: imports/ESP32_S3_WROOM_1_N8R8/ESP32_S3_WROOM_1_N8R8.tsx",
+        "file": "imports/ESP32_S3_WROOM_1_N8R8/ESP32_S3_WROOM_1_N8R8.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.897Z"
+      },
+      {
+        "msg": "Wrote file: imports/GRM188R61A106ME69D/GRM188R61A106ME69D.tsx",
+        "file": "imports/GRM188R61A106ME69D/GRM188R61A106ME69D.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.926Z"
+      },
+      {
+        "msg": "Wrote file: imports/GRM188R61A226ME15D/GRM188R61A226ME15D.tsx",
+        "file": "imports/GRM188R61A226ME15D/GRM188R61A226ME15D.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.964Z"
+      },
+      {
+        "msg": "Wrote file: imports/GRM188R71C104KA01D/GRM188R71C104KA01D.tsx",
+        "file": "imports/GRM188R71C104KA01D/GRM188R71C104KA01D.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:31.996Z"
+      },
+      {
+        "msg": "Wrote file: imports/ICS_43434/ICS_43434.obj",
+        "file": "imports/ICS_43434/ICS_43434.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.035Z"
+      },
+      {
+        "msg": "Wrote file: imports/ICS_43434/ICS_43434.step",
+        "file": "imports/ICS_43434/ICS_43434.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.116Z"
+      },
+      {
+        "msg": "Wrote file: imports/ICS_43434/ICS_43434.tsx",
+        "file": "imports/ICS_43434/ICS_43434.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.151Z"
+      },
+      {
+        "msg": "Wrote file: imports/MAX98357AETE_T/MAX98357AETE_T.obj",
+        "file": "imports/MAX98357AETE_T/MAX98357AETE_T.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.189Z"
+      },
+      {
+        "msg": "Wrote file: imports/MAX98357AETE_T/MAX98357AETE_T.step",
+        "file": "imports/MAX98357AETE_T/MAX98357AETE_T.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.283Z"
+      },
+      {
+        "msg": "Wrote file: imports/MAX98357AETE_T/MAX98357AETE_T.tsx",
+        "file": "imports/MAX98357AETE_T/MAX98357AETE_T.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.310Z"
+      },
+      {
+        "msg": "Wrote file: imports/MSK12C02/MSK12C02.tsx",
+        "file": "imports/MSK12C02/MSK12C02.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.337Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_07100KL/RC0603FR_07100KL.tsx",
+        "file": "imports/RC0603FR_07100KL/RC0603FR_07100KL.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.365Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_0710KL/RC0603FR_0710KL.tsx",
+        "file": "imports/RC0603FR_0710KL/RC0603FR_0710KL.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.391Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_0722RL/RC0603FR_0722RL.tsx",
+        "file": "imports/RC0603FR_0722RL/RC0603FR_0722RL.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.433Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_07330RL.tsx",
+        "file": "imports/RC0603FR_07330RL.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.460Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_073KL/RC0603FR_073KL.tsx",
+        "file": "imports/RC0603FR_073KL/RC0603FR_073KL.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.489Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_07470KL/RC0603FR_07470KL.tsx",
+        "file": "imports/RC0603FR_07470KL/RC0603FR_07470KL.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.517Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_074K7L/RC0603FR_074K7L.tsx",
+        "file": "imports/RC0603FR_074K7L/RC0603FR_074K7L.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.551Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_0751K1L/RC0603FR_0751K1L.tsx",
+        "file": "imports/RC0603FR_0751K1L/RC0603FR_0751K1L.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.577Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_075K1L/RC0603FR_075K1L.tsx",
+        "file": "imports/RC0603FR_075K1L/RC0603FR_075K1L.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.611Z"
+      },
+      {
+        "msg": "Wrote file: imports/RC0603FR_079K1L/RC0603FR_079K1L.tsx",
+        "file": "imports/RC0603FR_079K1L/RC0603FR_079K1L.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.652Z"
+      },
+      {
+        "msg": "Wrote file: imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.obj",
+        "file": "imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.688Z"
+      },
+      {
+        "msg": "Wrote file: imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.step",
+        "file": "imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.909Z"
+      },
+      {
+        "msg": "Wrote file: imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.tsx",
+        "file": "imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.945Z"
+      },
+      {
+        "msg": "Wrote file: imports/S3B_PH_K_S_LF__SN_/S3B_PH_K_S_LF__SN_.obj",
+        "file": "imports/S3B_PH_K_S_LF__SN_/S3B_PH_K_S_LF__SN_.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:32.983Z"
+      },
+      {
+        "msg": "Wrote file: imports/S3B_PH_K_S_LF__SN_/S3B_PH_K_S_LF__SN_.step",
+        "file": "imports/S3B_PH_K_S_LF__SN_/S3B_PH_K_S_LF__SN_.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.268Z"
+      },
+      {
+        "msg": "Wrote file: imports/S3B_PH_K_S_LF__SN_/S3B_PH_K_S_LF__SN_.tsx",
+        "file": "imports/S3B_PH_K_S_LF__SN_/S3B_PH_K_S_LF__SN_.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.303Z"
+      },
+      {
+        "msg": "Wrote file: imports/SKSWCFE010/SKSWCFE010.tsx",
+        "file": "imports/SKSWCFE010/SKSWCFE010.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.341Z"
+      },
+      {
+        "msg": "Wrote file: imports/SM06B_SRSS_TB_LF__SN_/SM06B_SRSS_TB_LF__SN_.tsx",
+        "file": "imports/SM06B_SRSS_TB_LF__SN_/SM06B_SRSS_TB_LF__SN_.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.381Z"
+      },
+      {
+        "msg": "Wrote file: imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.tsx",
+        "file": "imports/SN74LVC1G17DBVR/SN74LVC1G17DBVR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.424Z"
+      },
+      {
+        "msg": "Wrote file: imports/SN74LVC245APWR/SN74LVC245APWR.tsx",
+        "file": "imports/SN74LVC245APWR/SN74LVC245APWR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.460Z"
+      },
+      {
+        "msg": "Wrote file: imports/SS14.tsx",
+        "file": "imports/SS14.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.494Z"
+      },
+      {
+        "msg": "Wrote file: imports/TLV3201AIDBVR/TLV3201AIDBVR.tsx",
+        "file": "imports/TLV3201AIDBVR/TLV3201AIDBVR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.527Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.tsx",
+        "file": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.566Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS3808G33DBVR/TPS3808G33DBVR.tsx",
+        "file": "imports/TPS3808G33DBVR/TPS3808G33DBVR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.604Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS3839G33DBZR/TPS3839G33DBZR.tsx",
+        "file": "imports/TPS3839G33DBZR/TPS3839G33DBZR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.649Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS60230RGTR/TPS60230RGTR.obj",
+        "file": "imports/TPS60230RGTR/TPS60230RGTR.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:33.707Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS60230RGTR/TPS60230RGTR.step",
+        "file": "imports/TPS60230RGTR/TPS60230RGTR.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.024Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS60230RGTR/TPS60230RGTR.tsx",
+        "file": "imports/TPS60230RGTR/TPS60230RGTR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.061Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS63802DLAR/TPS63802DLAR.obj",
+        "file": "imports/TPS63802DLAR/TPS63802DLAR.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.123Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS63802DLAR/TPS63802DLAR.step",
+        "file": "imports/TPS63802DLAR/TPS63802DLAR.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.419Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS63802DLAR/TPS63802DLAR.tsx",
+        "file": "imports/TPS63802DLAR/TPS63802DLAR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.469Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS7A2028PDBVR/TPS7A2028PDBVR.tsx",
+        "file": "imports/TPS7A2028PDBVR/TPS7A2028PDBVR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.515Z"
+      },
+      {
+        "msg": "Wrote file: imports/TPS7A2030PDBVR.tsx",
+        "file": "imports/TPS7A2030PDBVR.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.555Z"
+      },
+      {
+        "msg": "Wrote file: imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+        "file": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:34.633Z"
+      },
+      {
+        "msg": "Wrote file: imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+        "file": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.033Z"
+      },
+      {
+        "msg": "Wrote file: imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+        "file": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.099Z"
+      },
+      {
+        "msg": "Wrote file: index.circuit.tsx",
+        "file": "index.circuit.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.145Z"
+      },
+      {
+        "msg": "Wrote file: main.tsx",
+        "file": "main.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.181Z"
+      },
+      {
+        "msg": "Wrote file: package.json",
+        "file": "package.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.210Z"
+      },
+      {
+        "msg": "Wrote file: routes/a3/regulator.json",
+        "file": "routes/a3/regulator.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.245Z"
+      },
+      {
+        "msg": "Wrote file: routes/a5/charger-current-limit.json",
+        "file": "routes/a5/charger-current-limit.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.275Z"
+      },
+      {
+        "msg": "Wrote file: routes/a5/independent-control-signals.json",
+        "file": "routes/a5/independent-control-signals.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.306Z"
+      },
+      {
+        "msg": "Wrote file: routes/a6/amplifier-din.json",
+        "file": "routes/a6/amplifier-din.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.348Z"
+      },
+      {
+        "msg": "Wrote file: routes/a6/backlight-c1-negative.json",
+        "file": "routes/a6/backlight-c1-negative.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.375Z"
+      },
+      {
+        "msg": "Wrote file: routes/a6/backlight-c1-positive.json",
+        "file": "routes/a6/backlight-c1-positive.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.412Z"
+      },
+      {
+        "msg": "Wrote file: routes/a6/backlight-c2-negative.json",
+        "file": "routes/a6/backlight-c2-negative.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.446Z"
+      },
+      {
+        "msg": "Wrote file: routes/a6/backlight-c2-positive.json",
+        "file": "routes/a6/backlight-c2-positive.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.478Z"
+      },
+      {
+        "msg": "Wrote file: routes/a6/backlight-current-setting.json",
+        "file": "routes/a6/backlight-current-setting.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.557Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/charger-ntc.json",
+        "file": "routes/a7/charger-ntc.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.588Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/haptic-enable.json",
+        "file": "routes/a7/haptic-enable.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.619Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/hold-readback.json",
+        "file": "routes/a7/hold-readback.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.692Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/mcu-amplifier-bclk.json",
+        "file": "routes/a7/mcu-amplifier-bclk.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.712Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/mcu-amplifier-din.json",
+        "file": "routes/a7/mcu-amplifier-din.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.736Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/regulator-feedback-retained.json",
+        "file": "routes/a7/regulator-feedback-retained.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.759Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/regulator-pgood-reroute.json",
+        "file": "routes/a7/regulator-pgood-reroute.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.797Z"
+      },
+      {
+        "msg": "Wrote file: routes/a7/service-uart.json",
+        "file": "routes/a7/service-uart.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.823Z"
+      },
+      {
+        "msg": "Wrote file: src/board/BacklightSheet.tsx",
+        "file": "src/board/BacklightSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.845Z"
+      },
+      {
+        "msg": "Wrote file: src/board/BatteryReadySheet.tsx",
+        "file": "src/board/BatteryReadySheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.873Z"
+      },
+      {
+        "msg": "Wrote file: src/board/BoardFeatures.tsx",
+        "file": "src/board/BoardFeatures.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.903Z"
+      },
+      {
+        "msg": "Wrote file: src/board/ChargerSheet.tsx",
+        "file": "src/board/ChargerSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.934Z"
+      },
+      {
+        "msg": "Wrote file: src/board/ControlsSheet.tsx",
+        "file": "src/board/ControlsSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.963Z"
+      },
+      {
+        "msg": "Wrote file: src/board/DisplaySheet.tsx",
+        "file": "src/board/DisplaySheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:35.987Z"
+      },
+      {
+        "msg": "Wrote file: src/board/GroundPaths.ts",
+        "file": "src/board/GroundPaths.ts",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.014Z"
+      },
+      {
+        "msg": "Wrote file: src/board/HapticSheet.tsx",
+        "file": "src/board/HapticSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.039Z"
+      },
+      {
+        "msg": "Wrote file: src/board/HoldSheet.tsx",
+        "file": "src/board/HoldSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.069Z"
+      },
+      {
+        "msg": "Wrote file: src/board/ManualPowerCopper.tsx",
+        "file": "src/board/ManualPowerCopper.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.095Z"
+      },
+      {
+        "msg": "Wrote file: src/board/ManualSignalPaths.tsx",
+        "file": "src/board/ManualSignalPaths.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.126Z"
+      },
+      {
+        "msg": "Wrote file: src/board/McuUsbSheet.tsx",
+        "file": "src/board/McuUsbSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.152Z"
+      },
+      {
+        "msg": "Wrote file: src/board/MicrophoneClockSheet.tsx",
+        "file": "src/board/MicrophoneClockSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.179Z"
+      },
+      {
+        "msg": "Wrote file: src/board/MicrophonesSheet.tsx",
+        "file": "src/board/MicrophonesSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.209Z"
+      },
+      {
+        "msg": "Wrote file: src/board/RegulatorSheet.tsx",
+        "file": "src/board/RegulatorSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.235Z"
+      },
+      {
+        "msg": "Wrote file: src/board/Routing.tsx",
+        "file": "src/board/Routing.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.266Z"
+      },
+      {
+        "msg": "Wrote file: src/board/SpeakerSheet.tsx",
+        "file": "src/board/SpeakerSheet.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.291Z"
+      },
+      {
+        "msg": "Wrote file: src/board/ground-paths.json",
+        "file": "src/board/ground-paths.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.315Z"
+      },
+      {
+        "msg": "Wrote file: src/board/ground-plane-outline.json",
+        "file": "src/board/ground-plane-outline.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.358Z"
+      },
+      {
+        "msg": "Wrote file: src/board/manual-power-copper.json",
+        "file": "src/board/manual-power-copper.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.393Z"
+      },
+      {
+        "msg": "Wrote file: src/board/manual-signal-paths.json",
+        "file": "src/board/manual-signal-paths.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.432Z"
+      },
+      {
+        "msg": "Wrote file: src/board/nets.tsx",
+        "file": "src/board/nets.tsx",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.457Z"
+      },
+      {
+        "msg": "Wrote file: src/board/placement.ts",
+        "file": "src/board/placement.ts",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.485Z"
+      },
+      {
+        "msg": "Wrote file: tscircuit.config.json",
+        "file": "tscircuit.config.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.511Z"
+      },
+      {
+        "msg": "Wrote file: tsconfig.json",
+        "file": "tsconfig.json",
+        "action": "write_file",
+        "timestamp": "2026-10-06T13:38:36.537Z"
+      },
+      {
+        "msg": "Created symlinks for bundled tscircuit dependencies",
+        "action": "symlink_bundled_deps",
+        "timestamp": "2026-10-06T13:38:36.952Z"
+      },
+      {
+        "msg": "Executing script",
+        "action": "exec_start",
+        "command": "bunx tscircuit build --ci --concurrency 4",
+        "timestamp": "2026-10-06T13:38:36.952Z"
+      }
+    ],
+    "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=b6f3804570a1ed2f0da88d5a095a4b94808ed8fac9fed1916a69bf1d3febce64"
+  },
+  "completed": false,
+  "succeeded": false
+}

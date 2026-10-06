@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-06T13:37:38.437Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.3-wip-local-bypass",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2134916,
+  "archive_sha256": "9292447297e692b635cd221c96596316d4172778d41e0490de89896a7c181150",
+  "archives": [
+    {
+      "bytes": 2134916,
+      "sha256": "9292447297e692b635cd221c96596316d4172778d41e0490de89896a7c181150",
+      "paths": [
+        "dist/index/circuit.json",
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 5067369,
+      "sha256": "772195341bd21450085576075af162a3a45adc9c311e5fcc747488d01bb56ebe"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": false
+}
