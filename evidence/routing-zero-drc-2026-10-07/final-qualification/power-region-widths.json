@@ -1,0 +1,1127 @@
+{
+  "source_circuit_json": "evidence/routing-zero-drc-2026-10-07/final-native/circuit.json",
+  "source_sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184",
+  "region_source": "src/board/manual-power-copper.json",
+  "scope": "Required nominal-width buffered source centerlines with flat termination caps covered by actual same-net native BREP copper and actual plated via lands on their native layers; actual drilled apertures excluded; 0.000001 mm geometric tolerance.",
+  "audit_script_sha256": "7974a07310cef5c45c01b499932daf1c856c841d61ac2f5f0d4328e9d4340b02",
+  "checked_region_count": 124,
+  "failed_region_count": 0,
+  "measurements": [
+    {
+      "source_region_index": 0,
+      "net": "PACK_BAT",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 1,
+      "net": "PACK_BAT",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 2,
+      "net": "PACK_BAT",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 3,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 4,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 5,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 6,
+      "net": "VSYS",
+      "layer": "top",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 7,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 8,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 9,
+      "net": "VSYS",
+      "layer": "top",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 10,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 11,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 12,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 13,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 14,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 15,
+      "net": "VSYS",
+      "layer": "top",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 16,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 17,
+      "net": "VSYS",
+      "layer": "top",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 18,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 19,
+      "net": "VSYS",
+      "layer": "top",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 20,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 21,
+      "net": "VSYS",
+      "layer": "top",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 22,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 23,
+      "net": "VSYS",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 24,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 25,
+      "net": "VBUS",
+      "layer": "top",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 26,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 27,
+      "net": "VBUS",
+      "layer": "top",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 28,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 29,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 30,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 31,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 32,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 33,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 34,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 35,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 36,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 37,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 38,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 39,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 40,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 41,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 42,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 43,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 44,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 45,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 46,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 47,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 48,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 49,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 50,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 51,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 52,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 53,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 54,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 55,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 56,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 57,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 58,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 59,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 60,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 61,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 62,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 63,
+      "net": "V3V3",
+      "layer": "bottom",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 64,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 65,
+      "net": "V3V3",
+      "layer": "top",
+      "required_width_mm": 0.8,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 66,
+      "net": "V3V3",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 67,
+      "net": "V3V3",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 68,
+      "net": "V3V3",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 69,
+      "net": "V3V3",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 70,
+      "net": "V3V3",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 71,
+      "net": "VMOTOR",
+      "layer": "bottom",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 72,
+      "net": "VMOTOR",
+      "layer": "top",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 73,
+      "net": "VMOTOR",
+      "layer": "bottom",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 74,
+      "net": "VMOTOR",
+      "layer": "top",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 75,
+      "net": "VMOTOR",
+      "layer": "bottom",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 76,
+      "net": "VMOTOR",
+      "layer": "top",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 77,
+      "net": "VMOTOR",
+      "layer": "bottom",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 78,
+      "net": "VMOTOR",
+      "layer": "top",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 79,
+      "net": "VMOTOR",
+      "layer": "top",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 80,
+      "net": "HAPTIC_N",
+      "layer": "bottom",
+      "required_width_mm": 0.4,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 81,
+      "net": "HAPTIC_N",
+      "layer": "top",
+      "required_width_mm": 0.4,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 82,
+      "net": "HAPTIC_N",
+      "layer": "bottom",
+      "required_width_mm": 0.4,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 83,
+      "net": "HAPTIC_N",
+      "layer": "top",
+      "required_width_mm": 0.4,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 84,
+      "net": "HAPTIC_N",
+      "layer": "bottom",
+      "required_width_mm": 0.4,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 85,
+      "net": "HAPTIC_N",
+      "layer": "bottom",
+      "required_width_mm": 0.4,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 86,
+      "net": "AUDIO_PMOS_GATE",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 87,
+      "net": "HOLD_HARDWARE",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 88,
+      "net": "MCU_BOOT_N",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 89,
+      "net": "MCU_BOOT_N",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 90,
+      "net": "MCU_LCD_DC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 91,
+      "net": "MCU_LCD_DC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 92,
+      "net": "MCU_LCD_DC",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 93,
+      "net": "MCU_LCD_SCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 94,
+      "net": "MCU_LCD_SCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 95,
+      "net": "MCU_LCD_SCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 96,
+      "net": "MCU_LCD_SDA",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 97,
+      "net": "MCU_LCD_SDA",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 98,
+      "net": "MCU_LCD_SDA",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 99,
+      "net": "MCU_MIC_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 100,
+      "net": "MCU_MIC_SD",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 101,
+      "net": "MIC_INPUT",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 102,
+      "net": "MIC_INPUT",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 103,
+      "net": "MIC_INPUT",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 104,
+      "net": "MIC_INPUT",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 105,
+      "net": "VLCD",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 106,
+      "net": "VLCD",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 107,
+      "net": "VLCD",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 108,
+      "net": "VLCD",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 109,
+      "net": "VLCD",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 110,
+      "net": "VLCD",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 111,
+      "net": "VLCD",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 112,
+      "net": "VMIC",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 113,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 114,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 115,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 116,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 117,
+      "net": "VMIC",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 118,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 119,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 120,
+      "net": "VMIC",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 121,
+      "net": "MIC_WS",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 122,
+      "net": "MIC_INPUT",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 123,
+      "net": "MIC_INPUT",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-speaker-wire.py",
+    "evidence/routing-zero-drc-2026-10-07/clock-native-complete/circuit.json",
+    "evidence/routing-zero-drc-2026-10-07/speaker-native-wire.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 27.04,
+  "peak_process_group_rss_bytes": 189583360,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

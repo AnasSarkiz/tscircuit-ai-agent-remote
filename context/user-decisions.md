@@ -1,3 +1,5 @@
+Latest continuation: continue toward zero DRC, including manual routing. The goal remains fully connected, correctly sized, fabrication-qualified copper. Keep checks intact, verify every accepted repair against previous connections and publish matching WIP source/native after completed steps. Do not guess unverified J3/J7 contacts or turn partial geometry results into fabrication approval.
+
 Latest request, 2026-10-06: fix the connection errors autonomously and keep the matching tscircuit source/native updated. Repair independently verified interfaces without per-issue approval, preserve actual connection/width/DRC evidence and report unresolved gates honestly. Do not guess J3 outer polarity or J7 physical mating, alter genuine imports or solver caches, hide native errors, place an order, resume the watcher or send other-chat messages.
 
 Latest six-point request,2026-10-06: use the native USB-C standard connector

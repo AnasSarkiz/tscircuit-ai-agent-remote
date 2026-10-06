@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "scripts/cloud/archive-native-events.py",
+    "evidence/routing-zero-drc-2026-10-07"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 12.03,
+  "peak_process_group_rss_bytes": 44187648,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

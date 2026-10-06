@@ -1,0 +1,16 @@
+{
+  "baseline_manifest_version": "0.0.6-wip-connection-repairs",
+  "baseline_file_count": 397,
+  "changed_baseline_files": [
+    "dist/index/circuit.json",
+    "package.json",
+    "scripts/cloud/run_with_budget.py",
+    "scripts/cloud/smoke_test.py",
+    "scripts/routing/plan-microphone-ground-traces.py",
+    "scripts/routing/plan-power-copper.py",
+    "src/board/connection-copper.json"
+  ],
+  "protected_files_checked": 242,
+  "protected_files_changed": [],
+  "imports_models_lock_and_original_solver_artifacts_unchanged": true
+}

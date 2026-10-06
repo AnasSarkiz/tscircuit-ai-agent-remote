@@ -1,0 +1,18 @@
+{"starting_source_check": "netlist"}
+{"source_check": "netlist", "exit_code": 0}
+{"starting_source_check": "pin_specification"}
+{"source_check": "pin_specification", "exit_code": 0}
+{"starting_source_check": "source"}
+{"source_check": "source", "exit_code": 0}
+{"starting_source_check": "schematic-placement"}
+{"source_check": "schematic-placement", "exit_code": 0}
+{"starting_source_check": "placement"}
+{"source_check": "placement", "exit_code": 0}
+.......................................................................................
+----------------------------------------------------------------------
+Ran 87 tests in 1.434s
+
+OK
+$ tsc --noEmit
+$ biome format .
+Checked 106 files in 80ms. No fixes applied.

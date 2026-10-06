@@ -1,0 +1,6 @@
+{
+  "classification": "Incomplete native render; not accepted",
+  "failure": "Differential-pair port selector matched multiple source traces after adding manual copper",
+  "action": "Stopped the failed process; native pair now selects uniquely named actual source traces with all original constraints retained",
+  "native_json_produced": false
+}

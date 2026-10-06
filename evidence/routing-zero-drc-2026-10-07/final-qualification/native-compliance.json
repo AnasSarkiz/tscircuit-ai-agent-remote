@@ -1,0 +1,100 @@
+{
+  "native_json": "evidence/routing-zero-drc-2026-10-07/final-native/circuit.json",
+  "native_sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184",
+  "parent_sha256": "8a68235d7b446165de53665adb2e53ca971e7e179969c2eb07c1e1185b140042",
+  "via_count": 325,
+  "exact_0p30_drill_0p45_pad_and_full_span": true,
+  "nonconforming_vias": [],
+  "via_span_contract": "Physical span is pcb_via.layers. In core0.0.2090 getAutoroutedViaLayers returns every board layer when allowBlindAndBuriedVias=false. from_layer/to_layer preserve the routing wire-layer transition, including inner-layer connections; they are not the physical drill span.",
+  "authored_high_current_regions": 80,
+  "authored_high_current_trunks_outer_only": true,
+  "high_current_native_traces_checked": 67,
+  "high_current_native_wire_layers_outer_only": true,
+  "high_current_native_traces_on_inner_layers": [],
+  "nonconforming_power_regions": [],
+  "reviewed_inner_low_current_branches": [
+    {
+      "net": "VSYS",
+      "terminal": ".Q2 > .pin2",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 0.061,
+      "basis": "Q2 powers only amplifier SD_MODE through R63=100 ohms; R62=1 kohm pulls its gate. Amplifier supply pins U3.2/7/8 use VSYS directly. A conservative 5.5 V rail bounds even a grounded SD_MODE input at 55 mA plus 5.5 mA gate pull. This is a control branch, not the amplifier supply trunk."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".R3 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 3.3e-05,
+      "basis": "100 kohm charger PGOOD pull-up, at 3.3 V; logic branch, not a supply trunk."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".R4 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "maximum_dc_current_a": 3.3e-05,
+      "basis": "100 kohm charger status pull-up, at 3.3 V; logic branch, not a supply trunk."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".R7 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "basis": "Regulator power-good pull-up only. Does not feed a powered load.",
+      "maximum_dc_current_a": 3.3e-05
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".C32 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "basis": "Auxiliary 100 nF capacitor branch. Main MCU supply and local C31 bypass retain their separate routes. AC bypass and loop impedance remain unqualified."
+    },
+    {
+      "net": "V3V3",
+      "terminal": ".TP5 > .pin1",
+      "nominal_width_mm": 0.3,
+      "layers": [
+        "inner2",
+        "inner1"
+      ],
+      "basis": "Voltage measurement pad; this branch is not a power output."
+    }
+  ],
+  "purchased_components": 125,
+  "supplier_identities_unchanged": true,
+  "J1_native_footprint_pose_and_model_unchanged": true,
+  "all_125_purchased_native_footprints_poses_and_models_unchanged": true,
+  "J1_standard_connector_access_metadata": [
+    {
+      "x": 0,
+      "y": -34.05160252800006
+    }
+  ],
+  "previously_connected_port_pairs_checked": 8146,
+  "previously_connected_pairs_split": [],
+  "missing_original_ports": [],
+  "no_previous_connections_lost": true,
+  "native_error_count": 52,
+  "drc_violation_count": 0,
+  "short_count": 0,
+  "physically_open_net_count": 13,
+  "fabrication_approved": false
+}

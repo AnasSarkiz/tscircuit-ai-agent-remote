@@ -40,7 +40,7 @@ def pad_escape(planner, specification):
     top_obstacles = planner.obstacles(root, 'top', width)
     exits = via_obstacles(planner, specification)
     if specification.get('distribution_layers'):
-        wide_obstacles = [inner_obstacles(planner, {**specification, 'layer': layer,
+        wide_obstacles = [distribution_obstacles(planner, {**specification, 'layer': layer,
             'width': specification['distribution_width_mm']}) for layer in specification['distribution_layers']]
         # A through-via exit must admit the required distribution width on
         # at least one selected routing layer, as well as a legal top escape.
@@ -57,6 +57,7 @@ def pad_escape(planner, specification):
                 options=planner.grid_anchor_options((terminal,), (grid_data[index][0], obstacle))[0]
                 targets.extend((index,*anchor[0]) for anchor in options)
         reachable_context = {'grid_data':grid_data,'obstacles':wide_obstacles,'targets':targets,
+            'via_hole_mm':specification.get('via_hole_mm', .3),
             'via_blocked':planner.grid_data(via_obstacles(planner,specification))[0]}
         if not targets:
             return None
@@ -82,7 +83,19 @@ def pad_escape(planner, specification):
                     allowed_exits |= layer_labels==identifier
         grid_obstacles = (top_obstacles, exits, allowed_exits)
     candidates = planner.grid_escape(origin, grid_obstacles)
-    return candidates[0] if candidates else None
+    for candidate in candidates:
+        if reachable_context is None or via_exit_reachable(planner, {**reachable_context, 'target': candidate[0]}):
+            return candidate
+    return None
+
+
+def prospective_via_blocked(planner, specification):
+    """Reserve the new drill before claiming nearby layer transitions exist."""
+    radius_mm = specification.get('via_hole_mm', .3)/2
+    drill = Point(specification['target']).buffer(radius_mm)
+    # Match via_obstacles' existing-drill expansion, including its reserve.
+    return specification['via_blocked'] | contains_xy(
+        drill.buffer(.26+radius_mm), planner.grid_x, planner.grid_y)
 
 
 def via_exit_reachable(planner, specification):
@@ -91,7 +104,7 @@ def via_exit_reachable(planner, specification):
         options=planner.grid_anchor_options((specification['target'],), (specification['grid_data'][layer][0],obstacle))[0]
         starts.extend((layer,*anchor[0]) for anchor in options)
     return multilayer_components_reachable([record[1] for record in specification['grid_data']],
-        specification['via_blocked'],starts,specification['targets'],planner.layer_component_cache)
+        prospective_via_blocked(planner, specification),starts,specification['targets'],planner.layer_component_cache)
 
 
 def escape_record(planner, specification):
@@ -145,6 +158,18 @@ def inner_obstacles(planner, specification):
     return unary_union(shapes)
 
 
+def distribution_obstacles(planner, specification):
+    """Match native wires to actual pad contours and regions to their cutouts."""
+    geometry = specification.get('routing_geometry', 'copper_region')
+    if geometry == 'native_wire':
+        if specification['layer'] not in ('top', 'bottom'):
+            raise ValueError('Native wire distribution requires an outer layer')
+        return planner.obstacles(specification['root'], specification['layer'], specification['width'])
+    if geometry == 'copper_region':
+        return inner_obstacles(planner, specification)
+    raise ValueError(f'Unsupported distribution geometry: {geometry}')
+
+
 def multilayer_components_reachable(labels, via_blocked, starts, targets, cache=None):
     """Require a component chain through legal ordinary-via grid cells."""
     parents = {}
@@ -187,7 +212,7 @@ def wide_multilayer_route(planner, specification):
     first_layer,last_layer=specification.get('first_layer'),specification.get('last_layer')
     if any(layer is not None and layer not in layers for layer in (first_layer,last_layer)):
         raise ValueError('Endpoint layers must be selected routing layers')
-    obstacles = [inner_obstacles(planner, {**specification, 'layer': layer}) for layer in layers]
+    obstacles = [distribution_obstacles(planner, {**specification, 'layer': layer}) for layer in layers]
     preferred_width = specification.get('preferred_width_mm')
     if preferred_width is None:
         for layer, obstacle in zip(layers, obstacles):
@@ -197,7 +222,7 @@ def wide_multilayer_route(planner, specification):
                 return [(layer, route)], []
     grid_data = [planner.grid_data(obstacle) for obstacle in obstacles]
     blocked = [data[0] for data in grid_data]
-    preferred_blocked = [planner.grid_data(inner_obstacles(planner, {**specification, 'layer': layer,
+    preferred_blocked = [planner.grid_data(distribution_obstacles(planner, {**specification, 'layer': layer,
         'width': preferred_width}))[0] for layer in layers] if preferred_width is not None else None
     via_blocked = planner.grid_data(via_obstacles(planner, specification))[0]
     starts, targets = {}, {}

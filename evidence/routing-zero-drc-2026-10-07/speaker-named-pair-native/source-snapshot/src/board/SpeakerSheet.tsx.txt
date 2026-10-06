@@ -1,0 +1,132 @@
+import { ComponentNotes } from "./ComponentNotes"
+import { groundPath } from "./GroundPaths"
+import { place } from "./placement"
+import { MAX98357AETE_T } from "../../imports/MAX98357AETE_T/MAX98357AETE_T"
+import { AO3400A } from "../../imports/AO3400A/AO3400A"
+import { AO3401A } from "../../imports/AO3401A/AO3401A"
+import { S2B_PH_K_S_LF__SN_ } from "../../imports/S2B_PH_K_S_LF__SN_/S2B_PH_K_S_LF__SN_"
+import { A_0603WAF1001T5E } from "../../imports/A_0603WAF1001T5E/A_0603WAF1001T5E"
+import { RC0603FR_0710KL } from "../../imports/RC0603FR_0710KL/RC0603FR_0710KL"
+import { A_0603WAF1000T5E } from "../../imports/A_0603WAF1000T5E/A_0603WAF1000T5E"
+import { RC0603FR_0722RL } from "../../imports/RC0603FR_0722RL/RC0603FR_0722RL"
+import { GRM188R61A106ME69D } from "../../imports/GRM188R61A106ME69D/GRM188R61A106ME69D"
+import { GRM188R71C104KA01D } from "../../imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
+
+export function SpeakerSheet({ placementOnly = false }: { placementOnly?: boolean } = {}) {
+  return (
+    <schematicsheet
+      name="speaker-amplifier-review"
+      displayName="AI Remote A1 - External 8 ohm speaker"
+      sheetIndex={5}
+      sheetSize="A4"
+    >
+      <group name="speaker-amplifier-review-group" schLayout={{ layoutMode: "relative" }}>
+        <MAX98357AETE_T name="U3" {...place("U3")} schX={2} schY={0} />
+        <AO3400A name="Q1" {...place("Q1")} schX={-10} schY={-8} />
+        <AO3401A name="Q2" {...place("Q2")} schX={-5} schY={-8} />
+        <S2B_PH_K_S_LF__SN_ name="J4" {...place("J4")} schX={9} schY={0} />
+        <GRM188R61A106ME69D name="C50" {...place("C50")} schX={1} schY={6} schRotation={-90} />
+        <GRM188R71C104KA01D name="C51" {...place("C51")} schX={4} schY={6} schRotation={-90} />
+        <A_0603WAF1000T5E name="R60" {...place("R60")} schX={-15} schY={-8} />
+        <RC0603FR_0710KL name="R61" {...place("R61")} schX={-10} schY={-11} schRotation={-90} />
+        <A_0603WAF1001T5E name="R62" {...place("R62")} schX={-5} schY={-4} schRotation={-90} />
+        <A_0603WAF1000T5E name="R63" {...place("R63")} schX={0} schY={-8} schRotation={-90} />
+        <A_0603WAF1001T5E name="R64" {...place("R64")} schX={4} schY={-8} schRotation={-90} />
+        <trace from="U3.pin2" to="net.VSYS" />
+        <trace from="U3.pin7" to="net.VSYS" />
+        <trace from="U3.pin8" to="net.VSYS" />
+        <trace from="U3.pin3" to="net.GND" />
+        <trace from="U3.pin11" to="net.GND" />
+        <trace from="U3.pin15" to="net.GND" />
+        <trace from="U3.pin17" to="net.GND" />
+        <trace from="U3.pin4" to="net.AMP_SD_MODE" />
+        <trace from="U3.pin9" to="net.SPEAKER_P" />
+        <trace from="U3.pin10" to="net.SPEAKER_N" />
+        <trace name="SPEAKER_CONNECTOR_P" from="J4.pin1" to="net.SPEAKER_P" />
+        <trace name="SPEAKER_CONNECTOR_N" from="J4.pin2" to="net.SPEAKER_N" />
+        <trace from="Q1.pin1" to="net.AUDIO_NMOS_GATE" />
+        <trace
+          from="Q1.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("Q1.pin2", placementOnly)}
+        />
+        <trace from="Q1.pin3" to="net.AUDIO_PMOS_GATE" />
+        <trace from="Q2.pin1" to="net.AUDIO_PMOS_GATE" />
+        <trace from="Q2.pin2" to="net.VSYS" />
+        <trace from="Q2.pin3" to="net.AUDIO_ENABLE_SUPPLY" />
+        <trace from="R60.pin1" to="net.MCU_AUDIO_ENABLE" />
+        <trace from="R60.pin2" to="net.AUDIO_NMOS_GATE" />
+        <trace from="R61.pin1" to="net.AUDIO_NMOS_GATE" />
+        <trace
+          from="R61.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("R61.pin2", placementOnly)}
+        />
+        <trace from="R62.pin1" to="net.VSYS" />
+        <trace from="R62.pin2" to="net.AUDIO_PMOS_GATE" />
+        <trace from="R63.pin1" to="net.AUDIO_ENABLE_SUPPLY" />
+        <trace from="R63.pin2" to="net.AMP_SD_MODE" />
+        <trace from="R64.pin1" to="net.AMP_SD_MODE" />
+        <trace
+          from="R64.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("R64.pin2", placementOnly)}
+        />
+        <trace from="C50.pin1" to="net.VSYS" />
+        <trace
+          from="C50.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("C50.pin2", placementOnly)}
+        />
+        <trace from="C51.pin1" to="net.VSYS" />
+        <trace
+          from="C51.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("C51.pin2", placementOnly)}
+        />
+        <RC0603FR_0722RL name="R65" {...place("R65")} schX={-9} schY={4} />
+        <RC0603FR_0710KL name="R68" {...place("R68")} schX={-4} schY={4} schRotation={-90} />
+        <trace from="R65.pin1" to="net.MCU_AUDIO_DIN" />
+        <trace from="R65.pin2" to="net.AMP_DIN" />
+        <trace from="R68.pin1" to="net.AMP_DIN" />
+        <trace
+          from="R68.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("R68.pin2", placementOnly)}
+        />
+        <trace from="U3.pin1" to="net.AMP_DIN" />
+        <RC0603FR_0722RL name="R66" {...place("R66")} schX={-9} schY={1} />
+        <RC0603FR_0710KL name="R69" {...place("R69")} schX={-4} schY={1} schRotation={-90} />
+        <trace from="R66.pin1" to="net.MCU_AUDIO_BCLK" />
+        <trace from="R66.pin2" to="net.AMP_BCLK" />
+        <trace from="R69.pin1" to="net.AMP_BCLK" />
+        <trace
+          from="R69.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("R69.pin2", placementOnly)}
+        />
+        <trace from="U3.pin16" to="net.AMP_BCLK" />
+        <RC0603FR_0722RL name="R67" {...place("R67")} schX={-9} schY={-2} />
+        <RC0603FR_0710KL name="R70" {...place("R70")} schX={-4} schY={-2} schRotation={-90} />
+        <trace from="R67.pin1" to="net.MCU_AUDIO_LRCLK" />
+        <trace from="R67.pin2" to="net.AMP_LRCLK" />
+        <trace from="R70.pin1" to="net.AMP_LRCLK" />
+        <trace
+          from="R70.pin2"
+          to="net.GND"
+          width={0.3}
+          pcbPath={groundPath("R70.pin2", placementOnly)}
+        />
+        <trace from="U3.pin14" to="net.AMP_LRCLK" />
+      </group>
+      <ComponentNotes sheet="speaker-amplifier-review" />
+    </schematicsheet>
+  )
+}

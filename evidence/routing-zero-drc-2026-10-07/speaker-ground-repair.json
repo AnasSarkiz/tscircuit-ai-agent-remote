@@ -1,0 +1,63 @@
+{
+  "classification": "manual native proposals, not solver caches",
+  "source_circuit_json": "evidence/routing-zero-drc-2026-10-07/speaker-named-pair-native/circuit.json",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".U25 > .pin2",
+      "to": "net.GND",
+      "width": 0.3,
+      "pcbPath": [
+        {
+          "x": 2.75,
+          "y": -0.1
+        },
+        {
+          "x": 2.75,
+          "y": -0.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 2.75,
+          "y": -0.1
+        },
+        {
+          "x": 2.0,
+          "y": -0.9
+        },
+        {
+          "x": -0.503364,
+          "y": -4.2
+        }
+      ],
+      "global_path_mm": [
+        [
+          -8.89999,
+          -9
+        ],
+        [
+          -7.499999999999758,
+          -9.099999999999675
+        ],
+        [
+          -8.249999999999769,
+          -9.899999999999686
+        ],
+        [
+          -10.753364,
+          -13.2
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "bottom",
+        "bottom"
+      ],
+      "classification": "manual native route to existing copper; physical contact must pass independent audit"
+    }
+  ],
+  "unresolved": []
+}

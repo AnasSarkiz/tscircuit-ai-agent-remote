@@ -1,0 +1,38 @@
+{
+  "accepted": false,
+  "published": false,
+  "native_sha256": "8c28cb009ee3624b62c7095b1401b1634c6a3665562c396d42715c8c7d6a24b2",
+  "shorts": 0,
+  "clearance_violations": 0,
+  "new_speaker_pair_physically_connected": true,
+  "previously_connected_pairs_checked": 9842,
+  "lost_pair_count": 266,
+  "lost_ground_terminals": [
+    "U25.2",
+    "C76.2"
+  ],
+  "native_bus_length_skew_error": {
+    "type": "pcb_bus_length_skew_error",
+    "pcb_bus_length_skew_error_id": "pcb_bus_length_skew_error_0",
+    "error_type": "pcb_bus_length_skew_error",
+    "message": "PCB bus SPEAKER_OUTPUT has 72.90mm length skew, exceeding the 2mm maximum",
+    "source_bus_id": "source_bus_1",
+    "source_trace_ids": [
+      "source_trace_791",
+      "source_trace_812",
+      "source_trace_813"
+    ],
+    "pcb_trace_ids": [
+      "pcb_trace_338",
+      "pcb_trace_359",
+      "pcb_trace_360"
+    ],
+    "actual_length_skew": 72.90030495173784,
+    "maximum_length_skew": 2,
+    "subcircuit_id": "subcircuit_source_group_15"
+  },
+  "ground_repair_proposal": "evidence/routing-zero-drc-2026-10-07/speaker-ground-repair.json",
+  "positive_replacement_proposal": "evidence/routing-zero-drc-2026-10-07/speaker-positive-replacement.json",
+  "both_follow_up_proposals_native_qualified": false,
+  "disposition": "Rejected; source restored to the verified microphone repair. Original maxLengthSkew=2, pcbTraceGap=.2 and maxUncoupledLength=5 are retained. No ignored or rewritten native errors."
+}

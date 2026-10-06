@@ -1,0 +1,334 @@
+{
+  "classification": "Manual native speaker wire proposal; full native validation required",
+  "paths": [
+    {
+      "net": "SPEAKER_P",
+      "from": ".U3 > .pin9",
+      "width": 0.275,
+      "pcbPath": [
+        {
+          "x": 1.25,
+          "y": 1.85
+        }
+      ],
+      "global_path_mm": [
+        [
+          -16.000065,
+          5.4999970000000005
+        ],
+        [
+          -15.499999999999872,
+          5.850000000000534
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 0.6103827522419853,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3,
+      "to_proposal_via_index": 0
+    },
+    {
+      "net": "SPEAKER_P",
+      "from_proposal_via_index": 0,
+      "from_layer": "bottom",
+      "to": ".J4 > .pin1",
+      "width": 0.6,
+      "pcbPath": [
+        {
+          "x": -2.6,
+          "y": 3.55
+        },
+        {
+          "x": -5.45,
+          "y": 6.45
+        },
+        {
+          "x": -7.0,
+          "y": 16.7
+        },
+        {
+          "x": -7.0,
+          "y": 16.7,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": -7.0,
+          "y": 16.7
+        },
+        {
+          "x": -8.9,
+          "y": 20.05
+        },
+        {
+          "x": -8.9,
+          "y": 20.05,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": -8.9,
+          "y": 20.05
+        },
+        {
+          "x": -8.2,
+          "y": 23.2
+        },
+        {
+          "x": -6.9,
+          "y": 24.7
+        },
+        {
+          "x": -6.5,
+          "y": 24.8
+        },
+        {
+          "x": -3.7,
+          "y": 24.55
+        },
+        {
+          "x": 7.15,
+          "y": 24.75
+        },
+        {
+          "x": 7.15,
+          "y": 24.75,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 7.15,
+          "y": 24.75
+        },
+        {
+          "x": 10.95,
+          "y": 21.1
+        },
+        {
+          "x": 10.95,
+          "y": 21.1,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 10.95,
+          "y": 21.1
+        },
+        {
+          "x": 15.1,
+          "y": 21.0
+        },
+        {
+          "x": 22.7,
+          "y": 19.25
+        },
+        {
+          "x": 31.7,
+          "y": 19.25
+        },
+        {
+          "x": 31.7,
+          "y": 19.25,
+          "via": true,
+          "fromLayer": "bottom",
+          "toLayer": "top"
+        },
+        {
+          "x": 31.7,
+          "y": 19.25
+        },
+        {
+          "x": 32.25,
+          "y": 16.75
+        },
+        {
+          "x": 32.25,
+          "y": 16.75,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        },
+        {
+          "x": 32.25,
+          "y": 16.75
+        },
+        {
+          "x": 33.55,
+          "y": 15.15
+        },
+        {
+          "x": 36.525002,
+          "y": 2.15
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.499999999999872,
+          5.850000000000534
+        ],
+        [
+          -18.09999999999991,
+          9.400000000000588
+        ],
+        [
+          -20.94999999999995,
+          12.30000000000063
+        ],
+        [
+          -22.49999999999997,
+          22.55000000000078
+        ],
+        [
+          -22.49999999999997,
+          22.55000000000078
+        ],
+        [
+          -24.4,
+          25.900000000000823
+        ],
+        [
+          -24.4,
+          25.900000000000823
+        ],
+        [
+          -23.69999999999999,
+          29.050000000000864
+        ],
+        [
+          -22.39999999999997,
+          30.550000000000892
+        ],
+        [
+          -21.999999999999964,
+          30.650000000000887
+        ],
+        [
+          -19.199999999999925,
+          30.400000000000887
+        ],
+        [
+          -8.34999999999977,
+          30.60000000000089
+        ],
+        [
+          -8.34999999999977,
+          30.60000000000089
+        ],
+        [
+          -4.5499999999997165,
+          26.95000000000084
+        ],
+        [
+          -4.5499999999997165,
+          26.95000000000084
+        ],
+        [
+          -0.3999999999996575,
+          26.850000000000833
+        ],
+        [
+          7.2000000000004505,
+          25.10000000000081
+        ],
+        [
+          16.20000000000058,
+          25.10000000000081
+        ],
+        [
+          16.20000000000058,
+          25.10000000000081
+        ],
+        [
+          16.750000000000583,
+          22.600000000000776
+        ],
+        [
+          16.750000000000583,
+          22.600000000000776
+        ],
+        [
+          18.05000000000061,
+          21.000000000000753
+        ],
+        [
+          21.02500195,
+          8
+        ]
+      ],
+      "segment_layers": [
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom",
+        "bottom",
+        "top",
+        "top",
+        "bottom",
+        "bottom",
+        "bottom"
+      ],
+      "classification": "Manual native ordinary outer trace; full .6mm trunk, not a saved router result"
+    }
+  ],
+  "pours": [],
+  "vias": [
+    {
+      "net": "SPEAKER_P",
+      "x": -15.499999999999872,
+      "y": 5.850000000000534,
+      "hole_mm": 0.3,
+      "outer_mm": 0.45
+    }
+  ],
+  "pad_necks": [
+    {
+      "net": "SPEAKER_P",
+      "terminal": ".U3 > .pin9",
+      "width_mm": 0.275,
+      "length_mm": 0.6103827522419853,
+      "nominal_trunk_width_mm": 0.6,
+      "status": "Measured proposal; load/stackup qualification pending"
+    }
+  ],
+  "unresolved": [],
+  "retired_native_features": [
+    "pcb_trace_338",
+    "pcb_via_81",
+    "pcb_via_82",
+    "pcb_via_83",
+    "pcb_via_84",
+    "pcb_via_85",
+    "pcb_via_86",
+    "pcb_via_296",
+    "pcb_copper_pour_343",
+    "pcb_copper_pour_344",
+    "pcb_copper_pour_345",
+    "pcb_copper_pour_346",
+    "pcb_copper_pour_347",
+    "pcb_copper_pour_348",
+    "pcb_copper_pour_349",
+    "pcb_copper_pour_350",
+    "pcb_copper_pour_351"
+  ]
+}

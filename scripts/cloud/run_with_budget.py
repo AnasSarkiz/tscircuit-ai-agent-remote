@@ -25,6 +25,29 @@ def process_group_rss(group_id):
         except (FileNotFoundError,ProcessLookupError,PermissionError):continue
     return total
 
+def process_group_has_live_members(group_id):
+    for directory in Path('/proc').iterdir():
+        if not directory.name.isdigit():continue
+        try:
+            if os.getpgid(int(directory.name))!=group_id:continue
+            for line in (directory/'status').read_text().splitlines():
+                if line.startswith('State:') and line.split()[1]!='Z':return True
+        except (FileNotFoundError,ProcessLookupError,PermissionError):continue
+    return False
+
+def stop_process_group(child):
+    """Stop descendants even when the direct parent exits before them."""
+    try:os.killpg(child.pid,signal.SIGTERM)
+    except ProcessLookupError:return
+    deadline=time.monotonic()+10
+    while process_group_has_live_members(child.pid) and time.monotonic()<deadline:
+        child.poll()
+        time.sleep(.1)
+    if process_group_has_live_members(child.pid):
+        try:os.killpg(child.pid,signal.SIGKILL)
+        except ProcessLookupError:pass
+    child.wait()
+
 def run():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--seconds',type=int,default=900)
@@ -52,9 +75,7 @@ def run():
                 if peak>limit:termination='MEMORY_BUDGET_REACHED'
                 elif time.monotonic()-started>args.seconds:termination='TIME_BUDGET_REACHED'
                 if termination:
-                    os.killpg(child.pid,signal.SIGTERM)
-                    try:child.wait(timeout=10)
-                    except subprocess.TimeoutExpired:os.killpg(child.pid,signal.SIGKILL);child.wait()
+                    stop_process_group(child)
                     break
                 time.sleep(.5)
         outcome={'command':command,'exit_code':child.returncode,'termination':termination,'elapsed_seconds':round(time.monotonic()-started,2),'peak_process_group_rss_bytes':peak,'memory_budget_bytes':limit,'completed_command':termination is None,'passing_validation_inferred':False}
@@ -62,10 +83,8 @@ def run():
         print(json.dumps(outcome))
         return 124 if termination else child.returncode
     finally:
-        if child and child.poll() is None:
-            os.killpg(child.pid,signal.SIGTERM)
-            try:child.wait(timeout=10)
-            except subprocess.TimeoutExpired:os.killpg(child.pid,signal.SIGKILL);child.wait()
+        if child and (child.poll() is None or process_group_has_live_members(child.pid)):
+            stop_process_group(child)
         lock.unlink(missing_ok=True)
 
 if __name__=='__main__':sys.exit(run())

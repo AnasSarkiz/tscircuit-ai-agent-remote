@@ -1,0 +1,171 @@
+"""Replace nominal VSYS distribution while opening a complete speaker route.
+
+Keep the existing pad escapes, through vias and low-current control branches.
+Every removed one-mm authored region is identified, and all its real via
+anchors must be reconnected at the same nominal width on the outer layers.
+This is only a source proposal; fresh native geometry and preservation gates
+are mandatory before integration is accepted.
+"""
+import argparse
+import hashlib
+import json
+import math
+import runpy
+from pathlib import Path
+from shapely.geometry import Polygon
+
+helpers = runpy.run_path(str(Path(__file__).with_name('plan-power-copper.py')))
+bridges = runpy.run_path(str(Path(__file__).with_name('plan-connection-bridges.py')))
+speaker = runpy.run_path(str(Path(__file__).with_name('plan-speaker-wire.py')))
+
+
+def retained_anchor_groups(planner, specification):
+    """Keep original strips that clear every newly introduced speaker feature."""
+    anchors = specification['anchors']
+    parents = list(range(len(anchors)))
+
+    def root(index):
+        while parents[index] != index:
+            index = parents[index]
+        return index
+
+    retained = []
+    for record in specification['source_regions']:
+        region = record['region']
+        shape = Polygon([(vertex['x'], vertex['y']) for vertex in region['outline']])
+        copper_conflict = any(layer == region['layer'] and shape.distance(contour) < .21
+                              for _, layer, contour in specification['speaker_copper'])
+        drill_conflict = any(shape.distance(hole) < .26 for hole in specification['speaker_drills'])
+        if copper_conflict or drill_conflict:
+            continue
+        endpoints = [min(range(len(anchors)), key=lambda index: math.dist(point, anchors[index]))
+                     for point in (region['path_mm'][0], region['path_mm'][-1])]
+        parents[root(endpoints[1])] = root(endpoints[0])
+        planner.copper.append((specification['root'], region['layer'], shape))
+        retained.append(record)
+    groups = {}
+    for index, anchor in enumerate(anchors):
+        groups.setdefault(root(index), []).append(anchor)
+    return retained, list(groups.values())
+
+
+def restore_vsys(planner, specification):
+    anchors = specification['anchors']
+    groups = specification.get('anchor_groups', [[anchor] for anchor in anchors])
+    connected, remaining = list(groups[0]), list(groups[1:])
+    result = {'pours': [], 'vias': [], 'unresolved': []}
+    while remaining:
+        candidates = sorted([(math.dist(first, last), first, last, group_index)
+                             for first in connected for group_index, group in enumerate(remaining)
+                             for last in group])
+        bridge = None
+        for _, first, last, group_index in candidates:
+            route = helpers['wide_multilayer_route'](planner, {
+                'root': specification['root'], 'first': first, 'last': last,
+                'width': 1.002, 'new_vias': anchors, 'layers': ('bottom', 'top'),
+                'via_outer_mm': .45, 'via_hole_mm': .3,
+                'copper_clearance_mm': .27, 'multi_anchor': True})
+            if route is not None:
+                bridge = group_index, route
+                break
+        if bridge is None:
+            result['unresolved'].append({'reason': 'Cannot restore all original VSYS trunk anchors at one-mm nominal width',
+                                         'remaining_anchors_mm': remaining})
+            break
+        group_index, (parts, via_positions) = bridge
+        regions = bridges['region_records']('VSYS', {'parts': parts, 'width': 1.})
+        for region in regions:
+            planner.copper.append((specification['root'], region['layer'],
+                                   Polygon([(v['x'], v['y']) for v in region['outline']])))
+        for position in via_positions:
+            bridges['reserve_via'](planner, {'root': specification['root'], 'position': position})
+            result['vias'].append({'net': 'VSYS', 'x': position[0], 'y': position[1], 'hole_mm': .3, 'outer_mm': .45})
+        result['pours'].extend(regions)
+        connected.extend(remaining.pop(group_index))
+        print(json.dumps({'restored_vsys_anchors': len(connected), 'required_anchors': len(anchors)}), flush=True)
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('native')
+    parser.add_argument('output')
+    parser.add_argument('--retain-clear-original-regions', action='store_true',
+                        help='Keep original one-mm regions that clear the new speaker route, and reconnect their actual anchor groups')
+    args = parser.parse_args()
+    native = Path(args.native)
+    circuit = json.loads(native.read_text())
+    source_regions = []
+    for filename in ('src/board/manual-power-copper.json', 'src/board/connection-copper.json'):
+        source = json.loads(Path(filename).read_text())
+        for index, region in enumerate(source['pours']):
+            if region['net'] == 'VSYS' and region['layer'] in ('top', 'bottom') and region['nominal_width_mm'] == 1.:
+                source_regions.append({'source': filename, 'index': index, 'region': region})
+    shapes = [Polygon([(v['x'], v['y']) for v in r['region']['outline']]) for r in source_regions]
+    net_id = next(r['source_net_id'] for r in circuit if r['type'] == 'source_net' and r['name'] == 'VSYS')
+    retired = []
+    matched = set()
+    for record in circuit:
+        if record['type'] != 'pcb_copper_pour' or record['source_net_id'] != net_id or record['layer'] not in ('top', 'bottom'):
+            continue
+        brep = record['brep_shape']
+        shape = Polygon([(v['x'], v['y']) for v in brep['outer_ring']['vertices']],
+                        [[(v['x'], v['y']) for v in ring['vertices']] for ring in brep['inner_rings']])
+        indices = [index for index, authored in enumerate(shapes)
+                   if source_regions[index]['region']['layer'] == record['layer']
+                   and shape.intersection(authored).area > 1e-8
+                   and shape.difference(authored.buffer(1e-6)).area <= 1e-8]
+        if indices:
+            retired.append(record['pcb_copper_pour_id'])
+            matched.update(indices)
+    if len(matched) != len(source_regions):
+        raise ValueError('Every complete authored VSYS region must match real native copper before retirement')
+    planner = helpers['Planner'](circuit, {'retired_feature_ids': retired})
+    planner.set_grid(.05)
+    planner.via_copper_clearance = .27
+    root = planner.root(net_id)
+    vias = [record for record in circuit if record['type'] == 'pcb_via' and planner.via_root(record) == root]
+    endpoints = {tuple(xy) for record in source_regions
+                 for xy in (record['region']['path_mm'][0], record['region']['path_mm'][-1])}
+    anchors = []
+    for endpoint in sorted(endpoints):
+        via = min(vias, key=lambda record: math.dist(endpoint, (record['x'], record['y'])))
+        position = (via['x'], via['y'])
+        if math.dist(endpoint, position) > 1e-5:
+            raise ValueError(f'Original trunk endpoint has no real corresponding VSYS through via: {endpoint}')
+        if position not in anchors:
+            anchors.append(position)
+    result = {'classification': 'Coupled manual speaker and same-width outer VSYS distribution; native validation required',
+              'native_sha256': hashlib.sha256(native.read_bytes()).hexdigest(),
+              'retired_native_feature_ids': retired,
+              'retired_authored_regions': [{k: v for k, v in record.items() if k != 'region'} for record in source_regions],
+              'original_vsys_anchors_mm': anchors, 'paths': [], 'pours': [], 'vias': [], 'pad_necks': [], 'unresolved': []}
+    original_copper_count, original_drill_count = len(planner.copper), len(planner.holes)
+    candidate = speaker['route_speaker'](planner, {'net': 'SPEAKER_N', 'selector': '.U3 > .pin10', 'target_selector': '.J4 > .pin2'})
+    for name in ('paths', 'pours', 'vias', 'pad_necks', 'unresolved'):
+        result[name].extend(candidate[name])
+    print(json.dumps({'speaker_complete': not candidate['unresolved'], 'unresolved': candidate['unresolved']}), flush=True)
+    if not result['unresolved']:
+        anchor_groups = [[anchor] for anchor in anchors]
+        if args.retain_clear_original_regions:
+            retained, anchor_groups = retained_anchor_groups(planner, {
+                'root': root, 'anchors': anchors, 'source_regions': source_regions,
+                'speaker_copper': planner.copper[original_copper_count:],
+                'speaker_drills': planner.holes[original_drill_count:]})
+            retained_keys = {(record['source'], record['index']) for record in retained}
+            result['retired_authored_regions'] = [record for record in result['retired_authored_regions']
+                                                 if (record['source'], record['index']) not in retained_keys]
+            result['retained_original_regions'] = sorted(retained_keys)
+            print(json.dumps({'retained_vsys_regions': len(retained), 'remaining_anchor_groups': len(anchor_groups)}), flush=True)
+        Path(args.output).write_text(json.dumps({**result, 'status': 'INCOMPLETE power restoration'}, indent=2)+'\n')
+        restored = restore_vsys(planner, {'root': root, 'anchors': anchors, 'anchor_groups': anchor_groups})
+        for name in ('pours', 'vias', 'unresolved'):
+            result[name].extend(restored[name])
+    Path(args.output).write_text(json.dumps(result, indent=2)+'\n')
+    print(json.dumps({'complete': not result['unresolved'], 'paths': len(result['paths']),
+                      'regions': len(result['pours']), 'unresolved': result['unresolved']}))
+    return 1 if result['unresolved'] else 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

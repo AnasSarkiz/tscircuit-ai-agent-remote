@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-microphone-ground-and-signals.py", line 162, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-microphone-ground-and-signals.py", line 124, in main
+    ports = {planner.port_name(port): port for port in planner.ports.values()}
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-manual-signals.py", line 225, in port_name
+    name = self.source_components[source_port["source_component_id"]]["name"]
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_manually_placed_via_0'

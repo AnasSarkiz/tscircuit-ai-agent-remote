@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -e\nbun install --frozen-lockfile --cwd .publish/connection-runtime\npython3 scripts/cloud/check_board_source.py .publish/connection-runtime evidence/routing-zero-drc-2026-10-07/source-checks\npython3 -m unittest discover -s scripts/routing/tests\nbun run typecheck\nbun run format:check"
+  ],
+  "exit_code": -15,
+  "termination": "TIME_BUDGET_REACHED",
+  "elapsed_seconds": 180.27,
+  "peak_process_group_rss_bytes": 2365407232,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": false,
+  "passing_validation_inferred": false
+}

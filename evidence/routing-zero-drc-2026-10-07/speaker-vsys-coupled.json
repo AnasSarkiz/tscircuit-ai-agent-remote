@@ -1,0 +1,219 @@
+{
+  "classification": "Coupled manual speaker and same-width outer VSYS distribution; native validation required",
+  "native_sha256": "2c85340a9907047c072a17fb66b0d5e2ae1bd69cff883b1ed0752fca04c1f2ff",
+  "retired_native_feature_ids": [
+    "pcb_copper_pour_163",
+    "pcb_copper_pour_164",
+    "pcb_copper_pour_165",
+    "pcb_copper_pour_166",
+    "pcb_copper_pour_167",
+    "pcb_copper_pour_168",
+    "pcb_copper_pour_169",
+    "pcb_copper_pour_170",
+    "pcb_copper_pour_171",
+    "pcb_copper_pour_172",
+    "pcb_copper_pour_173",
+    "pcb_copper_pour_174",
+    "pcb_copper_pour_175",
+    "pcb_copper_pour_176",
+    "pcb_copper_pour_177",
+    "pcb_copper_pour_178",
+    "pcb_copper_pour_179",
+    "pcb_copper_pour_180",
+    "pcb_copper_pour_181",
+    "pcb_copper_pour_182",
+    "pcb_copper_pour_323",
+    "pcb_copper_pour_324"
+  ],
+  "retired_authored_regions": [
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 3
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 4
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 5
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 6
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 7
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 8
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 9
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 10
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 11
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 12
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 13
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 14
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 15
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 16
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 17
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 18
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 19
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 20
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 21
+    },
+    {
+      "source": "src/board/manual-power-copper.json",
+      "index": 22
+    },
+    {
+      "source": "src/board/connection-copper.json",
+      "index": 39
+    },
+    {
+      "source": "src/board/connection-copper.json",
+      "index": 40
+    }
+  ],
+  "original_vsys_anchors_mm": [
+    [
+      -14.950003,
+      5.271582
+    ],
+    [
+      -14.699976,
+      7.5
+    ],
+    [
+      -14.450003,
+      4.252095
+    ],
+    [
+      -12.7,
+      5.3999999999999995
+    ],
+    [
+      -12.099999999999824,
+      5.600000000000534
+    ],
+    [
+      -11.60001,
+      -10.74996
+    ],
+    [
+      -11.499999999999815,
+      -1.6999999999995694
+    ],
+    [
+      -11.200023999999999,
+      -5.1339749999999995
+    ],
+    [
+      -10.899999999999999,
+      9.933975
+    ],
+    [
+      -10.8,
+      -11.1
+    ],
+    [
+      -10.699999999999804,
+      -4.7999999999996135
+    ],
+    [
+      -9.399999999999785,
+      -1.8999999999995723
+    ],
+    [
+      -8.99999999999978,
+      -2.299999999999578
+    ],
+    [
+      -7.89999,
+      -8.05004
+    ],
+    [
+      -7.699999999999761,
+      -5.599999999999625
+    ],
+    [
+      -6.35,
+      -29.8
+    ],
+    [
+      -5.999999999999737,
+      -2.299999999999578
+    ],
+    [
+      -5.8,
+      -29.65
+    ],
+    [
+      -5.699999999999733,
+      -1.7999999999995708
+    ],
+    [
+      -3.95,
+      -23.950024
+    ],
+    [
+      -2.25,
+      -14.150024
+    ],
+    [
+      17.1,
+      -5.489254
+    ],
+    [
+      17.795,
+      -3.182051
+    ]
+  ],
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "pad_necks": [],
+  "unresolved": [
+    "No complete .6mm outer native-wire trunk"
+  ]
+}

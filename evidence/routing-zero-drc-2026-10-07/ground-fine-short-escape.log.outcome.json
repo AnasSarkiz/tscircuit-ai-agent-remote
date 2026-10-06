@@ -1,0 +1,23 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-microphone-ground-traces.py",
+    "evidence/routing-zero-drc-2026-10-07/clock-native-complete/circuit.json",
+    "evidence/routing-zero-drc-2026-10-07/ground-fine-short-escape.json",
+    "--ports",
+    ".U4 > .pin3",
+    "--width-mm",
+    ".36",
+    "--via-grid-mm",
+    ".025",
+    "--via-min-distance-mm",
+    ".4"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 23.03,
+  "peak_process_group_rss_bytes": 135487488,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

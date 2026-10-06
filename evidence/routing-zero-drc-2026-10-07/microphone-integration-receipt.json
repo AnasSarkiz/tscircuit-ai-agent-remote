@@ -1,0 +1,25 @@
+{
+  "classification": "Authored source integration, not generated/native edits or solver replay cache",
+  "baseline_native_sha256": "fb2f9c96ff000de1e18d6bf4d35bd41fea2323fc0b10730df4a0262b0bbdb73d",
+  "baseline_source_sha256": "a1aa3aec8f05143e0f1531d2a251f2b36a6db8accad5532e5917e12f7733a207",
+  "removed_path_indices": [
+    31
+  ],
+  "removed_region_indices": [
+    43
+  ],
+  "ground_structural_via_index": 47,
+  "unvalidated_candidate": false,
+  "accepted_microphone_repair": true,
+  "final_native_sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184",
+  "native_open_errors_before": 53,
+  "native_open_errors_after": 52,
+  "previously_connected_terminal_pairs_preserved": 9842,
+  "lost_terminal_pairs": 0,
+  "measured_shorts": 0,
+  "measured_clearance_violations": 0,
+  "qualification": "final-qualification",
+  "CLI_build_completed": true,
+  "CLI_build_passed": false,
+  "fabrication_ready": false
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -e\npython3 scripts/cloud/check_board_source.py .publish/connection-runtime evidence/routing-zero-drc-2026-10-07/final-source-checks\npython3 -m unittest discover -s scripts/routing/tests\nbun run typecheck\nbun run format:check"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 407.65,
+  "peak_process_group_rss_bytes": 3510169600,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

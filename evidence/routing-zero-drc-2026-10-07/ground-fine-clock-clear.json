@@ -1,0 +1,15 @@
+{
+  "classification": "authored native pad-edge ground traces; final native geometry/preservation qualification required",
+  "straight_paths": [],
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "ground_landings": [],
+  "unresolved": [
+    {
+      "port": ".U4 > .pin3",
+      "reason": "No qualified straight pad-edge ground join and full-span via"
+    }
+  ],
+  "source_native": "evidence/routing-zero-drc-2026-10-07/clock-native-complete/circuit.json"
+}

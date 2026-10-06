@@ -1,0 +1,20 @@
+{
+  "workflow": "Serial Linux-cloud native PCB build, manual planning and qualification",
+  "initial_cloud_bootstrap_receipt": "evidence/connection-repair-2026-10-06/cloud-setup-receipt.json",
+  "current_checkpoint_files_verified": 404,
+  "current_checkpoint_verification_log": "final-format-package.log",
+  "current_supervisor_smoke_cases_passed": 5,
+  "supervisor_smoke_receipt": "supervisor-smoke/receipt.json",
+  "actual_final_source_build_completed": true,
+  "actual_final_source_build_passed": false,
+  "actual_final_source_checks_passed": true,
+  "saved_install_script_and_start_skill": "Existing previously saved dynamic setup/start instructions retained; current supervisor fixes are in the same referenced scripts.",
+  "saved_configuration_publication_or_new_task_execution_observed": false,
+  "required_network_policy_changes_applied": false,
+  "required_additions_to_existing_allowlist": [
+    "www.buydisplay.com",
+    "www.elektronik.ropla.eu"
+  ],
+  "network_policy_receipt": "suppliers/retrieval-receipts.json",
+  "fabrication_approval_inferred": false
+}

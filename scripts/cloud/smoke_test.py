@@ -1,4 +1,5 @@
 """Exercise the Linux supervisor without routing or generating board copper."""
+import argparse
 import json
 from pathlib import Path
 import subprocess
@@ -11,7 +12,10 @@ if sys.platform != "linux":
 
 root = Path(__file__).resolve().parents[2]
 wrapper = root / "scripts/cloud/run_with_budget.py"
-output = root / "evidence/cloud-setup-smoke"
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output-dir', type=Path, default=root / "evidence/cloud-setup-smoke")
+args = parser.parse_args()
+output = args.output_dir.resolve()
 output.mkdir(parents=True, exist_ok=True)
 
 
@@ -28,6 +32,10 @@ with tempfile.TemporaryDirectory(prefix="ai-remote-supervisor-") as temporary:
          "TIME_BUDGET_REACHED"),
         ("memory", "import time; allocation=bytearray(128*1024**2); time.sleep(30)",
          ["--seconds", "10", "--memory-mib", "32"], 124, "MEMORY_BUDGET_REACHED"),
+        ("descendant-timeout", "import subprocess,sys,time; from pathlib import Path; "
+         "child=subprocess.Popen([sys.executable,'-c','import signal,time; signal.signal(signal.SIGTERM,signal.SIG_IGN); time.sleep(30)']); "
+         "Path('descendant.pid').write_text(str(child.pid)); time.sleep(30)",
+         ["--seconds", "1"], 124, "TIME_BUDGET_REACHED"),
     ]
     for name, command, budget, expected_code, expected_reason in cases:
         completed = subprocess.run(invoke(name, command, budget), cwd=temporary,
@@ -36,6 +44,13 @@ with tempfile.TemporaryDirectory(prefix="ai-remote-supervisor-") as temporary:
         if completed.returncode != expected_code or outcome["termination"] != expected_reason:
             raise RuntimeError({"case": name, "returncode": completed.returncode,
                                 "outcome": outcome, "stderr": completed.stderr})
+        if name == 'descendant-timeout':
+            descendant_pid = int((Path(temporary)/'descendant.pid').read_text())
+            status = Path(f'/proc/{descendant_pid}/status')
+            if status.exists():
+                state = next(line.split()[1] for line in status.read_text().splitlines() if line.startswith('State:'))
+                if state != 'Z':
+                    raise RuntimeError('Budget stop left the descendant running after releasing the lock')
         results.append({"case": name, "passed": True, "outcome": outcome})
     holder = subprocess.Popen(invoke("lock-holder", "import time; time.sleep(2)",
                                      ["--seconds", "5"]), cwd=temporary,

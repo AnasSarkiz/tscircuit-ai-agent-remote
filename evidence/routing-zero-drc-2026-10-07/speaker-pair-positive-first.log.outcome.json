@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-speaker-wire.py",
+    "evidence/routing-zero-drc-2026-10-07/microphone-native/circuit.json",
+    "evidence/routing-zero-drc-2026-10-07/speaker-pair-positive-first.json",
+    "--replace-speaker-pair",
+    "--output-order",
+    "positive-first"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 65.09,
+  "peak_process_group_rss_bytes": 337666048,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-speaker-and-vsys.py",
+    "evidence/routing-zero-drc-2026-10-07/microphone-native/circuit.json",
+    "evidence/routing-zero-drc-2026-10-07/speaker-vsys-fixed-right-bridge.json",
+    "--retain-clear-original-regions",
+    "--preserve-distribution-region",
+    "src/board/manual-power-copper.json:13"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 56.57,
+  "peak_process_group_rss_bytes": 362627072,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

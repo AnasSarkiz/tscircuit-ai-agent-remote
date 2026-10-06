@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-microphone-ground-and-signals.py", line 160, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-microphone-ground-and-signals.py", line 111, in main
+    raise ValueError('A native region extends beyond the selected complete authored branch')
+ValueError: A native region extends beyond the selected complete authored branch

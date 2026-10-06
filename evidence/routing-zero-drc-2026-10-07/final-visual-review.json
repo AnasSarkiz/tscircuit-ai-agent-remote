@@ -1,0 +1,17 @@
+{
+  "native_sha256": "f9b4cd7b7974f24c830b212e4d175cc865d19a163ec30b43c139fc3b5894d184",
+  "actually_inspected": [
+    "rendered/left-microphone.png",
+    "rendered/four-layer-review.png",
+    "schematics/10-MicrophonesSheet.png"
+  ],
+  "observations": [
+    "U4 ground pad has the accepted direct edge escape to a plated through via; clock and data now clear this corridor.",
+    "Four copper layers retain the original layout, antenna keepout, existing supply trunks and explicitly incomplete display/speaker routing.",
+    "The microphone schematic retains the circuit and link to its component explanation page.",
+    "Diagnostic native warning and error overlays remain visible; these renders do not qualify production silkscreen or fabrication."
+  ],
+  "all_26_new_schematic_pages_visually_inspected": false,
+  "schematic_electrical_sources_changed": false,
+  "fabrication_ready": false
+}

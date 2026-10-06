@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-microphone-ground-and-signals.py",
+    "dist/index/circuit.json",
+    "evidence/routing-zero-drc-2026-10-07/microphone-coupled.json",
+    "--source",
+    "evidence/routing-zero-drc-2026-10-07/before/connection-copper.json.txt"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 21.53,
+  "peak_process_group_rss_bytes": 105156608,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

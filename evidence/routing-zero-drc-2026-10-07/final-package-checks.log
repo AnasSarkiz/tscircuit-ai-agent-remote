@@ -1,0 +1,36 @@
+{"original": "schema-audit.json", "original_bytes": 76382927, "original_sha256": "307b028e7dda636f0cdda91ec85530472bd1e5d3b37222d35c2d2d6c7459fdd2", "archive": "schema-audit.json.gz", "archive_bytes": 2634666, "archive_sha256": "8b772eb5e9a4e81d06e6044d143939ba64af6bfdad47a588f059ad708f1df4b0", "verified_exact_original_bytes_before_removal": true, "restore": "gzip -dk schema-audit.json.gz"}
+{
+  "verified_files": 404,
+  "mismatched_or_missing": [],
+  "fabrication_approval_inferred": false
+}
+$ biome format .
+context/build-checkpoint.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     51  51 │     "source_snapshot_byte_verified": true,
+     52  52 │     "local_mcu_100nf_bypass_connected": true,
+     53     │ - ··"mcu_bulk_nominal_capacitance_f":·2.2e-05,
+         53 │ + ··"mcu_bulk_nominal_capacitance_f":·2.2e-5,
+     54  54 │     "resolved_bom_blank_descriptions": 0,
+     55  55 │     "resolved_bom_supplier_codes_as_packages": 0,
+    ······· │ 
+    106 106 │     "supplier_exact_identities_checked": 43,
+    107 107 │     "supplier_total_stock_covers_identities": 42,
+    108     │ - ··"supplier_out_of_stock":·[
+    109     │ - ····"J6/C160405"
+    110     │ - ··],
+        108 │ + ··"supplier_out_of_stock":·["J6/C160405"],
+    111 109 │     "supplier_assembly_availability_qualified": false,
+    112 110 │     "supplier_stock_receipt": "evidence/six-point-board-review-2026-10-06/official-stock/receipt.json",
+  
+
+Checked 106 files in 82ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

@@ -6,13 +6,39 @@ the imported definitions and the ordinary drill/copper rules.
 """
 import argparse,json,math,runpy,hashlib
 from pathlib import Path
+import numpy as np
+from shapely import intersects_xy
 from shapely.geometry import Point,LineString,Polygon,box
 from shapely.ops import unary_union
 h=runpy.run_path(str(Path(__file__).with_name('plan-power-copper.py')))
 
 
+def ground_via_candidates(specification):
+    """Sample legal via centres without changing any manufacturing clearance."""
+    origin = specification['origin']
+    grid_mm = specification.get('grid_mm')
+    if grid_mm is None:
+        return [(round(origin[0]+distance*math.cos(math.radians(degrees)),6),
+                 round(origin[1]+distance*math.sin(math.radians(degrees)),6))
+                for distance in (.9,1.1,1.3,1.5,1.7,2.,2.3,2.6,3.,3.5,4.,4.5,5.,5.5,6.)
+                for degrees in range(0,360,15)]
+    offsets = np.arange(-6., 6.+grid_mm/2, grid_mm)
+    dx, dy = np.meshgrid(offsets, offsets)
+    # Filter the actual authored coordinates, including obstacle boundaries;
+    # rounding after filtering could move a candidate onto blocked copper.
+    xs, ys = np.round(origin[0]+dx, 6), np.round(origin[1]+dy, 6)
+    distance_squared = (xs-origin[0])**2+(ys-origin[1])**2
+    minimum_distance_mm = specification.get('minimum_distance_mm', .9)
+    allowed = ((distance_squared >= minimum_distance_mm**2) & (distance_squared <= 6.**2)
+               & ~intersects_xy(specification['via_obstacles'], xs, ys))
+    indices = np.flatnonzero(allowed)
+    ordered = indices[np.argsort(distance_squared.ravel()[indices], kind='stable')]
+    return [(round(float(xs.ravel()[index]),6), round(float(ys.ravel()[index]),6))
+            for index in ordered]
+
+
 def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('native');ap.add_argument('output');ap.add_argument('--replace-clock-escapes',action='store_true');ap.add_argument('--width-mm',type=float,choices=(.36,.4),default=.4);ap.add_argument('--ports',nargs='+',choices=('.U4 > .pin3','.U5 > .pin3'),default=['.U4 > .pin3','.U5 > .pin3']);ap.add_argument('--ground-landing-pad',action='store_true',help='Use an explicit native top ground/test pad instead of a new drill; current native plane contact and component clearance must be retained');ap.add_argument('--copper-audit');args=ap.parse_args();c=json.loads(Path(args.native).read_text());clocks=[]
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('native');ap.add_argument('output');ap.add_argument('--replace-clock-escapes',action='store_true');ap.add_argument('--width-mm',type=float,choices=(.36,.4),default=.4);ap.add_argument('--ports',nargs='+',choices=('.U4 > .pin3','.U5 > .pin3'),default=['.U4 > .pin3','.U5 > .pin3']);ap.add_argument('--ground-landing-pad',action='store_true',help='Use an explicit native top ground/test pad instead of a new drill; current native plane contact and component clearance must be retained');ap.add_argument('--copper-audit');ap.add_argument('--via-grid-mm',type=float,choices=(.025,.05),help='Search additional exact via positions; all existing geometric and physical checks remain required');ap.add_argument('--via-min-distance-mm',type=float,choices=(.4,.6,.9),default=.9,help='Minimum search radius only; exact pad/drill/copper clearances are unchanged');args=ap.parse_args();c=json.loads(Path(args.native).read_text());clocks=[]
     if args.replace_clock_escapes:
         sources={r['source_trace_id']:r for r in c if r['type']=='source_trace'}
         names={name for selector,name in (('.U4 > .pin3','MANUAL_INNER_ESCAPE_246_0'),('.U5 > .pin3','CONNECTION_ESCAPE_MIC_BCLK_21')) if selector in args.ports}
@@ -67,9 +93,7 @@ def main():
             result['straight_paths'].append({'net':'GND','from':selector,'to':p.port_name(target),'width':width,'planned_clipped_start_mm':start,'planned_end_mm':end,'classification':'Native pad-edge trace to an existing real same-net ground land; no added drill'})
             p.copper.append((root,'top',wire.buffer(width/2)));found='existing-ground';break
         if found:continue
-        for distance in (.9,1.1,1.3,1.5,1.7,2.,2.3,2.6,3.,3.5,4.,4.5,5.,5.5,6.):
-          for degrees in range(0,360,15):
-            angle=math.radians(degrees);xy=(round(origin[0]+distance*math.cos(angle),6),round(origin[1]+distance*math.sin(angle),6))
+        for xy in ground_via_candidates({'origin':origin,'grid_mm':args.via_grid_mm,'minimum_distance_mm':args.via_min_distance_mm,'via_obstacles':via_obstacles}):
             if Point(xy).intersects(via_obstacles):continue
             # Match core's computeLineRectIntersection for this polygon land.
             intersection=LineString([origin,xy]).intersection(shape.envelope.boundary)
@@ -77,7 +101,6 @@ def main():
             start=(intersection.x,intersection.y);wire=LineString([start,xy])
             if wire.intersects(obstacles) or wire.buffer(width/2).intersection(shape).area<1e-5:continue
             found=(xy,start);break
-          if found:break
         if found:
             xy,start=found;result['vias'].append({'net':'GND','x':xy[0],'y':xy[1],'hole_mm':.3,'outer_mm':.45});result['straight_paths'].append({'net':'GND','from':selector,'width':width,'proposal_via_index':len(result['vias'])-1,'planned_clipped_start_mm':start,'planned_end_mm':xy,'classification':'native pcbStraightLine using original imported pad bounds; actual replay required'})
             p.copper.append((root,'top',LineString([start,xy]).buffer(width/2)));hole=Point(xy).buffer(.15);p.holes.append(hole);p.plated_hole_roots[hole.wkb]=root

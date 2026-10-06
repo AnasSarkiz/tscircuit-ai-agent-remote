@@ -1,7 +1,48 @@
-## Current connection repairs — 2026-10-06
+## Current manual routing repair — 2026-10-07
 
-**0.0.6-wip-connection-repairs — NOT READY TO ORDER.** This is the current
-accepted source/native checkpoint; the entries below are historical.
+**0.0.7-wip-manual-routing-repairs — NOT READY TO ORDER.** This entry
+supersedes the historical checkpoints below. U4 now has a real 0.36 mm ground
+escape to a 0.30/0.45 mm through via. Its clock/data escapes were moved to make
+room while retaining their original nets and minimum widths.
+
+The supported source CLI build completes in 251.86 seconds and exits 1 with
+**52 open-port errors**: 46 J7 display contacts, four U27 backlight contacts and
+two SPEAKER_N contacts. The unchanged generated JSON contains 381 traces,
+325 through vias and 271 pours. Independent geometric checks measure **zero
+shorts and zero clearance violations**, preserve all 9,842 previously connected
+numbered-terminal pairs and verify all 247 authored regions at their nominal
+widths. There are still 13 physically open nets. J3's unassigned outer contacts
+are excluded from that count; battery polarity and display mating remain
+unqualified. Every purchased component footprint, pose and model is unchanged.
+
+A speaker/VSYS candidate was rejected: its native output disconnected U25.2 and
+C76.2 ground, losing 266 existing terminal pairs, and reported a bus-skew error.
+The candidate and follow-up proposals are preserved as evidence, not accepted
+routing. Original speaker constraints and original power copper remain intact.
+No native errors or checks were suppressed.
+
+The five source/placement checks pass. Board tests remain 48 pass / 2 fail;
+169 strict native-schema failures, 32 missing U16/U27 paste records and the
+official shorts/export error “Unsupported shape polygon” still block approval.
+Two regulator traces violate explicit source widths; 63 nominal-width branches
+and current/signal-integrity qualification remain open. Stock and programmer
+limitations in the prior review still apply. No order or physical test occurred.
+
+Primary supplier retrieval is blocked by HTTP 403 from the cloud policy. Add
+`www.buydisplay.com` and `www.elektronik.ropla.eu` to the existing Environment
+settings allowlist, then save and publish it to resume exact J3/J7 qualification.
+The editable allowlist was unavailable; no unknown list was replaced.
+
+[Current repair review and exact receipts](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/routing-zero-drc-2026-10-07/review.md).
+Matching public publication and cloud CI are separate observations; a WIP
+preview does not establish zero DRC or fabrication readiness.
+
+---
+
+## Previous connection repairs — 2026-10-06
+
+**0.0.6-wip-connection-repairs — NOT READY TO ORDER.** This is a historical
+source/native checkpoint, superseded by the manual routing repair above.
 
 Manual native routing reduces open-port errors from 89 to **53** and physically
 open nets from 25 to **13**. The actual frozen-install CLI build completes in

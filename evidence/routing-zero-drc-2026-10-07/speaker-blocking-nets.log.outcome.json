@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "evidence/routing-zero-drc-2026-10-07/diagnose-speaker-blocking-nets.py",
+    "evidence/routing-zero-drc-2026-10-07/microphone-native/circuit.json",
+    "evidence/routing-zero-drc-2026-10-07/speaker-blocking-nets.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 123.15,
+  "peak_process_group_rss_bytes": 375103488,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}
