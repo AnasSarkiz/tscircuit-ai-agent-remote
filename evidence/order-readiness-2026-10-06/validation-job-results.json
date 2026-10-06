@@ -1,0 +1,42 @@
+[
+  {
+    "name": "format-test-final",
+    "exit_code": 0
+  },
+  {
+    "name": "typecheck",
+    "exit_code": 0
+  },
+  {
+    "name": "board-tests",
+    "exit_code": 1
+  },
+  {
+    "name": "check-pin-specification",
+    "exit_code": 0
+  },
+  {
+    "name": "check-source",
+    "exit_code": 0
+  },
+  {
+    "name": "check-schematic-placement",
+    "exit_code": 0
+  },
+  {
+    "name": "check-placement",
+    "exit_code": 0
+  },
+  {
+    "name": "check-gerber-export",
+    "exit_code": 1
+  },
+  {
+    "name": "check-shorts-gerber",
+    "exit_code": 1
+  },
+  {
+    "name": "render-review",
+    "exit_code": 0
+  }
+]

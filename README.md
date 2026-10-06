@@ -1,3 +1,22 @@
+## Current order-readiness audit — 2026-10-06
+
+**NOT READY TO ORDER.** Fresh current native render is byte-identical to the
+canonical board. Measured geometry:0 shorts/0 clearance violations, but26
+physically open nets and90 native connection errors; J3 outer contacts are
+additional unassigned omissions. All306 traces/792 wire segments checked:
+0 below0.20 mm,2 regulator switch routes below explicit1.0 mm source minima,
+and55 traces below named-net nominal widths needing current/escape review.
+All152 authored region widths pass. Current critical manufacturer pin tests
+pass; physical connectivity and current capacity remain unapproved.
+
+Assembly still fails:32 missing U16/U27 paste records,169 native schema
+failures,31 blank BOM descriptions,125 unqualified supplier rotations.
+J3 pack polarity/J7 flex mating, stock/stackup/current/mechanical/fabrication
+qualification remain open. Types and60 routing regressions pass; board tests
+47pass/2real failed gates. Board/import/dependency/cache bytes unchanged.
+[Full order-readiness report and measurements](evidence/order-readiness-2026-10-06/review.md).
+This verification adds no copper and does not create a duplicate registry upload.
+
 ## Current cloud routing checkpoint — 2026-10-05
 
 Public [tscircuit0.0.2-wip-cloud-routing](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.2-wip-cloud-routing#files) now has**116/116 exact-matching files**, including current native JSON and required display-connector STEP. A supported multipart archive resumed the existing release and enabled its normal cloud build, which has started. [Exact upload/build evidence](evidence/cloud-tsci-publication/review.md). This is an engineering WIP; fabrication is not approved.

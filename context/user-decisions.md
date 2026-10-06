@@ -1,5 +1,10 @@
 # Accepted human decisions and continuation authority
 
+Latest request, 2026-10-06: independently verify current actual connections,
+shorts/DRC, every trace width, real components/pin assignments and whether the
+board is ready to order. Preserve real failures and do not approve fabrication
+without all current gates passing.
+
 Latest clarification: use manual tracing together with Freerouting for remaining
 connections. Continue autonomously within the existing board requirements;
 accept only actual native copper that passes clearance/short/width/connectivity

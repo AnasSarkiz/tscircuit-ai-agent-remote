@@ -1,0 +1,692 @@
+{
+  "source_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "schema_package": "circuit-json@0.0.517",
+  "failing_elements": 169,
+  "by_type": {
+    "schematic_group": 15,
+    "pcb_component": 135,
+    "pcb_group": 15,
+    "pcb_silkscreen_text": 2,
+    "pcb_hole": 2
+  },
+  "failures": [
+    {
+      "index": 1752,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1766,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1776,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1802,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1824,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1837,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1857,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1864,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1872,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1888,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1897,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1908,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1909,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1910,
+      "type": "schematic_group"
+    },
+    {
+      "index": 1919,
+      "type": "schematic_group"
+    },
+    {
+      "index": 3143,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3144,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3145,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3146,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3147,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3148,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3149,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3150,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3151,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3152,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3153,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3154,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3155,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3156,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3157,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3158,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3159,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3160,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3161,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3162,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3163,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3164,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3165,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3166,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3167,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3168,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3169,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3170,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3171,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3172,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3173,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3174,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3175,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3176,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3177,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3178,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3179,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3180,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3181,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3182,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3183,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3184,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3185,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3186,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3187,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3188,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3189,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3190,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3191,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3192,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3193,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3194,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3195,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3196,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3197,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3198,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3199,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3200,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3201,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3202,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3203,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3204,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3205,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3206,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3207,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3208,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3209,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3210,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3211,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3212,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3213,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3214,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3215,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3216,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3217,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3218,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3219,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3220,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3221,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3222,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3223,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3224,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3225,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3226,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3227,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3228,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3229,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3230,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3231,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3232,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3233,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3234,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3235,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3236,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3237,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3238,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3239,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3240,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3241,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3242,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3243,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3244,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3245,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3246,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3247,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3248,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3249,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3250,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3251,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3252,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3253,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3254,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3255,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3256,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3257,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3258,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3259,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3260,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3261,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3262,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3263,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3264,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3265,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3266,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3267,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3268,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3269,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3270,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3271,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3272,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3273,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3274,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3275,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3276,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3277,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3278,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3279,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3280,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3281,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3282,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3283,
+      "type": "pcb_group"
+    },
+    {
+      "index": 3284,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3285,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3286,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3287,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3288,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3289,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3290,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3291,
+      "type": "pcb_component"
+    },
+    {
+      "index": 3292,
+      "type": "pcb_group"
+    },
+    {
+      "index": 5023,
+      "type": "pcb_silkscreen_text"
+    },
+    {
+      "index": 5024,
+      "type": "pcb_silkscreen_text"
+    },
+    {
+      "index": 5138,
+      "type": "pcb_hole"
+    },
+    {
+      "index": 5141,
+      "type": "pcb_hole"
+    }
+  ],
+  "full_original_failure_tree": "schema-audit.json.gz",
+  "full_original_failure_tree_sha256": "0420c4448a794d3954dba2cc76076b1effc4ec532ac11bbaf37f9b75a2cde1eb"
+}

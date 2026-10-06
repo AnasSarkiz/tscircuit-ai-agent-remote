@@ -23,12 +23,23 @@
     "J7 physical contact face/pin-1/fold mating remains unqualified.",
     "32 missing pill-pad paste records, 169 strict-schema failures and unsupported polygon Gerber export remain.",
     "Full routed CLI build, bitmap shorts and snapshot exceeded time budgets; direct native render completed.",
-    "Current, USB/speaker signal integrity, mechanical fit, stock/BOM/CPL and final fabrication review remain open."
+    "Current, USB/speaker signal integrity, mechanical fit, stock/BOM/CPL and final fabrication review remain open.",
+    "Two 1.0 mm-source regulator switching routes contain 0.275 mm sections;55 other trace branches are below named-net nominal widths. Current/neck qualification and125 supplier orientation metadata warnings remain unresolved."
   ],
   "routing_selection": "beta_pipeline9",
   "pipeline9_trials_accepted": false,
   "pipeline9_trial_review": "evidence/pipeline9-routing-2026-10-05/review.md",
   "freerouting_new_routes_accepted": false,
   "freerouting_trial_review": "evidence/freerouting-continuation-2026-10-06/review.md",
-  "freerouting_native_source_unchanged": true
+  "freerouting_native_source_unchanged": true,
+  "latest_order_readiness_review": "evidence/order-readiness-2026-10-06/review.md",
+  "fresh_order_readiness_render_identical": true,
+  "native_traces_width_checked": 306,
+  "native_wire_segments_width_checked": 792,
+  "native_traces_below_general_0p20_mm": 0,
+  "native_traces_below_explicit_source_minimum": 2,
+  "native_traces_below_named_net_nominal_requiring_review": 55,
+  "current_board_test_pass_count": 47,
+  "current_board_test_failure_count": 2,
+  "routing_regression_pass_count": 60
 }

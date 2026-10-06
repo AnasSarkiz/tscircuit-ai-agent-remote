@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/evidence/order-readiness-2026-10-06/archive-schema.py", line 57, in <module>
+    main()
+  File "/workspace/tscircuit-ai-agent-remote/evidence/order-readiness-2026-10-06/archive-schema.py", line 26, in main
+    for branch in issue['errors']:
+                  ~~~~~^^^^^^^^^^
+KeyError: 'errors'

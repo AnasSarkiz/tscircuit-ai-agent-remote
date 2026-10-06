@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "scripts/routing/render-copper-review.mjs",
+    "evidence/order-readiness-2026-10-06/native-build/circuit.json",
+    "evidence/order-readiness-2026-10-06/visual-review"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 5.51,
+  "peak_process_group_rss_bytes": 284184576,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

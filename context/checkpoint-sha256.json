@@ -333,7 +333,10 @@
     "src/mcu/esp32-s3-usb-review.tsx": "9fff0314c23a39280d9a8a2b8de4ab2fb07e80092288b304b2c7869f7c921beb",
     "src/power/battery-ready-review.tsx": "722ba5938161eef1fbcdb67d2e82d6e470c0a7b4ebef954ef981f28d9f7eb53f",
     "src/power/regulated-3v3.tsx": "e8ebb7e7549c74e7c8f6de80568efb17ee602fdb42048d13cfb951391709e969",
-    "src/power/type-c-current-review.tsx": "24d632425486a158ea36608b2e2c6c3d7449ca74c40ca1a113eea893ae12c7ca"
+    "src/power/type-c-current-review.tsx": "24d632425486a158ea36608b2e2c6c3d7449ca74c40ca1a113eea893ae12c7ca",
+    "scripts/routing/audit-trace-widths.py": "caaf858cba7cf2d67d89ae192efdc03291c3e6fc8fd06ebb03318d1207a46eb8",
+    "scripts/routing/tests/test_trace_widths.py": "5c9037e9234dc89b4fd7089df7e7a4e6786ff3c3290b2fea3d72541c9b121a32",
+    "tests/current-board-manufacturer-connections.test.ts": "26beed35cdfca1d2fe31273302f1301d9c1964f3036ceb449621d2968ee26efe"
   },
   "meaning": "Accepted cloud routing WIP source/native build; hashes identify bytes, not fabrication approval. Original migration manifest is preserved in evidence/cloud-runs/original-migration-checkpoint-sha256.json."
 }

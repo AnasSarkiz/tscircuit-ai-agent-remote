@@ -1,0 +1,28 @@
+Error in createContainer
+14010 |               : null;
+14011 |             fiberTag &&
+14012 |               (resolvedType +=
+14013 |                 "\n\nCheck the render method of `" + fiberTag + "`.");
+14014 |             fiberTag = 29;
+14015 |             pendingProps = Error(
+                                   ^
+error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: array.
+      at createFiberFromTypeAndProps (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:14015:28)
+      at createFiberFromElement (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:14029:14)
+      at reconcileChildFibersImpl (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:5515:31)
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:5693:33)
+      at reconcileChildren (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:6198:13)
+      at beginWork (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:8126:15)
+      at runWithFiberInDEV (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at performUnitOfWork (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:12834:22)
+      at workLoopSync (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at performWorkOnRoot (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:12135:44)
+      at performSyncWorkOnRoot (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:2446:7)
+      at flushSyncWorkAcrossRoots_impl (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:2294:21)
+      at flushSyncWork (/workspace/tscircuit-ai-agent-remote/node_modules/react-reconciler/cjs/react-reconciler.development.js:12394:12)
+      at createInstanceFromReactElement (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:8968:14)
+      at add (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:122282:19)
+      at generateCircuitJson (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:167861:10)
+
+Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: array.

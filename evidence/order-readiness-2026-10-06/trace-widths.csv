@@ -1,0 +1,307 @@
+pcb_trace_id,source_display_name,net,source_minimum_mm,net_nominal_mm,minimum_actual_width_mm,maximum_actual_width_mm,wire_length_mm,below_board_minimum,below_source_minimum,below_net_nominal
+pcb_trace_0,U1.pin1 to net.GND,GND,0.3,0.3,0.3,0.3,1.2000000000000333,False,False,False
+pcb_trace_1,U1.pin40 to net.GND,GND,0.3,0.3,0.3,0.3,1.2000000000000386,False,False,False
+pcb_trace_2,U1.pin41 to net.GND,GND,0.3,0.3,0.3,0.3,1.000000000000045,False,False,False
+pcb_trace_3,U1.pin13 to R32.pin2,MCU_USB_DN,0.2979,0.2979,0.2979,0.2979,1.7001988448787075,False,False,False
+pcb_trace_4,U1.pin14 to R31.pin2,MCU_USB_DP,0.2979,0.2979,0.2979,0.2979,1.7001337183077372,False,False,False
+pcb_trace_5,U2.pin10 to net.VSYS,VSYS,0.275,1,0.275,0.275,0.6500020000000006,False,False,True
+pcb_trace_6,U2.pin2 to net.GND,GND,0.3,0.3,0.3,0.3,2.1301161863588174,False,False,False
+pcb_trace_7,U2.pin3 to U2.pin2,GND,0.3,0.3,0.3,0.3,0.49987199999999987,False,False,False
+pcb_trace_8,U2.pin8 to U2.pin3,GND,0.28,0.3,0.28,0.28,1.4500860000000002,False,False,True
+pcb_trace_9,U2.pin6 to net.V3V3,V3V3,0.275,0.8,0.275,0.275,0.6500019999999971,False,False,True
+pcb_trace_10,C4.pin1 to net.VSYS,VSYS,1,1,1,1,0.9999759999999984,False,False,False
+pcb_trace_11,C5.pin1 to net.V3V3,V3V3,0.8,0.8,0.8,0.8,1.9145128690610376,False,False,False
+pcb_trace_12,.U2 > .pin1 to .R97 > .pin1,BUCK_ENABLE,0.2,,0.2,0.2,9.339235858988545,False,False,False
+pcb_trace_13,.R97 > .pin1 to .R96 > .pin2,BUCK_ENABLE,0.2,,0.2,0.2,2.0,False,False,False
+pcb_trace_14,.R96 > .pin2 to .U25 > .pin1,BUCK_ENABLE,0.2,,0.2,0.2,2.079141036802457,False,False,False
+pcb_trace_15,.U2 > .pin1 to .C77 > .pin1,BUCK_ENABLE,0.2,,0.2,0.2,31.937909571047022,False,False,False
+pcb_trace_16,.U16 > .pin16 to .R1 > .pin1,CHARGER_ISET,0.2,,0.2,0.2,6.958611375150657,False,False,False
+pcb_trace_17,.Q1 > .pin1 to .R60 > .pin2,AUDIO_NMOS_GATE,0.2,,0.2,0.2,18.319636734375273,False,False,False
+pcb_trace_18,.R60 > .pin2 to .R61 > .pin1,AUDIO_NMOS_GATE,0.2,,0.2,0.2,20.529401808352297,False,False,False
+pcb_trace_19,.Q1 > .pin3 to .Q2 > .pin1,AUDIO_PMOS_GATE,0.2,,0.2,0.2,8.556765729220839,False,False,False
+pcb_trace_20,.U1 > .pin3 to .SW2 > .pin1,MCU_EN,0.2,,0.2,0.2,27.224145542435597,False,False,False
+pcb_trace_21,.SW2 > .pin1 to .R35 > .pin2,MCU_EN,0.2,,0.2,0.2,52.61553485560401,False,False,False
+pcb_trace_22,.R35 > .pin2 to .R37 > .pin1,MCU_EN,0.2,,0.2,0.2,2.2500000000435554,False,False,False
+pcb_trace_23,.R37 > .pin1 to .J6 > .pin3,MCU_EN,0.2,,0.2,0.2,89.057611741445,False,False,False
+pcb_trace_24,.U1 > .pin27 to .R36 > .pin2,MCU_BOOT_N,0.2,,0.2,0.2,13.102522588681293,False,False,False
+pcb_trace_25,.U12 > .pin2 to .R35 > .pin1,MCU_RESET_N,0.2,,0.2,0.2,4.096417312974534,False,False,False
+pcb_trace_26,.U23 > .pin3 to .R87 > .pin1,HOLD_HARDWARE,0.2,,0.2,0.2,13.86908584207909,False,False,False
+pcb_trace_27,.R63 > .pin2 to .R64 > .pin1,AMP_SD_MODE,0.2,,0.2,0.2,2.50403416066874,False,False,False
+pcb_trace_28,.U1 > .pin4 to .R60 > .pin1,MCU_AUDIO_ENABLE,0.2,,0.2,0.2,54.13544297612974,False,False,False
+pcb_trace_29,.U1 > .pin18 to .R47 > .pin1,MCU_LCD_CS_N,0.2,,0.2,0.2,15.394458753983146,False,False,False
+pcb_trace_30,.R47 > .pin1 to .U14 > .pin2,MCU_LCD_CS_N,0.2,,0.2,0.2,14.658971664250164,False,False,False
+pcb_trace_31,.U1 > .pin21 to .R49 > .pin1,MCU_LCD_DC,0.2,,0.2,0.2,18.709771741270767,False,False,False
+pcb_trace_32,.U1 > .pin22 to .R48 > .pin1,MCU_LCD_RESET_N,0.2,,0.2,0.2,17.57119632803952,False,False,False
+pcb_trace_33,.U1 > .pin20 to .R50 > .pin1,MCU_LCD_SCLK,0.2,,0.2,0.2,21.849733780727398,False,False,False
+pcb_trace_34,.U1 > .pin19 to .R51 > .pin1,MCU_LCD_SDA,0.2,,0.2,0.2,26.443512857534653,False,False,False
+pcb_trace_35,.U4 > .pin6 to .U7 > .pin3,MIC_SD,0.2,,0.2,0.2,42.675781649996935,False,False,False
+pcb_trace_36,.U7 > .pin3 to .R26 > .pin1,MIC_SD,0.2,,0.2,0.2,6.766689584443861,False,False,False
+pcb_trace_37,.U7 > .pin1 to .R27 > .pin1,MIC_SD_BUFFERED,0.2,,0.2,0.2,3.993731031604067,False,False,False
+pcb_trace_38,.U7 > .pin4 to .C26 > .pin1,MIC_SD_REF,0.2,,0.2,0.2,3.929507573312616,False,False,False
+pcb_trace_39,.U7 > .pin4 to .R29 > .pin2,MIC_SD_REF,0.2,,0.2,0.2,6.051841674404989,False,False,False
+pcb_trace_40,.R29 > .pin2 to .R30 > .pin1,MIC_SD_REF,0.2,,0.2,0.2,2.364672590252003,False,False,False
+pcb_trace_41,.U24 > .pin6 to .R94 > .pin1,MIC_BCLK,0.2,,0.2,0.2,7.127454784487803,False,False,False
+pcb_trace_42,.U24 > .pin4 to .R95 > .pin1,MIC_WS,0.2,,0.2,0.2,9.414471483047997,False,False,False
+pcb_trace_43,.U24 > .pin3 to .R91 > .pin1,MIC_WS_INPUT,0.2,,0.2,0.2,1.852527423196754,False,False,False
+pcb_trace_44,.Q9 > .pin1 to .R83 > .pin2,HAPTIC_NMOS_GATE,0.2,,0.2,0.2,11.322593080409565,False,False,False
+pcb_trace_45,.R83 > .pin2 to .R84 > .pin1,HAPTIC_NMOS_GATE,0.2,,0.2,0.2,1.496639780639283,False,False,False
+pcb_trace_46,.U27 > .pin15 to .U27 > .pin16,BACKLIGHT_GATE,0.2,,0.2,0.2,0.5001259999999998,False,False,False
+pcb_trace_47,.U27 > .pin16 to .R104 > .pin1,BACKLIGHT_GATE,0.2,,0.2,0.2,9.184704780182972,False,False,False
+pcb_trace_48,.U16 > .pin7 to .R3 > .pin2,CHARGE_PGOOD_N,0.2,,0.2,0.2,4.443091530208713,False,False,False
+pcb_trace_49,.U16 > .pin9 to .R4 > .pin2,CHARGE_STATUS_N,0.2,,0.2,0.2,11.666664923978926,False,False,False
+pcb_trace_50,.U16 > .pin9 to .TP8 > .pin1,CHARGE_STATUS_N,0.2,,0.2,0.2,67.08745323268198,False,False,False
+pcb_trace_51,.R99 > .pin1 to .U26 > .pin2,HOLD_HARDWARE,0.2,,0.2,0.2,9.108479573096789,False,False,False
+pcb_trace_52,.U26 > .pin2 to .SW4 > .pin2,HOLD_HARDWARE,0.2,,0.2,0.2,12.543765274619949,False,False,False
+pcb_trace_53,.R99 > .pin1 to .TP7 > .pin1,HOLD_HARDWARE,0.2,,0.2,0.2,19.45328601946555,False,False,False
+pcb_trace_54,.U24 > .pin1 to .R88 > .pin2,MIC_BCLK_INPUT,0.2,,0.2,0.2,7.84741430538089,False,False,False
+pcb_trace_55,.U24 > .pin1 to .R90 > .pin1,MIC_BCLK_INPUT,0.2,,0.2,0.2,12.845835275658668,False,False,False
+pcb_trace_56,.U3 > .pin14 to .R70 > .pin1,AMP_LRCLK,0.2,,0.2,0.2,5.6035318700830015,False,False,False
+pcb_trace_57,.U3 > .pin14 to .R67 > .pin2,AMP_LRCLK,0.2,,0.2,0.2,19.11877942302188,False,False,False
+pcb_trace_58,.U3 > .pin16 to .R69 > .pin1,AMP_BCLK,0.2,,0.2,0.2,18.054169718076697,False,False,False
+pcb_trace_59,.R69 > .pin1 to .R66 > .pin2,AMP_BCLK,0.2,,0.2,0.2,37.26208309732628,False,False,False
+pcb_trace_60,.R95 > .pin1 to .U5 > .pin1,MIC_WS,0.2,,0.2,0.2,11.979040664261662,False,False,False
+pcb_trace_61,.U1 > .pin6 to .U13 > .pin3,LCD_ENABLE,0.2,,0.2,0.2,48.30537722905022,False,False,False
+pcb_trace_62,.U13 > .pin3 to .R40 > .pin1,LCD_ENABLE,0.2,,0.2,0.2,17.585143202147023,False,False,False
+pcb_trace_63,.U1 > .pin12 to .R67 > .pin1,MCU_AUDIO_LRCLK,0.2,,0.2,0.2,20.28270220777197,False,False,False
+pcb_trace_64,.J1 > .pin6 to .R33 > .pin1,USB_CC1,0.2,,0.2,0.2,22.521814994547533,False,False,False
+pcb_trace_65,.C3 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.9999996503124389,False,False,True
+pcb_trace_66,.C4 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.7999999999999989,False,False,True
+pcb_trace_67,.U3 > .pin7 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.7999999999999989,False,False,True
+pcb_trace_68,.U3 > .pin8 to net.VSYS,VSYS,0.3,1,0.3,0.3,2.0000001666502416,False,False,True
+pcb_trace_69,.Q2 > .pin2 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.8860363998307293,False,False,True
+pcb_trace_70,.C50 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,2.6000000000000014,False,False,True
+pcb_trace_71,.C51 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,1.0629987773163243,False,False,True
+pcb_trace_72,.U22 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,1.4000003764628037,False,False,True
+pcb_trace_73,.C70 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,1.1999995803749273,False,False,True
+pcb_trace_74,.U25 > .pin3 to net.VSYS,VSYS,0.3,1,0.3,0.3,1.0000000000000009,False,False,True
+pcb_trace_75,.U25 > .pin6 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.7999999999999989,False,False,True
+pcb_trace_76,.R96 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.9012074769419086,False,False,True
+pcb_trace_77,.C76 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.9999996503124384,False,False,True
+pcb_trace_78,.TP4 > .pin1 to net.VSYS,VSYS,0.3,1,0.3,0.3,0.9999996503124393,False,False,True
+pcb_trace_79,.U1 > .pin2 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,1.2000000000000404,False,False,True
+pcb_trace_80,.U12 > .pin3 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.7999997202499513,False,False,True
+pcb_trace_81,.J6 > .pin2 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,1.1999999999999993,False,False,True
+pcb_trace_82,.R36 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.8000000000000007,False,False,True
+pcb_trace_83,.C30 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.9999996503124393,False,False,True
+pcb_trace_84,.C31 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.8,False,False,True
+pcb_trace_85,.C32 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.8,False,False,True
+pcb_trace_86,.R3 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.8000000000000007,False,False,True
+pcb_trace_87,.R4 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.7999999999999972,False,False,True
+pcb_trace_88,.C5 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,1.4000003764628068,False,False,True
+pcb_trace_89,.R5 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,2.778781926123262,False,False,True
+pcb_trace_90,.R7 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.7999999999999999,False,False,True
+pcb_trace_91,.U13 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,1.655634918610405,False,False,True
+pcb_trace_92,.C40 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,3.4663869962649265,False,False,True
+pcb_trace_93,.U26 > .pin5 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.7999997202499514,False,False,True
+pcb_trace_94,.C78 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.9434108333997447,False,False,True
+pcb_trace_95,.U7 > .pin5 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.79999972024995,False,False,True
+pcb_trace_96,.C25 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.8000000000000007,False,False,True
+pcb_trace_97,.SW4 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.8000000000000007,False,False,True
+pcb_trace_98,.SW5 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.7999995452499479,False,False,True
+pcb_trace_99,.U27 > .pin13 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,1.600000306525284,False,False,True
+pcb_trace_100,.C84 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,0.7999999999999998,False,False,True
+pcb_trace_101,.TP5 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.3,0.3,4.161696644991184,False,False,True
+pcb_trace_102,.U16 > .pin2 to net.PACK_BAT,PACK_BAT,0.3,1,0.3,0.3,3.84011010517102,False,False,True
+pcb_trace_103,.C2 > .pin1 to net.PACK_BAT,PACK_BAT,0.3,1,0.3,0.3,0.9999996503124384,False,False,True
+pcb_trace_104,.U25 > .pin5 to net.PACK_BAT,PACK_BAT,0.3,1,0.3,0.3,1.0000000000000018,False,False,True
+pcb_trace_105,.TP3 > .pin1 to net.PACK_BAT,PACK_BAT,0.3,1,0.3,0.3,4.301162633521313,False,False,True
+pcb_trace_106,.J1 > .pin15 to net.VBUS,VBUS,0.3,0.5,0.3,0.3,2.44513864968392,False,False,True
+pcb_trace_107,.TP2 > .pin1 to net.VBUS,VBUS,0.3,0.5,0.3,0.3,0.9000000000000004,False,False,True
+pcb_trace_108,.U22 > .pin5 to net.VMOTOR,VMOTOR,0.3,0.3,0.3,0.3,0.8,False,False,False
+pcb_trace_109,.D3 > .pin1 to net.VMOTOR,VMOTOR,0.3,0.3,0.3,0.3,1.4000003764628066,False,False,False
+pcb_trace_110,.C71 > .pin1 to net.VMOTOR,VMOTOR,0.3,0.3,0.3,0.3,1.6000003065252844,False,False,False
+pcb_trace_111,.C72 > .pin1 to net.VMOTOR,VMOTOR,0.3,0.3,0.3,0.3,0.7999999999999998,False,False,False
+pcb_trace_112,.R82 > .pin1 to net.VMOTOR,VMOTOR,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_113,.TP_MOTOR_P > .pin1 to net.VMOTOR,VMOTOR,0.3,0.3,0.3,0.3,1.3999999999999986,False,False,False
+pcb_trace_114,.U23 > .pin5 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.7999997202499523,False,False,False
+pcb_trace_115,.C74 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,2.2000000967127264,False,False,False
+pcb_trace_116,.C75 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.9999996503124389,False,False,False
+pcb_trace_117,.R86 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_118,.R92 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_119,.U4 > .pin5 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.9628677039180226,False,False,False
+pcb_trace_120,.C80 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_121,.C81 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,0.9999996503124393,False,False,False
+pcb_trace_122,.R29 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,2.200000096712724,False,False,False
+pcb_trace_123,.TP6 > .pin1 to net.VMIC,VMIC,0.3,0.3,0.3,0.3,3.82946906639605,False,False,False
+pcb_trace_124,.U13 > .pin5 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,0.7999997202499507,False,False,False
+pcb_trace_125,.U14 > .pin1 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_126,.U14 > .pin20 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,0.7999997202499498,False,False,False
+pcb_trace_127,.C41 > .pin1 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,1.4000003764628073,False,False,False
+pcb_trace_128,.C42 > .pin1 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,0.9999996503124393,False,False,False
+pcb_trace_129,.C43 > .pin1 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,2.827931508798123,False,False,False
+pcb_trace_130,.R41 > .pin1 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,1.6167965928031882,False,False,False
+pcb_trace_131,.R42 > .pin2 to net.VLCD,VLCD,0.3,0.3,0.3,0.3,1.199999580374928,False,False,False
+pcb_trace_132,.U23 > .pin1 to net.MIC_INPUT,MIC_INPUT,0.3,0.3,0.3,0.3,1.0000000000000018,False,False,False
+pcb_trace_133,.SW5 > .pin2 to net.MIC_INPUT,MIC_INPUT,0.3,0.3,0.3,0.3,2.196338499528869,False,False,False
+pcb_trace_134,.Q9 > .pin3 to net.HAPTIC_N,HAPTIC_N,0.3,0.4,0.3,0.3,0.7999997202499514,False,False,True
+pcb_trace_135,.D3 > .pin2 to net.HAPTIC_N,HAPTIC_N,0.3,0.4,0.3,0.3,1.4,False,False,True
+pcb_trace_136,.C72 > .pin2 to net.HAPTIC_N,HAPTIC_N,0.3,0.4,0.3,0.3,0.9999996503124393,False,False,True
+pcb_trace_137,.TP_MOTOR_N > .pin1 to net.HAPTIC_N,HAPTIC_N,0.3,0.4,0.3,0.3,1.3999999999999986,False,False,True
+pcb_trace_138,.U27 > .pin8 to net.LCD_BACKLIGHT_OUTPUT,LCD_BACKLIGHT_OUTPUT,0.3,0.3,0.3,0.3,0.9499350000901153,False,False,False
+pcb_trace_139,.C85 > .pin1 to net.LCD_BACKLIGHT_OUTPUT,LCD_BACKLIGHT_OUTPUT,0.3,0.3,0.3,0.3,3.1999997470251462,False,False,False
+pcb_trace_140,.U14 > .pin17 to .R43 > .pin1,LCD_RESET_N,0.2,,0.2,0.2,6.96130416804485,False,False,False
+pcb_trace_141,.U24 > .pin3 to .R89 > .pin2,MIC_WS_INPUT,0.2,,0.2,0.2,18.37853077423346,False,False,False
+pcb_trace_142,.J1 > .pin1 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000248,False,False,False
+pcb_trace_143,.J1 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000248,False,False,False
+pcb_trace_144,.J1 > .pin3 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000248,False,False,False
+pcb_trace_145,.J1 > .pin4 to net.GND,GND,0.3,0.3,0.3,0.3,1.0000001680276045,False,False,False
+pcb_trace_146,.J1 > .pin13 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000001149588966,False,False,False
+pcb_trace_147,.D2 > .pin3 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000013,False,False,False
+pcb_trace_148,.U12 > .pin1 to net.GND,GND,0.3,0.3,0.3,0.3,0.39999999999999947,False,False,False
+pcb_trace_149,.J6 > .pin1 to net.GND,GND,0.3,0.3,0.3,0.3,0.3999999999999986,False,False,False
+pcb_trace_150,.J6 > .pin7 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_151,.J6 > .pin8 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_152,.R33 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_153,.R34 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_154,.R37 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6,False,False,False
+pcb_trace_155,.C30 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_156,.C31 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_157,.C32 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_158,.U16 > .pin4 to net.GND,GND,0.3,0.3,0.3,0.3,0.3999999999999986,False,False,False
+pcb_trace_159,.U16 > .pin5 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000036,False,False,False
+pcb_trace_160,.U16 > .pin17 to net.GND,GND,0.3,0.3,0.3,0.3,1.3999995139897325,False,False,False
+pcb_trace_161,.C1 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_162,.C2 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_163,.C3 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_164,.R1 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_165,.R2 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_166,.C4 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_167,.C5 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_168,.R6 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999999,False,False,False
+pcb_trace_169,.U13 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_170,.U14 > .pin7 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000036,False,False,False
+pcb_trace_171,.U14 > .pin8 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000036,False,False,False
+pcb_trace_172,.U14 > .pin9 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000036,False,False,False
+pcb_trace_173,.U14 > .pin10 to net.GND,GND,0.3,0.3,0.3,0.3,0.3999999999999986,False,False,False
+pcb_trace_174,.U14 > .pin19 to net.GND,GND,0.3,0.3,0.3,0.3,1.0,False,False,False
+pcb_trace_175,.C40 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_176,.C41 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_177,.C42 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_178,.C43 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_179,.R40 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_180,.R41 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_181,.R47 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_182,.R48 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_183,.R43 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_184,.R49 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999999,False,False,False
+pcb_trace_185,.R44 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_186,.R50 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999999,False,False,False
+pcb_trace_187,.R45 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_188,.R51 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_189,.R46 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_190,.U3 > .pin3 to net.GND,GND,0.3,0.3,0.3,0.3,0.3999999999999999,False,False,False
+pcb_trace_191,.U3 > .pin11 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000036,False,False,False
+pcb_trace_192,.U3 > .pin15 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000213,False,False,False
+pcb_trace_193,.U3 > .pin17 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_194,.Q1 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.4,False,False,False
+pcb_trace_195,.C50 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999979,False,False,False
+pcb_trace_196,.C51 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_197,.R61 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_198,.R64 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_199,.R68 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_200,.R69 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_201,.R70 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_202,.U22 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_203,.Q9 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.40000000000000036,False,False,False
+pcb_trace_204,.C70 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_205,.C71 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_206,.R82 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_207,.R84 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_208,.R85 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999979,False,False,False
+pcb_trace_209,.U23 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999979,False,False,False
+pcb_trace_210,.U24 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_211,.C73 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_212,.C74 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_213,.C75 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_214,.R86 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_215,.R87 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_216,.R90 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_217,.R91 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999979,False,False,False
+pcb_trace_218,.R94 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_219,.R95 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_220,.U26 > .pin3 to net.GND,GND,0.3,0.3,0.3,0.3,0.3999999999999986,False,False,False
+pcb_trace_221,.R99 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999979,False,False,False
+pcb_trace_222,.C78 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_223,.U25 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_224,.R97 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_225,.C76 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_226,.C77 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_227,.U4 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.39999959999999746,False,False,False
+pcb_trace_228,.C80 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_229,.C81 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_230,.U7 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_231,.R26 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_232,.R30 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_233,.C25 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_234,.C26 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_235,.SW1 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_236,.SW2 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_237,.SW5 > .pin3 to net.GND,GND,0.3,0.3,0.3,0.3,0.400000000000153,False,False,False
+pcb_trace_238,.SW5 > .pin4 to net.GND,GND,0.3,0.3,0.3,0.3,0.4000003499999991,False,False,False
+pcb_trace_239,.R102 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_240,.R104 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000001,False,False,False
+pcb_trace_241,.C84 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_242,.C85 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.6000000000000005,False,False,False
+pcb_trace_243,.TP1 > .pin1 to net.GND,GND,0.3,0.3,0.3,0.3,0.5999999999999996,False,False,False
+pcb_trace_244,.J6 > .pin7 to net.GND,GND,0.3,0.3,0.3,0.3,1.2026637102698337,False,False,False
+pcb_trace_245,.C51 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,1.1999995803749264,False,False,False
+pcb_trace_246,.R87 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_247,.R97 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_248,.R102 > .pin2 to net.GND,GND,0.3,0.3,0.3,0.3,0.7999999999999972,False,False,False
+pcb_trace_249,.U1 > .pin24 to .R103 > .pin1,MCU_BACKLIGHT_PWM,0.2,,0.2,0.2,10.03214649982014,False,False,False
+pcb_trace_250,.U4 > .pin1 to net.MIC_WS,MIC_WS,0.2,,0.2,0.2,33.96318215093769,False,False,False
+pcb_trace_251,.J1 > .pin14 to net.GND,GND,0.2,0.3,0.2,0.2,0.39999970000005,False,False,True
+pcb_trace_252,.U16 > .pin8 to net.GND,GND,0.2,0.3,0.2,0.2,0.6000000000000014,False,False,True
+pcb_trace_253,.U27 > .pin7 to net.GND,GND,0.2,0.3,0.2,0.2,0.6000000000000014,False,False,True
+pcb_trace_254,.U27 > .pin14 to net.GND,GND,0.2,0.3,0.2,0.2,0.6000000000000014,False,False,True
+pcb_trace_255,.U27 > .pin17 to net.GND,GND,0.2,0.3,0.2,0.2,0.7999999999999998,False,False,True
+pcb_trace_256,.C85 > .pin1 to net.LCD_BACKLIGHT_OUTPUT,LCD_BACKLIGHT_OUTPUT,0.3,0.3,0.3,0.3,1.6000002122756116,False,False,False
+pcb_trace_257,.R103 > .pin2 to net.BACKLIGHT_GATE,BACKLIGHT_GATE,0.3,,0.3,0.3,0.6000000000000014,False,False,False
+pcb_trace_258,.U4 > .pin4 to net.MIC_BCLK,MIC_BCLK,0.2,,0.2,0.2,168.2535734110797,False,False,False
+pcb_trace_259,.Q1 > .pin3 to net.AUDIO_PMOS_GATE,AUDIO_PMOS_GATE,0.3,,0.3,0.3,3.8886319909592952,False,False,False
+pcb_trace_260,.R62 > .pin2 to net.AUDIO_PMOS_GATE,AUDIO_PMOS_GATE,0.3,,0.3,0.3,0.9999996503124393,False,False,False
+pcb_trace_261,.U1 > .pin27 to net.MCU_BOOT_N,MCU_BOOT_N,0.3,,0.3,0.3,1.000000256530212,False,False,False
+pcb_trace_262,.J6 > .pin4 to net.MCU_BOOT_N,MCU_BOOT_N,0.3,,0.3,0.3,1.5999999999999996,False,False,False
+pcb_trace_263,.SW1 > .pin1 to net.MCU_BOOT_N,MCU_BOOT_N,0.3,,0.3,0.3,2.8000000000000007,False,False,False
+pcb_trace_264,.U23 > .pin3 to net.HOLD_HARDWARE,HOLD_HARDWARE,0.3,,0.3,0.3,2.599999956837694,False,False,False
+pcb_trace_265,.U26 > .pin2 to net.HOLD_HARDWARE,HOLD_HARDWARE,0.3,,0.3,0.3,1.0,False,False,False
+pcb_trace_266,.U1 > .pin19 to net.MCU_LCD_SDA,MCU_LCD_SDA,0.3,,0.3,0.3,3.0000003000000017,False,False,False
+pcb_trace_267,.U14 > .pin6 to net.MCU_LCD_SDA,MCU_LCD_SDA,0.3,,0.3,0.3,1.3999999999999995,False,False,False
+pcb_trace_268,.U1 > .pin8 to net.MCU_MIC_BCLK,MCU_MIC_BCLK,0.3,,0.3,0.3,1.2000000000000333,False,False,False
+pcb_trace_269,.R88 > .pin1 to net.MCU_MIC_BCLK,MCU_MIC_BCLK,0.3,,0.3,0.3,0.9999996503124393,False,False,False
+pcb_trace_270,.U1 > .pin9 to net.MCU_MIC_WS,MCU_MIC_WS,0.3,,0.3,0.3,1.2000000000000333,False,False,False
+pcb_trace_271,.R89 > .pin1 to net.MCU_MIC_WS,MCU_MIC_WS,0.3,,0.3,0.3,0.7999999999999998,False,False,False
+pcb_trace_272,.U1 > .pin10 to net.MCU_MIC_SD,MCU_MIC_SD,0.3,,0.3,0.3,1.2000000000000333,False,False,False
+pcb_trace_273,.R27 > .pin2 to net.MCU_MIC_SD,MCU_MIC_SD,0.3,,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_274,.U1 > .pin20 to net.MCU_LCD_SCLK,MCU_LCD_SCLK,0.3,,0.3,0.3,3.0000003000000017,False,False,False
+pcb_trace_275,.U14 > .pin5 to net.MCU_LCD_SCLK,MCU_LCD_SCLK,0.3,,0.3,0.3,1.97870384406055,False,False,False
+pcb_trace_276,.U1 > .pin21 to net.MCU_LCD_DC,MCU_LCD_DC,0.3,,0.3,0.3,3.200000300000001,False,False,False
+pcb_trace_277,.U14 > .pin4 to net.MCU_LCD_DC,MCU_LCD_DC,0.3,,0.3,0.3,3.2391558454560805,False,False,False
+pcb_trace_278,.U14 > .pin18 to net.LCD_CS_N,LCD_CS_N,0.3,,0.3,0.3,3.0,False,False,False
+pcb_trace_279,.R42 > .pin1 to net.LCD_CS_N,LCD_CS_N,0.3,,0.3,0.3,0.8000000000000007,False,False,False
+pcb_trace_280,.C73 > .pin1 to net.MIC_INPUT,MIC_INPUT,0.3,0.3,0.3,0.3,32.280328692343105,False,False,False
+saved_phase_null_0_0,U2.pin7 to L1.pin2,,1,,0.275,1,2.440854338757703,False,True,False
+saved_phase_null_0_1,U2.pin9 to L1.pin1,,1,,0.275,1,2.4408543392656448,False,True,False
+saved_phase_null_1_0,R5.pin2 to net.REG_FB,REG_FB,,,0.2,0.2,2.0,False,False,False
+saved_phase_null_1_1,R5.pin2 to net.REG_FB,REG_FB,,,0.2,0.2,3.3556973444464524,False,False,False
+saved_phase_null_2_0,J1.pin12 to net.USB_CC2,USB_CC2,,,0.2,0.2,3.383291824593562,False,False,False
+saved_phase_null_2_1,U26.pin4 to net.HOLD_BUFFER_OUT,HOLD_BUFFER_OUT,,,0.2,0.2,3.069302018693205,False,False,False
+saved_phase_null_3_0,U16.pin12 to net.CHARGER_ILIM,CHARGER_ILIM,,,0.2,0.2,32.39658105459444,False,False,False
+saved_phase_null_5_0,R65.pin2 to net.AMP_DIN,AMP_DIN,,,0.2,0.2,6.624101373417416,False,False,False
+saved_phase_null_5_1,R68.pin1 to net.AMP_DIN,AMP_DIN,,,0.2,0.2,12.213631493931185,False,False,False
+saved_phase_null_7_0,U27.pin1 to R102.pin1,,,,0.2,0.2,2.622795044346754,False,False,False
+saved_phase_null_8_0,U27.pin10 to C82.pin1,,0.27,,0.27,0.27,2.436409054327118,False,False,False
+saved_phase_null_9_0,U27.pin11 to C82.pin2,,0.27,,0.27,0.27,2.436409045295902,False,False,False
+saved_phase_null_10_0,U27.pin9 to C83.pin1,,0.3,,0.3,0.3,5.275851732852112,False,False,False
+saved_phase_null_11_0,U27.pin12 to C83.pin2,,0.3,,0.3,0.3,5.093526152000032,False,False,False
+saved_phase_null_13_0,R7.pin2 to net.REG_PG,REG_PG,,,0.2,0.2,17.929869336540648,False,False,False
+saved_phase_null_14_0,U1.pin23 to net.MCU_HOLD_READ,MCU_HOLD_READ,,,0.2,0.2,33.17435096060415,False,False,False
+saved_phase_null_15_0,R83.pin1 to net.MCU_HAPTIC_ENABLE,MCU_HAPTIC_ENABLE,,,0.2,0.2,2.128048343559643,False,False,False
+saved_phase_null_15_1,U22.pin3 to net.MCU_HAPTIC_ENABLE,MCU_HAPTIC_ENABLE,,,0.2,0.2,18.242396727759473,False,False,False
+saved_phase_null_15_2,U1.pin5 to net.MCU_HAPTIC_ENABLE,MCU_HAPTIC_ENABLE,,,0.2,0.2,50.93714274643641,False,False,False
+saved_phase_null_18_0,U1.pin17 to net.MCU_AUDIO_BCLK,MCU_AUDIO_BCLK,,,0.2,0.2,26.372927187697915,False,False,False
+saved_phase_null_19_0,U1.pin7 to net.MCU_AUDIO_DIN,MCU_AUDIO_DIN,,,0.2,0.2,32.15183399054663,False,False,False
+saved_phase_null_21_0,U16.pin1 to net.PACK_NTC,PACK_NTC,,,0.2,0.2,98.79649727919508,False,False,False
+saved_phase_null_22_0,R38.pin2 to net.SERVICE_UART_TX,SERVICE_UART_TX,,,0.2,0.2,82.4714448082852,False,False,False
+saved_phase_null_22_1,U1.pin37 to net.MCU_UART_TX,MCU_UART_TX,,,0.2,0.2,20.22243077221903,False,False,False
+saved_phase_null_22_2,U1.pin36 to net.MCU_UART_RX,MCU_UART_RX,,,0.2,0.2,62.69769500289553,False,False,False

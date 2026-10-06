@@ -1,0 +1,221 @@
+import regulatorPgoodPaths from "../../routes/a7/regulator-pgood-reroute.json"
+import serviceUartPaths from "../../routes/a7/service-uart.json"
+import chargerNtcPaths from "../../routes/a7/charger-ntc.json"
+import mcuAmplifierDinPaths from "../../routes/a7/mcu-amplifier-din.json"
+import mcuAmplifierBclkPaths from "../../routes/a7/mcu-amplifier-bclk.json"
+import hapticEnablePaths from "../../routes/a7/haptic-enable.json"
+import holdReadbackPaths from "../../routes/a7/hold-readback.json"
+import { fanoutTracePath } from "@tscircuit/props"
+import regulatorPaths from "../../routes/a3/regulator.json"
+import regulatorControlPaths from "../../routes/a7/regulator-feedback-retained.json"
+import chargerCurrentLimitPaths from "../../routes/a5/charger-current-limit.json"
+import independentControlPaths from "../../routes/a5/independent-control-signals.json"
+import groundPlaneOutline from "./ground-plane-outline.json"
+
+import amplifierDinPaths from "../../routes/a6/amplifier-din.json"
+
+import backlightCurrentSettingPaths from "../../routes/a6/backlight-current-setting.json"
+
+import backlightC1PositivePaths from "../../routes/a6/backlight-c1-positive.json"
+
+import backlightC1NegativePaths from "../../routes/a6/backlight-c1-negative.json"
+
+import backlightC2PositivePaths from "../../routes/a6/backlight-c2-positive.json"
+
+import backlightC2NegativePaths from "../../routes/a6/backlight-c2-negative.json"
+
+const routingTolerances = {
+  minTraceWidth: 0.2,
+  minTraceToPadEdgeClearance: 0.2,
+  minTraceToHoleEdgeClearance: 0.25,
+  minPadEdgeToPadEdgeClearance: 0.1,
+  minBoardEdgeClearance: 0.25,
+  minViaEdgeToPadEdgeClearance: 0.2,
+  minViaHoleDiameter: 0.3,
+  minViaPadDiameter: 0.7,
+} as const
+
+// Native phases. Their original events/paths must be preserved before edits.
+export function BoardRouting({ placementOnly = false }: { placementOnly?: boolean } = {}) {
+  return (
+    <>
+      {!placementOnly && (
+        <>
+          <copperpour
+            name="L2_GND"
+            layer="inner1"
+            connectsTo="net.GND"
+            unbroken
+            clearance={0.21}
+            // The explicit perimeter is already inset 0.25 mm from the board.
+            boardEdgeMargin={0}
+            outline={groundPlaneOutline.outline}
+            cutoutMargin={0.26}
+            useThermalReliefs={false}
+          />
+          {groundPlaneOutline.top_regions.map((outline, index) => (
+            <copperpour
+              name={`TOP_GND_${index}`}
+              layer="top"
+              connectsTo="net.GND"
+              outline={outline}
+              clearance={0.21}
+              cutoutMargin={0.26}
+              boardEdgeMargin={0}
+              coveredWithSolderMask
+              useThermalReliefs={false}
+            />
+          ))}
+
+          <autoroutingphase
+            name="regulator-switching"
+            phaseIndex={0}
+            pcbTracePaths={fanoutTracePath.array().parse(regulatorPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="regulator-feedback-status"
+            phaseIndex={1}
+            pcbTracePaths={fanoutTracePath.array().parse(regulatorControlPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="independent-control-signals"
+            phaseIndex={2}
+            // Retire the USB_CC1 top detour before routing the charger pin escapes.
+            // Preserve the original solver cache; its replacement is a manual path.
+            pcbTracePaths={fanoutTracePath
+              .array()
+              .parse(independentControlPaths.filter((path) => path.connection !== ".J1 > port.A5"))}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="charger-current-limit"
+            phaseIndex={3}
+            pcbTracePaths={fanoutTracePath.array().parse(chargerCurrentLimitPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+
+          <autoroutingphase
+            name="amplifier-din"
+            phaseIndex={5}
+            pcbTracePaths={fanoutTracePath.array().parse(amplifierDinPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="backlight-current-setting"
+            phaseIndex={7}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightCurrentSettingPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="backlight-c1-positive"
+            phaseIndex={8}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC1PositivePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.27}
+          />
+          <autoroutingphase
+            name="backlight-c1-negative"
+            phaseIndex={9}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC1NegativePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.27}
+          />
+          <autoroutingphase
+            name="backlight-c2-positive"
+            phaseIndex={10}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC2PositivePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.3}
+          />
+          <autoroutingphase
+            name="backlight-c2-negative"
+            phaseIndex={11}
+            pcbTracePaths={fanoutTracePath.array().parse(backlightC2NegativePaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+            minTraceWidth={0.3}
+          />
+          <autoroutingphase
+            name="regulator-pgood-reroute"
+            phaseIndex={13}
+            pcbTracePaths={fanoutTracePath.array().parse(regulatorPgoodPaths)}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="hold-readback"
+            pcbTracePaths={fanoutTracePath.array().parse(holdReadbackPaths)}
+            phaseIndex={14}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="haptic-enable"
+            pcbTracePaths={fanoutTracePath.array().parse(hapticEnablePaths)}
+            phaseIndex={15}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+
+          <autoroutingphase
+            name="mcu-amplifier-bclk"
+            pcbTracePaths={fanoutTracePath.array().parse(mcuAmplifierBclkPaths)}
+            phaseIndex={18}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="mcu-amplifier-din"
+            pcbTracePaths={fanoutTracePath.array().parse(mcuAmplifierDinPaths)}
+            phaseIndex={19}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="charger-ntc"
+            pcbTracePaths={fanoutTracePath.array().parse(chargerNtcPaths)}
+            phaseIndex={21}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+          <autoroutingphase
+            name="service-uart"
+            pcbTracePaths={fanoutTracePath.array().parse(serviceUartPaths)}
+            phaseIndex={22}
+            autorouter={{ preset: "auto_local", allowViaInPad: false, traceClearance: 0.2 }}
+            {...routingTolerances}
+          />
+        </>
+      )}
+
+      <differentialpair
+        name="USB_MCU"
+        positiveConnection=".U1 > .pin14"
+        negativeConnection=".U1 > .pin13"
+        maxLengthSkew={0.5}
+        targetDifferentialImpedance={90}
+        pcbTraceGap={0.2101}
+        maxUncoupledLength={5}
+      />
+      <differentialpair
+        name="SPEAKER_OUTPUT"
+        positiveConnection=".J4 > .pin1"
+        negativeConnection=".J4 > .pin2"
+        maxLengthSkew={2}
+        pcbTraceGap={0.2}
+        maxUncoupledLength={5}
+      />
+    </>
+  )
+}

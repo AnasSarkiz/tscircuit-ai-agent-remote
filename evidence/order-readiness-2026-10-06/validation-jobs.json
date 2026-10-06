@@ -1,0 +1,110 @@
+[
+  {
+    "name": "format-test-final",
+    "seconds": 60,
+    "command": [
+      "bun",
+      "node_modules/.bin/biome",
+      "format",
+      "--write",
+      "tests/current-board-manufacturer-connections.test.ts"
+    ]
+  },
+  {
+    "name": "typecheck",
+    "seconds": 90,
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ]
+  },
+  {
+    "name": "board-tests",
+    "seconds": 90,
+    "command": [
+      "bun",
+      "run",
+      "test"
+    ]
+  },
+  {
+    "name": "check-pin-specification",
+    "seconds": 150,
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "name": "check-source",
+    "seconds": 150,
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "name": "check-schematic-placement",
+    "seconds": 150,
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "name": "check-placement",
+    "seconds": 90,
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "placement",
+      "evidence/order-readiness-2026-10-06/native-build/circuit.json"
+    ]
+  },
+  {
+    "name": "check-gerber-export",
+    "seconds": 90,
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "export",
+      "evidence/order-readiness-2026-10-06/native-build/circuit.json",
+      "--format",
+      "gerbers",
+      "--output",
+      "evidence/order-readiness-2026-10-06/NOT-FOR-FABRICATION-gerbers.zip"
+    ]
+  },
+  {
+    "name": "check-shorts-gerber",
+    "seconds": 90,
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "shorts",
+      "evidence/order-readiness-2026-10-06/native-build/circuit.json"
+    ]
+  },
+  {
+    "name": "render-review",
+    "seconds": 120,
+    "command": [
+      "bun",
+      "scripts/routing/render-copper-review.mjs",
+      "evidence/order-readiness-2026-10-06/native-build/circuit.json",
+      "evidence/order-readiness-2026-10-06/visual-review"
+    ]
+  }
+]

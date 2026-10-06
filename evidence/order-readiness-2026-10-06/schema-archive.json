@@ -1,0 +1,10 @@
+{
+  "original": "schema-audit.json",
+  "original_bytes": 76382847,
+  "original_sha256": "0420c4448a794d3954dba2cc76076b1effc4ec532ac11bbaf37f9b75a2cde1eb",
+  "archive": "schema-audit.json.gz",
+  "archive_bytes": 2634592,
+  "archive_sha256": "bd0b0558ec2c9ce77c351c44aa5238fac2f70cea14f1c04f866f4a61cc080ef4",
+  "verified_exact_original_bytes_before_removal": true,
+  "restore": "gzip -dk schema-audit.json.gz"
+}

@@ -1,0 +1,4343 @@
+{
+  "source_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+  "scope": "Specific unmodified installed schemas for the five types that failed the full any_circuit_element audit; full union failure tree separately archived. This does not replace or relax full schema validation.",
+  "failing_elements": 169,
+  "failures": [
+    {
+      "index": 1752,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1766,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1776,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1802,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1824,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1837,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1857,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1864,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1872,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1888,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1897,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1908,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1909,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1910,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 1919,
+      "type": "schematic_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "subcircuit_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 3143,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3144,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3145,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3146,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3147,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3148,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3149,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3150,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3151,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3152,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3153,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3154,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3155,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3156,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3157,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3158,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3159,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3160,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3161,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3162,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3163,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3164,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3165,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3166,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3167,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3168,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3169,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3170,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3171,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3172,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3173,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3174,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3175,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3176,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3177,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3178,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3179,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3180,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3181,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3182,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3183,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3184,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3185,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3186,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3187,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3188,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3189,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3190,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3191,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3192,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3193,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3194,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3195,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3196,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3197,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3198,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3199,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3200,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3201,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3202,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3203,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3204,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3205,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3206,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3207,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3208,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3209,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3210,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3211,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3212,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3213,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3214,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3215,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3216,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3217,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3218,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3219,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3220,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3221,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3222,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3223,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3224,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3225,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3226,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3227,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3228,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3229,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3230,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3231,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3232,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3233,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3234,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3235,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3236,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3237,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3238,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3239,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3240,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3241,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3242,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3243,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3244,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3245,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3246,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3247,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3248,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3249,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3250,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3251,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3252,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3253,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3254,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3255,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3256,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3257,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3258,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3259,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3260,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3261,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3262,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3263,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3264,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3265,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3266,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3267,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3268,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3269,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3270,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3271,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3272,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3273,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3274,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3275,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3276,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3277,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3278,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3279,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3280,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3281,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3282,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3283,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 3284,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3285,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3286,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3287,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3288,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3289,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3290,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3291,
+      "type": "pcb_component",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_x"
+          ],
+          "message": "Expected string, received number"
+        },
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "number",
+          "path": [
+            "display_offset_y"
+          ],
+          "message": "Expected string, received number"
+        }
+      ]
+    },
+    {
+      "index": 3292,
+      "type": "pcb_group",
+      "issues": [
+        {
+          "expected": "'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right'",
+          "received": "null",
+          "code": "invalid_type",
+          "path": [
+            "anchor_alignment"
+          ],
+          "message": "Expected 'top_left' | 'top_center' | 'top_right' | 'center_left' | 'center' | 'center_right' | 'bottom_left' | 'bottom_center' | 'bottom_right', received null"
+        }
+      ]
+    },
+    {
+      "index": 5023,
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 5024,
+      "type": "pcb_silkscreen_text",
+      "issues": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "null",
+          "path": [
+            "pcb_component_id"
+          ],
+          "message": "Expected string, received null"
+        }
+      ]
+    },
+    {
+      "index": 5138,
+      "type": "pcb_hole",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "unionErrors": [
+            {
+              "issues": [
+                {
+                  "code": "invalid_union",
+                  "unionErrors": [
+                    {
+                      "issues": [
+                        {
+                          "code": "invalid_union",
+                          "unionErrors": [
+                            {
+                              "issues": [
+                                {
+                                  "code": "invalid_union",
+                                  "unionErrors": [
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_union",
+                                          "unionErrors": [
+                                            {
+                                              "issues": [
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "string",
+                                                  "received": "null",
+                                                  "path": [
+                                                    "pcb_component_id"
+                                                  ],
+                                                  "message": "Expected string, received null"
+                                                }
+                                              ],
+                                              "name": "ZodError"
+                                            },
+                                            {
+                                              "issues": [
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "string",
+                                                  "received": "null",
+                                                  "path": [
+                                                    "pcb_component_id"
+                                                  ],
+                                                  "message": "Expected string, received null"
+                                                },
+                                                {
+                                                  "received": "circle",
+                                                  "code": "invalid_literal",
+                                                  "expected": "oval",
+                                                  "path": [
+                                                    "hole_shape"
+                                                  ],
+                                                  "message": "Invalid literal value, expected \"oval\""
+                                                },
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "number",
+                                                  "received": "undefined",
+                                                  "path": [
+                                                    "hole_width"
+                                                  ],
+                                                  "message": "Required"
+                                                },
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "number",
+                                                  "received": "undefined",
+                                                  "path": [
+                                                    "hole_height"
+                                                  ],
+                                                  "message": "Required"
+                                                }
+                                              ],
+                                              "name": "ZodError"
+                                            }
+                                          ],
+                                          "path": [],
+                                          "message": "Invalid input"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    },
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "string",
+                                          "received": "null",
+                                          "path": [
+                                            "pcb_component_id"
+                                          ],
+                                          "message": "Expected string, received null"
+                                        },
+                                        {
+                                          "received": "circle",
+                                          "code": "invalid_literal",
+                                          "expected": "pill",
+                                          "path": [
+                                            "hole_shape"
+                                          ],
+                                          "message": "Invalid literal value, expected \"pill\""
+                                        },
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "number",
+                                          "received": "undefined",
+                                          "path": [
+                                            "hole_width"
+                                          ],
+                                          "message": "Required"
+                                        },
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "number",
+                                          "received": "undefined",
+                                          "path": [
+                                            "hole_height"
+                                          ],
+                                          "message": "Required"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    }
+                                  ],
+                                  "path": [],
+                                  "message": "Invalid input"
+                                }
+                              ],
+                              "name": "ZodError"
+                            },
+                            {
+                              "issues": [
+                                {
+                                  "code": "invalid_type",
+                                  "expected": "string",
+                                  "received": "null",
+                                  "path": [
+                                    "pcb_component_id"
+                                  ],
+                                  "message": "Expected string, received null"
+                                },
+                                {
+                                  "received": "circle",
+                                  "code": "invalid_literal",
+                                  "expected": "rotated_pill",
+                                  "path": [
+                                    "hole_shape"
+                                  ],
+                                  "message": "Invalid literal value, expected \"rotated_pill\""
+                                },
+                                {
+                                  "code": "invalid_type",
+                                  "expected": "number",
+                                  "received": "undefined",
+                                  "path": [
+                                    "hole_width"
+                                  ],
+                                  "message": "Required"
+                                },
+                                {
+                                  "code": "invalid_type",
+                                  "expected": "number",
+                                  "received": "undefined",
+                                  "path": [
+                                    "hole_height"
+                                  ],
+                                  "message": "Required"
+                                },
+                                {
+                                  "code": "invalid_union",
+                                  "unionErrors": [
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "string",
+                                          "received": "undefined",
+                                          "path": [
+                                            "ccw_rotation"
+                                          ],
+                                          "message": "Required"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    },
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "number",
+                                          "received": "undefined",
+                                          "path": [
+                                            "ccw_rotation"
+                                          ],
+                                          "message": "Required"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    }
+                                  ],
+                                  "path": [
+                                    "ccw_rotation"
+                                  ],
+                                  "message": "Invalid input"
+                                }
+                              ],
+                              "name": "ZodError"
+                            }
+                          ],
+                          "path": [],
+                          "message": "Invalid input"
+                        }
+                      ],
+                      "name": "ZodError"
+                    },
+                    {
+                      "issues": [
+                        {
+                          "code": "invalid_type",
+                          "expected": "string",
+                          "received": "null",
+                          "path": [
+                            "pcb_component_id"
+                          ],
+                          "message": "Expected string, received null"
+                        }
+                      ],
+                      "name": "ZodError"
+                    }
+                  ],
+                  "path": [],
+                  "message": "Invalid input"
+                }
+              ],
+              "name": "ZodError"
+            },
+            {
+              "issues": [
+                {
+                  "code": "invalid_type",
+                  "expected": "string",
+                  "received": "null",
+                  "path": [
+                    "pcb_component_id"
+                  ],
+                  "message": "Expected string, received null"
+                },
+                {
+                  "received": "circle",
+                  "code": "invalid_literal",
+                  "expected": "rect",
+                  "path": [
+                    "hole_shape"
+                  ],
+                  "message": "Invalid literal value, expected \"rect\""
+                },
+                {
+                  "code": "invalid_type",
+                  "expected": "number",
+                  "received": "undefined",
+                  "path": [
+                    "hole_width"
+                  ],
+                  "message": "Required"
+                },
+                {
+                  "code": "invalid_type",
+                  "expected": "number",
+                  "received": "undefined",
+                  "path": [
+                    "hole_height"
+                  ],
+                  "message": "Required"
+                }
+              ],
+              "name": "ZodError"
+            }
+          ],
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    },
+    {
+      "index": 5141,
+      "type": "pcb_hole",
+      "issues": [
+        {
+          "code": "invalid_union",
+          "unionErrors": [
+            {
+              "issues": [
+                {
+                  "code": "invalid_union",
+                  "unionErrors": [
+                    {
+                      "issues": [
+                        {
+                          "code": "invalid_union",
+                          "unionErrors": [
+                            {
+                              "issues": [
+                                {
+                                  "code": "invalid_union",
+                                  "unionErrors": [
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_union",
+                                          "unionErrors": [
+                                            {
+                                              "issues": [
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "string",
+                                                  "received": "null",
+                                                  "path": [
+                                                    "pcb_component_id"
+                                                  ],
+                                                  "message": "Expected string, received null"
+                                                }
+                                              ],
+                                              "name": "ZodError"
+                                            },
+                                            {
+                                              "issues": [
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "string",
+                                                  "received": "null",
+                                                  "path": [
+                                                    "pcb_component_id"
+                                                  ],
+                                                  "message": "Expected string, received null"
+                                                },
+                                                {
+                                                  "received": "circle",
+                                                  "code": "invalid_literal",
+                                                  "expected": "oval",
+                                                  "path": [
+                                                    "hole_shape"
+                                                  ],
+                                                  "message": "Invalid literal value, expected \"oval\""
+                                                },
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "number",
+                                                  "received": "undefined",
+                                                  "path": [
+                                                    "hole_width"
+                                                  ],
+                                                  "message": "Required"
+                                                },
+                                                {
+                                                  "code": "invalid_type",
+                                                  "expected": "number",
+                                                  "received": "undefined",
+                                                  "path": [
+                                                    "hole_height"
+                                                  ],
+                                                  "message": "Required"
+                                                }
+                                              ],
+                                              "name": "ZodError"
+                                            }
+                                          ],
+                                          "path": [],
+                                          "message": "Invalid input"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    },
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "string",
+                                          "received": "null",
+                                          "path": [
+                                            "pcb_component_id"
+                                          ],
+                                          "message": "Expected string, received null"
+                                        },
+                                        {
+                                          "received": "circle",
+                                          "code": "invalid_literal",
+                                          "expected": "pill",
+                                          "path": [
+                                            "hole_shape"
+                                          ],
+                                          "message": "Invalid literal value, expected \"pill\""
+                                        },
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "number",
+                                          "received": "undefined",
+                                          "path": [
+                                            "hole_width"
+                                          ],
+                                          "message": "Required"
+                                        },
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "number",
+                                          "received": "undefined",
+                                          "path": [
+                                            "hole_height"
+                                          ],
+                                          "message": "Required"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    }
+                                  ],
+                                  "path": [],
+                                  "message": "Invalid input"
+                                }
+                              ],
+                              "name": "ZodError"
+                            },
+                            {
+                              "issues": [
+                                {
+                                  "code": "invalid_type",
+                                  "expected": "string",
+                                  "received": "null",
+                                  "path": [
+                                    "pcb_component_id"
+                                  ],
+                                  "message": "Expected string, received null"
+                                },
+                                {
+                                  "received": "circle",
+                                  "code": "invalid_literal",
+                                  "expected": "rotated_pill",
+                                  "path": [
+                                    "hole_shape"
+                                  ],
+                                  "message": "Invalid literal value, expected \"rotated_pill\""
+                                },
+                                {
+                                  "code": "invalid_type",
+                                  "expected": "number",
+                                  "received": "undefined",
+                                  "path": [
+                                    "hole_width"
+                                  ],
+                                  "message": "Required"
+                                },
+                                {
+                                  "code": "invalid_type",
+                                  "expected": "number",
+                                  "received": "undefined",
+                                  "path": [
+                                    "hole_height"
+                                  ],
+                                  "message": "Required"
+                                },
+                                {
+                                  "code": "invalid_union",
+                                  "unionErrors": [
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "string",
+                                          "received": "undefined",
+                                          "path": [
+                                            "ccw_rotation"
+                                          ],
+                                          "message": "Required"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    },
+                                    {
+                                      "issues": [
+                                        {
+                                          "code": "invalid_type",
+                                          "expected": "number",
+                                          "received": "undefined",
+                                          "path": [
+                                            "ccw_rotation"
+                                          ],
+                                          "message": "Required"
+                                        }
+                                      ],
+                                      "name": "ZodError"
+                                    }
+                                  ],
+                                  "path": [
+                                    "ccw_rotation"
+                                  ],
+                                  "message": "Invalid input"
+                                }
+                              ],
+                              "name": "ZodError"
+                            }
+                          ],
+                          "path": [],
+                          "message": "Invalid input"
+                        }
+                      ],
+                      "name": "ZodError"
+                    },
+                    {
+                      "issues": [
+                        {
+                          "code": "invalid_type",
+                          "expected": "string",
+                          "received": "null",
+                          "path": [
+                            "pcb_component_id"
+                          ],
+                          "message": "Expected string, received null"
+                        }
+                      ],
+                      "name": "ZodError"
+                    }
+                  ],
+                  "path": [],
+                  "message": "Invalid input"
+                }
+              ],
+              "name": "ZodError"
+            },
+            {
+              "issues": [
+                {
+                  "code": "invalid_type",
+                  "expected": "string",
+                  "received": "null",
+                  "path": [
+                    "pcb_component_id"
+                  ],
+                  "message": "Expected string, received null"
+                },
+                {
+                  "received": "circle",
+                  "code": "invalid_literal",
+                  "expected": "rect",
+                  "path": [
+                    "hole_shape"
+                  ],
+                  "message": "Invalid literal value, expected \"rect\""
+                },
+                {
+                  "code": "invalid_type",
+                  "expected": "number",
+                  "received": "undefined",
+                  "path": [
+                    "hole_width"
+                  ],
+                  "message": "Required"
+                },
+                {
+                  "code": "invalid_type",
+                  "expected": "number",
+                  "received": "undefined",
+                  "path": [
+                    "hole_height"
+                  ],
+                  "message": "Required"
+                }
+              ],
+              "name": "ZodError"
+            }
+          ],
+          "path": [],
+          "message": "Invalid input"
+        }
+      ]
+    }
+  ]
+}
