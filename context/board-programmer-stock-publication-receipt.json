@@ -1,0 +1,44 @@
+{
+  "checked_at_utc": "2026-10-06T12:07:11.313683+00:00",
+  "review_commit": "65ac1128ce1968e9f85119c602020b49031ec316",
+  "public_repository": true,
+  "anonymous_public_api_verified": true,
+  "remote_main_matches_review_commit": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/65ac1128ce1968e9f85119c602020b49031ec316/dist/index/circuit.json",
+      "anonymous_http_status": 200,
+      "local_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+      "remote_sha256": "81c31f77ac0871bfc4414b0940752e4f4fe0692a62089320b409908d4a8d5315",
+      "byte_identical": true
+    },
+    {
+      "path": "evidence/board-programmer-stock-review-2026-10-06/review.md",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/65ac1128ce1968e9f85119c602020b49031ec316/evidence/board-programmer-stock-review-2026-10-06/review.md",
+      "anonymous_http_status": 200,
+      "local_sha256": "20151b2ea74cb939232c5049b8cbd22d9bdbdc66a469dd4190a26909625cb87a",
+      "remote_sha256": "20151b2ea74cb939232c5049b8cbd22d9bdbdc66a469dd4190a26909625cb87a",
+      "byte_identical": true
+    },
+    {
+      "path": "evidence/board-programmer-stock-review-2026-10-06/stock-audit.csv",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/65ac1128ce1968e9f85119c602020b49031ec316/evidence/board-programmer-stock-review-2026-10-06/stock-audit.csv",
+      "anonymous_http_status": 200,
+      "local_sha256": "4a7cd57bcf2edd6ace73dfcd6cc221e45504af1a1e9d6617977f48d87e314c00",
+      "remote_sha256": "4a7cd57bcf2edd6ace73dfcd6cc221e45504af1a1e9d6617977f48d87e314c00",
+      "byte_identical": true
+    },
+    {
+      "path": "evidence/board-programmer-stock-review-2026-10-06/programmer-compatibility.json",
+      "url": "https://raw.githubusercontent.com/AnasSarkiz/tscircuit-ai-agent-remote/65ac1128ce1968e9f85119c602020b49031ec316/evidence/board-programmer-stock-review-2026-10-06/programmer-compatibility.json",
+      "anonymous_http_status": 200,
+      "local_sha256": "005c953ffd366de8a04659b1d5283ac0e29e285ca5d6d0bc7a68c8d2cff13d3d",
+      "remote_sha256": "005c953ffd366de8a04659b1d5283ac0e29e285ca5d6d0bc7a68c8d2cff13d3d",
+      "byte_identical": true
+    }
+  ],
+  "board_copper_changed": false,
+  "tscircuit_board_version_unchanged": "0.0.2-wip-pipeline9",
+  "fabrication_ready": false
+}
