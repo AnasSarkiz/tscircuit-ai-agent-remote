@@ -1,0 +1,5 @@
+{
+  "url": "https://api.github.com/search/issues?q=ER-TFT023-1%20in%3Abody",
+  "http_status": 422,
+  "error_body": "{\"message\":\"Query must include 'is:issue' or 'is:pull-request'\",\"documentation_url\":\"https://docs.github.com/rest/search/search#search-issues-and-pull-requests\",\"status\":\"422\"}"
+}

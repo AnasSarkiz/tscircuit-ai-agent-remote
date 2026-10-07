@@ -1,0 +1,243 @@
+[
+  {
+    "query": "\"ER-TFT023-1\" NOT repo:AnasSarkiz/tscircuit-ai-agent-remote",
+    "url": "https://api.github.com/search/code?q=%22ER-TFT023-1%22%20NOT%20repo%3AAnasSarkiz/tscircuit-ai-agent-remote",
+    "http_status": 200,
+    "total_count": 19,
+    "references": [
+      {
+        "repo": "DavidAustin/python-eda",
+        "path": "symbols/tsv/ER-TFT023-1.tsv",
+        "url": "https://github.com/DavidAustin/python-eda/blob/03aa9317c3206c7518efebec9e77f66bed94ffea/symbols/tsv/ER-TFT023-1.tsv"
+      },
+      {
+        "repo": "adamgreig/linetime",
+        "path": "hardware/linetime.bom",
+        "url": "https://github.com/adamgreig/linetime/blob/66cabfca1a41a9574b209027391a7ded56ba2b5b/hardware/linetime.bom"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "microgame2.net",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/microgame2.net"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/working-bottom.pos",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/working-bottom.pos"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/readme.md",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/readme.md"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "EastRising/EastRising.kicad_sym",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/EastRising/EastRising.kicad_sym"
+      },
+      {
+        "repo": "adamgreig/linetime",
+        "path": "hardware/linetime_ui.sch",
+        "url": "https://github.com/adamgreig/linetime/blob/66cabfca1a41a9574b209027391a7ded56ba2b5b/hardware/linetime_ui.sch"
+      },
+      {
+        "repo": "adamgreig/linetime",
+        "path": "hardware/linetime.xml",
+        "url": "https://github.com/adamgreig/linetime/blob/66cabfca1a41a9574b209027391a7ded56ba2b5b/hardware/linetime.xml"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot",
+        "path": "projects/adamgreig_linetime/version_current/working/working_bom.csv",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot/blob/84a4c4b578cc7cceb8d3ca9368598b18ae0661bd/projects/adamgreig_linetime/version_current/working/working_bom.csv"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "Display.kicad_sch",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/Display.kicad_sch"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "Display.kicad_sch",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/Display.kicad_sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/working_bom.csv",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/working_bom.csv"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot",
+        "path": "projects/adamgreig_linetime/version_current/working/working.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot/blob/84a4c4b578cc7cceb8d3ca9368598b18ae0661bd/projects/adamgreig_linetime/version_current/working/working.sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_src",
+        "path": "projects_flat/adamgreig_linetime/version_current/working/working.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_src/blob/c4956eebc0a50c9cf73a80ad012b68cbe472da65/projects_flat/adamgreig_linetime/version_current/working/working.sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_src",
+        "path": "projects_folder/adamgreig/linetime/version_current/working/working.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_src/blob/c4956eebc0a50c9cf73a80ad012b68cbe472da65/projects_folder/adamgreig/linetime/version_current/working/working.sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/working.yaml",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/working.yaml"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/linetime_ui.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/linetime_ui.sch"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "microgame2.net",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/microgame2.net"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "EastRising/EastRising.kicad_sym",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/EastRising/EastRising.kicad_sym"
+      }
+    ]
+  },
+  {
+    "query": "\"ER-TFT023-1_Datasheet.pdf\" NOT repo:AnasSarkiz/tscircuit-ai-agent-remote",
+    "url": "https://api.github.com/search/code?q=%22ER-TFT023-1_Datasheet.pdf%22%20NOT%20repo%3AAnasSarkiz/tscircuit-ai-agent-remote",
+    "http_status": 200,
+    "total_count": 6,
+    "references": [
+      {
+        "repo": "aherbez/audiotest",
+        "path": "microgame2.net",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/microgame2.net"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "Display.kicad_sch",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/Display.kicad_sch"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "Display.kicad_sch",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/Display.kicad_sch"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "EastRising/EastRising.kicad_sym",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/EastRising/EastRising.kicad_sym"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "microgame2.net",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/microgame2.net"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "EastRising/EastRising.kicad_sym",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/EastRising/EastRising.kicad_sym"
+      }
+    ]
+  },
+  {
+    "query": "\"ER-TFT023\" \"ILI9342\" NOT repo:AnasSarkiz/tscircuit-ai-agent-remote",
+    "url": "https://api.github.com/search/code?q=%22ER-TFT023%22%20%22ILI9342%22%20NOT%20repo%3AAnasSarkiz/tscircuit-ai-agent-remote",
+    "http_status": 200,
+    "total_count": 0,
+    "references": []
+  },
+  {
+    "query": "\"ER-TFT023\" \"ER-CON50HT\" NOT repo:AnasSarkiz/tscircuit-ai-agent-remote",
+    "url": "https://api.github.com/search/code?q=%22ER-TFT023%22%20%22ER-CON50HT%22%20NOT%20repo%3AAnasSarkiz/tscircuit-ai-agent-remote",
+    "http_status": 200,
+    "total_count": 17,
+    "references": [
+      {
+        "repo": "DavidAustin/python-eda",
+        "path": "symbols/tsv/ER-TFT023-1.tsv",
+        "url": "https://github.com/DavidAustin/python-eda/blob/03aa9317c3206c7518efebec9e77f66bed94ffea/symbols/tsv/ER-TFT023-1.tsv"
+      },
+      {
+        "repo": "adamgreig/linetime",
+        "path": "hardware/linetime.bom",
+        "url": "https://github.com/adamgreig/linetime/blob/66cabfca1a41a9574b209027391a7ded56ba2b5b/hardware/linetime.bom"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/readme.md",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/readme.md"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/working-bottom.pos",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/working-bottom.pos"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "microgame2.net",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/microgame2.net"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot",
+        "path": "projects/adamgreig_linetime/version_current/working/working_bom.csv",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot/blob/84a4c4b578cc7cceb8d3ca9368598b18ae0661bd/projects/adamgreig_linetime/version_current/working/working_bom.csv"
+      },
+      {
+        "repo": "adamgreig/linetime",
+        "path": "hardware/linetime_ui.sch",
+        "url": "https://github.com/adamgreig/linetime/blob/66cabfca1a41a9574b209027391a7ded56ba2b5b/hardware/linetime_ui.sch"
+      },
+      {
+        "repo": "adamgreig/linetime",
+        "path": "hardware/linetime.xml",
+        "url": "https://github.com/adamgreig/linetime/blob/66cabfca1a41a9574b209027391a7ded56ba2b5b/hardware/linetime.xml"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/working_bom.csv",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/working_bom.csv"
+      },
+      {
+        "repo": "aherbez/audiotest",
+        "path": "Display.kicad_sch",
+        "url": "https://github.com/aherbez/audiotest/blob/841bc960c2d15a87514cb59fcf7eda712ba9c097/Display.kicad_sch"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "Display.kicad_sch",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/Display.kicad_sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/working.yaml",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/working.yaml"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot",
+        "path": "projects/adamgreig_linetime/version_current/working/working.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot/blob/84a4c4b578cc7cceb8d3ca9368598b18ae0661bd/projects/adamgreig_linetime/version_current/working/working.sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_src",
+        "path": "projects_flat/adamgreig_linetime/version_current/working/working.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_src/blob/c4956eebc0a50c9cf73a80ad012b68cbe472da65/projects_flat/adamgreig_linetime/version_current/working/working.sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_src",
+        "path": "projects_folder/adamgreig/linetime/version_current/working/working.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_src/blob/c4956eebc0a50c9cf73a80ad012b68cbe472da65/projects_folder/adamgreig/linetime/version_current/working/working.sch"
+      },
+      {
+        "repo": "oomlout/oomlout_oomp_project_bot_v_2",
+        "path": "projects/adamgreig_linetime_linetime/current_version/working/linetime_ui.sch",
+        "url": "https://github.com/oomlout/oomlout_oomp_project_bot_v_2/blob/297c32a8af895a6e6bf27da40270fbceda1ff741/projects/adamgreig_linetime_linetime/current_version/working/linetime_ui.sch"
+      },
+      {
+        "repo": "aherbez/game2",
+        "path": "microgame2.net",
+        "url": "https://github.com/aherbez/game2/blob/2b85768b7c8b697ace00a4c9ac34ea297878f4f3/microgame2.net"
+      }
+    ]
+  }
+]

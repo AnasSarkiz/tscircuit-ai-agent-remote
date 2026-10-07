@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-07T12:17:26.750802+00:00",
+  "user_approval_received": true,
+  "user_reply": "Approve this CA import",
+  "approved_command": [
+    "certutil",
+    "-A",
+    "-d",
+    "sql:/home/agent/.pki/nssdb",
+    "-n",
+    "environment-proxy-ca",
+    "-t",
+    "C,,",
+    "-i",
+    "/usr/local/share/ca-certificates/environment-proxy-ca.crt"
+  ],
+  "approved_command_exit_code": 0,
+  "existing_distinct_CA_nickname": "OpenAI-nebula-dns",
+  "existing_CA_sha256": "C71B4D1E9D7775C538C688AB10CEA9CE417D7312E89838F9D15FF73256CD7FC3",
+  "new_distinct_CA_added": false,
+  "initial_missing_CA_diagnosis_correct": false,
+  "actual_browser_error": "SEC_ERROR_READ_ONLY (-8126) initializing sql:/home/agent/.pki/nssdb under filesystem sandbox",
+  "approved_browser_execution_restores_TLS": true,
+  "TLS_verification_enabled": true,
+  "supplier_product_http_status": 403,
+  "supplier_challenge_title": "Just a moment...",
+  "challenge_required_host": "challenges.cloudflare.com",
+  "challenge_host_CONNECT_result": "403 Forbidden",
+  "original_rejected_command_workaround_attempted": false,
+  "original_rejection_preserved_as_historical_receipt": "../browser-ca-approval-blocker.json"
+}

@@ -1,0 +1,17 @@
+{
+  "action": "Add the configured public environment-proxy-ca.crt to Chromium actual NSS trust database",
+  "database": "sql:/home/agent/.pki/nssdb",
+  "certificate_path": "/usr/local/share/ca-certificates/environment-proxy-ca.crt",
+  "certificate_SHA256_fingerprint": "C71B4D1E9D7775C538C688AB10CEA9CE417D7312E89838F9D15FF73256CD7FC3",
+  "certificate_subject": "C=US, ST=California, L=San Francisco, O=OpenAI, LLC, CN=openai.com",
+  "openssl_supplier_chain_system_CA_verification_passed": true,
+  "certificate_present_in_actual_Chromium_NSS_before_action": false,
+  "certificate_present_in_workspace_NSS_but_browser_still_fails": true,
+  "automatic_approval_review": "rejected",
+  "rejection_reason": "Persistently adds a proxy CA as trusted in Chromium NSS, broadening future TLS trust beyond the specific request to inspect the supplier site; exact security setting and blast radius were not authorized. Do not bypass the rejection through a workaround or indirect execution.",
+  "command_executed": false,
+  "user_approval_requested": true,
+  "user_approval_received": false,
+  "browser_TLS_verification_disabled": false,
+  "no_rejected_action_workaround_attempted": true
+}

@@ -1,0 +1,367 @@
+{
+  "secondary_source": "https://github.com/DavidAustin/python-eda/blob/03aa9317c3206c7518efebec9e77f66bed94ffea/symbols/tsv/ER-TFT023-1.tsv",
+  "secondary_source_sha256": "3391f605d469c1d2d8c0eea3a67f7ca314d688727cb00df28fb49226eb585bb3",
+  "rows_checked": 50,
+  "all_roles_match_old_primary_for_current_SPI_configuration": true,
+  "SDO33_NC_label_difference": true,
+  "old_board_already_leaves_SDO_unconnected": true,
+  "manufacturer_replacement_datasheet_obtained": false,
+  "secondary_pin_table_is_not_an_accepted_custom_component_definition": true,
+  "new_panel_mechanics_verified": false,
+  "new_panel_contact_face_verified": false,
+  "new_panel_power_limits_verified": false,
+  "board_native_changed": false,
+  "replacement_accepted": false,
+  "pins": [
+    {
+      "panel_pin": 1,
+      "secondary_ER_TFT023_label": "LEDA",
+      "old_primary_ER_TFT026_label": "LEDA",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_BACKLIGHT_OUTPUT"
+    },
+    {
+      "panel_pin": 2,
+      "secondary_ER_TFT023_label": "LEDK1",
+      "old_primary_ER_TFT026_label": "LEDK1",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_BACKLIGHT_RETURN_1"
+    },
+    {
+      "panel_pin": 3,
+      "secondary_ER_TFT023_label": "LEDK2",
+      "old_primary_ER_TFT026_label": "LEDK2",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_BACKLIGHT_RETURN_2"
+    },
+    {
+      "panel_pin": 4,
+      "secondary_ER_TFT023_label": "LEDK3",
+      "old_primary_ER_TFT026_label": "LEDK3",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_BACKLIGHT_RETURN_3"
+    },
+    {
+      "panel_pin": 5,
+      "secondary_ER_TFT023_label": "LEDK4",
+      "old_primary_ER_TFT026_label": "LEDK4",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_BACKLIGHT_RETURN_4"
+    },
+    {
+      "panel_pin": 6,
+      "secondary_ER_TFT023_label": "IM0",
+      "old_primary_ER_TFT026_label": "IM0",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 7,
+      "secondary_ER_TFT023_label": "IM1",
+      "old_primary_ER_TFT026_label": "IM1",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 8,
+      "secondary_ER_TFT023_label": "IM2",
+      "old_primary_ER_TFT026_label": "IM2",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 9,
+      "secondary_ER_TFT023_label": "IM3",
+      "old_primary_ER_TFT026_label": "IM3",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 10,
+      "secondary_ER_TFT023_label": "RESET",
+      "old_primary_ER_TFT026_label": "RESET",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_RESET_N"
+    },
+    {
+      "panel_pin": 11,
+      "secondary_ER_TFT023_label": "VSYNC",
+      "old_primary_ER_TFT026_label": "VSYNC",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 12,
+      "secondary_ER_TFT023_label": "HSYNC",
+      "old_primary_ER_TFT026_label": "HSYNC",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 13,
+      "secondary_ER_TFT023_label": "DOTCLK",
+      "old_primary_ER_TFT026_label": "DOTCLK",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 14,
+      "secondary_ER_TFT023_label": "DE",
+      "old_primary_ER_TFT026_label": "DE",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 15,
+      "secondary_ER_TFT023_label": "DB17",
+      "old_primary_ER_TFT026_label": "DB17",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 16,
+      "secondary_ER_TFT023_label": "DB16",
+      "old_primary_ER_TFT026_label": "DB16",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 17,
+      "secondary_ER_TFT023_label": "DB15",
+      "old_primary_ER_TFT026_label": "DB15",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 18,
+      "secondary_ER_TFT023_label": "DB14",
+      "old_primary_ER_TFT026_label": "DB14",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 19,
+      "secondary_ER_TFT023_label": "DB13",
+      "old_primary_ER_TFT026_label": "DB13",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 20,
+      "secondary_ER_TFT023_label": "DB12",
+      "old_primary_ER_TFT026_label": "DB12",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 21,
+      "secondary_ER_TFT023_label": "DB11",
+      "old_primary_ER_TFT026_label": "DB11",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 22,
+      "secondary_ER_TFT023_label": "DB10",
+      "old_primary_ER_TFT026_label": "DB10",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 23,
+      "secondary_ER_TFT023_label": "DB09",
+      "old_primary_ER_TFT026_label": "DB9",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 24,
+      "secondary_ER_TFT023_label": "DB08",
+      "old_primary_ER_TFT026_label": "DB8",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 25,
+      "secondary_ER_TFT023_label": "DB07",
+      "old_primary_ER_TFT026_label": "DB7",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 26,
+      "secondary_ER_TFT023_label": "DB06",
+      "old_primary_ER_TFT026_label": "DB6",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 27,
+      "secondary_ER_TFT023_label": "DB05",
+      "old_primary_ER_TFT026_label": "DB5",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 28,
+      "secondary_ER_TFT023_label": "DB04",
+      "old_primary_ER_TFT026_label": "DB4",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 29,
+      "secondary_ER_TFT023_label": "DB03",
+      "old_primary_ER_TFT026_label": "DB3",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 30,
+      "secondary_ER_TFT023_label": "DB02",
+      "old_primary_ER_TFT026_label": "DB2",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 31,
+      "secondary_ER_TFT023_label": "DB01",
+      "old_primary_ER_TFT026_label": "DB1",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 32,
+      "secondary_ER_TFT023_label": "DB00",
+      "old_primary_ER_TFT026_label": "DB0",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 33,
+      "secondary_ER_TFT023_label": "NC",
+      "old_primary_ER_TFT026_label": "SDO",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": null
+    },
+    {
+      "panel_pin": 34,
+      "secondary_ER_TFT023_label": "SDA",
+      "old_primary_ER_TFT026_label": "SDI",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_SDA"
+    },
+    {
+      "panel_pin": 35,
+      "secondary_ER_TFT023_label": "RD",
+      "old_primary_ER_TFT026_label": "RD",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 36,
+      "secondary_ER_TFT023_label": "WRX(D/CX)",
+      "old_primary_ER_TFT026_label": "WRX(D/CX)",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_DC"
+    },
+    {
+      "panel_pin": 37,
+      "secondary_ER_TFT023_label": "D/CX(SCL)",
+      "old_primary_ER_TFT026_label": "D/CX(SCL)",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_SCLK"
+    },
+    {
+      "panel_pin": 38,
+      "secondary_ER_TFT023_label": "CSX",
+      "old_primary_ER_TFT026_label": "CSX",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "LCD_CS_N"
+    },
+    {
+      "panel_pin": 39,
+      "secondary_ER_TFT023_label": "TE",
+      "old_primary_ER_TFT026_label": "TE",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": null
+    },
+    {
+      "panel_pin": 40,
+      "secondary_ER_TFT023_label": "VDDI",
+      "old_primary_ER_TFT026_label": "VDDI",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 41,
+      "secondary_ER_TFT023_label": "VDDI",
+      "old_primary_ER_TFT026_label": "VDDI",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 42,
+      "secondary_ER_TFT023_label": "VCI",
+      "old_primary_ER_TFT026_label": "VCI",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "VLCD"
+    },
+    {
+      "panel_pin": 43,
+      "secondary_ER_TFT023_label": "GND",
+      "old_primary_ER_TFT026_label": "GND",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 44,
+      "secondary_ER_TFT023_label": "X+",
+      "old_primary_ER_TFT026_label": "X+",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": null
+    },
+    {
+      "panel_pin": 45,
+      "secondary_ER_TFT023_label": "Y+",
+      "old_primary_ER_TFT026_label": "Y+",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": null
+    },
+    {
+      "panel_pin": 46,
+      "secondary_ER_TFT023_label": "X-",
+      "old_primary_ER_TFT026_label": "X-",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": null
+    },
+    {
+      "panel_pin": 47,
+      "secondary_ER_TFT023_label": "Y-",
+      "old_primary_ER_TFT026_label": "Y-",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": null
+    },
+    {
+      "panel_pin": 48,
+      "secondary_ER_TFT023_label": "GND",
+      "old_primary_ER_TFT026_label": "GND",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 49,
+      "secondary_ER_TFT023_label": "GND",
+      "old_primary_ER_TFT026_label": "GND",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    },
+    {
+      "panel_pin": 50,
+      "secondary_ER_TFT023_label": "GND",
+      "old_primary_ER_TFT026_label": "GND",
+      "roles_equivalent_for_existing_unused_SDO_SPI_design": true,
+      "old_conditional_board_net": "GND"
+    }
+  ]
+}

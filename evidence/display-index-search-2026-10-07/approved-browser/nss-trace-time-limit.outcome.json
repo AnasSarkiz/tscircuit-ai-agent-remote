@@ -1,0 +1,29 @@
+{
+  "command": [
+    "timeout",
+    "12",
+    "strace",
+    "-f",
+    "-e",
+    "trace=openat",
+    "-s",
+    "180",
+    "-o",
+    "/tmp/display-browser-approved-2026-10-07/chromium-store-trace.txt",
+    "/usr/bin/chromium",
+    "--headless",
+    "--no-sandbox",
+    "--disable-gpu",
+    "--user-data-dir=/tmp/display-browser-approved-2026-10-07/trace-profile",
+    "--proxy-server=http://proxy:8080",
+    "--dump-dom",
+    "https://www.buydisplay.com/spi-2-3-inch-tft-lcd-touch-screen-display-320x240-ili9432-controller"
+  ],
+  "exit_code": 124,
+  "termination": null,
+  "elapsed_seconds": 12.53,
+  "peak_process_group_rss_bytes": 601600000,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

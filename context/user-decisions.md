@@ -1,3 +1,21 @@
+Latest explicit browser approval, 2026-10-07: **"Approve this CA import"** for
+the existing environment proxy CA into Chromium's `/home/agent/.pki/nssdb`.
+The exact import completed. Fingerprints show this CA was already trusted under
+another nickname; actual browser NSS initialization was blocked by read-only
+sandbox access. Approved browser execution restored normal TLS, then encountered
+a real supplier Cloudflare challenge whose required host is proxy-denied.
+The 17-domain draft preserves supplier/search hosts and adds
+`challenges.cloudflare.com`; saving the draft is not runtime application or
+environment publication. Do not ask for the same CA approval again. Keep TLS
+verification and the inherited proxy intact. The actual schematic UI analysis
+now ran and reports 14 unresolved issues; no passing style/DRC/order claim.
+
+Latest continuation, 2026-10-07: search for the replacement display directly
+on the website and other published sources instead of asking the user to supply
+another PDF. Continue independently accessible review; actual network and
+automatic approval-review denials remain external blockers when unresolved.
+The earlier browser CA-import question has now been explicitly answered above.
+
 Latest display request, 2026-10-07: reject the ER-TFT026-1 bottom-tail panel
 because it does not connect mechanically to the current right-side J7. Review
 https://www.buydisplay.com/spi-2-3-inch-tft-lcd-touch-screen-display-320x240-ili9432-controller

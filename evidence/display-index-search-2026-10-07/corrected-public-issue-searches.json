@@ -1,0 +1,29 @@
+[
+  {
+    "query": "ER-TFT023 is:issue",
+    "url": "https://api.github.com/search/issues?q=ER-TFT023%20is%3Aissue",
+    "http_status": 200,
+    "total_count": 0,
+    "items": []
+  },
+  {
+    "query": "\"ER-TFT023-1\" \"datasheet\" is:issue",
+    "url": "https://api.github.com/search/issues?q=%22ER-TFT023-1%22%20%22datasheet%22%20is%3Aissue",
+    "http_status": 200,
+    "total_count": 0,
+    "items": []
+  },
+  {
+    "query": "\"ILI9342\" \"2.3\" is:issue",
+    "url": "https://api.github.com/search/issues?q=%22ILI9342%22%20%222.3%22%20is%3Aissue",
+    "http_status": 200,
+    "total_count": 1,
+    "items": [
+      {
+        "url": "https://github.com/meshtastic/firmware/issues/2482",
+        "title": "[Bug]: Unable to flash M5Stack Core2",
+        "body": "### Category\n\nHardware Compatibility\n\n### Hardware\n\nOther\n\n### Firmware Version\n\nN/A\n\n### Description\n\nI'm new to Meshtastic, so bear with me here.\r\n\r\nI have a [M5Stack Core2](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-core2-esp32-iot-development-kit). I saw a variant [here](https://github.com/meshtastic/firmware/tree/master/variants/m5stack_core) and also found [this](https://github.com/meshtastic/firmware/blob/666a1f3401b2da2ff9facf6c0227cd2622777bea/src/mesh/generated/meshtastic/mesh.pb.h#L86), so I figured I could flash it. I'm running Arch Linux and it shows up under `/dev/ttyACM0`.\r\n\r\n```\r\n> esptool.py --port /dev/ttyACM0 chip_id\r\nesptool.py v4.5.1\r\nSerial port /dev/ttyACM0\r\nConnecting....\r\nDetecting chip type... Unsupported detection protocol, switching and trying again...\r\nConnecting....\r\nDetecting chip type... ESP32\r\nChip is ESP32-D0WDQ6-V3 (revision v3.0)\r\nFeatures: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None\r\nCrystal is 40MHz\r\nMAC: 30:c6:f7:25:ef:9c\r\nUploading stub...\r\nRunning stub...\r\nStub running...\r\nWarning: ESP32 has no Chip ID. Reading MAC instead.\r\nMAC: 30:c6:f7:25:ef:9c\r\nHard resetting via RTS pin...\r\n```\r\n\r\nI cloned this repo, built the firmware according to [these](https://meshtastic.org/docs/development/firmware/build) instructions, but had to change the [port](https://github.com/meshtastic/firmware/blob/666a1f3401b2da2ff9facf6c0227cd2622777bea/variants/m5stack_core/platformio.ini#L5-L6) from `COM8` to `/dev/ttyACM0`. I then tried to flash as per the instructions.  Below is the output.\r\n\r\n```\r\n *  Executing task: platformio run --target upload --environment m5stack-core \r\n\r\nProcessing m5stack-core (board: m5stack-core-esp32; platform: platformio/espressif32@^6.1.0; framework: arduino)\r\n----------------------------------------------------------------------\r\nVerbose mode can be enabled via `-v, --verbose` option\r\nCONFIGURATION: https://docs.platformio.org/page/boards/espressif32/m5stack-core-esp32.html\r\nPLATFORM: Espressif 32 (6.2.0) > M5Stack Core ESP32\r\nHARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash\r\nDEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)\r\nPACKAGES: \r\n - framework-arduinoespressif32 @ 3.20008.0 (2.0.8) \r\n - tool-esptoolpy @ 1.40501.0 (4.5.1) \r\n - tool-mkfatfs @ 2.0.1 \r\n - tool-mklittlefs @ 1.203.210628 (2.3) \r\n - tool-mkspiffs @ 2.230.0 (2.30) \r\n - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5\r\nLDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf\r\nLDF Modes: Finder ~ chain, Compatibility ~ soft\r\n[nanopb] Installing Protocol Buffers dependencies\r\nRequirement already satisfied: protobuf>=3.19.1 in /home/logan/.platformio/penv/lib/python3.11/site-packages (4.23.0)\r\n[nanopb] No generation needed.\r\nFound 71 compatible libraries\r\nScanning dependencies...\r\nDependency Graph\r\n|-- ESP8266 and ESP32 OLED driver for SSD"
+      }
+    ]
+  }
+]

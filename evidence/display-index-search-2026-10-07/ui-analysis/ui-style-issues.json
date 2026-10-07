@@ -1,0 +1,147 @@
+{
+  "native_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+  "analysis_executed": true,
+  "ui_schematic_style_passed": false,
+  "ui_style_issue_count": 14,
+  "issues": [
+    {
+      "issue_number": 1,
+      "type": "SchematicBoxInnerLabelCollision",
+      "message": "Inner labels are colliding. Increase the schWidth.",
+      "componentName": "U12",
+      "currentSchWidth": "1.2",
+      "currentSchHeight": "0.6",
+      "overlappingSides": "left,right"
+    },
+    {
+      "issue_number": 2,
+      "type": "SchematicBoxInnerLabelCollision",
+      "message": "Inner labels are colliding. Increase the schWidth.",
+      "componentName": "U3",
+      "currentSchWidth": "1.6",
+      "currentSchHeight": "2",
+      "overlappingSides": "left,right"
+    },
+    {
+      "issue_number": 3,
+      "type": "TwoPinComponentHasInvertedRails",
+      "componentName": "R42",
+      "railPin": "pin2",
+      "railType": "power",
+      "deltaSchRotation": "180",
+      "suggestedRailFacingDirection": "up",
+      "message": "rotate R42 by 180\u00b0 so its positive-supply pin faces up and its signal pin faces down; preserve pin connections and reroute attached traces"
+    },
+    {
+      "issue_number": 4,
+      "type": "DecouplingCapacitorsNotCloseTogether",
+      "rail": "VLCD",
+      "ground": "GND",
+      "capacitorNames": "C41, C42, C43",
+      "maxBodyGap": "1.65",
+      "maxRecommendedBodyGap": "1",
+      "message": "Group the decoupling capacitors between VLCD and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "issue_number": 5,
+      "type": "DecouplingCapacitorsNotCloseTogether",
+      "rail": "VSYS",
+      "ground": "GND",
+      "capacitorNames": "C50, C51",
+      "maxBodyGap": "2.1",
+      "maxRecommendedBodyGap": "1",
+      "message": "Group the decoupling capacitors between VSYS and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "issue_number": 6,
+      "type": "DecouplingCapacitorsNotCloseTogether",
+      "rail": "VMIC",
+      "ground": "GND",
+      "capacitorNames": "C80, C81",
+      "maxBodyGap": "1.1",
+      "maxRecommendedBodyGap": "1",
+      "message": "Group the decoupling capacitors between VMIC and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "issue_number": 7,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U16",
+      "pinName": "N_PGOOD",
+      "railType": "power",
+      "pathSpan": "10.9",
+      "pathLength": "11.6",
+      "message": "Visible path from U16.N_PGOOD to power spans 10.90 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 8,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U22",
+      "pinName": "EN",
+      "railType": "ground",
+      "pathSpan": "8.1",
+      "pathLength": "9.55",
+      "message": "Visible path from U22.EN to ground spans 8.10 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 9,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U22",
+      "pinName": "OUT",
+      "railType": "power",
+      "pathSpan": "15.95",
+      "pathLength": "16.57",
+      "message": "Visible path from U22.OUT to power spans 15.95 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 10,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U24",
+      "pinName": "2Y",
+      "railType": "power",
+      "pathSpan": "8.55",
+      "pathLength": "15.1",
+      "message": "Visible path from U24.2Y to power spans 8.55 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 11,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U24",
+      "pinName": "1Y",
+      "railType": "ground",
+      "pathSpan": "8.95",
+      "pathLength": "11.7",
+      "message": "Visible path from U24.1Y to ground spans 8.95 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 12,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U4",
+      "pinName": "SD",
+      "railType": "ground",
+      "pathSpan": "8.5",
+      "pathLength": "14.24",
+      "message": "Visible path from U4.SD to ground spans 8.50 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 13,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U5",
+      "pinName": "LR",
+      "railType": "power",
+      "pathSpan": "10.819",
+      "pathLength": "10.819",
+      "message": "Visible path from U5.LR to power spans 10.82 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "issue_number": 14,
+      "type": "RailPathTooSpreadOut",
+      "hostName": "U27",
+      "pinName": "PGND",
+      "railType": "ground",
+      "pathSpan": "10.161",
+      "pathLength": "16.402",
+      "message": "Visible path from U27.PGND to ground spans 10.16 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    }
+  ],
+  "source": "Actual SVG issue images embedded by the Run Style Analysis UI; no issue suppression or edited native output."
+}

@@ -1,4 +1,38 @@
-## Current display replacement review — 2026-10-07
+## Current independent display search — 2026-10-07
+
+The user instructs the agent to find the new display documentation directly,
+rather than asking them for another PDF. Manufacturer catalog search, robots
+and sitemap return Cloudflare403. Google/Bing CONNECT requests are denied;
+their exact domains are now added to the saved draft, pending user
+Save/Publish. GitHub code search works and yields third-party ER-TFT023-1
+references. A 50-pin table matches the old panel's roles for the current SPI
+configuration. One older BOM uses ER-CON50HT-1 and ILI9342 firmware, but its
+symbol/datasheet point to ER-TFT024-3. These are useful leads, not current primary
+mechanical/power/controller qualification. No exact PDF was found in those trees.
+
+The user explicitly approved the CA import and the exact command completed
+with exit 0. The initial missing-CA diagnosis was incorrect: the matching CA
+already existed under `OpenAI-nebula-dns`. The actual browser failure was NSS
+SEC_ERROR_READ_ONLY (-8126) under the filesystem sandbox. Approved browser access
+to its actual database restored TLS verification. BuyDisplay then returned a
+Cloudflare challenge requiring `challenges.cloudflare.com`; this host independently
+returns CONNECT403. It is now added to the saved **17-domain draft**, alongside
+the preserved supplier/search hosts. User Save/Publish is needed to apply it;
+no proxy, TLS or challenge bypass is authorized. Do not request CA approval again.
+See
+`evidence/display-index-search-2026-10-07/review.md` and its exact receipts.
+
+The restored browser also ran the actual schematic UI analysis against the
+accepted native: **14 issues**, versus the earlier CLI result of zero. The
+exact UI records are in that review's `ui-analysis/` directory. The UI check
+executed but did not pass; the former certificate blocker is superseded.
+
+The accepted board/source/native and public package remain unchanged. The
+replacement's flex, pin correspondence and power limits remain unqualified.
+
+---
+
+## Previous display replacement review — 2026-10-07
 
 The user rejects the ER-TFT026-1 bottom flex for the present right-side J7 and
 requests review of BuyDisplay's SPI 2.3-inch 320×240 ILI9432 product plus a

@@ -1,0 +1,13 @@
+{
+  "draft_id": "ae9630b6-06b8-4b8d-add0-d5a78930040d~cecfgdraft_6ac38696f320819cbbfedc39312a2254",
+  "status": "saved",
+  "requires_publish": true,
+  "allowed_domain_count": 17,
+  "added_domain": "challenges.cloudflare.com",
+  "fields_saved": [
+    "network.allowed_domains",
+    "start_skill"
+  ],
+  "applied_to_runtime": false,
+  "description": "Actual supplier challenge explicitly requires this host; its CONNECT request returns 403. Preserved all 16 existing explicit domains."
+}

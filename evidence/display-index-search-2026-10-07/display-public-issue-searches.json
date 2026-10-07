@@ -1,0 +1,17 @@
+[
+  {
+    "query": "\"ER-TFT023\"",
+    "url": "https://api.github.com/search/issues?q=%22ER-TFT023%22",
+    "error": "HTTP Error 422: Unprocessable Entity"
+  },
+  {
+    "query": "\"ER-TFT023-1\" \"datasheet\"",
+    "url": "https://api.github.com/search/issues?q=%22ER-TFT023-1%22%20%22datasheet%22",
+    "error": "HTTP Error 422: Unprocessable Entity"
+  },
+  {
+    "query": "\"ILI9342\" \"2.3\"",
+    "url": "https://api.github.com/search/issues?q=%22ILI9342%22%20%222.3%22",
+    "error": "HTTP Error 422: Unprocessable Entity"
+  }
+]
