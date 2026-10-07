@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building pin1.circuit.tsx...
+Generating circuit JSON...
+error: Cannot find module './imports/SN74LVC245APWR/SN74LVC245APWR' from '/tmp/display023-exact-import/pin1.circuit.tsx'
+Fatal error [circuit_generation_failed]: ResolveMessage: Cannot find module './imports/SN74LVC245APWR/SN74LVC245APWR' from '/tmp/display023-exact-import/pin1.circuit.tsx'
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

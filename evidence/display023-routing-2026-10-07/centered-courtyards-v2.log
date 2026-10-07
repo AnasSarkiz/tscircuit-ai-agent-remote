@@ -1,0 +1,1412 @@
+34 |         return {
+35 |             success: false,
+36 |             get error() {
+37 |                 if (this._error)
+38 |                     return this._error;
+39 |                 const error = new ZodError(ctx.common.issues);
+                                   ^
+ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "null",
+    "path": [
+      4602,
+      "pcb_component_id"
+    ],
+    "message": "Expected string, received null"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "null",
+    "path": [
+      4603,
+      "pcb_component_id"
+    ],
+    "message": "Expected string, received null"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "null",
+    "path": [
+      4717,
+      "pcb_component_id"
+    ],
+    "message": "Expected string, received null"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "null",
+    "path": [
+      4720,
+      "pcb_component_id"
+    ],
+    "message": "Expected string, received null"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5257,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5258,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5259,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5260,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5261,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5262,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5263,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5264,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5265,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5266,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5267,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5268,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5269,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5270,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5271,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5272,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5273,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5274,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5275,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5276,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5277,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5278,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5279,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5280,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5281,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5282,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5283,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5284,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5285,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5286,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5287,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5288,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5289,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5290,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5291,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5292,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5293,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5294,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5295,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5296,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5297,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5298,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5299,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5300,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5301,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5302,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5303,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5304,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5305,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5306,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5307,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5308,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5309,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5310,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5311,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5312,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5313,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5314,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5315,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5316,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5317,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5318,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5319,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5320,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5321,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5322,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5323,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5324,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5325,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5326,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5327,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5328,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5329,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5330,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5331,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5332,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5333,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5334,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5335,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5336,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5337,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5338,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5339,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5340,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5341,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5342,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5343,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5344,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5345,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5346,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5347,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5348,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5349,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5350,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5351,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5352,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5353,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5354,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5355,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5356,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5357,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5358,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5359,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5360,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5361,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5362,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5363,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5364,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5365,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5366,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5367,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5368,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5369,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5370,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5371,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5372,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5373,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5374,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5375,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5376,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5377,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5378,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5379,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5380,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5381,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5382,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5383,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5384,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5385,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5386,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5387,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5388,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5389,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5390,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "object",
+    "path": [
+      5391,
+      "rotation"
+    ],
+    "message": "Expected number, received object"
+  }
+]
+    issues: [
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  ... 39 more items
+],
+  addIssue: [Function],
+ addIssues: [Function],
+
+      at error (/workspace/tscircuit-ai-agent-remote/node_modules/zod/v3/types.js:39:31)
+      at parse (/workspace/tscircuit-ai-agent-remote/node_modules/zod/v3/types.js:114:15)
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/propose-placement.ts:20:43
+
+Bun v1.3.9 (Linux x64)

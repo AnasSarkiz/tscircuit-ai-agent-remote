@@ -1,0 +1,28 @@
+{
+  "verified_files": 1487,
+  "mismatched_or_missing": [],
+  "fabrication_approval_inferred": false
+}
+bun install v1.3.9 (cf6cdbbb)
+
+Checked 317 installs across 344 packages (no changes) [9.00ms]
+Collecting shapely==2.1.2 (from -r scripts/cloud/requirements.txt (line 1))
+  Using cached shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.8 kB)
+Collecting numpy>=1.21 (from shapely==2.1.2->-r scripts/cloud/requirements.txt (line 1))
+  Using cached numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Using cached shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.1 MB)
+Using cached numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+Installing collected packages: numpy, shapely
+
+Successfully installed numpy-2.5.3 shapely-2.1.2
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/shapely-2.1.2.dist-info already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/shapely.libs already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/shapely already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/numpy-2.5.3.dist-info already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/numpy.libs already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/numpy already exists. Specify --upgrade to force replacement.
+WARNING: Target directory /workspace/tscircuit-ai-agent-remote/.geometry-runtime/bin already exists. Specify --upgrade to force replacement.
+1.3.9
+Python 3.12.14
+{"passed_checks": 5, "receipt": "/workspace/tscircuit-ai-agent-remote/evidence/cloud-setup-smoke/receipt.json"}
+Dependencies installed. Routing and heavy board builds were not started.

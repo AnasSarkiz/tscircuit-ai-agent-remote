@@ -1,0 +1,9 @@
+import { SN74LVC245APWR } from "./imports/SN74LVC245APWR/SN74LVC245APWR"
+
+export default () => (
+  <board width={30} height={30} routingDisabled>
+    <schematicsheet name="supplier-exact" sheetSize="A4" sheetIndex={1}>
+      <SN74LVC245APWR name="U14" pcbX={0} pcbY={0} />
+    </schematicsheet>
+  </board>
+)

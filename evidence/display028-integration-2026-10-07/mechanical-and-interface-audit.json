@@ -1,0 +1,125 @@
+{
+  "classification": "Manufacturer exact A2 candidate; not selected/implemented; no fabrication approval",
+  "datasheet_part": "ER-TFT028A2-4",
+  "revision": "1.0",
+  "release_date": "2019-12-02",
+  "drawing_date": "2019-12-10",
+  "primary_pdf_sha256": "637fdf1c1d3e1bb76c9a3f534855007989b22854a9e32f2ed9caa483b4eae10c",
+  "primary_pdf_mirror": "https://raw.githubusercontent.com/sndsgd/kicad-er-tft028a2-4/main/ER-TFT028A2-4_Datasheet.pdf",
+  "native_board_dimensions_mm": [
+    50,
+    65
+  ],
+  "landscape_board_dimensions_mm": [
+    65,
+    50
+  ],
+  "landscape_enclosure_dimensions_mm": [
+    75,
+    60
+  ],
+  "enclosure_wall_mm": 0.8,
+  "landscape_body_dimensions_mm": [
+    69.3,
+    50.2
+  ],
+  "landscape_active_dimensions_mm": [
+    57.6,
+    43.2
+  ],
+  "landscape_active_center_mm": [
+    -3.45,
+    -0.3
+  ],
+  "landscape_body_center_mm": [
+    0,
+    0
+  ],
+  "finished_front_ccw_rotation_degrees": 90,
+  "fpc_exit_in_finished_front": "right",
+  "fpc_flat_extension_mm": 26.7,
+  "fpc_extension_tolerance_mm": 0.5,
+  "fpc_contact_pitch_mm": 0.5,
+  "fpc_contact_count": 50,
+  "fpc_terminal_thickness_mm": 0.3,
+  "fpc_terminal_thickness_tolerance_mm": 0.03,
+  "fpc_conductor_width_mm": 0.35,
+  "fpc_conductor_width_tolerance_mm": 0.03,
+  "fpc_exposed_length_mm": 3.5,
+  "fpc_tail_width_mm": 25.5,
+  "fpc_tail_width_tolerance_mm": 0.1,
+  "fpc_minimum_bend_radius_verified": false,
+  "fpc_minimum_bend_radius_mm": null,
+  "unfolded_manufacturer_socket_contact_face": "top",
+  "controller": "ILI9341",
+  "selected_electrical_mode_for_candidate": "4-wire8-bit Serial Interface I; IM3..IM0=0110",
+  "current_2p8V_logic_supply_fits_candidate_limits": true,
+  "backlight_topology": "Common cathode with4 separately exposed anodes; not the existing common-anode wiring",
+  "backlight_parallel_led_count": 4,
+  "backlight_total_typical_current_ma": 70,
+  "backlight_total_maximum_current_ma": 80,
+  "backlight_vf_at_80ma_typical_max_v": [
+    3.2,
+    3.4
+  ],
+  "current_board_j7_native_pose": {
+    "pcbX": 8.199999999999998,
+    "pcbY": -12.625,
+    "pcbRotation": 90
+  },
+  "accepted_final_j7_pose": null,
+  "pcb_components_moved": [],
+  "board_electrical_source_changed": false,
+  "canonical_native_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+  "native_error_counts": {
+    "pcb_port_not_connected_error": 50
+  },
+  "body_coverage_of_enclosure_face_percent": 77.30799999999999,
+  "active_coverage_of_enclosure_face_percent": 55.296,
+  "body_coverage_of_pcb_percent": 100.0,
+  "body_area_divided_by_pcb_area_percent": 107.04184615384615,
+  "overhang_beyond_landscape_pcb_mm": {
+    "left": 2.1499999999999986,
+    "right": 2.1499999999999986,
+    "top": 0.10000000000000142,
+    "bottom": 0.10000000000000142
+  },
+  "centered_enclosure_body_margins_mm": {
+    "left": 2.8500000000000014,
+    "right": 2.8500000000000014,
+    "top": 4.899999999999999,
+    "bottom": 4.899999999999999
+  },
+  "centered_enclosure_inner_body_margins_mm": {
+    "left": 2.0500000000000016,
+    "right": 2.0500000000000016,
+    "top": 4.099999999999999,
+    "bottom": 4.099999999999999
+  },
+  "current_case_center_landscape_mm": [
+    -3.5,
+    0
+  ],
+  "current_case_outer_body_right_margin_mm": -0.6499999999999986,
+  "current_case_inner_body_right_margin_mm": -1.4499999999999957,
+  "antenna_keepout_landscape_bounds_mm": [
+    -39.675,
+    -22,
+    -31.675,
+    -2
+  ],
+  "centered_body_current_antenna_overlap_area_mm2": 59.49999999999996,
+  "minimum_case_dimension_if_RF_stays_along_LCD_long_edge_mm": 78.89999999999999,
+  "straight_tail_end_front_x_mm": 61.349999999999994,
+  "straight_tail_overrun_past_centered_enclosure_inner_right_mm": 24.64999999999999,
+  "qualified_bend_path": null,
+  "full_drc_passed": false,
+  "connected_for_fabrication": false,
+  "fresh_unchanged_board_audit": {
+    "exit_code": 1,
+    "shorts": 0,
+    "measured_geometry_violations": 0,
+    "physically_open_nets": 12,
+    "zero_drc_zero_shorts_and_connected": false
+  }
+}

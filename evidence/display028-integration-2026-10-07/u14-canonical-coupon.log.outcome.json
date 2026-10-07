@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node_modules/.bin/tsci",
+    "build",
+    "/tmp/display028-import/pin1.circuit.tsx",
+    "--routing-disabled",
+    "--pcb-svgs"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 7.02,
+  "peak_process_group_rss_bytes": 730288128,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

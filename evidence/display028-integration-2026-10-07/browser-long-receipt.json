@@ -1,0 +1,34 @@
+{
+  "url": "https://www.buydisplay.com/download/manual/ER-TFT028A3-4_Datasheet.pdf",
+  "checked_at_utc": "2026-10-07T14:27:58.253Z",
+  "tls_verification_enabled": true,
+  "approved_environment_CA_import": true,
+  "request_failures": [
+    {
+      "url": "https://www.buydisplay.com/.webmcp/bridge.js",
+      "failure": {
+        "errorText": "csp"
+      }
+    },
+    {
+      "url": "https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/[ephemeral-path-omitted]",
+      "failure": {
+        "errorText": "net::ERR_TUNNEL_CONNECTION_FAILED"
+      }
+    }
+  ],
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Loading the script 'https://www.buydisplay.com/.webmcp/bridge.js' violates the following Content Security Policy directive: \"script-src 'nonce-oe8jVMeYpzHIrkxHvbqhTV' 'unsafe-eval' https://challenges.cloudflare.com\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "%c%d font-size:0;color:transparent NaN",
+    "%c%d font-size:0;color:transparent NaN"
+  ],
+  "initial_http_status": 403,
+  "title": "Just a moment...",
+  "final_url": "https://www.buydisplay.com/download/manual/ER-TFT028A3-4_Datasheet.pdf",
+  "body_text": "www.buydisplay.com\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a46d96f67b516781\nPerformance and Security by Cloudflare\nPrivacy",
+  "PDF_links": [],
+  "public_receipt_ephemeral_challenge_path_omitted": true
+}

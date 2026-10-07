@@ -1,0 +1,51 @@
+manufacturer_panel_pin,manufacturer_function,intended_function_in_4wire_serial_I,final_J7_contact
+1,LEDK,Common cathode; sink-return network after backlight redesign,Unassigned pending qualified mating; no old mapping reused
+2,LEDA1,Anode1; positive backlight network,Unassigned pending qualified mating; no old mapping reused
+3,LEDA2,Anode2; positive backlight network,Unassigned pending qualified mating; no old mapping reused
+4,LEDA3,Anode3; positive backlight network,Unassigned pending qualified mating; no old mapping reused
+5,LEDA4,Anode4; positive backlight network,Unassigned pending qualified mating; no old mapping reused
+6,IM0,GND / low,Unassigned pending qualified mating; no old mapping reused
+7,IM1,VLCD / high,Unassigned pending qualified mating; no old mapping reused
+8,IM2,VLCD / high,Unassigned pending qualified mating; no old mapping reused
+9,IM3,GND / low,Unassigned pending qualified mating; no old mapping reused
+10,RESET,LCD_RESET_N,Unassigned pending qualified mating; no old mapping reused
+11,VSYNC,GND; unused RGB input,Unassigned pending qualified mating; no old mapping reused
+12,HSYNC,GND; unused RGB input,Unassigned pending qualified mating; no old mapping reused
+13,DOTCLK,GND; unused RGB input,Unassigned pending qualified mating; no old mapping reused
+14,DE,GND; unused RGB input,Unassigned pending qualified mating; no old mapping reused
+15,DB17,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+16,DB16,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+17,DB15,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+18,DB14,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+19,DB13,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+20,DB12,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+21,DB11,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+22,DB10,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+23,DB9,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+24,DB8,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+25,DB7,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+26,DB6,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+27,DB5,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+28,DB4,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+29,DB3,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+30,DB2,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+31,DB1,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+32,DB0,GND; unused parallel-data input,Unassigned pending qualified mating; no old mapping reused
+33,SDO,Leave open; no readback in Serial Interface I,Unassigned pending qualified mating; no old mapping reused
+34,SDI,LCD_SDA,Unassigned pending qualified mating; no old mapping reused
+35,RD,VLCD / inactive high,Unassigned pending qualified mating; no old mapping reused
+36,WRX(D/CX),LCD_DC,Unassigned pending qualified mating; no old mapping reused
+37,D/CX(SCL),LCD_SCLK,Unassigned pending qualified mating; no old mapping reused
+38,CS,LCD_CS_N,Unassigned pending qualified mating; no old mapping reused
+39,TE,Leave open; unused output,Unassigned pending qualified mating; no old mapping reused
+40,VDDI,VLCD2.8V,Unassigned pending qualified mating; no old mapping reused
+41,VDDI,VLCD2.8V,Unassigned pending qualified mating; no old mapping reused
+42,VCI,VLCD2.8V,Unassigned pending qualified mating; no old mapping reused
+43,GND,GND,Unassigned pending qualified mating; no old mapping reused
+44,X+,Leave open; no touch,Unassigned pending qualified mating; no old mapping reused
+45,Y+,Leave open; no touch,Unassigned pending qualified mating; no old mapping reused
+46,X-,Leave open; no touch,Unassigned pending qualified mating; no old mapping reused
+47,Y-,Leave open; no touch,Unassigned pending qualified mating; no old mapping reused
+48,GND,GND,Unassigned pending qualified mating; no old mapping reused
+49,GND,GND,Unassigned pending qualified mating; no old mapping reused
+50,GND,GND,Unassigned pending qualified mating; no old mapping reused

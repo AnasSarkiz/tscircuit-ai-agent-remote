@@ -1,0 +1,120 @@
+Use this as the follow-up prompt:
+Continue working on the actual PCB design. Do not stop at a proposal/review image.
+We are replacing the old ER-TFT023-1 display because it is too small, does not cover enough of the enclosure/front face, and its portrait/FPC arrangement is wrong for the product.
+New display requirement
+Use a BuyDisplay ~2.8-inch landscape LCD, preferably ER-TFT028A3-4 or the closest BuyDisplay variant that satisfies the requirements below.
+Before changing the PCB, download and verify the exact manufacturer mechanical drawing/datasheet. Do not assume dimensions, FPC position, pin numbering, connector pitch, or contact orientation.
+Target mechanical arrangement:
+- PCB: approximately 50 × 65 mm
+- Enclosure/front face: approximately 60 × 75 mm
+- LCD must be mounted LANDSCAPE
+- Target LCD body approximately 69 × 50 mm
+- Target active area approximately 58 × 43 mm
+- It is acceptable and expected for the LCD to slightly overhang the PCB, because it is supported by the enclosure/front assembly.
+- It must remain fully inside the enclosure.
+- The screen should use substantially more of the front face than the old ER-TFT023-1.
+Critical FPC orientation
+The LCD flex/FPC must exit toward the LEFT or RIGHT side of the finished device.
+Do not orient the flex toward the top or bottom.
+Rotate/orient the actual LCD assembly as required to achieve this while keeping the displayed UI landscape.
+Move J7
+The current J7 LCD connector position was designed around the old portrait LCD and is no longer valid.
+Move J7 to the appropriate left/right PCB edge to match the exact FPC tail position of the new LCD.
+Determine J7's final coordinates and rotation from the manufacturer's mechanical drawing rather than guessing.
+Requirements for J7:
+- Place it close to the corresponding PCB edge.
+- FPC should enter the connector naturally.
+- Avoid unnecessary 90°/180° flex folding.
+- Respect the manufacturer's minimum flex bend radius.
+- Do not route the flex across tall components.
+- Leave room to open/close the ZIF latch during assembly.
+- Check whether contacts are top-contact or bottom-contact.
+- Verify pin 1 orientation.
+- Verify connector pitch and exact mating FPC thickness.
+- Make sure the enclosure wall does not interfere with the connector or flex bend.
+Placement changes
+You are allowed to move components affected by the new display/J7 position.
+In particular, review and move as necessary:
+- J7
+- U14
+- C42
+- C43
+- any other component blocking the LCD FPC path or connector-access area
+Do not move parts blindly. Preserve electrical and RF placement constraints.
+The antenna/antenna keepout remains critical:
+- Do not place the LCD connector, FPC, copper, ground fill, or moved components inside an RF antenna keepout unless the RF design explicitly permits it.
+- Check whether the LCD/FPC itself overlaps the antenna region and account for its effect mechanically and electrically.
+Electrical integration
+Verify the exact LCD controller/interface from the selected BuyDisplay part.
+Prefer a simple interface suitable for the existing MCU, ideally:
+- SPI
+- minimal signal count
+- supported logic voltage
+Verify every LCD pin against the manufacturer datasheet:
+- power rails
+- ground
+- SPI/interface signals
+- reset
+- D/C
+- chip select
+- backlight
+- touch interface if used
+Do not reuse the old LCD pin mapping unless it matches the new panel exactly.
+Update the schematic and PCB together if the pinout/connector changes.
+Backlight
+Check the new LCD's LED backlight specifications and confirm the existing backlight circuit is suitable.
+Verify:
+- LED forward voltage
+- number/configuration of LEDs
+- required current
+- driver/current-limiting method
+- maximum ratings
+Modify the backlight circuit if needed instead of assuming the old LCD circuit is compatible.
+Mechanical validation
+Build an accurate mechanical overlay using the real LCD outline, active area, FPC tail and connector position.
+Show:
+1. 50 × 65 mm PCB outline
+2. enclosure/front-face outline
+3. full LCD glass/body outline
+4. active display area
+5. FPC tail
+6. J7
+7. FPC bend/path
+8. antenna keepout
+9. components underneath/around the display
+Calculate:
+- LCD coverage of the enclosure face
+- LCD coverage of the PCB
+- LCD overhang beyond each PCB edge
+- enclosure margin around the LCD
+The previous 69.54% PCB overlap result is not our design target. We want the screen to visually fill most of the front enclosure.
+Then actually implement it
+This is not review-only.
+After confirming the exact LCD:
+1. replace the old LCD definition
+2. update the schematic/interface as necessary
+3. move/rotate J7
+4. move interfering components
+5. update LCD/FPC mechanical keepouts
+6. redo placement validation
+7. reroute all affected nets
+8. regenerate the PCB
+9. run connectivity checks
+10. run full DRC
+11. check trace/via clearance
+12. check antenna keepout
+13. verify no FPC/mechanical collisions
+Keep working through the issues you find. Do not stop after generating another placement proposal.
+At the end, report:
+- exact BuyDisplay part number selected
+- datasheet/mechanical drawing used
+- LCD body dimensions
+- active-area dimensions
+- FPC exit side
+- J7 coordinates and rotation
+- components moved
+- schematic changes
+- routing changes
+- DRC/connectivity results
+- remaining blockers to fabrication
+The final orientation must look like a real landscape handheld/product front, with the LCD filling most of the available enclosure face and the LCD FPC/J7 connection occurring from the left or right side, never the top/bottom.

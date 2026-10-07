@@ -1,0 +1,17 @@
+Building 1 file(s)...
+Building pin1.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/pin1/circuit.json
+Port GND on U14 is missing a trace
+Port VCC on U14 is missing a trace
+Generating preview images...
+[pin1] Generating PCB SVG...
+[pin1] Written pcb.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

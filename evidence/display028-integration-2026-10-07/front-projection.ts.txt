@@ -1,0 +1,15 @@
+import { applyToPoint, rotateDEG } from "transformation-matrix"
+import { z } from "zod"
+
+const root = "/workspace/tscircuit-ai-agent-remote"
+const evidence = `${root}/evidence/display028-integration-2026-10-07`
+const point = z.object({ x: z.number(), y: z.number() })
+const courtyards = z.object({ outlines: z.array(z.object({ reference: z.string(), outline: z.array(point) })) }).parse(await Bun.file(`${evidence}/native-courtyards.json`).json())
+const native = z.array(z.object({ type: z.string() }).passthrough()).parse(await Bun.file(`${root}/dist/index/circuit.json`).json())
+const pcbBoard = z.object({ outline: z.array(point) }).parse(native.find(element => element.type === "pcb_board"))
+const poses = z.record(z.string(), z.object({ pcbX: z.number(), pcbY: z.number(), pcbRotation: z.number() })).parse(await Bun.file(`${evidence}/unchanged-native-poses.json`).json())
+const pcbToFinishedFront = rotateDEG(90)
+const outlines = courtyards.outlines.map(courtyard => ({ reference: courtyard.reference, outline: courtyard.outline.map(point => applyToPoint(pcbToFinishedFront, point)) }))
+const frontPoses = Object.fromEntries(Object.entries(poses).map(([reference, pose]) => [reference, { center: applyToPoint(pcbToFinishedFront, { x: pose.pcbX, y: pose.pcbY }), ccwRotationDegrees: (pose.pcbRotation + 90) % 360 }]))
+await Bun.write(`${evidence}/finished-front-native-projection.json`, JSON.stringify({ classification: "Read-only coordinate projection of the unchanged board, not a replacement placement", pcbToFinishedFront, pcbOutline: pcbBoard.outline.map(point => applyToPoint(pcbToFinishedFront, point)), outlines, frontPoses }, null, 2))
+console.log(JSON.stringify({ projectedCourtyards: outlines.length, projectedBoardOutlinePoints: pcbBoard.outline.length }))

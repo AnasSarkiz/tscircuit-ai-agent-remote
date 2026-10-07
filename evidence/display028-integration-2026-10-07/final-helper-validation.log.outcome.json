@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -euo pipefail; node_modules/.bin/biome format --write scripts/routing/lib/get-native-courtyard-proposal.ts scripts/routing/tests/native-courtyard-proposal.test.ts; bun run typecheck; bun test scripts/routing/tests/native-courtyard-proposal.test.ts; bun scripts/routing/propose-placement.ts dist/index/circuit.json evidence/display028-integration-2026-10-07/unchanged-native-poses.json evidence/display028-integration-2026-10-07/final-native-courtyards.json; cmp evidence/display028-integration-2026-10-07/native-courtyards.json evidence/display028-integration-2026-10-07/final-native-courtyards.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 12.03,
+  "peak_process_group_rss_bytes": 1603059712,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

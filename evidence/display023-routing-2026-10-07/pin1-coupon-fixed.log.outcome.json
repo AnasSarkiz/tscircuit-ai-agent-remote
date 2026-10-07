@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/workspace/tscircuit-ai-agent-remote/node_modules/.bin/tsci",
+    "build",
+    "pin1.circuit.tsx",
+    "--routing-disabled",
+    "--pcb-svgs"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 6.53,
+  "peak_process_group_rss_bytes": 729141248,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,3 +1,24 @@
+Latest explicit request, 2026-10-07, user-pasted file_00000000cb0881f4952a48a1ad747186:
+**Replace the unfinished ER-TFT023-1 plan with a BuyDisplay approximately2.8-inch
+LANDSCAPE display**, preferably ER-TFT028A3-4 or an exact-qualified close variant.
+PCB approximately50×65mm/front approximately60×75mm;body approximately69×50mm,
+active approximately58×43mm. Keep the body centred on the board. In the finished
+landscape device,FPC must exit left/right;move J7 to the corresponding PCB edge
+using the real manufacturer drawing. Verify pitch,thickness,face,pin 1 and minimum
+bend radius;no guessed folds,antenna overlap or reuse of an incompatible pinout.
+Move interfering parts while preserving RF/electrical constraints,review backlight,
+then actually implement/reroute and run complete connectivity/DRC. Do not stop at
+an image-only proposal. This supersedes the earlier 2.3-inch selection and coverage
+relaxation. ER-TFT028A2-4 exact primary mirror is reviewed as a candidate only:
+69.3×50.2mm landscape body,ILI9341,common-cathode backlight,26.7mm tail. It overlaps
+the current RF keepout and has no published minimum bend radius. Final J7 mating
+and poses remain unassigned;no PCB replacement/routing is accepted. See
+`evidence/display028-integration-2026-10-07/review.md`. The unaccepted 2.3-inch staged
+source is preserved separately and restored to exact publicHEAD. No orders,
+genuine-import patches,check suppression,watcher,subagents or other-chat messages.
+
+Historical 2.3-inch decision below is superseded by this request.
+
 Latest explicit display decision, 2026-10-07: **“Accept the 2.3-inch display
 (Recommended)”**. Select no-touch ER-TFT023-1 for the next revision, and relax
 the earlier ≥80% display-body coverage target for this panel. The uploaded exact

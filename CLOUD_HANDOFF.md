@@ -1,3 +1,23 @@
+## Latest 2.8-inch request —2026-10-07
+
+The uploaded follow-up explicitly supersedes the2.3-inch plan with a landscape
+BuyDisplay~2.8-inch panel and left/right FPC/J7 connection. **No replacement is
+implemented.** Exact ER-TFT028A2-4 primary mirror confirms69.3×50.2mm body,
+57.6×43.2mm active area,ILI9341 and common-cathode backlight. Centred body overlaps
+current antenna keepout59.5mm²;flat 26.7mm tail leaves the enclosure;minimum bend
+radius is not published. Preferred A3 download is still challenged and the actual
+Cloudflare subdomain is proxy-blocked. Saved19-domain draft/startup priorities
+need runtime application;model CDN is responding. Canonical exact/download C7848
+re-import now fixes supplier pin 1 and preserves exact CAD assets/origin,but20
+pill pads have no paste,so it is not applied to the active board. Old2.3-inch
+staged sources and rejected placement are retained underE13. Current accepted
+native/source/routes remain unchanged,with 50 opens and fabrication gates.
+Read `evidence/display028-integration-2026-10-07/review.md` and the latest user
+decision first. Do not continue the superseded2.3-inch poses or guess final J7
+mating. Requested actual placement/routing is blocked,not complete.
+
+Historical handoff follows.
+
 ## Current approved 2.3-inch selection and primary review — 2026-10-07
 
 The user uploaded the exact **ER-TFT023-1** datasheet and accepted the smaller

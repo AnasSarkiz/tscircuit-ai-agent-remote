@@ -1,0 +1,14 @@
+Formatted 3 files in 5ms. Fixed 3 files.
+$ tsc --noEmit
+bun test v1.3.9 (cf6cdbbb)
+
+scripts/routing/tests/native-courtyard-proposal.test.ts:
+(pass) polygon courtyard moves around its component anchor [4.21ms]
+(pass) rotated rectangle courtyard preserves its own rotation [1.02ms]
+(pass) unsupported native courtyard cannot produce a passing proposal [0.84ms]
+(pass) missing native component geometry fails instead of dropping the component [0.67ms]
+
+ 4 pass
+ 0 fail
+ 16 expect() calls
+Ran 4 tests across 1 file. [90.00ms]

@@ -1,0 +1,13 @@
+51 |   const outlines = components.flatMap((component) => {
+52 |     const reference = component.source_component_id
+53 |       ? names.get(component.source_component_id)
+54 |       : undefined
+55 |     if (!reference || !component.center || component.rotation === undefined) {
+56 |       throw new Error(`Incomplete native component geometry: ${component.pcb_component_id}`)
+                     ^
+error: Incomplete native component geometry: pcb_component_135
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/scripts/routing/lib/get-native-courtyard-proposal.ts:56:17)
+      at getNativeCourtyardProposal (/workspace/tscircuit-ai-agent-remote/scripts/routing/lib/get-native-courtyard-proposal.ts:51:31)
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/propose-placement.ts:6:18
+
+Bun v1.3.9 (Linux x64)

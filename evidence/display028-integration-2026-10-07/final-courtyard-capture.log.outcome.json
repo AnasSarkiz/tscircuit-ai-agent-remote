@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "scripts/routing/propose-placement.ts",
+    "dist/index/circuit.json",
+    "evidence/display028-integration-2026-10-07/unchanged-native-poses.json",
+    "evidence/display028-integration-2026-10-07/final-native-courtyards.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 90112,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

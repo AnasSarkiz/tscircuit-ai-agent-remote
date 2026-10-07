@@ -1,3 +1,23 @@
+## Latest landscape replacement qualification —2026-10-07
+
+**BLOCKED — no 2.8-inch PCB implementation or routing accepted.** The exact
+manufacturer A2 candidate is reviewed,including all 50 pins,69.3×50.2mm body,
+57.6×43.2mm active area and common-cathode backlight. Centred body/RF overlap is
+59.5mm²;the 26.7mm flat tail leaves the enclosure and no numerical minimum bend
+radius is published. A3 download needs the blocked Cloudflare subdomain.
+Native/source remain the acceptedWIP,not a new routed display revision.
+Genuine exact/download U14 import fixes supplier metadata/CAD alignment in a
+canonical coupon,but generates no paste for20 pads and is not applied. TypeScript,
+formatting and 5 geometry regressions pass. Full DRC,placement,mating,routing,
+stock and fabrication gates remain open. Saved network/startup draft is separate
+from applied runtime or environment publication. Exact sources,measurements,
+resource outcomes and next required actions:
+[evidence/display028-integration-2026-10-07/review.md](evidence/display028-integration-2026-10-07/review.md).
+No new board build/version,order or physical-test pass is claimed. Six trailing-whitespace warnings
+remain only in byte-preserved genuine-import evidence;authored CSV uses LF.
+
+Historical validation follows.
+
 ## Current speaker implementation step — 2026-10-07
 
 **0.0.8-wip-speaker-routing — NOT READY TO ORDER.** The qualified local speaker
