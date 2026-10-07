@@ -1,0 +1,40 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 2,
+    "completed": true,
+    "elapsed_seconds": 12.08
+  },
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 0.15
+  },
+  {
+    "name": "component-inventory",
+    "command": [
+      "python3",
+      "evidence/order-readiness-2026-10-06/audit-components.py",
+      "--native",
+      "dist/index/circuit.json",
+      "--copper-audit",
+      "evidence/routing-continuation-2026-10-07/final-cli-copper-audit.json",
+      "--output-dir",
+      "evidence/routing-continuation-2026-10-07"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 0.2
+  }
+]

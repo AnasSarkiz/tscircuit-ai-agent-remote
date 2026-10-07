@@ -1,0 +1,569 @@
+{
+  "native_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+  "exact_current_identities_bound": 43,
+  "current_placements_bound": 125,
+  "reported_total_stock_covers_two_prototypes": 42,
+  "stock_shortage": [
+    "C160405"
+  ],
+  "assembly_allocation_qualified": false,
+  "stock_receipts_date_utc": "2026-10-07",
+  "no_order_or_reservation": true,
+  "parts": [
+    {
+      "part_number": "C2913201",
+      "references": [
+        "U1"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 3794,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/primary-native-inventory.json"
+    },
+    {
+      "part_number": "C165948",
+      "references": [
+        "J1"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 419295,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C165948.json"
+    },
+    {
+      "part_number": "C94934",
+      "references": [
+        "D2"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 5,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/primary-native-inventory.json"
+    },
+    {
+      "part_number": "C485802",
+      "references": [
+        "U12"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 3390,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C485802.json"
+    },
+    {
+      "part_number": "C160405",
+      "references": [
+        "J6"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 0,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": false,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/primary-native-inventory.json"
+    },
+    {
+      "part_number": "C107701",
+      "references": [
+        "R31",
+        "R32",
+        "R65",
+        "R66",
+        "R67"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 335283,
+      "quantity_for_two_prototypes": 10,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C107701.json"
+    },
+    {
+      "part_number": "C105580",
+      "references": [
+        "R33",
+        "R34"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 6246236,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C105580.json"
+    },
+    {
+      "part_number": "C99782",
+      "references": [
+        "R35"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 9685304,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C99782.json"
+    },
+    {
+      "part_number": "C98220",
+      "references": [
+        "R36",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R61",
+        "R68",
+        "R69",
+        "R70",
+        "R84",
+        "R90",
+        "R91",
+        "R94",
+        "R95",
+        "R99",
+        "R29",
+        "R30",
+        "R102",
+        "R104"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 11636643,
+      "quantity_for_two_prototypes": 40,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C98220.json"
+    },
+    {
+      "part_number": "C14675",
+      "references": [
+        "R37",
+        "R3",
+        "R4",
+        "R7",
+        "R40",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "R85",
+        "R87",
+        "R26"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 8804662,
+      "quantity_for_two_prototypes": 26,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C14675.json"
+    },
+    {
+      "part_number": "C21190",
+      "references": [
+        "R38",
+        "R41",
+        "R62",
+        "R64",
+        "R82",
+        "R86",
+        "R100",
+        "R27"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 21179572,
+      "quantity_for_two_prototypes": 16,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C21190.json"
+    },
+    {
+      "part_number": "C84419",
+      "references": [
+        "C30",
+        "C5",
+        "C41",
+        "C71"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 515864,
+      "quantity_for_two_prototypes": 8,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C84419.json"
+    },
+    {
+      "part_number": "C45000",
+      "references": [
+        "C31",
+        "C32",
+        "C42",
+        "C43",
+        "C51",
+        "C72",
+        "C75",
+        "C78",
+        "C76",
+        "C77",
+        "C80",
+        "C81",
+        "C25",
+        "C26"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 53636,
+      "quantity_for_two_prototypes": 28,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C45000.json"
+    },
+    {
+      "part_number": "C54313",
+      "references": [
+        "U16"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 166,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/primary-native-inventory.json"
+    },
+    {
+      "part_number": "C157929",
+      "references": [
+        "J3"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 130605,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C157929.json"
+    },
+    {
+      "part_number": "C19666",
+      "references": [
+        "C1"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 2432600,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C19666.json"
+    },
+    {
+      "part_number": "C90053",
+      "references": [
+        "C2",
+        "C3",
+        "C4",
+        "C40",
+        "C50",
+        "C70",
+        "C73",
+        "C74",
+        "C84",
+        "C85"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 132803,
+      "quantity_for_two_prototypes": 20,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C90053.json"
+    },
+    {
+      "part_number": "C126358",
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 1879877,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C126358.json"
+    },
+    {
+      "part_number": "C2845237",
+      "references": [
+        "U2"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 16517,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C2845237.json"
+    },
+    {
+      "part_number": "C668312",
+      "references": [
+        "L1"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 7688,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C668312.json"
+    },
+    {
+      "part_number": "C364359",
+      "references": [
+        "R5"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 258,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C364359.json"
+    },
+    {
+      "part_number": "C114639",
+      "references": [
+        "R6"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 373113,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C114639.json"
+    },
+    {
+      "part_number": "C2869847",
+      "references": [
+        "U13",
+        "U23"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 329,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C2869847.json"
+    },
+    {
+      "part_number": "C7848",
+      "references": [
+        "U14"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 24793,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C7848.json"
+    },
+    {
+      "part_number": "C262650",
+      "references": [
+        "J7"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 19051,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C262650.json"
+    },
+    {
+      "part_number": "C910544",
+      "references": [
+        "U3"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 25077,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C910544.json"
+    },
+    {
+      "part_number": "C20917",
+      "references": [
+        "Q1",
+        "Q9"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 915263,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C20917.json"
+    },
+    {
+      "part_number": "C15127",
+      "references": [
+        "Q2"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 801540,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/primary-native-inventory.json"
+    },
+    {
+      "part_number": "C173752",
+      "references": [
+        "J4"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 176631,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C173752.json"
+    },
+    {
+      "part_number": "C22775",
+      "references": [
+        "R60",
+        "R63",
+        "R83",
+        "R88",
+        "R89",
+        "R103"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 11391305,
+      "quantity_for_two_prototypes": 12,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C22775.json"
+    },
+    {
+      "part_number": "C963429",
+      "references": [
+        "U22"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 5864,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C963429.json"
+    },
+    {
+      "part_number": "C2480",
+      "references": [
+        "D3"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 1129946,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C2480.json"
+    },
+    {
+      "part_number": "C24478",
+      "references": [
+        "U24"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 3630,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C24478.json"
+    },
+    {
+      "part_number": "C105881",
+      "references": [
+        "R92",
+        "R93"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 744276,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C105881.json"
+    },
+    {
+      "part_number": "C7836",
+      "references": [
+        "U26"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 53519,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C7836.json"
+    },
+    {
+      "part_number": "C43698",
+      "references": [
+        "U25"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 35786,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C43698.json"
+    },
+    {
+      "part_number": "C114622",
+      "references": [
+        "R96",
+        "R97"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 393784,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C114622.json"
+    },
+    {
+      "part_number": "C5656610",
+      "references": [
+        "U4",
+        "U5"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 1701,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C5656610.json"
+    },
+    {
+      "part_number": "C105188",
+      "references": [
+        "U7"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 35178,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C105188.json"
+    },
+    {
+      "part_number": "C255576",
+      "references": [
+        "SW4",
+        "SW1",
+        "SW2"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 16840,
+      "quantity_for_two_prototypes": 6,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C255576.json"
+    },
+    {
+      "part_number": "C431540",
+      "references": [
+        "SW5"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 192042,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C431540.json"
+    },
+    {
+      "part_number": "C1848364",
+      "references": [
+        "U27"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 2571,
+      "quantity_for_two_prototypes": 2,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C1848364.json"
+    },
+    {
+      "part_number": "C15849",
+      "references": [
+        "C82",
+        "C83"
+      ],
+      "exact_mpn_match": true,
+      "reported_total_stock": 7008486,
+      "quantity_for_two_prototypes": 4,
+      "reported_total_covers_two_prototypes": true,
+      "receipt": "evidence/routing-continuation-2026-10-07/official-stock/C15849.json"
+    }
+  ]
+}

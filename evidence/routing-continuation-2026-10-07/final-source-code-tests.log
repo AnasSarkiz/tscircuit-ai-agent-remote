@@ -1,0 +1,806 @@
+$ tsc --noEmit
+$ biome format .
+Checked 107 files in 89ms. No fixes applied.
+$ bun test ./tests
+bun test v1.3.9 (cf6cdbbb)
+
+tests/haptic-manufacturer-connections.test.ts:
+(pass) haptic application manufacturer requirements > TI SOT-23 supply, ground, enable and output retain their physical pin numbers [47.77ms]
+(pass) haptic application manufacturer requirements > AOS G/S/D and MDD cathode/anode close the intended flyback loop and retain default-off paths [0.55ms]
+
+tests/type-c-manufacturer-connections.test.ts:
+(pass) Type-C controller manufacturer requirements > UFP strap, GPIO mode and local supply prevent conflicting Rd and rail backpower [1.34ms]
+(pass) Type-C controller manufacturer requirements > higher current requires stable controller power and advertised 1.5A or 3A [0.41ms]
+(pass) Type-C controller manufacturer requirements > VBUS detection resistors meet TI's 855k–920k allowed range [0.31ms]
+
+tests/motor-solder-access.test.ts:
+(pass) motor connector is removed while two accessible solder pads retain the motor circuit [4.97ms]
+
+tests/current-board-manufacturer-connections.test.ts:
+(pass) current MCU USB, supply, reset and boot use Espressif physical pins [5.64ms]
+(pass) current MCU external capacitors match Espressif's 22uF and 100nF reference values [0.83ms]
+(pass) current charger and battery supervisor retain manufacturer power and control pins [3.99ms]
+(pass) current regulator retains TI power, ground, feedback and switching pin identities [1.33ms]
+(pass) current amplifier supply and differential speaker outputs retain manufacturer pin assignments [1.24ms]
+(pass) current dual microphone power, data, clocks and channel select retain TDK pins [1.36ms]
+
+tests/display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [0.45ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [0.32ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, TE and LDO NC remain open [0.59ms]
+
+tests/placement-review-preservation.test.ts:
+(pass) Native placement review preserves the board > the inspection output has no copper routes, vias or pours [0.60ms]
+(pass) Native placement review preserves the board > all electrical connections and physical placement features match the canonical board [50.14ms]
+(pass) Native placement review preserves the board > the original switching paths and USB geometry survive the qualified stackup width change [15.85ms]
+
+tests/integrated-board-boundaries.test.ts:
+(pass) Native A4 board boundaries and fabrication gate > board has top-only physical components within the accepted PCB dimensions [13.80ms]
+ 98 |       thickness: 1.0,
+ 99 |     })
+100 |   })
+101 |   test("fabrication requires nonempty actual copper and zero unresolved native errors", () => {
+102 |     expect(rawElements.filter((element) => element.type === "pcb_trace").length).toBeGreaterThan(0)
+103 |     expect(rawElements.filter((element) => element.type.includes("error"))).toEqual([])
+                                                                                  ^
+error: expect(received).toEqual(expected)
+
+- []
++ [
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin50] is not connected to net [LCD_BACKLIGHT_OUTPUT] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_231",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_0",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin49] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_230",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_1",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin48] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_229",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_2",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin47] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_228",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_3",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin46] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_227",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_4",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin45] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_226",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_5",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin44] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_225",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_6",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin43] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_224",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_7",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin42] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_223",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_8",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin41] is not connected to net [LCD_RESET_N] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_222",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_9",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin40] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_221",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_10",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin39] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_220",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_11",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin38] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_219",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_12",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin37] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_218",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_13",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin36] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_217",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_14",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin35] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_216",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_15",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin34] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_215",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_16",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin33] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_214",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_17",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin32] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_213",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_18",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin31] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_212",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_19",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin30] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_211",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_20",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin29] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_210",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_21",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin28] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_209",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_22",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin27] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_208",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_23",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin26] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_207",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_24",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin25] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_206",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_25",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin24] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_205",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_26",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin23] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_204",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_27",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin22] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_203",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_28",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin21] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_202",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_29",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin20] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_201",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_30",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin19] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_200",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_31",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin17] is not connected to net [LCD_SDA] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_198",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_32",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin16] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_197",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_33",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin15] is not connected to net [LCD_DC] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_196",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_34",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin14] is not connected to net [LCD_SCLK] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_195",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_35",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin13] is not connected to net [LCD_CS_N] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_194",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_36",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin11] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_192",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_37",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin10] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_191",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_38",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin9] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_190",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_39",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin8] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_189",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_40",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin3] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_184",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_41",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin2] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_183",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_42",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin1] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_182",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_43",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin51] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_232",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_44",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin52] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_233",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_45",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D4] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_459",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_46",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D3] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_460",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_47",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D2] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_461",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_48",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D1] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_462",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_49",
++     "type": "pcb_port_not_connected_error",
++   },
++ ]
+
+- Expected  - 1
++ Received  + 602
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/integrated-board-boundaries.test.ts:103:77)
+(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.45ms]
+(pass) Native A4 board boundaries and fabrication gate > there is one shared instance of each inter-sheet rail [1.97ms]
+(pass) Native A4 board boundaries and fabrication gate > hardware hold and privacy remain distinct from buffered MCU readback [0.49ms]
+(pass) Native A4 board boundaries and fabrication gate > dual microphones, external loads and GPIO interfaces have actual source connections [0.97ms]
+
+tests/battery-ready-hardware-boundaries.test.ts:
+(pass) battery supervisor senses charger BAT and cannot be overridden by the MCU [0.60ms]
+
+tests/mcu-usb-manufacturer-connections.test.ts:
+31 | describe("Espressif module datasheet v1.8 connection requirements", () => {
+32 |   test("every emitted native element conforms to the installed Circuit JSON schema", () => {
+33 |     const failingElements = rawElements.flatMap((element, index) =>
+34 |       any_circuit_element.safeParse(element).success ? [] : [{ index, type: element.type }],
+35 |     )
+36 |     expect(failingElements).toEqual([])
+                                 ^
+error: expect(received).toEqual(expected)
+
+- []
++ [
++   {
++     "index": 223,
++     "type": "schematic_group",
++   },
++   {
++     "index": 438,
++     "type": "pcb_component",
++   },
++   {
++     "index": 439,
++     "type": "pcb_component",
++   },
++   {
++     "index": 440,
++     "type": "pcb_component",
++   },
++   {
++     "index": 441,
++     "type": "pcb_component",
++   },
++   {
++     "index": 442,
++     "type": "pcb_component",
++   },
++   {
++     "index": 443,
++     "type": "pcb_component",
++   },
++   {
++     "index": 444,
++     "type": "pcb_component",
++   },
++   {
++     "index": 445,
++     "type": "pcb_component",
++   },
++   {
++     "index": 446,
++     "type": "pcb_component",
++   },
++   {
++     "index": 447,
++     "type": "pcb_component",
++   },
++   {
++     "index": 448,
++     "type": "pcb_component",
++   },
++   {
++     "index": 449,
++     "type": "pcb_component",
++   },
++   {
++     "index": 450,
++     "type": "pcb_component",
++   },
++   {
++     "index": 451,
++     "type": "pcb_component",
++   },
++   {
++     "index": 452,
++     "type": "pcb_component",
++   },
++   {
++     "index": 453,
++     "type": "pcb_component",
++   },
++   {
++     "index": 454,
++     "type": "pcb_group",
++   },
++ ]
+
+- Expected  - 1
++ Received  + 74
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/mcu-usb-manufacturer-connections.test.ts:36:29)
+(fail) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [884.45ms]
+(pass) Espressif module datasheet v1.8 connection requirements > module supply, reset, USB polarity and boot reach the correct physical pins [0.61ms]
+(pass) Espressif module datasheet v1.8 connection requirements > octal PSRAM pins 28–30 stay disconnected from external applications [0.37ms]
+(pass) Espressif module datasheet v1.8 connection requirements > all nine exposed ground shapes retain their physical identity and internal connection [0.22ms]
+(pass) Espressif module datasheet v1.8 connection requirements > the diagnostic remains unrouted and contains no emitted errors [0.33ms]
+
+tests/backlight-manufacturer-connections.test.ts:
+(pass) TPS60230 current driver uses TI physical pins, four independent LED returns and same-rail enables [3.24ms]
+
+tests/import-qualification.test.ts:
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.04ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.14ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.03ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.02ms]
+(pass) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.06ms]
+
+tests/microphone-clock-hardware-boundaries.test.ts:
+(pass) microphone clock hardware boundaries > TI regulator enable belongs only to the hardware hold net [0.83ms]
+(pass) microphone clock hardware boundaries > Nexperia open-drain clocks obtain both high levels only from VMIC [0.48ms]
+
+tests/amplifier-manufacturer-connections.test.ts:
+(pass) amplifier manufacturer requirements > power, exposed ground, differential output and left-channel gain use manufacturer pins [1.24ms]
+(pass) amplifier manufacturer requirements > shutdown uses amplifier supply and MOSFET physical gate/source/drain polarity [0.68ms]
+
+tests/final-display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [1.72ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [3.20ms]
+(pass) display manufacturer physical pin requirements > genuine top-contact connector retains pin 50 north; portrait mating remains provisional [6.43ms]
+(pass) display manufacturer physical pin requirements > TI TPS60230 powers four separate panel cathodes, retaining D1 regulation feedback [1.23ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open [3.47ms]
+
+tests/imported-reference-ownership.test.ts:
+(pass) native imported reference labels belong to the correct component > comparator [107.97ms]
+(pass) native imported reference labels belong to the correct component > usb [88.13ms]
+(pass) native imported reference labels belong to the correct component > amplifier [84.92ms]
+
+tests/hold-readback-hardware-boundaries.test.ts:
+(pass) MCU hold readback reaches the buffer output, without a direct hardware-enable connection [0.86ms]
+
+tests/mounting-and-battery-prerequisites.test.ts:
+(pass) AKY2945 centre NTC is connected and unresolved outer polarity is left open [1.52ms]
+(pass) A4 trial M2 mounts are nonconductive holes with all-layer circular clearance [1.92ms]
+
+2 tests failed:
+(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.45ms]
+(fail) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [884.45ms]
+
+ 48 pass
+ 2 fail
+ 695 expect() calls
+Ran 50 tests across 17 files. [2.58s]
+error: script "test" exited with code 1
+

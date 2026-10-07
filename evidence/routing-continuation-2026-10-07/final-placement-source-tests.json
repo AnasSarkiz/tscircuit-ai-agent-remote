@@ -1,0 +1,35 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 2,
+    "completed": true,
+    "elapsed_seconds": 10.24
+  },
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 0.15
+  },
+  {
+    "name": "board-tests",
+    "command": [
+      "bun",
+      "run",
+      "test"
+    ],
+    "exit_code": 1,
+    "completed": true,
+    "elapsed_seconds": 2.63
+  }
+]

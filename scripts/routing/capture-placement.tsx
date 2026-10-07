@@ -1,4 +1,5 @@
 import { RootCircuit } from "tscircuit"
+import { getPlatformConfig } from "@tscircuit/eval"
 import { relative } from "node:path"
 import { plugin } from "bun"
 
@@ -14,7 +15,9 @@ plugin({
 const { default: Board } = await import("../../main")
 const outputPath = Bun.argv[2]
 if (!outputPath) throw new Error("Provide native placement output path")
-const root = new RootCircuit()
+// Use the official supplier/asset platform, as the CLI does. This generates
+// real supplier orientation metadata; no routed JSON is copied into placement.
+const root = new RootCircuit({ platform: getPlatformConfig() })
 root.on("autorouting:start", () => {
   throw new Error("Placement-only mode must never run a router")
 })

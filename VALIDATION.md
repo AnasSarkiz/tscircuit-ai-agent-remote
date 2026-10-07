@@ -1,4 +1,68 @@
-## Current manual routing repair — 2026-10-07
+## Current speaker implementation step — 2026-10-07
+
+**0.0.8-wip-speaker-routing — NOT READY TO ORDER.** The qualified local speaker
+repair is a WIP step. It preserves all 9,842 prior numbered-terminal pairs,
+adds U3.10–J4.2, retains all 125 purchased identities and changes five purchased
+poses plus TP1. Original imports/models/solver caches remain byte-identical.
+
+The official isolated CLI build completes in 254.38 seconds and exits 1 with
+50 actual open-port errors. Its untouched JSON is committed at
+`dist/index/circuit.json` (SHA-256
+`35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d`).
+There are 384 traces, 325 through vias, 270 pours and 12 physically open nets,
+all involving the deferred display; J3 unassigned outer contacts are excluded.
+Independent geometry measures zero shorts/clearance violations. All 247 active
+authored regions meet their unchanged nominal widths. This is not zero DRC.
+
+| Gate | Current result |
+| --- | --- |
+| Requirements/interfaces | Blocked: J3 polarity, J7 mating, load/current/stackup/mechanics |
+| Schematic/BOM | Blocked: exact J6 unavailable and supplier/assembly qualification incomplete |
+| Placement | Automated checks pass; final mechanical qualification in progress |
+| Routing | Blocked: 50 native opens, 12 physical open nets, two explicit-width failures |
+| Automated/visual | In progress: type/format/92 routing tests/five source checks pass; board tests 48/2 |
+| Prototype fabrication | Blocked: schema, paste, polygon exporter/shorts, rotations, interfaces and widths |
+| Physical prototype | Not started |
+| Public prototype package | Qualified WIP step; exact GitHub/package/preview verification in publication receipts |
+
+The direct native placement capture uses the official `getPlatformConfig` API
+and completes with zero errors, zero traces/vias/pours and 125 genuine supplier
+orientation maps. Its router-start assertion remains active. The CLI placement
+entry still emits copper, including with `--routing-disabled`, and is retained
+as a tooling failure. No generated metadata was copied into native JSON.
+
+All 26 schematic pages and four copper layers were inspected. CLI schematic
+style analysis reports zero issues. Actual UI analysis was invoked but fails to
+load its CDN module with `ERR_CERT_AUTHORITY_INVALID`; TLS was not disabled.
+The supported source snapshot completes in 61.60 seconds and reports both
+historical reference mismatches. References are unchanged and no new baseline
+is accepted merely to obtain a pass. An earlier 180-second interrupted attempt
+is retained separately. The frozen runtime installs 317 packages successfully.
+
+Remaining strict gates: 169 native-schema failures; 32 missing U16/C54313 and
+U27/C1848364 pill-pad paste records; official shorts/Gerber polygon failure;
+U14/C7848 incompatible supplier pin-1 rotation metadata; two 0.275 mm regulator
+sections below explicit 1 mm requirements; 64 nominal-width branches needing
+current review. Latest official core/JSON/CLI tarballs retain the investigated
+generator issues, so dependencies and imported definitions were not patched.
+
+J6 replacement C265110 cannot be imported because EasyEDA returns HTTP 403.
+Under AGENTS.md, “If a required part cannot be imported, or an imported component
+has any issue, report it ... as a blocking issue ... and stop dependent work.”
+The local [tscircuit skill](.agents/skills/tscircuit/SKILL.md) also says,
+“When the canonical approach is blocked, diagnose it ... never conceal it with
+a hack or fallback.” These block component-dependent fabrication approval;
+independent routing, audits and authorized WIP publication are completed.
+
+Full [review and receipts](evidence/routing-continuation-2026-10-07/review.md)
+identify the remaining primary drawings, stock/import and toolchain work. The
+environment domain draft is saved but requires Save/Publish in Environment
+settings. No ordering, upstream merge, new issue or physical test occurred.
+Historical checkpoints follow.
+
+---
+
+## Historical manual routing repair — 2026-10-07
 
 **0.0.7-wip-manual-routing-repairs — NOT READY TO ORDER.** This entry
 supersedes the historical checkpoints below. U4 now has a real 0.36 mm ground

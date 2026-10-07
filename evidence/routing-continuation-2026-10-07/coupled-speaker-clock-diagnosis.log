@@ -1,0 +1,11 @@
+{"clock_relocation_failure_stage_counts": {"via_blocked": 53, "neck_blocked": 0, "peer_route_blocked": 0}}
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-coupled-speaker.py", line 250, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-coupled-speaker.py", line 238, in main
+    result['clock_relocation'] = relocate_clock_star(planner, specification)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-coupled-speaker.py", line 94, in relocate_clock_star
+    raise ValueError('No qualified clock-star relocation found; no board sources changed')
+ValueError: No qualified clock-star relocation found; no board sources changed

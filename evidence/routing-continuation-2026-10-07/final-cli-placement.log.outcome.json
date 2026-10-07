@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd .publish/speaker-placement-runtime\nbun install --frozen-lockfile\nexec bun node_modules/.bin/tsci build placement.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 132.75,
+  "peak_process_group_rss_bytes": 2728235008,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

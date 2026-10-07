@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import subprocess,json,time,pathlib; p=pathlib.Path(\"evidence/routing-continuation-2026-10-07/final-code-and-inventory.json\"); records=[]\nfor name,command in [(\"typecheck\",[\"bun\",\"run\",\"typecheck\"]),(\"format\",[\"bun\",\"run\",\"format:check\"]),(\"component-inventory\",[\"python3\",\"evidence/order-readiness-2026-10-06/audit-components.py\",\"--native\",\"dist/index/circuit.json\",\"--copper-audit\",\"evidence/routing-continuation-2026-10-07/final-cli-copper-audit.json\",\"--output-dir\",\"evidence/routing-continuation-2026-10-07\"] )]:\n start=time.monotonic(); r=subprocess.run(command); records.append({\"name\":name,\"command\":command,\"exit_code\":r.returncode,\"completed\":True,\"elapsed_seconds\":round(time.monotonic()-start,2)}); p.write_text(json.dumps(records,indent=2)+\"\\n\")\nraise SystemExit(0 if all(x[\"exit_code\"]==0 for x in records) else 1)"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 12.52,
+  "peak_process_group_rss_bytes": 1732648960,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

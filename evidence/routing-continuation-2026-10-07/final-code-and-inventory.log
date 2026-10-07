@@ -1,0 +1,648 @@
+$ tsc --noEmit
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(43,25): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(663,40): error TS2550: Property 'toSorted' does not exist on type 'SimplifiedPcbTrace[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(664,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(664,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(705,37): error TS2550: Property 'findLastIndex' does not exist on type '({ route_type: "wire"; x: number; y: number; width: number; layer: string; start_pcb_port_id?: string | undefined; end_pcb_port_id?: string | undefined; } | { route_type: "via"; x: number; y: number; ... 4 more ...; via_hole_diameter?: number | undefined; } | { ...; } | { ...; })[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(706,6): error TS7006: Parameter 'routePoint' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(963,39): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(964,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/complete-original-endpoints.ts(964,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/dense-boundary-routing-policy.ts(95,8): error TS2550: Property 'toSorted' does not exist on type 'PreparedBus[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/dense-boundary-routing-policy.ts(96,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/dense-boundary-routing-policy.ts(96,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/dense-boundary-routing-policy.ts(126,33): error TS2550: Property 'toSorted' does not exist on type 'PreparedBus[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/dense-boundary-routing-policy.ts(127,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/dense-boundary-routing-policy.ts(127,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(562,40): error TS2550: Property 'toSorted' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(563,10): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(563,13): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(717,43): error TS2550: Property 'toSorted' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(718,12): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(718,19): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2199,64): error TS2550: Property 'toSorted' does not exist on type 'PreparedBus[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2200,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2200,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2315,50): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2315,57): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2388,8): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2396,26): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2403,27): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2420,8): error TS7006: Parameter 'connectionCount' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2426,26): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2436,26): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2549,8): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2570,47): error TS7006: Parameter 'singletonBus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2586,40): error TS7006: Parameter 'singletonBus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2609,14): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2626,48): error TS7006: Parameter 'singletonBus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2631,12): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2643,52): error TS7006: Parameter 'singletonBus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2646,16): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2663,59): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2682,33): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2684,46): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2719,14): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2739,8): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2755,13): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2756,13): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2775,11): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2776,11): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2835,13): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2836,13): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2882,18): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2887,25): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2889,20): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(2907,44): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3244,12): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3296,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3300,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3478,16): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3524,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3525,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3576,67): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3577,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3577,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3578,49): error TS7006: Parameter 'plan' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3579,51): error TS7006: Parameter 'plan' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3599,16): error TS7006: Parameter 'sum' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3599,21): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3604,16): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3734,21): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3735,21): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3786,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3787,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3822,67): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3823,18): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3823,25): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3871,23): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3872,23): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3985,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(3986,17): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4059,21): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4060,21): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4114,68): error TS2550: Property 'toSorted' does not exist on type 'PreparedBus[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4115,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4115,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4241,41): error TS2550: Property 'toSorted' does not exist on type '{ planeBus: PreparedBus; alternatives: FanoutRoutePlan[][]; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4242,26): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4242,33): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4278,20): error TS7006: Parameter 'selection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4279,49): error TS7006: Parameter 'alternative' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4290,31): error TS7006: Parameter 'action' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4296,30): error TS7006: Parameter 'remainingBus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4311,32): error TS7006: Parameter 'total' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4311,39): error TS7006: Parameter 'count' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4317,28): error TS7006: Parameter 'action' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4320,28): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4320,35): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4359,20): error TS7006: Parameter 'planeBus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4379,43): error TS7006: Parameter 'set' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4446,38): error TS7006: Parameter 'candidateSet' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4460,60): error TS2550: Property 'toSorted' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4491,22): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4491,29): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4504,22): error TS7006: Parameter 'candidateSet' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4517,29): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4518,62): error TS7006: Parameter 'candidateSet' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4521,30): error TS7006: Parameter 'otherCandidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4529,28): error TS7006: Parameter 'candidateSet' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4539,30): error TS7006: Parameter 'total' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4539,37): error TS7006: Parameter 'count' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4544,32): error TS7006: Parameter 'action' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4546,26): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4546,33): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4587,31): error TS7006: Parameter 'set' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4589,45): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4591,50): error TS7006: Parameter 'plan' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4612,38): error TS18046: 'first' is of type 'unknown'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4612,54): error TS18046: 'second' is of type 'unknown'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4627,19): error TS2322: Type 'unknown[] | null' is not assignable to type 'IndependentPlaneRouteCandidate[] | null'.
+  Type 'unknown[]' is not assignable to type 'IndependentPlaneRouteCandidate[]'.
+    Type 'unknown' is not assignable to type 'IndependentPlaneRouteCandidate'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4639,30): error TS7006: Parameter 'bus' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4683,56): error TS2550: Property 'toSorted' does not exist on type '[string, number][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4684,23): error TS7031: Binding element 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4684,34): error TS7031: Binding element 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4855,61): error TS2550: Property 'toSorted' does not exist on type 'PreparedBus[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4856,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4856,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4908,19): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4909,19): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4953,15): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, 1 | -1>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: 1 | -1, key: string, map: ReadonlyMap<string, 1 | -1>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type '1 | -1'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(4954,15): error TS2322: Type 'Map<unknown, unknown>' is not assignable to type 'ReadonlyMap<string, boolean>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: boolean, key: string, map: ReadonlyMap<string, boolean>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5277,17): error TS2322: Type 'boolean | {}' is not assignable to type 'boolean'.
+  Type '{}' is not assignable to type 'boolean'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5484,14): error TS2550: Property 'toSorted' does not exist on type '[string, number][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5485,19): error TS7031: Binding element 'firstCount' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5485,35): error TS7031: Binding element 'secondCount' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5488,20): error TS7031: Binding element 'busId' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5490,32): error TS7006: Parameter 'busId' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5491,36): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5491,43): error TS7006: Parameter 'firstIndex' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5492,53): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5994,10): error TS2550: Property 'toSorted' does not exist on type '[string, number][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5994,23): error TS7031: Binding element 'firstCount' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5994,39): error TS7031: Binding element 'secondCount' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(5995,16): error TS7031: Binding element 'busId' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(6186,47): error TS2339: Property 'toSorted' does not exist on type 'readonly string[]'.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(6187,12): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/fanout-solver.ts(6187,19): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/get-via-channel-grid-phase.ts(74,26): error TS2339: Property 'toSorted' does not exist on type 'readonly ViaChannelGridSite[]'.
+node_modules/@tscircuit/fanout-solver/lib/get-via-channel-grid-phase.ts(75,8): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/get-via-channel-grid-phase.ts(75,11): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(65,35): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(66,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(66,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(83,45): error TS7006: Parameter 'c' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(83,48): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(97,24): error TS2538: Type 'null' cannot be used as an index type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(97,24): error TS2538: Type '{}' cannot be used as an index type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(118,32): error TS7006: Parameter 'c' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(118,35): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(121,8): error TS2550: Property 'toSorted' does not exist on type 'Candidate[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(122,10): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-angularly-ordered-local-vias.ts(122,13): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(52,45): error TS2550: Property 'findLast' does not exist on type 'FanoutRoutePoint[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(53,6): error TS7006: Parameter 'point' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(426,6): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(426,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(426,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(428,8): error TS7006: Parameter 'parameter' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(428,19): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(428,26): error TS7006: Parameter 'values' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(431,35): error TS7006: Parameter 'endParameter' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(431,49): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(826,6): error TS2550: Property 'toSorted' does not exist on type '{ segment: RoutedSegment; segmentIndex: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(827,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(827,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1113,6): error TS2550: Property 'toSorted' does not exist on type '{ segment: RoutedSegment; index: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1114,8): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1114,11): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1552,10): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1553,12): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1553,19): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1583,10): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1583,20): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-bus-lengths.ts(1583,27): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(150,30): error TS2339: Property 'toSorted' does not exist on type 'readonly number[]'.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(150,40): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(150,47): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(225,42): error TS2550: Property 'toSorted' does not exist on type 'ComponentConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(226,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(226,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(233,6): error TS2550: Property 'toSorted' does not exist on type '{ connections: any; xCoordinates: number[]; yCoordinates: number[]; componentId: string; obstacles: Obstacle[]; pitchX: number; pitchY: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(233,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(233,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(528,21): error TS2550: Property 'toSorted' does not exist on type 'ViaSiteCandidate[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(529,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(529,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(688,50): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(689,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(689,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(721,8): error TS2550: Property 'toSorted' does not exist on type '[number, ViaSiteCandidate][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(721,19): error TS7031: Binding element 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(721,28): error TS7031: Binding element 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(722,14): error TS7031: Binding element 'connectionIndex' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(722,31): error TS7031: Binding element 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/match-component-dogbone-via-sites.ts(794,44): error TS2550: Property 'toReversed' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/merge-layered-boundary-targets.ts(27,17): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/merge-layered-boundary-targets.ts(27,27): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/merge-layered-boundary-targets.ts(27,30): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/merge-layered-boundary-targets.ts(53,24): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/merge-layered-boundary-targets.ts(53,36): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/merge-layered-boundary-targets.ts(139,18): error TS7006: Parameter 'c' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(89,40): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(89,50): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(89,53): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(92,10): error TS7006: Parameter 'track' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(92,17): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(132,27): error TS2550: Property 'toSorted' does not exist on type 'PackedBoundaryBusInterval[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(132,37): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(132,40): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(133,46): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(134,46): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(139,10): error TS7006: Parameter 'interval' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(139,20): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/pack-boundary-bus-intervals.ts(196,12): error TS7006: Parameter 'track' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(376,30): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(416,36): error TS2339: Property 'busId' does not exist on type 'ConnectionPoint$1'.
+  Property 'busId' does not exist on type 'SingleLayerConnectionPoint'.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(416,56): error TS2339: Property 'busId' does not exist on type 'ConnectionPoint$1'.
+  Property 'busId' does not exist on type 'SingleLayerConnectionPoint'.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(1053,26): error TS2550: Property 'toSorted' does not exist on type 'AvailableBoundaryRegion[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(1054,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(1054,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(1150,37): error TS2550: Property 'toSorted' does not exist on type 'FanoutDirection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(1151,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/prepare-buses.ts(1151,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/refine-adaptive-plane-reservations.ts(77,6): error TS2550: Property 'toSorted' does not exist on type 'PreparedBus[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/refine-adaptive-plane-reservations.ts(77,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/refine-adaptive-plane-reservations.ts(77,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/repair-boundary-route-tails.ts(492,32): error TS2550: Property 'findLastIndex' does not exist on type 'Point2D[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/repair-boundary-route-tails.ts(493,14): error TS7006: Parameter 'p' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/repair-bus-lengths-with-transit.ts(145,10): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/repair-bus-lengths-with-transit.ts(146,12): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/repair-bus-lengths-with-transit.ts(146,15): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/repair-bus-lengths-with-transit.ts(209,10): error TS7006: Parameter 'point' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/repair-peripheral-bus-lengths.ts(155,10): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/repair-peripheral-bus-lengths.ts(155,20): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/repair-peripheral-bus-lengths.ts(155,23): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(279,25): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(279,35): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(279,38): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(758,8): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(759,10): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(759,13): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-bus-with-retained-boundary-tails.ts(782,43): error TS7006: Parameter 'plan' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-overlong-bus-lanes.ts(239,10): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/reroute-overlong-bus-lanes.ts(240,12): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-overlong-bus-lanes.ts(240,15): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-source-origin-lengths.ts(72,12): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/reroute-source-origin-lengths.ts(73,14): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-source-origin-lengths.ts(73,17): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/reroute-source-origin-lengths.ts(77,12): error TS7006: Parameter 'plan' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(104,35): error TS2550: Property 'toSorted' does not exist on type '{ connection: PreparedConnection; viaPoint: Point2D; exitPoint: { x: number; y: number; }; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(105,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(105,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(111,24): error TS7006: Parameter 'terminal' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(126,20): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(136,16): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(148,9): error TS2322: Type '({ layers: string[]; obstacleId?: string | undefined; componentId?: string | undefined; isFanoutSourceKeepout?: boolean | undefined; isNonPlatedHole?: boolean | undefined; shape?: "circle" | undefined; ... 11 more ...; offBoardConnectsTo?: string[] | undefined; } | { ...; })[]' is not assignable to type 'Obstacle[]'.
+  Type '{ layers: string[]; obstacleId?: string | undefined; componentId?: string | undefined; isFanoutSourceKeepout?: boolean | undefined; isNonPlatedHole?: boolean | undefined; shape?: "circle" | undefined; ... 11 more ...; offBoardConnectsTo?: string[] | undefined; } | { ...; }' is not assignable to type 'Obstacle'.
+    Type '{ type: "rect"; shape: string; center: Point2D; width: number; height: number; layers: string[]; connectedTo: string[]; }' is not assignable to type 'Obstacle'.
+      Types of property 'shape' are incompatible.
+        Type 'string' is not assignable to type '"circle"'.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(237,24): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(237,34): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(237,37): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-adaptive-left-crossbar-bus.ts(288,13): error TS2345: Argument of type '{ x: number; y: {}; }' is not assignable to parameter of type 'Point2D'.
+  Types of property 'y' are incompatible.
+    Type '{}' is not assignable to type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(193,5): error TS2322: Type '{ busId: string; sharedBoundary: Bounds; preferredExit: undefined; exitEdge: undefined; connections: { sourcePoint: { layer: string; x: number; y: number; layers?: undefined; pointId?: string | undefined; pcb_port_id?: string | undefined; port_selector?: string | undefined; terminalVia?: TerminalViaHint | undefined;...' is not assignable to type 'PreparedBus[]'.
+  Type '{ busId: string; sharedBoundary: Bounds; preferredExit: undefined; exitEdge: undefined; connections: { sourcePoint: { layer: string; x: number; y: number; layers?: never; pointId?: string; pcb_port_id?: string; port_selector?: string; terminalVia?: TerminalViaHint; } | { ...; }; ... 8 more ...; targetPoint: Connecti...' is not assignable to type 'PreparedBus'.
+    Types of property 'connections' are incompatible.
+      Type '{ sourcePoint: { layer: string; x: number; y: number; layers?: undefined; pointId?: string | undefined; pcb_port_id?: string | undefined; port_selector?: string | undefined; terminalVia?: TerminalViaHint | undefined; } | { ...; }; ... 8 more ...; targetPoint: ConnectionPoint$1; }[]' is not assignable to type 'PreparedConnection[]'.
+        Type '{ sourcePoint: { layer: string; x: number; y: number; layers?: never; pointId?: string; pcb_port_id?: string; port_selector?: string; terminalVia?: TerminalViaHint; } | { ...; }; ... 8 more ...; targetPoint: ConnectionPoint$1; }' is not assignable to type 'PreparedConnection'.
+          Types of property 'sourcePoint' are incompatible.
+            Type '{ layer: string; x: number; y: number; layers?: undefined; pointId?: string | undefined; pcb_port_id?: string | undefined; port_selector?: string | undefined; terminalVia?: TerminalViaHint | undefined; } | { ...; }' is not assignable to type 'ConnectionPoint$1'.
+              Type '{ layer: string; x: number; y: number; layers: string[]; pointId?: string; busId?: BusId; pcb_port_id?: string; port_selector?: string; }' is not assignable to type 'ConnectionPoint$1'.
+                Type '{ layer: string; x: number; y: number; layers: string[]; pointId?: string; busId?: BusId; pcb_port_id?: string; port_selector?: string; }' is not assignable to type 'SingleLayerConnectionPoint'.
+                  Types of property 'layers' are incompatible.
+                    Type 'string[]' is not assignable to type 'undefined'.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(226,35): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(227,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(227,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(380,11): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(380,23): error TS7006: Parameter 'rank' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(397,12): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(397,15): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(399,22): error TS7006: Parameter 'item' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(399,28): error TS7006: Parameter 'rank' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(425,30): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(425,42): error TS7006: Parameter 'rank' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(428,22): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+node_modules/@tscircuit/fanout-solver/lib/route-bottom-crossbar-bus.ts(504,32): error TS7006: Parameter 'plan' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(213,52): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(213,62): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(213,69): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(241,56): error TS2550: Property 'toSorted' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(242,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(242,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(248,24): error TS7006: Parameter 'layer' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(248,31): error TS7006: Parameter 'layerOrder' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(254,8): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(265,55): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(266,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(266,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(269,7): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(270,9): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(299,47): error TS7006: Parameter 'layer' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(300,38): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(404,6): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(404,16): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(404,19): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(409,8): error TS7006: Parameter 'track' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(409,15): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(703,5): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(703,15): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(703,18): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(816,5): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(816,15): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(816,18): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(938,5): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(938,15): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(938,18): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(1613,7): error TS2550: Property 'toSorted' does not exist on type '{ x: number; y: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(1614,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(1614,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3200,54): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3201,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3201,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3209,37): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3209,49): error TS7006: Parameter 'rank' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3222,40): error TS7006: Parameter '_' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3222,43): error TS7006: Parameter 'rank' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3245,12): error TS2550: Property 'toSorted' does not exist on type 'any[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3245,22): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3245,29): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3267,19): error TS2345: Argument of type '{}' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3281,64): error TS2345: Argument of type '{}' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3292,17): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3305,17): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3318,17): error TS2365: Operator '<' cannot be applied to types '{}' and 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3831,7): error TS2550: Property 'toSorted' does not exist on type '{ x: number; y: number; distance: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3831,17): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3831,24): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3834,31): error TS7006: Parameter 'direction' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3874,8): error TS2550: Property 'toSorted' does not exist on type '({ distance: number; axis: "x"; value: number; } | { distance: number; axis: "y"; value: number; })[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3874,18): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3874,21): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3875,19): error TS7031: Binding element 'axis' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3875,25): error TS7031: Binding element 'value' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3882,12): error TS2550: Property 'toSorted' does not exist on type '{ index: number; track: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3882,22): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3882,25): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3890,42): error TS7006: Parameter 'v' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3901,10): error TS7006: Parameter 'points' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3906,38): error TS7006: Parameter 'points' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-bus.ts(3918,10): error TS7006: Parameter 'points' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(95,8): error TS2550: Property 'toSorted' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(96,10): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(96,13): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(120,25): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(120,35): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(120,38): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(123,10): error TS7006: Parameter 'value' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-layer-reserved-buses.ts(123,17): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(105,35): error TS2550: Property 'toSorted' does not exist on type '{ connection: PreparedConnection; viaPoint: Point2D; exitPoint: { x: number; y: number; }; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(106,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(106,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(112,24): error TS7006: Parameter 'terminal' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(127,20): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(137,16): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(215,24): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(215,34): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(215,37): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-left-crossbar-bus.ts(266,13): error TS2345: Argument of type '{ x: number; y: {}; }' is not assignable to parameter of type 'Point2D'.
+  Types of property 'y' are incompatible.
+    Type '{}' is not assignable to type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-buses.ts(34,34): error TS2550: Property 'findLast' does not exist on type 'string[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-buses.ts(34,44): error TS7006: Parameter 'layer' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(90,25): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(91,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(91,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(212,41): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(213,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(213,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(217,24): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(217,36): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-peripheral-source-escapes.ts(219,46): error TS2345: Argument of type 'Map<unknown, unknown>' is not assignable to parameter of type 'ReadonlyMap<number, number>'.
+  Types of property 'forEach' are incompatible.
+    Type '(callbackfn: (value: unknown, key: unknown, map: Map<unknown, unknown>) => void, thisArg?: any) => void' is not assignable to type '(callbackfn: (value: number, key: number, map: ReadonlyMap<number, number>) => void, thisArg?: any) => void'.
+      Types of parameters 'callbackfn' and 'callbackfn' are incompatible.
+        Types of parameters 'value' and 'value' are incompatible.
+          Type 'unknown' is not assignable to type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(96,34): error TS2339: Property 'toSorted' does not exist on type 'readonly PreparedBus[]'.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(96,44): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(96,47): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(118,32): error TS2339: Property 'toSorted' does not exist on type 'readonly PreparedBus[]'.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(118,42): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(118,45): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(139,45): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-narrow-buses.ts(139,48): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2041,48): error TS2550: Property 'toReversed' does not exist on type 'HdRoute[][]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2050,31): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2051,8): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2051,11): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2105,31): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2105,41): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-reserved-via-buses.ts(2105,44): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-adaptive-exits.ts(1450,26): error TS2550: Property 'toSorted' does not exist on type 'AvailableBoundaryRegion[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-adaptive-exits.ts(1451,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-adaptive-exits.ts(1451,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(252,6): error TS2550: Property 'toSorted' does not exist on type '{ points: Point2D[]; obstacleDistance: number; targetDistance: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(253,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(253,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(259,23): error TS7006: Parameter 'candidate' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(301,46): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(302,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(302,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(608,35): error TS2550: Property 'toSorted' does not exist on type 'RoutingItem[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(609,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(609,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(734,25): error TS7006: Parameter 'item' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(734,31): error TS7006: Parameter 'index' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(936,52): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(937,8): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(937,11): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(973,50): error TS2550: Property 'toSorted' does not exist on type 'ActiveRoute[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(974,10): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(974,13): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(982,19): error TS7006: Parameter 'axis' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(983,48): error TS7006: Parameter 'route' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(994,45): error TS7006: Parameter 'route' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(1036,54): error TS2550: Property 'toSorted' does not exist on type 'ActiveRoute[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(1037,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-single-layer-push-shove.ts(1037,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-source-origin-buses.ts(194,8): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-source-origin-buses.ts(194,18): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-source-origin-buses.ts(194,21): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-bus.ts(83,26): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-bus.ts(84,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-bus.ts(84,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(106,42): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(107,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(107,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(111,38): error TS7006: Parameter 'c' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(111,41): error TS7006: Parameter 'i' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(140,11): error TS2365: Operator '>' cannot be applied to types '{}' and 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(140,38): error TS2345: Argument of type '{}' is not assignable to parameter of type 'number'.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(366,29): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(367,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(367,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(419,38): error TS2550: Property 'toSorted' does not exist on type 'PreparedConnection[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(420,6): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-split-perimeter-source-escapes.ts(420,9): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(285,8): error TS2550: Property 'toSorted' does not exist on type '{ minX: number; minY: number; maxX: number; maxY: number; xRadius: number; obstacle: Obstacle; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(286,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(286,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(986,35): error TS2550: Property 'toSorted' does not exist on type 'BlockingVia[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(987,6): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(987,13): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1187,8): error TS2550: Property 'toSorted' does not exist on type 'ConnectorCandidate[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1188,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1188,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1470,38): error TS2550: Property 'toReversed' does not exist on type 'Point2D[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1578,44): error TS2550: Property 'toSorted' does not exist on type 'ViaMinimalWindingTerminal[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1578,54): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1578,61): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1592,52): error TS7006: Parameter 'terminal' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1598,26): error TS7006: Parameter 'sum' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1598,31): error TS7006: Parameter 'track' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1677,17): error TS2550: Property 'toSorted' does not exist on type 'ViaMinimalWindingTerminal[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1678,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1678,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1683,17): error TS2550: Property 'toSorted' does not exist on type 'ViaMinimalWindingTerminal[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1684,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1684,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1689,17): error TS2550: Property 'toSorted' does not exist on type 'ViaMinimalWindingTerminal[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1690,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1690,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1695,17): error TS2550: Property 'toSorted' does not exist on type 'ViaMinimalWindingTerminal[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1696,10): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/route-via-minimal-winding.ts(1696,17): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(147,13): error TS2550: Property 'toSorted' does not exist on type '{ candidate: number; index: number; conflicts: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(148,12): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(148,19): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(219,8): error TS2550: Property 'toSorted' does not exist on type '{ candidate: number; minimumSupport: number; totalSupport: number; }[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(220,8): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(220,15): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(239,22): error TS2550: Property 'toSorted' does not exist on type 'number[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(240,14): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/select-compatible-candidates.ts(240,21): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shortcut-fanout-plans.ts(220,34): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/shortcut-fanout-plans.ts(220,44): error TS7006: Parameter 'a' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shortcut-fanout-plans.ts(220,47): error TS7006: Parameter 'b' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shortcut-fanout-plans.ts(242,10): error TS7006: Parameter 'p' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shortcut-fanout-plans.ts(407,40): error TS7006: Parameter 'point' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shorten-bus-plans.ts(24,6): error TS2550: Property 'toSorted' does not exist on type 'FanoutRoutePlan[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/shorten-bus-plans.ts(24,16): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shorten-bus-plans.ts(24,23): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/shorten-bus-plans.ts(35,29): error TS7006: Parameter 'segment' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/should-use-adaptive-dense-plane-routing.ts(36,5): error TS2550: Property 'toSorted' does not exist on type '({ edge: "left"; distance: number; } | { edge: "right"; distance: number; } | { edge: "bottom"; distance: number; } | { edge: "top"; distance: number; })[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+node_modules/@tscircuit/fanout-solver/lib/should-use-adaptive-dense-plane-routing.ts(36,15): error TS7006: Parameter 'first' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/should-use-adaptive-dense-plane-routing.ts(36,22): error TS7006: Parameter 'second' implicitly has an 'any' type.
+node_modules/@tscircuit/fanout-solver/lib/types.ts(121,18): error TS2430: Interface 'FanoutBusSpec' incorrectly extends interface 'SimpleRouteBus'.
+  Types of property 'allowedLayers' are incompatible.
+    Type 'readonly string[] | undefined' is not assignable to type 'string[] | undefined'.
+      The type 'readonly string[]' is 'readonly' and cannot be assigned to the mutable type 'string[]'.
+node_modules/@tscircuit/fanout-solver/lib/validate-fanout-solution.ts(40,30): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+node_modules/@tscircuit/fanout-solver/lib/validate-original-endpoint-connectivity.ts(84,30): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+$ biome format .
+Checked 107 files in 80ms. No fixes applied.
+{"source_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d", "physical_component_count": 135, "purchased_component_count": 125, "native_pad_count": 10, "supplier_identity_count": 43, "pins_in_current_assignment_inventory": 496, "purchased_pads_without_native_paste": 32, "paste_blocked_components": ["U16", "U27"], "all_components_on_top": true, "fresh_supplier_stock_checked": false, "scope": "Exact native purchased-part identities, current pin-to-net table, physical island membership and paste coverage. Island IDs are within this audit only; open-net flags do not identify a correct/main island. No complete datasheet, orientation, stock, stencil or assembly approval inferred.", "fabrication_ready": false}

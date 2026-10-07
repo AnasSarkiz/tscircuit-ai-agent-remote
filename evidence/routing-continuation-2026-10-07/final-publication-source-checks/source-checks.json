@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/speaker-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.76
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/speaker-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.39
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/speaker-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.37
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/speaker-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.72
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/speaker-runtime",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 12.81
+    }
+  ],
+  "passed": true
+}

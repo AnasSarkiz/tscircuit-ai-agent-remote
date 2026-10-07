@@ -1,0 +1,23 @@
+{
+  "primary_url": "https://jlcpcb.com/capabilities/pcb-capabilities",
+  "http_status": 200,
+  "source_sha256": "3653b031e956f26dfbd1c01fb370246df9081180c4bdbdceea2ec2090c94c3c2",
+  "via_drill_mm": 0.3,
+  "via_pad_mm": 0.45,
+  "diameter_difference_mm": 0.15,
+  "annular_ring_mm": 0.075,
+  "published_via_requirement": "Via diameter should be 0.1mm (0.15mm preferred) larger than via hole size; .2mm preferred minimum hole. Smaller .1/.15 holes and certain .2/.25 holes cost more.",
+  "requested_via_dimensions_match_published_preferred_difference": true,
+  "selected_via_small_hole_upcharge_rule_triggered": false,
+  "scope": "Published capability comparison only; final CAM/stackup/assembly quotation is still unqualified.",
+  "relevant_rows": [
+    "HDI Currently support (1-step / 2-step / 3-step) \u2460 Blind Via Diameter: 0.075mm-0.15 mm (fabricated by laser drilling and copper-filled electroplating process) \u2461 Buried Via Diameter: - Standard range: 0.15 mm \u2013 0.55 mm (fabricated by mechanical drilling with Epoxy Filled & Capped) - Extreme capability: Minimum buried via down to 0.10 mm, applicable only when the dielectric thickness penetrated by mechanical buried via \u2264 1.0 mm. \u2462 Minimum trace width / space: 3 mil / 3 mil; Extreme capability: 2.7 mil / 2.7 mil. \u2463 Minimum dimension: 5 \u00d7 5 mm; Maximum dimension: 576 \u00d7 469 mm. \u2464 HDI base material: Nan Ya NP-175F TG170/Shengyi S1000-2M TG170. For more details, please refer to HDI PCB capabilities FAQ",
+    "Thickness Tolerance (Thickness\u22651.0mm) \u00b1 10% e.g. For the 1.6mm board thickness, the finished board thickness ranges from 1.44mm(T-1.6\u00d710%) to 1.76mm(T+1.6\u00d710%)",
+    "Thickness Tolerance (Thickness \u00b1 0.1mm e.g. For the 0.8mm board thickness, the finished board thickness ranges from 0.7mm(T-0.1) to 0.9mm(T+0.1).",
+    "Drill Diameter 1-layer: 0.3 \u2013 6.3 mm 2-layer: 0.15 \u2013 6.3 mm (0.1mm microvias only available for board thickness \u22641mm; ENIG/OSP surface finish required) Multilayer: 0.15 \u2013 6.3 mm (0.1mm microvias only available for board thickness \u22641mm; ENIG/OSP surface finish required) Holes with diameter \u2265 6.3 mm are CNC routed from a smaller drilled hole. Min. drill diameter for 2- or more-layer PCBs is 0.1 mm (more costly!) Min. drill diameter for aluminum-core PCBs is 0.65 mm Min. drill diameter for copper-core PCBs is 1.0 mm Countersink Hole, Blind Slots, and Backdrill processes are now available.",
+    "Min. Via hole size/diameter 0.15/0.25mm (0.1mm/0.2mm only available for board thickness \u22641mm; ENIG/OSP surface finish required) 1-layer (NPTH only): 0.3 mm hole size / 0.5 mm via diameter 2-layer: 0.15mm hole size / 0.25mm via diameter (0.1mm hole size / 0.2mm via diameter only available for board thickness \u22641mm; ENIG/OSP surface finish required) Multilayer: 0.15 mm hole size / 0.25 mm via diameter (0.1mm hole size / 0.2mm via diameter only available for board thickness \u22641mm; ENIG/OSP surface finish required) \u2460 Via diameter should be 0.1mm(0.15mm preferred) larger than Via hole size. \u2461 Preferred Min. Via hole size: 0.2mm \u2462 0.1mm or 0.15mm hole size with any size via diameter, and 0.2mm or 0.25mm hole size with via diameter less than 0.45mm, will cost more. Please select corresponding via size option when placing order.",
+    "Min. Non-plated holes 0.50mm Please draw NPTHs in the mechanical layer or keep out layer.",
+    "Min. Castellated Holes 0.5mm Castellated holes are metalized half-holes on PCB edges, commonly used on daughter boards to be soldered onto carrier PCBs. \u2460 Hole diameter (\u03a6): \u2265 0.5 mm \u2461 Hole to board edge (L): \u2265 1 mm \u2462 Hole to hole (D): \u2265 0.5 mm \u2463 Min. PCB size\uff1a10 \u00d7 10 mm \u2464 Min. PCB thickness: 0.6 mm",
+    "Trace coils 0.15/0.15mm Minimum trace width/clearance: 0.15/0.15mm, when traces are covered by solder mask (1oz). Minimum trace width/clearance: 0.25/0.25mm, when traces are NOT covered by solder mask (1oz). ENIG only(high risk of short circuit with HASL)"
+  ]
+}

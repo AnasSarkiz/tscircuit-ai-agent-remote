@@ -1,4 +1,35 @@
-## Current manual routing repair — 2026-10-07
+## Current exact inventory and cost — 2026-10-07
+
+**0.0.8-wip-speaker-routing — NOT READY TO ORDER.** The speaker repair retains
+all 125 purchased placements / 43 exact JLCPCB identities and adds no electronic
+parts. Five existing purchased components move; 120 remain stationary.
+
+All 43 identities were checked against dated official stock responses. Total
+stock covers two prototypes for 42 identities. **J6/C160405 has zero stock**;
+C265110 is a different SHL connector and its supported exact-footprint import
+fails on EasyEDA HTTP 403. It is not an accepted substitute. Total stock and
+`canPresaleNumber` do not establish assembler allocation or a reservation.
+U1's official page requires Standard PCBA; D2 reports only five units.
+
+Reference component prices total **$26.333 per board**, including the unavailable
+J6 reference price. PCB fabrication, assembly setup/loading, minimum quantities,
+shipping/tax and the external display/battery/speaker/motor are excluded. The
+two microphones account for $9.029 and the MCU for $5.0038. No feature removal,
+extra purchased part, reservation or order was made to obtain this estimate.
+
+The resolved BOM has 125 rows with no blank descriptions or supplier codes used
+as packages. The raw official converter still produces 31 blank comments and
+125 supplier-code footprint fields. Strict PnP rotation qualification stops at
+U14 with `incompatible_pin1_locations`; the assembly files are not approved.
+
+[Current stock binding](evidence/routing-continuation-2026-10-07/dated-stock-application.json),
+[reference cost](evidence/routing-continuation-2026-10-07/complete-reference-cost-review.json)
+and [remaining qualification](evidence/routing-continuation-2026-10-07/review.md).
+Older inventory and status entries below are historical.
+
+---
+
+## Historical manual routing repair — 2026-10-07
 
 **0.0.7-wip-manual-routing-repairs — NOT READY TO ORDER.** This entry
 supersedes the historical checkpoints below. U4 now has a real 0.36 mm ground

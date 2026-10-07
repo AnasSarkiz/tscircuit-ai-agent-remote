@@ -1,0 +1,113 @@
+{
+  "classification": "lossless original native event archive; not a solver cache",
+  "archive": "native-events.tar.gz",
+  "archive_sha256": "fc8e2ee64c48960df04f6ed457bf474d83839bf11f27a59d7b56dcfa2a533ed0",
+  "verified_exact_original_bytes_before_removal": true,
+  "files": {
+    "event-1.json": {
+      "bytes": 10294751,
+      "sha256": "99a01eb7ba349a0456da82b8cfbbd5907067dced0eefd91f8cdc77583960a71c"
+    },
+    "event-10.json": {
+      "bytes": 10357342,
+      "sha256": "ccd6b4651c86c8ede01e2a656288c7937707348b12f8150f8089a3d24120b38f"
+    },
+    "event-11.json": {
+      "bytes": 10428119,
+      "sha256": "1e95978c4e6e30c9a364d96687af20f6d706d146cc9ab1314704c5ccb720d032"
+    },
+    "event-12.json": {
+      "bytes": 10565684,
+      "sha256": "4e6d57bac9ad70abe46710d7720fdd8bedca0e9532f0307fced46a8bd83d3834"
+    },
+    "event-13.json": {
+      "bytes": 10713940,
+      "sha256": "1d493aacb273a2c9437a639bc769c8b7714ba8a8e22c86f97cf2ac605c60d2ed"
+    },
+    "event-2.json": {
+      "bytes": 10297694,
+      "sha256": "780802c19ed439879ae4a87f7774c6c0259563d1d742b820b9c1ec617d11d3e6"
+    },
+    "event-3.json": {
+      "bytes": 10305654,
+      "sha256": "06e2e2b045d087d7cf506ca03db4cbc3cf9fd76c2646d397653bd59b430001e5"
+    },
+    "event-4.json": {
+      "bytes": 10307176,
+      "sha256": "be32a29d8cf18a97a167514090c45615cc9a611a09bba39771e6837a064b5cd2"
+    },
+    "event-5.json": {
+      "bytes": 10312047,
+      "sha256": "29744f8aecefb09f345f5bc56b6bb4e3098aba59cb19fd2078745c8ebfa33c0f"
+    },
+    "event-6.json": {
+      "bytes": 10316055,
+      "sha256": "a9de965a58590c6930353056f74e3a3780fa7303a5ea20b6f97312b359816c9b"
+    },
+    "event-7.json": {
+      "bytes": 10320749,
+      "sha256": "731ffb913e8b2362a4a08070d94db2762002f3d38d7546f11d00e7e303fcd100"
+    },
+    "event-8.json": {
+      "bytes": 10323581,
+      "sha256": "bbccec2815ccb1e6b0b10d70356677d7043cff32bcdb6b3908f2d1a8b0c4de43"
+    },
+    "event-9.json": {
+      "bytes": 10332721,
+      "sha256": "3814f3dee70531d326cb9ddeff012fa2aee1da49e5973f4a20b901605ff2436c"
+    },
+    "start-1.json": {
+      "bytes": 10290254,
+      "sha256": "492516bd9265524002a497bbbb93d8baee7b3d8668656dbecac686ecf37795e1"
+    },
+    "start-11.json": {
+      "bytes": 10314682,
+      "sha256": "7196b95274ff550f7c0506415a0c8ebf7b45cf5a97c8721d7fa2452ebdea3e86"
+    },
+    "start-13.json": {
+      "bytes": 10318651,
+      "sha256": "fa320a0aef95ab031144c07b0e53f9d19fc25a0155e56025c21129fca1551609"
+    },
+    "start-15.json": {
+      "bytes": 10321473,
+      "sha256": "8bd8379724afad2195647404f888ee3ae1e4b8feb86f01449d575c1f5038e782"
+    },
+    "start-17.json": {
+      "bytes": 10324637,
+      "sha256": "c661edb9b2cefac992af5f22a03aa2ccb8c7bdb5f4a8b366d5db2e2fa916f6e0"
+    },
+    "start-19.json": {
+      "bytes": 10353147,
+      "sha256": "6e9c5311bdf91308609479f2cd0e5651b9076ebc3907a2623d4daeec2d38acd1"
+    },
+    "start-21.json": {
+      "bytes": 10417384,
+      "sha256": "25438d3d0556a0546fd990edac9ce4f10b5708ed1d67a2fc11624832f9619507"
+    },
+    "start-23.json": {
+      "bytes": 10548408,
+      "sha256": "5262d8ef89e7157be56d567edea79725b431b01e63f83d997dac20de20c9846b"
+    },
+    "start-25.json": {
+      "bytes": 10708881,
+      "sha256": "bb8a9f8eace7c351aea53d3ec8865f08928c9730e6b17cd3195562ed442f3f0b"
+    },
+    "start-3.json": {
+      "bytes": 10294311,
+      "sha256": "b5cee32397460dd651914390f00d9dad4dd095302dc23c3ddf2bab8e2b19fae7"
+    },
+    "start-5.json": {
+      "bytes": 10303058,
+      "sha256": "d95312bd1cb20e3a81115befdcd9b42959b9b2f790c312161f5d5956ed195ce0"
+    },
+    "start-7.json": {
+      "bytes": 10305820,
+      "sha256": "eb56ae9d902153247bc598785959dc723b7e5829769d7efa15217903a8667019"
+    },
+    "start-9.json": {
+      "bytes": 10310674,
+      "sha256": "0ac5eef2d3380051f971794fbc92d424e1d4385f23026077bc7e99fda7bb1ef1"
+    }
+  },
+  "restore": "tar -xzf native-events.tar.gz (run inside this capture directory)"
+}

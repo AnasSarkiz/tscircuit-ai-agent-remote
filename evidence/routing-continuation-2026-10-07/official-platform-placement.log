@@ -1,0 +1,15 @@
+Async effect error in PcbTraceRender "autorouting":
+Error: Placement-only mode must never run a router
+    at <anonymous> (/workspace/tscircuit-ai-agent-remote/scripts/routing/capture-placement.tsx:22:13)
+    at emit (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:122453:7)
+    at _runLocalAutorouting (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:119980:18)
+    at <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:120252:26)
+    at _queueAsyncEffect (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:1218:16)
+    at _startAsyncAutorouting (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:120250:12)
+    at updatePcbTraceRender (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:120323:14)
+    at runRenderPhase (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:1378:25)
+    at runRenderCycle (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:1334:12)
+    at render (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:122353:16)
+    at renderUntilSettled (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:122378:14)
+    at processTicksAndRejections (native:7:39)
+{"outputPath":"evidence/routing-continuation-2026-10-07/official-platform-placement/circuit.json","nativeErrors":0}

@@ -1,4 +1,38 @@
-## Current manual routing repair — 2026-10-07
+## Current speaker routing — 2026-10-07
+
+**0.0.8-wip-speaker-routing — NOT READY TO ORDER.** Both amplifier outputs now
+connect to J4 through short, explicitly authored top-layer routes. Five existing
+purchased components and TP1 move to make this possible; no purchased part is
+added. All 125 part identities and imported footprints/models are retained.
+
+The completed official CLI output contains 384 traces, 325 full-span 0.30/0.45 mm
+vias and 270 pours. Independent geometry checks measure **zero shorts and zero
+clearance violations**, preserve all 9,842 prior terminal pairs and verify all
+247 active authored regions at their nominal widths. High-current trunks use
+outer layers. **50 native open-port errors and 12 physically open nets remain**
+around the deferred display. J3 outer polarity is still unassigned and excluded
+from that count. These measurements do not establish full zero DRC.
+
+TypeScript, formatting, 92 routing regressions and the five source/placement
+checks pass. Board tests are 48 pass / 2 fail. All 26 schematic pages were
+inspected; CLI style analysis reports zero issues, while UI analysis is blocked
+by the CDN certificate. Native schema, pill-pad paste, official shorts/Gerber
+export, supplier rotation and current/width qualification remain blocked.
+
+The battery PDF is retrieved, but does not number its outer harness contacts.
+Display contact orientation remains unverified. Exact stock covers 42 of 43
+part identities for two boards; J6/C160405 is unavailable. Reference parts cost
+is $26.333 per board before fabrication, assembly, external assemblies and
+shipping. This is not an orderable quotation.
+
+[Current evidence and remaining gates](evidence/routing-continuation-2026-10-07/review.md).
+[Versioned public package](https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote?version=0.0.8-wip-speaker-routing#files).
+Publication verification is recorded in the evidence receipts. The older
+checkpoints below are historical and are superseded by this entry.
+
+---
+
+## Historical manual routing repair — 2026-10-07
 
 **0.0.7-wip-manual-routing-repairs — NOT READY TO ORDER.** This entry
 supersedes the historical checkpoints below. U4 now has a real 0.36 mm ground

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-pose-signal-repairs.py",
+    "evidence/routing-continuation-2026-10-07/speaker-local-native-v3/circuit.json",
+    "evidence/routing-continuation-2026-10-07/local-coupled-plan-v2.json",
+    "evidence/routing-continuation-2026-10-07/pose-signal-repairs.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 62.59,
+  "peak_process_group_rss_bytes": 558862336,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,0 +1,36 @@
+{
+  "command": "tsci snapshot index.circuit.tsx",
+  "cwd": ".publish/speaker-runtime",
+  "outcome": "final-source-snapshot-against-baseline.log.outcome.json",
+  "completed": true,
+  "elapsed_seconds": 61.6,
+  "pcb_matches_original_reference": false,
+  "schematic_matches_original_reference": false,
+  "original_committed_references_unchanged": true,
+  "references_sha256_receipt": "snapshot-original-reference-sha256.json",
+  "new_references_accepted": false,
+  "rendered_current_review": "final-visual-review.json",
+  "reason": "Current routed speaker geometry and 26 native A4 circuit/guide sheets differ from the historical references. Mismatches are retained as failures; references are not updated to obtain a pass.",
+  "fabrication_ready": false,
+  "actually_reviewed_cli_and_original_views": [
+    {
+      "path": "snapshot-review/pcb-current-cli.png",
+      "sha256": "f0cf29adfb1d3a24f1af1aa3a716500db0a0226bf683f04d20e26eef1609ae3b"
+    },
+    {
+      "path": "snapshot-review/pcb-original.png",
+      "sha256": "32d8199e554e6958da1b6f29a9f80f28ce4f31763cb3f6f4d372cc15fa57150f"
+    },
+    {
+      "path": "snapshot-review/schematic-current-cli.png",
+      "sha256": "b1a6f6172925ade903ab4bd7ea74bb421b3c02e7598a627be2576e0ec711a042"
+    },
+    {
+      "path": "snapshot-review/schematic-original.png",
+      "sha256": "f7bea07d5fc96ee8dc11472cdd5bc3c04cf949cb2753c82dde2e8ecdec025a59"
+    }
+  ],
+  "original_schematic_reference_already_contains_component_guides": true,
+  "current_cli_schematic_svg_is_first_sheet_only": true,
+  "all_current_sheets_inspected_separately": "final-visual-review.json"
+}

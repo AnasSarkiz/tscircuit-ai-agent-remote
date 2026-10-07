@@ -1,4 +1,58 @@
-## Current manual routing repair — 2026-10-07
+## Current speaker continuation — 2026-10-07
+
+**0.0.8-wip-speaker-routing — NOT READY TO ORDER.** Resume from the untouched
+official CLI native at `dist/index/circuit.json`, SHA-256
+`35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d`.
+The source repair connects both speaker outputs using explicit manual top-layer
+paths. U3, J4, C50, R69 and R70 move; TP1 moves; 120 purchased poses stay fixed.
+All imports/models/original solver paths are byte-identical. No purchased part
+is added. Retirement lists keep source indices stable and retain logical traces
+so genuine native connectivity errors remain visible.
+
+Measured state: 384 traces, 325 full-span 0.30/0.45 vias, 270 pours; zero measured
+shorts/clearance violations; all 9,842 previous terminal pairs preserved; all
+247 active authored regions at nominal widths. Fifty native opens and twelve
+physical open nets remain around J7/U27. J3 outer contacts remain unassigned.
+
+Type/format, 92 routing regressions and five source/placement checks pass.
+Board tests remain 48 pass / 2 fail. The direct official-platform placement
+capture is correctly unrouted and matches real supplier metadata. CLI placement
+still emits copper even with `--routing-disabled`; do not accept it as a pass.
+CLI schematic style passes; the actual UI CDN module fails certificate trust.
+All 26 sheets and critical copper views were inspected. The actual source
+snapshot completes with both historical reference mismatches; do not blindly
+update references. Detailed raw outcomes, rejected proposals and lossless
+native event archives are in the current evidence directory.
+
+The AKY2945 PDF is retrieved but does not number its outer contacts. BuyDisplay
+still returns its Cloudflare 403; contact face, pin-1 and fold remain unresolved.
+JST/LCSC/EasyEDA requests also fail. The saved complete domain draft adds
+`www.jst-mfg.com`, `www.lcsc.com`, `easyeda.com`; only user Save/Publish can apply
+it. Do not bypass network policy, TLS, supplier drawings or failed imports.
+
+Stock covers 42/43 identities for two prototypes; J6/C160405 is unavailable.
+C265110 is a different SHL family and fails the supported exact import. No
+substitute is accepted. Reference parts cost is $26.333/board; Standard PCBA,
+setup/loading, external assemblies, shipping/tax and allocation remain open.
+
+Next dependent gates: verified J3/J7 interfaces; genuine stocked programmer
+connector import/mating; canonical paste/schema/polygon exporter corrections;
+qualified U14 supplier rotation; regulator widths/current, remaining bypass,
+signal integrity, stackup/enclosure/flex/battery and final CAM/assembly review.
+Original imported exceptions remain only the two historical acoustic holes.
+Never rewrite native JSON or solver caches, weaken checks, create custom parts,
+resume the watcher, spawn agents, place orders or claim physical test results.
+
+Use `source scripts/cloud/env.sh` and the exclusive budget supervisor for every
+heavy cloud command. Follow the standing authorized GitHub main/public tsci WIP
+workflow and verify every staged source/native byte before any upload retry.
+[Current review](evidence/routing-continuation-2026-10-07/review.md) and
+`context/build-checkpoint.json` carry the exact final publication observations.
+The older sections below are historical.
+
+---
+
+## Historical manual routing repair — 2026-10-07
 
 **0.0.7-wip-manual-routing-repairs — NOT READY TO ORDER.** This entry
 supersedes the historical checkpoints below. U4 now has a real 0.36 mm ground

@@ -1,0 +1,492 @@
+{
+  "scope": "Supplier-page reference component prices only, not an assembly or fabrication quote",
+  "quantified_identities": 39,
+  "missing_identities": [
+    "C2913201",
+    "C94934",
+    "C54313",
+    "C15127"
+  ],
+  "reference_parts_subtotal_usd": 18.3483,
+  "unqualified_excluded_costs": [
+    "PCB fabrication",
+    "assembly setup and loading",
+    "shipping and tax",
+    "external display/battery/speaker/motor",
+    "minimum-order quantity and substitutions"
+  ],
+  "parts": [
+    {
+      "part_number": "C165948",
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.1857,
+      "reference_board_parts_usd": 0.1857
+    },
+    {
+      "part_number": "C485802",
+      "references": [
+        "U12"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.4341,
+      "reference_board_parts_usd": 0.4341
+    },
+    {
+      "part_number": "C160405",
+      "references": [
+        "J6"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.3018,
+      "reference_board_parts_usd": 0.3018
+    },
+    {
+      "part_number": "C107701",
+      "references": [
+        "R31",
+        "R32",
+        "R65",
+        "R66",
+        "R67"
+      ],
+      "quantity": 5,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0036,
+      "reference_board_parts_usd": 0.018
+    },
+    {
+      "part_number": "C105580",
+      "references": [
+        "R33",
+        "R34"
+      ],
+      "quantity": 2,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0023,
+      "reference_board_parts_usd": 0.0046
+    },
+    {
+      "part_number": "C99782",
+      "references": [
+        "R35"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0033,
+      "reference_board_parts_usd": 0.0033
+    },
+    {
+      "part_number": "C98220",
+      "references": [
+        "R36",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R61",
+        "R68",
+        "R69",
+        "R70",
+        "R84",
+        "R90",
+        "R91",
+        "R94",
+        "R95",
+        "R99",
+        "R29",
+        "R30",
+        "R102",
+        "R104"
+      ],
+      "quantity": 20,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0034,
+      "reference_board_parts_usd": 0.068
+    },
+    {
+      "part_number": "C14675",
+      "references": [
+        "R37",
+        "R3",
+        "R4",
+        "R7",
+        "R40",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "R85",
+        "R87",
+        "R26"
+      ],
+      "quantity": 13,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0026,
+      "reference_board_parts_usd": 0.0338
+    },
+    {
+      "part_number": "C21190",
+      "references": [
+        "R38",
+        "R41",
+        "R62",
+        "R64",
+        "R82",
+        "R86",
+        "R100",
+        "R27"
+      ],
+      "quantity": 8,
+      "library_type": "base",
+      "reference_unit_price_usd": 0.0026,
+      "reference_board_parts_usd": 0.0208
+    },
+    {
+      "part_number": "C84419",
+      "references": [
+        "C30",
+        "C5",
+        "C41",
+        "C71"
+      ],
+      "quantity": 4,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0912,
+      "reference_board_parts_usd": 0.3648
+    },
+    {
+      "part_number": "C45000",
+      "references": [
+        "C31",
+        "C32",
+        "C42",
+        "C43",
+        "C51",
+        "C72",
+        "C75",
+        "C78",
+        "C76",
+        "C77",
+        "C80",
+        "C81",
+        "C25",
+        "C26"
+      ],
+      "quantity": 14,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.017,
+      "reference_board_parts_usd": 0.238
+    },
+    {
+      "part_number": "C157929",
+      "references": [
+        "J3"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0368,
+      "reference_board_parts_usd": 0.0368
+    },
+    {
+      "part_number": "C19666",
+      "references": [
+        "C1"
+      ],
+      "quantity": 1,
+      "library_type": "base",
+      "reference_unit_price_usd": 0.0295,
+      "reference_board_parts_usd": 0.0295
+    },
+    {
+      "part_number": "C90053",
+      "references": [
+        "C2",
+        "C3",
+        "C4",
+        "C40",
+        "C50",
+        "C70",
+        "C73",
+        "C74",
+        "C84",
+        "C85"
+      ],
+      "quantity": 10,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0321,
+      "reference_board_parts_usd": 0.321
+    },
+    {
+      "part_number": "C126358",
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "quantity": 2,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0061,
+      "reference_board_parts_usd": 0.0122
+    },
+    {
+      "part_number": "C2845237",
+      "references": [
+        "U2"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.9673,
+      "reference_board_parts_usd": 0.9673
+    },
+    {
+      "part_number": "C668312",
+      "references": [
+        "L1"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.1779,
+      "reference_board_parts_usd": 0.1779
+    },
+    {
+      "part_number": "C364359",
+      "references": [
+        "R5"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0041,
+      "reference_board_parts_usd": 0.0041
+    },
+    {
+      "part_number": "C114639",
+      "references": [
+        "R6"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0035,
+      "reference_board_parts_usd": 0.0035
+    },
+    {
+      "part_number": "C2869847",
+      "references": [
+        "U13",
+        "U23"
+      ],
+      "quantity": 2,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.4243,
+      "reference_board_parts_usd": 0.8486
+    },
+    {
+      "part_number": "C7848",
+      "references": [
+        "U14"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.3564,
+      "reference_board_parts_usd": 0.3564
+    },
+    {
+      "part_number": "C262650",
+      "references": [
+        "J7"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.286,
+      "reference_board_parts_usd": 0.286
+    },
+    {
+      "part_number": "C910544",
+      "references": [
+        "U3"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 1.3152,
+      "reference_board_parts_usd": 1.3152
+    },
+    {
+      "part_number": "C20917",
+      "references": [
+        "Q1",
+        "Q9"
+      ],
+      "quantity": 2,
+      "library_type": "base",
+      "reference_unit_price_usd": 0.0888,
+      "reference_board_parts_usd": 0.1776
+    },
+    {
+      "part_number": "C173752",
+      "references": [
+        "J4"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0396,
+      "reference_board_parts_usd": 0.0396
+    },
+    {
+      "part_number": "C22775",
+      "references": [
+        "R60",
+        "R63",
+        "R83",
+        "R88",
+        "R89",
+        "R103"
+      ],
+      "quantity": 6,
+      "library_type": "base",
+      "reference_unit_price_usd": 0.0031,
+      "reference_board_parts_usd": 0.0186
+    },
+    {
+      "part_number": "C963429",
+      "references": [
+        "U22"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.2309,
+      "reference_board_parts_usd": 0.2309
+    },
+    {
+      "part_number": "C2480",
+      "references": [
+        "D3"
+      ],
+      "quantity": 1,
+      "library_type": "base",
+      "reference_unit_price_usd": 0.0191,
+      "reference_board_parts_usd": 0.0191
+    },
+    {
+      "part_number": "C24478",
+      "references": [
+        "U24"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.1543,
+      "reference_board_parts_usd": 0.1543
+    },
+    {
+      "part_number": "C105881",
+      "references": [
+        "R92",
+        "R93"
+      ],
+      "quantity": 2,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0045,
+      "reference_board_parts_usd": 0.009
+    },
+    {
+      "part_number": "C7836",
+      "references": [
+        "U26"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.1679,
+      "reference_board_parts_usd": 0.1679
+    },
+    {
+      "part_number": "C43698",
+      "references": [
+        "U25"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.439,
+      "reference_board_parts_usd": 0.439
+    },
+    {
+      "part_number": "C114622",
+      "references": [
+        "R96",
+        "R97"
+      ],
+      "quantity": 2,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0055,
+      "reference_board_parts_usd": 0.011
+    },
+    {
+      "part_number": "C5656610",
+      "references": [
+        "U4",
+        "U5"
+      ],
+      "quantity": 2,
+      "library_type": "expand",
+      "reference_unit_price_usd": 4.5145,
+      "reference_board_parts_usd": 9.029
+    },
+    {
+      "part_number": "C105188",
+      "references": [
+        "U7"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.9722,
+      "reference_board_parts_usd": 0.9722
+    },
+    {
+      "part_number": "C255576",
+      "references": [
+        "SW4",
+        "SW1",
+        "SW2"
+      ],
+      "quantity": 3,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.1558,
+      "reference_board_parts_usd": 0.4674
+    },
+    {
+      "part_number": "C431540",
+      "references": [
+        "SW5"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.0566,
+      "reference_board_parts_usd": 0.0566
+    },
+    {
+      "part_number": "C1848364",
+      "references": [
+        "U27"
+      ],
+      "quantity": 1,
+      "library_type": "expand",
+      "reference_unit_price_usd": 0.4959,
+      "reference_board_parts_usd": 0.4959
+    },
+    {
+      "part_number": "C15849",
+      "references": [
+        "C82",
+        "C83"
+      ],
+      "quantity": 2,
+      "library_type": "base",
+      "reference_unit_price_usd": 0.0144,
+      "reference_board_parts_usd": 0.0288
+    }
+  ]
+}

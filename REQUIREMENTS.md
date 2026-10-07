@@ -1,4 +1,29 @@
-## Connection repair checkpoint — 2026-10-06
+## Current speaker checkpoint — 2026-10-07
+
+**0.0.8-wip-speaker-routing remains an untested, incomplete WIP.** All 325 vias
+are measured at 0.30 mm drill / 0.45 mm pad and span all four copper layers.
+All 80 authored high-current trunks and 68 audited native high-current traces
+use top/bottom layers. The official JLCPCB capability page supports the 0.15 mm
+via pad-minus-hole diameter difference; final CAM and stackup are not approved.
+
+The speaker pair retains 0.6 mm trunks, 0.2 mm minimum gap, 2 mm maximum skew
+and 5 mm maximum uncoupled length. Actual lengths are 6.684748 mm and
+5.126922 mm (1.557826 mm skew). Narrow 0.275 mm pad escapes still require
+load/current/thermal qualification. Two regulator routes violate their explicit
+1 mm source minima; 64 traces below named-net nominal widths remain review
+items. No source-width, clearance or DRC threshold was reduced to claim a pass.
+
+J3 outer polarity and J7 FPC face/pin-1/fold remain design-critical unknowns.
+The standard JST programmer still needs the documented three-to-six adapter,
+separate board power and manual BOOT/RESET. The adapter, enclosure/flex/battery
+fit, signal integrity, assembly allocation and physical operation are untested.
+
+[Measured current revision](evidence/routing-continuation-2026-10-07/review.md).
+The earlier checkpoints below are historical.
+
+---
+
+## Historical connection repair checkpoint — 2026-10-06
 
 **0.0.6-wip-connection-repairs remains an untested, incomplete WIP.** All high-current supply/speaker trunks require outer PCB layers. The new gain-mode inner VSYS branch is separately identified and still requires input-current qualification. The 0.30 mm hole / 0.45 mm full-span via requirement is measured on all 322 emitted vias. No minimum-width or DRC requirement is lowered to accept these repairs.
 

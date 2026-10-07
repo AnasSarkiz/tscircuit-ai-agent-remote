@@ -1,0 +1,103 @@
+[
+  {
+    "connection": ".U3 > port.OUTP",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -16.000065,
+        "y": 4.9999970000000005,
+        "width": 0.275,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -15.849000999999998,
+        "y": 6.3,
+        "width": 0.275,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -15.849000999999998,
+        "y": 6.3,
+        "width": 0.6,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -15.849000999999998,
+        "y": 9.42600005,
+        "width": 0.6,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -17.5,
+        "y": 9.42600005,
+        "width": 0.6,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -17.5,
+        "y": 10.02499805,
+        "width": 0.6,
+        "layer": "top"
+      }
+    ]
+  },
+  {
+    "connection": ".U3 > port.OUTN",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -16.499937,
+        "y": 4.9999970000000005,
+        "width": 0.275,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -16.449999999999886,
+        "y": 5.950000000000543,
+        "width": 0.275,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -16.651000999999997,
+        "y": 6.3,
+        "width": 0.275,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -16.651000999999997,
+        "y": 6.3,
+        "width": 0.6,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -16.651000999999997,
+        "y": 8.624000050000001,
+        "width": 0.6,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -17.5,
+        "y": 8.624000050000001,
+        "width": 0.6,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -17.5,
+        "y": 8.025002050000001,
+        "width": 0.6,
+        "layer": "top"
+      }
+    ]
+  }
+]

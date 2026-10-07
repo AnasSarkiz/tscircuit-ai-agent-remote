@@ -1,0 +1,116 @@
+[
+  {
+    "connection": ".R65 > port.pin1",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -7.75335,
+        "y": 0,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.75335,
+        "y": -0.6354509891958123,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.83429066206103,
+        "y": -0.7163916512568423,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.83429066206103,
+        "y": -0.8162906620610298,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -7.9,
+        "y": -0.882,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "via",
+        "x": -7.9,
+        "y": -0.882,
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "via_diameter": 0.7,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.9,
+        "y": -0.882,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -21.930201941608907,
+        "y": 13.148201941608907,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -21.930201941608907,
+        "y": 23.025549814340636,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -21.930201941608907,
+        "y": 23.116201941608907,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "wire",
+        "x": -21.95,
+        "y": 23.136,
+        "width": 0.2,
+        "layer": "bottom"
+      },
+      {
+        "route_type": "via",
+        "x": -21.95,
+        "y": 23.136,
+        "from_layer": "bottom",
+        "to_layer": "top",
+        "via_diameter": 0.7,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -21.95,
+        "y": 23.136,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -21.163,
+        "y": 23.136,
+        "width": 0.2,
+        "layer": "top"
+      },
+      {
+        "route_type": "wire",
+        "x": -20.750045999999998,
+        "y": 23.5494967,
+        "width": 0.2,
+        "layer": "top"
+      }
+    ]
+  }
+]

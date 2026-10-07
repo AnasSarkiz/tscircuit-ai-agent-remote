@@ -1,0 +1,126 @@
+[
+  {
+    "path": "main.tsx",
+    "sha256": "631f976600d2ee2c7a6feef5c3bbd802b387381fe22d35239437b47650f5a66b"
+  },
+  {
+    "path": "package.json",
+    "sha256": "10a830a965264e6993db9ed9044bbc9287970743e414761e8a7fad107b24145a"
+  },
+  {
+    "path": "src/board/BacklightSheet.tsx",
+    "sha256": "f2eacffcf47f69d5ccd35787acaaec1b36208f80d3ca09e092c5c45186e354df"
+  },
+  {
+    "path": "src/board/BatteryReadySheet.tsx",
+    "sha256": "68deb4858d13c020d4aec1ccde7e7bfb0385399a2c959b872467f2dd5003adda"
+  },
+  {
+    "path": "src/board/BoardFeatures.tsx",
+    "sha256": "b5ebeed71935437ead941146de2f2b4c231bbce108b73caf479e50cb76ad6998"
+  },
+  {
+    "path": "src/board/ChargerSheet.tsx",
+    "sha256": "2857e469b428812f9891df55d09daec73b8bac8f8aa9ce67f3facbc3b0a8e06b"
+  },
+  {
+    "path": "src/board/ComponentNotes.tsx",
+    "sha256": "3198e7dd06ad5d8058ae3fe54de46333a886ca0ff45303341ca826ec145c3920"
+  },
+  {
+    "path": "src/board/ControlsSheet.tsx",
+    "sha256": "502736514cda998c9b0a1ae5d9acb5070418f89e7688614f28c2527cff2e974f"
+  },
+  {
+    "path": "src/board/DisplaySheet.tsx",
+    "sha256": "dc1483674bb588e04f4e8487ed91df1f38001db9acbbaaed5ec6b732f604a1dd"
+  },
+  {
+    "path": "src/board/GroundPaths.ts",
+    "sha256": "e78110f19df23b92bad5e89153a023894acd4ebd912cc573a53692041e5a2835"
+  },
+  {
+    "path": "src/board/HapticSheet.tsx",
+    "sha256": "fe4a570dcbe0f34e25d246690bbc15acafab600455f10229014117ee0cc82482"
+  },
+  {
+    "path": "src/board/HoldSheet.tsx",
+    "sha256": "c687eee3cb49b414622d66be714329ee66bbc01aef5f5bfe1b7d3e2bc7461678"
+  },
+  {
+    "path": "src/board/ManualConnectionCopper.tsx",
+    "sha256": "aefb0b1c1524a87e7c2aafe8a9752648ca29784061042317b7201614552721c0"
+  },
+  {
+    "path": "src/board/ManualInnerSignalCopper.tsx",
+    "sha256": "d0233e1b7770db7b9b7170c12e7d890347e12769ec38813da6b707bdca9bd604"
+  },
+  {
+    "path": "src/board/ManualPowerCopper.tsx",
+    "sha256": "12c14378319e3b65e442a3c3ae1bffc1639a7ec082fcb9d617c090814e15cc7e"
+  },
+  {
+    "path": "src/board/ManualSignalPaths.tsx",
+    "sha256": "1dd8a6b360204473be598418e44b747dd25c040c2d2c72bfac3b7280a4c2ce36"
+  },
+  {
+    "path": "src/board/McuUsbSheet.tsx",
+    "sha256": "54057c77af2cbd16f5faf2ac1bb37e08bb5f7fca9f8640c5bc5234a7f78a93ba"
+  },
+  {
+    "path": "src/board/MicrophoneClockSheet.tsx",
+    "sha256": "fcea1553362107e4cb5c341880ceb389fa865ecfb5bcaadee0bf7922f6aa3bb6"
+  },
+  {
+    "path": "src/board/MicrophonesSheet.tsx",
+    "sha256": "ce7c64f64170dca15988b430cea429e0c1720f72b85f0ac6c4fcd6bbfb8c7aaa"
+  },
+  {
+    "path": "src/board/RegulatorSheet.tsx",
+    "sha256": "7a6a8fbc5ef9b44ce88a2f827542f6d241f6698e701e73398640c1f2c3c026e2"
+  },
+  {
+    "path": "src/board/Routing.tsx",
+    "sha256": "218ffe4bb88b7c3cfee8f9720836f61d050071d0b4336055399bf29e6e7d2cae"
+  },
+  {
+    "path": "src/board/SpeakerSheet.tsx",
+    "sha256": "cd92dfbb0fc7bf1c85de58d01fc9381c5cfcb24000c7be97bdd202355f9b8e4d"
+  },
+  {
+    "path": "src/board/connection-copper.json",
+    "sha256": "ed8825117d286be1b87804632cdc719271942bc402d7dc93e89ee1ec62f80f20"
+  },
+  {
+    "path": "src/board/ground-paths.json",
+    "sha256": "b584def96334f60e42cee4dc72dae82c784307dc9e8256428c6bd7d87a7b21eb"
+  },
+  {
+    "path": "src/board/ground-plane-outline.json",
+    "sha256": "bf4f78e5c5b8559b81e11bdc721cd347395f508bab31767bd357f3aff6bfff6a"
+  },
+  {
+    "path": "src/board/inner-signal-copper.json",
+    "sha256": "4d73961cab14b7182f03e79f5194bb0619e0e842e5d52b4fa29c3acd2137edff"
+  },
+  {
+    "path": "src/board/manual-power-copper.json",
+    "sha256": "3fa930b05eb2c14155bd922152003d96086fec56fd5e6705b9a2e281f18931d8"
+  },
+  {
+    "path": "src/board/manual-signal-paths.json",
+    "sha256": "b72240e6fec62735ad1bc49a1f953c836132dc4a17418d3af09b3fddc54edf32"
+  },
+  {
+    "path": "src/board/nets.tsx",
+    "sha256": "79135bc6f0ee6f813754e2249b2ab2a7d5b855768440db7665d13d26daa94c3d"
+  },
+  {
+    "path": "src/board/placement.ts",
+    "sha256": "23ed3d7f0b625d3941e88174aed5f260dd6ec2ee520d4880a9b20fe8079e3269"
+  },
+  {
+    "path": "src/board/viaGeometry.ts",
+    "sha256": "b4fbc3164d759818e51d2e17f37c7f7c09734dbb1b3a856c94c2e00b1a0b433d"
+  }
+]

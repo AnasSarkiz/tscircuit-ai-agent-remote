@@ -1,0 +1,165 @@
+{
+  "classification": "Authored continuous outer-layer speaker routes; never solver output; native qualification pending",
+  "source_native_sha256": "350b1776d538f67087f7f684e8baac9ede7af0ac3e61a4f61824d1c107966e05",
+  "paths": [
+    {
+      "connection": ".U3 > port.pin9",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -16.000065,
+          "y": 4.9999970000000005,
+          "width": 0.275,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -15.849000999999998,
+          "y": 6.3,
+          "width": 0.275,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -15.849000999999998,
+          "y": 6.3,
+          "width": 0.6,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -15.849000999999998,
+          "y": 9.42600005,
+          "width": 0.6,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -17.5,
+          "y": 9.42600005,
+          "width": 0.6,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -17.5,
+          "y": 10.02499805,
+          "width": 0.6,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".U3 > port.pin10",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -16.499937,
+          "y": 4.9999970000000005,
+          "width": 0.275,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.449999999999886,
+          "y": 5.950000000000543,
+          "width": 0.275,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.651000999999997,
+          "y": 6.3,
+          "width": 0.275,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.651000999999997,
+          "y": 6.3,
+          "width": 0.6,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.651000999999997,
+          "y": 8.624000050000001,
+          "width": 0.6,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -17.5,
+          "y": 8.624000050000001,
+          "width": 0.6,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -17.5,
+          "y": 8.025002050000001,
+          "width": 0.6,
+          "layer": "top"
+        }
+      ]
+    }
+  ],
+  "proposal": {
+    "centerline_parts_mm": [
+      [
+        "top",
+        [
+          [-16.250000999999997, 6.3],
+          [-16.250000999999997, 9.025000050000001],
+          [-17.5, 9.025000050000001]
+        ]
+      ]
+    ],
+    "lanes": {
+      "SPEAKER_P": {
+        "parts_mm": [
+          [
+            "top",
+            [[-15.849000999999998, 6.3], [-15.849000999999998, 9.42600005], [-17.5, 9.42600005]]
+          ]
+        ],
+        "transition_vias_mm": [],
+        "selector": ".U3 > .pin9",
+        "target_selector": ".J4 > .pin1",
+        "neck_mm": [[-16.000065, 4.9999970000000005], [-15.849000999999998, 6.3]],
+        "finish_mm": [[-17.5, 9.42600005], [-17.5, 10.02499805]],
+        "start_via_mm": [-15.849000999999998, 6.3],
+        "neck_width_mm": 0.275,
+        "trunk_width_mm": 0.6,
+        "length_mm": 6.684747649657936
+      },
+      "SPEAKER_N": {
+        "parts_mm": [
+          [
+            "top",
+            [
+              [-16.651000999999997, 6.3],
+              [-16.651000999999997, 8.624000050000001],
+              [-17.5, 8.624000050000001]
+            ]
+          ]
+        ],
+        "transition_vias_mm": [],
+        "selector": ".U3 > .pin10",
+        "target_selector": ".J4 > .pin2",
+        "neck_mm": [
+          [-16.499937, 4.9999970000000005],
+          [-16.449999999999886, 5.950000000000543],
+          [-16.651000999999997, 6.3]
+        ],
+        "finish_mm": [[-17.5, 8.624000050000001], [-17.5, 8.025002050000001]],
+        "start_via_mm": [-16.651000999999997, 6.3],
+        "neck_width_mm": 0.275,
+        "trunk_width_mm": 0.6,
+        "length_mm": 5.126922074500267
+      }
+    },
+    "preserved_all_vsys_source_regions": true
+  },
+  "width_transition": "Repeated junction coordinate explicitly terminates the constant .275 mm pin escape before the .6 mm trunk; no geometry-check suppression"
+}

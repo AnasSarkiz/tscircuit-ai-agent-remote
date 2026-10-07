@@ -1,0 +1,170 @@
+[
+  {
+    "name": "tscircuit",
+    "status": 200,
+    "version": "0.0.2750",
+    "dist": {
+      "shasum": "45575f90140a3fd9a0ce6ee2890120d0943f1eea",
+      "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.2750.tgz",
+      "fileCount": 10,
+      "integrity": "sha512-asQgndIIh/47mvzxXPjPWmdGQZBeXbdvWshQqblPqcSmWJBiqEcxuK/WZ9FAGC/igJSUVwl6D3yQ4vLocRQKbA==",
+      "signatures": [
+        {
+          "sig": "MEUCIQCZxlEmX903MJ0DnWZsYpPTkYuqGLzXoe1dDjEogpg8zQIgLYKxwMl8ez/4x9XO3Y0dPMHtQsIcJOsIxaiyBgsNIfA=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEYCIQCYZWS6Fhh/heSgRfwXr91g6Z2kdUo/O4rIBJUZMqDY6gIhAN2Az+OKCD2uzkymNc45dtih1QsJ4h1ZJK68bSiyQ4Vq",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/tscircuit@0.0.2750",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 53823827
+    }
+  },
+  {
+    "name": "@tscircuit/props",
+    "status": 200,
+    "version": "0.0.695",
+    "dist": {
+      "shasum": "0d7a102e9a9a0eeb75898cda5e3ba8055d91e19a",
+      "tarball": "https://registry.npmjs.org/@tscircuit/props/-/props-0.0.695.tgz",
+      "fileCount": 190,
+      "integrity": "sha512-YJyL8nbWZAY9hTa7qbX0qPN9yJiTiRUW4Qecvt7NCD++1NStgnolNzpGUQhrWuaDynF1boh7G/EWkomVddVZdQ==",
+      "signatures": [
+        {
+          "sig": "MEQCIDTaLJSKCetY8/7PRanIcS7cNbo+23exfE5C+zloKZT6AiAGq+XsjEMRveLF3oItBl1KYRZnBC18lExGk107X6sCzA==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIAqPxujWCoZx9tzO5L4Xxq7KzpP9ZIMD7W8Hf5yo+NJlAiBqhQRxivDFrzfRsbymP2H0784uRT1Z+30PuWphg2cxaQ==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fprops@0.0.695",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 15589065
+    }
+  },
+  {
+    "name": "@tscircuit/checks",
+    "status": 200,
+    "version": "0.0.242",
+    "dist": {
+      "shasum": "1cec6b95da84cb3814d89eb7ea4b66c0a547763e",
+      "tarball": "https://registry.npmjs.org/@tscircuit/checks/-/checks-0.0.242.tgz",
+      "fileCount": 5,
+      "integrity": "sha512-HIuFjEUAFCcPk4N4qCvLd1YVmaylaLNPAt/dzRr56RmVXg0ZazosVnfTNn8rgpbrM4/X5WeO90XdnSlG0Fh5Hg==",
+      "signatures": [
+        {
+          "sig": "MEQCICYk/rDg1ESCt/uDyI5/7glnwRfQhdHfgI3nEEMWlsl9AiAoA343zaRDGBhgZ5cp7ctEx2demckVOgA0uC1yjqFDdw==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIFD9RRX/eDLovpyzxOnUnSU07/pH0yGSiUHnJvW6zZEKAiA681Gc09w/LBAdEPvtiFdQDtRQSF1zjOxkJ1DK31Mxlg==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fchecks@0.0.242",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 1760582
+    }
+  },
+  {
+    "name": "circuit-json-to-gerber",
+    "status": 200,
+    "version": "0.0.112",
+    "dist": {
+      "shasum": "b0d9d8e73f4e2e6ce48383db763c2514b4f0bb15",
+      "tarball": "https://registry.npmjs.org/circuit-json-to-gerber/-/circuit-json-to-gerber-0.0.112.tgz",
+      "fileCount": 11,
+      "integrity": "sha512-lKkiCyN4QI/WVYU/EkM5AIvlaautVTpkGMP2FD2oh0tgJbO5/NwMDxW34IoHJGtA5rCaQ7Yuof0CNKPqk5yAgQ==",
+      "signatures": [
+        {
+          "sig": "MEUCIQD1o99i6HnjLXKK5jABmcrPwatk/fGX2n3Z3q/MZ7HDigIgDiFYzsjB5ZbKsbt0C2/fr0JfUTNI92PEvftuUlJkg/c=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEYCIQDuDKPTZ96WSX1/W852YFha4WHjn7HqYDoOU7gkuezRFQIhAK5UntC3wstATuR29RnThAx3ztKBqx/O0YyMt4jCZmUr",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/circuit-json-to-gerber@0.0.112",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 496542
+    }
+  },
+  {
+    "name": "easyeda",
+    "status": 200,
+    "version": "0.0.373",
+    "dist": {
+      "shasum": "8ed50aa8a9d3d24fc4d4a2822fcd9b50b8b9d9c9",
+      "tarball": "https://registry.npmjs.org/easyeda/-/easyeda-0.0.373.tgz",
+      "fileCount": 12,
+      "integrity": "sha512-sB9MCZAdvVixW0GPaQX6MzxyVMOlQhLDtAhK6rX+DlfrRLPQ1s7tMLG0RWdZKv0z6BMOliFNcbEIWqP2HoI7hg==",
+      "signatures": [
+        {
+          "sig": "MEUCIQD4BtH8IR2tJM/BMmZkTluavHpaPYaAmaiFmNMB0b4YawIgUDJnZkx7v4gt7kkanWCXzSDungy0osUACqirxh262/8=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIBLd3uan3AnRSFyr7SnRWeO3sLk7rHhucoqTBKkCvCRcAiEAxtztQwTt/EdKUvKdUCLM5yN2T3vWnuHLVDjB3MZymIs=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/easyeda@0.0.373",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 7660591
+    }
+  },
+  {
+    "name": "@tscircuit/capacity-autorouter",
+    "status": 200,
+    "version": "0.0.962",
+    "dist": {
+      "shasum": "b7d33f628413ddaba9c1deebee67157fe509e74c",
+      "tarball": "https://registry.npmjs.org/@tscircuit/capacity-autorouter/-/capacity-autorouter-0.0.962.tgz",
+      "fileCount": 6,
+      "integrity": "sha512-p5lHuDBJiTRTSii8L7M79WkV0mzJpXPKfquMyyOjZEWesj4bgm2ulhiyTbRbA5mamttLqAOu2attnOtkzWdFXA==",
+      "signatures": [
+        {
+          "sig": "MEUCIDFWhQ5ZsfT7Z1+ynJPg8n/OsJL+ZpahNUnXmrAO2yWQAiEA2OCog36L9mhshyifqsPXSF/Z/Ugih1DKNiJ/SlmLmOE=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIANUtOr4o7Bdr23FBLk6VnI3swXDG/NHZRiJRXfQPjxvAiBQIZc4blBcKMJ/TnzEptsiQhiFlGPV9nM+Q9gsGfSL9A==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fcapacity-autorouter@0.0.962",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 18880993
+    }
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "name": "connection-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/speaker-local-native-v6/circuit.json",
+      "src/board/connection-copper.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-qualification/connection-region-widths.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.91,
+    "completed": true
+  },
+  {
+    "name": "power-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/speaker-local-native-v6/circuit.json",
+      "src/board/manual-power-copper.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-qualification/power-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.18,
+    "completed": true
+  },
+  {
+    "name": "inner-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/speaker-local-native-v6/circuit.json",
+      "src/board/inner-signal-copper.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-qualification/inner-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.68,
+    "completed": true
+  },
+  {
+    "name": "wire-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-trace-widths.py",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/speaker-local-native-v6/circuit.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-qualification/trace-widths.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.23,
+    "completed": true
+  },
+  {
+    "name": "preservation",
+    "command": [
+      "python3",
+      "scripts/routing/audit-connection-preservation.py",
+      "dist/index/circuit.json",
+      "evidence/routing-zero-drc-2026-10-07/final-qualification/copper-audit.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/speaker-local-native-v6/circuit.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-copper-audit.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-qualification/connection-preservation.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.19,
+    "completed": true
+  },
+  {
+    "name": "historical-compliance",
+    "command": [
+      "python3",
+      "evidence/six-point-board-review-2026-10-06/review-compliance.py",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/speaker-local-native-v6/circuit.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-copper-audit.json",
+      "/workspace/tscircuit-ai-agent-remote/evidence/routing-continuation-2026-10-07/v6-qualification/historical-native-compliance.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.35,
+    "completed": true
+  }
+]

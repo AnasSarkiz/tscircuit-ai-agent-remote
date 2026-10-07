@@ -1,0 +1,18 @@
+{
+  "classification": "lossless original strict-schema diagnostics; not a modified native build",
+  "original_path": "schema-audit.json",
+  "original_bytes": 76393927,
+  "original_sha256": "5f657cdd207fa8fd54ed6fb9e68b57dd68470fc73630b5294ff6bf92e3086cca",
+  "archive_path": "schema-audit.json.gz",
+  "archive_sha256": "c3ef085426f3057e1bab88d7dc45095e2afc2c5c856ee887156008b512001a18",
+  "verified_exact_original_bytes_before_removal": true,
+  "source_native_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+  "failing_elements": 169,
+  "by_type": {
+    "schematic_group": 15,
+    "pcb_component": 135,
+    "pcb_group": 15,
+    "pcb_silkscreen_text": 2,
+    "pcb_hole": 2
+  }
+}

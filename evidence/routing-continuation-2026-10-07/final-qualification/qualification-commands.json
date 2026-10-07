@@ -1,0 +1,81 @@
+[
+  {
+    "name": "connection-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "dist/index/circuit.json",
+      "src/board/connection-copper.json",
+      "evidence/routing-continuation-2026-10-07/final-qualification/connection-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.89,
+    "completed": true
+  },
+  {
+    "name": "power-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "dist/index/circuit.json",
+      "src/board/manual-power-copper.json",
+      "evidence/routing-continuation-2026-10-07/final-qualification/power-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.24,
+    "completed": true
+  },
+  {
+    "name": "inner-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "dist/index/circuit.json",
+      "src/board/inner-signal-copper.json",
+      "evidence/routing-continuation-2026-10-07/final-qualification/inner-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.64,
+    "completed": true
+  },
+  {
+    "name": "wire-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-trace-widths.py",
+      "dist/index/circuit.json",
+      "evidence/routing-continuation-2026-10-07/final-qualification/trace-widths.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.21,
+    "completed": true
+  },
+  {
+    "name": "preservation",
+    "command": [
+      "python3",
+      "scripts/routing/audit-connection-preservation.py",
+      "evidence/routing-zero-drc-2026-10-07/final-native/circuit.json",
+      "evidence/routing-zero-drc-2026-10-07/final-qualification/copper-audit.json",
+      "dist/index/circuit.json",
+      "evidence/routing-continuation-2026-10-07/final-cli-copper-audit.json",
+      "evidence/routing-continuation-2026-10-07/final-qualification/connection-preservation.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.25,
+    "completed": true
+  },
+  {
+    "name": "historical-compliance",
+    "command": [
+      "python3",
+      "evidence/six-point-board-review-2026-10-06/review-compliance.py",
+      "dist/index/circuit.json",
+      "evidence/routing-continuation-2026-10-07/final-cli-copper-audit.json",
+      "evidence/routing-continuation-2026-10-07/final-qualification/historical-native-compliance.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.34,
+    "completed": true
+  }
+]

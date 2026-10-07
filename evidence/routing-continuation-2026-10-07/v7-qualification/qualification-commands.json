@@ -1,0 +1,81 @@
+[
+  {
+    "name": "connection-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "evidence/routing-continuation-2026-10-07/speaker-local-native-v7/circuit.json",
+      "src/board/connection-copper.json",
+      "evidence/routing-continuation-2026-10-07/v7-qualification/connection-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.23,
+    "completed": true
+  },
+  {
+    "name": "power-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "evidence/routing-continuation-2026-10-07/speaker-local-native-v7/circuit.json",
+      "src/board/manual-power-copper.json",
+      "evidence/routing-continuation-2026-10-07/v7-qualification/power-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.16,
+    "completed": true
+  },
+  {
+    "name": "inner-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-region-widths.py",
+      "evidence/routing-continuation-2026-10-07/speaker-local-native-v7/circuit.json",
+      "src/board/inner-signal-copper.json",
+      "evidence/routing-continuation-2026-10-07/v7-qualification/inner-region-widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.68,
+    "completed": true
+  },
+  {
+    "name": "wire-widths",
+    "command": [
+      "python3",
+      "scripts/routing/audit-trace-widths.py",
+      "evidence/routing-continuation-2026-10-07/speaker-local-native-v7/circuit.json",
+      "evidence/routing-continuation-2026-10-07/v7-qualification/trace-widths.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.18,
+    "completed": true
+  },
+  {
+    "name": "preservation",
+    "command": [
+      "python3",
+      "scripts/routing/audit-connection-preservation.py",
+      "dist/index/circuit.json",
+      "evidence/routing-zero-drc-2026-10-07/final-qualification/copper-audit.json",
+      "evidence/routing-continuation-2026-10-07/speaker-local-native-v7/circuit.json",
+      "evidence/routing-continuation-2026-10-07/v7-copper-audit.json",
+      "evidence/routing-continuation-2026-10-07/v7-qualification/connection-preservation.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.19,
+    "completed": true
+  },
+  {
+    "name": "historical-compliance",
+    "command": [
+      "python3",
+      "evidence/six-point-board-review-2026-10-06/review-compliance.py",
+      "evidence/routing-continuation-2026-10-07/speaker-local-native-v7/circuit.json",
+      "evidence/routing-continuation-2026-10-07/v7-copper-audit.json",
+      "evidence/routing-continuation-2026-10-07/v7-qualification/historical-native-compliance.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.31,
+    "completed": true
+  }
+]

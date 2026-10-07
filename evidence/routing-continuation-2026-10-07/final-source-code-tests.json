@@ -1,0 +1,48 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 10.73
+  },
+  {
+    "name": "format",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 0.15
+  },
+  {
+    "name": "board-tests",
+    "command": [
+      "bun",
+      "run",
+      "test"
+    ],
+    "exit_code": 1,
+    "completed": true,
+    "elapsed_seconds": 2.6
+  },
+  {
+    "name": "native-schematic-style",
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "schematic-placement",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 2.63
+  }
+]

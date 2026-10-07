@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "from pathlib import Path; import json,gzip,hashlib\nfolder=Path(\"evidence/routing-continuation-2026-10-07\");original=folder/\"schema-audit.json\";payload=original.read_bytes();parsed=json.loads(payload);archive=folder/\"schema-audit.json.gz\";assert not archive.exists();compressed=gzip.compress(payload,compresslevel=6,mtime=0);archive.write_bytes(compressed);assert gzip.decompress(archive.read_bytes())==payload\n(folder/\"schema-audit-archive-receipt.json\").write_text(json.dumps({\"classification\":\"lossless original strict-schema diagnostics; not a modified native build\",\"original_path\":\"schema-audit.json\",\"original_bytes\":len(payload),\"original_sha256\":hashlib.sha256(payload).hexdigest(),\"archive_path\":archive.name,\"archive_sha256\":hashlib.sha256(compressed).hexdigest(),\"verified_exact_original_bytes_before_removal\":True,\"source_native_sha256\":parsed[\"source_sha256\"],\"failing_elements\":parsed[\"failing_elements\"],\"by_type\":parsed[\"by_type\"]},indent=2)+\"\\n\");original.unlink();print(json.dumps({\"original_bytes\":len(payload),\"archive_bytes\":len(compressed),\"failing_elements\":parsed[\"failing_elements\"]}))"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 1.5,
+  "peak_process_group_rss_bytes": 237899776,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

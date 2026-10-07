@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/audit-copper.py", line 14, in <module>
+    from shapely.affinity import rotate
+ModuleNotFoundError: No module named 'shapely'

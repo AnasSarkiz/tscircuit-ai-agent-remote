@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-coupled-speaker.py", line 237, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-coupled-speaker.py", line 225, in main
+    result['clock_relocation'] = relocate_clock_star(planner, specification)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tscircuit-ai-agent-remote/scripts/routing/plan-coupled-speaker.py", line 81, in relocate_clock_star
+    raise ValueError('No qualified clock-star relocation found; no board sources changed')
+ValueError: No qualified clock-star relocation found; no board sources changed

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/routing/plan-coupled-speaker.py",
+    "dist/index/circuit.json",
+    "evidence/routing-continuation-2026-10-07/coupled-speaker-multilayer.json",
+    "--clear-clock-star",
+    "--paired-multilayer"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 39.05,
+  "peak_process_group_rss_bytes": 223125504,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

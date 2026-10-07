@@ -66,6 +66,17 @@ def measure_regions(circuit, regions):
     return measurements
 
 
+def active_source_regions(source):
+    regions = source['pours']
+    retired_indices = source.get('retired_connection_region_indices', [])
+    if (not isinstance(retired_indices, list)
+            or any(type(index) is not int or not 0 <= index < len(regions) for index in retired_indices)
+            or len(set(retired_indices)) != len(retired_indices)):
+        raise ValueError('Region retirements must identify distinct existing source regions')
+    active_indices = [index for index in range(len(regions)) if index not in retired_indices]
+    return active_indices, [regions[index] for index in active_indices]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('circuit_json')
@@ -74,11 +85,18 @@ def main():
     args = parser.parse_args()
     native_path = Path(args.circuit_json)
     circuit = json.loads(native_path.read_text())
-    regions = json.loads(Path(args.region_source).read_text())['pours']
-    measurements = measure_regions(circuit, regions)
+    source = json.loads(Path(args.region_source).read_text())
+    regions = source['pours']
+    retired_indices = source.get('retired_connection_region_indices', [])
+    active_indices, active_regions = active_source_regions(source)
+    measurements = measure_regions(circuit, active_regions)
+    for record, source_index in zip(measurements, active_indices):
+        record['source_region_index'] = source_index
     result = {'source_circuit_json': str(native_path),
         'source_sha256': hashlib.sha256(native_path.read_bytes()).hexdigest(),
         'region_source': args.region_source,
+        'source_total_region_count': len(regions),
+        'explicitly_retired_source_region_indices': retired_indices,
         'scope': 'Required nominal-width buffered source centerlines with flat termination caps covered by actual same-net native BREP copper and actual plated via lands on their native layers; actual drilled apertures excluded; 0.000001 mm geometric tolerance.',
         'audit_script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'checked_region_count': len(measurements),
