@@ -1,0 +1,27 @@
+{
+  "scope": "Reference purchased board-component subtotal, reusing dated prices for the 42 unchanged identities and substituting the current exact C160389 price; not an assembly/fabrication quote",
+  "old_J6": {
+    "part_number": "C160405",
+    "references": [
+      "J6"
+    ],
+    "quantity": 1,
+    "library_type": "expand",
+    "reference_unit_price_usd": 0.3018,
+    "reference_board_parts_usd": 0.3018
+  },
+  "new_J6_part_number": "C160389",
+  "new_J6_reference_unit_price_usd": 0.2743,
+  "new_reference_board_parts_subtotal_usd": 26.3055,
+  "purchased_component_count": 125,
+  "part_identity_count": 43,
+  "not_included": [
+    "PCB fabrication",
+    "assembly setup and loading",
+    "shipping and tax",
+    "external display/battery/speaker/motor",
+    "minimum-order quantity and substitutions"
+  ],
+  "prototype_quantity_target": 2,
+  "stock_reserved": false
+}

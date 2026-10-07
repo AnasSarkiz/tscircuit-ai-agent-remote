@@ -1,0 +1,13 @@
+{
+  "classification": "lossless complete raw schema failure report; no failures removed",
+  "original_file": "schema-audit.json",
+  "original_bytes": 76393927,
+  "original_sha256": "56830ac806974d62c847b1aa94c83c3f0f4414c27b82780dbd361d5830b03963",
+  "archive_file": "schema-audit.json.gz",
+  "archive_bytes": 1854644,
+  "archive_sha256": "9a48ab02eb4b59c8e4fe21cdc26ce759d94587a267d1e3866be10dff00fbcb5a",
+  "exact_original_bytes_roundtrip_verified": true,
+  "decompress_command": "gzip -dk schema-audit.json.gz",
+  "failing_elements": 169,
+  "fabrication_ready": false
+}

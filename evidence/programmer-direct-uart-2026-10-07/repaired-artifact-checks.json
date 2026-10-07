@@ -1,0 +1,47 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 11.96
+  },
+  {
+    "name": "format-check",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 0.18
+  },
+  {
+    "name": "board-tests",
+    "command": [
+      "bun",
+      "run",
+      "test"
+    ],
+    "exit_code": 1,
+    "completed": true,
+    "elapsed_seconds": 2.74
+  },
+  {
+    "name": "resolved-bom",
+    "command": [
+      "node",
+      "evidence/programmer-direct-uart-2026-10-07/export-resolved-bom.mjs",
+      "dist/index/circuit.json",
+      "evidence/programmer-direct-uart-2026-10-07"
+    ],
+    "exit_code": 0,
+    "completed": true,
+    "elapsed_seconds": 0.13
+  }
+]

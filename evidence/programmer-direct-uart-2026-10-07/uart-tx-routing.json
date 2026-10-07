@@ -1,0 +1,16 @@
+{
+  "classification": "authored native connection proposals; actual replay/audit required",
+  "paths": [],
+  "pours": [],
+  "vias": [],
+  "unresolved": [
+    {
+      "net": "SERVICE_UART_TX",
+      "ports": [
+        ".R38 > .pin2"
+      ],
+      "reason": "No qualified full-span escape/inner strip to actual main copper"
+    }
+  ],
+  "repaired_islands": []
+}

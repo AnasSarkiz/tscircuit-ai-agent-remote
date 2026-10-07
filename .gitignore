@@ -3,6 +3,9 @@ dist/*
 !dist/index/
 dist/index/*
 !dist/index/circuit.json
+!dist/placement/
+dist/placement/*
+!dist/placement/circuit.json
 .tscircuit/cache/
 .claude/
 .DS_Store

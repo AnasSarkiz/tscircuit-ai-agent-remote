@@ -11384,126 +11384,45 @@
       "nominal_width_mm": 0.8,
       "path_mm": [
         [-19.999999999999936, -6.999999999999645],
-        [-18.89999999999992, -8.79999999999967],
-        [-18.9, -11.2]
+        [-19.199999999999925, -8.199999999999662]
       ],
-      "layer": "top",
+      "layer": "bottom",
       "outline": [
         {
-          "x": -18.557834,
-          "y": -8.590899
+          "x": -18.86718,
+          "y": -7.97812
         },
         {
-          "x": -18.552727,
-          "y": -8.599494
+          "x": -19.2,
+          "y": -8.2
         },
         {
-          "x": -18.547836,
-          "y": -8.608215
+          "x": -19.533652,
+          "y": -8.422435
         },
         {
-          "x": -18.543164,
-          "y": -8.617054
+          "x": -20.333652,
+          "y": -7.222435
         },
         {
-          "x": -18.538714,
-          "y": -8.626007
+          "x": -20.33282,
+          "y": -7.22188
         },
         {
-          "x": -18.534488,
-          "y": -8.635069
+          "x": -20.0,
+          "y": -7.0
         },
         {
-          "x": -18.53049,
-          "y": -8.644233
+          "x": -19.666348,
+          "y": -6.777565
         },
         {
-          "x": -18.526721,
-          "y": -8.653494
-        },
-        {
-          "x": -18.523185,
-          "y": -8.662846
-        },
-        {
-          "x": -18.519882,
-          "y": -8.672283
-        },
-        {
-          "x": -18.516816,
-          "y": -8.6818
-        },
-        {
-          "x": -18.513989,
-          "y": -8.69139
-        },
-        {
-          "x": -18.511401,
-          "y": -8.701047
-        },
-        {
-          "x": -18.509055,
-          "y": -8.710766
-        },
-        {
-          "x": -18.506951,
-          "y": -8.720541
-        },
-        {
-          "x": -18.505092,
-          "y": -8.730365
-        },
-        {
-          "x": -18.503479,
-          "y": -8.740232
-        },
-        {
-          "x": -18.502112,
-          "y": -8.750137
-        },
-        {
-          "x": -18.500993,
-          "y": -8.760072
-        },
-        {
-          "x": -18.500121,
-          "y": -8.770032
-        },
-        {
-          "x": -18.499499,
-          "y": -8.780011
-        },
-        {
-          "x": -18.499125,
-          "y": -8.790002
-        },
-        {
-          "x": -18.499,
-          "y": -8.8
-        },
-        {
-          "x": -18.499,
-          "y": -11.2
-        },
-        {
-          "x": -19.301,
-          "y": -11.2
-        },
-        {
-          "x": -19.301,
-          "y": -8.912828
-        },
-        {
-          "x": -20.342166,
-          "y": -7.209101
-        },
-        {
-          "x": -19.657834,
-          "y": -6.790899
+          "x": -18.866348,
+          "y": -7.977565
         }
       ],
       "drawn_width_mm": 0.802,
-      "classification": "manual native outer-layer high-current region; thermal qualification pending"
+      "classification": "manual native 0.8 mm bottom V3V3 trunk bypassing the retired J6 power junction; both real supply endpoints and original vias retained"
     },
     {
       "net": "V3V3",
@@ -27238,5 +27157,17 @@
       "pad_diameter_mm": 1,
       "scope": "Native test pad only, wholly in measured main top GND island with a nonzero contact and clearance to pads/drills"
     }
-  }
+  },
+  "retired_connection_region_indices": [54],
+  "replacement_receipts": [
+    {
+      "classification": "actual authored power reroute; native qualification required",
+      "reason": "Genuine new J6 has no supply contact; the old top supply detour is clipped by its footprint. Replace it with a full-width bottom trunk and remove only the obsolete detour.",
+      "source_region_replaced": 53,
+      "source_region_retired": 54,
+      "unchanged_distribution_vias": [27, 28],
+      "nominal_width_mm": 0.8,
+      "source_proposal": "evidence/programmer-direct-uart-2026-10-07/j6-supply-bypass-proposal.json"
+    }
+  ]
 }

@@ -1,0 +1,611 @@
+{
+  "native_sha256": "3463e39446e73a751630b9f672d3ee8e338b354a79d2d918cfa0fec0e5e50d01",
+  "count": 50,
+  "by_component": {
+    "J7": 46,
+    "U27": 4
+  },
+  "raw_errors": [
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_0",
+      "message": "Port [J7.pin50] is not connected to net [LCD_BACKLIGHT_OUTPUT] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_228"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_1",
+      "message": "Port [J7.pin49] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_227"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_2",
+      "message": "Port [J7.pin48] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_226"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_3",
+      "message": "Port [J7.pin47] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_225"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_4",
+      "message": "Port [J7.pin46] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_224"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_5",
+      "message": "Port [J7.pin45] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_223"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_6",
+      "message": "Port [J7.pin44] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_222"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_7",
+      "message": "Port [J7.pin43] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_221"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_8",
+      "message": "Port [J7.pin42] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_220"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_9",
+      "message": "Port [J7.pin41] is not connected to net [LCD_RESET_N] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_219"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_10",
+      "message": "Port [J7.pin40] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_218"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_11",
+      "message": "Port [J7.pin39] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_217"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_12",
+      "message": "Port [J7.pin38] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_216"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_13",
+      "message": "Port [J7.pin37] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_215"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_14",
+      "message": "Port [J7.pin36] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_214"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_15",
+      "message": "Port [J7.pin35] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_213"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_16",
+      "message": "Port [J7.pin34] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_212"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_17",
+      "message": "Port [J7.pin33] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_211"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_18",
+      "message": "Port [J7.pin32] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_210"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_19",
+      "message": "Port [J7.pin31] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_209"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_20",
+      "message": "Port [J7.pin30] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_208"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_21",
+      "message": "Port [J7.pin29] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_207"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_22",
+      "message": "Port [J7.pin28] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_206"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_23",
+      "message": "Port [J7.pin27] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_205"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_24",
+      "message": "Port [J7.pin26] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_204"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_25",
+      "message": "Port [J7.pin25] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_203"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_26",
+      "message": "Port [J7.pin24] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_202"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_27",
+      "message": "Port [J7.pin23] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_201"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_28",
+      "message": "Port [J7.pin22] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_200"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_29",
+      "message": "Port [J7.pin21] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_199"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_30",
+      "message": "Port [J7.pin20] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_198"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_31",
+      "message": "Port [J7.pin19] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_197"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_32",
+      "message": "Port [J7.pin17] is not connected to net [LCD_SDA] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_195"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_33",
+      "message": "Port [J7.pin16] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_194"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_34",
+      "message": "Port [J7.pin15] is not connected to net [LCD_DC] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_193"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_35",
+      "message": "Port [J7.pin14] is not connected to net [LCD_SCLK] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_192"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_36",
+      "message": "Port [J7.pin13] is not connected to net [LCD_CS_N] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_191"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_37",
+      "message": "Port [J7.pin11] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_189"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_38",
+      "message": "Port [J7.pin10] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_188"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_39",
+      "message": "Port [J7.pin9] is not connected to net [VLCD] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_187"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_40",
+      "message": "Port [J7.pin8] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_186"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_41",
+      "message": "Port [J7.pin3] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_181"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_42",
+      "message": "Port [J7.pin2] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_180"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_43",
+      "message": "Port [J7.pin1] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_179"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_44",
+      "message": "Port [J7.pin51] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_229"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_45",
+      "message": "Port [J7.pin52] is not connected to net [GND] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_230"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_34"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_46",
+      "message": "Port [U27.D4] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_456"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_119"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_47",
+      "message": "Port [U27.D3] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_457"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_119"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_48",
+      "message": "Port [U27.D2] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_458"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_119"
+      ]
+    },
+    {
+      "type": "pcb_port_not_connected_error",
+      "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_49",
+      "message": "Port [U27.D1] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.",
+      "error_type": "pcb_port_not_connected_error",
+      "pcb_port_ids": [
+        "pcb_port_459"
+      ],
+      "pcb_component_ids": [
+        "pcb_component_119"
+      ]
+    }
+  ],
+  "all_connections_complete": false
+}

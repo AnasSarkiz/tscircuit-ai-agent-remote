@@ -1,4 +1,4 @@
-export function BoardNets() {
+export function BoardNets({ placementOnly = false }: { placementOnly?: boolean } = {}) {
   return (
     <>
       <net name="MCU_MIC_SD" />
@@ -20,7 +20,7 @@ export function BoardNets() {
       <net name="GND" isGroundNet nominalTraceWidth={0.3} />
       <net name="HAPTIC_N" nominalTraceWidth={0.4} />
       <net name="HAPTIC_NMOS_GATE" />
-      <net name="HOLD_BUFFER_OUT" routingPhaseIndex={2} />
+      <net name="HOLD_BUFFER_OUT" routingPhaseIndex={placementOnly ? undefined : 2} />
       <net name="HOLD_HARDWARE" />
       <net name="LCD_BACKLIGHT_OUTPUT" isPowerNet nominalTraceWidth={0.3} />
       <net name="LCD_BACKLIGHT_RETURN_1" nominalTraceWidth={0.3} />
@@ -40,8 +40,8 @@ export function BoardNets() {
       <net name="MCU_BACKLIGHT_PWM" />
       <net name="MCU_BOOT_N" />
       <net name="MCU_EN" />
-      <net name="MCU_HAPTIC_ENABLE" routingPhaseIndex={15} />
-      <net name="MCU_HOLD_READ" routingPhaseIndex={14} />
+      <net name="MCU_HAPTIC_ENABLE" routingPhaseIndex={placementOnly ? undefined : 15} />
+      <net name="MCU_HOLD_READ" routingPhaseIndex={placementOnly ? undefined : 14} />
       <net name="MCU_LCD_CS_N" />
       <net name="MCU_LCD_DC" />
       <net name="MCU_LCD_RESET_N" />
@@ -50,8 +50,8 @@ export function BoardNets() {
       <net name="MCU_MIC_BCLK" />
       <net name="MCU_MIC_WS" />
       <net name="MCU_RESET_N" />
-      <net name="MCU_UART_RX" routingPhaseIndex={22} />
-      <net name="MCU_UART_TX" routingPhaseIndex={22} />
+      <net name="MCU_UART_RX" />
+      <net name="MCU_UART_TX" routingPhaseIndex={placementOnly ? undefined : 22} />
       <net name="MCU_USB_DN" nominalTraceWidth={0.2979} />
       <net name="MCU_USB_DP" nominalTraceWidth={0.2979} />
       <net name="MIC_BCLK" />
@@ -64,13 +64,21 @@ export function BoardNets() {
       <net name="MIC_WS_INPUT" />
       <net name="PACK_BAT" isPowerNet nominalTraceWidth={1} />
       <net name="PACK_NTC" />
-      <net name="REG_FB" routingPhaseIndex={1} />
-      <net name="REG_PG" routingPhaseIndex={13} />
+      <net name="REG_FB" routingPhaseIndex={placementOnly ? undefined : 1} />
+      <net name="REG_PG" routingPhaseIndex={placementOnly ? undefined : 13} />
       <net name="SERVICE_UART_TX" />
-      <net name="SPEAKER_N" nominalTraceWidth={0.6} routingPhaseIndex={26} />
-      <net name="SPEAKER_P" nominalTraceWidth={0.6} routingPhaseIndex={26} />
+      <net
+        name="SPEAKER_N"
+        nominalTraceWidth={0.6}
+        routingPhaseIndex={placementOnly ? undefined : 26}
+      />
+      <net
+        name="SPEAKER_P"
+        nominalTraceWidth={0.6}
+        routingPhaseIndex={placementOnly ? undefined : 26}
+      />
       <net name="USB_CC1" />
-      <net name="USB_CC2" routingPhaseIndex={2} />
+      <net name="USB_CC2" routingPhaseIndex={placementOnly ? undefined : 2} />
       <net name="USB_DN" nominalTraceWidth={0.2979} />
       <net name="USB_DP" nominalTraceWidth={0.2979} />
       <net name="V3V3" isPowerNet nominalTraceWidth={0.8} />

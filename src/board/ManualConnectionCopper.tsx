@@ -56,6 +56,21 @@ const retiredConnectionPathIndices = new Set(
     })
     .parse(connections).retired_connection_path_indices,
 )
+const retiredSourcePathIndices = new Set(
+  z
+    .object({
+      retired_source_path_indices: z
+        .array(
+          z
+            .number()
+            .int()
+            .min(0)
+            .max(paths.length - 1),
+        )
+        .default([]),
+    })
+    .parse(connections).retired_source_path_indices,
+)
 const regions = z
   .array(
     z.object({
@@ -155,16 +170,18 @@ export function ManualConnectionCopper({
   if (placementOnly) return null
   return (
     <>
-      {paths.map((path, index) => (
-        <trace
-          name={`CONNECTION_ESCAPE_${path.net}_${index}`}
-          from={path.from}
-          to={path.to}
-          width={path.width}
-          pcbPathRelativeTo={path.from}
-          pcbPath={retiredConnectionPathIndices.has(index) ? undefined : path.pcbPath}
-        />
-      ))}
+      {paths.map((path, index) =>
+        retiredSourcePathIndices.has(index) ? null : (
+          <trace
+            name={`CONNECTION_ESCAPE_${path.net}_${index}`}
+            from={path.from}
+            to={path.to}
+            width={path.width}
+            pcbPathRelativeTo={path.from}
+            pcbPath={retiredConnectionPathIndices.has(index) ? undefined : path.pcbPath}
+          />
+        ),
+      )}
       {regions.map((region, index) =>
         retiredConnectionRegionIndices.has(index) ? null : (
           <copperpour

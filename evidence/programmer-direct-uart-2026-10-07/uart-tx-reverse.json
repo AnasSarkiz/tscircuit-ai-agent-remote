@@ -1,0 +1,122 @@
+{
+  "classification": "manual J6 TX bridge to preserved real R38 copper; native regeneration/audit required",
+  "source_sha256": "ca966e9f75af56d03a4d845a70aa732a44bc2fdf4a60d2f079e0603751dbf037",
+  "paths": [
+    {
+      "net": "SERVICE_UART_TX",
+      "from": ".J6 > .pin3",
+      "to": "net.SERVICE_UART_TX",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.05,
+          "y": 2.85
+        },
+        {
+          "x": 0.85,
+          "y": 4.85
+        },
+        {
+          "x": 0.85,
+          "y": 4.85,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -18.399870999999997,
+          -8.6749963
+        ],
+        [
+          -18.449999999999914,
+          -7.149999999999647
+        ],
+        [
+          -16.549999999999887,
+          -5.149999999999618
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native ordinary via escape; power current qualification pending",
+      "top_length_mm": 4.284442831475195,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    }
+  ],
+  "pours": [
+    {
+      "net": "SERVICE_UART_TX",
+      "layer": "inner2",
+      "nominal_width_mm": 0.2,
+      "drawn_width_mm": 0.202,
+      "path_mm": [
+        [
+          -16.549999999999887,
+          -5.149999999999618
+        ],
+        [
+          -17.049999999999894,
+          -3.7499999999995985
+        ]
+      ],
+      "outline": [
+        {
+          "x": -17.144174,
+          "y": -3.783634
+        },
+        {
+          "x": -17.144174,
+          "y": -3.783634
+        },
+        {
+          "x": -17.05,
+          "y": -3.75
+        },
+        {
+          "x": -16.954884,
+          "y": -3.71603
+        },
+        {
+          "x": -16.454884,
+          "y": -5.11603
+        },
+        {
+          "x": -16.455826,
+          "y": -5.116366
+        },
+        {
+          "x": -16.455826,
+          "y": -5.116366
+        },
+        {
+          "x": -16.55,
+          "y": -5.15
+        },
+        {
+          "x": -16.645116,
+          "y": -5.18397
+        },
+        {
+          "x": -17.145116,
+          "y": -3.78397
+        }
+      ]
+    }
+  ],
+  "vias": [],
+  "repaired_islands": [
+    {
+      "net": "SERVICE_UART_TX",
+      "ports": [
+        ".J6 > .pin3"
+      ]
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd /workspace/tscircuit-ai-agent-remote/.publish/board\nexec bun /workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/cli/entrypoint.js snapshot index.circuit.tsx"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 61.32,
+  "peak_process_group_rss_bytes": 3280887808,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

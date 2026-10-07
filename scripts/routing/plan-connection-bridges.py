@@ -37,9 +37,19 @@ def region_records(net, specification):
             line.buffer(specification['width']/2, quad_segs=64, cap_style=2, join_style=1))
         if contour.geom_type != 'Polygon' or contour.interiors:
             raise ValueError('Strip must have one simple native outline')
+        # Rounding distinct floating-point vertices can make adjacent points
+        # identical. Remove zero-length edges in authored native outlines;
+        # this preserves their exact rounded shape and required copper width.
+        outline = []
+        for x, y in list(contour.exterior.coords)[:-1]:
+            vertex = {'x':round(x,6), 'y':round(y,6)}
+            if not outline or vertex != outline[-1]:
+                outline.append(vertex)
+        if len(outline) > 1 and outline[0] == outline[-1]:
+            outline.pop()
         records.append({'net':net, 'layer':layer, 'nominal_width_mm':specification['width'],
                         'drawn_width_mm':drawn_width, 'path_mm':points,
-                        'outline':[{'x':round(x,6),'y':round(y,6)} for x,y in list(contour.exterior.coords)[:-1]]})
+                        'outline':outline})
     return records
 
 

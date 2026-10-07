@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "from pathlib import Path; import tarfile,json,hashlib; r=Path(\".publish/board\"); o=Path(\"evidence/programmer-direct-uart-2026-10-07/documented-native\"); fs={}; a=tarfile.open(o/\"time-limited-source-and-events.tar.gz\",\"w:gz\"); [(fs.__setitem__(str(p.relative_to(r)),{\"sha256\":hashlib.sha256(p.read_bytes()).hexdigest(),\"bytes\":p.stat().st_size}),a.add(p,arcname=str(p.relative_to(r)),recursive=False)) for p in sorted(r.rglob(\"*\")) if p.is_file() and \"node_modules\" not in p.parts and (\"dist\" not in p.parts or \"autorouter-debug\" in p.parts)]; a.close(); (o/\"time-limited-source-and-events-manifest.json\").write_text(json.dumps(fs,indent=2)+\"\\n\"); print(\"Preserved\",len(fs),\"actual trial source/event files\")"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 9.54,
+  "peak_process_group_rss_bytes": 21057536,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

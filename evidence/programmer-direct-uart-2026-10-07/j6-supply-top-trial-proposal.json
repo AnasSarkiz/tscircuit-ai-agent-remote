@@ -1,0 +1,23 @@
+{
+  "classification": "manual native outer-layer 0.8 mm V3V3 bypass around new J6; proposal only until actual native width/continuity/clearance checks",
+  "retired_source_region_indices": [
+    54
+  ],
+  "replaced_source_region_indices": [
+    53,
+    55
+  ],
+  "relocated_source_via_index": 28,
+  "previous_via": {
+    "net": "V3V3",
+    "x": -19.199999999999925,
+    "y": -8.199999999999662,
+    "hole_mm": 0.3,
+    "outer_mm": 0.45,
+    "classification": "manual native through via between outer power regions"
+  },
+  "source_regions": [],
+  "unresolved": [
+    "No complete 0.8 mm outer-layer supply bypass"
+  ]
+}

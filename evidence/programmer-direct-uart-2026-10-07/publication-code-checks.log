@@ -1,0 +1,47 @@
+$ biome format .
+context/build-checkpoint.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     52  52 │     "source_snapshot_byte_verified": true,
+     53  53 │     "local_mcu_100nf_bypass_connected": true,
+     54     │ - ··"mcu_bulk_nominal_capacitance_f":·2.2e-05,
+         54 │ + ··"mcu_bulk_nominal_capacitance_f":·2.2e-5,
+     55  55 │     "resolved_bom_blank_descriptions": 0,
+     56  56 │     "resolved_bom_supplier_codes_as_packages": 0,
+    ······· │ 
+    263 263 │     "display_replacement_mechanical_and_interface_audit": "evidence/display028-integration-2026-10-07/mechanical-and-interface-audit.json",
+    264 264 │     "display_replacement_candidate_controller": "ILI9341",
+    265     │ - ··"display_replacement_candidate_landscape_body_mm":·[
+    266     │ - ····69.3,
+    267     │ - ····50.2
+    268     │ - ··],
+    269     │ - ··"display_replacement_candidate_active_mm":·[
+    270     │ - ····57.6,
+    271     │ - ····43.2
+    272     │ - ··],
+        265 │ + ··"display_replacement_candidate_landscape_body_mm":·[69.3,·50.2],
+        266 │ + ··"display_replacement_candidate_active_mm":·[57.6,·43.2],
+    273 267 │     "display_replacement_candidate_body_front_coverage_percent": 77.308,
+    274 268 │     "display_replacement_candidate_fpc_exit_finished_side": "right",
+    ······· │ 
+    307 301 │     "supplier_positive_overseas_count_identities": 42,
+    308 302 │     "supplier_public_buyability_covers_identities": 40,
+    309     │ - ··"supplier_zero_public_buyability":·[
+    310     │ - ····"U1/C2913201",
+    311     │ - ····"D2/C94934",
+    312     │ - ····"U16/C54313"
+    313     │ - ··],
+        303 │ + ··"supplier_zero_public_buyability":·["U1/C2913201",·"D2/C94934",·"U16/C54313"],
+    314 304 │     "supplier_stock_count_scope": "overseasStockCount and canPresaleNumber, not global stock or reserved assembly inventory",
+    315 305 │     "programmer_cable_specification": "Numbered SH3 cable 1\u21921,2\u21922,3\u21923; programmer TX/GND/RX to target RX/GND/TX. Untested assembly/hardware; separate power/manual BOOT/RESET/open enclosure required.",
+  
+
+Checked 111 files in 92ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

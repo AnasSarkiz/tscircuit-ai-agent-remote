@@ -1,0 +1,20 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/tsci",
+    "build",
+    "index.circuit.tsx",
+    "--pcb-png",
+    "--pcb-svgs",
+    "--schematic-svgs",
+    "--autorouter-dump-srj",
+    "all"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 310.97,
+  "peak_process_group_rss_bytes": 3526135808,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

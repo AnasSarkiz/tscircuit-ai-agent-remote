@@ -1,0 +1,11 @@
+24 |   routingStarted = true
+25 | })
+26 | root.add(<Board placementOnly />)
+27 | await root.renderUntilSettled()
+28 | const circuitJson = root.getCircuitJson()
+29 | if (routingStarted) throw new Error("Placement-only mode must never start routing")
+                                   ^
+error: Placement-only mode must never start routing
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/capture-placement.tsx:29:31
+
+Bun v1.3.9 (Linux x64)

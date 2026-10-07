@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/board",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 3.03
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/board",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.56
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/board",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 2.63
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/board",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 3.06
+    },
+    {
+      "command": [
+        "bun",
+        "node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/board",
+      "exit_code": 0,
+      "completed": true,
+      "elapsed_seconds": 14.15
+    }
+  ],
+  "passed": true
+}

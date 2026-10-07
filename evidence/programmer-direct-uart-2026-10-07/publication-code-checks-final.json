@@ -1,0 +1,16 @@
+{
+  "native_sha256": "bcee32a49486610d7379583efb2b378846cc75f232272b50c717ad129c495704",
+  "format_passed": true,
+  "typecheck_passed": true,
+  "board_tests_pass": 49,
+  "board_tests_fail": 2,
+  "failing_gates": [
+    "complete native connectivity",
+    "strict native schema"
+  ],
+  "command_execution_completed": true,
+  "log": "publication-code-checks-formatted.log",
+  "budget_outcome": "publication-code-checks-formatted.log.outcome.json",
+  "full_test_suite_passed": false,
+  "fabrication_ready": false
+}

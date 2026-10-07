@@ -1,3 +1,45 @@
+**0.0.9-wip-standard-uart — NOT READY TO ORDER.** J6 now uses the genuine
+JLCPCB **C160389 / JST BM03B-SRSS-TB(LF)(SN)** three-contact upward SH header.
+Its UART contacts are RX/GND/TX (pins 1/2/3); hold-downs 4/5 are GND.
+Authored native routes replace the former six-contact connector's connections,
+with a local audio-gate detour, a 0.8 mm bottom-layer 3.3 V trunk bypass
+and ordinary 0.30/0.45 mm through-via escapes.
+The standard JST programmer's TX/GND/RX cable maps directly to these contacts;
+the custom three-to-six adapter is removed. Programming requires separate
+USB/battery power, manual BOOT/RESET and an open enclosure: mated connector
+height is 6.3 mm. Hardware operation and cable assembly are untested.
+
+The 2026-10-07 20:07 UTC official JLCPCB page reports C160389
+`overseasStockCount=32191` and `canPresaleNumber=31559`, at a reference
+$0.2743 each. These are public inventory fields; they do not establish global
+warehouse totals, assembler allocation or an order quote. Purchased count
+remains 125 parts / 43 identities. All other component poses are retained.
+
+The requested 2.8-inch LCD is still unimplemented. Exact panel/flex/antenna
+fit, J7 mapping, battery outer-contact numbering, full connectivity, toolchain
+schema/paste/Gerber issues and current-carrying qualification remain gates.
+See the [actual native qualification and remaining blockers](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/programmer-direct-uart-2026-10-07/review.md).
+Final copper qualification: 381 native traces, 322 full-span 0.30/0.45 mm
+vias and 273 native pours; 0 measured shorts / 0 geometry violations;
+50 native open-port errors (46 J7 + 4 U27) / 12 physically open nets.
+All 250 active authored regions pass their nominal width checks. All 9,813
+retained terminal pairs are preserved under the explicitly qualified J6 contact
+migration; 124 other purchased geometries remain identical. High-current
+trunks use top/bottom. Five source checks, TypeScript, formatting and 94
+routing regressions pass. Board tests: 49 pass / 2 fail. Actual schematic UI:
+15 style issues; strict native schema: 169 failures. Source snapshots complete
+and fail against unchanged references. Two explicit regulator width minima,
+32 missing paste records and fabrication export gates remain unresolved.
+
+Exact public visibility/source/native verification is recorded in the linked
+review and its `github-publication-receipt.json`, `final-registry-receipt.json`
+and `final-public-preview-receipt.json`; publication is complete only after
+those receipts establish exact matching anonymous access. The current source
+hash, revision and public links are recorded there without a fabrication claim.
+Older status and connector references below describe historical revisions.
+
+---
+
 ## Canonical paste source repair — 2026-10-07
 
 **Tested source repair; active board and fabrication remain blocked.** Canonical

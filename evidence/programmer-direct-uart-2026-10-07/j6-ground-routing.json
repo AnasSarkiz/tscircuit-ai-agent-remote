@@ -1,0 +1,128 @@
+{
+  "classification": "manual native full-span ground escapes for genuine J6; native audit required",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".J6 > .pin2",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -0.85,
+          "y": -1.45
+        },
+        {
+          "x": -1.2,
+          "y": -1.65
+        },
+        {
+          "x": -1.2,
+          "y": -1.65,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.399873,
+          -8.6749963
+        ],
+        [
+          -18.24999999999991,
+          -11.449999999999708
+        ],
+        [
+          -18.599999999999916,
+          -11.64999999999971
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 3.3054156716090493,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    },
+    {
+      "net": "GND",
+      "from": ".J6 > .pin4",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -0.25,
+          "y": -2.7
+        },
+        {
+          "x": -0.25,
+          "y": -2.7,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.100157,
+          -11.1997563
+        ],
+        [
+          -17.649999999999903,
+          -12.699999999999726
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 2.958450689810018,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    },
+    {
+      "net": "GND",
+      "from": ".J6 > .pin5",
+      "to": "net.GND",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -5.0,
+          "y": -1.2
+        },
+        {
+          "x": -5.0,
+          "y": -1.2,
+          "via": true,
+          "fromLayer": "top",
+          "toLayer": "bottom"
+        }
+      ],
+      "global_path_mm": [
+        [
+          -19.699842999999998,
+          -11.2000103
+        ],
+        [
+          -22.39999999999997,
+          -11.199999999999704
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND via escape",
+      "top_length_mm": 2.7001570000196176,
+      "via_outer_mm": 0.45,
+      "via_hole_mm": 0.3
+    }
+  ],
+  "pours": [],
+  "vias": [],
+  "unresolved": []
+}

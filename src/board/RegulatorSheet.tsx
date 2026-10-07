@@ -57,8 +57,20 @@ export function RegulatorSheet({ placementOnly = false }: { placementOnly?: bool
           width={0.28}
           pcbPath={placementOnly ? undefined : ["U2.pin3"]}
         />
-        <trace name="REG_L1" routingPhaseIndex={0} width={1} from="U2.pin9" to="L1.pin1" />
-        <trace name="REG_L2" routingPhaseIndex={0} width={1} from="U2.pin7" to="L1.pin2" />
+        <trace
+          name="REG_L1"
+          routingPhaseIndex={placementOnly ? undefined : 0}
+          width={1}
+          from="U2.pin9"
+          to="L1.pin1"
+        />
+        <trace
+          name="REG_L2"
+          routingPhaseIndex={placementOnly ? undefined : 0}
+          width={1}
+          from="U2.pin7"
+          to="L1.pin2"
+        />
         <trace
           from="U2.pin6"
           to="net.V3V3"

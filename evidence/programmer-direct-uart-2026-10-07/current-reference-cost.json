@@ -1,0 +1,572 @@
+{
+  "native_sha256": "3463e39446e73a751630b9f672d3ee8e338b354a79d2d918cfa0fec0e5e50d01",
+  "dated_source": "official-stock/receipt.json",
+  "reference_component_subtotal_usd": "26.3055",
+  "included_purchased_placements": 125,
+  "included_supplier_identities": 43,
+  "is_order_quote": false,
+  "excludes": [
+    "PCB",
+    "assembly/setup",
+    "shipping/tax",
+    "external purchased assemblies",
+    "MOQ/allocation effects"
+  ],
+  "parts": [
+    {
+      "part": "C2913201",
+      "references": [
+        "U1"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "5.0038",
+      "extended_usd": "5.0038",
+      "public_standalone_pre_min_purchase": 2,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C165948",
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.1857",
+      "extended_usd": "0.1857",
+      "public_standalone_pre_min_purchase": 49,
+      "public_least_patch_number": 2
+    },
+    {
+      "part": "C94934",
+      "references": [
+        "D2"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.3756",
+      "extended_usd": "0.3756",
+      "public_standalone_pre_min_purchase": 25,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C485802",
+      "references": [
+        "U12"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.4341",
+      "extended_usd": "0.4341",
+      "public_standalone_pre_min_purchase": 27,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C160389",
+      "references": [
+        "J6"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.2743",
+      "extended_usd": "0.2743",
+      "public_standalone_pre_min_purchase": 33,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C107701",
+      "references": [
+        "R31",
+        "R32",
+        "R65",
+        "R66",
+        "R67"
+      ],
+      "quantity": 5,
+      "reference_unit_usd": "0.0036",
+      "extended_usd": "0.0180",
+      "public_standalone_pre_min_purchase": 3342,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C105580",
+      "references": [
+        "R33",
+        "R34"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.0023",
+      "extended_usd": "0.0046",
+      "public_standalone_pre_min_purchase": 4512,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C99782",
+      "references": [
+        "R35"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0033",
+      "extended_usd": "0.0033",
+      "public_standalone_pre_min_purchase": 3610,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C98220",
+      "references": [
+        "R36",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R61",
+        "R68",
+        "R69",
+        "R70",
+        "R84",
+        "R90",
+        "R91",
+        "R94",
+        "R95",
+        "R99",
+        "R29",
+        "R30",
+        "R102",
+        "R104"
+      ],
+      "quantity": 20,
+      "reference_unit_usd": "0.0034",
+      "extended_usd": "0.0680",
+      "public_standalone_pre_min_purchase": 3471,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C14675",
+      "references": [
+        "R37",
+        "R3",
+        "R4",
+        "R7",
+        "R40",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "R85",
+        "R87",
+        "R26"
+      ],
+      "quantity": 13,
+      "reference_unit_usd": "0.0026",
+      "extended_usd": "0.0338",
+      "public_standalone_pre_min_purchase": 4297,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C21190",
+      "references": [
+        "R38",
+        "R41",
+        "R62",
+        "R64",
+        "R82",
+        "R86",
+        "R100",
+        "R27"
+      ],
+      "quantity": 8,
+      "reference_unit_usd": "0.0026",
+      "extended_usd": "0.0208",
+      "public_standalone_pre_min_purchase": 4512,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C84419",
+      "references": [
+        "C30",
+        "C5",
+        "C41",
+        "C71"
+      ],
+      "quantity": 4,
+      "reference_unit_usd": "0.0912",
+      "extended_usd": "0.3648",
+      "public_standalone_pre_min_purchase": 124,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C45000",
+      "references": [
+        "C31",
+        "C32",
+        "C42",
+        "C43",
+        "C51",
+        "C72",
+        "C75",
+        "C78",
+        "C76",
+        "C77",
+        "C80",
+        "C81",
+        "C25",
+        "C26"
+      ],
+      "quantity": 14,
+      "reference_unit_usd": "0.017",
+      "extended_usd": "0.238",
+      "public_standalone_pre_min_purchase": 659,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C54313",
+      "references": [
+        "U16"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "2.5036",
+      "extended_usd": "2.5036",
+      "public_standalone_pre_min_purchase": 4,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C157929",
+      "references": [
+        "J3"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0368",
+      "extended_usd": "0.0368",
+      "public_standalone_pre_min_purchase": 276,
+      "public_least_patch_number": 2
+    },
+    {
+      "part": "C19666",
+      "references": [
+        "C1"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0295",
+      "extended_usd": "0.0295",
+      "public_standalone_pre_min_purchase": 519,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C90053",
+      "references": [
+        "C2",
+        "C3",
+        "C4",
+        "C40",
+        "C50",
+        "C70",
+        "C73",
+        "C74",
+        "C84",
+        "C85"
+      ],
+      "quantity": 10,
+      "reference_unit_usd": "0.0321",
+      "extended_usd": "0.3210",
+      "public_standalone_pre_min_purchase": 342,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C126358",
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.0061",
+      "extended_usd": "0.0122",
+      "public_standalone_pre_min_purchase": 1770,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C2845237",
+      "references": [
+        "U2"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.9673",
+      "extended_usd": "0.9673",
+      "public_standalone_pre_min_purchase": 12,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C668312",
+      "references": [
+        "L1"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.1779",
+      "extended_usd": "0.1779",
+      "public_standalone_pre_min_purchase": 60,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C364359",
+      "references": [
+        "R5"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0041",
+      "extended_usd": "0.0041",
+      "public_standalone_pre_min_purchase": 2507,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C114639",
+      "references": [
+        "R6"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0035",
+      "extended_usd": "0.0035",
+      "public_standalone_pre_min_purchase": 3008,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C2869847",
+      "references": [
+        "U13",
+        "U23"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.4243",
+      "extended_usd": "0.8486",
+      "public_standalone_pre_min_purchase": 27,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C7848",
+      "references": [
+        "U14"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.3564",
+      "extended_usd": "0.3564",
+      "public_standalone_pre_min_purchase": 26,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C262650",
+      "references": [
+        "J7"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.286",
+      "extended_usd": "0.286",
+      "public_standalone_pre_min_purchase": 32,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C910544",
+      "references": [
+        "U3"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "1.3152",
+      "extended_usd": "1.3152",
+      "public_standalone_pre_min_purchase": 7,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C20917",
+      "references": [
+        "Q1",
+        "Q9"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.0888",
+      "extended_usd": "0.1776",
+      "public_standalone_pre_min_purchase": 127,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C15127",
+      "references": [
+        "Q2"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.1017",
+      "extended_usd": "0.1017",
+      "public_standalone_pre_min_purchase": 110,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C173752",
+      "references": [
+        "J4"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0396",
+      "extended_usd": "0.0396",
+      "public_standalone_pre_min_purchase": 286,
+      "public_least_patch_number": 2
+    },
+    {
+      "part": "C22775",
+      "references": [
+        "R60",
+        "R63",
+        "R83",
+        "R88",
+        "R89",
+        "R103"
+      ],
+      "quantity": 6,
+      "reference_unit_usd": "0.0031",
+      "extended_usd": "0.0186",
+      "public_standalone_pre_min_purchase": 3610,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C963429",
+      "references": [
+        "U22"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.2309",
+      "extended_usd": "0.2309",
+      "public_standalone_pre_min_purchase": 40,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C2480",
+      "references": [
+        "D3"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0191",
+      "extended_usd": "0.0191",
+      "public_standalone_pre_min_purchase": 473,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C24478",
+      "references": [
+        "U24"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.1543",
+      "extended_usd": "0.1543",
+      "public_standalone_pre_min_purchase": 76,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C105881",
+      "references": [
+        "R92",
+        "R93"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.0045",
+      "extended_usd": "0.0090",
+      "public_standalone_pre_min_purchase": 2654,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C7836",
+      "references": [
+        "U26"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.1679",
+      "extended_usd": "0.1679",
+      "public_standalone_pre_min_purchase": 71,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C43698",
+      "references": [
+        "U25"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.439",
+      "extended_usd": "0.439",
+      "public_standalone_pre_min_purchase": 27,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C114622",
+      "references": [
+        "R96",
+        "R97"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.0055",
+      "extended_usd": "0.0110",
+      "public_standalone_pre_min_purchase": 1962,
+      "public_least_patch_number": 20
+    },
+    {
+      "part": "C5656610",
+      "references": [
+        "U4",
+        "U5"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "4.5145",
+      "extended_usd": "9.0290",
+      "public_standalone_pre_min_purchase": 2,
+      "public_least_patch_number": 0
+    },
+    {
+      "part": "C105188",
+      "references": [
+        "U7"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.9722",
+      "extended_usd": "0.9722",
+      "public_standalone_pre_min_purchase": 11,
+      "public_least_patch_number": 2
+    },
+    {
+      "part": "C255576",
+      "references": [
+        "SW4",
+        "SW1",
+        "SW2"
+      ],
+      "quantity": 3,
+      "reference_unit_usd": "0.1558",
+      "extended_usd": "0.4674",
+      "public_standalone_pre_min_purchase": 74,
+      "public_least_patch_number": 5
+    },
+    {
+      "part": "C431540",
+      "references": [
+        "SW5"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.0566",
+      "extended_usd": "0.0566",
+      "public_standalone_pre_min_purchase": 196,
+      "public_least_patch_number": 2
+    },
+    {
+      "part": "C1848364",
+      "references": [
+        "U27"
+      ],
+      "quantity": 1,
+      "reference_unit_usd": "0.4959",
+      "extended_usd": "0.4959",
+      "public_standalone_pre_min_purchase": 21,
+      "public_least_patch_number": 2
+    },
+    {
+      "part": "C15849",
+      "references": [
+        "C82",
+        "C83"
+      ],
+      "quantity": 2,
+      "reference_unit_usd": "0.0144",
+      "extended_usd": "0.0288",
+      "public_standalone_pre_min_purchase": 799,
+      "public_least_patch_number": 20
+    }
+  ]
+}

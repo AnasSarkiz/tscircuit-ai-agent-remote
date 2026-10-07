@@ -24,6 +24,16 @@ const common = {
 }
 const views = [
   ...["top", "inner1", "inner2", "bottom"].map((layer) => ({ name: layer, layer })),
+  {
+    name: "programmer-top",
+    layer: "top",
+    viewport: { minX: -22, minY: -14, maxX: -13, maxY: -6 },
+  },
+  {
+    name: "programmer-bottom",
+    layer: "bottom",
+    viewport: { minX: -22, minY: -14, maxX: -13, maxY: -6 },
+  },
   { name: "top-mask", layer: "top", showSolderMask: true },
   { name: "top-paste", layer: "top", showSolderPaste: true },
   {

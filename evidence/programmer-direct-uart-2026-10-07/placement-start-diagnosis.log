@@ -1,0 +1,11 @@
+45 |     copperRecordCount: circuitJson.filter((element) =>
+46 |       ["pcb_trace", "pcb_via", "pcb_copper_pour"].includes(element.type),
+47 |     ).length,
+48 |   }),
+49 | )
+50 | if (routingStarted) throw new Error("Placement-only mode must never start routing")
+                                   ^
+error: Placement-only mode must never start routing
+      at /workspace/tscircuit-ai-agent-remote/scripts/routing/capture-placement.tsx:50:31
+
+Bun v1.3.9 (Linux x64)

@@ -1,0 +1,38 @@
+{
+  "current_native_sha256": "3463e39446e73a751630b9f672d3ee8e338b354a79d2d918cfa0fec0e5e50d01",
+  "stock_source_native_sha256": "80736f087a2fa13215ecd60fdde856b87e35196afcfd11091e7ef3ead6f0032a",
+  "purchased_components": 125,
+  "supplier_identities": 43,
+  "every_current_reference_exact_mpn_and_supplier_matched": true,
+  "inventory_scope": "Exact official overseasStockCount, canPresaleNumber and public library flags. Neither field proves assembler allocation, global warehouse totals or a reserved order.",
+  "positive_reported_overseas_count_identities": 42,
+  "positive_public_buyability_count_identities": 40,
+  "zero_or_insufficient_public_buyability": [
+    {
+      "part": "C2913201",
+      "references": [
+        "U1"
+      ],
+      "overseasStockCount": 3691,
+      "canPresaleNumber": 0
+    },
+    {
+      "part": "C94934",
+      "references": [
+        "D2"
+      ],
+      "overseasStockCount": 0,
+      "canPresaleNumber": 0
+    },
+    {
+      "part": "C54313",
+      "references": [
+        "U16"
+      ],
+      "overseasStockCount": 130,
+      "canPresaleNumber": 0
+    }
+  ],
+  "all_assembly_available": false,
+  "fabrication_ready": false
+}

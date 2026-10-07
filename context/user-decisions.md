@@ -1,3 +1,13 @@
+Implementation follow-up, 2026-10-07 (not a new human decision): genuine
+J6/C160389 direct SH3 UART and the local 0.8 mm bottom supply bypass are
+implemented and qualified as WIP .9. Actual cable/programming operation is
+untested. Other purchased poses remain. Zero measured shorts/geometry
+violations does not mean full zero DRC: 50 display errors / 12 open nets,
+schema/style/paste/export/width/stock/mechanical gates remain. The centered
+2.8-inch LCD request remains active and unimplemented. Read current checkpoint
+and evidence/programmer-direct-uart-2026-10-07/review.md. Standing public
+GitHub/tsci publication authorization remains in force.
+
 Latest explicit request, 2026-10-07, user-pasted file_00000000cb0881f4952a48a1ad747186:
 **Replace the unfinished ER-TFT023-1 plan with a BuyDisplay approximately2.8-inch
 LANDSCAPE display**, preferably ER-TFT028A3-4 or an exact-qualified close variant.

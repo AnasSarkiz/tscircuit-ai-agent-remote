@@ -19,6 +19,71 @@ const before = nativeElements.parse(
   ),
 )
 
+const wireRoute = z.array(
+  z.object({
+    route_type: z.literal("wire"),
+    x: z.number(),
+    y: z.number(),
+    width: z.number(),
+    layer: z.string(),
+    start_pcb_port_id: z.string().optional(),
+    end_pcb_port_id: z.string().optional(),
+  }),
+)
+type PcbPortId = string
+
+function numberedTerminals(elements: typeof canonical) {
+  const components = z
+    .array(z.object({ source_component_id: z.string(), name: z.string() }))
+    .parse(elements.filter((element) => element.type === "source_component"))
+  const names = Object.fromEntries(
+    components.map((component) => [component.source_component_id, component.name]),
+  )
+  const ports = z
+    .array(
+      z.object({
+        source_port_id: z.string(),
+        source_component_id: z.string(),
+        name: z.string(),
+        pin_number: z.union([z.number(), z.string()]).optional(),
+      }),
+    )
+    .parse(elements.filter((element) => element.type === "source_port"))
+  const labels = Object.fromEntries(
+    ports
+      .filter((port) => names[port.source_component_id])
+      .map((port) => [
+        port.source_port_id,
+        `${names[port.source_component_id]}.${port.pin_number ?? port.name}`,
+      ]),
+  )
+  const pcbPorts = z
+    .array(z.object({ pcb_port_id: z.string(), source_port_id: z.string() }))
+    .parse(elements.filter((element) => element.type === "pcb_port"))
+  return new Map<PcbPortId, string>(
+    pcbPorts
+      .filter((port) => labels[port.source_port_id])
+      .map((port) => [port.pcb_port_id, labels[port.source_port_id]]),
+  )
+}
+
+function withNumberedTerminals(
+  route: z.infer<typeof wireRoute>,
+  terminals: Map<PcbPortId, string>,
+) {
+  return route.map((point) => {
+    const normalized = { ...point }
+    for (const key of ["start_pcb_port_id", "end_pcb_port_id"] as const) {
+      const identifier = point[key]
+      if (!identifier) continue
+      const terminal = terminals.get(identifier)
+      if (!terminal) throw new Error(`Missing real numbered terminal ${identifier}`)
+      normalized[key] = terminal
+    }
+    return normalized
+  })
+}
+
 function electricalPartitions(elements: typeof canonical) {
   const components = z
     .array(z.object({ source_component_id: z.string(), name: z.string() }))
@@ -120,17 +185,11 @@ describe("Native placement review preserves the board", () => {
     )
     const beforeCopper = before.filter((element) => ["pcb_trace", "pcb_via"].includes(element.type))
     expect(beforeCopper).toHaveLength(4)
-    const wireRoute = z.array(
-      z.object({
-        route_type: z.literal("wire"),
-        x: z.number(),
-        y: z.number(),
-        width: z.number(),
-        layer: z.string(),
-        start_pcb_port_id: z.string().optional(),
-        end_pcb_port_id: z.string().optional(),
-      }),
-    )
+    // Replacing an eight-pad connector with a five-pad connector renumbers
+    // later native IDs. Preserve the complete wire geometry AND the actual
+    // named/numbered endpoints, rather than comparing allocation-order IDs.
+    const beforeTerminals = numberedTerminals(before)
+    const canonicalTerminals = numberedTerminals(canonical)
     for (const trace of beforeCopper) {
       const original = wireRoute.parse(trace.route)
       // These two USB routes were changed from 0.2906 to 0.2979 mm for the
@@ -140,9 +199,21 @@ describe("Native placement review preserves the board", () => {
         : original
       const matchingRoutes = canonicalCopper.flatMap((element) => {
         const parsed = wireRoute.safeParse(element.route)
-        return parsed.success ? [parsed.data] : []
+        if (
+          !parsed.success ||
+          parsed.data.length !== expected.length ||
+          !parsed.data.every(
+            (point, index) =>
+              point.x === expected[index].x &&
+              point.y === expected[index].y &&
+              point.width === expected[index].width &&
+              point.layer === expected[index].layer,
+          )
+        )
+          return []
+        return [withNumberedTerminals(parsed.data, canonicalTerminals)]
       })
-      expect(matchingRoutes).toContainEqual(expected)
+      expect(matchingRoutes).toContainEqual(withNumberedTerminals(expected, beforeTerminals))
     }
   })
 })

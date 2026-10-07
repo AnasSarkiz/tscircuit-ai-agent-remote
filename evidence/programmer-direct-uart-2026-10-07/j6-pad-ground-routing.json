@@ -1,0 +1,72 @@
+{
+  "classification": "manual native J6 ground pad links; no new drills; existing main ground-plane contacts; native audit required",
+  "paths": [
+    {
+      "net": "GND",
+      "from": ".J6 > .pin2",
+      "to": ".J6 > .pin4",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": 0.5,
+          "y": 0.15
+        }
+      ],
+      "global_path_mm": [
+        [
+          -17.399873,
+          -8.6749963
+        ],
+        [
+          -16.899999999999892,
+          -9.849999999999685
+        ],
+        [
+          -15.100157,
+          -11.1997563
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND pad connection on existing main ground plane; no added drills"
+    },
+    {
+      "net": "GND",
+      "from": ".J6 > .pin4",
+      "to": ".J6 > .pin5",
+      "width": 0.2,
+      "pcbPath": [
+        {
+          "x": -1.5,
+          "y": -1.55
+        }
+      ],
+      "global_path_mm": [
+        [
+          -15.100157,
+          -11.1997563
+        ],
+        [
+          -18.89999999999992,
+          -11.54999999999971
+        ],
+        [
+          -19.699842999999998,
+          -11.2000103
+        ]
+      ],
+      "segment_layers": [
+        "top",
+        "top",
+        "top"
+      ],
+      "classification": "manual native GND pad connection on existing main ground plane; no added drills"
+    }
+  ],
+  "pours": [],
+  "vias": [],
+  "unresolved": []
+}

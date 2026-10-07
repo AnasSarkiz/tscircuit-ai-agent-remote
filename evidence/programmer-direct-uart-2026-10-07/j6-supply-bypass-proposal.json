@@ -1,0 +1,74 @@
+{
+  "classification": "manual native outer-layer 0.8 mm V3V3 bottom bypass; proposal only until actual native width/continuity/clearance checks",
+  "retired_source_region_indices": [
+    54
+  ],
+  "replaced_source_region_indices": [
+    53
+  ],
+  "unchanged_source_via_indices": [
+    27,
+    28
+  ],
+  "source_regions": [
+    {
+      "net": "V3V3",
+      "layer": "bottom",
+      "nominal_width_mm": 0.8,
+      "drawn_width_mm": 0.802,
+      "path_mm": [
+        [
+          -19.999999999999936,
+          -6.999999999999645
+        ],
+        [
+          -19.199999999999925,
+          -8.199999999999662
+        ]
+      ],
+      "outline": [
+        {
+          "x": -18.86718,
+          "y": -7.97812
+        },
+        {
+          "x": -18.86718,
+          "y": -7.97812
+        },
+        {
+          "x": -19.2,
+          "y": -8.2
+        },
+        {
+          "x": -19.533652,
+          "y": -8.422435
+        },
+        {
+          "x": -20.333652,
+          "y": -7.222435
+        },
+        {
+          "x": -20.33282,
+          "y": -7.22188
+        },
+        {
+          "x": -20.33282,
+          "y": -7.22188
+        },
+        {
+          "x": -20.0,
+          "y": -7.0
+        },
+        {
+          "x": -19.666348,
+          "y": -6.777565
+        },
+        {
+          "x": -18.866348,
+          "y": -7.977565
+        }
+      ]
+    }
+  ],
+  "unresolved": []
+}

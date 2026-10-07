@@ -18,6 +18,21 @@ const throughVia = z.object({
   outer_mm: z.literal(viaPadDiameterMm),
 })
 const regions = region.array().parse(manualPowerCopper.pours)
+const retiredRegionIndices = new Set(
+  z
+    .object({
+      retired_connection_region_indices: z
+        .array(
+          z
+            .number()
+            .int()
+            .min(0)
+            .max(regions.length - 1),
+        )
+        .default([]),
+    })
+    .parse(manualPowerCopper).retired_connection_region_indices,
+)
 const vias = throughVia.array().parse(manualPowerCopper.vias)
 const highCurrentNets = new Set(["PACK_BAT", "VSYS", "VBUS", "V3V3", "VMOTOR", "HAPTIC_N"])
 if (manualPowerCopper.unresolved.length) throw new Error("Unresolved authored power routes")
@@ -39,21 +54,23 @@ export function ManualPowerCopper({ placementOnly = false }: { placementOnly?: b
   if (placementOnly) return null
   return (
     <>
-      {regions.map((region, index) => (
-        <copperpour
-          name={`POWER_${region.net}_${index}`}
-          connectsTo={`net.${region.net}`}
-          layer={region.layer}
-          outline={region.outline}
-          clearance={0.21}
-          cutoutMargin={0.26}
-          // These outlines already include the 0.26 mm board-edge reserve.
-          // The pour engine applies this margin to the region's own perimeter.
-          boardEdgeMargin={0}
-          coveredWithSolderMask
-          useThermalReliefs={false}
-        />
-      ))}
+      {regions.map((region, index) =>
+        retiredRegionIndices.has(index) ? null : (
+          <copperpour
+            name={`POWER_${region.net}_${index}`}
+            connectsTo={`net.${region.net}`}
+            layer={region.layer}
+            outline={region.outline}
+            clearance={0.21}
+            cutoutMargin={0.26}
+            // These outlines already include the 0.26 mm board-edge reserve.
+            // The pour engine applies this margin to the region's own perimeter.
+            boardEdgeMargin={0}
+            coveredWithSolderMask
+            useThermalReliefs={false}
+          />
+        ),
+      )}
       {vias.map((via, index) => (
         <via
           name={`POWER_VIA_${index}`}

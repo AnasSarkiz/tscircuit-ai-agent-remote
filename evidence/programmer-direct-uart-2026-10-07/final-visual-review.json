@@ -1,0 +1,19 @@
+{
+  "native_sha256": "3463e39446e73a751630b9f672d3ee8e338b354a79d2d918cfa0fec0e5e50d01",
+  "copper_views_freshly_inspected": [
+    "rendered/four-layer-review.png",
+    "rendered/programmer-top.png",
+    "rendered/programmer-bottom.png"
+  ],
+  "changed_schematic_pages_freshly_inspected": [
+    "schematics/01-mcu-usb-review.png",
+    "schematics/02-ChargerSheet.png",
+    "schematics/14-component-guide-mcu-usb-review.png"
+  ],
+  "unchanged_schematic_pages_inherit_prior_review": 23,
+  "unchanged_schematic_comparison_receipt": "schematic-render-comparison.json",
+  "measured_all_native_geometry_receipt": "final-copper-audit.json",
+  "scope": "Actual changed areas and three changed schematic pages inspected; exact-byte identity of the other 23 pages preserves their prior review. Other generated detail views do not imply new individual visual approval.",
+  "full_board_mechanical_and_electrical_qualification": false,
+  "fabrication_ready": false
+}

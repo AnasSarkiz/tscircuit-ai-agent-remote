@@ -24,7 +24,12 @@ export function BacklightSheet({ placementOnly = false }: { placementOnly?: bool
         <CL10A105KB8NNNC name="C83" {...place("C83")} schX={8} schY={1} schOrientation="vertical" />
         <GRM188R61A106ME69D name="C84" {...place("C84")} schX={-9} schY={-3} schRotation={-90} />
         <GRM188R61A106ME69D name="C85" {...place("C85")} schX={8} schY={-5} schRotation={-90} />
-        <trace name="BL_CURRENT_SETTING" from="U27.pin1" to="R102.pin1" routingPhaseIndex={7} />
+        <trace
+          name="BL_CURRENT_SETTING"
+          from="U27.pin1"
+          to="R102.pin1"
+          routingPhaseIndex={placementOnly ? undefined : 7}
+        />
         <trace
           from="R102.pin2"
           to="net.GND"
@@ -47,14 +52,14 @@ export function BacklightSheet({ placementOnly = false }: { placementOnly?: bool
           name="BL_C2_P"
           from="U27.pin9"
           to="C83.pin1"
-          routingPhaseIndex={10}
+          routingPhaseIndex={placementOnly ? undefined : 10}
           thickness={0.3}
         />
         <trace
           name="BL_C2_N"
           from="U27.pin12"
           to="C83.pin2"
-          routingPhaseIndex={11}
+          routingPhaseIndex={placementOnly ? undefined : 11}
           thickness={0.3}
         />
         {/* 0.27 mm fits the native 0.270002 mm lands; adjacent centres are 0.499872 mm apart. */}
@@ -62,14 +67,14 @@ export function BacklightSheet({ placementOnly = false }: { placementOnly?: bool
           name="BL_C1_P"
           from="U27.pin10"
           to="C82.pin1"
-          routingPhaseIndex={8}
+          routingPhaseIndex={placementOnly ? undefined : 8}
           thickness={0.27}
         />
         <trace
           name="BL_C1_N"
           from="U27.pin11"
           to="C82.pin2"
-          routingPhaseIndex={9}
+          routingPhaseIndex={placementOnly ? undefined : 9}
           thickness={0.27}
         />
         <trace from="U27.pin13" to="net.V3V3" />

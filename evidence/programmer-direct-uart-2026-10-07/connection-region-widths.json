@@ -1,0 +1,952 @@
+{
+  "source_circuit_json": ".publish/board/dist/index/circuit.json",
+  "source_sha256": "3463e39446e73a751630b9f672d3ee8e338b354a79d2d918cfa0fec0e5e50d01",
+  "region_source": "src/board/connection-copper.json",
+  "source_total_region_count": 114,
+  "explicitly_retired_source_region_indices": [
+    44,
+    47,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
+  ],
+  "scope": "Required nominal-width buffered source centerlines with flat termination caps covered by actual same-net native BREP copper and actual plated via lands on their native layers; actual drilled apertures excluded; 0.000001 mm geometric tolerance.",
+  "audit_script_sha256": "496c7fbd205f4b8156e135bb8971cc88b4754d60ef8f1d47481e692a168d4576",
+  "checked_region_count": 103,
+  "failed_region_count": 0,
+  "measurements": [
+    {
+      "source_region_index": 0,
+      "net": "MCU_LCD_RESET_N",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 1,
+      "net": "MIC_SD",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 2,
+      "net": "MIC_SD",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 3,
+      "net": "MIC_SD",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 4,
+      "net": "MIC_SD",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 5,
+      "net": "MIC_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 6,
+      "net": "LCD_DC",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 7,
+      "net": "MIC_BCLK_INPUT",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 8,
+      "net": "MIC_BCLK_INPUT",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 9,
+      "net": "MIC_BCLK_INPUT",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 10,
+      "net": "AMP_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 11,
+      "net": "AMP_BCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 12,
+      "net": "AMP_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 13,
+      "net": "MIC_WS",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 14,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 15,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 16,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 17,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 18,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 19,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 20,
+      "net": "AUDIO_ENABLE_SUPPLY",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 21,
+      "net": "VMIC",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 22,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 23,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 24,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 25,
+      "net": "MIC_WS",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 26,
+      "net": "MIC_BCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 27,
+      "net": "AMP_DIN",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 28,
+      "net": "AMP_DIN",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 29,
+      "net": "AMP_DIN",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 30,
+      "net": "AMP_SD_MODE",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 31,
+      "net": "AMP_SD_MODE",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 32,
+      "net": "AMP_SD_MODE",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 33,
+      "net": "AMP_SD_MODE",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 34,
+      "net": "AMP_SD_MODE",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 35,
+      "net": "AMP_SD_MODE",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 36,
+      "net": "AMP_SD_MODE",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 37,
+      "net": "AMP_SD_MODE",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 38,
+      "net": "CHARGE_STATUS_N",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 39,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 40,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 1,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 41,
+      "net": "VSYS",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 42,
+      "net": "BUCK_ENABLE",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 43,
+      "net": "HAPTIC_NMOS_GATE",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 45,
+      "net": "AMP_LRCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 46,
+      "net": "AMP_LRCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 48,
+      "net": "MIC_INPUT",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 49,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 50,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 51,
+      "net": "VBUS",
+      "layer": "top",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 52,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 53,
+      "net": "VBUS",
+      "layer": "top",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 54,
+      "net": "VSYS",
+      "layer": "bottom",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 55,
+      "net": "MCU_AUDIO_DIN",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 56,
+      "net": "MCU_AUDIO_DIN",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 57,
+      "net": "MCU_AUDIO_DIN",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 58,
+      "net": "MCU_AUDIO_DIN",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 59,
+      "net": "MCU_AUDIO_DIN",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 60,
+      "net": "MCU_AUDIO_DIN",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 70,
+      "net": "USB_DP",
+      "layer": "inner1",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 71,
+      "net": "USB_DP",
+      "layer": "inner2",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 72,
+      "net": "USB_DP",
+      "layer": "inner1",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 73,
+      "net": "LCD_CS_N",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 74,
+      "net": "USB_CC1",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 75,
+      "net": "LCD_DC",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 76,
+      "net": "LCD_SDA",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 77,
+      "net": "VBUS",
+      "layer": "bottom",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 78,
+      "net": "VBUS",
+      "layer": "top",
+      "required_width_mm": 0.5,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 79,
+      "net": "VBUS",
+      "layer": "top",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 80,
+      "net": "LCD_SCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 81,
+      "net": "LCD_RESET_N",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 82,
+      "net": "MCU_MIC_WS",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 83,
+      "net": "MCU_MIC_WS",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 84,
+      "net": "USB_DN",
+      "layer": "inner2",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 85,
+      "net": "USB_DN",
+      "layer": "inner2",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 86,
+      "net": "USB_DN",
+      "layer": "bottom",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 87,
+      "net": "USB_DN",
+      "layer": "inner2",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 88,
+      "net": "USB_DN",
+      "layer": "bottom",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 89,
+      "net": "USB_DN",
+      "layer": "inner2",
+      "required_width_mm": 0.2979,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 90,
+      "net": "CHARGER_ILIM",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 91,
+      "net": "MCU_MIC_WS",
+      "layer": "inner1",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 92,
+      "net": "VMIC",
+      "layer": "inner2",
+      "required_width_mm": 0.3,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 93,
+      "net": "PACK_NTC",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 94,
+      "net": "PACK_NTC",
+      "layer": "bottom",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 95,
+      "net": "PACK_NTC",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 96,
+      "net": "MIC_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 97,
+      "net": "MIC_SD",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 98,
+      "net": "MIC_SD",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 99,
+      "net": "AMP_LRCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 100,
+      "net": "AMP_LRCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 101,
+      "net": "MCU_AUDIO_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 102,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 103,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 104,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 105,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 106,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 107,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 108,
+      "net": "AMP_BCLK",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 109,
+      "net": "AMP_BCLK",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 110,
+      "net": "MCU_UART_RX",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 111,
+      "net": "MCU_UART_RX",
+      "layer": "inner1",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 112,
+      "net": "MCU_UART_RX",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    },
+    {
+      "source_region_index": 113,
+      "net": "SERVICE_UART_TX",
+      "layer": "inner2",
+      "required_width_mm": 0.2,
+      "uncovered_required_copper_mm2": 0.0,
+      "uncovered_required_copper_bounds_mm": null,
+      "required_width_preserved": true
+    }
+  ]
+}

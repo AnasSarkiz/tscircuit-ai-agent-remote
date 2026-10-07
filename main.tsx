@@ -40,7 +40,7 @@ export default function AiAgentRemote({ placementOnly = false }: { placementOnly
         viaPadDiameter: viaPadDiameterMm,
       }}
     >
-      <BoardNets />
+      <BoardNets placementOnly={placementOnly} />
       <BoardRouting placementOnly={placementOnly} />
       <McuUsbSheet placementOnly={placementOnly} />
       <ChargerSheet placementOnly={placementOnly} />

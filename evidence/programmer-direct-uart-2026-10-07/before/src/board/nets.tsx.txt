@@ -1,0 +1,84 @@
+export function BoardNets() {
+  return (
+    <>
+      <net name="MCU_MIC_SD" />
+      <net name="AMP_BCLK" />
+      {/* The entire AMP_DIN phase is now explicit native copper. */}
+      <net name="AMP_DIN" />
+      <net name="AMP_LRCLK" />
+      <net name="AMP_SD_MODE" />
+      {/* Q2 biases SD_MODE through R63 (100 ohm) and R64 (1 kohm); it does not carry speaker current. */}
+      <net name="AUDIO_ENABLE_SUPPLY" isPowerNet nominalTraceWidth={0.2} />
+      <net name="AUDIO_NMOS_GATE" />
+      <net name="AUDIO_PMOS_GATE" />
+      <net name="BACKLIGHT_GATE" />
+      <net name="BUCK_ENABLE" />
+      <net name="CHARGER_ILIM" />
+      <net name="CHARGER_ISET" />
+      <net name="CHARGE_PGOOD_N" />
+      <net name="CHARGE_STATUS_N" />
+      <net name="GND" isGroundNet nominalTraceWidth={0.3} />
+      <net name="HAPTIC_N" nominalTraceWidth={0.4} />
+      <net name="HAPTIC_NMOS_GATE" />
+      <net name="HOLD_BUFFER_OUT" routingPhaseIndex={2} />
+      <net name="HOLD_HARDWARE" />
+      <net name="LCD_BACKLIGHT_OUTPUT" isPowerNet nominalTraceWidth={0.3} />
+      <net name="LCD_BACKLIGHT_RETURN_1" nominalTraceWidth={0.3} />
+      <net name="LCD_BACKLIGHT_RETURN_2" nominalTraceWidth={0.3} />
+      <net name="LCD_BACKLIGHT_RETURN_3" nominalTraceWidth={0.3} />
+      <net name="LCD_BACKLIGHT_RETURN_4" nominalTraceWidth={0.3} />
+      <net name="LCD_CS_N" />
+      <net name="LCD_DC" />
+      <net name="LCD_ENABLE" />
+      <net name="LCD_RESET_N" />
+      <net name="LCD_SCLK" />
+      <net name="LCD_SDA" />
+      <net name="MCU_AUDIO_BCLK" />
+      <net name="MCU_AUDIO_DIN" />
+      <net name="MCU_AUDIO_ENABLE" />
+      <net name="MCU_AUDIO_LRCLK" />
+      <net name="MCU_BACKLIGHT_PWM" />
+      <net name="MCU_BOOT_N" />
+      <net name="MCU_EN" />
+      <net name="MCU_HAPTIC_ENABLE" routingPhaseIndex={15} />
+      <net name="MCU_HOLD_READ" routingPhaseIndex={14} />
+      <net name="MCU_LCD_CS_N" />
+      <net name="MCU_LCD_DC" />
+      <net name="MCU_LCD_RESET_N" />
+      <net name="MCU_LCD_SCLK" />
+      <net name="MCU_LCD_SDA" />
+      <net name="MCU_MIC_BCLK" />
+      <net name="MCU_MIC_WS" />
+      <net name="MCU_RESET_N" />
+      <net name="MCU_UART_RX" routingPhaseIndex={22} />
+      <net name="MCU_UART_TX" routingPhaseIndex={22} />
+      <net name="MCU_USB_DN" nominalTraceWidth={0.2979} />
+      <net name="MCU_USB_DP" nominalTraceWidth={0.2979} />
+      <net name="MIC_BCLK" />
+      <net name="MIC_BCLK_INPUT" />
+      <net name="MIC_INPUT" isPowerNet nominalTraceWidth={0.3} />
+      <net name="MIC_SD" />
+      <net name="MIC_SD_BUFFERED" />
+      <net name="MIC_SD_REF" />
+      <net name="MIC_WS" />
+      <net name="MIC_WS_INPUT" />
+      <net name="PACK_BAT" isPowerNet nominalTraceWidth={1} />
+      <net name="PACK_NTC" />
+      <net name="REG_FB" routingPhaseIndex={1} />
+      <net name="REG_PG" routingPhaseIndex={13} />
+      <net name="SERVICE_UART_TX" />
+      <net name="SPEAKER_N" nominalTraceWidth={0.6} routingPhaseIndex={26} />
+      <net name="SPEAKER_P" nominalTraceWidth={0.6} routingPhaseIndex={26} />
+      <net name="USB_CC1" />
+      <net name="USB_CC2" routingPhaseIndex={2} />
+      <net name="USB_DN" nominalTraceWidth={0.2979} />
+      <net name="USB_DP" nominalTraceWidth={0.2979} />
+      <net name="V3V3" isPowerNet nominalTraceWidth={0.8} />
+      <net name="VBUS" isPowerNet nominalTraceWidth={0.5} />
+      <net name="VLCD" isPowerNet nominalTraceWidth={0.3} />
+      <net name="VMIC" isPowerNet nominalTraceWidth={0.3} />
+      <net name="VMOTOR" isPowerNet nominalTraceWidth={0.3} />
+      <net name="VSYS" isPowerNet nominalTraceWidth={1} />
+    </>
+  )
+}

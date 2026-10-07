@@ -1,0 +1,24 @@
+{
+  "classification": "summary of observed diagnostic tool output; rejected event sidecar was subsequently overwritten by the successful capture",
+  "rejected_phase_indices": [
+    0,
+    1,
+    2,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    22,
+    26
+  ],
+  "rejected_root_and_platform_routing_disabled": true,
+  "rejected_copper_record_count": 23,
+  "cause": "Group.updatePcbTraceRender can start a deferred phase without honoring routingDisabled. Phase assignments in native source are now explicitly absent in placement mode. Routed-mode phases are unchanged.",
+  "accepted_event_receipt": "final-placement-events.json",
+  "accepted_copper_record_count": 0,
+  "accepted_native_errors": 0
+}

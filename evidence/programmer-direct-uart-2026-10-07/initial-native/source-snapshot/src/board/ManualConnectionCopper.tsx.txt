@@ -1,0 +1,216 @@
+import { pcbPath } from "@tscircuit/props"
+import { z } from "zod"
+import connections from "./connection-copper.json"
+import { viaHoleDiameterMm, viaPadDiameterMm } from "./viaGeometry"
+
+export const retiredManualConnectionPathIndices = new Set(
+  z
+    .object({ retired_manual_path_indices: z.array(z.number().int().nonnegative()).default([]) })
+    .parse(connections).retired_manual_path_indices,
+)
+export const retiredReplayConnections = z
+  .object({
+    retired_replay_connections: z
+      .array(
+        z.object({
+          phase_index: z.number().int().nonnegative(),
+          connection: z.string(),
+          original_pcb_trace_id: z.string(),
+        }),
+      )
+      .default([]),
+  })
+  .parse(connections).retired_replay_connections
+
+export const retiredInnerConnectionEscapes = z
+  .object({
+    retired_inner_escapes: z
+      .array(
+        z.object({
+          source_name: z.string(),
+          original_path_index: z.number().int().nonnegative(),
+          escape_index: z.number().int().nonnegative(),
+          original_pcb_trace_id: z.string(),
+          retired_via_id: z.string(),
+        }),
+      )
+      .default([]),
+  })
+  .parse(connections).retired_inner_escapes
+
+const paths = z
+  .array(
+    z.object({
+      net: z.string(),
+      from: z.string(),
+      to: z.string(),
+      width: z.number().positive(),
+      pcbPath,
+    }),
+  )
+  .parse(connections.paths)
+const retiredConnectionPathIndices = new Set(
+  z
+    .object({
+      retired_connection_path_indices: z.array(z.number().int().nonnegative()).default([]),
+    })
+    .parse(connections).retired_connection_path_indices,
+)
+const retiredSourcePathIndices = new Set(
+  z
+    .object({ retired_source_path_indices: z.array(z.number().int().nonnegative()).default([]) })
+    .parse(connections).retired_source_path_indices,
+)
+const regions = z
+  .array(
+    z.object({
+      net: z.string(),
+      layer: z.enum(["top", "inner1", "inner2", "bottom"]),
+      nominal_width_mm: z.number().positive(),
+      branch_terminal: z.string().optional(),
+      outline: z.array(z.object({ x: z.number(), y: z.number() })).min(3),
+    }),
+  )
+  .parse(connections.pours)
+const retiredConnectionRegionIndices = new Set(
+  z
+    .object({
+      retired_connection_region_indices: z.array(z.number().int().nonnegative()).default([]),
+    })
+    .parse(connections).retired_connection_region_indices,
+)
+const vias = z
+  .array(
+    z.object({
+      net: z.string(),
+      x: z.number(),
+      y: z.number(),
+      hole_mm: z.literal(viaHoleDiameterMm),
+      outer_mm: z.literal(viaPadDiameterMm),
+    }),
+  )
+  .parse(connections.vias)
+const retiredConnectionViaIndices = new Set(
+  z
+    .object({
+      retired_connection_via_indices: z.array(z.number().int().nonnegative()).default([]),
+    })
+    .parse(connections).retired_connection_via_indices,
+)
+const straightPaths = z
+  .object({
+    straight_paths: z
+      .array(
+        z.object({
+          net: z.literal("GND"),
+          from: z.string(),
+          to: z.string(),
+          width: z.number().min(0.2),
+        }),
+      )
+      .default([]),
+  })
+  .parse(connections).straight_paths
+const outerPowerNets = new Set([
+  "PACK_BAT",
+  "VBUS",
+  "VSYS",
+  "V3V3",
+  "VMOTOR",
+  "HAPTIC_N",
+  "SPEAKER_P",
+  "SPEAKER_N",
+])
+const controlBranches = z
+  .object({
+    branch_requirements: z
+      .array(
+        z.object({
+          net: z.literal("VSYS"),
+          terminal: z.literal(".U3 > .pin2"),
+          nominal_width_mm: z.literal(0.2),
+          layers: z.array(z.enum(["inner1", "inner2"])),
+          maximum_dc_current_a: z.number().positive().nullable(),
+          basis: z.string(),
+        }),
+      )
+      .default([]),
+  })
+  .parse(connections).branch_requirements
+for (const region of regions) {
+  if (!outerPowerNets.has(region.net) || ["top", "bottom"].includes(region.layer)) continue
+  const branch = controlBranches.find(
+    (branch) =>
+      branch.net === region.net &&
+      branch.terminal === region.branch_terminal &&
+      branch.nominal_width_mm === region.nominal_width_mm &&
+      branch.layers.some((layer) => layer === region.layer),
+  )
+  if (!branch) throw new Error(`High-current connection must use outer copper: ${region.net}`)
+}
+
+// Authored connections between verified physical islands. These are native PCB
+// features, separate from saved Pipeline9 output. Deferred connector contacts
+// remain open and continue to appear in the real native build checks.
+export function ManualConnectionCopper({
+  placementOnly = false,
+}: {
+  placementOnly?: boolean
+} = {}) {
+  if (placementOnly) return null
+  return (
+    <>
+      {paths.map((path, index) =>
+        retiredSourcePathIndices.has(index) ? null : (
+          <trace
+            name={`CONNECTION_ESCAPE_${path.net}_${index}`}
+            from={path.from}
+            to={path.to}
+            width={path.width}
+            pcbPathRelativeTo={path.from}
+            pcbPath={retiredConnectionPathIndices.has(index) ? undefined : path.pcbPath}
+          />
+        ),
+      )}
+      {regions.map((region, index) =>
+        retiredConnectionRegionIndices.has(index) ? null : (
+          <copperpour
+            name={`CONNECTION_STRIP_${region.net}_${index}`}
+            connectsTo={`net.${region.net}`}
+            layer={region.layer}
+            outline={region.outline}
+            clearance={0.21}
+            cutoutMargin={0.26}
+            boardEdgeMargin={0}
+            coveredWithSolderMask
+            useThermalReliefs={false}
+          />
+        ),
+      )}
+      {vias.map((via, index) =>
+        retiredConnectionViaIndices.has(index) ? null : (
+          <via
+            name={`CONNECTION_VIA_${index}`}
+            connectsTo={`net.${via.net}`}
+            pcbX={via.x}
+            pcbY={via.y}
+            holeDiameter={via.hole_mm}
+            outerDiameter={via.outer_mm}
+            fromLayer="top"
+            toLayer="bottom"
+            tented
+          />
+        ),
+      )}
+      {straightPaths.map((path, index) => (
+        <trace
+          name={`CONNECTION_PAD_EDGE_GND_${index}`}
+          from={path.from}
+          to={path.to}
+          width={path.width}
+          pcbStraightLine
+        />
+      ))}
+    </>
+  )
+}

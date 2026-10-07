@@ -1,3 +1,41 @@
+## Current UART and supply repair — 2026-10-07
+
+**0.0.9-wip-standard-uart; not ready to order.** Read
+`evidence/programmer-direct-uart-2026-10-07/review.md` first. Genuine untouched J6/C160389 now
+has RX/GND/TX on pins 1/2/3 and grounded holds 4/5; pose remains (-17.4,-10) mm,
+0° top. Specified numbered SH3 cable directly connects the standard programmer;
+separate power, manual BOOT/RESET and open enclosure required (6.3 mm mated
+height). Hardware/cable assembly is untested.
+
+Real authored UART copper, ground pad links, audio-gate detour and 0.8 mm bottom
+V3V3 bypass are implemented. Native SHA `bcee32a49486610d7379583efb2b378846cc75f232272b50c717ad129c495704`.
+381 traces / 322 full-span 0.30/0.45 mm vias / 273 pours. All 250 active region
+widths and all 9,813 retained contact pairs pass. Other 124 purchased geometries
+are unchanged. Measured shorts/geometry violations: 0/0. **50 native display
+errors / 12 physically open nets remain.** Five source checks, TypeScript,
+formatting and 94 routing regressions pass; board tests 49 pass/2 fail. Actual
+UI: 15 style issues. Strict schema: 169 failures. Snapshots fail with unchanged
+references. All failed trials and actual source/native events are preserved.
+
+Requested centered landscape LCD remains unimplemented: exact fold/contact map,
+bend radius, RF overlap and opposite backlight topology are unqualified. J3
+outer battery contacts remain unnumbered/unrouted. Active paste, U14 rotation,
+Gerber, two regulator width minima/current review and assembler allocation
+remain gates. Official core 0.0.2108 still lacks the tested canonical paste fix.
+Keep the frozen official runtime; no local package links, import/JSON edits,
+weaker checks or orders. All 43 part identities have dated official receipts;
+public buyability covers 40. Reference subtotal $26.3055 excludes fabrication,
+assembly, external assemblies, shipping and minimum order quantities.
+
+Public fields remain the parent release until .9 anonymous source/native and
+visibility verification completes; exact receipts and links belong in this
+review/checkpoint. Continue the existing task with frozen Bun 1.3.9, one heavy
+Linux cloud operation at a time via the budget supervisor. Saved cloud draft
+preserves 20 custom hosts; draft saving does not apply/publish settings.
+Earlier entries below are historical.
+
+---
+
 ## Latest canonical paste repair — 2026-10-07
 
 Read `evidence/core-pill-paste-fix-2026-10-07/review.md` first. The pill/rotated-pill

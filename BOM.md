@@ -1,3 +1,28 @@
+**0.0.9-wip-standard-uart — NOT READY TO ORDER.** J6 now uses the genuine
+JLCPCB **C160389 / JST BM03B-SRSS-TB(LF)(SN)** three-contact upward SH header.
+Its UART contacts are RX/GND/TX (pins 1/2/3); hold-downs 4/5 are GND.
+Authored native routes replace the former six-contact connector's connections,
+with a local audio-gate detour and ordinary 0.30/0.45 mm through-via escapes.
+The standard JST programmer's TX/GND/RX cable maps directly to these contacts;
+the custom three-to-six adapter is removed. Programming requires separate
+USB/battery power, manual BOOT/RESET and an open enclosure: mated connector
+height is 6.3 mm. Hardware operation and cable assembly are untested.
+
+The 2026-10-07 20:07 UTC official JLCPCB page reports C160389
+`overseasStockCount=32191` and `canPresaleNumber=31559`, at a reference
+$0.2743 each. These are public inventory fields; they do not establish global
+warehouse totals, assembler allocation or an order quote. Purchased count
+remains 125 parts / 43 identities. All other component poses are retained.
+
+The requested 2.8-inch LCD is still unimplemented. Exact panel/flex/antenna
+fit, J7 mapping, battery outer-contact numbering, full connectivity, toolchain
+schema/paste/Gerber issues and current-carrying qualification remain gates.
+See the [actual native qualification and remaining blockers](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/programmer-direct-uart-2026-10-07/review.md).
+Publication is recorded separately after exact remote byte verification.
+Older status and connector references below describe historical revisions.
+
+---
+
 ## Current exact inventory and cost — 2026-10-07
 
 **0.0.8-wip-speaker-routing — NOT READY TO ORDER.** The speaker repair retains
@@ -275,7 +300,7 @@ release 0.0.2-wip-a0-core-alignment (274 files); receipt is saved with this mile
 | USB CC pulldowns | RC0603FR-075K1L | C105580 | Two 5.1 kΩ; sink only; do not imply current entitlement |
 | Reset service current limiter | RC0603FR-074K7L | C99782 | 4.7 kΩ with push-pull supervisor; application limits pending |
 | MCU reset supervisor | TPS3839G33DBZR | C485802 | 3.08 V nominal threshold; current rail corners/delay review |
-| Service connector | SM06B-SRSS-TB(LF)(SN) | C160405 | 6 contacts, two anchors; VREF is sense only; harness/mechanics pending |
+| Service connector | BM03B-SRSS-TB(LF)(SN) | C160389 | 3 UART contacts plus two GND anchors; straight SH cable, separate power and manual BOOT/RESET; open-case programming |
 | Enclosure LCD | HS17QS178RX | C5329581 | Bare 1.77 inch; 2.8 V logic/40 mA backlight; external mounting/FPC pending |
 | LCD supply candidate | TPS7A2028PDBVR | C2869847 | 2.8 V ±1.5% at VIN≥3.1 V; partial logic application reviewed |
 | LCD logic buffer candidate | SN74LVC245APWR | C7848 | 2.8 V, tolerant MCU inputs; partial logic application reviewed |

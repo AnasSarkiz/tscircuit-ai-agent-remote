@@ -1,0 +1,12 @@
+{
+  "same_publication_source_manifest": "source-manifest.json",
+  "prior_timeout_receipt": "../documented-native-final-build.log.outcome.json",
+  "prior_trial_source_and_events": "time-limited-source-and-events.tar.gz",
+  "runtime_dependency_link": "../../node_modules",
+  "verified_root_core": "0.0.2090",
+  "verified_root_tscircuit": "0.0.2744",
+  "linked_runtime_matches_prior_completed_build": true,
+  "prior_timeout_passed": false,
+  "causal_performance_conclusion": null,
+  "retry_seconds": 900
+}
