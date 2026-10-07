@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-07T15:21:42.176801+00:00",
+  "commit": "0684f56ff385bfa67a99910074747d56c84ed2a3",
+  "main_matches": true,
+  "repository_is_public": true,
+  "request_authorization_header_supplied": false,
+  "github_files": [
+    {
+      "path": "dist/index/circuit.json",
+      "http_status": 200,
+      "sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+      "matches": true
+    },
+    {
+      "path": "index.circuit.tsx",
+      "http_status": 200,
+      "sha256": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58",
+      "matches": true
+    },
+    {
+      "path": "context/checkpoint-sha256.json",
+      "http_status": 200,
+      "sha256": "e79da2d6ccc164a425a02dfb8de3f76fee32c3ac91db2c53cf31efe8c3266ed6",
+      "matches": true
+    },
+    {
+      "path": "evidence/display028-integration-2026-10-07/review.md",
+      "http_status": 200,
+      "sha256": "9ebb40aa70e980703cc3fee5ae7bf4b261109ef2a1a4584321c3331b3f05ef63",
+      "matches": true
+    },
+    {
+      "path": "evidence/display028-integration-2026-10-07/mechanical-review.pdf",
+      "http_status": 200,
+      "sha256": "9b89eed172894b53defc4e7bb782bfeca9b3626c00a67a93d11ca8b81821e1f4",
+      "matches": true
+    }
+  ],
+  "tscircuit_version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.8-wip-speaker-routing",
+  "tscircuit_release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+  "tscircuit_ready_to_build": true,
+  "tscircuit_is_public": true,
+  "tscircuit_is_listed": true,
+  "tscircuit_native_comparison": {
+    "path": "dist/index/circuit.json",
+    "http_status": null,
+    "network_error": null,
+    "download_http_status": null,
+    "download_error": null,
+    "local_bytes": 6576896,
+    "local_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+    "remote_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+    "matches": true
+  },
+  "new_display_implementation_published": false,
+  "fabrication_ready": false
+}

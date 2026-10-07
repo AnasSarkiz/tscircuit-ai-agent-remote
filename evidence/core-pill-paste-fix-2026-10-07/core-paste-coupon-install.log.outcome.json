@@ -1,0 +1,17 @@
+{
+  "command": [
+    ".tools/bun-1.4.0/bun-linux-x64/bun",
+    "install",
+    "--cwd",
+    ".upstream-work/u14-paste-coupon",
+    "--network-concurrency",
+    "4"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 4.51,
+  "peak_process_group_rss_bytes": 114376704,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

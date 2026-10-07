@@ -1,3 +1,22 @@
+## Latest canonical paste repair — 2026-10-07
+
+Read `evidence/core-pill-paste-fix-2026-10-07/review.md` first. The pill/rotated-pill
+paste generator is fixed in canonical core source at base commit 90785db
+(package 0.0.2106). Seventeen relevant tests, full TypeScript, formatting, build
+and dist smoke pass. Genuine U14 coupon has 20 valid apertures with identical
+physical pads; genuine U16/U27 coupons have 34. All local package links were
+removed and official packages restored. Official 0.0.2106 still reproduces zero
+U14 paste, so this is an unreleased source fix. Do not claim the active board's
+32 missing paste records are repaired or deploy a local yalc runtime.
+
+Active board remains official core 0.0.2090 and exact accepted native SHA below.
+Latest copper audit still finds 0 measured shorts/clearance violations, 12 open
+nets and 50 native open-port errors. No LCD pose, schematic or routing change is
+accepted. Exact panel/RF/flex qualification and a supported released generator
+fix remain dependencies. Saved cloud draft is revision 28 with 20 custom hosts;
+its network settings still require runtime application. Use CI Bun 1.4.0 only
+for the isolated upstream source work; keep the board's frozen setup intact.
+
 ## Latest 2.8-inch request —2026-10-07
 
 The uploaded follow-up explicitly supersedes the2.3-inch plan with a landscape

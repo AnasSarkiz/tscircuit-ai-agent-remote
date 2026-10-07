@@ -1,0 +1,19 @@
+import { BQ24074RGTR } from "../../imports/BQ24074RGTR/BQ24074RGTR"
+import { TPS60230RGTR } from "../../imports/TPS60230RGTR/TPS60230RGTR"
+import { buildPillCoupon } from "./lib/build-paste-coupon"
+
+await buildPillCoupon({
+  circuitElement: (
+    <board width={20} height={15} routingDisabled>
+      <BQ24074RGTR name="U16" pcbX={-5} pcbRotation={90} />
+      <TPS60230RGTR name="U27" pcbX={5} layer="bottom" pcbRotation={270} />
+      <pcbnotetext
+        text="Genuine U16 / U27: pill paste after rotation and layer flip"
+        pcbY={6}
+        fontSize={0.4}
+      />
+    </board>
+  ),
+  expectedPadCount: 34,
+  outputFolder: "dist/existing-pill-parts",
+})

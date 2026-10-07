@@ -17,6 +17,13 @@ and poses remain unassigned;no PCB replacement/routing is accepted. See
 source is preserved separately and restored to exact publicHEAD. No orders,
 genuine-import patches,check suppression,watcher,subagents or other-chat messages.
 
+Independent implementation follow-up, 2026-10-07: the canonical rounded-pad paste
+generator is fixed and tested in upstream source, with genuine 20-pad U14 and
+34-pad U16/U27 coupons. This is an unreleased runtime change, not a new human
+decision or active board repair. All local links are removed. Board source,
+placement and copper remain unchanged; exact LCD/RF/flex gates still precede
+J7 placement and routing. See `evidence/core-pill-paste-fix-2026-10-07/review.md`.
+
 Historical 2.3-inch decision below is superseded by this request.
 
 Latest explicit display decision, 2026-10-07: **“Accept the 2.3-inch display

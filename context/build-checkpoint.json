@@ -277,5 +277,24 @@
   "environment_draft_required_cloudflare_challenge_wildcard": "*.challenges.cloudflare.com",
   "environment_draft_required_modelcdn": "modelcdn.tscircuit.com",
   "environment_draft_saved_domain_count": 19,
-  "environment_draft_runtime_application_verified": false
+  "environment_draft_runtime_application_verified": false,
+  "canonical_pill_paste_generator_fix": {
+    "review": "evidence/core-pill-paste-fix-2026-10-07/review.md",
+    "source_patch": "evidence/core-pill-paste-fix-2026-10-07/source.patch",
+    "source_base_commit": "90785dbb91162d8ff7a25dbad6533929d8546f4c",
+    "source_package_version": "0.0.2106",
+    "test_bun_version": "1.4.0",
+    "relevant_tests_pass": 17,
+    "relevant_tests_fail": 0,
+    "assertions": 308,
+    "full_typecheck_format_build_and_dist_smoke_passed": true,
+    "genuine_u14_paste_apertures": 20,
+    "genuine_u16_u27_paste_apertures": 34,
+    "local_links_removed": true,
+    "official_source_fix_released": false,
+    "active_board_runtime_changed": false,
+    "active_board_missing_paste_fixed": false,
+    "actual_lcd_placement_or_routes_changed": false,
+    "fabrication_ready": false
+  }
 }

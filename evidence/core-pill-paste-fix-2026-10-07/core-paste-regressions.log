@@ -1,0 +1,58 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/repros/repro55-pill-shape.test.tsx:
+(pass) repro55: pill shape [728.48ms]
+
+tests/repros/repro-imported-rotated-pill-pads-missing-3d.test.tsx:
+(pass) imported INA240A1PWR should preserve rotated pill pads [1449.72ms]
+
+tests/repros/repro63-soic8-pill-pads.test.tsx:
+(pass) pcb autolayout out of board [171.41ms]
+
+tests/components/primitive-components/smtpad-solder-paste-default-scale.test.tsx:
+(pass) default behaviour without any paste props stays 0.7 [5.02ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-removes-paste.test.tsx:
+(pass) no solder paste is emitted when solderPasteMargin shrinks the aperture to zero [2.54ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+Creating snapshot at /workspace/tscircuit-ai-agent-remote/.upstream-work/core-corrections/tests/components/primitive-components/__snapshots__/pill-solder-paste-margins-pcb.snap.svg
+(pass) pill paste respects absolute margins, coverage and layout movement [130.60ms]
+
+tests/components/primitive-components/pill-rotation-in-srj.test.tsx:
+(pass) pill rotations in simple route json [8.09ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-rotated-rect.test.tsx:
+(pass) rotated_rect pads honor solderPasteMargin [2.59ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-zero.test.tsx:
+(pass) a zero solderPasteMargin yields a 1:1 aperture [2.41ms]
+
+tests/components/primitive-components/smtpad-polygon-solder-paste.test.tsx:
+(pass) polygon paste follows margins, rotation, layer and layout movement [401.12ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [121.85ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-negative.test.tsx:
+(pass) solderPasteMargin applies an absolute per-side margin instead of the 0.7 scale [3.06ms]
+
+tests/components/primitive-components/pill-shape-smtpad.test.tsx:
+(pass) Pill-shaped smtpad [115.50ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-circle.test.tsx:
+(pass) circle pads apply solderPasteMargin to the radius once per side [3.28ms]
+
+tests/components/primitive-components/smtpad-solder-paste-config.test.tsx:
+(pass) smtpad solder paste config [113.93ms]
+
+tests/components/primitive-components/smtpad-solder-paste-margin-positive.test.tsx:
+(pass) a positive solderPasteMargin grows the aperture beyond the pad [7.67ms]
+
+tests/utils/pcb/get-polygon-solder-paste-contours.test.ts:
+(pass) polygon paste offsets preserve edge distances, split apertures and openings [11.79ms]
+
+ 17 pass
+ 0 fail
+ 308 expect() calls
+Ran 17 tests across 17 files. [4.30s]

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import urllib.request,pathlib,zipfile; p=pathlib.Path('.tools/bun-1.4.0');p.mkdir(exist_ok=True);urllib.request.urlretrieve('https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-linux-x64.zip',p/'bun.zip');zipfile.ZipFile(p/'bun.zip').extractall(p);(p/'bun-linux-x64/bun').chmod(0o755)"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 2.02,
+  "peak_process_group_rss_bytes": 17969152,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

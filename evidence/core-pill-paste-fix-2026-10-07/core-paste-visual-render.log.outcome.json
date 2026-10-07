@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".tools/bun-1.4.0/bun-linux-x64/bun",
+    "-e",
+    "import { Resvg } from \"./.upstream-work/core-corrections/node_modules/@resvg/resvg-js\"; import { readFileSync, writeFileSync } from \"node:fs\"; for (const name of [\"pill-solder-paste-placement\", \"pill-solder-paste-margins\", \"u14-coupon\", \"u16-u27-coupon\"]) { const path = `evidence/core-pill-paste-fix-2026-10-07/${name}`; writeFileSync(`${path}.png`, new Resvg(readFileSync(`${path}.svg`), { fitTo: { mode: \"width\", value: 1600 } }).render().asPng()); }"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 1.51,
+  "peak_process_group_rss_bytes": 113537024,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

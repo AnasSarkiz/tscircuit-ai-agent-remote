@@ -1,0 +1,12 @@
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/tscircuit-ai-agent-remote/.upstream-work/core-corrections/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 5.25 MB
+ESM ⚡️ Build success in 778ms
+DTS ⚡️ Build success in 39648ms
+DTS dist/index.d.ts 9.67 MB

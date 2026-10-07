@@ -1,0 +1,38 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+40 |       />
+41 |     </board>,
+42 |   )
+43 |   await circuit.renderUntilSettled()
+44 |   const pastes = circuit.db.pcb_solder_paste.list()
+45 |   expect(pastes).toHaveLength(8)
+                      ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 8
+Received length: 0
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.upstream-work/core-corrections/tests/components/primitive-components/pill-solder-paste-margins.test.tsx:45:18)
+(fail) pill paste respects absolute margins, coverage and layout movement [324.99ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+43 |   )
+44 |   await circuit.renderUntilSettled()
+45 |   const pads = circuit.db.pcb_smtpad.list()
+46 |   const pastes = circuit.db.pcb_solder_paste.list()
+47 |   expect(pads).toHaveLength(16)
+48 |   expect(pastes).toHaveLength(pads.length)
+                      ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 16
+Received length: 0
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.upstream-work/core-corrections/tests/components/primitive-components/pill-solder-paste-placement.test.tsx:48:18)
+(fail) pill paste follows emitted pad geometry on both layers and all quarter turns [198.18ms]
+
+ 0 pass
+ 2 fail
+ 3 expect() calls
+Ran 2 tests across 2 files. [1.96s]

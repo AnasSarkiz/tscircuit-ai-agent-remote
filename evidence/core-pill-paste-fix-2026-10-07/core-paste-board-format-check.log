@@ -1,0 +1,45 @@
+$ biome format .
+context/build-checkpoint.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     51  51 │     "source_snapshot_byte_verified": true,
+     52  52 │     "local_mcu_100nf_bypass_connected": true,
+     53     │ - ··"mcu_bulk_nominal_capacitance_f":·2.2e-05,
+         53 │ + ··"mcu_bulk_nominal_capacitance_f":·2.2e-5,
+     54  54 │     "resolved_bom_blank_descriptions": 0,
+     55  55 │     "resolved_bom_supplier_codes_as_packages": 0,
+    ······· │ 
+    106 106 │     "supplier_exact_identities_checked": 43,
+    107 107 │     "supplier_total_stock_covers_identities": 42,
+    108     │ - ··"supplier_out_of_stock":·[
+    109     │ - ····"J6/C160405"
+    110     │ - ··],
+        108 │ + ··"supplier_out_of_stock":·["J6/C160405"],
+    111 109 │     "supplier_assembly_availability_qualified": false,
+    112 110 │     "supplier_stock_receipt": "evidence/routing-continuation-2026-10-07/official-stock/current-inventory-interpretation.json",
+    ······· │ 
+    264 262 │     "display_replacement_mechanical_and_interface_audit": "evidence/display028-integration-2026-10-07/mechanical-and-interface-audit.json",
+    265 263 │     "display_replacement_candidate_controller": "ILI9341",
+    266     │ - ··"display_replacement_candidate_landscape_body_mm":·[
+    267     │ - ····69.3,
+    268     │ - ····50.2
+    269     │ - ··],
+    270     │ - ··"display_replacement_candidate_active_mm":·[
+    271     │ - ····57.6,
+    272     │ - ····43.2
+    273     │ - ··],
+        264 │ + ··"display_replacement_candidate_landscape_body_mm":·[69.3,·50.2],
+        265 │ + ··"display_replacement_candidate_active_mm":·[57.6,·43.2],
+    274 266 │     "display_replacement_candidate_body_front_coverage_percent": 77.308,
+    275 267 │     "display_replacement_candidate_fpc_exit_finished_side": "right",
+  
+
+Checked 110 files in 98ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

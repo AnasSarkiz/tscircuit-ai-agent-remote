@@ -1,0 +1,16 @@
+{
+  "command": [
+    ".tools/bun/bin/bun",
+    "install",
+    "--cwd",
+    ".upstream-work/core-corrections",
+    "--verbose"
+  ],
+  "exit_code": -15,
+  "termination": "TIME_BUDGET_REACHED",
+  "elapsed_seconds": 180.48,
+  "peak_process_group_rss_bytes": 111894528,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": false,
+  "passing_validation_inferred": false
+}

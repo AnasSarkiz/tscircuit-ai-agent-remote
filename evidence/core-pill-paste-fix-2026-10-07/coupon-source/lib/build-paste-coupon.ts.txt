@@ -1,0 +1,61 @@
+import { RootCircuit } from "@tscircuit/core"
+import { pcb_solder_paste } from "circuit-json"
+import { convertCircuitJsonToPcbSvg } from "circuit-to-svg"
+import assert from "node:assert/strict"
+import { mkdir, writeFile } from "node:fs/promises"
+import type { ReactElement } from "react"
+import Coupon from "../pin1.circuit"
+
+export async function buildPasteCoupon() {
+  await buildPillCoupon({
+    circuitElement: Coupon(),
+    expectedPadCount: 20,
+    outputFolder: "dist",
+  })
+}
+
+export async function buildPillCoupon({
+  circuitElement,
+  expectedPadCount,
+  outputFolder,
+}: {
+  circuitElement: ReactElement
+  expectedPadCount: number
+  outputFolder: string
+}) {
+  const circuit = new RootCircuit()
+  circuit.add(circuitElement)
+  await circuit.renderUntilSettled()
+  const circuitJson = circuit.getCircuitJson()
+  const pads = circuitJson.filter((element) => element.type === "pcb_smtpad")
+  const pastes = circuitJson.filter(
+    (element) => element.type === "pcb_solder_paste",
+  )
+  assert.equal(pads.length, expectedPadCount)
+  assert.equal(pastes.length, expectedPadCount)
+  for (const pad of pads) {
+    const paste = pastes.find(
+      (paste) => paste.pcb_smtpad_id === pad.pcb_smtpad_id,
+    )
+    assert(
+      paste,
+      `Missing paste on numbered pad ${pad.port_hints?.join("/") ?? "unlabelled"}`,
+    )
+    pcb_solder_paste.parse(paste)
+    assert.equal(paste.layer, pad.layer)
+    assert.equal(paste.shape, pad.shape)
+    assert.equal(paste.pcb_component_id, pad.pcb_component_id)
+  }
+  await mkdir(outputFolder, { recursive: true })
+  await writeFile(
+    `${outputFolder}/circuit.json`,
+    JSON.stringify(circuitJson, null, 2),
+  )
+  await writeFile(
+    `${outputFolder}/pcb.svg`,
+    convertCircuitJsonToPcbSvg(circuitJson, { showSolderPaste: true }),
+  )
+  console.log(
+    `Genuine import coupon: ${pads.length} native pads, ${pastes.length} valid paste apertures`,
+  )
+}

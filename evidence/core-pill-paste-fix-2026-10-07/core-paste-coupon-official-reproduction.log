@@ -1,0 +1,22 @@
+30 |   const pads = circuitJson.filter((element) => element.type === "pcb_smtpad")
+31 |   const pastes = circuitJson.filter(
+32 |     (element) => element.type === "pcb_solder_paste",
+33 |   )
+34 |   assert.equal(pads.length, expectedPadCount)
+35 |   assert.equal(pastes.length, expectedPadCount)
+              ^
+AssertionError: Expected values to be strictly equal:
+
+0 !== 20
+
+ generatedMessage: true,
+     actual: 0,
+   expected: 20,
+   operator: "strictEqual",
+       diff: "simple",
+       code: "ERR_ASSERTION"
+
+      at buildPillCoupon (/workspace/tscircuit-ai-agent-remote/.upstream-work/u14-paste-coupon/lib/build-paste-coupon.ts:35:10)
+      at buildPasteCoupon (/workspace/tscircuit-ai-agent-remote/.upstream-work/u14-paste-coupon/lib/build-paste-coupon.ts:10:9)
+
+Bun v1.4.0 (Linux x64)

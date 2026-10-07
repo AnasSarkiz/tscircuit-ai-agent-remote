@@ -1,0 +1,66 @@
+{
+  "checked_at_utc": "2026-10-07T15:43:33.711521+00:00",
+  "source_repository": "https://github.com/tscircuit/core",
+  "source_base_commit": "90785dbb91162d8ff7a25dbad6533929d8546f4c",
+  "source_package_version": "0.0.2106",
+  "test_bun_version": "1.4.0",
+  "source_patch_sha256": "c8caf0640762b16e0b4630112d54874c3aec5666c13e81ed5a693f109617aed3",
+  "upstream_tests": {
+    "before": {
+      "pass": 0,
+      "fail": 2,
+      "paste_received": 0
+    },
+    "after": {
+      "pass": 17,
+      "fail": 0,
+      "assertions": 308
+    },
+    "full_typecheck_passed": true,
+    "format_passed": true,
+    "build_passed": true,
+    "dist_smoke_passed": true,
+    "entire_upstream_test_suite_run": false
+  },
+  "u14_coupon": {
+    "import_part": "C7848",
+    "source_sha256": "7713a61c8f3d2f1c8108d2fcb9ba89f494a129bf5481e5ed4b8e93682e6e386e",
+    "source_manually_edited": false,
+    "physical_pad_geometry_identical_to_before": true,
+    "native_pads": 20,
+    "native_paste_apertures": 20,
+    "native_paste_records_schema_validated": true,
+    "native_sha256": "42d97405984b9e3781ca96b4b1460fd50f9490bac6687ac8451e5b9852b80318"
+  },
+  "u16_u27_coupon": {
+    "parts": [
+      "BQ24074RGTR",
+      "TPS60230RGTR"
+    ],
+    "native_pads": 34,
+    "native_paste_apertures": 34,
+    "native_paste_records_schema_validated": true,
+    "genuine_imports_unchanged": true,
+    "native_sha256": "028c6328cb0c391c9e8c199590e4f63e3aebca53b43b4048f4ddb5c887639c0b"
+  },
+  "official_0_0_2106_reproduction_after_yalc_removal": {
+    "exit_code": 1,
+    "native_paste_received": 0,
+    "expected": 20
+  },
+  "active_board_runtime": "official @tscircuit/core 0.0.2090",
+  "active_board_runtime_compared_to_fresh_npm_tarball": true,
+  "active_board_native_sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+  "local_links_removed": true,
+  "pcb_placement_schematic_or_routes_changed": false,
+  "published_runtime_fix": false,
+  "fabrication_ready": false,
+  "visual_review_completed": [
+    "pill-solder-paste-placement.png",
+    "pill-solder-paste-margins.png",
+    "u14-coupon.png",
+    "u16-u27-coupon.png"
+  ],
+  "verbose_install_logs_published": false,
+  "native_snapshot_software_stamp": "@tscircuit/core@0.0.2107 (literal upstream source stamp; package version is 0.0.2106)"
+}

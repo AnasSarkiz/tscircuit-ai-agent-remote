@@ -1,3 +1,18 @@
+## Canonical paste source repair — 2026-10-07
+
+**Tested source repair; active board and fabrication remain blocked.** Canonical
+core pill paste fix passes 17 relevant tests (308 assertions), full TypeScript,
+formatting, build and dist smoke. Genuine U14 yields 20 valid native apertures
+with unchanged pads; genuine U16/U27 yield 34. All four visual captures inspected.
+Yalc links removed, official packages restored; official core 0.0.2106 still
+reproduces zero U14 paste. The active frozen board remains core 0.0.2090 and its
+native/source/routes are unchanged. No new board implementation or tscircuit
+version is claimed. Exact source patch, local-build receipts, genuine coupon
+outputs and remaining mechanical/publication gates:
+[evidence/core-pill-paste-fix-2026-10-07/review.md](evidence/core-pill-paste-fix-2026-10-07/review.md).
+One required context marker in the archived patch triggers a staged whitespace
+warning; the actual upstream source diff is clean and the patch applies.
+
 ## Latest landscape replacement qualification —2026-10-07
 
 **BLOCKED — no 2.8-inch PCB implementation or routing accepted.** The exact

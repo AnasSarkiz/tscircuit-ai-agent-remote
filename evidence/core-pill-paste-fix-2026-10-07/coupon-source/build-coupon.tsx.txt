@@ -1,0 +1,3 @@
+import { buildPasteCoupon } from "./lib/build-paste-coupon"
+
+await buildPasteCoupon()

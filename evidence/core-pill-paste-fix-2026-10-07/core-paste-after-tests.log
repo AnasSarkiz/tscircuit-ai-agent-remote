@@ -1,0 +1,30 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+69 |   const pasteAfter = circuit.db.pcb_solder_paste.get(
+70 |     pasteBefore.pcb_solder_paste_id,
+71 |   )!
+72 |   if (pasteAfter.shape !== "pill" && pasteAfter.shape !== "rotated_pill")
+73 |     throw new Error("Expected rounded solder paste after moving")
+74 |   expect(pasteAfter.x).toBeCloseTo(pasteBefore.x + 0.5)
+                            ^
+error: expect(received).toBeCloseTo(expected, precision)
+
+Expected: -6.5
+Received: -7
+
+Expected precision: 2
+Expected difference: < 0.005
+Received difference: 0.5
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.upstream-work/core-corrections/tests/components/primitive-components/pill-solder-paste-margins.test.tsx:74:24)
+(fail) pill paste respects absolute margins, coverage and layout movement [338.21ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+Creating snapshot at /workspace/tscircuit-ai-agent-remote/.upstream-work/core-corrections/tests/components/primitive-components/__snapshots__/pill-solder-paste-placement-pcb.snap.svg
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [213.52ms]
+
+ 1 pass
+ 1 fail
+ 207 expect() calls
+Ran 2 tests across 2 files. [1.64s]
