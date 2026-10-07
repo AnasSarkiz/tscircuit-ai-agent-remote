@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-07T21:18:04.185695+00:00",
+  "release_id": "f520e705-7b21-4a06-89d2-a66b70ced491",
+  "read_only": true,
+  "endpoint": "https://registry-api.tscircuit.com/package_builds/list?package_release_id=f520e705-7b21-4a06-89d2-a66b70ced491",
+  "http_status": 200,
+  "response": {
+    "ok": true,
+    "package_builds": [
+      {
+        "package_build_id": "073a81ba-6ac1-4ba6-b11c-9f7510f29deb",
+        "package_release_id": "f520e705-7b21-4a06-89d2-a66b70ced491",
+        "created_at": "2026-10-07T21:14:26.703Z",
+        "transpilation_in_progress": false,
+        "transpilation_started_at": null,
+        "transpilation_completed_at": null,
+        "transpilation_error": null,
+        "circuit_json_build_in_progress": false,
+        "circuit_json_build_started_at": null,
+        "circuit_json_build_completed_at": null,
+        "circuit_json_build_error": null,
+        "image_generation_in_progress": false,
+        "image_generation_started_at": null,
+        "image_generation_completed_at": null,
+        "image_generation_error": null,
+        "build_in_progress": true,
+        "package_build_website_url": null,
+        "user_code_job_started_at": "2026-10-07T21:14:28.247Z",
+        "user_code_job_completed_at": null,
+        "user_code_job_error": null,
+        "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=3fee696ffe376bbcd8c9bac87409dc9c75f5697ec59f76e1b9906de6592e766c"
+      },
+      {
+        "package_build_id": "90eb15e6-8689-477d-b78f-93d87c074343",
+        "package_release_id": "f520e705-7b21-4a06-89d2-a66b70ced491",
+        "created_at": "2026-10-07T21:14:03.973Z",
+        "transpilation_in_progress": false,
+        "transpilation_started_at": null,
+        "transpilation_completed_at": null,
+        "transpilation_error": null,
+        "circuit_json_build_in_progress": false,
+        "circuit_json_build_started_at": null,
+        "circuit_json_build_completed_at": null,
+        "circuit_json_build_error": null,
+        "image_generation_in_progress": false,
+        "image_generation_started_at": null,
+        "image_generation_completed_at": null,
+        "image_generation_error": null,
+        "build_in_progress": false,
+        "package_build_website_url": null,
+        "user_code_job_started_at": "2026-10-07T21:14:04.220Z",
+        "user_code_job_completed_at": "2026-10-07T21:16:11.595Z",
+        "user_code_job_error": {
+          "message": "Your code failed to build (exit code 1), see build logs for the error details",
+          "error_code": "user_code_build_error"
+        },
+        "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=29c527a3e8d607c3aef98deb32fcc791618f322e22cfa8954a5f0707a16dabb1"
+      }
+    ]
+  },
+  "cloud_CI_success_inferred": false
+}

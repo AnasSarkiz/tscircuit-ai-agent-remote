@@ -6,7 +6,10 @@ violations does not mean full zero DRC: 50 display errors / 12 open nets,
 schema/style/paste/export/width/stock/mechanical gates remain. The centered
 2.8-inch LCD request remains active and unimplemented. Read current checkpoint
 and evidence/programmer-direct-uart-2026-10-07/review.md. Standing public
-GitHub/tsci publication authorization remains in force.
+GitHub/tsci publication authorization remains in force. The implementation is
+now public at GitHub 1642750 and tsci .9/f520e705; all 128 files and the native
+preview are exact. Cloud source build success remains unverified. Draft29
+startup/settings saving does not apply/publish the environment.
 
 Latest explicit request, 2026-10-07, user-pasted file_00000000cb0881f4952a48a1ad747186:
 **Replace the unfinished ER-TFT023-1 plan with a BuyDisplay approximately2.8-inch

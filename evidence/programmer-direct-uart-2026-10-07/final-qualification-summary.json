@@ -41,12 +41,16 @@
   "native_traces_below_explicit_source_minimum": 2,
   "native_traces_below_named_net_nominal": 65,
   "latest_reference_component_subtotal_usd": "26.3055",
-  "publications_verified": false,
+  "publications_verified": true,
   "requested_display_implemented": false,
   "full_zero_DRC_and_connectivity_pass": false,
   "fabrication_ready": false,
   "programming_hardware_tested": false,
   "qualification_native_sha256": "3463e39446e73a751630b9f672d3ee8e338b354a79d2d918cfa0fec0e5e50d01",
   "documentation_regeneration_comparison": "documented-native/comparison.json",
-  "all_non_metadata_native_records_exactly_identical": true
+  "all_non_metadata_native_records_exactly_identical": true,
+  "public_package_release_id": "f520e705-7b21-4a06-89d2-a66b70ced491",
+  "public_implementation_commit": "1642750d10d7dcf905c9e2299417984f7749985f",
+  "public_preview_url": "https://tscircuit.com/AnasSarkiz/tscircuit-ai-agent-remote/releases/f520e705-7b21-4a06-89d2-a66b70ced491/preview",
+  "cloud_CI_passed": false
 }

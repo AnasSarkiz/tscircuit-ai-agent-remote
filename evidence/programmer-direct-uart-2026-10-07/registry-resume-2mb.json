@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-10-07T21:13:42.074Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.9-wip-standard-uart",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2292427,
+  "archive_sha256": "59987f407a678e8cec7ca6c0ab049cb5874fc4e248f9a73666508bde87195536",
+  "archives": [
+    {
+      "bytes": 477829,
+      "sha256": "9deb5a27c7f668f40ed47d05c466eaeaeed374e12087ba326d96be162d6ebc73",
+      "paths": [
+        "dist/index/circuit.json"
+      ]
+    },
+    {
+      "bytes": 1814432,
+      "sha256": "c7fcbdff3fa25a5e004014a597fc2597e9cbfc9ab77fb875854be6469b4690db",
+      "paths": [
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 6575643,
+      "sha256": "bcee32a49486610d7379583efb2b378846cc75f232272b50c717ad129c495704"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "85d2af0c-76f4-44b5-b2bc-651cdbb06f66",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "e0edb88f-ff58-4e60-a14d-af024df1a2aa",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    }
+  ]
+}

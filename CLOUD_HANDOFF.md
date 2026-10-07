@@ -27,11 +27,15 @@ weaker checks or orders. All 43 part identities have dated official receipts;
 public buyability covers 40. Reference subtotal $26.3055 excludes fabrication,
 assembly, external assemblies, shipping and minimum order quantities.
 
-Public fields remain the parent release until .9 anonymous source/native and
-visibility verification completes; exact receipts and links belong in this
-review/checkpoint. Continue the existing task with frozen Bun 1.3.9, one heavy
-Linux cloud operation at a time via the budget supervisor. Saved cloud draft
-preserves 20 custom hosts; draft saving does not apply/publish settings.
+Public GitHub implementation commit 1642750 and tsci release
+f520e705-7b21-4a06-89d2-a66b70ced491 (.9) are verified: all 128 public runtime
+files match; the native preview is the exact qualified object. Release is public,
+listed, latest and ready-to-build. No manual readiness override. An earlier
+incomplete-upload cloud job failed missing STEP; that asset is now exact/public.
+The later cloud job was still generating pours at observation, not a CI pass.
+Continue with frozen Bun 1.3.9 and one budgeted heavy Linux operation at a time.
+Saved cloud draft revision 29 retains all 20 custom hosts, install/repositories
+and previous startup instructions; Save/Publish remains needed to apply it.
 Earlier entries below are historical.
 
 ---
