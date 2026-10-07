@@ -1,4 +1,39 @@
-## Current speaker continuation — 2026-10-07
+## Current display replacement review — 2026-10-07
+
+The user rejects the ER-TFT026-1 bottom flex for the present right-side J7 and
+requests review of BuyDisplay's SPI 2.3-inch 320×240 ILI9432 product plus a
+matching connector. This supersedes the earlier conditional display selection,
+not the accepted native copper checkpoint below. No replacement has been
+qualified or implemented.
+
+The uploaded ER-TFT026-1 primary PDF is now available and reviewed in
+`evidence/display-datasheet-routing-2026-10-07/`; its contact face and local
+pin-1 views are documented. All 50 named-net assignments match only under the
+old provisional 51−n mapping. Do not keep reporting that the old PDF is missing,
+and do not use it as a specification for the new display.
+
+The new product page/PDF retrieval fails with Cloudflare HTTP403; normal
+Chromium fails certificate trust. Its flex exit, pinout and electrical/mechanical
+specifications remain unverified. Obtain the new exact PDF/drawing before
+choosing its connector or changing contact-dependent nets and copper.
+`evidence/display-replacement-review-2026-10-07/review.md` records the attempts
+and qualification requirements.
+
+Candidate C11063/AFC07-S50FCC-00 is a genuine imported 50-pin 0.5mm lower-contact
+socket, with 6,076 official total stock / 6,045 available-to-buy at 11:30UTC.
+It is not accepted for the new display. Its local pin-1 side differs from the
+present upper-contact C262650 import; do not swap it without a physical mapping
+review. The prior 13-domain draft now additionally allows the official JLCPCB
+datasheet CDN `jlc-prod-smt.oss-eu-central-1.aliyuncs.com`. Updated continuation
+instructions and the additive domain list are saved; user Save/Publish is still
+needed to apply them. BuyDisplay's origin challenge is a separate failure.
+
+Board source, native bytes, imports and all 126 published package files stay
+unchanged. The board still has 50 native opens and is not fabrication ready.
+
+---
+
+## Current accepted speaker checkpoint — 2026-10-07
 
 **0.0.8-wip-speaker-routing — NOT READY TO ORDER.** Resume from the untouched
 official CLI native at `dist/index/circuit.json`, SHA-256
@@ -24,8 +59,9 @@ snapshot completes with both historical reference mismatches; do not blindly
 update references. Detailed raw outcomes, rejected proposals and lossless
 native event archives are in the current evidence directory.
 
-The AKY2945 PDF is retrieved but does not number its outer contacts. BuyDisplay
-still returns its Cloudflare 403; contact face, pin-1 and fold remain unresolved.
+The AKY2945 PDF is retrieved but does not number its outer contacts. The older
+BuyDisplay retrieval observation below is superseded by the uploaded PDF and
+replacement review above; final display mating remains unresolved.
 JST/LCSC/EasyEDA requests also fail. The saved complete domain draft adds
 `www.jst-mfg.com`, `www.lcsc.com`, `easyeda.com`; only user Save/Publish can apply
 it. Do not bypass network policy, TLS, supplier drawings or failed imports.

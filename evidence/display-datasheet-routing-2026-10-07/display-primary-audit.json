@@ -1,0 +1,787 @@
+{
+  "checked_at_utc": "2026-10-07T11:26:03.302248+00:00",
+  "datasheet": {
+    "path": "evidence/display-datasheet-routing-2026-10-07/ER-TFT026-1_Datasheet.pdf",
+    "sha256": "1f479da350bf47fc250f9abd709710f8c6ea28ec0d5d11c56ffa174d505493ae",
+    "revision": "3.0",
+    "revision_date": "2021-12-22",
+    "no_touch_outline_drawing_revision": "2.0 / 2017-10-15",
+    "pages_inspected": [
+      5,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "native": {
+    "path": "dist/index/circuit.json",
+    "sha256": "35c5fb2bfc870daf11b5f5e30847f1e5a86fd886ebb8ef11fc3cf6e88e77e63d",
+    "bytes": 6576896,
+    "board_version": "0.0.8-wip-speaker-routing",
+    "source_commit": "e8e4eb46da63fe4ddc398497d5212a415cfa8866"
+  },
+  "part": {
+    "manufacturer": "EastRising / BuyDisplay",
+    "model": "ER-TFT026-1",
+    "diagonal_inches": 2.6,
+    "resolution_pixels": [
+      240,
+      320
+    ],
+    "controller": "ILI9341",
+    "touch": false
+  },
+  "panel_connector": {
+    "contacts": 50,
+    "pitch_mm": 0.5,
+    "manufacturer_specifies_top_contact": true,
+    "thickness_mm": 0.3,
+    "thickness_tolerance_mm": 0.03,
+    "contact_span_mm": 24.5,
+    "tail_width_mm": 25.5,
+    "conductor_width_mm": 0.35,
+    "conductor_width_tolerance_mm": 0.03,
+    "pin1_in_front_conductor_view": "right",
+    "pin1_in_rear_stiffener_view": "left"
+  },
+  "board_connector": {
+    "manufacturer_part_number": "AFC07-S50ECA-00",
+    "jlcpcb_ids": [
+      "C262650"
+    ],
+    "primary_drawing": "references/a3/buydisplay/AFC07-S50ECA-00.pdf",
+    "primary_drawing_sha256": "a7a65a0c612e851f5fab4d8baca795c50d9d4097a89ce8587ebf902b867c8c5e",
+    "upper_contact_E_variant": true,
+    "contact_span_measured_mm": 24.496522047406238,
+    "pin1_world_mm": {
+      "x": 6.663896899999998,
+      "y": -24.873007
+    },
+    "pin50_world_mm": {
+      "x": 6.6654209,
+      "y": -0.3764850000000006
+    },
+    "recommended_fpc_conductor_width_mm": 0.3,
+    "recommended_fpc_conductor_width_tolerance_mm": 0.03,
+    "conductor_width_difference_requires_tolerance_review": true
+  },
+  "electrical_review": {
+    "interface": "4-wire 8-bit serial interface II",
+    "IM3_to_IM0": "1110",
+    "VCI_operating_volts": {
+      "min": 2.5,
+      "typ": 2.8,
+      "max": 3.3
+    },
+    "VDDI_operating_volts": {
+      "min": 1.65,
+      "typ": 2.8,
+      "max": 3.3
+    },
+    "board_VLCD_nominal_volts": 2.8,
+    "backlight_LED_chips_in_parallel": 4,
+    "backlight_forward_current_typ_mA": 70,
+    "backlight_forward_current_max_mA": 80,
+    "backlight_forward_current_min_specified": false,
+    "backlight_forward_voltage_at_80mA_volts": {
+      "typ": 3.2,
+      "max": 3.4
+    },
+    "R102_ohms": 10000,
+    "TPS60230_nominal_current_each_mA": 15.6,
+    "TPS60230_nominal_four_sink_total_mA": 62.4,
+    "nominal_current_below_typical_is_not_a_datasheet_violation": true,
+    "brightness_and_powerup_hardware_qualified": false
+  },
+  "mechanical_review": {
+    "no_touch_body_mm": [
+      46,
+      64,
+      2.55
+    ],
+    "body_tolerance_mm": [
+      0.2,
+      0.2,
+      0.1
+    ],
+    "flex_extension_mm": 26.7,
+    "flex_extension_tolerance_mm": 0.5,
+    "stiffener_depth_mm": 5.5,
+    "active_area_mm": [
+      39.6,
+      52.8
+    ],
+    "active_area_centre_offset_from_body_mm": {
+      "x": 0,
+      "y": 2.9
+    },
+    "offset_axes": "portrait front view; +y toward panel top",
+    "A7_body_centre_mm": {
+      "x": -5.8,
+      "y": -0.8
+    },
+    "A7_portrait_active_area_centre_derived_mm": {
+      "x": -5.8,
+      "y": 2.1
+    },
+    "historical_A7_active_area_y_mm": 0,
+    "historical_active_area_centre_needs_correction": true,
+    "FPC_3D_path_and_enclosure_qualified": false
+  },
+  "mapping": "panel pin n -> J7 pin 51-n, existing source hypothesis only",
+  "all_50_pin_table_assignments_match_under_provisional_mapping": true,
+  "physical_panel_to_board_pin_mapping_qualified": false,
+  "matching_primary_pitch_width_thickness_proves_final_mating": false,
+  "existing_display_tests": {
+    "command": "bun test tests/final-display-manufacturer-connections.test.ts",
+    "pass": 5,
+    "fail": 0,
+    "assertions": 95,
+    "outcome": "evidence/display-datasheet-routing-2026-10-07/display-pin-tests.log.outcome.json"
+  },
+  "source_native_imports_or_routes_changed": false,
+  "native_remaining_open_port_errors": 50,
+  "measured_zero_shorts_is_full_zero_DRC": false,
+  "fabrication_ready": false,
+  "pins": [
+    {
+      "panel_pin": 1,
+      "panel_function": "LEDA",
+      "provisional_J7_pin": 50,
+      "expected_net": "LCD_BACKLIGHT_OUTPUT",
+      "native_direct_named_nets": [
+        "LCD_BACKLIGHT_OUTPUT"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -0.3764850000000006
+    },
+    {
+      "panel_pin": 2,
+      "panel_function": "LEDK1",
+      "provisional_J7_pin": 49,
+      "expected_net": "LCD_BACKLIGHT_RETURN_1",
+      "native_direct_named_nets": [
+        "LCD_BACKLIGHT_RETURN_1"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -0.8750870000000006
+    },
+    {
+      "panel_pin": 3,
+      "panel_function": "LEDK2",
+      "provisional_J7_pin": 48,
+      "expected_net": "LCD_BACKLIGHT_RETURN_2",
+      "native_direct_named_nets": [
+        "LCD_BACKLIGHT_RETURN_2"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -1.3754670000000004
+    },
+    {
+      "panel_pin": 4,
+      "panel_function": "LEDK3",
+      "provisional_J7_pin": 47,
+      "expected_net": "LCD_BACKLIGHT_RETURN_3",
+      "native_direct_named_nets": [
+        "LCD_BACKLIGHT_RETURN_3"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6649129,
+      "native_y_mm": -1.8738150000000005
+    },
+    {
+      "panel_pin": 5,
+      "panel_function": "LEDK4",
+      "provisional_J7_pin": 46,
+      "expected_net": "LCD_BACKLIGHT_RETURN_4",
+      "native_direct_named_nets": [
+        "LCD_BACKLIGHT_RETURN_4"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -2.3739410000000003
+    },
+    {
+      "panel_pin": 6,
+      "panel_function": "IM0",
+      "provisional_J7_pin": 45,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -2.874575
+    },
+    {
+      "panel_pin": 7,
+      "panel_function": "IM1",
+      "provisional_J7_pin": 44,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -3.374955
+    },
+    {
+      "panel_pin": 8,
+      "panel_function": "IM2",
+      "provisional_J7_pin": 43,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -3.8753349999999998
+    },
+    {
+      "panel_pin": 9,
+      "panel_function": "IM3",
+      "provisional_J7_pin": 42,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6659289,
+      "native_y_mm": -4.375461
+    },
+    {
+      "panel_pin": 10,
+      "panel_function": "RESET",
+      "provisional_J7_pin": 41,
+      "expected_net": "LCD_RESET_N",
+      "native_direct_named_nets": [
+        "LCD_RESET_N"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.663896899999999,
+      "native_y_mm": -4.873047
+    },
+    {
+      "panel_pin": 11,
+      "panel_function": "VSYNC",
+      "provisional_J7_pin": 40,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -5.374951
+    },
+    {
+      "panel_pin": 12,
+      "panel_function": "HSYNC",
+      "provisional_J7_pin": 39,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -5.875077
+    },
+    {
+      "panel_pin": 13,
+      "panel_function": "DOTCLK",
+      "provisional_J7_pin": 38,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -6.374949
+    },
+    {
+      "panel_pin": 14,
+      "panel_function": "DE",
+      "provisional_J7_pin": 37,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.6654209,
+      "native_y_mm": -6.875075
+    },
+    {
+      "panel_pin": 15,
+      "panel_function": "DB17",
+      "provisional_J7_pin": 36,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -7.374947
+    },
+    {
+      "panel_pin": 16,
+      "panel_function": "DB16",
+      "provisional_J7_pin": 35,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -7.875073
+    },
+    {
+      "panel_pin": 17,
+      "panel_function": "DB15",
+      "provisional_J7_pin": 34,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -8.374945
+    },
+    {
+      "panel_pin": 18,
+      "panel_function": "DB14",
+      "provisional_J7_pin": 33,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -8.875071
+    },
+    {
+      "panel_pin": 19,
+      "panel_function": "DB13",
+      "provisional_J7_pin": 32,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -9.374943
+    },
+    {
+      "panel_pin": 20,
+      "panel_function": "DB12",
+      "provisional_J7_pin": 31,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -9.875069
+    },
+    {
+      "panel_pin": 21,
+      "panel_function": "DB11",
+      "provisional_J7_pin": 30,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -10.374941
+    },
+    {
+      "panel_pin": 22,
+      "panel_function": "DB10",
+      "provisional_J7_pin": 29,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -10.875067
+    },
+    {
+      "panel_pin": 23,
+      "panel_function": "DB9",
+      "provisional_J7_pin": 28,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -11.374939
+    },
+    {
+      "panel_pin": 24,
+      "panel_function": "DB8",
+      "provisional_J7_pin": 27,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -11.875065
+    },
+    {
+      "panel_pin": 25,
+      "panel_function": "DB7",
+      "provisional_J7_pin": 26,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -12.374937
+    },
+    {
+      "panel_pin": 26,
+      "panel_function": "DB6",
+      "provisional_J7_pin": 25,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -12.875062999999999
+    },
+    {
+      "panel_pin": 27,
+      "panel_function": "DB5",
+      "provisional_J7_pin": 24,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -13.374935
+    },
+    {
+      "panel_pin": 28,
+      "panel_function": "DB4",
+      "provisional_J7_pin": 23,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -13.875061
+    },
+    {
+      "panel_pin": 29,
+      "panel_function": "DB3",
+      "provisional_J7_pin": 22,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -14.374933
+    },
+    {
+      "panel_pin": 30,
+      "panel_function": "DB2",
+      "provisional_J7_pin": 21,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -14.875059
+    },
+    {
+      "panel_pin": 31,
+      "panel_function": "DB1",
+      "provisional_J7_pin": 20,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -15.374931
+    },
+    {
+      "panel_pin": 32,
+      "panel_function": "DB0",
+      "provisional_J7_pin": 19,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -15.875057
+    },
+    {
+      "panel_pin": 33,
+      "panel_function": "SDO",
+      "provisional_J7_pin": 18,
+      "expected_net": null,
+      "native_direct_named_nets": [],
+      "source_trace_count": 0,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -16.374929
+    },
+    {
+      "panel_pin": 34,
+      "panel_function": "SDI",
+      "provisional_J7_pin": 17,
+      "expected_net": "LCD_SDA",
+      "native_direct_named_nets": [
+        "LCD_SDA"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -16.875055
+    },
+    {
+      "panel_pin": 35,
+      "panel_function": "RD",
+      "provisional_J7_pin": 16,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -17.374927
+    },
+    {
+      "panel_pin": 36,
+      "panel_function": "WRX(D/CX)",
+      "provisional_J7_pin": 15,
+      "expected_net": "LCD_DC",
+      "native_direct_named_nets": [
+        "LCD_DC"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -17.875053
+    },
+    {
+      "panel_pin": 37,
+      "panel_function": "D/CX(SCL)",
+      "provisional_J7_pin": 14,
+      "expected_net": "LCD_SCLK",
+      "native_direct_named_nets": [
+        "LCD_SCLK"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -18.374925
+    },
+    {
+      "panel_pin": 38,
+      "panel_function": "CSX",
+      "provisional_J7_pin": 13,
+      "expected_net": "LCD_CS_N",
+      "native_direct_named_nets": [
+        "LCD_CS_N"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -18.875051
+    },
+    {
+      "panel_pin": 39,
+      "panel_function": "TE",
+      "provisional_J7_pin": 12,
+      "expected_net": null,
+      "native_direct_named_nets": [],
+      "source_trace_count": 0,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -19.374923
+    },
+    {
+      "panel_pin": 40,
+      "panel_function": "VDDI",
+      "provisional_J7_pin": 11,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -19.875049
+    },
+    {
+      "panel_pin": 41,
+      "panel_function": "VDDI",
+      "provisional_J7_pin": 10,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -20.374921
+    },
+    {
+      "panel_pin": 42,
+      "panel_function": "VCI",
+      "provisional_J7_pin": 9,
+      "expected_net": "VLCD",
+      "native_direct_named_nets": [
+        "VLCD"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -20.875047000000002
+    },
+    {
+      "panel_pin": 43,
+      "panel_function": "GND",
+      "provisional_J7_pin": 8,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -21.374919
+    },
+    {
+      "panel_pin": 44,
+      "panel_function": "X+",
+      "provisional_J7_pin": 7,
+      "expected_net": null,
+      "native_direct_named_nets": [],
+      "source_trace_count": 0,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -21.875045
+    },
+    {
+      "panel_pin": 45,
+      "panel_function": "Y+",
+      "provisional_J7_pin": 6,
+      "expected_net": null,
+      "native_direct_named_nets": [],
+      "source_trace_count": 0,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -22.374917
+    },
+    {
+      "panel_pin": 46,
+      "panel_function": "X-",
+      "provisional_J7_pin": 5,
+      "expected_net": null,
+      "native_direct_named_nets": [],
+      "source_trace_count": 0,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -22.875042999999998
+    },
+    {
+      "panel_pin": 47,
+      "panel_function": "Y-",
+      "provisional_J7_pin": 4,
+      "expected_net": null,
+      "native_direct_named_nets": [],
+      "source_trace_count": 0,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -23.374915
+    },
+    {
+      "panel_pin": 48,
+      "panel_function": "GND",
+      "provisional_J7_pin": 3,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -23.875041
+    },
+    {
+      "panel_pin": 49,
+      "panel_function": "GND",
+      "provisional_J7_pin": 2,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.665420899999999,
+      "native_y_mm": -24.374913
+    },
+    {
+      "panel_pin": 50,
+      "panel_function": "GND",
+      "provisional_J7_pin": 1,
+      "expected_net": "GND",
+      "native_direct_named_nets": [
+        "GND"
+      ],
+      "source_trace_count": 1,
+      "pin_table_matches_under_provisional_mapping": true,
+      "native_x_mm": 6.663896899999998,
+      "native_y_mm": -24.873007
+    }
+  ]
+}

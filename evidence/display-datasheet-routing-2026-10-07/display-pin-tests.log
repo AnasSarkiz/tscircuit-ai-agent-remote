@@ -1,0 +1,13 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/final-display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [2.66ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [3.05ms]
+(pass) display manufacturer physical pin requirements > genuine top-contact connector retains pin 50 north; portrait mating remains provisional [6.58ms]
+(pass) display manufacturer physical pin requirements > TI TPS60230 powers four separate panel cathodes, retaining D1 regulation feedback [1.10ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open [2.31ms]
+
+ 5 pass
+ 0 fail
+ 95 expect() calls
+Ran 5 tests across 1 file. [495.00ms]
