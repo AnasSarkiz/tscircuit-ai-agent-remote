@@ -1,0 +1,81 @@
+{
+  "method": "nominal PCB component rectangles +0.2 mm margin; no source/native changes applied",
+  "rejected_proposals": [
+    {
+      "U14_centre_mm": [
+        2.25,
+        9.75
+      ],
+      "C42_centre_mm": [
+        0.75,
+        14.9
+      ],
+      "C43_centre_mm": [
+        3.4,
+        14.9
+      ],
+      "collisions": [
+        [
+          "U14",
+          "U12"
+        ]
+      ]
+    },
+    {
+      "U14_centre_mm": [
+        2.25,
+        13
+      ],
+      "C42_centre_mm": [
+        0.75,
+        17.9
+      ],
+      "C43_centre_mm": [
+        3.4,
+        17.9
+      ],
+      "collisions": [
+        [
+          "C42",
+          "R103"
+        ],
+        [
+          "C42",
+          "R104"
+        ],
+        [
+          "C43",
+          "R103"
+        ],
+        [
+          "C43",
+          "R104"
+        ]
+      ]
+    },
+    {
+      "U14_centre_mm": [
+        2.25,
+        13
+      ],
+      "C42_centre_mm": [
+        6,
+        17.4
+      ],
+      "C43_centre_mm": [
+        -1.5,
+        17.4
+      ],
+      "collisions": [
+        [
+          "C42",
+          "C85"
+        ],
+        [
+          "C43",
+          "U1"
+        ]
+      ]
+    }
+  ]
+}

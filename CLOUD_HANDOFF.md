@@ -1,4 +1,44 @@
-## Current independent display search — 2026-10-07
+## Current approved 2.3-inch selection and primary review — 2026-10-07
+
+The user uploaded the exact **ER-TFT023-1** datasheet and accepted the smaller
+2.3-inch display. The earlier ≥80% display-body coverage target is explicitly
+relaxed for this panel. Select the no-touch ILI9342 / 320×240 panel for the next
+revision; do not confuse an accepted selection with an implemented replacement.
+
+The primary PDF is now archived and reviewed in
+`evidence/display023-primary-review-2026-10-07/`. SHA-256:
+`476f23033ca4ce0caa9ca6470fbc3d287b841240afaa54db986756fdfa588095`.
+Rotate the native front view 90° CCW for a 45.8×50.9 mm portrait body with a
+right-side flex. The 50-pin audit finds one required role change under the old
+provisional mapping: panel pin 6 / IM0 must connect to 2.8 V VLCD, giving SPI
+mode 1111. The other 49 assignments match; physical mapping is not qualified.
+Existing 2.8 V logic and four-sink backlight circuitry fit the reviewed limits.
+
+The manufacturer recommends a top-contact socket for a flat tail. Retaining
+C262650 behind the panel needs a qualified two-fold path and proposed J7 rotation
+270°; a single-fold alternative uses lower-contact C11063 at 90°. Both proposed
+poses conditionally map panel n → J7 n. No arrangement or new contact-dependent
+source/copper is accepted yet. The nominal placement proposal moves J7, U14,
+C42 and C43, with about 69.54% body/PCB overlap and no nominal rectangle overlaps.
+It does not establish full housing/flex fit, copper clearance or native DRC.
+
+**Dependent implementation is blocked** by unresolved physical flex/slot/contact
+tolerances and the existing U14/C7848 strict supplier pin-1 rotation discrepancy.
+Do not patch a genuine import, guess bend limits, or preserve the old mapping
+after a connector rotation. Preserve accepted native bytes and all 9,842 prior
+connections before any qualified move. The archived proposal and exact native
+measurement coupons make the remaining work reviewable; they are not a board
+build or fabrication pass. Native remains 50 opens (46 J7 + 4 U27), and the board
+is not ready to order. Public package remains 0.0.8-wip-speaker-routing.
+
+The missing new panel PDF blocker is superseded by this upload. Supplier website
+Cloudflare and the alternate connector's signed-CDN denial remain distinct
+observations. Updated cloud startup instructions preserve the 17-host draft and
+previous setup. Draft saving does not apply settings or publish the environment.
+
+---
+
+## Previous independent display search — 2026-10-07
 
 The user instructs the agent to find the new display documentation directly,
 rather than asking them for another PDF. Manufacturer catalog search, robots

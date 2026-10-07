@@ -1,0 +1,11 @@
+import { AFC07_S50FCC_00 } from "/workspace/tscircuit-ai-agent-remote/imports/AFC07_S50FCC_00/AFC07_S50FCC_00"
+import { GRM188R71C104KA01D } from "/workspace/tscircuit-ai-agent-remote/imports/GRM188R71C104KA01D/GRM188R71C104KA01D"
+export default () => (
+  <board width={50} height={65} layers={4} routingDisabled>
+    <schematicsheet name="candidate-measurements" sheetSize="A4">
+      <AFC07_S50FCC_00 name="J7" pcbX={8.2} pcbY={-3} pcbRotation={90} layer="top" schX={0} schY={0} />
+      <GRM188R71C104KA01D name="C42" pcbX={6.25} pcbY={15.7} pcbRotation={270} layer="top" schX={-3} schY={0} />
+      <GRM188R71C104KA01D name="C43" pcbX={-1.15} pcbY={17.4} pcbRotation={180} layer="top" schX={-5} schY={0} />
+    </schematicsheet>
+  </board>
+)

@@ -1,0 +1,23 @@
+Building 1 file(s)...
+Building candidate-measurements.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/candidate-measurements/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+J7 has no pin with requires_power=true
+J7 has no pin with requires_ground=true
+All pins on J7 are underspecified (no pinAttributes set)
+Port pin1 on C42 is missing a trace
+Port pin2 on C42 is missing a trace
+Port pin1 on C43 is missing a trace
+Port pin2 on C43 is missing a trace
+Generating preview images...
+[candidate-measurements] Generating PCB SVG...
+[candidate-measurements] Written pcb.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

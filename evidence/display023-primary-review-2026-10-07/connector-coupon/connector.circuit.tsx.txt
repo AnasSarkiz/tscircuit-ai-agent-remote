@@ -1,0 +1,6 @@
+import { AFC07_S50FCC_00 } from "/workspace/tscircuit-ai-agent-remote/imports/AFC07_S50FCC_00/AFC07_S50FCC_00"
+export default () => (
+  <board width={50} height={65} layers={4} routingDisabled>
+    <AFC07_S50FCC_00 name="J7" pcbX={8.2} pcbY={-3} pcbRotation={90} layer="top" />
+  </board>
+)

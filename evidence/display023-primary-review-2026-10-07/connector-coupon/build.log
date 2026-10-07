@@ -1,0 +1,20 @@
+Building 1 file(s)...
+Building connector.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/connector/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+J7 has no pin with requires_power=true
+J7 has no pin with requires_ground=true
+All pins on J7 are underspecified (no pinAttributes set)
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+Generating preview images...
+[connector] Generating PCB SVG...
+[connector] Written pcb.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

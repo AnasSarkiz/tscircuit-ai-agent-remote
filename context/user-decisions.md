@@ -1,3 +1,14 @@
+Latest explicit display decision, 2026-10-07: **“Accept the 2.3-inch display
+(Recommended)”**. Select no-touch ER-TFT023-1 for the next revision, and relax
+the earlier ≥80% display-body coverage target for this panel. The uploaded exact
+ER-TFT023-1 primary PDF is now available and reviewed; it confirms ILI9342,
+50 contacts at 0.5 mm, and a right-side flex after portrait rotation. This approval
+does not verify a folded mating arrangement or authorize guessing its contacts.
+The review finds required SPI IM0-high / mode 1111, and a nominal placement
+proposal, with final mating and U14 supplier pin-1 discrepancy still unresolved.
+No board source/native replacement has been accepted; preserve the current WIP.
+See evidence/display023-primary-review-2026-10-07/review.md.
+
 Latest explicit browser approval, 2026-10-07: **"Approve this CA import"** for
 the existing environment proxy CA into Chromium's `/home/agent/.pki/nssdb`.
 The exact import completed. Fingerprints show this CA was already trusted under
