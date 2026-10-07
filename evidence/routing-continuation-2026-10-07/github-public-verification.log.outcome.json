@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "evidence/routing-continuation-2026-10-07/verify-public-github.py",
+    "--commit",
+    "e8e4eb46da63fe4ddc398497d5212a415cfa8866",
+    "--output",
+    "evidence/routing-continuation-2026-10-07/github-publication-receipt.json"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 9.53,
+  "peak_process_group_rss_bytes": 58384384,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

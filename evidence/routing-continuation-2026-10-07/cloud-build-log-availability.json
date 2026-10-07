@@ -1,0 +1,43 @@
+{
+  "checked_at_utc": "2026-10-07T07:54:16.238687+00:00",
+  "read_only": true,
+  "official_endpoint": "package_builds/get?include_logs=true",
+  "builds": [
+    {
+      "package_build_id": "299cb950-10a2-43a9-89da-7ed5f411c09f",
+      "anonymous_http_status": 200,
+      "logs_field_present": true,
+      "logs_type": "list",
+      "logs_length": 175,
+      "log_stream_url_present": true,
+      "user_code_job_error": null,
+      "build_in_progress": true
+    },
+    {
+      "package_build_id": "65612dc1-dcf3-491d-b1fb-0d4c3f032e05",
+      "anonymous_http_status": 200,
+      "logs_field_present": true,
+      "logs_type": "list",
+      "logs_length": 143,
+      "log_stream_url_present": true,
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "build_in_progress": false
+    },
+    {
+      "package_build_id": "d86f8b65-4347-4b28-909a-eda0f92a888a",
+      "anonymous_http_status": 200,
+      "logs_field_present": true,
+      "logs_type": "list",
+      "logs_length": 56,
+      "log_stream_url_present": true,
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "build_in_progress": false
+    }
+  ]
+}

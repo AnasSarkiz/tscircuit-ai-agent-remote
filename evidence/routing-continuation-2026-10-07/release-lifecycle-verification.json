@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-10-07T07:59:00.270721+00:00",
+  "read_only": true,
+  "anonymous_release_lifecycle_verified": true,
+  "observed_release_commit_metadata_matches_source": true,
+  "releases": [
+    {
+      "version": "0.0.8-wip-speaker-routing",
+      "anonymous_http_status": 200,
+      "package_release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+      "github_commit_sha": "e8e4eb46da63fe4ddc398497d5212a415cfa8866",
+      "is_latest": true,
+      "ready_to_build": true
+    },
+    {
+      "version": "0.0.8-wip-speaker-routing-0.0.8-wip-speaker-routing",
+      "anonymous_http_status": 200,
+      "package_release_id": "8d7118d7-d6c9-4da7-a5b5-a9bf0115494e",
+      "github_commit_sha": null,
+      "is_latest": false,
+      "ready_to_build": false
+    }
+  ]
+}

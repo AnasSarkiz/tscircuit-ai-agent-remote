@@ -1,0 +1,83 @@
+{
+  "checked_at_utc": "2026-10-07T07:55:25.643000+00:00",
+  "read_only": true,
+  "release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+  "official_get_logs_endpoint_verified": true,
+  "raw_logs_kept_private": true,
+  "builds": [
+    {
+      "package_build_id": "299cb950-10a2-43a9-89da-7ed5f411c09f",
+      "user_code_job_started_at": "2026-10-07T07:38:20.795Z",
+      "user_code_job_completed_at": null,
+      "build_in_progress": true,
+      "user_code_job_error": null,
+      "completed_logs_count": 175,
+      "required_files_present_in_write_log": {
+        "index.circuit.tsx": true,
+        "package.json": true,
+        "tscircuit.config.json": true,
+        "dist/index/circuit.json": false
+      },
+      "selected_non_secret_log_messages": [
+        "Created symlinks for bundled tscircuit dependencies",
+        "Executing script"
+      ],
+      "full_success_inferred": false
+    },
+    {
+      "package_build_id": "65612dc1-dcf3-491d-b1fb-0d4c3f032e05",
+      "user_code_job_started_at": "2026-10-07T07:38:18.356Z",
+      "user_code_job_completed_at": "2026-10-07T07:39:31.604Z",
+      "build_in_progress": false,
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "completed_logs_count": 143,
+      "required_files_present_in_write_log": {
+        "index.circuit.tsx": false,
+        "package.json": false,
+        "tscircuit.config.json": false,
+        "dist/index/circuit.json": false
+      },
+      "selected_non_secret_log_messages": [
+        "Created symlinks for bundled tscircuit dependencies",
+        "Executing script",
+        "Building 0 file(s) with concurrency 4...\n",
+        "No entry file found for transpilation. Make sure you have a lib/index.ts or set mainEntrypoint in tscircuit.config.json\n",
+        "Build exiting with code 1: transpile entry file not found\n",
+        "Script completed with exit code 1"
+      ],
+      "full_success_inferred": false
+    },
+    {
+      "package_build_id": "d86f8b65-4347-4b28-909a-eda0f92a888a",
+      "user_code_job_started_at": "2026-10-07T07:37:47.652Z",
+      "user_code_job_completed_at": "2026-10-07T07:38:16.631Z",
+      "build_in_progress": false,
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "completed_logs_count": 56,
+      "required_files_present_in_write_log": {
+        "index.circuit.tsx": false,
+        "package.json": false,
+        "tscircuit.config.json": false,
+        "dist/index/circuit.json": false
+      },
+      "selected_non_secret_log_messages": [
+        "Created symlinks for bundled tscircuit dependencies",
+        "Executing script",
+        "Building 0 file(s) with concurrency 4...\n",
+        "No entry file found for transpilation. Make sure you have a lib/index.ts or set mainEntrypoint in tscircuit.config.json\n",
+        "Build exiting with code 1: transpile entry file not found\n",
+        "Script completed with exit code 1"
+      ],
+      "full_success_inferred": false
+    }
+  ],
+  "interpretation": "The two completed failures began while multipart upload was incomplete and lack the board entry. The newest observation contains the source entry, package and configuration write logs but remains in progress at Executing script; no successful cloud-CI result is established. The official worker deliberately excludes dist/ from source-build inputs. Anonymous registry bytes and exact preview of the uploaded native output are separately verified, not cloud build approval.",
+  "official_worker_source_excludes_dist": true,
+  "official_worker_source": "evidence/routing-continuation-2026-10-07/official-registry-build-fs-map.ts.txt"
+}

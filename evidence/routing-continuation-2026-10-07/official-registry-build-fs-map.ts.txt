@@ -1,0 +1,70 @@
+import { KyselyDatabaseInstance } from "lib/db/kysely-types"
+
+type NormalizedFilePath = string
+type FileContent = string
+
+export interface PackageFileWithMetadata {
+  path: string
+  content: string
+  isBinary: boolean
+}
+
+export const getPackageReleaseFsMap = async (
+  package_release_id: string,
+  ctx: { db: KyselyDatabaseInstance },
+): Promise<Record<string, string>> => {
+  const files = await getPackageReleaseFsMapWithMetadata(
+    package_release_id,
+    ctx,
+  )
+  const fsMap: Record<NormalizedFilePath, FileContent> = {}
+  for (const file of files) {
+    fsMap[file.path] = file.content
+  }
+  return fsMap
+}
+
+export const getPackageReleaseFsMapWithMetadata = async (
+  package_release_id: string,
+  ctx: { db: KyselyDatabaseInstance },
+): Promise<PackageFileWithMetadata[]> => {
+  const { db } = ctx
+
+  const files: PackageFileWithMetadata[] = []
+
+  // Get all the files in the package release (except those in the dist/ directory)
+  // make sure to use normalize_file_path
+  const result = await db
+    .selectFrom("main.package_file")
+    .select([
+      "normalized_file_path",
+      "content_text",
+      "content_bytes",
+      "is_text",
+    ])
+    .where("package_release_id", "=", package_release_id)
+    .where("normalized_file_path", "not like", "dist/%")
+    .execute()
+
+  // Populate the files array with normalized file paths and their content
+  for (const row of result) {
+    if (row.is_text && row.content_text) {
+      files.push({
+        path: row.normalized_file_path!,
+        content: row.content_text,
+        isBinary: false,
+      })
+    } else if (row.content_bytes) {
+      files.push({
+        path: row.normalized_file_path!,
+        content: Buffer.from(row.content_bytes).toString("base64"),
+        isBinary: true,
+      })
+    } else {
+      // Log warning for files with no content
+      console.warn(`File ${row.normalized_file_path} has no content`)
+    }
+  }
+
+  return files
+}

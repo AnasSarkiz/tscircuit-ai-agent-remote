@@ -1,0 +1,178 @@
+import { cacheBuildTrigger } from "lib/usercode/build-trigger-cache"
+import { canAccountManagePackage } from "lib/auth/package-permissions"
+import { withWinterSpec } from "lib/with-winter-spec"
+import { z } from "zod"
+import * as ZT from "lib/zod"
+import { publicMapPackageRelease } from "lib/public-mapping/public-map-package-release"
+
+export default withWinterSpec({
+  methods: ["POST"],
+  auth: "session",
+  jsonBody: z.object({
+    package_id: z.string().uuid().optional(),
+    version: ZT.version_string.optional(),
+    is_latest: z.boolean().optional(),
+    ready_to_build: z.boolean().optional(),
+    commit_sha: z.string().optional(),
+    package_name: z.string().optional(),
+    package_name_with_version: z.string().optional(),
+  }),
+  jsonResponse: z.object({
+    ok: z.boolean(),
+    package_release: ZT.public_package_release,
+  }),
+})(async (req, ctx) => {
+  let {
+    package_id,
+    is_latest = true,
+    ready_to_build = false,
+    version,
+    commit_sha,
+    package_name_with_version,
+    package_name,
+  } = req.jsonBody
+
+  if (!package_name_with_version && package_name && version) {
+    package_name_with_version = `${package_name}@${version}`
+  }
+
+  if (package_name_with_version) {
+    const [package_name, parsed_version] = package_name_with_version.split("@")
+    const pkg = await ctx.db
+      .selectFrom("main.package")
+      .select("package_id")
+      .where("name", "=", package_name!)
+      .executeTakeFirst()
+
+    if (!pkg) {
+      return ctx.error(404, {
+        error_code: "package_not_found",
+        message: `Package not found: ${package_name}`,
+      })
+    }
+
+    package_id ??= pkg.package_id
+    version ??= parsed_version!
+  }
+
+  if (!package_id || !version) {
+    return ctx.error(400, {
+      error_code: "missing_options",
+      message: "package_id and version are required",
+    })
+  }
+
+  // Check ownership
+  const pkg = await ctx.db
+    .selectFrom("main.package")
+    .select("owner_org_id")
+    .where("package_id", "=", package_id)
+    .executeTakeFirst()
+
+  if (!pkg) {
+    // This should technically be caught earlier if package_name_with_version was used,
+    // but this handles the case where an invalid package_id is provided directly.
+    return ctx.error(404, {
+      error_code: "package_not_found",
+      message: `Package not found: ${package_id}`,
+    })
+  }
+
+  const canManagePackage = await canAccountManagePackage(
+    { org_id: pkg.owner_org_id },
+    ctx,
+  )
+
+  if (!canManagePackage) {
+    return ctx.error(403, {
+      error_code: "forbidden",
+      message: "You do not have permission to create releases for this package",
+    })
+  }
+
+  // TODO: Check if a release with this version already exists for this package.
+  // If it does, return an error (e.g., 409 Conflict).
+
+  // TODO: Determine if this version should be the latest.
+  // This might involve comparing version strings (semver) or simply using the is_latest flag.
+  // If commit_sha is provided, it might imply it's the latest development version.
+
+  const package_release = await ctx.db.transaction().execute(async (trx) => {
+    if (is_latest) {
+      await ctx.db
+        .updateTable("main.package_release")
+        .set({
+          is_latest: false,
+        })
+        .where("package_id", "=", package_id!)
+        .where("is_latest", "=", true)
+        .execute()
+    }
+
+    const package_release = await ctx.db
+      .insertInto("main.package_release")
+      .values({
+        package_id: package_id,
+        is_latest,
+        ready_to_build,
+        version: version,
+        commit_sha: commit_sha,
+      })
+      .returning([
+        "package_release_id",
+        "package_id",
+        "is_latest",
+        "ready_to_build",
+        "is_locked",
+        "version",
+        "commit_sha",
+        "created_at",
+        "circuit_json_build_error",
+        "circuit_json_build_error_last_updated_at",
+        "has_transpiled",
+        "transpilation_error",
+        "transpilation_logs",
+        "transpilation_in_progress",
+        "transpilation_started_at",
+        "transpilation_completed_at",
+        "transpilation_is_stale",
+        "transpilation_display_status",
+        "circuit_json_build_logs",
+        "circuit_json_build_in_progress",
+        "circuit_json_build_started_at",
+        "circuit_json_build_completed_at",
+        "circuit_json_build_is_stale",
+        "circuit_json_build_display_status",
+        "image_generation_error",
+        "image_generation_error_last_updated_at",
+        "image_generation_logs",
+        "image_generation_in_progress",
+        "image_generation_started_at",
+        "image_generation_completed_at",
+        "image_generation_is_stale",
+        "image_generation_display_status",
+        "pcb_preview_image_url",
+        "sch_preview_image_url",
+        "cad_preview_image_url",
+        "display_status",
+        "ai_review_requested",
+      ])
+      .executeTakeFirstOrThrow()
+    if (ready_to_build)
+      await cacheBuildTrigger(
+        ctx,
+        package_release.package_release_id,
+        ctx.auth.account_id,
+      )
+    return package_release
+  })
+
+  return ctx.json({
+    ok: true,
+    package_release: publicMapPackageRelease({
+      ...package_release,
+      // Will get computed when new files are added
+      fs_sha: null,
+    }),
+  })
+})

@@ -1,0 +1,70 @@
+import { test, expect } from "bun:test"
+import { getTestServer } from "tests/fixtures/get-test-server"
+
+test("POST /package_releases/update - only changes is_latest for specified package_release", async () => {
+  const { jane_axios, seed } = await getTestServer()
+
+  // Create a package
+  const packageRes = await jane_axios.post("/packages/create", {
+    creator_account_id: seed.jane.account_id,
+    name: "@jane/test-package",
+  })
+  expect(packageRes.data.package).toBeTruthy()
+
+  // Create two package releases
+  const packageReleaseRes1 = await jane_axios.post("/package_releases/create", {
+    package_id: packageRes.data.package.package_id,
+    version: "1.0.0",
+  })
+  expect(packageReleaseRes1.data.package_release).toBeTruthy()
+
+  const packageReleaseRes2 = await jane_axios.post("/package_releases/create", {
+    package_id: packageRes.data.package.package_id,
+    version: "2.0.0",
+  })
+  expect(packageReleaseRes2.data.package_release).toBeTruthy()
+
+  // Update the first package release to be is_latest
+  const updateRes1 = await jane_axios.post("/package_releases/update", {
+    package_name_with_version: "@jane/test-package@1.0.0",
+    is_latest: true,
+  })
+  expect(updateRes1.data.ok).toBe(true)
+
+  // Ensure the first package release is_latest is true and second is false
+  const checkRes1 = await jane_axios.post("/package_releases/list", {
+    package_id: packageRes.data.package.package_id,
+  })
+  expect(
+    checkRes1.data.package_releases.some(
+      (pr) => pr.version === "1.0.0" && pr.is_latest,
+    ),
+  ).toBe(true)
+  expect(
+    checkRes1.data.package_releases.some(
+      (pr) => pr.version === "2.0.0" && pr.is_latest,
+    ),
+  ).toBe(false)
+
+  // Update the second package release to be is_latest
+  const updateRes2 = await jane_axios.post("/package_releases/update", {
+    package_name_with_version: "@jane/test-package@2.0.0",
+    is_latest: true,
+  })
+  expect(updateRes2.data.ok).toBe(true)
+
+  // Ensure the second package release is_latest is true and first is false
+  const checkRes2 = await jane_axios.post("/package_releases/list", {
+    package_id: packageRes.data.package.package_id,
+  })
+  expect(
+    checkRes2.data.package_releases.some(
+      (pr) => pr.version === "1.0.0" && pr.is_latest,
+    ),
+  ).toBe(false)
+  expect(
+    checkRes2.data.package_releases.some(
+      (pr) => pr.version === "2.0.0" && pr.is_latest,
+    ),
+  ).toBe(true)
+})

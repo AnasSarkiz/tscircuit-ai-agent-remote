@@ -1,0 +1,201 @@
+import { z } from "zod"
+import * as ZT from "lib/zod"
+import { JSONValue } from "zapatos/db"
+import { jsonValueToArray } from "lib/utils/json-value-to-array"
+
+export const publicMapPackageRelease = (
+  internal_package_release: {
+    package_id: string
+    package_release_id: string
+    version: string | null
+    commit_sha?: string | null
+    is_locked: boolean
+    is_latest: boolean
+    ready_to_build: boolean
+    is_pr_preview?: boolean | null
+    created_at: Date
+    circuit_json_build_error: string | null
+    circuit_json_build_error_last_updated_at: Date | null
+    has_transpiled: boolean | null
+    transpilation_error: string | null
+    fs_sha: string | null
+    transpilation_logs: JSONValue | null
+    transpilation_in_progress: boolean | null
+    transpilation_started_at: Date | null
+    transpilation_completed_at: Date | null
+    transpilation_is_stale: boolean | null
+    transpilation_display_status: string | null
+    circuit_json_build_logs: JSONValue | null
+    circuit_json_build_in_progress: boolean | null
+    circuit_json_build_started_at: Date | null
+    circuit_json_build_completed_at: Date | null
+    circuit_json_build_is_stale: boolean | null
+    circuit_json_build_display_status: string | null
+    image_generation_error: string | null
+    image_generation_error_last_updated_at: Date | null
+    image_generation_logs: JSONValue | null
+    image_generation_in_progress: boolean | null
+    image_generation_started_at: Date | null
+    image_generation_completed_at: Date | null
+    image_generation_is_stale: boolean | null
+    image_generation_display_status: string | null
+    pcb_preview_image_url?: string | null
+    sch_preview_image_url?: string | null
+    cad_preview_image_url?: string | null
+    package_release_website_url?: string | null
+    display_status: string | null
+    latest_package_build_id?: string | null
+    ai_review_requested: boolean
+    ai_review_text?: string | null
+    ai_review_started_at?: Date | null
+    ai_review_completed_at?: Date | null
+    ai_review_error?: any | null
+
+    user_code_job_error?: any | null
+    user_code_job_completed_at?: Date | null
+    user_code_job_completed_logs?: any | null
+    user_code_job_log_stream_url?: string | null
+    user_code_job_started_at?: Date | null
+
+    pr_number?: number | null
+    pr_title?: string | null
+    branch_name?: string | null
+  },
+  options?: {
+    include_logs?: boolean
+    include_ai_review?: boolean
+  },
+): z.infer<typeof ZT.public_package_release> => {
+  // Destructure to exclude AI review fields that should be conditional
+  const {
+    ai_review_text,
+    ai_review_started_at,
+    ai_review_completed_at,
+    ai_review_error,
+    commit_sha,
+    ...baseFields
+  } = internal_package_release
+
+  return {
+    ...baseFields,
+    created_at: internal_package_release.created_at.toISOString(),
+    circuit_json_build_error:
+      internal_package_release.circuit_json_build_error ?? null,
+    circuit_json_build_error_last_updated_at:
+      internal_package_release.circuit_json_build_error_last_updated_at?.toISOString() ??
+      null,
+    ready_to_build: internal_package_release.ready_to_build,
+    has_transpiled: internal_package_release.has_transpiled ?? null,
+    transpilation_error: internal_package_release.transpilation_error ?? null,
+    transpilation_logs: options?.include_logs
+      ? jsonValueToArray<z.infer<typeof ZT.log>>(
+          internal_package_release.transpilation_logs,
+          "transpilation_logs",
+        )
+      : null,
+    transpilation_in_progress:
+      internal_package_release.transpilation_in_progress ?? null,
+    transpilation_started_at:
+      internal_package_release.transpilation_started_at?.toISOString() ?? null,
+    transpilation_completed_at:
+      internal_package_release.transpilation_completed_at?.toISOString() ??
+      null,
+    transpilation_is_stale:
+      internal_package_release.transpilation_is_stale ?? null,
+    transpilation_display_status:
+      internal_package_release.transpilation_display_status ?? null,
+    circuit_json_build_logs: options?.include_logs
+      ? jsonValueToArray<z.infer<typeof ZT.log>>(
+          internal_package_release.circuit_json_build_logs,
+          "circuit_json_build_logs",
+        )
+      : null,
+    circuit_json_build_in_progress:
+      internal_package_release.circuit_json_build_in_progress ?? null,
+    circuit_json_build_started_at:
+      internal_package_release.circuit_json_build_started_at?.toISOString() ??
+      null,
+    circuit_json_build_completed_at:
+      internal_package_release.circuit_json_build_completed_at?.toISOString() ??
+      null,
+    circuit_json_build_is_stale:
+      internal_package_release.circuit_json_build_is_stale ?? null,
+    circuit_json_build_display_status:
+      internal_package_release.circuit_json_build_display_status ?? null,
+    image_generation_logs: options?.include_logs
+      ? jsonValueToArray<z.infer<typeof ZT.log>>(
+          internal_package_release.image_generation_logs,
+          "image_generation_logs",
+        )
+      : null,
+    image_generation_in_progress:
+      internal_package_release.image_generation_in_progress ?? null,
+    image_generation_started_at:
+      internal_package_release.image_generation_started_at?.toISOString() ??
+      null,
+    image_generation_completed_at:
+      internal_package_release.image_generation_completed_at?.toISOString() ??
+      null,
+    image_generation_is_stale:
+      internal_package_release.image_generation_is_stale ?? null,
+    image_generation_error:
+      internal_package_release.image_generation_error ?? null,
+    image_generation_error_last_updated_at:
+      internal_package_release.image_generation_error_last_updated_at?.toISOString() ??
+      null,
+    image_generation_display_status:
+      internal_package_release.image_generation_display_status ?? null,
+    pcb_preview_image_url:
+      internal_package_release.pcb_preview_image_url ?? null,
+    sch_preview_image_url:
+      internal_package_release.sch_preview_image_url ?? null,
+    cad_preview_image_url:
+      internal_package_release.cad_preview_image_url ?? null,
+    package_release_website_url:
+      internal_package_release.package_release_website_url ?? null,
+    display_status: internal_package_release.display_status ?? null,
+    latest_package_build_id:
+      internal_package_release.latest_package_build_id ?? null,
+    is_pr_preview: Boolean(internal_package_release.is_pr_preview),
+
+    user_code_job_started_at: internal_package_release.user_code_job_started_at
+      ? new Date(
+          internal_package_release.user_code_job_started_at,
+        ).toISOString()
+      : null,
+    user_code_job_completed_at:
+      internal_package_release.user_code_job_completed_at
+        ? new Date(
+            internal_package_release.user_code_job_completed_at,
+          ).toISOString()
+        : null,
+    user_code_job_error: internal_package_release.user_code_job_error ?? null,
+    user_code_job_completed_logs: options?.include_logs
+      ? jsonValueToArray<z.infer<typeof ZT.log>>(
+          internal_package_release.user_code_job_completed_logs,
+          "user_code_job_completed_logs",
+        )
+      : null,
+    user_code_job_log_stream_url:
+      internal_package_release.user_code_job_log_stream_url ?? null,
+
+    ai_review_requested: internal_package_release.ai_review_requested,
+    ...(options?.include_ai_review
+      ? {
+          ai_review_text: ai_review_text ?? null,
+          ai_review_started_at: ai_review_started_at
+            ? new Date(ai_review_started_at).toISOString()
+            : null,
+          ai_review_completed_at: ai_review_completed_at
+            ? new Date(ai_review_completed_at).toISOString()
+            : null,
+          ai_review_error: ai_review_error ?? null,
+        }
+      : {}),
+
+    github_pr_number: internal_package_release.pr_number ?? null,
+    github_pr_title: internal_package_release.pr_title ?? null,
+    github_branch_name: internal_package_release.branch_name ?? null,
+    github_commit_sha: commit_sha ?? null,
+  }
+}

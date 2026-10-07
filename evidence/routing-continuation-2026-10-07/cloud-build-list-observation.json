@@ -1,0 +1,70 @@
+{
+  "checked_at_utc": "2026-10-07T07:52:59.256483+00:00",
+  "release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+  "read_only": true,
+  "endpoint": "https://registry-api.tscircuit.com/package_builds/list?package_release_id=fe016b4d-9fa0-4250-aa83-972af72b294a",
+  "http_status": 200,
+  "ok": true,
+  "package_builds": [
+    {
+      "package_build_id": "299cb950-10a2-43a9-89da-7ed5f411c09f",
+      "package_release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+      "created_at": "2026-10-07T07:38:20.663Z",
+      "build_in_progress": true,
+      "user_code_job_started_at": "2026-10-07T07:38:20.795Z",
+      "user_code_job_completed_at": null,
+      "user_code_job_error": null,
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_error": null,
+      "transpilation_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_started_at": null,
+      "image_generation_completed_at": null,
+      "image_generation_error": null
+    },
+    {
+      "package_build_id": "65612dc1-dcf3-491d-b1fb-0d4c3f032e05",
+      "package_release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+      "created_at": "2026-10-07T07:38:18.243Z",
+      "build_in_progress": false,
+      "user_code_job_started_at": "2026-10-07T07:38:18.356Z",
+      "user_code_job_completed_at": "2026-10-07T07:39:31.604Z",
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_error": null,
+      "transpilation_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_started_at": null,
+      "image_generation_completed_at": null,
+      "image_generation_error": null
+    },
+    {
+      "package_build_id": "d86f8b65-4347-4b28-909a-eda0f92a888a",
+      "package_release_id": "fe016b4d-9fa0-4250-aa83-972af72b294a",
+      "created_at": "2026-10-07T07:37:47.532Z",
+      "build_in_progress": false,
+      "user_code_job_started_at": "2026-10-07T07:37:47.652Z",
+      "user_code_job_completed_at": "2026-10-07T07:38:16.631Z",
+      "user_code_job_error": {
+        "message": "Your code failed to build (exit code 1), see build logs for the error details",
+        "error_code": "user_code_build_error"
+      },
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_error": null,
+      "transpilation_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_started_at": null,
+      "image_generation_completed_at": null,
+      "image_generation_error": null
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "authored_source_whitespace_check": "git diff --check origin/main HEAD -- README.md CLOUD_HANDOFF.md VALIDATION.md REQUIREMENTS.md BOM.md context package.json src/board scripts/routing",
+  "authored_source_diagnostics_bytes": 0,
+  "raw_evidence_whitespace_diagnostics": true,
+  "reason": "Unmodified supplier/model source snapshots and exact official CSV outputs retain their original whitespace and CRLF line endings. Raw capture bytes are preserved rather than reformatted.",
+  "board_checks_or_thresholds_modified": false
+}
