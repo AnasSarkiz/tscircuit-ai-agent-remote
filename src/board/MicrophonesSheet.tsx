@@ -19,7 +19,16 @@ export function MicrophonesSheet({ placementOnly = false }: { placementOnly?: bo
         <ICS_43434 name="U4" {...place("U4")} schX={-7} schY={4} />
         <ICS_43434 name="U5" {...place("U5")} schX={7} schY={4} />
         <GRM188R71C104KA01D name="C80" {...place("C80")} schX={-1} schY={9} schRotation={-90} />
-        <GRM188R71C104KA01D name="C81" {...place("C81")} schX={1} schY={9} schRotation={-90} />
+        <GRM188R71C104KA01D
+          name="C81"
+          {...place("C81")}
+          schX={1}
+          schY={9}
+          schRotation={-90}
+          // Untouched supplier courtyards impose a 1.38 mm lower bound.
+          // Keep a finite 2 mm limit; the direct top route measures 1.44 mm.
+          maxDecouplingTraceLength={2}
+        />
         <TLV3201AIDBVR name="U7" {...place("U7")} schX={0} schY={-5} />
         <RC0603FR_07100KL name="R26" {...place("R26")} schX={-10} schY={-4} schRotation={-90} />
         <A_0603WAF1001T5E name="R27" {...place("R27")} schX={7} schY={-5} />
@@ -61,12 +70,23 @@ export function MicrophonesSheet({ placementOnly = false }: { placementOnly?: bo
           width={0.3}
           pcbPath={groundPath("C80.pin2", placementOnly)}
         />
-        <trace from="C81.pin1" to="net.VMIC" />
+        {/* Local bypass loop stays on top copper, joining U5's existing supply
+            escape and ground landing without another layer transition. */}
+        <trace
+          path={["C81.pin1", "U5.pin5", "net.VMIC"]}
+          width={0.3}
+          pcbPathRelativeTo=".C81 > .pin1"
+          pcbPath={placementOnly ? undefined : ["U5.pin5"]}
+        />
         <trace
           from="C81.pin2"
           to="net.GND"
           width={0.3}
-          pcbPath={groundPath("C81.pin2", placementOnly)}
+          // Preflight sees a GND pad 2.15 mm away before the pour exists.
+          // Keep a finite branch limit; actual top pour-entry stub is 0.60 mm.
+          maxLength={2.5}
+          pcbPathRelativeTo=".C81 > .pin2"
+          pcbPath={placementOnly ? undefined : [{ x: 1.3, y: 0 }]}
         />
         <trace from="U7.pin1" to="net.MIC_SD_BUFFERED" />
         <trace

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "bun",
+    "node_modules/.bin/tsci",
+    "check",
+    "netlist",
+    "index.circuit.tsx"
+  ],
+  "cwd": "/workspace/tscircuit-ai-agent-remote/.publish/board",
+  "exit_code": 0,
+  "completed": true,
+  "elapsed_seconds": 2.57
+}

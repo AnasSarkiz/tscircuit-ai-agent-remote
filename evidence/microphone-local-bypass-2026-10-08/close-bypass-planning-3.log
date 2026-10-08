@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/plan-close-mic-bypass.py", line 43, in <module>
+    if via is None:raise RuntimeError('No legal direct R93 supply escape within local search bounds')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: No legal direct R93 supply escape within local search bounds

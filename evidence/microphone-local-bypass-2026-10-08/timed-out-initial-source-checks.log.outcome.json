@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/cloud/check_board_source.py",
+    ".publish/board",
+    "evidence/microphone-local-bypass-2026-10-08/source-checks"
+  ],
+  "exit_code": -15,
+  "termination": "TIME_BUDGET_REACHED",
+  "elapsed_seconds": 190.44,
+  "peak_process_group_rss_bytes": 1901625344,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": false,
+  "passing_validation_inferred": false
+}

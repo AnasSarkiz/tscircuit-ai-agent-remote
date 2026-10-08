@@ -1,0 +1,255 @@
+{
+  "classification": "prospective rigid transforms of genuine footprints; actual native regeneration and full audits still required",
+  "poses": {
+    "C81": {
+      "old": [
+        4,
+        -19.25
+      ],
+      "new": [
+        17.05,
+        -28.1
+      ],
+      "angle": 180
+    },
+    "R93": {
+      "old": [
+        16.75,
+        -28.25
+      ],
+      "new": [
+        16.5,
+        -31.25
+      ],
+      "angle": 0
+    }
+  },
+  "retired_trace_ids": [
+    "pcb_trace_193",
+    "pcb_trace_300",
+    "pcb_trace_303",
+    "pcb_trace_90"
+  ],
+  "retired_via_ids": [
+    "pcb_via_159",
+    "pcb_via_263",
+    "pcb_via_266"
+  ],
+  "measurements": [
+    {
+      "part": "R93",
+      "pad": [
+        "1"
+      ],
+      "bounds_mm": [
+        15.3434,
+        -31.682,
+        16.149900000000002,
+        -30.818
+      ]
+    },
+    {
+      "part": "R93",
+      "pad": [
+        "2"
+      ],
+      "bounds_mm": [
+        16.8501,
+        -31.682,
+        17.6566,
+        -30.818
+      ]
+    },
+    {
+      "part": "C81",
+      "pad": [
+        "pin2"
+      ],
+      "bounds_mm": [
+        15.949976800000002,
+        -28.5499991,
+        16.7499752,
+        -27.650000900000002
+      ]
+    },
+    {
+      "part": "C81",
+      "pad": [
+        "pin1"
+      ],
+      "bounds_mm": [
+        17.3500248,
+        -28.5499991,
+        18.1500232,
+        -27.650000900000002
+      ]
+    },
+    {
+      "route": "bypass-supply",
+      "path_mm": [
+        [
+          17.750024,
+          -28.1
+        ],
+        [
+          19.1928144,
+          -28.099951
+        ]
+      ],
+      "width_mm": 0.3,
+      "length_mm": 1.442790400832068,
+      "layer": "top"
+    },
+    {
+      "route": "bypass-ground",
+      "path_mm": [
+        [
+          16.349976,
+          -28.1
+        ],
+        [
+          16.35,
+          -27.2
+        ]
+      ],
+      "width_mm": 0.3,
+      "length_mm": 0.9000000003200022,
+      "layer": "top"
+    },
+    {
+      "route": "R93-supply-escape",
+      "path_mm": [
+        [
+          15.74665,
+          -31.25
+        ],
+        [
+          14.8,
+          -31.75
+        ]
+      ],
+      "width_mm": 0.3,
+      "length_mm": 1.070582188577785,
+      "layer": "top"
+    },
+    {
+      "route": "R93-WS",
+      "path_mm": [
+        [
+          17.25335,
+          -31.25
+        ],
+        [
+          18.5,
+          -31.25
+        ],
+        [
+          18.499994,
+          -30.300049
+        ]
+      ],
+      "width_mm": 0.2,
+      "length_mm": 2.196601000018946,
+      "layer": "top"
+    },
+    {
+      "route": "R93-bottom-distribution",
+      "path_mm": [
+        [
+          14.8,
+          -31.75
+        ],
+        [
+          20.014758,
+          -30.700049
+        ]
+      ],
+      "length_mm": 5.31940768328251,
+      "width_mm": 0.3,
+      "layer": "bottom"
+    }
+  ],
+  "regions": [
+    {
+      "net": "VMIC",
+      "layer": "bottom",
+      "nominal_width_mm": 0.3,
+      "drawn_width_mm": 0.302,
+      "path_mm": [
+        [
+          14.8,
+          -31.75
+        ],
+        [
+          20.014758,
+          -30.700049
+        ]
+      ],
+      "outline": [
+        {
+          "x": 20.014758,
+          "y": -30.700049
+        },
+        {
+          "x": 20.044365,
+          "y": -30.847098
+        },
+        {
+          "x": 20.044563,
+          "y": -30.848078
+        },
+        {
+          "x": 14.829805,
+          "y": -31.898029
+        },
+        {
+          "x": 14.8,
+          "y": -31.75
+        },
+        {
+          "x": 14.770393,
+          "y": -31.602951
+        },
+        {
+          "x": 14.770195,
+          "y": -31.601971
+        },
+        {
+          "x": 19.984953,
+          "y": -30.55202
+        }
+      ]
+    }
+  ],
+  "violations": [
+    [
+      "pad-drill",
+      "pcb_smtpad_360",
+      0.11800000000000208
+    ],
+    [
+      "pad-copper",
+      "pcb_smtpad_360",
+      0.16799999999999926
+    ],
+    [
+      "pad-copper",
+      "pcb_smtpad_360",
+      0.042999999999999254
+    ],
+    [
+      "trace-obstacle",
+      "bypass-ground"
+    ],
+    [
+      "via-obstacle",
+      [
+        14.8,
+        -31.75
+      ]
+    ]
+  ],
+  "ready_for_native_trial": false,
+  "minimum_possible_capacitor_pad_centre_distance_mm": 1.3800592,
+  "basis": "Untouched U5 VDD is 0.7300600 mm inside its nearest courtyard boundary; C81 supply-pad centre is at least 0.6499992 mm inside its own courtyard at any rotation. Nonoverlapping courtyards therefore cannot meet the inferred 1.0 mm maximum. New declared 2.0 mm target retains a finite bound above that physical lower bound; actual proposed top route is 1.4427904 mm."
+}

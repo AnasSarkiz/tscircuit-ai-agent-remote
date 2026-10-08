@@ -1,0 +1,161 @@
+{
+  "scope": "Every native wire, pad, through via and BREP pour; actual supported pad contours for DRC and connectivity, conservative interpolated wire thickness. No fabrication or thermal approval implied.",
+  "copper_features": 1702,
+  "native_errors": {
+    "pcb_autorouting_error": 1,
+    "pcb_port_not_connected_error": 79,
+    "pcb_trace_missing_error": 7
+  },
+  "minima": {
+    "via_hole": {
+      "clearance_mm": 0.3,
+      "requirement_mm": 0.3,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_outer": {
+      "clearance_mm": 0.45,
+      "requirement_mm": 0.45,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "via_annulus": {
+      "clearance_mm": 0.07500000000000001,
+      "requirement_mm": 0.075,
+      "ids": [
+        "pcb_via_0"
+      ]
+    },
+    "copper_pad_pour": {
+      "clearance_mm": 0.204173211416443,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_443",
+        "pcb_copper_pour_103"
+      ]
+    },
+    "copper_pad_trace": {
+      "clearance_mm": 0.20007509791604258,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_134",
+        "pcb_trace_6:0"
+      ]
+    },
+    "via_drill_to_pad": {
+      "clearance_mm": 0.20000119999999907,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_311",
+        "pcb_smtpad_16"
+      ]
+    },
+    "copper_pad": {
+      "clearance_mm": 0.19758659999999928,
+      "requirement_mm": 0.1,
+      "ids": [
+        "pcb_smtpad_214",
+        "pcb_smtpad_215"
+      ]
+    },
+    "copper_pad_via": {
+      "clearance_mm": 0.20296966165754915,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_smtpad_274",
+        "pcb_via_268"
+      ]
+    },
+    "copper_pour_via": {
+      "clearance_mm": 0.20790451141653987,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_276",
+        "pcb_copper_pour_0"
+      ]
+    },
+    "board_edge": {
+      "clearance_mm": 0.24999941637971776,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_0"
+      ]
+    },
+    "keepout": {
+      "clearance_mm": 0.039951473904787003,
+      "requirement_mm": 0,
+      "ids": [
+        "pcb_copper_pour_0",
+        "pcb_keepout_2"
+      ]
+    },
+    "copper_trace_via": {
+      "clearance_mm": 0.21124106451886615,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_113",
+        "pcb_trace_288:1"
+      ]
+    },
+    "copper_via": {
+      "clearance_mm": 0.21742342724959796,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_via_64",
+        "pcb_via_271"
+      ]
+    },
+    "copper_pour_trace": {
+      "clearance_mm": 0.20658071289511518,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_10:0",
+        "pcb_copper_pour_72"
+      ]
+    },
+    "copper_trace": {
+      "clearance_mm": 0.20197200037658117,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_trace_329:4",
+        "pcb_trace_343:0"
+      ]
+    },
+    "copper_to_drill": {
+      "clearance_mm": 0.25658072024423334,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_copper_pour_28",
+        "pcb_hole_5"
+      ]
+    },
+    "copper_pour": {
+      "clearance_mm": 0.20999935634445152,
+      "requirement_mm": 0.2,
+      "ids": [
+        "pcb_copper_pour_49",
+        "pcb_copper_pour_239"
+      ]
+    },
+    "drill_to_drill": {
+      "clearance_mm": 0.26041139833359017,
+      "requirement_mm": 0.25,
+      "ids": [
+        "pcb_via_165",
+        "pcb_via_166"
+      ]
+    }
+  },
+  "minima_scope": "Nearby copper pairs within 0.21 mm and drill pairs within 0.26 mm; STRtree excludes distant pairs without weakening any clearance requirement.",
+  "drc_violation_count": 0,
+  "short_count": 0,
+  "merged_named_nets": [],
+  "physically_open_net_count": 28,
+  "zero_drc_zero_shorts_and_connected": false,
+  "source_circuit_json": "/workspace/tscircuit-ai-agent-remote/.publish/board/dist/index/circuit.json",
+  "source_sha256": "a3eced83af8f085b54d479694d7d7799ccabf2508ab2fae3ac9692985c54704d",
+  "audit_script_sha256": "2cf1dbab63a0a9d01ed716d73556d71cf24a4e9ee0965debb632f4e8da9e9fad",
+  "pad_contour_method": "Native rounded rectangles honour corner_radius and rotation; rectangular bounds only where the native shape has no radius. Requirements and 0.000001 mm tolerance unchanged."
+}

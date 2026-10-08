@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "sandbox-ui-style-analysis.html.gz",
+      "original_uncompressed_bytes": 350919,
+      "original_uncompressed_sha256": "c0ecb7c1ec594b4c7f33dccac9e67b3c39f309fe3d459d014e0da36b7486cb86",
+      "public_redacted_uncompressed_sha256": "13e9bbdeb4fc27f91e3b43b6c708ab95cd8611f8ead09f08d22f5b30a4921514",
+      "credential_pattern_matches_removed": 1,
+      "original_retained_outside_public_repository": true,
+      "classification": "Actual browser HTML with credential-shaped preview initialization content redacted; not byte-identical raw HTML. PNG/analysis receipt/native unchanged."
+    },
+    {
+      "path": "ui-style-analysis.html.gz",
+      "original_uncompressed_bytes": 3313913,
+      "original_uncompressed_sha256": "be1dcad8dd86257a7ee2b7acb1014828c33c280c3da440eda4a42a217b299cbf",
+      "public_redacted_uncompressed_sha256": "596f54f2c0ff33b18186ddab481dc28f1e6814d8ebc1287b62ac65084be33249",
+      "credential_pattern_matches_removed": 1,
+      "original_retained_outside_public_repository": true,
+      "classification": "Actual browser HTML with credential-shaped preview initialization content redacted; not byte-identical raw HTML. PNG/analysis receipt/native unchanged."
+    }
+  ],
+  "raw_originals_private_workspace_path": "/tmp/microphone-local-bypass-private-evidence",
+  "raw_originals_not_for_public_upload": true
+}

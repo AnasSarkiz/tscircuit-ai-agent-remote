@@ -1,0 +1,181 @@
+{
+  "classification": "prospective rigid transforms of genuine footprints; actual native regeneration and full audits still required",
+  "poses": {
+    "C81": {
+      "old": [
+        4,
+        -19.25
+      ],
+      "new": [
+        17.05,
+        -28.1
+      ],
+      "angle": 180
+    },
+    "R93": {
+      "old": [
+        16.75,
+        -28.25
+      ],
+      "new": [
+        16.5,
+        -31.42
+      ],
+      "angle": 0
+    }
+  },
+  "retired_trace_ids": [
+    "pcb_trace_193",
+    "pcb_trace_300",
+    "pcb_trace_303",
+    "pcb_trace_90"
+  ],
+  "retired_via_ids": [
+    "pcb_via_159",
+    "pcb_via_263",
+    "pcb_via_266"
+  ],
+  "measurements": [
+    {
+      "part": "R93",
+      "pad": [
+        "1"
+      ],
+      "bounds_mm": [
+        15.3434,
+        -31.852,
+        16.149900000000002,
+        -30.988000000000003
+      ]
+    },
+    {
+      "part": "R93",
+      "pad": [
+        "2"
+      ],
+      "bounds_mm": [
+        16.8501,
+        -31.852,
+        17.6566,
+        -30.988000000000003
+      ]
+    },
+    {
+      "part": "C81",
+      "pad": [
+        "pin2"
+      ],
+      "bounds_mm": [
+        15.949976800000002,
+        -28.5499991,
+        16.7499752,
+        -27.650000900000002
+      ]
+    },
+    {
+      "part": "C81",
+      "pad": [
+        "pin1"
+      ],
+      "bounds_mm": [
+        17.3500248,
+        -28.5499991,
+        18.1500232,
+        -27.650000900000002
+      ]
+    },
+    {
+      "route": "bypass-supply",
+      "path_mm": [
+        [
+          17.750024,
+          -28.1
+        ],
+        [
+          19.1928144,
+          -28.099951
+        ]
+      ],
+      "width_mm": 0.3,
+      "length_mm": 1.442790400832068,
+      "layer": "top"
+    },
+    {
+      "route": "bypass-ground",
+      "path_mm": [
+        [
+          16.349976,
+          -28.1
+        ],
+        [
+          15.75,
+          -28.1
+        ]
+      ],
+      "width_mm": 0.3,
+      "length_mm": 0.5999760000000016,
+      "layer": "top"
+    },
+    {
+      "route": "R93-WS",
+      "path_mm": [
+        [
+          17.25335,
+          -31.42
+        ],
+        [
+          18.5,
+          -31.42
+        ],
+        [
+          18.499994,
+          -30.300049
+        ]
+      ],
+      "width_mm": 0.2,
+      "length_mm": 2.3666010000160713,
+      "layer": "top"
+    },
+    {
+      "route": "R93-supply-escape",
+      "path_mm": [
+        [
+          15.74665,
+          -31.42
+        ],
+        [
+          17.21999999999989,
+          -29.82999999999966
+        ],
+        [
+          17.21999999999989,
+          -29.69999999999964
+        ],
+        [
+          17.289999999999885,
+          -29.49999999999961
+        ],
+        [
+          18.450000000000003,
+          -27.35
+        ],
+        [
+          19.35,
+          -27.35
+        ]
+      ],
+      "length_mm": 5.85255115837167,
+      "width_mm": 0.3,
+      "layer": "top",
+      "through_via_mm": [
+        19.35,
+        -27.35
+      ]
+    }
+  ],
+  "regions": [],
+  "violations": [],
+  "ready_for_native_trial": true,
+  "minimum_possible_capacitor_pad_centre_distance_mm": 1.3800592,
+  "basis": "Untouched U5 VDD is 0.7300600 mm inside its nearest courtyard boundary; C81 supply-pad centre is at least 0.6499992 mm inside its own courtyard at any rotation. Nonoverlapping courtyards therefore cannot meet the inferred 1.0 mm maximum. New declared 2.0 mm target retains a finite bound above that physical lower bound; actual proposed top route is 1.4427904 mm."
+}

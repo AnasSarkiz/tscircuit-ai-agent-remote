@@ -1,0 +1,29 @@
+Via nearby pads [('R93', ['1'], 0.5434000000000001)]
+Via nearby foreign copper [('source_port_412', 'inner1', (13.499, -31.301, 15.794585, -27.11015), 0.6052088516769121), ('source_port_363', 'inner1', (6.68507, -31.800996, 17.199252, -26.631828), 0.08514577500148421), ('source_port_412', 'inner2', (12.049, -31.850994, 22.050998, -27.620958), 0.0)]
+Via nearby drills []
+{
+  "classification": "prospective rigid transforms of genuine footprints; actual native regeneration and full audits still required",
+  "retired_trace_ids": [
+    "pcb_trace_193",
+    "pcb_trace_300",
+    "pcb_trace_303",
+    "pcb_trace_90"
+  ],
+  "retired_via_ids": [
+    "pcb_via_159",
+    "pcb_via_263",
+    "pcb_via_266"
+  ],
+  "violations": [
+    [
+      "via-obstacle",
+      [
+        14.8,
+        -31.75
+      ]
+    ]
+  ],
+  "ready_for_native_trial": false,
+  "minimum_possible_capacitor_pad_centre_distance_mm": 1.3800592,
+  "basis": "Untouched U5 VDD is 0.7300600 mm inside its nearest courtyard boundary; C81 supply-pad centre is at least 0.6499992 mm inside its own courtyard at any rotation. Nonoverlapping courtyards therefore cannot meet the inferred 1.0 mm maximum. New declared 2.0 mm target retains a finite bound above that physical lower bound; actual proposed top route is 1.4427904 mm."
+}

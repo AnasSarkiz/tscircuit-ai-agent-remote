@@ -1,0 +1,22 @@
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `Fragment`. It was passed a child from BoardRouting. See https://react.dev/link/warning-keys for more information.
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Async effect error in PcbTraceRender "autorouting":
+TypeError: undefined is not an object (evaluating 'connectedPort.x')
+    at <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:108939:11)
+    at map (native:1:11)
+    at getSimpleRouteJsonFromCircuitJson (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:108928:5)
+    at _runLocalAutorouting (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:119590:52)
+    at <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:120252:26)
+    at _queueAsyncEffect (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:1218:16)
+    at _startAsyncAutorouting (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:120250:12)
+    at updatePcbTraceRender (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:120323:14)
+    at runRenderPhase (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:1378:25)
+    at runRenderCycle (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:1334:12)
+    at render (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/core/dist/index.js:122353:16)
+    at generateCircuitJson (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:167877:12)
+    at async <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:183125:27)
+    at async <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:183158:33)
+    at async <anonymous> (/workspace/tscircuit-ai-agent-remote/node_modules/@tscircuit/cli/dist/cli/main.js:183189:28)
+    at processTicksAndRejections (native:7:39)

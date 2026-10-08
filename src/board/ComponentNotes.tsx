@@ -126,7 +126,7 @@ export const componentExplanations = {
     ["U4", "Digital I2S microphone assigned to the left channel."],
     ["U5", "Digital I2S microphone assigned to the right channel."],
     ["C80", "100 nF supply bypass for microphone U4."],
-    ["C81", "100 nF supply bypass for microphone U5."],
+    ["C81", "100 nF local U5 bypass; direct top supply and ground loop."],
     ["U7", "Comparator restores microphone data to 3.3 V logic."],
     ["R26", "Pull-down on the shared microphone data line."],
     ["R27", "Series resistor from buffered microphone data to MCU."],

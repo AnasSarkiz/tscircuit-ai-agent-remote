@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-c",
+    "import subprocess,sys,time; from pathlib import Path; child=subprocess.Popen([sys.executable,'-c','import signal,time; signal.signal(signal.SIGTERM,signal.SIG_IGN); time.sleep(30)']); Path('descendant.pid').write_text(str(child.pid)); time.sleep(30)"
+  ],
+  "exit_code": -15,
+  "termination": "TIME_BUDGET_REACHED",
+  "elapsed_seconds": 11.09,
+  "peak_process_group_rss_bytes": 16842752,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": false,
+  "passing_validation_inferred": false
+}

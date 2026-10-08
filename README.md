@@ -1,3 +1,23 @@
+**0.0.10-wip-microphone-bypass — NOT READY TO ORDER.** The existing C81
+100 nF X7R capacitor moves beside U5 to (17.05, -28.1) mm / 180 degrees on top.
+Its authored 0.3 mm top copper connects directly to the U5 supply escape and
+ground pour; the remote capacitor escapes are explicitly retired.
+R93 moves to (16.5, -31.42) mm to clear the capacitor; its actual supply and
+clock-bias copper is rerouted while retaining/reusing existing drill positions.
+A finite 2 mm supply limit is declared because the untouched supplier
+courtyards impose a 1.38 mm minimum; the proposed direct route is 1.44 mm.
+The ground branch has a finite 2.5 mm limit: preflight uses a GND pad 2.15 mm
+away before the pour exists, while the actual top pour-entry stub is 0.60 mm. No part is
+added or replaced, and no new via is required. The exact manufacturer recommends
+short connections on one layer for this bypass. Actual native qualification,
+remaining full-board gates and public delivery receipts are recorded in the
+[current repair review](https://github.com/AnasSarkiz/tscircuit-ai-agent-remote/blob/main/evidence/microphone-local-bypass-2026-10-08/review.md).
+The display/battery interfaces and fabrication gates remain unresolved; this
+revision does not establish zero DRC, complete connectivity or order readiness.
+Older entries below are historical.
+
+---
+
 **0.0.9-wip-standard-uart — NOT READY TO ORDER.** J6 now uses the genuine
 JLCPCB **C160389 / JST BM03B-SRSS-TB(LF)(SN)** three-contact upward SH header.
 Its UART contacts are RX/GND/TX (pins 1/2/3); hold-downs 4/5 are GND.

@@ -1,0 +1,31 @@
+{
+  "current_native_sha256": "8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177",
+  "stock_source_native_sha256": "e117cd04f16671412d75c103d48ae439528e5a198cd1937e7fd86406e916446d",
+  "purchased_components": 125,
+  "supplier_identities": 43,
+  "every_current_reference_exact_mpn_and_supplier_matched": true,
+  "official_http200_identities": 14,
+  "public_buyability_covers_one_board_identities": 12,
+  "unknown_inventory_identities": 29,
+  "zero_or_insufficient_public_buyability": [
+    {
+      "part": "C2913201",
+      "references": [
+        "U1"
+      ],
+      "overseasStockCount": 3674,
+      "canPresaleNumber": 0
+    },
+    {
+      "part": "C94934",
+      "references": [
+        "D2"
+      ],
+      "overseasStockCount": 0,
+      "canPresaleNumber": 0
+    }
+  ],
+  "inventory_scope": "Exact dated public overseasStockCount/canPresaleNumber. HTTP503 is unknown inventory; no assembler allocation or reserved order is inferred.",
+  "all_assembly_available": false,
+  "fabrication_ready": false
+}

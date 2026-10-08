@@ -1,0 +1,304 @@
+[
+  {
+    "name": "@tscircuit/core",
+    "version": "0.0.2110",
+    "gitHead": "6cb29ea80f3f71905bd78914ec17b95fd0d17e17",
+    "dist": {
+      "shasum": "ef5a7bae09e8382287a5291cb313e75044bc278d",
+      "tarball": "https://registry.npmjs.org/@tscircuit/core/-/core-0.0.2110.tgz",
+      "fileCount": 5,
+      "integrity": "sha512-qA0IF+EOo+NS0+zA4diHEEeJcMtSoIhea995h6kURYpzrEzue1kdqlbkcLPxWHbyfsP8DWVOA+fN9GeMCaJKfg==",
+      "signatures": [
+        {
+          "sig": "MEYCIQC8RoxM0LX3GvZfdogMkvyQXOGOnGQci4o8iaD/A6D8eQIhAPjHPJz5SgoyJ7uiSnHmhLvSXeTm2xrrMnQ2AnqoRXqz",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIFW/9XYwVU9K2SkltFJMxDAxuHvvrDmP48dLSqm6w6UfAiEAoBtLnjX+eNhcBzxn4E0X5kTRB/cmRFPBhrDu6IGfp4w=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fcore@0.0.2110",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 15768165
+    },
+    "dependencies": {
+      "zod": "^3.25.67",
+      "nanoid": "^5.0.7",
+      "gl-matrix": "^3.4.4",
+      "@lume/kiwi": "^0.4.3",
+      "css-select": "5.1.0",
+      "jscad-fiber": "^0.0.88",
+      "jscad-planner": "^0.0.18",
+      "format-si-unit": "^0.0.12",
+      "performance-now": "^2.1.0",
+      "@flatten-js/core": "^1.6.2",
+      "react-reconciler": "^0.32.0",
+      "calculate-packing": "^0.0.90",
+      "svg-path-commander": "^2.1.11",
+      "transformation-matrix": "^2.16.1",
+      "calculate-cell-boundaries": "^0.0.25"
+    }
+  },
+  {
+    "name": "@tscircuit/cli",
+    "version": "0.1.2261",
+    "gitHead": "845abf3ad7b3a7e28daa4313868acf95d08bc2a8",
+    "dist": {
+      "shasum": "f46c2331fe7519aa54296bf6f581f61461611794",
+      "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2261.tgz",
+      "fileCount": 12,
+      "integrity": "sha512-ZfdkJP8pGEBuimQcjubyaViI5oUz3UQuqcwpl4ABkgTJJOSC5Au2+OL+hh6vlpC/K2npqh/KVHqbEucMLtf4Gg==",
+      "signatures": [
+        {
+          "sig": "MEQCICmFUlByPCPoByQ6AQM1XQI65cjpUuS7i9Ra+uHkldNTAiBxoQlbF2E46sJfLvA81JJv6+/3cAOwqP3qC1lDKp6wzA==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCID64jH5WgWUL8YSdJ1a/LzeEVK5D5O+vrBccgeZ6vd+EAiB0McB85Xip6gJVrAPy32i4KgDfYtmrrOUgjKl4azupcg==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fcli@0.1.2261",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 52318541
+    },
+    "dependencies": null
+  },
+  {
+    "name": "@tscircuit/props",
+    "version": "0.0.696",
+    "gitHead": "bd30fbc225307eee80e7369707ddf63db68d8c30",
+    "dist": {
+      "shasum": "709f3d89faf8375e085938448883ede8e426e1a1",
+      "tarball": "https://registry.npmjs.org/@tscircuit/props/-/props-0.0.696.tgz",
+      "fileCount": 191,
+      "integrity": "sha512-Ab3SiHanPHOwThio7wr2idSqGa8qkaBX/tZzpONJhpBLT5QkRY0LQSj46LyPG2ASbJuo9PburIsyBean/x6FWw==",
+      "signatures": [
+        {
+          "sig": "MEYCIQCrir88LAYq+GUkOy/SGPI/OiNrvyxT78rKOnRLvoW3/QIhAPd+ACZLz4G/pjQ6UafqoAefLCMnBWAxXEMDJ88RzY3g",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIHNuLvn0u+HFV6HBRalABQcJGOvuJdUeBbslnZR9rUl5AiEAzd6UZyo8etuK5MLCXYqJQa5rmVWg3nfWPMSoz6REXiE=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fprops@0.0.696",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 15776131
+    },
+    "dependencies": null
+  },
+  {
+    "name": "tscircuit",
+    "version": "0.0.2764",
+    "gitHead": "7859dfa248d2bd20ca22938014dda80fad17c9a5",
+    "dist": {
+      "shasum": "804f5297705f1e7ec4d42a0fa43684d38eaf86d4",
+      "tarball": "https://registry.npmjs.org/tscircuit/-/tscircuit-0.0.2764.tgz",
+      "fileCount": 10,
+      "integrity": "sha512-hXtmIiEsoqIRK4WxG7AXwNrL+4qHNX7Gr/Rse/ODk2x7JNsSTXuyY7CKT2uLXbkaDqgeO231xSRTiBiQ6tOpsA==",
+      "signatures": [
+        {
+          "sig": "MEUCIQCQnmNnuLVoG2+LVUaeLBK/7S4zGKf8HYbdL9DXTyRRmAIgH3uJuXL5kaBJ0b/gyvhkyjXUaB+4vDSLYfFyYvnhiwE=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIQDqk2gfkqy8JH55hnrZ17KGXSdmDNPS6qAwTTjhq+AmlgIgDjgGd/7s5KWn5smMSzG/+L8m0B3iTTZtbDW1946q15E=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/tscircuit@0.0.2764",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 53869697
+    },
+    "dependencies": {
+      "zod": "^3.25.67",
+      "debug": "^4.3.6",
+      "react": "^19.1.0",
+      "tslib": "^2.8.1",
+      "rollup": "^4.53.2",
+      "spicey": "^0.0.14",
+      "comlink": "^4.4.2",
+      "kicadts": "^0.0.53",
+      "poppygl": "0.0.34",
+      "spicets": "^0.0.4",
+      "sucrase": "^3.35.0",
+      "flatbush": "^4.5.0",
+      "bpc-graph": "^0.0.57",
+      "gl-matrix": "^3.4.4",
+      "react-dom": "^19.1.0",
+      "@lume/kiwi": "^0.4.3",
+      "css-select": "5.1.0",
+      "jscad-fiber": "^0.0.88",
+      "minicssgrid": "^0.0.9",
+      "circuit-json": "^0.0.521",
+      "s-expression": "^3.1.1",
+      "jscad-planner": "^0.0.18",
+      "@tscircuit/cli": "^0.1.2261",
+      "circuit-to-svg": "^0.0.445",
+      "format-si-unit": "^0.0.12",
+      "graphics-debug": "^0.0.95",
+      "@resvg/resvg-js": "^2.6.2",
+      "@tscircuit/core": "^0.0.2110",
+      "@tscircuit/eval": "^0.0.1575",
+      "calculate-elbow": "^0.0.12",
+      "performance-now": "^2.1.0",
+      "@flatten-js/core": "^1.6.2",
+      "@tscircuit/props": "^0.0.696",
+      "connectivity-map": "^1.0.1",
+      "@tscircuit/checks": "^0.0.242",
+      "calculate-packing": "^0.0.90",
+      "rollup-plugin-dts": "^6.2.3",
+      "schematic-symbols": "^0.0.248",
+      "svg-path-commander": "^2.1.11",
+      "@rollup/plugin-json": "^6.1.0",
+      "@tscircuit/alphabet": "0.0.25",
+      "@tscircuit/krt-wasm": "^0.1.1",
+      "@tscircuit/miniflex": "^0.0.4",
+      "@tscircuit/runframe": "^0.0.2929",
+      "circuit-json-to-bpc": "^0.0.13",
+      "@tscircuit/matchpack": "^0.0.97",
+      "@tscircuit/soup-util": "^0.0.41",
+      "circuit-json-to-gltf": "^0.0.148",
+      "@tscircuit/math-utils": "^0.0.36",
+      "circuit-json-to-spice": "^0.0.45",
+      "kicad-to-circuit-json": "^0.0.142",
+      "transformation-matrix": "^2.16.1",
+      "@tscircuit/footprinter": "^0.0.430",
+      "@tscircuit/image-utils": "^0.0.8",
+      "@rollup/plugin-commonjs": "^29.0.0",
+      "@tscircuit/modelprinter": "^0.0.11",
+      "@tscircuit/solver-utils": "^0.0.16",
+      "circuit-json-to-pnp-csv": "^0.0.20",
+      "@tscircuit/fanout-solver": "0.0.78",
+      "@tscircuit/simple-3d-svg": "^0.0.41",
+      "@rollup/plugin-typescript": "^12.3.0",
+      "calculate-cell-boundaries": "^0.0.25",
+      "circuit-json-to-simple-3d": "^0.0.9",
+      "kicad-component-converter": "^0.1.40",
+      "@rollup/plugin-node-resolve": "^16.0.3",
+      "@tscircuit/circuit-json-util": "^0.0.119",
+      "@tscircuit/copper-pour-solver": "^0.0.67",
+      "@tscircuit/capacity-autorouter": "^0.0.958",
+      "@tscircuit/infgrid-ijump-astar": "^0.0.35",
+      "@tscircuit/create-fdm-enclosure": "0.0.4",
+      "@tscircuit/ngspice-spice-engine": "^0.0.20",
+      "@tscircuit/schematic-match-adapt": "^0.0.18",
+      "circuit-json-to-connectivity-map": "^0.0.33",
+      "@tscircuit/internal-dynamic-import": "^0.0.11",
+      "@tscircuit/infer-cable-insertion-point": "^0.0.4"
+    }
+  },
+  {
+    "name": "circuit-json",
+    "version": "0.0.521",
+    "gitHead": "7bd75a0aac25eab029a3d7e05aee2ca215661bc1",
+    "dist": {
+      "shasum": "f0ec0b949615b770be6ab54b0717dda2e2c83e6e",
+      "tarball": "https://registry.npmjs.org/circuit-json/-/circuit-json-0.0.521.tgz",
+      "fileCount": 5,
+      "integrity": "sha512-WqMNb5f2nsNyzLMenJ6jbS+6BzXArspBwLz4DlQaBRKKvaDU0gpql2xikGm0IzjhSZUp9gnSVjn1OG5wYeLhJw==",
+      "signatures": [
+        {
+          "sig": "MEQCICJLvEC53TD3JsVIIJSQthtEJOHYaMTYVM7dFo2UtasIAiBDTFdkllCvNZ/XF3+uRw2DQfw2LinHc+q8WOOBmvIEDA==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIQC5nAdUl5Epp7T4Kb8fa3XwsVXP+fQmx28Xkq8nAsV3CgIgdlSQOQN2rMpMTp6b+K1X9CyeGh4CsrMWawxNwCeHOrs=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/circuit-json@0.0.521",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 4611198
+    },
+    "dependencies": null
+  },
+  {
+    "name": "circuit-json-to-gerber",
+    "version": "0.0.112",
+    "gitHead": "64b65c24c318e40a211521daaa93003b4df0bcc8",
+    "dist": {
+      "shasum": "b0d9d8e73f4e2e6ce48383db763c2514b4f0bb15",
+      "tarball": "https://registry.npmjs.org/circuit-json-to-gerber/-/circuit-json-to-gerber-0.0.112.tgz",
+      "fileCount": 11,
+      "integrity": "sha512-lKkiCyN4QI/WVYU/EkM5AIvlaautVTpkGMP2FD2oh0tgJbO5/NwMDxW34IoHJGtA5rCaQ7Yuof0CNKPqk5yAgQ==",
+      "signatures": [
+        {
+          "sig": "MEUCIQD1o99i6HnjLXKK5jABmcrPwatk/fGX2n3Z3q/MZ7HDigIgDiFYzsjB5ZbKsbt0C2/fr0JfUTNI92PEvftuUlJkg/c=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEYCIQDuDKPTZ96WSX1/W852YFha4WHjn7HqYDoOU7gkuezRFQIhAK5UntC3wstATuR29RnThAx3ztKBqx/O0YyMt4jCZmUr",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/circuit-json-to-gerber@0.0.112",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 496542
+    },
+    "dependencies": {
+      "polygon-clipping": "^0.15.7",
+      "@tscircuit/alphabet": "^0.0.25",
+      "transformation-matrix": "^3.0.0",
+      "fast-json-stable-stringify": "^2.1.0"
+    }
+  },
+  {
+    "name": "@tscircuit/checks",
+    "version": "0.0.242",
+    "gitHead": "159fc9f44de11c35d58f6c5e929117da4cf731fd",
+    "dist": {
+      "shasum": "1cec6b95da84cb3814d89eb7ea4b66c0a547763e",
+      "tarball": "https://registry.npmjs.org/@tscircuit/checks/-/checks-0.0.242.tgz",
+      "fileCount": 5,
+      "integrity": "sha512-HIuFjEUAFCcPk4N4qCvLd1YVmaylaLNPAt/dzRr56RmVXg0ZazosVnfTNn8rgpbrM4/X5WeO90XdnSlG0Fh5Hg==",
+      "signatures": [
+        {
+          "sig": "MEQCICYk/rDg1ESCt/uDyI5/7glnwRfQhdHfgI3nEEMWlsl9AiAoA343zaRDGBhgZ5cp7ctEx2demckVOgA0uC1yjqFDdw==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIFD9RRX/eDLovpyzxOnUnSU07/pH0yGSiUHnJvW6zZEKAiA681Gc09w/LBAdEPvtiFdQDtRQSF1zjOxkJ1DK31Mxlg==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fchecks@0.0.242",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 1760582
+    },
+    "dependencies": {
+      "flatbush": "^4.6.2"
+    }
+  }
+]

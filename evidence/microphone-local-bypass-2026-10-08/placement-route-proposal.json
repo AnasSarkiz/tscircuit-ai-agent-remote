@@ -1,0 +1,78 @@
+{
+  "source_sha256": "bcee32a49486610d7379583efb2b378846cc75f232272b50c717ad129c495704",
+  "classification": "prospective actual-footprint geometry; not native regeneration or DRC acceptance",
+  "purchased_moves": [
+    "C81"
+  ],
+  "new_pose_mm": [
+    21.0,
+    -26.8
+  ],
+  "ccw_rotation_degrees": 0,
+  "measurements": [
+    {
+      "pad": [
+        "pin2"
+      ],
+      "new_bounds_mm": [
+        21.3000248,
+        -27.2499991,
+        22.1000232,
+        -26.3500009
+      ],
+      "minimum_drill_gap_mm": 0.22850190000000126
+    },
+    {
+      "pad": [
+        "pin1"
+      ],
+      "new_bounds_mm": [
+        19.8999768,
+        -27.2499991,
+        20.6999752,
+        -26.3500009
+      ],
+      "minimum_drill_gap_mm": 0.24997680000000244
+    },
+    {
+      "route": "supply",
+      "path_mm": [
+        [
+          20.299976,
+          -26.8
+        ],
+        [
+          19.5,
+          -26.8
+        ],
+        [
+          19.1928144,
+          -28.099951
+        ]
+      ],
+      "width_mm": 0.3,
+      "layer": "top",
+      "length_mm": 2.1357288196670083,
+      "new_vias": 0
+    },
+    {
+      "route": "ground",
+      "path_mm": [
+        [
+          21.700024,
+          -26.8
+        ],
+        [
+          21.727201,
+          -27.628501
+        ]
+      ],
+      "width_mm": 0.3,
+      "layer": "top",
+      "length_mm": 0.8289466185044722,
+      "new_vias": 0
+    }
+  ],
+  "violations": [],
+  "ready_for_native_trial": true
+}

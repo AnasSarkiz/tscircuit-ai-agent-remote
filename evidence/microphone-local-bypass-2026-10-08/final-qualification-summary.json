@@ -1,0 +1,94 @@
+{
+  "version": "0.0.10-wip-microphone-bypass",
+  "native_sha256": "8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177",
+  "native_bytes": 6564850,
+  "native_traces": 381,
+  "native_vias": 320,
+  "native_pours": 273,
+  "native_errors": 50,
+  "native_error_breakdown": {
+    "J7": 46,
+    "U27": 4
+  },
+  "measured_shorts": 0,
+  "measured_geometry_violations": 0,
+  "physically_open_nets": 12,
+  "unassigned_battery_outer_contacts_excluded_from_assigned_open_net_count": [
+    "J3.pin1",
+    "J3.pin3"
+  ],
+  "required_active_regions_width_checked": 250,
+  "required_active_region_width_failures": 0,
+  "retained_contact_pairs_checked": 9813,
+  "retained_contact_losses": 0,
+  "stationary_purchased_geometries": 123,
+  "purchased_component_pose_moves": [
+    "C81",
+    "R93"
+  ],
+  "purchased_identity_changes": 0,
+  "genuine_assets_and_solver_cache_files_unchanged": 244,
+  "local_bypass_supply_length_mm": 1.442790400832068,
+  "local_bypass_ground_stub_length_mm": 0.5999760000000016,
+  "local_bypass_width_mm": 0.3,
+  "local_bypass_layer": "top",
+  "local_bypass_route_via_count": 0,
+  "full_through_vias_0p30_hole_0p45_land": true,
+  "high_current_native_traces_checked": 67,
+  "high_current_regions_checked": 89,
+  "high_current_trunks_outer_only": true,
+  "source_checks_passed": true,
+  "routing_regression_pass_count": 94,
+  "board_test_pass_count": 49,
+  "board_test_fail_count": 2,
+  "schematic_ui_style_issues": 15,
+  "schematic_ui_style_passed": false,
+  "strict_schema_failures": 169,
+  "missing_native_paste_records": 32,
+  "snapshot_completed": true,
+  "snapshot_passed": false,
+  "snapshot_references_updated": false,
+  "native_trace_widths_checked": 381,
+  "native_wire_segments_checked": 628,
+  "native_traces_below_board_minimum": 0,
+  "native_traces_below_explicit_source_minimum": 2,
+  "native_traces_below_named_net_nominal": 65,
+  "current_stock": {
+    "current_native_sha256": "8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177",
+    "stock_source_native_sha256": "e117cd04f16671412d75c103d48ae439528e5a198cd1937e7fd86406e916446d",
+    "purchased_components": 125,
+    "supplier_identities": 43,
+    "every_current_reference_exact_mpn_and_supplier_matched": true,
+    "official_http200_identities": 14,
+    "public_buyability_covers_one_board_identities": 12,
+    "unknown_inventory_identities": 29,
+    "zero_or_insufficient_public_buyability": [
+      {
+        "part": "C2913201",
+        "references": [
+          "U1"
+        ],
+        "overseasStockCount": 3674,
+        "canPresaleNumber": 0
+      },
+      {
+        "part": "C94934",
+        "references": [
+          "D2"
+        ],
+        "overseasStockCount": 0,
+        "canPresaleNumber": 0
+      }
+    ],
+    "inventory_scope": "Exact dated public overseasStockCount/canPresaleNumber. HTTP503 is unknown inventory; no assembler allocation or reserved order is inferred.",
+    "all_assembly_available": false,
+    "fabrication_ready": false
+  },
+  "unchanged_identity_previous_reference_component_subtotal_usd": "26.3055",
+  "previous_cost_is_current_quote": false,
+  "publications_verified": false,
+  "requested_display_implemented": false,
+  "full_zero_DRC_and_connectivity_pass": false,
+  "fabrication_ready": false,
+  "programming_hardware_tested": false
+}

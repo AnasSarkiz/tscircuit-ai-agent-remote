@@ -1,0 +1,41 @@
+{
+  "before_native_sha256": "bcee32a49486610d7379583efb2b378846cc75f232272b50c717ad129c495704",
+  "after_native_sha256": "a3eced83af8f085b54d479694d7d7799ccabf2508ab2fae3ac9692985c54704d",
+  "before_purchased_count": 125,
+  "after_purchased_count": 125,
+  "changed_purchased_geometry": [
+    "C81",
+    "R93"
+  ],
+  "changed_part_identities": [],
+  "stationary_purchased_geometry_count": 123,
+  "missing": [],
+  "added": [],
+  "nonrigid_geometry_changes": [
+    "C81"
+  ],
+  "permitted_rigid_poses": {
+    "R93": {
+      "center": {
+        "x": 16.5,
+        "y": -31.42
+      },
+      "rotation": 0,
+      "layer": "top"
+    },
+    "C81": {
+      "center": {
+        "x": 17.05,
+        "y": -28.1
+      },
+      "rotation": 180,
+      "layer": "top"
+    }
+  },
+  "genuine_assets_and_solver_cache_files_checked": 18,
+  "asset_mismatches": [],
+  "numeric_rounding_decimal_places": 9,
+  "scope": "All native purchased component, pads, plated holes, CAD assets/pose, courtyard and owned keepout fields. Original numbered ports and imported assets retained. Only C81 180-degree rigid rotation/translation and R93 translation allowed. Inverse transform is comparison-only; untouched native remains intact.",
+  "passed": false,
+  "fabrication_ready": false
+}

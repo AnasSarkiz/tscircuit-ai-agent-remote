@@ -1,0 +1,20 @@
+{
+  "source_sha256": "8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177",
+  "fabrication_ready": false,
+  "scope": "Official BOM 0.0.19 and PnP 0.0.16 converters, not a fabrication package. Full installed schema tested independently without changing the input. Strict supplier rotation qualification error retained.",
+  "bom_rows": 125,
+  "blank_bom_comment_count": 31,
+  "supplier_code_as_footprint_count": 125,
+  "pnp_rows": 125,
+  "all_pnp_top": true,
+  "rotationWarnings": [
+    {
+      "designator": "U14",
+      "pcb_component_id": "pcb_component_33",
+      "supplier": "jlcpcb",
+      "reason": "incompatible_pin1_locations",
+      "message": "U14: cannot verify jlcpcb pick-and-place rotation (incompatible_pin1_locations); PCB rotation 0 is unverified."
+    }
+  ],
+  "strict_rotation_error": "U14: cannot verify jlcpcb pick-and-place rotation (incompatible_pin1_locations); PCB rotation 0 is unverified."
+}

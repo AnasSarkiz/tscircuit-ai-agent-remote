@@ -1,3 +1,50 @@
+## Current local microphone bypass — 2026-10-08
+
+**0.0.10-wip-microphone-bypass; not ready to order.** Read
+`evidence/microphone-local-bypass-2026-10-08/review.md` and its native/qualification
+receipts first. C81/C45000 is now (17.05,-28.10)/180 degrees top, beside U5;
+R93/C105881 moves to (16.50,-31.42)/0 degrees top. Actual .30 mm top bypass:
+1.442790 mm supply, .599976 mm ground pour entry, no bypass via. All four local
+terminal contacts pass. Only these two rigid purchased poses change; all 125
+identities, 123 stationary geometries and 244 genuine asset/solver files remain.
+
+Native SHA `8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177`:
+381 traces / 320 full-span .30/.45 vias / 273 pours. Zero measured shorts and
+geometric/clearance violations; all 9,813 prior contacts preserved and all 250
+active authored region widths pass. Full-board gates still fail: 50 native
+errors (46 J7/4 U27), 12 assigned open nets, plus two unassigned J3 outer
+contacts. Requested centered 2.8-inch landscape LCD is unimplemented; exact
+contact/fold/bend/antenna/backlight qualification remains required.
+
+All five source checks, TypeScript, formatting and 94 routing regressions pass;
+board tests 49 pass/2 fail, UI style 15 issues, strict schema 169 failures,
+unchanged-reference source snapshots fail. Two native routes violate explicit
+width minima and 65 need nominal/current review; 32 native paste records,
+polygon Gerber/short-check and U14 rotation remain unresolved. No order claim.
+
+Fresh official JLC pages: 12/43 identities cover one board, 2 have zero public
+buyability (U1/D2), 29 HTTP503 inventory results unknown. D2 also reports zero
+stock. $26.3055 is the prior unchanged-identity reference subtotal, not a quote.
+Latest core .2110 still lacks the tested paste fix; keep frozen runtime.
+
+The genuine renderer required 43 exact prior official supplier-orientation
+cache inputs to retain supplier maps during live lookup failures. Their origin,
+hashes and failed native trial are preserved. For source rebuilds: run
+`bun run publish:prepare`, link frozen node_modules as previously documented,
+then `python3 evidence/microphone-local-bypass-2026-10-08/restore-supplier-orientation.py .publish/board /tmp/restored-board-supplier-orientation.json`.
+Preserve actual native/events; clean stage with publish:prepare before upload.
+Public package is 128 regular files; hidden input caches are exact GitHub
+evidence, not invented solver results. One heavy Linux operation through the
+budget supervisor at a time; no local Mac routing or unchanged whole-net retry.
+
+Publication fields in the checkpoint describe .9 until .10 anonymous byte and
+preview verification completes. The actual .9 cloud source job has now
+completed without a user-code job error; see `previous-cloud-completed-build.json`.
+That completion does not establish fabrication readiness. Saved configuration
+drafts do not apply or publish the environment. Earlier entries are historical.
+
+---
+
 ## Current UART and supply repair — 2026-10-07
 
 **0.0.9-wip-standard-uart; not ready to order.** Read

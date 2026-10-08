@@ -7035,5 +7035,22 @@
       "classification": "manual native MCU UART RX escape preserved from actual former J6 route; full-span via"
     }
   ],
-  "retired_source_path_indices": [69, 137, 138, 139, 232, 250]
+  "retired_source_path_indices": [69, 109, 137, 138, 139, 217, 232, 250],
+  "replacement_receipts": [
+    {
+      "classification": "manual local U5 bypass, not autorouter cache",
+      "retired_source_path_indices": [109, 217],
+      "replacement_source": "MicrophonesSheet.tsx",
+      "component": "C81",
+      "new_pose_mm": [17.05, -28.1],
+      "top_width_mm": 0.3,
+      "new_vias": 0,
+      "evidence": "evidence/microphone-local-bypass-2026-10-08/review.md",
+      "rejected_courtyard_trial_mm": [21, -26.8],
+      "ccw_rotation_degrees": 180,
+      "rejected_mount_keepout_trial_mm": [21, -26.6],
+      "new_declared_decoupling_length_mm": 2,
+      "unchanged_courtyard_lower_bound_mm": 1.3800592
+    }
+  ]
 }

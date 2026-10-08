@@ -1,3 +1,18 @@
+Implementation follow-up, 2026-10-08 (not a new human decision): WIP .10 moves
+only genuine C81/R93 to provide a measured 1.442790 mm top supply / .599976 mm
+top ground U5 bypass, .30 mm wide with no bypass via. Zero measured shorts and
+clearance violations, all 9,813 previous contacts preserved, all genuine
+identities/assets retained. Full-board gates remain failed: 50 native J7/U27
+errors / 12 assigned open nets plus J3 unassigned outer contacts, 169 schema
+failures, 15 actual UI style issues and width/paste/export/stock/mechanical
+qualification. Latest user target remains zero DRC and zero missing connections;
+no lowered threshold or fabrication approval. Actual .9 cloud job now completed
+without a user-code job error. Fresh .10 inventory only confirms 12/43 identities
+covering one board, U1/D2 zero public buyability and 29 unknown HTTP503 results.
+Read evidence/microphone-local-bypass-2026-10-08/review.md. Public fields retain
+.9 until exact .10 upload/source/preview verification; standing push authority
+continues. Requested centered landscape LCD remains unimplemented.
+
 Implementation follow-up, 2026-10-07 (not a new human decision): genuine
 J6/C160389 direct SH3 UART and the local 0.8 mm bottom supply bypass are
 implemented and qualified as WIP .9. Actual cable/programming operation is
