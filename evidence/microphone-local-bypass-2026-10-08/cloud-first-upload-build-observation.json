@@ -1,0 +1,224 @@
+{
+  "checked_at_utc": "2026-10-08T01:26:43.341499+00:00",
+  "anonymous_endpoint": "https://registry-api.tscircuit.com/package_builds/get?package_build_id=0e622b09-f0c9-4dbc-8c71-333f2c5df9b1&include_logs=true",
+  "response": {
+    "ok": true,
+    "package_build": {
+      "package_build_id": "0e622b09-f0c9-4dbc-8c71-333f2c5df9b1",
+      "package_release_id": "d17c1129-2a2a-4834-a186-e562b77aa268",
+      "created_at": "2026-10-08T01:20:20.298Z",
+      "transpilation_in_progress": false,
+      "transpilation_started_at": null,
+      "transpilation_completed_at": null,
+      "transpilation_logs": [],
+      "transpilation_error": null,
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_logs": [],
+      "circuit_json_build_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_started_at": null,
+      "image_generation_completed_at": null,
+      "image_generation_logs": [],
+      "image_generation_error": null,
+      "build_in_progress": false,
+      "package_build_website_url": null,
+      "user_code_job_started_at": "2026-10-08T01:20:20.621Z",
+      "user_code_job_completed_at": "2026-10-08T01:24:53.270Z",
+      "user_code_job_error": {
+        "message": "There was an error running the job on our infrastructure, this is probably not your code, see build logs",
+        "error_code": "user_code_job_infrastructure_error"
+      },
+      "user_code_job_completed_logs": [
+        {
+          "msg": "Starting execution",
+          "action": "execution_start",
+          "timestamp": "2026-10-08T01:21:06.698Z"
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:21:18.046Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 1/11), retrying in 1000ms",
+          "action": "sandbox_busy",
+          "attempt": 1,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 1000,
+          "timestamp": "2026-10-08T01:21:18.046Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:21:40.457Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 2/11), retrying in 2000ms",
+          "action": "sandbox_busy",
+          "attempt": 2,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 2000,
+          "timestamp": "2026-10-08T01:21:40.457Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:21:58.518Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 3/11), retrying in 4000ms",
+          "action": "sandbox_busy",
+          "attempt": 3,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 4000,
+          "timestamp": "2026-10-08T01:21:58.518Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:22:23.930Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 4/11), retrying in 8000ms",
+          "action": "sandbox_busy",
+          "attempt": 4,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 8000,
+          "timestamp": "2026-10-08T01:22:23.930Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:22:42.633Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 5/11), retrying in 10000ms",
+          "action": "sandbox_busy",
+          "attempt": 5,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 10000,
+          "timestamp": "2026-10-08T01:22:42.633Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:23:03.330Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 6/11), retrying in 10000ms",
+          "action": "sandbox_busy",
+          "attempt": 6,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 10000,
+          "timestamp": "2026-10-08T01:23:03.330Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:23:24.035Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 7/11), retrying in 10000ms",
+          "action": "sandbox_busy",
+          "attempt": 7,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 10000,
+          "timestamp": "2026-10-08T01:23:24.035Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:23:44.733Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 8/11), retrying in 10000ms",
+          "action": "sandbox_busy",
+          "attempt": 8,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 10000,
+          "timestamp": "2026-10-08T01:23:44.733Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:24:05.438Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 9/11), retrying in 10000ms",
+          "action": "sandbox_busy",
+          "attempt": 9,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 10000,
+          "timestamp": "2026-10-08T01:24:05.438Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:24:26.139Z"
+        },
+        {
+          "msg": "Sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\" busy (attempt 10/11), retrying in 10000ms",
+          "action": "sandbox_busy",
+          "attempt": 10,
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "retryInMs": 10000,
+          "timestamp": "2026-10-08T01:24:26.139Z",
+          "maxRetries": 11
+        },
+        {
+          "msg": "Error creating sandbox \"tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630\": Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": "Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "action": "sandbox_initializiation_error",
+          "sandbox": "tscircuit-runtime-2dccaacb93308f84e1db857d94ca8f52fa3dfff933630",
+          "timestamp": "2026-10-08T01:24:46.842Z"
+        },
+        {
+          "msg": "Failed to create sandbox after 11 attempts across 10 instances",
+          "error": true,
+          "action": "sandbox_retry_exhausted",
+          "attempts": 11,
+          "poolSize": 10,
+          "timestamp": "2026-10-08T01:24:46.842Z"
+        },
+        {
+          "msg": "Job failed: Failed to create sandbox after 11 attempts. All 10 sandbox instances are busy or being cleaned up. Consider increasing max_instance in wrangler.toml. Original error: Maximum number of running container instances exceeded. Try again later, or try configuring a higher value for max_instances",
+          "error": true,
+          "action": "job_failed",
+          "timestamp": "2026-10-08T01:24:46.842Z"
+        }
+      ],
+      "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=2dccaacb93308f84e1db857d94ca8f52fa3dfff933630a49d79d297ada77a277"
+    }
+  }
+}

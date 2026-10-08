@@ -1,0 +1,22 @@
+{
+  "native_sha256": "8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177",
+  "schema_package": "circuit-json@0.0.521",
+  "schema_entrypoint_sha256": "3e9122fa01b7ab96024fdfa3f48f34419d9a6e91939d1739ac821b24b20599d6",
+  "checked_native_elements": 7437,
+  "failing_elements": 169,
+  "by_type": {
+    "schematic_group": 15,
+    "pcb_component": 135,
+    "pcb_group": 15,
+    "pcb_silkscreen_text": 2,
+    "pcb_hole": 2
+  },
+  "full_failure_tree": "latest-schema-failures.json.gz",
+  "full_failure_tree_uncompressed_sha256": "ea95e91ef968e3b43a31c1fd3270f03036ffd8395c7fb90b8092771b81f46494",
+  "full_failure_tree_archive_sha256": "899566b202a56d007ceaf67426f56621e0c3c3933c0b1ad431264bd26d0c8b78",
+  "exact_archive_round_trip": true,
+  "schema_passed": false,
+  "active_board_dependency_pins_changed": false,
+  "native_modified": false,
+  "fabrication_ready": false
+}

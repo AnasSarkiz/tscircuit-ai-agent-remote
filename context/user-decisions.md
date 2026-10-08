@@ -9,9 +9,14 @@ qualification. Latest user target remains zero DRC and zero missing connections;
 no lowered threshold or fabrication approval. Actual .9 cloud job now completed
 without a user-code job error. Fresh .10 inventory only confirms 12/43 identities
 covering one board, U1/D2 zero public buyability and 29 unknown HTTP503 results.
-Read evidence/microphone-local-bypass-2026-10-08/review.md. Public fields retain
-.9 until exact .10 upload/source/preview verification; standing push authority
-continues. Requested centered landscape LCD remains unimplemented.
+Read evidence/microphone-local-bypass-2026-10-08/review.md. Public implementation
+3d88ca2 / tsci .10 release d17c1129 have all128 files and exact native preview
+verified. Both automatic .10 cloud jobs failed platform sandbox initialization
+before executing source; any supported retry remains a separate observation.
+Latest official schema .521 still has169 failures on this exact native. Draft30
+startup saving/readback preserves previous settings and does not activate the
+environment. Standing push authority continues; requested centered landscape
+LCD remains unimplemented.
 
 Implementation follow-up, 2026-10-07 (not a new human decision): genuine
 J6/C160389 direct SH3 UART and the local 0.8 mm bottom supply bypass are

@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-10-08T01:23:56.702914+00:00",
+  "anonymous_endpoint": "https://registry-api.tscircuit.com/package_builds/list?package_release_id=d17c1129-2a2a-4834-a186-e562b77aa268",
+  "response": {
+    "ok": true,
+    "package_builds": [
+      {
+        "package_build_id": "4cf44817-6713-4d77-8bba-d5d6b4c33bf7",
+        "package_release_id": "d17c1129-2a2a-4834-a186-e562b77aa268",
+        "created_at": "2026-10-08T01:20:39.288Z",
+        "transpilation_in_progress": false,
+        "transpilation_started_at": null,
+        "transpilation_completed_at": null,
+        "transpilation_error": null,
+        "circuit_json_build_in_progress": false,
+        "circuit_json_build_started_at": null,
+        "circuit_json_build_completed_at": null,
+        "circuit_json_build_error": null,
+        "image_generation_in_progress": false,
+        "image_generation_started_at": null,
+        "image_generation_completed_at": null,
+        "image_generation_error": null,
+        "build_in_progress": true,
+        "package_build_website_url": null,
+        "user_code_job_started_at": "2026-10-08T01:20:39.415Z",
+        "user_code_job_completed_at": null,
+        "user_code_job_error": null,
+        "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=a982e1e6bd73e33aece85a9630924607fdcb8c2ec5396e6963c932b27113d618"
+      },
+      {
+        "package_build_id": "0e622b09-f0c9-4dbc-8c71-333f2c5df9b1",
+        "package_release_id": "d17c1129-2a2a-4834-a186-e562b77aa268",
+        "created_at": "2026-10-08T01:20:20.298Z",
+        "transpilation_in_progress": false,
+        "transpilation_started_at": null,
+        "transpilation_completed_at": null,
+        "transpilation_error": null,
+        "circuit_json_build_in_progress": false,
+        "circuit_json_build_started_at": null,
+        "circuit_json_build_completed_at": null,
+        "circuit_json_build_error": null,
+        "image_generation_in_progress": false,
+        "image_generation_started_at": null,
+        "image_generation_completed_at": null,
+        "image_generation_error": null,
+        "build_in_progress": true,
+        "package_build_website_url": null,
+        "user_code_job_started_at": "2026-10-08T01:20:20.621Z",
+        "user_code_job_completed_at": null,
+        "user_code_job_error": null,
+        "user_code_job_log_stream_url": "https://usercode.tscircuit.com/user_code_jobs/view_log_stream?user_code_job_id=2dccaacb93308f84e1db857d94ca8f52fa3dfff933630a49d79d297ada77a277"
+      }
+    ]
+  }
+}

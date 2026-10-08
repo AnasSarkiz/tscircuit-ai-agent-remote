@@ -75,6 +75,66 @@ checkpoint.update({
         'Actual UI style 15 issues; source snapshots fail against unchanged references; no full zero-DRC/connectivity, fabrication, order or hardware-test approval.',
     ],
 })
+registry_file = folder / 'final-registry-receipt.json'
+preview_file = folder / 'final-public-preview-receipt.json'
+github_file = folder / 'github-publication-receipt.json'
+if registry_file.exists() and preview_file.exists() and github_file.exists():
+    registry = read('final-registry-receipt.json')
+    preview = read('final-public-preview-receipt.json')
+    github = read('github-publication-receipt.json')
+    assert registry['complete_public_upload'] and preview['exact_native_object_equality']
+    assert preview['local_native_json_sha256'] == summary['native_sha256']
+    assert github['matching_files'] == github['checked_files'] == 128
+    assert github['main_matches'] and not github['repository_is_private']
+    checkpoint.update({
+        'public_source_commit': github['commit'],
+        'public_package_version': summary['version'],
+        'public_package_release_id': preview['release_id'],
+        'public_package_files_verified': 128,
+        'public_package_all_bytes_match': True,
+        'public_native_preview_exact_object_match': True,
+        'public_preview_url': preview['preview_page_url'],
+        'public_package_publication_receipt': relative + '/final-registry-receipt.json',
+        'public_package_preview_receipt': relative + '/final-public-preview-receipt.json',
+        'public_github_publication_receipt': relative + '/github-publication-receipt.json',
+        'public_package_ready_to_build': registry['ready_to_build'],
+        'public_package_is_private': registry['is_private'],
+        'public_package_is_unlisted': registry['is_unlisted'],
+        'public_package_cloud_build_id': None,
+        'public_package_cloud_CI_passed': False,
+        'public_package_cloud_CI_status': 'New .10 cloud job is a separate unverified source build until actual completed logs are read; exact public uploaded source/native/preview verification does not imply CI or fabrication approval.',
+        'public_package_cloud_CI_observation_receipt': None,
+        'public_package_cloud_CI_started_at': None,
+        'public_fields_describe_parent_until_new_publication_verified': False,
+    })
+    if (folder / 'cloud-source-build-observation.json').exists():
+        observed = read('cloud-source-build-observation.json')['response']['package_build']
+        checkpoint.update({
+            'public_package_cloud_build_id': observed['package_build_id'],
+            'public_package_cloud_CI_status': 'Actual .10 automatic cloud job failed user_code_job_infrastructure_error before source execution; exact uploaded preview verified independently. One supported owned-release rebuild may be recorded separately.',
+            'public_package_cloud_CI_observation_receipt': relative + '/cloud-source-build-observation.json',
+            'public_package_cloud_CI_started_at': observed['user_code_job_started_at'],
+        })
+    if (folder / 'cloud-rebuild-request.json').exists():
+        retry = read('cloud-rebuild-request.json')
+        checkpoint['public_package_cloud_build_id'] = retry['package_build_id']
+        checkpoint['public_package_cloud_CI_status'] = 'Both automatic .10 jobs failed platform sandbox initialization before source execution. One supported owned-release rebuild requested after exact public file verification; result unverified until actual completed logs are read.'
+        checkpoint['public_package_cloud_rebuild_receipt'] = relative + '/cloud-rebuild-request.json'
+    if (folder / 'cloud-rebuild-observation.json').exists():
+        retry = read('cloud-rebuild-observation.json')['response']['package_build']
+        checkpoint['public_package_cloud_CI_observation_receipt'] = relative + '/cloud-rebuild-observation.json'
+        checkpoint['public_package_cloud_CI_started_at'] = retry['user_code_job_started_at']
+        if retry['user_code_job_completed_at']:
+            checkpoint['public_package_cloud_CI_passed'] = retry['user_code_job_error'] is None
+            checkpoint['public_package_cloud_CI_status'] = 'Supported .10 rebuild completed; actual user-code job error: ' + json.dumps(retry['user_code_job_error']) + '; does not qualify board DRC/fabrication.'
+        else:
+            checkpoint['public_package_cloud_CI_status'] = 'Supported .10 rebuild genuinely started after two infrastructure failures; completion not observed, no CI/fabrication approval inferred.'
+if (folder / 'cloud-configuration-save-receipt.json').exists():
+    saved = read('cloud-configuration-save-receipt.json')
+    checkpoint['cloud_configuration_saved_revision'] = saved['confirmed_revision']
+    checkpoint['cloud_configuration_save_receipt'] = relative + '/cloud-configuration-save-receipt.json'
+    checkpoint['cloud_configuration_applied'] = False
+    checkpoint['cloud_environment_published'] = False
 checkpoint_path.write_text(json.dumps(checkpoint, indent=2) + '\n')
 
 parent = read('parent-checkpoint-sha256.json')

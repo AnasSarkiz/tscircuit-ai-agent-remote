@@ -1,0 +1,51 @@
+{"archive_index":0,"archive_bytes":477116,"archive_sha256":"96f5def2292bbd8a54ccd6ae00f0d80bf915647504905b51b3243f0aaddac2fd","http_status":200,"uploaded_files":[{"package_file_id":"3068b03e-d2b2-49c2-ac5a-b33ee6a8dc6f","file_path":"dist/index/circuit.json"}]}
+{"archive_index":1,"archive_bytes":1814432,"archive_sha256":"c7fcbdff3fa25a5e004014a597fc2597e9cbfc9ab77fb875854be6469b4690db","http_status":200,"uploaded_files":[{"package_file_id":"07c2168d-6b48-4341-bfb6-3dd154750cc5","file_path":"imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"}]}
+{
+  "checked_at_utc": "2026-10-08T01:19:48.438Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.10-wip-microphone-bypass",
+  "transport": "Official /package_files/upload_archive multipart form, existing release",
+  "archive_bytes": 2291696,
+  "archive_sha256": "3fec8790496a6c7620d05c7b88478d9dc9bad4099434ba6cfd6a4506d90d8985",
+  "archives": [
+    {
+      "bytes": 477116,
+      "sha256": "96f5def2292bbd8a54ccd6ae00f0d80bf915647504905b51b3243f0aaddac2fd",
+      "paths": [
+        "dist/index/circuit.json"
+      ]
+    },
+    {
+      "bytes": 1814432,
+      "sha256": "c7fcbdff3fa25a5e004014a597fc2597e9cbfc9ab77fb875854be6469b4690db",
+      "paths": [
+        "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "dist/index/circuit.json",
+      "bytes": 6564850,
+      "sha256": "8be25ca28e6271890aab0d450ffdc62088ced91967ae1b6185ab8267ff9f1177"
+    },
+    {
+      "path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step",
+      "bytes": 11395444,
+      "sha256": "ddbd85a8e13ece9dbf820c09c5187c37d91c28286b1e6db82c32adef13dfb3e0"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "3068b03e-d2b2-49c2-ac5a-b33ee6a8dc6f",
+      "file_path": "dist/index/circuit.json"
+    },
+    {
+      "package_file_id": "07c2168d-6b48-4341-bfb6-3dd154750cc5",
+      "file_path": "imports/AFC07_S50ECA_00/AFC07_S50ECA_00.step"
+    }
+  ]
+}

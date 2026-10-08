@@ -101,5 +101,19 @@ summary = {
     'full_zero_DRC_and_connectivity_pass': False, 'fabrication_ready': False,
     'programming_hardware_tested': False,
 }
+latest_schema = folder / 'latest-schema-receipt.json'
+if latest_schema.exists():
+    latest = read('latest-schema-receipt.json')
+    assert latest['native_sha256'] == sha and not latest['native_modified']
+    summary['latest_official_readonly_schema_package'] = latest['schema_package']
+    summary['latest_official_readonly_schema_failures'] = latest['failing_elements']
+if (folder / 'final-registry-receipt.json').exists() and (folder / 'final-public-preview-receipt.json').exists():
+    registry = read('final-registry-receipt.json')
+    preview = read('final-public-preview-receipt.json')
+    assert registry['complete_public_upload'] and preview['exact_native_object_equality']
+    assert preview['local_native_json_sha256'] == sha
+    summary['publications_verified'] = True
+    summary['public_registry_release_id'] = preview['release_id']
+    summary['public_native_preview_url'] = preview['preview_page_url']
 (folder / 'final-qualification-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
 print(json.dumps(summary))

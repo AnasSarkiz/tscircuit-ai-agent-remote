@@ -37,11 +37,20 @@ Public package is 128 regular files; hidden input caches are exact GitHub
 evidence, not invented solver results. One heavy Linux operation through the
 budget supervisor at a time; no local Mac routing or unchanged whole-net retry.
 
-Publication fields in the checkpoint describe .9 until .10 anonymous byte and
-preview verification completes. The actual .9 cloud source job has now
-completed without a user-code job error; see `previous-cloud-completed-build.json`.
-That completion does not establish fabrication readiness. Saved configuration
-drafts do not apply or publish the environment. Earlier entries are historical.
+Public GitHub implementation 3d88ca2 and tsci .10 release
+d17c1129-2a2a-4834-a186-e562b77aa268 are verified: all128 anonymous files exact,
+native preview exact object, release public/listed/ready. The two HTTP413 files
+were verified missing before bounded supported archive repair. No readiness
+override. Both automatic .10 cloud jobs failed infrastructure sandbox
+initialization before source execution; any supported retry/actual observation
+is recorded separately, never inferred from uploaded native availability.
+The actual .9 cloud job completed without a user-code job error, superseding
+its old pending observation. Latest official circuit-json .521 independently
+still reports the same169 failures on the exact current native. Active pins
+remain frozen. Cloud draft30 startup instructions are saved/readback exact;
+installation/repositories/network/requirements unchanged. Review/save/publish
+is needed to activate the environment; fresh restoration remains unverified.
+Earlier entries are historical.
 
 ---
 
