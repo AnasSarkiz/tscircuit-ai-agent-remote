@@ -268,3 +268,11 @@ output, then all 134 public file bytes and the current public preview are checke
 again. Final delivery receipts supersede earlier local-output receipts.
 
 Original cloud file schema/paste and independent copper were checked again directly; direct comparison preserves all 9,813 pairs with zero newly connected pairs. Historical receipts retain their original input hashes; `cloud-generated-native/raw-cloud-artifact-adoption.json` binds exact parsed-object equality without rewriting those execution receipts.
+
+## Final authoritative delivery
+
+Source commit `8ef0fc6992b41d5cc57030c6c64c2519e260e4e9` is publicly verified: all 134 prepared source/runtime/native files match anonymous GitHub and registry bytes; the current preview equals the actual cloud native exactly. Registry additionally retains 37 platform-generated compiled, asset and preview files. Consequently the original strict exact-file-list helper correctly fails on extra paths despite 134/134 uploaded-byte matches; this gate has not been weakened and no cloud output is deleted. `final-registry-receipt.json` lists every extra path.
+
+Saved cloud draft **34** independently preserves installation/repositories/network/credential metadata and corrects current native/source provenance. It still requires review/save/publish in Environment settings for runtime application. Earlier draft/public-native claims are historical.
+
+ROUTING COMPLETE = NO; UNCONNECTED REQUIRED CONTACTS = 52; PHYSICAL OPEN NETS = 12; DRC ERRORS = 50 native connection errors (0 measured copper shorts/clearance violations); SCHEMA FAILURES = 0; FABRICATION READY = NO.

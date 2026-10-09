@@ -1,5 +1,5 @@
 {
-  "native_sha256": "2d9986066c0b4198ac56fba7308fbbbc841c2fd5999bbf560b89d16fd3f94e67",
+  "native_sha256": "16c299accb1750ce3b93997726c7c3316595e9848730bd9f20a55b6d24c4317a",
   "exact_identity_bindings": 43,
   "purchased_components": 125,
   "conservative_stock_coverage": 39,
@@ -53,7 +53,5 @@
   "note": "canPresaleNumber is retained as a raw public field, not independently proven to mean assembly inventory. Positive stock does not establish assembler allocation or order qualification.",
   "fabrication_ready": false,
   "previous_native_sha256": "7aad91b6856d57f2eeb793453840c4127b9df715f50011af925cf209465b1b58",
-  "identity_binding_proof": "Every source component and exact supplier identity matches the prior actual routed generation byte for byte.",
-  "rebound_on_exact_unchanged_source_component_records": true,
-  "stock_not_requeried_at_rebind": true
+  "identity_binding_proof": "Every source component and exact supplier identity matches the prior actual routed generation byte for byte."
 }
