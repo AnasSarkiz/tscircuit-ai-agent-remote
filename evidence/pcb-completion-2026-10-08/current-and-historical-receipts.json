@@ -1,0 +1,20 @@
+{
+  "latest_native_sha256": "16c299accb1750ce3b93997726c7c3316595e9848730bd9f20a55b6d24c4317a",
+  "current_acceptance_receipts": [
+    "current-copper-audit.json",
+    "current-connection-preservation.json",
+    "schema-and-paste.json",
+    "assembly-export-audit.json",
+    "resolved-bom-receipt.json",
+    "independent-qualified-export-inspection.json",
+    "ui-analysis/ui-style-analysis-receipt.json",
+    "final-clean-stage-source-binding.json"
+  ],
+  "historical_qualification_only": [
+    "current-geometry-audit-application.json",
+    "retained-supplier-lookup-warning-review.json",
+    "final-copper-audit.json",
+    "connection-preservation.json"
+  ],
+  "scope": "Historical receipts retain their original native hashes and are not substituted for current direct checks. Full rejected and interrupted trials are preserved."
+}

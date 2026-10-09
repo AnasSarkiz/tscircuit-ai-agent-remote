@@ -1,3 +1,57 @@
+Latest delivery checkpoint: generated native SHA-256
+`16c299accb1750ce3b93997726c7c3316595e9848730bd9f20a55b6d24c4317a`.
+Read `evidence/pcb-completion-2026-10-08/review.md` and current receipt index.
+All 13 actual phase SRJs/output paths are archived. Optional replay endpoint
+metadata/four via IDs differ; all copper geometry and electrical source records
+are preserved. Fresh independent audits confirm 0 shorts/geometric violations,
+12 open nets and all 9,813 parent connected pairs. Schematic UI has one retained
+parallel-branch advisory; the additional R63/U3 collision is corrected. Native
+retains 16 supplier-refresh and four pin-attribute lookup warnings. Genuine
+imports and strict rotation remain qualified; no warning is hidden. Source
+snapshot runs complete but unchanged golden references fail. No fabricated
+final supervisor timing/memory is reported after the session lost that receipt.
+Setup installs separate checksum-verified Bun 1.4.0 for generation while keeping
+Bun 1.3.9 frozen install/tests. Saved onboarding draft revision 32 is read back;
+it does not apply runtime policy. Public delivery is established by final
+publication receipts, not by presumed cloud CI or fabrication approval.
+
+## Current canonical generator qualification — 2026-10-08
+
+**0.0.11-wip-generator-qualification — NOT READY TO ORDER.** Canonical project
+runtime fixes eliminate all 169 schema failures and missing pill paste. The
+untouched genuine C7848 import clears U14 supplier rotation. Local regulator
+escape requirements now explicitly preserve 1 mm trunks. All 9,813 existing
+connected pairs are preserved; all 125 purchased component poses are unchanged.
+Fresh native checks still report 50 connection errors / 12 physically open
+assigned nets plus two unassigned battery contacts. Shorts and measured copper
+clearance violations are zero. The final 2.8-inch LCD, backlight, RF/mechanical
+integration and battery polarity remain unqualified.
+
+The corrected canonical Gerber library preserves USB slots. Independent strict
+Gerber parsing and Excellon inspection pass; actual exports are explicitly
+NOT FOR FABRICATION. Strict PnP rotation passes for all 125 parts, and the official
+resolved BOM covers all 43 supplier identities. Current inventory confirms 39
+identities conservatively; D2 is out of stock and three positive-stock records
+require assembly-availability confirmation. Complete current/thermal and full fabrication gates remain open.
+All 15 original schematic style issues are corrected in the actual schematic
+trial, with identical PCB/CAD geometry. One newly exposed alignment advisory
+misclassifies the VMOTOR flyback/bleeder parallel branches as a series pair;
+its exact six-contact topology and conflicting orientation advice are reviewed
+and retained in the schematic-style-repair evidence. Final routed checks are
+recorded independently; no failure is hidden.
+
+Core also prevents disabled subcircuits from starting autorouting during
+updates; both disabled controls and an enabled control are regression-tested.
+The actual isolated MCU diagnostic now has zero copper and zero routing events.
+Board tests: 51 pass; the full-board fabrication gate still fails on 50
+unresolved native connections. These are 50 assigned open contacts plus two
+unassigned J3 contacts, not a completed board.
+
+Receipts and source patches: `evidence/pcb-completion-2026-10-08/` and `toolchain/`.
+Older entries below are historical.
+
+---
+
 ## Current local microphone bypass — 2026-10-08
 
 **0.0.10-wip-microphone-bypass; not ready to order.** Read

@@ -1,0 +1,22 @@
+Formatted 7 files in 27ms. Fixed 3 files.
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 5.23 MB
+ESM ⚡️ Build success in 759ms
+lib/components/primitive-components/SilkscreenText.ts(151,9): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+Error: error occurred in dts build
+    at Worker.<anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/node_modules/tsup/dist/index.js:1545:26)
+    at Worker.emit (node:events:509:28)
+    at MessagePort.<anonymous> (node:internal/worker:350:14)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+DTS Build error
+error: script "build" exited with code 1

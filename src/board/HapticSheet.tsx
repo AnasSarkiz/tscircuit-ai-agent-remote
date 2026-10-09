@@ -22,15 +22,16 @@ export function HapticSheet({ placementOnly = false }: { placementOnly?: boolean
     >
       <group name="haptic-driver-review-group" schLayout={{ layoutMode: "relative" }}>
         <TPS7A2030PDBVR name="U22" {...place("U22")} schX={-6} schY={2} />
-        <AO3400A name="Q9" {...place("Q9")} schX={6} schY={-2} />
-        <SS14 name="D3" {...place("D3")} schX={11} schY={2} schRotation={90} />
+        <AO3400A name="Q9" {...place("Q9")} schX={0} schY={-2} />
+        <SS14 name="D3" {...place("D3")} schX={0} schY={2} schRotation={90} />
         <GRM188R61A106ME69D name="C70" {...place("C70")} schX={-11} schY={2} schRotation={-90} />
-        <GRM188R61A226ME15D name="C71" {...place("C71")} schX={0} schY={2} schRotation={-90} />
-        <GRM188R71C104KA01D name="C72" {...place("C72")} schX={15} schY={2} schRotation={-90} />
-        <A_0603WAF1001T5E name="R82" {...place("R82")} schX={3} schY={2} schRotation={-90} />
-        <A_0603WAF1000T5E name="R83" {...place("R83")} schX={1} schY={-6} />
-        <RC0603FR_0710KL name="R84" {...place("R84")} schX={6} schY={-6} schRotation={-90} />
-        <RC0603FR_07100KL name="R85" {...place("R85")} schX={-6} schY={-6} schRotation={-90} />
+        <GRM188R61A226ME15D name="C71" {...place("C71")} schX={-3} schY={4} schRotation={-90} />
+        <GRM188R71C104KA01D name="C72" {...place("C72")} schX={3.5} schY={2} schRotation={-90} />
+        {/* Align the actual glyph pins: D3 cathode is +0.52, resistor supply is +0.30. */}
+        <A_0603WAF1001T5E name="R82" {...place("R82")} schX={2} schY={2.22} schRotation={-90} />
+        <A_0603WAF1000T5E name="R83" {...place("R83")} schX={-3} schY={-4} />
+        <RC0603FR_0710KL name="R84" {...place("R84")} schX={0} schY={-5} schRotation={-90} />
+        <RC0603FR_07100KL name="R85" {...place("R85")} schX={-3} schY={0} schRotation={-90} />
         <trace from="U22.pin1" to="net.VSYS" />
         <trace
           from="U22.pin2"

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -e; mkdir -p .tools/core-board-fixes; git -C .tools/core-board-fixes init --quiet; git -C .tools/core-board-fixes remote add origin https://github.com/tscircuit/core.git; git -C .tools/core-board-fixes -c http.version=HTTP/1.1 fetch --depth=1 origin 39746897675f38f2d3a35555a3294c78c32ec391; git -C .tools/core-board-fixes checkout --quiet --detach FETCH_HEAD"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 9.02,
+  "peak_process_group_rss_bytes": 61747200,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

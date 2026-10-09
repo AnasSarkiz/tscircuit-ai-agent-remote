@@ -1,3 +1,38 @@
+**0.0.11-wip-generator-qualification — NOT READY TO ORDER.** Canonical project
+runtime fixes eliminate all 169 schema failures and missing pill paste. The
+untouched genuine C7848 import clears U14 supplier rotation. Local regulator
+escape requirements now explicitly preserve 1 mm trunks. All 9,813 existing
+connected pairs are preserved; all 125 purchased component poses are unchanged.
+Fresh native checks still report 50 connection errors / 12 physically open
+assigned nets plus two unassigned battery contacts. Shorts and measured copper
+clearance violations are zero. The final 2.8-inch LCD, backlight, RF/mechanical
+integration and battery polarity remain unqualified.
+
+The corrected canonical Gerber library preserves USB slots. Independent strict
+Gerber parsing and Excellon inspection pass; actual exports are explicitly
+NOT FOR FABRICATION. Strict PnP rotation passes for all 125 parts, and the official
+resolved BOM covers all 43 supplier identities. Current inventory confirms 39
+identities conservatively; D2 is out of stock and three positive-stock records
+require assembly-availability confirmation. Complete current/thermal and full fabrication gates remain open.
+All 15 original schematic style issues are corrected in the actual schematic
+trial, with identical PCB/CAD geometry. One newly exposed alignment advisory
+misclassifies the VMOTOR flyback/bleeder parallel branches as a series pair;
+its exact six-contact topology and conflicting orientation advice are reviewed
+and retained in the schematic-style-repair evidence. Final routed checks are
+recorded independently; no failure is hidden.
+
+Core also prevents disabled subcircuits from starting autorouting during
+updates; both disabled controls and an enabled control are regression-tested.
+The actual isolated MCU diagnostic now has zero copper and zero routing events.
+Board tests: 51 pass; the full-board fabrication gate still fails on 50
+unresolved native connections. These are 50 assigned open contacts plus two
+unassigned J3 contacts, not a completed board.
+
+Receipts and source patches: `evidence/pcb-completion-2026-10-08/` and `toolchain/`.
+Older entries below are historical.
+
+---
+
 **0.0.10-wip-microphone-bypass — NOT READY TO ORDER.** The existing C81
 100 nF X7R capacitor moves beside U5 to (17.05, -28.1) mm / 180 degrees on top.
 Its authored 0.3 mm top copper connects directly to the U5 supply escape and
@@ -694,3 +729,19 @@ Latest independent studies: genuine two-contact hold candidate, current JLCPCB f
 The latest independent hardware-hold readback uses a genuine Schmitt buffer to separate the MCU read pin from the microphone-enable signal. A verified genuine higher-stock resistor replaces the low-stock part only in that candidate. Native A4/build/diagnostics/snapshots pass; full JSON still fails B-010, and the canonical suite has23passes/one known failure. The top-control mechanical study also finds a17.95mm nominal switch/antenna gap by moving the module left on the50x65trial; actual enclosure, actuation, raised LCD, battery and speaker remain unfinished. This is an unrouted, untested engineering prototype. Parent Git fa90b54 is on GitHub; its private0.0.2-wip-a0-fabrication-review upload remains incomplete with six HTTP413 files verified absent,22timeout files verified present and ready_to_build=false. See the hold-readback and top-control dated evidence.
 
 Latest review: `evidence/blocker-recheck-2026-10-03-1357/`. Four genuine imports now carry correct native reference labels through official released tooling. All four native builds and20 diagnostics pass; current suite26pass/one existing B-010fail, formatting/types pass. Missing microphone polygon paste remains an assembly blocker. Three additional speakers have no importable libraries; genuine alternate haptic C41348533 imports but still lacks polygon paste and remains mechanically/electrically unqualified. Publication/BOM-description failures do not stop independent circuit work. Complete-board routing remains gated by actual requirements, component, connectivity and placement qualification.
+
+### Canonical generator qualification revision
+
+The 0.0.11 WIP revision pins audited project builds of core 0.0.2090 and Circuit
+JSON 0.0.521, with canonical metadata and pill-paste fixes retained in
+`toolchain/`. It uses released CLI 0.1.2270 and Gerber library 0.0.112-board-fixes.1. U14 uses
+the untouched genuine C7848 exact import, including its downloaded models.
+These are qualified engineering changes, not fabrication approval. The final
+2.8-inch display/FPC/RF integration, battery outer-contact polarity, remaining
+connections, stock and complete fabrication checks still have to pass.
+
+The regulator's existing top-layer switch paths have 0.275 mm local pad escapes
+followed by 0.4/0.7 mm widening and 1 mm trunks. Their separate source contract
+requires those trunks and limits the narrow escapes to 0.751 mm. The current
+bound uses TI's 5.75 A peak limit and requires 35 µm finished outer copper; it
+is not a change to board-wide minimum widths or complete thermal qualification.

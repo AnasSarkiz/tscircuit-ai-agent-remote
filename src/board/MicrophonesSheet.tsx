@@ -16,13 +16,13 @@ export function MicrophonesSheet({ placementOnly = false }: { placementOnly?: bo
       sheetIndex={10}
     >
       <group name="MicrophonesSheet-group" schLayout={{ layoutMode: "relative" }}>
-        <ICS_43434 name="U4" {...place("U4")} schX={-7} schY={4} />
+        <ICS_43434 name="U4" {...place("U4")} schX={-7} schY={2.5} />
         <ICS_43434 name="U5" {...place("U5")} schX={7} schY={4} />
-        <GRM188R71C104KA01D name="C80" {...place("C80")} schX={-1} schY={9} schRotation={-90} />
+        <GRM188R71C104KA01D name="C80" {...place("C80")} schX={-0.75} schY={9} schRotation={-90} />
         <GRM188R71C104KA01D
           name="C81"
           {...place("C81")}
-          schX={1}
+          schX={0.75}
           schY={9}
           schRotation={-90}
           // Untouched supplier courtyards impose a 1.38 mm lower bound.

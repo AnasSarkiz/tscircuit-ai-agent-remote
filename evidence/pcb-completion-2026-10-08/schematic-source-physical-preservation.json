@@ -1,0 +1,22 @@
+{
+  "current_native_sha256": "16c299accb1750ce3b93997726c7c3316595e9848730bd9f20a55b6d24c4317a",
+  "previously_audited_native_sha256": "4e4528bdda236801a5f93888bcaaf8b27b1b1aee7ead4927fdd0ce5dd6089121",
+  "all_actual_pcb_cad_and_source_electrical_geometry_identical": true,
+  "raw_records_byte_identical": false,
+  "unchanged_records_checked": 5861,
+  "allowed_changed_record_types": "Schematic/filesystem records, 16 retained supplier lookup warnings, four retained pin-attribute lookup warnings, optional route endpoint metadata and four via IDs; no copper geometry change",
+  "retained_warning_review": "final-retained-metadata-review.json",
+  "native_record_count_before": 7471,
+  "native_record_count_after": 7488,
+  "applicable_unchanged_audits": [
+    "current-copper-audit.json",
+    "current-connection-preservation.json",
+    "purchased-geometry.json"
+  ],
+  "physical_drc_violations": 0,
+  "shorts": 0,
+  "physical_open_assigned_nets": 12,
+  "previously_connected_pairs_preserved": 9813,
+  "scope": "Exact reviewed geometry/electrical comparison of actual unmodified emitted records. Optional endpoint metadata and regenerated IDs differ; their full raw delta is retained. Genuine PCB/model/source electrical data unchanged. Schematic-only source edits; no native repair. Final fresh native audits are separate.",
+  "fabrication_ready": false
+}

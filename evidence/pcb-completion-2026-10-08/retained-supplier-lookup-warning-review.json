@@ -1,0 +1,23 @@
+{
+  "actual_warning": {
+    "type": "source_part_not_found_warning",
+    "source_part_not_found_warning_id": "source_part_not_found_warning_7zXGzOULlY",
+    "warning_type": "source_part_not_found_warning",
+    "message": "Failed to fetch supplier footprint for <resistor#1096(.mic-regulated-clock-review-group>.R94) /> (jlcpcb:C98220): Failed to fetch the component details (HTTP 503)",
+    "source_component_id": "source_component_91",
+    "subcircuit_id": "subcircuit_source_group_15",
+    "supplier_name": "jlcpcb",
+    "supplier_part_number": "C98220"
+  },
+  "scope": "Only a reporting record is appended. Every previous actual source/electrical/PCB/CAD record is byte-identical; the untouched genuine local import supplies the complete footprint and model. No placeholder or cached stock invented. Warning is preserved in the accepted native.",
+  "genuine_import": "imports/RC0603FR_0710KL/RC0603FR_0710KL.tsx",
+  "genuine_import_sha256": "28f4b5b05c824e455eb25786de2319d6fb0d4a2f3958b6f9ddc3bd04a60df6f7",
+  "current_official_stock_receipt": "official-stock/C98220.json",
+  "current_exact_stock_covers_one_board": true,
+  "strict_rotation_must_be_rechecked": false,
+  "fabrication_ready": false,
+  "strict_rotation_rechecked": true,
+  "strict_rotation_receipt": "assembly-export-audit.json",
+  "strict_rotation_error": null,
+  "native_sha256": "7aad91b6856d57f2eeb793453840c4127b9df715f50011af925cf209465b1b58"
+}

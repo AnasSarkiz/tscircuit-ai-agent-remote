@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".tools/bun-1.4.0/bun-linux-x64/bun",
+    "test",
+    "--cwd",
+    ".tools/core-board-fixes",
+    "tests/components/normal-components/generated-position-metadata-schema.test.tsx",
+    "tests/components/primitive-components/pill-solder-paste-placement.test.tsx",
+    "tests/components/primitive-components/pill-solder-paste-margins.test.tsx"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 2.0,
+  "peak_process_group_rss_bytes": 524455936,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

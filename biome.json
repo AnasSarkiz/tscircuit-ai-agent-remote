@@ -14,7 +14,10 @@
       "!.upstream-work/**",
       "!.publish/**",
       "!!.tools/**",
-      "!!.geometry-runtime/**"
+      "!!.geometry-runtime/**",
+      "!toolchain/core/source/**",
+      "!toolchain/circuit-json/source/**",
+      "!toolchain/gerber/source/**"
     ]
   },
   "formatter": {

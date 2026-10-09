@@ -1,0 +1,128 @@
+{
+  "packages": [
+    {
+      "name": "core",
+      "upstream_base": "39746897675f38f2d3a35555a3294c78c32ec391",
+      "source_files": [
+        {
+          "path": "lib/components/base-components/NormalComponent/NormalComponent.ts",
+          "sha256": "b076eeca1bf2cc11f89cebe65c389b8c927e43361b74873536b91c6d1a0ae2f4"
+        },
+        {
+          "path": "lib/components/primitive-components/Group/Group.ts",
+          "sha256": "847ae37ea33617ac034225e866fce13dd4fa05fb51bbd1d270823f5f581a26bf"
+        },
+        {
+          "path": "lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts",
+          "sha256": "ed7b70e52e4f9256958fb1d619453247a11af52cfec769a807f039eda059ff06"
+        },
+        {
+          "path": "lib/components/primitive-components/Hole.ts",
+          "sha256": "b5340c0566bc361e90fa85bbc4ff8d7adf51487f9cf5c1877e2129067cee2dbd"
+        },
+        {
+          "path": "lib/components/primitive-components/SilkscreenText.ts",
+          "sha256": "8cc2c1ce2d13bcdaae4c116822950e70a3044d1d01d8372d28651b03648cdc83"
+        },
+        {
+          "path": "lib/components/primitive-components/SmtPad.ts",
+          "sha256": "21d78b8939acff4362db2c7f8ea7998289fd1c121eae07ba56fee95234a476e6"
+        },
+        {
+          "path": "tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-board-pcb.snap.svg",
+          "sha256": "49fec0f7f683f935f2602a20ae9d2539001ade6fc58f6340363a813a8b679b4a"
+        },
+        {
+          "path": "tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-group-pcb.snap.svg",
+          "sha256": "3c9768c499540ac384f8eb3acdbb7f98ef113eeecdd40f6d3e9999adc28128b3"
+        },
+        {
+          "path": "tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-board-pcb.snap.svg",
+          "sha256": "ac709cd5be8990301dca2bbe8efc25323b04457bf6f1440d22bb1f1afdce3394"
+        },
+        {
+          "path": "tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-group-pcb.snap.svg",
+          "sha256": "3dcbf0b0dd5928cf851c65cc61ca2a1c8ebb1f4594770a4d496f6997d85cbd5f"
+        },
+        {
+          "path": "lib/components/primitive-components/SmtPad_createPillSolderPaste.ts",
+          "sha256": "bae6375a6e20dea4cfbae24449023f5a2bc5c5f04d41ad7c07b721d7caa3580f"
+        },
+        {
+          "path": "tests/components/normal-components/generated-position-metadata-schema.test.tsx",
+          "sha256": "3b67edab7af5b4a8179b28a838b368304317f2fcdc14a48c3645df705780a5d0"
+        },
+        {
+          "path": "tests/components/primitive-components/__snapshots__/pill-solder-paste-margins-pcb.snap.svg",
+          "sha256": "690d7585fc6f7f2fc2967f583c579717e5f2e0ca427ac209c326e4c287011906"
+        },
+        {
+          "path": "tests/components/primitive-components/__snapshots__/pill-solder-paste-placement-pcb.snap.svg",
+          "sha256": "688b4a40e27cefd83419e18d2f110bd8657179bfbb789c6f9cafd98bfeb55d90"
+        },
+        {
+          "path": "tests/components/primitive-components/pill-solder-paste-margins.test.tsx",
+          "sha256": "12f362453700bf299daeba3432a3bdf1720a95fe7d3406068acf766cbfb144d3"
+        },
+        {
+          "path": "tests/components/primitive-components/pill-solder-paste-placement.test.tsx",
+          "sha256": "a41c46f33db478190e1a392194a70f4a6eb40dfe71d5c15af8b9235de9af631c"
+        },
+        {
+          "path": "tests/components/normal-components/routing-disabled-update.test.tsx",
+          "sha256": "1e72b6fa341c45d6b0b5f8f5c4a20e30919a7af4cb5c1001879e346de0cd41eb"
+        }
+      ]
+    },
+    {
+      "name": "circuit-json",
+      "upstream_base": "7bd75a0aac25eab029a3d7e05aee2ca215661bc1",
+      "source_files": [
+        {
+          "path": "src/pcb/pcb_silkscreen_text.ts",
+          "sha256": "2dd2ed6c7d76a29cfb7d75b7841cefab2a5a35bdbf9ce03c72be3bab64b41bcc"
+        },
+        {
+          "path": "tests/pcb-silkscreen-text-ownership.test.ts",
+          "sha256": "3583cda2b930c57ab945d16d9c35305b14a14bf6930c71de6bbf53499774e192"
+        }
+      ]
+    },
+    {
+      "name": "circuit-json-to-gerber",
+      "upstream_base": "64b65c24c318e40a211521daaa93003b4df0bcc8",
+      "scope": "Typed library build; no standalone upstream CLI claim",
+      "source_files": [
+        {
+          "path": "src/excellon-drill/commands/G85.ts",
+          "sha256": "9e7cf0c80183c045a1eb0a2aaaf591b9861722d7f8569e7bde58c67053761db6"
+        },
+        {
+          "path": "src/excellon-drill/convert-soup-to-excellon-drill-commands.ts",
+          "sha256": "e2e480ef9141bd037355dc5218d0a585985da3310762f8c077548270c14dbc10"
+        },
+        {
+          "path": "tests/excellon-drill/canned-slot-endpoints.test.ts",
+          "sha256": "6f23d8d63990d9b888a62f6d583642b43488b1bf32b92fad448ce995f228c674"
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz",
+      "sha256": "60ec1f834e58d599a1f087466d5428da8bec6f0e5b9521db7f4e0e1771d5656b",
+      "bytes": 1443019
+    },
+    {
+      "path": "toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz",
+      "sha256": "4691f78ce5b60239a01efe2aa686202aee0ef5ff6d2dd201c06890c487b354a1",
+      "bytes": 287585
+    },
+    {
+      "path": "toolchain/packages/circuit-json-to-gerber-0.0.112-board-fixes.1.tgz",
+      "sha256": "a2b3d6394d24aa7025037380f7ac4f67de361d1ec0c3ffa5318c84bb2091f34a",
+      "bytes": 90965
+    }
+  ]
+}

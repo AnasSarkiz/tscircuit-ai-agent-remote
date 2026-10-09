@@ -1,0 +1,185 @@
+{
+  "bin": {
+    "tscircuit-cli": "cli/entrypoint.js"
+  },
+  "bugs": {
+    "url": "https://github.com/tscircuit/cli/issues"
+  },
+  "dist": {
+    "shasum": "382e85dd58919c8de780f9df33c399d8a624a91c",
+    "tarball": "https://registry.npmjs.org/@tscircuit/cli/-/cli-0.1.2270.tgz",
+    "fileCount": 12,
+    "integrity": "sha512-peE4BXxCT0rAjMBlErdq3UfX1oCB0yp90J8Wrzv3kpwQCVjLXxJc/uMiLDhmenXE3rvFePnRLg16uAoSnrYvsw==",
+    "signatures": [
+      {
+        "sig": "MEQCIHFzfdUuZPjoHW/hpPT7d51d7YVFtwrhLzZibVYbVZyvAiAnkBYEd0yEuKYuxo72hsJAGTgbzqa+l5ubLUkEvp57Lg==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQC2KezgD2L636nkEiRwXs6pDjvN3TnN4Rocc4qfvRxJDQIhAO8zO7JdWhmWE4gc/53T96O64+9ud4QT20O1nnDx1XlV",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tscircuit%2fcli@0.1.2270",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 51617935
+  },
+  "main": "dist/cli/main.js",
+  "name": "@tscircuit/cli",
+  "type": "module",
+  "exports": {
+    ".": "./dist/cli/main.js",
+    "./lib": "./dist/lib/index.js"
+  },
+  "gitHead": "880f4489f5451896767556a8adb6a578e37adbe9",
+  "scripts": {
+    "cli": "bun ./cli/main.ts",
+    "dev": "bun --hot ./cli/main.ts dev ./examples/basic/index.circuit.tsx",
+    "build": "bun run build:bun",
+    "setup": "bun run build && npm install -g .",
+    "start": "bun run dev",
+    "format": "biome format --write .",
+    "build:bun": "bun run scripts/bun-build.ts",
+    "smoketest": "docker build --progress=plain -f Dockerfile.smoketest .",
+    "format:check": "biome format .",
+    "dev:kicad-pcm": "bun --hot ./cli/main.ts dev ./examples/scaffold --kicad-pcm",
+    "pkg-pr-new-release": "bunx pkg-pr-new publish --comment=off --peerDeps"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "950d1dc5-cc9e-450a-a2e3-bdd30c3cd785"
+    }
+  },
+  "homepage": "https://github.com/tscircuit/cli#readme",
+  "overrides": {
+    "poppygl": "0.0.34",
+    "altiumts": "0.0.59",
+    "circuit-json": "^0.0.520",
+    "@tscircuit/core": "^0.0.2104"
+  },
+  "repository": {
+    "url": "git+https://github.com/tscircuit/cli.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "A CLI for developing, managing and publishing tscircuit code (the \"npm for tscircuit\") `npm install -g tscircuit`",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "seveibar",
+      "email": "seveibar@gmail.com"
+    }
+  ],
+  "_nodeVersion": "24.21.0",
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "ky": "^1.7.4",
+    "md5": "^2.3.0",
+    "tsx": "^4.7.1",
+    "zod": "^3.23.8",
+    "conf": "^13.1.0",
+    "jose": "^6.1.0",
+    "debug": "^4.4.0",
+    "delay": "^6.0.0",
+    "jszip": "^3.10.1",
+    "kleur": "^4.1.5",
+    "tempy": "^3.1.0",
+    "globby": "^14.1.0",
+    "semver": "^7.6.3",
+    "stepts": "^0.0.3",
+    "easyeda": "^0.0.372",
+    "fuse.js": "^7.1.0",
+    "kicadts": "^0.0.47",
+    "pdf-lib": "^1.17.1",
+    "poppygl": "0.0.34",
+    "prompts": "^2.4.2",
+    "spicets": "^0.0.4",
+    "chokidar": "4.0.1",
+    "get-port": "^7.1.0",
+    "make-vfs": "^1.0.15",
+    "redaxios": "^0.5.1",
+    "typed-ky": "^0.0.4",
+    "commander": "^14.0.0",
+    "tscircuit": "0.0.2647-libonly",
+    "@types/bun": "^1.2.2",
+    "jwt-decode": "^4.0.0",
+    "playwright": "^1.57.0",
+    "configstore": "^7.0.0",
+    "cosmiconfig": "^9.0.0",
+    "perfect-cli": "^1.0.21",
+    "@types/debug": "^4.1.12",
+    "@types/react": "^19.0.8",
+    "circuit-json": "^0.0.520",
+    "jsonwebtoken": "^9.0.2",
+    "@types/semver": "^7.5.8",
+    "bun-match-svg": "^0.0.12",
+    "dsn-converter": "^0.0.90",
+    "@biomejs/biome": "^1.9.4",
+    "@types/prompts": "^2.4.9",
+    "circuit-to-svg": "^0.0.444",
+    "@tscircuit/eval": "0.0.1569",
+    "proper-lockfile": "^4.1.2",
+    "@tscircuit/props": "^0.0.694",
+    "polygon-clipping": "^0.15.7",
+    "@babel/standalone": "^7.26.9",
+    "@types/micromatch": "^4.0.9",
+    "circuit-to-canvas": "^0.0.123",
+    "schematic-symbols": "^0.0.246",
+    "@types/configstore": "^6.0.2",
+    "@tscircuit/krt-wasm": "^0.1.6",
+    "@tscircuit/runframe": "^0.0.2936",
+    "@types/jsonwebtoken": "^9.0.9",
+    "circuit-json-to-step": "^0.0.38",
+    "@tscircuit/math-utils": "0.0.36",
+    "circuit-json-to-kicad": "0.0.230",
+    "circuit-json-to-spice": "^0.0.45",
+    "kicad-to-circuit-json": "^0.0.113",
+    "@tscircuit/file-server": "^0.0.32",
+    "@tscircuit/footprinter": "^0.0.430",
+    "@tscircuit/image-utils": "^0.0.8",
+    "@types/proper-lockfile": "^4.1.4",
+    "circuit-json-to-3d-png": "^0.0.6",
+    "circuit-json-to-altium": "github:tscircuit/circuit-json-to-altium#1a50d0dd2c0737cf940d92c0315852dc0111dd87",
+    "circuit-json-to-gerber": "^0.0.112",
+    "@tscircuit/check-shorts": "https://jscdn.tscircuit.com/@tscircuit/check-shorts/0.0.26.tgz",
+    "@tscircuit/modelprinter": "^0.0.11",
+    "@tscircuit/solver-utils": "0.0.16",
+    "circuit-json-to-bom-csv": "^0.0.19",
+    "circuit-json-to-pnp-csv": "^0.0.18",
+    "@tscircuit/fake-snippets": "^0.0.182",
+    "circuit-json-to-tscircuit": "^0.0.50",
+    "circuit-json-to-footprinter": "^0.0.59",
+    "@tscircuit/circuit-json-util": "^0.0.120",
+    "@tscircuit/schematic-match-adapt": "^0.0.22",
+    "circuit-json-to-connectivity-map": "^0.0.32",
+    "circuit-json-to-readable-netlist": "^0.0.15",
+    "@tscircuit/schematic-trace-solver": "^0.0.204",
+    "circuit-json-to-fdm-component-box": "^0.0.2",
+    "circuit-json-trace-length-analysis": "github:tscircuit/circuit-json-trace-length-analysis#2b44792a40df0ca83b6bfb6ac95ed5e35e7168b8",
+    "@tscircuit/circuit-json-routing-analysis": "^0.0.8",
+    "@tscircuit/circuit-json-placement-analysis": "^0.0.15",
+    "@tscircuit/circuit-json-schematic-placement-analysis": "https://jscdn.tscircuit.com/@tscircuit/circuit-json-schematic-placement-analysis/0.0.46.tgz"
+  },
+  "peerDependencies": {
+    "tscircuit": "*",
+    "circuit-json": "^0.0.520"
+  },
+  "peerDependenciesMeta": {
+    "tscircuit": {
+      "optional": false
+    }
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/cli_0.1.2270_1791482655241_0.3745481303871472",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "@tscircuit/cli@0.1.2270",
+  "version": "0.1.2270"
+}

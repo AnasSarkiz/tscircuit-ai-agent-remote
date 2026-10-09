@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd .tools/gerber-board-fixes; ../bun-1.4.0/bun-linux-x64/bun test --config bunfig.unit.toml tests/excellon-drill; ../core-board-fixes/node_modules/.bin/biome format src/excellon-drill/commands/G85.ts src/excellon-drill/convert-soup-to-excellon-drill-commands.ts tests/excellon-drill/canned-slot-endpoints.test.ts --write; ../core-board-fixes/node_modules/.bin/tsup-node src/index.ts --format esm --dts --sourcemap; npm pack --ignore-scripts --pack-destination /workspace/tscircuit-ai-agent-remote/toolchain/packages"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 1736704,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

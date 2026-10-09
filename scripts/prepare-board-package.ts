@@ -73,6 +73,17 @@ for (const sourcePath of sourcePaths) {
 }
 
 const originalPackage = JSON.parse(readFileSync(join(projectDir, "package.json"), "utf8"))
+// Local canonical runtime packages are published with the same verified bytes.
+for (const dependency of Object.values({
+  ...originalPackage.devDependencies,
+  ...originalPackage.overrides,
+}) as string[]) {
+  if (!dependency.startsWith("file:toolchain/packages/")) continue
+  const artifactPath = dependency.slice("file:".length)
+  const targetPath = join(packageDir, artifactPath)
+  mkdirSync(dirname(targetPath), { recursive: true })
+  writeFileSync(targetPath, readFileSync(join(projectDir, artifactPath)))
+}
 const runtimePackage = {
   name: originalPackage.name,
   version: originalPackage.version,

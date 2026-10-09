@@ -1,0 +1,32 @@
+{"starting": "typecheck"}
+{"name": "typecheck", "command": ["bun", "run", "typecheck"], "exit_code": 0, "elapsed_seconds": 11.71, "completed": true}
+{"starting": "format-check"}
+{"name": "format-check", "command": ["bun", "run", "format:check"], "exit_code": 0, "elapsed_seconds": 0.26, "completed": true}
+{"starting": "routing-regressions"}
+{"name": "routing-regressions", "command": ["python", "-m", "unittest", "discover", "-s", "scripts/routing/tests"], "exit_code": 0, "elapsed_seconds": 3.2, "completed": true}
+{"starting": "board-tests"}
+{"name": "board-tests", "command": ["bun", "run", "test"], "exit_code": 1, "elapsed_seconds": 12.09, "completed": true}
+{"starting": "schema-and-paste"}
+{"name": "schema-and-paste", "command": ["bun", "evidence/pcb-completion-2026-10-08/audit-schema-and-paste.mjs", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08"], "exit_code": 0, "elapsed_seconds": 8.82, "completed": true}
+{"starting": "schema-assembly"}
+{"name": "schema-assembly", "command": ["bun", "evidence/pcb-completion-2026-10-08/audit-schema-assembly.mjs", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08"], "exit_code": 1, "elapsed_seconds": 8.49, "completed": true}
+{"starting": "resolved-bom"}
+{"name": "resolved-bom", "command": ["bun", "evidence/pcb-completion-2026-10-08/export-resolved-bom.mjs", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08"], "exit_code": 0, "elapsed_seconds": 0.12, "completed": true}
+{"starting": "regulator-profile"}
+{"name": "regulator-profile", "command": ["python", "scripts/routing/audit-regulator-switch-widths.py", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08/regulator-profile.json"], "exit_code": 0, "elapsed_seconds": 0.11, "completed": true}
+{"starting": "trace-widths"}
+{"name": "trace-widths", "command": ["python", "scripts/routing/audit-trace-widths.py", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08/trace-widths.json"], "exit_code": 1, "elapsed_seconds": 0.3, "completed": true}
+{"starting": "schematic-guides"}
+{"name": "schematic-guides", "command": ["bun", "scripts/audit-schematic-guides.mjs", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08/guide-coverage.json"], "exit_code": 0, "elapsed_seconds": 0.64, "completed": true}
+{"starting": "actual-srj"}
+{"name": "actual-srj", "command": ["bun", "scripts/routing/export-native-srj.tsx", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08/actual-native.srj.json"], "exit_code": 0, "elapsed_seconds": 8.8, "completed": true}
+{"starting": "official-shorts"}
+{"name": "official-shorts", "command": ["bun", "node_modules/.bin/tsci", "check", "shorts", "dist/index/circuit.json"], "exit_code": 0, "elapsed_seconds": 21.32, "completed": true}
+{"starting": "corrected-gerber-export"}
+{"name": "corrected-gerber-export", "command": ["bun", "evidence/pcb-completion-2026-10-08/export-gerbers.mjs", "dist/index/circuit.json", "evidence/pcb-completion-2026-10-08/NOT-FOR-FABRICATION-qualified-gerbers"], "exit_code": 0, "elapsed_seconds": 0.4, "completed": true}
+{"starting": "connection-copper.json.widths"}
+{"name": "connection-copper.json.widths", "command": ["python", "scripts/routing/audit-region-widths.py", "dist/index/circuit.json", "src/board/connection-copper.json", "evidence/pcb-completion-2026-10-08/connection-copper.json.widths.json"], "exit_code": 0, "elapsed_seconds": 1.06, "completed": true}
+{"starting": "manual-power-copper.json.widths"}
+{"name": "manual-power-copper.json.widths", "command": ["python", "scripts/routing/audit-region-widths.py", "dist/index/circuit.json", "src/board/manual-power-copper.json", "evidence/pcb-completion-2026-10-08/manual-power-copper.json.widths.json"], "exit_code": 0, "elapsed_seconds": 1.38, "completed": true}
+{"starting": "inner-signal-copper.json.widths"}
+{"name": "inner-signal-copper.json.widths", "command": ["python", "scripts/routing/audit-region-widths.py", "dist/index/circuit.json", "src/board/inner-signal-copper.json", "evidence/pcb-completion-2026-10-08/inner-signal-copper.json.widths.json"], "exit_code": 0, "elapsed_seconds": 0.81, "completed": true}

@@ -1,0 +1,56 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:
+14 |     </board>,
+15 |   )
+16 | 
+17 |   await circuit.renderUntilSettled()
+18 | 
+19 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.12%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-group-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:19:25)
+(fail) pcb_group with positioned_relative_to_pcb_group_id [682.85ms]
+34 |     </board>,
+35 |   )
+36 | 
+37 |   await circuit.renderUntilSettled()
+38 | 
+39 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.06%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-board-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:39:25)
+(fail) pcb_group with positioned_relative_to_pcb_board_id [390.16ms]
+62 |     </board>,
+63 |   )
+64 | 
+65 |   await circuit.renderUntilSettled()
+66 | 
+67 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.07%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-group-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:67:25)
+(fail) pcb_component with positioned_relative_to_pcb_group_id shows anchor offsets [572.43ms]
+88 |     </board>,
+89 |   )
+90 | 
+91 |   await circuit.renderUntilSettled()
+92 | 
+93 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.05%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-board-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:93:25)
+(fail) pcb_component positioned relative to pcb_board shows anchor offsets [410.63ms]
+
+ 0 pass
+ 4 fail
+ 4 expect() calls
+Ran 4 tests across 1 file. [3.10s]

@@ -1,0 +1,9 @@
+<SchematicSheet name="haptic-driver-review" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D3" positionAnchor="center" schX="0" schY="2" width="0.54" height="1.04" />
+<SchematicBoxPlacement componentName="R82" positionAnchor="center" schX="2" schY="2.22" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<DiodeResistorNotAligned diodeComponentName="D3" diodePin="cathode" resistorComponentName="R82" resistorPin="anode" message="D3.cathode and R82.anode face away from each other — rotate D3 so D3.cathode faces R82.anode" />
+</SchematicPlacementIssues>
+</SchematicSheet>

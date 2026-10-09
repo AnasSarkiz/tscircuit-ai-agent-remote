@@ -1,0 +1,12 @@
+{"routingEventCount":1,"copperCount":77,"rootRoutingDisabled":true,"platformRoutingDisabled":true}
+21 | root.add(<board width={60} height={50} routingDisabled><Esp32S3UsbReviewSheet /></board>)
+22 | await root.renderUntilSettled()
+23 | const native = root.getCircuitJson()
+24 | const copper = native.filter(element => ["pcb_trace", "pcb_via", "pcb_copper_pour"].includes(element.type))
+25 | console.log(JSON.stringify({ routingEventCount: routingEvents.length, copperCount: copper.length, rootRoutingDisabled: root.pcbRoutingDisabled, platformRoutingDisabled: root.platform?.routingDisabled }))
+26 | if (routingEvents.length || copper.length) throw Error("The diagnostic must not start routing or emit copper")
+                                                      ^
+error: The diagnostic must not start routing or emit copper
+      at /workspace/tscircuit-ai-agent-remote/evidence/pcb-completion-2026-10-08/render-mcu-diagnostic.tsx:26:50
+
+Bun v1.3.9 (Linux x64)

@@ -1,0 +1,92 @@
+bun install v1.4.0 (34cbb9a40)
+Resolving dependencies
+Resolved, downloaded and extracted [502]
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
++ @tscircuit/bus-lanes-solver@https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.21.tgz
++ @tscircuit/dogbone-solver@https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
++ @tscircuit/flex-utils@https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz
++ @tscircuit/schematic-trace-solver@https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.225.tgz
++ circuit-json@../../toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz
+
+19 packages installed [6.09s]
+Formatted 2 files in 21ms. Fixed 1 file.
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+(pass) generated position and optional ownership metadata match circuit-json [158.55ms]
+
+tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:
+14 |     </board>,
+15 |   )
+16 | 
+17 |   await circuit.renderUntilSettled()
+18 | 
+19 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.12%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-group-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:19:25)
+(fail) pcb_group with positioned_relative_to_pcb_group_id [582.20ms]
+34 |     </board>,
+35 |   )
+36 | 
+37 |   await circuit.renderUntilSettled()
+38 | 
+39 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.06%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-board-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:39:25)
+(fail) pcb_group with positioned_relative_to_pcb_board_id [389.17ms]
+62 |     </board>,
+63 |   )
+64 | 
+65 |   await circuit.renderUntilSettled()
+66 | 
+67 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.07%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-group-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:67:25)
+(fail) pcb_component with positioned_relative_to_pcb_group_id shows anchor offsets [544.67ms]
+88 |     </board>,
+89 |   )
+90 | 
+91 |   await circuit.renderUntilSettled()
+92 | 
+93 |   await expect(circuit).toMatchPcbSnapshot(
+                             ^
+error: expect(received).toMatchPcbSnapshot(...args)
+
+Snapshot does not match (diff 0.05%). Diff saved at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-board-pcb.diff.png
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:93:25)
+(fail) pcb_component positioned relative to pcb_board shows anchor offsets [417.34ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+(pass) pill paste respects absolute margins, coverage and layout movement [497.81ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [410.89ms]
+
+ 3 pass
+ 4 fail
+ 248 expect() calls
+Ran 7 tests across 4 files. [4.11s]

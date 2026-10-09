@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.tscircuit-ai-agent-remote",
-  "version": "0.0.10-wip-microphone-bypass",
+  "version": "0.0.11-wip-generator-qualification",
   "description": "Handheld Wi-Fi AI agent remote; engineering prototype under validation",
   "main": "index.circuit.tsx",
   "keywords": [
@@ -28,23 +28,24 @@
     "@biomejs/biome": "2.5.14",
     "@tscircuit/capacity-autorouter": "0.0.958",
     "@tscircuit/checks": "0.0.237",
-    "@tscircuit/cli": "0.1.2237",
-    "@tscircuit/core": "0.0.2090",
+    "@tscircuit/cli": "0.1.2270",
+    "@tscircuit/core": "file:toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz",
     "@tscircuit/modelprinter": "0.0.6",
     "@types/bun": "1.4.2",
     "@types/three": "0.179.0",
     "circuit-to-svg": "0.0.440",
     "easyeda": "0.0.370",
     "tscircuit": "0.0.2744",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "circuit-json-to-gerber": "file:toolchain/packages/circuit-json-to-gerber-0.0.112-board-fixes.1.tgz"
   },
   "author": "AnasSarkiz",
   "private": true,
   "overrides": {
-    "@tscircuit/core": "0.0.2090",
+    "@tscircuit/core": "file:toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz",
     "easyeda": "0.0.370",
     "@tscircuit/props": "0.0.688",
-    "circuit-json": "0.0.517",
+    "circuit-json": "file:toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz",
     "@tscircuit/capacity-autorouter": "0.0.958"
   },
   "packageManager": "bun@1.3.9"

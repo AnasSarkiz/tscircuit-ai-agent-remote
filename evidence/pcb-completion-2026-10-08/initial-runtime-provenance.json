@@ -1,0 +1,41 @@
+{
+  "packages": [
+    {
+      "name": "core",
+      "upstream_base": "39746897675f38f2d3a35555a3294c78c32ec391",
+      "source_files": [
+        "lib/components/base-components/NormalComponent/NormalComponent.ts",
+        "lib/components/primitive-components/Group/Group.ts",
+        "lib/components/primitive-components/Hole.ts",
+        "lib/components/primitive-components/SilkscreenText.ts",
+        "lib/components/primitive-components/SmtPad.ts",
+        "lib/components/primitive-components/SmtPad_createPillSolderPaste.ts",
+        "tests/components/normal-components/generated-position-metadata-schema.test.tsx",
+        "tests/components/primitive-components/__snapshots__/pill-solder-paste-margins-pcb.snap.svg",
+        "tests/components/primitive-components/__snapshots__/pill-solder-paste-placement-pcb.snap.svg",
+        "tests/components/primitive-components/pill-solder-paste-margins.test.tsx",
+        "tests/components/primitive-components/pill-solder-paste-placement.test.tsx"
+      ]
+    },
+    {
+      "name": "circuit-json",
+      "upstream_base": "84b487cd2871481cebf2424a4d6b970df42fa9fc",
+      "source_files": [
+        "src/pcb/pcb_silkscreen_text.ts",
+        "tests/pcb-silkscreen-text-ownership.test.ts"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "toolchain/packages/circuit-json-0.0.517-board-fixes.1.tgz",
+      "sha256": "c9aea0890cfe429f4327ace53eae08c77071452b1aae4fe904974546aff45235",
+      "bytes": 284613
+    },
+    {
+      "path": "toolchain/packages/tscircuit-core-0.0.2090-board-fixes.1.tgz",
+      "sha256": "19de5fea34cccb46e561490bfb8fb60771edccfceb158cef5299837fa0d0f74f",
+      "bytes": 1442974
+    }
+  ]
+}

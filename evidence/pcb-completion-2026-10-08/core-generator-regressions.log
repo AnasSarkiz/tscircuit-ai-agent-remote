@@ -1,0 +1,17 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+(pass) generated position and optional ownership metadata match circuit-json [151.74ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+Creating snapshot at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/primitive-components/__snapshots__/pill-solder-paste-margins-pcb.snap.svg
+(pass) pill paste respects absolute margins, coverage and layout movement [209.02ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+Creating snapshot at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/primitive-components/__snapshots__/pill-solder-paste-placement-pcb.snap.svg
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [189.32ms]
+
+ 3 pass
+ 0 fail
+ 243 expect() calls
+Ran 3 tests across 3 files. [1.54s]

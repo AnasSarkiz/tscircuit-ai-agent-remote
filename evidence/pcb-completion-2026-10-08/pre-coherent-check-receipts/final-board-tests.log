@@ -1,0 +1,2802 @@
+$ bun test ./tests
+bun test v1.3.9 (cf6cdbbb)
+
+tests/haptic-manufacturer-connections.test.ts:
+(pass) haptic application manufacturer requirements > TI SOT-23 supply, ground, enable and output retain their physical pin numbers [57.04ms]
+(pass) haptic application manufacturer requirements > AOS G/S/D and MDD cathode/anode close the intended flyback loop and retain default-off paths [0.40ms]
+
+tests/type-c-manufacturer-connections.test.ts:
+(pass) Type-C controller manufacturer requirements > UFP strap, GPIO mode and local supply prevent conflicting Rd and rail backpower [1.45ms]
+(pass) Type-C controller manufacturer requirements > higher current requires stable controller power and advertised 1.5A or 3A [0.46ms]
+(pass) Type-C controller manufacturer requirements > VBUS detection resistors meet TI's 855k–920k allowed range [0.87ms]
+
+tests/motor-solder-access.test.ts:
+(pass) motor connector is removed while two accessible solder pads retain the motor circuit [10.06ms]
+
+tests/current-board-manufacturer-connections.test.ts:
+(pass) current MCU USB, supply, reset and boot use Espressif physical pins [2.54ms]
+(pass) current MCU external capacitors match Espressif's 22uF and 100nF reference values [0.70ms]
+(pass) current charger and battery supervisor retain manufacturer power and control pins [4.53ms]
+(pass) current regulator retains TI power, ground, feedback and switching pin identities [1.49ms]
+(pass) current amplifier supply and differential speaker outputs retain manufacturer pin assignments [1.32ms]
+(pass) current dual microphone power, data, clocks and channel select retain TDK pins [1.43ms]
+
+tests/display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [0.64ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [0.53ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, TE and LDO NC remain open [1.02ms]
+
+tests/placement-review-preservation.test.ts:
+(pass) Native placement review preserves the board > the inspection output has no copper routes, vias or pours [0.67ms]
+168 |       "pcb_plated_hole",
+169 |       "pcb_hole",
+170 |       "pcb_keepout",
+171 |       "pcb_port",
+172 |     ]) {
+173 |       expect(placement.filter((element) => element.type === type)).toEqual(
+                                                                         ^
+error: expect(received).toEqual(expected)
+
+@@ -2,12 +2,12 @@
+    {
+      "center": {
+        "x": -12,
+        "y": 22.124544,
+      },
+-     "display_offset_x": "-12mm",
+-     "display_offset_y": "22.124544mm",
++     "display_offset_x": -12,
++     "display_offset_y": 22.124544,
+      "do_not_place": false,
+      "height": 18.989903599999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -32,12 +32,12 @@
+      },
+      "center": {
+        "x": 0,
+        "y": -28.425043549999998,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "-28mm",
++     "display_offset_x": 0,
++     "display_offset_y": -28,
+      "do_not_place": false,
+      "height": 6.498170900000002,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -58,12 +58,12 @@
+    {
+      "center": {
+        "x": -0.75,
+        "y": -23,
+      },
+-     "display_offset_x": "-0.75mm",
+-     "display_offset_y": "-23mm",
++     "display_offset_x": -0.75,
++     "display_offset_y": -23,
+      "do_not_place": false,
+      "height": 0.9000235999999973,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -84,12 +84,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": 7.749999999999999,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "7.75mm",
++     "display_offset_x": 0,
++     "display_offset_y": 7.75,
+      "do_not_place": false,
+      "height": 2.549999999999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -110,12 +110,12 @@
+    {
+      "center": {
+        "x": -17.4,
+        "y": -10,
+      },
+-     "display_offset_x": "-17.4mm",
+-     "display_offset_y": "-10mm",
++     "display_offset_x": -17.4,
++     "display_offset_y": -10,
+      "do_not_place": false,
+      "height": 4.200017000000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -136,12 +136,12 @@
+    {
+      "center": {
+        "x": -23.2,
+        "y": 14.55,
+      },
+-     "display_offset_x": "-23.2mm",
+-     "display_offset_y": "14.55mm",
++     "display_offset_x": -23.2,
++     "display_offset_y": 14.55,
+      "do_not_place": false,
+      "height": 0.8640000000000008,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -162,12 +162,12 @@
+    {
+      "center": {
+        "x": -23.2,
+        "y": 16.04,
+      },
+-     "display_offset_x": "-23.2mm",
+-     "display_offset_y": "16.04mm",
++     "display_offset_x": -23.2,
++     "display_offset_y": 16.04,
+      "do_not_place": false,
+      "height": 0.863999999999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -188,12 +188,12 @@
+    {
+      "center": {
+        "x": -12,
+        "y": -23,
+      },
+-     "display_offset_x": "-12mm",
+-     "display_offset_y": "-23mm",
++     "display_offset_x": -12,
++     "display_offset_y": -23,
+      "do_not_place": false,
+      "height": 2.313200000000002,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -214,12 +214,12 @@
+    {
+      "center": {
+        "x": 1,
+        "y": -22,
+      },
+-     "display_offset_x": "1mm",
+-     "display_offset_y": "-22mm",
++     "display_offset_x": 1,
++     "display_offset_y": -22,
+      "do_not_place": false,
+      "height": 2.313200000000002,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -240,12 +240,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": 5,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "5mm",
++     "display_offset_x": 0,
++     "display_offset_y": 5,
+      "do_not_place": false,
+      "height": 0.8640000000000008,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -266,12 +266,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": 26.75,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "26.75mm",
++     "display_offset_x": 0,
++     "display_offset_y": 26.75,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -292,12 +292,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": 2.75,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "2.75mm",
++     "display_offset_x": 0,
++     "display_offset_y": 2.75,
+      "do_not_place": false,
+      "height": 0.8640064000000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -318,12 +318,12 @@
+    {
+      "center": {
+        "x": 15.5,
+        "y": 27,
+      },
+-     "display_offset_x": "15.5mm",
+-     "display_offset_y": "27mm",
++     "display_offset_x": 15.5,
++     "display_offset_y": 27,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -344,12 +344,12 @@
+    {
+      "center": {
+        "x": -2.5,
+        "y": 10.5,
+      },
+-     "display_offset_x": "-2.5mm",
+-     "display_offset_y": "10.5mm",
++     "display_offset_x": -2.5,
++     "display_offset_y": 10.5,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -370,12 +370,12 @@
+    {
+      "center": {
+        "x": -23.45,
+        "y": 29.9,
+      },
+-     "display_offset_x": "-23.45mm",
+-     "display_offset_y": "29.9mm",
++     "display_offset_x": -23.45,
++     "display_offset_y": 29.9,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -396,12 +396,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": -6.5,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "-6.5mm",
++     "display_offset_x": 0,
++     "display_offset_y": -6.5,
+      "do_not_place": false,
+      "height": 0.8999982000000006,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -422,12 +422,12 @@
+    {
+      "center": {
+        "x": -8,
+        "y": -26,
+      },
+-     "display_offset_x": "-8mm",
+-     "display_offset_y": "-26mm",
++     "display_offset_x": -8,
++     "display_offset_y": -26,
+      "do_not_place": false,
+      "height": 3.850005000000003,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -448,12 +448,12 @@
+    {
+      "center": {
+        "x": 22,
+        "y": 25,
+      },
+-     "display_offset_x": "22mm",
+-     "display_offset_y": "25mm",
++     "display_offset_x": 22,
++     "display_offset_y": 25,
+      "do_not_place": false,
+      "height": 1.4999970000000005,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -474,12 +474,12 @@
+    {
+      "center": {
+        "x": -12,
+        "y": -26,
+      },
+-     "display_offset_x": "-12mm",
+-     "display_offset_y": "-26mm",
++     "display_offset_x": -12,
++     "display_offset_y": -26,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -500,12 +500,12 @@
+    {
+      "center": {
+        "x": -15.75,
+        "y": -26.25,
+      },
+-     "display_offset_x": "-15.75mm",
+-     "display_offset_y": "-26.25mm",
++     "display_offset_x": -15.75,
++     "display_offset_y": -26.25,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -526,12 +526,12 @@
+    {
+      "center": {
+        "x": -2.75,
+        "y": -23.25,
+      },
+-     "display_offset_x": "-2.75mm",
+-     "display_offset_y": "-23.25mm",
++     "display_offset_x": -2.75,
++     "display_offset_y": -23.25,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -552,12 +552,12 @@
+    {
+      "center": {
+        "x": -12,
+        "y": -29,
+      },
+-     "display_offset_x": "-12mm",
+-     "display_offset_y": "-29mm",
++     "display_offset_x": -12,
++     "display_offset_y": -29,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -578,12 +578,12 @@
+    {
+      "center": {
+        "x": -8,
+        "y": -22,
+      },
+-     "display_offset_x": "-8mm",
+-     "display_offset_y": "-22mm",
++     "display_offset_x": -8,
++     "display_offset_y": -22,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -604,12 +604,12 @@
+    {
+      "center": {
+        "x": -9,
+        "y": -30,
+      },
+-     "display_offset_x": "-9mm",
+-     "display_offset_y": "-30mm",
++     "display_offset_x": -9,
++     "display_offset_y": -30,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -630,12 +630,12 @@
+    {
+      "center": {
+        "x": -13.5,
+        "y": -24.5,
+      },
+-     "display_offset_x": "-13.5mm",
+-     "display_offset_y": "-24.5mm",
++     "display_offset_x": -13.5,
++     "display_offset_y": -24.5,
+      "do_not_place": false,
+      "height": 2.313203399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -656,12 +656,12 @@
+    {
+      "center": {
+        "x": -3,
+        "y": -16,
+      },
+-     "display_offset_x": "-3mm",
+-     "display_offset_y": "-16mm",
++     "display_offset_x": -3,
++     "display_offset_y": -16,
+      "do_not_place": false,
+      "height": 2.2999954000000002,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -682,12 +682,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": -16,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "-16mm",
++     "display_offset_x": 0,
++     "display_offset_y": -16,
+      "do_not_place": false,
+      "height": 3.065221199999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -708,12 +708,12 @@
+    {
+      "center": {
+        "x": -2.25,
+        "y": -12.65,
+      },
+-     "display_offset_x": "-2.25mm",
+-     "display_offset_y": "-12.65mm",
++     "display_offset_x": -2.25,
++     "display_offset_y": -12.65,
+      "do_not_place": false,
+      "height": 2.2000464000000015,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -734,12 +734,12 @@
+    {
+      "center": {
+        "x": -0.2,
+        "y": -19,
+      },
+-     "display_offset_x": "-0.2mm",
+-     "display_offset_y": "-19mm",
++     "display_offset_x": -0.2,
++     "display_offset_y": -19,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -760,12 +760,12 @@
+    {
+      "center": {
+        "x": -3,
+        "y": -19,
+      },
+-     "display_offset_x": "-3mm",
+-     "display_offset_y": "-19mm",
++     "display_offset_x": -3,
++     "display_offset_y": -19,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -786,12 +786,12 @@
+    {
+      "center": {
+        "x": -3,
+        "y": -21,
+      },
+-     "display_offset_x": "-3mm",
+-     "display_offset_y": "-21mm",
++     "display_offset_x": -3,
++     "display_offset_y": -21,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -812,12 +812,12 @@
+    {
+      "center": {
+        "x": 0,
+        "y": -11,
+      },
+-     "display_offset_x": "0mm",
+-     "display_offset_y": "-11mm",
++     "display_offset_x": 0,
++     "display_offset_y": -11,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -838,12 +838,12 @@
+    {
+      "center": {
+        "x": 10.5,
+        "y": 13.75,
+      },
+-     "display_offset_x": "10.5mm",
+-     "display_offset_y": "13.75mm",
++     "display_offset_x": 10.5,
++     "display_offset_y": 13.75,
+      "do_not_place": false,
+      "height": 2.5,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -864,38 +864,38 @@
+    {
+      "center": {
+        "x": 9,
+        "y": 8,
+      },
+-     "display_offset_x": "9mm",
+-     "display_offset_y": "8mm",
++     "display_offset_x": 9,
++     "display_offset_y": 8,
+      "do_not_place": false,
+-     "height": 7.483932200000002,
++     "height": 7.4839,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+      "pcb_component_id": "pcb_component_33",
+      "pcb_group_id": "pcb_group_3",
+-     "pin1_location": "bottomside_left",
++     "pin1_location": "leftside_bottom",
+      "position_mode": "relative_to_group_anchor",
+      "positioned_relative_to_pcb_group_id": "pcb_group_3",
+      "rotation": 0,
+      "source_component_id": "source_component_33",
+      "subcircuit_id": "subcircuit_source_group_15",
+      "supplier_pin1_location_map": {
+        "jlcpcb": "bottomside_left",
+      },
+      "type": "pcb_component",
+-     "width": 6.214135399999998,
++     "width": 6.214000000000002,
+    },
+    {
+      "center": {
+        "x": 8.199999999999998,
+        "y": -12.625,
+      },
+-     "display_offset_x": "8.2mm",
+-     "display_offset_y": "-12.625mm",
++     "display_offset_x": 8.2,
++     "display_offset_y": -12.625,
+      "do_not_place": false,
+      "height": 29.8999656,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -916,12 +916,12 @@
+    {
+      "center": {
+        "x": 14.25,
+        "y": 10.5,
+      },
+-     "display_offset_x": "14.25mm",
+-     "display_offset_y": "10.5mm",
++     "display_offset_x": 14.25,
++     "display_offset_y": 10.5,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -942,12 +942,12 @@
+    {
+      "center": {
+        "x": 14.75,
+        "y": 12.75,
+      },
+-     "display_offset_x": "14.75mm",
+-     "display_offset_y": "12.75mm",
++     "display_offset_x": 14.75,
++     "display_offset_y": 12.75,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -968,12 +968,12 @@
+    {
+      "center": {
+        "x": 3.75,
+        "y": 9,
+      },
+-     "display_offset_x": "3.75mm",
+-     "display_offset_y": "9mm",
++     "display_offset_x": 3.75,
++     "display_offset_y": 9,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -994,12 +994,12 @@
+    {
+      "center": {
+        "x": 3.75,
+        "y": 7.5,
+      },
+-     "display_offset_x": "3.75mm",
+-     "display_offset_y": "7.5mm",
++     "display_offset_x": 3.75,
++     "display_offset_y": 7.5,
+      "do_not_place": false,
+      "height": 0.8999982000000006,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1020,12 +1020,12 @@
+    {
+      "center": {
+        "x": 14.25,
+        "y": 4.5,
+      },
+-     "display_offset_x": "14.25mm",
+-     "display_offset_y": "4.5mm",
++     "display_offset_x": 14.25,
++     "display_offset_y": 4.5,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1046,12 +1046,12 @@
+    {
+      "center": {
+        "x": 13.75,
+        "y": -5,
+      },
+-     "display_offset_x": "13.75mm",
+-     "display_offset_y": "-5mm",
++     "display_offset_x": 13.75,
++     "display_offset_y": -5,
+      "do_not_place": false,
+      "height": 0.8640000000000008,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1072,12 +1072,12 @@
+    {
+      "center": {
+        "x": -2.75,
+        "y": 5,
+      },
+-     "display_offset_x": "-2.75mm",
+-     "display_offset_y": "5mm",
++     "display_offset_x": -2.75,
++     "display_offset_y": 5,
+      "do_not_place": false,
+      "height": 2.313203400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1098,12 +1098,12 @@
+    {
+      "center": {
+        "x": 14.25,
+        "y": 6,
+      },
+-     "display_offset_x": "14.25mm",
+-     "display_offset_y": "6mm",
++     "display_offset_x": 14.25,
++     "display_offset_y": 6,
+      "do_not_place": false,
+      "height": 0.8640063999999992,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1124,12 +1124,12 @@
+    {
+      "center": {
+        "x": -2.5,
+        "y": 2,
+      },
+-     "display_offset_x": "-2.5mm",
+-     "display_offset_y": "2mm",
++     "display_offset_x": -2.5,
++     "display_offset_y": 2,
+      "do_not_place": false,
+      "height": 2.3132034,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1150,12 +1150,12 @@
+    {
+      "center": {
+        "x": 14.25,
+        "y": 7.5,
+      },
+-     "display_offset_x": "14.25mm",
+-     "display_offset_y": "7.5mm",
++     "display_offset_x": 14.25,
++     "display_offset_y": 7.5,
+      "do_not_place": false,
+      "height": 0.8640063999999992,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1176,12 +1176,12 @@
+    {
+      "center": {
+        "x": -2.5,
+        "y": -1,
+      },
+-     "display_offset_x": "-2.5mm",
+-     "display_offset_y": "-1mm",
++     "display_offset_x": -2.5,
++     "display_offset_y": -1,
+      "do_not_place": false,
+      "height": 2.3132034,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1202,12 +1202,12 @@
+    {
+      "center": {
+        "x": 13.75,
+        "y": -3.25,
+      },
+-     "display_offset_x": "13.75mm",
+-     "display_offset_y": "-3.25mm",
++     "display_offset_x": 13.75,
++     "display_offset_y": -3.25,
+      "do_not_place": false,
+      "height": 0.8640064000000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1228,12 +1228,12 @@
+    {
+      "center": {
+        "x": -2.5,
+        "y": -4,
+      },
+-     "display_offset_x": "-2.5mm",
+-     "display_offset_y": "-4mm",
++     "display_offset_x": -2.5,
++     "display_offset_y": -4,
+      "do_not_place": false,
+      "height": 2.3132034000000004,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1254,12 +1254,12 @@
+    {
+      "center": {
+        "x": 14.25,
+        "y": 9,
+      },
+-     "display_offset_x": "14.25mm",
+-     "display_offset_y": "9mm",
++     "display_offset_x": 14.25,
++     "display_offset_y": 9,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1280,12 +1280,12 @@
+    {
+      "center": {
+        "x": -2.5,
+        "y": -7,
+      },
+-     "display_offset_x": "-2.5mm",
+-     "display_offset_y": "-7mm",
++     "display_offset_x": -2.5,
++     "display_offset_y": -7,
+      "do_not_place": false,
+      "height": 2.3132034,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1306,12 +1306,12 @@
+    {
+      "center": {
+        "x": 4,
+        "y": -5.25,
+      },
+-     "display_offset_x": "4mm",
+-     "display_offset_y": "-5.25mm",
++     "display_offset_x": 4,
++     "display_offset_y": -5.25,
+      "do_not_place": false,
+      "height": 0.8640063999999992,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1332,12 +1332,12 @@
+    {
+      "center": {
+        "x": -16.75,
+        "y": 3.5,
+      },
+-     "display_offset_x": "-16.75mm",
+-     "display_offset_y": "3.5mm",
++     "display_offset_x": -16.75,
++     "display_offset_y": 3.5,
+      "do_not_place": false,
+      "height": 3.5999928000000003,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1358,12 +1358,12 @@
+    {
+      "center": {
+        "x": -17.25,
+        "y": -1,
+      },
+-     "display_offset_x": "-17.25mm",
+-     "display_offset_y": "-1mm",
++     "display_offset_x": -17.25,
++     "display_offset_y": -1,
+      "do_not_place": false,
+      "height": 2.5499314,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1384,12 +1384,12 @@
+    {
+      "center": {
+        "x": -11,
+        "y": 0.4999999999999999,
+      },
+-     "display_offset_x": "-11mm",
+-     "display_offset_y": "0.5mm",
++     "display_offset_x": -11,
++     "display_offset_y": 0.5,
+      "do_not_place": false,
+      "height": 2.6999183999999996,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1410,12 +1410,12 @@
+    {
+      "center": {
+        "x": -17.5,
+        "y": 9.05,
+      },
+-     "display_offset_x": "-17.5mm",
+-     "display_offset_y": "9.05mm",
++     "display_offset_x": -17.5,
++     "display_offset_y": 9.05,
+      "do_not_place": false,
+      "height": 3.4499930999999995,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1436,12 +1436,12 @@
+    {
+      "center": {
+        "x": -13.7,
+        "y": 7.5,
+      },
+-     "display_offset_x": "-13.7mm",
+-     "display_offset_y": "7.5mm",
++     "display_offset_x": -13.7,
++     "display_offset_y": 7.5,
+      "do_not_place": false,
+      "height": 2.200046399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1462,12 +1462,12 @@
+    {
+      "center": {
+        "x": -13.5,
+        "y": 4,
+      },
+-     "display_offset_x": "-13.5mm",
+-     "display_offset_y": "4mm",
++     "display_offset_x": -13.5,
++     "display_offset_y": 4,
+      "do_not_place": false,
+      "height": 2.2000463999999997,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1488,12 +1488,12 @@
+    {
+      "center": {
+        "x": -10,
+        "y": -17.75,
+      },
+-     "display_offset_x": "-10mm",
+-     "display_offset_y": "-17.75mm",
++     "display_offset_x": -10,
++     "display_offset_y": -17.75,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1514,12 +1514,12 @@
+    {
+      "center": {
+        "x": -10,
+        "y": -20,
+      },
+-     "display_offset_x": "-10mm",
+-     "display_offset_y": "-20mm",
++     "display_offset_x": -10,
++     "display_offset_y": -20,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1540,12 +1540,12 @@
+    {
+      "center": {
+        "x": -6.25,
+        "y": -14,
+      },
+-     "display_offset_x": "-6.25mm",
+-     "display_offset_y": "-14mm",
++     "display_offset_x": -6.25,
++     "display_offset_y": -14,
+      "do_not_place": false,
+      "height": 0.8640000000000008,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1566,12 +1566,12 @@
+    {
+      "center": {
+        "x": -6.25,
+        "y": -16,
+      },
+-     "display_offset_x": "-6.25mm",
+-     "display_offset_y": "-16mm",
++     "display_offset_x": -6.25,
++     "display_offset_y": -16,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1592,12 +1592,12 @@
+    {
+      "center": {
+        "x": -6.25,
+        "y": -18,
+      },
+-     "display_offset_x": "-6.25mm",
+-     "display_offset_y": "-18mm",
++     "display_offset_x": -6.25,
++     "display_offset_y": -18,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1618,12 +1618,12 @@
+    {
+      "center": {
+        "x": -7,
+        "y": 0,
+      },
+-     "display_offset_x": "-7mm",
+-     "display_offset_y": "0mm",
++     "display_offset_x": -7,
++     "display_offset_y": 0,
+      "do_not_place": false,
+      "height": 0.864,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1644,12 +1644,12 @@
+    {
+      "center": {
+        "x": -7,
+        "y": 6,
+      },
+-     "display_offset_x": "-7mm",
+-     "display_offset_y": "6mm",
++     "display_offset_x": -7,
++     "display_offset_y": 6,
+      "do_not_place": false,
+      "height": 0.8640063999999992,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1670,12 +1670,12 @@
+    {
+      "center": {
+        "x": -7,
+        "y": 2,
+      },
+-     "display_offset_x": "-7mm",
+-     "display_offset_y": "2mm",
++     "display_offset_x": -7,
++     "display_offset_y": 2,
+      "do_not_place": false,
+      "height": 0.8639999999999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1696,12 +1696,12 @@
+    {
+      "center": {
+        "x": -11.48,
+        "y": 7.5,
+      },
+-     "display_offset_x": "-11.48mm",
+-     "display_offset_y": "7.5mm",
++     "display_offset_x": -11.48,
++     "display_offset_y": 7.5,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1722,12 +1722,12 @@
+    {
+      "center": {
+        "x": -7,
+        "y": 4,
+      },
+-     "display_offset_x": "-7mm",
+-     "display_offset_y": "4mm",
++     "display_offset_x": -7,
++     "display_offset_y": 4,
+      "do_not_place": false,
+      "height": 0.8640000000000003,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1748,12 +1748,12 @@
+    {
+      "center": {
+        "x": -21,
+        "y": 4.5,
+      },
+-     "display_offset_x": "-21mm",
+-     "display_offset_y": "4.5mm",
++     "display_offset_x": -21,
++     "display_offset_y": 4.5,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1774,12 +1774,12 @@
+    {
+      "center": {
+        "x": 15.5,
+        "y": -0.5,
+      },
+-     "display_offset_x": "15.5mm",
+-     "display_offset_y": "-0.5mm",
++     "display_offset_x": 15.5,
++     "display_offset_y": -0.5,
+      "do_not_place": false,
+      "height": 2.6,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1800,12 +1800,12 @@
+    {
+      "center": {
+        "x": 15.75,
+        "y": -8,
+      },
+-     "display_offset_x": "15.75mm",
+-     "display_offset_y": "-8mm",
++     "display_offset_x": 15.75,
++     "display_offset_y": -8,
+      "do_not_place": false,
+      "height": 2.549931400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1826,12 +1826,12 @@
+    {
+      "center": {
+        "x": 2.5,
+        "y": -2.5,
+      },
+-     "display_offset_x": "2.5mm",
+-     "display_offset_y": "-2.5mm",
++     "display_offset_x": 2.5,
++     "display_offset_y": -2.5,
+      "do_not_place": false,
+      "height": 1.6799999999999997,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1852,12 +1852,12 @@
+    {
+      "center": {
+        "x": 16.5,
+        "y": -3.75,
+      },
+-     "display_offset_x": "16.5mm",
+-     "display_offset_y": "-3.75mm",
++     "display_offset_x": 16.5,
++     "display_offset_y": -3.75,
+      "do_not_place": false,
+      "height": 2.2000463999999997,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1878,12 +1878,12 @@
+    {
+      "center": {
+        "x": 15.5,
+        "y": 2.5,
+      },
+-     "display_offset_x": "15.5mm",
+-     "display_offset_y": "2.5mm",
++     "display_offset_x": 15.5,
++     "display_offset_y": 2.5,
+      "do_not_place": false,
+      "height": 0.8999981999999997,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1904,12 +1904,12 @@
+    {
+      "center": {
+        "x": 4,
+        "y": -12,
+      },
+-     "display_offset_x": "4mm",
+-     "display_offset_y": "-12mm",
++     "display_offset_x": 4,
++     "display_offset_y": -12,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1930,12 +1930,12 @@
+    {
+      "center": {
+        "x": 16.25,
+        "y": -15,
+      },
+-     "display_offset_x": "16.25mm",
+-     "display_offset_y": "-15mm",
++     "display_offset_x": 16.25,
++     "display_offset_y": -15,
+      "do_not_place": false,
+      "height": 0.8640000000000008,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1956,12 +1956,12 @@
+    {
+      "center": {
+        "x": 16.25,
+        "y": -16.5,
+      },
+-     "display_offset_x": "16.25mm",
+-     "display_offset_y": "-16.5mm",
++     "display_offset_x": 16.25,
++     "display_offset_y": -16.5,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -1982,12 +1982,12 @@
+    {
+      "center": {
+        "x": 14,
+        "y": -15.75,
+      },
+-     "display_offset_x": "14mm",
+-     "display_offset_y": "-15.75mm",
++     "display_offset_x": 14,
++     "display_offset_y": -15.75,
+      "do_not_place": false,
+      "height": 2.313203399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2008,12 +2008,12 @@
+    {
+      "center": {
+        "x": 16.25,
+        "y": -18,
+      },
+-     "display_offset_x": "16.25mm",
+-     "display_offset_y": "-18mm",
++     "display_offset_x": 16.25,
++     "display_offset_y": -18,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2034,12 +2034,12 @@
+    {
+      "center": {
+        "x": 15,
+        "y": -21,
+      },
+-     "display_offset_x": "15mm",
+-     "display_offset_y": "-21mm",
++     "display_offset_x": 15,
++     "display_offset_y": -21,
+      "do_not_place": false,
+      "height": 2.5,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2060,12 +2060,12 @@
+    {
+      "center": {
+        "x": 15,
+        "y": -26,
+      },
+-     "display_offset_x": "15mm",
+-     "display_offset_y": "-26mm",
++     "display_offset_x": 15,
++     "display_offset_y": -26,
+      "do_not_place": false,
+      "height": 1.6999999999999957,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2086,12 +2086,12 @@
+    {
+      "center": {
+        "x": 13,
+        "y": -8.25,
+      },
+-     "display_offset_x": "13mm",
+-     "display_offset_y": "-8.25mm",
++     "display_offset_x": 13,
++     "display_offset_y": -8.25,
+      "do_not_place": false,
+      "height": 2.200046399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2112,12 +2112,12 @@
+    {
+      "center": {
+        "x": 4,
+        "y": -23.75,
+      },
+-     "display_offset_x": "4mm",
+-     "display_offset_y": "-23.75mm",
++     "display_offset_x": 4,
++     "display_offset_y": -23.75,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2138,12 +2138,12 @@
+    {
+      "center": {
+        "x": 4.75,
+        "y": -21.5,
+      },
+-     "display_offset_x": "4.75mm",
+-     "display_offset_y": "-21.5mm",
++     "display_offset_x": 4.75,
++     "display_offset_y": -21.5,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2164,12 +2164,12 @@
+    {
+      "center": {
+        "x": 12,
+        "y": -30,
+      },
+-     "display_offset_x": "12mm",
+-     "display_offset_y": "-30mm",
++     "display_offset_x": 12,
++     "display_offset_y": -30,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2190,12 +2190,12 @@
+    {
+      "center": {
+        "x": 9,
+        "y": -30,
+      },
+-     "display_offset_x": "9mm",
+-     "display_offset_y": "-30mm",
++     "display_offset_x": 9,
++     "display_offset_y": -30,
+      "do_not_place": false,
+      "height": 2.313203399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2216,12 +2216,12 @@
+    {
+      "center": {
+        "x": 13.75,
+        "y": -28.25,
+      },
+-     "display_offset_x": "13.75mm",
+-     "display_offset_y": "-28.25mm",
++     "display_offset_x": 13.75,
++     "display_offset_y": -28.25,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2242,12 +2242,12 @@
+    {
+      "center": {
+        "x": 6.75,
+        "y": -29,
+      },
+-     "display_offset_x": "6.75mm",
+-     "display_offset_y": "-29mm",
++     "display_offset_x": 6.75,
++     "display_offset_y": -29,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2268,12 +2268,12 @@
+    {
+      "center": {
+        "x": 13.75,
+        "y": -23.75,
+      },
+-     "display_offset_x": "13.75mm",
+-     "display_offset_y": "-23.75mm",
++     "display_offset_x": 13.75,
++     "display_offset_y": -23.75,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2294,12 +2294,12 @@
+    {
+      "center": {
+        "x": 16.75,
+        "y": -23.5,
+      },
+-     "display_offset_x": "16.75mm",
+-     "display_offset_y": "-23.5mm",
++     "display_offset_x": 16.75,
++     "display_offset_y": -23.5,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2320,12 +2320,12 @@
+    {
+      "center": {
+        "x": 15,
+        "y": -29.75,
+      },
+-     "display_offset_x": "15mm",
+-     "display_offset_y": "-29.75mm",
++     "display_offset_x": 15,
++     "display_offset_y": -29.75,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2346,12 +2346,12 @@
+    {
+      "center": {
+        "x": 16.5,
+        "y": -31.42,
+      },
+-     "display_offset_x": "16.5mm",
+-     "display_offset_y": "-31.42mm",
++     "display_offset_x": 16.5,
++     "display_offset_y": -31.42,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2372,12 +2372,12 @@
+    {
+      "center": {
+        "x": 18,
+        "y": -21.25,
+      },
+-     "display_offset_x": "18mm",
+-     "display_offset_y": "-21.25mm",
++     "display_offset_x": 18,
++     "display_offset_y": -21.25,
+      "do_not_place": false,
+      "height": 2.313203399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2398,12 +2398,12 @@
+    {
+      "center": {
+        "x": 18,
+        "y": -25.75,
+      },
+-     "display_offset_x": "18mm",
+-     "display_offset_y": "-25.75mm",
++     "display_offset_x": 18,
++     "display_offset_y": -25.75,
+      "do_not_place": false,
+      "height": 2.313203399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2424,12 +2424,12 @@
+    {
+      "center": {
+        "x": 15,
+        "y": 20.75,
+      },
+-     "display_offset_x": "15mm",
+-     "display_offset_y": "20.75mm",
++     "display_offset_x": 15,
++     "display_offset_y": 20.75,
+      "do_not_place": false,
+      "height": 2.499918800000003,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2450,12 +2450,12 @@
+    {
+      "center": {
+        "x": 12.5,
+        "y": 17,
+      },
+-     "display_offset_x": "12.5mm",
+-     "display_offset_y": "17mm",
++     "display_offset_x": 12.5,
++     "display_offset_y": 17,
+      "do_not_place": false,
+      "height": 2.313203400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2476,12 +2476,12 @@
+    {
+      "center": {
+        "x": 14.5,
+        "y": 24.75,
+      },
+-     "display_offset_x": "14.5mm",
+-     "display_offset_y": "24.75mm",
++     "display_offset_x": 14.5,
++     "display_offset_y": 24.75,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2502,12 +2502,12 @@
+    {
+      "center": {
+        "x": 15,
+        "y": 17.5,
+      },
+-     "display_offset_x": "15mm",
+-     "display_offset_y": "17.5mm",
++     "display_offset_x": 15,
++     "display_offset_y": 17.5,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2528,12 +2528,12 @@
+    {
+      "center": {
+        "x": -10.25,
+        "y": -9,
+      },
+-     "display_offset_x": "-10.25mm",
+-     "display_offset_y": "-9mm",
++     "display_offset_x": -10.25,
++     "display_offset_y": -9,
+      "do_not_place": false,
+      "height": 2.4999188000000023,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2554,12 +2554,12 @@
+    {
+      "center": {
+        "x": -10,
+        "y": -12,
+      },
+-     "display_offset_x": "-10mm",
+-     "display_offset_y": "-12mm",
++     "display_offset_x": -10,
++     "display_offset_y": -12,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2580,12 +2580,12 @@
+    {
+      "center": {
+        "x": -10,
+        "y": -14,
+      },
+-     "display_offset_x": "-10mm",
+-     "display_offset_y": "-14mm",
++     "display_offset_x": -10,
++     "display_offset_y": -14,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2606,12 +2606,12 @@
+    {
+      "center": {
+        "x": -10,
+        "y": -6,
+      },
+-     "display_offset_x": "-10mm",
+-     "display_offset_y": "-6mm",
++     "display_offset_x": -10,
++     "display_offset_y": -6,
+      "do_not_place": false,
+      "height": 0.8999982000000006,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2632,12 +2632,12 @@
+    {
+      "center": {
+        "x": -5,
+        "y": -23,
+      },
+-     "display_offset_x": "-5mm",
+-     "display_offset_y": "-23mm",
++     "display_offset_x": -5,
++     "display_offset_y": -23,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2658,12 +2658,12 @@
+    {
+      "center": {
+        "x": -16.5010533,
+        "y": -28.75,
+      },
+-     "display_offset_x": "-16.25mm",
+-     "display_offset_y": "-28.75mm",
++     "display_offset_x": -16.25,
++     "display_offset_y": -28.75,
+      "do_not_place": false,
+      "height": 2.4000968,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2684,12 +2684,12 @@
+    {
+      "center": {
+        "x": 20.248946699999998,
+        "y": -29,
+      },
+-     "display_offset_x": "20.5mm",
+-     "display_offset_y": "-29mm",
++     "display_offset_x": 20.5,
++     "display_offset_y": -29,
+      "do_not_place": false,
+      "height": 2.4000968,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2710,12 +2710,12 @@
+    {
+      "center": {
+        "x": -20,
+        "y": -24.75,
+      },
+-     "display_offset_x": "-20mm",
+-     "display_offset_y": "-24.75mm",
++     "display_offset_x": -20,
++     "display_offset_y": -24.75,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2736,12 +2736,12 @@
+    {
+      "center": {
+        "x": 17.05,
+        "y": -28.1,
+      },
+-     "display_offset_x": "17.05mm",
+-     "display_offset_y": "-28.1mm",
++     "display_offset_x": 17.05,
++     "display_offset_y": -28.1,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2762,12 +2762,12 @@
+    {
+      "center": {
+        "x": -17,
+        "y": -19,
+      },
+-     "display_offset_x": "-17mm",
+-     "display_offset_y": "-19mm",
++     "display_offset_x": -17,
++     "display_offset_y": -19,
+      "do_not_place": false,
+      "height": 2.499918800000003,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2788,12 +2788,12 @@
+    {
+      "center": {
+        "x": -13,
+        "y": -18,
+      },
+-     "display_offset_x": "-13mm",
+-     "display_offset_y": "-18mm",
++     "display_offset_x": -13,
++     "display_offset_y": -18,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2814,12 +2814,12 @@
+    {
+      "center": {
+        "x": -13,
+        "y": -20,
+      },
+-     "display_offset_x": "-13mm",
+-     "display_offset_y": "-20mm",
++     "display_offset_x": -13,
++     "display_offset_y": -20,
+      "do_not_place": false,
+      "height": 0.8639999999999972,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2840,12 +2840,12 @@
+    {
+      "center": {
+        "x": -17,
+        "y": -22,
+      },
+-     "display_offset_x": "-17mm",
+-     "display_offset_y": "-22mm",
++     "display_offset_x": -17,
++     "display_offset_y": -22,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2866,12 +2866,12 @@
+    {
+      "center": {
+        "x": -17,
+        "y": -24,
+      },
+-     "display_offset_x": "-17mm",
+-     "display_offset_y": "-24mm",
++     "display_offset_x": -17,
++     "display_offset_y": -24,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2892,12 +2892,12 @@
+    {
+      "center": {
+        "x": -21,
+        "y": -16.5,
+      },
+-     "display_offset_x": "-21mm",
+-     "display_offset_y": "-16.5mm",
++     "display_offset_x": -21,
++     "display_offset_y": -16.5,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2918,12 +2918,12 @@
+    {
+      "center": {
+        "x": -21,
+        "y": -18,
+      },
+-     "display_offset_x": "-21mm",
+-     "display_offset_y": "-18mm",
++     "display_offset_x": -21,
++     "display_offset_y": -18,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2944,12 +2944,12 @@
+    {
+      "center": {
+        "x": 21.9,
+        "y": 30.4,
+      },
+-     "display_offset_x": "21.9mm",
+-     "display_offset_y": "30.4mm",
++     "display_offset_x": 21.9,
++     "display_offset_y": 30.4,
+      "do_not_place": false,
+      "height": 1.524000000000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2970,12 +2970,12 @@
+    {
+      "center": {
+        "x": 1.7499999999999998,
+        "y": 29,
+      },
+-     "display_offset_x": "1.75mm",
+-     "display_offset_y": "29mm",
++     "display_offset_x": 1.75,
++     "display_offset_y": 29,
+      "do_not_place": false,
+      "height": 1.524000000000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -2996,12 +2996,12 @@
+    {
+      "center": {
+        "x": 6.5,
+        "y": 28,
+      },
+-     "display_offset_x": "6.5mm",
+-     "display_offset_y": "28mm",
++     "display_offset_x": 6.5,
++     "display_offset_y": 28,
+      "do_not_place": false,
+      "height": 1.524000000000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3022,12 +3022,12 @@
+    {
+      "center": {
+        "x": -22,
+        "y": -1,
+      },
+-     "display_offset_x": "-22mm",
+-     "display_offset_y": "-1mm",
++     "display_offset_x": -22,
++     "display_offset_y": -1,
+      "do_not_place": false,
+      "height": 8.3998816,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3048,12 +3048,12 @@
+    {
+      "center": {
+        "x": 22,
+        "y": -8,
+      },
+-     "display_offset_x": "22mm",
+-     "display_offset_y": "-8mm",
++     "display_offset_x": 22,
++     "display_offset_y": -8,
+      "do_not_place": false,
+      "height": 2,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3070,12 +3070,12 @@
+    {
+      "center": {
+        "x": 22,
+        "y": -11,
+      },
+-     "display_offset_x": "22mm",
+-     "display_offset_y": "-11mm",
++     "display_offset_x": 22,
++     "display_offset_y": -11,
+      "do_not_place": false,
+      "height": 2,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3092,12 +3092,12 @@
+    {
+      "center": {
+        "x": 6,
+        "y": 21,
+      },
+-     "display_offset_x": "6mm",
+-     "display_offset_y": "21mm",
++     "display_offset_x": 6,
++     "display_offset_y": 21,
+      "do_not_place": false,
+      "height": 3.850005000000003,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3118,12 +3118,12 @@
+    {
+      "center": {
+        "x": 2.5,
+        "y": 21,
+      },
+-     "display_offset_x": "2.5mm",
+-     "display_offset_y": "21mm",
++     "display_offset_x": 2.5,
++     "display_offset_y": 21,
+      "do_not_place": false,
+      "height": 2.313203399999999,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3144,12 +3144,12 @@
+    {
+      "center": {
+        "x": 1,
+        "y": 18.9,
+      },
+-     "display_offset_x": "1mm",
+-     "display_offset_y": "18.9mm",
++     "display_offset_x": 1,
++     "display_offset_y": 18.9,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3170,12 +3170,12 @@
+    {
+      "center": {
+        "x": 3,
+        "y": 17.5,
+      },
+-     "display_offset_x": "3mm",
+-     "display_offset_y": "17.5mm",
++     "display_offset_x": 3,
++     "display_offset_y": 17.5,
+      "do_not_place": false,
+      "height": 0.864006400000001,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3196,12 +3196,12 @@
+    {
+      "center": {
+        "x": 9.75,
+        "y": 21,
+      },
+-     "display_offset_x": "9.75mm",
+-     "display_offset_y": "21mm",
++     "display_offset_x": 9.75,
++     "display_offset_y": 21,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3222,12 +3222,12 @@
+    {
+      "center": {
+        "x": 11.7,
+        "y": 21,
+      },
+-     "display_offset_x": "11.7mm",
+-     "display_offset_y": "21mm",
++     "display_offset_x": 11.7,
++     "display_offset_y": 21,
+      "do_not_place": false,
+      "height": 2.200046399999998,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3248,12 +3248,12 @@
+    {
+      "center": {
+        "x": 6,
+        "y": 24.5,
+      },
+-     "display_offset_x": "6mm",
+-     "display_offset_y": "24.5mm",
++     "display_offset_x": 6,
++     "display_offset_y": 24.5,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3274,12 +3274,12 @@
+    {
+      "center": {
+        "x": 6,
+        "y": 17.5,
+      },
+-     "display_offset_x": "6mm",
+-     "display_offset_y": "17.5mm",
++     "display_offset_x": 6,
++     "display_offset_y": 17.5,
+      "do_not_place": false,
+      "height": 0.8999981999999989,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3300,12 +3300,12 @@
+    {
+      "center": {
+        "x": -23,
+        "y": 4.5,
+      },
+-     "display_offset_x": "-23mm",
+-     "display_offset_y": "4.5mm",
++     "display_offset_x": -23,
++     "display_offset_y": 4.5,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3322,12 +3322,12 @@
+    {
+      "center": {
+        "x": -15.8,
+        "y": 10.8,
+      },
+-     "display_offset_x": "-15.8mm",
+-     "display_offset_y": "10.8mm",
++     "display_offset_x": -15.8,
++     "display_offset_y": 10.8,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3344,12 +3344,12 @@
+    {
+      "center": {
+        "x": -13.6,
+        "y": 10.8,
+      },
+-     "display_offset_x": "-13.6mm",
+-     "display_offset_y": "10.8mm",
++     "display_offset_x": -13.6,
++     "display_offset_y": 10.8,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3366,12 +3366,12 @@
+    {
+      "center": {
+        "x": -11.399999999999999,
+        "y": 10.8,
+      },
+-     "display_offset_x": "-11.399999999999999mm",
+-     "display_offset_y": "10.8mm",
++     "display_offset_x": -11.399999999999999,
++     "display_offset_y": 10.8,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3388,12 +3388,12 @@
+    {
+      "center": {
+        "x": -9.2,
+        "y": 10.8,
+      },
+-     "display_offset_x": "-9.2mm",
+-     "display_offset_y": "10.8mm",
++     "display_offset_x": -9.2,
++     "display_offset_y": 10.8,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3410,12 +3410,12 @@
+    {
+      "center": {
+        "x": -7,
+        "y": 10.8,
+      },
+-     "display_offset_x": "-7mm",
+-     "display_offset_y": "10.8mm",
++     "display_offset_x": -7,
++     "display_offset_y": 10.8,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3432,12 +3432,12 @@
+    {
+      "center": {
+        "x": -4.799999999999999,
+        "y": 10.8,
+      },
+-     "display_offset_x": "-4.799999999999999mm",
+-     "display_offset_y": "10.8mm",
++     "display_offset_x": -4.799999999999999,
++     "display_offset_y": 10.8,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+@@ -3454,12 +3454,12 @@
+    {
+      "center": {
+        "x": -1,
+        "y": -5,
+      },
+-     "display_offset_x": "-1mm",
+-     "display_offset_y": "-5mm",
++     "display_offset_x": -1,
++     "display_offset_y": -5,
+      "do_not_place": false,
+      "height": 1,
+      "is_allowed_to_be_off_board": false,
+      "layer": "top",
+      "obstructs_within_bounds": true,
+
+- Expected  - 273
++ Received  + 273
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/placement-review-preservation.test.ts:173:68)
+(fail) Native placement review preserves the board > all electrical connections and physical placement features match the canonical board [10.19ms]
+(pass) Native placement review preserves the board > the original switching paths and USB geometry survive the qualified stackup width change [25.80ms]
+
+tests/integrated-board-boundaries.test.ts:
+(pass) Native A4 board boundaries and fabrication gate > board has top-only physical components within the accepted PCB dimensions [19.26ms]
+ 98 |       thickness: 1.0,
+ 99 |     })
+100 |   })
+101 |   test("fabrication requires nonempty actual copper and zero unresolved native errors", () => {
+102 |     expect(rawElements.filter((element) => element.type === "pcb_trace").length).toBeGreaterThan(0)
+103 |     expect(rawElements.filter((element) => element.type.includes("error"))).toEqual([])
+                                                                                  ^
+error: expect(received).toEqual(expected)
+
+- []
++ [
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin50] is not connected to net [LCD_BACKLIGHT_OUTPUT] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_228",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_0",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin49] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_227",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_1",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin48] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_226",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_2",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin47] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_225",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_3",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin46] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_224",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_4",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin45] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_223",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_5",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin44] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_222",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_6",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin43] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_221",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_7",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin42] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_220",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_8",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin41] is not connected to net [LCD_RESET_N] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_219",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_9",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin40] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_218",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_10",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin39] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_217",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_11",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin38] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_216",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_12",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin37] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_215",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_13",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin36] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_214",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_14",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin35] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_213",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_15",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin34] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_212",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_16",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin33] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_211",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_17",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin32] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_210",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_18",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin31] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_209",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_19",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin30] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_208",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_20",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin29] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_207",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_21",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin28] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_206",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_22",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin27] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_205",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_23",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin26] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_204",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_24",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin25] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_203",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_25",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin24] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_202",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_26",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin23] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_201",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_27",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin22] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_200",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_28",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin21] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_199",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_29",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin20] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_198",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_30",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin19] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_197",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_31",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin17] is not connected to net [LCD_SDA] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_195",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_32",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin16] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_194",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_33",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin15] is not connected to net [LCD_DC] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_193",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_34",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin14] is not connected to net [LCD_SCLK] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_192",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_35",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin13] is not connected to net [LCD_CS_N] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_191",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_36",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin11] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_189",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_37",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin10] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_188",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_38",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin9] is not connected to net [VLCD] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_187",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_39",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin8] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_186",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_40",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin3] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_181",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_41",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin2] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_180",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_42",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin1] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_179",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_43",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin51] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_229",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_44",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [J7.pin52] is not connected to net [GND] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_34",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_230",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_45",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D4] is not connected to net [LCD_BACKLIGHT_RETURN_4] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_456",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_46",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D3] is not connected to net [LCD_BACKLIGHT_RETURN_3] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_457",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_47",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D2] is not connected to net [LCD_BACKLIGHT_RETURN_2] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_458",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_48",
++     "type": "pcb_port_not_connected_error",
++   },
++   {
++     "error_type": "pcb_port_not_connected_error",
++     "message": "Port [U27.D1] is not connected to net [LCD_BACKLIGHT_RETURN_1] by a PCB trace.",
++     "pcb_component_ids": [
++       "pcb_component_119",
++     ],
++     "pcb_port_ids": [
++       "pcb_port_459",
++     ],
++     "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_49",
++     "type": "pcb_port_not_connected_error",
++   },
++ ]
+
+- Expected  - 1
++ Received  + 602
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/integrated-board-boundaries.test.ts:103:77)
+(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.88ms]
+(pass) Native A4 board boundaries and fabrication gate > there is one shared instance of each inter-sheet rail [2.21ms]
+(pass) Native A4 board boundaries and fabrication gate > hardware hold and privacy remain distinct from buffered MCU readback [0.83ms]
+(pass) Native A4 board boundaries and fabrication gate > dual microphones, external loads and GPIO interfaces have actual source connections [1.09ms]
+
+tests/battery-ready-hardware-boundaries.test.ts:
+(pass) battery supervisor senses charger BAT and cannot be overridden by the MCU [0.63ms]
+
+tests/standard-uart-connector.test.ts:
+(pass) the genuine JST SH connector matches the standard UART target without power or reset contacts [3.76ms]
+
+tests/mcu-usb-manufacturer-connections.test.ts:
+(fail) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [7202.25ms]
+  ^ this test timed out after 5000ms.
+(pass) Espressif module datasheet v1.8 connection requirements > module supply, reset, USB polarity and boot reach the correct physical pins [1.09ms]
+(pass) Espressif module datasheet v1.8 connection requirements > octal PSRAM pins 28–30 stay disconnected from external applications [1.08ms]
+(pass) Espressif module datasheet v1.8 connection requirements > all nine exposed ground shapes retain their physical identity and internal connection [0.18ms]
+89 |         (element) =>
+90 |           element.type === "pcb_trace" ||
+91 |           element.type === "pcb_via" ||
+92 |           element.type.endsWith("_error"),
+93 |       ),
+94 |     ).toHaveLength(0)
+           ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 751
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/mcu-usb-manufacturer-connections.test.ts:94:7)
+(fail) Espressif module datasheet v1.8 connection requirements > the diagnostic remains unrouted and contains no emitted errors [1.15ms]
+
+tests/backlight-manufacturer-connections.test.ts:
+(pass) TPS60230 current driver uses TI physical pins, four independent LED returns and same-rail enables [4.34ms]
+
+tests/import-qualification.test.ts:
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.05ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.09ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.03ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.02ms]
+(pass) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.19ms]
+
+tests/microphone-clock-hardware-boundaries.test.ts:
+(pass) microphone clock hardware boundaries > TI regulator enable belongs only to the hardware hold net [1.10ms]
+(pass) microphone clock hardware boundaries > Nexperia open-drain clocks obtain both high levels only from VMIC [0.60ms]
+
+tests/amplifier-manufacturer-connections.test.ts:
+(pass) amplifier manufacturer requirements > power, exposed ground, differential output and left-channel gain use manufacturer pins [1.29ms]
+(pass) amplifier manufacturer requirements > shutdown uses amplifier supply and MOSFET physical gate/source/drain polarity [0.55ms]
+
+tests/final-display-manufacturer-connections.test.ts:
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [2.69ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [3.58ms]
+(pass) display manufacturer physical pin requirements > genuine top-contact connector retains pin 50 north; portrait mating remains provisional [4.72ms]
+(pass) display manufacturer physical pin requirements > TI TPS60230 powers four separate panel cathodes, retaining D1 regulation feedback [1.24ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open [3.44ms]
+
+tests/imported-reference-ownership.test.ts:
+(pass) native imported reference labels belong to the correct component > comparator [129.11ms]
+(pass) native imported reference labels belong to the correct component > usb [112.95ms]
+(pass) native imported reference labels belong to the correct component > amplifier [94.41ms]
+
+tests/hold-readback-hardware-boundaries.test.ts:
+(pass) MCU hold readback reaches the buffer output, without a direct hardware-enable connection [0.90ms]
+
+tests/mounting-and-battery-prerequisites.test.ts:
+(pass) AKY2945 centre NTC is connected and unresolved outer polarity is left open [3.83ms]
+51 |   ]) {
+52 |     expect(
+53 |       mounts.some(
+54 |         (element) => element.x === x && element.y === y && element.pcb_component_id === null,
+55 |       ),
+56 |     ).toBe(true)
+           ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/mounting-and-battery-prerequisites.test.ts:56:7)
+(fail) A4 trial M2 mounts are nonconductive holes with all-layer circular clearance [1.05ms]
+
+5 tests failed:
+(fail) Native placement review preserves the board > all electrical connections and physical placement features match the canonical board [10.19ms]
+(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.88ms]
+(fail) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [7202.25ms]
+  ^ this test timed out after 5000ms.
+(fail) Espressif module datasheet v1.8 connection requirements > the diagnostic remains unrouted and contains no emitted errors [1.15ms]
+(fail) A4 trial M2 mounts are nonconductive holes with all-layer circular clearance [1.05ms]
+
+ 46 pass
+ 5 fail
+ 698 expect() calls
+Ran 51 tests across 18 files. [9.51s]
+error: script "test" exited with code 1

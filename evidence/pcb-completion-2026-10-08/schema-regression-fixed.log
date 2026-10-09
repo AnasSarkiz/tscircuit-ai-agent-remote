@@ -1,0 +1,22 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+15 |   )
+16 |   await circuit.renderUntilSettled()
+17 |   const elements = circuit.getCircuitJson()
+18 |   for (const element of elements) {
+19 |     const result = any_circuit_element.safeParse(element)
+20 |     expect(result.success, element.type).toBe(true)
+                                              ^
+error: pcb_silkscreen_text
+
+Expected: true
+Received: false
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/generated-position-metadata-schema.test.tsx:20:42)
+(fail) generated position and optional ownership metadata match circuit-json [153.40ms]
+
+ 0 pass
+ 1 fail
+ 28 expect() calls
+Ran 1 test across 1 file. [1142.00ms]

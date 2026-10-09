@@ -21,17 +21,17 @@ export function SpeakerSheet({ placementOnly = false }: { placementOnly?: boolea
       sheetSize="A4"
     >
       <group name="speaker-amplifier-review-group" schLayout={{ layoutMode: "relative" }}>
-        <MAX98357AETE_T name="U3" {...place("U3")} schX={2} schY={0} />
+        <MAX98357AETE_T name="U3" {...place("U3")} schX={2.13} schY={0} schWidth={2.5} />
         <AO3400A name="Q1" {...place("Q1")} schX={-10} schY={-8} />
         <AO3401A name="Q2" {...place("Q2")} schX={-5} schY={-8} />
         <S2B_PH_K_S_LF__SN_ name="J4" {...place("J4")} schX={9} schY={0} />
         <GRM188R61A106ME69D name="C50" {...place("C50")} schX={1} schY={6} schRotation={-90} />
-        <GRM188R71C104KA01D name="C51" {...place("C51")} schX={4} schY={6} schRotation={-90} />
+        <GRM188R71C104KA01D name="C51" {...place("C51")} schX={2.5} schY={6} schRotation={-90} />
         <A_0603WAF1000T5E name="R60" {...place("R60")} schX={-15} schY={-8} />
         <RC0603FR_0710KL name="R61" {...place("R61")} schX={-10} schY={-11} schRotation={-90} />
         <A_0603WAF1001T5E name="R62" {...place("R62")} schX={-5} schY={-4} schRotation={-90} />
-        <A_0603WAF1000T5E name="R63" {...place("R63")} schX={0} schY={-8} schRotation={-90} />
-        <A_0603WAF1001T5E name="R64" {...place("R64")} schX={4} schY={-8} schRotation={-90} />
+        <A_0603WAF1000T5E name="R63" {...place("R63")} schX={-1.13} schY={1} schRotation={-90} />
+        <A_0603WAF1001T5E name="R64" {...place("R64")} schX={-1} schY={-2.5} schRotation={-90} />
         <trace from="U3.pin2" to="net.VSYS" />
         <trace from="U3.pin7" to="net.VSYS" />
         <trace from="U3.pin8" to="net.VSYS" />

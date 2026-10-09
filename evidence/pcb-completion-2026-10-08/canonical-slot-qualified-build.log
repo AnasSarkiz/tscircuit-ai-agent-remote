@@ -1,0 +1,91 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/excellon-drill/excellon-drill-builder.test.ts:
+(pass) test that we can recreate an example drill file [0.64ms]
+
+tests/excellon-drill/excellon-drill-stringification.test.ts:
+(pass) test that we can recreate an example drill file [0.49ms]
+
+tests/excellon-drill/convert-soup-to-excellon-drill.test.ts:
+(pass) generate excellon drill text from axial resistor [1.31ms]
+
+tests/excellon-drill/physical-via-span-compatibility.test.ts:
+(pass) preserves blind/buried physical spans and legacy endpoint-only inputs [2.33ms]
+
+tests/excellon-drill/physical-via-layer-precedence.test.ts:
+(pass) Gerber file export uses the physical through-via span [5.52ms]
+(pass) physical endpoints span all 2 board layers despite legacy endpoints [0.19ms]
+(pass) physical endpoints span all 4 board layers despite legacy endpoints [0.79ms]
+(pass) physical endpoints span all 6 board layers despite legacy endpoints [0.08ms]
+(pass) physical endpoints span all 8 board layers despite legacy endpoints [0.09ms]
+(pass) physical span [ "inner1", "top" ] overrides legacy through-via endpoints [0.10ms]
+(pass) physical span [ "inner2", "inner1" ] overrides legacy through-via endpoints [0.06ms]
+(pass) physical span [ "bottom", "inner2" ] overrides legacy through-via endpoints [0.03ms]
+(pass) missing physical layers fall back to normalized legacy endpoints [1.19ms]
+(pass) empty physical layers fall back to normalized legacy endpoints [0.08ms]
+(pass) missing layer metadata defaults to a through-board drill [0.13ms]
+(pass) single-span export filters by physical layers without mutating the input [0.26ms]
+
+tests/excellon-drill/via-drill-deduplication-output.test.ts:
+(pass) Gerber file export emits one operation per physical via [2.66ms]
+
+tests/excellon-drill/via-drill-deduplication.test.ts:
+(pass) shared physical vias emit one drill despite different IDs and layer ordering [0.29ms]
+(pass) physical vias with missing trace IDs cover partial route transitions [0.08ms]
+(pass) physical vias with same trace IDs cover partial route transitions [0.06ms]
+(pass) physical vias with different trace IDs cover partial route transitions [0.05ms]
+(pass) an explicit via and its same-span route fallback produce one drill [0.05ms]
+(pass) route-only vias remain supported and repeated reversed spans drill once [0.08ms]
+(pass) coincident route-only vias with distinct spans remain separate [0.29ms]
+(pass) coincident explicit vias with different physical spans remain separate [0.27ms]
+(pass) a route extending outside an explicit blind via keeps its own drill [0.16ms]
+(pass) stacked explicit spans do not suppress a route crossing both barrels [0.16ms]
+(pass) different drill diameters remain separate for explicit and route vias [0.16ms]
+(pass) different x or y coordinates are not merged [0.09ms]
+(pass) legacy explicit via spans also reconcile matching route transitions [0.07ms]
+(pass) single-span deduplication preserves input and flip_y_axis=false [0.11ms]
+(pass) single-span deduplication preserves input and flip_y_axis=true [0.03ms]
+(pass) non-plated holes and plated component holes are not deduplicated as vias [0.18ms]
+
+tests/excellon-drill/physical-via-route-deduplication.test.ts:
+(pass) emits one drill per barrel when routes also carry drill dimensions [1.01ms]
+
+tests/excellon-drill/canned-slot-endpoints.test.ts:
+(pass) canned slots emit both endpoints in one Excellon block without an extra round drill [0.64ms]
+
+ 35 pass
+ 0 fail
+ 1 snapshots, 125 expect() calls
+Ran 35 tests across 9 files. [77.00ms]
+Formatted 3 files in 7ms. Fixed 1 file.
+CLI Building entry: src/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Target: esnext
+ESM Build start
+ESM dist/index.js     150.14 KB
+ESM dist/index.js.map 302.20 KB
+ESM ⚡️ Build success in 92ms
+DTS Build start
+DTS ⚡️ Build success in 4046ms
+DTS dist/index.d.ts 24.66 KB
+npm notice
+npm notice 📦  circuit-json-to-gerber@0.0.112-board-fixes.1
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 1.4kB README.md
+npm notice 25.3kB dist/index.d.ts
+npm notice 153.8kB dist/index.js
+npm notice 309.5kB dist/index.js.map
+npm notice 1.4kB package.json
+npm notice Tarball Details
+npm notice name: circuit-json-to-gerber
+npm notice version: 0.0.112-board-fixes.1
+npm notice filename: circuit-json-to-gerber-0.0.112-board-fixes.1.tgz
+npm notice package size: 91.0 kB
+npm notice unpacked size: 492.4 kB
+npm notice shasum: 1d2f1133b6c389649208dfe35e1a07c3b65d4863
+npm notice integrity: sha512-dBt2C2v2EeSJL[...]IhJcZh8qCvUSw==
+npm notice total files: 6
+npm notice
+circuit-json-to-gerber-0.0.112-board-fixes.1.tgz

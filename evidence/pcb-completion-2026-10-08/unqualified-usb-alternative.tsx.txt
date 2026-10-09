@@ -1,0 +1,94 @@
+import type { ChipProps } from "@tscircuit/props";
+
+const pinLabels = {
+  pin1: ["D_POS"],
+  pin2: ["D_NEG"],
+  pin3: ["GND"],
+} as const;
+
+/**
+ * Texas Instruments TPD2EUSB30 dual low-capacitance USB ESD protector.
+ * Exact LCSC/JLCPCB part C97502 and DRT (SOT-3) land pattern.
+ */
+export const TPD2EUSB30DRTR = (props: ChipProps<typeof pinLabels>) => (
+  <chip
+    pinLabels={pinLabels}
+    pinAttributes={{
+      D_POS: { mustBeConnected: true },
+      D_NEG: { mustBeConnected: true },
+      GND: { requiresGround: true, mustBeConnected: true },
+    }}
+    supplierPartNumbers={{ jlcpcb: ["C97502"] }}
+    manufacturerPartNumber="TPD2EUSB30DRTR"
+    footprint={
+      <footprint>
+        <smtpad
+          portHints={["pin1"]}
+          pcbX="0.499999mm"
+          pcbY="-0.350012mm"
+          width="0.2999994mm"
+          height="0.1999996mm"
+          shape="rect"
+        />
+        <smtpad
+          portHints={["pin2"]}
+          pcbX="0.499999mm"
+          pcbY="0.350012mm"
+          width="0.2999994mm"
+          height="0.1999996mm"
+          shape="rect"
+        />
+        <smtpad
+          portHints={["pin3"]}
+          pcbX="-0.499999mm"
+          pcbY="0mm"
+          width="0.2999994mm"
+          height="0.1999996mm"
+          shape="rect"
+        />
+        <silkscreenpath
+          route={[
+            { x: -0.4, y: -0.5 },
+            { x: 0.125, y: -0.5 },
+          ]}
+        />
+        <silkscreenpath
+          route={[
+            { x: -0.4, y: 0.5 },
+            { x: 0.125, y: 0.5 },
+          ]}
+        />
+        <silkscreenpath
+          route={[
+            { x: -0.4, y: -0.5 },
+            { x: -0.4, y: -0.33 },
+          ]}
+        />
+        <silkscreenpath
+          route={[
+            { x: -0.4, y: 0.33 },
+            { x: -0.4, y: 0.5 },
+          ]}
+        />
+        <courtyardoutline
+          outline={[
+            { x: -0.911, y: 0.758 },
+            { x: 1.113, y: 0.758 },
+            { x: 1.113, y: -0.783 },
+            { x: -0.911, y: -0.783 },
+            { x: -0.911, y: 0.758 },
+          ]}
+        />
+      </footprint>
+    }
+    cadModel={{
+      objUrl:
+        "https://modelcdn.tscircuit.com/easyeda_models/assets/C97502.obj?uuid=7e46175b4c3341ab8d7b74e33c98b337",
+      stepUrl:
+        "https://modelcdn.tscircuit.com/easyeda_models/assets/C97502.step?uuid=7e46175b4c3341ab8d7b74e33c98b337",
+      pcbRotationOffset: 90,
+      modelOriginPosition: { x: 0.0000127, y: 0, z: 0 },
+    }}
+    {...props}
+  />
+);

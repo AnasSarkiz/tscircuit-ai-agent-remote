@@ -17,13 +17,13 @@ export function BacklightSheet({ placementOnly = false }: { placementOnly?: bool
     >
       <group name="BacklightSheet-group" schLayout={{ layoutMode: "relative" }}>
         <TPS60230RGTR name="U27" {...place("U27")} schX={0} schY={0} />
-        <RC0603FR_0710KL name="R102" {...place("R102")} schX={-6} schY={-6} schRotation={-90} />
-        <A_0603WAF1000T5E name="R103" {...place("R103")} schX={-9} schY={4} />
-        <RC0603FR_0710KL name="R104" {...place("R104")} schX={-6} schY={1} schRotation={-90} />
-        <CL10A105KB8NNNC name="C82" {...place("C82")} schX={8} schY={4} schOrientation="vertical" />
-        <CL10A105KB8NNNC name="C83" {...place("C83")} schX={8} schY={1} schOrientation="vertical" />
-        <GRM188R61A106ME69D name="C84" {...place("C84")} schX={-9} schY={-3} schRotation={-90} />
-        <GRM188R61A106ME69D name="C85" {...place("C85")} schX={8} schY={-5} schRotation={-90} />
+        <RC0603FR_0710KL name="R102" {...place("R102")} schX={-3} schY={1} schRotation={-90} />
+        <A_0603WAF1000T5E name="R103" {...place("R103")} schX={-6} schY={4} />
+        <RC0603FR_0710KL name="R104" {...place("R104")} schX={-3} schY={-2} schRotation={-90} />
+        <CL10A105KB8NNNC name="C82" {...place("C82")} schX={4} schY={4} schOrientation="vertical" />
+        <CL10A105KB8NNNC name="C83" {...place("C83")} schX={4} schY={1} schOrientation="vertical" />
+        <GRM188R61A106ME69D name="C84" {...place("C84")} schX={-6} schY={-3} schRotation={-90} />
+        <GRM188R61A106ME69D name="C85" {...place("C85")} schX={4} schY={-4} schRotation={-90} />
         <trace
           name="BL_CURRENT_SETTING"
           from="U27.pin1"

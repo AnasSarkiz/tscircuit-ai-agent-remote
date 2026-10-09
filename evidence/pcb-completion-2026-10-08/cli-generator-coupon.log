@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+Port pin1 on R1 is missing a trace
+Port pin2 on R1 is missing a trace
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+<resistor#0(.G1>.R1) /> footprint "0402" does not match supplier footprint jlcpcb:C11702 (copper IoU 0.7741).
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

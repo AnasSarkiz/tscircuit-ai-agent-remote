@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "--target",
+    ".gerber-runtime",
+    "--no-deps",
+    "pcb-tools==0.1.6"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 2.51,
+  "peak_process_group_rss_bytes": 83570688,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

@@ -1,3 +1,4 @@
+import { regulatorSwitchRouting } from "./RegulatorSwitchRouting"
 import { ComponentNotes } from "./ComponentNotes"
 import { groundPath } from "./GroundPaths"
 import { place } from "./placement"
@@ -60,14 +61,14 @@ export function RegulatorSheet({ placementOnly = false }: { placementOnly?: bool
         <trace
           name="REG_L1"
           routingPhaseIndex={placementOnly ? undefined : 0}
-          width={1}
+          width={regulatorSwitchRouting.padEscapeMinimumWidthMm}
           from="U2.pin9"
           to="L1.pin1"
         />
         <trace
           name="REG_L2"
           routingPhaseIndex={placementOnly ? undefined : 0}
-          width={1}
+          width={regulatorSwitchRouting.padEscapeMinimumWidthMm}
           from="U2.pin7"
           to="L1.pin2"
         />

@@ -1,0 +1,53 @@
+bun install v1.4.0 (34cbb9a40)
+Resolving dependencies
+Resolved, downloaded and extracted [348]
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
++ @tscircuit/bus-lanes-solver@https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.21.tgz
++ @tscircuit/dogbone-solver@https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
++ @tscircuit/flex-utils@https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz
++ @tscircuit/schematic-trace-solver@https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.225.tgz
++ circuit-json@../../toolchain/packages/circuit-json-0.0.517-board-fixes.1.tgz
+
+14 packages installed [4.88s]
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+(pass) generated position and optional ownership metadata match circuit-json [179.00ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+(pass) pill paste respects absolute margins, coverage and layout movement [547.71ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [414.59ms]
+
+ 3 pass
+ 0 fail
+ 244 expect() calls
+Ran 3 tests across 3 files. [2.34s]
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 5.23 MB
+ESM ⚡️ Build success in 680ms
+DTS ⚡️ Build success in 33190ms
+DTS dist/index.d.ts 9.64 MB

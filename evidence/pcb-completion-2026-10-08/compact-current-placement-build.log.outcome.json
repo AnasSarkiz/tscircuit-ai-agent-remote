@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd .tools/current-placement-stage && bun /workspace/tscircuit-ai-agent-remote/node_modules/.bin/tsci build placement.circuit.tsx"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 29.59,
+  "peak_process_group_rss_bytes": 2002628608,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

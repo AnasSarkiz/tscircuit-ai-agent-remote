@@ -1,0 +1,70 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/excellon-drill/excellon-drill-builder.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+error: Cannot find package 'gerber-to-svg' from '/workspace/tscircuit-ai-agent-remote/.tools/gerber-board-fixes/tests/fixtures/preload.ts'
+-------------------------------
+
+
+tests/excellon-drill/excellon-drill-stringification.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/convert-soup-to-excellon-drill.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/physical-via-span-compatibility.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/physical-via-layer-precedence.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/via-drill-deduplication-output.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/via-drill-deduplication.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/physical-via-route-deduplication.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+tests/excellon-drill/canned-slot-endpoints.test.ts:
+
+# Unhandled error between tests
+-------------------------------
+-------------------------------
+
+
+ 0 pass
+ 9 fail
+ 9 errors
+Ran 9 tests across 9 files. [46.00ms]

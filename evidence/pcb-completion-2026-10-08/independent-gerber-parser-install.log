@@ -1,0 +1,9 @@
+Collecting gerbonara==1.5.0
+  Downloading gerbonara-1.5.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting click (from gerbonara==1.5.0)
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting rtree (from gerbonara==1.5.0)
+  Downloading rtree-1.4.1-py3-none-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+Collecting quart (from gerbonara==1.5.0)
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Max retries exceeded with url: /packages/81/80/0159d6fe2fc76915f2354e5b9187082987f7d648f0298d49770320c086ef/quart-0.22.0-py3-none-any.whl.metadata (Caused by ResponseError('too many 503 error responses'))
+

@@ -1,0 +1,68 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:
+Updating snapshot at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-group-pcb.snap.svg
+(pass) pcb_group with positioned_relative_to_pcb_group_id [338.78ms]
+Updating snapshot at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-group-to-board-pcb.snap.svg
+(pass) pcb_group with positioned_relative_to_pcb_board_id [186.69ms]
+Updating snapshot at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-group-pcb.snap.svg
+(pass) pcb_component with positioned_relative_to_pcb_group_id shows anchor offsets [307.40ms]
+Updating snapshot at /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/__snapshots__/pcb-relative-positioning-with-anchors.test.tsx-component-to-board-pcb.snap.svg
+(pass) pcb_component positioned relative to pcb_board shows anchor offsets [225.69ms]
+
+ 4 pass
+ 0 fail
+ 4 expect() calls
+Ran 4 tests across 1 file. [2.10s]
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+(pass) generated position and optional ownership metadata match circuit-json [178.94ms]
+
+tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:
+(pass) pcb_group with positioned_relative_to_pcb_group_id [20.18ms]
+(pass) pcb_group with positioned_relative_to_pcb_board_id [4.68ms]
+(pass) pcb_component with positioned_relative_to_pcb_group_id shows anchor offsets [23.52ms]
+(pass) pcb_component positioned relative to pcb_board shows anchor offsets [16.97ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+(pass) pill paste respects absolute margins, coverage and layout movement [511.85ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [431.71ms]
+
+ 7 pass
+ 0 fail
+ 248 expect() calls
+Ran 7 tests across 4 files. [2.19s]
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 5.23 MB
+ESM ⚡️ Build success in 662ms
+DTS ⚡️ Build success in 33355ms
+DTS dist/index.d.ts 9.64 MB
+npm notice
+npm notice 📦  @tscircuit/core@0.0.2090-board-fixes.2
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 1.7kB README.md
+npm notice 10.1MB dist/index.d.ts
+npm notice 5.5MB dist/index.js
+npm notice 6.2kB package.json
+npm notice Tarball Details
+npm notice name: @tscircuit/core
+npm notice version: 0.0.2090-board-fixes.2
+npm notice filename: tscircuit-core-0.0.2090-board-fixes.2.tgz
+npm notice package size: 1.4 MB
+npm notice unpacked size: 15.6 MB
+npm notice shasum: c067787232e87c4a016c30681c7e774e8ef89890
+npm notice integrity: sha512-9aePML10/7yhx[...]o4mwYHRY6xA+Q==
+npm notice total files: 5
+npm notice
+tscircuit-core-0.0.2090-board-fixes.2.tgz

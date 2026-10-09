@@ -17,6 +17,7 @@ else
   cloud_bun="$(command -v bun)"
 fi
 "$cloud_bun" install --frozen-lockfile
+bash scripts/cloud/setup-generation-runtime.sh
 python3 -m pip install --target .geometry-runtime -r scripts/cloud/requirements.txt
 "$cloud_bun" --version
 python3 --version

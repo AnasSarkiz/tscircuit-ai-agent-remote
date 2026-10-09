@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-08T20:10:25.661446+00:00",
+  "original_supervisor_pid": 140755,
+  "orphaned_build_pid": 140775,
+  "original_supervisor_not_running": true,
+  "observed_parent_pid": 1,
+  "reason": "Environment restart disconnected tool sessions and removed the supervising process; terminate its orphaned child to restore mandatory resource supervision",
+  "completed_command": false,
+  "accepted_native": false,
+  "source_and_actual_phase_outputs_preserved": "restart-interrupted-source-and-phases.tar.gz"
+}

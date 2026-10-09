@@ -41,12 +41,12 @@ export function MicrophoneClockSheet({ placementOnly = false }: { placementOnly?
         />
         <A_0603WAF1000T5E name="R88" {...place("R88")} schX={0.0} schY={3.0} />
         <A_0603WAF1000T5E name="R89" {...place("R89")} schX={3.75} schY={3.0} />
-        <RC0603FR_0710KL name="R90" {...place("R90")} schX={7.5} schY={3.0} schRotation={-90} />
-        <RC0603FR_0710KL name="R91" {...place("R91")} schX={11.25} schY={3.0} schRotation={-90} />
-        <RC0603FR_07330RL name="R92" {...place("R92")} schX={0.0} schY={-1.5} schRotation={-90} />
-        <RC0603FR_07330RL name="R93" {...place("R93")} schX={3.75} schY={-1.5} schRotation={-90} />
-        <RC0603FR_0710KL name="R94" {...place("R94")} schX={7.5} schY={-1.5} schRotation={-90} />
-        <RC0603FR_0710KL name="R95" {...place("R95")} schX={11.25} schY={-1.5} schRotation={-90} />
+        <RC0603FR_0710KL name="R90" {...place("R90")} schX={0} schY={5} schRotation={-90} />
+        <RC0603FR_0710KL name="R91" {...place("R91")} schX={0} schY={8.5} schRotation={-90} />
+        <RC0603FR_07330RL name="R92" {...place("R92")} schX={7.5} schY={10} schRotation={-90} />
+        <RC0603FR_07330RL name="R93" {...place("R93")} schX={10} schY={10} schRotation={-90} />
+        <RC0603FR_0710KL name="R94" {...place("R94")} schX={7.5} schY={3} schRotation={-90} />
+        <RC0603FR_0710KL name="R95" {...place("R95")} schX={10} schY={3} schRotation={-90} />
         <trace from="U23.pin1" to="net.MIC_INPUT" />
         <trace
           from="U23.pin2"

@@ -1,0 +1,106 @@
+{
+  "bin": {
+    "circuit-to-gerber": "dist/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/tscircuit/circuit-json-to-gerber/issues"
+  },
+  "dist": {
+    "shasum": "b0d9d8e73f4e2e6ce48383db763c2514b4f0bb15",
+    "tarball": "https://registry.npmjs.org/circuit-json-to-gerber/-/circuit-json-to-gerber-0.0.112.tgz",
+    "fileCount": 11,
+    "integrity": "sha512-lKkiCyN4QI/WVYU/EkM5AIvlaautVTpkGMP2FD2oh0tgJbO5/NwMDxW34IoHJGtA5rCaQ7Yuof0CNKPqk5yAgQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIQD1o99i6HnjLXKK5jABmcrPwatk/fGX2n3Z3q/MZ7HDigIgDiFYzsjB5ZbKsbt0C2/fr0JfUTNI92PEvftuUlJkg/c=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQDuDKPTZ96WSX1/W852YFha4WHjn7HqYDoOU7gkuezRFQIhAK5UntC3wstATuR29RnThAx3ztKBqx/O0YyMt4jCZmUr",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/circuit-json-to-gerber@0.0.112",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 496542
+  },
+  "main": "dist/index.js",
+  "name": "circuit-json-to-gerber",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "gitHead": "64b65c24c318e40a211521daaa93003b4df0bcc8",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup-node src/index.ts src/cli.ts --format esm --dts --sourcemap",
+    "start": "bun --bun site/index.html",
+    "format": "biome format --write .",
+    "build:site": "bun build site/index.html --outdir ./site-export",
+    "format:check": "biome format ."
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "6e97e34a-8c5b-4681-8118-dbd5c6f93e03"
+    }
+  },
+  "homepage": "https://github.com/tscircuit/circuit-json-to-gerber#readme",
+  "repository": {
+    "url": "git+https://github.com/tscircuit/circuit-json-to-gerber.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "Convert a [Circuit JSON](https://github.com/tscircuit/circuit-json) to Gerber/Excellon files.",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "seveibar",
+      "email": "seveibar@gmail.com"
+    }
+  ],
+  "_nodeVersion": "24.21.0",
+  "dependencies": {
+    "polygon-clipping": "^0.15.7",
+    "@tscircuit/alphabet": "^0.0.25",
+    "transformation-matrix": "^3.0.0",
+    "fast-json-stable-stringify": "^2.1.0"
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "jszip": "^3.10.1",
+    "react": "^19.2.1",
+    "archiver": "^7.0.1",
+    "gerberts": "^0.0.3",
+    "commander": "^12.1.0",
+    "react-dom": "^19.2.1",
+    "tscircuit": "^0.0.1776",
+    "@types/bun": "^1.1.8",
+    "@types/node": "^22.5.2",
+    "pcb-stackup": "^4.2.8",
+    "@types/react": "^19.2.7",
+    "circuit-json": "^0.0.513",
+    "bun-match-svg": "^0.0.13",
+    "gerber-to-svg": "^4.2.8",
+    "@biomejs/biome": "^1.8.3",
+    "format-si-unit": "^0.0.7",
+    "@types/archiver": "^6.0.3",
+    "@types/react-dom": "^19.1.5"
+  },
+  "peerDependencies": {
+    "tscircuit": "*",
+    "typescript": "^5.0.0",
+    "circuit-json": "*"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/circuit-json-to-gerber_0.0.112_1791059465733_0.2936880074637511",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "circuit-json-to-gerber@0.0.112",
+  "version": "0.0.112"
+}

@@ -8,7 +8,10 @@ const rawElements = z
   .parse(
     JSON.parse(
       readFileSync(
-        new URL("../evidence/mcu-usb-review-2026-10-03/circuit.json", import.meta.url),
+        new URL(
+          "../evidence/pcb-completion-2026-10-08/diagnostic-native/mcu-usb/circuit.json",
+          import.meta.url,
+        ),
         "utf8",
       ),
     ),

@@ -1,0 +1,83 @@
+{
+  "source_sha256": "16c299accb1750ce3b93997726c7c3316595e9848730bd9f20a55b6d24c4317a",
+  "routes": [
+    {
+      "name": "REG_L2",
+      "segments": [
+        {
+          "length_mm": 0.5000586658741374,
+          "width_mm": 0.275,
+          "resistance_at_125_c_ohms": 0.001266122564919764
+        },
+        {
+          "length_mm": 0.25,
+          "width_mm": 0.275,
+          "resistance_at_125_c_ohms": 0.0006329870129870129
+        },
+        {
+          "length_mm": 0.39051248379533327,
+          "width_mm": 0.4,
+          "resistance_at_125_c_ohms": 0.0006797706592923051
+        },
+        {
+          "length_mm": 0.30028318908823254,
+          "width_mm": 0.7,
+          "resistance_at_125_c_ohms": 0.0002986898497175603
+        },
+        {
+          "length_mm": 1.0,
+          "width_mm": 1,
+          "resistance_at_125_c_ohms": 0.0006962857142857144
+        }
+      ],
+      "pad_escape_length_mm": 0.7500586658741374,
+      "trunk_length_mm": 1.0,
+      "peak_current_dc_bound_amps": 5.75,
+      "required_finished_outer_copper_mm": 0.035,
+      "voltage_drop_at_peak_bound_v": 0.02054967085691355,
+      "dissipation_at_peak_dc_bound_w": 0.11816060742725291,
+      "local_width_profile_passes": true,
+      "full_board_thermal_qualification": false
+    },
+    {
+      "name": "REG_L1",
+      "segments": [
+        {
+          "length_mm": 0.5000586663820779,
+          "width_mm": 0.275,
+          "resistance_at_125_c_ohms": 0.0012661225662058428
+        },
+        {
+          "length_mm": 0.25,
+          "width_mm": 0.275,
+          "resistance_at_125_c_ohms": 0.0006329870129870129
+        },
+        {
+          "length_mm": 0.39051248379533327,
+          "width_mm": 0.4,
+          "resistance_at_125_c_ohms": 0.0006797706592923051
+        },
+        {
+          "length_mm": 0.30028318908823354,
+          "width_mm": 0.7,
+          "resistance_at_125_c_ohms": 0.00029868984971756127
+        },
+        {
+          "length_mm": 1.0,
+          "width_mm": 1,
+          "resistance_at_125_c_ohms": 0.0006962857142857144
+        }
+      ],
+      "pad_escape_length_mm": 0.7500586663820779,
+      "trunk_length_mm": 1.0,
+      "peak_current_dc_bound_amps": 5.75,
+      "required_finished_outer_copper_mm": 0.035,
+      "voltage_drop_at_peak_bound_v": 0.020549670864308513,
+      "dissipation_at_peak_dc_bound_w": 0.11816060746977394,
+      "local_width_profile_passes": true,
+      "full_board_thermal_qualification": false
+    }
+  ],
+  "fabrication_ready": false,
+  "manufacturer_reference": "TPS63802 SLVSEU9D electrical table and section 12"
+}

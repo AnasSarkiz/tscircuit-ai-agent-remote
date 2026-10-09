@@ -1,0 +1,197 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 11.96,
+    "completed": true
+  },
+  {
+    "name": "format-check",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.17,
+    "completed": true
+  },
+  {
+    "name": "routing-regressions",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "scripts/routing/tests"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.64,
+    "completed": true
+  },
+  {
+    "name": "board-tests",
+    "command": [
+      "bun",
+      "run",
+      "test"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 9.89,
+    "completed": true
+  },
+  {
+    "name": "schema-and-paste",
+    "command": [
+      "bun",
+      "evidence/pcb-completion-2026-10-08/audit-schema-and-paste.mjs",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 6.86,
+    "completed": true
+  },
+  {
+    "name": "schema-assembly",
+    "command": [
+      "bun",
+      "evidence/pcb-completion-2026-10-08/audit-schema-assembly.mjs",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 6.86,
+    "completed": true
+  },
+  {
+    "name": "resolved-bom",
+    "command": [
+      "bun",
+      "evidence/pcb-completion-2026-10-08/export-resolved-bom.mjs",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.09,
+    "completed": true
+  },
+  {
+    "name": "regulator-profile",
+    "command": [
+      "python",
+      "scripts/routing/audit-regulator-switch-widths.py",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08/regulator-profile.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.1,
+    "completed": true
+  },
+  {
+    "name": "trace-widths",
+    "command": [
+      "python",
+      "scripts/routing/audit-trace-widths.py",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08/trace-widths.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.19,
+    "completed": true
+  },
+  {
+    "name": "schematic-guides",
+    "command": [
+      "bun",
+      "scripts/audit-schematic-guides.mjs",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08/guide-coverage.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.66,
+    "completed": true
+  },
+  {
+    "name": "actual-srj",
+    "command": [
+      "bun",
+      "scripts/routing/export-native-srj.tsx",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08/actual-native.srj.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 7.86,
+    "completed": true
+  },
+  {
+    "name": "official-shorts",
+    "command": [
+      "bun",
+      "node_modules/.bin/tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 20.3,
+    "completed": true
+  },
+  {
+    "name": "corrected-gerber-export",
+    "command": [
+      "bun",
+      "evidence/pcb-completion-2026-10-08/export-gerbers.mjs",
+      "dist/index/circuit.json",
+      "evidence/pcb-completion-2026-10-08/NOT-FOR-FABRICATION-qualified-gerbers"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.43,
+    "completed": true
+  },
+  {
+    "name": "connection-copper.json.widths",
+    "command": [
+      "python",
+      "scripts/routing/audit-region-widths.py",
+      "dist/index/circuit.json",
+      "src/board/connection-copper.json",
+      "evidence/pcb-completion-2026-10-08/connection-copper.json.widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.92,
+    "completed": true
+  },
+  {
+    "name": "manual-power-copper.json.widths",
+    "command": [
+      "python",
+      "scripts/routing/audit-region-widths.py",
+      "dist/index/circuit.json",
+      "src/board/manual-power-copper.json",
+      "evidence/pcb-completion-2026-10-08/manual-power-copper.json.widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.16,
+    "completed": true
+  },
+  {
+    "name": "inner-signal-copper.json.widths",
+    "command": [
+      "python",
+      "scripts/routing/audit-region-widths.py",
+      "dist/index/circuit.json",
+      "src/board/inner-signal-copper.json",
+      "evidence/pcb-completion-2026-10-08/inner-signal-copper.json.widths.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.71,
+    "completed": true
+  }
+]

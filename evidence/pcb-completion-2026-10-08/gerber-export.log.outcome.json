@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "evidence/pcb-completion-2026-10-08/export-gerbers.mjs",
+    "evidence/pcb-completion-2026-10-08/final-native/circuit.json",
+    "evidence/pcb-completion-2026-10-08/NOT-FOR-FABRICATION-gerbers"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 0.5,
+  "peak_process_group_rss_bytes": 3612672,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

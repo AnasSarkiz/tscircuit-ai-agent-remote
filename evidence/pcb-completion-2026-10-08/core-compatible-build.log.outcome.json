@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -e; cd .tools/core-board-fixes; ../bun-1.4.0/bun-linux-x64/bun install; ../bun-1.4.0/bun-linux-x64/bun test tests/components/normal-components/generated-position-metadata-schema.test.tsx tests/components/primitive-components/pill-solder-paste-placement.test.tsx tests/components/primitive-components/pill-solder-paste-margins.test.tsx; ../bun-1.4.0/bun-linux-x64/bun run build"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 4.01,
+  "peak_process_group_rss_bytes": 584130560,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

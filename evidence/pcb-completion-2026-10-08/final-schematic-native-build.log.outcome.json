@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd .publish/board && /workspace/tscircuit-ai-agent-remote/.tools/bun-1.4.0/bun-linux-x64/bun /workspace/tscircuit-ai-agent-remote/node_modules/.bin/tsci build index.circuit.tsx --autorouter-dump-srj all"
+  ],
+  "exit_code": 1,
+  "completed_command": true,
+  "elapsed_seconds": null,
+  "termination": null,
+  "passing_validation_inferred": false,
+  "collection_basis": "Completed CLI output, actual complete native and all 13 input/output phase artifacts. Original session process identifier became unavailable; supervisor telemetry did not replace the prior SVG-run receipt. That unmatched prior receipt is archived, not used as current timing or memory evidence.",
+  "elapsed_and_memory_telemetry_verified": false
+}

@@ -1,0 +1,78 @@
+{
+  "source_sha256": "47326ee1d711f45859060f799524ac5cfa485e8e67f3c0abb1a01e1d57c1196a",
+  "converter": "circuit-json-to-gerber@0.0.112",
+  "classification": "Actual unchanged-native Gerber and Excellon exports; engineering review only, NOT FOR FABRICATION",
+  "fabrication_ready": false,
+  "files": [
+    {
+      "name": "F_Cu.gbr",
+      "bytes": 459588,
+      "sha256": "f120e058cbc5e5b0b42923ae5c5f7f1543efb53976d5a736105f10753ed435ef"
+    },
+    {
+      "name": "F_SilkScreen.gbr",
+      "bytes": 342504,
+      "sha256": "b5555821e7efd4d4cb111eff99c82cf0c305a806834d9f510857d75fc14d4998"
+    },
+    {
+      "name": "F_Mask.gbr",
+      "bytes": 36908,
+      "sha256": "9450e5e76a421d6700bbad7ea0b90d8236b22107bc29f4d96dc3df050c98e103"
+    },
+    {
+      "name": "F_Paste.gbr",
+      "bytes": 31375,
+      "sha256": "7021b6af350268018ce259b44d629d1e4c9c2d18479bcc287c7325b89a45bec4"
+    },
+    {
+      "name": "B_Cu.gbr",
+      "bytes": 121639,
+      "sha256": "aa64cc4213a6fed4fdba49db95787c8017a2b06692821638243abb1c3f64ed93"
+    },
+    {
+      "name": "B_SilkScreen.gbr",
+      "bytes": 1934,
+      "sha256": "483dbf049dee01904fbfde97082dfd54028e87d7f9645e4570d4d86ce2ccb918"
+    },
+    {
+      "name": "B_Mask.gbr",
+      "bytes": 2953,
+      "sha256": "0a471190c7664cedc564a4e973c596a25620b7efa3c95c1fac549a866e80a412"
+    },
+    {
+      "name": "B_Paste.gbr",
+      "bytes": 2143,
+      "sha256": "6d0fc4dfc848903a1e82ff318527b8d6570c167158bdbdd128b572f96b6eb68b"
+    },
+    {
+      "name": "Edge_Cuts.gbr",
+      "bytes": 5293,
+      "sha256": "69fefaf714cd4d65fc37048ff54b6c3b1ff3d412467ecd386ede93ab918e229d"
+    },
+    {
+      "name": "In1_Cu.gbr",
+      "bytes": 475003,
+      "sha256": "c68c95d6e62fd94295197d86242f9621a869d4294431a3362ba745a933addfe1"
+    },
+    {
+      "name": "In2_Cu.gbr",
+      "bytes": 170675,
+      "sha256": "2d8c7c5bf6d4659173ec38690e2a8c2cfcee3a8b7b8c5777a47e951d3443600a"
+    },
+    {
+      "name": "F_Fab.gbr",
+      "bytes": 8226,
+      "sha256": "00cf26c6fcc4c9b8afb56a29bae1c9cff64aece9d87b4ef75922c28489352d45"
+    },
+    {
+      "name": "drill-L1-L4.drl",
+      "bytes": 6313,
+      "sha256": "1de1a766ae696271099f361222c0085bddcdcfd1faa5038359878bb63760157c"
+    },
+    {
+      "name": "drill_npth.drl",
+      "bytes": 676,
+      "sha256": "d2b73b5ca8780fa22c9495b20fca2fa4c5555cf00507c183869db83f7c599241"
+    }
+  ]
+}

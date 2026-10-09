@@ -1,0 +1,53 @@
+bun install v1.4.0 (34cbb9a40)
+Resolving dependencies
+Resolved, downloaded and extracted [20]
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
+warn: incorrect peer dependency "react-dom@19.3.0"
+
+warn: incorrect peer dependency "react@19.3.0"
+
+warn: incorrect peer dependency "@tscircuit/alphabet@0.0.25"
+
++ @tscircuit/bus-lanes-solver@https://jscdn.tscircuit.com/@tscircuit/bus-lanes-solver/0.0.21.tgz
++ @tscircuit/dogbone-solver@https://jscdn.tscircuit.com/@tscircuit/dogbone-solver/0.0.1.tgz
++ @tscircuit/flex-utils@https://jscdn.tscircuit.com/@tscircuit/flex-utils/0.0.8.tgz
++ @tscircuit/schematic-trace-solver@https://jscdn.tscircuit.com/@tscircuit/schematic-trace-solver/0.0.225.tgz
+
+14 packages installed [1388.00ms]
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+21 |   )
+22 |   await circuit.renderUntilSettled()
+23 |   const elements = circuit.getCircuitJson()
+24 |   for (const element of elements) {
+25 |     const result = any_circuit_element.safeParse(element)
+26 |     expect(result.success, element.type).toBe(true)
+                                              ^
+error: pcb_silkscreen_text
+
+Expected: true
+Received: false
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/generated-position-metadata-schema.test.tsx:26:42)
+(fail) generated position and optional ownership metadata match circuit-json [181.97ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+(pass) pill paste respects absolute margins, coverage and layout movement [585.28ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [453.74ms]
+
+ 2 pass
+ 1 fail
+ 236 expect() calls
+Ran 3 tests across 3 files. [2.25s]

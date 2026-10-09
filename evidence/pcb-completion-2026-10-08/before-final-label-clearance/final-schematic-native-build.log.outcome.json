@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "cd .publish/board && /workspace/tscircuit-ai-agent-remote/.tools/bun-1.4.0/bun-linux-x64/bun /workspace/tscircuit-ai-agent-remote/node_modules/.bin/tsci build index.circuit.tsx --autorouter-dump-srj all"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 249.68,
+  "peak_process_group_rss_bytes": 3198992384,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

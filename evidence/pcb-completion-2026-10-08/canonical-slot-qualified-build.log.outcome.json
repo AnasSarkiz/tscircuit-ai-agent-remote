@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -e; python .tools/run-gerber-unit-tests.py; cd .tools/gerber-board-fixes; ../core-board-fixes/node_modules/.bin/biome format src/excellon-drill/commands/G85.ts src/excellon-drill/convert-soup-to-excellon-drill-commands.ts tests/excellon-drill/canned-slot-endpoints.test.ts --write; ../core-board-fixes/node_modules/.bin/tsup-node src/index.ts --format esm --dts --sourcemap; npm pack --ignore-scripts --pack-destination /workspace/tscircuit-ai-agent-remote/toolchain/packages"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 5.52,
+  "peak_process_group_rss_bytes": 717393920,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

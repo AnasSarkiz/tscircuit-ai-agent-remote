@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pip",
+    "install",
+    "--target",
+    ".gerber-runtime",
+    "--no-deps",
+    "pygerber==2.4.3"
+  ],
+  "exit_code": 0,
+  "termination": null,
+  "elapsed_seconds": 1.0,
+  "peak_process_group_rss_bytes": 39342080,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

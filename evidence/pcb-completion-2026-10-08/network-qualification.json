@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-08T20:13:18.326663+00:00",
+  "active_spec_revision": "1",
+  "active_observations_current": true,
+  "active_network_mode": "restricted",
+  "active_custom_hosts": [],
+  "active_policy_state": "unknown",
+  "draft_revision_before_update": 30,
+  "draft_update_saved": true,
+  "draft_requires_publish": true,
+  "added_domains": [
+    "www.ti.com",
+    "www.waveshare.com",
+    "www.waveshare.net",
+    "wiki.dfrobot.com",
+    "www.dfrobot.com"
+  ],
+  "all_prior_20_custom_hosts_preserved": true,
+  "runtime_application_verified": false,
+  "primary_ti_download_result": "CONNECT 403 Forbidden",
+  "preferred_display_primary_result": "HTTP 403",
+  "exact_indispensable_missing_evidence": [
+    "ER-TFT028A3-4 manufacturer mechanical/contact/pinout drawing",
+    "Qualified alternate LCD and exact mating contact/insertion orientation",
+    "Manufacturer-supported FPC minimum bend radius/material or unbent mating geometry",
+    "AKY2945 numbered plug contacts registered to mating-face/latch view"
+  ],
+  "configuration_warning": "A saved draft does not apply or publish the runtime configuration"
+}

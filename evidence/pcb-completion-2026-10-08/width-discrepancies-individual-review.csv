@@ -1,0 +1,68 @@
+connection,net,minimum_width_mm,wire_length_mm,resistance_125_c_35_um_ohms,source_minimum_mm,net_nominal_mm,review,approved
+U2.pin10 to net.VSYS,VSYS,0.275,0.6500020000000006,0.0016457712976623393,0.275,1,needs effective copper-union and maximum branch-current qualification,False
+U2.pin8 to U2.pin3,GND,0.28,1.4500860000000002,0.0036059791653061226,0.28,0.3,needs effective copper-union and maximum branch-current qualification,False
+U2.pin6 to net.V3V3,V3V3,0.275,0.6500019999999971,0.0016457712976623302,0.275,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C3 > .pin1 to net.VSYS,VSYS,0.3,1.2000000000000002,0.002785142857142858,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C4 > .pin1 to net.VSYS,VSYS,0.3,0.7999999999999989,0.0018567619047619025,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U3 > .pin7 to net.VSYS,VSYS,0.3,0.9433981132056593,0.0021895820970306594,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U3 > .pin8 to net.VSYS,VSYS,0.3,1.062833358633892,0.0024667856142769483,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.Q2 > .pin2 to net.VSYS,VSYS,0.3,0.8860363998307293,0.0020564482917976076,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C50 > .pin1 to net.VSYS,VSYS,0.3,1.2206496635611712,0.0028330697429510237,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C51 > .pin1 to net.VSYS,VSYS,0.3,1.0629987773163243,0.002467169543161793,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U22 > .pin1 to net.VSYS,VSYS,0.3,2.000000166650243,0.004641905148692041,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C70 > .pin1 to net.VSYS,VSYS,0.3,1.1999995803749273,0.002785141883213046,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U25 > .pin3 to net.VSYS,VSYS,0.3,1.0000000000000009,0.0023209523809523836,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U25 > .pin6 to net.VSYS,VSYS,0.3,0.7999999999999989,0.0018567619047619025,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.R96 > .pin1 to net.VSYS,VSYS,0.3,0.9012074769419086,0.002091659639340411,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C76 > .pin1 to net.VSYS,VSYS,0.3,0.9999996503124393,0.0023209515693442045,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.TP4 > .pin1 to net.VSYS,VSYS,0.3,0.9999996503124393,0.0023209515693442045,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U1 > .pin2 to net.V3V3,V3V3,0.3,1.2000000000000404,0.0027851428571429517,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.U12 > .pin3 to net.V3V3,V3V3,0.3,0.7999997202499513,0.0018567612554753633,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.R36 > .pin1 to net.V3V3,V3V3,0.3,0.8000000000000007,0.0018567619047619064,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C30 > .pin1 to net.V3V3,V3V3,0.3,0.9999996503124393,0.0023209515693442045,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C31 > .pin1 to net.V3V3,V3V3,0.3,0.8000000000000007,0.0018567619047619064,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C32 > .pin1 to net.V3V3,V3V3,0.3,0.8,0.0018567619047619053,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.R3 > .pin1 to net.V3V3,V3V3,0.3,0.8000000000000007,0.0018567619047619064,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.R4 > .pin1 to net.V3V3,V3V3,0.3,0.7999999999999972,0.0018567619047618982,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C5 > .pin1 to net.V3V3,V3V3,0.3,1.4000003764628068,0.0032493342070855817,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.R5 > .pin1 to net.V3V3,V3V3,0.3,2.778781926123262,0.006449420527583229,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.R7 > .pin1 to net.V3V3,V3V3,0.3,0.7999999999999999,0.001856761904761905,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.U13 > .pin1 to net.V3V3,V3V3,0.3,1.655634918610405,0.0038426498063367214,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C40 > .pin1 to net.V3V3,V3V3,0.3,3.4663869962649265,0.008045319152283454,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.U26 > .pin5 to net.V3V3,V3V3,0.3,0.7999997202499514,0.0018567612554753637,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C78 > .pin1 to net.V3V3,V3V3,0.3,0.9434108333997447,0.002189611619995408,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.U7 > .pin5 to net.V3V3,V3V3,0.3,0.79999972024995,0.0018567612554753602,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C25 > .pin1 to net.V3V3,V3V3,0.3,0.8000000000000007,0.0018567619047619064,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.SW4 > .pin1 to net.V3V3,V3V3,0.3,0.8000000000000007,0.0018567619047619064,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.SW5 > .pin1 to net.V3V3,V3V3,0.3,0.7999995452499479,0.0018567608493086887,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.U27 > .pin13 to net.V3V3,V3V3,0.3,1.600000306525284,0.003713524520954398,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.C84 > .pin1 to net.V3V3,V3V3,0.3,0.7999999999999998,0.0018567619047619047,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.TP5 > .pin1 to net.V3V3,V3V3,0.3,4.161696644991184,0.009659099736993826,0.3,0.8,needs effective copper-union and maximum branch-current qualification,False
+.U16 > .pin2 to net.PACK_BAT,PACK_BAT,0.3,3.84011010517102,0.008912712691715978,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C2 > .pin1 to net.PACK_BAT,PACK_BAT,0.3,0.9999996503124384,0.0023209515693442028,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.U25 > .pin5 to net.PACK_BAT,PACK_BAT,0.3,1.0000000000000018,0.0023209523809523853,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.TP3 > .pin1 to net.PACK_BAT,PACK_BAT,0.3,4.301162633521313,0.009982793655134707,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.J1 > .pin15 to net.VBUS,VBUS,0.3,2.44513864968392,0.005675050370742584,0.3,0.5,needs effective copper-union and maximum branch-current qualification,False
+.TP2 > .pin1 to net.VBUS,VBUS,0.3,0.9000000000000004,0.002088857142857144,0.3,0.5,needs effective copper-union and maximum branch-current qualification,False
+.Q9 > .pin3 to net.HAPTIC_N,HAPTIC_N,0.3,0.7999997202499514,0.0018567612554753637,0.3,0.4,needs effective copper-union and maximum branch-current qualification,False
+.D3 > .pin2 to net.HAPTIC_N,HAPTIC_N,0.3,1.4,0.0032493333333333337,0.3,0.4,needs effective copper-union and maximum branch-current qualification,False
+.C72 > .pin2 to net.HAPTIC_N,HAPTIC_N,0.3,0.9999996503124393,0.0023209515693442045,0.3,0.4,needs effective copper-union and maximum branch-current qualification,False
+.TP_MOTOR_N > .pin1 to net.HAPTIC_N,HAPTIC_N,0.3,1.3999999999999986,0.0032493333333333306,0.3,0.4,needs effective copper-union and maximum branch-current qualification,False
+.J1 > .pin14 to net.GND,GND,0.2,0.39999970000005,0.001392570384143031,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+.U16 > .pin8 to net.GND,GND,0.2,0.6000000000000014,0.0020888571428571475,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+.U27 > .pin7 to net.GND,GND,0.2,0.6000000000000014,0.0020888571428571475,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+.U27 > .pin14 to net.GND,GND,0.2,0.6000000000000014,0.0020888571428571475,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+.U27 > .pin17 to net.GND,GND,0.2,0.7999999999999998,0.0027851428571428567,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+.U16 > .pin10 to net.VSYS,VSYS,0.275,4.305880293452433,0.010902265220928391,0.275,1,needs effective copper-union and maximum branch-current qualification,False
+.U16 > .pin11 to net.VSYS,VSYS,0.275,4.510893847628862,0.011421348890048349,0.275,1,needs effective copper-union and maximum branch-current qualification,False
+.U3 > .pin2 to net.VSYS,VSYS,0.2,0.8999999999999999,0.003133285714285714,0.2,1,needs effective copper-union and maximum branch-current qualification,False
+.J1 > .pin16 to net.VBUS,VBUS,0.2979,3.0842560713768994,0.007208873587441141,0.2979,0.5,needs effective copper-union and maximum branch-current qualification,False
+.U16 > .pin13 to net.VBUS,VBUS,0.275,4.7778255669446805,0.012097206136773179,0.275,0.5,needs effective copper-union and maximum branch-current qualification,False
+.R62 > .pin1 to net.VSYS,VSYS,0.3,1.2722602809566914,0.0029528555282775783,0.3,1,needs effective copper-union and maximum branch-current qualification,False
+.C1 > .pin1 to net.VBUS,VBUS,0.3,1.0012480215091564,0.0023238489794455376,0.3,0.5,needs effective copper-union and maximum branch-current qualification,False
+.J6 > .pin2 to .J6 > .pin4,GND,0.2,3.5266411437156737,0.01227774923890728,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+.J6 > .pin4 to .J6 > .pin5,GND,0.2,4.689014898792324,0.016324470440509848,0.2,0.3,needs effective copper-union and maximum branch-current qualification,False
+U2.pin7 to L1.pin2,regulator switch,0.275,2.440854338757703,0.0035738558012023565,1,,separate short-escape/trunk contract,False
+U2.pin9 to L1.pin1,regulator switch,0.275,2.4408543392656448,0.0035738558024884367,1,,separate short-escape/trunk contract,False
+U3.pin9 to net.SPEAKER_P,SPEAKER_P,0.275,6.684747649657936,0.00955240510788499,,0.6,needs effective copper-union and maximum branch-current qualification,False
+U3.pin10 to net.SPEAKER_N,SPEAKER_N,0.275,5.126922074500267,0.007807912543390541,,0.6,needs effective copper-union and maximum branch-current qualification,False

@@ -1,0 +1,726 @@
+$ tsc --noEmit
+toolchain/circuit-json/source/src/pcb/pcb_silkscreen_text.ts(2,64): error TS2307: Cannot find module 'src/common' or its corresponding type declarations.
+toolchain/circuit-json/source/src/pcb/pcb_silkscreen_text.ts(3,42): error TS2307: Cannot find module 'src/pcb/properties/layer_ref' or its corresponding type declarations.
+toolchain/circuit-json/source/src/pcb/pcb_silkscreen_text.ts(4,47): error TS2307: Cannot find module 'src/units' or its corresponding type declarations.
+toolchain/circuit-json/source/src/pcb/pcb_silkscreen_text.ts(5,34): error TS2307: Cannot find module 'src/utils/expect-types-match' or its corresponding type declarations.
+toolchain/circuit-json/source/src/pcb/pcb_silkscreen_text.ts(9,8): error TS2307: Cannot find module 'src/common/NinePointAnchor' or its corresponding type declarations.
+toolchain/core/build-tsup.config.ts(1,30): error TS2307: Cannot find module 'tsup' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2,41): error TS2307: Cannot find module 'lib/utils/cad/compose-cad-model-rotation' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(3,48): error TS2307: Cannot find module 'lib/utils/cad/get-folded-cad-component-placement' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(32,19): error TS7016: Could not find a declaration file for module 'debug'. '/workspace/tscircuit-ai-agent-remote/node_modules/debug/src/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/debug` if it exists or add a new declaration (.d.ts) file containing `declare module 'debug';`
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(33,23): error TS2307: Cannot find module 'lib/components/primitive-components/Trace/Trace' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(37,8): error TS2307: Cannot find module 'lib/fiber/create-instance-from-react-element' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(38,39): error TS2307: Cannot find module 'lib/soup/underscorifyPinStyles' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(39,45): error TS2307: Cannot find module 'lib/soup/underscorifyPortArrangement' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(40,39): error TS2307: Cannot find module 'lib/utils/autorouting/getBoundsForSchematic' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(41,37): error TS2307: Cannot find module 'lib/utils/components/createNetsFromProps' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(42,49): error TS2307: Cannot find module 'lib/utils/createComponentsFromCircuitJson' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(43,33): error TS2307: Cannot find module 'lib/utils/filterPinLabels' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(44,42): error TS2307: Cannot find module 'lib/utils/get-bounds-of-pcb-components' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(48,8): error TS2307: Cannot find module 'lib/utils/getPortFromHints' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(53,8): error TS2307: Cannot find module 'lib/utils/pcb/transform-footprint-insertion-direction' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(59,8): error TS2307: Cannot find module 'lib/utils/schematic/getAllDimensionsForSchematicBox' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(60,39): error TS2307: Cannot find module 'lib/utils/schematic/getNumericSchPinStyle' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(61,46): error TS2307: Cannot find module 'lib/utils/schematic/getPinNumberFromPinLabelsKey' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(62,44): error TS2307: Cannot find module 'lib/utils/schematic/getSizeOfSidesFromPortArrangement' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(63,37): error TS2307: Cannot find module 'lib/utils/schematic/isCircuitJsonSymbol' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(64,53): error TS2307: Cannot find module 'lib/utils/schematic/normalizeSchematicSymbolCircuitJson' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(65,49): error TS2307: Cannot find module 'lib/utils/schematic/parsePinNumberFromLabelsOrThrow' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(66,41): error TS2307: Cannot find module 'lib/utils/schematic/selectSymbolCircuitJson' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(75,30): error TS2307: Cannot find module '../../../errors/InvalidProps' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(76,29): error TS2307: Cannot find module '../../primitive-components/CadAssembly' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(77,26): error TS2307: Cannot find module '../../primitive-components/CadModel' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(78,27): error TS2307: Cannot find module '../../primitive-components/Footprint' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(79,22): error TS2307: Cannot find module '../../primitive-components/Port' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(80,33): error TS2307: Cannot find module '../../primitive-components/Symbol' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(81,36): error TS2307: Cannot find module '../PrimitiveComponent' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(82,39): error TS2307: Cannot find module './INormalComponent' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(83,62): error TS2307: Cannot find module './NormalComponent__getMinimumFlexContainerSize' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(84,50): error TS2307: Cannot find module './NormalComponent__repositionOnPcb' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(85,71): error TS2307: Cannot find module './NormalComponent_addInternalConnectionFabricationNotes' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(89,8): error TS2307: Cannot find module './NormalComponent_doInitialCheckRefDesConvention' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(93,8): error TS2307: Cannot find module './NormalComponent_doInitialPartOrientationAnalysis' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(94,70): error TS2307: Cannot find module './NormalComponent_doInitialPcbComponentAnchorAlignment' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(95,67): error TS2307: Cannot find module './NormalComponent_doInitialPcbFootprintStringRender' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(96,68): error TS2307: Cannot find module './NormalComponent_doInitialResolveFootprintPinLabels' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(97,67): error TS2307: Cannot find module './NormalComponent_doInitialSchematicComponentRender' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(98,70): error TS2307: Cannot find module './NormalComponent_doInitialSilkscreenOverlapAdjustment' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(99,65): error TS2307: Cannot find module './NormalComponent_doInitialSourceDesignRuleChecks' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(100,79): error TS2307: Cannot find module './NormalComponent_doInitialMissingManufacturerPartNumberWarning' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(101,75): error TS2307: Cannot find module './NormalComponent_doInitialSupplierFootprintMismatchWarning' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(102,41): error TS2307: Cannot find module './utils/canMergePortDefinitions' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(103,51): error TS2307: Cannot find module './utils/getPrimaryPortsFromPortHintGroups' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(104,59): error TS2307: Cannot find module './utils/inferInternallyConnectedPinNamesFromPorts' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(105,27): error TS2307: Cannot find module './utils/isBlobUrl' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(106,27): error TS2307: Cannot find module './utils/isHttpUrl' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(107,35): error TS2307: Cannot find module './utils/isStaticAssetPath' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(108,42): error TS2307: Cannot find module './utils/parseLibraryFootprintRef' or its corresponding type declarations.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(194,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(225,37): error TS2339: Property 'lowercaseComponentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(225,66): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(244,15): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(246,23): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(248,26): error TS2339: Property 'getSubcircuit' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(249,54): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(255,19): error TS2339: Property 'renderPhaseStates' does not exist on type 'NormalComponent<any, never>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(261,32): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(262,38): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(265,30): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(267,51): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(273,12): error TS2339: Property 'shouldBeRemoved' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(275,41): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(277,14): error TS2339: Property 'remove' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(307,27): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(308,13): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(308,28): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(312,13): error TS2339: Property 'config' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(315,33): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(425,19): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ ac_voltmeter_down: undefined; ac_voltmeter_horz: undefined; ac_voltmeter_left: undefined; ac_voltmeter_right: undefined; ac_voltmeter_up: undefined; ac_voltmeter_vert: undefined; ... 406 more ...; zener_diode_xs_up: undefined; }'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(425,32): error TS2339: Property '_getSchematicSymbolNameOrThrow' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(428,52): error TS7006: Parameter 'port' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(429,27): error TS7006: Parameter 'label' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(452,12): error TS7006: Parameter 'label' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(455,42): error TS7006: Parameter 'alias' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(496,12): error TS2339: Property 'addAll' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(500,50): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(501,65): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(524,18): error TS7006: Parameter 'alias' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(558,61): error TS7006: Parameter 'pn' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(606,12): error TS2339: Property 'addAll' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(611,28): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(633,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(634,12): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(640,48): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(660,31): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(660,44): error TS2339: Property 'componentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(668,12): error TS2339: Property 'addAll' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(675,25): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(678,12): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(678,27): error TS7006: Parameter 'component' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(694,29): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(694,42): error TS2339: Property 'componentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(695,40): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(704,8): error TS7006: Parameter 'component' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(709,20): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(709,33): error TS2339: Property 'componentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(716,10): error TS2339: Property 'addAll' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(724,31): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(725,14): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(727,33): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(735,22): error TS2339: Property 'componentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(737,22): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(755,24): error TS2339: Property 'config' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(757,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(758,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(761,18): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(766,10): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(770,58): error TS2339: Property 'config' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(783,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(794,12): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(797,39): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(804,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(805,29): error TS2339: Property 'getSubcircuit' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(812,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(816,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(857,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(858,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(859,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(861,30): error TS2339: Property '_getSchematicSymbolNameOrThrow' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(863,43): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ ac_voltmeter_down: undefined; ac_voltmeter_horz: undefined; ac_voltmeter_left: undefined; ac_voltmeter_right: undefined; ac_voltmeter_up: undefined; ac_voltmeter_vert: undefined; ... 406 more ...; zener_diode_xs_up: undefined; }'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(865,25): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(871,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(874,34): error TS2339: Property '_resolveSchematicSheetId' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(878,12): error TS2339: Property 'schematic_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(885,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(886,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(888,25): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(894,33): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(897,32): error TS2339: Property '_resolveSchematicSheetId' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(899,10): error TS2339: Property 'schematic_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(905,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(906,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(907,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(920,25): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(940,33): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(941,32): error TS2339: Property '_resolveSchematicSheetId' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(963,32): error TS2339: Property '_resolveSchematicSheetId' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(980,32): error TS2339: Property '_resolveSchematicSheetId' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(982,10): error TS2339: Property 'schematic_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(986,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(987,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(988,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(989,29): error TS2339: Property 'getSubcircuit' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(997,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1009,20): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1022,33): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1035,36): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1036,8): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1039,51): error TS2339: Property 'isGroup' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1041,64): error TS2339: Property 'getString' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1042,38): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1049,10): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1052,12): error TS2339: Property 'getSubcircuit' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1055,13): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1055,46): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1060,79): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1061,26): error TS2339: Property 'getString' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1062,32): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1063,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1075,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1076,15): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1077,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1081,50): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1090,34): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1103,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1104,15): error TS2339: Property 'schematic_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1106,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1108,12): error TS2339: Property 'schematic_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1166,37): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1181,40): error TS2339: Property 'schematic_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1230,34): error TS2339: Property '_computePcbGlobalTransformBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1253,51): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1254,58): error TS2339: Property '_childrenVersion' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1255,53): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1258,24): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1259,31): error TS2339: Property '_childrenVersion' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1260,26): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1261,30): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1262,12): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1321,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1403,24): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1405,38): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1406,10): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1414,25): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1416,35): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1417,10): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1425,24): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1430,40): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1431,10): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1433,37): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1434,10): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1441,33): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1444,39): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1445,10): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1454,62): error TS7006: Parameter 'name' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1454,68): error TS7006: Parameter 'effect' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1455,12): error TS2339: Property '_queueAsyncEffect' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1473,30): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1487,25): error TS7006: Parameter 'alias' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1543,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1543,44): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1568,30): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1572,12): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1572,27): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1574,24): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1574,39): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1576,24): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1576,39): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1614,30): error TS7006: Parameter 'fpChild' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1632,14): error TS2339: Property 'children' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1633,20): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1634,17): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1662,55): error TS2339: Property 'getDisplayName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1670,12): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1671,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1681,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1682,13): error TS2339: Property 'config' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1702,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1725,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1726,15): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1728,53): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1777,30): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1806,32): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1832,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1833,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1841,24): error TS2339: Property 'selectAll' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1891,14): error TS2339: Property 'getSchematicSymbol' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1893,13): error TS2339: Property 'config' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1894,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1899,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1941,14): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1942,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1943,41): error TS2339: Property '_getBoard' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1944,31): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1958,15): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1997,32): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(1999,52): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2000,34): error TS2339: Property '_computePcbGlobalTransformBeforeLayout' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2032,32): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2033,35): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2037,41): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2039,12): error TS2339: Property 'cad_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2074,30): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2075,33): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2121,39): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2123,10): error TS2339: Property 'cad_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2128,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2153,14): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2154,30): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2184,38): error TS2339: Property 'getString' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2216,14): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2217,14): error TS2339: Property 'getInheritedProperty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2218,14): error TS2339: Property 'getInheritedProperty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2219,30): error TS2339: Property 'getInheritedProperty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2221,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2223,59): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2227,28): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2237,39): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2243,10): error TS2339: Property '_queueAsyncEffect' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2247,16): error TS2339: Property '_markDirty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2253,72): error TS2339: Property 'getString' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2254,39): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2255,33): error TS2339: Property 'getSubcircuit' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2261,16): error TS2339: Property '_markDirty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2267,14): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2268,14): error TS2339: Property 'getInheritedProperty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2269,14): error TS2339: Property 'getInheritedProperty' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2270,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2272,59): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2277,39): error TS2339: Property 'source_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2309,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2310,36): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2311,12): error TS2339: Property 'fallbackUnassignedName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2312,14): error TS2339: Property 'getSubcircuit' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2321,13): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2329,30): error TS2339: Property 'name' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2348,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2350,24): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2351,27): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2380,12): error TS2339: Property '_validatePcbCoordinateReferences' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2387,12): error TS2339: Property '_validatePcbCoordinateReferences' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2394,12): error TS2339: Property '_validatePcbCoordinateReferences' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2401,12): error TS2339: Property '_validatePcbCoordinateReferences' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2410,14): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2411,15): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2413,25): error TS2339: Property 'root' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2414,24): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2415,27): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2433,17): error TS2339: Property 'componentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2439,17): error TS2339: Property 'componentName' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2443,52): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2447,30): error TS2339: Property 'getGroup' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2452,15): error TS2339: Property '_getBoard' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2457,16): error TS2339: Property '_resolvePcbCoordinate' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2459,18): error TS2339: Property '_resolvePcbCoordinate' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2464,20): error TS2339: Property '_resolvePcbCoordinate' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2473,16): error TS2339: Property '_resolvePcbCoordinate' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2475,18): error TS2339: Property '_resolvePcbCoordinate' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2480,20): error TS2339: Property '_resolvePcbCoordinate' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2486,34): error TS2339: Property 'pcb_component_id' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2520,27): error TS2339: Property 'props' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2522,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2523,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2524,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2525,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2526,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/base-components/NormalComponent/NormalComponent.ts(2527,12): error TS2339: Property '_parsedProps' does not exist on type 'NormalComponent<ZodProps, PortNames>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1,50): error TS2307: Cannot find module './get-autorouting-phase-pcb-trace-paths' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(27,19): error TS7016: Could not find a declaration file for module 'debug'. '/workspace/tscircuit-ai-agent-remote/node_modules/debug/src/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/debug` if it exists or add a new declaration (.d.ts) file containing `declare module 'debug';`
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(29,33): error TS2307: Cannot find module 'lib/utils/autorouting/with-fixed-traces' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(30,53): error TS2307: Cannot find module 'lib/utils/schematic/assign-schematic-net-label-superscripts' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(32,41): error TS2307: Cannot find module 'lib/components/base-components/PrimitiveComponent' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(33,43): error TS2307: Cannot find module 'lib/components/base-components/is-assembly-device-container' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(34,33): error TS2307: Cannot find module 'lib/errors/AutorouterError' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(35,40): error TS2307: Cannot find module 'lib/utils/autorouting/CapacityMeshAutorouter' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(36,34): error TS2307: Cannot find module 'lib/utils/autorouting/FanoutAutorouter' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(37,45): error TS2307: Cannot find module 'lib/utils/autorouting/GenericLocalAutorouter' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(42,8): error TS2307: Cannot find module 'lib/utils/autorouting/SimpleRouteJson' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(43,42): error TS2307: Cannot find module 'lib/utils/autorouting/compare-pcb-vias' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(44,59): error TS2307: Cannot find module 'lib/utils/autorouting/createSourceTracesFromOffboardConnections' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(48,8): error TS2307: Cannot find module 'lib/utils/autorouting/get-circuit-json-pcb-trace-route' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(49,47): error TS2307: Cannot find module 'lib/utils/autorouting/get-fanout-boundary-point-spacing' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(50,42): error TS2307: Cannot find module 'lib/utils/autorouting/get-pcb-component-names-by-id' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(56,8): error TS2307: Cannot find module 'lib/utils/autorouting/getPresetAutoroutingConfig' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(57,43): error TS2307: Cannot find module 'lib/utils/autorouting/local-autorouter-strategies' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(58,63): error TS2307: Cannot find module 'lib/utils/autorouting/should-skip-autorouting-because-of-placement-errors' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(59,69): error TS2307: Cannot find module 'lib/utils/autorouting/should-skip-autorouting-because-of-trace-length-violations' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(60,42): error TS2307: Cannot find module 'lib/utils/get-bounds-of-pcb-components' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(61,40): error TS2307: Cannot find module 'lib/utils/getViaSpanLayers' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(65,8): error TS2307: Cannot find module 'lib/utils/gnd-power-net-regex' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(66,39): error TS2307: Cannot find module 'lib/utils/pcb-trace-route-point-utils' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(67,40): error TS2307: Cannot find module 'lib/utils/pcbStyle/getViaDiameterDefaults' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(68,51): error TS2307: Cannot find module 'lib/utils/public-exports' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(69,38): error TS2307: Cannot find module 'lib/utils/reverse-pcb-trace-route' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(70,44): error TS2307: Cannot find module 'lib/utils/schematic/getSizeOfSidesFromPortArrangement' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(73,22): error TS2307: Cannot find module '../Port/Port' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(74,23): error TS2307: Cannot find module '../Trace/Trace' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(75,27): error TS2307: Cannot find module '../TraceHint' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(76,39): error TS2307: Cannot find module './GroupRoutingPhasePlan' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(77,74): error TS2307: Cannot find module './Group_doInitialAssignSchematicSheetToConnectedComponents' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(78,59): error TS2307: Cannot find module './Group_doInitialPcbCalcPlacementResolution' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(80,46): error TS2307: Cannot find module './Group_doInitialPcbLayoutFlex' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(81,46): error TS2307: Cannot find module './Group_doInitialPcbLayoutGrid' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(82,46): error TS2307: Cannot find module './Group_doInitialPcbLayoutPack/Group_doInitialPcbLayoutPack' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(86,8): error TS2307: Cannot find module './Group_doInitialSchematicBoxComponentRender' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(87,52): error TS2307: Cannot find module './Group_doInitialSchematicLayoutFlex' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(88,52): error TS2307: Cannot find module './Group_doInitialSchematicLayoutGrid' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(89,58): error TS2307: Cannot find module './Group_doInitialSchematicLayoutMatchAdapt' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(90,57): error TS2307: Cannot find module './Group_doInitialSchematicLayoutMatchPack' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(91,56): error TS2307: Cannot find module './Group_doInitialSchematicLayoutSections' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(95,8): error TS2307: Cannot find module './Group_doInitialSchematicSheetRender' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(96,53): error TS2307: Cannot find module './Group_doInitialSchematicTraceRender/Group_doInitialSchematicTraceRender' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(97,60): error TS2307: Cannot find module './Group_doInitialSimulationSpiceEngineRender' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(98,60): error TS2307: Cannot find module './Group_doInitialSourceAddConnectivityMapKey' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(99,72): error TS2307: Cannot find module './Group_doInitialStandaloneSubcircuitPcbDesignRuleChecks' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(100,43): error TS2307: Cannot find module './Group_getFanoutPourNetMap' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(101,44): error TS2307: Cannot find module './Group_getRoutingPhasePlans' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(106,8): error TS2307: Cannot find module './Group_localAutoroutingCache' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(112,8): error TS2307: Cannot find module './Group_phasedAutoroutingUtils' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(113,60): error TS2307: Cannot find module './Group_syncFanoutExitsWithGlobalConnections' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(114,34): error TS2307: Cannot find module './Subcircuit/ISubcircuit' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(118,8): error TS2307: Cannot find module './add-port-ids-to-traces-at-jumper-pads' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(119,59): error TS2307: Cannot find module './claim-srj-assignable-pcb-vias-traversed-by-route' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(120,51): error TS2307: Cannot find module './find-fanout-phase-separation-conflict' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(121,68): error TS2307: Cannot find module './get-accumulated-pcb-traces-with-stage-output-replacements' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(122,48): error TS2307: Cannot find module './get-source-trace-id-for-routed-trace' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(123,41): error TS2307: Cannot find module './insert-autoplaced-jumpers' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(129,8): error TS2307: Cannot find module './region-replacement' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(130,48): error TS2307: Cannot find module './split-pcb-traces-on-jumper-segments' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(131,49): error TS2307: Cannot find module './utils/computeCenterFromAnchorPosition' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(142,26): error TS2339: Property 'root' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(156,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(157,11): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(171,11): error TS2339: Property 'selectAll' does not exist on type 'Group<ZodType<any, ZodTypeDef, any>>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(239,25): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(267,30): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(303,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(304,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(307,10): error TS7006: Parameter 'pin' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(316,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(325,29): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(393,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(394,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(397,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(399,33): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(400,10): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(432,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(434,39): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(435,16): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(436,13): error TS7006: Parameter 'port' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(437,16): error TS7006: Parameter 'pinNumber' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(444,15): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(451,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(453,20): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(454,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(457,18): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(458,27): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(461,10): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(462,14): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(471,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(474,30): error TS2339: Property 'getDescendants' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(475,54): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(477,31): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(481,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(488,33): error TS2339: Property 'source_component_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(497,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(498,30): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(500,35): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(505,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(508,40): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(509,39): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(511,33): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(517,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(518,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(519,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(530,22): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(531,33): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(535,27): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(536,49): error TS2339: Property 'getSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(537,18): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(542,29): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(552,30): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(565,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(566,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(567,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(573,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(574,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(607,52): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(621,14): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(621,35): error TS2339: Property 'isRoutingDirective' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(642,12): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(643,12): error TS2339: Property 'isRoutingDirective' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(655,35): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(659,19): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(698,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(728,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(729,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(733,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(780,42): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(782,30): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<ZodDiscriminatedUnion<"subcircuit", [ZodObject<{ pcbX: ZodOptional<ZodUnion<[ZodString, ZodEffects<ZodUnion<[ZodString, ZodNumber]>, number, string | number>]>>; ... 34 more ...; pcbRelative: ZodOptional<...>; } & { ...; } & { ...; }, "strip", ZodTypeAny, { ...; }, { ...; }>, ZodObject<...>]>>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(789,16): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(818,18): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(827,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(833,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(842,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(844,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(862,42): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(863,8): error TS7006: Parameter 'element' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(872,16): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(901,14): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(919,12): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(931,30): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(981,14): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1006,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1007,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1009,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1022,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1063,20): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1100,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1102,26): error TS7006: Parameter 'stage' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1102,33): error TS7006: Parameter 'phaseStageIndex' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1156,12): error TS7006: Parameter 'component' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1163,12): error TS7006: Parameter 'warning' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1213,18): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1214,15): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1240,12): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1285,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1287,36): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1333,52): error TS7006: Parameter 'connection' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1345,51): error TS7006: Parameter 'name' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1358,12): error TS2339: Property 'getDescendants' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1360,12): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1365,15): error TS7006: Parameter 'trace' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1371,12): error TS7006: Parameter 'trace' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1375,15): error TS7006: Parameter 'trace' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1490,16): error TS7006: Parameter 'obstacle' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1493,14): error TS7006: Parameter 'obstacle' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1542,48): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1548,14): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1630,41): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1639,52): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1644,57): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1645,32): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1652,30): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1687,18): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1724,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1727,36): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1749,26): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1758,31): error TS7006: Parameter 'event' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1759,22): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1762,39): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1771,17): error TS7031: Binding element 'solverName' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1772,17): error TS7031: Binding element 'solverParams' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1773,17): error TS7031: Binding element 'solverConstructorArgs' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1775,22): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1780,39): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1791,48): error TS7006: Parameter 'event' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1792,32): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1796,45): error TS7006: Parameter 'event' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1798,28): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1805,44): error TS7006: Parameter 'event' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1806,18): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1808,42): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1853,18): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1916,19): error TS2339: Property 'selectAll' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1929,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(1933,38): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2014,29): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2022,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2025,38): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2055,10): error TS2339: Property '_markDirty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2062,12): error TS2339: Property '_queueAsyncEffect' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2066,12): error TS2339: Property '_queueAsyncEffect' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2074,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2075,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2077,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2078,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2087,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2093,16): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2115,14): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2129,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2130,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2155,20): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2165,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2169,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2177,18): error TS2339: Property 'getString' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2185,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2197,46): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2251,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2257,27): error TS2339: Property 'getInheritedMergedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2259,33): error TS2339: Property '_getBoard' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2433,41): error TS7006: Parameter 'materializedPcbVia' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2447,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2448,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2449,13): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2451,27): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2453,18): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2454,20): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2458,29): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2468,30): error TS2339: Property 'getDescendants' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2469,54): error TS2339: Property 'source_group_id' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2480,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2499,45): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2499,60): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2525,14): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2530,36): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2531,8): error TS7006: Parameter 'c' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2578,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2579,27): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2613,50): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2614,8): error TS7006: Parameter 'count' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2614,15): error TS7006: Parameter 'child' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2643,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2647,27): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2648,26): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2654,34): error TS2339: Property 'parent' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2660,19): error TS2339: Property '_getBoard' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2699,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2700,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2701,24): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2744,38): error TS2339: Property '_getGlobalSchematicPositionBeforeLayout' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2812,12): error TS2339: Property '_parsedProps' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2812,44): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2813,56): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2823,33): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2838,33): error TS2339: Property 'props' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2851,25): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2870,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2873,12): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2874,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2877,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2879,14): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2882,32): error TS2339: Property 'children' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2916,46): error TS2339: Property 'name' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2939,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2942,14): error TS2339: Property 'getTopLevelRenderable' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2943,46): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2951,14): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2952,15): error TS2339: Property 'isSubcircuit' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group.ts(2953,25): error TS2339: Property 'root' does not exist on type 'Group<Props>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts(2,42): error TS2307: Cannot find module 'lib/utils/get-bounds-of-pcb-components' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts(8,13): error TS2339: Property 'root' does not exist on type 'Group<any>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts(11,35): error TS2339: Property '_parsedProps' does not exist on type 'Group<any>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts(15,32): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'Group<any>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts(16,32): error TS2339: Property '_parsedProps' does not exist on type 'Group<any>'.
+toolchain/core/source/lib/components/primitive-components/Group/Group_doInitialPcbComponentAnchorAlignment.ts(21,24): error TS2339: Property 'root' does not exist on type 'Group<any>'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(1,36): error TS2307: Cannot find module '../base-components/PrimitiveComponent' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(24,13): error TS2339: Property '_parsedProps' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(48,14): error TS2339: Property 'root' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(49,25): error TS2339: Property 'root' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(50,13): error TS2339: Property '_parsedProps' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(51,29): error TS2339: Property 'getSubcircuit' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(52,27): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(56,12): error TS2339: Property 'parent' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(57,12): error TS2339: Property 'getPrimitiveContainer' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(60,10): error TS2339: Property 'emitSolderMaskMarginWarning' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(151,25): error TS2339: Property 'root' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(169,25): error TS2339: Property 'root' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(180,14): error TS2339: Property 'root' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/Hole.ts(181,25): error TS2339: Property 'root' does not exist on type 'Hole'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(3,45): error TS2307: Cannot find module 'lib/utils/normalizeTextForCircuitJson' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(4,36): error TS2307: Cannot find module 'lib/utils/pcbSx/resolve-pcb-property' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(12,36): error TS2307: Cannot find module '../base-components/PrimitiveComponent' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(29,14): error TS2339: Property 'root' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(30,25): error TS2339: Property 'root' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(31,13): error TS2339: Property '_parsedProps' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(32,28): error TS2339: Property 'getPrimitiveContainer' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(33,48): error TS2339: Property '_getPcbPrimitiveFlippedHelpers' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(34,29): error TS2339: Property 'getSubcircuit' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(44,36): error TS2339: Property '_computePcbGlobalTransformBeforeLayout' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(56,11): error TS2322: Type 'unknown[]' is not assignable to type '("top" | "inner1" | "inner2" | "bottom" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8")[]'.
+  Type 'unknown' is not assignable to type '"top" | "inner1" | "inner2" | "bottom" | "inner3" | "inner4" | "inner5" | "inner6" | "inner7" | "inner8"'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(62,27): error TS2339: Property 'getResolvedPcbSx' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(69,27): error TS2339: Property 'getResolvedPcbSx' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(76,27): error TS2339: Property 'getResolvedPcbSx' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(83,27): error TS2339: Property 'getResolvedPcbSx' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(93,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(104,20): error TS2339: Property 'parent' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(109,23): error TS2339: Property 'resolvePcbCoordinate' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(113,23): error TS2339: Property 'resolvePcbCoordinate' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(119,16): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(138,23): error TS2339: Property '_resolveText' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(153,28): error TS2339: Property 'getGroup' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(164,13): error TS2339: Property '_parsedProps' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(168,27): error TS2339: Property 'getResolvedPcbSx' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(176,12): error TS2339: Property 'getInheritedProperty' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(179,23): error TS2339: Property '_resolveText' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(189,14): error TS2339: Property 'root' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SilkscreenText.ts(190,25): error TS2339: Property 'root' does not exist on type 'SilkscreenText'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(16,36): error TS2307: Cannot find module '../base-components/PrimitiveComponent' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(17,27): error TS2307: Cannot find module './Port' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(18,43): error TS2307: Cannot find module './Port/selectPortForPcbPrimitive' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(19,51): error TS2307: Cannot find module 'lib/utils/pcb/get-axis-aligned-size-from-rotated-rect' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(20,47): error TS2307: Cannot find module 'lib/utils/pcb/get-polygon-solder-paste-contours' or its corresponding type declarations.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(44,13): error TS2339: Property '_parsedProps' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(61,30): error TS7006: Parameter 'p' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(62,30): error TS7006: Parameter 'p' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(81,82): error TS2339: Property 'componentName' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(90,13): error TS2339: Property '_parsedProps' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(95,38): error TS2339: Property '_computePcbGlobalTransformBeforeLayout' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(96,43): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(109,30): error TS2339: Property 'getPrimitiveContainer' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(113,15): error TS2339: Property 'props' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(120,12): error TS2339: Property 'props' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(129,14): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(130,25): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(131,13): error TS2339: Property '_parsedProps' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(143,10): error TS2339: Property 'emitSolderMaskMarginWarning' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(145,29): error TS2339: Property 'getSubcircuit' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(147,27): error TS2339: Property '_getGlobalPcbPositionBeforeLayout' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(148,34): error TS2339: Property '_computePcbGlobalTransformBeforeLayout' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(150,12): error TS2339: Property '_computePcbGlobalTransformBeforeLayout' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(168,12): error TS2339: Property '_getPcbPrimitiveFlippedHelpers' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(169,37): error TS2339: Property 'getPrimitiveContainer' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(181,45): error TS7006: Parameter 'ph' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(185,12): error TS2339: Property 'parent' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(186,12): error TS2339: Property 'getPrimitiveContainer' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(212,30): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(232,30): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(249,30): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(266,32): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(280,32): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(307,28): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(324,30): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(327,47): error TS7031: Binding element 'x' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(327,50): error TS7031: Binding element 'y' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(331,50): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(345,28): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(358,41): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(361,40): error TS7006: Parameter 'hole' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(362,25): error TS7006: Parameter 'point' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(367,32): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(393,28): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(412,30): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(429,30): error TS2339: Property 'getGroup' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(442,14): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(443,25): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(450,37): error TS2339: Property '_getPcbPrimitiveFlippedHelpers' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(451,37): error TS2339: Property 'getPrimitiveContainer' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(458,29): error TS2339: Property '_parsedProps' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(468,25): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(519,30): error TS7006: Parameter 'p' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(520,30): error TS7006: Parameter 'p' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(580,25): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(588,14): error TS7006: Parameter 'elm' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(603,14): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(604,25): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(619,33): error TS7006: Parameter 'p' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(631,39): error TS7031: Binding element 'x' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(631,42): error TS7031: Binding element 'y' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(635,36): error TS7006: Parameter 'hole' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(636,25): error TS7031: Binding element 'x' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad.ts(636,28): error TS7031: Binding element 'y' implicitly has an 'any' type.
+toolchain/core/source/lib/components/primitive-components/SmtPad_createPillSolderPaste.ts(13,63): error TS2339: Property '_parsedProps' does not exist on type 'SmtPad'.
+toolchain/core/source/lib/components/primitive-components/SmtPad_createPillSolderPaste.ts(33,10): error TS2339: Property 'root' does not exist on type 'SmtPad'.
+toolchain/core/source/tests/components/normal-components/generated-position-metadata-schema.test.tsx(3,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-margins.test.tsx(2,24): error TS2307: Cannot find module 'lib/components/primitive-components/SmtPad' or its corresponding type declarations.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-margins.test.tsx(3,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-margins.test.tsx(49,8): error TS7006: Parameter 'paste' implicitly has an 'any' type.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-margins.test.tsx(64,6): error TS7006: Parameter 'paste' implicitly has an 'any' type.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-margins.test.tsx(77,25): error TS2551: Property 'toMatchPcbSnapshot' does not exist on type 'Matchers<any>'. Did you mean 'toMatchSnapshot'?
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-placement.test.tsx(2,32): error TS2307: Cannot find module 'tests/fixtures/get-test-fixture' or its corresponding type declarations.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-placement.test.tsx(51,8): error TS7006: Parameter 'paste' implicitly has an 'any' type.
+toolchain/core/source/tests/components/primitive-components/pill-solder-paste-placement.test.tsx(71,25): error TS2551: Property 'toMatchPcbSnapshot' does not exist on type 'Matchers<any>'. Did you mean 'toMatchSnapshot'?
+toolchain/gerber/source/src/excellon-drill/commands/G85.ts(2,44): error TS2307: Cannot find module '../define-excellon-drill-command' or its corresponding type declarations.
+toolchain/gerber/source/src/excellon-drill/commands/G85.ts(15,17): error TS7031: Binding element 'start_x' implicitly has an 'any' type.
+toolchain/gerber/source/src/excellon-drill/commands/G85.ts(15,26): error TS7031: Binding element 'start_y' implicitly has an 'any' type.
+toolchain/gerber/source/src/excellon-drill/commands/G85.ts(15,35): error TS7031: Binding element 'x' implicitly has an 'any' type.
+toolchain/gerber/source/src/excellon-drill/commands/G85.ts(15,38): error TS7031: Binding element 'y' implicitly has an 'any' type.
+toolchain/gerber/source/src/excellon-drill/convert-soup-to-excellon-drill-commands.ts(2,46): error TS2307: Cannot find module './any-excellon-drill-command-map' or its corresponding type declarations.
+toolchain/gerber/source/src/excellon-drill/convert-soup-to-excellon-drill-commands.ts(3,31): error TS2307: Cannot find module './excellon-drill-builder' or its corresponding type declarations.
+toolchain/gerber/source/tests/excellon-drill/canned-slot-endpoints.test.ts(6,8): error TS2307: Cannot find module 'src/excellon-drill' or its corresponding type declarations.
+toolchain/gerber/source/tests/excellon-drill/canned-slot-endpoints.test.ts(34,24): error TS7006: Parameter 'command' implicitly has an 'any' type.
+toolchain/gerber/source/tests/excellon-drill/canned-slot-endpoints.test.ts(37,24): error TS7006: Parameter 'command' implicitly has an 'any' type.
+toolchain/gerber/source/tests/excellon-drill/canned-slot-endpoints.test.ts(39,37): error TS7006: Parameter 'line' implicitly has an 'any' type.

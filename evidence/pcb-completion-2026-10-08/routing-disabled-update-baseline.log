@@ -1,0 +1,37 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/routing-disabled-update.test.tsx:
+21 |     if (!(board instanceof Group)) throw Error("Expected the actual board routing group")
+22 |     // Async footprint/layout changes revisit this lifecycle method after the
+23 |     // initial pass. It must enforce the same controls as the initial pass.
+24 |     board.updatePcbTraceRender()
+25 |     await circuit.renderUntilSettled()
+26 |     expect(starts).toHaveLength(0)
+                        ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/routing-disabled-update.test.tsx:26:20)
+(fail) PCB routing updates respect the platform disabled flag [328.61ms]
+21 |     if (!(board instanceof Group)) throw Error("Expected the actual board routing group")
+22 |     // Async footprint/layout changes revisit this lifecycle method after the
+23 |     // initial pass. It must enforce the same controls as the initial pass.
+24 |     board.updatePcbTraceRender()
+25 |     await circuit.renderUntilSettled()
+26 |     expect(starts).toHaveLength(0)
+                        ^
+error: expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tests/components/normal-components/routing-disabled-update.test.tsx:26:20)
+(fail) PCB routing updates respect the board disabled flag [138.29ms]
+(pass) routing-enabled boards still produce actual copper [91.07ms]
+
+ 1 pass
+ 2 fail
+ 3 expect() calls
+Ran 3 tests across 1 file. [1.55s]

@@ -1,3 +1,39 @@
+## Current native and canonical qualification — 2026-10-08
+
+**0.0.11-wip-generator-qualification — NOT READY TO ORDER.** Canonical project
+runtime fixes eliminate all 169 schema failures and missing pill paste. The
+untouched genuine C7848 import clears U14 supplier rotation. Local regulator
+escape requirements now explicitly preserve 1 mm trunks. All 9,813 existing
+connected pairs are preserved; all 125 purchased component poses are unchanged.
+Fresh native checks still report 50 connection errors / 12 physically open
+assigned nets plus two unassigned battery contacts. Shorts and measured copper
+clearance violations are zero. The final 2.8-inch LCD, backlight, RF/mechanical
+integration and battery polarity remain unqualified.
+
+The corrected canonical Gerber library preserves USB slots. Independent strict
+Gerber parsing and Excellon inspection pass; actual exports are explicitly
+NOT FOR FABRICATION. Strict PnP rotation passes for all 125 parts, and the official
+resolved BOM covers all 43 supplier identities. Current inventory confirms 39
+identities conservatively; D2 is out of stock and three positive-stock records
+require assembly-availability confirmation. Complete current/thermal and full fabrication gates remain open.
+All 15 original schematic style issues are corrected in the actual schematic
+trial, with identical PCB/CAD geometry. One newly exposed alignment advisory
+misclassifies the VMOTOR flyback/bleeder parallel branches as a series pair;
+its exact six-contact topology and conflicting orientation advice are reviewed
+and retained in the schematic-style-repair evidence. Final routed checks are
+recorded independently; no failure is hidden.
+
+Core also prevents disabled subcircuits from starting autorouting during
+updates; both disabled controls and an enabled control are regression-tested.
+The actual isolated MCU diagnostic now has zero copper and zero routing events.
+Board tests: 51 pass; the full-board fabrication gate still fails on 50
+unresolved native connections. These are 50 assigned open contacts plus two
+unassigned J3 contacts, not a completed board.
+
+Receipts and source patches: `evidence/pcb-completion-2026-10-08/` and `toolchain/`.
+Older entries below are historical.
+
+---
 **0.0.10-wip-microphone-bypass — NOT READY TO ORDER.** The existing C81
 100 nF X7R capacitor moves beside U5 to (17.05, -28.1) mm / 180 degrees on top.
 Its authored 0.3 mm top copper connects directly to the U5 supply escape and
@@ -1686,3 +1722,44 @@ passes after force-ignoring cloud runtime caches. All 325 checkpoint files
 verify, including unchanged board native/source/cache bytes. The formatter's
 local credential-bearing diagnostic was redacted before publication; the
 hygiene scan found no credential pattern in newly saved evidence.
+
+## 0.0.11 canonical runtime qualification
+
+The current source uses reproducible pinned package artifacts containing
+canonical core metadata and pill-paste fixes and a canonical Circuit JSON
+board-silkscreen ownership fix. Exact upstream bases, source changes, tests and
+artifact hashes are retained in `toolchain/`. Released CLI 0.1.2270 and Gerber
+library 0.0.112-board-fixes.1 replace the older polygon-paste conversion path. The genuine
+C7848 exact import is restored without hand-editing its manufacturer geometry.
+
+REG_L1 and REG_L2 have a localized 0.275 mm escape minimum, a maximum 0.751 mm
+narrow section and independent 1 mm trunk requirements. Their unchanged saved
+copper is checked by `scripts/routing/audit-regulator-switch-widths.py`. At
+35 µm finished outer copper and 125°C resistivity, the existing complete path
+has about 3.574 mΩ resistance, a 20.55 mV drop and 118.2 mW loss under TI's
+conservative 5.75 A peak current treated as DC. Full board temperature, selected
+manufacturer stackup, all nominal-width branches and final load remain separate
+qualification gates. No saved route or emitted JSON was edited to suppress an
+error.
+
+The final source and native qualification receipts are retained under
+`evidence/pcb-completion-2026-10-08/`. This remains engineering WIP pending the
+final LCD/FPC/RF/backlight, battery polarity, connectivity, stock and export gates.
+
+Fresh completed native generation preserves all 9,813 connected pairs and all
+125 purchased poses. Schema failures are zero; 52 genuine pill pads have correctly
+positioned/oriented paste, with no exposed SMT pad missing paste. Official
+Gerber-based shorts check passes. Independent PyGerber strict parsing accepts all
+12 actual Gerber files; PCB-tools confirms four USB slots, 320 full-span 0.30 mm
+via drills and eight NPTH holes (six component holes, two mounting holes).
+Strict supplier PnP rotation has no warnings/errors. The official resolved BOM
+contains 125 purchased entries, 43 identities, no blank descriptions and no
+supplier IDs masquerading as packages. Unresolved raw-export BOM deficiencies
+are retained separately; resolved export uses the official callback.
+
+No additional electrical net has been closed by these generator changes.
+Remaining native errors: 46 J7 plus four U27 output contacts; 12 physically open
+assigned nets and two unassigned J3 outer contacts. LCD selection/pin mapping,
+backlight redesign, verified cable fold/bend/contact geometry, antenna clearance
+and numbered battery wire-to-contact mapping remain unqualified. All artifacts
+remain NOT FOR FABRICATION.

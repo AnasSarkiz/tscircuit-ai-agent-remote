@@ -31,20 +31,8 @@ export function DisplaySheet({ placementOnly = false }: { placementOnly?: boolea
           schRotation={-90}
         />
         <GRM188R61A226ME15D name="C41" {...place("C41")} schX={-3.0} schY={6.0} schRotation={-90} />
-        <GRM188R71C104KA01D
-          name="C42"
-          {...place("C42")}
-          schX={-0.75}
-          schY={6.0}
-          schRotation={-90}
-        />
-        <GRM188R71C104KA01D
-          name="C43"
-          {...place("C43")}
-          schX={-3.0}
-          schY={8.25}
-          schRotation={-90}
-        />
+        <GRM188R71C104KA01D name="C42" {...place("C42")} schX={-1.5} schY={6.0} schRotation={-90} />
+        <GRM188R71C104KA01D name="C43" {...place("C43")} schX={0} schY={6} schRotation={-90} />
         <RC0603FR_07100KL name="R40" {...place("R40")} schX={-6.75} schY={3.0} schRotation={-90} />
         <A_0603WAF1001T5E name="R41" {...place("R41")} schX={-3.0} schY={-6.75} schRotation={-90} />
         <trace from="U13.pin1" to="net.V3V3" />
@@ -179,7 +167,7 @@ export function DisplaySheet({ placementOnly = false }: { placementOnly?: boolea
         <trace from="J7.pin52" to="net.GND" />
         {/* Panel SDO33, TE39, absent touch44-47 remain open. */}
         <RC0603FR_07100KL name="R47" {...place("R47")} schX={-6.0} schY={0.75} schRotation={-90} />
-        <RC0603FR_0710KL name="R42" {...place("R42")} schX={11.25} schY={0.75} schRotation={-90} />
+        <RC0603FR_0710KL name="R42" {...place("R42")} schX={11.25} schY={0.75} schRotation={90} />
         <trace from="U14.pin2" to="net.MCU_LCD_CS_N" />
         <trace from="R47.pin1" to="net.MCU_LCD_CS_N" />
         <trace

@@ -21,8 +21,8 @@ export function ChargerSheet({ placementOnly = false }: { placementOnly?: boolea
         <CL10A475KO8NNNC name="C1" {...place("C1")} schX={-9} schY={5} schRotation={-90} />
         <GRM188R61A106ME69D name="C2" {...place("C2")} schX={5} schY={5} schRotation={-90} />
         <GRM188R61A106ME69D name="C3" {...place("C3")} schX={5} schY={-5} schRotation={-90} />
-        <RC0603FR_073KL name="R1" {...place("R1")} schX={-6} schY={-6} schRotation={-90} />
-        <RC0603FR_073KL name="R2" {...place("R2")} schX={-9} schY={-6} schRotation={-90} />
+        <RC0603FR_073KL name="R1" {...place("R1")} schX={3} schY={0.75} schRotation={-90} />
+        <RC0603FR_073KL name="R2" {...place("R2")} schX={3} schY={-2.5} schRotation={-90} />
         <RC0603FR_07100KL name="R3" {...place("R3")} schX={-12} schY={0} schRotation={-90} />
         <RC0603FR_07100KL name="R4" {...place("R4")} schX={-12} schY={3} schRotation={-90} />
         <trace from="U16.pin1" to="net.PACK_NTC" />

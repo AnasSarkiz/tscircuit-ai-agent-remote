@@ -34,7 +34,7 @@ export function McuUsbSheet({ placementOnly = false }: { placementOnly?: boolean
           schHeight={3.6}
         />
         <TPD2EUSB30ADRTR name="D2" {...place("D2")} schX={-6} schY={-6} />
-        <TPS3839G33DBZR name="U12" {...place("U12")} schX={-10} schY={7} />
+        <TPS3839G33DBZR name="U12" {...place("U12")} schX={-10} schY={7} schWidth={2.1} />
         <BM03B_SRSS_TB_LF__SN_ name="J6" {...place("J6")} schX={10} schY={3} />
         <RC0603FR_0722RL name="R31" {...place("R31")} schX={-6} schY={-2} />
         <RC0603FR_0722RL name="R32" {...place("R32")} schX={-6} schY={0} />

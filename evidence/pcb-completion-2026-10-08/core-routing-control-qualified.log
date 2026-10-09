@@ -1,0 +1,57 @@
+bun test v1.4.0 (34cbb9a40)
+
+tests/components/normal-components/routing-disabled-update.test.tsx:
+(pass) PCB routing updates respect the platform disabled flag [151.37ms]
+(pass) PCB routing updates respect the board disabled flag [30.26ms]
+(pass) routing-enabled boards still produce actual copper [188.35ms]
+
+tests/components/normal-components/generated-position-metadata-schema.test.tsx:
+(pass) generated position and optional ownership metadata match circuit-json [62.86ms]
+
+tests/components/normal-components/pcb-relative-positioning-with-anchors.test.tsx:
+(pass) pcb_group with positioned_relative_to_pcb_group_id [10.10ms]
+(pass) pcb_group with positioned_relative_to_pcb_board_id [3.97ms]
+(pass) pcb_component with positioned_relative_to_pcb_group_id shows anchor offsets [14.60ms]
+(pass) pcb_component positioned relative to pcb_board shows anchor offsets [10.70ms]
+
+tests/components/primitive-components/pill-solder-paste-margins.test.tsx:
+(pass) pill paste respects absolute margins, coverage and layout movement [455.26ms]
+
+tests/components/primitive-components/pill-solder-paste-placement.test.tsx:
+(pass) pill paste follows emitted pad geometry on both layers and all quarter turns [384.15ms]
+
+ 10 pass
+ 0 fail
+ 253 expect() calls
+Ran 10 tests across 5 files. [2.32s]
+$ tsup-node
+CLI Building entry: index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /workspace/tscircuit-ai-agent-remote/.tools/core-board-fixes/tsup.config.ts
+CLI Target: esnext
+ESM Build start
+DTS Build start
+ESM dist/index.js 5.23 MB
+ESM ⚡️ Build success in 710ms
+DTS ⚡️ Build success in 33496ms
+DTS dist/index.d.ts 9.64 MB
+npm notice
+npm notice 📦  @tscircuit/core@0.0.2090-board-fixes.3
+npm notice Tarball Contents
+npm notice 1.1kB LICENSE
+npm notice 1.7kB README.md
+npm notice 10.1MB dist/index.d.ts
+npm notice 5.5MB dist/index.js
+npm notice 6.2kB package.json
+npm notice Tarball Details
+npm notice name: @tscircuit/core
+npm notice version: 0.0.2090-board-fixes.3
+npm notice filename: tscircuit-core-0.0.2090-board-fixes.3.tgz
+npm notice package size: 1.4 MB
+npm notice unpacked size: 15.6 MB
+npm notice shasum: ed1ee2ff6629092417db48e5c0512770d1c9dca1
+npm notice integrity: sha512-ytYTsv88x8Urs[...]9Ss0E1UvRGBGg==
+npm notice total files: 5
+npm notice
+tscircuit-core-0.0.2090-board-fixes.3.tgz

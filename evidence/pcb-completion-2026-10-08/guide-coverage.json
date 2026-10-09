@@ -1,0 +1,222 @@
+{
+  "native_sha256": "16c299accb1750ce3b93997726c7c3316595e9848730bd9f20a55b6d24c4317a",
+  "annotation_schema_passed": true,
+  "component_coverage": 135,
+  "guides": [
+    {
+      "diagram": "mcu-usb-review",
+      "guide_index": 14,
+      "references": [
+        "C30",
+        "C31",
+        "C32",
+        "D2",
+        "J1",
+        "J6",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37",
+        "R38",
+        "U1",
+        "U12"
+      ]
+    },
+    {
+      "diagram": "ChargerSheet",
+      "guide_index": 15,
+      "references": [
+        "C1",
+        "C2",
+        "C3",
+        "J3",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "U16"
+      ]
+    },
+    {
+      "diagram": "regulated-3v3-review",
+      "guide_index": 16,
+      "references": [
+        "C4",
+        "C5",
+        "L1",
+        "R5",
+        "R6",
+        "R7",
+        "U2"
+      ]
+    },
+    {
+      "diagram": "display-logic-review",
+      "guide_index": 17,
+      "references": [
+        "C40",
+        "C41",
+        "C42",
+        "C43",
+        "J7",
+        "R40",
+        "R41",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "U13",
+        "U14"
+      ]
+    },
+    {
+      "diagram": "speaker-amplifier-review",
+      "guide_index": 18,
+      "references": [
+        "C50",
+        "C51",
+        "J4",
+        "Q1",
+        "Q2",
+        "R60",
+        "R61",
+        "R62",
+        "R63",
+        "R64",
+        "R65",
+        "R66",
+        "R67",
+        "R68",
+        "R69",
+        "R70",
+        "U3"
+      ]
+    },
+    {
+      "diagram": "haptic-driver-review",
+      "guide_index": 19,
+      "references": [
+        "C70",
+        "C71",
+        "C72",
+        "D3",
+        "Q9",
+        "R82",
+        "R83",
+        "R84",
+        "R85",
+        "U22"
+      ]
+    },
+    {
+      "diagram": "mic-regulated-clock-review",
+      "guide_index": 20,
+      "references": [
+        "C73",
+        "C74",
+        "C75",
+        "R86",
+        "R87",
+        "R88",
+        "R89",
+        "R90",
+        "R91",
+        "R92",
+        "R93",
+        "R94",
+        "R95",
+        "U23",
+        "U24"
+      ]
+    },
+    {
+      "diagram": "hold-readback-review",
+      "guide_index": 21,
+      "references": [
+        "C78",
+        "R100",
+        "R99",
+        "U26"
+      ]
+    },
+    {
+      "diagram": "battery-ready-review",
+      "guide_index": 22,
+      "references": [
+        "C76",
+        "C77",
+        "R96",
+        "R97",
+        "U25"
+      ]
+    },
+    {
+      "diagram": "MicrophonesSheet",
+      "guide_index": 23,
+      "references": [
+        "C25",
+        "C26",
+        "C80",
+        "C81",
+        "R26",
+        "R27",
+        "R29",
+        "R30",
+        "U4",
+        "U5",
+        "U7"
+      ]
+    },
+    {
+      "diagram": "ControlsSheet",
+      "guide_index": 24,
+      "references": [
+        "SW1",
+        "SW2",
+        "SW4",
+        "SW5",
+        "TP_MOTOR_N",
+        "TP_MOTOR_P"
+      ]
+    },
+    {
+      "diagram": "BacklightSheet",
+      "guide_index": 25,
+      "references": [
+        "C82",
+        "C83",
+        "C84",
+        "C85",
+        "R102",
+        "R103",
+        "R104",
+        "U27"
+      ]
+    },
+    {
+      "diagram": "test-access",
+      "guide_index": 26,
+      "references": [
+        "TP1",
+        "TP2",
+        "TP3",
+        "TP4",
+        "TP5",
+        "TP6",
+        "TP7",
+        "TP8"
+      ]
+    }
+  ],
+  "physical_geometry_gate": "separate final-native-compliance.json and final-copper-audit.json",
+  "fabrication_ready": false
+}

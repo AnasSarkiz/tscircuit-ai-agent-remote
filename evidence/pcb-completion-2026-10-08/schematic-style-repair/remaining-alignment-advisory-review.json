@@ -1,0 +1,20 @@
+{
+  "actual_trial_sha256": "f4300e25d2126cb2acae3e8098317edc94210a9ff897e595bacb398b04d57210",
+  "actual_shared_power_net": "VMOTOR",
+  "connected_contacts": [
+    "C71.1",
+    "C72.1",
+    "D3.1",
+    "R82.1",
+    "TP_MOTOR_P.1",
+    "U22.5"
+  ],
+  "native_node_is_two_terminal_series_connection": false,
+  "diode_role": "D3 flyback cathode on VMOTOR; anode on HAPTIC_N",
+  "resistor_role": "R82 bleeder between VMOTOR and GND, independently parallel to the motor circuit",
+  "symbol_orientation": "Both shared positive-power contacts face up. Their actual endpoints align on a common horizontal VMOTOR power rail.",
+  "remaining_ui_advisory": "DiodeResistorNotAligned: faces away from each other",
+  "engineering_review": "The rule treats two independent branches on a multiway power rail as a series pair. Rotating either shared positive contact down conflicts with the separate positive-rail rule and standard rail orientation. The reported advisory is retained; no checker or geometry is bypassed.",
+  "ui_schematic_style_passed": false,
+  "fabrication_ready": false
+}

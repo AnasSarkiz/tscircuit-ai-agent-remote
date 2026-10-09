@@ -51,7 +51,7 @@ test("A4 trial M2 mounts are nonconductive holes with all-layer circular clearan
   ]) {
     expect(
       mounts.some(
-        (element) => element.x === x && element.y === y && element.pcb_component_id === null,
+        (element) => element.x === x && element.y === y && element.pcb_component_id === undefined,
       ),
     ).toBe(true)
     expect(

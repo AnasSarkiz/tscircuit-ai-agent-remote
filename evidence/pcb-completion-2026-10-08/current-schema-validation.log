@@ -1,0 +1,828 @@
+bun install v1.4.0 (34cbb9a40)
+
++ @anthropic-ai/sdk@0.30.1
++ @biomejs/biome@1.9.4
++ @types/bun@1.2.14
++ @types/convert-units@2.3.11
++ @types/node@22.15.21
++ @typescript-eslint/parser@8.32.1
++ @typescript-eslint/typescript-estree@8.32.1
++ esbuild@0.20.2
++ format-si-unit@0.0.7
++ prettier@3.5.3
++ ts-expect@1.3.0
++ ts-node@10.9.2
++ tsup@8.5.0
++ typescript@5.8.3
++ zod@3.25.76
+
+248 packages installed [77.00ms]
+bun test v1.4.0 (34cbb9a40)
+
+tests/simulation_unknown_experiment_error.test.ts:
+(pass) simulation_unknown_experiment_error parses [1.30ms]
+(pass) any_circuit_element includes simulation_unknown_experiment_error [18.45ms]
+
+tests/schematic_table_cell.test.ts:
+(pass) schematic_table_cell parse [0.23ms]
+
+tests/source_part_not_found_warning.test.ts:
+(pass) source_part_not_found_warning parses [0.46ms]
+(pass) any_circuit_element includes source_part_not_found_warning [1.99ms]
+
+tests/resistance-units.test.ts:
+(pass) resistance parses common resistor shorthand with case-sensitive prefixes [0.17ms]
+(pass) resistance parses explicit ohm units with milli and mega prefixes [0.14ms]
+(pass) bare m remains a length unit in the generic SI parser [0.06ms]
+
+tests/pcb-board-allow-blind-and-buried-vias.test.ts:
+(pass) pcb_board parses the blind and buried via flag [0.23ms]
+
+tests/source_simple_voltage_source.test.ts:
+(pass) source_simple_voltage_source parse [0.48ms]
+(pass) source_simple_voltage_source parse with minimal properties [0.08ms]
+
+tests/pcb_stiffener.test.ts:
+(pass) rect stiffener normalizes geometry, preserves metadata and joins element unions [4.00ms]
+(pass) polygon stiffener normalizes resolved vertices and round trips through JSON [4.20ms]
+(pass) stiffener requires board, geometry and explicit material/face/thickness [3.38ms]
+(pass) stiffener rejects nonphysical dimensions and nonfinite position/rotation [5.05ms]
+(pass) stiffener rejects conflicting local and resolved geometry [1.25ms]
+(pass) stiffener rejects underspecified, degenerate and nonfinite outlines [0.49ms]
+
+tests/simulation_current_source.test.ts:
+(pass) simulation_current_source DC parse with string current [5.67ms]
+(pass) simulation_current_source DC parse with is_dc_source: true [0.12ms]
+(pass) simulation_current_source AC parse [3.90ms]
+(pass) simulation_current_source DC parse with optional port/net ids [0.08ms]
+(pass) simulation_current_source AC with duty_cycle [0.15ms]
+
+tests/cad-component-pcb-component-id-optional.test.ts:
+(pass) CAD geometry can omit its PCB component reference [4.74ms]
+(pass) CAD geometry preserves an existing PCB component reference [0.08ms]
+(pass) PCB component references remain strings when supplied [0.13ms]
+(pass) standalone CAD geometry still requires a source component [0.05ms]
+
+tests/simulation_analysis_types.test.ts:
+(pass) parses analysis-specific experiment fields [0.27ms]
+(pass) rejects incomplete analysis experiments [0.18ms]
+(pass) parses parameter sweeps [3.99ms]
+(pass) parses analysis-specific simulation results [0.27ms]
+
+tests/simulation-spice-subcircuit.test.ts:
+(pass) simulation_spice_subcircuit parses [0.37ms]
+(pass) any_circuit_element includes simulation_spice_subcircuit [6.44ms]
+
+tests/pcb_cutout_path.test.ts:
+(pass) pcb_cutout_path with continuous slot [0.28ms]
+(pass) pcb_cutout_path with dashed slots [0.11ms]
+(pass) pcb_cutout_path with numeric values [0.05ms]
+(pass) pcb_cutout_path with optional board and panel ids [0.07ms]
+(pass) pcb_cutout_path supports union type [0.27ms]
+(pass) pcb_cutout_path with square corners (corner_radius = 0) [0.05ms]
+(pass) pcb_cutout_path with rounded corners [0.08ms]
+(pass) pcb_cutout_path with fully circular slot (corner_radius = slot_width/2) [0.06ms]
+
+tests/pcb_rotated_pill_hole_with_rect_pad.test.ts:
+(pass) parse rotated pill hole with rect pad [0.27ms]
+(pass) parse rotated pill hole with rect pad and offsets [0.14ms]
+
+tests/pcb-keepout-permissions.test.ts:
+(pass) keepout permissions preserve booleans and omission across all shapes [88.34ms]
+
+tests/cad-cable-pin1-positions.test.ts:
+(pass) cable pin 1 positions preserve absolute coordinates, normalize units and remain optional [15.34ms]
+
+tests/pcb-trace-via-tenting.test.ts:
+(pass) trace route vias preserve explicit and omitted tenting without a board [2.11ms]
+
+tests/component-quantity-units.test.ts:
+(pass) parseAndConvertSiUnit parses bare SI prefixes with expected units [0.13ms]
+(pass) electrical unit schemas share component quantity shorthand [0.14ms]
+(pass) explicit units still parse through the generic SI unit parser [0.08ms]
+(pass) bare m remains a length unit in the generic SI parser [0.10ms]
+
+tests/pcb_board.test.ts:
+(pass) pcb_board with width and height (rectangular board) [0.39ms]
+(pass) pcb_board with outline allows width and height to be omitted [0.13ms]
+(pass) pcb_board can have both width/height and outline [0.11ms]
+(pass) pcb_board with shape rect [0.07ms]
+(pass) pcb_board with shape polygon [0.07ms]
+(pass) pcb_board shape property is optional [0.06ms]
+(pass) pcb_board allows vias in pads to be explicitly allowed [0.06ms]
+(pass) pcb_board with solder mask and silkscreen colors [0.06ms]
+(pass) pcb_board with anchor properties [0.16ms]
+(pass) pcb_board with manufacturing drc properties [0.17ms]
+
+tests/source_port.test.ts:
+(pass) source_port parses with most_frequently_referenced_by_name [0.06ms]
+(pass) source_port parses without most_frequently_referenced_by_name [0.03ms]
+(pass) source_port parses configuration and support protocol flags [0.11ms]
+(pass) source_port parses pin attributes [0.39ms]
+(pass) source_port preserves device direction, GPIO, and output-mode attributes [0.14ms]
+
+tests/pcb_pad_trace_clearance_error.test.ts:
+(pass) pcb_pad_trace_clearance_error parses [0.14ms]
+(pass) any_circuit_element includes pcb_pad_trace_clearance_error [2.05ms]
+
+tests/external_footprint_load_error.test.ts:
+(pass) external_footprint_load_error parses [0.08ms]
+(pass) any_circuit_element includes external_footprint_load_error [0.96ms]
+
+tests/cad_component_folded_board.test.ts:
+(pass) CAD folded state is optional and preserves the supplied pose [0.37ms]
+
+tests/source_component_availability_warning.test.ts:
+(pass) availability warnings retain supplier alternatives and component references [0.79ms]
+
+tests/source_pin_missing_trace_warning.test.ts:
+(pass) source_pin_missing_trace_warning parses [0.07ms]
+(pass) any_circuit_element includes source_pin_missing_trace_warning [0.68ms]
+
+tests/source_ambiguous_port_reference.test.ts:
+(pass) source_ambiguous_port_reference parses [0.21ms]
+(pass) source_ambiguous_port_reference parses with optional fields [0.06ms]
+(pass) any_circuit_element includes source_ambiguous_port_reference [0.72ms]
+
+tests/generate-readme-filter.test.ts:
+(pass) PcbVia interface is retained by docs generator filter [27.18ms]
+(pass) SourceFailedToCreateComponentError interface is fully captured [3.15ms]
+
+tests/time-units.test.ts:
+(pass) duration_ms and ms parse various time units [0.31ms]
+
+tests/pcb-trace-antenna-roundtrip.test.ts:
+(pass) antenna markers survive the public Circuit JSON parser and JSON roundtrip [9.97ms]
+
+tests/schematic-sheet-styling-warning.test.ts:
+(pass) parses sheet style warnings with a required sheet reference [5.42ms]
+
+tests/source_simple_connector.test.ts:
+(pass) source_simple_connector parses without standard [0.06ms]
+(pass) source_simple_connector parses with usb_c standard [0.10ms]
+(pass) source_simple_connector parses with m2 standard [0.03ms]
+(pass) source_simple_connector parses JST standards with pin_count [0.11ms]
+(pass) source_simple_connector rejects invalid pin_count [0.12ms]
+(pass) source_simple_connector rejects invalid standard [0.03ms]
+(pass) any_circuit_element includes source_simple_connector [0.29ms]
+
+tests/simulation_voltage_source.test.ts:
+(pass) simulation_voltage_source DC parse with string voltage [0.09ms]
+(pass) simulation_voltage_source DC parse with is_dc_source: true [0.09ms]
+(pass) simulation_voltage_source AC parse [0.09ms]
+(pass) simulation_voltage_source DC parse with optional port/net ids [0.04ms]
+(pass) simulation_voltage_source AC with duty_cycle [0.13ms]
+(pass) simulation_voltage_source AC with pulse timing controls [0.09ms]
+
+tests/simulation_op_amp.test.ts:
+(pass) simulation_op_amp parses [0.07ms]
+(pass) any_circuit_element includes simulation_op_amp [7.21ms]
+
+tests/source_simple_fiducial.test.ts:
+(pass) source_simple_fiducial parses [0.05ms]
+(pass) any_circuit_element includes source_simple_fiducial [0.12ms]
+
+tests/pcb_net.test.ts:
+(pass) pcb_net optional fields default to undefined [0.05ms]
+(pass) pcb_net optional fields can be provided [0.02ms]
+
+tests/source-missing-manufacturer-part-number-warning.test.ts:
+(pass) missing MPN warnings support components without a connector standard [0.06ms]
+
+tests/schematic_missing_sheet_warning.test.ts:
+(pass) parses a missing sheet warning without a component target [2.54ms]
+
+tests/cad_component_model_asset.test.ts:
+(pass) cad_component.model_asset parses asset object [0.12ms]
+
+tests/standard_shape.test.ts:
+(pass) standard shapes normalize geometry without PCB record fields [0.51ms]
+(pass) elements select supported shapes and add metadata without duplicating geometry [0.44ms]
+
+tests/pcb_group_autorouter.test.ts:
+(pass) pcb_group.autorouter_configuration.trace_clearance parses [0.12ms]
+(pass) pcb_group.autorouter_used_string is optional [0.05ms]
+(pass) pcb_group.layout_mode is optional string [0.06ms]
+(pass) pcb_group allows width and height to be omitted when outline is provided [0.06ms]
+(pass) pcb_breakout_point accepts an optional routing layer [0.07ms]
+
+tests/source_unnamed_trace_warning.test.ts:
+(pass) source_unnamed_trace_warning parses [0.07ms]
+(pass) any_circuit_element includes source_unnamed_trace_warning [0.68ms]
+
+tests/cad_component_model_fields.test.ts:
+(pass) cad_component.model_object_fit defaults to contain_within_bounds [0.07ms]
+(pass) cad_component accepts model board/anchor fields [0.12ms]
+(pass) cad_component accepts show_as_bounding_box [0.04ms]
+(pass) cad_component accepts show_hidden_edges [0.03ms]
+
+tests/pcb_silkscreen_graphic.test.ts:
+(pass) pcb_silkscreen_graphic brep parses [1.80ms]
+(pass) pcb_silkscreen_graphic accepts optional image_asset [1.53ms]
+
+tests/pcb_rotated_pill_smtpad.test.ts:
+(pass) parse rotated pill smt pad [0.08ms]
+
+tests/pcb_solder_paste_rotated_pill.test.ts:
+(pass) pcb_solder_paste parses the rotated_pill shape [0.23ms]
+
+tests/source-runtime-error.test.ts:
+(pass) runtime failures serialize message and phase_name [0.10ms]
+
+tests/schematic_net_label.test.ts:
+(pass) schematic_net_label.is_movable defaults to undefined [0.11ms]
+(pass) schematic_net_label.is_movable can be false [0.03ms]
+(pass) display_superscript is an optional display-only string [0.15ms]
+
+tests/schematic_symbol.test.ts:
+(pass) schematic_symbol accepts optional name [0.03ms]
+(pass) schematic_symbol does not require name [0.01ms]
+(pass) schematic_symbol accepts optional metadata.kicad_symbol [0.15ms]
+
+tests/schematic_shapes.test.ts:
+(pass) schematic_line defaults stroke width and color [0.10ms]
+(pass) schematic_line accepts dash distance parameters [0.07ms]
+(pass) schematic_path accepts dash distance parameters [0.06ms]
+(pass) schematic_path defaults dashed to false [0.04ms]
+(pass) schematic_rect assigns defaults [0.05ms]
+(pass) schematic_circle assigns defaults [0.04ms]
+(pass) schematic_arc defaults direction and styling [0.05ms]
+
+tests/schematic-text-parts.test.ts:
+(pass) schematic text preserves overlined parts and a plain-text fallback [0.17ms]
+
+tests/pcb_note_components.test.ts:
+(pass) pcb note text defaults [0.19ms]
+(pass) pcb note rect defaults [0.11ms]
+(pass) pcb note path defaults [0.07ms]
+(pass) pcb note line defaults [0.06ms]
+(pass) pcb note dimension defaults [0.14ms]
+(pass) pcb note text allows optional name and text [0.10ms]
+
+tests/pcb-keepout-warning-only.test.ts:
+(pass) rect keepout preserves advisory and enforcing values through both parsers [8.47ms]
+(pass) rect keepout leaves warning_only absent on existing input [1.21ms]
+(pass) rect keepout rejects non-boolean advisory values [15.26ms]
+(pass) circle keepout preserves advisory and enforcing values through both parsers [3.97ms]
+(pass) circle keepout leaves warning_only absent on existing input [1.14ms]
+(pass) circle keepout rejects non-boolean advisory values [14.76ms]
+(pass) outline keepout preserves advisory and enforcing values through both parsers [3.68ms]
+(pass) outline keepout leaves warning_only absent on existing input [0.89ms]
+(pass) outline keepout rejects non-boolean advisory values [21.62ms]
+
+tests/source_bus.test.ts:
+(pass) source_bus preserves resolved membership and skew in Circuit JSON [0.10ms]
+(pass) bus skew must be finite and nonnegative, and membership nonempty [0.08ms]
+(pass) length errors survive the generic element schema [1.69ms]
+
+tests/pcb_pill_hole_with_rect_pad.test.ts:
+(pass) parse pill hole with rect pad defaults hole offset to 0 [0.13ms]
+(pass) parse pill hole with rect pad and offsets [0.07ms]
+
+tests/pcb_panel.test.ts:
+(pass) pcb_panel parses and defaults thickness and covered_with_solder_mask [0.08ms]
+(pass) any_circuit_element includes pcb_panel [1.12ms]
+
+tests/source_component_misconfigured_error.test.ts:
+(pass) source_component_misconfigured_error parses [0.08ms]
+(pass) any_circuit_element includes source_component_misconfigured_error [0.42ms]
+
+tests/simulation_switch.test.ts:
+(pass) simulation_switch parses optional timing fields [0.15ms]
+(pass) simulation_switch allows minimal definition [0.03ms]
+(pass) simulation_switch with source_component_id [0.02ms]
+
+tests/pcb_port.test.ts:
+(pass) pcb_port parses with is_board_pinout [0.06ms]
+(pass) pcb_port parses without is_board_pinout [0.02ms]
+(pass) any_circuit_element includes pcb_port with is_board_pinout [0.93ms]
+
+tests/source_simple_inductor.test.ts:
+(pass) source_simple_inductor parse preserves display_inductance [0.07ms]
+(pass) any_circuit_element includes display_inductance for simple inductors [0.12ms]
+
+tests/pcb_pad_pad_clearance_error.test.ts:
+(pass) pcb_pad_pad_clearance_error parses [0.11ms]
+(pass) any_circuit_element includes pcb_pad_pad_clearance_error [1.36ms]
+
+tests/pcb_fabrication_note_path.test.ts:
+(pass) fabrication paths preserve independent fill and stroke flags [0.44ms]
+(pass) legacy fabrication paths retain omitted flags [0.06ms]
+(pass) fabrication fill flags must be booleans [0.07ms]
+
+tests/source_trace_max_via_count.test.ts:
+(pass) source_trace accepts a nonnegative maximum via count [0.05ms]
+(pass) source_trace rejects a negative maximum via count [0.04ms]
+
+tests/source_component_internal_connection.test.ts:
+(pass) source_component_internal_connection parses source port ids [0.04ms]
+
+tests/pcb_bend.test.ts:
+(pass) bend normalizes geometry and signed angle, generates ID, and joins element unions [1.75ms]
+(pass) bend preserves explicit identity and ownership and supports zero/radian angles [0.18ms]
+(pass) bend requires a board and explicit geometry [0.38ms]
+(pass) bend rejects coincident endpoints after normalization and invalid physical values [0.80ms]
+
+tests/source_simple_pinout.test.ts:
+(pass) source_simple_pinout parses [0.05ms]
+(pass) any_circuit_element includes source_simple_pinout [0.25ms]
+
+tests/source-pin-voltage-normalization.test.ts:
+(pass) source pin voltages accept units at input and emit finite numbers in Circuit JSON [1.41ms]
+
+tests/pcb_courtyard.test.ts:
+(pass) parse courtyard rect [0.10ms]
+(pass) parse courtyard outline [0.05ms]
+(pass) parse courtyard polygon [0.05ms]
+(pass) parse courtyard pill [0.04ms]
+
+tests/pcb-smtpad-solderpaste-margin.test.ts:
+(pass) all SMT pad shapes parse solderpaste_margin [0.19ms]
+
+tests/schematic_graphic4.test.ts:
+(pass) schematic_graphic normalizes optional layout bounds [0.22ms]
+
+tests/pcb_group_child_layout_mode.test.ts:
+(pass) pcb_group allows child_layout_mode packed [0.06ms]
+(pass) pcb_group allows child_layout_mode none [0.01ms]
+(pass) pcb_group rejects invalid child_layout_mode [0.05ms]
+
+tests/source_pin_must_be_connected_error2.test.ts:
+(pass) source_pin_must_be_connected_error with subcircuit_id [0.10ms]
+
+tests/pcb_component_invalid_layer_error.test.ts:
+(pass) pcb_component_invalid_layer_error parses [0.05ms]
+(pass) any_circuit_element includes pcb_component_invalid_layer_error [2.13ms]
+
+tests/schematic_component_overlap_warning.test.ts:
+(pass) parses a schematic component overlap warning [7.47ms]
+
+tests/cad_component_anchor_alignment.test.ts:
+(pass) cad_component.anchor_alignment defaults to center [0.10ms]
+(pass) cad_component.anchor_alignment accepts center_of_component_on_board_surface [0.03ms]
+
+tests/source_simple_voltage_probe.test.ts:
+(pass) source_simple_voltage_probe [0.04ms]
+(pass) source_simple_voltage_probe links to schematic and simulation [0.12ms]
+
+tests/schematic-component-styling-warning.test.ts:
+(pass) parses a schematic component styling warning [2.28ms]
+
+tests/pcb_fabrication_note_dimension.test.ts:
+(pass) parse fabrication note dimension with defaults [0.38ms]
+(pass) fabrication note dimension requires explicit points [0.12ms]
+
+tests/source_missing_manufacturer_part_number_warning.test.ts:
+(pass) source_missing_manufacturer_part_number_warning parses [0.07ms]
+(pass) any_circuit_element includes source_missing_manufacturer_part_number_warning [0.39ms]
+
+tests/pcb_fabricator_extra_charge_warning.test.ts:
+(pass) fabricator extra charge warnings preserve JLCPCB presets and via references [0.17ms]
+(pass) any_circuit_element includes pcb_fabricator_extra_charge_warning [1.03ms]
+(pass) fabricator extra charge warnings allow omitted location references [0.07ms]
+(pass) fabricator extra charge warnings reject missing context and invalid references [0.09ms]
+
+tests/pcb_via_trace_clearance_error.test.ts:
+(pass) pcb_via_trace_clearance_error parses [0.21ms]
+(pass) any_circuit_element includes pcb_via_trace_clearance_error [2.17ms]
+
+tests/source_no_power_pin_defined_warning.test.ts:
+(pass) source_no_power_pin_defined_warning parses [0.07ms]
+(pass) any_circuit_element includes source_no_power_pin_defined_warning [0.55ms]
+
+tests/source-pin-voltage-invalid.test.ts:
+(pass) source pin voltage scalars reject ranges, conditional prose and non-finite values [0.80ms]
+
+tests/pcb-trace-teardrops.test.ts:
+(pass) ordinary wire routes are unchanged [0.15ms]
+(pass) wire taper fields survive circuit parsing and round trips [1.21ms]
+(pass) both profiles accept narrowing, widening and equal widths [0.28ms]
+(pass) wire taper inputs convert units and retain annotations [0.25ms]
+(pass) tapers can terminate at vias and through-pads [0.16ms]
+(pass) taper fields must be supplied as a complete group [0.10ms]
+(pass) invalid widths, coordinates, and modes are rejected [0.40ms]
+(pass) outgoing taper needs a distinct finite endpoint on its layer [0.28ms]
+
+tests/pcb_panelization_placement_error.test.ts:
+(pass) pcb_panelization_placement_error parses [0.06ms]
+(pass) any_circuit_element includes pcb_panelization_placement_error [1.22ms]
+
+tests/pcb_via.test.ts:
+(pass) pcb_via preserves optional drill layers and through-hole status [1.96ms]
+(pass) pcb_via normalizes drill layer references [0.11ms]
+(pass) pcb_via rejects invalid drill layers and through-hole status [0.40ms]
+(pass) pcb_via migrates legacy tenting and preserves per-side overrides [1.20ms]
+(pass) any_circuit_element preserves optional drill layers and through-hole status [54.69ms]
+(pass) any_circuit_element normalizes drill layer references [0.89ms]
+(pass) any_circuit_element rejects invalid drill layers and through-hole status [30.44ms]
+(pass) any_circuit_element migrates legacy tenting and preserves per-side overrides [59.01ms]
+(pass) pcb_via leaves omitted tenting fields absent [0.14ms]
+(pass) pcb_via rejects non-boolean tenting fields [0.26ms]
+(pass) pcb_via allows source and subcircuit connectivity references [0.06ms]
+(pass) any_circuit_element includes pcb_via connectivity references [0.82ms]
+(pass) pcb_via rejects an empty source net id [0.13ms]
+(pass) pcb_via preserves via port references [0.08ms]
+(pass) pcb_via allows omitted or empty via port references [0.06ms]
+(pass) pcb_via rejects invalid via port references [0.11ms]
+(pass) any_circuit_element preserves via port references [1.43ms]
+(pass) any_circuit_element allows omitted or empty via port references [1.38ms]
+(pass) any_circuit_element rejects invalid via port references [4.76ms]
+
+tests/pcb_copper_pour.test.ts:
+(pass) pcb_copper_pour rect parses [1.45ms]
+(pass) pcb_copper_pour brep parses [1.41ms]
+(pass) pcb_copper_pour polygon parses [1.57ms]
+(pass) coveredWithSolderMask defaults to true [0.07ms]
+
+tests/source_simple_ammeter.test.ts:
+(pass) source_simple_ammeter [0.05ms]
+(pass) any_source_component parses source_simple_ammeter [0.10ms]
+
+tests/source_confusing_net_name_warning.test.ts:
+(pass) confusing net name warnings parse through the circuit union [0.53ms]
+(pass) requires at least two affected nets [0.17ms]
+
+tests/source_project_metadata.test.ts:
+(pass) source_project_metadata accepts an optional source filesystem MD5 hash [0.07ms]
+
+tests/pcb_pin1_location.test.ts:
+(pass) maps every rotation-compatible pin 1 location pair [0.14ms]
+(pass) returns null when pin 1 locations differ by reflection [0.06ms]
+
+tests/source_no_ground_pin_defined_warning.test.ts:
+(pass) source_no_ground_pin_defined_warning parses [0.06ms]
+(pass) any_circuit_element includes source_no_ground_pin_defined_warning [0.65ms]
+
+tests/pcb-solder-paste-polygon.test.ts:
+(pass) polygon solder paste preserves absolute contours and pad links [1.28ms]
+
+tests/pcb_component_position_mode.test.ts:
+(pass) pcb_component allows position_mode packed [0.07ms]
+(pass) pcb_component allows position_mode relative_to_group_anchor [0.02ms]
+(pass) pcb_component allows position_mode relative_to_another_component [0.01ms]
+(pass) pcb_component allows position_mode none [0.01ms]
+(pass) pcb_component allows optional anchor positioning fields [0.04ms]
+(pass) pcb_component allows positioned_relative_to_pcb_group_id [0.03ms]
+(pass) pcb_component allows positioned_relative_to_pcb_board_id [0.03ms]
+(pass) pcb_component allows cable_insertion_center [0.03ms]
+(pass) pcb_component allows insertion_direction options [0.15ms]
+(pass) pcb_component normalizes cartesian insertion_direction spellings [0.21ms]
+(pass) pcb_component normalizes deprecated insertion_direction spellings [0.07ms]
+(pass) pcb_component rejects invalid insertion_direction [0.10ms]
+(pass) pcb_component allows display offsets [0.03ms]
+(pass) pcb_component allows is_allowed_to_be_off_board [0.03ms]
+(pass) pcb_component allows optional metadata.kicad_footprint [0.06ms]
+(pass) pcb_component allows semantic pin 1 locations [0.06ms]
+(pass) pcb_component rejects invalid semantic pin 1 locations [2.23ms]
+(pass) pcb_component rejects invalid position_mode [0.11ms]
+
+tests/pcb_hole_pill.test.ts:
+(pass) parse pill-shaped non-plated hole [0.22ms]
+(pass) parse rotated pill-shaped non-plated hole [0.09ms]
+
+tests/schematic_box.test.ts:
+(pass) schematic_box.schematic_component_id is optional [0.07ms]
+
+tests/source-assembly-components.test.ts:
+(pass) printedpart preserves source identity and CAD references [0.27ms]
+(pass) printedpart requires its discriminator, source ID, and name [2.90ms]
+(pass) subassembly preserves source identity and CAD references [0.12ms]
+(pass) subassembly requires its discriminator, source ID, and name [1.87ms]
+(pass) motor preserves source identity and CAD references [0.31ms]
+(pass) motor requires its discriminator, source ID, and name [1.90ms]
+
+tests/pcb_group_anchor.test.ts:
+(pass) pcb_group with anchor_position and anchor_alignment [0.12ms]
+
+tests/supplier_footprint_mismatch_warning.test.ts:
+(pass) supplier_footprint_mismatch_warning parses [0.07ms]
+(pass) any_circuit_element includes supplier_footprint_mismatch_warning [0.57ms]
+
+tests/cad-collision-error.test.ts:
+(pass) CAD collision errors preserve references and an explicit mm² metric [1.87ms]
+
+tests/unknown_error_finding_part_any_circuit_element.test.ts:
+(pass) any_circuit_element includes unknown_error_finding_part [0.47ms]
+
+tests/pcb-board-via-plugging.test.ts:
+(pass) pcb_board preserves optional via plugging independently of tenting [1.11ms]
+
+tests/pcb-cutout-component-ownership.test.ts:
+(pass) pcb cutout shapes preserve their owning component id [0.29ms]
+(pass) pcb cutout ownership remains optional [0.03ms]
+
+tests/pcb_group_position_metadata.test.ts:
+(pass) pcb_group allows position metadata fields [0.09ms]
+(pass) pcb_group rejects invalid position_mode [0.04ms]
+
+tests/schematic_graphic5.test.ts:
+(pass) schematic_graphic requires at least one graphic source [0.31ms]
+
+tests/schematic_graphic2.test.ts:
+(pass) schematic_graphic accepts optional SVG content [2.45ms]
+
+tests/pcb_preflight_routing_error.test.ts:
+(pass) preflight errors support new check codes without a schema change [7.99ms]
+(pass) preflight errors retain phase, geometry references, and measured factors [2.23ms]
+(pass) preflight errors reject missing codes and malformed diagnostic fields [0.29ms]
+
+tests/pcb_board-hole-edge-clearance.test.ts:
+(pass) pcb_board preserves optional trace-to-hole edge clearance in mm [0.38ms]
+
+tests/source_board.test.ts:
+(pass) source_board.title defaults to undefined [0.06ms]
+(pass) source_board.title can be set [0.03ms]
+(pass) source_board requires a source_group_id [0.08ms]
+
+tests/pcb_component_missing_courtyard_warning.test.ts:
+(pass) pcb_component_missing_courtyard_warning parses [0.16ms]
+(pass) any_circuit_element includes pcb_component_missing_courtyard_warning [2.60ms]
+
+tests/source_interconnect.test.ts:
+(pass) source_interconnect parses [0.07ms]
+(pass) any_circuit_element includes source_interconnect [0.44ms]
+
+tests/cad_component_model_unit_to_mm_scale_factor_optional.test.ts:
+(pass) cad_component.model_unit_to_mm_scale_factor is optional [0.21ms]
+(pass) cad_component.model_unit_to_mm_scale_factor parses number [0.06ms]
+
+tests/pcb_keepout_overlap_warning.test.ts:
+(pass) keepout warnings generate IDs and warning_type and belong to circuit element unions [1.18ms]
+(pass) keepout warnings preserve explicit IDs and related geometry on round-trip [1.31ms]
+(pass) keepout warnings require the keepout and message and validate diagnostic fields [15.19ms]
+
+tests/pcb-silkscreen-text-ownership.test.ts:
+(pass) silkscreen supports board markings and preserves component ownership validation [0.39ms]
+
+tests/unknown_error_finding_part.test.ts:
+(pass) unknown_error_finding_part parses [0.09ms]
+
+tests/pcb_copper_text.test.ts:
+(pass) pcb_copper_text defaults [0.35ms]
+(pass) pcb_copper_text allows overrides [0.25ms]
+
+tests/pcb_debug_object.test.ts:
+(pass) parses a PCB debug rectangle [0.12ms]
+(pass) parses a PCB debug line [0.20ms]
+(pass) parses a PCB debug point [0.06ms]
+(pass) pcb_debug_object rejects unsupported shapes [0.03ms]
+(pass) any_circuit_element includes pcb_debug_object [0.69ms]
+
+tests/pcb_group_anchor_alignment_options.test.ts:
+(pass) pcb_group with all anchor_alignment options [0.22ms]
+
+tests/schematic_trace_optional_fields.test.ts:
+(pass) schematic_trace.source_trace_id is optional [0.10ms]
+(pass) schematic_trace.subcircuit_connectivity_map_key is optional [0.05ms]
+
+tests/source_invalid_component_property_error.test.ts:
+(pass) source_invalid_component_property_error parses [0.08ms]
+(pass) any_circuit_element includes source_invalid_component_property_error [0.34ms]
+
+tests/schematic_graphic1.test.ts:
+(pass) schematic_graphic parses an asset without SVG content [2.73ms]
+
+tests/simulation_voltage_probe.test.ts:
+(pass) simulation_voltage_probe (single-ended) parses with port id [3.38ms]
+(pass) simulation_voltage_probe (single-ended) parses with net id [4.22ms]
+(pass) simulation_voltage_probe with no connection ids should throw [0.11ms]
+(pass) simulation_voltage_probe (differential) parses with port ids [3.18ms]
+(pass) simulation_voltage_probe (differential) parses with net ids [5.11ms]
+(pass) simulation_voltage_probe parses with name [0.11ms]
+(pass) simulation_voltage_probe (differential) with mixed connections should throw [0.06ms]
+(pass) simulation_voltage_probe (single-ended) with both port and net should throw [0.03ms]
+
+tests/pcb-trace-antenna.test.ts:
+(pass) pcb_trace preserves an optional antenna marker [0.22ms]
+
+tests/pcb_packing_error.test.ts:
+(pass) pcb_packing_error parses [0.05ms]
+(pass) any_circuit_element includes pcb_packing_error [1.23ms]
+
+tests/pcb_soldermask_opening.test.ts:
+(pass) a TSX contact-row coverlay window survives Circuit JSON round trips [0.87ms]
+(pass) coordinate-based consumers can narrow generic centered elements [1.81ms]
+(pass) top circle openings survive generic Circuit JSON parsing [0.92ms]
+(pass) top rect openings survive generic Circuit JSON parsing [0.76ms]
+(pass) top rotated_rect openings survive generic Circuit JSON parsing [0.74ms]
+(pass) top polygon openings survive generic Circuit JSON parsing [0.84ms]
+(pass) bottom circle openings survive generic Circuit JSON parsing [0.66ms]
+(pass) bottom rect openings survive generic Circuit JSON parsing [0.82ms]
+(pass) bottom rotated_rect openings survive generic Circuit JSON parsing [0.75ms]
+(pass) bottom polygon openings survive generic Circuit JSON parsing [0.91ms]
+(pass) generates IDs and preserves optional ownership references [0.97ms]
+(pass) normalizes distance, rotation, and layer reference inputs [0.21ms]
+(pass) rejects inner layers and missing or unknown sides [0.10ms]
+(pass) rejects nonpositive sizes and nonfinite geometry [0.44ms]
+(pass) requires the geometry for the selected shape [15.66ms]
+(pass) rejects incompatible shape geometry instead of silently discarding it [29.36ms]
+(pass) rejects zero-area polygon windows and accepts either boundary winding [0.24ms]
+
+tests/pcb-keepout.test.ts:
+(pass) rect keepout retains excluded PCB component IDs [0.79ms]
+(pass) circle keepout retains excluded PCB component IDs [0.81ms]
+
+tests/schematic_component.test.ts:
+(pass) schematic_component defaults to box with pins [0.06ms]
+(pass) schematic_component allows disabling box with pins [0.02ms]
+(pass) schematic_component allows schematic_symbol_id [0.02ms]
+
+tests/schematic_table.test.ts:
+(pass) schematic_table parse [0.06ms]
+
+tests/pcb_fabrication_note_rect.test.ts:
+(pass) parse fabrication note rect with defaults [0.10ms]
+
+tests/pcb_port_not_connected_error.test.ts:
+(pass) pcb_port_not_connected_error parses [0.14ms]
+(pass) any_circuit_element includes pcb_port_not_connected_error [1.28ms]
+
+tests/source_component_pins_underspecified_warning.test.ts:
+(pass) source_component_pins_underspecified_warning parses [0.07ms]
+(pass) any_circuit_element includes source_component_pins_underspecified_warning [0.42ms]
+
+tests/pcb_trace_highlight_color.test.ts:
+(pass) pcb_trace.highlight_color defaults to undefined [0.09ms]
+(pass) pcb_trace.highlight_color can be specified [0.06ms]
+(pass) pcb_trace.route points support copper pour metadata [0.18ms]
+(pass) pcb_trace.route points support through_pad segments [0.15ms]
+
+tests/pcb-board-via-tenting.test.ts:
+(pass) pcb_board preserves explicit via tenting defaults and leaves omitted defaults absent [1.70ms]
+
+tests/pcb-board-allow-blind-and-buried-vias-optional.test.ts:
+(pass) pcb_board keeps the blind and buried via flag optional [0.06ms]
+
+tests/schematic_graphic3.test.ts:
+(pass) schematic_graphic accepts SVG content without an asset [3.82ms]
+
+tests/schematic_sheet.test.ts:
+(pass) schematic_sheet parse [0.08ms]
+(pass) schematic_sheet rejects unsupported sheet sizes [0.05ms]
+(pass) schematic_sheet rejects non-positive explicit dimensions [0.03ms]
+
+tests/source_pin_must_be_connected_error.test.ts:
+(pass) source_pin_must_be_connected_error without subcircuit_id [0.05ms]
+
+tests/pcb-trace-antenna-invalid-marker.test.ts:
+(pass) antenna markers reject non-boolean values without coercion [8.81ms]
+
+tests/pcb_trace_too_long_warning.test.ts:
+(pass) pcb_trace_too_long_warning parses with a source trace [0.06ms]
+(pass) pcb_trace_too_long_warning parses with a source net [0.09ms]
+(pass) any_circuit_element includes pcb_trace_too_long_warning [0.85ms]
+
+tests/simulation_current_probe.test.ts:
+(pass) simulation_current_probe parses with port ids [2.03ms]
+(pass) simulation_current_probe parses with net ids [2.14ms]
+(pass) simulation_current_probe with no connection ids should throw [0.08ms]
+(pass) simulation_current_probe with one port id should throw [0.03ms]
+(pass) simulation_current_probe parses with name [2.04ms]
+(pass) simulation_current_probe with mixed connections should throw [0.08ms]
+
+tests/simulation_experiment.test.ts:
+(pass) simulation_experiment requires valid experiment_type [0.35ms]
+(pass) simulation_experiment parses start time and spice options [0.11ms]
+(pass) simulation_transient_voltage_graph parses required data [8.59ms]
+(pass) simulation_transient_current_graph parses required data [0.17ms]
+(pass) simulation_oscilloscope_trace configures voltage graph display [2.00ms]
+(pass) simulation_oscilloscope_trace configures current probe display [1.61ms]
+(pass) simulation_oscilloscope_trace rejects ambiguous references and units [0.09ms]
+
+tests/source_refdes_convention_warning.test.ts:
+(pass) source_refdes_convention_warning parses [0.06ms]
+(pass) any_circuit_element includes source_refdes_convention_warning [0.23ms]
+
+tests/pcb_board_flex_material.test.ts:
+(pass) flex boards validate through the board schema and Circuit JSON union [0.97ms]
+
+tests/pcb_smtpad_polygon.test.ts:
+(pass) parse polygon smt pad [0.08ms]
+
+tests/pcb_connector_not_in_accessible_orientation_warning.test.ts:
+(pass) pcb_connector_not_in_accessible_orientation_warning parses [0.06ms]
+(pass) any_circuit_element includes pcb_connector_not_in_accessible_orientation_warning [0.53ms]
+
+tests/schematic_element_outside_sheet_warning.test.ts:
+(pass) parses a schematic element outside sheet warning [1.39ms]
+
+tests/pcb_smtpad_rect.test.ts:
+(pass) parse rect smt pad with border radius [0.07ms]
+
+tests/pcb_courtyard_overlap_error.test.ts:
+(pass) pcb_courtyard_overlap_error parses [0.07ms]
+(pass) pcb_courtyard_overlap_error auto-generates pcb_error_id [0.04ms]
+(pass) any_circuit_element includes pcb_courtyard_overlap_error [1.22ms]
+
+tests/pcb_trace_too_many_vias_warning.test.ts:
+(pass) pcb_trace_too_many_vias_warning parses with a source trace [0.05ms]
+(pass) pcb_trace_too_many_vias_warning parses with a source net [0.04ms]
+(pass) any_circuit_element includes pcb_trace_too_many_vias_warning [0.70ms]
+
+tests/source_manually_placed_via.test.ts:
+(pass) source_manually_placed_via parses an assigned source net [1.79ms]
+(pass) source_manually_placed_via omits an unassigned source net [0.06ms]
+(pass) source_manually_placed_via rejects an empty source net id [0.04ms]
+(pass) any_circuit_element includes a manually placed via without a source net [0.69ms]
+
+tests/pcb_keepout_outline.test.ts:
+(pass) parses a PCB keepout outline [0.97ms]
+
+tests/source_net.test.ts:
+(pass) source_net.is_positive_voltage_source defaults to undefined [0.11ms]
+(pass) source_net.is_positive_voltage_source can be true [0.02ms]
+
+tests/pcb_component_outside_board_error.test.ts:
+(pass) pcb_component_outside_board_error parses [0.10ms]
+(pass) any_circuit_element includes pcb_component_outside_board_error [1.31ms]
+
+tests/schematic-port.test.ts:
+(pass) schematic ports can identify internal circuit port roles [0.08ms]
+(pass) schematic ports accept an optional display pin-label font size [0.04ms]
+(pass) schematic ports accept styled display pin-label parts [0.04ms]
+(pass) schematic ports reject empty styled display pin-label parts [0.02ms]
+(pass) schematic ports reject invalid display pin-label font sizes [0.11ms]
+
+tests/pcb_trace_missing_error.test.ts:
+(pass) pcb_trace_missing_error parses [0.06ms]
+(pass) any_circuit_element includes pcb_trace_missing_error [1.07ms]
+
+tests/source-pin-voltage-tolerance.test.ts:
+(pass) source pins preserve optional relative voltage tolerances through JSON parsing [0.28ms]
+(pass) source pin voltage tolerances require finite fractions between zero and one [0.14ms]
+
+tests/cad-cable.test.ts:
+(pass) cable routes survive the universal circuit schema with normalized millimeter points [1.96ms]
+(pass) cables reject incomplete, coincident and nonfinite paths or missing endpoint identities [0.23ms]
+
+tests/routing-constraints.test.ts:
+(pass) flat bus constraints preserve resolved references without changing membership [0.15ms]
+(pass) pair polarity and explicit shared length references survive serialization [0.09ms]
+(pass) routing violations use a dedicated bus constraint error with structured measurements [1.08ms]
+(pass) unverified rules use a dedicated warning without fabricating missing geometry [1.04ms]
+(pass) canonical constraints reject invalid units, domains and unresolved selectors [0.28ms]
+(pass) constraint diagnostics require typed rules and warning geometry remains optional [0.10ms]
+(pass) routing_rule discriminates required measurement fields and rejects mismatched shapes [8.81ms]
+
+tests/pcb_via_clearance_error.test.ts:
+(pass) pcb_via_clearance_error parses [0.22ms]
+(pass) any_circuit_element includes pcb_via_clearance_error [1.49ms]
+
+tests/capacitance.test.ts:
+(pass) Capacitance Precision Tests [0.28ms]
+
+tests/parse-and-convert-si-unit.test.ts:
+(pass) parseAndConvertSiUnit [0.42ms]
+
+tests/pcb_trace_ten_layers.test.ts:
+(pass) supports traces and render layers on ten-layer boards [0.22ms]
+
+tests/source_simple_op_amp.test.ts:
+(pass) source_simple_op_amp parses [0.04ms]
+(pass) any_circuit_element includes source_simple_op_amp [1.85ms]
+
+tests/schematic_text.test.ts:
+(pass) schematic_text.source_trace_id defaults to undefined [0.08ms]
+(pass) schematic_text allows source_trace_id [0.04ms]
+(pass) any_circuit_element includes schematic_text with source_trace_id [3.35ms]
+(pass) schematic_text supports optional display superscripts for inline net labels [7.21ms]
+
+tests/circuit_json_footprint_load_error.test.ts:
+(pass) circuit_json_footprint_load_error parses [0.05ms]
+(pass) any_circuit_element includes circuit_json_footprint_load_error [0.52ms]
+
+ 446 pass
+ 0 fail
+ 1 snapshots, 2268 expect() calls
+Ran 446 tests across 163 files. [1053.00ms]
+$ tsup-node ./src/index.ts --format esm --dts --sourcemap
+CLI Building entry: src/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.0
+CLI Target: es2022
+ESM Build start
+ESM dist/index.mjs     198.72 KB
+ESM dist/index.mjs.map 561.89 KB
+ESM ⚡️ Build success in 176ms
+DTS Build start
+DTS ⚡️ Build success in 8126ms
+DTS dist/index.d.mts 3.52 MB
+npm notice
+npm notice 📦  circuit-json@0.0.521-board-fixes.1
+npm notice Tarball Contents
+npm notice 135.2kB README.md
+npm notice 3.7MB dist/index.d.mts
+npm notice 203.5kB dist/index.mjs
+npm notice 575.4kB dist/index.mjs.map
+npm notice 1.3kB package.json
+npm notice Tarball Details
+npm notice name: circuit-json
+npm notice version: 0.0.521-board-fixes.1
+npm notice filename: circuit-json-0.0.521-board-fixes.1.tgz
+npm notice package size: 287.6 kB
+npm notice unpacked size: 4.6 MB
+npm notice shasum: f8a950cf2980d3c39ca8368cf723b264696a4805
+npm notice integrity: sha512-1SNUBFy2o7WuV[...]lf7b/Dbr3x8Hw==
+npm notice total files: 5
+npm notice
+circuit-json-0.0.521-board-fixes.1.tgz

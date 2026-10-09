@@ -1,0 +1,96 @@
+diff --git a/src/excellon-drill/commands/G85.ts b/src/excellon-drill/commands/G85.ts
+index 7975f51..3c2a584 100644
+--- a/src/excellon-drill/commands/G85.ts
++++ b/src/excellon-drill/commands/G85.ts
+@@ -5,9 +5,13 @@ export const G85 = defineExcellonDrillCommand({
+   command_code: "G85",
+   schema: z.object({
+     command_code: z.literal("G85").default("G85"),
++    start_x: z.number(),
++    start_y: z.number(),
+     x: z.number(),
+     y: z.number(),
+     width: z.number(), // slot width = tool diameter
+   }),
+-  stringify: ({ x, y }) => `G85X${x.toFixed(3)}Y${y.toFixed(3)}`,
++  // Excellon canned slots carry both board-world endpoints in one block.
++  stringify: ({ start_x, start_y, x, y }) =>
++    `X${start_x.toFixed(4)}Y${start_y.toFixed(4)}G85X${x.toFixed(4)}Y${y.toFixed(4)}`,
+ })
+diff --git a/src/excellon-drill/convert-soup-to-excellon-drill-commands.ts b/src/excellon-drill/convert-soup-to-excellon-drill-commands.ts
+index 7053580..19de464 100644
+--- a/src/excellon-drill/convert-soup-to-excellon-drill-commands.ts
++++ b/src/excellon-drill/convert-soup-to-excellon-drill-commands.ts
+@@ -660,16 +660,13 @@ export const convertCircuitJsonToExcellonDrillCommands = ({
+           const endX = centerX + endPoint.x
+           const endY = (centerY + endPoint.y) * yMultiplier
+ 
+-          builder
+-            .add("drill_at", {
+-              x: startX,
+-              y: startY,
+-            })
+-            .add("G85", {
+-              x: endX,
+-              y: endY,
+-              width: minDim,
+-            })
++          builder.add("G85", {
++            start_x: startX,
++            start_y: startY,
++            x: endX,
++            y: endY,
++            width: minDim,
++          })
+           continue
+         }
+ 
+diff --git a/tests/excellon-drill/canned-slot-endpoints.test.ts b/tests/excellon-drill/canned-slot-endpoints.test.ts
+new file mode 100644
+index 0000000..fc0b7fd
+--- /dev/null
++++ b/tests/excellon-drill/canned-slot-endpoints.test.ts
+@@ -0,0 +1,43 @@
++import { expect, test } from "bun:test"
++import type { AnyCircuitElement } from "circuit-json"
++import {
++  convertSoupToExcellonDrillCommands,
++  stringifyExcellonDrill,
++} from "src/excellon-drill"
++
++test("canned slots emit both endpoints in one Excellon block without an extra round drill", () => {
++  const expected = [
++    "X-4.3251Y-31.0741G85X-4.3251Y-30.4741",
++    "X-4.0251Y-30.7741G85X-4.6251Y-30.7741",
++    "X-4.3251Y-30.4741G85X-4.3251Y-31.0741",
++    "X-4.6251Y-30.7741G85X-4.0251Y-30.7741",
++  ]
++  for (const [index, rotation] of [0, 90, 180, 270].entries()) {
++    const circuitJson: AnyCircuitElement[] = [
++      {
++        type: "pcb_hole",
++        pcb_hole_id: "pcb_hole_0",
++        hole_shape: "rotated_pill",
++        hole_width: 0.8,
++        hole_height: 1.4,
++        x: -4.3251,
++        y: -30.7741,
++        ccw_rotation: rotation,
++      },
++    ]
++    const commands = convertSoupToExcellonDrillCommands({
++      circuitJson,
++      is_plated: false,
++    })
++    const text = stringifyExcellonDrill(commands)
++    expect(
++      commands.filter((command) => command.command_code === "G85"),
++    ).toHaveLength(1)
++    expect(
++      commands.filter((command) => command.command_code === "drill_at"),
++    ).toHaveLength(0)
++    expect(text.split("\n").filter((line) => line.includes("G85"))).toEqual([
++      expected[index]!,
++    ])
++  }
++})
