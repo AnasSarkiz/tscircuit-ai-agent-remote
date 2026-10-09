@@ -1,0 +1,12 @@
+{"archive_index":0,"archive_bytes":480567,"archive_sha256":"19b28eccc945e74c99351a336d994134446372033b07975460c98d05551304fd","http_status":200,"uploaded_files":[{"package_file_id":"60601e5b-ac2e-410d-9e2a-16adf22ea0a9","file_path":"dist/index/circuit.json"}]}
+184 |       method: "POST",
+185 |       headers: { Authorization: `Bearer ${sessionToken}` },
+186 |       body: form,
+187 |       signal: AbortSignal.timeout(300_000),
+188 |     })
+189 |     if (!response.ok) throw new Error(`Archive upload failed with HTTP${response.status}`)
+                                      ^
+error: Archive upload failed with HTTP502
+      at uploadArchive (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:189:33)
+
+Bun v1.3.9 (Linux x64)

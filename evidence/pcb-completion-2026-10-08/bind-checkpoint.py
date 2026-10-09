@@ -13,6 +13,7 @@ paths.update(subprocess.check_output(['git', 'ls-files', '--others', '--exclude-
 paths.update(p.relative_to(root).as_posix() for p in folder.rglob('*') if p.is_file())
 paths.update(p.relative_to(root / '.publish/board').as_posix() for p in (root / '.publish/board').rglob('*') if p.is_file() and 'node_modules' not in p.parts)
 paths.update(['context/build-checkpoint.json', 'CLOUD_HANDOFF.md', 'scripts/cloud/setup.sh'])
+paths.update(bindings)
 paths.discard('context/checkpoint-sha256.json')
 for name in sorted(paths):
     path = root / name

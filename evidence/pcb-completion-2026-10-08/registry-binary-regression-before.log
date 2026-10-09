@@ -1,0 +1,15 @@
+63 |     bytes: readFileSync(join(stage, filePath)),
+64 |   }))
+65 |   const files = originals.map((original) => {
+66 |     const text = original.bytes.toString("utf8")
+67 |     if (!Buffer.from(text).equals(original.bytes)) {
+68 |       throw new Error(
+                     ^
+error: This text archive uploader does not support binary file: runtime.tgz
+      at <anonymous> (/workspace/tscircuit-ai-agent-remote/evidence/pcb-completion-2026-10-08/registry-resume-before-binary-support.mjs:68:17)
+      at map (1:11)
+      at prepareArchive (/workspace/tscircuit-ai-agent-remote/evidence/pcb-completion-2026-10-08/registry-resume-before-binary-support.mjs:65:27)
+      at main (/workspace/tscircuit-ai-agent-remote/evidence/pcb-completion-2026-10-08/registry-resume-before-binary-support.mjs:218:20)
+      at /workspace/tscircuit-ai-agent-remote/evidence/pcb-completion-2026-10-08/registry-resume-before-binary-support.mjs:242:7
+
+Bun v1.3.9 (Linux x64)

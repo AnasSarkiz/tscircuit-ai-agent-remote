@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "bun run typecheck && bun run format:check && bun test ./tests"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 21.57,
+  "peak_process_group_rss_bytes": 1615331328,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

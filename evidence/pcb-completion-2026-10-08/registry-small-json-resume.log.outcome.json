@@ -1,0 +1,23 @@
+{
+  "command": [
+    "bun",
+    "scripts/resume-registry-upload.mjs",
+    "--receipt",
+    "evidence/pcb-completion-2026-10-08/registry-after-first-resume-receipt.json",
+    "--stage",
+    ".publish/board",
+    "--output",
+    "evidence/pcb-completion-2026-10-08/registry-small-json-resume.json",
+    "--max-archive-bytes",
+    "2200000",
+    "--json-transport",
+    "--upload"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 4.51,
+  "peak_process_group_rss_bytes": 509476864,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

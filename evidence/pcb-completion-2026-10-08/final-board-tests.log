@@ -2,130 +2,38 @@ $ bun test ./tests
 bun test v1.3.9 (cf6cdbbb)
 
 tests/haptic-manufacturer-connections.test.ts:
-(pass) haptic application manufacturer requirements > TI SOT-23 supply, ground, enable and output retain their physical pin numbers [56.51ms]
-(pass) haptic application manufacturer requirements > AOS G/S/D and MDD cathode/anode close the intended flyback loop and retain default-off paths [0.45ms]
+(pass) haptic application manufacturer requirements > TI SOT-23 supply, ground, enable and output retain their physical pin numbers [52.30ms]
+(pass) haptic application manufacturer requirements > AOS G/S/D and MDD cathode/anode close the intended flyback loop and retain default-off paths [0.39ms]
 
 tests/type-c-manufacturer-connections.test.ts:
-(pass) Type-C controller manufacturer requirements > UFP strap, GPIO mode and local supply prevent conflicting Rd and rail backpower [1.49ms]
-(pass) Type-C controller manufacturer requirements > higher current requires stable controller power and advertised 1.5A or 3A [0.31ms]
-(pass) Type-C controller manufacturer requirements > VBUS detection resistors meet TI's 855k–920k allowed range [0.43ms]
+(pass) Type-C controller manufacturer requirements > UFP strap, GPIO mode and local supply prevent conflicting Rd and rail backpower [1.41ms]
+(pass) Type-C controller manufacturer requirements > higher current requires stable controller power and advertised 1.5A or 3A [0.54ms]
+(pass) Type-C controller manufacturer requirements > VBUS detection resistors meet TI's 855k–920k allowed range [0.32ms]
 
 tests/motor-solder-access.test.ts:
-(pass) motor connector is removed while two accessible solder pads retain the motor circuit [4.39ms]
+(pass) motor connector is removed while two accessible solder pads retain the motor circuit [4.96ms]
 
 tests/current-board-manufacturer-connections.test.ts:
-(pass) current MCU USB, supply, reset and boot use Espressif physical pins [1.67ms]
-(pass) current MCU external capacitors match Espressif's 22uF and 100nF reference values [0.43ms]
-(pass) current charger and battery supervisor retain manufacturer power and control pins [1.76ms]
-(pass) current regulator retains TI power, ground, feedback and switching pin identities [1.77ms]
-(pass) current amplifier supply and differential speaker outputs retain manufacturer pin assignments [3.15ms]
-(pass) current dual microphone power, data, clocks and channel select retain TDK pins [0.83ms]
+(pass) current MCU USB, supply, reset and boot use Espressif physical pins [4.75ms]
+(pass) current MCU external capacitors match Espressif's 22uF and 100nF reference values [0.72ms]
+(pass) current charger and battery supervisor retain manufacturer power and control pins [2.09ms]
+(pass) current regulator retains TI power, ground, feedback and switching pin identities [0.80ms]
+(pass) current amplifier supply and differential speaker outputs retain manufacturer pin assignments [1.09ms]
+(pass) current dual microphone power, data, clocks and channel select retain TDK pins [1.12ms]
 
 tests/display-manufacturer-connections.test.ts:
-(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [0.85ms]
-(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [0.37ms]
-(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, TE and LDO NC remain open [0.51ms]
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [0.55ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [0.32ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, TE and LDO NC remain open [0.56ms]
 
 tests/placement-review-preservation.test.ts:
-(pass) Native placement review preserves the board > the inspection output has no copper routes, vias or pours [1.83ms]
-(pass) Native placement review preserves the board > all electrical connections and physical placement features match the canonical board [80.72ms]
-211 |           )
-212 |         )
-213 |           return []
-214 |         return [withNumberedTerminals(parsed.data, canonicalTerminals)]
-215 |       })
-216 |       expect(matchingRoutes).toContainEqual(withNumberedTerminals(expected, beforeTerminals))
-                                   ^
-error: expect(received).toContainEqual(expected)
-
-Expected to contain: [
-  {
-    route_type: "wire",
-    x: -2.2500586499999997,
-    y: -16.500126,
-    width: 0.275,
-    layer: "top",
-    start_pcb_port_id: "U2.7",
-  }, {
-    route_type: "wire",
-    x: -1.75,
-    y: -16.5,
-    width: 0.275,
-    layer: "top",
-  }, {
-    route_type: "wire",
-    x: -1.5,
-    y: -16.5,
-    width: 0.4,
-    layer: "top",
-  }, {
-    route_type: "wire",
-    x: -1.25,
-    y: -16.8,
-    width: 0.7,
-    layer: "top",
-  }, {
-    route_type: "wire",
-    x: -1,
-    y: -16.966343,
-    width: 1,
-    layer: "top",
-  }, {
-    route_type: "wire",
-    x: 0,
-    y: -16.966343,
-    width: 1,
-    layer: "top",
-    end_pcb_port_id: "L1.2",
-  }
-]
-Received: [
-  [
-    {
-      route_type: "wire",
-      x: -2.2500586499999997,
-      y: -16.500126,
-      width: 0.275,
-      layer: "top",
-    }, {
-      route_type: "wire",
-      x: -1.75,
-      y: -16.5,
-      width: 0.275,
-      layer: "top",
-    }, {
-      route_type: "wire",
-      x: -1.5,
-      y: -16.5,
-      width: 0.4,
-      layer: "top",
-    }, {
-      route_type: "wire",
-      x: -1.25,
-      y: -16.8,
-      width: 0.7,
-      layer: "top",
-    }, {
-      route_type: "wire",
-      x: -1,
-      y: -16.966343,
-      width: 1,
-      layer: "top",
-    }, {
-      route_type: "wire",
-      x: 0,
-      y: -16.966343,
-      width: 1,
-      layer: "top",
-    }
-  ]
-]
-
-      at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/placement-review-preservation.test.ts:216:30)
-(fail) Native placement review preserves the board > the original switching paths and USB geometry survive the qualified stackup width change [17.54ms]
+(pass) Native placement review preserves the board > the inspection output has no copper routes, vias or pours [1.47ms]
+(pass) Native placement review preserves the board > all electrical connections and physical placement features match the canonical board [50.92ms]
+(pass) Native placement review preserves the board > the original switching paths and USB geometry survive the qualified stackup width change [34.62ms]
+(pass) Native placement review preserves the board > optional endpoint annotation cannot hide moved copper or a wrong declared contact [12.09ms]
 
 tests/integrated-board-boundaries.test.ts:
-(pass) Native A4 board boundaries and fabrication gate > board has top-only physical components within the accepted PCB dimensions [13.56ms]
+(pass) Native A4 board boundaries and fabrication gate > board has top-only physical components within the accepted PCB dimensions [11.17ms]
  98 |       thickness: 1.0,
  99 |     })
 100 |   })
@@ -743,70 +651,73 @@ error: expect(received).toEqual(expected)
 + Received  + 602
 
       at <anonymous> (/workspace/tscircuit-ai-agent-remote/tests/integrated-board-boundaries.test.ts:103:77)
-(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.50ms]
-(pass) Native A4 board boundaries and fabrication gate > there is one shared instance of each inter-sheet rail [1.51ms]
-(pass) Native A4 board boundaries and fabrication gate > hardware hold and privacy remain distinct from buffered MCU readback [0.55ms]
-(pass) Native A4 board boundaries and fabrication gate > dual microphones, external loads and GPIO interfaces have actual source connections [0.67ms]
+(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.27ms]
+(pass) Native A4 board boundaries and fabrication gate > there is one shared instance of each inter-sheet rail [1.44ms]
+(pass) Native A4 board boundaries and fabrication gate > hardware hold and privacy remain distinct from buffered MCU readback [0.42ms]
+(pass) Native A4 board boundaries and fabrication gate > dual microphones, external loads and GPIO interfaces have actual source connections [0.56ms]
 
 tests/battery-ready-hardware-boundaries.test.ts:
-(pass) battery supervisor senses charger BAT and cannot be overridden by the MCU [0.59ms]
+(pass) battery supervisor senses charger BAT and cannot be overridden by the MCU [0.55ms]
+
+tests/registry-resume-binary.test.ts:
+(pass) registry archives retain binary bytes and Unicode JSON without uploading [39.55ms]
+(pass) registry resume rejects binary artifact changes after anonymous verification [39.28ms]
 
 tests/standard-uart-connector.test.ts:
-(pass) the genuine JST SH connector matches the standard UART target without power or reset contacts [3.33ms]
+(pass) the genuine JST SH connector matches the standard UART target without power or reset contacts [2.95ms]
 
 tests/mcu-usb-manufacturer-connections.test.ts:
-(pass) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [1115.82ms]
-(pass) Espressif module datasheet v1.8 connection requirements > module supply, reset, USB polarity and boot reach the correct physical pins [0.58ms]
-(pass) Espressif module datasheet v1.8 connection requirements > octal PSRAM pins 28–30 stay disconnected from external applications [0.35ms]
-(pass) Espressif module datasheet v1.8 connection requirements > all nine exposed ground shapes retain their physical identity and internal connection [0.13ms]
-(pass) Espressif module datasheet v1.8 connection requirements > the diagnostic remains unrouted and contains no emitted errors [0.29ms]
+(pass) Espressif module datasheet v1.8 connection requirements > every emitted native element conforms to the installed Circuit JSON schema [895.85ms]
+(pass) Espressif module datasheet v1.8 connection requirements > module supply, reset, USB polarity and boot reach the correct physical pins [0.55ms]
+(pass) Espressif module datasheet v1.8 connection requirements > octal PSRAM pins 28–30 stay disconnected from external applications [0.41ms]
+(pass) Espressif module datasheet v1.8 connection requirements > all nine exposed ground shapes retain their physical identity and internal connection [0.14ms]
+(pass) Espressif module datasheet v1.8 connection requirements > the diagnostic remains unrouted and contains no emitted errors [0.47ms]
 
 tests/backlight-manufacturer-connections.test.ts:
-(pass) TPS60230 current driver uses TI physical pins, four independent LED returns and same-rail enables [2.42ms]
+(pass) TPS60230 current driver uses TI physical pins, four independent LED returns and same-rail enables [2.96ms]
 
 tests/import-qualification.test.ts:
-(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.06ms]
-(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.27ms]
-(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.04ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains all ten physical pin numbers [0.05ms]
+(pass) C2845237 TPS63802DLAR pin identity qualification > retains the exact manufacturer function on every pin [0.16ms]
+(pass) C370970 EC11E15244G1 mechanical import qualification > five terminal holes meet the 1.00-1.10 mm manufacturer range [0.03ms]
 (pass) C370970 EC11E15244G1 mechanical import qualification > both mounting slots meet the 2.60-2.70 mm manufacturer length range [0.02ms]
-(pass) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.08ms]
+(pass) C5656610 ICS-43434 acoustic opening qualification > acoustic opening meets the manufacturer recommended minimum [0.07ms]
 
 tests/microphone-clock-hardware-boundaries.test.ts:
-(pass) microphone clock hardware boundaries > TI regulator enable belongs only to the hardware hold net [0.90ms]
-(pass) microphone clock hardware boundaries > Nexperia open-drain clocks obtain both high levels only from VMIC [0.39ms]
+(pass) microphone clock hardware boundaries > TI regulator enable belongs only to the hardware hold net [0.84ms]
+(pass) microphone clock hardware boundaries > Nexperia open-drain clocks obtain both high levels only from VMIC [0.58ms]
 
 tests/amplifier-manufacturer-connections.test.ts:
-(pass) amplifier manufacturer requirements > power, exposed ground, differential output and left-channel gain use manufacturer pins [2.44ms]
-(pass) amplifier manufacturer requirements > shutdown uses amplifier supply and MOSFET physical gate/source/drain polarity [0.68ms]
+(pass) amplifier manufacturer requirements > power, exposed ground, differential output and left-channel gain use manufacturer pins [0.95ms]
+(pass) amplifier manufacturer requirements > shutdown uses amplifier supply and MOSFET physical gate/source/drain polarity [0.38ms]
 
 tests/final-display-manufacturer-connections.test.ts:
-(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [1.32ms]
-(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [3.49ms]
-(pass) display manufacturer physical pin requirements > genuine top-contact connector retains pin 50 north; portrait mating remains provisional [3.83ms]
-(pass) display manufacturer physical pin requirements > TI TPS60230 powers four separate panel cathodes, retaining D1 regulation feedback [1.27ms]
-(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open [2.73ms]
+(pass) display manufacturer physical pin requirements > LDO power/enable and buffer direction, output-enable and power use TI pin numbers [1.12ms]
+(pass) display manufacturer physical pin requirements > buffer channel B pins match the manufacturer's LCD contact order and polarity [2.24ms]
+(pass) display manufacturer physical pin requirements > genuine top-contact connector retains pin 50 north; portrait mating remains provisional [3.82ms]
+(pass) display manufacturer physical pin requirements > TI TPS60230 powers four separate panel cathodes, retaining D1 regulation feedback [0.90ms]
+(pass) display manufacturer physical pin requirements > unused buffer inputs are grounded and unused outputs, display NC and LDO NC remain open [2.02ms]
 
 tests/imported-reference-ownership.test.ts:
-(pass) native imported reference labels belong to the correct component > comparator [128.02ms]
-(pass) native imported reference labels belong to the correct component > usb [108.72ms]
-(pass) native imported reference labels belong to the correct component > amplifier [113.48ms]
+(pass) native imported reference labels belong to the correct component > comparator [108.93ms]
+(pass) native imported reference labels belong to the correct component > usb [89.88ms]
+(pass) native imported reference labels belong to the correct component > amplifier [80.38ms]
 
 tests/hold-readback-hardware-boundaries.test.ts:
-(pass) MCU hold readback reaches the buffer output, without a direct hardware-enable connection [0.89ms]
+(pass) MCU hold readback reaches the buffer output, without a direct hardware-enable connection [0.99ms]
 
 tests/mounting-and-battery-prerequisites.test.ts:
-(pass) AKY2945 centre NTC is connected and unresolved outer polarity is left open [1.37ms]
-(pass) A4 trial M2 mounts are nonconductive holes with all-layer circular clearance [1.30ms]
+(pass) AKY2945 centre NTC is connected and unresolved outer polarity is left open [1.07ms]
+(pass) A4 trial M2 mounts are nonconductive holes with all-layer circular clearance [1.36ms]
 
 tests/current-native-schema.test.ts:
-(pass) the complete current native output conforms to the installed schema [1.32ms]
+(pass) the complete current native output conforms to the installed schema [0.77ms]
 
-2 tests failed:
-(fail) Native placement review preserves the board > the original switching paths and USB geometry survive the qualified stackup width change [17.54ms]
-(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.50ms]
+1 tests failed:
+(fail) Native A4 board boundaries and fabrication gate > fabrication requires nonempty actual copper and zero unresolved native errors [1.27ms]
 
- 50 pass
- 2 fail
- 708 expect() calls
-Ran 52 tests across 19 files. [12.04s]
+ 54 pass
+ 1 fail
+ 717 expect() calls
+Ran 55 tests across 20 files. [9.61s]
 error: script "test" exited with code 1

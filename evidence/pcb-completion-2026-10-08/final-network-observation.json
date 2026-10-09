@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-09T06:10:04.893514+00:00",
+  "spec_revision": "1",
+  "observed_spec_revision": "1",
+  "observations_current": true,
+  "network_policy": {
+    "mode": "restricted",
+    "state": "unknown",
+    "allowed_hosts": [],
+    "presets": [
+      "package_managers"
+    ]
+  },
+  "configured_capabilities": [],
+  "saved_draft_revision": 32,
+  "runtime_configuration_applied": false,
+  "source": "Current managed-environment status reread after the session context changed; no credential or outbound identity values recorded."
+}

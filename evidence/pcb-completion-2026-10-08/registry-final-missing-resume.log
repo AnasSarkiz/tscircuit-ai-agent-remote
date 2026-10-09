@@ -1,0 +1,661 @@
+{"archive_index":0,"archive_bytes":1963474,"archive_sha256":"a034300720d47815772be4de89f7851d35843740900364d8e3eb498a3b6dbbe6","http_status":200,"uploaded_files":[{"package_file_id":"745d61dc-384c-40ca-8d36-2e13a07ed40d","file_path":"imports/SN74LVC245APWR/SN74LVC245APWR.step"},{"package_file_id":"ae7281a5-644a-428b-9972-c14530974411","file_path":"imports/TPS63802DLAR/TPS63802DLAR.tsx"},{"package_file_id":"f09dda91-f572-4081-adca-0eb98b68fd6e","file_path":"imports/TPS7A2028PDBVR/TPS7A2028PDBVR.tsx"},{"package_file_id":"f6fc26a2-6a7c-45a5-879e-5f0e5ca0145f","file_path":"imports/TPS7A2030PDBVR.tsx"},{"package_file_id":"152d26bf-4294-4bf3-8306-184617573fd3","file_path":"imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj"},{"package_file_id":"ea251734-56f9-4a20-8993-c97ee34016b3","file_path":"imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step"},{"package_file_id":"6d859273-adee-497a-afd0-ff5f9cdc00ae","file_path":"imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx"},{"package_file_id":"1eb541f6-78d5-49d1-a022-1f8835fedff1","file_path":"index.circuit.tsx"},{"package_file_id":"1b4fd5cb-2fdb-4581-a958-14c34c96accd","file_path":"main.tsx"},{"package_file_id":"8d32e306-69a7-4e6a-89b8-186a4d72f8c6","file_path":"package.json"},{"package_file_id":"c2db7a82-a3fb-4af1-839f-218b771956b3","file_path":"routes/a3/regulator.json"},{"package_file_id":"19752a10-8872-46fe-b59b-a641a73e31f8","file_path":"routes/a5/charger-current-limit.json"},{"package_file_id":"2d6641d7-77da-433f-9046-d56ac5eff83c","file_path":"routes/a5/independent-control-signals.json"},{"package_file_id":"ad56e916-03d5-4f8a-86b2-13786348adce","file_path":"routes/a6/amplifier-din.json"},{"package_file_id":"649cce17-0341-4529-958f-78412e7168cf","file_path":"routes/a6/backlight-c1-negative.json"},{"package_file_id":"6f299006-f65c-4228-9b5c-03db2a51947f","file_path":"routes/a6/backlight-c1-positive.json"},{"package_file_id":"a9c9c56f-cd3f-4176-8cc8-cdf3919b4783","file_path":"routes/a6/backlight-c2-negative.json"},{"package_file_id":"a7e3ecd7-49f9-448b-b015-950878ced185","file_path":"routes/a6/backlight-c2-positive.json"},{"package_file_id":"f2c33a08-8e6b-448f-ab44-2c78bc7e98c8","file_path":"routes/a6/backlight-current-setting.json"},{"package_file_id":"c9119217-28b0-4d9d-875a-14f729df755f","file_path":"routes/a7/charger-ntc.json"},{"package_file_id":"0f34f859-e0e7-4737-be63-cdf11b3690cb","file_path":"routes/a7/haptic-enable.json"},{"package_file_id":"e6347a69-db38-4143-891b-48eaa3fc8ca1","file_path":"routes/a7/hold-readback.json"},{"package_file_id":"2a7bea8c-e2c2-494a-b9aa-0ec12ff48fc8","file_path":"routes/a7/mcu-amplifier-bclk.json"},{"package_file_id":"9fcab49d-d54f-431f-8023-8c7907d14b04","file_path":"routes/a7/mcu-amplifier-din.json"},{"package_file_id":"15eb1f69-8f9a-4a40-b3da-6755350be8fd","file_path":"routes/a7/regulator-feedback-retained.json"},{"package_file_id":"a33afdfc-6561-4732-a9e5-65c146960329","file_path":"routes/a7/regulator-pgood-reroute.json"},{"package_file_id":"aafff09b-6fe3-455a-b053-2435fbb954a1","file_path":"routes/a7/service-uart.json"},{"package_file_id":"d21ee6c4-43b4-4d0e-8da0-6cba3eaa577d","file_path":"src/board/BacklightSheet.tsx"},{"package_file_id":"43711b53-4df6-4672-87f8-f17acc7f1222","file_path":"src/board/BatteryReadySheet.tsx"},{"package_file_id":"2c8a0e32-2158-4fc3-84a3-9a62cc611421","file_path":"src/board/BoardFeatures.tsx"},{"package_file_id":"a2fabda5-a27d-4e69-85a2-e040b00d5c94","file_path":"src/board/ChargerSheet.tsx"},{"package_file_id":"ba0b1204-fea1-445b-ab97-f8e6549c8647","file_path":"src/board/ComponentNotes.tsx"},{"package_file_id":"a246e386-18a0-4b9e-b01b-02fa8ccfacc2","file_path":"src/board/ControlsSheet.tsx"},{"package_file_id":"00663023-13f8-4861-856d-9f88e3a89506","file_path":"src/board/DisplaySheet.tsx"},{"package_file_id":"94ec43f8-29f8-48ff-b927-0b47e3ff038a","file_path":"src/board/GroundPaths.ts"},{"package_file_id":"30ece886-ff34-4844-b440-8b5e134602c8","file_path":"src/board/HapticSheet.tsx"},{"package_file_id":"9e39b7db-0baa-446e-adb7-364ef2f4b12c","file_path":"src/board/HoldSheet.tsx"},{"package_file_id":"d23d8dff-4b24-4f32-85b7-d471f6221a3b","file_path":"src/board/ManualConnectionCopper.tsx"},{"package_file_id":"200937eb-e7ef-4b6f-bf4d-86e239943cb2","file_path":"src/board/ManualInnerSignalCopper.tsx"},{"package_file_id":"e9baa23c-2b38-4b5f-8ce1-a65d1364ec92","file_path":"src/board/ManualPowerCopper.tsx"},{"package_file_id":"9c9e1f68-62b8-4af7-910f-4a59f5039d37","file_path":"src/board/ManualSignalPaths.tsx"},{"package_file_id":"4b9ee59f-57e9-4b44-bcac-7830793c45ef","file_path":"src/board/McuUsbSheet.tsx"},{"package_file_id":"bf46cdfc-23b8-453a-9a2a-fe9acebbae84","file_path":"src/board/MicrophoneClockSheet.tsx"},{"package_file_id":"31378154-7d03-4386-8868-9fad9df12fcf","file_path":"src/board/MicrophonesSheet.tsx"},{"package_file_id":"a90daa20-f76a-4a83-9978-d4bcdd0c1851","file_path":"src/board/RegulatorSheet.tsx"},{"package_file_id":"8216d63b-e43b-42e3-ab27-f8f1e2a379de","file_path":"src/board/RegulatorSwitchRouting.ts"},{"package_file_id":"f8368b23-e1a2-4316-bc42-307363e5f9f5","file_path":"src/board/Routing.tsx"},{"package_file_id":"b34775e4-bb30-471c-9378-3940526a691b","file_path":"src/board/SpeakerSheet.tsx"},{"package_file_id":"815da897-cde7-49bf-af9c-b8c8497cf920","file_path":"src/board/connection-copper.json"},{"package_file_id":"b584d348-63f1-4f9e-959e-834909bba193","file_path":"src/board/ground-paths.json"},{"package_file_id":"ca04a8c9-d30a-435b-bdf7-fe6d0bc48f0b","file_path":"src/board/ground-plane-outline.json"},{"package_file_id":"c5ebf756-6705-44b6-bae6-54048171fa5f","file_path":"src/board/inner-signal-copper.json"},{"package_file_id":"02e8f8b0-b2e4-41fc-9158-7c880d9de118","file_path":"src/board/manual-power-copper.json"},{"package_file_id":"cb893551-4ae0-43f7-ab37-fde97ab20e58","file_path":"src/board/manual-signal-paths.json"},{"package_file_id":"c32814c6-f8f6-4443-b05b-b4fb79b601e6","file_path":"src/board/manual-speaker-pair.json"},{"package_file_id":"edf8a9e8-34a4-4a40-ac2c-e734795ada37","file_path":"src/board/nets.tsx"},{"package_file_id":"767a4a58-b97e-4f09-8a22-5c23f68169c6","file_path":"src/board/placement.ts"},{"package_file_id":"c12d44a8-ba99-477b-9d1f-50d3332e7f45","file_path":"src/board/viaGeometry.ts"}]}
+{"archive_index":1,"archive_bytes":1814711,"archive_sha256":"f9ad12752bcb90b16e2cc3835c78730b70beadb849cafbf9b003aec5598a8613","http_status":200,"uploaded_files":[{"package_file_id":"fbe22037-5378-4c03-9942-8692a96dd0aa","file_path":"toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz"},{"package_file_id":"8768343e-15b0-4a50-b2fe-3d5b7c7de0ab","file_path":"toolchain/packages/circuit-json-to-gerber-0.0.112-board-fixes.1.tgz"},{"package_file_id":"4ce6cfc0-f816-46d7-8cb9-7baf05b07023","file_path":"toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz"},{"package_file_id":"b8b22354-2479-461c-9719-96180ef7c490","file_path":"tscircuit.config.json"},{"package_file_id":"02467e68-033d-43f9-9606-935448f046c6","file_path":"tsconfig.json"}]}
+{
+  "checked_at_utc": "2026-10-09T06:07:21.659Z",
+  "version": "AnasSarkiz/tscircuit-ai-agent-remote@0.0.11-wip-generator-qualification",
+  "transport": "Official released CLI /package_files/upload_archive JSON archive_base64, existing release",
+  "archive_bytes": 3778248,
+  "archive_sha256": "2da973632995762ed294643b3310a35c3cb881ec39f5b7da5b32fd48e2a59ae6",
+  "archives": [
+    {
+      "bytes": 1963474,
+      "sha256": "a034300720d47815772be4de89f7851d35843740900364d8e3eb498a3b6dbbe6",
+      "paths": [
+        "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+        "imports/TPS63802DLAR/TPS63802DLAR.tsx",
+        "imports/TPS7A2028PDBVR/TPS7A2028PDBVR.tsx",
+        "imports/TPS7A2030PDBVR.tsx",
+        "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+        "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+        "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+        "index.circuit.tsx",
+        "main.tsx",
+        "package.json",
+        "routes/a3/regulator.json",
+        "routes/a5/charger-current-limit.json",
+        "routes/a5/independent-control-signals.json",
+        "routes/a6/amplifier-din.json",
+        "routes/a6/backlight-c1-negative.json",
+        "routes/a6/backlight-c1-positive.json",
+        "routes/a6/backlight-c2-negative.json",
+        "routes/a6/backlight-c2-positive.json",
+        "routes/a6/backlight-current-setting.json",
+        "routes/a7/charger-ntc.json",
+        "routes/a7/haptic-enable.json",
+        "routes/a7/hold-readback.json",
+        "routes/a7/mcu-amplifier-bclk.json",
+        "routes/a7/mcu-amplifier-din.json",
+        "routes/a7/regulator-feedback-retained.json",
+        "routes/a7/regulator-pgood-reroute.json",
+        "routes/a7/service-uart.json",
+        "src/board/BacklightSheet.tsx",
+        "src/board/BatteryReadySheet.tsx",
+        "src/board/BoardFeatures.tsx",
+        "src/board/ChargerSheet.tsx",
+        "src/board/ComponentNotes.tsx",
+        "src/board/ControlsSheet.tsx",
+        "src/board/DisplaySheet.tsx",
+        "src/board/GroundPaths.ts",
+        "src/board/HapticSheet.tsx",
+        "src/board/HoldSheet.tsx",
+        "src/board/ManualConnectionCopper.tsx",
+        "src/board/ManualInnerSignalCopper.tsx",
+        "src/board/ManualPowerCopper.tsx",
+        "src/board/ManualSignalPaths.tsx",
+        "src/board/McuUsbSheet.tsx",
+        "src/board/MicrophoneClockSheet.tsx",
+        "src/board/MicrophonesSheet.tsx",
+        "src/board/RegulatorSheet.tsx",
+        "src/board/RegulatorSwitchRouting.ts",
+        "src/board/Routing.tsx",
+        "src/board/SpeakerSheet.tsx",
+        "src/board/connection-copper.json",
+        "src/board/ground-paths.json",
+        "src/board/ground-plane-outline.json",
+        "src/board/inner-signal-copper.json",
+        "src/board/manual-power-copper.json",
+        "src/board/manual-signal-paths.json",
+        "src/board/manual-speaker-pair.json",
+        "src/board/nets.tsx",
+        "src/board/placement.ts",
+        "src/board/viaGeometry.ts"
+      ]
+    },
+    {
+      "bytes": 1814711,
+      "sha256": "f9ad12752bcb90b16e2cc3835c78730b70beadb849cafbf9b003aec5598a8613",
+      "paths": [
+        "toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz",
+        "toolchain/packages/circuit-json-to-gerber-0.0.112-board-fixes.1.tgz",
+        "toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz",
+        "tscircuit.config.json",
+        "tsconfig.json"
+      ]
+    }
+  ],
+  "round_trip_byte_verified": true,
+  "files": [
+    {
+      "path": "imports/SN74LVC245APWR/SN74LVC245APWR.step",
+      "bytes": 5543534,
+      "sha256": "d89053fe813e62a27cd1f14c164ec3f7f16d6b01a1312a7d88c83a7f8aa97526"
+    },
+    {
+      "path": "imports/TPS63802DLAR/TPS63802DLAR.tsx",
+      "bytes": 3223,
+      "sha256": "cf78ff5edcbdccf948a6b03a3bef08d24d616760441d665d436885affd5514a4"
+    },
+    {
+      "path": "imports/TPS7A2028PDBVR/TPS7A2028PDBVR.tsx",
+      "bytes": 1003,
+      "sha256": "ea41b06d18f6d063aef3ad981382294c9abe8877326e81d850e117850b5e4d26"
+    },
+    {
+      "path": "imports/TPS7A2030PDBVR.tsx",
+      "bytes": 1010,
+      "sha256": "4bfe0d730d5f699b3a4785dfdd6fedc32d3e59492de9ef62d3fd5a42fdd61a19"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj",
+      "bytes": 677525,
+      "sha256": "9d7e957178f20137fdd5d62ae84281fe3b5bb3a44262f348d8e129b0a4182320"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step",
+      "bytes": 3046769,
+      "sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx",
+      "bytes": 6636,
+      "sha256": "0299a72b4e6bddd44cd3e1ad4f6c3be27921516d7b3da2f99ce8583fb3fb814c"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "bytes": 33,
+      "sha256": "03ae9c8f229a55e5f6b24f62ad13f0ef3888b567577e13b0de661afea2088a58"
+    },
+    {
+      "path": "main.tsx",
+      "bytes": 2937,
+      "sha256": "fca5dc2c849ab8eb24115515cff289afa3025442bd94e20c0a346e55f71ced0f"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1441,
+      "sha256": "9c152010317f5eb0de2f33bed0eb0ab4704f0c7b847b67b6cd3dfbfcc62b6609"
+    },
+    {
+      "path": "routes/a3/regulator.json",
+      "bytes": 1757,
+      "sha256": "38fb0e7ae5cfa0424083a64f4f6e310a53343646d5cef0fe5d353d10002929df"
+    },
+    {
+      "path": "routes/a5/charger-current-limit.json",
+      "bytes": 2552,
+      "sha256": "bdab3efafc0bb682afd07e0ef94f00a420051cc33016637e090fd1504b10ce58"
+    },
+    {
+      "path": "routes/a5/independent-control-signals.json",
+      "bytes": 3661,
+      "sha256": "b00e0370724ae887c4193cb3714f6ff62f26afcedb686d29ae8d88fc15fc8ce6"
+    },
+    {
+      "path": "routes/a6/amplifier-din.json",
+      "bytes": 1454,
+      "sha256": "62e02567bae0f17171e07faf62865a98d65bbe3f7fc68b0c775c6ef78305e187"
+    },
+    {
+      "path": "routes/a6/backlight-c1-negative.json",
+      "bytes": 501,
+      "sha256": "fe9c6d8291f684f70b7761eaa73e2fcbd197ba359f9c72ee1807647c444c4e15"
+    },
+    {
+      "path": "routes/a6/backlight-c1-positive.json",
+      "bytes": 501,
+      "sha256": "e32e3538efae59fd8d17b9f55d91606ad4111f1e93a705ff38c5db7ab3819e0b"
+    },
+    {
+      "path": "routes/a6/backlight-c2-negative.json",
+      "bytes": 826,
+      "sha256": "096400a0d1ef66e3187b0f9a9e66b49a6957a974427d0e6161f9d289ad3ac715"
+    },
+    {
+      "path": "routes/a6/backlight-c2-positive.json",
+      "bytes": 821,
+      "sha256": "ce48dbca0d6d5347a83958a2e85fc0eab8fef10a59ddf413d7b2458a0b6c86e7"
+    },
+    {
+      "path": "routes/a6/backlight-current-setting.json",
+      "bytes": 493,
+      "sha256": "97c1a359c77964de55694e96160b75fb645777c7abefcdcd331ab7a175f37593"
+    },
+    {
+      "path": "routes/a7/charger-ntc.json",
+      "bytes": 2974,
+      "sha256": "1ee98be6ce0dbd2edee3d1498559bc123bdd2d0818610c04094df5e15ba4f8a2"
+    },
+    {
+      "path": "routes/a7/haptic-enable.json",
+      "bytes": 3849,
+      "sha256": "fae30981368174202e53f11fe606b3ac9adb4883c35f11864f96ea892f112e31"
+    },
+    {
+      "path": "routes/a7/hold-readback.json",
+      "bytes": 1761,
+      "sha256": "18982b21749c0764b90f4beb4932c1df06b3140ccca839262089c438141cd4c2"
+    },
+    {
+      "path": "routes/a7/mcu-amplifier-bclk.json",
+      "bytes": 2576,
+      "sha256": "64bfb31d8f92f3c480980d95e1711b210c60506f266b5f48618642e315c8b146"
+    },
+    {
+      "path": "routes/a7/mcu-amplifier-din.json",
+      "bytes": 2392,
+      "sha256": "616ffc3d4b88051beedc63c015e1e332ea89c944e99b765f8f38d2211a1e3eec"
+    },
+    {
+      "path": "routes/a7/regulator-feedback-retained.json",
+      "bytes": 1292,
+      "sha256": "a9897c5c0e571db616e38ccb2c47f84906606b6aed2830e1008a4998c519bc93"
+    },
+    {
+      "path": "routes/a7/regulator-pgood-reroute.json",
+      "bytes": 2837,
+      "sha256": "fec9c55e3dc8a22e17cf5bdd6f9cab96dfdbbabdbad2f95c622057734857fe51"
+    },
+    {
+      "path": "routes/a7/service-uart.json",
+      "bytes": 9370,
+      "sha256": "93e747d755668f82bc36bdca2b86fe96d89a867c1f318b4c73311963fcf0c6f3"
+    },
+    {
+      "path": "src/board/BacklightSheet.tsx",
+      "bytes": 4727,
+      "sha256": "e95dcd51f2774250c7c27501426c401e394f0a572a906544d766a7bab0312948"
+    },
+    {
+      "path": "src/board/BatteryReadySheet.tsx",
+      "bytes": 2381,
+      "sha256": "68deb4858d13c020d4aec1ccde7e7bfb0385399a2c959b872467f2dd5003adda"
+    },
+    {
+      "path": "src/board/BoardFeatures.tsx",
+      "bytes": 3412,
+      "sha256": "a6fb48e485825fdc24df8f9b77ee5a2e3ab3a5c24cd8c249eeba330807a8ef41"
+    },
+    {
+      "path": "src/board/ChargerSheet.tsx",
+      "bytes": 4001,
+      "sha256": "5b3a64570efde8014df84bb169cd21b6ef8348d41b27adca42617099b381a38e"
+    },
+    {
+      "path": "src/board/ComponentNotes.tsx",
+      "bytes": 12547,
+      "sha256": "49c5452b10eed86fd3c2e3e43a22f6444cf43ab08f16e8fd4b15d5f171a1f055"
+    },
+    {
+      "path": "src/board/ControlsSheet.tsx",
+      "bytes": 2643,
+      "sha256": "502736514cda998c9b0a1ae5d9acb5070418f89e7688614f28c2527cff2e974f"
+    },
+    {
+      "path": "src/board/DisplaySheet.tsx",
+      "bytes": 10710,
+      "sha256": "e1fa523db8d3632a036e6f1c3b4dd195ce0f945b085f0118637fcedca5fafc62"
+    },
+    {
+      "path": "src/board/GroundPaths.ts",
+      "bytes": 446,
+      "sha256": "e78110f19df23b92bad5e89153a023894acd4ebd912cc573a53692041e5a2835"
+    },
+    {
+      "path": "src/board/HapticSheet.tsx",
+      "bytes": 4249,
+      "sha256": "5c2a93a6964cc1a2f22f657962736633c07969f55904d2410a5e78b3e59704a6"
+    },
+    {
+      "path": "src/board/HoldSheet.tsx",
+      "bytes": 2165,
+      "sha256": "c687eee3cb49b414622d66be714329ee66bbc01aef5f5bfe1b7d3e2bc7461678"
+    },
+    {
+      "path": "src/board/ManualConnectionCopper.tsx",
+      "bytes": 6320,
+      "sha256": "09103a49ca42085639cfa5dd27eef802e3b9db26dc1a27acc593f69235a8457d"
+    },
+    {
+      "path": "src/board/ManualInnerSignalCopper.tsx",
+      "bytes": 3583,
+      "sha256": "d0233e1b7770db7b9b7170c12e7d890347e12769ec38813da6b707bdca9bd604"
+    },
+    {
+      "path": "src/board/ManualPowerCopper.tsx",
+      "bytes": 2954,
+      "sha256": "6178f5f2db5a22df3f6cbfc535d31c9a9d5473f2feadc44e5065af67599a9da0"
+    },
+    {
+      "path": "src/board/ManualSignalPaths.tsx",
+      "bytes": 1632,
+      "sha256": "b3fcffeec17013aab6085fbb643dc4af102c03c6bd7408269b4ebdde13063edd"
+    },
+    {
+      "path": "src/board/McuUsbSheet.tsx",
+      "bytes": 9017,
+      "sha256": "f83f00bfdb1b80b87016c11aaa060c5e922eb804192c86b028956a7d41ed6e9d"
+    },
+    {
+      "path": "src/board/MicrophoneClockSheet.tsx",
+      "bytes": 5860,
+      "sha256": "28b1d0515dc3e3afbea26f60ed2dd65a52d4dd3b35426e876a75f7494c189871"
+    },
+    {
+      "path": "src/board/MicrophonesSheet.tsx",
+      "bytes": 5513,
+      "sha256": "070b962d2534299bffb39cdefdbb38a2e9b10f55b358a1e28e6340ffed20762f"
+    },
+    {
+      "path": "src/board/RegulatorSheet.tsx",
+      "bytes": 4707,
+      "sha256": "a7b44fc0b5bef302e25f5886db38072583ebc49db0f7941e8b0e8a54897e512e"
+    },
+    {
+      "path": "src/board/RegulatorSwitchRouting.ts",
+      "bytes": 488,
+      "sha256": "8d9de883acb759c3711b7c2db0375691c3ae3421b34dc83c4882a05bebbf48c8"
+    },
+    {
+      "path": "src/board/Routing.tsx",
+      "bytes": 9816,
+      "sha256": "427af9dc7bdd911bc7897dc5667be2715c30ea57be6a8a906f93f14c4e534dca"
+    },
+    {
+      "path": "src/board/SpeakerSheet.tsx",
+      "bytes": 6153,
+      "sha256": "bdf2e12afddb042bf59f88e7d5c344728679e8925ae5e9a1c55500ff88fdc506"
+    },
+    {
+      "path": "src/board/connection-copper.json",
+      "bytes": 898082,
+      "sha256": "2d2fe8fb77c888917e9ee562b771aa8465568e62f64b5bf250a0d3b035aefe52"
+    },
+    {
+      "path": "src/board/ground-paths.json",
+      "bytes": 606,
+      "sha256": "b584def96334f60e42cee4dc72dae82c784307dc9e8256428c6bd7d87a7b21eb"
+    },
+    {
+      "path": "src/board/ground-plane-outline.json",
+      "bytes": 238298,
+      "sha256": "bf4f78e5c5b8559b81e11bdc721cd347395f508bab31767bd357f3aff6bfff6a"
+    },
+    {
+      "path": "src/board/inner-signal-copper.json",
+      "bytes": 443450,
+      "sha256": "4d73961cab14b7182f03e79f5194bb0619e0e842e5d52b4fa29c3acd2137edff"
+    },
+    {
+      "path": "src/board/manual-power-copper.json",
+      "bytes": 520828,
+      "sha256": "ed31ba9b210e799203f2559753bf18392c97b487def7eef54eeabfca9deb1cef"
+    },
+    {
+      "path": "src/board/manual-signal-paths.json",
+      "bytes": 173229,
+      "sha256": "a33659f869dae37d6b36965a512e9fbf6128b0dbd4d13208e0703f7c82d57e9f"
+    },
+    {
+      "path": "src/board/manual-speaker-pair.json",
+      "bytes": 4490,
+      "sha256": "a6438c6e9adeb75b5c79bca2f49ae660365c17010514e8dab4a20fa29e3ab3ff"
+    },
+    {
+      "path": "src/board/nets.tsx",
+      "bytes": 3978,
+      "sha256": "335b56175db784e01a301ce19ee818dbe0dcf09dcfe1dfd6c4309b95a3539428"
+    },
+    {
+      "path": "src/board/placement.ts",
+      "bytes": 8554,
+      "sha256": "901ad8127da2084a5a46d32cc76467c82f1e07dafd535fbe2fac9e1c2bda9d39"
+    },
+    {
+      "path": "src/board/viaGeometry.ts",
+      "bytes": 680,
+      "sha256": "b4fbc3164d759818e51d2e17f37c7f7c09734dbb1b3a856c94c2e00b1a0b433d"
+    },
+    {
+      "path": "toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz",
+      "bytes": 287585,
+      "sha256": "4691f78ce5b60239a01efe2aa686202aee0ef5ff6d2dd201c06890c487b354a1"
+    },
+    {
+      "path": "toolchain/packages/circuit-json-to-gerber-0.0.112-board-fixes.1.tgz",
+      "bytes": 90965,
+      "sha256": "a2b3d6394d24aa7025037380f7ac4f67de361d1ec0c3ffa5318c84bb2091f34a"
+    },
+    {
+      "path": "toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz",
+      "bytes": 1443019,
+      "sha256": "60ec1f834e58d599a1f087466d5428da8bec6f0e5b9521db7f4e0e1771d5656b"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "bytes": 98,
+      "sha256": "caf8371813110f447404c036ef66b657bbff8cce5885784f09fe15bd53048bfb"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 615,
+      "sha256": "eda8af550d72a9c35dfae531f29733454960ddd6af940970804db647711d7156"
+    }
+  ],
+  "uploaded": true,
+  "http_status": 200,
+  "verified_owner": "AnasSarkiz",
+  "uploaded_files": [
+    {
+      "package_file_id": "745d61dc-384c-40ca-8d36-2e13a07ed40d",
+      "file_path": "imports/SN74LVC245APWR/SN74LVC245APWR.step"
+    },
+    {
+      "package_file_id": "ae7281a5-644a-428b-9972-c14530974411",
+      "file_path": "imports/TPS63802DLAR/TPS63802DLAR.tsx"
+    },
+    {
+      "package_file_id": "f09dda91-f572-4081-adca-0eb98b68fd6e",
+      "file_path": "imports/TPS7A2028PDBVR/TPS7A2028PDBVR.tsx"
+    },
+    {
+      "package_file_id": "f6fc26a2-6a7c-45a5-879e-5f0e5ca0145f",
+      "file_path": "imports/TPS7A2030PDBVR.tsx"
+    },
+    {
+      "package_file_id": "152d26bf-4294-4bf3-8306-184617573fd3",
+      "file_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.obj"
+    },
+    {
+      "package_file_id": "ea251734-56f9-4a20-8993-c97ee34016b3",
+      "file_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.step"
+    },
+    {
+      "package_file_id": "6d859273-adee-497a-afd0-ff5f9cdc00ae",
+      "file_path": "imports/TYPE_C_31_M_12/TYPE_C_31_M_12.tsx"
+    },
+    {
+      "package_file_id": "1eb541f6-78d5-49d1-a022-1f8835fedff1",
+      "file_path": "index.circuit.tsx"
+    },
+    {
+      "package_file_id": "1b4fd5cb-2fdb-4581-a958-14c34c96accd",
+      "file_path": "main.tsx"
+    },
+    {
+      "package_file_id": "8d32e306-69a7-4e6a-89b8-186a4d72f8c6",
+      "file_path": "package.json"
+    },
+    {
+      "package_file_id": "c2db7a82-a3fb-4af1-839f-218b771956b3",
+      "file_path": "routes/a3/regulator.json"
+    },
+    {
+      "package_file_id": "19752a10-8872-46fe-b59b-a641a73e31f8",
+      "file_path": "routes/a5/charger-current-limit.json"
+    },
+    {
+      "package_file_id": "2d6641d7-77da-433f-9046-d56ac5eff83c",
+      "file_path": "routes/a5/independent-control-signals.json"
+    },
+    {
+      "package_file_id": "ad56e916-03d5-4f8a-86b2-13786348adce",
+      "file_path": "routes/a6/amplifier-din.json"
+    },
+    {
+      "package_file_id": "649cce17-0341-4529-958f-78412e7168cf",
+      "file_path": "routes/a6/backlight-c1-negative.json"
+    },
+    {
+      "package_file_id": "6f299006-f65c-4228-9b5c-03db2a51947f",
+      "file_path": "routes/a6/backlight-c1-positive.json"
+    },
+    {
+      "package_file_id": "a9c9c56f-cd3f-4176-8cc8-cdf3919b4783",
+      "file_path": "routes/a6/backlight-c2-negative.json"
+    },
+    {
+      "package_file_id": "a7e3ecd7-49f9-448b-b015-950878ced185",
+      "file_path": "routes/a6/backlight-c2-positive.json"
+    },
+    {
+      "package_file_id": "f2c33a08-8e6b-448f-ab44-2c78bc7e98c8",
+      "file_path": "routes/a6/backlight-current-setting.json"
+    },
+    {
+      "package_file_id": "c9119217-28b0-4d9d-875a-14f729df755f",
+      "file_path": "routes/a7/charger-ntc.json"
+    },
+    {
+      "package_file_id": "0f34f859-e0e7-4737-be63-cdf11b3690cb",
+      "file_path": "routes/a7/haptic-enable.json"
+    },
+    {
+      "package_file_id": "e6347a69-db38-4143-891b-48eaa3fc8ca1",
+      "file_path": "routes/a7/hold-readback.json"
+    },
+    {
+      "package_file_id": "2a7bea8c-e2c2-494a-b9aa-0ec12ff48fc8",
+      "file_path": "routes/a7/mcu-amplifier-bclk.json"
+    },
+    {
+      "package_file_id": "9fcab49d-d54f-431f-8023-8c7907d14b04",
+      "file_path": "routes/a7/mcu-amplifier-din.json"
+    },
+    {
+      "package_file_id": "15eb1f69-8f9a-4a40-b3da-6755350be8fd",
+      "file_path": "routes/a7/regulator-feedback-retained.json"
+    },
+    {
+      "package_file_id": "a33afdfc-6561-4732-a9e5-65c146960329",
+      "file_path": "routes/a7/regulator-pgood-reroute.json"
+    },
+    {
+      "package_file_id": "aafff09b-6fe3-455a-b053-2435fbb954a1",
+      "file_path": "routes/a7/service-uart.json"
+    },
+    {
+      "package_file_id": "d21ee6c4-43b4-4d0e-8da0-6cba3eaa577d",
+      "file_path": "src/board/BacklightSheet.tsx"
+    },
+    {
+      "package_file_id": "43711b53-4df6-4672-87f8-f17acc7f1222",
+      "file_path": "src/board/BatteryReadySheet.tsx"
+    },
+    {
+      "package_file_id": "2c8a0e32-2158-4fc3-84a3-9a62cc611421",
+      "file_path": "src/board/BoardFeatures.tsx"
+    },
+    {
+      "package_file_id": "a2fabda5-a27d-4e69-85a2-e040b00d5c94",
+      "file_path": "src/board/ChargerSheet.tsx"
+    },
+    {
+      "package_file_id": "ba0b1204-fea1-445b-ab97-f8e6549c8647",
+      "file_path": "src/board/ComponentNotes.tsx"
+    },
+    {
+      "package_file_id": "a246e386-18a0-4b9e-b01b-02fa8ccfacc2",
+      "file_path": "src/board/ControlsSheet.tsx"
+    },
+    {
+      "package_file_id": "00663023-13f8-4861-856d-9f88e3a89506",
+      "file_path": "src/board/DisplaySheet.tsx"
+    },
+    {
+      "package_file_id": "94ec43f8-29f8-48ff-b927-0b47e3ff038a",
+      "file_path": "src/board/GroundPaths.ts"
+    },
+    {
+      "package_file_id": "30ece886-ff34-4844-b440-8b5e134602c8",
+      "file_path": "src/board/HapticSheet.tsx"
+    },
+    {
+      "package_file_id": "9e39b7db-0baa-446e-adb7-364ef2f4b12c",
+      "file_path": "src/board/HoldSheet.tsx"
+    },
+    {
+      "package_file_id": "d23d8dff-4b24-4f32-85b7-d471f6221a3b",
+      "file_path": "src/board/ManualConnectionCopper.tsx"
+    },
+    {
+      "package_file_id": "200937eb-e7ef-4b6f-bf4d-86e239943cb2",
+      "file_path": "src/board/ManualInnerSignalCopper.tsx"
+    },
+    {
+      "package_file_id": "e9baa23c-2b38-4b5f-8ce1-a65d1364ec92",
+      "file_path": "src/board/ManualPowerCopper.tsx"
+    },
+    {
+      "package_file_id": "9c9e1f68-62b8-4af7-910f-4a59f5039d37",
+      "file_path": "src/board/ManualSignalPaths.tsx"
+    },
+    {
+      "package_file_id": "4b9ee59f-57e9-4b44-bcac-7830793c45ef",
+      "file_path": "src/board/McuUsbSheet.tsx"
+    },
+    {
+      "package_file_id": "bf46cdfc-23b8-453a-9a2a-fe9acebbae84",
+      "file_path": "src/board/MicrophoneClockSheet.tsx"
+    },
+    {
+      "package_file_id": "31378154-7d03-4386-8868-9fad9df12fcf",
+      "file_path": "src/board/MicrophonesSheet.tsx"
+    },
+    {
+      "package_file_id": "a90daa20-f76a-4a83-9978-d4bcdd0c1851",
+      "file_path": "src/board/RegulatorSheet.tsx"
+    },
+    {
+      "package_file_id": "8216d63b-e43b-42e3-ab27-f8f1e2a379de",
+      "file_path": "src/board/RegulatorSwitchRouting.ts"
+    },
+    {
+      "package_file_id": "f8368b23-e1a2-4316-bc42-307363e5f9f5",
+      "file_path": "src/board/Routing.tsx"
+    },
+    {
+      "package_file_id": "b34775e4-bb30-471c-9378-3940526a691b",
+      "file_path": "src/board/SpeakerSheet.tsx"
+    },
+    {
+      "package_file_id": "815da897-cde7-49bf-af9c-b8c8497cf920",
+      "file_path": "src/board/connection-copper.json"
+    },
+    {
+      "package_file_id": "b584d348-63f1-4f9e-959e-834909bba193",
+      "file_path": "src/board/ground-paths.json"
+    },
+    {
+      "package_file_id": "ca04a8c9-d30a-435b-bdf7-fe6d0bc48f0b",
+      "file_path": "src/board/ground-plane-outline.json"
+    },
+    {
+      "package_file_id": "c5ebf756-6705-44b6-bae6-54048171fa5f",
+      "file_path": "src/board/inner-signal-copper.json"
+    },
+    {
+      "package_file_id": "02e8f8b0-b2e4-41fc-9158-7c880d9de118",
+      "file_path": "src/board/manual-power-copper.json"
+    },
+    {
+      "package_file_id": "cb893551-4ae0-43f7-ab37-fde97ab20e58",
+      "file_path": "src/board/manual-signal-paths.json"
+    },
+    {
+      "package_file_id": "c32814c6-f8f6-4443-b05b-b4fb79b601e6",
+      "file_path": "src/board/manual-speaker-pair.json"
+    },
+    {
+      "package_file_id": "edf8a9e8-34a4-4a40-ac2c-e734795ada37",
+      "file_path": "src/board/nets.tsx"
+    },
+    {
+      "package_file_id": "767a4a58-b97e-4f09-8a22-5c23f68169c6",
+      "file_path": "src/board/placement.ts"
+    },
+    {
+      "package_file_id": "c12d44a8-ba99-477b-9d1f-50d3332e7f45",
+      "file_path": "src/board/viaGeometry.ts"
+    },
+    {
+      "package_file_id": "fbe22037-5378-4c03-9942-8692a96dd0aa",
+      "file_path": "toolchain/packages/circuit-json-0.0.521-board-fixes.1.tgz"
+    },
+    {
+      "package_file_id": "8768343e-15b0-4a50-b2fe-3d5b7c7de0ab",
+      "file_path": "toolchain/packages/circuit-json-to-gerber-0.0.112-board-fixes.1.tgz"
+    },
+    {
+      "package_file_id": "4ce6cfc0-f816-46d7-8cb9-7baf05b07023",
+      "file_path": "toolchain/packages/tscircuit-core-0.0.2090-board-fixes.3.tgz"
+    },
+    {
+      "package_file_id": "b8b22354-2479-461c-9719-96180ef7c490",
+      "file_path": "tscircuit.config.json"
+    },
+    {
+      "package_file_id": "02467e68-033d-43f9-9606-935448f046c6",
+      "file_path": "tsconfig.json"
+    }
+  ]
+}

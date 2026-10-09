@@ -64,19 +64,25 @@ function prepareArchive(options) {
   }))
   const files = originals.map((original) => {
     const text = original.bytes.toString("utf8")
-    if (!Buffer.from(text).equals(original.bytes)) {
-      throw new Error(
-        `This text archive uploader does not support binary file: ${original.filePath}`,
-      )
-    }
-    return { file_path: original.filePath, content_text: text }
+    const binary =
+      !Buffer.from(text).equals(original.bytes) ||
+      original.bytes.includes(0) ||
+      /\.(tgz|obj|glb|png|jpe?g|zip|stl)$/i.test(original.filePath)
+    // Same supported archive fields as the released CLI; never decode a runtime
+    // artifact as text. JSON remains text for the registry's native preview.
+    return binary
+      ? { file_path: original.filePath, content_base64: original.bytes.toString("base64") }
+      : { file_path: original.filePath, content_text: text }
   })
   const archive = gzipSync(JSON.stringify({ files }), { level: 9 })
   const decoded = JSON.parse(gunzipSync(archive).toString("utf8"))
   for (const [index, original] of originals.entries()) {
     if (
       decoded.files[index].file_path !== original.filePath ||
-      !Buffer.from(decoded.files[index].content_text).equals(original.bytes)
+      !Buffer.from(
+        decoded.files[index].content_base64 ?? decoded.files[index].content_text,
+        decoded.files[index].content_base64 ? "base64" : "utf8",
+      ).equals(original.bytes)
     ) {
       throw new Error("Archive round-trip verification failed")
     }
@@ -125,7 +131,7 @@ function prepareArchive(options) {
   }
 }
 
-async function uploadArchive(prepared) {
+async function uploadArchive(prepared, jsonTransport = false) {
   const listingResponse = await fetch("https://registry-api.tscircuit.com/package_files/list", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -176,8 +182,16 @@ async function uploadArchive(prepared) {
     )
     const response = await fetch(`${registryUrl}/package_files/upload_archive`, {
       method: "POST",
-      headers: { Authorization: `Bearer ${sessionToken}` },
-      body: form,
+      headers: {
+        Authorization: `Bearer ${sessionToken}`,
+        ...(jsonTransport ? { "Content-Type": "application/json" } : {}),
+      },
+      body: jsonTransport
+        ? JSON.stringify({
+            package_name_with_version: prepared.receipt.version,
+            archive_base64: archive.payload.toString("base64"),
+          })
+        : form,
       signal: AbortSignal.timeout(300_000),
     })
     if (!response.ok) throw new Error(`Archive upload failed with HTTP${response.status}`)
@@ -211,6 +225,7 @@ async function main() {
       output: { type: "string" },
       stage: { type: "string", default: ".publish/board" },
       upload: { type: "boolean", default: false },
+      "json-transport": { type: "boolean", default: false },
       "max-archive-bytes": { type: "string" },
     },
   })
@@ -219,7 +234,9 @@ async function main() {
   const record = {
     checked_at_utc: new Date().toISOString(),
     version: prepared.receipt.version,
-    transport: "Official /package_files/upload_archive multipart form, existing release",
+    transport: options["json-transport"]
+      ? "Official released CLI /package_files/upload_archive JSON archive_base64, existing release"
+      : "Official /package_files/upload_archive multipart form, existing release",
     archive_bytes: prepared.archive.length,
     archive_sha256: sha256(prepared.archive),
     archives: prepared.archives.map((archive) => ({
@@ -233,7 +250,9 @@ async function main() {
   }
   writeFileSync(options.output, `${JSON.stringify(record, null, 2)}\n`)
   if (options.upload) {
-    Object.assign(record, await uploadArchive(prepared), { uploaded: true })
+    Object.assign(record, await uploadArchive(prepared, options["json-transport"]), {
+      uploaded: true,
+    })
     writeFileSync(options.output, `${JSON.stringify(record, null, 2)}\n`)
   }
   console.log(JSON.stringify(record, null, 2))

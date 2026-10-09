@@ -1,0 +1,12 @@
+152 |   const currentlyMissing = expectedPaths.filter((path) => !remotePaths.has(path)).sort()
+153 |   if (
+154 |     currentlyMissing.join("\n") !== prepared.receipt.missing_files.slice().sort().join("\n") ||
+155 |     [...remotePaths].some((path) => !expectedPaths.includes(path))
+156 |   ) {
+157 |     throw new Error("Remote file set changed; obtain a fresh verification receipt before uploading")
+                    ^
+error: Remote file set changed; obtain a fresh verification receipt before uploading
+      at uploadArchive (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:157:15)
+      at async main (/workspace/tscircuit-ai-agent-remote/scripts/resume-registry-upload.mjs:253:33)
+
+Bun v1.3.9 (Linux x64)

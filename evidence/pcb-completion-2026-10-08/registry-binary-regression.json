@@ -1,0 +1,16 @@
+{
+  "binary_bytes": 5,
+  "before_after": [
+    {
+      "label": "before",
+      "exit_code": 1
+    },
+    {
+      "label": "after",
+      "exit_code": 0
+    }
+  ],
+  "network_uploads": false,
+  "credentials_used": false,
+  "meaningful_negative_guard_test": "Changed binary staged bytes are separately rejected by the new regression tests."
+}

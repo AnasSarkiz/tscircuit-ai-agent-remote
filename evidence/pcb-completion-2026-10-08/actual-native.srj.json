@@ -1294,8 +1294,8 @@
       "connectedTo": [
         "pcb_smtpad_4",
         "connectivity_net3472",
-        "pcb_via_331",
-        "pcb_via_330",
+        "pcb_via_323",
+        "pcb_via_322",
         "saved_phase_null_15_2",
         "saved_phase_null_15_1",
         "saved_phase_null_15_0",
@@ -45245,8 +45245,8 @@
       "connectedTo": [
         "pcb_smtpad_130",
         "connectivity_net3470",
-        "pcb_via_329",
-        "pcb_via_328",
+        "pcb_via_321",
+        "pcb_via_320",
         "saved_phase_null_13_0",
         "source_trace_120",
         "source_port_136",
@@ -50715,8 +50715,8 @@
       "connectedTo": [
         "pcb_smtpad_145",
         "connectivity_net3470",
-        "pcb_via_329",
-        "pcb_via_328",
+        "pcb_via_321",
+        "pcb_via_320",
         "saved_phase_null_13_0",
         "source_trace_120",
         "source_port_136",
@@ -113745,8 +113745,8 @@
       "connectedTo": [
         "pcb_smtpad_307",
         "connectivity_net3472",
-        "pcb_via_331",
-        "pcb_via_330",
+        "pcb_via_323",
+        "pcb_via_322",
         "saved_phase_null_15_2",
         "saved_phase_null_15_1",
         "saved_phase_null_15_0",
@@ -118263,8 +118263,8 @@
       "connectedTo": [
         "pcb_smtpad_324",
         "connectivity_net3472",
-        "pcb_via_331",
-        "pcb_via_330",
+        "pcb_via_323",
+        "pcb_via_322",
         "saved_phase_null_15_2",
         "saved_phase_null_15_1",
         "saved_phase_null_15_0",
@@ -120127,8 +120127,8 @@
       "connectedTo": [
         "pcb_smtpad_328",
         "connectivity_net3472",
-        "pcb_via_331",
-        "pcb_via_330",
+        "pcb_via_323",
+        "pcb_via_322",
         "saved_phase_null_15_2",
         "saved_phase_null_15_1",
         "saved_phase_null_15_0",
@@ -199775,6 +199775,12 @@
           "pointId": "pcb_port_382",
           "pcb_port_id": "pcb_port_382"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_378",
+          "pcb_port_382"
+        ]
       ]
     },
     {
@@ -200337,6 +200343,20 @@
           "pointId": "pcb_port_336",
           "pcb_port_id": "pcb_port_336"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_332",
+          "pcb_port_336"
+        ],
+        [
+          "pcb_port_316",
+          "pcb_port_332"
+        ],
+        [
+          "pcb_port_4",
+          "pcb_port_316"
+        ]
       ]
     },
     {
@@ -200358,6 +200378,12 @@
           "pointId": "pcb_port_383",
           "pcb_port_id": "pcb_port_383"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_22",
+          "pcb_port_383"
+        ]
       ]
     },
     {
@@ -200619,6 +200645,12 @@
           "pointId": "pcb_port_90",
           "pcb_port_id": "pcb_port_90"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_36",
+          "pcb_port_90"
+        ]
       ]
     },
     {
@@ -201045,6 +201077,16 @@
           "pointId": "pcb_port_135",
           "pcb_port_id": "pcb_port_135"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_149",
+          "pcb_port_150"
+        ],
+        [
+          "pcb_port_149",
+          "pcb_port_135"
+        ]
       ]
     },
     {
@@ -201066,6 +201108,12 @@
           "pointId": "pcb_port_136",
           "pcb_port_id": "pcb_port_136"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_153",
+          "pcb_port_136"
+        ]
       ]
     },
     {
@@ -201108,6 +201156,12 @@
           "pointId": "pcb_port_287",
           "pcb_port_id": "pcb_port_287"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_272",
+          "pcb_port_287"
+        ]
       ]
     },
     {
@@ -201129,6 +201183,12 @@
           "pointId": "pcb_port_286",
           "pcb_port_id": "pcb_port_286"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_271",
+          "pcb_port_286"
+        ]
       ]
     },
     {
@@ -201171,6 +201231,12 @@
           "pointId": "pcb_port_82",
           "pcb_port_id": "pcb_port_82"
         }
+      ],
+      "externallyConnectedPointIds": [
+        [
+          "pcb_port_60",
+          "pcb_port_82"
+        ]
       ]
     },
     {

@@ -1,0 +1,16 @@
+bun test v1.3.9 (cf6cdbbb)
+
+tests/placement-review-preservation.test.ts:
+(pass) Native placement review preserves the board > the inspection output has no copper routes, vias or pours [1.33ms]
+(pass) Native placement review preserves the board > all electrical connections and physical placement features match the canonical board [46.70ms]
+(pass) Native placement review preserves the board > the original switching paths and USB geometry survive the qualified stackup width change [44.77ms]
+(pass) Native placement review preserves the board > optional endpoint annotation cannot hide moved copper or a wrong declared contact [6.60ms]
+
+tests/registry-resume-binary.test.ts:
+(pass) registry archives retain binary bytes and Unicode JSON without uploading [39.86ms]
+(pass) registry resume rejects binary artifact changes after anonymous verification [36.81ms]
+
+ 6 pass
+ 0 fail
+ 24 expect() calls
+Ran 6 tests across 2 files. [401.00ms]

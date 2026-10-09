@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "bun evidence/pcb-completion-2026-10-08/audit-schema-and-paste.mjs dist/index/circuit.json evidence/pcb-completion-2026-10-08 && python scripts/routing/audit-copper.py dist/index/circuit.json evidence/pcb-completion-2026-10-08/current-copper-audit.json"
+  ],
+  "exit_code": 1,
+  "termination": null,
+  "elapsed_seconds": 27.57,
+  "peak_process_group_rss_bytes": 277020672,
+  "memory_budget_bytes": 22333829939,
+  "completed_command": true,
+  "passing_validation_inferred": false
+}

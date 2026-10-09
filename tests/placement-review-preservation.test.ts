@@ -70,14 +70,40 @@ function numberedTerminals(elements: typeof canonical) {
 function withNumberedTerminals(
   route: z.infer<typeof wireRoute>,
   terminals: Map<PcbPortId, string>,
+  elements: typeof canonical,
+  connectsTo?: string[],
 ) {
-  return route.map((point) => {
+  const ports = z
+    .array(
+      z.object({
+        pcb_port_id: z.string(),
+        x: z.number(),
+        y: z.number(),
+        layers: z.array(z.string()),
+      }),
+    )
+    .parse(elements.filter((element) => element.type === "pcb_port"))
+  return route.map((point, index) => {
     const normalized = { ...point }
     for (const key of ["start_pcb_port_id", "end_pcb_port_id"] as const) {
       const identifier = point[key]
-      if (!identifier) continue
-      const terminal = terminals.get(identifier)
-      if (!terminal) throw new Error(`Missing real numbered terminal ${identifier}`)
+      const isEndpoint = key === "start_pcb_port_id" ? index === 0 : index === route.length - 1
+      if (!identifier && !isEndpoint) continue
+      // Cached phase replay may omit these optional annotation fields. Prove
+      // the actual terminal using BOTH declared connectivity and physical
+      // endpoint position/layer; never discard a terminal or geometry check.
+      const candidates = ports.filter(
+        (port) =>
+          (identifier ? port.pcb_port_id === identifier : connectsTo?.includes(port.pcb_port_id)) &&
+          (!connectsTo || connectsTo.includes(port.pcb_port_id)) &&
+          Math.abs(port.x - point.x) < 1e-9 &&
+          Math.abs(port.y - point.y) < 1e-9 &&
+          port.layers.includes(point.layer),
+      )
+      if (candidates.length !== 1)
+        throw new Error("Endpoint does not prove one real declared PCB contact")
+      const terminal = terminals.get(candidates[0].pcb_port_id)
+      if (!terminal) throw new Error(`Missing real numbered terminal ${candidates[0].pcb_port_id}`)
       normalized[key] = terminal
     }
     return normalized
@@ -211,9 +237,31 @@ describe("Native placement review preserves the board", () => {
           )
         )
           return []
-        return [withNumberedTerminals(parsed.data, canonicalTerminals)]
+        const connectsTo = z
+          .object({ connectsTo: z.array(z.string()).optional() })
+          .parse(element).connectsTo
+        return [withNumberedTerminals(parsed.data, canonicalTerminals, canonical, connectsTo)]
       })
-      expect(matchingRoutes).toContainEqual(withNumberedTerminals(expected, beforeTerminals))
+      expect(matchingRoutes).toContainEqual(
+        withNumberedTerminals(expected, beforeTerminals, before),
+      )
     }
+  })
+
+  test("optional endpoint annotation cannot hide moved copper or a wrong declared contact", () => {
+    const element = canonical.find(
+      (element) => element.type === "pcb_trace" && element.pcb_trace_id === "saved_phase_null_0_0",
+    )
+    const trace = z.object({ route: wireRoute, connectsTo: z.array(z.string()) }).parse(element)
+    const terminals = numberedTerminals(canonical)
+    const moved = trace.route.map((point, index) =>
+      index === 0 ? { ...point, x: point.x + 0.01 } : point,
+    )
+    expect(() => withNumberedTerminals(moved, terminals, canonical, trace.connectsTo)).toThrow(
+      "Endpoint does not prove one real declared PCB contact",
+    )
+    expect(() =>
+      withNumberedTerminals(trace.route, terminals, canonical, ["pcb_port_140", "pcb_port_142"]),
+    ).toThrow("Endpoint does not prove one real declared PCB contact")
   })
 })
